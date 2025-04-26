@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<strings Lang="de">
+<!-- Use the INFINITIVE FORM for German verb bases -->
+  <string ID="door:close">schließen</string>
+  <string ID="door:open">öffnen</string>
+  <string ID="door:lock">verriegeln</string>
+  <string ID="door:unlock">entriegeln</string>
+  <string ID="door:interface">verbinden sich</string>
+  <string ID="passcode:enter">eingeben/geben ein</string>
+  <string ID="verb:tinker">tüfteln</string>
+<!-- nonstandard gender-neutral professions: use stem+ir or add -on
+    so for tinker: das Tüftlir/Tüftleron -->
+  <string ID="profession:tinker">der Tüftler,die Tüftlerin</string>
+  <string ID="noun:tinkering bit">das Tüftelbit</string>
+
+  <string ID="door:You cannot open =object.t=.">Sie können =object.d.akk= nicht öffnen.</string>
+  <string ID="You are out of phase with =object.t=.">Sie sind phasenverschoben mit =object.d.dat=.</string>
+  <string ID="You cannot reach =object.t=.">Sie können =object.d.akk= nicht erreichen.</string>crafting tools
+  <string ID="You can't unlock =object.t= from a distance.">Sie können =object.d.akk= nicht aus der Ferne entriegeln.</string>
+  <string ID="You unlock =object.t=.">Sie entriegeln =object.d.akk=.</string>
+  <string ID="You interface with =object.t= and unlock =object.them=.">Sie verbinden sich mit =object.d.dat= und entriegeln =object.es=.</string>
+  <string ID="You lay your hand upon =object.t= and draw forth =object.its= passcode. You enter the code and =object.does:unlock=.">Sie legen Ihre Hand an =object.d.akk= und ziehen den Zugangscode hervor. Sie geben den Code ein und =object.d.nom= wird entriegelt.</string>
+  <!-- ^^ is "wird entriegelt" "becomes unlocked"? -->
+  <string ID="You can't unlock =object.t=.">Sie können =object.d.akk= nicht entriegeln.</string>
+  <string ID="=object.T= cannot be closed.">=object.D.nom= lässt sich nicht schließen.</string>
+  <string ID="You cannot close =object.t==reason=.">Du kannst =object.d.akk= nicht schließen=reason=.</string>
+  <string ID="=object.T= cannot be closed with =blocker.t= in the way.">=object.D.nom= lässt sich nicht schließen, da =object.d.nom= im Weg steht.</string>
+  <string ID="=object.T= cannot be closed with =blocker.t= in the way to the =direction=.">=object.D.nom= lässt sich nicht schließen, da im =direction= =blocker.d.nom= im Weg steht.</string>
+  <string ID="You hack =object.t=.">Sie hacken =object.d.akk=.</string>
+  <string ID="You hack =object.t= and find tinkering bits &lt;{{|=bits=}}&gt; in =object.them=!">Sie hacken =object.d.akk= und finden darin Tüftelbits &lt;{{|=bits=}}&gt;!</string>
+  <string ID="You hack =object.t= and find =item.an= stuck in =object.them=!">Sie hacken =object.d.akk= und finden =item.e.akk= darin feststeckt!</string>
+  <string ID="You feel like you're making progress on hacking =object.t= open.">Sie haben das Gefühl, dass Sie beim Hacken =object.d.gen= Fortschritte machen.</string>
+  <string ID="You cannot seem to work out how to hack =object.t=.">Sie scheinen nicht herauszufinden, wie Sie =object.d.akk= hacken können.</string>
+  <string ID="Your attempt to hack =object.t= has gone very wrong.">Ihr Versuch, =object.d.akk= zu hacken, ist völlig schiefgegangen.</string>
+  <string ID="door open reason: because you cannot figure out how" Value=", weil Sie nicht wissen, wie." />
+
+</strings>

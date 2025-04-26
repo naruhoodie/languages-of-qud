@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<conversations Lang="ja">
+  <!-- Inherited by all conversations by default, unless another base or empty string is specified in Inherits="" -->
+  <conversation ID="BaseConversation" Load="Merge">
+    <!-- Conversation level choices are distributed to all start nodes by default -->
+    <choice ID="WaterRitualChoice" IfSpeakerHavePart="GivesRep" IfAllowEscape="true" Target="WaterRitual" Ordinal="980">
+      <text>そちらの渇きはこちらの、こちらの水はそちらの。</text>
+      <text IfHavePart="SociallyRepugnant" Priority="1">
+        唾液を交換する？~
+        さあ、遣りましょう！~
+        {{emote|（唇をなめる）}}~
+        こちらの渇きはこちらの、そちらの水はそちらの。~
+        渇き？水。飲め。~
+        涎の時間よ~
+        ？？？~
+        こちらの水は渇き、そちらの水はそちらの。
+      </text>
+      <part Name="WaterRitualBegin" />
+    </choice>
+    <node ID="WaterRitual">
+      <text>生きて飲んで、=subject.waterRitualLiquid=きょうだい。</text>
+      <part Name="WaterRitual" />
+      <choice ID="ShareGossipChoice">
+        <text>=subject.waterRitualLiquid=きょうだいにとって興味深いかもしれない情報がいくつかある。</text>
+        <part Name="WaterRitualSellSecret" Gossip="true" />
+      </choice>
+      <choice ID="ShareSecretListenerChoice">
+        <text>=subject.waterRitualLiquid=きょうだいと共有したい秘密がある。</text>
+        <part Name="WaterRitualSellSecret" />
+      </choice>
+      <choice ID="ShareSecretSpeakerChoice">
+        <text>秘密を教えて、=subject.waterRitualLiquid=きょうだい。</text>
+        <part Name="WaterRitualBuySecret" />
+      </choice>
+      <choice ID="LearnSkillChoice">
+        <text>=subject.waterRitualLiquid=きょうだいの遣り方を教えてください。</text>
+        <part Name="WaterRitualLearnSkill" />
+      </choice>
+      <choice ID="CookingRecipeChoice">
+        <text>国の人々の好きな料理を教えてください。</text>
+        <part Name="WaterRitualCookingRecipe" />
+      </choice>
+      <choice ID="JoinPartyChoice">
+        <text>=subject.waterRitualLiquid=きょうだいにも参加してもらいたい。</text>
+        <part Name="WaterRitualJoinParty" />
+      </choice>
+      <choice ID="EndChoice" Target="Start" Ordinal="1000">
+        <text>生きて飲んで、=subject.waterRitualLiquid=きょうだい。</text>
+        <part Name="Tag">{{g|（水の儀式を終える）}}</part>
+      </choice>
+    </node>
+    <choice ID="Trade" Ordinal="990">
+      <text>商売をしましょう。</text>
+      <part Name="Trade" />
+    </choice>
+  </conversation>
+
+
+	<!-- Mehmet -->
+	<conversation ID="Mehmet" Load="Merge">
+
+		<start ID="RedrockNews">
+			<text>
+				　=name=さん、生きて飲んで。赤岩から何か新しい情報ある？
+			</text>
+			<choice Priority="1" Target="BackFromRedrock" IfHaveActiveQuest="What's Eating the Watervine?" IfFinishedQuestStep="What's Eating the Watervine?~Travel to Red Rock" IfHaveItemDescendsFrom="Girshling Corpse">はい。害虫と、噛られた水蔓の破片を見つけました。死骸は持ち帰りました。</choice>
+			<choice Priority="1" Target="Aye" IfHaveActiveQuest="What's Eating the Watervine?">まだ何もないです。</choice>
+			<choice ID="MehmetIntroduce" Load="Remove" />
+		</start>
+		<start ID="Welcome">
+			<text IfFinishedQuest="What's Eating the Watervine?">
+				　=name=さん、生きて飲んで~
+				　=name=さん、今日風に乗っているものを味わったか？~
+				　太陽と月、=name=さん~
+				　風は石灰の味がする、=name=さん。それとガリウムの味もする、かも？~
+				　おや、害虫を征服者だ！=name=さん、生きて飲んで
+			</text>
+			<text IfNotHaveQuest="What's Eating the Watervine?">
+				 おや、水蔓田労働者か？生きて飲んで、旅人さん
+			</text>			
+			<choice ID="MehmetIntroduce" Target="Name" IfNotFinishedQuest="What's Eating the Watervine?" IfNotHaveState="ToldMehmetName" SetBooleanState="ToldMehmetName,true">初めまして、=name=です
+</choice>
+			<choice Target="Village">村について教えてくれませんか？ジョッパ</choice>
+			<choice Target="Work" IfNotHaveQuest="What's Eating the Watervine?">仕事を探しています</choice>
+			<choice Target="End">生きて飲んで</choice>
+		</start>						
+		<node ID="Name" Inherits="Welcome">
+			<text Load="Replace" Priority="1">
+				 メフメットって、舌が言う。生きて飲んで、=name=さん
+			</text>			
+		</node>
+		<node ID="Village">
+			<text>
+				 湿地帯の麓にある水蔓田。水煎餅の水分を吸い取ったんだろう？ここで植物の世話をしているんだ。
+			</text>
+			<choice Target="VillageMore">…</choice>			
+		</node>
+		<node ID="VillageMore" Inherits="Welcome">
+			<text>
+				&#xFF;　大砂漠からの風が少し冷たくなり、湿気を放出する。ちょうどいい具合だ。舌は百通りの風を味わえるんだぞ？
+
+				&#xFF;　いずれにせよ、心はあそこへさまよう。ジョッパについてもっと知りたいなら、イルダド長老に話を聞いてくれ。北の小道を上って行くんだ。
+			</text>			
+		</node>
+		<node ID="Work">
+			<text>
+				&#xFF;　仕事か？それなら、あるぞ。
+
+				&#xFF;　甲虫月時くらい、何かが水蔓を食い荒らしている。キュールーンは半塩水の中に蜘蛛のような生き物が這っているのを見たと言う。だが、洞窟の蜘蛛が警備員の溜まり場に近づく勇気などあるはずがない。
+
+				&#xFF;　水田で少し赤い斑点の味がした。赤岩の近くの土壌で見られる頁岩のようなもの…
+			</text>
+			<choice Target="WorkMore">…</choice>
+		</node>
+		<node ID="WorkMore">
+			<text>
+				&#xFF;　散策してくれかい？赤岩へ。ジョッパの北約２パラサングくらい。
+
+				&#xFF;　害虫を殺して死体を持ち帰り、それが何なのか分かるのため。後で長老が報酬をくれるだろう、水蔓園労働者。
+			</text>
+			<choice Target="End" StartQuest="What's Eating the Watervine?">要求通りにします。</choice>
+			<choice Target="Start">興味ないです。</choice>
+		</node>
+		<node ID="Aye" Inherits="Welcome">
+			<text>
+			  やあ
+			</text>
+		</node>
+		<node ID="BackFromRedrock">
+			<text>
+				&#xFF;　おや？あっ……
+				&#xFF;　それは見た目が気に入らない。長老のところへ持って行った方がいい。小屋は小道を北に進んだところにある。
+			</text>
+			<choice GotoID="End">分かりました。</choice>
+		</node>
+					
+	</conversation>
+	
+</conversations>

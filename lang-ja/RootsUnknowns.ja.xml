@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<objects Lang="ja">
+
+	<!-- root objects -->
+  <object Name="Object" Load="Merge">
+    <!-- only used for quantities of 1 to 9 -->
+    <tag Name="LimitedCounter" Value="1つ" />
+    <tag Name="Counter" Value="1個" />
+  </object>
+  <object Name="CosmeticObject" Load="Merge">
+    <part Name="Render" DisplayName="【物】" />
+  </object>
+
+	<!-- Unknown names -->
+	<!-- Partially known names -->	
+
+	<object Name="UnknownGoggles" Load="Merge">
+		<part Name="Render" DisplayName="眼鏡" />
+		<part Name="Description" Short="Rounded seers are held by a strap." />
+
+	</object>	
+	<object Name="UnknownGloves" Load="Merge">
+		<part Name="Render" DisplayName="手袋" />
+		<part Name="Description" Short="奇妙なミトンはほとんどの手首と指に適する。" />
+    <tag Name="CollectiveCounter" Value="1組" />
+	</object>			
+
+	<object Name="UnknownBoots" Load="Merge">
+		<part Name="Render" DisplayName="靴" />
+		<part Name="Description" Short="長年の使用による傷が履物の表面を十字になる。" />
+    <tag Name="CollectiveCounter" Value="1足" />
+	</object>							
+
+</objects>

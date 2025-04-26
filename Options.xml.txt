@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<options>      
+  <option ID="OptionMasterVolume" DisplayText="Main volume" Category="Sound" Type="Slider" Min="0" Max="100" Increment="5" Default="100"></option>
+  <option ID="OptionSound" DisplayText="Sound effects" Category="Sound" Type="Checkbox" Default="Yes"></option>
+  <option ID="OptionSoundVolume" Requires="OptionSound==Yes" DisplayText="Sound effects volume" Category="Sound" Type="Slider" Min="0" Max="100" Increment="5" Default="100"></option>
+  <option ID="OptionMusic" DisplayText="Music" Category="Sound" Type="Checkbox" Default="Yes"></option>
+  <option ID="OptionMusicVolume" Requires="OptionMusic==Yes" DisplayText="Music volume" Category="Sound" Type="Slider" Min="0" Max="100" Increment="5" Default="100"></option>
+  <option ID="OptionAmbient" DisplayText="Ambient sounds" Category="Sound" Type="Checkbox" Default="Yes"></option>
+  <option ID="OptionAmbientVolume" Requires="OptionAmbient==Yes" DisplayText="Ambient volume" Category="Sound" Type="Slider" Min="0" Max="100" Increment="5" Default="50"></option>
+  <option ID="OptionUseInterfaceSounds" Requires="OptionSound==Yes,OptionShowAdvancedOptions==Yes" DisplayText="Interface sounds" Category="Sound" Type="Checkbox" Default="Yes"></option>
+  <option ID="OptionInterfaceVolume" Requires="OptionUseInterfaceSounds==Yes,OptionShowAdvancedOptions==Yes" DisplayText="Interface volume" Category="Sound" Type="Slider" Min="0" Max="100" Increment="5" Default="100"></option>
+  <option ID="OptionUseCombatSounds" Requires="OptionSound==Yes,OptionShowAdvancedOptions==Yes" DisplayText="Combat sounds" Category="Sound" Type="Checkbox" Default="Yes"></option>
+  <option ID="OptionCombatVolume" Requires="OptionUseCombatSounds==Yes,OptionShowAdvancedOptions==Yes" DisplayText="Combat volume" Category="Sound" Type="Slider" Min="0" Max="100" Increment="5" Default="100"></option>
+  <option ID="OptionPlayFireSounds" Requires="OptionSound==Yes,OptionShowAdvancedOptions==Yes" DisplayText="Fire crackling sounds" Category="Sound" Type="Checkbox" Default="Yes"></option>
+  
+  
+  <option ID="OptionDisplayBrightness" DisplayText="Brightness" Category="Display" Type="Slider" Min="-100" Max="100" Increment="5" Default="0"></option>
+  <option ID="OptionDisplayContrast" DisplayText="Contrast" Category="Display" Type="Slider" Min="-100" Max="100" Increment="5" Default="0"></option>
+  <option ID="OptionDisplayFullscreen" DisplayText="Fullscreen" Category="Display" Type="Checkbox" Default="Yes"></option>
+  <option ID="OptionDisplayResolution" DisplayText="Fullscreen resolution" Category="Display" Type="BigCombo" Values="*Resolution" Default="Unset"></option>
+  <option ID="OptionDisplayFramerate" DisplayText="Frame rate" Category="Display" Type="Combo" Values="10,20,30,40,50,60,120,Unlimited,VSync" Default="VSync"></option>
+  <option ID="OptionUseTiles" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Enable tile graphics" Category="Display" Type="Checkbox" Default="Yes"></option>
+  <option ID="OptionDisplayVignette" DisplayText="Display vignette effect" Category="Display" Type="Checkbox" Default="Yes"></option>
+  <option ID="OptionDisplayScanlines" DisplayText="Display scanlines" Category="Display" Type="Checkbox" Default="Yes"></option>  
+  <option ID="OptionUseOverlayCombatEffects" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Display combat animations" Category="Display" Type="Checkbox" Default="Yes"></option>
+  <option ID="OptionUseOverlayDamageText" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Display floating damage numbers" Category="Display" Type="Checkbox" Default="Yes"></option>
+  <option ID="OptionUseParticleVFX" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Display modern visual effects" Category="Display" Type="Checkbox" Default="Yes"></option>
+  <option ID="OptionUseTextParticleVFX" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Display ASCII visual effects" Category="Display" Type="Checkbox" Default="Yes"></option>
+  <option ID="OptionDisableFloorTextures" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Disable floor textures" Category="Display" Type="Checkbox" Default="No"></option>
+  <option ID="OptionDisableBloodsplatter" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Disable blood splatters" Category="Display" Type="Checkbox" Default="No"></option>
+  <option ID="OptionDisableSmoke" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Disable smoke effects" Category="Display" Type="Checkbox" Default="No"></option>
+  <option ID="OptionDisableImposters" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Disable modern, tile-based graphical effects" Category="Display" Type="Checkbox" Default="No"></option>
+  <option ID="OptionMainMenuBackground" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Main menu background art" Category="Display" Type="Combo" Values="Modern,Classic" Default="Modern"></option>
+  
+
+  <option ID="OptionsKeybindings" DisplayText="Control Mapping" Category="Controls" Type="Button" OnClick="Qud.UI.KeybindsScreen.ShowKeybindsClick" SearchKeywords="Control bindings"></option>
+  <option ID="OptionKeyRepeatDelay" DisplayText="Key repeat delay" Category="Controls" Type="Slider" Min="5" Max="100" Increment="5" Default="10"></option>
+  <option ID="OptionKeyRepeatRate" DisplayText="Key repeat rate" Category="Controls" Type="Slider" Min="0" Max="100" Increment="5" Default="90"></option>
+  <option ID="OptionMouseInput" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Allow mouse input" Category="Controls" Type="Checkbox" Default="Yes"></option>
+  <option ID="OptionMouseMovement" Requires="OptionMouseInput==Yes,OptionShowAdvancedOptions==Yes" DisplayText="Allow mouse movement" Category="Controls" Type="Checkbox" Default="Yes"></option>
+  <option ID="OptionMouseScrollWheel" Requires="OptionMouseInput==Yes,OptionShowAdvancedOptions==Yes" DisplayText="Allow scroll wheel to zoom" Category="Controls" Type="Checkbox" Default="Yes"></option>
+  <option ID="OptionCapInputBuffer" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Limit the input buffer to two commands" Category="Controls" Type="Checkbox" Default="Yes"></option>
+
+ 
+  <option ID="OptionDisableFullscreenColorEffects" DisplayText="Disable fullscreen color effects (for color blindness)" Category="Accessibility" Type="Checkbox" Default="No"></option>
+  <option ID="OptionAlphanumericBits" DisplayText="Display bits with alphanumerics instead of dots (for color blindness)" Category="Accessibility" Type="Checkbox" Default="Yes"></option>
+  <option ID="OptionDisableTextAnimationEffects" DisplayText="Disable most tile-based flashing effects" Category="Accessibility" Type="Checkbox" Default="No"></option>
+  <option ID="OptionDisableTextWarpEffects" DisplayText="Disable tile-based screen-warping effects" Category="Accessibility" Type="Checkbox" Default="No"></option>
+  <option ID="OptionDisableFullscreenWarpEffects" DisplayText="Disable fullscreen screen-warping effects" Category="Accessibility" Type="Checkbox" Default="No"></option>
+
+
+  <option ID="OptionModernUI" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Enable modern UI" Category="UI" Type="Checkbox" Default="Yes"></option>
+  <option ID="OptionPrereleaseStageScale" Requires="OptionModernUI==Yes" DisplayText="UI scale" Category="UI" Type="Combo" Values="auto,auto x1.25,auto x1.5,.5,.75,1.0,1.25,1.5,2" Default="auto"></option>
+  <option ID="OptionModernCharacterSheet" Requires="OptionModernUI==Yes,OptionShowAdvancedOptions==Yes" DisplayText="Enable modern UI character sheet"  Category="UI" Type="Checkbox" Default="Yes"></option>
+  <option ID="OptionCharacterSheetAdditionalScale" Requires="OptionModernUI==Yes,OptionModernCharacterSheet==Yes,OptionShowAdvancedOptions==Yes" DisplayText="Character sheet scale percentage" Category="UI" Type="Slider" Min="-50" Max="50" Increment="1" Default="0"></option>
+  <option ID="OptionPlayScale" Requires="OptionModernUI==Yes" DisplayText="Play area scale" Category="UI" Type="Combo" Values="Fit,Cover,Pixel Perfect" Default="Cover" SearchKeywords="Fit Cover Pixel Perfect">
+    <helptext>
+        Controls how the play area will scale in the area not used by the UI.
+
+        {{W|Fit}}: Fits the whole play area on screen. May necessitate letterboxing.
+        {{W|Cover}}: Ensures the play area covers the screen. Minimizes letterboxing.
+        {{W|Pixel Perfect}}: Sizes the play area to an integer multiple of the pixel art. Maximizes sharpness.
+    </helptext>
+  </option>
+  <option ID="OptionTileScale" Requires="OptionModernUI==Yes,OptionPlayScale==Pixel Perfect" DisplayText="Pixel perfect tile graphic scale" Category="UI" Type="Combo" Values="1,2,3,4,5,6,7,8" Default="1"></option>
+  <option ID="OptionAbilityBarMode" DisplayText="Ability bar mode" Category="UI" Type="Combo" Values="Full,Compact" Default="Full"></option>
+  <option ID="OptionOverlayMinimap" Requires="OptionModernUI==Yes" DisplayText="Show minimap" Category="UI" Type="Checkbox" Default="No"></option>
+  <option ID="OptionOverlayNearbyObjects" Requires="OptionModernUI==Yes" DisplayText="Show nearby objects list" Category="UI" Type="Checkbox" Default="No"></option>
+  <option ID="OptionOverlayNearbyObjectsLocal" Requires="OptionModernUI==Yes,OptionOverlayNearbyObjects==Yes,OptionShowAdvancedOptions==Yes" DisplayText="Nearby objects list: show only current cell's contents" Category="UI" Type="Checkbox" Default="No"></option>
+  <option ID="OptionOverlayNearbyObjectsPools" Requires="OptionModernUI==Yes,OptionOverlayNearbyObjects==Yes,OptionShowAdvancedOptions==Yes" DisplayText="Nearby objects list: show liquid pools" Category="UI" Type="Checkbox" Default="No"></option>
+  <option ID="OptionOverlayNearbyObjectsPlants" Requires="OptionModernUI==Yes,OptionOverlayNearbyObjects==Yes,OptionShowAdvancedOptions==Yes" DisplayText="Nearby objects list: show plants" Category="UI" Type="Checkbox" Default="No"></option>
+  <option ID="OptionOverlayNearbyObjectsTakeable" Requires="OptionModernUI==Yes,OptionOverlayNearbyObjects==Yes,OptionShowAdvancedOptions==Yes" DisplayText="Nearby objects list: show only show takeable objects" Category="UI" Type="Checkbox" Default="No"></option>
+  <option ID="OptionMessageLineLogScale" Requires="OptionModernUI==Yes" DisplayText="Message log font size (pt)" Category="UI" Type="Slider" Min="-12" Max="24" Increment="1" Default="0"></option>
+  <option ID="OptionDockMovable" Requires="OptionModernUI==Yes,OptionShowAdvancedOptions==Yes" DisplayText="Dock message log &amp;&amp; minimap" Category="UI" Type="Combo" Values="Unset,Right,Left,Flip" Default="Right"></option>
+  <option ID="OptionDockOpacity" Requires="OptionModernUI==Yes,OptionDockMovable!=Unset" DisplayText="Dock background opacity" Category="UI" Type="Slider" Min="0" Max="100" Increment="10" Default="100"></option>  
+  <option ID="OptionMouseCursor" Requires="OptionModernUI==Yes" DisplayText="Mouse cursor appearance" Category="UI" Type="Combo" Values="System,Default,Alternate" Default="Default" />
+  <option ID="OptionMouseAutoHideCursorEnabled" Requires="OptionModernUI==Yes,OptionShowAdvancedOptions==Yes" DisplayText="Automatically hide mouse cursor when inactive" Category="UI" Type="Checkbox" Default="Yes"></option>
+  <option ID="OptionControllerFont" Requires="OptionModernUI==Yes" DisplayText="Gamepad button appearance" Category="UI" Type="Combo" Values="Auto,KBM,XBox,PS,XBox Filled,PS Filled" Default="Auto" />  
+  <option ID="OptionFloatingKeyboard" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Display overlay keyboard for input on supported devices" Category="UI" Type="Checkbox" Default="Yes"></option>
+  <option ID="OptionZoomSensitivity" Requires="OptionModernUI==Yes,OptionShowAdvancedOptions==Yes" DisplayText="Zoom sensitivity" Category="UI" Type="Slider" Min="1" Max="25" Increment="1" Default="1"></option>
+  <option ID="OptionTooltipDelay" DisplayText="Tooltip delay (ms)" Category="UI" Type="Slider" Min="0" Max="3000" Increment="100" Default="1000"></option>
+  <option ID="Option@HPColor" DisplayText="Color your character's glyph based on health status" Category="UI" Type="Checkbox"  Default="Yes"></option>
+  <option ID="Option@AlwaysHPColor" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Ignore all effects that recolor your character's glyph other than health status" Category="UI" Type="Checkbox"  Default="No"></option>
+  <option ID="Option@MutationColor" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Allow mutations to recolor your character's glyph" Category="UI" Type="Checkbox" Default="Yes"></option>  
+  <option ID="OptionDisplayMousableZoneTransitionBorder" Requires="OptionModernUI==Yes,OptionShowAdvancedOptions==Yes" DisplayText="Display mouse-clickable zone transition arrows" Category="UI" Type="Checkbox" Default="Yes"></option>
+  <option ID="OptionShiftHidesSidebar" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Pressing shift hides the sidebar" Category="UI" Type="Checkbox" Default="No"></option>
+  <option ID="OptionAllowFramelessZoomOut" Requires="OptionShowAdvancedOptions==Yes" DisplayText="When zoomed out to max zoom, remove the UI frame from the main gameplay screen" Category="UI" Type="Checkbox" Default="No"></option>
+  <option ID="OptionHighlightStairs" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Always highlight stairs" Category="UI" Type="Checkbox" Default="No"></option>
+  <option ID="OptionLogTurnSeparator" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Add a line separator at the end of each round during combat" Category="UI" Type="Checkbox" Default="No"></option>
+  <option ID="OptionIndentBodyParts" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Indent body parts by attachment on the Equipment screen" Category="UI" Type="Checkbox" Default="No"></option>
+  <option ID="OptionShowDetailedWeaponStats" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Display detailed weapon penetration and damage in weapon names" Category="UI" Type="Checkbox" Default="No"></option>
+  <option ID="OptionTakeallCorpses" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Take corpses when using the 'take all' command" Category="UI" Type="Checkbox" Default="No"></option>
+  <option ID="OptionDropAll" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Enable a 'drop all' interaction on items in your inventory" Category="UI" Type="Checkbox" Default="No"></option>
+  <option ID="OptionNavigateInventoryAndEquipmentWithPagination" Requires="OptionModernUI==Yes,OptionShowAdvancedOptions==Yes" DisplayText="Navigate inventory and equipment panes with left/right pagination instead of movement binds" Category="UI" Type="Checkbox" Default="No"></option>    
+  <option ID="OptionPressingRightInInventoryEquips" Requires="OptionShowAdvancedOptions==Yes,OptionNavigateInventoryAndEquipmentWithPagination==Yes" DisplayText="Equip/unequip highlighted item when pressing right or left, respectively, on the Equipment screen" Category="UI" Type="Checkbox" Default="Yes"></option>
+  <option ID="OptionExpandHighlightedInventoryAndEquipmentPane" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Expand the equipment or inventory pane when focused" Category="UI" Type="Checkbox" Default="No"></option>
+  <option ID="OptionStatusScreenSize" DisplayText="Character sheet size" Category="UI" Type="Combo" Values="Standard,Full Height,Full" Default="Standard"></option>  
+  <option ID="OptionTutorialComplete" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Move tutorial to the end of the game mode list" Category="UI" Type="Checkbox" Default="No"></option>
+  <option ID="OptionShowCollectionBadges" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Show collector's seals on the main menu" Category="UI" Type="Checkbox" Default="Yes"></option>
+  
+  <option ID="OptionShowSidebarAbilities" Requires="OptionShowAdvancedOptions==Yes,OptionModernUI==No" DisplayText="Display ability icons on the sidebar" Category="Legacy UI" Type="Checkbox" Default="Yes"></option>
+  <option ID="OptionShowCurrentCellPopup" Requires="OptionShowAdvancedOptions==Yes,OptionModernUI==No" DisplayText="Display contents of current cell in a popup" Category="Legacy UI" Type="Checkbox" Default="Yes"></option>
+  <option ID="OptionShowMonsterHPHearts" Requires="OptionModernUI!=Yes,OptionShowAdvancedOptions==Yes" DisplayText="Color hit hearts per the target's remaining HP" Category="Legacy UI" Type="Checkbox" Default="No"></option>
+  <option ID="OptionShowNumberOfItems" Requires="OptionModernUI!=Yes,OptionShowAdvancedOptions==Yes" DisplayText="Show number of items in each inventory category" Category="Legacy UI" Type="Checkbox" Default="No"></option>
+  <option ID="OptionLocationIntseadOfName" Requires="OptionModernUI!=Yes,OptionShowAdvancedOptions==Yes" DisplayText="Display location instead of name on the sidebar" Category="Legacy UI" Type="Checkbox" Default="No"></option>
+  <option ID="OptionMapDirectionsToKeypad" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Always map directions to numpad" Category="Legacy UI" Type="Checkbox" Default="Yes"></option>
+  <option ID="OptionMapShiftDirectionToPage" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Map Shift+directions to menu pagination binds (doesn't work for numpad bindings)" Category="Legacy UI" Type="Checkbox" Default="No"></option>
+  <option ID="OptionPushAZHotkeys" Requires="OptionShowAdvancedOptions==Yes,OptionModernUI==No" DisplayText="Always pass A-Z hotkeys through to the legacy UI" Category="Legacy UI" Type="Checkbox" Default="No"></option>
+
+
+  <option ID="OptionAutoSip" DisplayText="Automatically drink fresh water when thirsty" Category="Automation" Type="Checkbox" Default="Yes"></option>
+  <option ID="OptionAutoSipLevel" Requires="OptionAutoSip==Yes" DisplayText="Thirst threshold for automatic drinking" Category="Automation" Type="Combo" Values="Dehydrated,Parched,Thirsty,Quenched,Tumescent" Default="Thirsty"></option>
+  <option ID="OptionAutoTorch" DisplayText="Automatically douse and light torches" Category="Automation" Type="Checkbox" Default="Yes"></option>
+  <option ID="OptionAutoDisassembleScrap" DisplayText="Automatically disassemble scrap" Category="Automation" Type="Checkbox" Default="No"></option>  
+  <option ID="OptionAutoexploreIgnoreEasyEnemies" DisplayText="Difficulty threshold for ignoring hostile creatures" Category="Automation" Type="Combo" Values="None,Easy,Average,Tough,Very Tough,Impossible" Default="None"></option>
+  <option ID="OptionAutoexploreIgnoreDistantEnemies" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Range threshold for ignoring hostile creatures" Category="Automation" Type="Combo" Values="None,1,2,3,5,7,10,15,20,30,40" Default="None"></option>
+  <option ID="OptionAutoexploreAttackIgnoredAdjacentEnemies" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Attack ignored hostiles that you move adjacent to during autoexplore" Category="Automation" Type="Checkbox" Default="No"></option>
+  <option ID="OptionInterruptHeldMovement" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Interrupt held movement when hostiles are nearby" Category="Automation" Type="Checkbox" Default="Yes"></option>
+  <option ID="OptionInterruptHeldMovementOnZoneTransition" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Interrupt held movement when entering an unexplored zone" Category="Automation" Type="Checkbox" Default="No"></option>
+  <option ID="OptionUseTextAutowalkThreatIndicator" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Use text autoact interrupt indicator instead of flashing red box" Category="Automation" Type="Checkbox" Default="No"></option>
+  <option ID="OptionAutoexploreChests" DisplayText="Search containers while autoexploring" Category="Automation" Type="Checkbox" Default="Yes"></option>
+  <option ID="OptionDigOnMove" DisplayText="Automatically dig through walls by moving into them when wielding a digging implement" Category="Automation" Type="Checkbox" Default="Yes"></option>  
+  <option ID="OptionAutosaveInterval" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Automatically save when moving to a different zone" Category="Automation" Type="Combo" Values="None,1,2,3,5,7,10,15,20,30,40" Default="5"></option>
+  <option ID="OptionAutoexploreRate" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Maximum automove cells/sec and autoattack actions/sec" SearchKeywords="autoact autoexplore framerate" Category="Automation" Type="Combo" Values="1,2,3,5,7,10,15,20,30,60,&#236;" Default="20"></option>
+
+
+  <option ID="OptionAutogetAmmo" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Autoget ammo" Category="Autoget" Type="Checkbox"  Default="Yes"></option>
+  <option ID="OptionAutogetPrimitiveAmmo" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Autoget primitive ammo" Category="Autoget" Type="Checkbox"  Default="No"></option>
+  <option ID="OptionAutogetNuggets" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Autoget copper, silver, and gold nuggets" Category="Autoget" Type="Checkbox"  Default="Yes"></option>
+  <option ID="OptionAutogetTradeGoods" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Autoget trade goods" Category="Autoget" Type="Checkbox"  Default="Yes"></option>
+  <option ID="OptionAutogetFood" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Autoget food" Category="Autoget" Type="Checkbox" Default="Yes"></option>
+  <option ID="OptionAutogetFreshWater" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Autoget fresh water" Category="Autoget" Type="Checkbox"  Default="Yes"></option>
+  <option ID="OptionAutogetNoDroppedLiquid" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Don't autoget liquid from containers you've dropped" Category="Autoget" Type="Checkbox" Default="No"></option>
+  <option ID="OptionAutogetSpecialItems" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Autoget special items" Category="Autoget" Type="Checkbox"  Default="Yes"></option>
+  <option ID="OptionAutogetArtifacts" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Autoget artifacts" Category="Autoget" Type="Checkbox"  Default="Yes"></option>  
+  <option ID="OptionAutogetScrap" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Autoget scrap" Category="Autoget" Type="Checkbox" Default="Yes"></option>  
+  <option ID="OptionAutogetBooks" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Autoget books" Category="Autoget" Type="Checkbox" Default="No"></option>
+  <option ID="OptionAutogetZeroWeight" Requires="OptionShowAdvancedOptions==Yes"  DisplayText="Autoget weightless items" Category="Autoget" Type="Checkbox" Default="Yes"></option>
+  <option ID="OptionAutogetIfHostiles" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Autoget if hostiles are nearby" Category="Autoget" Type="Checkbox" Default="No"></option>
+  <option ID="OptionAutogetFromNearby" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Autoget from adjacent cells" Category="Autoget" Type="Checkbox" Default="No"></option>  
+    
+
+  <option ID="OptionAskForWorldmap" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Prompt before moving to the world map" Category="Prompts" Type="Checkbox" Default="No"></option>
+  <option ID="OptionAskAutostair" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Prompt before autowalking to stairs" Category="Prompts" Type="Checkbox" Default="Yes"></option>
+  <option ID="OptionConfirmSwimming" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Prompt before swimming" Category="Prompts" Type="Checkbox" Default="Yes"></option>
+  <option ID="OptionConfirmDangerousLiquid" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Prompt before drinking and moving into certain dangerous liquids" Category="Prompts" Type="Checkbox" Default="Yes"></option>
+  <option ID="OptionAskForOneItem" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Prompt list of items when getting from the ground, even if there's only one" Category="Prompts" Type="Checkbox" Default="No"></option>
+  <option ID="OptionDisplayHPWarning" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Threshold for low hitpoint warning" Category="Prompts" Type="Combo" Values="20%,40%,60%,80%,100%,No Warning" Default="40%"></option>  
+  <option ID="OptionAbilityCooldownWarningAsMessage" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Show ability-on-cooldown prompts as message log entries instead of popups" Category="Prompts" Type="Checkbox" Default="No"></option>
+  <option ID="OptionShowScavengeItemAsMessage" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Show scavenged items as message log entries instead of popups" Category="Prompts" Type="Checkbox" Default="No"></option>
+  <option ID="OptionPopupJournalNote" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Display popups when noting information in your journal" Category="Prompts" Type="Checkbox" Default="Yes"></option>
+  <option ID="OptionDisplayLedLevelUp" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Display verbose level up messages for companions" Category="Prompts" Type="Checkbox" Default="No"></option>
+  <option ID="OptionDefaultDeathToViewFinalMessages" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Default the selection on death prompts in Roleplay mode to 'View final messages' instead of 'Reload checkpoint'" Category="Prompts" Type="Checkbox" Default="Yes"></option>
+
+
+  <option ID="OptionEnableMods" DisplayText="Enable mods (restart required)" Category="Mods" Type="Checkbox"  Default="Yes"></option>
+  <option ID="OptionAllowCSMods" Requires="OptionEnableMods==Yes" DisplayText="Allow scripting mods (scripting mods may contain malicious code!)" Category="Mods" Type="Checkbox"  Default="No"></option>
+  <option ID="OptionOutputModAssembly" Requires="OptionEnableMods==Yes,OptionAllowCSMods==Yes,OptionShowAdvancedOptions==Yes" DisplayText="Write compiled mod assemblies to disk" Category="Mods" Type="Checkbox"  Default="Yes"></option>
+  <option ID="OptionHarmonyDebug" Requires="OptionEnableMods==Yes,OptionAllowCSMods==Yes,OptionShowAdvancedOptions==Yes" DisplayText="Enable Harmony debug output" Category="Mods" Type="Checkbox"  Default="No"></option>
+
+
+  <option ID="OptionCheckMemory" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Check memory usage and show a warning when it's high" Category="Performance" Type="Checkbox" Default="Yes"></option>
+  <option ID="OptionCacheEarly" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Flush zones to cache early (for low memory environments)" Category="Performance" Type="Checkbox" Default="No"></option>
+  <option ID="OptionCollectEarly" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Garbage collect after each zone flush (for low memory environments)" Category="Performance" Type="Checkbox" Default="No"></option>
+  <option ID="OptionDisableFloorTextureObjects" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Do not generate floor texture objects" Category="Performance" Type="Checkbox" Default="No"></option>
+  <option ID="OptionThrottleAnimation" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Throttle animations (for low CPU environments)" Category="Performance" Type="Checkbox" Default="No"></option>
+
+
+  <option ID="OptionShowAdvancedOptions" DisplayText="Show advanced options" Category="App Settings" Type="Checkbox" Default="No"></option>
+  <option ID="OptionMusicBackground" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Keep Caves of Qud active in background" Category="App Settings" Type="Checkbox" Default="No"></option>
+  <option ID="OptionSessionBackups" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Number of rolling backup saves" Category="App Settings" Type="Combo" Values="None,1,2,3,5,7,10,15,20,30,40" Default="3">
+    <helptext>
+      When you load a save from the main menu rolling backups of loaded saves will be maintained in your data folder (&lt;...&gt;/CavesOfQud/Local/Session) up to this number.
+    </helptext>
+  </option>
+  <option ID="OptionAnalytics" DisplayText="Send anonymous gameplay statistics" Category="App Settings" Type="Checkbox" Default="Yes"></option>
+  <option ID="OptionDisableSteamInputWarning" Requires="OptionModernUI==Yes,OptionShowAdvancedOptions==Yes" DisplayText="Disable input warning" Category="App Settings" Type="Checkbox" Default="No"/>
+  
+  
+  <option ID="OptionDisablePermadeath" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Don't delete Classic mode saved games on death" Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionAllowSaveLoad" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Enable save and load" Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionAllowReallydie" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Get prompted to confirm deaths" Category="Debug" Type="Checkbox" Default="No"></option>    
+  <option ID="OptionEnablePrereleaseContent" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Enable unfinished and unsupported content (requires restart)" Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionDisableDefectLimit" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Allow creatures to have multiple defects " Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionStripUIColorText" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Strip color formatting from UI text" Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionEnableColorTextInput" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Enable color menu for text input" Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionDisableAchievements" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Disable achievements" Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionShowQuickstart" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Show quickstart option during character creation" Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionDisablePlayerbrain" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Disable brain hijacking on player-controlled characters" Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionDisableZoneCaching2" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Disable zone caching" Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionDisableTryLimit" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Disable limit on zone build tries" Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionEnableWishRegionNames" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Pregenerate zone names for wish support" Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionGivesRepShowsCurrentRep" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Show reputation with a creature's factions when looking an them" Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionDebugShowConversationNode" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Show XML conversation and node names during conversation" Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionDebugShowFullZoneDuringBuild" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Show the full zone ID during zone creation" Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionDebugDamagePenetrations" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Show damage penetration debug text" Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionDebugSavingThrows" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Show saving throw debug text" Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionDebugGetLostChance" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Show lost chance debug text" Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionDebugStatShift" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Show debug text for stat shifts" Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionDebugEncounterChance" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Show encounter chance debug chance" Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionDebugTravelSpeed" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Show travel speed debug text" Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionDebugInternals" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Show debug info on objects" Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionDebugAttitude" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Show attitude info on objects" Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionShowOverlandEncounters" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Indicate special encounters on the worldmap" Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionShowOverlandRegions" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Indicate biomes on the worldmap" Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionDrawPopulationHintMaps" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Draw population placement hint maps when building zones" Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionDrawInfluenceMaps" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Draw population placement regions when building zones" Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionDrawPathfinder" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Draw creature pathfinding " Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionDrawPathfinderHalt" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Wait for keypress when drawing pathfinding" Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionDrawNavigationWeightMaps" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Draw navigation weight maps on each step" Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionDrawCASystems" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Draw cellular automata when used in map generation" Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionShowReachable" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Draw reachability maps on zone generation" Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionDrawZoneSemantics" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Draw semantic tag info when building zones" Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionDrawFloodVis" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Draw visibility flood fill" Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionDrawFloodAud" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Draw audibility flood fill" Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionDrawFloodOlf" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Draw olfaction flood fill" Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionDrawArcs" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Draw electrical arc history for last few rounds" Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionWriteSoundsToLog" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Write played sound file names to message log" Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionDisableSoundPreload" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Disable preloading of sounds" Category="Debug" Type="Checkbox" Default="Yes"></option>  
+  <option ID="OptionInventoryConsistencyCheck" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Perform inventory consistency checks" Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionShowErrorPopups" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Show error popups" Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionDisableBindConflictChecking" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Disable conflict checking when rebinding controls" Category="Debug" Type="Checkbox" Default="No"></option>
+
+</options>
