@@ -1,0 +1,21 @@
+XRL.Language\Grammar
+XRL.World\GameObject
+XRL.World.Text.Delegates\VariableReplacers
+XRL.World.Capabilities\Messaging
+XRL.World.Capabilities\AutoAct
+  Interrupt(), TryToMove(), 
+XRL.World\IComponent
+XRL.World\GetDisplayNameEvent
+XRL\GameText
+XRL.World.Parts\Physics
+  ProcessTakeDamage(Event)
+
+Stuff with text to localize:
+most everything going to XRL.UI.Popup (except from MetricsManager)
+most everything that calls XRL.Messages.MessageQueue.AddPlayerMessage()
+XRL.World.Capabilities\Laterality
+  builds adjectives from Laterality codes
+  "mid-hind foot", "left mid[leg]"
+
+
+NOTE: anything going to MetricsManager SHOULD NOT be localized!

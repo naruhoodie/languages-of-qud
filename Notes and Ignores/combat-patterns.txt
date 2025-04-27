@@ -1,0 +1,101 @@
+Warning: used Google Translate and made corrections, may still have issues 
+
+(tortoise is your follower, dog is not)
+--en
+You strike the dog with your sword.
+The dog strikes you with its sword.
+The dog strikes the tortoise with its sword.
+The tortoise strikes the dog with its sword.
+You strike the tortoise with your sword.
+A dog strikes a tortoise with its sword.
+A tortoise strikes a dog with its sword.
+WDidXToYWithZ:
+"=W.subj= =X.Wconj= =Y.obj= with =Z.Wposs.obj=."
+
+--es
+Golpeas al perro con tu espada.
+El perro te golpea con su espada.
+El perro golpea a la tortuga con su espada.
+La tortuga golpea al perro con su espada.
+Golpeas a la tortuga con tu espada.
+Un perro golpea a una tortuga con su espada.
+Una tortuga golpea a un perro con su espada.
+WDidXToYWithZ:
+(drop W.nom when a personal pronoun)
+if Y is a personal pronoun:
+"=W.nom= =Y.acc= =X.Wconj= con =Z.Wposs.prep=."
+if Y is a person or animal:
+"=W.nom= =X.Wconj= =Y.pacc= con =Z.Wposs.prep=."
+  where =Y.pacc= is "a =Y.acc=" (with contractions)
+if Y is an object:
+"=W.nom= =X.Wconj= =Y.acc= con =Z.Wposs.prep=."
+
+--de
+Du schlägst den Hund mit deinem Schwert.
+Der Hund schlägt dich mit seinem Schwert.
+Der Hund schlägt die Schildkröte mit seinem Schwert.
+Die Schildkröte schlägt den Hund mit ihrem Schwert.
+Du schlägst die Schildkröte mit deinem Schwert.
+Ein Hund schlägt eine Schildkröte mit seinem Schwert.
+Eine Schildkröte schlägt einen Hund mit ihrem Schwert.
+WDidXToYWithZ:
+if 1-word verb ("schlägst")
+"W.nom =X.Wconj= =Y.acc= mit =Z.Wposs.dat=."
+if 2-part verb (e.g. "hast geschlagen"):
+"W.nom =X.aux.Wconj= =Y.acc= mit =Z.Wposs.dat= =X.pp=."
+
+--fr
+Tu frappes le chien avec ton épée.
+Le chien te frappe avec son épée.
+Le chien frappe la tortue avec son épée.
+La tortue frappe le chien avec son épée.
+Tu frappes la tortue avec ton épée.
+Un chien frappe une tortue avec son épée.
+Une tortue frappe un chien avec son épée.
+WDidXToYWithZ:
+if personal pronoun object:
+"=W.nom= =Y.obj= =X.Wconj= avec =Z.Wposs=."
+otherwise:
+"=W.nom= =X.Wconj= =Y.obj= avec =Z.Wposs=."
+
+--ja
+(Note: tortoise is your follower, dog is not)
+剣で犬を殴る。
+犬に剣で殴られる。
+犬に剣で亀が殴られる。
+亀は剣で犬を殴る。
+あなたに剣で亀が殴られる。
+犬に剣で亀が殴られる。
+亀は剣で犬を殴る。
+WDidXToYWithZ:
+(USUALLY drop W or Y when it's 2nd-person "You" (あなた))
+when the outcome is good for you/your group:
+"=W=は=Z=で=Y=を=X.plain=。"
+when the outcome is BAD for you/your group:
+"=W=に=Z=で=Y=が=X.passive=。"
+
+--tr
+Köpeğe kılıcınla vuruyorsun.
+Köpek sana kılıcıyla vuruyor.
+Köpek kaplumbağaya kılıcıyla vuruyor.
+Kaplumbağa köpeğe kılıcıyla vuruyor.
+Kaplumbağaya kılıcınla vuruyorsun.
+Bir köpek bir kaplumbağaya kılıcıyla vuruyor.
+Bir kaplumbağa bir köpeğe kılıcıyla vuruyor.
+WDidXToYWithZ:
+(omit W.nom when a personal pronoun)
+"=W.nom= =Y.Xtarget= =Z.Wposs.instr= =X.Wconj=."
+BUT the word order isn't strict, and different orderings emphasize different elements of the sentence.
+
+Misc Notes:
+------
+a lot of Turkish verbs where the direct object is a "target" put them in dative case. Maybe call it "target", assume dative, but allow stating a different case in parameters?
+
+French 3rd-person possessive matches gender/num of the item, NOT the possessor! son (m), sa (f), ses (pl)
+Also 'sa' becomes 'son' before a vowel sound
+'your' (familiar) is similar: ton (m), ta (f), tes (pl), with "ta" -> "ton" before vowel sound
+NOTE: French videogames usually use 'vous' not 'tu'!
+
+Spanish 3rd-person possessives inflect for item number, but not gender
+Spanish has a recent inclusive -e form!
+French WILL REQUIRE male/female gendering

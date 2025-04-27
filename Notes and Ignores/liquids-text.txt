@@ -1,0 +1,303 @@
+//IMPORTANT: make sure names & adjectives are unique btwn diff liquids
+//liquid name
+//adjective for when non-primary in a liquid GetAdjective(LV)
+//adjective for when non-primary in a smear GetSmearedAdjective(LV)
+//adjective for when primary in a smear GetSmearedName(LV)
+//name to go with -stained
+//message upon drinking
+//ingredient effect
+//gas it becomes
+liquid:BaseLiquid
+leaking
+leak
+
+water:LiquidWater
+water=[水\みず]
+fresh water=淡水
+dilute
+dilute,wet
+//dilute when the liquid isn't primarily oil, lava, or wax 
+wet
+water-stained
+"Ahh, refreshing!"
+{{C|=subject.T= =verb:slip= on the ice!}}
+scalding steam
+
+salt:LiquidSalt
+salt=塩[しお]
+salty,brackish
+//brackish when less then 2/5ths of the liquid
+salty
+salt-encrusted
+salt-stained
+"Blech, it's salty!"
+tastyMinor
+
+slime:LiquidSlime
+slime=[滑\ぬめ]り
+slimy
+slimy
+slimy
+slime-stained
+"It's disgustingly slimy!"
+{{slimy|=subject.T= =verb:slip= on the slime!}}
+slimeSpitting
+oozing
+ooze
+
+acid:LiquidAcid
+acid=[酸\さん]
+acidic
+acidic
+acid-covered
+acid-stained
+{{G|IT BURNS!}}
+corrosive gas
+acidMinor
+
+blood:LiquidBlood
+blood=[血\ち]
+bloody
+bloody
+bloody
+blood-stained
+"It has a metallic taste."
+bleeding
+bleed
+
+asphalt:LiquidAsphalt
+asphalt=[瀝青\れきせい]
+tarry
+tarry
+tarred
+tar-stained
+{{K|It burns!}}
+stabilityMinor
+
+oil:LiquidOil
+oil=[石油\せきゆ]
+oily
+oily
+oily
+oil-stained
+{{K|Disgusting!}}
+{{C|=subject.T= =verb:slip= on the oil!}}
+
+ooze:LiquidOoze
+black ooze=ブラック・ウーズ
+oozing
+oozing
+oozing
+ooze-stained
+"It's repulsive!"
+"You feel sick!"
+"Putrid ooze splashes into your mouth. You gag at the awful taste."
+selfGlotrot
+miasma
+oozing
+ooze
+
+sludge:LiquidSludge
+brown sludge=ブラウン・スラッジ
+sludgy
+sludgy
+sludgy
+sludge-stained
+"It's horrifying!"
+"You feel sick!"
+"Brown sludge splashes into your mouth. You wince at the metallic taste."
+oozing
+ooze
+
+goo:LiquidGoo
+green goo=グリーン・グー
+gooey
+gooey
+gooey
+goo-stained
+"It's awful!"
+"You feel poison course through your veins!"
+"Poisonous goo burns your eyes."
+poison gas=毒ガス
+selfPoison
+oozing
+ooze
+
+putrid:LiquidPutrescence
+putrescence=[腐敗\ふはい][液\えき]
+putrid
+putrid
+putrid
+putrescence-stained
+"It's disgusting!"
+
+convalessence:LiquidConvalessence
+convalessence=[回復期\かいふくき][液\えき]
+luminous
+luminous
+luminous
+convalessence
+"It's effervescent!"
+coldMinor,regenLowtierMinor
+
+cloning:LiquidCloning
+cloning draught=クローン[作成\さくせい][液\えき]
+homogenized
+homogenized
+homogenized
+cloning-draught-stained
+"You feel unsettlingly ambivalent."
+cloningMinor
+
+gel:LiquidGel
+gel=ゲル
+unctuous
+unctuous
+unctuous
+gel-stained
+"It's very greasy."
+{{Y|=subject.T= =verb:slip= on the gel!}}
+
+algae:LiquidAlgae
+algae=[緑藻\りょくそう]
+algal
+algal
+algae-covered
+algae-stained
+"The brine stings your mouth and fills your breath with lake air."
+plantMinor
+
+sap:LiquidSap
+sap=[樹\じゅ][液\えき]
+sugary
+sappy
+sappy
+sap-stained
+"It's sweet to the taste."
+
+honey:LiquidHoney
+honey=[蜂蜜\はちみつ]
+honeyed
+sticky
+sticky
+honey-stained
+"Delicious!"
+medicinalMinor
+
+starapple=[星\ほし][林檎\りんご]
+cider:LiquidCider
+cider=[林檎\りんご][酒\しゅ]
+//lit. "apple alcohol"
+spiced=風味豊かな
+// flavorful
+fragrant=香り高い
+fragrant
+cider-stained
+"It is spicy and delicious."
+quicknessMinor
+
+wine:LiquidWine
+wine=[葡萄\ぶどう][酒\しゅ]
+//lit. "grape alcohol"
+lush
+lush
+//
+lush
+//a full-bodied wine?
+wine-stained
+"You flush with the warming draught!"
+
+ink:LiquidInk
+ink=[墨\すみ]
+inky
+inky
+inky
+ink-stained
+"It's very inky."
+{{K|=subject.T= =verb:slip= on the ink!}}
+
+lava:LiquidLava
+lava=[溶岩\ようがん]
+magmatic
+magmatic
+lava-covered
+lava-stained
+"{{lava|IT BURNS!}}"
+heatMinor
+
+wax:LiquidWax
+molten wax=[溶融\ようゆう][蝋\ろう]
+waxen
+waxy
+waxy
+wax-stained
+"It's hot and disgusting."
+
+proteangunk:LiquidProteanGunk
+primordial soup=[原始\げんし]スープ
+soupy
+soupy
+soupy
+soup-stained
+"You feel the soup slosh around your stomach."
+
+brainbrine:LiquidBrainBrine
+brain brine=[脳塩水\のうえんすい]
+nervous [神経質\しんけいしつ]な
+nervous
+nervous
+brain-brine-stained
+"It tastes salty. Your mind starts to swim."
+confusion gas
+
+neutronflux:LiquidNeutronFlux
+neutron flux=[中性子\ちゅうせいし][溶剤\ようざい]
+//neutron + solvent/flux
+neutronic
+neutronic
+neutral
+flux-stained
+density
+fluxing
+fluxation
+
+sunslag:LiquidSunSlag
+sunslag=[太陽滓\たいようさい]
+//meant to pun on 太陽(the Sun) and 溶滓(slag)
+radiant
+radiant
+radiant
+sunslag
+"Brightness burns your mouth."
+
+warmstatic:LiquidWarmStatic
+warm static=[温\あたた]かいノイズ
+//or [雑音\ざつおん] instead of ノイズ?
+//"warm static" is a marketing term for "brown noise"?
+entropic=
+entropic
+entropic
+warm static-stained
+glitter dust=
+"=subject.T= =verb:glitch= into =object.an=."
+
+dram=ドラム
+mucus [粘液\ねんえき]
+sludge(monster)=ヘドロ
+words for sludge: [軟泥\なんでい] [汚泥\おでい] (mud)
+(noun)-stained=(noun)で[汚\よご]れた (dirtied by)
+(noun)-soaked  (noun)に[染\そ]まった (dyed with)
+
+desalination  [脱塩\だつえん]
+
+black [黒\くろ]い
+brown [褐色\かっしょく]
+green 緑色[みどりいろ]
+pound(s)  ポンド
+Weight: =intweight= lbs.
+[重\おも]さ　=intweight=ポンド
+
+{{=color=|=subject.T= =verb:slip= on the =liquid=!}}
+you:{{=color=|急に=liquid=で滑っちゃったよ！}}
+follower:{{=color=|急に=subject=が=liquid=で滑っちゃったよ！}}
+other:{{=color=|急に=subject=が=liquid=で滑った！}}

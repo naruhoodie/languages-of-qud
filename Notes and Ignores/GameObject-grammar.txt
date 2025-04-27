@@ -1,0 +1,20 @@
+GetVerb(string Verb, bool PrependSpace = true, bool PronounAntecedent = false, bool AdjunctAntecedent = false, bool SecondPerson = true, bool AsIfKnown = false)
+  expects a 2nd-person Verb (e.g. "are", "were", "give")
+  and returns the verb adjusted for the appropriate person&number
+  PronounAntecedent - whether the verb subject is a pronoun?
+  AdjunctAntecedent - whether the verb subject has an adjunct noun? ("pair of")
+
+an(...), An(...)
+  returns the object's display name with an indefinite article (a/an);
+  capitalized for An, uncapitalized for an
+
+t(...), T(...)
+  returns the object's display name with a definite article (the);
+  capitalized for T, uncapitalized for t
+
+ParticleText()
+  for showing shouts and effect emotes in the screen
+
+GetAdjunctNoun()
+  xml xTag adjunctNoun is technically a collective noun (e.g. "pair", "clump")
+  that the GO's noun modifies in an "=cnoun= of =GOnoun=" relationship

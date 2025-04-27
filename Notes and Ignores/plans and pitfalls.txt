@@ -1,0 +1,62 @@
+make IGrammar abstract classes
+also INounPhrase, IVerbPhrase
+
+I think it's best to work with string replacement patterns, NounPhrases & VerbPhrases.
+can have patterns for stock sentences "You died."
+
+best to provide translators an organized spreadsheet of phrases & sentences
+to work with, instead of the xml files
+  although we'll want to indicate context as well! context matters!
+
+- gnarf's new _S() and _T():
+  provide access to a lookup table of vocab, phrases, and sentence patterns.
+  gnarf is changing in-code bare strings & string-building to use this instead
+
+VariableReplacers.cs:
+  used for parsing template patterns like "You eat =fooditem.t=."
+  each language will have its own VariableReplacers with a Grammar,
+    both tuned to suit that language's needs
+
+Base Forms
+  both NounPhrases and VerbPhrases should have "base forms" for a language
+    could be the dictionary form or a particularly good "stem" inflection,
+    that provides the most salient information.
+  Languages with gender should have base form like "definite-article noun":
+    "der Hund", "die Katze", "el perro", "la tortuga", "le chien", "la tortue"
+    WHETHER OR NOT it will be using the definite article
+
+functionality a Grammar may need:
+  identify if a word starts with a vowel *sound*
+    for situations where preceding word (e.g. "a/an") depends on it
+  irregular pluralization
+  absent or rare pluralization
+  when plurals exist but aren't required in some contexts (Turkish)
+  different handling of plurals for small quantities vs larger (Russian 2-4,5+)
+  rules for when words are Capitalized (see: German nouns)
+  some languages drop pronouns when verb conjugation provides the context
+  sentence ordering: SVO, SOV, etc.
+  marking a topic/focus of a sentence
+  vowel harmony (Turkish)
+  formal vs informal "you"
+  categorizing by grammatical gender
+    MIGHT have semi-regular word endings for genders with some exceptions (de),
+    OR might reuse the same word with diff gender for diff meaning (fr),
+    so best to provide a noun's gender up-front
+  categorizing (usually people & their animals) by the individual's gender
+    which can occur in languages with or without grammatical gender
+  languages vary on support for neopronouns & gender-neutral inclusion
+    https://nonbinary.wiki/wiki/Gender_neutral_language
+  some languages use prepositions, some particles, some cases
+  definite/indefinite articles? not all have them
+  whether adjectives go before the noun or after
+  noun-phrase words that must agree with noun's gender/number/case/etc.
+    e.g. articles, demonstratives, adjectives
+  phrasal verbs and how they may be split
+  what needs to be marked to indicate possession relationships (e.g. "your hat")
+    may mark possesser, possessee, or both!
+  expected contractions (e.g. German "in dem" -> "im", "in das" -> "ins")
+  different sentence patterns when involving you/in-group member (Japanese)
+  whether an event was witnessed or hearsay
+
+  Some concepts are expressed with a different grammar structure,
+    like adjective vs verb vs noun (e.g. "I am hungry" vs "Ich habe Hunger")
