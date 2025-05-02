@@ -20,9 +20,15 @@ Comments should be deleted when copied to a new translation table.
   <string ID="Looks like there was some sort of battle to the north. Let’s grab the gear that was left behind.">Looks like there was some sort of battle to the north. Let’s grab the gear that was left behind.</string>
   <!--Code references: Assets/Game/UI/Tutorial/Intro/BattleRemains.cs:175-->
   <string ID="Keep moving forward.">Keep moving forward.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/BattleRemains.cs:183-->
+  <!--Code references:
+Assets/Game/UI/Tutorial/Intro/BattleRemains.cs:183
+Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:289
+-->
   <string ID="Let's take a look at the Equipment screen.&#xA;&#xA;Press =commandKey:CmdCharacter=" Value="Let's take a look at the Equipment screen.&#xA;&#xA;Press =commandKey:CmdCharacter=" />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/BattleRemains.cs:187-->
+  <!--Code references:
+Assets/Game/UI/Tutorial/Intro/BattleRemains.cs:187
+Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:293
+-->
   <string ID="Let's take a look at the Equipment screen.&#xA;&#xA;Press =commandKey:CmdEquipment=" Value="Let's take a look at the Equipment screen.&#xA;&#xA;Press =commandKey:CmdEquipment=" />
   <!--Code references: Assets/Game/UI/Tutorial/Intro/BattleRemains.cs:199-->
   <string ID="Hold on, we want to show you the tooltip compare feature.">Hold on, we want to show you the tooltip compare feature.</string>
@@ -39,6 +45,7 @@ Comments should be deleted when copied to a new translation table.
   <!--Code references:
 Assets/Game/UI/Tutorial/Intro/BattleRemains.cs:243
 Assets/Game/UI/Tutorial/Intro/ExamineChemcell.cs:144
+Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:341
 -->
   <string ID="Select the Inventory &amp;&amp; Equipment tab.&#xA;&#xA;You can use =commandKey:Page Left= and =commandKey:Page Right= to navigate between tabs." Value="Select the Inventory &amp;&amp; Equipment tab.&#xA;&#xA;You can use =commandKey:Page Left= and =commandKey:Page Right= to navigate between tabs." />
   <!--Code references: Assets/Game/UI/Tutorial/Intro/ExamineChemcell.cs:52-->
@@ -63,6 +70,186 @@ Assets/Game/UI/Tutorial/Intro/ExamineChemcell.cs:138
 Assets/Game/UI/Tutorial/Intro/ExamineChemcell.cs:157
 -->
   <string ID="This is an artifact beyond simple understanding. Try examining it.">This is an artifact beyond simple understanding. Try examining it.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreDeeper.cs:43-->
+  <string ID="The whole game world is a series of contiguous maps. Our passage continues off screen. Let's follow it. Walk north.">The whole game world is a series of contiguous maps. Our passage continues off screen. Let's follow it. Walk north.</string>
+  <!--Code references:
+Assets/Game/UI/Tutorial/Intro/ExploreDeeper.cs:48
+Assets/Game/UI/Tutorial/Intro/ExploreDeeper.cs:52
+-->
+  <string ID="Let's move on. Keep exploring.">Let's move on. Keep exploring.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreJoppa.cs:62-->
+  <string ID="Choose Mehmet.">Choose Mehmet.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreJoppa.cs:67-->
+  <string ID="Oh! it looks like Warden Yrame killed Mehmet. Why, you ask?&#xA;&#xA;Well, named creatures who you can perform the water ritual with, like Mehmet, generate with dynamic faction relationships. In your game, Mehmet must have been hated by the Fellowship of Wardens for some reason." Value="Oh! it looks like Warden Yrame killed Mehmet. Why, you ask?&#xA;&#xA;Well, named creatures who you can perform the water ritual with, like Mehmet, generate with dynamic faction relationships. In your game, Mehmet must have been hated by the Fellowship of Wardens for some reason." />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreJoppa.cs:69-->
+  <string ID="And so Warden Yrame took her revenge. In Qud, sometimes even our best efforts at providing a safe starter village are foiled by the simulation!&#xA;&#xA;What a charmed run! It's quite rare for this to happen, but now you get to see this hidden section of the tutorial. Good job." Value="And so Warden Yrame took her revenge. In Qud, sometimes even our best efforts at providing a safe starter village are foiled by the simulation!&#xA;&#xA;What a charmed run! It's quite rare for this to happen, but now you get to see this hidden section of the tutorial. Good job." />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreJoppa.cs:71-->
+  <string ID="You have a few options now. You can roll with it and continue in this world where Mehmet's been revenge-slain. The early game will be a bit harder, but the main quest is not impacted.&#xA;&#xA;You can start over and play the tutorial again, for the &quot;normal&quot; ending, which you were about to reach.&#xA;&#xA;Or, since you were near the end anyway, you can start a new game and begin your journey proper!" Value="You have a few options now. You can roll with it and continue in this world where Mehmet's been revenge-slain. The early game will be a bit harder, but the main quest is not impacted.&#xA;&#xA;You can start over and play the tutorial again, for the &quot;normal&quot; ending, which you were about to reach.&#xA;&#xA;Or, since you were near the end anyway, you can start a new game and begin your journey proper!" />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreJoppa.cs:73-->
+  <string ID="Whatever you choose, good luck, and feel free to return here for a refresher.&#xA;&#xA;Live and drink." Value="Whatever you choose, good luck, and feel free to return here for a refresher.&#xA;&#xA;Live and drink." />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreJoppa.cs:86-->
+  <string ID="Quetzal! That's all for the tutorial, friend.&#xA;&#xA;We just scratched the very tip of the surface. Quests, secrets, leveling up, physics, reputation, limbs... we leave that for you to discover." Value="Quetzal! That's all for the tutorial, friend.&#xA;&#xA;We just scratched the very tip of the surface. Quests, secrets, leveling up, physics, reputation, limbs... we leave that for you to discover." />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreJoppa.cs:88-->
+  <string ID="You're ready to continue the journey on your own, but don't hesitate to play the tutorial again if you need a refresher.">You're ready to continue the journey on your own, but don't hesitate to play the tutorial again if you need a refresher.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreJoppa.cs:90-->
+  <string ID="Live and drink.">Live and drink.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreJoppa.cs:105-->
+  <string ID="Joppa is a village. Everything you learned in the cave applies here too. Villages are like caves with very high roofs.">Joppa is a village. Everything you learned in the cave applies here too. Villages are like caves with very high roofs.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreJoppa.cs:112-->
+  <string ID="You can see a list of points of interest by pressing =commandKey:CmdMoveToPointOfInterest=.&#xA;&#xA;The list will grow as you explore more of the map." Value="You can see a list of points of interest by pressing =commandKey:CmdMoveToPointOfInterest=.&#xA;&#xA;The list will grow as you explore more of the map." />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreJoppa.cs:116-->
+  <string ID="You can see a list of points of interest by clicking this button or pressing =commandKey:CmdMoveToPointOfInterest=.&#xA;&#xA;The list will grow as you explore more of the map." Value="You can see a list of points of interest by clicking this button or pressing =commandKey:CmdMoveToPointOfInterest=.&#xA;&#xA;The list will grow as you explore more of the map." />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreStairs.cs:61-->
+  <string ID="Ascend.&#xA;&#xA;Press =commandKey:CmdMoveU=." Value="Ascend.&#xA;&#xA;Press =commandKey:CmdMoveU=." />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreStairs.cs:65-->
+  <string ID="Ascend.&#xA;&#xA;You can click this button or press =commandKey:CmdMoveU=." Value="Ascend.&#xA;&#xA;You can click this button or press =commandKey:CmdMoveU=." />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreStairs.cs:74-->
+  <string ID="Finally, a staircase. Walk over to it.">Finally, a staircase. Walk over to it.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreStairs.cs:79-->
+  <string ID="Keep exploring.">Keep exploring.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreWorldMap.cs:38-->
+  <string ID="You'll be able to explore the world freely after the tutorial.&#xA;&#xA;For now, let's visit Joppa." Value="You'll be able to explore the world freely after the tutorial.&#xA;&#xA;For now, let's visit Joppa." />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreWorldMap.cs:74-->
+  <string ID="You can look around here just like on a local map.&#xA;&#xA;Use =commandKey:LookDirection=" Value="You can look around here just like on a local map.&#xA;&#xA;Use =commandKey:LookDirection=" />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreWorldMap.cs:78-->
+  <string ID="You can look around here just like on a local map.&#xA;&#xA;Press =commandKey:CmdLook=" Value="You can look around here just like on a local map.&#xA;&#xA;Press =commandKey:CmdLook=" />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreWorldMap.cs:88-->
+  <string ID="Descend.&#xA;&#xA;Press =commandKey:CmdMoveD=." Value="Descend.&#xA;&#xA;Press =commandKey:CmdMoveD=." />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreWorldMap.cs:92-->
+  <string ID="Descend.&#xA;&#xA;You can click this button or press =commandKey:CmdMoveD=." Value="Descend.&#xA;&#xA;You can click this button or press =commandKey:CmdMoveD=." />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreWorldMap.cs:99-->
+  <string ID="There's a village to the north called Joppa. Let's go there.&#xA;&#xA;Hold =commandKey:IndicateDirection= towards the north and press =commandKey:Take A Step=." Value="There's a village to the north called Joppa. Let's go there.&#xA;&#xA;Hold =commandKey:IndicateDirection= towards the north and press =commandKey:Take A Step=." />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreWorldMap.cs:103-->
+  <string ID="There's a village to the north called Joppa. Let's go there.&#xA;&#xA;Press =commandKey:CmdMoveN= or =commandKey:AdventureMouseContextAction=." Value="There's a village to the north called Joppa. Let's go there.&#xA;&#xA;Press =commandKey:CmdMoveN= or =commandKey:AdventureMouseContextAction=." />
+  <!--Code references:
+Assets/Game/UI/Tutorial/Intro/FightBear.cs:40
+Assets/Game/UI/Tutorial/Intro/FightBear.cs:114
+-->
+  <string ID="Wait for the bear to take a step towards you.">Wait for the bear to take a step towards you.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightBear.cs:50-->
+  <string ID="Make sure the bear is in the path of your freezing ray.">Make sure the bear is in the path of your freezing ray.</string>
+  <!--Code references:
+Assets/Game/UI/Tutorial/Intro/FightBear.cs:60
+Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:28
+-->
+  <string ID="What's that??? Some sort of creature. Take a closer look at it.">What's that??? Some sort of creature. Take a closer look at it.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightBear.cs:68-->
+  <string ID="It's quite dangerous to fight this bear in melee combat! Try backing away and using Freezing Ray.">It's quite dangerous to fight this bear in melee combat! Try backing away and using Freezing Ray.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightBear.cs:94-->
+  <string ID="Let's take a look at the bear before we continue.">Let's take a look at the bear before we continue.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightBear.cs:171-->
+  <string ID="Keep moving down the passage...">Keep moving down the passage...</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightBear.cs:176-->
+  <string ID="Oh! Another creature. Let's look at it more closely.&#xA;&#xA;When you come across something new, it's always a good idea to inspect it." Value="Oh! Another creature. Let's look at it more closely.&#xA;&#xA;When you come across something new, it's always a good idea to inspect it." />
+  <!--Code references:
+Assets/Game/UI/Tutorial/Intro/FightBear.cs:185
+Assets/Game/UI/Tutorial/Intro/FightBear.cs:219
+-->
+  <string ID="It's a bear.">It's a bear.</string>
+  <!--Code references:
+Assets/Game/UI/Tutorial/Intro/FightBear.cs:188
+Assets/Game/UI/Tutorial/Intro/FightBear.cs:222
+-->
+  <string ID="The bear is wounded, but it's tough. This'll be a harder fight.">The bear is wounded, but it's tough. This'll be a harder fight.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightBear.cs:197-->
+  <string ID="Inspect the bear.">Inspect the bear.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightBear.cs:204-->
+  <string ID="Use =commandKey:LookDirection= to look at the bear.">Use =commandKey:LookDirection= to look at the bear.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightBear.cs:208-->
+  <string ID="Press =commandKey:CmdLook= or =commandKey:AdventureMouseInteract= the bear.">Press =commandKey:CmdLook= or =commandKey:AdventureMouseInteract= the bear.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightBear.cs:231-->
+  <string ID="Look view lets you look around and investigate your surroundings.&#xA;&#xA;Move the cursor to the bear." Value="Look view lets you look around and investigate your surroundings.&#xA;&#xA;Move the cursor to the bear." />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightBear.cs:244-->
+  <string ID="Bump attack the bear.">Bump attack the bear.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightBear.cs:252-->
+  <string ID="You can wait a turn for the bear to approach. That way, it won't be in range to attack you when it takes its turn.&#xA;&#xA;Tap =commandKey:Take A Step= without choosing a direction with the stick to pass a turn." Value="You can wait a turn for the bear to approach. That way, it won't be in range to attack you when it takes its turn.&#xA;&#xA;Tap =commandKey:Take A Step= without choosing a direction with the stick to pass a turn." />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightBear.cs:256-->
+  <string ID="You can wait a turn for the bear to approach. That way, it won't be in range to attack you when it takes its turn.&#xA;&#xA;Press =commandKey:CmdWait:allbinds= or =commandKey:AdventureMouseContextAction= on your character to pass a turn." Value="You can wait a turn for the bear to approach. That way, it won't be in range to attack you when it takes its turn.&#xA;&#xA;Press =commandKey:CmdWait:allbinds= or =commandKey:AdventureMouseContextAction= on your character to pass a turn." />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightBear.cs:265-->
+  <string ID="You missed, then the bear attacked and missed.&#xA;&#xA;Attack again." Value="You missed, then the bear attacked and missed.&#xA;&#xA;Attack again." />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightBear.cs:271-->
+  <string ID="This time you hit, but you failed to penetrate the bear's armor.&#xA;&#xA;Then, the bear hit you and DID penetrate your armor. You took 4 damage." Value="This time you hit, but you failed to penetrate the bear's armor.&#xA;&#xA;Then, the bear hit you and DID penetrate your armor. You took 4 damage." />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightBear.cs:281-->
+  <string ID="Let's try using an ability. Look at your ability bar. Let's start sprinting. &#xA;&#xA;Select it with =commandKey:Next Ability= and =commandKey:Previous Ability= then press =commandKey:Use Ability=." Value="Let's try using an ability. Look at your ability bar. Let's start sprinting. &#xA;&#xA;Select it with =commandKey:Next Ability= and =commandKey:Previous Ability= then press =commandKey:Use Ability=." />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightBear.cs:285-->
+  <string ID="Let's try using an ability. Look at your ability bar. Let's start sprinting. You can click the button or hit the hotkey =commandKey:CmdAbility1=.">Let's try using an ability. Look at your ability bar. Let's start sprinting. You can click the button or hit the hotkey =commandKey:CmdAbility1=.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightBear.cs:298-->
+  <string ID="Sprinting doubles your movespeed but ends if you make an attack. Let's sprint back down the corridor to put some distance between us and the bear.">Sprinting doubles your movespeed but ends if you make an attack. Let's sprint back down the corridor to put some distance between us and the bear.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightBear.cs:313-->
+  <string ID="Every character has Sprint, but most of your abilities are determined by traits like your mutations. You have Freezing Ray, so you can shoot frost out of your hands.&#xA;&#xA;Select it with =commandKey:Next Ability= and =commandKey:Previous Ability= then press =commandKey:Use Ability=." Value="Every character has Sprint, but most of your abilities are determined by traits like your mutations. You have Freezing Ray, so you can shoot frost out of your hands.&#xA;&#xA;Select it with =commandKey:Next Ability= and =commandKey:Previous Ability= then press =commandKey:Use Ability=." />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightBear.cs:317-->
+  <string ID="Every character has Sprint, but most of your abilities are determined by traits like your mutations. You have Freezing Ray, so you can shoot frost out of your hands. Select it.&#xA;&#xA;Press =commandKey:CmdAbility2=" Value="Every character has Sprint, but most of your abilities are determined by traits like your mutations. You have Freezing Ray, so you can shoot frost out of your hands. Select it.&#xA;&#xA;Press =commandKey:CmdAbility2=" />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:35-->
+  <string ID="Before you move on, you should loot the corpse of the snapjaw.">Before you move on, you should loot the corpse of the snapjaw.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:74-->
+  <string ID="Take a look at the snapjaw before we continue.">Take a look at the snapjaw before we continue.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:113-->
+  <string ID="Huh, you somehow destroyed the leather armor. Let's move on.">Huh, you somehow destroyed the leather armor. Let's move on.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:129-->
+  <string ID="Let's explore further into the cave.">Let's explore further into the cave.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:133-->
+  <string ID="Let's explore further into the cave.&#xA;&#xA;Walk down the passage." Value="Let's explore further into the cave.&#xA;&#xA;Walk down the passage." />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:154-->
+  <string ID="Looking at a creature shows its description and some other important details. Every object in the world can be looked at.">Looking at a creature shows its description and some other important details. Every object in the world can be looked at.</string>
+  <!--Code references:
+Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:157
+Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:189
+-->
+  <string ID="The snapjaw is hostile! Let's get ready for a fight.">The snapjaw is hostile! Let's get ready for a fight.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:164-->
+  <string ID="Inspect the snapjaw.">Inspect the snapjaw.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:171-->
+  <string ID="Use =commandKey:LookDirection= to look at the snapjaw.">Use =commandKey:LookDirection= to look at the snapjaw.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:175-->
+  <string ID="Press =commandKey:CmdLook= or =commandKey:AdventureMouseInteract= the snapjaw.">Press =commandKey:CmdLook= or =commandKey:AdventureMouseInteract= the snapjaw.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:186-->
+  <string ID="Here we have a description of the creature, along with some details about them.">Here we have a description of the creature, along with some details about them.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:195-->
+  <string ID="Look view lets you look around and investigate your surroundings.&#xA;&#xA;Move the cursor to the snapjaw." Value="Look view lets you look around and investigate your surroundings.&#xA;&#xA;Move the cursor to the snapjaw." />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:209-->
+  <string ID="All actions are turn-based, meaning you take a turn, then other creatures take a turn. For the most part, creatures won't act until you do.&#xD;&#xA;&#xD;&#xA;If you ever get panicked, just slow down and consider your next move. There's no rush." Value="All actions are turn-based, meaning you take a turn, then other creatures take a turn. For the most part, creatures won't act until you do.&#xD;&#xA;&#xD;&#xA;If you ever get panicked, just slow down and consider your next move. There's no rush." />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:227-->
+  <string ID="You can attack a hostile creature by moving into its square. This is called {{W|bump attacking}}.">You can attack a hostile creature by moving into its square. This is called {{W|bump attacking}}.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:231-->
+  <string ID="Take a step toward the snapjaw.">Take a step toward the snapjaw.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:250-->
+  <string ID="You can pick up things that are in the same space as you.&#xA;&#xA;Press =commandKey:CmdUse=" Value="You can pick up things that are in the same space as you.&#xA;&#xA;Press =commandKey:CmdUse=" />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:254-->
+  <string ID="You can pick up things that are in the same space as you.&#xA;&#xA;Press =commandKey:CmdGet=" Value="You can pick up things that are in the same space as you.&#xA;&#xA;Press =commandKey:CmdGet=" />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:260-->
+  <string ID="Whew! You killed the snapjaw and earned some experience. It looks like they dropped a piece of equipment, too.&#xA;&#xA;Press =commandKey:CmdGetFrom= and then choose a direction or press =commandKey:AdventureMouseInteract=." Value="Whew! You killed the snapjaw and earned some experience. It looks like they dropped a piece of equipment, too.&#xA;&#xA;Press =commandKey:CmdGetFrom= and then choose a direction or press =commandKey:AdventureMouseInteract=." />
+  <!--Code references:
+Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:270
+Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:318
+-->
+  <string ID="Let's look at the leather armor you picked up.&#xA;&#xA;Armor has an armor value ({{b|♦}}{{y|2}}) and a dodge value ({{K|○}}{{y|0}})&#xA;&#xA;Both help you avoid damage." Value="Let's look at the leather armor you picked up.&#xA;&#xA;Armor has an armor value ({{b|♦}}{{y|2}}) and a dodge value ({{K|○}}{{y|0}})&#xA;&#xA;Both help you avoid damage." />
+  <!--Code references:
+Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:275
+Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:323
+-->
+  <string ID="Let's equip it.">Let's equip it.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:281-->
+  <string ID="It's leather armor. This time, get it instead of equipping it.">It's leather armor. This time, get it instead of equipping it.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:310-->
+  <string ID="This is your equipment and inventory screen. Equipped items on the left, and inventory on the right.">This is your equipment and inventory screen. Equipped items on the left, and inventory on the right.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:332-->
+  <string ID="You can also equip items by dragging them from your inventory to their equipment slot.&#xA;&#xA;By the way, you have several other tabs in your character sheet. Feel free to explore them later." Value="You can also equip items by dragging them from your inventory to their equipment slot.&#xA;&#xA;By the way, you have several other tabs in your character sheet. Feel free to explore them later." />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/GetBooks.cs:75-->
+  <string ID="There's something else over here.">There's something else over here.</string>
+  <!--Code references:
+Assets/Game/UI/Tutorial/Intro/GetBooks.cs:79
+Assets/Game/UI/Tutorial/Intro/GetBooks.cs:108
+-->
+  <string ID="Sometimes squares have multiple items in them.&#xA;&#xA;To see everything in a space, press =commandKey:CmdGetFrom= and then choose a direction or press =commandKey:AdventureMouseInteractAll=." Value="Sometimes squares have multiple items in them.&#xA;&#xA;To see everything in a space, press =commandKey:CmdGetFrom= and then choose a direction or press =commandKey:AdventureMouseInteractAll=." />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/GetBooks.cs:88-->
+  <string ID="Whoever this was, they had some books. All books can be read in game.&#xA;&#xA;Books with {{Y|white}} titles are generated and usually contain nonsense, but the nonsense can occasionally be useful.&#xA;&#xA;Books with {{W|gold}} titles are more valuable: they are handwritten by in-world beings and contain interesting takes on the world." Value="Whoever this was, they had some books. All books can be read in game.&#xA;&#xA;Books with {{Y|white}} titles are generated and usually contain nonsense, but the nonsense can occasionally be useful.&#xA;&#xA;Books with {{W|gold}} titles are more valuable: they are handwritten by in-world beings and contain interesting takes on the world." />
+  <!--Code references:
+Assets/Game/UI/Tutorial/Intro/GetBooks.cs:118
+Assets/Game/UI/Tutorial/Intro/GetBooks.cs:120
+-->
+  <string ID="Get the books.">Get the books.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/GetBooks.cs:124-->
+  <string ID="This water is valuable too. Take it all.">This water is valuable too. Take it all.</string>
   <!--Code references: Assets/Game/UI/Tutorial/Intro/IntroTutorial.cs:43-->
   <string ID="Welcome to the Caves of Qud tutorial. We'll just be scratching the surface here, learning enough of the basics to help you get your footing.&#xA;&#xA;In Caves of Qud, you play as a mutated human or true kin.&#xA;&#xA;For the tutorial, we're picking mutated human." Value="Welcome to the Caves of Qud tutorial. We'll just be scratching the surface here, learning enough of the basics to help you get your footing.&#xA;&#xA;In Caves of Qud, you play as a mutated human or true kin.&#xA;&#xA;For the tutorial, we're picking mutated human." />
   <!--Code references: Assets/Game/UI/Tutorial/Intro/IntroTutorial.cs:52-->
@@ -73,6 +260,62 @@ Assets/Game/UI/Tutorial/Intro/ExamineChemcell.cs:157
   <string ID="You can name your character or choose Next for a random name.">You can name your character or choose Next for a random name.</string>
   <!--Code references: Assets/Game/UI/Tutorial/Intro/IntroTutorial.cs:92-->
   <string ID="On the 30th of Kisu Ux, you scuttle down a dark shaft at the edge of a sunken trade path and arrive at a caravanserai. It's powdered in salt and dust from across the ribbon of time.">On the 30th of Kisu Ux, you scuttle down a dark shaft at the edge of a sunken trade path and arrive at a caravanserai. It's powdered in salt and dust from across the ribbon of time.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/MakeCamp.cs:43-->
+  <string ID="Tastes good.">Tastes good.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/MakeCamp.cs:96-->
+  <string ID="We're on the surface now. We can walk the whole world this way, or we can access the worldmap to fast travel.">We're on the surface now. We can walk the whole world this way, or we can access the worldmap to fast travel.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/MakeCamp.cs:99-->
+  <string ID="But first, you just became hungry. You need to eat.">But first, you just became hungry. You need to eat.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/MakeCamp.cs:114-->
+  <string ID="Let's make camp. How about next to that beetle over there.">Let's make camp. How about next to that beetle over there.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/MakeCamp.cs:122-->
+  <string ID="Use the campfire.">Use the campfire.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/MakeCamp.cs:126-->
+  <string ID="Make camp.">Make camp.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/MakeCamp.cs:143-->
+  <string ID="Let's not be rude. Talk to the beetle.&#xA;&#xA;Press =commandKey:CmdUse= or =commandKey:AdventureMouseContextAction=." Value="Let's not be rude. Talk to the beetle.&#xA;&#xA;Press =commandKey:CmdUse= or =commandKey:AdventureMouseContextAction=." />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/MakeCamp.cs:147-->
+  <string ID="Let's not be rude. Talk to the beetle.">Let's not be rude. Talk to the beetle.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/MakeCamp.cs:153-->
+  <string ID="Not much of a talker. But that's not true for everyone. As long as a creature isn't hostile, you can try to chat with them.&#xA;&#xA;Let see what the beetle has for trade." Value="Not much of a talker. But that's not true for everyone. As long as a creature isn't hostile, you can try to chat with them.&#xA;&#xA;Let see what the beetle has for trade." />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/MakeCamp.cs:161-->
+  <string ID="The beetle's inventory is on the left, and your inventory is on the right.&#xA;&#xA;The beetle has some witchwood bark. That's useful — it heals you when you eat it. Let's trade for it." Value="The beetle's inventory is on the left, and your inventory is on the right.&#xA;&#xA;The beetle has some witchwood bark. That's useful — it heals you when you eat it. Let's trade for it." />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/MakeCamp.cs:171-->
+  <string ID="The beetle has some witchwood bark. That's useful — it heals you when you eat it. Let's trade for it.&#xA;&#xA;Press =commandKey:CmdTradeAdd= or =commandKey:AdventureMouseContextAction=" Value="The beetle has some witchwood bark. That's useful — it heals you when you eat it. Let's trade for it.&#xA;&#xA;Press =commandKey:CmdTradeAdd= or =commandKey:AdventureMouseContextAction=" />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/MakeCamp.cs:176-->
+  <string ID="We don't need this dagger any more, so we can trade it away.&#xA;&#xA;Press =commandKey:CmdTradeAdd= or =commandKey:AdventureMouseContextAction=" Value="We don't need this dagger any more, so we can trade it away.&#xA;&#xA;Press =commandKey:CmdTradeAdd= or =commandKey:AdventureMouseContextAction=" />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/MakeCamp.cs:180-->
+  <string ID="Complete the trade.">Complete the trade.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/MakeCamp.cs:187-->
+  <string ID="The trade is uneven, so we'll have to pony up some money.&#xA;&#xA;In the salt-stippled ecosystem of Qud, {{B|fresh water}} is currency. You need to drink it, too, so don't spend it all." Value="The trade is uneven, so we'll have to pony up some money.&#xA;&#xA;In the salt-stippled ecosystem of Qud, {{B|fresh water}} is currency. You need to drink it, too, so don't spend it all." />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/MakeCamp.cs:197-->
+  <string ID="Now to go to the world map. Try ascending again.&#xA;&#xA;Press =commandKey:CmdMoveU=." Value="Now to go to the world map. Try ascending again.&#xA;&#xA;Press =commandKey:CmdMoveU=." />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/MakeCamp.cs:201-->
+  <string ID="Now to go to the world map. Try ascending again.&#xA;&#xA;You can click this button or press =commandKey:CmdMoveU=." Value="Now to go to the world map. Try ascending again.&#xA;&#xA;You can click this button or press =commandKey:CmdMoveU=." />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/MoveToChest.cs:24-->
+  <string ID="Before you move on, you should equip yourself from the nearby chest.">Before you move on, you should equip yourself from the nearby chest.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/MoveToChest.cs:74-->
+  <string ID="This is the main gameplay stage. At the top of the screen are your attributes, HP, and XP.&#xA;&#xA;On the right are action buttons, minimap, and the message log.&#xA;&#xA;At the bottom is your ability hotbar." Value="This is the main gameplay stage. At the top of the screen are your attributes, HP, and XP.&#xA;&#xA;On the right are action buttons, minimap, and the message log.&#xA;&#xA;At the bottom is your ability hotbar." />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/MoveToChest.cs:77-->
+  <string ID="Let's explore this cave we've found ourselves in.">Let's explore this cave we've found ourselves in.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/MoveToChest.cs:93-->
+  <string ID="Huh, you destroyed the tutorial chest we were going to teach you how to use.&#xA;&#xA;Go ahead and pick of the torch and dagger from the floor." Value="Huh, you destroyed the tutorial chest we were going to teach you how to use.&#xA;&#xA;Go ahead and pick of the torch and dagger from the floor." />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/MoveToChest.cs:164-->
+  <string ID="A torch. When it's nighttime or when you're underground, you need a torch equipped to see. Select it.">A torch. When it's nighttime or when you're underground, you need a torch equipped to see. Select it.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/MoveToChest.cs:166-->
+  <string ID="Equip the dagger too.">Equip the dagger too.</string>
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/MoveToChest.cs:177-->
+  <string ID="You can interact with objects you're next to. Open the chest.&#xA;&#xA;Press =commandKey:Accept=" Value="You can interact with objects you're next to. Open the chest.&#xA;&#xA;Press =commandKey:Accept=" />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/MoveToChest.cs:181-->
+  <string ID="You can interact with objects you're next to. Open the chest.&#xA;&#xA;Press =commandKey:Accept= or =commandKey:AdventureMouseContextAction=" Value="You can interact with objects you're next to. Open the chest.&#xA;&#xA;Press =commandKey:Accept= or =commandKey:AdventureMouseContextAction=" />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/MoveToChest.cs:188-->
+  <string ID="Looks like there's a chest over at the end of the room. Let's walk over to it.&#xA;&#xA;Hold =commandKey:IndicateDirection= in the direction you want to move and press =commandKey:Take A Step=." Value="Looks like there's a chest over at the end of the room. Let's walk over to it.&#xA;&#xA;Hold =commandKey:IndicateDirection= in the direction you want to move and press =commandKey:Take A Step=." />
+  <!--Code references: Assets/Game/UI/Tutorial/Intro/MoveToChest.cs:192-->
+  <string ID="Looks like there's a chest over at the end of the room. Let's walk over to it.&#xA;&#xA;You can click =commandKey:AdventureNavMouseLeftClick= the square you want to move to, or use the {{hotkey|arrow keys}} or {{hotkey|numpad.}}&#xA;&#xA;With arrow keys, you can press {{hotkey|shift+arrow keys}} to move diagonally." Value="Looks like there's a chest over at the end of the room. Let's walk over to it.&#xA;&#xA;You can click =commandKey:AdventureNavMouseLeftClick= the square you want to move to, or use the {{hotkey|arrow keys}} or {{hotkey|numpad.}}&#xA;&#xA;With arrow keys, you can press {{hotkey|shift+arrow keys}} to move diagonally." />
+  <!--Code references: Assets/Game/UI/Tutorial/TutorialManager.cs:212-->
+  <string ID="TUTORIAL GUIDE">TUTORIAL GUIDE</string>
+  <!--Code references: Assets/Game/UI/Tutorial/TutorialManager.cs:217-->
+  <string ID="[=commandKey:Accept=] Continue">[=commandKey:Accept=] Continue</string>
   <!--Code references: Assets/Game/UI/Tutorial/TutorialStep.cs:21-->
   <string ID="We're not quite ready to leave yet.">We're not quite ready to leave yet.</string>
   <!--Code references: Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:55-->
@@ -95,21 +338,25 @@ Assets/Game/UI/Tutorial/Intro/ExamineChemcell.cs:157
   <string ID="Credits">Credits</string>
   <!--Code references: Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:71-->
   <string ID="Help">Help</string>
-  <!--Code references: Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:371-->
+  <!--Code references: Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:340-->
+  <string ID="Select Language">Select Language</string>
+  <!--Code references: Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:341-->
+  <string ID="Note: Playing a saved game in a language other than that game's original language will result in partial and incomplete translations.">Note: Playing a saved game in a language other than that game's original language will result in partial and incomplete translations.</string>
+  <!--Code references: Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:376-->
   <string ID="That save file looks like it's from an older save format revision (=gameVersion=). Sorry!&#xA;&#xA;You can probably change to a previous branch in your game client and get it to load if you want to finish it off." Value="That save file looks like it's from an older save format revision (=gameVersion=). Sorry!&#xA;&#xA;You can probably change to a previous branch in your game client and get it to load if you want to finish it off." />
-  <!--Code references: Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:397-->
+  <!--Code references: Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:402-->
   <string ID="Are you sure you want to quit?">Are you sure you want to quit?</string>
   <!--Code references:
-Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:420
+Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:425
 Assets/XRL Application/Game Core/EmbarkBuilder/EmbarkBuilderModuleWindowBase.cs:98
 -->
   <string ID="navigate">navigate</string>
   <!--Code references:
-Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:425
+Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:430
 Assets/XRL Application/Game Core/EmbarkBuilder/EmbarkBuilderModuleWindowBase.cs:103
 -->
   <string ID="select">select</string>
-  <!--Code references: Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:430-->
+  <!--Code references: Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:435-->
   <string ID="quit">quit</string>
   <!--Code references: Assets/Game/UI/Windows/PopupMessage/PopupMessage.cs:46-->
   <string ID="{{W|[=commandKey:Cancel=]}} {{y|Cancel}}">{{W|[=commandKey:Cancel=]}} {{y|Cancel}}</string>
@@ -349,6 +596,24 @@ Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudMutationsModuleWindow.cs:3
   <string ID="subtype">subtype</string>
   <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudSubtypeModuleWindow.cs:61-->
   <string ID=":=subtypetitle=:">:=subtypetitle=:</string>
+  <!--Code references: Assets/XRL Application/Qud.API/Qud.API.Journal.cs:1421-->
+  <string ID="journal category:Artifacts">Artifacts</string>
+  <!--Code references: Assets/XRL Application/Qud.API/Qud.API.Journal.cs:1422-->
+  <string ID="journal category:Historic Sites">Historic Sites</string>
+  <!--Code references: Assets/XRL Application/Qud.API/Qud.API.Journal.cs:1423-->
+  <string ID="journal category:Lairs">Lairs</string>
+  <!--Code references: Assets/XRL Application/Qud.API/Qud.API.Journal.cs:1424-->
+  <string ID="journal category:Merchants">Merchants</string>
+  <!--Code references: Assets/XRL Application/Qud.API/Qud.API.Journal.cs:1425-->
+  <string ID="journal category:Natural Features">Natural Features</string>
+  <!--Code references: Assets/XRL Application/Qud.API/Qud.API.Journal.cs:1426-->
+  <string ID="journal category:Oddities">Oddities</string>
+  <!--Code references: Assets/XRL Application/Qud.API/Qud.API.Journal.cs:1427-->
+  <string ID="journal category:Ruins with Becoming Nooks">Ruins with Becoming Nooks</string>
+  <!--Code references: Assets/XRL Application/Qud.API/Qud.API.Journal.cs:1428-->
+  <string ID="journal category:Ruins">Ruins</string>
+  <!--Code references: Assets/XRL Application/Qud.API/Qud.API.Journal.cs:1429-->
+  <string ID="journal category:Settlements">Settlements</string>
   <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:221-->
   <string ID="door:close">close</string>
   <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:232-->
@@ -394,8 +659,136 @@ Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:1148
 Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:1184
 -->
   <string ID="door open reason: because you cannot figure out how" Value=" because you cannot figure out how" />
-  <!--Code references: Assets/XRL Application/World/Text/Delegates.cs:448-->
+  <!--Code references: Assets/XRL Application/World/Text/Delegates.cs:449-->
   <string ID="keybind:unknown key">unknown key</string>
-  <!--Code references: Assets/XRL Application/World/Text/Delegates.cs:459-->
+  <!--Code references: Assets/XRL Application/World/Text/Delegates.cs:464-->
   <string ID="keybind:{{W|Alt}}">{{W|Alt}}</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:234-->
+  <string ID="Generating lairs...">Generating lairs...</string>
+  <!--Code references:
+Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:301
+Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:336
+Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2670
+-->
+  <string ID="You notice some ruins nearby. Would you like to investigate?">You notice some ruins nearby. Would you like to investigate?</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:360-->
+  <string ID="=goatfolkvillagename=, goatfolk village">=goatfolkvillagename=, goatfolk village</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:371-->
+  <string ID="You smell roasted boar nearby. Would you like to investigate?">You smell roasted boar nearby. Would you like to investigate?</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:393-->
+  <string ID="=villagename=, goatfolk haunt">=villagename=, goatfolk haunt</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:402-->
+  <string ID="You experience a sense memory of roasted boar smell. Would you like to investigate?">You experience a sense memory of roasted boar smell. Would you like to investigate?</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1041-->
+  <string ID=" {{K|-learned from =factionname=}}" Value=" {{K|-learned from =factionname=}}" />
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1048-->
+  <string ID="You discover an abandoned village. Would you like to investigate?">You discover an abandoned village. Would you like to investigate?</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1052-->
+  <string ID="You discover a village. Would you like to investigate?">You discover a village. Would you like to investigate?</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1269-->
+  <string ID="You discover =regionName=.">You discover =regionName=.</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1289-->
+  <string ID=" {{K|-known by =faction.t:Joppa=}}" Value=" {{K|-known by =faction.t:Joppa=}}" />
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1292-->
+  <string ID="You discover some historic ruins. Would you like to investigate?">You discover some historic ruins. Would you like to investigate?</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1386-->
+  <string ID="sultan dungeon:liminal floor">liminal floor</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1634-->
+  <string ID="Building forts...">Building forts...</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1646-->
+  <string ID="the snapjaw who wields {{R-r-K-y-Y sequence|Stopsvalinn}}">the snapjaw who wields {{R-r-K-y-Y sequence|Stopsvalinn}}</string>
+  <!--Code references:
+Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1658
+Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1662
+-->
+  <string ID="a snapjaw fort">a snapjaw fort</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1726-->
+  <string ID="Building farms...">Building farms...</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1758-->
+  <string ID="the lair of {{M|Oboroqoru, Ape God}}">the lair of {{M|Oboroqoru, Ape God}}</string>
+  <!--Code references:
+Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1763
+Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1961
+Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1992
+Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:3268
+-->
+  <string ID="You discover a lair. Would you like to investigate?">You discover a lair. Would you like to investigate?</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1787-->
+  <string ID="the lair of Oboroqoru, Ape God">the lair of Oboroqoru, Ape God</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1861-->
+  <string ID="the mouth of {{M|Shug'ruith the Burrower}}">the mouth of {{M|Shug'ruith the Burrower}}</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1867-->
+  <string ID="You come upon a yawning pit. Would you like to investigate?">You come upon a yawning pit. Would you like to investigate?</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1939-->
+  <string ID="the cradle of {{M|Shug'ruith the Burrower}}">the cradle of {{M|Shug'ruith the Burrower}}</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1957-->
+  <string ID="the chuppah of {{M|Girsh Qas and Girsh Qon}}">the chuppah of {{M|Girsh Qas and Girsh Qon}}</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1988-->
+  <string ID="the cradle of {{M|Girsh Rermadon}}">the cradle of {{M|Girsh Rermadon}}</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2024-->
+  <string ID="the cradle of {{M|Girsh Agolgot}}">the cradle of {{M|Girsh Agolgot}}</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2041-->
+  <string ID="the cradle of {{M|Girsh Bethsaida}}">the cradle of {{M|Girsh Bethsaida}}</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2088-->
+  <string ID="the village lair of {{M|Mamon Souldrinker}}">the village lair of {{M|Mamon Souldrinker}}</string>
+  <!--Code references:
+Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2174
+Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2194
+Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2243
+Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2254
+-->
+  <string ID="Bey Lah">Bey Lah</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2193-->
+  <string ID="outskirts">outskirts</string>
+  <!--Code references:
+Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2276
+Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2284
+-->
+  <string ID="Hydropon">Hydropon</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2296-->
+  <string ID="the Hydropon">the Hydropon</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2306-->
+  <string ID="Hamilcrab's shop">Hamilcrab's shop</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2580-->
+  <string ID="Generating village history...">Generating village history...</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2594-->
+  <string ID="some flattened remains">some flattened remains</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2628-->
+  <string ID="a secluded merchant from the Consortium of Phyta">a secluded merchant from the Consortium of Phyta</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2648-->
+  <string ID="the Ruin of House Isner">the Ruin of House Isner</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2663-->
+  <string ID="Gyl">Gyl</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2666-->
+  <string ID="Recoming nook at Gyl">Recoming nook at Gyl</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2689-->
+  <string ID="a {{w|dromad}} caravan">a {{w|dromad}} caravan</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2699-->
+  <string ID="Kindrish, the ancestral bracelet of the hindren">Kindrish, the ancestral bracelet of the hindren</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2723-->
+  <string ID="a {{g|slime}} bog">a {{g|slime}} bog</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2728-->
+  <string ID="some {{fiery|flaming}} {{K|tar}} pits">some {{fiery|flaming}} {{K|tar}} pits</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2733-->
+  <string ID="a {{rusty|rust}} bog">a {{rusty|rust}} bog</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2738-->
+  <string ID="a {{m|fungus}} forest">a {{m|fungus}} forest</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2742-->
+  <string ID="=biome.a= region">=biome.a= region</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:3121-->
+  <string ID="lair noun:lair">lair</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:3123-->
+  <string ID="the =lairname= of =subject.refname:long:withTitles:LairName=">the =lairname= of =subject.refname:long:withTitles:LairName=</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:3142-->
+  <string ID="the lair of =subject.refname:long:withTitles:LairName|strip=">the lair of =subject.refname:long:withTitles:LairName|strip=</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:3222-->
+  <string ID="lair">lair</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:3998-->
+  <string ID="Generating deep history...">Generating deep history...</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:4002-->
+  <string ID="Generating historical sites...">Generating historical sites...</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:4035-->
+  <string ID="abandoned village">abandoned village</string>
+  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:4046-->
+  <string ID="salt marsh">salt marsh</string>
 </strings>
