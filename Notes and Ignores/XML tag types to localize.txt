@@ -69,7 +69,7 @@
 		<part Name="StairsDown" PullMessage="<LOCALIZE>" JumpPrompt="<LOCALIZE>"/>
 	<!-- HiddenObjects.xml -->
 		<part Name="Honorifics" Ordinary="<LOCALIZE>" />
-		<!-- PronounSet: they/them/their (possibly more) -->
+		<!-- PronounSet: they/them/their (up to 11 total), '/' delimited -->
 		<tag Name="PronounSet" Value="<GRAMMAR:PronounSet>" />
 		<part Name="BlowAwayGas" Message="<LOCALIZE>" />
 		<part Name="TimeCubeProtection" Message="<LOCALIZE>" />

@@ -1,12 +1,19 @@
 XRL.Language\Grammar
 XRL.World\GameObject
+XRL.World\IPronounProvider
+XRL.World\BasePronounProvider
+XRL.World\PronounSet
+XRL.World\Gender
+XRL\GameText
+XRL.World.Text\TextArgument
+XRL.World.Text\ReplaceBuilder
 XRL.World.Text.Delegates\VariableReplacers
+XRL.World.Text.Delegates\DelegateContext
 XRL.World.Capabilities\Messaging
 XRL.World.Capabilities\AutoAct
   Interrupt(), TryToMove(), 
 XRL.World\IComponent
 XRL.World\GetDisplayNameEvent
-XRL\GameText
 XRL.World.Parts\Physics
   ProcessTakeDamage(Event)
 
