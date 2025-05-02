@@ -53,35 +53,41 @@
     DoNotReplicateAsPronounSet="true"
   />
 
-<!-- now for people TODO: -->
+<!-- now for persons TODO: -->
   <gender
     Name="male"
-    Subjective="he"
-    Objective="him"
-    PossessiveAdjective="his"
-    SubstantivePossessive="his"
-    Reflexive="himself"
-    PersonTerm="man"
-    ImmaturePersonTerm="boy"
-    FormalAddressTerm="friend"
-    OffspringTerm="son"
-    SiblingTerm="brother"
-    ParentTerm="father"
+    Nominativ="er"
+    Akkusativ="ihn"
+    Dativ="ihm"
+    Genitiv="seiner"
+    PossessiveAdjective="sein-"
+    SubstantivePossessive="sein-"
+    Reflexive="sich"
+    PersonTerm="der Mann"
+    ImmaturePersonTerm="der Junge"
+    FormalAddressTerm="der Freund"
+    OffspringTerm="der Sohn"
+    SiblingTerm="der Bruder"
+    ParentTerm="der Vater"
   />
 
+<!-- 'Mädchen' is neuter gender since diminutives take neuter.
+	It's very annoying since you need to use 'es' instead of 'sie' -->
   <gender
     Name="female"
-    Subjective="she"
-    Objective="her"
-    PossessiveAdjective="her"
-    SubstantivePossessive="hers"
-    Reflexive="herself"
-    PersonTerm="woman"
-    ImmaturePersonTerm="girl"
-    FormalAddressTerm="friend"
-    OffspringTerm="daughter"
-    SiblingTerm="sister"
-    ParentTerm="mother"
+    Nominativ="sie"
+    Akkusativ="sie"
+    Dativ="ihr"
+    Genitiv="ihrer"
+    PossessiveAdjective="ihr-"
+    SubstantivePossessive="ihr-"
+    Reflexive="sich"
+    PersonTerm="die Frau"
+    ImmaturePersonTerm="das Mädchen"
+    FormalAddressTerm="die Freundin"
+    OffspringTerm="die Tochter"
+    SiblingTerm="die Schwester"
+    ParentTerm="die Mutter"
   />
 
   <gender

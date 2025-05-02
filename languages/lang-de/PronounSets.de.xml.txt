@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pronounsets Lang="de" EnableSelection="false" EnableGeneration="false" EnableConversationalExchange="false" GenerateGeneric="0" ReplicateGenders="true">
+
+<!-- allow selecting from these 3 for how messages refer to "you" -->
+
+  <pronounset
+    Name="informal/player"
+    Nominativ="du"
+    Akkusativ="dich"
+    Dativ="dir"
+    Genitiv="deiner"
+    PossessiveAdjective="dein-"
+    SubstantivePossessive="dein-"
+    Reflexive="dich"
+    Abstract="true"
+  />
+
+<!-- the modern formal you, both singular & plural; maybe use for nooks? -->
+  <pronounset
+    Name="formal/player"
+    Nominativ="Sie"
+    Akkusativ="Sie"
+    Dativ="Ihnen"
+    Genitiv="Ihrer"
+    PossessiveAdjective="Ihr-"
+    SubstantivePossessive="Ihr-"
+    Reflexive="sich"
+    Plural="true"
+    Abstract="true"
+  />
+
+<!-- also formal you in historical fantasy/SF/space opera (i.e. this game) -->
+  <pronounset
+    Name="plural/player"
+    Nominativ="ihr"
+    Akkusativ="euch"
+    Dativ="euch"
+    Genitiv="euer"
+    PossessiveAdjective="euer,eur-"
+    SubstantivePossessive="eur-"
+    Reflexive="euch"
+    Plural="true"
+    Abstract="true"
+  />
+
+<!-- TODO: add in German neopronouns -->
+
+<!-- we definitely don't want "sie" as a neopronoun!
+  <pronounset
+    Subjective="sie"
+    Objective="hir"
+    PossessiveAdjective="hir"
+    SubstantivePossessive="hirs"
+    Reflexive="hirself"
+  />
+-->
+  <pronounset
+    Subjective="xe"
+    Objective="xem"
+    PossessiveAdjective="xyr"
+    SubstantivePossessive="xyrs"
+    Reflexive="xemself"
+  />
+
+  <pronounset
+    Subjective="ze"
+    Objective="zir"
+    PossessiveAdjective="zir"
+    SubstantivePossessive="zirs"
+    Reflexive="zirself"
+  />
+
+</pronounsets>
