@@ -120,8 +120,8 @@
   <option ID="OptionUseTextAutowalkThreatIndicator" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Use text autoact interrupt indicator instead of flashing red box" Category="Automation" Type="Checkbox" Default="No"></option>
   <option ID="OptionAutoexploreChests" DisplayText="Search containers while autoexploring" Category="Automation" Type="Checkbox" Default="Yes"></option>
   <option ID="OptionDigOnMove" DisplayText="Automatically dig through walls by moving into them when wielding a digging implement" Category="Automation" Type="Checkbox" Default="Yes"></option>  
-  <option ID="OptionAutosaveInterval" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Automatically save when moving to a different zone" Category="Automation" Type="Combo" Values="None,1,2,3,5,7,10,15,20,30,40" Default="5"></option>
-  <option ID="OptionAutoexploreRate" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Maximum automove cells/sec and autoattack actions/sec" SearchKeywords="autoact autoexplore framerate" Category="Automation" Type="Combo" Values="1,2,3,5,7,10,15,20,30,60,&#236;" Default="20"></option>
+  <option ID="OptionAutosaveInterval" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Automatically save when moving to a different zone" Category="Automation" Type="Combo" Values="0|None,1,2,3,5,7,10,15,20,30,40" Default="5"></option>
+  <option ID="OptionAutoexploreRate" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Maximum automove cells/sec and autoattack actions/sec" SearchKeywords="autoact autoexplore framerate" Category="Automation" Type="Combo" Values="1,2,3,5,7,10,15,20,30,60,0|&#236;" Default="20"></option>
 
 
   <option ID="OptionAutogetAmmo" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Autoget ammo" Category="Autoget" Type="Checkbox"  Default="Yes"></option>
@@ -153,7 +153,7 @@
   <option ID="OptionDefaultDeathToViewFinalMessages" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Default the selection on death prompts in Roleplay mode to 'View final messages' instead of 'Reload checkpoint'" Category="Prompts" Type="Checkbox" Default="Yes"></option>
 
 
-  <option ID="OptionEnableMods" DisplayText="Enable mods (restart required)" Category="Mods" Type="Checkbox"  Default="Yes"></option>
+  <option ID="OptionEnableMods" DisplayText="Enable mods" Category="Mods" Type="Checkbox" Default="Yes" Restart="true"></option>
   <option ID="OptionAllowCSMods" Requires="OptionEnableMods==Yes" DisplayText="Allow scripting mods (scripting mods may contain malicious code!)" Category="Mods" Type="Checkbox"  Default="No"></option>
   <option ID="OptionOutputModAssembly" Requires="OptionEnableMods==Yes,OptionAllowCSMods==Yes,OptionShowAdvancedOptions==Yes" DisplayText="Write compiled mod assemblies to disk" Category="Mods" Type="Checkbox"  Default="Yes"></option>
   <option ID="OptionHarmonyDebug" Requires="OptionEnableMods==Yes,OptionAllowCSMods==Yes,OptionShowAdvancedOptions==Yes" DisplayText="Enable Harmony debug output" Category="Mods" Type="Checkbox"  Default="No"></option>
@@ -180,7 +180,7 @@
   <option ID="OptionDisablePermadeath" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Don't delete Classic mode saved games on death" Category="Debug" Type="Checkbox" Default="No"></option>
   <option ID="OptionAllowSaveLoad" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Enable save and load" Category="Debug" Type="Checkbox" Default="No"></option>
   <option ID="OptionAllowReallydie" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Get prompted to confirm deaths" Category="Debug" Type="Checkbox" Default="No"></option>    
-  <option ID="OptionEnablePrereleaseContent" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Enable unfinished and unsupported content (requires restart)" Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionEnablePrereleaseContent" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Enable unfinished and unsupported content" Category="Debug" Type="Checkbox" Default="No" Restart="true"></option>
   <option ID="OptionDisableDefectLimit" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Allow creatures to have multiple defects " Category="Debug" Type="Checkbox" Default="No"></option>
   <option ID="OptionStripUIColorText" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Strip color formatting from UI text" Category="Debug" Type="Checkbox" Default="No"></option>
   <option ID="OptionEnableColorTextInput" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Enable color menu for text input" Category="Debug" Type="Checkbox" Default="No"></option>
@@ -220,5 +220,5 @@
   <option ID="OptionInventoryConsistencyCheck" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Perform inventory consistency checks" Category="Debug" Type="Checkbox" Default="No"></option>
   <option ID="OptionShowErrorPopups" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Show error popups" Category="Debug" Type="Checkbox" Default="No"></option>
   <option ID="OptionDisableBindConflictChecking" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Disable conflict checking when rebinding controls" Category="Debug" Type="Checkbox" Default="No"></option>
-
+  <option ID="OptionDebugStringTable" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Render string table ID instead of translated text" Default="No" Category="Debug" Type="Checkbox" />
 </options>

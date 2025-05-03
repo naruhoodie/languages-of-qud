@@ -1,0 +1,542 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<quests>
+  
+  <quest Name="What's Eating the Watervine?" Factions="Joppa" Reputation="200" Level="1" Achievement="ACH_COMPLETE_WATERVINE"
+         Accomplishment="You solved the mystery of the chewed-up watervine and warned the villagers of Joppa of the Girsh." 
+         Hagiograph="In the month of =month= of =year=, =name= walked below the chrome arches, beat back the throng of girshlings, and healed the wilting crops."
+         HagiographCategory="DoesSomethingRad"
+         Gospel="At the bloody Battle of Red Rock, =name= fought the combined girshling and baboon forces to liberate the villagers of Joppa. In =player.t's= honor they &lt;spice.history.gospels.Celebration.LateSultanate.!random&gt;.">
+
+    <step Name="Travel to Red Rock" XP="50">
+      <text>Journey two parasangs north of Joppa to Red Rock.</text>
+    </step>
+
+    <step Name="Find the Vermin" XP="100">
+      <text>Find the creatures that are eating Joppa's watervine.</text>
+    </step>
+
+    <step Name="Get a Corpse" XP="100">
+      <text>Collect a corpse from one of the creatures.</text>
+    </step>
+
+    <step Name="Return with the Corpse" XP="750">
+      <text>Return to Joppa with the corpse of the watervine vermin.</text>
+    </step>
+
+  </quest>
+ 
+  <quest Name="Raising Indrix" Level="20" 
+         Factions="Kyakukya,Wardens" Reputation="100"
+         Hagiograph="O grace! =name= recovered a shard of black glass from a teeming jungle and returned it to the mechanical goat whose circuitry it powers."
+         HagiographCategory="FindsObject"
+         Gospel="While wandering in the jungle near Kyakukya, =name= dreamed =player.subjective= orbited a darkling star and in its vast accretion disk piled the building blocks of self. From then on, =name= kept a starless, triangular prism on =player.possessive= person.">
+    
+    <step Name="Find Mamon Souldrinker" XP="1000">
+      <text>Travel to the goatfolk village and find Mamon Souldrinker.</text>
+    </step>
+
+    <step Name="Recover the Amaranthine Prism" XP="3250">
+      <text>Return the amaranthine prism to Warden Indrix.</text>
+    </step>
+
+  </quest>
+
+  <quest Name="Fetch Argyve a Knickknack" Level="3" System="ArgyveKnicknackSystem" 
+         Accomplishment="You fetched a trinket for an old man."
+         Hagiograph="Inside a temple of water and vine, =name= taught an old man the value of chrome."
+         HagiographCategory="Trysts"
+         Gospel="&lt;spice.elements.entity$elements[random].weddingConditions.!random.capitalize&gt;, =name= cemented =player.possessive= friendship with the Tinkers' Guild by marrying Argyve.">
+    
+    <step Name="Find a Knickknack" XP="0">
+      <text>Search the regions surrounding Joppa for an artifact.</text>
+    </step>
+
+    <step Name="Return to Argyve" XP="75">
+      <text>Bring the artifact to Argyve.</text>
+    </step>
+
+  </quest>
+
+  <quest Name="Fetch Argyve Another Knickknack" Level="5" System="ArgyveAnotherKnicknackSystem" 
+         Accomplishment="You fetched another trinket for an old man."
+         Hagiograph="In the shadow of steel beneath the High Salt Sun, =name= taught an old man the value of chrome."
+         HagiographCategory="Trysts"
+         Gospel="&lt;spice.elements.entity$elements[random].weddingConditions.!random.capitalize&gt;, =name= cemented =player.possessive= friendship with the Tinkers' Guild by marrying Argyve for a second time.">
+
+    <step Name="Find Another Knickknack" XP="0">
+			<text>Search the regions surrounding Joppa for another artifact.</text>
+    </step>
+
+    <step Name="Return to Argyve" XP="150">
+      <text>Return to Argyve with the artifact.</text>
+    </step>
+
+  </quest>
+
+  <quest Name="Weirdwire Conduit... Eureka!" Level="7" System="WeirdwireConduitSystem" 
+         Accomplishment="With your help, Argyve detected a strange signal."
+		 Achievement="ACH_WEIRDWIRE_CONDUIT"
+         Hagiograph="By the auspices of the marsh, =name= invented the Weirdwire Conduit and detected a hidden signal."
+         HagiographCategory="CreatesSomething"
+         Gospel="At a remote workshop near the oasis-hamlet of Joppa, =name= and =player.possessive= apprentice Argyve invented an apparatus that evoked the presence of pounding drums and blistering wire. They named it the Weirdwire Conduit.">
+    
+    <step Name="Find 200 Feet of Wire" XP="0">
+      <text>Search the rust wells, east of Joppa, for 200 feet of wire.</text>
+    </step>
+
+    <step Name="Return to Argyve" XP="500">
+      <text>Deliver the wire to Argyve.</text>
+    </step>
+  </quest>
+
+  <quest Name="A Canticle for Barathrum" Level="10" 
+         Accomplishment="You spoke with the Barathrumites at their enclave in Grit Gate."
+         Hagiograph="=name= penned and sang a canticle for the irenic quillbears who live beneath the earth."
+         HagiographCategory="CreatesSomething"
+         Gospel="While roaming the westwise jungle, =name= came upon a clan of urshiib performing a secret ritual. Because of =player.t's= disk-like eyes, they accepted =name= into their fold and taught =player.objective= their secrets.">
+
+    <step Name="Travel to Grit Gate" XP="500">
+      <text>Travel to the ruined, subterranean gate northeast of Joppa.</text>
+    </step>
+
+    <step Name="Locate the Barathrumite Enclave" XP="250">
+      <text>Locate the Barathrumite enclave within Grit Gate</text>
+    </step>
+
+    <step Name="Speak with the Barathrumites" XP="500">
+      <text>Ask the Barathrumites about Argyve's strange signal.</text>
+    </step>
+  </quest>
+
+  <quest Name="A Signal in the Noise" Level="10" 
+         Accomplishment="You spoke with the Barathrumites at their enclave in Grit Gate."
+         Hagiograph="=name= penned and sang a canticle for the irenic quillbears who live beneath the earth."
+         HagiographCategory="CreatesSomething"
+         Gospel="While roaming the westwise jungle, =name= came upon a clan of urshiib performing a secret ritual. Because of =player.t's= disk-like eyes, they accepted =name= into their fold and taught =player.objective= their secrets.">
+
+    <step Name="Travel to Grit Gate" XP="500">
+      <text>Travel to the ruined, subterranean gate in the western jungle.</text>
+    </step>
+
+    <step Name="Locate the Barathrumite Enclave" XP="250">
+      <text>Locate the Barathrumite enclave within Grit Gate</text>
+    </step>
+
+    <step Name="Speak with the Barathrumites" XP="500">
+      <text>Ask the Barathrumites about the strange signal.</text>
+    </step>
+  </quest>
+
+  <quest Name="More Than a Willing Spirit" Level="10" BonusAtLevel="12,18" System="WillingSpiritSystem" Factions="Barathrumites" Reputation="100"
+         Accomplishment="You braved Golgotha and displayed your prowess to the Barathrumites."
+		 Achievement="ACH_WILLING_SPIRIT"
+         Hagiograph="In the month of =month= of =year=, =name= emerged from the trash chutes of Golgotha, victorious and bathed in slime."
+         HagiographCategory="DoesSomethingRad"
+         Gospel="While roaming the westwise jungle, =name= came upon a clan of urshiib performing a secret ritual. Because of =player.t's= coating of foul slime, they accepted =name= into their fold and taught =player.objective= their secrets.">
+         
+    <step Name="Travel to Golgotha" XP="250">
+      <text>Travel to the great cave Golgotha north of Grit Gate.</text>
+    </step>
+
+    <step Name="Find a Dysfunctional Waydroid" XP="250">
+      <text>Find a dysfunctional waydroid among the ruins of Golgotha.</text>
+    </step>
+
+    <step Name="Repair the Waydroid" XP="250">
+      <text>Repair the waydroid.</text>
+    </step>
+
+    <step Name="Return to Grit Gate" XP="1250">
+      <text>Return to Grit Gate with the waydroid and speak with the Barathrumites.</text>
+    </step>
+  </quest>
+
+  <quest Name="Decoding the Signal" Level="15" Factions="Barathrumites" Reputation="100"
+         Accomplishment="You spoke with the baetyl at the Temple of the Rock and decoded the mysterious signal."
+		 Achievement="ACH_DECODING_SIGNAL"
+         Hagiograph="Bravery! =name= plunged into the mouth of an open ice shelf and conversed with a baetyl in the sacred tongue."
+         HagiographCategory="AppeasesBaetyl"
+         Gospel="Inside a giant block of ice, =name= cemented =player.possessive= friendship with the Mechanimists by exchanging whispered vows with a sparking baetyl.">
+         
+    <step Name="Get Q Girl's Instructions onto the Data Disk" XP="250">
+      <text>Speak to Q Girl in the workshop and ask her to encode her instructions for the baetyl onto the disk.</text>
+    </step>
+    <step Name="Locate the Mechanimist Compound at Bethesda Susa" XP="2500">
+      <text>Travel north to the great cavern Bethesda Susa and locate the Mechanimist temple.</text>
+    </step>
+
+    <step Name="Decode the Signal" XP="4000">
+      <text>Infiltrate the Mechanimist compound, engage the baetyl, and decode the signal.</text>
+    </step>
+
+    <step Name="Return to Grit Gate" XP="6000">
+      <text>Return to Grit Gate and speak with Otho.</text>
+    </step>
+  </quest>
+
+  <quest Name="O Glorious Shekhinah!" Level="3" System="TravelToStiltSystem" 
+         Accomplishment="On the recommendation of a proselyte, you visited the merchant bazaar and grand cathedral at the Six Day Stilt."
+         Hagiograph="=name= trekked through the salt pans, north and west, to the merchant bazaar and grand cathedral of the Six Day Stilt. There, the stiltfolk sang hymns in the sultan's honor."
+         HagiographCategory="VisitsLocation"
+         Gospel="After trekking the vacant flats, =name= journeyed to the merchant bazaar and cathedral at the Six Day Stilt. There =player.subjective= befriended the Mechanimists and threw an artifact down the Sacred Well.">
+
+    <step Name="Make a Pilgrimage to the Six Day Stilt" XP="1500">
+      <text>Journey through the Great Salt Desert to visit the merchant bazaar and Mechanimist cathedral, where a proselyte asked you to make an offering of a trinket.</text>
+    </step>
+
+  </quest>
+
+  <quest Name="The Earl of Omonporch" Level="20" System="OmonporchEarlSystem" Factions="Barathrumites" Reputation="100"
+         Accomplishment="You dealt with Asphodel and secured the grounds at the base of the Spindle."
+		 Achievement="ACH_OMONPORCH_EARL"
+         Hagiograph="In the month of =month= of =year=, =name= appointed Asphodel the Lovely earl of Omonporch and Protector of the Spindle Gjaus."
+         HagiographCategory="Treats"
+         Gospel="In =year=, =name= appointed the corrupt administrator Asphodel as earl and minister of Omonporch. There xe mandated the practice of &lt;spice.elements.entity$elements[random].practices.!random&gt; in =player.t's= name.">
+
+    <step Name="Travel to Omonporch" XP="1000">
+      <text>Travel north to the Spindle at Omonporch.</text>
+    </step>
+
+    <step Name="Secure the Spindle" XP="1000">
+      <text>Take control of the grounds beneath the Spindle.</text>
+    </step>
+
+    <step Name="Return to Grit Gate" XP="5000">
+      <text>Return to Grit Gate to report your success.</text>
+    </step>
+  </quest>
+
+  <quest Name="Grave Thoughts" Level="20">
+    <step Name="Investigate the Rumbling">
+      <text>Access the mainframe and scan the shale surrounding the enclave.</text>
+    </step>
+   
+    <step Name="Speak to Otho">
+      <text>Speak to Otho to via the mainframe room intercom or in person.</text>
+    </step>
+  </quest>
+
+  <quest Name="A Call to Arms" Level="20" 
+         Accomplishment="You valiantly defended Grit Gate from an attack by the Putus Templar."
+		 Achievement="ACH_CALL_TO_ARMS"
+         Hagiograph="=name= smashed a battalion of Sons and Daughters through a giant mainframe, showering the surrounding temple in glass and gallium."
+         HagiographCategory="Slays"
+         Gospel="In the month of =month= of =year=, =name= won a decisive victory against the combined Templar forces at the bloody Battle of Grit Gate. Grit Gate was so devasted by hot gallium and smashed glass that it was renamed Otho's Graveyard.">
+
+    <step Name="Prepare Defenses" Optional="true">
+      <text>Power laser emplacements, power force projectors, overclock chromelings, and activate Rodanis Y in preparation for the Putus Templar attack.</text>
+    </step>
+    
+    <step Name="Defend Grit Gate">
+      <text>Defend Grit Gate from its assailants.</text>
+    </step>
+  </quest>
+
+  <quest Name="The Assessment" Level="20">
+    <step Name="Speak to Otho" XP="10000">
+      <text>Speak to Otho to assess the losses suffered in the attack.</text>
+    </step>    
+  </quest>
+
+  <quest Name="Pax Klanq, I Presume?" Level="25" System="PaxKlanqIPresumeSystem"  Factions="Barathrumites" Reputation="100"
+         Accomplishment="You walked the Coral Path and convinced Pax Klanq, mushroom prodigy, to fabricate a battery of Q Girl's design."
+		 Achievement="ACH_PAX_KLANQ"
+         Hagiograph="In the void of space, =name= the Mason constructed a Coral Path out of starbrick and conversed with a mushroom in the sacred tongue."
+         HagiographCategory="CreatesSomething"
+         Gospel="In an extradimensional cathedral made of coral and fungus flesh, =name= cemented =player.possessive= relationship with fungi by marrying Pax Klanq.">
+
+    <step Name="Get Q Girl's Blueprints for the Climber" XP="250">
+      <text>Get the blueprints for the climber to deliver to Pax Klanq.</text>
+    </step>
+
+    <step Name="Seek the Heart of the Rainbow" XP="1500">
+      <text>Decipher the first part of the enigma.</text>
+    </step>
+
+    <step Name="Eat the God's Flesh" XP="1500">
+      <text>Decipher the second part of the enigma.</text>
+    </step>
+
+    <step Name="Follow the Coral Path" XP="1500">
+      <text>Decipher the third part of the enigma.</text>
+    </step>
+
+    <step Name="Convince Pax Klanq to Construct the Climber" XP="1500">
+      <text>Get Pax Klanq to agree to fabricate the climber from Q Girl's design.</text>
+    </step>
+
+    <step Name="Return to Grit Gate" XP="4000">
+      <text>Return to Grit Gate and speak to Barathrum.</text>
+    </step>
+  </quest>
+
+  <quest Name="Petals on the Wind" System="PetalsOnTheWindSystem" 
+         Accomplishment="At the behest of a hindren pariah, you traveled to the hidden village of Bey Lah to investigate a mystery."
+         Hagiograph="Benevolent =name= agreed to meddle in the affairs of the meadow at the behest of a deerfolk pariah. The sultan reigns with kindheartedness!"
+         HagiographCategory="MeetsWithCounselors"
+         Gospel="At &lt;spice.time.partsOfDay.!random&gt; under a &lt;spice.commonPhrases.strange.!random.article&gt; and meadowed sky, the hindren of Bey Lah saw an image on the horizon that looked like a great looking glass. It was =name=, and once =player.subjective= arrived, the hindren built a monument to =player.objective= and thenceforth called =player.objective= the Looking Glass Kendren.">
+
+    <step Name="Investigate Bey Lah" XP="250">
+      <text>Travel to the hidden village of Bey Lah and investigate the problems there.</text>
+    </step>    
+
+  </quest>
+
+  <quest Name="Find Eskhind" 
+         Accomplishment="You found the hindren pariah Eskhind and her sisters inside a hollowed out tree."
+         Hagiograph="Remember! =name= admonished the pariah Eskhind for fleeing her destiny. Thenceforth she was known as Eskhind the Meek."
+         HagiographCategory="Slays"
+         Gospel="In the month of =month= of =year=, =name= was challenged by the accused Eskhind to a duel over the location of the hindren heirloom Kindrish. =name= won and admonished Eskhind into returning to Bey Lah.">
+
+    <step Name="Find Eskhind" XP="250">
+      <text>Find Eskhind and retrieve Kindrish.</text>
+    </step>
+
+    <step Name="Speak to Warden Neelahind" XP="0" Optional="true">
+      <text>Speak to Warden Neelahind, who was close friends with Eskhind.</text>
+    </step>
+
+    <step Name="Deliver News of Eskhind" XP="250">
+      <text>Speak to Keh with news of Eskhind.</text>
+    </step>
+
+  </quest>
+
+  <quest Name="Love and Fear"
+         Accomplishment="You found and returned a discarded love poem."
+		 Achievement="ACH_BEY_LAH_SONNET"
+         Hagiograph="How inspiring is the presence of =name=, who so redeemed Eskhind the Meek that she sought the hand of Bey Lah's greatest champion!"
+         HagiographCategory="Trysts"
+         Gospel="In the burnt out core of a tree stump, =name= cemented =player.possessive= friendship with the hindren of Bey Lah by marrying Eskhind and the Warden Neelahind.">
+		 
+	<step Name="Rescue an Imperiled Love" XP="250" Optional="true">
+	  <text>Intervene before the fate of the lovers is sealed.</text>
+	</step>
+    
+    <step Name="Return the Love Sonnet" XP="50">
+      <text>Give the crumpled sheet of paper to its author or intended recipient.</text>
+    </step>
+
+  </quest>
+
+  <quest Name="Kith and Kin" 
+         Accomplishment="For better or worse to the fate of Bey Lah, you solved the mystery of Kindrish's disappearance and helped Warden Neelahind administer justice."
+         Hagiograph="Hallowed savior! =name= brought peace and prosperity to the troubled deerfolk of the Bey Lah meadow."
+         HagiographCategory="BecomesLoved"
+         Gospel="Acting against thieves and the authorities who empower them, =name= led an investigation in the village of Bey Lah. Because of =player.t's= &lt;spice.elements.entity$elements[random].adjectives.!random&gt; wit, the Warden Neelahind was able to properly administer justice.">
+
+    <step Name="Brief Warden Neelahind" XP="250">
+      <text>Tell Bey Lah's Warden about the disputed nature of Kindrish's theft.</text>
+    </step>
+
+    <step Name="Discover all the evidence" XP="250" Optional="true">
+      <text>Discover all evidence that might lead to the thief.</text>
+    </step>
+
+    <step Name="Accuse the thief" XP="1000">
+      <text>Speak to Warden Neelahind with evidence of the event and accuse the thief that took Kindrish.</text>
+    </step>
+  </quest>
+
+  <quest Name="The Buried Watchers" 
+         Accomplishment="You visited a coterie of Tomb-dwelling mopango."
+         Hagiograph="Deep in the Tomb of the Eaters at Omonporch, =name= stumbled upon a clan of mopango performing a secret ritual. Ey accepted the sultan into eir fold and taught =player.objective= eir secrets."
+         HagiographCategory="Treats"
+         Gospel="Deep in the Tomb of the Eaters at Omonporch, =name= stumbled upon a clan of mopango performing a secret ritual. Ey accepted the =sultanTerm= into eir fold and taught =player.objective= eir secrets.">
+
+    <step Name="Visit the Mopango Settlement in the Tomb of the Eaters" XP="2000">
+      <text>Find Vivira, a friendly turret in the Northwest catacombs, and tell em that Zothom sent you.</text>
+    </step>
+  </quest>
+  
+  <quest Name="Fraying Favorites" System="FrayingFavoritesSystem">
+
+    <step Name="Talk to Lebah" XP="500">
+      <text>Ask Lebah about eir encounter with the repulsive device.</text>
+    </step>
+    
+    <step Name="Recover the Repulsive Device" XP="4000">
+      <text>Locate k-Goninon in the Folk Catacombs and recover the repulsive device.</text>
+    </step>
+    
+    <step Name="Speak with the Watchers" XP="0" Optional="true">
+      <text>Ask the mopango watchers Dadogom, Doyoba, Gyamyo, and Yona about the repulsive device.</text>
+    </step>
+
+    <step Name="Use the Repulsive Device" XP="4000">
+      <text>Choose how to best apply the repulsive device.</text>
+    </step>
+
+  </quest>
+
+  <quest Name="Tomb of the Eaters" Level="30" Factions="Barathrumites" Reputation="100"
+         Accomplishment="You returned from the Tomb of the Eaters after successfully disabling the Spindle's magnetic field."
+		 Achievement="ACH_EATER_TOMB"
+  >
+    
+    <step Name="Recover the Mark of Death" XP="2500">
+      <text>Recover the lost sigil used by the Eaters to mark their dead.</text>
+    </step>
+
+    <step Name="Inscribe the Mark" XP="2500">
+      <text>Tattoo the mark on your body.</text>
+    </step>
+
+    <step Name="Enter the Tomb of the Eaters" XP="2500">
+      <text>Gain entrance to the sealed Tomb.</text>
+    </step>
+
+    <step Name="Ascend the Tomb and Cross into Brightsheol" XP="2500">
+      <text>Ascend the Tomb and find Resheph's burial chamber. From there, discover a way to travel to Brightsheol.</text>
+    </step>
+
+    <step Name="Disable the Spindle's Magnetic Field" XP="2500">
+      <text>Access the Spindle's control unit and turn off the field.</text>
+    </step>
+    
+    <step Name="Return to Grit Gate" XP="7500">
+      <text>Return to Grit Gate and speak to Barathrum.</text>
+    </step>
+  </quest>
+
+  <quest Name="Landing Pads" Level="35" Factions="Newly Sentient Beings" Reputation="300" System="LandingPadsSystem" Achievement="ACH_SLYNTH_HOME">
+    <step Name="Consult Settlements">
+      <text>Convince the leaders of at least three settlements to provide sanctuary for the slynth.</text>
+    </step>
+    <step Name="Sanctuary Candidates">
+      <text>These factions have agreed to host the slynth.</text>
+    </step>
+    <step Name="Bid the Slynth to Choose">
+      <text>Tell Thah to convene the slynth and make a decision.</text>
+    </step>
+  </quest>
+
+  <quest Name="Return to the Hydropon" Level="35">
+    <step Name="Return to the Hydropon">
+      <text>Once the slynth have arrived at their new home, speak to Thah at the hydropon.</text>
+    </step>    
+  </quest>
+	
+	<quest Name="If, Then, Else" Level="40" Factions="Chavvah" Reputation="200"
+         Accomplishment="You helped Chavvah, the Tree of Life, complete the ritual of -elseing and sever one of its entity-chimes forever."
+				 Hagiograph="Beauty in subtraction! Pruner =name= cut the Tree of Life to a more aesthetic form."
+			   HagiographCategory="DoesSomethingRad"
+         Gospel="Acting in accordance with the Tree of Life's many wills, =name= brought a transit rock to the glowing Soft beneath Chavvah's trunk. There =player.subjective= performed a secret ritual and returned to the surface forever altered.">
+    <step Name="Gather Tau's Chime" XP="2500">
+      <text>Retrieve Tau's chime from her branch in the keter.</text>
+    </step>
+    <step Name="Go to the Bottom of Taproot" XP="5000">
+      <text>Travel down Chavvah's taproot to its terminus, 40 strata deep.</text>
+    </step>
+    <step Name="Reunite Tau with Her Chime" XP="5000">
+      <text>Touch her chime to Taproot and finish the ritual of -elseing.</text>
+    </step>
+		<step Name="Return to the Keter" XP="15000">
+			<text>Return to the keter and speak with Dyvvrach.</text>
+		</step>
+  </quest>
+
+	<quest Name="The Golem" Level="40" Accomplishment="" Achievement="ACH_GOLEM">
+		<step ID="Soup" Name="Procure the Sanguine Fluid">
+			<text>Bring 20 drams of primordial soup to Pax Klanq.</text>
+		</step>
+		<step ID="Body" Name="Choose a Body">
+			<text>Provide a follower level 30 or higher.</text>
+		</step>
+		<step ID="Catalyst" Name="Choose a Catalyst">
+			<text>Provide 3 drams of a pure liquid.</text>
+		</step>
+		<step ID="Atzmus" Name="Choose an Atzmus">
+			<text>Provide the limb of a creature.</text>
+		</step>
+		<step ID="Armament" Name="Choose an Armament">
+			<text>Provide one zetachrome weapon.</text>
+		</step>
+		<step ID="Incantation" Name="Choose an Incantation">
+			<text>Provide an entry from your chronology.</text>
+		</step>
+		<step ID="Hamsa" Name="Choose a Hamsa">
+			<text>Provide an item that weights 5 lbs. or less.</text>
+		</step>
+		<step ID="Power" Name="Acquire an Ascension Power Source">
+			<text>Provide 3 drams of neutron flux or find another power source.</text>
+		</step>
+	</quest>
+
+	<quest Name="We Are Starfreight" Level="40" Achievement="ACH_STARFREIGHT" System="AscensionSystem">
+		<step ID="Barathrum" Name="Prepare to Ascend">
+			<text>Get Barathrum in the golem.</text>
+		</step>
+		<step ID="Ascend" Name="Ascend">
+			<text>Engage the ascension mechanisms of the Spindle.</text>
+		</step>		
+	</quest>
+
+  <quest Name="Reclamation" Level="40" System="ReclamationSystem" Achievement="ACH_RECLAMATION">
+    <!-- System Properties -->
+    <intproperty Name="MinorBattles" Value="2"/>
+    <intproperty Name="HealDelay" Value="2400"/>
+    <intproperty Name="ReinforcementDelay" Value="1200"/>
+    <intproperty Name="ReinforcementChance" Value="33"/>
+    <intproperty Name="ClusterChance" Value="50"/>
+    <intproperty Name="ClusterDistance" Value="4"/>
+    <intproperty Name="ClusterRadius" Value="4"/>
+    <intproperty Name="DisplaceBiotaChance" Value="25"/>   
+    <intproperty Name="DisplaceFaunaChance" Value="25"/>
+    <intproperty Name="DisplaceFloraChance">
+      <value>85</value>
+      <value>75</value>
+    </intproperty>
+    <property Name="ArrivalTimer" Value="300-1500" />
+    <property Name="ArrivalSound" Value="grenade_heat,Sounds/Creatures/VO/sfx_creature_insect_generic_vo_idle" />
+    <property Name="NephalRetryZone" Value="JoppaWorld.53.4.1.0.10" />
+    <property Name="MessageLeaving">
+      Leaving the battlefield may give the Templar time to regroup and result in more Barathrumite casualties. Proceed?
+    </property>
+    <property Name="MessageArrival">
+      {{m|ULLLLLLLLLLLLQ!}}
+			
+			The aching world-moan of the Nephilim resounds, and your body throbs in the electric air!
+			
+			It has arrived, {{R|=direction=}}.
+    </property>
+    <property Name="MessageArrivalSuper">
+      {{m|QQQYQQQYQQQYQQQYQQQ!}}
+
+      Starburst ejecta rains down in burning ribbons, and your body is nearly negated into nothing by the unutterable moans of the early universe!
+
+      =name= descends, {{R|=direction=}}.
+    </property>
+    <property Name="FixedSpawnLocations">
+      <entry Key="JoppaWorld.53.4.1.0.10">Major</entry>
+      <entry Key="JoppaWorld.53.4.0.0.10">Ezra</entry>
+    </property>
+    <property Name="BattlePopulations">
+      <entry Key="Major">OmonporchBattle_Major</entry>
+      <entry Key="Minor">OmonporchBattle_Minor</entry>
+      <entry Key="Ezra">OmonporchBattle_Ezra</entry>
+    </property>
+    <property Name="ReinforcementPopulations">
+      <entry Key="Major">OmonporchBattle_Reinforcements_Major</entry>
+      <entry Key="Minor">OmonporchBattle_Reinforcements_Minor</entry>
+      <entry Key="Ezra">OmonporchBattle_Reinforcements_Ezra</entry>
+    </property>
+
+    <!-- Quest Steps -->
+    <step ID="Warleader1" Name="Defeat =name=" Value="OmonporchBattle_Major_KnightCommander">
+      <text>Remove the threat of the Templar warleader from the perimeter of Omonporch.</text>
+    </step>
+    <step ID="Warleader2" Name="Defeat =name=" Value="OmonporchBattle_Major_KnightCommander">
+      <text>Remove the threat of the Templar warleader from the perimeter of Omonporch.</text>
+    </step>
+    <step ID="Warleader3" Name="Defeat =name=" Value="OmonporchBattle_Major_GrandNewfather">
+      <text>Remove the threat of the Templar warleader from the perimeter of Omonporch.</text>
+    </step>
+    <step ID="Warleader4" Name="Defeat =name=" Value="OmonporchBattle_Major_TemplarMech">
+      <text>Remove the threat of the Templar warleader from the perimeter of Omonporch.</text>
+    </step>
+    <step ID="Nephal" Name="Beast Slouching" Hidden="true">
+      <text>Remove the threat of =name=.</text>
+    </step>
+  </quest>
+</quests>
