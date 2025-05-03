@@ -13,7 +13,7 @@ leak
 
 water:LiquidWater
 water=[水\みず]
-fresh water=淡水
+fresh water=[淡\たん][水\すい] 
 dilute
 dilute,wet
 //dilute when the liquid isn't primarily oil, lava, or wax 
@@ -24,7 +24,7 @@ water-stained
 scalding steam
 
 salt:LiquidSalt
-salt=塩[しお]
+salt=[塩\しお]
 salty,brackish
 //brackish when less then 2/5ths of the liquid
 salty
@@ -118,7 +118,7 @@ goo-stained
 "It's awful!"
 "You feel poison course through your veins!"
 "Poisonous goo burns your eyes."
-poison gas=毒ガス
+poison gas=[毒\どく]ガス
 selfPoison
 oozing
 ooze
@@ -188,9 +188,9 @@ starapple=[星\ほし][林檎\りんご]
 cider:LiquidCider
 cider=[林檎\りんご][酒\しゅ]
 //lit. "apple alcohol"
-spiced=風味豊かな
+spiced=[風\ふう][味\み][豊\ゆた]かな
 // flavorful
-fragrant=香り高い
+fragrant=[香\かお]り[高\たか]い
 fragrant
 cider-stained
 "It is spicy and delicious."
@@ -242,7 +242,7 @@ soup-stained
 "You feel the soup slosh around your stomach."
 
 brainbrine:LiquidBrainBrine
-brain brine=[脳塩水\のうえんすい]
+brain brine=[脳塩\のうえん][水\すい]
 nervous [神経質\しんけいしつ]な
 nervous
 nervous
@@ -292,12 +292,12 @@ desalination  [脱塩\だつえん]
 
 black [黒\くろ]い
 brown [褐色\かっしょく]
-green 緑色[みどりいろ]
+green [緑色\みどりいろ]
 pound(s)  ポンド
 Weight: =intweight= lbs.
 [重\おも]さ　=intweight=ポンド
 
 {{=color=|=subject.T= =verb:slip= on the =liquid=!}}
-you:{{=color=|急に=liquid=で滑っちゃったよ！}}
-follower:{{=color=|急に=subject=が=liquid=で滑っちゃったよ！}}
-other:{{=color=|急に=subject=が=liquid=で滑った！}}
+you:{{=color=|[急\きゅう]に=liquid=で[滑\すべ]っちゃったよ！}}
+follower:{{=color=|[急\きゅう]に=subject=が=liquid=で[滑\すべ]っちゃったよ！}}
+other:{{=color=|[急\きゅう]に=subject=が=liquid=で[滑\すべ]った！}}
