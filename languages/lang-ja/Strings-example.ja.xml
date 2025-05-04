@@ -664,19 +664,19 @@ Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudMutationsModuleWindow.cs:3
   <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:521-->
   <string ID="You unlock =object.t=.">=object=のロックを開錠する。</string>
   <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:537-->
-  <string ID="You interface with =object.t= and unlock =object.them=.">You interface with the door and unlock it.</string>
+  <string ID="You interface with =object.t= and unlock =object.them=.">ドアとインターフェースしてロックを開錠する。</string>
   <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:552-->
   <string ID="You lay your hand upon =object.t= and draw forth =object.its= passcode. You enter the code and =object.does:unlock=.">=object=に手をかけ、暗証番号を引き出す。暗証番号を入力すると、=object=のロックを開錠する。</string>
   <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:590-->
-  <string ID="You can't unlock =object.t=.">You can't unlock =object.t=.</string>
+  <string ID="You can't unlock =object.t=.">=object=をのロックを開錠することはできない。</string>
   <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:741-->
-  <string ID="=subject.T= cannot be closed.">=subject.T= cannot be closed.</string>
+  <string ID="=subject.T= cannot be closed.">=object=を閉めることができない。</string>
   <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:757-->
-  <string ID="You cannot close =object.t==reason=.">You cannot close =object.t==reason=.</string>
+  <string ID="You cannot close =object.t==reason=.">=reason=、=object=を閉めることができない。</string>
   <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:778-->
-  <string ID="=subject.T= cannot be closed with =object.t= in the way.">=subject.T= cannot be closed with =object.t= in the way.</string>
+  <string ID="=subject.T= cannot be closed with =object.t= in the way.">=object=が邪魔になっていると=subject=を閉めることができない。</string>
   <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:814-->
-  <string ID="=subject.T= cannot be closed with =object.t= in the way to the =direction=.">=subject.T= cannot be closed with =object.t= in the way to the =direction=.</string>
+  <string ID="=subject.T= cannot be closed with =object.t= in the way to the =direction=.">=object=が=direction=側にいると=subject=を閉めることができない。</string>
   <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:995-->
   <string ID="You hack =object.t=.">You hack =object.t=.</string>
   <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:1025-->
@@ -693,7 +693,7 @@ Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudMutationsModuleWindow.cs:3
 Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:1148
 Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:1184
 -->
-  <string ID="door open reason: because you cannot figure out how" Value=" because you cannot figure out how" />
+  <string ID="door open reason: because you cannot figure out how" Value="方法が分からないので" />
   
   <!--
 	Keybind strings
