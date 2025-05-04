@@ -1,6 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
 	Default keybinds for QWERTZ keyboards (e.g. German)
+
+	trying to avoid OEM keys, dead keys, AltGr, and cp437 conflicts
 -->
 <commands>
 
@@ -149,12 +151,14 @@
   </command>
   <command ID="CmdMoveU" DisplayText="Move up" Category="Basic Move / Attack" Layer="AdventureNav" CanShareBindsWith="V Positive,V Negative">
     <keyboardBind Key="numpadMinus"/>
+<!-- want to bind to the '<' key, which is an OEM thing on QWERTZ  -->
     <keyboardBind Modifier="shift" Key="comma"/>
     <keyboardBind Key="s"/>
     <gamepadBind Button="dpad/up"/>
   </command>
   <command ID="CmdMoveD" DisplayText="Move down" Category="Basic Move / Attack" Layer="AdventureNav" CanShareBindsWith="V Positive,V Negative">
     <keyboardBind Key="numpadPlus"/>
+<!-- want to bind to the '>' key, which is an OEM thing on QWERTZ  -->
     <keyboardBind Modifier="shift" Key="period"/>
     <keyboardBind Key="d"/>
     <gamepadBind Button="dpad/down"/>
@@ -211,10 +215,12 @@
     <keyboardBind Modifier="ctrl,shift" Key="comma"/>
   </command>
   <command ID="CmdAttackDirection" DisplayText="Force attack in a direction" Category="Basic Move / Attack" Layer="Adventure" Auto="Down">
-    <keyboardBind Key="backslash"/>
+<!-- QWERTZ backslash is an AltGr key, let's try slash (shift+7) -->
+    <keyboardBind Modifier="shift" Key="7"/>
   </command>
   <command ID="CmdAttackCell" DisplayText="Choose cell to force attack" Category="Basic Move / Attack" Layer="Adventure" Auto="Down">
-    <keyboardBind Modifier="ctrl" Key="backslash"/>
+<!-- QWERTZ backslash is an AltGr key, let's try slash (shift+7) -->
+    <keyboardBind Modifier="ctrl,shift" Key="7"/>
   </command>  
 
   <command ID="IndicateDirection" Type="Value" DisplayText="Indicate direction " Category="Basic Move / Attack" Layer="AdventureNav">
@@ -339,6 +345,7 @@
     <keyboardBind Key="numpad7"/>
     <keyboardBind Key="home"/>
     <gamepadBind Button="leftShoulder"/>
+<!-- "z" key on QWERTZ; based on position so it's fine -->
     <keyboardBind Key="y" Set="hjkl"/>
   </command>
 
@@ -356,22 +363,26 @@
   <command ID="CmdInsert" DisplayText="Insert" Category="Menus" Layer="Menus" Auto="DownPass">
     <keyboardBind Key="insert"/>
     <gamepadBind Alt="true" Button="buttonNorth"/>
+<!-- QWERTZ ']' is AltGr + 9 -->
     <keyboardBind Key="]" Modifier="ctrl" Set="hjkl"/>
   </command>
   <command ID="CmdDelete" DisplayText="Delete" Category="Menus" Layer="Menus" Auto="DownPass">
     <keyboardBind Key="delete"/>
     <keyboardBind Key="backspace"/>
     <gamepadBind Alt="true" Button="buttonWest"/>
+<!-- QWERTZ '[' is AltGr + 8 -->
     <keyboardBind Key="[" Set="hjkl"/>
   </command>
   <command ID="V Positive" DisplayText="Increase value" Category="Menus" Layer="Menus" CanShareBindsWith="CmdMoveU,CmdMoveD" Auto="Down">
     <keyboardBind Key="numpadPlus"/>
-    <keyboardBind Key="equals"/>
+<!-- QWERTZ plus key is where ']' is on US standard -->
+    <keyboardBind Key="rightBracket"/>
     <gamepadBind Button="buttonWest"/>
   </command>
   <command ID="V Negative" DisplayText="Decrease value" Category="Menus" Layer="Menus" CanShareBindsWith="CmdMoveU,CmdMoveD" Auto="Down">
     <keyboardBind Key="numpadMinus"/>
-    <keyboardBind Key="minus"/>
+<!-- QWERTZ minus key is where forward slash is on US standard -->
+    <keyboardBind Key="slash"/>
     <gamepadBind Button="buttonNorth"/>
   </command>
   <command ID="CmdFilter" DisplayText="Filter/Search" Category="Menus" Layer="Menus" Auto="DownPass">
@@ -423,6 +434,7 @@
   </command>
   <command ID="CmdLook" DisplayText="Look" Category="Adventuring" Layer="Adventure" Auto="Down">
     <keyboardBind Key="l" Set="default"/>
+<!-- QWERTZ semicolon is shift + comma -->
     <keyboardBind Key="semicolon" Set="hjkl"/>
   </command>
   <command ID="LookDirection" DisplayText="Look in a direction" Type="Value" Category="Adventuring" Layer="AdventureNav">
@@ -482,14 +494,18 @@
   <command ID="CmdWaitN" DisplayText="Wait a number of turns" Category="Adventuring" Layer="Adventure" Auto="Down"></command>
   <command ID="CmdWaitUntilHealed" DisplayText="Rest until healed" Category="Adventuring" Layer="Adventure" Auto="Down">
     <gamepadBind Button="buttonEast"/>
-    <keyboardBind Key="backquote"/>
+<!-- US backquote is a dead key in QWERTZ
+	let's try equals, which is shift+0 -->
+    <keyboardBind Modifier="shift" Key="0"/>
   </command>
   <command ID="CmdWaitUntilPartyHealed" DisplayText="Rest until party is healed" Category="Adventuring" Layer="Adventure" Auto="Down">
   </command>
   <command ID="CmdWaitUntilMorning" DisplayText="Rest until morning" Category="Adventuring" Layer="Adventure" Auto="Down"></command>
   <command ID="CmdWaitMenu" DisplayText="Bring up wait menu" Category="Adventuring" Layer="Adventure" Auto="Down">
     <gamepadBind Alt="true" Button="buttonEast"/>
-    <keyboardBind Modifier="ctrl" Key="backquote"/>
+<!-- US backquote is a dead key in QWERTZ
+	let's try equals, which is shift+0 -->
+    <keyboardBind Modifier="shift" Key="0"/>
   </command>
   <command ID="CmdMoveMenu" DisplayText="Bring up move menu" Category="Adventuring" Layer="Adventure" Auto="Down">
     <keyboardBind Modifier="shift" Key="m"/>
@@ -694,13 +710,15 @@
 
   <!-- Trade -->
   <command ID="CmdTradeAdd" DisplayText="Add one of an item" Category="Trade" Layer="Trade" Auto="Repeat" CanShareBindsWith="V Positive">
-    <keyboardBind Key="equals"/>
+<!-- QWERTZ plus key is where ']' is on US standard -->
+    <keyboardBind Key="rightBracket"/>
     <keyboardBind Key="numpadPlus"/>
     <gamepadBind Button="rightShoulder"/>
     <keyboardBind Key="numpad9"/>
   </command>
   <command ID="CmdTradeRemove" DisplayText="Remove one of an item" Category="Trade" Layer="Trade" Auto="Repeat" CanShareBindsWith="V Negative">
-    <keyboardBind Key="minus"/>
+<!-- QWERTZ minus key is where forward-slash is on US standard -->
+    <keyboardBind Key="slash"/>
     <keyboardBind Key="numpadMinus"/>
     <keyboardBind Key="numpad7"/>
     <gamepadBind Button="leftShoulder"/>
