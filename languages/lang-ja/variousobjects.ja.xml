@@ -2,7 +2,8 @@
 <objects Lang="ja">
 
   <object Name="Door" Load="Merge">
-    <part Name="Render" DisplayName="ドア" />
+    <part Name="Render" DisplayName="[扉\とびら]" />
+<!-- Short="This is a door. It stands in defiance of poetry." -->
     <part Name="Description" Short="これは扉である。詩に反抗して立っている。" />
 <!--
     <part Name="Description" Short="The slate is touched with years of handprints and a ring of rust flakes off the top of the hinges. The door continues, though, its stubborn assertion of 'in' and 'out'." />
