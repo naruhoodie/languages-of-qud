@@ -3,7 +3,7 @@
 Caves of Qud code extracted string table.
 Comments should be deleted when copied to a new translation table.
 -->
-<strings Lang="ja">
+<strings Lang="ja-ruby">
   
   <!--
 	Tutorial strings
@@ -329,19 +329,19 @@ Assets/Game/UI/Tutorial/Intro/GetBooks.cs:120
   -->
 
   <!--Code references: Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:55-->
-  <string ID="New Game">新規ゲーム</string>
+  <string ID="New Game">[新規\しんき]ゲーム</string>
   <!--Code references: Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:56-->
   <string ID="Continue">コンティニュー</string>
   <!--Code references: Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:57-->
-  <string ID="Records">記録</string>
+  <string ID="Records">[記録\きろく]</string>
   <!--Code references: Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:58-->
   <string ID="Options">オプション</string>
   <!--Code references: Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:59-->
   <string ID="Mods">ＭＯＤ</string>
   <!--Code references: Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:62-->
-  <string ID="Language (=currentLanguage=)">言語（=currentLanguage=）</string>
+  <string ID="Language (=currentLanguage=)">[言語\ごんご]（=currentLanguage=）</string>
   <!--Code references: Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:68-->
-  <string ID="Redeem Code">コードを引き換える</string>
+  <string ID="Redeem Code">コードを[引\ひ]き[換\か]える</string>
   <!--Code references: Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:69-->
   <string ID="Modding Toolkit">ＭＯＤツールキット</string>
   <!--Code references: Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:70-->
@@ -349,25 +349,25 @@ Assets/Game/UI/Tutorial/Intro/GetBooks.cs:120
   <!--Code references: Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:71-->
   <string ID="Help">ヘルプ</string>
   <!--Code references: Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:340-->
-  <string ID="Select Language">言語を選択</string>
+  <string ID="Select Language">[言語\ごんご]を[選択\せんたく]</string>
   <!--Code references: Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:341-->
-  <string ID="Note: Playing a saved game in a language other than that game's original language will result in partial and incomplete translations.">注意：セーブデータをゲームのオリジナル言語以外の言語でプレイすると、翻訳が不完全または部分的になってしまいます。</string>
+  <string ID="Note: Playing a saved game in a language other than that game's original language will result in partial and incomplete translations.">[注意\ちゅうい]：セーブデータをゲームのオリジナル[言語\ごんご][以外\いがい]の[言語\ごんご]でプレイすると、[翻訳\ほんやく]が[不完全\ふかんぜん]または[部分的\ぶぶんてき]になってしまいます。</string>
   <!--Code references: Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:376-->
   <string ID="That save file looks like it's from an older save format revision (=gameVersion=). Sorry!&#xA;&#xA;You can probably change to a previous branch in your game client and get it to load if you want to finish it off." Value="[届：\TODO]That save file looks like it's from an older save format revision (=gameVersion=). Sorry!&#xA;&#xA;You can probably change to a previous branch in your game client and get it to load if you want to finish it off." />
   <!--Code references: Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:402-->
-  <string ID="Are you sure you want to quit?">本当に終了してもよろしいですか？</string>
+  <string ID="Are you sure you want to quit?">[本当\ほんとう]に[終了\しゅうりょう]してもよろしいですか？</string>
   <!--Code references:
 Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:425
 Assets/XRL Application/Game Core/EmbarkBuilder/EmbarkBuilderModuleWindowBase.cs:98
 -->
-  <string ID="navigate">航行する</string>
+  <string ID="navigate">[航行\こうこう]する</string>
   <!--Code references:
 Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:430
 Assets/XRL Application/Game Core/EmbarkBuilder/EmbarkBuilderModuleWindowBase.cs:103
 -->
-  <string ID="select">選択する</string>
+  <string ID="select">[選択\せんたく]する</string>
   <!--Code references: Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:435-->
-  <string ID="quit">終了</string>
+  <string ID="quit">[終了\しゅうりょう]</string>
   
   <!--
 	PopupMessage strings
@@ -550,19 +550,19 @@ Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudCyberneticsModuleWindow.cs
   <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudGameBootModule.cs:201-->
   <string ID="It's you.">あなたです。</string>
   <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudGameBootModule.cs:246-->
-  <string ID="Initializing protocols...">プロトコルを初期化中…</string>
+  <string ID="Initializing protocols...">プロトコルを[初期化中\しょきかちゅう]…</string>
   <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudGameBootModule.cs:247-->
-  <string ID="Hardening math...">計算を強化中…</string>
+  <string ID="Hardening math...">[計算\けいさん]を[強化中\きょうかちゅう]…</string>
   <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudGameBootModule.cs:253-->
-  <string ID="Planting world seeds...">ワールドシードを植え中…</string>
+  <string ID="Planting world seeds...">ワールドシードを[植\う]え[中\ちゅう]…</string>
   <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudGameBootModule.cs:294-->
-  <string ID="Generating topography...">地形を生成中…</string>
+  <string ID="Generating topography...">[地形\ちけい]を[生成中\せいせいちゅう]…</string>
   <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudGameBootModule.cs:304-->
-  <string ID="Resolving faction relationships...">派閥関係を解決中…</string>
+  <string ID="Resolving faction relationships...">[派閥\はばつ][関係\かんけい]を[解決中\かいけつちゅう]…</string>
   <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudGameBootModule.cs:307-->
-  <string ID="Adding player to world...">プレイヤーをワールドに追加中…</string>
+  <string ID="Adding player to world...">プレイヤーをワールドに[追加中\ついかちゅう]…</string>
   <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudGameBootModule.cs:349-->
-  <string ID="Starting game!">ゲーム開始！</string>
+  <string ID="Starting game!">ゲーム[開始\かいし]！</string>
   <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudGamemodeModule.cs:24-->
   <string ID="No game mode selected.">[届：\TODO]No game mode selected.</string>
   <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudGamemodeModule.cs:134-->
@@ -607,7 +607,7 @@ Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudMutationsModuleWindow.cs:3
   <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudPregenModuleWindow.cs:72-->
   <string ID="Pregens">[届：\TODO]Pregens</string>
   <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudSpecificBootHandlersModule.cs:116-->
-  <string ID="You embark for the caves of Qud.">カドの洞窟へ出発する。</string>
+  <string ID="You embark for the caves of Qud.">カドの[洞窟\どうくつ]へ[出発\しゅっぱつ]する。</string>
   <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudSubtypeModule.cs:191-->
   <string ID="{{important|=subtype=}} =singularname=">[届：\TODO]{{important|=subtype=}} =singularname=</string>
   <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudSubtypeModuleWindow.cs:38-->
@@ -645,41 +645,41 @@ Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudMutationsModuleWindow.cs:3
   -->
 
   <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:221-->
-  <string ID="door:close">閉める</string>
-  <string ID="door:close|tr">(を)閉める</string>
-  <string ID="door:close|intr">(が)閉まる</string>
+  <string ID="door:close">[閉\し]める</string>
+  <string ID="door:close|tr">(を)[閉\し]める</string>
+  <string ID="door:close|intr">(が)[閉\し]まる</string>
   <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:232-->
-  <string ID="door:open">開ける</string>
-  <string ID="door:open|tr">(を)開ける</string>
-  <string ID="door:open|intr">(が)開く</string>
-  <string ID="door:unlock">(の)ロックを開錠する</string>
+  <string ID="door:open">[開\あ]ける</string>
+  <string ID="door:open|tr">(を)[開\あ]ける</string>
+  <string ID="door:open|intr">(が)[開\あ]く</string>
+  <string ID="door:unlock">(の)ロックを[開錠\かいじょう]する</string>
   <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:446-->
-  <string ID="door:You cannot open =object.t=.">=object.name=を開けることはできない。</string>
+  <string ID="door:You cannot open =object.t=.">=object.name=を[開\あ]けることはできない。</string>
   <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:458-->
-  <string ID="You are out of phase with =object.t=.">=object.name=と位相がずれている。</string>
+  <string ID="You are out of phase with =object.t=.">=object.name=と[位相\いそう]がずれている。</string>
   <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:470-->
-  <string ID="You cannot reach =object.t=.">=object.name=に手が届きない。</string>
+  <string ID="You cannot reach =object.t=.">=object.name=に[手\て]が[届\とど]きない。</string>
   <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:505-->
-  <string ID="You can't unlock =object.t= from a distance.">遠くから=object.name=を開錠することはできない。</string>
+  <string ID="You can't unlock =object.t= from a distance.">[遠\とお]くから=object.name=を[開錠\かいじょう]することはできない。</string>
   <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:521-->
-  <string ID="You unlock =object.t=.">=object.name=のロックを開錠する。</string>
+  <string ID="You unlock =object.t=.">=object.name=のロックを[開錠\かいじょう]する。</string>
   <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:537-->
 <!--
 	could maybe use 連動する for "interface" verb?
 -->
-  <string ID="You interface with =object.t= and unlock =object.them=.">=object.name=とインターフェースしてロックを開錠する。</string>
+  <string ID="You interface with =object.t= and unlock =object.them=.">=object.name=とインターフェースしてロックを[開錠\かいじょう]する。</string>
   <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:552-->
-  <string ID="You lay your hand upon =object.t= and draw forth =object.its= passcode. You enter the code and =object.does:unlock=.">=object.name=に手をかけ、暗証番号を引き出す。暗証番号を入力すると、=object.name=のロックを開錠する。</string>
+  <string ID="You lay your hand upon =object.t= and draw forth =object.its= passcode. You enter the code and =object.does:unlock=.">=object.name=に[手\て]をかけ、[暗証番号\あんしょうばんごう]を[引\ひ]き[出\だ]す。[暗証番号\あんしょうばんごう]を[入力\にゅうりょく]すると、=object.name=のロックを[開錠\かいじょう]する。</string>
   <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:590-->
-  <string ID="You can't unlock =object.t=.">=object.name=をのロックを開錠することはできない。</string>
+  <string ID="You can't unlock =object.t=.">=object.name=をのロックを[開錠\かいじょう]することはできない。</string>
   <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:741-->
-  <string ID="=subject.T= cannot be closed.">=subject.name=を閉めることができない。</string>
+  <string ID="=subject.T= cannot be closed.">=subject.name=を[閉\し]めることができない。</string>
   <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:757-->
-  <string ID="You cannot close =object.t==reason=.">=reason=、=object.name=を閉めることができない。</string>
+  <string ID="You cannot close =object.t==reason=.">=reason=、=object.name=を[閉\し]めることができない。</string>
   <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:778-->
-  <string ID="=subject.T= cannot be closed with =object.t= in the way.">=object.name=が邪魔になっていると=subject.name=を閉めることができない。</string>
+  <string ID="=subject.T= cannot be closed with =object.t= in the way.">=object.name=が邪魔になっていると=subject.name=を[閉\し]めることができない。</string>
   <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:814-->
-  <string ID="=subject.T= cannot be closed with =object.t= in the way to the =direction=.">=object.name=が=direction=側にいると=subject.name=を閉めることができない。</string>
+  <string ID="=subject.T= cannot be closed with =object.t= in the way to the =direction=.">=object.name=が=direction=[側\がわ]にいると=subject.name=を[閉\し]めることができない。</string>
   <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:995-->
   <string ID="You hack =object.t=.">[届：\TODO]You hack =object.t=.</string>
   <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:1025-->
@@ -696,14 +696,14 @@ Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudMutationsModuleWindow.cs:3
 Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:1148
 Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:1184
 -->
-  <string ID="door open reason: because you cannot figure out how" Value="方法が分からないので" />
+  <string ID="door open reason: because you cannot figure out how" Value="[方法\ほうほう]が[分\わ]からないので" />
   
   <!--
 	Keybind strings
   -->
 
   <!--Code references: Assets/XRL Application/World/Text/Delegates.cs:449-->
-  <string ID="keybind:unknown key">不明なキー</string>
+  <string ID="keybind:unknown key">[不明\ふめい]なキー</string>
   <!--Code references: Assets/XRL Application/World/Text/Delegates.cs:464-->
   <string ID="keybind:{{W|Alt}}">{{W|ＡＬＴ}}</string>
   
@@ -712,7 +712,7 @@ Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:1184
   -->
 
   <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:234-->
-  <string ID="Generating lairs...">隠れ家を生成中…</string>
+  <string ID="Generating lairs...">隠れ家を[生成中\せいせいちゅう]…</string>
   <!--Code references:
 Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:301
 Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:336
