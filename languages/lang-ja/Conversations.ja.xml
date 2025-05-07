@@ -4,6 +4,7 @@
   <conversation ID="BaseConversation" Load="Merge">
     <!-- Conversation level choices are distributed to all start nodes by default -->
     <choice ID="WaterRitualChoice" IfSpeakerHavePart="GivesRep" IfAllowEscape="true" Target="WaterRitual" Ordinal="980">
+<!-- possibly more natural with a 1st-person pronoun and the other person's name without honorifics? my kochira/sochira is very sidestepping the issue -->
       <text>そちらの渇きはこちらの、こちらの水はそちらの。</text>
       <text IfHavePart="SociallyRepugnant" Priority="1">
         唾液を交換する？~
@@ -11,9 +12,11 @@
         {{emote|（唇をなめる）}}~
         こちらの渇きはこちらの、そちらの水はそちらの。~
         渇き？水。飲め。~
-        涎の時間よ~
+        涎の時間よ。~
         ？？？~
-        こちらの水は渇き、そちらの水はそちらの。
+        ¯\_(ツ)_/¯~
+        こちらの水は渇き、そちらの水はそちらの。~
+        お宅の渇はおれの、おれの水はダメよ。
       </text>
       <part Name="WaterRitualBegin" />
     </choice>
@@ -97,39 +100,35 @@
 		</node>
 		<node ID="VillageMore" Inherits="Welcome">
 			<text>
-				&#xFF;　大砂漠からの風が少し冷たくなり、湿気を放出する。ちょうどいい具合だ。舌は百通りの風を味わえるんだぞ？
-
-				&#xFF;　いずれにせよ、心はあそこへさまよう。ジョッパについてもっと知りたいなら、イルダド長老に話を聞いてくれ。北の小道を上って行くんだ。
+				大砂漠からの風が少し冷たくなり、湿気を放出する。ちょうどいい具合だ。舌は百通りの風を味わえるんだぞ？&#xA;
+				いずれにせよ、心はあそこへさまよう。ジョッパについてもっと知りたいなら、イルダド長老に話を聞いてくれ。北の小道を上って行くんだ。
 			</text>			
 		</node>
 		<node ID="Work">
 			<text>
-				&#xFF;　仕事か？それなら、あるぞ。
-
-				&#xFF;　甲虫月時くらい、何かが水蔓を食い荒らしている。キュールーンは半塩水の中に蜘蛛のような生き物が這っているのを見たと言う。だが、洞窟の蜘蛛が警備員の溜まり場に近づく勇気などあるはずがない。
-
-				&#xFF;　水田で少し赤い斑点の味がした。赤岩の近くの土壌で見られる頁岩のようなもの…
+				仕事か？それなら、あるぞ。&#xA;
+				甲虫月時くらい、何かが水蔓を食い荒らしている。キュールーンは半塩水の中に蜘蛛のような生き物が這っているのを見たと言う。だが、洞窟の蜘蛛が警備員の溜まり場に近づく勇気などあるはずがない。&#xA;
+				水田で少し赤い斑点の味がした。赤岩の近くの土壌で見られる頁岩のようなもの…
 			</text>
 			<choice Target="WorkMore">…</choice>
 		</node>
 		<node ID="WorkMore">
 			<text>
-				&#xFF;　散策してくれかい？赤岩へ。ジョッパの北約２パラサングくらい。
-
-				&#xFF;　害虫を殺して死体を持ち帰り、それが何なのか分かるのため。後で長老が報酬をくれるだろう、水蔓園労働者。
+				散策してくれかい？赤岩へ。ジョッパの北約２パラサングくらい。 &#xA;
+				害虫を殺して死体を持ち帰り、それが何なのか分かるのため。後で長老が報酬をくれるだろう、水蔓園労働者。
 			</text>
 			<choice Target="End" StartQuest="What's Eating the Watervine?">要求通りにします。</choice>
 			<choice Target="Start">興味ないです。</choice>
 		</node>
 		<node ID="Aye" Inherits="Welcome">
 			<text>
-			  やあ
+				やあ
 			</text>
 		</node>
 		<node ID="BackFromRedrock">
 			<text>
-				&#xFF;　おや？あっ……
-				&#xFF;　それは見た目が気に入らない。長老のところへ持って行った方がいい。小屋は小道を北に進んだところにある。
+				おや？あっ……&#xA;
+				それは見た目が気に入らない。長老のところへ持って行った方がいい。小屋は小道を北に進んだところにある。
 			</text>
 			<choice GotoID="End">分かりました。</choice>
 		</node>

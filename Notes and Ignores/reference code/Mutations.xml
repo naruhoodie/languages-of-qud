@@ -1,15 +1,62 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <mutations LoadPriority="1000">
   <category Name="Morphotypes" DisplayName="{{W|Morphotypes}}" Foreground="r" Detail="R" ExcludeFromPool="true">
-    <mutation Name="Chimera" Cost="1" MaxSelected="1" Class="Chimera" Exclusions="Esper,*Mental,*MentalDefects" Tile="Mutations/chimera.bmp" />
-    <mutation Name="Esper" Cost="1" MaxSelected="1" Class="Esper" Exclusions="Chimera,*Physical,*PhysicalDefects" Tile="Mutations/esper.bmp" />
-    <mutation Name="Unstable Genome" Cost="3" MaxSelected="99" Class="UnstableGenome" Exclusions="" Tile="Mutations/unstable_genome.bmp" />
+    <mutation Name="Chimera" Cost="1" MaxSelected="1" Class="Chimera" Exclusions="Esper,*Mental,*MentalDefects" Tile="Mutations/chimera.bmp">
+      <description>
+        <p>You only manifest physical mutations, and all of your mutation choices when manifesting a new mutation are physical.</p>
+        <br />
+        <p>Whenever you manifest a new mutation, one of your choices will also cause you to grow a new limb at random.</p>
+      </description>
+      <leveltext></leveltext>
+    </mutation>
+    <mutation Name="Esper" Cost="1" MaxSelected="1" Class="Esper" Exclusions="Chimera,*Physical,*PhysicalDefects" Tile="Mutations/esper.bmp">
+      <description>
+        <p>You only manifest mental mutations, and all of your mutation choices when manifesting a new mutation are mental.</p>
+      </description>
+      <leveltext></leveltext>
+    </mutation>
+    <mutation Name="Unstable Genome" Cost="3" MaxSelected="99" Class="UnstableGenome" Exclusions="" Tile="Mutations/unstable_genome.bmp">
+      <description>
+        <p>You gain one extra mutation each time you buy this, but the mutations don't manifest right away.</p>
+        <p>Whenever you gain a level, there's a 33% chance that your genome destabilizes and you get to choose from 3 random mutations.</p>
+      </description>
+      <leveltext />
+    </mutation>
   </category>
 
   <category Name="Physical" DisplayName="{{G|Physical Mutations}}" Foreground="w" Detail="W" Property="PhysicalMutationShift" ForceProperty="PhysicalMutationForceShift">
-    <mutation Name="Adrenal Control" Cost="4" MaxSelected="1" Class="AdrenalControl2" Exclusions="" BearerDescription="those with control over their adrenal glands" Tile="Mutations/adrenal_control.bmp" />
-    <mutation Name="Beak" Cost="1" MaxSelected="1" Class="Beak" Exclusions="" BearerDescription="those with beaks" Tile="Mutations/beak.bmp" />
-    <mutation Name="Burrowing Claws" Cost="3" MaxSelected="1" Class="BurrowingClaws" Exclusions="" BearerDescription="burrowers" Tile="Mutations/burrowing_claws.bmp" />
+    <mutation Name="Adrenal Control" Cost="4" MaxSelected="1" Class="AdrenalControl2" Exclusions="" BearerDescription="those with control over their adrenal glands" Tile="Mutations/adrenal_control.bmp">
+      <description>
+        <p>You regulate your body's release of adrenaline.</p>
+      </description>
+      <leveltext>
+        <p>You can increase your body's adrenaline flow for <stat Name="Duration" />.</p>
+        <p>While it's flowing, you gain +<stat Name="QuicknessBonus" /> quickness and other physical mutations gain +<stat Name="MutationBonus" Unit="rank" />.</p>         
+        <statline Name="Cooldown" />
+      </leveltext>
+    </mutation>
+    <mutation Name="Beak" Cost="1" MaxSelected="1" Class="Beak" Exclusions="" BearerDescription="those with beaks" Tile="Mutations/beak.bmp">
+      <description>
+        <p>Your face bears a sightly <stat Name="BeakName" />.</p>
+        <br />
+        <p>+1 Ego</p>
+        <p>You occasionally peck at your opponents.</p>
+        <p>+200 reputation with {{w|<gametext>=faction:Birds=</gametext>}}</p>
+      </description>
+      <leveltext></leveltext>
+    </mutation>
+    <mutation Name="Burrowing Claws" Cost="3" MaxSelected="1" Class="BurrowingClaws" Exclusions="" BearerDescription="burrowers" Tile="Mutations/burrowing_claws.bmp">
+      <description>
+        <!-- code will prefix this with "Burrowing Claws Claw" blueprints VariantDescription -->
+        <p>You bear spade-like claws that can burrow through the earth.</p>
+      </description>
+      <leveltext>
+        <p><gametext>=weapon.Name=</gametext> penetration vs. walls: <stat Name="WallPenetration" /></p>
+        <p><gametext>=weapon.Name|pluralize=</gametext> destroy walls after <stat Name="WallHits" Unit="penetrating hit" />.</p>
+        <switch Name="PrereleaseContent"><case Value="true"><p>Can dig passages up or down when outside of combat</p></case></switch>
+        <p><gametext>=weapon.Name|pluralize= are also a =weaponClass.name= class natural weapon that deal <stat Name="Damage" /> base damage to non-walls.</gametext></p>
+      </leveltext>
+    </mutation>
     <mutation Name="Carapace" Cost="3" MaxSelected="1" Class="Carapace" Exclusions="Quills" BearerDescription="the carapaced" Tile="Mutations/carapace.bmp" />
     <mutation Name="Corrosive Gas Generation" Cost="3" MaxSelected="1" Class="CorrosiveGasGeneration" BearerDescription="those who expel corrosive gas" Tile="Mutations/gas_generation.bmp" />
     <mutation Name="Double-muscled" Cost="3" MaxSelected="1" Class="HeightenedStrength" Exclusions="" BearerDescription="the double-muscled" Tile="Mutations/double-muscled.bmp" />

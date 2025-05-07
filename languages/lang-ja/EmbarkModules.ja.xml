@@ -10,7 +10,7 @@
   <module Class="XRL.CharacterBuilds.Qud.QudGamemodeModule" Load="Merge">
     <window ID="Chargen/Modes" Prefab="HorizScroll" Class="XRL.CharacterBuilds.Qud.UI.QudGamemodeModuleWindow">
       <title>：ゲームモードを選択する：</title>
-      <name>Game Modes</name>
+      <name>[届：\TODO]Game Modes</name>
     </window>
 
 		<modes>
@@ -65,7 +65,7 @@
 
   <module Class="XRL.CharacterBuilds.Qud.QudChartypeModule">
     <window ID="Chargen/CharType" Prefab="HorizScroll" Class="XRL.CharacterBuilds.Qud.UI.QudChartypeModuleWindow">
-      <name>CharTypes</name>
+      <name>[届：\TODO]CharTypes</name>
       <title>：キャラクター系を選択する：</title>
     </window>
 
@@ -73,7 +73,7 @@
       <type ID="Pregen" Title="プリセット">
         <icon Tile="UI/sw_preset.bmp" Foreground="W" Detail="w"></icon>
         <description>
-          (needs description)
+          [届：\TODO]Pick from several preset characters. Once you get comfortable, you can customize them.
          </description>
       </type>
       
@@ -109,21 +109,21 @@
 
   <module Class="XRL.CharacterBuilds.Qud.QudBuildLibraryModule">
     <window ID="Chargen/BuildLibrary" Prefab="HorizScroll" Class="XRL.CharacterBuilds.Qud.UI.QudBuildLibraryModuleWindow">
-      <name>Build Library</name>
+      <name>[届：\TODO]Build Library</name>
       <title>：ビルドのライブラリ：</title>
     </window>
   </module>
   
   <module Class="XRL.CharacterBuilds.Qud.QudGenotypeModule">
     <window ID="Chargen/ChooseGenotypes" Prefab="HorizScroll" Class="XRL.CharacterBuilds.Qud.UI.QudGenotypeModuleWindow">
-      <name>Genotypes</name>
+      <name>[届：\TODO]Genotypes</name>
       <title>：遺伝子型を選択する：</title>
     </window>
   </module>
   
   <module Class="XRL.CharacterBuilds.Qud.QudPregenModule">
     <window ID="Chargen/Pregens" Prefab="HorizScroll" Class="XRL.CharacterBuilds.Qud.UI.QudPregenModuleWindow">
-      <name>Pregens</name>
+      <name>[届：\TODO]Pregens</name>
       <title>：プリセットを選択する：</title>
     </window>
 
@@ -215,18 +215,18 @@
 
   <module Class="XRL.CharacterBuilds.Qud.QudSubtypeModule">
     <window ID="Chargen/ChooseSubtypes" Prefab="HorizScroll" Class="XRL.CharacterBuilds.Qud.UI.QudSubtypeModuleWindow">
-      <name>Subtypes</name>
+      <name>[届：\TODO]Subtypes</name>
       <title>：サブタイプを選択する：</title>
     </window>
     <window ID="Chargen/ChooseSubtypesCategory" Prefab="SwitchingScroller" Class="XRL.CharacterBuilds.Qud.UI.QudSubtypeModuleCategoryWindow">
-      <name>Subtypes with Category</name>
+      <name>[届：\TODO]Subtypes with Category</name>
       <title>：サブタイプを選択する：</title>
     </window>
   </module>
 
   <module Class="XRL.CharacterBuilds.Qud.QudMutationsModule">
     <window ID="Chargen/Mutations" Prefab="CategoryMenus" Class="XRL.CharacterBuilds.Qud.UI.QudMutationsModuleWindow">
-      <name>Mutations</name>
+      <name>[届：\TODO]Mutations</name>
       <title>：突然変異を選択する：</title>
     </window>
 
@@ -235,34 +235,34 @@
   <module Class="XRL.CharacterBuilds.Qud.QudAttributesModule">
     <window ID="Chargen/PickAttributes" Prefab="HorizScrollerScroller" Class="XRL.CharacterBuilds.Qud.UI.QudAttributesModuleWindow">
       <title>：属性を選択する：</title>
-      <name>Attributes</name>
+      <name>[届：\TODO]Attributes</name>
     </window>
   </module>
 
   <module Class="XRL.CharacterBuilds.Qud.QudCyberneticsModule">
     <window ID="Chargen/Cybernetic" Prefab="CategoryMenus" Class="XRL.CharacterBuilds.Qud.UI.QudCyberneticsModuleWindow">
-      <name>Cybernetics</name>
+      <name>[届：\TODO]Cybernetics</name>
       <title>：サイバネティックインプラントを選択する：</title>
     </window>
   </module>
 
   <module Class="XRL.CharacterBuilds.Qud.QudBuildSummaryModule">
     <window ID="Chargen/BuildSummary" Prefab="HorizScroll" Class="XRL.CharacterBuilds.Qud.UI.QudBuildSummaryModuleWindow">
-      <name>Summary</name>
+      <name>[届：\TODO]Summary</name>
       <title>：ビルドの概要：</title>
     </window>
   </module>
 
   <module Class="XRL.CharacterBuilds.Qud.QudCustomizeCharacterModule">
     <window ID="Chargen/Customize" Prefab="VertScroll" Class="XRL.CharacterBuilds.Qud.UI.QudCustomizeCharacterModuleWindow">
-      <name>Customize</name>
+      <name>[届：\TODO]Customize</name>
       <title>：キャラクターをカスタマイズする：</title>
     </window>
   </module>
 
   <module Class="XRL.CharacterBuilds.Qud.QudChooseStartingLocationModule">
     <window ID="Chargen/ChooseStartingLocation" Prefab="HorizScroll" Class="XRL.CharacterBuilds.Qud.UI.QudChooseStartingLocationModuleWindow">
-      <name>Starting Location</name>
+      <name>[届：\TODO]Starting Location</name>
       <title>:choose starting location:</title>
     </window>
     
