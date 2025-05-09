@@ -4,7 +4,7 @@
 
 	trying to avoid OEM keys, dead keys, AltGr, and cp437 conflicts
 -->
-<commands Load="Merge">
+<commands Lang="de" Load="Merge">
   
   <!-- Basic Move / Attack -->
   <command ID="CmdMoveNW" DisplayText="Move northwest" Category="Basic Move / Attack" Layer="AdventureNav">
@@ -16,15 +16,15 @@
 
   <command ID="CmdMoveU" DisplayText="Move up" Category="Basic Move / Attack" Layer="AdventureNav" CanShareBindsWith="V Positive,V Negative">
     <keyboardBind Key="numpadMinus"/>
-<!-- want to bind to the '<' key, which is an OEM thing on QWERTZ  -->
-    <keyboardBind Modifier="shift" Key="comma"/>
+<!-- binding to the '<' key, which is an OEM thing on QWERTZ  -->
+    <keyboardBind Key="OEM1"/>
     <keyboardBind Key="s"/>
     <gamepadBind Button="dpad/up"/>
   </command>
   <command ID="CmdMoveD" DisplayText="Move down" Category="Basic Move / Attack" Layer="AdventureNav" CanShareBindsWith="V Positive,V Negative">
     <keyboardBind Key="numpadPlus"/>
-<!-- want to bind to the '>' key, which is an OEM thing on QWERTZ  -->
-    <keyboardBind Modifier="shift" Key="period"/>
+<!-- binding to the '>' key, which is an OEM thing on QWERTZ  -->
+    <keyboardBind Modifier="shift" Key="OEM1"/>
     <keyboardBind Key="d"/>
     <gamepadBind Button="dpad/down"/>
   </command>

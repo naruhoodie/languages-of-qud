@@ -23,12 +23,12 @@ Una tortuga golpea a un perro con su espada.
 WDidXToYWithZ:
 (drop W.nom when a personal pronoun)
 if Y is a personal pronoun:
-"=W.nom= =Y.acc= =X.Wconj= con =Z.Wposs.prep=."
+"(=W.nom= )=Y.acc= =X.Wconj= con =Z.Wposs.prep=."
 if Y is a person or animal:
-"=W.nom= =X.Wconj= =Y.pacc= con =Z.Wposs.prep=."
+"(=W.nom= )=X.Wconj= =Y.pacc= con =Z.Wposs.prep=."
   where =Y.pacc= is "a =Y.acc=" (with contractions)
 if Y is an object:
-"=W.nom= =X.Wconj= =Y.acc= con =Z.Wposs.prep=."
+"(=W.nom= )=X.Wconj= =Y.acc= con =Z.Wposs.prep=."
 
 --de
 Du schlägst den Hund mit deinem Schwert.
@@ -41,8 +41,12 @@ Eine Schildkröte schlägt einen Hund mit ihrem Schwert.
 WDidXToYWithZ:
 if 1-word verb ("schlägst")
 "W.nom =X.Wconj= =Y.acc= mit =Z.Wposs.dat=."
-if 2-part verb (e.g. "hast geschlagen"):
+if verb with auxiliary (e.g. "haben geschlagen"):
 "W.nom =X.aux.Wconj= =Y.acc= mit =Z.Wposs.dat= =X.pp=."
+if verb with a separable prefix (e.g. "eingeben" "geben ... ein"):
+"W.nom =X.Wconj= =Y.acc= mit =Z.Wposs.dat= X.prefix."
+if reflexive verb, which could also be separable (e.g. "sich ausruhen"):
+...it's complicated
 
 --fr
 Tu frappes le chien avec ton épée.
@@ -53,26 +57,27 @@ Tu frappes la tortue avec ton épée.
 Un chien frappe une tortue avec son épée.
 Une tortue frappe un chien avec son épée.
 WDidXToYWithZ:
-if personal pronoun object:
+if Y is personal pronoun:
 "=W.nom= =Y.obj= =X.Wconj= avec =Z.Wposs=."
 otherwise:
 "=W.nom= =X.Wconj= =Y.obj= avec =Z.Wposs=."
 
 --ja
-(Note: tortoise is your follower, dog is not)
+(Note: tortoise 亀 is your follower, dog 犬 is not, sword 剣 is the weapon)
 剣で犬を殴る。
 犬に剣で殴られる。
-犬に剣で亀が殴られる。
+犬に剣で亀を殴られる。
 亀は剣で犬を殴る。
-あなたに剣で亀が殴られる。
-犬に剣で亀が殴られる。
+あなたに剣で亀を殴られる。
+犬に剣で亀を殴られる。
 亀は剣で犬を殴る。
 WDidXToYWithZ:
 (USUALLY drop W or Y when it's 2nd-person "You" (あなた))
-when the outcome is good for you/your group:
-"=W=は=Z=で=Y=を=X.plain=。"
-when the outcome is BAD for you/your group:
-"=W=に=Z=で=Y=が=X.passive=。"
+when the outcome is good/neutral for you/your group:
+"(=W.は=)=Z.で=(=Y.を=)=X.plain=。"
+when the outcome is BAD for you/your group: (meiwaku)
+"=W.に==Z.で=(=Y.を=)=X.passive=。"
+unfortunate passive: "(あなたが)=W=に=Z=で=Y=を=X.passive=。"
 
 --tr
 Köpeğe kılıcınla vuruyorsun.
@@ -84,7 +89,7 @@ Bir köpek bir kaplumbağaya kılıcıyla vuruyor.
 Bir kaplumbağa bir köpeğe kılıcıyla vuruyor.
 WDidXToYWithZ:
 (omit W.nom when a personal pronoun)
-"=W.nom= =Y.Xtarget= =Z.Wposs.instr= =X.Wconj=."
+"(=W.nom= )=Y.Xtarget= =Z.Wposs.instr= =X.Wconj=."
 BUT the word order isn't strict, and different orderings emphasize different elements of the sentence.
 
 Misc Notes:
@@ -98,4 +103,4 @@ NOTE: French videogames usually use 'vous' not 'tu'!
 
 Spanish 3rd-person possessives inflect for item number, but not gender
 Spanish has a recent inclusive -e form!
-French WILL REQUIRE male/female gendering
+French REQUIRES male/female gendering (but there's attempts at inclusive) 
