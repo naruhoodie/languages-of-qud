@@ -4,10 +4,10 @@ using XRL.World.Text.Delegates;
 
 namespace LangauagesOfQud
 {
-    [HasVariableReplacer]
+    [HasVariableReplacer(Lang = "ja")]
     public static class VariableReplacers
     {
-        [VariableObjectReplacer("届")]
+        [VariableObjectReplacer("todo")]
         public static string TodoReplacer(DelegateContext Context)
         {
             if (Context.Target is GameObject target)
