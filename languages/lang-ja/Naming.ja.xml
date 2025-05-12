@@ -5,7 +5,7 @@
 
     <namestyle Name="Qudish (ja)" Format="AsIs">
       <scopes>
-        <scope Name="General" Priority="0" Combine="true" />
+        <!-- <scope Name="General" Priority="0" Combine="true" /> -->
         <scope Name="Genotype" Genotype="Mutated Human" Priority="50" Combine="true" />
         <scope Name="Culture" Culture="Qudish" Priority="100" Combine="true" />
       </scopes>
@@ -456,6 +456,147 @@
         <postfix Name="ヨ" Original="yo" />
         <postfix Name="ザ" Original="za" />
         <postfix Name="ゾ" Original="zo" />
+      </postfixes>
+    </namestyle>
+
+    <namestyle Name="Ibulian (ja)" TwoNameChance="80" Format="AsIs">
+      <scopes>
+        <scope Name="Subtype1" Subtype="Artifex" Priority="100" Combine="false" />
+        <scope Name="Subtype2" Subtype="Consul" Priority="100" Combine="false" />
+        <scope Name="Subtype3" Subtype="Eunuch" Priority="100" Combine="false" />
+        <scope Name="Subtype4" Subtype="Praetorian" Priority="100" Combine="false" />
+        <scope Name="Culture" Culture="Ibulian" Priority="100" Combine="false" />
+      </scopes>
+      <prefixes Amount="1">
+        <prefix Name="ア" Original="a" Weight="2" />
+        <prefix Name="アエ" Original="ae" />
+        <prefix Name="アン" Original="an" />
+        <prefix Name="アウ" Original="au" />
+        <prefix Name="バ" Original="ba" />
+        <prefix Name="ブラ" Original="bla" />
+        <prefix Name="ブルー" Original="bru" />
+        <prefix Name="カエ" Original="cae" />
+        <prefix Name="カイ" Original="cai" />
+        <prefix Name="カミ" Original="cami" />
+        <prefix Name="カシ" Original="cassi" />
+        <prefix Name="キ" Original="ci" />
+        <prefix Name="クラウ" Original="clau" />
+        <prefix Name="ナエ" Original="cnae" />
+        <prefix Name="コ" Original="co" />
+        <prefix Name="クリ" Original="cri" />
+        <prefix Name="デ" Original="de" />
+        <prefix Name="ディオ" Original="dio" />
+        <prefix Name="ドー" Original="do" />
+        <prefix Name="ドルー" Original="dru" />
+        <prefix Name="エグナ" Original="egna" />
+        <prefix Name="ファ" Original="fa" />
+        <prefix Name="ファウ" Original="fau" />
+        <prefix Name="フェ" Original="fe" />
+        <prefix Name="フラ" Original="fla" />
+        <prefix Name="フロ" Original="flo" />
+        <prefix Name="ガ" Original="ga" />
+        <prefix Name="ゲ" Original="ge" />
+        <prefix Name="グナエ" Original="gnae" />
+        <prefix Name="ハ" Original="ha" />
+        <prefix Name="ヘ" Original="he" />
+        <prefix Name="ホ" Original="ho" />
+        <prefix Name="イオ" Original="io" />
+        <prefix Name="イウ" Original="iu" />
+        <prefix Name="ヤ" Original="ja" />
+        <prefix Name="ユ" Original="ju" />
+        <prefix Name="ラ" Original="la" />
+        <prefix Name="ラウ" Original="lau" />
+        <prefix Name="リ" Original="li" />
+        <prefix Name="ル" Original="lu" />
+        <prefix Name="マ" Original="ma" />
+        <prefix Name="ネ" Original="ne" />
+        <prefix Name="ノ" Original="no" />
+        <prefix Name="オクタ" Original="octa" />
+        <prefix Name="オヴィ" Original="ovi" />
+        <prefix Name="プリ" Original="pli" />
+        <prefix Name="ポ" Original="po" />
+        <prefix Name="プリ" Original="pri" />
+        <prefix Name="プ" Original="pu" />
+        <prefix Name="クイ" Original="qui" />
+        <prefix Name="ルー" Original="ru" />
+        <prefix Name="サ" Original="sa" />
+        <prefix Name="セ" Original="se" />
+        <prefix Name="スプー" Original="spu" />
+        <prefix Name="タ" Original="ta" />
+        <prefix Name="ティ" Original="ti" />
+        <prefix Name="トゥ" Original="tu" />
+        <prefix Name="ヴァ" Original="va" />
+        <prefix Name="ヴェ" Original="ve" />
+        <prefix Name="ヴィ" Original="vi" />
+      </prefixes>
+      <infixes Amount="0-1">
+        <infix Name="ビ" Original="bi" Weight="2" />
+        <infix Name="ブリ" Original="bri" />
+        <infix Name="ケ" Original="ce" />
+        <infix Name="キ" Original="ci" />
+        <infix Name="クレ" Original="cle" />
+        <infix Name="ドリ" Original="dri" />
+        <infix Name="ガ" Original="ga" />
+        <infix Name="グリ" Original="gri" />
+        <infix Name="グー" Original="gu" Weight="2" />
+        <infix Name="ッル" Original="llu" />
+        <infix Name="ル" Original="lu" />
+        <infix Name="ミ" Original="mi" Weight="2" />
+        <infix Name="ナ" Original="na" />
+        <infix Name="ンディ" Original="ndi" />
+        <infix Name="ニ" Original="ni" />
+        <infix Name="ヌ" Original="nu" />
+        <infix Name="ピ" Original="pi" />
+        <infix Name="プリ" Original="pri" />
+        <infix Name="ラ" Original="ra" />
+        <infix Name="ルディ" Original="rdi" />
+        <infix Name="レ" Original="re" Weight="2" />
+        <infix Name="レンティ" Original="renti" />
+        <infix Name="ルマ" Original="rma" />
+        <infix Name="ルネ" Original="rne" />
+        <infix Name="シ" Original="si" />
+        <infix Name="スピ" Original="spi" />
+        <infix Name="ッシ" Original="ssi" />
+        <infix Name="スティ" Original="sti" />
+        <infix Name="ティ" Original="ti" />
+        <infix Name="ト" Original="to" />
+        <infix Name="ヴィ" Original="vi" />
+        <infix Name="ゼ" Original="xe" />
+        <infix Name="ジ" Original="xi" />
+      </infixes>
+      <postfixes Amount="1">
+        <postfix Name="バ" Original="ba" />
+        <postfix Name="ビウス" Original="bius" />
+        <postfix Name="ブス" Original="bus" />
+        <postfix Name="キウス" Original="cius" />
+        <postfix Name="ディア" Original="dia" />
+        <postfix Name="ディナ" Original="dina" />
+        <postfix Name="ディヌス" Original="dinus" />
+        <postfix Name="ディウス" Original="dius" />
+        <postfix Name="ギナ" Original="gina" />
+        <postfix Name="ギヌス" Original="ginus" />
+        <postfix Name="イウス" Original="ius" />
+        <postfix Name="リア" Original="lia" />
+        <postfix Name="リアナ" Original="liana" />
+        <postfix Name="リウス" Original="lius" />
+        <postfix Name="リクス" Original="lix" />
+        <postfix Name="ラ" Original="lla" />
+        <postfix Name="ルス" Original="lus" />
+        <postfix Name="ムス" Original="mus" />
+        <postfix Name="ナ" Original="na" />
+        <postfix Name="ニウス" Original="nius" />
+        <postfix Name="ヌス" Original="nus" />
+        <postfix Name="ピウス" Original="pius" />
+        <postfix Name="ッパ" Original="ppa" />
+        <postfix Name="ッピナ" Original="ppina" />
+        <postfix Name="プス" Original="pus" />
+        <postfix Name="ロ" Original="ro" />
+        <postfix Name="サル" Original="sar" />
+        <postfix Name="シウス" Original="sius" />
+        <postfix Name="スタ" Original="sta" />
+        <postfix Name="ストゥス" Original="stus" />
+        <postfix Name="ト" Original="to" />
+        <postfix Name="トゥス" Original="tus" />
       </postfixes>
     </namestyle>
 
