@@ -160,7 +160,7 @@ namespace LanguagesOfQud
         public static string Direction(DelegateContext Context)
         {
             var result = Context.Default;
-            var origin = The.Player;
+            var origin = XRL.The.Player;
             var destination = Context.Target;
             if (Context.Arguments.Count >= 2)
             {

@@ -1,13 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<embarkmodules Lang="ja">
+<embarkmodules Lang="ja" Load="Merge">
 
 <!-- where does the "character creation" title show up? -->
 
-  <module Class="XRL.CharacterBuilds.Qud.QudSpecificCharacterInitModule"> <!-- responsible for initializing the default humanoid object during character builds (returns a "humanoid" object) -->
-
-  </module>
-
-  <module Class="XRL.CharacterBuilds.Qud.QudGamemodeModule" Load="Merge">
+  <module Class="XRL.CharacterBuilds.Qud.QudGamemodeModule">
     <window ID="Chargen/Modes" Prefab="HorizScroll" Class="XRL.CharacterBuilds.Qud.UI.QudGamemodeModuleWindow">
       <title>：ゲームモードを選択する：</title>
       <name>[届：\TODO]Game Modes</name>
@@ -77,7 +73,7 @@
          </description>
       </type>
       
-      <type ID="New" Title="NEW">
+      <type ID="New" Title="ＮＥＷ">
         <icon Tile="UI/sw_newchar.bmp" Foreground="W" Detail="w"></icon>
         <description>
           新しいキャラクターを作成する
@@ -131,7 +127,6 @@
       
     <!-- True Kin -->
       <pregen ID="Praetorian Prime" Name="プレトリアン・プライム">
-        <code>H4sIACEIKGEA/81U74vTQBD9fnD/wxL8mIZeLSJCP9T6AzmVei1VkPuwSYZkcbsbdmeVIP3fbyZNbfYKFgWlC6XNvDczL29m+/P6Soikklv4Ds4ra5IXIplk42wynmTTaZJ2eB6ULgeEGyKMe2xry6DBU/grPwvRleTTQ+u2AU76cvc+W9TSyQLBveSKPvsUSv68BWORaB+6hFTMvYdtrtvRYkUJTSo2+96zo7JULILG4GBmIKCTOhXLkGtV3EK7tt/AzEzQeq+xE1NKlCTjlzoKPeGev5EWy3pFBU6kHRtQvQOfS65dAHGrTEQ4sfCA7fY/dj35LyxchfwCHYxUnTewp3PBpZOA1in53xycIzqVBwR/YSY+Fnbex6VVBv0yuKKWHsq4H/uMDkyFNQHPB3mEzCulFbYEPIuBtQ1VbcDzRX+U884gaK0qMAW/xjRGPyutG/sD3Cn0urIcPMYO0+tQ2awaMEiM0dNhRwLuYCuVUaYicDyEcnrdeUPROOMfbs2izcEZQFVc2tqcKDu/N5qtG90MQx40FEjqB//w+xOtFDGP/VjUR1XVuFGd7dHUmWlDN9dhow7YSL7wDCVvJC3TEO5Hxef+j2bLX/fXV7sH0tV16+sGAAA=</code>
         <description>
 &amp;c•&amp;y Charge-based melee fighter
 &amp;c•&amp;y Starts with night vision
@@ -274,7 +269,7 @@
         
       </location>
 
-      <location ID="SaltMarshVillage" Name="{{G|塩性湿地}}の村" Load="Merge">
+      <location ID="SaltMarshVillage" Name="{{G|塩性湿地}}の村">
         <description>
           {{c|•}} Random village in 塩性湿地
           {{c|•}} Village teaches Harvestry.
@@ -284,7 +279,7 @@
 
       </location>
 
-      <location ID="SaltDuneVillage" Name="{{Y|塩の砂丘}}の村" Load="Merge">
+      <location ID="SaltDuneVillage" Name="{{Y|塩の砂丘}}の村">
         <description>
           {{c|•}} Random village in 塩の砂丘
           {{c|•}} Village teaches Fasting Way.
@@ -294,7 +289,7 @@
         
       </location>
 
-      <location ID="DesertCanyonsVillage" Name="{{W|砂漠の峡谷}}の村" Load="Merge">
+      <location ID="DesertCanyonsVillage" Name="{{W|砂漠の峡谷}}の村">
         <description>
           {{c|•}} Random village in 砂漠の峡谷
           {{c|•}} Village teaches Wayfaring.
@@ -303,7 +298,7 @@
         
       </location>
   
-      <location ID="HillsVillage" Name="{{Y|丘}}の村" Load="Merge">
+      <location ID="HillsVillage" Name="{{Y|丘}}の村">
         <description>
           {{c|•}} Random village in 丘
           {{c|•}} Village teaches Butchering.
@@ -313,7 +308,7 @@
         
       </location>
 
-      <location ID="JoppaTutorial" Name="沈んだキャラバンサライ" Load="Merge">
+      <location ID="JoppaTutorial" Name="沈んだキャラバンサライ">
         <description>
           カド郊外に到着。
         </description>
