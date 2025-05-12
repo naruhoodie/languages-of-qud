@@ -3,7 +3,331 @@
 
   <namestyles>
 
-    <namestyle Name="Ekuemekiyyen-ja" Format="AsIs">
+    <namestyle Name="Qudish (ja)" Format="AsIs">
+      <scopes>
+        <scope Name="General" Priority="0" Combine="true" />
+        <scope Name="Genotype" Genotype="Mutated Human" Priority="50" Combine="true" />
+        <scope Name="Culture" Culture="Qudish" Priority="100" Combine="true" />
+      </scopes>
+      <prefixes Amount="1">
+        <prefix Name="ファ" Original="fa" />
+        <prefix Name="ハ" Original="ha" />
+        <prefix Name="イ" Original="i" Weight="3" />
+        <prefix Name="イー" Original="i" />
+        <prefix Name="カ" Original="ka" />
+        <prefix Name="キ" Original="ki" />
+        <prefix Name="クー" Original="ku" />
+        <prefix Name="マ" Original="ma" />
+        <prefix Name="メフ" Original="meh" />
+        <prefix Name="モ" Original="mo" />
+        <prefix Name="ムー" Original="mu" />
+        <prefix Name="ナ" Original="na" />
+        <prefix Name="ニ" Original="ni" />
+        <prefix Name="ヌ" Original="nu" />
+        <prefix Name="ニュ" Original="ny" />
+        <prefix Name="オ" Original="o" />
+        <prefix Name="ク" Original="q" />
+        <prefix Name="シュウ" Original="shwu" />
+        <prefix Name="シュイ" Original="shwy" />
+        <prefix Name="シー" Original="si" />
+        <prefix Name="シィ" Original="sy" />
+        <prefix Name="タ" Original="ta" />
+        <prefix Name="ティ" Original="ti" />
+        <prefix Name="チィ" Original="ty" />
+        <prefix Name="ウ" Original="u" />
+        <prefix Name="ウー" Original="uu" />
+        <!-- <prefix Name="イ" Original="y" /> -->
+        <prefix Name="ヤ" Original="ya" />
+        <!-- <prefix Name="イ" Original="yi" /> -->
+        <prefix Name="イイ" Original="yy" />
+      </prefixes>
+      <infixes Amount="0-2">
+        <infix Name="ガ" Original="ga" />
+        <infix Name="メ" Original="me" />
+        <infix Name="モ" Original="mo" />
+        <infix Name="モー" Original="moo" />
+        <infix Name="ムー" Original="mu" />
+        <infix Name="ムウ" Original="muu" />
+        <infix Name="ラ" Original="ra" />
+        <infix Name="ロ" Original="ro" />
+        <infix Name="ロー" Original="roo" />
+        <infix Name="ルー" Original="ru" />
+        <infix Name="ルウ" Original="ruu" />
+        <infix Name="シー" Original="shi" />
+        <infix Name="シラ" Original="shra" />
+        <infix Name="シリ" Original="shri" />
+        <infix Name="シロ" Original="shro" />
+        <infix Name="シルー" Original="shru" />
+        <infix Name="シワ" Original="shwa" />
+        <infix Name="シオ" Original="shwo" />
+        <infix Name="シウ" Original="shwu" />
+        <infix Name="ユ" Original="yu" Weight="2" />
+      </infixes>
+      <postfixes Amount="1">
+        <postfix Name="バス" Original="bas" />
+        <postfix Name="ド" Original="d" />
+        <postfix Name="ジル" Original="jr" />
+        <postfix Name="カス" Original="kas" />
+        <postfix Name="カット" Original="kat" Weight="2" />
+        <postfix Name="ラ" Original="la" />
+        <postfix Name="ム" Original="m" />
+        <postfix Name="メット" Original="met" />
+        <postfix Name="ミール" Original="mir" />
+        <postfix Name="ムット" Original="mut" />
+        <postfix Name="ク" Original="q" />
+        <!-- <postfix Name="カット" Original="qat" /> -->
+        <postfix Name="ラク" Original="raq" />
+        <postfix Name="レム" Original="rem" />
+        <postfix Name="ロク" Original="roq" />
+        <postfix Name="シュム" Original="shum" />
+        <postfix Name="シュル" Original="shur" />
+        <postfix Name="テップ" Original="tep" />
+        <postfix Name="ウン" Original="un" />
+        <postfix Name="ウル" Original="ur" />
+        <postfix Name="ウーン" Original="uun" />
+        <postfix Name="ワール" Original="war" />
+        <postfix Name="ウェル" Original="wer" />
+        <postfix Name="ウール" Original="wur" />
+      </postfixes>    
+    </namestyle>
+
+    <namestyle Name="Qudish Site (jp)" Format="AsIs">
+      <scopes>
+        <scope Name="Main" Type="Site" Priority="100" Combine="false" />
+      </scopes>
+      <prefixes Amount="1">
+        <prefix Name="ア" Original="a" />
+        <prefix Name="アルア" Original="ala" />
+        <prefix Name="ビ" Original="bi" />
+        <prefix Name="ダ" Original="da" />
+        <prefix Name="ドゥ" Original="du" />
+        <prefix Name="エカ" Original="eka" />
+        <prefix Name="ハ" Original="ha" />
+        <prefix Name="イ" Original="i" />
+        <!-- <prefix Name="カ" Original="ka" /> -->
+        <prefix Name="キ" Original="ki" />
+        <prefix Name="マ" Original="ma" />
+        <prefix Name="ミ" Original="mi" />
+        <prefix Name="ナ" Original="na" />
+        <prefix Name="カ" Original="qa" Weight="2" />
+        <prefix Name="サ" Original="sa" />
+        <prefix Name="シャ" Original="sha" />
+        <prefix Name="シェ" Original="she" />
+        <prefix Name="シュ" Original="shu" />
+        <prefix Name="ス" Original="su" />
+        <prefix Name="タ" Original="ta" />
+        <prefix Name="テ" Original="te" />
+        <prefix Name="トゥ" Original="tu" />
+        <prefix Name="ウ" Original="u" />
+      </prefixes>
+      <infixes Amount="0-1">
+        <infix Name="アッラ" Original="arra" />
+        <infix Name="アゾ" Original="azo" />
+        <infix Name="バ" Original="ba" />
+        <infix Name="ブィ" Original="by" />
+        <infix Name="ガ" Original="ga" />
+        <infix Name="ッガ" Original="gga" />
+        <infix Name="イリ" Original="ili" />
+        <infix Name="ムリ" Original="mri" />
+        <infix Name="ネ" Original="ne" />
+        <infix Name="ラ" Original="ra" />
+        <infix Name="ルチェ" Original="rche" />
+        <infix Name="ルカ" Original="rqa" />
+        <infix Name="ルクー" Original="rqu" />
+        <infix Name="ルシー" Original="rsi" />
+        <infix Name="ルヴァ" Original="rva" />
+      </infixes>
+      <postfixes Amount="1">
+        <postfix Name="バル" Original="bal" />
+        <postfix Name="ド" Original="d" />
+        <postfix Name="ケシ" Original="kesh" />
+        <postfix Name="フ" Original="kh" />
+        <postfix Name="キシ" Original="kish" />
+        <postfix Name="レプ" Original="lep" />
+        <postfix Name="リル" Original="lil" />
+        <postfix Name="マス" Original="mas" />
+        <postfix Name="ミシ" Original="mish" />
+        <postfix Name="ッムー" Original="mmu" />
+        <postfix Name="モール" Original="mor" />
+        <postfix Name="ムロッド" Original="mrod" />
+        <postfix Name="ムール" Original="mur" />
+        <postfix Name="ニプ" Original="nip" />
+        <postfix Name="ンナ" Original="nna" />
+        <postfix Name="パデ" Original="pad" />
+        <postfix Name="ッパ" Original="ppa" />
+        <postfix Name="ッパル" Original="ppar" />
+        <postfix Name="ッピル" Original="ppir" />
+        <postfix Name="ップル" Original="ppur" />
+        <postfix Name="ル" Original="r" />
+        <postfix Name="ルーク" Original="ruk" />
+        <postfix Name="シ" Original="sh" />
+        <postfix Name="シャン" Original="shan" />
+        <postfix Name="シュル" Original="shur" />
+        <postfix Name="タラ" Original="tara" />
+        <postfix Name="トゥム" Original="tum" />
+        <postfix Name="ヴァフ" Original="vah" />
+        <postfix Name="ヴフ" Original="vuh" />
+        <postfix Name="ワン" Original="wan" />
+        <postfix Name="ワル" Original="war" />
+        <postfix Name="ゾル" Original="zor" />
+      </postfixes>
+    </namestyle>
+
+    <namestyle Name="Qudish Banana Grove Site (ja)" Base="Qudish Site (ja)">
+      <scopes>
+        <scope Name="Main" Type="Site" Region="BananaGrove" Priority="200" Combine="false" />
+      </scopes>
+      <templates>
+        <template Name="[届：\TODO]Banana Grove *Name*" />
+      </templates>
+    </namestyle>
+
+    <namestyle Name="Qudish Baroque Ruins Site (ja)" Base="Qudish Site (ja)">
+      <scopes>
+        <scope Name="Main" Type="Site" Region="BaroqueRuins" Priority="200" Combine="false" />
+      </scopes>
+      <templates>
+        <template Name="[届：\TODO]Baroque Ruins *Name*" />
+      </templates>
+    </namestyle>
+
+    <namestyle Name="Qudish Deep Jungle Site (ja)" Base="Qudish Site (ja)">
+      <scopes>
+        <scope Name="Main" Type="Site" Region="DeepJungle" Priority="200" Combine="false" />
+      </scopes>
+      <templates>
+        <template Name="[届：\TODO]Deep Jungle *Name*" />
+      </templates>
+    </namestyle>
+
+    <namestyle Name="Qudish Desert Canyon Site (ja)" Base="Qudish Site (ja)">
+      <scopes>
+        <scope Name="Main" Type="Site" Region="DesertCanyon" Priority="200" Combine="false" />
+      </scopes>
+      <templates>
+        <template Name="[届：\TODO]Desert Canyon *Name*" />
+      </templates>
+    </namestyle>
+
+    <namestyle Name="Qudish Flower Fields Site (ja)" Base="Qudish Site (ja)">
+      <scopes>
+        <scope Name="Main" Type="Site" Region="Flowerfields" Priority="200" Combine="false" />
+      </scopes>
+      <templates>
+        <template Name="[届：\TODO]Flower Fields *Name*" />
+      </templates>
+    </namestyle>
+
+    <namestyle Name="Qudish Fungal Site (ja)" Base="Qudish Site (ja)">
+      <scopes>
+        <scope Name="Main" Type="Site" Region="Fungal" Priority="200" Combine="false" />
+      </scopes>
+      <templates>
+        <template Name="[届：\TODO]Fungal *Name*" />
+      </templates>
+    </namestyle>
+
+    <namestyle Name="Qudish Hills Site (ja)" Base="Qudish Site (ja)">
+      <scopes>
+        <scope Name="Main" Type="Site" Region="Hills" Priority="200" Combine="false" />
+      </scopes>
+      <templates>
+        <template Name="[届：\TODO]Hills *Name*" />
+      </templates>
+    </namestyle>
+
+    <namestyle Name="Qudish Jungle Site (ja)" Base="Qudish Site (ja)">
+      <scopes>
+        <scope Name="Main" Type="Site" Region="Jungle" Priority="200" Combine="false" />
+      </scopes>
+      <templates>
+        <template Name="[届：\TODO]Jungle *Name*" />
+      </templates>
+    </namestyle>
+
+    <namestyle Name="Qudish Lake Hinnom Site (ja)" Base="Qudish Site (ja)">
+      <scopes>
+        <scope Name="Main" Type="Site" Region="LakeHinnom" Priority="200" Combine="false" />
+      </scopes>
+      <templates>
+        <template Name="[届：\TODO]Water *Name*" />
+      </templates>
+    </namestyle>
+
+    <namestyle Name="Qudish Moon Stair Site (ja)" Base="Qudish Site (ja)">
+      <scopes>
+        <scope Name="Main" Type="Site" Region="MoonStair" Priority="200" Combine="false" />
+      </scopes>
+      <templates>
+        <template Name="[届：\TODO]Moon Stair *Name*" />
+      </templates>
+    </namestyle>
+
+    <namestyle Name="Qudish Mountains Site (ja)" Base="Qudish Site (ja)">
+      <scopes>
+        <scope Name="Main" Type="Site" Region="Mountains" Priority="200" Combine="false" />
+      </scopes>
+      <templates>
+        <template Name="[届：\TODO]Mountains *Name*" />
+      </templates>
+    </namestyle>
+
+    <namestyle Name="Qudish Palladium Reef Site (ja)" Base="Qudish Site (ja)">
+      <scopes>
+        <scope Name="Main" Type="Site" Region="PalladiumReef" Priority="200" Combine="false" />
+      </scopes>
+      <templates>
+        <template Name="[届：\TODO]Palladium Reef *Name*" />
+      </templates>
+    </namestyle>
+
+    <namestyle Name="Qudish Ruins Site (ja)" Base="Qudish Site (ja)">
+      <scopes>
+        <scope Name="Main" Type="Site" Region="Ruins" Priority="200" Combine="false" />
+      </scopes>
+      <templates>
+        <template Name="[届：\TODO]Ruins *Name*" />
+      </templates>
+    </namestyle>
+
+    <namestyle Name="Qudish Salt Dunes Site (ja)" Base="Qudish Site (ja)">
+      <scopes>
+        <scope Name="Main" Type="Site" Region="Saltdunes" Priority="200" Combine="false" />
+      </scopes>
+      <templates>
+        <template Name="[届：\TODO]Salt Dunes *Name*" />
+      </templates>
+    </namestyle>
+
+    <namestyle Name="Qudish Salt Marsh Site (ja)" Base="Qudish Site (ja)">
+      <scopes>
+        <scope Name="Main" Type="Site" Region="Saltmarsh" Priority="200" Combine="false" />
+      </scopes>
+      <templates>
+        <template Name="[届：\TODO]Salt Marsh *Name*" />
+      </templates>
+    </namestyle>
+
+    <namestyle Name="Qudish Spindle Site (ja)" Base="Qudish Site (ja)">
+      <scopes>
+        <scope Name="Main" Type="Site" Region="TheSpindle" Priority="200" Combine="false" />
+      </scopes>
+      <templates>
+        <template Name="[届：\TODO]Spindle *Name*" />
+      </templates>
+    </namestyle>
+
+    <namestyle Name="Qudish Water Site (ja)" Base="Qudish Site (ja)">
+      <scopes>
+        <scope Name="Main" Type="Site" Region="Water" Priority="200" Combine="false" />
+      </scopes>
+      <templates>
+        <template Name="[届：\TODO]Water *Name*" />
+      </templates>
+    </namestyle>
+
+
+    <namestyle Name="Ekuemekiyyen (ja)" Format="AsIs">
       <scopes>
         <scope Name="Subtype1" Subtype="Horticulturist" Priority="100" Combine="false" />
         <scope Name="Subtype2" Subtype="Priest of All Moons" Priority="100" Combine="false" />
@@ -16,10 +340,10 @@
       </templates>
       <templatevars>
         <templatevar Name="Suffix">
-          <value Name="・カー" Original="ka" />
-          <value Name="・キー" Original="ki" />
-          <value Name="・クー" Original="ku" />
-          <value Name="・コー" Original="ko" />
+          <value Name="・カ" Original="ka" />
+          <value Name="・キ" Original="ki" />
+          <value Name="・ク" Original="ku" />
+          <value Name="・コ" Original="ko" />
           <value Name="" Weight="5" />
         </templatevar>
       </templatevars>
@@ -46,7 +370,7 @@
         <prefix Name="イフェ" Original="ife" />
         <prefix Name="イマ" Original="ima" />
         <prefix Name="コ" Original="ko" />
-        <prefix Name="クァ" Original="kwa" />
+        <prefix Name="クヮ" Original="kwa" />
         <prefix Name="マ" Original="ma" />
         <prefix Name="モ" Original="mo" />
         <prefix Name="ナ" Original="na" />
@@ -79,7 +403,7 @@
         <infix Name="ジ" Original="ji" />
         <infix Name="ケ" Original="ke" />
         <infix Name="クゥ" Original="kwu" />
-        <infix Name="ラ" Original="la" />
+        <!-- <infix Name="ラ" Original="la" /> -->
         <infix Name="ンバ" Original="mba" />
         <infix Name="ンベ" Original="mbe" />
         <infix Name="ンボ" Original="mbo" />
@@ -88,7 +412,7 @@
         <infix Name="ング" Original="ngu" />
         <infix Name="ンザ" Original="nza" />
         <infix Name="ピ" Original="pi" />
-<!--        <infix Name="ラ" Original="ra" /> -->
+        <infix Name="ラ" Original="ra" Weight="2" />
         <infix Name="セ" Original="se" />
         <infix Name="ツ" Original="tu" />
         <infix Name="イェ" Original="ye" />
@@ -111,8 +435,8 @@
         <postfix Name="ケ" Original="ke" />
         <postfix Name="コ" Original="ko" />
         <postfix Name="ク" Original="ku" />
-        <postfix Name="ラ" Original="la" />
-        <postfix Name="レ" Original="le" />
+        <!-- <postfix Name="ラ" Original="la" /> -->
+        <!-- <postfix Name="レ" Original="le" /> -->
         <postfix Name="ンベ" Original="mbe" />
         <postfix Name="メ" Original="me" />
         <postfix Name="ミ" Original="mi" />
@@ -122,8 +446,8 @@
         <postfix Name="ンイ" Original="nyi" />
         <postfix Name="オイェ" Original="oye" />
         <postfix Name="ポ" Original="po" />
-<!--        <postfix Name="" Original="ra" />
-        <postfix Name="" Original="re" /> -->
+        <postfix Name="ラ" Original="ra" Weight="2" />
+        <postfix Name="レ" Original="re" Weight="2" />
         <postfix Name="リ" Original="ri" />
         <postfix Name="サ" Original="sa" />
         <postfix Name="ト" Original="to" />
