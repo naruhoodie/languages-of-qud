@@ -1,17 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <genotypes Lang="ja">
 
-  <genotype Name="Mutated Human" MutationPoints="12" StatPoints="44" AllowedMutationCategories="*" RandomWeight="90" DisplayName="[突然変異\とつぜんへんい]した[人間\にんげん]" Subtypes="Callings" Class="" Tile="UI/sw_mutant.bmp" DetailColor="g" BodyObject="Humanoid" BaseHPGain="1-4" BaseSPGain="50" BaseMPGain="1" Species="human" IsMutant="true" CharacterBuilderModules="XRL.CharacterBuilds.Qud.QudCasteModule,XRL.CharacterBuilds.Qud.QudCyberneticsModule">
-    <stat Name="Strength" Minimum="10" Maximum="24" ChargenDescription="Your {{W|[筋力\きんりょく]}} score determines how effectively you penetrate your opponents' armor with melee attacks, how much damage your melee attacks do, your ability to resist forced movement, and your carry capacity."/>
-    <stat Name="Agility" Minimum="10" Maximum="24" ChargenDescription="Your {{W|[敏捷力\びんしょう力]}} score determines your accuracy with both melee and ranged weapons and your ability to dodge attacks."/>
-    <stat Name="Toughness" Minimum="10" Maximum="24" ChargenDescription="Your {{W|[忍耐力\にんたいりょく]}} score determines your number of hit points, your natural healing rate, and your ability to resist poison and disease."/>
-    <stat Name="Intelligence" Minimum="10" Maximum="24" ChargenDescription="Your {{W|[知力\ちりょく]}} score determines your number of skill points and your ability to examine artifacts."/>
-    <stat Name="Willpower" Minimum="10" Maximum="24" ChargenDescription="Your {{W|[意志力\いしりょく]}} score modifies the cooldowns of your activated abilities, determines your ability to resist mental attacks, and modifies your natural healing rate."/>
-    <stat Name="Ego" Minimum="10" Maximum="24" ChargenDescription="Your {{W|[魅力\みりょく]}} score determines the potency of your mental mutations, your ability to haggle with merchants, and your ability to dominate the wills of other living creatures."/>
-    <skills>
-      <skill Name="Tactics_Run" />
-      <skill Name="Survival_Camp" />
-    </skills>
+  <genotype Name="Mutated Human" DisplayName="[突然変異\とつぜんへんい]した[人間\にんげん]">
+    <stat Name="Strength" ChargenDescription="Your {{W|[筋力\きんりょく]}} score determines how effectively you penetrate your opponents' armor with melee attacks, how much damage your melee attacks do, your ability to resist forced movement, and your carry capacity."/>
+    <stat Name="Agility" ChargenDescription="Your {{W|[敏捷力\びんしょう力]}} score determines your accuracy with both melee and ranged weapons and your ability to dodge attacks."/>
+    <stat Name="Toughness" ChargenDescription="Your {{W|[忍耐力\にんたいりょく]}} score determines your number of hit points, your natural healing rate, and your ability to resist poison and disease."/>
+    <stat Name="Intelligence" ChargenDescription="Your {{W|[知力\ちりょく]}} score determines your number of skill points and your ability to examine artifacts."/>
+    <stat Name="Willpower" ChargenDescription="Your {{W|[意志力\いしりょく]}} score modifies the cooldowns of your activated abilities, determines your ability to resist mental attacks, and modifies your natural healing rate."/>
+    <stat Name="Ego" ChargenDescription="Your {{W|[魅力\みりょく]}} score determines the potency of your mental mutations, your ability to haggle with merchants, and your ability to dominate the wills of other living creatures."/>
     <!-- extrainfo tags get added to the base ones instead of replacing -->
     <removeextrainfo>Mutations</removeextrainfo>
     <removeextrainfo>Moderate starting attributes</removeextrainfo>
@@ -21,21 +17,13 @@
     <extrainfo>[届：\TODO]-600 reputation with {{C|the Putus Templar}}</extrainfo>
   </genotype>
 
-  <genotype Name="True Kin" MutationPoints="0" StatPoints="38" AllowedMutationCategories="" CyberneticsLicensePoints="2" RandomWeight="10" DisplayName="[届：\TODO]True Kin" Subtypes="Castes" Class="" Tile="UI/sw_truekin.bmp" DetailColor="C" BodyObject="Humanoid" BaseHPGain="1-4" BaseSPGain="70" BaseMPGain="0" Species="human" IsTrueKin="true" CharacterBuilderModules="XRL.CharacterBuilds.Qud.QudCallingModule,XRL.CharacterBuilds.Qud.QudMutationsModule">
-    <stat Name="Strength" Minimum="12" Maximum="24" ChargenDescription="Your {{W|[筋力\きんりょく]}} score determines how effectively you penetrate your opponents' armor with melee attacks, how much damage your melee attacks do, your ability to resist forced movement, and your carry capacity."/>
-    <stat Name="Agility" Minimum="12" Maximum="24" ChargenDescription="Your {{W|[敏捷力\びんしょう力]}} score determines your accuracy with both melee and ranged weapons and your ability to dodge attacks."/>
-    <stat Name="Toughness" Minimum="12" Maximum="24" ChargenDescription="Your {{W|[忍耐力\にんたいりょく]}} score determines your number of hit points, your natural healing rate, and your ability to resist poison and disease."/>
-    <stat Name="Intelligence" Minimum="12" Maximum="24" ChargenDescription="Your {{W|[知力\ちりょく]}} score determines your number of skill points and your ability to examine artifacts."/>
-    <stat Name="Willpower" Minimum="12" Maximum="24" ChargenDescription="Your {{W|[意志力\いしりょく]}} score modifies the cooldowns of your activated abilities, determines your ability to resist mental attacks, and modifies your natural healing rate."/>
-    <stat Name="Ego" Minimum="12" Maximum="24" ChargenDescription="Your {{W|[魅力\みりょく]}} score determines the potency of your ability to haggle with merchants, and your ability to dominate the wills of other living creatures."/>
-    <skills>
-      <skill Name="Persuasion_RebukeRobot" />
-      <skill Name="Tactics_Run" />
-      <skill Name="Survival_Camp" />
-    </skills>
-    <reputations>
-      <reputation With="Templar" Value="600" />
-    </reputations>
+  <genotype Name="True Kin" DisplayName="[届：\TODO]True Kin">
+    <stat Name="Strength" ChargenDescription="Your {{W|[筋力\きんりょく]}} score determines how effectively you penetrate your opponents' armor with melee attacks, how much damage your melee attacks do, your ability to resist forced movement, and your carry capacity."/>
+    <stat Name="Agility" ChargenDescription="Your {{W|[敏捷力\びんしょう力]}} score determines your accuracy with both melee and ranged weapons and your ability to dodge attacks."/>
+    <stat Name="Toughness" ChargenDescription="Your {{W|[忍耐力\にんたいりょく]}} score determines your number of hit points, your natural healing rate, and your ability to resist poison and disease."/>
+    <stat Name="Intelligence" ChargenDescription="Your {{W|[知力\ちりょく]}} score determines your number of skill points and your ability to examine artifacts."/>
+    <stat Name="Willpower" ChargenDescription="Your {{W|[意志力\いしりょく]}} score modifies the cooldowns of your activated abilities, determines your ability to resist mental attacks, and modifies your natural healing rate."/>
+    <stat Name="Ego" ChargenDescription="Your {{W|[魅力\みりょく]}} score determines the potency of your ability to haggle with merchants, and your ability to dominate the wills of other living creatures."/>
     <removeextrainfo>High starting attributes</removeextrainfo>
     <removeextrainfo>Access to cybernetics</removeextrainfo>
     <removeextrainfo>{{C|20}} bonus skill points each level</removeextrainfo>

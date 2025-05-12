@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<embarkmodules Lang="ja" Load="Merge">
+<embarkmodules Lang="ja">
 
 <!-- where does the "character creation" title show up? -->
 
   <module Class="XRL.CharacterBuilds.Qud.QudGamemodeModule">
-    <window ID="Chargen/Modes" Prefab="HorizScroll" Class="XRL.CharacterBuilds.Qud.UI.QudGamemodeModuleWindow">
+    <window ID="Chargen/Modes">
       <title>：ゲームモードを選択する：</title>
       <name>[届：\TODO]Game Modes</name>
     </window>
@@ -12,90 +12,73 @@
 		<modes>
 
       <mode ID="Tutorial" Title="チュートリアル">
-        <icon Tile="Items/sw_square_cap.bmp" Foreground="K" Detail="W"></icon>
         <description>
           『カドの洞窟』の基礎を学ぶ
         </description>
-        <stringgamestate Name="GameMode" Value="Tutorial"></stringgamestate>
       </mode>
 
       <mode ID="Classic" Title="クラシック">
-				<icon Tile="UI/sw_classic_mode.bmp" Foreground="y" Detail="K"></icon>
 				<description>
 					パーマデス（永久死）：死ぬとキャラクターを失う
 				</description>
-				<stringgamestate Name="GameMode" Value="Classic"></stringgamestate>
 			</mode>
 
 			<mode ID="Roleplay" Title="ロールプレイ">
-				<icon Tile="UI/sw_roleplay_mode.bmp" Foreground="b" Detail="B"></icon>
 				<description>
 					集落でのチェックポイントする
 				</description>
-				<stringgamestate Name="GameMode" Value="Roleplay"></stringgamestate>
-				<stringgamestate Name="Checkpointing" Value="Enabled"></stringgamestate>
 			</mode>
 
 			<mode ID="Wander" Title="放浪">
-				<icon Tile="UI/sw_wander_mode.bmp" Foreground="g" Detail="C"></icon>
 				<description>
 					{{c|•}} Most creatures begin neutral to you.
 					{{c|•}} No XP for killing.
 					{{c|•}} More XP for discoveries and performing the water ritual.
 					{{c|•}} 集落でのチェックポイントする
 				</description>
-				<stringgamestate Name="GameMode" Value="Wander"></stringgamestate>
-				<stringgamestate Name="Checkpointing" Value="Enabled"></stringgamestate>
 			</mode>
 
 			<mode ID="Daily" Title="デイリー" Editable="False">
-				<icon Tile="Items/sw_clockthing.bmp" Foreground="w" Detail="W"></icon>
 				<description>
 					{{c|•}} 一つのチャンス、キャラクターとワールドシードが固定された
 					{{c|•}} 現在{{W|{year}}}年の{{W|{day_of_year}}}日目
 				</description>
-				<stringgamestate Name="GameMode" Value="Daily"></stringgamestate>
 			</mode>
 		</modes>
   </module>
 
   <module Class="XRL.CharacterBuilds.Qud.QudChartypeModule">
-    <window ID="Chargen/CharType" Prefab="HorizScroll" Class="XRL.CharacterBuilds.Qud.UI.QudChartypeModuleWindow">
+    <window ID="Chargen/CharType">
       <name>[届：\TODO]CharTypes</name>
       <title>：キャラクター系を選択する：</title>
     </window>
 
     <types>
       <type ID="Pregen" Title="プリセット">
-        <icon Tile="UI/sw_preset.bmp" Foreground="W" Detail="w"></icon>
         <description>
           [届：\TODO]Pick from several preset characters. Once you get comfortable, you can customize them.
          </description>
       </type>
       
       <type ID="New" Title="ＮＥＷ">
-        <icon Tile="UI/sw_newchar.bmp" Foreground="W" Detail="w"></icon>
         <description>
           新しいキャラクターを作成する
         </description>
       </type>
 
       <type ID="Random" Title="ランダム">
-        <icon Tile="UI/sw_random.bmp" Foreground="w" Detail="W"></icon>
         <description>
           ランダムのキャラクター
         </description>
       </type>
 
       <type ID="Library" Title="ライブラリ">
-        <icon Tile="Items/sw_bookshelf1.bmp" Foreground="w" Detail="W"></icon>
         <description>
           ビルドのライブラリのキャラクターを選択する
         </description>
       </type>
 
       <type ID="Last" Title="ラスト">
-        <icon Tile="UI/sw_lastchar.bmp" Foreground="W" Detail="w"></icon>
         <description>
           最後にプレイしたキャラクターを再プレイする
         </description>
@@ -104,21 +87,21 @@
   </module>
 
   <module Class="XRL.CharacterBuilds.Qud.QudBuildLibraryModule">
-    <window ID="Chargen/BuildLibrary" Prefab="HorizScroll" Class="XRL.CharacterBuilds.Qud.UI.QudBuildLibraryModuleWindow">
+    <window ID="Chargen/BuildLibrary">
       <name>[届：\TODO]Build Library</name>
       <title>：ビルドのライブラリ：</title>
     </window>
   </module>
   
   <module Class="XRL.CharacterBuilds.Qud.QudGenotypeModule">
-    <window ID="Chargen/ChooseGenotypes" Prefab="HorizScroll" Class="XRL.CharacterBuilds.Qud.UI.QudGenotypeModuleWindow">
+    <window ID="Chargen/ChooseGenotypes">
       <name>[届：\TODO]Genotypes</name>
       <title>：遺伝子型を選択する：</title>
     </window>
   </module>
   
   <module Class="XRL.CharacterBuilds.Qud.QudPregenModule">
-    <window ID="Chargen/Pregens" Prefab="HorizScroll" Class="XRL.CharacterBuilds.Qud.UI.QudPregenModuleWindow">
+    <window ID="Chargen/Pregens">
       <name>[届：\TODO]Pregens</name>
       <title>：プリセットを選択する：</title>
     </window>
@@ -209,18 +192,18 @@
   </module>
 
   <module Class="XRL.CharacterBuilds.Qud.QudSubtypeModule">
-    <window ID="Chargen/ChooseSubtypes" Prefab="HorizScroll" Class="XRL.CharacterBuilds.Qud.UI.QudSubtypeModuleWindow">
+    <window ID="Chargen/ChooseSubtypes">
       <name>[届：\TODO]Subtypes</name>
       <title>：サブタイプを選択する：</title>
     </window>
-    <window ID="Chargen/ChooseSubtypesCategory" Prefab="SwitchingScroller" Class="XRL.CharacterBuilds.Qud.UI.QudSubtypeModuleCategoryWindow">
+    <window ID="Chargen/ChooseSubtypesCategory">
       <name>[届：\TODO]Subtypes with Category</name>
       <title>：サブタイプを選択する：</title>
     </window>
   </module>
 
   <module Class="XRL.CharacterBuilds.Qud.QudMutationsModule">
-    <window ID="Chargen/Mutations" Prefab="CategoryMenus" Class="XRL.CharacterBuilds.Qud.UI.QudMutationsModuleWindow">
+    <window ID="Chargen/Mutations">
       <name>[届：\TODO]Mutations</name>
       <title>：突然変異を選択する：</title>
     </window>
@@ -228,41 +211,41 @@
   </module>
 
   <module Class="XRL.CharacterBuilds.Qud.QudAttributesModule">
-    <window ID="Chargen/PickAttributes" Prefab="HorizScrollerScroller" Class="XRL.CharacterBuilds.Qud.UI.QudAttributesModuleWindow">
+    <window ID="Chargen/PickAttributes">
       <title>：属性を選択する：</title>
       <name>[届：\TODO]Attributes</name>
     </window>
   </module>
 
   <module Class="XRL.CharacterBuilds.Qud.QudCyberneticsModule">
-    <window ID="Chargen/Cybernetic" Prefab="CategoryMenus" Class="XRL.CharacterBuilds.Qud.UI.QudCyberneticsModuleWindow">
+    <window ID="Chargen/Cybernetic">
       <name>[届：\TODO]Cybernetics</name>
       <title>：サイバネティックインプラントを選択する：</title>
     </window>
   </module>
 
   <module Class="XRL.CharacterBuilds.Qud.QudBuildSummaryModule">
-    <window ID="Chargen/BuildSummary" Prefab="HorizScroll" Class="XRL.CharacterBuilds.Qud.UI.QudBuildSummaryModuleWindow">
+    <window ID="Chargen/BuildSummary">
       <name>[届：\TODO]Summary</name>
       <title>：ビルドの概要：</title>
     </window>
   </module>
 
   <module Class="XRL.CharacterBuilds.Qud.QudCustomizeCharacterModule">
-    <window ID="Chargen/Customize" Prefab="VertScroll" Class="XRL.CharacterBuilds.Qud.UI.QudCustomizeCharacterModuleWindow">
+    <window ID="Chargen/Customize">
       <name>[届：\TODO]Customize</name>
       <title>：キャラクターをカスタマイズする：</title>
     </window>
   </module>
 
   <module Class="XRL.CharacterBuilds.Qud.QudChooseStartingLocationModule">
-    <window ID="Chargen/ChooseStartingLocation" Prefab="HorizScroll" Class="XRL.CharacterBuilds.Qud.UI.QudChooseStartingLocationModuleWindow">
+    <window ID="Chargen/ChooseStartingLocation">
       <name>[届：\TODO]Starting Location</name>
       <title>[届：\TODO]:choose starting location:</title>
     </window>
     
     <locations>
-      <location ID="Joppa" Name="{{Y|ジョッパ}}" Location="GlobalLocation:JoppaWorld.11.22.1.1.10@37,22">
+      <location ID="Joppa" Name="{{Y|ジョッパ}}">
         <description>
           新規プレイヤーにすすめ
         </description>
