@@ -5,89 +5,90 @@
 
     <namestyle Name="Qudish (ja)" Format="AsIs">
       <scopes>
-        <!-- <scope Name="General" Priority="0" Combine="true" /> -->
+        <scope Name="General" Priority="0" Combine="true" />
         <scope Name="Genotype" Genotype="Mutated Human" Priority="50" Combine="true" />
         <scope Name="Culture" Culture="Qudish" Priority="100" Combine="true" />
       </scopes>
+    <!-- name syllables from Arabic & Biblical Hebrew  -->
       <prefixes Amount="1">
-        <prefix Name="ファ" Original="fa" />
-        <prefix Name="ハ" Original="ha" />
-        <prefix Name="イ" Original="i" Weight="3" />
-        <prefix Name="イー" Original="i" />
-        <prefix Name="カ" Original="ka" />
-        <prefix Name="キ" Original="ki" />
-        <prefix Name="クー" Original="ku" />
-        <prefix Name="マ" Original="ma" />
-        <prefix Name="メフ" Original="meh" />
-        <prefix Name="モ" Original="mo" />
-        <prefix Name="ムー" Original="mu" />
-        <prefix Name="ナ" Original="na" />
-        <prefix Name="ニ" Original="ni" />
-        <prefix Name="ヌ" Original="nu" />
-        <prefix Name="ニュ" Original="ny" />
-        <prefix Name="オ" Original="o" />
-        <prefix Name="ク" Original="q" />
-        <prefix Name="シュウ" Original="shwu" />
-        <prefix Name="シュイ" Original="shwy" />
-        <prefix Name="シー" Original="si" />
-        <prefix Name="シィ" Original="sy" />
-        <prefix Name="タ" Original="ta" />
-        <prefix Name="ティ" Original="ti" />
-        <prefix Name="チィ" Original="ty" />
-        <prefix Name="ウ" Original="u" />
-        <prefix Name="ウー" Original="uu" />
+        <prefix Name="ファ" /><!-- Original="fa" -->
+        <prefix Name="ハ" /><!-- Original="ha" -->
+        <prefix Name="イ" Weight="3" /><!-- Original="i" -->
+        <prefix Name="イー" /><!-- Original="i" -->
+        <prefix Name="カ" /><!-- Original="ka" -->
+        <prefix Name="キ" /><!-- Original="ki" -->
+        <prefix Name="クー" /><!-- Original="ku" -->
+        <prefix Name="マ" /><!-- Original="ma" -->
+        <prefix Name="メフ" /><!-- Original="meh" -->
+        <prefix Name="モ" /><!-- Original="mo" -->
+        <prefix Name="ムー" /><!-- Original="mu" -->
+        <prefix Name="ナ" /><!-- Original="na" -->
+        <prefix Name="ニ" /><!-- Original="ni" -->
+        <prefix Name="ヌ" /><!-- Original="nu" -->
+        <prefix Name="ニュ" /><!-- Original="ny" -->
+        <prefix Name="オ" /><!-- Original="o" -->
+        <prefix Name="ク" /><!-- Original="q" -->
+        <prefix Name="シュウ" /><!-- Original="shwu" -->
+        <prefix Name="シュイ" /><!-- Original="shwy" -->
+        <prefix Name="シー" /><!-- Original="si" -->
+        <prefix Name="シィ" /><!-- Original="sy" -->
+        <prefix Name="タ" /><!-- Original="ta" -->
+        <prefix Name="ティ" /><!-- Original="ti" -->
+        <prefix Name="チィ" /><!-- Original="ty" -->
+        <prefix Name="ウ" /><!-- Original="u" -->
+        <prefix Name="ウー" /><!-- Original="uu" -->
         <!-- <prefix Name="イ" Original="y" /> -->
-        <prefix Name="ヤ" Original="ya" />
+        <prefix Name="ヤ" /><!-- Original="ya" -->
         <!-- <prefix Name="イ" Original="yi" /> -->
-        <prefix Name="イイ" Original="yy" />
+        <prefix Name="イイ" /><!-- Original="yy" -->
       </prefixes>
       <infixes Amount="0-2">
-        <infix Name="ガ" Original="ga" />
-        <infix Name="メ" Original="me" />
-        <infix Name="モ" Original="mo" />
-        <infix Name="モー" Original="moo" />
-        <infix Name="ムー" Original="mu" />
-        <infix Name="ムウ" Original="muu" />
-        <infix Name="ラ" Original="ra" />
-        <infix Name="ロ" Original="ro" />
-        <infix Name="ロー" Original="roo" />
-        <infix Name="ルー" Original="ru" />
-        <infix Name="ルウ" Original="ruu" />
-        <infix Name="シー" Original="shi" />
-        <infix Name="シラ" Original="shra" />
-        <infix Name="シリ" Original="shri" />
-        <infix Name="シロ" Original="shro" />
-        <infix Name="シルー" Original="shru" />
-        <infix Name="シワ" Original="shwa" />
-        <infix Name="シオ" Original="shwo" />
-        <infix Name="シウ" Original="shwu" />
-        <infix Name="ユ" Original="yu" Weight="2" />
+        <infix Name="ガ" /><!-- Original="ga" -->
+        <infix Name="メ" /><!-- Original="me" -->
+        <infix Name="モ" /><!-- Original="mo" -->
+        <infix Name="モー" /><!-- Original="moo" -->
+        <infix Name="ムー" /><!-- Original="mu" -->
+        <infix Name="ムウ" /><!-- Original="muu" -->
+        <infix Name="ラ" /><!-- Original="ra" -->
+        <infix Name="ロ" /><!-- Original="ro" -->
+        <infix Name="ロー" /><!-- Original="roo" -->
+        <infix Name="ルー" /><!-- Original="ru" -->
+        <infix Name="ルウ" /><!-- Original="ruu" -->
+        <infix Name="シー" /><!-- Original="shi" -->
+        <infix Name="シラ" /><!-- Original="shra" -->
+        <infix Name="シリ" /><!-- Original="shri" -->
+        <infix Name="シロ" /><!-- Original="shro" -->
+        <infix Name="シルー" /><!-- Original="shru" -->
+        <infix Name="シワ" /><!-- Original="shwa" -->
+        <infix Name="シオ" /><!-- Original="shwo" -->
+        <infix Name="シウ" /><!-- Original="shwu" -->
+        <infix Name="ユ" Weight="2" /><!-- Original="yu" -->
       </infixes>
       <postfixes Amount="1">
-        <postfix Name="バス" Original="bas" />
-        <postfix Name="ド" Original="d" />
-        <postfix Name="ジル" Original="jr" />
-        <postfix Name="カス" Original="kas" />
-        <postfix Name="カット" Original="kat" Weight="2" />
-        <postfix Name="ラ" Original="la" />
-        <postfix Name="ム" Original="m" />
-        <postfix Name="メット" Original="met" />
-        <postfix Name="ミール" Original="mir" />
-        <postfix Name="ムット" Original="mut" />
-        <postfix Name="ク" Original="q" />
+        <postfix Name="バス" /><!-- Original="bas" -->
+        <postfix Name="ド" /><!-- Original="d" -->
+        <postfix Name="ジル" /><!-- Original="jr" -->
+        <postfix Name="カス" /><!-- Original="kas" -->
+        <postfix Name="カット" Weight="2" /><!-- Original="kat" -->
+        <postfix Name="ラ" /><!-- Original="la" -->
+        <postfix Name="ム" /><!-- Original="m" -->
+        <postfix Name="メット" /><!-- Original="met" -->
+        <postfix Name="ミール" /><!-- Original="mir" -->
+        <postfix Name="ムット" /><!-- Original="mut" -->
+        <postfix Name="ク" /><!-- Original="q" -->
         <!-- <postfix Name="カット" Original="qat" /> -->
-        <postfix Name="ラク" Original="raq" />
-        <postfix Name="レム" Original="rem" />
-        <postfix Name="ロク" Original="roq" />
-        <postfix Name="シュム" Original="shum" />
-        <postfix Name="シュル" Original="shur" />
-        <postfix Name="テップ" Original="tep" />
-        <postfix Name="ウン" Original="un" />
-        <postfix Name="ウル" Original="ur" />
-        <postfix Name="ウーン" Original="uun" />
-        <postfix Name="ワール" Original="war" />
-        <postfix Name="ウェル" Original="wer" />
-        <postfix Name="ウール" Original="wur" />
+        <postfix Name="ラク" /><!-- Original="raq" -->
+        <postfix Name="レム" /><!-- Original="rem" -->
+        <postfix Name="ロク" /><!-- Original="roq" -->
+        <postfix Name="シュム" /><!-- Original="shum" -->
+        <postfix Name="シュル" /><!-- Original="shur" -->
+        <postfix Name="テップ" /><!-- Original="tep" -->
+        <postfix Name="ウン" /><!-- Original="un" -->
+        <postfix Name="ウル" /><!-- Original="ur" -->
+        <postfix Name="ウーン" /><!-- Original="uun" -->
+        <postfix Name="ワール" /><!-- Original="war" -->
+        <postfix Name="ウェル" /><!-- Original="wer" -->
+        <postfix Name="ウール" /><!-- Original="wur" -->
       </postfixes>    
     </namestyle>
 
@@ -95,81 +96,82 @@
       <scopes>
         <scope Name="Main" Type="Site" Priority="100" Combine="false" />
       </scopes>
+    <!-- name syllables from Arabic & Biblical Hebrew  -->
       <prefixes Amount="1">
-        <prefix Name="ア" Original="a" />
-        <prefix Name="アルア" Original="ala" />
-        <prefix Name="ビ" Original="bi" />
-        <prefix Name="ダ" Original="da" />
-        <prefix Name="ドゥ" Original="du" />
-        <prefix Name="エカ" Original="eka" />
-        <prefix Name="ハ" Original="ha" />
-        <prefix Name="イ" Original="i" />
+        <prefix Name="ア" /><!-- Original="a" -->
+        <prefix Name="アルア" /><!-- Original="ala" -->
+        <prefix Name="ビ" /><!-- Original="bi" -->
+        <prefix Name="ダ" /><!-- Original="da" -->
+        <prefix Name="ドゥ" /><!-- Original="du" -->
+        <prefix Name="エカ" /><!-- Original="eka" -->
+        <prefix Name="ハ" /><!-- Original="ha" -->
+        <prefix Name="イ" /><!-- Original="i" -->
         <!-- <prefix Name="カ" Original="ka" /> -->
-        <prefix Name="キ" Original="ki" />
-        <prefix Name="マ" Original="ma" />
-        <prefix Name="ミ" Original="mi" />
-        <prefix Name="ナ" Original="na" />
-        <prefix Name="カ" Original="qa" Weight="2" />
-        <prefix Name="サ" Original="sa" />
-        <prefix Name="シャ" Original="sha" />
-        <prefix Name="シェ" Original="she" />
-        <prefix Name="シュ" Original="shu" />
-        <prefix Name="ス" Original="su" />
-        <prefix Name="タ" Original="ta" />
-        <prefix Name="テ" Original="te" />
-        <prefix Name="トゥ" Original="tu" />
-        <prefix Name="ウ" Original="u" />
+        <prefix Name="キ" /><!-- Original="ki" -->
+        <prefix Name="マ" /><!-- Original="ma" -->
+        <prefix Name="ミ" /><!-- Original="mi" -->
+        <prefix Name="ナ" /><!-- Original="na" -->
+        <prefix Name="カ" Weight="2" /><!-- Original="qa" -->
+        <prefix Name="サ" /><!-- Original="sa" -->
+        <prefix Name="シャ" /><!-- Original="sha" -->
+        <prefix Name="シェ" /><!-- Original="she" -->
+        <prefix Name="シュ" /><!-- Original="shu" -->
+        <prefix Name="ス" /><!-- Original="su" -->
+        <prefix Name="タ" /><!-- Original="ta" -->
+        <prefix Name="テ" /><!-- Original="te" -->
+        <prefix Name="トゥ" /><!-- Original="tu" -->
+        <prefix Name="ウ" /><!-- Original="u" -->
       </prefixes>
       <infixes Amount="0-1">
-        <infix Name="アッラ" Original="arra" />
-        <infix Name="アゾ" Original="azo" />
-        <infix Name="バ" Original="ba" />
-        <infix Name="ブィ" Original="by" />
-        <infix Name="ガ" Original="ga" />
-        <infix Name="ッガ" Original="gga" />
-        <infix Name="イリ" Original="ili" />
-        <infix Name="ムリ" Original="mri" />
-        <infix Name="ネ" Original="ne" />
-        <infix Name="ラ" Original="ra" />
-        <infix Name="ルチェ" Original="rche" />
-        <infix Name="ルカ" Original="rqa" />
-        <infix Name="ルクー" Original="rqu" />
-        <infix Name="ルシー" Original="rsi" />
-        <infix Name="ルヴァ" Original="rva" />
+        <infix Name="アッラ" /><!-- Original="arra" -->
+        <infix Name="アゾ" /><!-- Original="azo" -->
+        <infix Name="バ" /><!-- Original="ba" -->
+        <infix Name="ブィ" /><!-- Original="by" -->
+        <infix Name="ガ" /><!-- Original="ga" -->
+        <infix Name="ッガ" /><!-- Original="gga" -->
+        <infix Name="イリ" /><!-- Original="ili" -->
+        <infix Name="ムリ" /><!-- Original="mri" -->
+        <infix Name="ネ" /><!-- Original="ne" -->
+        <infix Name="ラ" /><!-- Original="ra" -->
+        <infix Name="ルチェ" /><!-- Original="rche" -->
+        <infix Name="ルカ" /><!-- Original="rqa" -->
+        <infix Name="ルクー" /><!-- Original="rqu" -->
+        <infix Name="ルシー" /><!-- Original="rsi" -->
+        <infix Name="ルヴァ" /><!-- Original="rva" -->
       </infixes>
       <postfixes Amount="1">
-        <postfix Name="バル" Original="bal" />
-        <postfix Name="ド" Original="d" />
-        <postfix Name="ケシ" Original="kesh" />
-        <postfix Name="フ" Original="kh" />
-        <postfix Name="キシ" Original="kish" />
-        <postfix Name="レプ" Original="lep" />
-        <postfix Name="リル" Original="lil" />
-        <postfix Name="マス" Original="mas" />
-        <postfix Name="ミシ" Original="mish" />
-        <postfix Name="ッムー" Original="mmu" />
-        <postfix Name="モール" Original="mor" />
-        <postfix Name="ムロッド" Original="mrod" />
-        <postfix Name="ムール" Original="mur" />
-        <postfix Name="ニプ" Original="nip" />
-        <postfix Name="ンナ" Original="nna" />
-        <postfix Name="パデ" Original="pad" />
-        <postfix Name="ッパ" Original="ppa" />
-        <postfix Name="ッパル" Original="ppar" />
-        <postfix Name="ッピル" Original="ppir" />
-        <postfix Name="ップル" Original="ppur" />
-        <postfix Name="ル" Original="r" />
-        <postfix Name="ルーク" Original="ruk" />
-        <postfix Name="シ" Original="sh" />
-        <postfix Name="シャン" Original="shan" />
-        <postfix Name="シュル" Original="shur" />
-        <postfix Name="タラ" Original="tara" />
-        <postfix Name="トゥム" Original="tum" />
-        <postfix Name="ヴァフ" Original="vah" />
-        <postfix Name="ヴフ" Original="vuh" />
-        <postfix Name="ワン" Original="wan" />
-        <postfix Name="ワル" Original="war" />
-        <postfix Name="ゾル" Original="zor" />
+        <postfix Name="バル" /><!-- Original="bal" -->
+        <postfix Name="ド" /><!-- Original="d" -->
+        <postfix Name="ケシ" /><!-- Original="kesh" -->
+        <postfix Name="フ" /><!-- Original="kh" -->
+        <postfix Name="キシ" /><!-- Original="kish" -->
+        <postfix Name="レプ" /><!-- Original="lep" -->
+        <postfix Name="リル" /><!-- Original="lil" -->
+        <postfix Name="マス" /><!-- Original="mas" -->
+        <postfix Name="ミシ" /><!-- Original="mish" -->
+        <postfix Name="ッムー" /><!-- Original="mmu" -->
+        <postfix Name="モール" /><!-- Original="mor" -->
+        <postfix Name="ムロッド" /><!-- Original="mrod" -->
+        <postfix Name="ムール" /><!-- Original="mur" -->
+        <postfix Name="ニプ" /><!-- Original="nip" -->
+        <postfix Name="ンナ" /><!-- Original="nna" -->
+        <postfix Name="パデ" /><!-- Original="pad" -->
+        <postfix Name="ッパ" /><!-- Original="ppa" -->
+        <postfix Name="ッパル" /><!-- Original="ppar" -->
+        <postfix Name="ッピル" /><!-- Original="ppir" -->
+        <postfix Name="ップル" /><!-- Original="ppur" -->
+        <postfix Name="ル" /><!-- Original="r" -->
+        <postfix Name="ルーク" /><!-- Original="ruk" -->
+        <postfix Name="シ" /><!-- Original="sh" -->
+        <postfix Name="シャン" /><!-- Original="shan" -->
+        <postfix Name="シュル" /><!-- Original="shur" -->
+        <postfix Name="タラ" /><!-- Original="tara" -->
+        <postfix Name="トゥム" /><!-- Original="tum" -->
+        <postfix Name="ヴァフ" /><!-- Original="vah" -->
+        <postfix Name="ヴフ" /><!-- Original="vuh" -->
+        <postfix Name="ワン" /><!-- Original="wan" -->
+        <postfix Name="ワル" /><!-- Original="war" -->
+        <postfix Name="ゾル" /><!-- Original="zor" -->
       </postfixes>
     </namestyle>
 
@@ -340,126 +342,128 @@
       </templates>
       <templatevars>
         <templatevar Name="Suffix">
-          <value Name="・カ" Original="ka" />
-          <value Name="・キ" Original="ki" />
-          <value Name="・ク" Original="ku" />
-          <value Name="・コ" Original="ko" />
+          <value Name="・カ" /><!-- Original="ka" -->
+          <value Name="・キ" /><!-- Original="ki" -->
+          <value Name="・ク" /><!-- Original="ku" -->
+          <value Name="・コ" /><!-- Original="ko" -->
           <value Name="" Weight="5" />
         </templatevar>
       </templatevars>
+    <!-- name syllables from Igbo & Yoruba, others? -->
       <prefixes Amount="1">
-        <prefix Name="アブ" Original="ab" />
-        <prefix Name="アヅ" Original="ad" />
-        <prefix Name="アフィ" Original="afi" />
-        <prefix Name="アフ" Original="afu" />
-        <prefix Name="アカ" Original="aka" />
-        <prefix Name="アキ" Original="aki" />
-        <prefix Name="アク" Original="aku" />
-        <prefix Name="アマ" Original="ama" />
-        <prefix Name="アヨ" Original="ayo" />
-        <prefix Name="バ" Original="ba" />
-        <prefix Name="チ" Original="chi" />
-        <prefix Name="チュ" Original="chu" />
-        <prefix Name="ディ" Original="di" />
-        <prefix Name="ドゥ" Original="du" />
-        <prefix Name="エベ" Original="ebe" />
-        <prefix Name="エフ" Original="efu" />
-        <prefix Name="エケ" Original="eke" />
-        <prefix Name="エク" Original="eku" />
-        <prefix Name="エメ" Original="eme" />
-        <prefix Name="イフェ" Original="ife" />
-        <prefix Name="イマ" Original="ima" />
-        <prefix Name="コ" Original="ko" />
-        <prefix Name="クヮ" Original="kwa" />
-        <prefix Name="マ" Original="ma" />
-        <prefix Name="モ" Original="mo" />
-        <prefix Name="ナ" Original="na" />
-        <prefix Name="ンケ" Original="nke" />
-        <prefix Name="ンキ" Original="nki" />
-        <prefix Name="ンネ" Original="nne" />
-        <prefix Name="ノ" Original="no" />
-        <prefix Name="ヌ" Original="nu" />
-        <prefix Name="ニャ" Original="nya" />
-        <prefix Name="オバ" Original="oba" />
-        <prefix Name="オゲ" Original="oge" />
-        <prefix Name="オラ" Original="ola" />
-        <prefix Name="オル" Original="olu" />
-        <prefix Name="タ" Original="ta" />
-        <prefix Name="ザ" Original="za" />
-        <prefix Name="ズ" Original="zu" />
+        <prefix Name="アブ" /><!-- Original="ab" -->
+        <prefix Name="アヅ" /><!-- Original="ad" -->
+        <prefix Name="アフィ" /><!-- Original="afi" -->
+        <prefix Name="アフ" /><!-- Original="afu" -->
+        <prefix Name="アカ" /><!-- Original="aka" -->
+        <prefix Name="アキ" /><!-- Original="aki" -->
+        <prefix Name="アク" /><!-- Original="aku" -->
+        <prefix Name="アマ" /><!-- Original="ama" -->
+        <prefix Name="アヨ" /><!-- Original="ayo" -->
+        <prefix Name="バ" /><!-- Original="ba" -->
+        <prefix Name="チ" /><!-- Original="chi" -->
+        <prefix Name="チュ" /><!-- Original="chu" -->
+        <prefix Name="ディ" /><!-- Original="di" -->
+        <prefix Name="ドゥ" /><!-- Original="du" -->
+        <prefix Name="エベ" /><!-- Original="ebe" -->
+        <prefix Name="エフ" /><!-- Original="efu" -->
+        <prefix Name="エケ" /><!-- Original="eke" -->
+        <prefix Name="エク" /><!-- Original="eku" -->
+        <prefix Name="エメ" /><!-- Original="eme" -->
+        <prefix Name="イフェ" /><!-- Original="ife" -->
+        <prefix Name="イマ" /><!-- Original="ima" -->
+        <prefix Name="コ" /><!-- Original="ko" -->
+        <prefix Name="クヮ" /><!-- Original="kwa" -->
+        <prefix Name="マ" /><!-- Original="ma" -->
+        <prefix Name="モ" /><!-- Original="mo" -->
+        <prefix Name="ナ" /><!-- Original="na" -->
+        <prefix Name="ンケ" /><!-- Original="nke" -->
+        <prefix Name="ンキ" /><!-- Original="nki" -->
+        <prefix Name="ンネ" /><!-- Original="nne" -->
+        <prefix Name="ノ" /><!-- Original="no" -->
+        <prefix Name="ヌ" /><!-- Original="nu" -->
+        <prefix Name="ニャ" /><!-- Original="nya" -->
+        <prefix Name="オバ" /><!-- Original="oba" -->
+        <prefix Name="オゲ" /><!-- Original="oge" -->
+        <prefix Name="オラ" /><!-- Original="ola" -->
+        <prefix Name="オル" /><!-- Original="olu" -->
+        <prefix Name="タ" /><!-- Original="ta" -->
+        <prefix Name="ザ" /><!-- Original="za" -->
+        <prefix Name="ズ" /><!-- Original="zu" -->
       </prefixes>
       <infixes Amount="0-2">
-        <infix Name="アマ" Original="ama" />
-        <infix Name="バ" Original="ba" />
-        <infix Name="バジ" Original="baji" />
-        <infix Name="バツ" Original="batu" />
-        <infix Name="ボ" Original="bo" />
-        <infix Name="チ" Original="chi" />
-        <infix Name="チュ" Original="chu" />
-        <infix Name="ディ" Original="di" />
-        <infix Name="ファ" Original="fa" />
-        <infix Name="フェ" Original="fe" />
-        <infix Name="フ" Original="fu" />
-        <infix Name="ジ" Original="ji" />
-        <infix Name="ケ" Original="ke" />
-        <infix Name="クゥ" Original="kwu" />
+        <infix Name="アマ" /><!-- Original="ama" -->
+        <infix Name="バ" /><!-- Original="ba" -->
+        <infix Name="バジ" /><!-- Original="baji" -->
+        <infix Name="バツ" /><!-- Original="batu" -->
+        <infix Name="ボ" /><!-- Original="bo" -->
+        <infix Name="チ" /><!-- Original="chi" -->
+        <infix Name="チュ" /><!-- Original="chu" -->
+        <infix Name="ディ" /><!-- Original="di" -->
+        <infix Name="ファ" /><!-- Original="fa" -->
+        <infix Name="フェ" /><!-- Original="fe" -->
+        <infix Name="フ" /><!-- Original="fu" -->
+        <infix Name="ジ" /><!-- Original="ji" -->
+        <infix Name="ケ" /><!-- Original="ke" -->
+        <infix Name="クゥ" /><!-- Original="kwu" -->
         <!-- <infix Name="ラ" Original="la" /> -->
-        <infix Name="ンバ" Original="mba" />
-        <infix Name="ンベ" Original="mbe" />
-        <infix Name="ンボ" Original="mbo" />
-        <infix Name="ンガ" Original="nga" />
-        <infix Name="ンゴ" Original="ngo" />
-        <infix Name="ング" Original="ngu" />
-        <infix Name="ンザ" Original="nza" />
-        <infix Name="ピ" Original="pi" />
-        <infix Name="ラ" Original="ra" Weight="2" />
-        <infix Name="セ" Original="se" />
-        <infix Name="ツ" Original="tu" />
-        <infix Name="イェ" Original="ye" />
+        <infix Name="ンバ" /><!-- Original="mba" -->
+        <infix Name="ンベ" /><!-- Original="mbe" -->
+        <infix Name="ンボ" /><!-- Original="mbo" -->
+        <infix Name="ンガ" /><!-- Original="nga" -->
+        <infix Name="ンゴ" /><!-- Original="ngo" -->
+        <infix Name="ング" /><!-- Original="ngu" -->
+        <infix Name="ンザ" /><!-- Original="nza" -->
+        <infix Name="ピ" /><!-- Original="pi" -->
+        <infix Name="ラ" Weight="2" /><!-- Original="ra" -->
+        <infix Name="セ" /><!-- Original="se" -->
+        <infix Name="ツ" /><!-- Original="tu" -->
+        <infix Name="イェ" /><!-- Original="ye" -->
       </infixes>
       <postfixes Amount="1">
-        <postfix Name="ベム" Original="bem" />
-        <postfix Name="ビ" Original="bi" />
-        <postfix Name="ボラ" Original="bola" />
-        <postfix Name="チ" Original="chi" />
-        <postfix Name="ダ" Original="da" />
-        <postfix Name="デ" Original="de" />
-        <postfix Name="ディ" Original="di" />
-        <postfix Name="フェ" Original="fe" />
-        <postfix Name="フィ" Original="fi" />
-        <postfix Name="ゴ" Original="go" />
-        <postfix Name="ジ" Original="ji" />
-        <postfix Name="ジョ" Original="jo" />
-        <postfix Name="カ" Original="ka" />
-        <postfix Name="カン" Original="kan" />
-        <postfix Name="ケ" Original="ke" />
-        <postfix Name="コ" Original="ko" />
-        <postfix Name="ク" Original="ku" />
+        <postfix Name="ベム" /><!-- Original="bem" -->
+        <postfix Name="ビ" /><!-- Original="bi" -->
+        <postfix Name="ボラ" /><!-- Original="bola" -->
+        <postfix Name="チ" /><!-- Original="chi" -->
+        <postfix Name="ダ" /><!-- Original="da" -->
+        <postfix Name="デ" /><!-- Original="de" -->
+        <postfix Name="ディ" /><!-- Original="di" -->
+        <postfix Name="フェ" /><!-- Original="fe" -->
+        <postfix Name="フィ" /><!-- Original="fi" -->
+        <postfix Name="ゴ" /><!-- Original="go" -->
+        <postfix Name="ジ" /><!-- Original="ji" -->
+        <postfix Name="ジョ" /><!-- Original="jo" -->
+        <postfix Name="カ" /><!-- Original="ka" -->
+        <postfix Name="カン" /><!-- Original="kan" -->
+        <postfix Name="ケ" /><!-- Original="ke" -->
+        <postfix Name="コ" /><!-- Original="ko" -->
+        <postfix Name="ク" /><!-- Original="ku" -->
         <!-- <postfix Name="ラ" Original="la" /> -->
         <!-- <postfix Name="レ" Original="le" /> -->
-        <postfix Name="ンベ" Original="mbe" />
-        <postfix Name="メ" Original="me" />
-        <postfix Name="ミ" Original="mi" />
-        <postfix Name="ム" Original="mu" />
-        <postfix Name="ンデ" Original="nde" />
-        <postfix Name="ンティ" Original="nti" />
-        <postfix Name="ンイ" Original="nyi" />
-        <postfix Name="オイェ" Original="oye" />
-        <postfix Name="ポ" Original="po" />
-        <postfix Name="ラ" Original="ra" Weight="2" />
-        <postfix Name="レ" Original="re" Weight="2" />
-        <postfix Name="リ" Original="ri" />
-        <postfix Name="サ" Original="sa" />
-        <postfix Name="ト" Original="to" />
-        <postfix Name="ワレ" Original="wale" />
-        <postfix Name="ヤ" Original="ya" Weight="2" />
-        <postfix Name="ヨ" Original="yo" />
-        <postfix Name="ザ" Original="za" />
-        <postfix Name="ゾ" Original="zo" />
+        <postfix Name="ンベ" /><!-- Original="mbe" -->
+        <postfix Name="メ" /><!-- Original="me" -->
+        <postfix Name="ミ" /><!-- Original="mi" -->
+        <postfix Name="ム" /><!-- Original="mu" -->
+        <postfix Name="ンデ" /><!-- Original="nde" -->
+        <postfix Name="ンティ" /><!-- Original="nti" -->
+        <postfix Name="ンイ" /><!-- Original="nyi" -->
+        <postfix Name="オイェ" /><!-- Original="oye" -->
+        <postfix Name="ポ" /><!-- Original="po" -->
+        <postfix Name="ラ" Weight="2" /><!-- Original="ra" -->
+        <postfix Name="レ" Weight="2" /><!-- Original="re" -->
+        <postfix Name="リ" /><!-- Original="ri" -->
+        <postfix Name="サ" /><!-- Original="sa" -->
+        <postfix Name="ト" /><!-- Original="to" -->
+        <postfix Name="ワレ" /><!-- Original="wale" -->
+        <postfix Name="ヤ" Weight="2" /><!-- Original="ya" -->
+        <postfix Name="ヨ" /><!-- Original="yo" -->
+        <postfix Name="ザ" /><!-- Original="za" -->
+        <postfix Name="ゾ" /><!-- Original="zo" -->
       </postfixes>
     </namestyle>
 
     <namestyle Name="Ibulian (ja)" TwoNameChance="80" Format="AsIs">
+    <!-- Latin (Ancient Roman) -->
       <scopes>
         <scope Name="Subtype1" Subtype="Artifex" Priority="100" Combine="false" />
         <scope Name="Subtype2" Subtype="Consul" Priority="100" Combine="false" />
@@ -468,138 +472,295 @@
         <scope Name="Culture" Culture="Ibulian" Priority="100" Combine="false" />
       </scopes>
       <prefixes Amount="1">
-        <prefix Name="ア" Original="a" Weight="2" />
-        <prefix Name="アエ" Original="ae" />
-        <prefix Name="アン" Original="an" />
-        <prefix Name="アウ" Original="au" />
-        <prefix Name="バ" Original="ba" />
-        <prefix Name="ブラ" Original="bla" />
-        <prefix Name="ブルー" Original="bru" />
-        <prefix Name="カエ" Original="cae" />
-        <prefix Name="カイ" Original="cai" />
-        <prefix Name="カミ" Original="cami" />
-        <prefix Name="カシ" Original="cassi" />
-        <prefix Name="キ" Original="ci" />
-        <prefix Name="クラウ" Original="clau" />
-        <prefix Name="ナエ" Original="cnae" />
-        <prefix Name="コ" Original="co" />
-        <prefix Name="クリ" Original="cri" />
-        <prefix Name="デ" Original="de" />
-        <prefix Name="ディオ" Original="dio" />
-        <prefix Name="ドー" Original="do" />
-        <prefix Name="ドルー" Original="dru" />
-        <prefix Name="エグナ" Original="egna" />
-        <prefix Name="ファ" Original="fa" />
-        <prefix Name="ファウ" Original="fau" />
-        <prefix Name="フェ" Original="fe" />
-        <prefix Name="フラ" Original="fla" />
-        <prefix Name="フロ" Original="flo" />
-        <prefix Name="ガ" Original="ga" />
-        <prefix Name="ゲ" Original="ge" />
-        <prefix Name="グナエ" Original="gnae" />
-        <prefix Name="ハ" Original="ha" />
-        <prefix Name="ヘ" Original="he" />
-        <prefix Name="ホ" Original="ho" />
-        <prefix Name="イオ" Original="io" />
-        <prefix Name="イウ" Original="iu" />
-        <prefix Name="ヤ" Original="ja" />
-        <prefix Name="ユ" Original="ju" />
-        <prefix Name="ラ" Original="la" />
-        <prefix Name="ラウ" Original="lau" />
-        <prefix Name="リ" Original="li" />
-        <prefix Name="ル" Original="lu" />
-        <prefix Name="マ" Original="ma" />
-        <prefix Name="ネ" Original="ne" />
-        <prefix Name="ノ" Original="no" />
-        <prefix Name="オクタ" Original="octa" />
-        <prefix Name="オヴィ" Original="ovi" />
-        <prefix Name="プリ" Original="pli" />
-        <prefix Name="ポ" Original="po" />
-        <prefix Name="プリ" Original="pri" />
-        <prefix Name="プ" Original="pu" />
-        <prefix Name="クイ" Original="qui" />
-        <prefix Name="ルー" Original="ru" />
-        <prefix Name="サ" Original="sa" />
-        <prefix Name="セ" Original="se" />
-        <prefix Name="スプー" Original="spu" />
-        <prefix Name="タ" Original="ta" />
-        <prefix Name="ティ" Original="ti" />
-        <prefix Name="トゥ" Original="tu" />
-        <prefix Name="ヴァ" Original="va" />
-        <prefix Name="ヴェ" Original="ve" />
-        <prefix Name="ヴィ" Original="vi" />
+        <prefix Name="ア" Weight="2" /><!-- Original="a" -->
+        <prefix Name="アエ" /><!-- Original="ae" -->
+        <prefix Name="アン" /><!-- Original="an" -->
+        <prefix Name="アウ" /><!-- Original="au" -->
+        <prefix Name="バ" /><!-- Original="ba" -->
+        <prefix Name="ブラ" /><!-- Original="bla" -->
+        <prefix Name="ブルー" /><!-- Original="bru" -->
+        <prefix Name="カエ" /><!-- Original="cae" -->
+        <prefix Name="カイ" /><!-- Original="cai" -->
+        <prefix Name="カミ" /><!-- Original="cami" -->
+        <prefix Name="カシ" /><!-- Original="cassi" -->
+        <prefix Name="キ" /><!-- Original="ci" -->
+        <prefix Name="クラウ" /><!-- Original="clau" -->
+        <prefix Name="ナエ" /><!-- Original="cnae" -->
+        <prefix Name="コ" /><!-- Original="co" -->
+        <prefix Name="クリ" /><!-- Original="cri" -->
+        <prefix Name="デ" /><!-- Original="de" -->
+        <prefix Name="ディオ" /><!-- Original="dio" -->
+        <prefix Name="ドー" /><!-- Original="do" -->
+        <prefix Name="ドルー" /><!-- Original="dru" -->
+        <prefix Name="エグナ" /><!-- Original="egna" -->
+        <prefix Name="ファ" /><!-- Original="fa" -->
+        <prefix Name="ファウ" /><!-- Original="fau" -->
+        <prefix Name="フェ" /><!-- Original="fe" -->
+        <prefix Name="フラ" /><!-- Original="fla" -->
+        <prefix Name="フロ" /><!-- Original="flo" -->
+        <prefix Name="ガ" /><!-- Original="ga" -->
+        <prefix Name="ゲ" /><!-- Original="ge" -->
+        <prefix Name="グナエ" /><!-- Original="gnae" -->
+        <prefix Name="ハ" /><!-- Original="ha" -->
+        <prefix Name="ヘ" /><!-- Original="he" -->
+        <prefix Name="ホ" /><!-- Original="ho" -->
+        <prefix Name="イオ" /><!-- Original="io" -->
+        <prefix Name="イウ" /><!-- Original="iu" -->
+        <prefix Name="ヤ" /><!-- Original="ja" -->
+        <prefix Name="ユ" /><!-- Original="ju" -->
+        <prefix Name="ラ" /><!-- Original="la" -->
+        <prefix Name="ラウ" /><!-- Original="lau" -->
+        <prefix Name="リ" /><!-- Original="li" -->
+        <prefix Name="ル" /><!-- Original="lu" -->
+        <prefix Name="マ" /><!-- Original="ma" -->
+        <prefix Name="ネ" /><!-- Original="ne" -->
+        <prefix Name="ノ" /><!-- Original="no" -->
+        <prefix Name="オクタ" /><!-- Original="octa" -->
+        <prefix Name="オヴィ" /><!-- Original="ovi" -->
+        <prefix Name="プリ" /><!-- Original="pli" -->
+        <prefix Name="ポ" /><!-- Original="po" -->
+        <prefix Name="プリ" /><!-- Original="pri" -->
+        <prefix Name="プ" /><!-- Original="pu" -->
+        <prefix Name="クイ" /><!-- Original="qui" -->
+        <prefix Name="ルー" /><!-- Original="ru" -->
+        <prefix Name="サ" /><!-- Original="sa" -->
+        <prefix Name="セ" /><!-- Original="se" -->
+        <prefix Name="スプー" /><!-- Original="spu" -->
+        <prefix Name="タ" /><!-- Original="ta" -->
+        <prefix Name="ティ" /><!-- Original="ti" -->
+        <prefix Name="トゥ" /><!-- Original="tu" -->
+        <prefix Name="ヴァ" /><!-- Original="va" -->
+        <prefix Name="ヴェ" /><!-- Original="ve" -->
+        <prefix Name="ヴィ" /><!-- Original="vi" -->
       </prefixes>
       <infixes Amount="0-1">
-        <infix Name="ビ" Original="bi" Weight="2" />
-        <infix Name="ブリ" Original="bri" />
-        <infix Name="ケ" Original="ce" />
-        <infix Name="キ" Original="ci" />
-        <infix Name="クレ" Original="cle" />
-        <infix Name="ドリ" Original="dri" />
-        <infix Name="ガ" Original="ga" />
-        <infix Name="グリ" Original="gri" />
-        <infix Name="グー" Original="gu" Weight="2" />
-        <infix Name="ッル" Original="llu" />
-        <infix Name="ル" Original="lu" />
-        <infix Name="ミ" Original="mi" Weight="2" />
-        <infix Name="ナ" Original="na" />
-        <infix Name="ンディ" Original="ndi" />
-        <infix Name="ニ" Original="ni" />
-        <infix Name="ヌ" Original="nu" />
-        <infix Name="ピ" Original="pi" />
-        <infix Name="プリ" Original="pri" />
-        <infix Name="ラ" Original="ra" />
-        <infix Name="ルディ" Original="rdi" />
-        <infix Name="レ" Original="re" Weight="2" />
-        <infix Name="レンティ" Original="renti" />
-        <infix Name="ルマ" Original="rma" />
-        <infix Name="ルネ" Original="rne" />
-        <infix Name="シ" Original="si" />
-        <infix Name="スピ" Original="spi" />
-        <infix Name="ッシ" Original="ssi" />
-        <infix Name="スティ" Original="sti" />
-        <infix Name="ティ" Original="ti" />
-        <infix Name="ト" Original="to" />
-        <infix Name="ヴィ" Original="vi" />
-        <infix Name="ゼ" Original="xe" />
-        <infix Name="ジ" Original="xi" />
+        <infix Name="ビ" Weight="2" /><!-- Original="bi" -->
+        <infix Name="ブリ" /><!-- Original="bri" -->
+        <infix Name="ケ" /><!-- Original="ce" -->
+        <infix Name="キ" /><!-- Original="ci" -->
+        <infix Name="クレ" /><!-- Original="cle" -->
+        <infix Name="ドリ" /><!-- Original="dri" -->
+        <infix Name="ガ" /><!-- Original="ga" -->
+        <infix Name="グリ" /><!-- Original="gri" -->
+        <infix Name="グー" Weight="2" /><!-- Original="gu" -->
+        <infix Name="ッル" /><!-- Original="llu" -->
+        <infix Name="ル" /><!-- Original="lu" -->
+        <infix Name="ミ" Weight="2" /><!-- Original="mi" -->
+        <infix Name="ナ" /><!-- Original="na" -->
+        <infix Name="ンディ" /><!-- Original="ndi" -->
+        <infix Name="ニ" /><!-- Original="ni" -->
+        <infix Name="ヌ" /><!-- Original="nu" -->
+        <infix Name="ピ" /><!-- Original="pi" -->
+        <infix Name="プリ" /><!-- Original="pri" -->
+        <infix Name="ラ" /><!-- Original="ra" -->
+        <infix Name="ルディ" /><!-- Original="rdi" -->
+        <infix Name="レ" Weight="2" /><!-- Original="re" -->
+        <infix Name="レンティ" /><!-- Original="renti" -->
+        <infix Name="ルマ" /><!-- Original="rma" -->
+        <infix Name="ルネ" /><!-- Original="rne" -->
+        <infix Name="シ" /><!-- Original="si" -->
+        <infix Name="スピ" /><!-- Original="spi" -->
+        <infix Name="ッシ" /><!-- Original="ssi" -->
+        <infix Name="スティ" /><!-- Original="sti" -->
+        <infix Name="ティ" /><!-- Original="ti" -->
+        <infix Name="ト" /><!-- Original="to" -->
+        <infix Name="ヴィ" /><!-- Original="vi" -->
+        <infix Name="ゼ" /><!-- Original="xe" -->
+        <infix Name="ジ" /><!-- Original="xi" -->
       </infixes>
       <postfixes Amount="1">
-        <postfix Name="バ" Original="ba" />
-        <postfix Name="ビウス" Original="bius" />
-        <postfix Name="ブス" Original="bus" />
-        <postfix Name="キウス" Original="cius" />
-        <postfix Name="ディア" Original="dia" />
-        <postfix Name="ディナ" Original="dina" />
-        <postfix Name="ディヌス" Original="dinus" />
-        <postfix Name="ディウス" Original="dius" />
-        <postfix Name="ギナ" Original="gina" />
-        <postfix Name="ギヌス" Original="ginus" />
-        <postfix Name="イウス" Original="ius" />
-        <postfix Name="リア" Original="lia" />
-        <postfix Name="リアナ" Original="liana" />
-        <postfix Name="リウス" Original="lius" />
-        <postfix Name="リクス" Original="lix" />
-        <postfix Name="ラ" Original="lla" />
-        <postfix Name="ルス" Original="lus" />
-        <postfix Name="ムス" Original="mus" />
-        <postfix Name="ナ" Original="na" />
-        <postfix Name="ニウス" Original="nius" />
-        <postfix Name="ヌス" Original="nus" />
-        <postfix Name="ピウス" Original="pius" />
-        <postfix Name="ッパ" Original="ppa" />
-        <postfix Name="ッピナ" Original="ppina" />
-        <postfix Name="プス" Original="pus" />
-        <postfix Name="ロ" Original="ro" />
-        <postfix Name="サル" Original="sar" />
-        <postfix Name="シウス" Original="sius" />
-        <postfix Name="スタ" Original="sta" />
-        <postfix Name="ストゥス" Original="stus" />
-        <postfix Name="ト" Original="to" />
-        <postfix Name="トゥス" Original="tus" />
+        <postfix Name="バ" /><!-- Original="ba" -->
+        <postfix Name="ビウス" /><!-- Original="bius" -->
+        <postfix Name="ブス" /><!-- Original="bus" -->
+        <postfix Name="キウス" /><!-- Original="cius" -->
+        <postfix Name="ディア" /><!-- Original="dia" -->
+        <postfix Name="ディナ" /><!-- Original="dina" -->
+        <postfix Name="ディヌス" /><!-- Original="dinus" -->
+        <postfix Name="ディウス" /><!-- Original="dius" -->
+        <postfix Name="ギナ" /><!-- Original="gina" -->
+        <postfix Name="ギヌス" /><!-- Original="ginus" -->
+        <postfix Name="イウス" /><!-- Original="ius" -->
+        <postfix Name="リア" /><!-- Original="lia" -->
+        <postfix Name="リアナ" /><!-- Original="liana" -->
+        <postfix Name="リウス" /><!-- Original="lius" -->
+        <postfix Name="リクス" /><!-- Original="lix" -->
+        <postfix Name="ラ" /><!-- Original="lla" -->
+        <postfix Name="ルス" /><!-- Original="lus" -->
+        <postfix Name="ムス" /><!-- Original="mus" -->
+        <postfix Name="ナ" /><!-- Original="na" -->
+        <postfix Name="ニウス" /><!-- Original="nius" -->
+        <postfix Name="ヌス" /><!-- Original="nus" -->
+        <postfix Name="ピウス" /><!-- Original="pius" -->
+        <postfix Name="ッパ" /><!-- Original="ppa" -->
+        <postfix Name="ッピナ" /><!-- Original="ppina" -->
+        <postfix Name="プス" /><!-- Original="pus" -->
+        <postfix Name="ロ" /><!-- Original="ro" -->
+        <postfix Name="サル" /><!-- Original="sar" -->
+        <postfix Name="シウス" /><!-- Original="sius" -->
+        <postfix Name="スタ" /><!-- Original="sta" -->
+        <postfix Name="ストゥス" /><!-- Original="stus" -->
+        <postfix Name="ト" /><!-- Original="to" -->
+        <postfix Name="トゥス" /><!-- Original="tus" -->
       </postfixes>
     </namestyle>
 
+    <namestyle Name="Yawningmoon (ja)" TwoNameChance="50" Format="AsIs">
+    <!-- maybe Sanskrit! -->
+      <scopes>
+        <scope Name="Subtype1" Subtype="Child of the Deep" Priority="100" Combine="false" />
+        <scope Name="Subtype2" Subtype="Child of the Wheel" Priority="100" Combine="false" />
+        <scope Name="Subtype3" Subtype="Child of the Hearth" Priority="100" Combine="false" />
+        <scope Name="Subtype4" Subtype="Fuming God-Child" Priority="100" Combine="false" />
+        <scope Name="Culture" Culture="Yawningmoon" Priority="100" Combine="false" />
+      </scopes>
+      <prefixes Amount="1">
+        <prefix Name="アパ" /><!-- Original="apa" -->
+        <prefix Name="ドヤ" /><!-- Original="dya" -->
+        <prefix Name="グルタ" /><!-- Original="ghrta" -->
+        <prefix Name="ジャナ" /><!-- Original="jna" -->
+        <prefix Name="クシャ" /><!-- Original="ksa" -->
+        <prefix Name="クシェ" /><!-- Original="kse" -->
+        <prefix Name="クショ" /><!-- Original="kso" -->
+        <prefix Name="ミ" /><!-- Original="mi" -->
+        <prefix Name="ニル" /><!-- Original="nir" -->
+        <prefix Name="プリ" /><!-- Original="pri" -->
+        <prefix Name="プー" /><!-- Original="pu" -->
+        <prefix Name="ルー" /><!-- Original="ru" -->
+        <prefix Name="サヴィ" /><!-- Original="savi" -->
+        <prefix Name="タル" /><!-- Original="tar" -->
+        <prefix Name="トワ" /><!-- Original="tva" -->
+        <prefix Name="トウィ" /><!-- Original="tvi" -->
+        <prefix Name="トウォ" /><!-- Original="tvo" -->
+        <prefix Name="ウル" /><!-- Original="ur" -->
+        <prefix Name="ヴリ" /><!-- Original="vri" -->
+      </prefixes>
+      <infixes Amount="0-1">
+        <infix Name="ルトフ" /><!-- Original="rth" -->
+        <infix Name="シ" /><!-- Original="sh" -->
+        <infix Name="トフ" /><!-- Original="th" -->
+      </infixes>
+      <postfixes Amount="1">
+        <postfix Name="タル" /><!-- Original="tar" -->
+        <postfix Name="ドラ" /><!-- Original="dra" -->
+        <postfix Name="ヴラ" /><!-- Original="vra" -->
+        <postfix Name="ヴリン" /><!-- Original="vrin" -->
+        <postfix Name="トル" /><!-- Original="tr" -->
+        <postfix Name="ヴリ" /><!-- Original="vri" -->
+        <postfix Name="ヌ" /><!-- Original="nu" -->
+        <postfix Name="ドルー" /><!-- Original="dru" -->
+        <postfix Name="クラス" /><!-- Original="kras" -->
+        <postfix Name="クラ" /><!-- Original="kra" -->
+        <postfix Name="トラ" /><!-- Original="tra" -->
+        <postfix Name="トリ" /><!-- Original="tri" -->
+        <postfix Name="トルー" /><!-- Original="truu" -->
+        <postfix Name="ニュ" /><!-- Original="nyu" -->
+      </postfixes>
+    </namestyle>
+
+    <!-- baboon is ヒヒ, monkey sound in Japanese is ウキ -->
+    <namestyle Name="Baboon (ja)" TwoNameChance="1">
+      <scopes>
+        <scope Name="Faction" Faction="Baboons" Priority="100" Combine="false" />
+        <scope Name="Species" Species="baboon" Priority="50" Combine="true" />
+        <scope Name="Culture" Culture="Baboon" Priority="50" Combine="true" />
+      </scopes>
+      <prefixes Amount="1-3">
+        <prefix Name="ゥ" /><!-- Original="oo" -->
+        <prefix Name="ゥー" /><!-- Original="ooo" -->
+        <prefix Name="ォ" /><!-- Original="o" -->
+        <prefix Name="オ" /><!-- Original="oh" -->
+        <prefix Name="オー" /><!-- Original="ooh" -->
+        <prefix Name="ホ" /><!-- Original="ho" -->
+        <prefix Name="ホー" /><!-- Original="hoo" -->
+      </prefixes>
+      <infixes Amount="1-3">
+        <infix Name="オ゙" /><!-- Original="O" -->
+        <infix Name="ウ" Weight="2" /><!-- Original="OO" -->
+        <infix Name="ウー" /><!-- Original="OOO" -->
+        <infix Name="フー" Weight="2" /><!-- Original="HOO" -->
+        <infix Name="オ゙ー" /><!-- Original="HOOO" -->
+        <infix Name="ア" /><!-- Original="AH" -->
+        <infix Name="ア゙" /><!-- Original="AH" -->
+        <infix Name="ア゙ー" /><!-- Original="AH" -->
+        <infix Name="イ" /><!-- Original="E" -->
+        <infix Name="イ゙" /><!-- Original="EE" -->
+        <infix Name="イ゙ー" /><!-- Original="EEE" -->
+      </infixes>
+      <postfixes Amount="0-2">
+        <postfix Name="ア" /><!-- Original="ah" -->
+        <postfix Name="アー" /><!-- Original="ahh" -->
+        <postfix Name="オ" /><!-- Original="o" -->
+        <postfix Name="ウ" /><!-- Original="oo" -->
+        <postfix Name="ウー" /><!-- Original="ooo" -->
+        <postfix Name="ホ" /><!-- Original="ho" -->
+        <postfix Name="ホー" /><!-- Original="hoo" -->
+        <postfix Name="イ" /><!-- Original="e" -->
+        <postfix Name="イー" /><!-- Original="ee" -->
+        <postfix Name="キー" /><!-- Original="eee" -->
+      </postfixes>
+    </namestyle>
+
+    <namestyle Name="Bird (ja)" TwoNameChance="20">
+      <scopes>
+        <scope Name="Faction" Faction="Birds" Priority="100" Combine="false" />
+        <scope Name="Culture" Culture="Bird" Priority="50" Combine="true" />
+      </scopes>
+      <prefixes Amount="3-6">
+        <prefix Name="カ" Weight="2" /><!-- Original="ca" -->
+        <prefix Name="カッ" Weight="2" /><!-- Original="CA" -->
+        <prefix Name="カアァアァアッ" /><!-- Original="CAAAAAAAAW" -->
+        <prefix Name="カアァアァア" /><!-- Original="caaaaaaaw" -->
+        <prefix Name="カアァアァッ" /><!-- Original="caaaaaw" -->
+        <prefix Name="カアァアァッ" /><!-- Original="CAAAAAW" -->
+        <prefix Name="カアァ" /><!-- Original="caaaw" -->
+        <prefix Name="カアァッ" /><!-- Original="CAAAW" -->
+        <prefix Name="カア" /><!-- Original="caaw" -->
+        <prefix Name="カアッ" /><!-- Original="CAAW" -->
+        <prefix Name="カァ" /><!-- Original="caw" -->
+        <prefix Name="カァッ" /><!-- Original="CAW" -->
+      </prefixes>
+    </namestyle>
+
+    <namestyle Name="Bird Hero Epithet (ja)">
+      <scopes>
+        <scope Name="Main" Type="Epithet" Special="Hero" Faction="Birds" Priority="200" Combine="false" />
+        <scope Name="Culture" Type="Epithet" Special="Hero" Culture="Bird" Priority="150" Combine="true" />
+      </scopes>
+      <templates>
+        <template Name="*Singer*" />
+      </templates>
+      <templatevars>
+        <templatevar Name="Singer">
+          <value Name="バード" /><!-- Original="Bard" -->
+          <value Name="吟遊詩人" /><!-- Original="Bard" -->
+          <value Name="ミンストレル" /><!-- Original="Minstrel" -->
+          <value Name="歌い手" /><!-- Original="Songster" -->
+          <value Name="トルバドゥール" /><!-- Original="Troubadour" -->
+        </templatevar>
+      </templatevars>
+    </namestyle>
+
+    <namestyle Name="Bird Hero Title (ja)">
+      <scopes>
+        <scope Name="Main" Type="Title" Special="Hero" Faction="Birds" Priority="200" Combine="false" />
+        <scope Name="Culture" Type="Title" Special="Hero" Culture="Bird" Priority="150" Combine="true" />
+      </scopes>
+      <templates>
+        <template Name="*Disposition**CreatureType*" />
+      </templates>
+      <templatevars>
+        <templatevar Name="Disposition">
+          <value Name="陰気な" /><!-- Original="brooding" -->
+          <value Name="明るい" /><!-- Original="cheerful" -->
+          <value Name="陰気な" /><!-- Original="dour" -->
+          <value Name="陽気な" /><!-- Original="merry" -->
+        </templatevar>
+      </templatevars>
+    </namestyle>
+brooding
+cheerful
+dour
+merry
   </namestyles>
 
 </naming>

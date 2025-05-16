@@ -23,48 +23,6 @@ ja 現在2025年の123日目
 I like cake.
 ケーキが好きです。
 
-Hopper, the slayer of rabbits
-Hopper, der Kaninchentöter (m)
-Hopper, the wise slayer of rabbits
-Hopper, die weise Kaninchentöterin (f)
-
-I saw Hopper, the slayer of rabbits.
-Ich sah Hopper, den Kaninchentöter.
-
-I gave an apple to Hopper, the slayer of rabbits.
-Ich habe Hopper, dem Kaninchentöter, einen Apfel gegeben.
-"Ich habe =recipient.dat= =item.e.akk= gegeben."
-and you may notice that the verb is split habe ... gegeben
-but it's equivalent to "have given" in English, where the "have" is conjugated
-
-I saw Hopper, the wise slayer of rabbits.
-Ich sah Hopper, den weisen Kaninchentöter.
-
-I gave an apple to Hopper, the wise slayer of rabbits.
-Ich gab Hopper, dem weisen Kaninchentöter, einen Apfel.
-"Ich gab =recipient.dat= =item.e.akk=."
-
-Gretchen, the dangerous girl
-Gretchen, das gefährliche Mädchen (n)
-I saw Gretchen, the dangerous girl.
-Ich sah Gretchen, das gefährliche Mädchen.
-I gave an apple to Gretchen, the dangerous girl.
-Ich gab Gretchen, dem gefährlichen Mädchen, einen Apfel.
-
-I saw the dog. It was happy.
-Ich sah den Hund. Er war glücklich.
-
-I saw the tortoise. It was happy.
-Ich sah die Schildkröte. Sie war glücklich.
-I saw the male tortoise. It was happy.
-Ich habe die männliche Schildkröte gesehen. Sie war glücklich.
-
-Herr Doktor Michael Smith
-I am a programmer.
-Ich bin Programmierer. (m)
-Ich bin Programmiererin. (f)
-Ich bin Programmierir/Programmiereron. (nb/inclusive, nonstandard)
-
 Notepad++
 regexp for derubifying:
 	\[([^"\<\>\\\]]+)\\[^A-Z"\<\>\\\]]+\]	\1
@@ -76,3 +34,7 @@ regexp for adding [届：\TODO]:
 checking afterwards:
 	Value="[^\[][^届]
 	<string[^\>]+>[^\[][^\<届]+<\/string>
+
+VS Code
+regexp for processing namingstyle elements:
+(Name=")([A-Za-z]+)(" \/>)	$1$3<!-- Original="$2" -->
