@@ -700,6 +700,35 @@
       </postfixes>
     </namestyle>
 
+    <namestyle Name="Baboon Hero Title (ja)">
+      <scopes>
+        <scope Name="Main" Type="Title" Special="Hero" Faction="Baboons" Priority="200" Combine="false" />
+      </scopes>
+      <templates>
+        <template Name="*Yubiwa*のヒヒの*Position*" />
+      </templates>
+      <templatevars>
+        <templatevar Name="Yubiwa">
+          <value Name="指輪が三輪" />
+          <value Name="指輪が四輪" />
+          <value Name="指輪が五輪" />
+          <value Name="指輪が六輪" />
+          <value Name="指輪が七輪" />
+          <value Name="指輪が八輪" />
+          <value Name="指輪が九輪" />
+        </templatevar>
+        <templatevar Name="Position">
+          <value Name="浮気者" /><!-- Original="Philanderer" -->
+          <value Name="謎かけ屋" /><!-- Original="Riddler" -->
+          <value Name="隠者" /><!-- Original="Hermit" -->
+          <value Name="洗練された者" /><!-- Original="Sophisticate" -->
+          <value Name="扇動家" /><!-- Original="Demagogue" -->
+          <value Name="王" /><!-- Original="King" -->
+          <value Name="女王" /><!-- Original="Queen" -->
+        </templatevar>
+      </templatevars>
+    </namestyle>
+
     <namestyle Name="Bird (ja)" TwoNameChance="20">
       <scopes>
         <scope Name="Faction" Faction="Birds" Priority="100" Combine="false" />
