@@ -38,3 +38,5 @@ checking afterwards:
 VS Code
 regexp for processing namingstyle elements:
 (Name=")([A-Za-z]+)(" \/>)	$1$3<!-- Original="$2" -->
+regexp for adding DisplayName to mutations:
+( Name=")([^"]+)(" Cost)	$1$2" DisplayName="[届：\TODO]$2$3

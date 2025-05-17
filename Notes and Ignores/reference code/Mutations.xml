@@ -41,7 +41,7 @@
         <br />
         <p>+1 Ego</p>
         <p>You occasionally peck at your opponents.</p>
-        <p>+200 reputation with {{w|<gametext>=faction:Birds=</gametext>}}</p>
+        <p>+200 reputation with {{w|<vartext>=faction:Birds=</vartext>}}</p>
       </description>
       <leveltext></leveltext>
     </mutation>
@@ -51,13 +51,27 @@
         <p>You bear spade-like claws that can burrow through the earth.</p>
       </description>
       <leveltext>
-        <p><gametext>=weapon.Name=</gametext> penetration vs. walls: <stat Name="WallPenetration" /></p>
-        <p><gametext>=weapon.Name|pluralize=</gametext> destroy walls after <stat Name="WallHits" Unit="penetrating hit" />.</p>
+        <p><vartext>=weapon.Name=</vartext> penetration vs. walls: <stat Name="WallPenetration" /></p>
+        <p><vartext>=weapon.Name|pluralize=</vartext> destroy walls after <stat Name="WallHits" Unit="penetrating hit" />.</p>
         <switch Name="PrereleaseContent"><case Value="true"><p>Can dig passages up or down when outside of combat</p></case></switch>
-        <p><gametext>=weapon.Name|pluralize= are also a =weaponClass.name= class natural weapon that deal <stat Name="Damage" /> base damage to non-walls.</gametext></p>
+        <p><vartext>=weapon.Name|pluralize= are also a =weaponClass.name= class natural weapon that deal <stat Name="Damage" /> base damage to non-walls.</vartext></p>
       </leveltext>
     </mutation>
-    <mutation Name="Carapace" Cost="3" MaxSelected="1" Class="Carapace" Exclusions="Quills" BearerDescription="the carapaced" Tile="Mutations/carapace.bmp" />
+    <mutation Name="Carapace" Cost="3" MaxSelected="1" Class="Carapace" Exclusions="Quills" BearerDescription="the carapaced" Tile="Mutations/carapace.bmp">
+      <description>
+        <!-- code will prefix this with blueprints VariantDescription -->
+        <p>You are protected by a durable carapace.</p>
+      </description>
+      <leveltext>
+        <p><stat Name="AV" Filters="signed" /> AV</p>
+        <p><stat Name="DV" Filters="signed" /> DV</p>
+        <p><stat Name="HeatResist" Filters="signed" /> Heat Resistance</p>
+        <p><stat Name="ColdResist" Filters="signed" /> Cold Resistance</p>
+        <switch Name="AddsRep"><case Value="" /><default><p><stat Name="AddsRep" /></p></default></switch>
+        <p>You may tighten your <stat Name="CarapaceName" /> to receive double the AV bonus at a -2 DV penalty as long as you remain still.</p>
+        <p>Cannot wear body armor.</p>
+      </leveltext>
+    </mutation>
     <mutation Name="Corrosive Gas Generation" Cost="3" MaxSelected="1" Class="CorrosiveGasGeneration" BearerDescription="those who expel corrosive gas" Tile="Mutations/gas_generation.bmp" />
     <mutation Name="Double-muscled" Cost="3" MaxSelected="1" Class="HeightenedStrength" Exclusions="" BearerDescription="the double-muscled" Tile="Mutations/double-muscled.bmp" />
     <mutation Name="Electrical Generation" Cost="4" MaxSelected="1" Class="ElectricalGeneration" Exclusions="" BearerDescription="those who generate electricity" Tile="Mutations/electrical_generation.bmp" />
