@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<naming Lang="ja">
+<naming Lang="ja" Load="Merge">
 
   <namestyles>
 
-    <namestyle Name="Qudish (ja)" Format="AsIs">
-      <scopes>
+    <namestyle Name="Qudish" Format="AsIs">
+      <!-- <scopes>
         <scope Name="General" Priority="0" Combine="true" />
         <scope Name="Genotype" Genotype="Mutated Human" Priority="50" Combine="true" />
         <scope Name="Culture" Culture="Qudish" Priority="100" Combine="true" />
-      </scopes>
+      </scopes> -->
     <!-- name syllables from Arabic & Biblical Hebrew  -->
-      <prefixes Amount="1">
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="ファ" /><!-- Original="fa" -->
         <prefix Name="ハ" /><!-- Original="ha" -->
         <prefix Name="イ" Weight="3" /><!-- Original="i" -->
@@ -42,7 +42,7 @@
         <!-- <prefix Name="イ" Original="yi" /> -->
         <prefix Name="イイ" /><!-- Original="yy" -->
       </prefixes>
-      <infixes Amount="0-2">
+      <infixes Amount="0-2" Load="Replace">
         <infix Name="ガ" /><!-- Original="ga" -->
         <infix Name="メ" /><!-- Original="me" -->
         <infix Name="モ" /><!-- Original="mo" -->
@@ -64,7 +64,7 @@
         <infix Name="シウ" /><!-- Original="shwu" -->
         <infix Name="ユ" Weight="2" /><!-- Original="yu" -->
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Amount="1" Load="Replace">
         <postfix Name="バス" /><!-- Original="bas" -->
         <postfix Name="ド" /><!-- Original="d" -->
         <postfix Name="ジル" /><!-- Original="jr" -->
