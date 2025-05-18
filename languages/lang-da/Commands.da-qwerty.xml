@@ -2,33 +2,26 @@
 <!--
 	Adjusting default keybinds for Danish QWERTY keyboards
 
-	trying to avoid OEM keys, dead keys, AltGr, and cp437 conflicts
+	trying to avoid dead keys and AltGr
 -->
 <commands Lang="da">
   
   <command ID="CmdMoveU" DisplayText="Move up" Category="Basic Move / Attack" Layer="AdventureNav" CanShareBindsWith="V Positive,V Negative">
     <keyboardBind Key="numpadMinus"/>
-<!-- binding to the '<' key, which is an OEM thing -->
+<!-- adding a binding to the '<' key, which is an OEM thing -->
     <keyboardBind Key="OEM1"/>
     <keyboardBind Key="s"/>
+    <keyboardBind Modifier="shift" Key="comma"/>
     <gamepadBind Button="dpad/up"/>
   </command>
   <command ID="CmdMoveD" DisplayText="Move down" Category="Basic Move / Attack" Layer="AdventureNav" CanShareBindsWith="V Positive,V Negative">
     <keyboardBind Key="numpadPlus"/>
-<!-- binding to the '>' key, which is an OEM thing on QWERTZ  -->
+<!-- adding a binding to the '>' key, which is an OEM thing -->
     <keyboardBind Modifier="shift" Key="OEM1"/>
     <keyboardBind Key="d"/>
+    <keyboardBind Modifier="shift" Key="period"/>
     <gamepadBind Button="dpad/down"/>
   </command>
-
-  <command ID="CmdAttackDirection" DisplayText="Force attack in a direction" Category="Basic Move / Attack" Layer="Adventure" Auto="Down">
-<!-- backslash is an AltGr key, let's try slash (shift+7) -->
-    <keyboardBind Modifier="shift" Key="7"/>
-  </command>
-  <command ID="CmdAttackCell" DisplayText="Choose cell to force attack" Category="Basic Move / Attack" Layer="Adventure" Auto="Down">
-<!-- backslash is an AltGr key, let's try slash (shift+7) -->
-    <keyboardBind Modifier="ctrl,shift" Key="7"/>
-  </command>  
 
   <command ID="V Positive" DisplayText="Increase value" Category="Menus" Layer="Menus" CanShareBindsWith="CmdMoveU,CmdMoveD" Auto="Down">
     <keyboardBind Key="numpadPlus"/>
@@ -44,14 +37,14 @@
   </command>
 
   <command ID="CmdTradeAdd" DisplayText="Add one of an item" Category="Trade" Layer="Trade" Auto="Repeat" CanShareBindsWith="V Positive">
-<!-- plus key is where '-' is on US standard -->
+<!-- plus key is where minus is on US standard -->
     <keyboardBind Key="Minus"/>
     <keyboardBind Key="numpadPlus"/>
     <gamepadBind Button="rightShoulder"/>
     <keyboardBind Key="numpad9"/>
   </command>
   <command ID="CmdTradeRemove" DisplayText="Remove one of an item" Category="Trade" Layer="Trade" Auto="Repeat" CanShareBindsWith="V Negative">
-<!-- minus key is where forward-slash is on US standard -->
+<!-- minus key is where forward slash is on US standard -->
     <keyboardBind Key="slash"/>
     <keyboardBind Key="numpadMinus"/>
     <keyboardBind Key="numpad7"/>
