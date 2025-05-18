@@ -14,7 +14,8 @@ bpxml:UnknownGoggles
 苔3塊
 
 Unicode 0-255 missing in cp437:
-¤¦¨©®¯³´¸¹¾ÀÁÂÃÈÊËÌÍÎÏÐÒÓÔÕ×ØÙÚÛÝÞßãðõøýþ (and also soft hyphen)
+¤¦¨©®¯³´¸¹¾ÀÁÂÃÈÊËÌÍÎÏÐÒÓÔÕ×ØÙÚÛÝÞãðõøýþ (and also soft hyphen)
+\u00A4, \u00A6, \u00A8, \u00A9, \u00AD, \u00AE, \u00AF, \u00B3, \u00B4, \u00B8, \u00B9, \u00BE, \u00C0 - \u00C3, \u00C8, \u00CA - \u00D0, \u00D2 - \u00D5, \u00D7 - \u00DB, \u00DD, \u00DE, \u00E3, \u00F0, \u00F5, \u00F8, \u00FD, \u00FE
 
 en Currently in day 123 of 2025
 de Derzeit am Tag 123 des Jahres 2025
@@ -36,7 +37,7 @@ checking afterwards:
 	<string[^\>]+>[^\[][^\<届]+<\/string>
 
 VS Code
-regexp for processing namingstyle elements:
-(Name=")([A-Za-z]+)(" \/>)	$1$3<!-- Original="$2" -->
+regexp for processing Naming.xml namingstyle elements:
+(Name=")([^"]+)("(?: Weight="[0-9]+")? \/>)	$1$3<!-- Original="$2" -->
 regexp for adding DisplayName to mutations:
 ( Name=")([^"]+)(" Cost)	$1$2" DisplayName="[届：\TODO]$2$3

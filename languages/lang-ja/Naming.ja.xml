@@ -4,11 +4,6 @@
   <namestyles>
 
     <namestyle Name="Qudish" Format="AsIs">
-      <!-- <scopes>
-        <scope Name="General" Priority="0" Combine="true" />
-        <scope Name="Genotype" Genotype="Mutated Human" Priority="50" Combine="true" />
-        <scope Name="Culture" Culture="Qudish" Priority="100" Combine="true" />
-      </scopes> -->
     <!-- name syllables from Arabic & Biblical Hebrew  -->
       <prefixes Amount="1" Load="Replace">
         <prefix Name="ファ" /><!-- Original="fa" -->
@@ -92,12 +87,9 @@
       </postfixes>    
     </namestyle>
 
-    <namestyle Name="Qudish Site (jp)" Format="AsIs">
-      <scopes>
-        <scope Name="Main" Type="Site" Priority="100" Combine="false" />
-      </scopes>
+    <namestyle Name="Qudish Site" Format="AsIs">
     <!-- name syllables from Arabic & Biblical Hebrew  -->
-      <prefixes Amount="1">
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="ア" /><!-- Original="a" -->
         <prefix Name="アルア" /><!-- Original="ala" -->
         <prefix Name="ビ" /><!-- Original="bi" -->
@@ -122,7 +114,7 @@
         <prefix Name="トゥ" /><!-- Original="tu" -->
         <prefix Name="ウ" /><!-- Original="u" -->
       </prefixes>
-      <infixes Amount="0-1">
+      <infixes Amount="0-1" Load="Replace">
         <infix Name="アッラ" /><!-- Original="arra" -->
         <infix Name="アゾ" /><!-- Original="azo" -->
         <infix Name="バ" /><!-- Original="ba" -->
@@ -139,7 +131,7 @@
         <infix Name="ルシー" /><!-- Original="rsi" -->
         <infix Name="ルヴァ" /><!-- Original="rva" -->
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Amount="1" Load="Replace">
         <postfix Name="バル" /><!-- Original="bal" -->
         <postfix Name="ド" /><!-- Original="d" -->
         <postfix Name="ケシ" /><!-- Original="kesh" -->
@@ -175,172 +167,114 @@
       </postfixes>
     </namestyle>
 
-    <namestyle Name="Qudish Banana Grove Site (ja)" Base="Qudish Site (ja)">
-      <scopes>
-        <scope Name="Main" Type="Site" Region="BananaGrove" Priority="200" Combine="false" />
-      </scopes>
-      <templates>
+    <namestyle Name="Qudish Banana Grove Site" Base="Qudish Site">
+      <templates Load="Replace">
         <template Name="バナナ[林\りん]の*Name*" />
       </templates>
     </namestyle>
 
-    <namestyle Name="Qudish Baroque Ruins Site (ja)" Base="Qudish Site (ja)">
-      <scopes>
-        <scope Name="Main" Type="Site" Region="BaroqueRuins" Priority="200" Combine="false" />
-      </scopes>
-      <templates>
+    <namestyle Name="Qudish Baroque Ruins Site" Base="Qudish Site">
+      <templates Load="Replace">
         <template Name="バロック[廃墟\はいきょ]の*Name*" />
       </templates>
     </namestyle>
 
-    <namestyle Name="Qudish Deep Jungle Site (ja)" Base="Qudish Site (ja)">
-      <scopes>
-        <scope Name="Main" Type="Site" Region="DeepJungle" Priority="200" Combine="false" />
-      </scopes>
-      <templates>
+    <namestyle Name="Qudish Deep Jungle Site" Base="Qudish Site">
+      <templates Load="Replace">
         <template Name="[深\ふか]いジャングルの*Name*" />
       </templates>
     </namestyle>
 
-    <namestyle Name="Qudish Desert Canyon Site (ja)" Base="Qudish Site (ja)">
-      <scopes>
-        <scope Name="Main" Type="Site" Region="DesertCanyon" Priority="200" Combine="false" />
-      </scopes>
-      <templates>
+    <namestyle Name="Qudish Desert Canyon Site" Base="Qudish Site">
+      <templates Load="Replace">
         <template Name="[砂漠\さばく]の[峡谷\きょうこく]の*Name*" />
       </templates>
     </namestyle>
 
-    <namestyle Name="Qudish Flower Fields Site (ja)" Base="Qudish Site (ja)">
-      <scopes>
-        <scope Name="Main" Type="Site" Region="Flowerfields" Priority="200" Combine="false" />
-      </scopes>
-      <templates>
+    <namestyle Name="Qudish Flower Fields Site" Base="Qudish Site">
+      <templates Load="Replace">
         <template Name="[花畑\はなばたけ]の*Name*" />
       </templates>
     </namestyle>
 
-    <namestyle Name="Qudish Fungal Site (ja)" Base="Qudish Site (ja)">
-      <scopes>
-        <scope Name="Main" Type="Site" Region="Fungal" Priority="200" Combine="false" />
-      </scopes>
-      <templates>
+    <namestyle Name="Qudish Fungal Site" Base="Qudish Site">
+      <templates Load="Replace">
         <template Name="[菌類\きんるい]の*Name*" />
       </templates>
     </namestyle>
 
-    <namestyle Name="Qudish Hills Site (ja)" Base="Qudish Site (ja)">
-      <scopes>
-        <scope Name="Main" Type="Site" Region="Hills" Priority="200" Combine="false" />
-      </scopes>
-      <templates>
+    <namestyle Name="Qudish Hills Site" Base="Qudish Site">
+      <templates Load="Replace">
         <template Name="[丘\おか]の*Name*" />
       </templates>
     </namestyle>
 
-    <namestyle Name="Qudish Jungle Site (ja)" Base="Qudish Site (ja)">
-      <scopes>
-        <scope Name="Main" Type="Site" Region="Jungle" Priority="200" Combine="false" />
-      </scopes>
-      <templates>
+    <namestyle Name="Qudish Jungle Site" Base="Qudish Site">
+      <templates Load="Replace">
         <template Name="ジャングルの*Name*" />
       </templates>
     </namestyle>
 
-    <namestyle Name="Qudish Lake Hinnom Site (ja)" Base="Qudish Site (ja)">
-      <scopes>
-        <scope Name="Main" Type="Site" Region="LakeHinnom" Priority="200" Combine="false" />
-      </scopes>
-      <templates>
+    <namestyle Name="Qudish Lake Hinnom Site" Base="Qudish Site">
+      <templates Load="Replace">
         <template Name="[水上\すいじょう]の*Name*" />
       </templates>
     </namestyle>
 
-    <namestyle Name="Qudish Moon Stair Site (ja)" Base="Qudish Site (ja)">
-      <scopes>
-        <scope Name="Main" Type="Site" Region="MoonStair" Priority="200" Combine="false" />
-      </scopes>
-      <templates>
+    <namestyle Name="Qudish Moon Stair Site" Base="Qudish Site">
+      <templates Load="Replace">
         <template Name="[届：\TODO]Moon Stair *Name*" />
       </templates>
     </namestyle>
 
-    <namestyle Name="Qudish Mountains Site (ja)" Base="Qudish Site (ja)">
-      <scopes>
-        <scope Name="Main" Type="Site" Region="Mountains" Priority="200" Combine="false" />
-      </scopes>
-      <templates>
+    <namestyle Name="Qudish Mountains Site" Base="Qudish Site">
+      <templates Load="Replace">
         <template Name="[山間\さんかん]の*Name*" />
       </templates>
     </namestyle>
 
-    <namestyle Name="Qudish Palladium Reef Site (ja)" Base="Qudish Site (ja)">
-      <scopes>
-        <scope Name="Main" Type="Site" Region="PalladiumReef" Priority="200" Combine="false" />
-      </scopes>
-      <templates>
+    <namestyle Name="Qudish Palladium Reef Site" Base="Qudish Site">
+      <templates Load="Replace">
         <template Name="[届：\TODO]Palladium Reef *Name*" />
       </templates>
     </namestyle>
 
-    <namestyle Name="Qudish Ruins Site (ja)" Base="Qudish Site (ja)">
-      <scopes>
-        <scope Name="Main" Type="Site" Region="Ruins" Priority="200" Combine="false" />
-      </scopes>ruins
-      <templates>
+    <namestyle Name="Qudish Ruins Site" Base="Qudish Site">
+      <templates Load="Replace">
         <template Name="[廃墟\はいきょ]の*Name*" />
       </templates>
     </namestyle>
 
-    <namestyle Name="Qudish Salt Dunes Site (ja)" Base="Qudish Site (ja)">
-      <scopes>
-        <scope Name="Main" Type="Site" Region="Saltdunes" Priority="200" Combine="false" />
-      </scopes>
-      <templates>
+    <namestyle Name="Qudish Salt Dunes Site" Base="Qudish Site">
+      <templates Load="Replace">
         <template Name="[塩\しお]の[砂丘\さきゅう]の*Name*" />
       </templates>
     </namestyle>
 
-    <namestyle Name="Qudish Salt Marsh Site (ja)" Base="Qudish Site (ja)">
-      <scopes>
-        <scope Name="Main" Type="Site" Region="Saltmarsh" Priority="200" Combine="false" />
-      </scopes>
-      <templates>
+    <namestyle Name="Qudish Salt Marsh Site" Base="Qudish Site">
+      <templates Load="Replace">
         <template Name="[塩性\えんせい][湿地\しっち]の*Name*" />
       </templates>
     </namestyle>
 
-    <namestyle Name="Qudish Spindle Site (ja)" Base="Qudish Site (ja)">
-      <scopes>
-        <scope Name="Main" Type="Site" Region="TheSpindle" Priority="200" Combine="false" />
-      </scopes>
-      <templates>
+    <namestyle Name="Qudish Spindle Site" Base="Qudish Site">
+      <templates Load="Replace">
         <template Name="[届：\TODO]Spindle *Name*" />
       </templates>
     </namestyle>
 
-    <namestyle Name="Qudish Water Site (ja)" Base="Qudish Site (ja)">
-      <scopes>
-        <scope Name="Main" Type="Site" Region="Water" Priority="200" Combine="false" />
-      </scopes>
-      <templates>
+    <namestyle Name="Qudish Water Site" Base="Qudish Site">
+      <templates Load="Replace">
         <template Name="[水上\すいじょう]の*Name*" />
       </templates>
     </namestyle>
 
 
-    <namestyle Name="Ekuemekiyyen (ja)" Format="AsIs">
-      <scopes>
-        <scope Name="Subtype1" Subtype="Horticulturist" Priority="100" Combine="false" />
-        <scope Name="Subtype2" Subtype="Priest of All Moons" Priority="100" Combine="false" />
-        <scope Name="Subtype3" Subtype="Priest of All Suns" Priority="100" Combine="false" />
-        <scope Name="Subtype4" Subtype="Syzygyrior" Priority="100" Combine="false" />
-        <scope Name="Culture" Culture="Ekuemekiyyen" Priority="100" Combine="false" />
-      </scopes>
-      <templates>
+    <namestyle Name="Ekuemekiyyen" Format="AsIs">
+      <templates Load="Replace">
         <template Name="*Name**Suffix*" />
       </templates>
-      <templatevars>
+      <templatevars Load="Replace">
         <templatevar Name="Suffix">
           <value Name="・カ" /><!-- Original="ka" -->
           <value Name="・キ" /><!-- Original="ki" -->
@@ -350,7 +284,7 @@
         </templatevar>
       </templatevars>
     <!-- name syllables from Igbo & Yoruba, others? -->
-      <prefixes Amount="1">
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="アブ" /><!-- Original="ab" -->
         <prefix Name="アヅ" /><!-- Original="ad" -->
         <prefix Name="アフィ" /><!-- Original="afi" -->
@@ -391,7 +325,7 @@
         <prefix Name="ザ" /><!-- Original="za" -->
         <prefix Name="ズ" /><!-- Original="zu" -->
       </prefixes>
-      <infixes Amount="0-2">
+      <infixes Amount="0-2" Load="Replace">
         <infix Name="アマ" /><!-- Original="ama" -->
         <infix Name="バ" /><!-- Original="ba" -->
         <infix Name="バジ" /><!-- Original="baji" -->
@@ -420,7 +354,7 @@
         <infix Name="ツ" /><!-- Original="tu" -->
         <infix Name="イェ" /><!-- Original="ye" -->
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Amount="1" Load="Replace">
         <postfix Name="ベム" /><!-- Original="bem" -->
         <postfix Name="ビ" /><!-- Original="bi" -->
         <postfix Name="ボラ" /><!-- Original="bola" -->
@@ -462,16 +396,9 @@
       </postfixes>
     </namestyle>
 
-    <namestyle Name="Ibulian (ja)" TwoNameChance="80" Format="AsIs">
+    <namestyle Name="Ibulian" TwoNameChance="80" Format="AsIs">
     <!-- Latin (Ancient Roman) -->
-      <scopes>
-        <scope Name="Subtype1" Subtype="Artifex" Priority="100" Combine="false" />
-        <scope Name="Subtype2" Subtype="Consul" Priority="100" Combine="false" />
-        <scope Name="Subtype3" Subtype="Eunuch" Priority="100" Combine="false" />
-        <scope Name="Subtype4" Subtype="Praetorian" Priority="100" Combine="false" />
-        <scope Name="Culture" Culture="Ibulian" Priority="100" Combine="false" />
-      </scopes>
-      <prefixes Amount="1">
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="ア" Weight="2" /><!-- Original="a" -->
         <prefix Name="アエ" /><!-- Original="ae" -->
         <prefix Name="アン" /><!-- Original="an" -->
@@ -533,7 +460,7 @@
         <prefix Name="ヴェ" /><!-- Original="ve" -->
         <prefix Name="ヴィ" /><!-- Original="vi" -->
       </prefixes>
-      <infixes Amount="0-1">
+      <infixes Amount="0-1" Load="Replace">
         <infix Name="ビ" Weight="2" /><!-- Original="bi" -->
         <infix Name="ブリ" /><!-- Original="bri" -->
         <infix Name="ケ" /><!-- Original="ce" -->
@@ -568,7 +495,7 @@
         <infix Name="ゼ" /><!-- Original="xe" -->
         <infix Name="ジ" /><!-- Original="xi" -->
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Amount="1" Load="Replace">
         <postfix Name="バ" /><!-- Original="ba" -->
         <postfix Name="ビウス" /><!-- Original="bius" -->
         <postfix Name="ブス" /><!-- Original="bus" -->
@@ -604,16 +531,9 @@
       </postfixes>
     </namestyle>
 
-    <namestyle Name="Yawningmoon (ja)" TwoNameChance="50" Format="AsIs">
+    <namestyle Name="Yawningmoon" TwoNameChance="50" Format="AsIs">
     <!-- maybe Sanskrit! -->
-      <scopes>
-        <scope Name="Subtype1" Subtype="Child of the Deep" Priority="100" Combine="false" />
-        <scope Name="Subtype2" Subtype="Child of the Wheel" Priority="100" Combine="false" />
-        <scope Name="Subtype3" Subtype="Child of the Hearth" Priority="100" Combine="false" />
-        <scope Name="Subtype4" Subtype="Fuming God-Child" Priority="100" Combine="false" />
-        <scope Name="Culture" Culture="Yawningmoon" Priority="100" Combine="false" />
-      </scopes>
-      <prefixes Amount="1">
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="アパ" /><!-- Original="apa" -->
         <prefix Name="ドヤ" /><!-- Original="dya" -->
         <prefix Name="グルタ" /><!-- Original="ghrta" -->
@@ -634,12 +554,12 @@
         <prefix Name="ウル" /><!-- Original="ur" -->
         <prefix Name="ヴリ" /><!-- Original="vri" -->
       </prefixes>
-      <infixes Amount="0-1">
+      <infixes Amount="0-1" Load="Replace">
         <infix Name="ルトフ" /><!-- Original="rth" -->
         <infix Name="シ" /><!-- Original="sh" -->
         <infix Name="トフ" /><!-- Original="th" -->
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Amount="1" Load="Replace">
         <postfix Name="タル" /><!-- Original="tar" -->
         <postfix Name="ドラ" /><!-- Original="dra" -->
         <postfix Name="ヴラ" /><!-- Original="vra" -->
@@ -658,13 +578,8 @@
     </namestyle>
 
     <!-- baboon is ヒヒ, monkey sound in Japanese is ウキ -->
-    <namestyle Name="Baboon (ja)" TwoNameChance="1">
-      <scopes>
-        <scope Name="Faction" Faction="Baboons" Priority="100" Combine="false" />
-        <scope Name="Species" Species="baboon" Priority="50" Combine="true" />
-        <scope Name="Culture" Culture="Baboon" Priority="50" Combine="true" />
-      </scopes>
-      <prefixes Amount="1-3">
+    <namestyle Name="Baboon" HyphenationChance="0" TwoNameChance="1" Format="AsIs">
+      <prefixes Amount="1-3" Load="Replace">
         <prefix Name="ゥ" /><!-- Original="oo" -->
         <prefix Name="ゥー" /><!-- Original="ooo" -->
         <prefix Name="ォ" /><!-- Original="o" -->
@@ -673,7 +588,7 @@
         <prefix Name="ホ" /><!-- Original="ho" -->
         <prefix Name="ホー" /><!-- Original="hoo" -->
       </prefixes>
-      <infixes Amount="1-3">
+      <infixes Amount="1-3" Load="Replace">
         <infix Name="オ゙" /><!-- Original="O" -->
         <infix Name="ウ" Weight="2" /><!-- Original="OO" -->
         <infix Name="ウー" /><!-- Original="OOO" -->
@@ -686,7 +601,7 @@
         <infix Name="イ゙" /><!-- Original="EE" -->
         <infix Name="イ゙ー" /><!-- Original="EEE" -->
       </infixes>
-      <postfixes Amount="0-2">
+      <postfixes Amount="0-2" Load="Replace">
         <postfix Name="ア" /><!-- Original="ah" -->
         <postfix Name="アー" /><!-- Original="ahh" -->
         <postfix Name="オ" /><!-- Original="o" -->
@@ -700,41 +615,41 @@
       </postfixes>
     </namestyle>
 
-    <namestyle Name="Baboon Hero Title (ja)">
-      <scopes>
-        <scope Name="Main" Type="Title" Special="Hero" Faction="Baboons" Priority="200" Combine="false" />
-      </scopes>
-      <templates>
+    <namestyle Name="Baboon Hero Title">
+      <templates Load="Replace">
         <template Name="*Yubiwa*のヒヒの*Position*" />
       </templates>
-      <templatevars>
+      <templatevars Load="Replace">
         <templatevar Name="Yubiwa">
-          <value Name="指輪が三輪" />
-          <value Name="指輪が四輪" />
-          <value Name="指輪が五輪" />
-          <value Name="指輪が六輪" />
-          <value Name="指輪が七輪" />
-          <value Name="指輪が八輪" />
-          <value Name="指輪が九輪" />
+    <!-- NOTE: *Rings* count is used to give HP buffs
+        and maybe should be replaced in code with a localized template -->
+          <value Name="指輪が3輪" />
+          <value Name="指輪が4輪" />
+          <value Name="指輪が5輪" />
+          <value Name="指輪が6輪" />
+          <value Name="指輪が7輪" />
+          <value Name="指輪が8輪" />
+          <value Name="指輪が9輪" />
+          <value Name="指輪が10輪" />
+          <value Name="指輪が11輪" />
+          <value Name="指輪が12輪" />
         </templatevar>
         <templatevar Name="Position">
-          <value Name="浮気者" /><!-- Original="Philanderer" -->
-          <value Name="謎かけ屋" /><!-- Original="Riddler" -->
-          <value Name="隠者" /><!-- Original="Hermit" -->
-          <value Name="洗練された者" /><!-- Original="Sophisticate" -->
-          <value Name="扇動家" /><!-- Original="Demagogue" -->
-          <value Name="王" /><!-- Original="King" -->
-          <value Name="女王" /><!-- Original="Queen" -->
+    <!-- NOTE: Position is used to decide on special hero attributes
+        and maybe should be treated as a keyword to replace with localized string -->
+          <value Name="[浮気者\うわきもの]" /><!-- Original="Philanderer" -->
+          <value Name="[謎\なぞ]かけ[屋\や]" /><!-- Original="Riddler" -->
+          <value Name="[隠者\いんじゃ]" /><!-- Original="Hermit" -->
+          <value Name="[洗練\せんれん]された[者\じゃ]" /><!-- Original="Sophisticate" -->
+          <value Name="[扇動家\せんどうか]" /><!-- Original="Demagogue" -->
+          <value Name="[王\おう]" /><!-- Original="King" -->
+          <value Name="[女王\じょおう]" /><!-- Original="Queen" -->
         </templatevar>
       </templatevars>
     </namestyle>
 
-    <namestyle Name="Bird (ja)" TwoNameChance="20">
-      <scopes>
-        <scope Name="Faction" Faction="Birds" Priority="100" Combine="false" />
-        <scope Name="Culture" Culture="Bird" Priority="50" Combine="true" />
-      </scopes>
-      <prefixes Amount="3-6">
+    <namestyle Name="Bird" HyphenationChance="0" TwoNameChance="20" Format="AsIs">
+      <prefixes Amount="3-6" Load="Replace">
         <prefix Name="カ" Weight="2" /><!-- Original="ca" -->
         <prefix Name="カッ" Weight="2" /><!-- Original="CA" -->
         <prefix Name="カアァアァアッ" /><!-- Original="CAAAAAAAAW" -->
@@ -750,15 +665,11 @@
       </prefixes>
     </namestyle>
 
-    <namestyle Name="Bird Hero Epithet (ja)">
-      <scopes>
-        <scope Name="Main" Type="Epithet" Special="Hero" Faction="Birds" Priority="200" Combine="false" />
-        <scope Name="Culture" Type="Epithet" Special="Hero" Culture="Bird" Priority="150" Combine="true" />
-      </scopes>
-      <templates>
+    <namestyle Name="Bird Hero Epithet">
+      <templates Load="Replace">
         <template Name="*Singer*" />
       </templates>
-      <templatevars>
+      <templatevars Load="Replace">
         <templatevar Name="Singer">
           <value Name="バード" /><!-- Original="Bard" -->
           <value Name="吟遊詩人" /><!-- Original="Bard" -->
@@ -769,15 +680,11 @@
       </templatevars>
     </namestyle>
 
-    <namestyle Name="Bird Hero Title (ja)">
-      <scopes>
-        <scope Name="Main" Type="Title" Special="Hero" Faction="Birds" Priority="200" Combine="false" />
-        <scope Name="Culture" Type="Title" Special="Hero" Culture="Bird" Priority="150" Combine="true" />
-      </scopes>
-      <templates>
+    <namestyle Name="Bird Hero Title">
+      <templates Load="Replace">
         <template Name="*Disposition**CreatureType*" />
       </templates>
-      <templatevars>
+      <templatevars Load="Replace">
         <templatevar Name="Disposition">
           <value Name="陰気な" /><!-- Original="brooding" -->
           <value Name="明るい" /><!-- Original="cheerful" -->
@@ -786,10 +693,403 @@
         </templatevar>
       </templatevars>
     </namestyle>
-brooding
-cheerful
-dour
-merry
+
+    <namestyle Name="Clam-ja" TwoNameChance="20" Format="AsIs">
+      <prefixes Amount="1" Load="Replace">
+        <prefix Name="" /><!-- Original="aco" -->
+        <prefix Name="" /><!-- Original="aga" -->
+        <prefix Name="" /><!-- Original="ba" -->
+        <prefix Name="" /><!-- Original="bo" -->
+        <prefix Name="" /><!-- Original="ca" -->
+        <prefix Name="" /><!-- Original="di" -->
+        <prefix Name="" /><!-- Original="gi" -->
+        <prefix Name="" Weight="2" /><!-- Original="ha" -->
+        <prefix Name="" /><!-- Original="hi" -->
+        <prefix Name="" /><!-- Original="ja" -->
+        <prefix Name="" /><!-- Original="ma" -->
+        <prefix Name="" /><!-- Original="mu" -->
+        <prefix Name="" /><!-- Original="rho" -->
+        <prefix Name="" /><!-- Original="sa" -->
+        <prefix Name="" /><!-- Original="so" -->
+        <prefix Name="" /><!-- Original="te" -->
+        <prefix Name="" /><!-- Original="y" -->
+        <prefix Name="" /><!-- Original="za" -->
+      </prefixes>
+      <infixes Amount="1-2" Load="Replace">
+        <infix Name="" /><!-- Original="bni" -->
+        <infix Name="" /><!-- Original="do" -->
+        <infix Name="" /><!-- Original="ggi" -->
+        <infix Name="" /><!-- Original="go" -->
+        <infix Name="" /><!-- Original="l" -->
+        <infix Name="" /><!-- Original="mil" -->
+        <infix Name="" /><!-- Original="mpsi" -->
+        <infix Name="" /><!-- Original="nni" -->
+        <infix Name="" /><!-- Original="pho" -->
+        <infix Name="" /><!-- Original="ra" -->
+        <infix Name="" /><!-- Original="rca" -->
+        <infix Name="" /><!-- Original="rtha" -->
+        <infix Name="" /><!-- Original="sdru" -->
+        <infix Name="" /><!-- Original="sgo" -->
+        <infix Name="" /><!-- Original="tra" -->
+        <infix Name="" /><!-- Original="tti" -->
+        <infix Name="" /><!-- Original="ze" -->
+      </infixes>
+      <postfixes Amount="1" Load="Replace">
+        <postfix Name="[貝\かい]" /><!-- Original="clam" -->
+      </postfixes>
+    </namestyle>
+    
+    <namestyle Name="Crab-ja" TwoNameChance="20" Format="AsIs">
+      <prefixes Amount="1" Load="Replace">
+        <prefix Name="" /><!-- Original="aco" -->
+        <prefix Name="" /><!-- Original="aga" -->
+        <prefix Name="" /><!-- Original="ba" -->
+        <prefix Name="" /><!-- Original="bo" -->
+        <prefix Name="" /><!-- Original="ca" -->
+        <prefix Name="" /><!-- Original="di" -->
+        <prefix Name="" /><!-- Original="gi" -->
+        <prefix Name="" Weight="2" /><!-- Original="ha" -->
+        <prefix Name="" /><!-- Original="hi" -->
+        <prefix Name="" /><!-- Original="ja" -->
+        <prefix Name="" /><!-- Original="ma" -->
+        <prefix Name="" /><!-- Original="mu" -->
+        <prefix Name="" /><!-- Original="rho" -->
+        <prefix Name="" /><!-- Original="sa" -->
+        <prefix Name="" /><!-- Original="so" -->
+        <prefix Name="" /><!-- Original="te" -->
+        <prefix Name="" /><!-- Original="y" -->
+        <prefix Name="" /><!-- Original="za" -->
+      </prefixes>
+      <infixes Amount="1-2" Load="Replace">
+        <infix Name="" /><!-- Original="bni" -->
+        <infix Name="" /><!-- Original="do" -->
+        <infix Name="" /><!-- Original="ggi" -->
+        <infix Name="" /><!-- Original="go" -->
+        <infix Name="" /><!-- Original="l" -->
+        <infix Name="" /><!-- Original="mil" -->
+        <infix Name="" /><!-- Original="mpsi" -->
+        <infix Name="" /><!-- Original="nni" -->
+        <infix Name="" /><!-- Original="pho" -->
+        <infix Name="" /><!-- Original="ra" -->
+        <infix Name="" /><!-- Original="rca" -->
+        <infix Name="" /><!-- Original="rtha" -->
+        <infix Name="" /><!-- Original="sdru" -->
+        <infix Name="" /><!-- Original="sgo" -->
+        <infix Name="" /><!-- Original="tra" -->
+        <infix Name="" /><!-- Original="tti" -->
+        <infix Name="" /><!-- Original="ze" -->
+      </infixes>
+      <postfixes Amount="1" Load="Replace">
+        <postfix Name="[蟹\かに]" /><!-- Original="crab" -->
+      </postfixes>
+    </namestyle>   
+
+    <namestyle Name="Crab Hero Title-ja">
+      <templates Load="Replace">
+        <template Name="the *Adjective* *CreatureTypeCap* *Position*" />
+      </templates>
+      <templatevars Load="Replace">
+        <templatevar Name="Adjective">
+          <value Name="" /><!-- Original="echoing" -->
+          <value Name="" /><!-- Original="frenetic" -->
+          <value Name="" /><!-- Original="many-legged" -->
+          <value Name="" /><!-- Original="massive" -->
+          <value Name="" /><!-- Original="one-clawed" -->
+          <value Name="" /><!-- Original="shell-cracked" -->
+        </templatevar>
+        <templatevar Name="Position">
+          <value Name="" /><!-- Original="Ancient" -->
+          <value Name="" /><!-- Original="Deepcrawler" -->
+          <value Name="" /><!-- Original="Goliath" -->
+          <value Name="" /><!-- Original="Lord" -->
+          <value Name="" /><!-- Original="Patriarch" -->
+          <value Name="" /><!-- Original="Skuttler" -->
+        </templatevar>
+      </templatevars>
+    </namestyle>
+
+    <namestyle Name="Goatfolk-ja" TwoNameChance="1" Format="AsIs">
+      <prefixes Amount="0-1" Load="Replace">
+        <prefix Name="" /><!-- Original="ba" -->
+        <prefix Name="" Weight="2" /><!-- Original="baa" -->
+        <prefix Name="" /><!-- Original="na" -->
+        <prefix Name="" /><!-- Original="naa" -->
+        <prefix Name="" /><!-- Original="ra" -->
+        <prefix Name="" /><!-- Original="raa" -->
+      </prefixes>
+      <infixes Amount="0-3" Load="Replace">
+        <infix Name="" Weight="2" /><!-- Original="ba" -->
+        <infix Name="" /><!-- Original="baa" -->
+        <infix Name="" /><!-- Original="naa" -->
+        <infix Name="" Weight="2" /><!-- Original="ra" -->
+        <infix Name="" /><!-- Original="raa" -->
+      </infixes>
+      <postfixes Amount="1-2" Load="Replace">
+        <postfix Name="" /><!-- Original="a" -->
+        <postfix Name="" /><!-- Original="aaa" -->
+        <postfix Name="" /><!-- Original="aaaaah" -->
+        <postfix Name="" /><!-- Original="aaah" -->
+        <postfix Name="" /><!-- Original="aah" -->
+        <postfix Name="" /><!-- Original="ah" -->
+      </postfixes>
+    </namestyle>
+
+    <namestyle Name="Goatfolk Hero-ja" Base="Goatfolk">
+      <templates>
+        <template Name="*Name*" />
+      </templates>
+    </namestyle>
+
+    <namestyle Name="Goatfolk Hero Epithet-ja">
+      <templates>
+        <template Name="*Epithet*" />
+      </templates>
+      <templatevars Load="Replace">
+        <templatevar Name="Epithet">
+          <value Name="" /><!-- Original="Stargazer" -->
+          <value Name="" /><!-- Original="Heartbiter" -->
+          <value Name="" /><!-- Original="Twicetalker" -->
+          <value Name="" /><!-- Original="Souldrinker" -->
+          <value Name="" /><!-- Original="Whitefinger" -->
+          <value Name="" /><!-- Original="Clovenhorn" -->
+        </templatevar>
+      </templatevars>
+    </namestyle>
+
+    <namestyle Name="Goatfolk Hero Title-ja">
+      <templates Load="Replace">
+        <template Name="the Goatfolk Shaman of Clan *Clan*" />
+      </templates>
+      <templatevars>
+        <templatevar Name="Clan">
+          <value Name="" /><!-- Original="Hotur" -->
+          <value Name="" /><!-- Original="Ibex" -->
+          <value Name="" /><!-- Original="Sol" -->
+          <value Name="" /><!-- Original="Whitetongue" -->
+          <value Name="" /><!-- Original="Yr" -->
+          <value Name="" /><!-- Original="Mnim" -->
+        </templatevar>
+      </templatevars>
+    </namestyle>
+
+    <namestyle Name="Goatfolk Site-ja" Format="AsIs">
+      <templates Load="Replace">
+        <template Name="*Name**Suffix*" Weight="1800" />
+        <template Name="*Prefix**Suffix*" Weight="1800" />
+        <template Name="*Sultan**Suffix*" Weight="450" />
+        <template Name="*Name**Location*" Weight="1125" />
+        <template Name="*Prefix**Location*" Weight="1125" />
+        <template Name="*Sultan**Location*" Weight="250" />
+        <template Name="*Name**Forest*" Weight="1575" />
+        <template Name="*Prefix**Forest*" Weight="1575" />
+        <template Name="*Sultan**Forest*" Weight="350" />
+      </templates>
+      <templatevars Load="Replace">
+        <templatevar Name="Prefix">
+          <value Name="" /><!-- Original="Ash" -->
+          <value Name="" /><!-- Original="Black" -->
+          <value Name="" /><!-- Original="Blood" -->
+          <value Name="" /><!-- Original="Bone" -->
+          <value Name="" /><!-- Original="Cloven" -->
+          <value Name="" /><!-- Original="Fern" -->
+          <value Name="" /><!-- Original="Heart" -->
+          <value Name="" /><!-- Original="Moon" -->
+          <value Name="" /><!-- Original="Moss" -->
+          <value Name="" /><!-- Original="Rain" -->
+          <value Name="" /><!-- Original="Sap" -->
+          <value Name="" /><!-- Original="Skull" -->
+          <value Name="" /><!-- Original="Star" -->
+          <value Name="" /><!-- Original="White" -->
+        </templatevar>
+        <templatevar Name="Sultan">
+          <value Name="レシェフ" /><!-- Original="Resheph" -->
+        </templatevar>
+        <templatevar Name="Suffix">
+          <value Name="" Weight="2" /><!-- Original="baa" -->
+          <value Name="" /><!-- Original="baaaaaah" -->
+          <value Name="" Weight="3" /><!-- Original="baaaaah" -->
+          <value Name="" Weight="3" /><!-- Original="baaaah" -->
+          <value Name="" Weight="3" /><!-- Original="baaah" -->
+          <value Name="" Weight="2" /><!-- Original="baah" -->
+          <value Name="" /><!-- Original="naaa" -->
+          <value Name="" /><!-- Original="naaaaaah" -->
+          <value Name="" /><!-- Original="naaaaah" -->
+          <value Name="" /><!-- Original="naaaah" -->
+          <value Name="" /><!-- Original="naaah" -->
+          <value Name="" Weight="2" /><!-- Original="raa" -->
+          <value Name="" /><!-- Original="raaaaaah" -->
+          <value Name="" Weight="3" /><!-- Original="raaaaah" -->
+          <value Name="" Weight="3" /><!-- Original="raaaah" -->
+          <value Name="" Weight="3" /><!-- Original="raaah" -->
+          <value Name="" Weight="2" /><!-- Original="raah" -->
+        </templatevar>
+        <templatevar Name="Forest">
+          <value Name="" /><!-- Original="bosk" -->
+          <value Name="" /><!-- Original="dale" -->
+          <value Name="" /><!-- Original="dell" -->
+          <value Name="" /><!-- Original="glade" -->
+          <value Name="" /><!-- Original="glen" -->
+          <value Name="" /><!-- Original="gorge" -->
+          <value Name="" /><!-- Original="grove" -->
+          <value Name="" /><!-- Original="meadow" -->
+          <value Name="" /><!-- Original="root" -->
+          <value Name="" /><!-- Original="vale" -->
+          <value Name="" /><!-- Original="weald" -->
+          <value Name="" /><!-- Original="weep" -->
+          <value Name="" /><!-- Original="wood" -->
+        </templatevar>
+        <templatevar Name="Location">
+          <value Name="" /><!-- Original="bend" -->
+          <value Name="" /><!-- Original="bite" -->
+          <value Name="" /><!-- Original="bow" -->
+          <value Name="" /><!-- Original="cleft" -->
+          <value Name="" /><!-- Original="crescent" -->
+          <value Name="" /><!-- Original="deep" -->
+          <value Name="" /><!-- Original="pool" -->
+          <value Name="" /><!-- Original="star" -->
+          <value Name="" /><!-- Original="void" -->
+          <value Name="" /><!-- Original="well" -->
+        </templatevar>
+      </templatevars>
+      <prefixes Amount="1">
+        <prefix Name="" /><!-- Original="ba" -->
+        <prefix Name="" Weight="2" /><!-- Original="baa" -->
+        <prefix Name="" /><!-- Original="na" -->
+        <prefix Name="" /><!-- Original="naa" -->
+        <prefix Name="" /><!-- Original="ra" -->
+        <prefix Name="" /><!-- Original="raa" -->
+      </prefixes>
+      <infixes Amount="0-1">
+        <infix Name="" Weight="2" /><!-- Original="ba" -->
+        <infix Name="" /><!-- Original="baa" -->
+        <infix Name="" /><!-- Original="naa" -->
+        <infix Name="" Weight="2" /><!-- Original="ra" -->
+        <infix Name="" /><!-- Original="raa" -->
+      </infixes>
+    </namestyle>
+
+    <namestyle Name="Qlippoth Site-ja" Format="AsIs">
+      <templates Load="Replace">
+        <template Name="*Prefix**Suffix*" Weight="1800" />        
+        <template Name="*Name**Location*" Weight="1125" />
+        <template Name="*Prefix**Location*" Weight="1125" />
+        <template Name="*Sultan**Location*" Weight="250" />        
+        <template Name="*Prefix**Forest*" Weight="1575" />        
+      </templates>
+      <templatevars>
+        <templatevar Name="Prefix">
+          <value Name="" /><!-- Original="Ash" -->
+          <value Name="" /><!-- Original="Black" -->
+          <value Name="" /><!-- Original="Ghost" -->
+          <value Name="" /><!-- Original="Dust" -->          
+          <value Name="" /><!-- Original="Wraith" -->
+          <value Name="" /><!-- Original="Moon" -->
+          <value Name="" /><!-- Original="Dream" -->          
+          <value Name="" /><!-- Original="Star" -->
+          <value Name="" /><!-- Original="White" -->
+          <value Name="" /><!-- Original="Grey" -->
+          <value Name="" /><!-- Original="Gloom" -->
+          <value Name="" /><!-- Original="Dim" -->
+          <value Name="" /><!-- Original="Dusk" -->
+          <value Name="" /><!-- Original="Ever" -->
+          <value Name="" /><!-- Original="Null" -->
+        </templatevar>
+        <templatevar Name="Sultan">
+          <value Name="レシェフ" /><!-- Original="Resheph" -->
+        </templatevar>
+        <templatevar Name="Suffix">
+          <value Name="" Weight="2" /><!-- Original="baa" -->
+          <value Name="" /><!-- Original="baaaaaah" -->
+          <value Name="" Weight="3" /><!-- Original="baaaaah" -->
+          <value Name="" Weight="3" /><!-- Original="baaaah" -->
+          <value Name="" Weight="3" /><!-- Original="baaah" -->
+          <value Name="" Weight="2" /><!-- Original="baah" -->
+          <value Name="" /><!-- Original="naaa" -->
+          <value Name="" /><!-- Original="naaaaaah" -->
+          <value Name="" /><!-- Original="naaaaah" -->
+          <value Name="" /><!-- Original="naaaah" -->
+          <value Name="" /><!-- Original="naaah" -->
+          <value Name="" Weight="2" /><!-- Original="raa" -->
+          <value Name="" /><!-- Original="raaaaaah" -->
+          <value Name="" Weight="3" /><!-- Original="raaaaah" -->
+          <value Name="" Weight="3" /><!-- Original="raaaah" -->
+          <value Name="" Weight="3" /><!-- Original="raaah" -->
+          <value Name="" Weight="2" /><!-- Original="raah" -->
+        </templatevar>
+        <templatevar Name="Forest">
+          <value Name="" /><!-- Original="bosk" -->
+          <value Name="" /><!-- Original="dale" -->
+          <value Name="" /><!-- Original="dell" -->
+          <value Name="" /><!-- Original="glade" -->
+          <value Name="" /><!-- Original="glen" -->
+          <value Name="" /><!-- Original="gorge" -->
+          <value Name="" /><!-- Original="grove" -->
+          <value Name="" /><!-- Original="meadow" -->
+          <value Name="" /><!-- Original="root" -->
+          <value Name="" /><!-- Original="vale" -->
+          <value Name="" /><!-- Original="weald" -->
+          <value Name="" /><!-- Original="weep" -->
+          <value Name="" /><!-- Original="wood" -->
+          <value Name="" /><!-- Original="hollow" -->
+        </templatevar>
+        <templatevar Name="Location">                          
+          <value Name="" /><!-- Original="crescent" -->
+          <value Name="" /><!-- Original="deep" -->
+          <value Name="" /><!-- Original="pool" -->
+          <value Name="" /><!-- Original="star" -->
+          <value Name="" /><!-- Original="void" -->
+          <value Name="" /><!-- Original="well" -->
+          <value Name="" /><!-- Original="dream" -->
+          <value Name="" /><!-- Original="myth" -->          
+          <value Name="" /><!-- Original="calm" -->
+        </templatevar>
+      </templatevars>
+      <prefixes Amount="1" Load="Replace">
+        <prefix Name="" /><!-- Original="ba" -->
+        <prefix Name="" Weight="2" /><!-- Original="baa" -->
+        <prefix Name="" /><!-- Original="na" -->
+        <prefix Name="" /><!-- Original="naa" -->
+        <prefix Name="" /><!-- Original="ra" -->
+        <prefix Name="" /><!-- Original="raa" -->
+      </prefixes>
+      <infixes Amount="0-1" Load="Replace">
+        <infix Name="" Weight="2" /><!-- Original="ba" -->
+        <infix Name="" /><!-- Original="baa" -->
+        <infix Name="" /><!-- Original="naa" -->
+        <infix Name="" Weight="2" /><!-- Original="ra" -->
+        <infix Name="" /><!-- Original="raa" -->
+      </infixes>
+    </namestyle>
+
+    <namestyle Name="Issachari" HyphenationChance="0" TwoNameChance="0">
+      <prefixes Amount="1" Load="Replace">
+        <prefix Name="瀝青" /><!-- Original="Asphalt" -->
+        <prefix Name="火" /><!-- Original="Fire" -->
+        <prefix Name="石油" /><!-- Original="Oil" -->
+        <prefix Name="流塩" /><!-- Original="Quicksalt" -->
+        <prefix Name="塩" /><!-- Original="Salt" -->
+        <prefix Name="蛇" /><!-- Original="Serpents" -->
+        <prefix Name="羽毛大蛇" /><!-- Original="the-Feathered-Serpent" -->
+        <prefix Name="太陽" /><!-- Original="the-Sun" -->
+      </prefixes>
+      <infixes Amount="1" Load="Replace">
+        <infix Name="デ" /><!-- Original="by" -->
+        <infix Name="ノ中デ" /><!-- Original="in" -->
+        <infix Name="ノ近くデ" /><!-- Original="near" -->
+        <infix Name="ニ" /><!-- Original="on" -->
+        <infix Name="ノ上テ" /><!-- Original="upon" -->
+      </infixes>
+      <postfixes Amount="1" Load="Replace">
+        <postfix Name="浴びる" /><!-- Original="Bathes" -->
+        <postfix Name="噛む" /><!-- Original="Chews" -->
+        <postfix Name="噎せる" /><!-- Original="Chokes" -->
+        <postfix Name="一気飲む" /><!-- Original="Chugs" -->
+        <postfix Name="泣く" /><!-- Original="Cries" -->
+        <postfix Name="飲む" /><!-- Original="Drinks" -->
+        <postfix Name="皮剥ぐ" /><!-- Original="Flays" -->
+      </postfixes>
+    </namestyle>
+
   </namestyles>
 
 </naming>
