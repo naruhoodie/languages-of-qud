@@ -4,16 +4,8 @@
 
 	trying to avoid OEM keys, dead keys, AltGr, and cp437 conflicts
 -->
-<commands Lang="de" Load="Merge">
+<commands Lang="de">
   
-  <!-- Basic Move / Attack -->
-  <command ID="CmdMoveNW" DisplayText="Move northwest" Category="Basic Move / Attack" Layer="AdventureNav">
-    <keyboardBind Key="numpad7"/>
-    <keyboardBind Modifier="shift" Key="upArrow"/>
-<!-- "z" key on QWERTZ; based on position so it's fine -->
-    <keyboardBind Key="y" Set="hjkl"/>
-  </command>
-
   <command ID="CmdMoveU" DisplayText="Move up" Category="Basic Move / Attack" Layer="AdventureNav" CanShareBindsWith="V Positive,V Negative">
     <keyboardBind Key="numpadMinus"/>
 <!-- binding to the '<' key, which is an OEM thing on QWERTZ  -->
@@ -29,13 +21,6 @@
     <gamepadBind Button="dpad/down"/>
   </command>
 
-  <command ID="CmdAttackNW" DisplayText="Force attack northwest" Category="Basic Move / Attack" Layer="Adventure">
-    <keyboardBind Modifier="ctrl" Key="numpad7"/>
-    <keyboardBind Modifier="ctrl,shift" Key="upArrow"/>
-<!-- "z" key on QWERTZ; based on position so it's fine -->
-    <keyboardBind Modifier="ctrl" Key="y" Set="hjkl"/>
-  </command>
-
   <command ID="CmdAttackDirection" DisplayText="Force attack in a direction" Category="Basic Move / Attack" Layer="Adventure" Auto="Down">
 <!-- QWERTZ backslash is an AltGr key, let's try slash (shift+7) -->
     <keyboardBind Modifier="shift" Key="7"/>
@@ -44,29 +29,6 @@
 <!-- QWERTZ backslash is an AltGr key, let's try slash (shift+7) -->
     <keyboardBind Modifier="ctrl,shift" Key="7"/>
   </command>  
-
-  <command ID="Page Left" DisplayText="Previous page" Category="Menus" Layer="Menus" CanShareBindsWith="CmdMoveSW,CmdMoveSE,CmdMoveNW,CmdMoveNE,CmdMoveN,CmdMoveS,CmdMoveE,CmdMoveU,CmdMoveD">
-    <keyboardBind Key="numpad7"/>
-    <keyboardBind Key="home"/>
-    <gamepadBind Button="leftShoulder"/>
-<!-- "z" key on QWERTZ; based on position so it's fine -->
-    <keyboardBind Key="y" Set="hjkl"/>
-  </command>
-
-
-  <command ID="CmdInsert" DisplayText="Insert" Category="Menus" Layer="Menus" Auto="DownPass">
-    <keyboardBind Key="insert"/>
-    <gamepadBind Alt="true" Button="buttonNorth"/>
-<!-- QWERTZ ']' is AltGr + 9 -->
-    <keyboardBind Key="]" Modifier="ctrl" Set="hjkl"/>
-  </command>
-  <command ID="CmdDelete" DisplayText="Delete" Category="Menus" Layer="Menus" Auto="DownPass">
-    <keyboardBind Key="delete"/>
-    <keyboardBind Key="backspace"/>
-    <gamepadBind Alt="true" Button="buttonWest"/>
-<!-- QWERTZ '[' is AltGr + 8 -->
-    <keyboardBind Key="[" Set="hjkl"/>
-  </command>
 
   <command ID="V Positive" DisplayText="Increase value" Category="Menus" Layer="Menus" CanShareBindsWith="CmdMoveU,CmdMoveD" Auto="Down">
     <keyboardBind Key="numpadPlus"/>
@@ -81,12 +43,6 @@
     <gamepadBind Button="buttonNorth"/>
   </command>
 
-  <command ID="CmdLook" DisplayText="Look" Category="Adventuring" Layer="Adventure" Auto="Down">
-    <keyboardBind Key="l" Set="default"/>
-<!-- QWERTZ semicolon is shift + comma; in use so no change here yet -->
-    <keyboardBind Key="semicolon" Set="hjkl"/>
-  </command>
-
   <command ID="CmdWaitUntilHealed" DisplayText="Rest until healed" Category="Adventuring" Layer="Adventure" Auto="Down">
     <gamepadBind Button="buttonEast"/>
 <!-- US backquote is a dead key in QWERTZ
@@ -98,7 +54,7 @@
     <gamepadBind Alt="true" Button="buttonEast"/>
 <!-- US backquote is a dead key in QWERTZ
 	let's try equals, which is shift+0 -->
-    <keyboardBind Modifier="shift" Key="0"/>
+    <keyboardBind Modifier="ctrl,shift" Key="0"/>
   </command>
 
   <command ID="CmdTradeAdd" DisplayText="Add one of an item" Category="Trade" Layer="Trade" Auto="Repeat" CanShareBindsWith="V Positive">
