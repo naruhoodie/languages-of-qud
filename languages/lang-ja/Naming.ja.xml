@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <naming Lang="ja" Load="Merge">
 
+<!-- u\1F60A and further are emoji sprites, could be good for Entropic Beings -->
   <namestyles>
 
     <namestyle Name="Qudish" Format="AsIs">
@@ -808,66 +809,67 @@
       </templatevars>
     </namestyle>
 
-    <namestyle Name="Goatfolk-ja" TwoNameChance="1" Format="AsIs">
+<!-- goatfolk: 山羊族, goat sound is メェーメェー -->
+    <namestyle Name="Goatfolk" TwoNameChance="1" Format="AsIs">
       <prefixes Amount="0-1" Load="Replace">
-        <prefix Name="" /><!-- Original="ba" -->
-        <prefix Name="" Weight="2" /><!-- Original="baa" -->
-        <prefix Name="" /><!-- Original="na" -->
-        <prefix Name="" /><!-- Original="naa" -->
-        <prefix Name="" /><!-- Original="ra" -->
-        <prefix Name="" /><!-- Original="raa" -->
+        <prefix Name="バ" /><!-- Original="ba" -->
+        <prefix Name="バア" Weight="2" /><!-- Original="baa" -->
+        <prefix Name="ナ" /><!-- Original="na" -->
+        <prefix Name="ナア" /><!-- Original="naa" -->
+        <prefix Name="ラ" /><!-- Original="ra" -->
+        <prefix Name="ラア" /><!-- Original="raa" -->
       </prefixes>
       <infixes Amount="0-3" Load="Replace">
-        <infix Name="" Weight="2" /><!-- Original="ba" -->
-        <infix Name="" /><!-- Original="baa" -->
-        <infix Name="" /><!-- Original="naa" -->
-        <infix Name="" Weight="2" /><!-- Original="ra" -->
-        <infix Name="" /><!-- Original="raa" -->
+        <infix Name="バ" Weight="2" /><!-- Original="ba" -->
+        <infix Name="バア" /><!-- Original="baa" -->
+        <infix Name="ナア" /><!-- Original="naa" -->
+        <infix Name="ラ" Weight="2" /><!-- Original="ra" -->
+        <infix Name="ラア" /><!-- Original="raa" -->
       </infixes>
       <postfixes Amount="1-2" Load="Replace">
-        <postfix Name="" /><!-- Original="a" -->
-        <postfix Name="" /><!-- Original="aaa" -->
-        <postfix Name="" /><!-- Original="aaaaah" -->
-        <postfix Name="" /><!-- Original="aaah" -->
-        <postfix Name="" /><!-- Original="aah" -->
-        <postfix Name="" /><!-- Original="ah" -->
+        <postfix Name="ア" /><!-- Original="a" -->
+        <postfix Name="アァア" /><!-- Original="aaa" -->
+        <postfix Name="アァアァアー" /><!-- Original="aaaaah" -->
+        <postfix Name="アァアー" /><!-- Original="aaah" -->
+        <postfix Name="アアー" /><!-- Original="aah" -->
+        <postfix Name="アー" /><!-- Original="ah" -->
       </postfixes>
     </namestyle>
 
-    <namestyle Name="Goatfolk Hero-ja" Base="Goatfolk">
+    <namestyle Name="Goatfolk Hero" Base="Goatfolk">
       <templates>
         <template Name="*Name*" />
       </templates>
     </namestyle>
 
-    <namestyle Name="Goatfolk Hero Epithet-ja">
+    <namestyle Name="Goatfolk Hero Epithet">
       <templates>
         <template Name="*Epithet*" />
       </templates>
       <templatevars Load="Replace">
         <templatevar Name="Epithet">
-          <value Name="" /><!-- Original="Stargazer" -->
-          <value Name="" /><!-- Original="Heartbiter" -->
-          <value Name="" /><!-- Original="Twicetalker" -->
-          <value Name="" /><!-- Original="Souldrinker" -->
-          <value Name="" /><!-- Original="Whitefinger" -->
-          <value Name="" /><!-- Original="Clovenhorn" -->
+          <value Name="天体観測者" /><!-- Original="Stargazer" -->
+          <value Name="心を噛む者" /><!-- Original="Heartbiter" -->
+          <value Name="二度話す者" /><!-- Original="Twicetalker" -->
+          <value Name="魂を飲む者" /><!-- Original="Souldrinker" -->
+          <value Name="白い指" /><!-- Original="Whitefinger" -->
+          <value Name="割れた角" /><!-- Original="Clovenhorn" -->
         </templatevar>
       </templatevars>
     </namestyle>
 
-    <namestyle Name="Goatfolk Hero Title-ja">
+    <namestyle Name="Goatfolk Hero Title">
       <templates Load="Replace">
-        <template Name="the Goatfolk Shaman of Clan *Clan*" />
+        <template Name="*Clan*氏族の山羊族のシャーマン" />
       </templates>
       <templatevars>
         <templatevar Name="Clan">
-          <value Name="" /><!-- Original="Hotur" -->
-          <value Name="" /><!-- Original="Ibex" -->
-          <value Name="" /><!-- Original="Sol" -->
-          <value Name="" /><!-- Original="Whitetongue" -->
-          <value Name="" /><!-- Original="Yr" -->
-          <value Name="" /><!-- Original="Mnim" -->
+          <value Name="ホトゥール" /><!-- Original="Hotur" -->
+          <value Name="アイベックス" /><!-- Original="Ibex" -->
+          <value Name="ソル" /><!-- Original="sol" -->
+          <value Name="白い舌" /><!-- Original="Whitetongue" -->
+          <value Name="イル" /><!-- Original="Yr" -->
+          <value Name="ムニム" /><!-- Original="Mnim" -->
         </templatevar>
       </templatevars>
     </namestyle>
@@ -877,51 +879,51 @@
         <template Name="*Name**Suffix*" Weight="1800" />
         <template Name="*Prefix**Suffix*" Weight="1800" />
         <template Name="*Sultan**Suffix*" Weight="450" />
-        <template Name="*Name**Location*" Weight="1125" />
-        <template Name="*Prefix**Location*" Weight="1125" />
-        <template Name="*Sultan**Location*" Weight="250" />
-        <template Name="*Name**Forest*" Weight="1575" />
-        <template Name="*Prefix**Forest*" Weight="1575" />
-        <template Name="*Sultan**Forest*" Weight="350" />
+        <template Name="*Name*の*Location*" Weight="1125" />
+        <template Name="*Prefix*の*Location*" Weight="1125" />
+        <template Name="*Sultan*の*Location*" Weight="250" />
+        <template Name="*Name*の*Forest*" Weight="1575" />
+        <template Name="*Prefix*の*Forest*" Weight="1575" />
+        <template Name="*Sultan*の*Forest*" Weight="350" />
       </templates>
       <templatevars Load="Replace">
         <templatevar Name="Prefix">
-          <value Name="" /><!-- Original="Ash" -->
-          <value Name="" /><!-- Original="Black" -->
-          <value Name="" /><!-- Original="Blood" -->
-          <value Name="" /><!-- Original="Bone" -->
-          <value Name="" /><!-- Original="Cloven" -->
-          <value Name="" /><!-- Original="Fern" -->
-          <value Name="" /><!-- Original="Heart" -->
-          <value Name="" /><!-- Original="Moon" -->
-          <value Name="" /><!-- Original="Moss" -->
-          <value Name="" /><!-- Original="Rain" -->
-          <value Name="" /><!-- Original="Sap" -->
-          <value Name="" /><!-- Original="Skull" -->
-          <value Name="" /><!-- Original="Star" -->
-          <value Name="" /><!-- Original="White" -->
+          <value Name="灰" /><!-- Original="Ash" -->
+          <value Name="黒" /><!-- Original="Black" -->
+          <value Name="血" /><!-- Original="Blood" -->
+          <value Name="骨" /><!-- Original="Bone" -->
+          <value Name="偶蹄" /><!-- Original="Cloven" -->
+          <value Name="羊歯" /><!-- Original="Fern" -->
+          <value Name="心" /><!-- Original="Heart" -->
+          <value Name="月" /><!-- Original="Moon" -->
+          <value Name="苔" /><!-- Original="Moss" -->
+          <value Name="雨" /><!-- Original="Rain" -->
+          <value Name="樹液" /><!-- Original="Sap" -->
+          <value Name="髑髏" /><!-- Original="Skull" -->
+          <value Name="星" /><!-- Original="Star" -->
+          <value Name="白" /><!-- Original="White" -->
         </templatevar>
         <templatevar Name="Sultan">
           <value Name="レシェフ" /><!-- Original="Resheph" -->
         </templatevar>
         <templatevar Name="Suffix">
-          <value Name="" Weight="2" /><!-- Original="baa" -->
-          <value Name="" /><!-- Original="baaaaaah" -->
-          <value Name="" Weight="3" /><!-- Original="baaaaah" -->
-          <value Name="" Weight="3" /><!-- Original="baaaah" -->
-          <value Name="" Weight="3" /><!-- Original="baaah" -->
-          <value Name="" Weight="2" /><!-- Original="baah" -->
-          <value Name="" /><!-- Original="naaa" -->
-          <value Name="" /><!-- Original="naaaaaah" -->
-          <value Name="" /><!-- Original="naaaaah" -->
-          <value Name="" /><!-- Original="naaaah" -->
-          <value Name="" /><!-- Original="naaah" -->
-          <value Name="" Weight="2" /><!-- Original="raa" -->
-          <value Name="" /><!-- Original="raaaaaah" -->
-          <value Name="" Weight="3" /><!-- Original="raaaaah" -->
-          <value Name="" Weight="3" /><!-- Original="raaaah" -->
-          <value Name="" Weight="3" /><!-- Original="raaah" -->
-          <value Name="" Weight="2" /><!-- Original="raah" -->
+          <value Name="バア" Weight="2" /><!-- Original="baa" -->
+          <value Name="バアァアァアー" /><!-- Original="baaaaaah" -->
+          <value Name="バアァアアー" Weight="3" /><!-- Original="baaaaah" -->
+          <value Name="バアァアー" Weight="3" /><!-- Original="baaaah" -->
+          <value Name="バアアー" Weight="3" /><!-- Original="baaah" -->
+          <value Name="バアー" Weight="2" /><!-- Original="baah" -->
+          <value Name="ナアァア" /><!-- Original="naaa" -->
+          <value Name="ナアァアァアー" /><!-- Original="naaaaaah" -->
+          <value Name="ナアァアアー" /><!-- Original="naaaaah" -->
+          <value Name="ナアァアー" /><!-- Original="naaaah" -->
+          <value Name="ナアアー" /><!-- Original="naaah" -->
+          <value Name="ラア" Weight="2" /><!-- Original="raa" -->
+          <value Name="ラアァアァアー" /><!-- Original="raaaaaah" -->
+          <value Name="ラアァアアー" Weight="3" /><!-- Original="raaaaah" -->
+          <value Name="ラアァアー" Weight="3" /><!-- Original="raaaah" -->
+          <value Name="ラアアー" Weight="3" /><!-- Original="raaah" -->
+          <value Name="ラアー" Weight="2" /><!-- Original="raah" -->
         </templatevar>
         <templatevar Name="Forest">
           <value Name="" /><!-- Original="bosk" -->
@@ -952,19 +954,19 @@
         </templatevar>
       </templatevars>
       <prefixes Amount="1">
-        <prefix Name="" /><!-- Original="ba" -->
-        <prefix Name="" Weight="2" /><!-- Original="baa" -->
-        <prefix Name="" /><!-- Original="na" -->
-        <prefix Name="" /><!-- Original="naa" -->
-        <prefix Name="" /><!-- Original="ra" -->
-        <prefix Name="" /><!-- Original="raa" -->
+        <prefix Name="バ" /><!-- Original="ba" -->
+        <prefix Name="バア" Weight="2" /><!-- Original="baa" -->
+        <prefix Name="ナ" /><!-- Original="na" -->
+        <prefix Name="ナア" /><!-- Original="naa" -->
+        <prefix Name="ラ" /><!-- Original="ra" -->
+        <prefix Name="ラア" /><!-- Original="raa" -->
       </prefixes>
       <infixes Amount="0-1">
-        <infix Name="" Weight="2" /><!-- Original="ba" -->
-        <infix Name="" /><!-- Original="baa" -->
-        <infix Name="" /><!-- Original="naa" -->
-        <infix Name="" Weight="2" /><!-- Original="ra" -->
-        <infix Name="" /><!-- Original="raa" -->
+        <infix Name="バ" Weight="2" /><!-- Original="ba" -->
+        <infix Name="バア" /><!-- Original="baa" -->
+        <infix Name="ナア" /><!-- Original="naa" -->
+        <infix Name="ラ" Weight="2" /><!-- Original="ra" -->
+        <infix Name="ラア" /><!-- Original="raa" -->
       </infixes>
     </namestyle>
 
