@@ -6,63 +6,46 @@
 -->
 <commands Lang="de">
   
-  <command ID="CmdMoveU" DisplayText="Move up" Category="Basic Move / Attack" Layer="AdventureNav" CanShareBindsWith="V Positive,V Negative">
-    <keyboardBind Key="numpadMinus"/>
-<!-- binding to the '<' key, which is an OEM thing on QWERTZ  -->
+  <command ID="CmdMoveU">
+    <!-- binding to the '<' key, which is an OEM thing on QWERTZ -->
     <keyboardBind Key="OEM1"/>
-    <keyboardBind Key="s"/>
-    <keyboardBind Modifier="shift" Key="comma"/>
-    <gamepadBind Button="dpad/up"/>
   </command>
-  <command ID="CmdMoveD" DisplayText="Move down" Category="Basic Move / Attack" Layer="AdventureNav" CanShareBindsWith="V Positive,V Negative">
-    <keyboardBind Key="numpadPlus"/>
-<!-- binding to the '>' key, which is an OEM thing on QWERTZ  -->
+  <command ID="CmdMoveD">
+    <!-- binding to the '>' key, which is an OEM thing on QWERTZ -->
     <keyboardBind Modifier="shift" Key="OEM1"/>
-    <keyboardBind Key="d"/>
-    <keyboardBind Modifier="shift" Key="period"/>
-    <gamepadBind Button="dpad/down"/>
   </command>
 
-  <command ID="V Positive" DisplayText="Increase value" Category="Menus" Layer="Menus" CanShareBindsWith="CmdMoveU,CmdMoveD" Auto="Down">
-    <keyboardBind Key="numpadPlus"/>
-<!-- QWERTZ plus key is where ']' is on US standard -->
+  <command ID="V Positive">
+    <!-- QWERTZ plus key is where ']' is on US standard -->
+    <keyboardBind Key="equals" Load="Remove"/>
     <keyboardBind Key="rightBracket"/>
-    <gamepadBind Button="buttonWest"/>
   </command>
-  <command ID="V Negative" DisplayText="Decrease value" Category="Menus" Layer="Menus" CanShareBindsWith="CmdMoveU,CmdMoveD" Auto="Down">
-    <keyboardBind Key="numpadMinus"/>
-<!-- QWERTZ minus key is where forward slash is on US standard -->
+  <command ID="V Negative">
+    <!-- QWERTZ minus key is where forward slash is on US standard -->
+    <keyboardBind Key="minus" Load="Remove"/>
     <keyboardBind Key="slash"/>
-    <gamepadBind Button="buttonNorth"/>
   </command>
 
-  <command ID="CmdWaitUntilHealed" DisplayText="Rest until healed" Category="Adventuring" Layer="Adventure" Auto="Down">
-    <gamepadBind Button="buttonEast"/>
-<!-- US backquote is a dead key in QWERTZ
-	let's try equals, which is shift+0 -->
+  <!-- US backquote is a dead key in QWERTZ, but keeping as an option
+    let's try adding equals, which is shift+0 -->
+  <command ID="CmdWaitUntilHealed">
+    <!-- <keyboardBind Key="backquote" Load="Remove"/> -->
     <keyboardBind Modifier="shift" Key="0"/>
   </command>
-
-  <command ID="CmdWaitMenu" DisplayText="Bring up wait menu" Category="Adventuring" Layer="Adventure" Auto="Down">
-    <gamepadBind Alt="true" Button="buttonEast"/>
-<!-- US backquote is a dead key in QWERTZ
-	let's try equals, which is shift+0 -->
+  <command ID="CmdWaitMenu">
+    <!-- <keyboardBind Modifier="ctrl" Key="backquote" Load="Remove"/> -->
     <keyboardBind Modifier="ctrl,shift" Key="0"/>
   </command>
 
-  <command ID="CmdTradeAdd" DisplayText="Add one of an item" Category="Trade" Layer="Trade" Auto="Repeat" CanShareBindsWith="V Positive">
-<!-- QWERTZ plus key is where ']' is on US standard -->
+  <command ID="CmdTradeAdd">
+    <!-- QWERTZ plus key is where ']' is on US standard -->
+    <keyboardBind Key="equals" Load="Remove"/>
     <keyboardBind Key="rightBracket"/>
-    <keyboardBind Key="numpadPlus"/>
-    <gamepadBind Button="rightShoulder"/>
-    <keyboardBind Key="numpad9"/>
   </command>
-  <command ID="CmdTradeRemove" DisplayText="Remove one of an item" Category="Trade" Layer="Trade" Auto="Repeat" CanShareBindsWith="V Negative">
-<!-- QWERTZ minus key is where forward-slash is on US standard -->
+  <command ID="CmdTradeRemove">
+    <!-- QWERTZ minus key is where forward-slash is on US standard -->
+    <keyboardBind Key="minus" Load="Remove"/>
     <keyboardBind Key="slash"/>
-    <keyboardBind Key="numpadMinus"/>
-    <keyboardBind Key="numpad7"/>
-    <gamepadBind Button="leftShoulder"/>
   </command>
 
 </commands>
