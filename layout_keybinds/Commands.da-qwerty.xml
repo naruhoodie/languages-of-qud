@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Adjusting default keybinds for Danish QWERTY keyboards
+
+	trying to avoid dead keys and AltGr
+-->
+<commands>
+  
+  <command ID="CmdMoveU">
+    <!-- adding a binding to the '<' key, which is an OEM thing -->
+    <keyboardBind Key="OEM1"/>
+  </command>
+  <command ID="CmdMoveD">
+    <!-- adding a binding to the '>' key, which is an OEM thing -->
+    <keyboardBind Modifier="shift" Key="OEM1"/>
+  </command>
+
+  <command ID="V Positive">
+    <keyboardBind Key="equals" Load="Remove"/>
+    <!-- plus key is where minus is on US standard -->
+    <keyboardBind Key="minus"/>
+  </command>
+  <command ID="V Negative">
+    <!-- minus key is where forward slash is on US standard -->
+    <keyboardBind Key="minus" Load="Remove"/>
+    <keyboardBind Key="slash"/>
+  </command>
+
+  <command ID="CmdTradeAdd">
+    <!-- plus key is where minus is on US standard -->
+    <keyboardBind Key="equals" Load="Remove"/>
+    <keyboardBind Key="minus"/>
+  </command>
+  <command ID="CmdTradeRemove">
+    <!-- minus key is where forward slash is on US standard -->
+    <keyboardBind Key="minus" Load="Remove"/>
+    <keyboardBind Key="slash"/>
+  </command>
+
+</commands>
