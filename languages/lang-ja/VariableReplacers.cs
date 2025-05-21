@@ -113,7 +113,7 @@ namespace LanguagesOfQud
             return Context.Explicit + "に";
         }
 
-        // cases where it'd say あなた(you) instead of dropping 2nd-person pronoun
+        // where it'd say あなた(anata) instead of dropping the 2nd-pers pronoun
 
         [VariableObjectReplacer]
         public static string あなたは(DelegateContext Context)

@@ -278,6 +278,100 @@ Caves of Qud code extracted string table.
   <string ID="naming twoname separator: " Value="・" />
 
   <!--
+	Direction strings
+  -->
+  <string ID="direction.expanded:north">北</string>
+  <string ID="direction.expanded:south">南</string>
+  <string ID="direction.expanded:east">東</string>
+  <string ID="direction.expanded:west">西</string>
+  <string ID="direction.expanded:northwest">北西</string>
+  <string ID="direction.expanded:northeast">北東</string>
+  <string ID="direction.expanded:southwest">南西</string>
+  <string ID="direction.expanded:southeast">南東</string>
+  <string ID="direction.expanded:up">上</string>
+  <string ID="direction.expanded:down">下</string>
+  <string ID="direction.expanded:here">ここ</string>
+  <string ID="direction.expanded:somewhere">どこか</string>
+  <!--Code references _S(): Assets/XRL Application/Game Core/Rules/Directions.cs:128-->
+  <string ID="direction.indicative:northward">北へ</string>
+  <!--Code references _S(): Assets/XRL Application/Game Core/Rules/Directions.cs:129-->
+  <string ID="direction.indicative:southward">南へ</string>
+  <!--Code references _S(): Assets/XRL Application/Game Core/Rules/Directions.cs:130-->
+  <string ID="direction.indicative:eastward">東へ</string>
+  <!--Code references _S(): Assets/XRL Application/Game Core/Rules/Directions.cs:131-->
+  <string ID="direction.indicative:westward">西へ</string>
+  <!--Code references _S(): Assets/XRL Application/Game Core/Rules/Directions.cs:132-->
+  <string ID="direction.indicative:northwestward">北西へ</string>
+  <!--Code references _S(): Assets/XRL Application/Game Core/Rules/Directions.cs:133-->
+  <string ID="direction.indicative:northeastward">北東へ</string>
+  <!--Code references _S(): Assets/XRL Application/Game Core/Rules/Directions.cs:134-->
+  <string ID="direction.indicative:southwestward">南西へ</string>
+  <!--Code references _S(): Assets/XRL Application/Game Core/Rules/Directions.cs:135-->
+  <string ID="direction.indicative:southeastward">南東へ</string>
+  <!--Code references _S(): Assets/XRL Application/Game Core/Rules/Directions.cs:136-->
+  <string ID="direction.indicative:upward">上へ</string>
+  <!--Code references _S(): Assets/XRL Application/Game Core/Rules/Directions.cs:137-->
+  <string ID="direction.indicative:downward">下へ</string>
+  <!--Code references _S(): Assets/XRL Application/Game Core/Rules/Directions.cs:138-->
+  <string ID="direction.indicative:here">ここへ</string>
+  <!--Code references _S(): Assets/XRL Application/Game Core/Rules/Directions.cs:139-->
+  <string ID="direction.indicative:somewhere">どこかへ</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/Rules/Directions.cs:153-->
+  <string ID="direction.description:below">‽下</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/Rules/Directions.cs:154-->
+  <string ID="direction.description:above">‽上</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/Rules/Directions.cs:155-->
+  <string ID="direction.description:here">‽ここ</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/Rules/Directions.cs:156-->
+  <string ID="direction.description:somewhere">‽どこか</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/Rules/Directions.cs:157-->
+  <string ID="direction.description:to the =dir.expandedDirection=">=dir.expandedDirection=に</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/Rules/Directions.cs:173-->
+  <string ID="direction.description.player:=dir.directionDescription=">=dir.directionDescription=</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/Rules/Directions.cs:174-->
+  <string ID="direction.description.actor:below =subject.them=">その下で</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/Rules/Directions.cs:175-->
+  <string ID="direction.description.actor:above =subject.them=">その上で</string>above it
+  <!--Code references _T(): Assets/XRL Application/Game Core/Rules/Directions.cs:176-->
+  <string ID="direction.description.actor:near =subject.them=">その近くで</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/Rules/Directions.cs:177-->
+  <string ID="direction.description.actor:to =subject.its= =dir.expandedDirection=">=dir.expandedDirection=側で</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/Rules/Directions.cs:188-->
+  <string ID="direction.description.incoming:from below">下から</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/Rules/Directions.cs:189-->
+  <string ID="direction.description.incoming:from above">上から</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/Rules/Directions.cs:190-->
+  <string ID="direction.description.incoming:from nearby">近くから</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/Rules/Directions.cs:191-->
+  <string ID="direction.description.incoming:from somewhere">どこかから</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/Rules/Directions.cs:192-->
+  <string ID="direction.description.incoming:from the =dir.expandedDirection=">=dir.expandedDirection=から</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/Rules/Directions.cs:208-->
+  <string ID="direction.description.incoming.player:=dir.incomingDirectionDescription=">[届：\TODO]=dir.incomingDirectionDescription=</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/Rules/Directions.cs:209-->
+  <string ID="direction.description.incoming.null:=dir.incomingDirectionDescription=">[届：\TODO]=dir.incomingDirectionDescription=</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/Rules/Directions.cs:210-->
+  <string ID="direction.description.incoming.actor:from below =subject.them=">下から</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/Rules/Directions.cs:211-->
+  <string ID="direction.description.incoming.actor:from above =subject.them=">上から</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/Rules/Directions.cs:212-->
+  <string ID="direction.description.incoming.actor:from near =subject.them=">近くから</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/Rules/Directions.cs:213-->
+  <string ID="direction.description.incoming.actor:from =subject.its= =dir.expandedDirection=">=dir.expandedDirection=から</string>
+ <string ID="direction.short:N">北</string>
+  <string ID="direction.short:S">南</string>
+  <string ID="direction.short:E">東</string>
+  <string ID="direction.short:W">西</string>
+  <string ID="direction.short:NW">北西</string>
+  <string ID="direction.short:NE">北東</string>
+  <string ID="direction.short:SW">南西</string>
+  <string ID="direction.short:SE">南東</string>
+  <string ID="direction.short:U">上</string>
+  <string ID="direction.short:D">下</string>
+  <string ID="direction.short:here">ここ</string>
+  <string ID="direction.short:somewhere">どこか</string>
+
+  <!--
 	Journal strings
   -->
   <string ID="journal category:Artifacts">[届：\TODO]Artifacts</string>
@@ -291,14 +385,21 @@ Caves of Qud code extracted string table.
   <string ID="journal category:Settlements">[届：\TODO]Settlements</string>
 
   <!--
-	Effect-related strings
+	Effect and spot strings
   -->
-  <string ID="=subject.does:beat= at the flames with =subject.its= =hands.name=!">[届：\TODO]=subject.does:beat= at the flames with =subject.its= =hands.name=!</string>
-  <string ID="=subject.does:beat= at the flames on =object.t= with =subject.its= =hands.name=!">[届：\TODO]=subject.does:beat= at the flames on =object.t= with =subject.its= =hands.name=!</string>
-  <string ID="=subject.does:begin= =effect.name|strip= from another wound!">[届：\TODO]=subject.does:begin= =effect.name|strip= from another wound!</string>
-  <string ID="=subject.does:begin= =effect.name|strip=!">[届：\TODO]=subject.does:begin= =effect.name|strip=!</string>
-  <string ID="=subject.does:begin= acting like =subject.itis= =effect.name|strip= from another wound.">[届：\TODO]=subject.does:begin= acting like =subject.itis= =effect.name|strip= from another wound.</string>
-  <string ID="=subject.does:begin= acting like =subject.itis= =effect.name|strip=.">[届：\TODO]=subject.does:begin= acting like =subject.itis= =effect.name|strip=.</string>
+  <string ID="hostile perception verb:perceive">[届：\TODO]perceive</string>
+  <string ID="=subject.Does:beat= at the flames with =subject.its= =hands.name=!">[届：\TODO]=subject.Does:beat= at the flames with =subject.its= =hands.name=!</string>
+  <string ID="=subject.Does:beat= at the flames on =object.t= with =subject.its= =hands.name=!">[届：\TODO]=subject.Does:beat= at the flames on =object.t= with =subject.its= =hands.name=!</string>
+  <string ID="=subject.Does:begin= =effect.name|strip= from another wound!">[届：\TODO]=subject.Does:begin= =effect.name|strip= from another wound!</string>
+  <string ID="=subject.Does:begin= =effect.name|strip=!">[届：\TODO]=subject.Does:begin= =effect.name|strip=!</string>
+  <string ID="=subject.Does:begin= acting like =subject.itis= =effect.name|strip= from another wound.">[届：\TODO]=subject.Does:begin= acting like =subject.itis= =effect.name|strip= from another wound.</string>
+  <string ID="=subject.Does:begin= acting like =subject.itis= =effect.name|strip=.">[届：\TODO]=subject.Does:begin= acting like =subject.itis= =effect.name|strip=.</string>
+  <string ID="spotmessage.defaultVerb:see">[届：\TODO]see</string>
+  <string ID="spotmessage:=subject.Does#verb= =object.an= =subject.direction#object=, so you refrain from =autoActDescription=.">[届：\TODO]=subject.Does#verb= =object.an= =subject.direction#object=, so you refrain from =autoActDescription=.</string>
+  <string ID="spotmessage:=subject.Does#verb= =object.an= =subject.direction#object= and stop =autoActDescription=.">[届：\TODO]=subject.Does#verb= =object.an= =subject.direction#object= and stop =autoActDescription=.</string>
+  <string ID="spotmessage:=subject.Does#verb= =object.an:notvisible= =subject.direction#object=, so you refrain from =autoActDescription=.">[届：\TODO]=subject.Does#verb= =object.an:notvisible= =subject.direction#object=, so you refrain from =autoActDescription=.</string>
+  <string ID="spotmessage:=subject.Does#verb= =object.an:notvisible= =subject.direction#object= and stop =autoActDescription=.">[届：\TODO]=subject.Does#verb= =object.an:notvisible= =subject.direction#object= and stop =autoActDescription=.</string>
+  <string ID="hostile perception verb:detect">[届：\TODO]detect</string>
 
   <!--
 	Door strings
