@@ -874,7 +874,7 @@
       </templatevars>
     </namestyle>
 
-    <namestyle Name="Goatfolk Site-ja" Format="AsIs">
+    <namestyle Name="Goatfolk Site" Format="AsIs">
       <templates Load="Replace">
         <template Name="*Name**Suffix*" Weight="1800" />
         <template Name="*Prefix**Suffix*" Weight="1800" />
@@ -926,31 +926,31 @@
           <value Name="ラアー" Weight="2" /><!-- Original="raah" -->
         </templatevar>
         <templatevar Name="Forest">
-          <value Name="" /><!-- Original="bosk" -->
-          <value Name="" /><!-- Original="dale" -->
-          <value Name="" /><!-- Original="dell" -->
-          <value Name="" /><!-- Original="glade" -->
-          <value Name="" /><!-- Original="glen" -->
-          <value Name="" /><!-- Original="gorge" -->
-          <value Name="" /><!-- Original="grove" -->
-          <value Name="" /><!-- Original="meadow" -->
-          <value Name="" /><!-- Original="root" -->
-          <value Name="" /><!-- Original="vale" -->
-          <value Name="" /><!-- Original="weald" -->
-          <value Name="" /><!-- Original="weep" -->
-          <value Name="" /><!-- Original="wood" -->
+          <value Name="林" /><!-- Original="bosk" -->
+          <value Name="谷" /><!-- Original="dale" -->
+          <value Name="谷間" /><!-- Original="dell" -->
+<!--          <value Name="" />--><!-- Original="glade" -->
+<!--          <value Name="" />--><!-- Original="glen" -->
+<!--          <value Name="" />--><!-- Original="gorge" -->
+<!--          <value Name="" />--><!-- Original="grove" -->
+<!--          <value Name="" />--><!-- Original="meadow" -->
+<!--          <value Name="" />--><!-- Original="root" -->
+<!--          <value Name="" />--><!-- Original="vale" -->
+<!--          <value Name="" />--><!-- Original="weald" -->
+<!--          <value Name="" />--><!-- Original="weep" -->
+          <value Name="森" /><!-- Original="wood" -->
         </templatevar>
         <templatevar Name="Location">
-          <value Name="" /><!-- Original="bend" -->
-          <value Name="" /><!-- Original="bite" -->
-          <value Name="" /><!-- Original="bow" -->
-          <value Name="" /><!-- Original="cleft" -->
-          <value Name="" /><!-- Original="crescent" -->
-          <value Name="" /><!-- Original="deep" -->
-          <value Name="" /><!-- Original="pool" -->
-          <value Name="" /><!-- Original="star" -->
-          <value Name="" /><!-- Original="void" -->
-          <value Name="" /><!-- Original="well" -->
+          <value Name="曲げ" /><!-- Original="bend" -->
+          <value Name="噛み" /><!-- Original="bite" -->
+          <value Name="弓" /><!-- Original="bow" -->
+          <value Name="割れ目" /><!-- Original="cleft" -->
+          <value Name="三日月" /><!-- Original="crescent" -->
+          <value Name="穴" /><!-- Original="deep" -->
+          <value Name="池" /><!-- Original="pool" -->
+          <value Name="星" /><!-- Original="star" -->
+          <value Name="空洞" /><!-- Original="void" -->
+          <value Name="井" /><!-- Original="well" -->
         </templatevar>
       </templatevars>
       <prefixes Amount="1">
