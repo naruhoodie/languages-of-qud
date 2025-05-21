@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <strings Lang="de" Encoding="utf-8">
+<!-- for "TODO" use "[u.Ä.]" -->
 <!-- Use the INFINITIVE FORM for German verb bases -->
 <!-- Use DEF-ARTICLE + NOMINATIVE FORM for German noun bases -->
 <!-- currently using formal "Sie" for 2nd-person, will likely adjust -->
@@ -12,8 +13,8 @@
   <string ID="door:interface">verbinden sich</string>
   <string ID="passcode:enter">eingeben/geben ein</string>
   <string ID="verb:tinker">tüfteln</string>
-<!-- nonstandard gender-neutral professions: use stem+ir or add -on
-    so for tinker: das Tüftlir/Tüftleron -->
+<!-- for inclusive language use "<infinitiv>de" or "die <infinitiv>de Person"
+    so for tinker: "Tüftelnde" or "die Tüftelnde Person" -->
   <string ID="profession:tinker">der Tüftler,die Tüftlerin</string>
   <string ID="noun:tinkering bit">das Tüftelbit</string>
 
