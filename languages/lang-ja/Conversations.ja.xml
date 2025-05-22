@@ -5,18 +5,18 @@
     <!-- Conversation level choices are distributed to all start nodes by default -->
     <choice ID="WaterRitualChoice" IfSpeakerHavePart="GivesRep" IfAllowEscape="true" Target="WaterRitual" Ordinal="980">
 <!-- possibly more natural with a 1st-person pronoun and the other person's name without honorifics? my kochira/sochira is very sidestepping the issue -->
-      <text>そちらの渇きはこちらの、こちらの水はそちらの。</text>
+      <text>=subject.name:short=の渇きは自分の、自分の水は=subject.name:short=の。</text>
       <text IfHavePart="SociallyRepugnant" Priority="1">
         唾液を交換する？~
         さあ、遣りましょう！~
         {{emote|（唇をなめる）}}~
-        こちらの渇きはこちらの、そちらの水はそちらの。~
+        自分の渇きは自分の、=subject.name:short=の水はお前の。~
         渇き？水。飲め。~
         涎の時間よ。~
         ？？？~
         ¯\_(ツ)_/¯~
-        こちらの水は渇き、そちらの水はそちらの。~
-        お宅の渇はおれの、おれの水はダメよ。
+        自分の水は渇き、そちらの水はそちらの。~
+        お前の渇はおれの、おれの水はダメよ。
       </text>
       <part Name="WaterRitualBegin" />
     </choice>
@@ -64,7 +64,7 @@
 
 		<start ID="RedrockNews">
 			<text>
-				　=name=さん、生きて飲んで。赤岩から何か新しい情報ある？
+				=name=さん、生きて飲んで。赤岩から何か新しい情報ある？
 			</text>
 			<choice Priority="1" Target="BackFromRedrock" IfHaveActiveQuest="What's Eating the Watervine?" IfFinishedQuestStep="What's Eating the Watervine?~Travel to Red Rock" IfHaveItemDescendsFrom="Girshling Corpse">はい。害虫と、噛られた水蔓の破片を見つけました。死骸は持ち帰りました。</choice>
 			<choice Priority="1" Target="Aye" IfHaveActiveQuest="What's Eating the Watervine?">まだ何もないです。</choice>
@@ -72,11 +72,11 @@
 		</start>
 		<start ID="Welcome">
 			<text IfFinishedQuest="What's Eating the Watervine?">
-				　=name=さん、生きて飲んで~
-				　=name=さん、今日風に乗っているものを味わったか？~
-				　太陽と月、=name=さん~
-				　風は石灰の味がする、=name=さん。それとガリウムの味もする、かも？~
-				　おや、害虫を征服者だ！=name=さん、生きて飲んで
+				=name=さん、生きて飲んで~
+				=name=さん、今日風に乗っているものを味わったか？~
+				太陽と月、=name=さん~
+				風は石灰の味がする、=name=さん。それとガリウムの味もする、かも？~
+				おや、害虫を征服者だ！=name=さん、生きて飲んで
 			</text>
 			<text IfNotHaveQuest="What's Eating the Watervine?">
 				 おや、水蔓田労働者か？生きて飲んで、旅人さん
@@ -90,7 +90,7 @@
 		<node ID="Name" Inherits="Welcome">
 			<text Load="Replace" Priority="1">
 				 メフメットって、舌が言う。生きて飲んで、=name=さん
-			</text>			
+			</text>
 		</node>
 		<node ID="Village">
 			<text>
@@ -106,7 +106,7 @@
 		</node>
 		<node ID="Work">
 			<text>
-				仕事か？それなら、あるぞ。&#xA;
+				仕事か？それなら、あるぞ。
 				甲虫月時くらい、何かが水蔓を食い荒らしている。キュールーンは半塩水の中に蜘蛛のような生き物が這っているのを見たと言う。だが、洞窟の蜘蛛が警備員の溜まり場に近づく勇気などあるはずがない。&#xA;
 				水田で少し赤い斑点の味がした。赤岩の近くの土壌で見られる頁岩のようなもの…
 			</text>
@@ -114,7 +114,7 @@
 		</node>
 		<node ID="WorkMore">
 			<text>
-				散策してくれかい？赤岩へ。ジョッパの北約２パラサングくらい。 &#xA;
+				散策してくれかい？赤岩へ。ジョッパの北約２パラサングくらい。
 				害虫を殺して死体を持ち帰り、それが何なのか分かるのため。後で長老が報酬をくれるだろう、水蔓園労働者。
 			</text>
 			<choice Target="End" StartQuest="What's Eating the Watervine?">要求通りにします。</choice>
@@ -127,7 +127,7 @@
 		</node>
 		<node ID="BackFromRedrock">
 			<text>
-				おや？あっ……&#xA;
+				おや？あっ……
 				それは見た目が気に入らない。長老のところへ持って行った方がいい。小屋は小道を北に進んだところにある。
 			</text>
 			<choice GotoID="End">分かりました。</choice>
