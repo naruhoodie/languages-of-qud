@@ -953,7 +953,7 @@
           <value Name="井" /><!-- Original="well" -->
         </templatevar>
       </templatevars>
-      <prefixes Amount="1">
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="バ" /><!-- Original="ba" -->
         <prefix Name="バア" Weight="2" /><!-- Original="baa" -->
         <prefix Name="ナ" /><!-- Original="na" -->
@@ -961,7 +961,7 @@
         <prefix Name="ラ" /><!-- Original="ra" -->
         <prefix Name="ラア" /><!-- Original="raa" -->
       </prefixes>
-      <infixes Amount="0-1">
+      <infixes Amount="0-1" Load="Replace">
         <infix Name="バ" Weight="2" /><!-- Original="ba" -->
         <infix Name="バア" /><!-- Original="baa" -->
         <infix Name="ナア" /><!-- Original="naa" -->

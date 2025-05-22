@@ -4,7 +4,7 @@
 <!-- where does the "character creation" title show up? -->
 
   <module Class="XRL.CharacterBuilds.Qud.QudGamemodeModule">
-    <window ID="Chargen/Modes">
+    <window ID="Chargen/Modes" Class="XRL.CharacterBuilds.Qud.UI.QudGamemodeModuleWindow">
       <title>：ゲームモードを選択する：</title>
       <name>[届：\TODO]Game Modes</name>
     </window>
@@ -48,7 +48,7 @@
   </module>
 
   <module Class="XRL.CharacterBuilds.Qud.QudChartypeModule">
-    <window ID="Chargen/CharType">
+    <window ID="Chargen/CharType" Class="XRL.CharacterBuilds.Qud.UI.QudChartypeModuleWindow">
       <name>[届：\TODO]CharTypes</name>
       <title>：キャラクター系を選択する：</title>
     </window>
@@ -87,21 +87,21 @@
   </module>
 
   <module Class="XRL.CharacterBuilds.Qud.QudBuildLibraryModule">
-    <window ID="Chargen/BuildLibrary">
+    <window ID="Chargen/BuildLibrary" Class="XRL.CharacterBuilds.Qud.UI.QudBuildLibraryModuleWindow">
       <name>[届：\TODO]Build Library</name>
       <title>：ビルドのライブラリ：</title>
     </window>
   </module>
   
   <module Class="XRL.CharacterBuilds.Qud.QudGenotypeModule">
-    <window ID="Chargen/ChooseGenotypes">
+    <window ID="Chargen/ChooseGenotypes" Class="XRL.CharacterBuilds.Qud.UI.QudGenotypeModuleWindow">
       <name>[届：\TODO]Genotypes</name>
       <title>：遺伝子型を選択する：</title>
     </window>
   </module>
   
   <module Class="XRL.CharacterBuilds.Qud.QudPregenModule">
-    <window ID="Chargen/Pregens">
+    <window ID="Chargen/Pregens" Class="XRL.CharacterBuilds.Qud.UI.QudPregenModuleWindow">
       <name>[届：\TODO]Pregens</name>
       <title>：プリセットを選択する：</title>
     </window>
@@ -192,18 +192,18 @@
   </module>
 
   <module Class="XRL.CharacterBuilds.Qud.QudSubtypeModule">
-    <window ID="Chargen/ChooseSubtypes">
+    <window ID="Chargen/ChooseSubtypes" Class="XRL.CharacterBuilds.Qud.UI.QudSubtypeModuleWindow">
       <name>[届：\TODO]Subtypes</name>
       <title>：サブタイプを選択する：</title>
     </window>
-    <window ID="Chargen/ChooseSubtypesCategory">
+    <window ID="Chargen/ChooseSubtypesCategory" Class="XRL.CharacterBuilds.Qud.UI.QudSubtypeModuleCategoryWindow">
       <name>[届：\TODO]Subtypes with Category</name>
       <title>：サブタイプを選択する：</title>
     </window>
   </module>
 
   <module Class="XRL.CharacterBuilds.Qud.QudMutationsModule">
-    <window ID="Chargen/Mutations">
+    <window ID="Chargen/Mutations" Class="XRL.CharacterBuilds.Qud.UI.QudMutationsModuleWindow">
       <name>[届：\TODO]Mutations</name>
       <title>：突然変異を選択する：</title>
     </window>
@@ -211,35 +211,35 @@
   </module>
 
   <module Class="XRL.CharacterBuilds.Qud.QudAttributesModule">
-    <window ID="Chargen/PickAttributes">
+    <window ID="Chargen/PickAttributes" Class="XRL.CharacterBuilds.Qud.UI.QudAttributesModuleWindow">
       <title>：属性を選択する：</title>
       <name>[届：\TODO]Attributes</name>
     </window>
   </module>
 
   <module Class="XRL.CharacterBuilds.Qud.QudCyberneticsModule">
-    <window ID="Chargen/Cybernetic">
+    <window ID="Chargen/Cybernetic" Class="XRL.CharacterBuilds.Qud.UI.QudCyberneticsModuleWindow">
       <name>[届：\TODO]Cybernetics</name>
       <title>：サイバネティックインプラントを選択する：</title>
     </window>
   </module>
 
   <module Class="XRL.CharacterBuilds.Qud.QudBuildSummaryModule">
-    <window ID="Chargen/BuildSummary">
+    <window ID="Chargen/BuildSummary" Class="XRL.CharacterBuilds.Qud.UI.QudBuildSummaryModuleWindow">
       <name>[届：\TODO]Summary</name>
       <title>：ビルドの概要：</title>
     </window>
   </module>
 
   <module Class="XRL.CharacterBuilds.Qud.QudCustomizeCharacterModule">
-    <window ID="Chargen/Customize">
+    <window ID="Chargen/Customize" Class="XRL.CharacterBuilds.Qud.UI.QudCustomizeCharacterModuleWindow">
       <name>[届：\TODO]Customize</name>
       <title>：キャラクターをカスタマイズする：</title>
     </window>
   </module>
 
   <module Class="XRL.CharacterBuilds.Qud.QudChooseStartingLocationModule">
-    <window ID="Chargen/ChooseStartingLocation">
+    <window ID="Chargen/ChooseStartingLocation" Class="XRL.CharacterBuilds.Qud.UI.QudChooseStartingLocationModuleWindow">
       <name>[届：\TODO]Starting Location</name>
       <title>[届：\TODO]:choose starting location:</title>
     </window>

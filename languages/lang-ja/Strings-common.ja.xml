@@ -3,34 +3,60 @@
 Caves of Qud code extracted string table TO BE!
 Comments should be deleted when copied to a new translation table.
 -->
-<strings Lang="ja">
+<strings Lang="ja-ref" Encoding="utf-8">
   
   <!--
 	Character Stat strings
   -->
-
-  <string ID="Stat:Strength">[筋力\きんりょく]</string>
-  <string ID="Stat:Agility">[敏捷力\びんしょう力]</string>
-  <string ID="Stat:Toughness">[忍耐力\にんたいりょく]</string>
-  <string ID="Stat:Intelligence">[知力\ちりょく]</string>
-  <string ID="Stat:Willpower">[意志力\いしりょく]</string>
-  <string ID="Stat:Ego">[魅力\みりょく]</string>
+  <string ID="Stat:Strength">筋力,[筋力\きんりょく]</string>
+  <string ID="Stat:Agility">敏捷力,[敏捷力\びんしょう力]</string>
+  <string ID="Stat:Toughness">忍耐力,[忍耐力\にんたいりょく]</string>
+  <string ID="Stat:Intelligence">知力,[知力\ちりょく]</string>
+  <string ID="Stat:Willpower">意志力,[意志力\いしりょく]</string>
+  <string ID="Stat:Ego">魅力,[魅力\みりょく]</string>
 
   <!--
 	Cardinal direction strings
   -->
-
-  <string ID="🧭:N">[北\きた]</string>
-  <string ID="🧭:S">[南\みなみ]</string>
-  <string ID="🧭:E">[東\ひがし]</string>
-  <string ID="🧭:W">[西\にし]</string>
-  <string ID="🧭:NW">[北西\ほくせい]</string>
-  <string ID="🧭:NE">[北東\ほくとう]</string>
-  <string ID="🧭:SW">[南西\なんせい]</string>
-  <string ID="🧭:SE">[南東\なんとう]</string>
-  <string ID="🧭:U">[上\うえ]</string>
-  <string ID="🧭:D">[下\した]</string>
+  <string ID="🧭:N">北,[北\きた]</string>
+  <string ID="🧭:S">南,[南\みなみ]</string>
+  <string ID="🧭:E">東,[東\ひがし]</string>
+  <string ID="🧭:W">西,[西\にし]</string>
+  <string ID="🧭:NW">北西,[北西\ほくせい]</string>
+  <string ID="🧭:NE">北東,[北東\ほくとう]</string>
+  <string ID="🧭:SW">南西,[南西\なんせい]</string>
+  <string ID="🧭:SE">南東,[南東\なんとう]</string>
+  <string ID="🧭:U">上,[上\うえ]</string>
+  <string ID="🧭:D">下,[下\した]</string>
   <string ID="🧭:.">ここ</string>
   <string ID="🧭:?">どこか</string>
+
+  <string ID="glossary:salt marsh">塩性湿地,[塩性\えんせい][湿地\しっち]</string>
+  <string ID="glossary:salt dunes">塩の砂丘,[塩\しお]の[砂丘\さきゅう]</string>
+  <string ID="glossary:desert canyon">砂漠の峡谷,[砂漠\さばく]の[峡谷\きょうこく]</string>
+  <string ID="glossary:bog">沼地,[沼地\ぬまち]</string>
+  <string ID="glossary:slime bog">滑りの沼地,[滑\ぬめ]り[沼地\ぬまち]</string>
+  <string ID="glossary:rust bog">錆びの沼地,[錆\さ]びの[沼地\ぬまち]</string>
+  <!-- a fungus forest -->
+
+  <string ID="glossary:village">村,[村\むら]</string>
+  <string ID="glossary:farm">農場,[農場\のうじょう]</string>
+  <string ID="glossary:haunt">幽霊巣,[幽霊\ゆうれい][巣\す]</string>
+  <string ID="glossary:lair">巣窟,[巣窟\そうくつ]</string>
+  <string ID="glossary:fort">砦,[砦\とりで]</string>
+  <string ID="glossary:hideout">隠れ家,[隠\かく]れ[家\が]</string>
+
+  <string ID="glossary:snapjaw">パチンと口,パチンと[口\くち]</string>
+
+  <!-- 中 at the end incidates "in progress" -->
+  <string ID="verb:generating">を生成中,(を)[生成中\せいせいちゅう]</string>
+  <string ID="verb:building">を建設中,(を)[建設中\けんせつちゅう]</string>
+
+  <!-- notes from Strings-example.ja -->
+  <string ID="door:close|tr">(を)[閉\し]める</string>
+  <string ID="door:close|intr">(が)[閉\し]まる</string>
+  <string ID="door:open|tr">(を)[開\あ]ける</string>
+  <string ID="door:open|intr">(が)[開\あ]く</string>
+  <string ID="door:unlock">(の)ロックを[開錠\かいじょう]する</string>
 
 </strings>
