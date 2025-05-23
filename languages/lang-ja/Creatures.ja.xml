@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<objects Lang="ja">
+<objects Lang="ja" Encoding="utf-8">
 
   <object Name="Mehmet" Load="Merge">
     <part Name="Render" DisplayName="メフメット" />
@@ -8,6 +8,36 @@
 
   <object Name="White Esh" Load="Merge">
     <part Name="Render" DisplayName="白いエシ" />
+  </object>
+
+  <!-- Snapjaws -->
+  <object Name="Snapjaw" Load="Merge">
+    <part Name="Render" DisplayName="[届：\TODO]snapjaw" />
+    <part Name="Description" Short="[届：\TODO]Tussocks of fur dress skin stretched over taut muscle. Upright =pronouns.subjective= =verb:stand:afterpronoun=, but =pronouns.subjective= =verb:look:afterpronoun= ready to drop onto fours. =pronouns.Possessive= snout snarls and =pronouns.possessive= ears twitch. =pronouns.Subjective= =verb:bark:afterpronoun=, and =pronouns.possessive= hyena tribeskin answer." />
+    <xtagTextFragments YounglingNoise="*heh*,*heheh*,*heheheh*" Activity="hunting and gathering,raiding villages,howling at the Beetle Moon,picking the meat off bones" VillageActivity="sleeping in our bedrolls and sitting in our chairs,lounging around,reading books,peeling and eating musa,howling at the moon,picking the meat off discarded bones" NeedsItemFor="for my own collection,to slake my greed,because of its trade value,to inspire my art,to inspire my poetry,to snarl at meaninglessly,as something to howl at,to be my muse,to help with farm work,for the games we play under the Beetle Moon" SacredThing="the act of procreating,philosophy,the tilled land of others,howling at the Beetle Moon,snarling,picking the meat from bones,alcohol,grains of the earth,stone fruit,artistry,poetry,warm meals,bread and wine,pottery,painting" ArableLand="defenseless villages,hapless farmers,the homes of sedentary creatures" ValuedOre="meat and bone,fresh meat,tracks" />
+  </object>
+  <object Name="Snapjaw Corpse" Load="Merge">
+    <part Name="Render" DisplayName="[届：\TODO]snapjaw corpse" />
+    <part Name="Description" Short="[届：\TODO]A mound of wet fur and rotting flesh puts some elevation to the ground." />
+    <part Name="Food" Message="[届：\TODO]The bite burst into so many strands of sinew." />
+  </object>  
+  <object Name="Snapjaw Scavenger" Load="Merge">
+    <part Name="Render" DisplayName="[届：\TODO]snapjaw scavenger" />
+  </object>
+  <object Name="Snapjaw Hunter" Load="Merge">
+    <part Name="Render" DisplayName="[届：\TODO]snapjaw hunter" />
+  </object>
+  <object Name="Snapjaw Shotgunner" Load="Merge">
+    <part Name="Render" DisplayName="[届：\TODO]snapjaw shotgunner" />
+  </object>
+  <object Name="Snapjaw Brute" Load="Merge">
+    <part Name="Render" DisplayName="[届：\TODO]snapjaw brute" />
+  </object>
+  <object Name="Snapjaw Warrior" Load="Merge">
+    <part Name="Render" DisplayName="[届：\TODO]snapjaw warrior" />
+  </object>
+  <object Name="Snapjaw Warlord" Load="Merge">
+    <part Name="Render" DisplayName="[届：\TODO]snapjaw warlord" />
   </object>
 
 </objects>

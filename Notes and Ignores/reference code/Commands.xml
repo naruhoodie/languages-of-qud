@@ -158,7 +158,8 @@
   </command>
   <command ID="CmdMoveTo" DisplayText="Move to cell" Category="Basic Move / Attack" Layer="Adventure" Auto="Down">
     <keyboardBind Modifier="ctrl" Key="enter"/>
-  </command>  
+  </command>
+  
   <command ID="CmdAttackNW" DisplayText="Force attack northwest" Category="Basic Move / Attack" Layer="Adventure">
     <keyboardBind Modifier="ctrl" Key="numpad7"/>
     <keyboardBind Modifier="ctrl,shift" Key="upArrow"/>
@@ -212,7 +213,8 @@
   </command>
   <command ID="CmdAttackCell" DisplayText="Choose cell to force attack" Category="Basic Move / Attack" Layer="Adventure" Auto="Down">
     <keyboardBind Modifier="ctrl" Key="backslash"/>
-  </command>  
+  </command>
+
 
   <command ID="IndicateDirection" Type="Value" DisplayText="Indicate direction " Category="Basic Move / Attack" Layer="AdventureNav">
     <gamepadBind Button="leftStick"/>
@@ -232,8 +234,7 @@
   <command ID="ForceAttack" DisplayText="Force attack after indicating direction" Category="Basic Move / Attack" Layer="Adventure">
     <gamepadBind Alt="true" Button="leftShoulder"/>
   </command>
-
-
+  
   <!-- Menus -->
   <command ID="Accept" DisplayText="Accept" Category="Menus" Layer="UINav" InputModuleBind="submit" Required="true" SkipUpgrade="true" CanShareBindsWith="Submit,CmdUse">
     <keyboardBind Key="space"/>
@@ -522,7 +523,43 @@
   </command>
   <command ID="Navigate Vertical" DisplayText="Move north / south (navigate menus up / down in Legacy UI)" Category="Adventuring" Layer="AdventureNav"></command>
   <command ID="Navigate Horizontal" DisplayText="Move west / east (navigate menus left / right in Legacy UI)" Category="Adventuring" Layer="AdventureNav"></command>
-
+  
+  <command ID="CmdMoveFarNW" DisplayText="Move to northwestern corner" Category="Advanced Adventuring" Layer="AdventureNav" Auto="Down">
+    <keyboardBind Modifier="alt" Key="numpad7"/>
+    <keyboardBind Modifier="alt,shift" Key="upArrow"/>
+  </command>
+  <command ID="CmdMoveFarN" DisplayText="Move to northern edge" Category="Advanced Adventuring" Layer="AdventureNav" Auto="Down">
+    <keyboardBind Modifier="alt" Key="numpad8"/>
+    <keyboardBind Modifier="alt" Key="upArrow"/>
+  </command>
+  <command ID="CmdMoveFarNE" DisplayText="Move to northeastern corner" Category="Advanced Adventuring" Layer="AdventureNav" Auto="Down">
+    <keyboardBind Modifier="alt" Key="numpad9"/>
+    <keyboardBind Modifier="alt,shift" Key="rightArrow"/>
+  </command>
+  <command ID="CmdMoveFarW" DisplayText="Move to western edge" Category="Advanced Adventuring" Layer="AdventureNav" Auto="Down">
+    <keyboardBind Modifier="alt" Key="numpad4"/>
+    <keyboardBind Modifier="alt" Key="leftArrow"/>
+  </command>
+  <command ID="CmdMoveFarE" DisplayText="Move to eastern edge" Category="Advanced Adventuring" Layer="AdventureNav" Auto="Down">
+    <keyboardBind Modifier="alt" Key="numpad6"/>
+    <keyboardBind Modifier="alt" Key="rightArrow"/>
+  </command>
+  <command ID="CmdMoveFarSW" DisplayText="Move to southwestern corner" Category="Advanced Adventuring" Layer="AdventureNav" Auto="Down">
+    <keyboardBind Modifier="alt" Key="numpad1"/>
+    <keyboardBind Modifier="alt,shift" Key="leftArrow"/>
+  </command>
+  <command ID="CmdMoveFarS" DisplayText="Move to southern edge" Category="Advanced Adventuring" Layer="AdventureNav" Auto="Down">
+    <keyboardBind Modifier="alt" Key="numpad2"/>
+    <keyboardBind Modifier="alt" Key="downArrow"/>
+  </command>
+  <command ID="CmdMoveFarSE" DisplayText="Move to southeastern corner" Category="Advanced Adventuring" Layer="AdventureNav" Auto="Down">
+    <keyboardBind Modifier="alt" Key="numpad3"/>
+    <keyboardBind Modifier="alt,shift" Key="downArrow"/>
+  </command>
+  <command ID="CmdMoveCenter" DisplayText="Move to center" Category="Advanced Adventuring" Layer="AdventureNav" Auto="Down">
+    <keyboardBind Modifier="alt" Key="numpad5"/>
+  </command>
+  
 
   <!-- Targeting -->
   <command ID="CmdMissileWeaponMenu" DisplayText="Open missile weapon menu" Category="Targeting" Layer="Targeting" Auto="DownPass" CanShareBindsWith="V Positive,V Negative">

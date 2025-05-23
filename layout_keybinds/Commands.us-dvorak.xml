@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Adjusting default keybinds for US Dvorak keyboards
+-->
+<commands>
+  <command ID="CmdMoveU">
+    <keyboardBind Modifier="shift" Key="comma" Load="Replace"/>
+    <keyboardBind Modifier="shift" Key="w"/>
+    <keyboardBind Key="s" Load="Replace"/>
+    <keyboardBind Key="semicolon"/>
+  </command>
+  <command ID="CmdMoveD">
+    <keyboardBind Modifier="shift" Key="period" Load="Replace"/>
+    <keyboardBind Modifier="shift" Key="e"/>
+    <keyboardBind Key="d"/>
+    <keyboardBind Key="h"/>
+  </command>
+  
+  <command ID="CmdAttackU">
+    <keyboardBind Modifier="ctrl,shift" Key="period" Load="Replace"/>
+    <keyboardBind Modifier="ctrl,shift" Key="e"/>
+  </command>
+  <command ID="CmdAttackD">
+    <keyboardBind Modifier="ctrl,shift" Key="comma" Load="Replace"/>
+    <keyboardBind Modifier="ctrl,shift" Key="w"/>
+  </command>
+
+<!-- let's try left/right brackets for these (minus/equals) -->  
+  <command ID="Category Right">
+    <keyboardBind Key="E" Load="Replace"/>
+    <keyboardBind Key="minus"/>
+  </command>
+  <command ID="Category Left">
+    <keyboardBind Key="Q" Load="Replace"/>
+    <keyboardBind Key="equals"/>
+  </command>  
+
+  <command ID="V Positive">
+    <keyboardBind Key="equals" Load="Replace"/>
+    <keyboardBind Key="rightBracket"/>
+  </command>
+  <command ID="V Negative">
+    <keyboardBind Key="minus" Load="Replace"/>
+    <keyboardBind Key="quote"/>
+  </command>
+  <command ID="CmdFilter">
+    <keyboardBind Modifier="ctrl" Key="f" Load="Replace"/>
+    <keyboardBind Modifier="ctrl" Key="y"/>
+  </command>
+
+  <command ID="CmdTalk">
+    <keyboardBind Key="c" Load="Replace"/>
+    <keyboardBind Key="i"/>
+  </command>
+  <command ID="CmdLook">
+    <keyboardBind Key="l" Set="default" Load="Replace"/>
+    <keyboardBind Key="p" Set="default"/>
+  </command>
+  <command ID="CmdGet">
+    <keyboardBind Key="g" Load="Replace"/>
+    <keyboardBind Key="u"/>
+  </command>
+  <command ID="CmdGetFrom">
+    <keyboardBind Modifier="ctrl" Key="g" Load="Replace"/>
+    <keyboardBind Modifier="ctrl" Key="u"/>
+  </command>
+  <command ID="CmdOpen">
+    <keyboardBind Key="o" Load="Replace"/>
+    <keyboardBind Key="s"/>
+  </command>
+  <command ID="CmdFire">
+    <keyboardBind Key="f" Load="Replace"/>
+    <keyboardBind Key="y"/>
+  </command>
+  <command ID="CmdReload">
+    <keyboardBind Key="r" Load="Replace"/>
+    <keyboardBind Key="o"/>
+  </command>
+  <command ID="CmdReplaceCell">
+    <keyboardBind Modifier="ctrl" Key="r" Load="Replace"/>
+    <keyboardBind Modifier="ctrl" Key="o"/>
+  </command>
+  <command ID="CmdThrow">
+    <keyboardBind Key="t" Load="Replace"/>
+    <keyboardBind Key="k"/>
+  </command>
+  <command ID="CmdTarget">
+    <keyboardBind Modifier="ctrl" Key="t" Load="Replace"/>
+    <keyboardBind Modifier="ctrl" Key="k"/>
+  </command>
+  <command ID="CmdWalk">
+    <keyboardBind Key="w" Load="Replace"/>
+    <keyboardBind Key="comma"/>
+  </command>
+  <command ID="CmdCompanions">
+    <keyboardBind Modifier="ctrl" Key="c" Load="Replace"/>
+    <keyboardBind Modifier="ctrl" Key="i"/>
+  </command>
+  <command ID="CmdStartTrade">
+    <keyboardBind Key="T" Load="Replace"/>
+    <keyboardBind Key="K"/>
+  </command>  
+  
+  <command ID="CmdTargetSelf">
+    <keyboardBind Key="period" Load="Replace"/>
+    <keyboardBind Key="e"/>
+  </command>
+
+  <command ID="CmdInventory">
+    <keyboardBind Key="i" Load="Replace"/>
+    <keyboardBind Key="g"/>
+  </command>
+  <command ID="CmdEquipment">
+    <keyboardBind Key="e" Load="Replace"/>
+    <keyboardBind Key="d"/>
+  </command>
+  <command ID="CmdSkillsPowers">
+    <keyboardBind Key="k" Set="default" Load="Replace"/>
+    <keyboardBind Key="v" Set="default"/>
+  </command>
+  <command ID="CmdCharacter">
+    <keyboardBind Key="x" Load="Replace"/>
+    <keyboardBind Key="b"/>
+  </command>
+  <command ID="CmdQuests">
+    <keyboardBind Key="q" Load="Replace"/>
+    <keyboardBind Key="x"/>
+  </command>
+  <command ID="CmdFactions">
+    <keyboardBind Modifier="ctrl" Key="f" Load="Replace"/>
+    <keyboardBind Modifier="ctrl" Key="y"/>
+  </command>  
+  <command ID="CmdTinkering">
+    <keyboardBind Key="n" Set="default" Load="Replace"/>
+    <keyboardBind Key="l" Set="default"/>
+  </command>
+  <command ID="CmdJournal">
+    <keyboardBind Key="j" Set="default" Load="Replace"/>
+    <keyboardBind Key="c" Set="default"/>
+  </command>
+  <command ID="CmdActiveEffects">
+    <keyboardBind Modifier="ctrl" Key="e" Load="Replace"/>
+    <keyboardBind Modifier="ctrl" Key="d"/>
+  </command>
+
+  <command ID="InventoryQuickDrop">
+    <keyboardBind Modifier="ctrl" Key="d" Load="Replace"/>
+    <keyboardBind Modifier="ctrl" Key="h"/>
+  </command>
+  <command ID="InventoryQuickDrink">
+    <keyboardBind Modifier="ctrl" Key="q" Load="Replace"/>
+    <keyboardBind Modifier="ctrl" Key="x"/>
+  </command>
+  <command ID="InventoryQuickApply">
+    <keyboardBind Modifier="ctrl" Key="p" Load="Replace"/>
+    <keyboardBind Modifier="ctrl" Key="r"/>
+  </command>
+  <command ID="CmdStatusShowEffects">
+    <keyboardBind Key="e" Load="Replace"/>
+    <keyboardBind Key="d"/>
+  </command>
+
+  <command ID="CmdTradeAdd">
+    <keyboardBind Key="equals" Load="Replace"/>
+    <keyboardBind Key="rightBracket"/>
+  </command>
+  <command ID="CmdTradeRemove">
+    <keyboardBind Key="minus" Load="Replace"/>
+    <keyboardBind Key="quote"/>
+  </command>
+  <command ID="CmdTradeOffer">
+    <keyboardBind Key="o" Load="Replace"/>
+    <keyboardBind Key="s"/>
+  </command>
+  <command ID="CmdVendorLook">
+    <keyboardBind Key="l" Load="Replace"/>
+    <keyboardBind Key="p"/>
+  </command>
+  <command ID="CmdVendorRead">
+    <keyboardBind Key="b" Load="Replace"/>
+    <keyboardBind Key="n"/>
+  </command>
+  <command ID="CmdVendorRepair">
+    <keyboardBind Key="r" Load="Replace"/>
+    <keyboardBind Key="o"/>
+  </command>
+  <command ID="CmdVendorRecharge">
+    <keyboardBind Key="c" Load="Replace"/>
+    <keyboardBind Key="i"/>
+  </command>
+  <command ID="CmdVendorExamine">
+    <keyboardBind Key="i" Load="Replace"/>
+    <keyboardBind Key="g"/>
+  </command>
+
+  <command ID="CmdChargenRandom">
+    <keyboardBind Key="r" Load="Replace"/>
+    <keyboardBind Key="o"/>
+  </command>
+  <command ID="CmdChargenItemOptions">
+    <keyboardBind Key="o" Load="Replace"/>
+    <keyboardBind Key="s"/>
+  </command>
+  <command ID="CmdChargenMutationVariant">
+    <keyboardBind Key="v" Load="Replace"/>
+    <keyboardBind Key="period"/>
+  </command>
+  
+  <command ID="CmdQuit">
+    <keyboardBind Modifier="ctrl" Key="q" Load="Replace"/>
+    <keyboardBind Modifier="ctrl" Key="x"/>
+  </command>
+
+  <command ID="CmdWish">
+    <keyboardBind Modifier="ctrl" Key="w" Load="Replace"/>
+    <keyboardBind Modifier="ctrl" Key="comma"/>
+  </command>
+  <command ID="CmdWishMenu">
+    <keyboardBind Modifier="shift" Key="w" Load="Replace"/>
+    <keyboardBind Modifier="shift" Key="comma"/>
+  </command>  
+
+</commands>

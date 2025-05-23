@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+	Adjusting default keybinds for US Colemak keyboards
+-->
+<commands>
+  <command ID="CmdMoveU">
+    <keyboardBind Key="s" Load="Remove"/>
+    <keyboardBind Key="d"/>
+  </command>
+  <command ID="CmdMoveD">
+    <keyboardBind Key="d" Load="Remove"/>
+    <keyboardBind Key="g"/>
+  </command>
+
+<!-- let's try left/right brackets for these -->  
+  <command ID="Category Right">
+    <keyboardBind Key="E" Load="Remove"/>
+    <keyboardBind Key="rightBracket"/>
+  </command>
+  <command ID="Category Left">
+    <keyboardBind Key="Q" Load="Remove"/>
+    <keyboardBind Key="leftBracket"/>
+  </command>  
+
+  <command ID="CmdFilter">
+    <keyboardBind Modifier="ctrl" Key="f" Load="Remove"/>
+    <keyboardBind Modifier="ctrl" Key="e" />
+  </command>
+
+  <command ID="CmdLook">
+    <keyboardBind Key="l" Load="Remove"/>
+    <keyboardBind Key="u" Set="default"/>
+  </command>
+  <command ID="CmdGet">
+    <keyboardBind Key="g" Load="Remove"/>
+    <keyboardBind Key="t"/>
+  </command>
+  <command ID="CmdGetFrom">
+    <keyboardBind Modifier="ctrl" Key="g" Load="Remove"/>
+    <keyboardBind Modifier="ctrl" Key="t"/>
+  </command>
+  <command ID="CmdOpen">
+    <keyboardBind Key="o" Load="Remove"/>
+    <keyboardBind Key="semicolon"/>
+  </command>
+  <command ID="CmdFire">
+    <keyboardBind Key="f" Load="Remove"/>
+    <keyboardBind Key="e"/>
+  </command>
+  <command ID="CmdReload">
+    <keyboardBind Key="r" Load="Remove"/>
+    <keyboardBind Key="s"/>
+  </command>
+  <command ID="CmdReplaceCell">
+    <keyboardBind Modifier="ctrl" Key="r" Load="Remove"/>
+    <keyboardBind Modifier="ctrl" Key="s"/>
+  </command>
+  <command ID="CmdThrow">
+    <keyboardBind Key="t" Load="Remove"/>
+    <keyboardBind Key="f"/>
+  </command>
+  <command ID="CmdTarget">
+    <keyboardBind Modifier="ctrl" Key="t" Load="Remove"/>
+    <keyboardBind Modifier="ctrl" Key="f"/>
+  </command>
+  <command ID="CmdStartTrade">
+    <keyboardBind Key="T" Load="Remove"/>
+    <keyboardBind Key="F"/>
+  </command>  
+  
+  <command ID="CmdInventory">
+    <keyboardBind Key="i" Load="Remove"/>
+    <keyboardBind Key="l"/>
+  </command>
+  <command ID="CmdEquipment">
+    <keyboardBind Key="e" Load="Remove"/>
+    <keyboardBind Key="k"/>
+  </command>
+  <command ID="CmdSkillsPowers">
+    <keyboardBind Key="k" Set="default" Load="Remove"/>
+    <keyboardBind Key="n" Set="default"/>
+  </command>
+  <command ID="CmdFactions">
+    <keyboardBind Modifier="ctrl" Key="f" Load="Remove"/>
+    <keyboardBind Modifier="ctrl" Key="e"/>
+  </command>  
+  <command ID="CmdTinkering">
+    <keyboardBind Key="n" Set="default" Load="Remove"/>
+    <keyboardBind Key="j" Set="default"/>
+  </command>
+  <command ID="CmdJournal">
+    <keyboardBind Key="j" Set="default" Load="Remove"/>
+    <keyboardBind Key="y" Set="default"/>
+  </command>
+  <command ID="CmdActiveEffects">
+    <keyboardBind Modifier="ctrl" Key="e" Load="Remove"/>
+    <keyboardBind Modifier="ctrl" Key="k"/>
+  </command>
+
+  <command ID="InventoryQuickDrop">
+    <keyboardBind Modifier="ctrl" Key="d" Load="Remove"/>
+    <keyboardBind Modifier="ctrl" Key="g"/>
+  </command>
+  <command ID="InventoryQuickApply">
+    <keyboardBind Modifier="ctrl" Key="p" Load="Remove"/>
+    <keyboardBind Modifier="ctrl" Key="r"/>
+  </command>
+  <command ID="CmdStatusShowEffects">
+    <keyboardBind Key="e" Load="Remove"/>
+    <keyboardBind Key="k"/>
+  </command>
+
+  <command ID="CmdTradeOffer">
+    <keyboardBind Key="o" Load="Remove"/>
+    <keyboardBind Key="semicolon"/>
+  </command>
+  <command ID="CmdVendorLook">
+    <keyboardBind Key="l" Load="Remove"/>
+    <keyboardBind Key="u"/>
+  </command>
+  <command ID="CmdVendorRepair">
+    <keyboardBind Key="r" Load="Remove"/>
+    <keyboardBind Key="s"/>
+  </command>
+  <command ID="CmdVendorExamine">
+    <keyboardBind Key="i" Load="Remove"/>
+    <keyboardBind Key="l"/>
+  </command>
+
+  <command ID="CmdChargenRandom">
+    <keyboardBind Key="r" Load="Remove"/>
+    <keyboardBind Key="s"/>
+  </command>
+  <command ID="CmdChargenItemOptions">
+    <keyboardBind Key="o" Load="Remove"/>
+    <keyboardBind Key="semicolon"/>
+  </command>
+  
+</commands>
