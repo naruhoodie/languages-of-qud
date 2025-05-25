@@ -64,7 +64,7 @@ namespace XRL.Language
                 {
                     BreakBeforeIndex++;
                 }
-                BreakBeforeIndex++;
+                if (BreakBeforeIndex < Span.Length) BreakBeforeIndex++;
             }
             ReplaceIfBroken = BreakBeforeIndex < Span.Length && (Span[BreakBeforeIndex] == ' ' || Span[BreakBeforeIndex] == '\n');
         }

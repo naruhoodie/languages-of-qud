@@ -290,8 +290,8 @@ Caves of Qud code extracted string table.
   <string ID="direction.expanded:southeast">南東</string>
   <string ID="direction.expanded:up">上</string>
   <string ID="direction.expanded:down">下</string>
-  <string ID="direction.expanded:here">ここ</string>
-  <string ID="direction.expanded:somewhere">どこか</string>
+  <string ID="direction.expanded:here">此処</string>
+  <string ID="direction.expanded:somewhere">何処か</string>
   <string ID="direction.indicative:northward">北の方へ</string>
   <string ID="direction.indicative:southward">南の方へ</string>
   <string ID="direction.indicative:eastward">東の方へ</string>
@@ -302,13 +302,13 @@ Caves of Qud code extracted string table.
   <string ID="direction.indicative:southeastward">南東の方へ</string>
   <string ID="direction.indicative:upward">上の方へ</string>
   <string ID="direction.indicative:downward">下の方へ</string>
-  <string ID="direction.indicative:here">ここへ</string>
-  <string ID="direction.indicative:somewhere">どこかへ</string>
+  <string ID="direction.indicative:here">此処へ</string>
+  <string ID="direction.indicative:somewhere">何処かへ</string>
 <!-- msgs like "A young ivory is revealed here!"-->  
   <string ID="direction.description:below">‽下</string>
   <string ID="direction.description:above">‽上</string>
-  <string ID="direction.description:here">‽ここ</string>
-  <string ID="direction.description:somewhere">‽どこか</string>
+  <string ID="direction.description:here">‽此処</string>
+  <string ID="direction.description:somewhere">‽何処か</string>
   <string ID="direction.description:to the =dir.expandedDirection=">=dir.expandedDirection=に</string>
   <string ID="direction.description.player:=dir.directionDescription=">=dir.directionDescription=</string>
   <string ID="direction.description.actor:below =subject.them=">その下で</string>
@@ -318,7 +318,7 @@ Caves of Qud code extracted string table.
   <string ID="direction.description.incoming:from below">下から</string>
   <string ID="direction.description.incoming:from above">上から</string>
   <string ID="direction.description.incoming:from nearby">近くから</string>
-  <string ID="direction.description.incoming:from somewhere">どこかから</string>
+  <string ID="direction.description.incoming:from somewhere">何処かから</string>
   <string ID="direction.description.incoming:from the =dir.expandedDirection=">=dir.expandedDirection=から</string>
   <string ID="direction.description.incoming.player:=dir.incomingDirectionDescription=">=dir.incomingDirectionDescription=</string>
   <string ID="direction.description.incoming.null:=dir.incomingDirectionDescription=">=dir.incomingDirectionDescription=</string>
@@ -336,8 +336,8 @@ Caves of Qud code extracted string table.
   <string ID="direction.short:SE">南東</string>
   <string ID="direction.short:U">上</string>
   <string ID="direction.short:D">下</string>
-  <string ID="direction.short:here">ここ</string>
-  <string ID="direction.short:somewhere">どこか</string>
+  <string ID="direction.short:here">此処</string>
+  <string ID="direction.short:somewhere">何処か</string>
 
   <!--
 	Journal strings
@@ -386,6 +386,16 @@ Caves of Qud code extracted string table.
   <string ID="activated ability classes:Tinkering">[届：\TODO]Tinkering</string>
   <string ID="activated ability classes:Tonics">Tonics</string>
   <string ID="activated ability classes:Vehicle">[届：\TODO]Vehicle</string>
+
+  <!--
+	Zealot Yell strings
+  -->
+  <string ID="Joppa Zealot Yells:Who ventures into the Great Salt Desert, and nearer the Six Day Stilt?">グレートソルト砂漠、そしてシックスデイスティルトに近づく冒険をする人は誰でしょうか?</string>
+  <string ID="Joppa Zealot Yells:Hmm, what of your artifacts? Make an offering of them to Shekhinah at the Sacred Well.">うーん、あなたの遺物はどうなった？聖なる泉のシェキナに捧げなさい。</string>
+  <string ID="Joppa Zealot Yells:The beauty! My stomach is in stirs.">美しい！お腹がムカムカします。</string>
+  <string ID="Joppa Zealot Yells:Is it a dybbuk that possesses the robot? It should be sacred and still.">ロボットに憑依しているのはディブックでしょうか？神聖で静寂なはずです。</string>
+  <string ID="Joppa Zealot Yell:=subject.Does:yell=, {{W|'=message='}}">=subject.は=、{{W|「=message=」}}と叫ぶ。</string>
+
   <string ID="hostile perception verb:detect">[届：\TODO]detect</string>
 
   <!--
