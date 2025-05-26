@@ -130,8 +130,8 @@ namespace LanguagesOfQud
         }
 
             // adding a comma 、after は
-            [VariableObjectReplacer]
-        public static string あなたは、(DelegateContext Context)
+            [VariableObjectReplacer("あなたは、")]
+        public static string あなたはWithComma(DelegateContext Context)
         {
             if (Context.Target is GameObject target)
             {
