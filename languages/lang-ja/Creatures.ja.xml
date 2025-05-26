@@ -6,22 +6,23 @@
     <part Name="Description" Short="この人は風に彫られたような男であり、蔓刈りの体勢をしている。背筋は曲がり、明るいトルコ青色の瞳を耕作の角度に向け、腰は奇数度前に突き出し、まるで自分よりもずっと気安かった姿勢であり、まるで前かがみになっているかのようである。額についた塩の塊と、傷だらけの指関節がなければ、崩れかけた墓の下に腰掛けた大理石のサアドのように見える。" />
   </object>
 
+  <!-- "The <profession> who is a convert to <faith>": "<faith>への改宗者である<profession>" -->
   <object Name="VillageZeroConvert" Load="Merge">
-    <part Name="Render" DisplayName="水草農民 and Mechanimist 改宗者" />
+    <part Name="Render" DisplayName="機構霊信仰への改宗者である水草農家" />
   </object>
   <object Name="WatervineFarmerConvert" Load="Merge">
     <part Name="Description" Short="[届：\TODO]=pronouns.Possessive= kufiya has been cut and resewn to a cowl, and =pronouns.subjective= =verb:have:afterpronoun= tailored a vinewafer sack to approximate the slate habit of the chromaic people. A sheaf of watervine bundled in copper wire is slung on =pronouns.possessive= hip, and =pronouns.subjective= =verb:rub:afterpronoun= a salt-nailed thumb over a talisman of cracked circuitboard." />
   </object>
   <object Name="PigFarmerConvert" Load="Merge">
-    <part Name="Render" DisplayName="pig farmer and Mechanimist convert" />
+    <part Name="Render" DisplayName="機構霊信仰への改宗者である養豚農家" />
     <part Name="Description" Short="[届：\TODO]=pronouns.Possessive= kufiya has been cut and resewn to a cowl, and =pronouns.subjective= =verb:have:afterpronoun= tailored an apple sack to approximate the slate habit of the chromaic people. A herding crook sheathed in copper wire is slung on =pronouns.possessive= hip, and =pronouns.subjective= =verb:rub:afterpronoun= a salt-nailed thumb over a talisman of cracked circuitboard." />
   </object>
   <object Name="CannibalConvert" Load="Merge">
-    <part Name="Render" DisplayName="cannibal and Mechanimist convert" />
+    <part Name="Render" DisplayName="機構霊信仰への改宗者であるcannibal" />
     <part Name="Description" Short="[届：\TODO]A torn kufiya has been cut and resewn to a cowl, and =pronouns.subjective= =verb:have:afterpronoun= tailored a knapsack to approximate the slate habit of the chromaic people. A human bone sheathed in copper wire is slung on =pronouns.possessive= hip, and =pronouns.subjective= =verb:rub:afterpronoun= a salt-nailed thumb over a talisman of cracked circuitboard." />
   </object>
   <object Name="IssachariConvert" Load="Merge">
-    <part Name="Render" DisplayName="Issachari raider and Mechanimist convert" />
+    <part Name="Render" DisplayName="機構霊信仰への改宗者であるイッサカル族の侵入者" />
     <part Name="Description" Short="[届：\TODO]=pronouns.Possessive= kufiya has been cut and resewn to a cowl, and =pronouns.subjective= =verb:have:afterpronoun= tailored a tattered banner to approximate the slate habit of the chromaic people. A bronze dagger sheathed in copper wire is slung on =pronouns.possessive= hip, and =pronouns.subjective= =verb:rub:afterpronoun= a salt-nailed thumb over a talisman of cracked circuitboard." />
   </object>
 

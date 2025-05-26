@@ -1,842 +1,532 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
 Caves of Qud code extracted string table.
-Comments should be deleted when copied to a new translation table.
 -->
-<strings Lang="ja">
-  
+<strings Lang="ja" Encoding="utf-8">
+
   <!--
 	Tutorial strings
   -->
-
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/BattleRemains.cs:36-->
   <string ID="You should view the tooltip before equipping the axe.">[届：\TODO]You should view the tooltip before equipping the axe.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/BattleRemains.cs:116-->
   <string ID="Huh, you somehow destroyed the battle axe. Let's move on.">[届：\TODO]Huh, you somehow destroyed the battle axe. Let's move on.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/BattleRemains.cs:127-->
   <string ID="The battle axe has better penetration and deals more damage than your dagger.">[届：\TODO]The battle axe has better penetration and deals more damage than your dagger.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/BattleRemains.cs:136-->
   <string ID="Let’s take another look at weapon stats. Next to the {{c|→}} is 5. That means you’ll usually penetrate the armor of a creature with AV equal to 5.&#xA;&#xA;You can penetrate armor multiple times, though, and each time you penetrate, you deal the weapon’s damage.&#xA;&#xA;let’s equip it." Value="[届：\TODO]Let’s take another look at weapon stats. Next to the {{c|→}} is 5. That means you’ll usually penetrate the armor of a creature with AV equal to 5.&#xA;&#xA;You can penetrate armor multiple times, though, and each time you penetrate, you deal the weapon’s damage.&#xA;&#xA;let’s equip it." />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/BattleRemains.cs:157-->
   <string ID="A battle axe. Get it.&#xA;&#xA;Hit =commandKey:CmdUse=" Value="[届：\TODO]A battle axe. Get it.&#xA;&#xA;Hit =commandKey:CmdUse=" />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/BattleRemains.cs:161-->
   <string ID="A battle axe. Get it.&#xA;&#xA;Hit =commandKey:CmdGet=" Value="[届：\TODO]A battle axe. Get it.&#xA;&#xA;Hit =commandKey:CmdGet=" />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/BattleRemains.cs:171-->
   <string ID="Looks like there was some sort of battle to the north. Let’s grab the gear that was left behind.">[届：\TODO]Looks like there was some sort of battle to the north. Let’s grab the gear that was left behind.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/BattleRemains.cs:175-->
   <string ID="Keep moving forward.">[届：\TODO]Keep moving forward.</string>
-  <!--Code references:
-Assets/Game/UI/Tutorial/Intro/BattleRemains.cs:183
-Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:289
--->
   <string ID="Let's take a look at the Equipment screen.&#xA;&#xA;Press =commandKey:CmdCharacter=" Value="[届：\TODO]Let's take a look at the Equipment screen.&#xA;&#xA;Press =commandKey:CmdCharacter=" />
-  <!--Code references:
-Assets/Game/UI/Tutorial/Intro/BattleRemains.cs:187
-Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:293
--->
   <string ID="Let's take a look at the Equipment screen.&#xA;&#xA;Press =commandKey:CmdEquipment=" Value="[届：\TODO]Let's take a look at the Equipment screen.&#xA;&#xA;Press =commandKey:CmdEquipment=" />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/BattleRemains.cs:199-->
   <string ID="Hold on, we want to show you the tooltip compare feature.">[届：\TODO]Hold on, we want to show you the tooltip compare feature.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/BattleRemains.cs:203-->
   <string ID="Equip the battle axe.">[届：\TODO]Equip the battle axe.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/BattleRemains.cs:209-->
   <string ID="A battle axe. Get it.">[届：\TODO]A battle axe. Get it.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/BattleRemains.cs:223-->
   <string ID="Press =commandKey:GamepadAlt= + =commandKey:Take A Step= to view the tooltip.">[届：\TODO]Press =commandKey:GamepadAlt= + =commandKey:Take A Step= to view the tooltip.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/BattleRemains.cs:227-->
   <string ID="Mouse over the battle axe and hover or press {{W|Alt}} to view the tooltip.">[届：\TODO]Mouse over the battle axe and hover or press {{W|Alt}} to view the tooltip.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/BattleRemains.cs:232-->
   <string ID="Equip the battle axe since it's better than your dagger.">[届：\TODO]Equip the battle axe since it's better than your dagger.</string>
-  <!--Code references:
-Assets/Game/UI/Tutorial/Intro/BattleRemains.cs:243
-Assets/Game/UI/Tutorial/Intro/ExamineChemcell.cs:144
-Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:341
--->
   <string ID="Select the Inventory &amp;&amp; Equipment tab.&#xA;&#xA;You can use =commandKey:Page Left= and =commandKey:Page Right= to navigate between tabs." Value="[届：\TODO]Select the Inventory &amp;&amp; Equipment tab.&#xA;&#xA;You can use =commandKey:Page Left= and =commandKey:Page Right= to navigate between tabs." />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExamineChemcell.cs:52-->
   <string ID="The bear is dead! Looks like it dropped something, too.&#xA;&#xA;But first, let's use this opportunity to heal." Value="[届：\TODO]The bear is dead! Looks like it dropped something, too.&#xA;&#xA;But first, let's use this opportunity to heal." />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExamineChemcell.cs:66-->
   <string ID="You regain hitpoints naturally as turns pass. You can pass a few turns by waiting, or if there are no hostile creatures around, you can {{W|rest until healed}}.&#xA;&#xA;Press =commandKey:CmdWaitUntilHealed=" Value="[届：\TODO]You regain hitpoints naturally as turns pass. You can pass a few turns by waiting, or if there are no hostile creatures around, you can {{W|rest until healed}}.&#xA;&#xA;Press =commandKey:CmdWaitUntilHealed=" />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExamineChemcell.cs:89-->
   <string ID="It's a chem cell. It can be used later to power other artifacts you find.">[届：\TODO]It's a chem cell. It can be used later to power other artifacts you find.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExamineChemcell.cs:111-->
   <string ID="You picked up the odd trinket automatically because it is an artifact.&#xA;&#xA;Press =commandKey:CmdCharacter= to investigate it." Value="[届：\TODO]You picked up the odd trinket automatically because it is an artifact.&#xA;&#xA;Press =commandKey:CmdCharacter= to investigate it." />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExamineChemcell.cs:115-->
   <string ID="You picked up the odd trinket automatically because it is an artifact.&#xA;&#xA;Press =commandKey:CmdInventory= to investigate it." Value="[届：\TODO]You picked up the odd trinket automatically because it is an artifact.&#xA;&#xA;Press =commandKey:CmdInventory= to investigate it." />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExamineChemcell.cs:120-->
   <string ID="The bear is dead! Looks like it dropped something, too.">[届：\TODO]The bear is dead! Looks like it dropped something, too.</string>
-  <!--Code references:
-Assets/Game/UI/Tutorial/Intro/ExamineChemcell.cs:134
-Assets/Game/UI/Tutorial/Intro/ExamineChemcell.cs:153
--->
   <string ID="What's that???">[届：\TODO]What's that???</string>
-  <!--Code references:
-Assets/Game/UI/Tutorial/Intro/ExamineChemcell.cs:138
-Assets/Game/UI/Tutorial/Intro/ExamineChemcell.cs:157
--->
   <string ID="This is an artifact beyond simple understanding. Try examining it.">[届：\TODO]This is an artifact beyond simple understanding. Try examining it.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreDeeper.cs:43-->
   <string ID="The whole game world is a series of contiguous maps. Our passage continues off screen. Let's follow it. Walk north.">[届：\TODO]The whole game world is a series of contiguous maps. Our passage continues off screen. Let's follow it. Walk north.</string>
-  <!--Code references:
-Assets/Game/UI/Tutorial/Intro/ExploreDeeper.cs:48
-Assets/Game/UI/Tutorial/Intro/ExploreDeeper.cs:52
--->
   <string ID="Let's move on. Keep exploring.">[届：\TODO]Let's move on. Keep exploring.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreJoppa.cs:62-->
   <string ID="Choose Mehmet.">[届：\TODO]Choose Mehmet.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreJoppa.cs:67-->
   <string ID="Oh! it looks like Warden Yrame killed Mehmet. Why, you ask?&#xA;&#xA;Well, named creatures who you can perform the water ritual with, like Mehmet, generate with dynamic faction relationships. In your game, Mehmet must have been hated by the Fellowship of Wardens for some reason." Value="[届：\TODO]Oh! it looks like Warden Yrame killed Mehmet. Why, you ask?&#xA;&#xA;Well, named creatures who you can perform the water ritual with, like Mehmet, generate with dynamic faction relationships. In your game, Mehmet must have been hated by the Fellowship of Wardens for some reason." />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreJoppa.cs:69-->
   <string ID="And so Warden Yrame took her revenge. In Qud, sometimes even our best efforts at providing a safe starter village are foiled by the simulation!&#xA;&#xA;What a charmed run! It's quite rare for this to happen, but now you get to see this hidden section of the tutorial. Good job." Value="[届：\TODO]And so Warden Yrame took her revenge. In Qud, sometimes even our best efforts at providing a safe starter village are foiled by the simulation!&#xA;&#xA;What a charmed run! It's quite rare for this to happen, but now you get to see this hidden section of the tutorial. Good job." />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreJoppa.cs:71-->
   <string ID="You have a few options now. You can roll with it and continue in this world where Mehmet's been revenge-slain. The early game will be a bit harder, but the main quest is not impacted.&#xA;&#xA;You can start over and play the tutorial again, for the &quot;normal&quot; ending, which you were about to reach.&#xA;&#xA;Or, since you were near the end anyway, you can start a new game and begin your journey proper!" Value="[届：\TODO]You have a few options now. You can roll with it and continue in this world where Mehmet's been revenge-slain. The early game will be a bit harder, but the main quest is not impacted.&#xA;&#xA;You can start over and play the tutorial again, for the &quot;normal&quot; ending, which you were about to reach.&#xA;&#xA;Or, since you were near the end anyway, you can start a new game and begin your journey proper!" />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreJoppa.cs:73-->
   <string ID="Whatever you choose, good luck, and feel free to return here for a refresher.&#xA;&#xA;Live and drink." Value="[届：\TODO]Whatever you choose, good luck, and feel free to return here for a refresher.&#xA;&#xA;Live and drink." />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreJoppa.cs:86-->
   <string ID="Quetzal! That's all for the tutorial, friend.&#xA;&#xA;We just scratched the very tip of the surface. Quests, secrets, leveling up, physics, reputation, limbs... we leave that for you to discover." Value="[届：\TODO]Quetzal! That's all for the tutorial, friend.&#xA;&#xA;We just scratched the very tip of the surface. Quests, secrets, leveling up, physics, reputation, limbs... we leave that for you to discover." />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreJoppa.cs:88-->
   <string ID="You're ready to continue the journey on your own, but don't hesitate to play the tutorial again if you need a refresher.">[届：\TODO]You're ready to continue the journey on your own, but don't hesitate to play the tutorial again if you need a refresher.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreJoppa.cs:90-->
   <string ID="Live and drink.">[届：\TODO]Live and drink.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreJoppa.cs:105-->
   <string ID="Joppa is a village. Everything you learned in the cave applies here too. Villages are like caves with very high roofs.">[届：\TODO]Joppa is a village. Everything you learned in the cave applies here too. Villages are like caves with very high roofs.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreJoppa.cs:112-->
   <string ID="You can see a list of points of interest by pressing =commandKey:CmdMoveToPointOfInterest=.&#xA;&#xA;The list will grow as you explore more of the map." Value="[届：\TODO]You can see a list of points of interest by pressing =commandKey:CmdMoveToPointOfInterest=.&#xA;&#xA;The list will grow as you explore more of the map." />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreJoppa.cs:116-->
   <string ID="You can see a list of points of interest by clicking this button or pressing =commandKey:CmdMoveToPointOfInterest=.&#xA;&#xA;The list will grow as you explore more of the map." Value="[届：\TODO]You can see a list of points of interest by clicking this button or pressing =commandKey:CmdMoveToPointOfInterest=.&#xA;&#xA;The list will grow as you explore more of the map." />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreStairs.cs:61-->
   <string ID="Ascend.&#xA;&#xA;Press =commandKey:CmdMoveU=." Value="[届：\TODO]Ascend.&#xA;&#xA;Press =commandKey:CmdMoveU=." />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreStairs.cs:65-->
   <string ID="Ascend.&#xA;&#xA;You can click this button or press =commandKey:CmdMoveU=." Value="[届：\TODO]Ascend.&#xA;&#xA;You can click this button or press =commandKey:CmdMoveU=." />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreStairs.cs:74-->
   <string ID="Finally, a staircase. Walk over to it.">[届：\TODO]Finally, a staircase. Walk over to it.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreStairs.cs:79-->
   <string ID="Keep exploring.">[届：\TODO]Keep exploring.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreWorldMap.cs:38-->
   <string ID="You'll be able to explore the world freely after the tutorial.&#xA;&#xA;For now, let's visit Joppa." Value="[届：\TODO]You'll be able to explore the world freely after the tutorial.&#xA;&#xA;For now, let's visit Joppa." />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreWorldMap.cs:74-->
   <string ID="You can look around here just like on a local map.&#xA;&#xA;Use =commandKey:LookDirection=" Value="[届：\TODO]You can look around here just like on a local map.&#xA;&#xA;Use =commandKey:LookDirection=" />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreWorldMap.cs:78-->
   <string ID="You can look around here just like on a local map.&#xA;&#xA;Press =commandKey:CmdLook=" Value="[届：\TODO]You can look around here just like on a local map.&#xA;&#xA;Press =commandKey:CmdLook=" />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreWorldMap.cs:88-->
   <string ID="Descend.&#xA;&#xA;Press =commandKey:CmdMoveD=." Value="[届：\TODO]Descend.&#xA;&#xA;Press =commandKey:CmdMoveD=." />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreWorldMap.cs:92-->
   <string ID="Descend.&#xA;&#xA;You can click this button or press =commandKey:CmdMoveD=." Value="[届：\TODO]Descend.&#xA;&#xA;You can click this button or press =commandKey:CmdMoveD=." />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreWorldMap.cs:99-->
   <string ID="There's a village to the north called Joppa. Let's go there.&#xA;&#xA;Hold =commandKey:IndicateDirection= towards the north and press =commandKey:Take A Step=." Value="[届：\TODO]There's a village to the north called Joppa. Let's go there.&#xA;&#xA;Hold =commandKey:IndicateDirection= towards the north and press =commandKey:Take A Step=." />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/ExploreWorldMap.cs:103-->
   <string ID="There's a village to the north called Joppa. Let's go there.&#xA;&#xA;Press =commandKey:CmdMoveN= or =commandKey:AdventureMouseContextAction=." Value="[届：\TODO]There's a village to the north called Joppa. Let's go there.&#xA;&#xA;Press =commandKey:CmdMoveN= or =commandKey:AdventureMouseContextAction=." />
-  <!--Code references:
-Assets/Game/UI/Tutorial/Intro/FightBear.cs:40
-Assets/Game/UI/Tutorial/Intro/FightBear.cs:114
--->
   <string ID="Wait for the bear to take a step towards you.">[届：\TODO]Wait for the bear to take a step towards you.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightBear.cs:50-->
   <string ID="Make sure the bear is in the path of your freezing ray.">[届：\TODO]Make sure the bear is in the path of your freezing ray.</string>
-  <!--Code references:
-Assets/Game/UI/Tutorial/Intro/FightBear.cs:60
-Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:28
--->
   <string ID="What's that??? Some sort of creature. Take a closer look at it.">[届：\TODO]What's that??? Some sort of creature. Take a closer look at it.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightBear.cs:68-->
   <string ID="It's quite dangerous to fight this bear in melee combat! Try backing away and using Freezing Ray.">[届：\TODO]It's quite dangerous to fight this bear in melee combat! Try backing away and using Freezing Ray.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightBear.cs:94-->
   <string ID="Let's take a look at the bear before we continue.">[届：\TODO]Let's take a look at the bear before we continue.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightBear.cs:171-->
   <string ID="Keep moving down the passage...">[届：\TODO]Keep moving down the passage...</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightBear.cs:176-->
   <string ID="Oh! Another creature. Let's look at it more closely.&#xA;&#xA;When you come across something new, it's always a good idea to inspect it." Value="[届：\TODO]Oh! Another creature. Let's look at it more closely.&#xA;&#xA;When you come across something new, it's always a good idea to inspect it." />
-  <!--Code references:
-Assets/Game/UI/Tutorial/Intro/FightBear.cs:185
-Assets/Game/UI/Tutorial/Intro/FightBear.cs:219
--->
   <string ID="It's a bear.">[届：\TODO]It's a bear.</string>
-  <!--Code references:
-Assets/Game/UI/Tutorial/Intro/FightBear.cs:188
-Assets/Game/UI/Tutorial/Intro/FightBear.cs:222
--->
   <string ID="The bear is wounded, but it's tough. This'll be a harder fight.">[届：\TODO]The bear is wounded, but it's tough. This'll be a harder fight.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightBear.cs:197-->
   <string ID="Inspect the bear.">[届：\TODO]Inspect the bear.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightBear.cs:204-->
   <string ID="Use =commandKey:LookDirection= to look at the bear.">[届：\TODO]Use =commandKey:LookDirection= to look at the bear.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightBear.cs:208-->
   <string ID="Press =commandKey:CmdLook= or =commandKey:AdventureMouseInteract= the bear.">[届：\TODO]Press =commandKey:CmdLook= or =commandKey:AdventureMouseInteract= the bear.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightBear.cs:231-->
   <string ID="Look view lets you look around and investigate your surroundings.&#xA;&#xA;Move the cursor to the bear." Value="[届：\TODO]Look view lets you look around and investigate your surroundings.&#xA;&#xA;Move the cursor to the bear." />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightBear.cs:244-->
   <string ID="Bump attack the bear.">[届：\TODO]Bump attack the bear.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightBear.cs:252-->
   <string ID="You can wait a turn for the bear to approach. That way, it won't be in range to attack you when it takes its turn.&#xA;&#xA;Tap =commandKey:Take A Step= without choosing a direction with the stick to pass a turn." Value="[届：\TODO]You can wait a turn for the bear to approach. That way, it won't be in range to attack you when it takes its turn.&#xA;&#xA;Tap =commandKey:Take A Step= without choosing a direction with the stick to pass a turn." />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightBear.cs:256-->
   <string ID="You can wait a turn for the bear to approach. That way, it won't be in range to attack you when it takes its turn.&#xA;&#xA;Press =commandKey:CmdWait:allbinds= or =commandKey:AdventureMouseContextAction= on your character to pass a turn." Value="[届：\TODO]You can wait a turn for the bear to approach. That way, it won't be in range to attack you when it takes its turn.&#xA;&#xA;Press =commandKey:CmdWait:allbinds= or =commandKey:AdventureMouseContextAction= on your character to pass a turn." />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightBear.cs:265-->
   <string ID="You missed, then the bear attacked and missed.&#xA;&#xA;Attack again." Value="[届：\TODO]You missed, then the bear attacked and missed.&#xA;&#xA;Attack again." />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightBear.cs:271-->
   <string ID="This time you hit, but you failed to penetrate the bear's armor.&#xA;&#xA;Then, the bear hit you and DID penetrate your armor. You took 4 damage." Value="[届：\TODO]This time you hit, but you failed to penetrate the bear's armor.&#xA;&#xA;Then, the bear hit you and DID penetrate your armor. You took 4 damage." />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightBear.cs:281-->
   <string ID="Let's try using an ability. Look at your ability bar. Let's start sprinting. &#xA;&#xA;Select it with =commandKey:Next Ability= and =commandKey:Previous Ability= then press =commandKey:Use Ability=." Value="[届：\TODO]Let's try using an ability. Look at your ability bar. Let's start sprinting. &#xA;&#xA;Select it with =commandKey:Next Ability= and =commandKey:Previous Ability= then press =commandKey:Use Ability=." />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightBear.cs:285-->
   <string ID="Let's try using an ability. Look at your ability bar. Let's start sprinting. You can click the button or hit the hotkey =commandKey:CmdAbility1=.">[届：\TODO]Let's try using an ability. Look at your ability bar. Let's start sprinting. You can click the button or hit the hotkey =commandKey:CmdAbility1=.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightBear.cs:298-->
   <string ID="Sprinting doubles your movespeed but ends if you make an attack. Let's sprint back down the corridor to put some distance between us and the bear.">[届：\TODO]Sprinting doubles your movespeed but ends if you make an attack. Let's sprint back down the corridor to put some distance between us and the bear.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightBear.cs:313-->
   <string ID="Every character has Sprint, but most of your abilities are determined by traits like your mutations. You have Freezing Ray, so you can shoot frost out of your hands.&#xA;&#xA;Select it with =commandKey:Next Ability= and =commandKey:Previous Ability= then press =commandKey:Use Ability=." Value="[届：\TODO]Every character has Sprint, but most of your abilities are determined by traits like your mutations. You have Freezing Ray, so you can shoot frost out of your hands.&#xA;&#xA;Select it with =commandKey:Next Ability= and =commandKey:Previous Ability= then press =commandKey:Use Ability=." />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightBear.cs:317-->
   <string ID="Every character has Sprint, but most of your abilities are determined by traits like your mutations. You have Freezing Ray, so you can shoot frost out of your hands. Select it.&#xA;&#xA;Press =commandKey:CmdAbility2=" Value="[届：\TODO]Every character has Sprint, but most of your abilities are determined by traits like your mutations. You have Freezing Ray, so you can shoot frost out of your hands. Select it.&#xA;&#xA;Press =commandKey:CmdAbility2=" />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:35-->
   <string ID="Before you move on, you should loot the corpse of the snapjaw.">[届：\TODO]Before you move on, you should loot the corpse of the snapjaw.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:74-->
   <string ID="Take a look at the snapjaw before we continue.">[届：\TODO]Take a look at the snapjaw before we continue.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:113-->
   <string ID="Huh, you somehow destroyed the leather armor. Let's move on.">[届：\TODO]Huh, you somehow destroyed the leather armor. Let's move on.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:129-->
   <string ID="Let's explore further into the cave.">[届：\TODO]Let's explore further into the cave.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:133-->
   <string ID="Let's explore further into the cave.&#xA;&#xA;Walk down the passage." Value="[届：\TODO]Let's explore further into the cave.&#xA;&#xA;Walk down the passage." />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:154-->
   <string ID="Looking at a creature shows its description and some other important details. Every object in the world can be looked at.">[届：\TODO]Looking at a creature shows its description and some other important details. Every object in the world can be looked at.</string>
-  <!--Code references:
-Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:157
-Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:189
--->
   <string ID="The snapjaw is hostile! Let's get ready for a fight.">[届：\TODO]The snapjaw is hostile! Let's get ready for a fight.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:164-->
   <string ID="Inspect the snapjaw.">[届：\TODO]Inspect the snapjaw.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:171-->
   <string ID="Use =commandKey:LookDirection= to look at the snapjaw.">[届：\TODO]Use =commandKey:LookDirection= to look at the snapjaw.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:175-->
   <string ID="Press =commandKey:CmdLook= or =commandKey:AdventureMouseInteract= the snapjaw.">[届：\TODO]Press =commandKey:CmdLook= or =commandKey:AdventureMouseInteract= the snapjaw.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:186-->
   <string ID="Here we have a description of the creature, along with some details about them.">[届：\TODO]Here we have a description of the creature, along with some details about them.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:195-->
   <string ID="Look view lets you look around and investigate your surroundings.&#xA;&#xA;Move the cursor to the snapjaw." Value="[届：\TODO]Look view lets you look around and investigate your surroundings.&#xA;&#xA;Move the cursor to the snapjaw." />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:209-->
   <string ID="All actions are turn-based, meaning you take a turn, then other creatures take a turn. For the most part, creatures won't act until you do.&#xD;&#xA;&#xD;&#xA;If you ever get panicked, just slow down and consider your next move. There's no rush." Value="[届：\TODO]All actions are turn-based, meaning you take a turn, then other creatures take a turn. For the most part, creatures won't act until you do.&#xD;&#xA;&#xD;&#xA;If you ever get panicked, just slow down and consider your next move. There's no rush." />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:227-->
   <string ID="You can attack a hostile creature by moving into its square. This is called {{W|bump attacking}}.">[届：\TODO]You can attack a hostile creature by moving into its square. This is called {{W|bump attacking}}.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:231-->
   <string ID="Take a step toward the snapjaw.">[届：\TODO]Take a step toward the snapjaw.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:250-->
   <string ID="You can pick up things that are in the same space as you.&#xA;&#xA;Press =commandKey:CmdUse=" Value="[届：\TODO]You can pick up things that are in the same space as you.&#xA;&#xA;Press =commandKey:CmdUse=" />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:254-->
   <string ID="You can pick up things that are in the same space as you.&#xA;&#xA;Press =commandKey:CmdGet=" Value="[届：\TODO]You can pick up things that are in the same space as you.&#xA;&#xA;Press =commandKey:CmdGet=" />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:260-->
   <string ID="Whew! You killed the snapjaw and earned some experience. It looks like they dropped a piece of equipment, too.&#xA;&#xA;Press =commandKey:CmdGetFrom= and then choose a direction or press =commandKey:AdventureMouseInteract=." Value="[届：\TODO]Whew! You killed the snapjaw and earned some experience. It looks like they dropped a piece of equipment, too.&#xA;&#xA;Press =commandKey:CmdGetFrom= and then choose a direction or press =commandKey:AdventureMouseInteract=." />
-  <!--Code references:
-Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:270
-Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:318
--->
   <string ID="Let's look at the leather armor you picked up.&#xA;&#xA;Armor has an armor value ({{b|♦}}{{y|2}}) and a dodge value ({{K|○}}{{y|0}})&#xA;&#xA;Both help you avoid damage." Value="[届：\TODO]Let's look at the leather armor you picked up.&#xA;&#xA;Armor has an armor value ({{b|♦}}{{y|2}}) and a dodge value ({{K|○}}{{y|0}})&#xA;&#xA;Both help you avoid damage." />
-  <!--Code references:
-Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:275
-Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:323
--->
   <string ID="Let's equip it.">[届：\TODO]Let's equip it.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:281-->
   <string ID="It's leather armor. This time, get it instead of equipping it.">[届：\TODO]It's leather armor. This time, get it instead of equipping it.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:310-->
   <string ID="This is your equipment and inventory screen. Equipped items on the left, and inventory on the right.">[届：\TODO]This is your equipment and inventory screen. Equipped items on the left, and inventory on the right.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/FightSnapjaw.cs:332-->
   <string ID="You can also equip items by dragging them from your inventory to their equipment slot.&#xA;&#xA;By the way, you have several other tabs in your character sheet. Feel free to explore them later." Value="[届：\TODO]You can also equip items by dragging them from your inventory to their equipment slot.&#xA;&#xA;By the way, you have several other tabs in your character sheet. Feel free to explore them later." />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/GetBooks.cs:75-->
   <string ID="There's something else over here.">[届：\TODO]There's something else over here.</string>
-  <!--Code references:
-Assets/Game/UI/Tutorial/Intro/GetBooks.cs:79
-Assets/Game/UI/Tutorial/Intro/GetBooks.cs:108
--->
   <string ID="Sometimes squares have multiple items in them.&#xA;&#xA;To see everything in a space, press =commandKey:CmdGetFrom= and then choose a direction or press =commandKey:AdventureMouseInteractAll=." Value="[届：\TODO]Sometimes squares have multiple items in them.&#xA;&#xA;To see everything in a space, press =commandKey:CmdGetFrom= and then choose a direction or press =commandKey:AdventureMouseInteractAll=." />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/GetBooks.cs:88-->
   <string ID="Whoever this was, they had some books. All books can be read in game.&#xA;&#xA;Books with {{Y|white}} titles are generated and usually contain nonsense, but the nonsense can occasionally be useful.&#xA;&#xA;Books with {{W|gold}} titles are more valuable: they are handwritten by in-world beings and contain interesting takes on the world." Value="[届：\TODO]Whoever this was, they had some books. All books can be read in game.&#xA;&#xA;Books with {{Y|white}} titles are generated and usually contain nonsense, but the nonsense can occasionally be useful.&#xA;&#xA;Books with {{W|gold}} titles are more valuable: they are handwritten by in-world beings and contain interesting takes on the world." />
-  <!--Code references:
-Assets/Game/UI/Tutorial/Intro/GetBooks.cs:118
-Assets/Game/UI/Tutorial/Intro/GetBooks.cs:120
--->
   <string ID="Get the books.">[届：\TODO]Get the books.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/GetBooks.cs:124-->
   <string ID="This water is valuable too. Take it all.">[届：\TODO]This water is valuable too. Take it all.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/IntroTutorial.cs:43-->
   <string ID="Welcome to the Caves of Qud tutorial. We'll just be scratching the surface here, learning enough of the basics to help you get your footing.&#xA;&#xA;In Caves of Qud, you play as a mutated human or true kin.&#xA;&#xA;For the tutorial, we're picking mutated human." Value="[届：\TODO]Welcome to the Caves of Qud tutorial. We'll just be scratching the surface here, learning enough of the basics to help you get your footing.&#xA;&#xA;In Caves of Qud, you play as a mutated human or true kin.&#xA;&#xA;For the tutorial, we're picking mutated human." />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/IntroTutorial.cs:52-->
   <string ID="Character creation is a deep and sometimes long process. We included some preset builds to help you get started. After the tutorial, you can try another build, or make a character from scratch. (The recommended way! Once you get your footing.) &#xA;&#xA;For now, pick the marsh taur." Value="[届：\TODO]Character creation is a deep and sometimes long process. We included some preset builds to help you get started. After the tutorial, you can try another build, or make a character from scratch. (The recommended way! Once you get your footing.) &#xA;&#xA;For now, pick the marsh taur." />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/IntroTutorial.cs:69-->
   <string ID="Here is a summary of your attributes and mutations, which grant your character unique abilities.">[届：\TODO]Here is a summary of your attributes and mutations, which grant your character unique abilities.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/IntroTutorial.cs:75-->
   <string ID="You can name your character or choose Next for a random name.">[届：\TODO]You can name your character or choose Next for a random name.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/IntroTutorial.cs:92-->
   <string ID="On the 30th of Kisu Ux, you scuttle down a dark shaft at the edge of a sunken trade path and arrive at a caravanserai. It's powdered in salt and dust from across the ribbon of time.">[届：\TODO]On the 30th of Kisu Ux, you scuttle down a dark shaft at the edge of a sunken trade path and arrive at a caravanserai. It's powdered in salt and dust from across the ribbon of time.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/MakeCamp.cs:43-->
   <string ID="Tastes good.">[届：\TODO]Tastes good.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/MakeCamp.cs:96-->
   <string ID="We're on the surface now. We can walk the whole world this way, or we can access the worldmap to fast travel.">[届：\TODO]We're on the surface now. We can walk the whole world this way, or we can access the worldmap to fast travel.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/MakeCamp.cs:99-->
   <string ID="But first, you just became hungry. You need to eat.">[届：\TODO]But first, you just became hungry. You need to eat.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/MakeCamp.cs:114-->
   <string ID="Let's make camp. How about next to that beetle over there.">[届：\TODO]Let's make camp. How about next to that beetle over there.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/MakeCamp.cs:122-->
   <string ID="Use the campfire.">[届：\TODO]Use the campfire.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/MakeCamp.cs:126-->
   <string ID="Make camp.">[届：\TODO]Make camp.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/MakeCamp.cs:143-->
   <string ID="Let's not be rude. Talk to the beetle.&#xA;&#xA;Press =commandKey:CmdUse= or =commandKey:AdventureMouseContextAction=." Value="[届：\TODO]Let's not be rude. Talk to the beetle.&#xA;&#xA;Press =commandKey:CmdUse= or =commandKey:AdventureMouseContextAction=." />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/MakeCamp.cs:147-->
   <string ID="Let's not be rude. Talk to the beetle.">[届：\TODO]Let's not be rude. Talk to the beetle.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/MakeCamp.cs:153-->
   <string ID="Not much of a talker. But that's not true for everyone. As long as a creature isn't hostile, you can try to chat with them.&#xA;&#xA;Let see what the beetle has for trade." Value="[届：\TODO]Not much of a talker. But that's not true for everyone. As long as a creature isn't hostile, you can try to chat with them.&#xA;&#xA;Let see what the beetle has for trade." />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/MakeCamp.cs:161-->
   <string ID="The beetle's inventory is on the left, and your inventory is on the right.&#xA;&#xA;The beetle has some witchwood bark. That's useful — it heals you when you eat it. Let's trade for it." Value="[届：\TODO]The beetle's inventory is on the left, and your inventory is on the right.&#xA;&#xA;The beetle has some witchwood bark. That's useful — it heals you when you eat it. Let's trade for it." />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/MakeCamp.cs:171-->
   <string ID="The beetle has some witchwood bark. That's useful — it heals you when you eat it. Let's trade for it.&#xA;&#xA;Press =commandKey:CmdTradeAdd= or =commandKey:AdventureMouseContextAction=" Value="[届：\TODO]The beetle has some witchwood bark. That's useful — it heals you when you eat it. Let's trade for it.&#xA;&#xA;Press =commandKey:CmdTradeAdd= or =commandKey:AdventureMouseContextAction=" />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/MakeCamp.cs:176-->
   <string ID="We don't need this dagger any more, so we can trade it away.&#xA;&#xA;Press =commandKey:CmdTradeAdd= or =commandKey:AdventureMouseContextAction=" Value="[届：\TODO]We don't need this dagger any more, so we can trade it away.&#xA;&#xA;Press =commandKey:CmdTradeAdd= or =commandKey:AdventureMouseContextAction=" />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/MakeCamp.cs:180-->
   <string ID="Complete the trade.">[届：\TODO]Complete the trade.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/MakeCamp.cs:187-->
   <string ID="The trade is uneven, so we'll have to pony up some money.&#xA;&#xA;In the salt-stippled ecosystem of Qud, {{B|fresh water}} is currency. You need to drink it, too, so don't spend it all." Value="[届：\TODO]The trade is uneven, so we'll have to pony up some money.&#xA;&#xA;In the salt-stippled ecosystem of Qud, {{B|fresh water}} is currency. You need to drink it, too, so don't spend it all." />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/MakeCamp.cs:197-->
   <string ID="Now to go to the world map. Try ascending again.&#xA;&#xA;Press =commandKey:CmdMoveU=." Value="[届：\TODO]Now to go to the world map. Try ascending again.&#xA;&#xA;Press =commandKey:CmdMoveU=." />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/MakeCamp.cs:201-->
   <string ID="Now to go to the world map. Try ascending again.&#xA;&#xA;You can click this button or press =commandKey:CmdMoveU=." Value="[届：\TODO]Now to go to the world map. Try ascending again.&#xA;&#xA;You can click this button or press =commandKey:CmdMoveU=." />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/MoveToChest.cs:24-->
   <string ID="Before you move on, you should equip yourself from the nearby chest.">[届：\TODO]Before you move on, you should equip yourself from the nearby chest.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/MoveToChest.cs:74-->
   <string ID="This is the main gameplay stage. At the top of the screen are your attributes, HP, and XP.&#xA;&#xA;On the right are action buttons, minimap, and the message log.&#xA;&#xA;At the bottom is your ability hotbar." Value="[届：\TODO]This is the main gameplay stage. At the top of the screen are your attributes, HP, and XP.&#xA;&#xA;On the right are action buttons, minimap, and the message log.&#xA;&#xA;At the bottom is your ability hotbar." />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/MoveToChest.cs:77-->
   <string ID="Let's explore this cave we've found ourselves in.">[届：\TODO]Let's explore this cave we've found ourselves in.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/MoveToChest.cs:93-->
   <string ID="Huh, you destroyed the tutorial chest we were going to teach you how to use.&#xA;&#xA;Go ahead and pick of the torch and dagger from the floor." Value="[届：\TODO]Huh, you destroyed the tutorial chest we were going to teach you how to use.&#xA;&#xA;Go ahead and pick of the torch and dagger from the floor." />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/MoveToChest.cs:164-->
   <string ID="A torch. When it's nighttime or when you're underground, you need a torch equipped to see. Select it.">[届：\TODO]A torch. When it's nighttime or when you're underground, you need a torch equipped to see. Select it.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/MoveToChest.cs:166-->
   <string ID="Equip the dagger too.">[届：\TODO]Equip the dagger too.</string>
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/MoveToChest.cs:177-->
   <string ID="You can interact with objects you're next to. Open the chest.&#xA;&#xA;Press =commandKey:Accept=" Value="[届：\TODO]You can interact with objects you're next to. Open the chest.&#xA;&#xA;Press =commandKey:Accept=" />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/MoveToChest.cs:181-->
   <string ID="You can interact with objects you're next to. Open the chest.&#xA;&#xA;Press =commandKey:Accept= or =commandKey:AdventureMouseContextAction=" Value="[届：\TODO]You can interact with objects you're next to. Open the chest.&#xA;&#xA;Press =commandKey:Accept= or =commandKey:AdventureMouseContextAction=" />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/MoveToChest.cs:188-->
   <string ID="Looks like there's a chest over at the end of the room. Let's walk over to it.&#xA;&#xA;Hold =commandKey:IndicateDirection= in the direction you want to move and press =commandKey:Take A Step=." Value="[届：\TODO]Looks like there's a chest over at the end of the room. Let's walk over to it.&#xA;&#xA;Hold =commandKey:IndicateDirection= in the direction you want to move and press =commandKey:Take A Step=." />
-  <!--Code references: Assets/Game/UI/Tutorial/Intro/MoveToChest.cs:192-->
   <string ID="Looks like there's a chest over at the end of the room. Let's walk over to it.&#xA;&#xA;You can click =commandKey:AdventureNavMouseLeftClick= the square you want to move to, or use the {{hotkey|arrow keys}} or {{hotkey|numpad.}}&#xA;&#xA;With arrow keys, you can press {{hotkey|shift+arrow keys}} to move diagonally." Value="[届：\TODO]Looks like there's a chest over at the end of the room. Let's walk over to it.&#xA;&#xA;You can click =commandKey:AdventureNavMouseLeftClick= the square you want to move to, or use the {{hotkey|arrow keys}} or {{hotkey|numpad.}}&#xA;&#xA;With arrow keys, you can press {{hotkey|shift+arrow keys}} to move diagonally." />
-  <!--Code references: Assets/Game/UI/Tutorial/TutorialManager.cs:212-->
-  <string ID="TUTORIAL GUIDE">[届：\TODO]TUTORIAL GUIDE</string>
-  <!--Code references: Assets/Game/UI/Tutorial/TutorialManager.cs:217-->
-  <string ID="[=commandKey:Accept=] Continue">[=commandKey:Accept=] Continue</string>
-  <!--Code references: Assets/Game/UI/Tutorial/TutorialStep.cs:21-->
+  <string ID="TUTORIAL GUIDE">チュートリアルガイド</string>
+  <string ID="[=commandKey:Accept=] Continue">［=commandKey:Accept=］コンティニュー</string>
   <string ID="We're not quite ready to leave yet.">[届：\TODO]We're not quite ready to leave yet.</string>
-  
+
   <!--
 	Main Menu strings
   -->
-
-  <!--Code references: Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:55-->
   <string ID="New Game">新規ゲーム</string>
-  <!--Code references: Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:56-->
   <string ID="Continue">コンティニュー</string>
-  <!--Code references: Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:57-->
   <string ID="Records">記録</string>
-  <!--Code references: Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:58-->
   <string ID="Options">オプション</string>
-  <!--Code references: Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:59-->
   <string ID="Mods">ＭＯＤ</string>
-  <!--Code references: Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:62-->
-  <string ID="Language (=currentLanguage=)">言語（=currentLanguage=）</string>
-  <!--Code references: Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:68-->
   <string ID="Redeem Code">コードを引き換える</string>
-  <!--Code references: Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:69-->
   <string ID="Modding Toolkit">ＭＯＤツールキット</string>
-  <!--Code references: Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:70-->
   <string ID="Credits">クレジット</string>
-  <!--Code references: Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:71-->
   <string ID="Help">ヘルプ</string>
-  <!--Code references: Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:340-->
+  <string ID="Language (=currentLanguage=)">言語（=currentLanguage=）</string>
   <string ID="Select Language">言語を選択</string>
-  <!--Code references: Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:341-->
-  <string ID="Note: Playing a saved game in a language other than that game's original language will result in partial and incomplete translations.">注意：セーブデータをゲームのオリジナル言語以外の言語でプレイすると、翻訳が不完全または部分的になってしまいます。</string>
-  <!--Code references: Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:376-->
+  <string ID="Note: Playing a saved game in a language other than that game's original language will result in partial and incomplete translations.">注意：『キャアァ』『キャアァ』『キャアァ』『キャアァ』『キャアァ』『キャアァ』『キャアァ』『キャアァ』『キャアァ』セーブデータをゲームのオリジナル言語以外の言語でプレイすると、翻訳が不完全または部分的になってしまいます。</string>
   <string ID="That save file looks like it's from an older save format revision (=gameVersion=). Sorry!&#xA;&#xA;You can probably change to a previous branch in your game client and get it to load if you want to finish it off." Value="[届：\TODO]That save file looks like it's from an older save format revision (=gameVersion=). Sorry!&#xA;&#xA;You can probably change to a previous branch in your game client and get it to load if you want to finish it off." />
-  <!--Code references: Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:402-->
   <string ID="Are you sure you want to quit?">本当に終了してもよろしいですか？</string>
-  <!--Code references:
-Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:425
-Assets/XRL Application/Game Core/EmbarkBuilder/EmbarkBuilderModuleWindowBase.cs:98
--->
   <string ID="navigate">航行する</string>
-  <!--Code references:
-Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:430
-Assets/XRL Application/Game Core/EmbarkBuilder/EmbarkBuilderModuleWindowBase.cs:103
--->
   <string ID="select">選択する</string>
-  <!--Code references: Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:435-->
   <string ID="quit">終了</string>
   
   <!--
 	PopupMessage strings
   -->
-
-  <!--Code references: Assets/Game/UI/Windows/PopupMessage/PopupMessage.cs:46-->
   <string ID="{{W|[=commandKey:Cancel=]}} {{y|Cancel}}">{{W|［=commandKey:Cancel=］}}{{y|キャンセル}}</string>
-  <!--Code references: Assets/Game/UI/Windows/PopupMessage/PopupMessage.cs:66-->
   <string ID="{{y|Copy}}">{{y|コピー}}</string>
-  <!--Code references: Assets/Game/UI/Windows/PopupMessage/PopupMessage.cs:68-->
   <string ID="{{W|[C]}} {{y|Copy}}">{{W|［C］}}{{y|コピー}}</string>
-  <!--Code references: Assets/Game/UI/Windows/PopupMessage/PopupMessage.cs:88-->
   <string ID="{{W|[L]}} {{y|Look}}">{{W|［L］}}{{y|見る}}</string>
-  <!--Code references: Assets/Game/UI/Windows/PopupMessage/PopupMessage.cs:96-->
   <string ID="{{W|press =commandKey:Accept=}}">{{W|=commandKey:Accept=のキーを押す}}</string>
-  <!--Code references: Assets/Game/UI/Windows/PopupMessage/PopupMessage.cs:98-->
   <string ID="{{W|[=commandKey:Accept=]}} {{y|Continue}}">{{W|［=commandKey:Accept=］}}{{y|コンティニュー}}</string>
-  <!--Code references: Assets/Game/UI/Windows/PopupMessage/PopupMessage.cs:120-->
   <string ID="{{W|[=commandKey:Accept=]}} {{y|Yes}}">{{W|［=commandKey:Accept=］}}{{y|はい}}</string>
-  <!--Code references: Assets/Game/UI/Windows/PopupMessage/PopupMessage.cs:123-->
   <string ID="{{W|[y]}} {{y|Yes}}">{{W|［y］}}{{y|はい}}</string>
-  <!--Code references: Assets/Game/UI/Windows/PopupMessage/PopupMessage.cs:131-->
   <string ID="{{W|[=commandKey:V Negative=]}} {{y|No}}">{{W|［=commandKey:V Negative=］}}{{y|いいえ}}</string>
-  <!--Code references: Assets/Game/UI/Windows/PopupMessage/PopupMessage.cs:134-->
   <string ID="{{W|[n]}} {{y|No}}">{{W|［n］}}{{y|いいえ}}</string>
-  <!--Code references: Assets/Game/UI/Windows/PopupMessage/PopupMessage.cs:172-->
   <string ID="[{{W|=commandKey:Accept=}}] Accept">［{{W|=commandKey:Accept=}}］確認</string>
-  <!--Code references: Assets/Game/UI/Windows/PopupMessage/PopupMessage.cs:192-->
   <string ID="{{W|[=commandKey:CmdHelp=]}} {{y|Color}}">{{W|［=commandKey:CmdHelp=］}}{{y|カラー}}</string>
-  <!--Code references: Assets/Game/UI/Windows/PopupMessage/PopupMessage.cs:199-->
   <string ID="{{W|[=commandKey:Submit=]}} {{y|Submit}}">{{W|［=commandKey:Submit=］}}{{y|提出する}}</string>
-  <!--Code references: Assets/Game/UI/Windows/PopupMessage/PopupMessage.cs:202-->
   <string ID="{{y|Submit}}">{{y|提出する}}</string>
-  <!--Code references: Assets/Game/UI/Windows/PopupMessage/PopupMessage.cs:222-->
   <string ID="{{W|[=commandKey:CmdOptions=]}} {{y|Hold to Accept}}">{{W|［=commandKey:CmdOptions=］}}{{y|のキーを押し続けて確認する}}</string>
-  <!--Code references: Assets/Game/UI/Windows/PopupMessage/PopupMessage.cs:263-->
   <string ID="[{{W|=commandKey:CmdStartTrade=}}] {{y|Trade}}">［{{W|=commandKey:CmdStartTrade=}}］{{y|商売する}}</string>
-  
+
   <!--
 	CharGen strings
   -->
-
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/EmbarkBuilder.cs:183-->
   <string ID="{{r|Error!}}">[届：\TODO]{{r|Error!}}</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/EmbarkBuilder.cs:189-->
   <string ID="=warnings=&#xA;&#xA;Continue anyway?" Value="[届：\TODO]=warnings=&#xA;&#xA;Continue anyway?" />
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/EmbarkBuilder.cs:192-->
   <string ID="{{W|Warning!}}">[届：\TODO]{{W|Warning!}}</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/EmbarkBuilderModuleWindowBase.cs:118-->
   <string ID="Randomize Selection">[届：\TODO]Randomize Selection</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/EmbarkBuilderModuleWindowBase.cs:126-->
   <string ID="Reset Selection">[届：\TODO]Reset Selection</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/EmbarkBuilderOverlayWindow.cs:272-->
   <string ID="Back">[届：\TODO]Back</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/EmbarkBuilderOverlayWindow.cs:275-->
   <string ID="Next">[届：\TODO]Next</string>
-  <!--Code references:
-Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudAttributesModule.cs:23
-Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudAttributesModule.cs:24
--->
   <string ID="You have unspent attribute points.">[届：\TODO]You have unspent attribute points.</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudAttributesModule.cs:33-->
   <string ID="You have spent too many attribute points!">[届：\TODO]You have spent too many attribute points!</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudAttributesModule.cs:133-->
   <string ID="=stat=: =value=">[届：\TODO]=stat=: =value=</string>
-  <!--Code references:
-Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudAttributesModule.cs:145
-Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudAttributesModuleWindow.cs:165
--->
   <string ID="Attributes">[届：\TODO]Attributes</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudAttributesModuleWindow.cs:50-->
   <string ID="Points Remaining: =ap=">[届：\TODO]Points Remaining: =ap=</string>
-  <!--Code references:
-Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudAttributesModuleWindow.cs:115
-Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudBuildLibraryModuleWindow.cs:202
-Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudBuildSummaryModuleWindow.cs:49
-Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudChartypeModuleWindow.cs:89
-Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudChooseStartingLocationModuleWindow.cs:95
-Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudCustomizeCharacterModuleWindow.cs:22
-Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudCyberneticsModuleWindow.cs:44
-Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudGamemodeModuleWindow.cs:109
-Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudGenotypeModuleWindow.cs:84
-Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudMutationsModuleWindow.cs:325
-Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudPregenModuleWindow.cs:57
-Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudSubtypeModuleWindow.cs:60
--->
   <string ID="{{W|character creation}}">[届：\TODO]{{W|character creation}}</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudAttributesModuleWindow.cs:202-->
   <string ID="=plusminusbonus= from =source=">[届：\TODO]=plusminusbonus= from =source=</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudBuildLibraryModuleWindow.cs:52-->
   <string ID="Add a new build code">[届：\TODO]Add a new build code</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudBuildLibraryModuleWindow.cs:104-->
   <string ID="Paste build code:">[届：\TODO]Paste build code:</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudBuildLibraryModuleWindow.cs:125-->
   <string ID="That code appears to be invalid.">[届：\TODO]That code appears to be invalid.</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudBuildLibraryModuleWindow.cs:131-->
   <string ID="That code is already in your library. It's named =buildname=.">[届：\TODO]That code is already in your library. It's named =buildname=.</string>
-  <!--Code references:
-Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudBuildLibraryModuleWindow.cs:138
-Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudBuildLibraryModuleWindow.cs:178
--->
   <string ID="Name this build:">[届：\TODO]Name this build:</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudBuildLibraryModuleWindow.cs:158-->
   <string ID="Manage Build: =buildname=">[届：\TODO]Manage Build: =buildname=</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudBuildLibraryModuleWindow.cs:165-->
   <string ID="Delete Build">[届：\TODO]Delete Build</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudBuildLibraryModuleWindow.cs:166-->
   <string ID="Rename Build">[届：\TODO]Rename Build</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudBuildLibraryModuleWindow.cs:233-->
   <string ID="build library menu:Options">[届：\TODO]Options</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudBuildLibraryModuleWindow.cs:245-->
   <string ID="Build Library">[届：\TODO]Build Library</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudBuildSummaryModuleWindow.cs:63-->
   <string ID="Summary">[届：\TODO]Summary</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudBuildSummaryModuleWindow.cs:84-->
   <string ID="Re-Randomize Selections">[届：\TODO]Re-Randomize Selections</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudBuildSummaryModuleWindow.cs:93-->
   <string ID="Export Code to Clipboard">[届：\TODO]Export Code to Clipboard</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudBuildSummaryModuleWindow.cs:101-->
   <string ID="Save Build To Library">[届：\TODO]Save Build To Library</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudBuildSummaryModuleWindow.cs:116-->
   <string ID="Build code copied to clipboard.">[届：\TODO]Build code copied to clipboard.</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudChartypeModuleWindow.cs:41-->
   <string ID="Select Character Option">[届：\TODO]Select Character Option</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudChooseStartingLocationModuleWindow.cs:106-->
   <string ID="Select Starting Location">[届：\TODO]Select Starting Location</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudCustomizeCharacterModule.cs:40-->
   <string ID="nonspecific">[届：\TODO]nonspecific</string>
-  <!--Code references:
-Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudCustomizeCharacterModule.cs:48
-Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudCustomizeCharacterModuleWindow.cs:141
--->
   <string ID="&lt;from gender&gt;">[届：\TODO]&lt;from gender&gt;</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudCustomizeCharacterModuleWindow.cs:37-->
   <string ID="Name: ">[届：\TODO]Name: </string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudCustomizeCharacterModuleWindow.cs:38-->
   <string ID="&lt;random&gt;">[届：\TODO]&lt;random&gt;</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudCustomizeCharacterModuleWindow.cs:46-->
   <string ID="Gender: ">[届：\TODO]Gender: </string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudCustomizeCharacterModuleWindow.cs:56-->
   <string ID="Pronoun Set: ">[届：\TODO]Pronoun Set: </string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudCustomizeCharacterModuleWindow.cs:65-->
   <string ID="Pet: ">[届：\TODO]Pet: </string>
-  <!--Code references:
-Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudCustomizeCharacterModuleWindow.cs:66
-Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudCustomizeCharacterModuleWindow.cs:199
-Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudCyberneticsModule.cs:26
--->
   <string ID="&lt;none&gt;">[届：\TODO]&lt;none&gt;</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudCustomizeCharacterModuleWindow.cs:84-->
   <string ID="Enter name:">[届：\TODO]Enter name:</string>
-  <!--Code references:
-Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudCustomizeCharacterModuleWindow.cs:108
-Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudCustomizeCharacterModuleWindow.cs:144
--->
   <string ID="&lt;create new&gt;">[届：\TODO]&lt;create new&gt;</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudCustomizeCharacterModuleWindow.cs:110-->
   <string ID="Choose Gender">[届：\TODO]Choose Gender</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudCustomizeCharacterModuleWindow.cs:116-->
   <string ID="Select Base Gender">[届：\TODO]Select Base Gender</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudCustomizeCharacterModuleWindow.cs:146-->
   <string ID="Choose Pronoun Set">[届：\TODO]Choose Pronoun Set</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudCustomizeCharacterModuleWindow.cs:152-->
   <string ID="Select Base Set">[届：\TODO]Select Base Set</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudCustomizeCharacterModuleWindow.cs:205-->
   <string ID="Choose Pet">[届：\TODO]Choose Pet</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudCustomizeCharacterModuleWindow.cs:229-->
   <string ID="Customize">[届：\TODO]Customize</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudCyberneticsModule.cs:39-->
   <string ID="{{C|-2 License Tier&#xA;+1 Toughness}}">[届：\TODO]{{C|-2 License Tier
 +1 Toughness}}</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudCyberneticsModule.cs:63-->
   <string ID="Invalid choice selected">[届：\TODO]Invalid choice selected</string>
-  <!--Code references:
-Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudCyberneticsModule.cs:141
-Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudCyberneticsModuleWindow.cs:66
-Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudCyberneticsModuleWindow.cs:109
--->
   <string ID="Cybernetics">[届：\TODO]Cybernetics</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudGameBootModule.cs:201-->
   <string ID="It's you.">あなたです。</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudGameBootModule.cs:246-->
   <string ID="Initializing protocols...">プロトコルを初期化中…</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudGameBootModule.cs:247-->
   <string ID="Hardening math...">計算を強化中…</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudGameBootModule.cs:253-->
   <string ID="Planting world seeds...">ワールドシードを植え中…</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudGameBootModule.cs:294-->
   <string ID="Generating topography...">地形を生成中…</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudGameBootModule.cs:304-->
   <string ID="Resolving faction relationships...">派閥関係を解決中…</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudGameBootModule.cs:307-->
   <string ID="Adding player to world...">プレイヤーをワールドに追加中…</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudGameBootModule.cs:349-->
   <string ID="Starting game!">ゲーム開始！</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudGamemodeModule.cs:24-->
   <string ID="No game mode selected.">[届：\TODO]No game mode selected.</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudGamemodeModule.cs:134-->
   <string ID="Start a new game with one button.">[届：\TODO]Start a new game with one button.</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudGamemodeModule.cs:139-->
   <string ID="Quickstart">[届：\TODO]Quickstart</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudGamemodeModuleWindow.cs:46-->
   <string ID="Choose Game Mode">[届：\TODO]Choose Game Mode</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudGamemodeModuleWindow.cs:71-->
   <string ID="[Debug] Quickstart">[届：\TODO][Debug] Quickstart</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudGenotypeModule.cs:115-->
   <string ID="{{important|=genotype=}} genotype">[届：\TODO]{{important|=genotype=}} genotype</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudGenotypeModuleWindow.cs:50-->
   <string ID="Choose Genotype">[届：\TODO]Choose Genotype</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudMutationsModule.cs:21-->
   <string ID="You have unspent mutation points.">[届：\TODO]You have unspent mutation points.</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudMutationsModule.cs:26-->
   <string ID="You have spent too many mutation points.">[届：\TODO]You have spent too many mutation points.</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudMutationsModule.cs:50-->
   <string ID="=mutation= x=count=">[届：\TODO]=mutation= x=count=</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudMutationsModule.cs:62-->
   <string ID="none">[届：\TODO]none</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudMutationsModule.cs:67-->
   <string ID="Mutations">[届：\TODO]Mutations</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudMutationsModuleData.cs:41-->
   <string ID="=mutation= (=variant=)">[届：\TODO]=mutation= (=variant=)</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudMutationsModuleWindow.cs:217-->
   <string ID="mutation variant available:=displayName= [{{W|V}}]">[届：\TODO]=displayName= [{{W|V}}]</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudMutationsModuleWindow.cs:237-->
   <string ID="[=numberselected=]">[=numberselected=]</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudMutationsModuleWindow.cs:243-->
   <string ID="=checkbox=[=nodecost=]">[届：\TODO]=checkbox=[=nodecost=]</string>
-  <!--Code references:
-Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudMutationsModuleWindow.cs:342
-Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudMutationsModuleWindow.cs:373
--->
   <string ID="Points Remaining: =mp=">[届：\TODO]Points Remaining: =mp=</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudMutationsModuleWindow.cs:360-->
   <string ID="Choose Variant">[届：\TODO]Choose Variant</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudMutationsModuleWindow.cs:402-->
   <string ID="Choose variant">[届：\TODO]Choose variant</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudPregenModuleWindow.cs:72-->
   <string ID="Pregens">[届：\TODO]Pregens</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudSpecificBootHandlersModule.cs:116-->
   <string ID="You embark for the caves of Qud.">カドの洞窟へ出発する。</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudSubtypeModule.cs:191-->
   <string ID="{{important|=subtype=}} =singularname=">[届：\TODO]{{important|=subtype=}} =singularname=</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudSubtypeModuleWindow.cs:38-->
   <string ID="choose subtype">[届：\TODO]choose subtype</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudSubtypeModuleWindow.cs:43-->
   <string ID="subtype">[届：\TODO]subtype</string>
-  <!--Code references: Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudSubtypeModuleWindow.cs:61-->
   <string ID=":=subtypetitle=:">[届：\TODO]:=subtypetitle=:</string>
   
   <!--
+	Naming elements
+  -->
+  <string ID="naming hyphen:-">＝</string>
+  <string ID="naming twoname separator: " Value="・" />
+
+  <!--
+	Direction strings
+  -->
+  <string ID="direction.expanded:north">北</string>
+  <string ID="direction.expanded:south">南</string>
+  <string ID="direction.expanded:east">東</string>
+  <string ID="direction.expanded:west">西</string>
+  <string ID="direction.expanded:northwest">北西</string>
+  <string ID="direction.expanded:northeast">北東</string>
+  <string ID="direction.expanded:southwest">南西</string>
+  <string ID="direction.expanded:southeast">南東</string>
+  <string ID="direction.expanded:up">上</string>
+  <string ID="direction.expanded:down">下</string>
+  <string ID="direction.expanded:here">此処</string>
+  <string ID="direction.expanded:somewhere">何処か</string>
+  <string ID="direction.indicative:northward">北の方へ</string>
+  <string ID="direction.indicative:southward">南の方へ</string>
+  <string ID="direction.indicative:eastward">東の方へ</string>
+  <string ID="direction.indicative:westward">西の方へ</string>
+  <string ID="direction.indicative:northwestward">北西の方へ</string>
+  <string ID="direction.indicative:northeastward">北東の方へ</string>
+  <string ID="direction.indicative:southwestward">南西の方へ</string>
+  <string ID="direction.indicative:southeastward">南東の方へ</string>
+  <string ID="direction.indicative:upward">上の方へ</string>
+  <string ID="direction.indicative:downward">下の方へ</string>
+  <string ID="direction.indicative:here">此処へ</string>
+  <string ID="direction.indicative:somewhere">何処かへ</string>
+<!-- msgs like "A young ivory is revealed here!"-->  
+  <string ID="direction.description:below">‽下</string>
+  <string ID="direction.description:above">‽上</string>
+  <string ID="direction.description:here">‽此処</string>
+  <string ID="direction.description:somewhere">‽何処か</string>
+  <string ID="direction.description:to the =dir.expandedDirection=">=dir.expandedDirection=に</string>
+  <string ID="direction.description.player:=dir.directionDescription=">=dir.directionDescription=</string>
+  <string ID="direction.description.actor:below =subject.them=">その下で</string>
+  <string ID="direction.description.actor:above =subject.them=">その上で</string>
+  <string ID="direction.description.actor:near =subject.them=">その近くで</string>
+  <string ID="direction.description.actor:to =subject.its= =dir.expandedDirection=">=dir.expandedDirection=側で</string>
+  <string ID="direction.description.incoming:from below">下から</string>
+  <string ID="direction.description.incoming:from above">上から</string>
+  <string ID="direction.description.incoming:from nearby">近くから</string>
+  <string ID="direction.description.incoming:from somewhere">何処かから</string>
+  <string ID="direction.description.incoming:from the =dir.expandedDirection=">=dir.expandedDirection=から</string>
+  <string ID="direction.description.incoming.player:=dir.incomingDirectionDescription=">=dir.incomingDirectionDescription=</string>
+  <string ID="direction.description.incoming.null:=dir.incomingDirectionDescription=">=dir.incomingDirectionDescription=</string>
+  <string ID="direction.description.incoming.actor:from below =subject.them=">下から</string>
+  <string ID="direction.description.incoming.actor:from above =subject.them=">上から</string>
+  <string ID="direction.description.incoming.actor:from near =subject.them=">近くから</string>
+  <string ID="direction.description.incoming.actor:from =subject.its= =dir.expandedDirection=">=dir.expandedDirection=から</string>
+ <string ID="direction.short:N">北</string>
+  <string ID="direction.short:S">南</string>
+  <string ID="direction.short:E">東</string>
+  <string ID="direction.short:W">西</string>
+  <string ID="direction.short:NW">北西</string>
+  <string ID="direction.short:NE">北東</string>
+  <string ID="direction.short:SW">南西</string>
+  <string ID="direction.short:SE">南東</string>
+  <string ID="direction.short:U">上</string>
+  <string ID="direction.short:D">下</string>
+  <string ID="direction.short:here">此処</string>
+  <string ID="direction.short:somewhere">何処か</string>
+
+  <!--
 	Journal strings
   -->
-
-  <!--Code references: Assets/XRL Application/Qud.API/Qud.API.Journal.cs:1421-->
   <string ID="journal category:Artifacts">[届：\TODO]Artifacts</string>
-  <!--Code references: Assets/XRL Application/Qud.API/Qud.API.Journal.cs:1422-->
   <string ID="journal category:Historic Sites">[届：\TODO]Historic Sites</string>
-  <!--Code references: Assets/XRL Application/Qud.API/Qud.API.Journal.cs:1423-->
   <string ID="journal category:Lairs">[届：\TODO]Lairs</string>
-  <!--Code references: Assets/XRL Application/Qud.API/Qud.API.Journal.cs:1424-->
   <string ID="journal category:Merchants">[届：\TODO]Merchants</string>
-  <!--Code references: Assets/XRL Application/Qud.API/Qud.API.Journal.cs:1425-->
   <string ID="journal category:Natural Features">[届：\TODO]Natural Features</string>
-  <!--Code references: Assets/XRL Application/Qud.API/Qud.API.Journal.cs:1426-->
   <string ID="journal category:Oddities">[届：\TODO]Oddities</string>
-  <!--Code references: Assets/XRL Application/Qud.API/Qud.API.Journal.cs:1427-->
   <string ID="journal category:Ruins with Becoming Nooks">[届：\TODO]Ruins with Becoming Nooks</string>
-  <!--Code references: Assets/XRL Application/Qud.API/Qud.API.Journal.cs:1428-->
   <string ID="journal category:Ruins">[届：\TODO]Ruins</string>
-  <!--Code references: Assets/XRL Application/Qud.API/Qud.API.Journal.cs:1429-->
   <string ID="journal category:Settlements">[届：\TODO]Settlements</string>
+
+  <!--
+	Effect and spot strings
+  -->
+  <string ID="hostile perception verb:perceive">[届：\TODO]perceive</string>
+  <string ID="=subject.Does:beat= at the flames with =subject.its= =hands.name=!">[届：\TODO]=subject.Does:beat= at the flames with =subject.its= =hands.name=!</string>
+  <string ID="=subject.Does:beat= at the flames on =object.t= with =subject.its= =hands.name=!">[届：\TODO]=subject.Does:beat= at the flames on =object.t= with =subject.its= =hands.name=!</string>
+  <string ID="=subject.Does:begin= =effect.name|strip= from another wound!">[届：\TODO]=subject.Does:begin= =effect.name|strip= from another wound!</string>
+  <string ID="=subject.Does:begin= =effect.name|strip=!">[届：\TODO]=subject.Does:begin= =effect.name|strip=!</string>
+  <string ID="=subject.Does:begin= acting like =subject.itis= =effect.name|strip= from another wound.">[届：\TODO]=subject.Does:begin= acting like =subject.itis= =effect.name|strip= from another wound.</string>
+  <string ID="=subject.Does:begin= acting like =subject.itis= =effect.name|strip=.">[届：\TODO]=subject.Does:begin= acting like =subject.itis= =effect.name|strip=.</string>
+  <string ID="spotmessage.defaultVerb:see">[届：\TODO]see</string>
+  <string ID="spotmessage:=subject.Does#verb= =object.an= =subject.direction#object=, so you refrain from =autoActDescription=.">[届：\TODO]=subject.Does#verb= =object.an= =subject.direction#object=, so you refrain from =autoActDescription=.</string>
+  <string ID="spotmessage:=subject.Does#verb= =object.an= =subject.direction#object= and stop =autoActDescription=.">[届：\TODO]=subject.Does#verb= =object.an= =subject.direction#object= and stop =autoActDescription=.</string>
+  <string ID="spotmessage:=subject.Does#verb= =object.an:notvisible= =subject.direction#object=, so you refrain from =autoActDescription=.">[届：\TODO]=subject.Does#verb= =object.an:notvisible= =subject.direction#object=, so you refrain from =autoActDescription=.</string>
+  <string ID="spotmessage:=subject.Does#verb= =object.an:notvisible= =subject.direction#object= and stop =autoActDescription=.">[届：\TODO]=subject.Does#verb= =object.an:notvisible= =subject.direction#object= and stop =autoActDescription=.</string>
+  <string ID="There =pool.is= a dangerous-looking =pool.short= that way. Do you want to go =direction.indicativeDirection= and start swimming?">[届：\TODO]There =pool.is= a dangerous-looking =pool.short= that way. Do you want to go =direction.indicativeDirection= and start swimming?</string>
+  <string ID="There =pool.is= =pool.a.name= that way. Do you want to go =direction.indicativeDirection= and start swimming?">[届：\TODO]There =pool.is= =pool.a.name= that way. Do you want to go =direction.indicativeDirection= and start swimming?</string>
+  <string ID="There =pool.is= a dangerous-looking =pool.short= that way. Move =direction.expandedDirection= again to enter =pool.them= and start swimming.">[届：\TODO]There =pool.is= a dangerous-looking =pool.short= that way. Move =direction.expandedDirection= again to enter =pool.them= and start swimming.</string>
+  <string ID="There =pool.is= =pool.a.name= that way. Move =direction.expandedDirection= again to enter =pool.them= and start swimming.">向こうに=pool.が=ある。再び=direction.expandedDirection=へ進むと、そこに入って泳ぎ始める。</string>
+
+  <!--
+	Activated abilities
+  -->
+  <string ID="activated ability classes:Cybernetics">[届：\TODO]Cybernetics</string>
+  <string ID="activated ability classes:Items">[届：\TODO]Items</string>
+  <string ID="activated ability classes:Maneuvers">[届：\TODO]Maneuvers</string>
+  <string ID="activated ability classes:Mental Mutations">[届：\TODO]Mental Mutations</string>
+  <string ID="activated ability classes:Onboard Systems">[届：\TODO]Onboard Systems</string>
+  <string ID="activated ability classes:Physical Mutations">[届：\TODO]Physical Mutations</string>
+  <string ID="activated ability classes:Skills">[届：\TODO]Skills</string>
+  <string ID="activated ability classes:Stances">[届：\TODO]Stances</string>
+  <string ID="activated ability classes:Tinkering">[届：\TODO]Tinkering</string>
+  <string ID="activated ability classes:Tonics">Tonics</string>
+  <string ID="activated ability classes:Vehicle">[届：\TODO]Vehicle</string>
+
+  <!--
+	Zealot Yell strings
+  -->
+  <string ID="Joppa Zealot Yells:Who ventures into the Great Salt Desert, and nearer the Six Day Stilt?">大の塩砂漠、そして６日間ピロティに近づく冒険をする人は誰でしょうか?</string>
+  <string ID="Joppa Zealot Yells:Hmm, what of your artifacts? Make an offering of them to Shekhinah at the Sacred Well.">うーん、遺物はどうなった？聖なる井でシェキナに捧げなさい。</string>
+  <string ID="Joppa Zealot Yells:The beauty! My stomach is in stirs.">あ～美しい！お腹がムカムカします。</string>
+  <string ID="Joppa Zealot Yells:Is it a dybbuk that possesses the robot? It should be sacred and still.">ロボットに憑依しているのはディバクでしょうか？神聖で静寂なはずです。</string>
+  <string ID="Joppa Zealot Yell:=subject.Does:yell=, {{W|'=message='}}">=subject.あなたは、={{W|「=message=」}}と叫ぶ。</string>
+
+  <string ID="hostile perception verb:detect">[届：\TODO]detect</string>
 
   <!--
 	Door strings
   -->
-
-  <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:221-->
   <string ID="door:close">閉める</string>
-  <string ID="door:close|tr">(を)閉める</string>
-  <string ID="door:close|intr">(が)閉まる</string>
-  <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:232-->
   <string ID="door:open">開ける</string>
-  <string ID="door:open|tr">(を)開ける</string>
-  <string ID="door:open|intr">(が)開く</string>
-  <string ID="door:unlock">(の)ロックを開錠する</string>
-  <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:446-->
-  <string ID="door:You cannot open =object.t=.">=object.name=を開けることはできない。</string>
-  <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:458-->
-  <string ID="You are out of phase with =object.t=.">=object.name=と位相がずれている。</string>
-  <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:470-->
-  <string ID="You cannot reach =object.t=.">=object.name=に手が届きない。</string>
-  <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:505-->
-  <string ID="You can't unlock =object.t= from a distance.">遠くから=object.name=を開錠することはできない。</string>
-  <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:521-->
-  <string ID="You unlock =object.t=.">=object.name=のロックを開錠する。</string>
-  <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:537-->
-<!--
-	could maybe use 連動する for "interface" verb?
--->
-  <string ID="You interface with =object.t= and unlock =object.them=.">=object.name=とインターフェースしてロックを開錠する。</string>
-  <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:552-->
-  <string ID="You lay your hand upon =object.t= and draw forth =object.its= passcode. You enter the code and =object.does:unlock=.">=object.name=に手をかけ、暗証番号を引き出す。暗証番号を入力すると、=object.name=のロックを開錠する。</string>
-  <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:590-->
-  <string ID="You can't unlock =object.t=.">=object.name=をのロックを開錠することはできない。</string>
-  <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:741-->
-  <string ID="=subject.T= cannot be closed.">=subject.name=を閉めることができない。</string>
-  <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:757-->
-  <string ID="You cannot close =object.t==reason=.">=reason=、=object.name=を閉めることができない。</string>
-  <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:778-->
-  <string ID="=subject.T= cannot be closed with =object.t= in the way.">=object.name=が邪魔になっていると=subject.name=を閉めることができない。</string>
-  <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:814-->
-  <string ID="=subject.T= cannot be closed with =object.t= in the way to the =direction=.">=object.name=が=direction=側にいると=subject.name=を閉めることができない。</string>
-  <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:995-->
+  <string ID="door:You cannot open =object.t=.">=object.を=開けることはできない。</string>
+  <string ID="You are out of phase with =object.t=.">=object.と=位相がずれている。</string>
+  <string ID="You cannot reach =object.t=.">=object.に=手が[届\とど]きない。</string>
+  <string ID="You can't unlock =object.t= from a distance.">遠くから=object.を=開錠することはできない。</string>
+  <string ID="You unlock =object.t=.">=object.の=のロックを開錠する。</string>
+  <!--could maybe use 連動する for "interface" verb?-->
+  <string ID="You interface with =object.t= and unlock =object.them=.">=object.と=インターフェースしてロックを開錠する。</string>
+  <string ID="You lay your hand upon =object.t= and draw forth =object.its= passcode. You enter the code and =object.does:unlock=.">=object.に=手をかけ、暗証番号を引き出す。暗証番号を入力すると、=object.の=ロックを開錠する。</string>
+  <string ID="You can't unlock =object.t=.">=object.の=ロックを開錠することはできない。</string>
+  <string ID="=subject.T= cannot be closed.">=subject.を=閉めることができない。</string>
+  <string ID="You cannot close =object.t==reason=.">=reason=、=object.を=閉めることができない。</string>
+  <string ID="=subject.T= cannot be closed with =object.t= in the way.">=object.あなたが=邪魔になっていると=subject.を=閉めることができない。</string>
+  <string ID="=subject.T= cannot be closed with =object.t= in the way =subject.direction#object=.">=object.あなたが==subject.direction#object=側にいると=subject.を=閉めることができない。</string>
   <string ID="You hack =object.t=.">[届：\TODO]You hack =object.t=.</string>
-  <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:1025-->
   <string ID="You hack =object.t= and find tinkering bits &lt;{{|=bits=}}&gt; in =object.them=!">[届：\TODO]You hack =object.t= and find tinkering bits &lt;{{|=bits=}}&gt; in =object.them=!</string>
-  <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:1042-->
   <string ID="You hack =object.t= and find =item.an= stuck in =object.them=!">[届：\TODO]You hack =object.t= and find =item.an= stuck in =object.them=!</string>
-  <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:1068-->
   <string ID="You feel like you're making progress on hacking =object.t= open.">[届：\TODO]You feel like you're making progress on hacking =object.t= open.</string>
-  <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:1084-->
   <string ID="You cannot seem to work out how to hack =object.t=.">[届：\TODO]You cannot seem to work out how to hack =object.t=.</string>
-  <!--Code references: Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:1111-->
   <string ID="Your attempt to hack =object.t= has gone very wrong.">[届：\TODO]Your attempt to hack =object.t= has gone very wrong.</string>
-  <!--Code references:
-Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:1148
-Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:1184
--->
   <string ID="door open reason: because you cannot figure out how" Value="方法が分からないので" />
-  
+
+  <string ID="=subject.Does:take= =object.the.name= from =container.the.name= =subject.direction#container=.">=subject.が==subject.direction#container=ある=container.name=から=object.を=取る。</string>
+
+  <!--
+	Mutation strings
+  -->
+  <string ID="hostile perception verb:sense">sense</string>
+  <string ID="Your adrenaline subsides.">[届：\TODO]Your adrenaline subsides.</string>
+  <string ID="Your adrenaline starts to flow.">[届：\TODO]Your adrenaline starts to flow.</string>
+  <string ID="Release Adrenaline">[届：\TODO]Release Adrenaline</string>
+  <string ID="{{R|adrenaline flowing}}">[届：\TODO]{{R|adrenaline flowing}}</string>
+  <string ID="You can't excavate with hostiles nearby.">[届：\TODO]You can't excavate with hostiles nearby.</string>
+  <string ID="=subject.T= =subject.verb:dig= a passage down.">[届：\TODO]=subject.T= =subject.verb:dig= a passage down.</string>
+  <string ID="You can't excavate the sky!">[届：\TODO]You can't excavate the sky!</string>
+  <string ID="=subject.T= =subject.verb:dig= a passage up.">[届：\TODO]=subject.T= =subject.verb:dig= a passage up.</string>
+  <string ID="=subject.does:fail= to tighten =subject.possessive= =carapace.name=">[届：\TODO]=subject.does:fail= to tighten =subject.possessive= =carapace.name=</string>
+  <string ID="carapace">[届：\TODO]carapace</string>
+  <string ID="You tighten your =carapace.name=. Your AV increases by {{G|=tightFactor.name=}}.">[届：\TODO]You tighten your =carapace.name=. Your AV increases by {{G|=tightFactor.name=}}.</string>
+  <string ID="=subject.does:tighten= =subject.possesive= =carapace.name=">[届：\TODO]=subject.does:tighten= =subject.possesive= =carapace.name=</string>
+  <string ID="=carapace.does:loosen=. =subject.Name's= AV decreases by {{R|=tightFactor.name=}}.">[届：\TODO]=carapace.does:loosen=. =subject.Name's= AV decreases by {{R|=tightFactor.name=}}.</string>
+  <string ID="=subject.Name's= =carapace.does:loosen=.">[届：\TODO]=subject.Name's= =carapace.does:loosen=.</string>
+  <string ID="=subject.Does:discharge= =amount= units of electrical charge!">[届：\TODO]=subject.Does:discharge= =amount= units of electrical charge!</string>
+  <string ID="=subject.Does:discharge= an electrical arc!">[届：\TODO]=subject.Does:discharge= an electrical arc!</string>
+  <string ID="Discharge [=charge= charge]">[届：\TODO]Discharge [=charge= charge]</string>
+  <string ID="mutation sleep gas ability name:Release Sleep Gas">[届：\TODO]Release Sleep Gas</string>
+  <string ID="mutation corrosive gas abilty name:Release Corrosive Gas">[届：\TODO]Release Corrosive Gas</string>
+  <string ID="mutation plasma gas abilty name:Release Plasma">[届：\TODO]Release Plasma</string>
+  <string ID="mutation poison gas:Release Poison Gas">[届：\TODO]Release Poison Gas</string>
+  <string ID="mutation defoliant gas ability name:Release Defoliant">[届：\TODO]Release Defoliant</string>
+  <string ID="mutation fungicide gas ability name:Release Fungicide">[届：\TODO]Release Fungicide</string>
+  <string ID="mutation confusion gas ability name:Release Confusion Gas">[届：\TODO]Release Confusion Gas</string>
+  <string ID="mutation normality gas ability name:Release Normality Gas">[届：\TODO]Release Normality Gas</string>
+  <string ID="mutation glitter dust ability name:Release Glitter Dust">[届：\TODO]Release Glitter Dust</string>
+  <string ID="mutation gas generation display name:=gas.Name= Generation">[届：\TODO]=gas.Name= Generation</string>
+  <string ID="mutation gas generation level text effect:Increased =description=">[届：\TODO]Increased =description=</string>
+  <string ID="mutation gas generation level text effect:Decreased =description=">[届：\TODO]Decreased =description=</string>
+  <string ID="mutation gas generation ability name:Gas Generation">[届：\TODO]Gas Generation</string>
+  <string ID="=subject.Does:stop= releasing =gasdisplayname=.">[届：\TODO]=subject.Does:stop= releasing =gasdisplayname=.</string>
+  <string ID="=subject.Does:start= releasing =gasdisplayname=.">[届：\TODO]=subject.Does:start= releasing =gasdisplayname=.</string>
+  <string ID="hostile perception verb:hear">[届：\TODO]hear</string>
+  <string ID="hostile perception verb:smell">[届：\TODO]smell</string>
+  <string ID="=subject.An= =subject.verb#ArriveVerb= =subject.direction=.">[届：\TODO]=subject.An= =subject.verb#ArriveVerb= =subject.direction=.</string>
+
   <!--
 	Keybind strings
   -->
-
-  <!--Code references: Assets/XRL Application/World/Text/Delegates.cs:449-->
   <string ID="keybind:unknown key">不明なキー</string>
-  <!--Code references: Assets/XRL Application/World/Text/Delegates.cs:464-->
   <string ID="keybind:{{W|Alt}}">{{W|ＡＬＴ}}</string>
-  
+
   <!--
 	WorldBuilder strings
   -->
-
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:234-->
-  <string ID="Generating lairs...">隠れ家を生成中…</string>
-  <!--Code references:
-Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:301
-Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:336
-Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2670
--->
+  <string ID="Generating lairs...">巣窟を生成中…</string>
   <string ID="You notice some ruins nearby. Would you like to investigate?">[届：\TODO]You notice some ruins nearby. Would you like to investigate?</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:360-->
   <string ID="=goatfolkvillagename=, goatfolk village">[届：\TODO]=goatfolkvillagename=, goatfolk village</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:371-->
   <string ID="You smell roasted boar nearby. Would you like to investigate?">[届：\TODO]You smell roasted boar nearby. Would you like to investigate?</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:393-->
   <string ID="=villagename=, goatfolk haunt">[届：\TODO]=villagename=, goatfolk haunt</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:402-->
   <string ID="You experience a sense memory of roasted boar smell. Would you like to investigate?">[届：\TODO]You experience a sense memory of roasted boar smell. Would you like to investigate?</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1041-->
   <string ID=" {{K|-learned from =factionname=}}" Value="[届：\TODO] {{K|-learned from =factionname=}}" />
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1048-->
   <string ID="You discover an abandoned village. Would you like to investigate?">[届：\TODO]You discover an abandoned village. Would you like to investigate?</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1052-->
   <string ID="You discover a village. Would you like to investigate?">[届：\TODO]You discover a village. Would you like to investigate?</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1269-->
   <string ID="You discover =regionName=.">[届：\TODO]You discover =regionName=.</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1289-->
   <string ID=" {{K|-known by =faction.t:Joppa=}}" Value="[届：\TODO] {{K|-known by =faction.t:Joppa=}}" />
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1292-->
   <string ID="You discover some historic ruins. Would you like to investigate?">[届：\TODO]You discover some historic ruins. Would you like to investigate?</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1386-->
   <string ID="sultan dungeon:liminal floor">[届：\TODO]liminal floor</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1634-->
-  <string ID="Building forts...">[届：\TODO]Building forts...</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1646-->
-  <string ID="the snapjaw who wields {{R-r-K-y-Y sequence|Stopsvalinn}}">[届：\TODO]the snapjaw who wields {{R-r-K-y-Y sequence|Stopsvalinn}}</string>
-  <!--Code references:
-Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1658
-Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1662
--->
-  <string ID="a snapjaw fort">[届：\TODO]a snapjaw fort</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1726-->
-  <string ID="Building farms...">[届：\TODO]Building farms...</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1758-->
+  <string ID="Building forts...">砦を建設中…</string>
+  <string ID="the snapjaw who wields {{R-r-K-y-Y sequence|Stopsvalinn}}">{{R-r-K-y-Y sequence|ストップスヴァリン}}を振るうパクッと口</string>
+  <string ID="a snapjaw fort">パクッと口の砦</string>
+  <string ID="Building farms...">農場を建設中…</string>
   <string ID="the lair of {{M|Oboroqoru, Ape God}}">[届：\TODO]the lair of {{M|Oboroqoru, Ape God}}</string>
-  <!--Code references:
-Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1763
-Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1961
-Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1992
-Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:3268
--->
   <string ID="You discover a lair. Would you like to investigate?">[届：\TODO]You discover a lair. Would you like to investigate?</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1787-->
   <string ID="the lair of Oboroqoru, Ape God">[届：\TODO]the lair of Oboroqoru, Ape God</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1861-->
   <string ID="the mouth of {{M|Shug'ruith the Burrower}}">[届：\TODO]the mouth of {{M|Shug'ruith the Burrower}}</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1867-->
   <string ID="You come upon a yawning pit. Would you like to investigate?">[届：\TODO]You come upon a yawning pit. Would you like to investigate?</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1939-->
   <string ID="the cradle of {{M|Shug'ruith the Burrower}}">[届：\TODO]the cradle of {{M|Shug'ruith the Burrower}}</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1957-->
   <string ID="the chuppah of {{M|Girsh Qas and Girsh Qon}}">[届：\TODO]the chuppah of {{M|Girsh Qas and Girsh Qon}}</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1988-->
   <string ID="the cradle of {{M|Girsh Rermadon}}">[届：\TODO]the cradle of {{M|Girsh Rermadon}}</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2024-->
   <string ID="the cradle of {{M|Girsh Agolgot}}">[届：\TODO]the cradle of {{M|Girsh Agolgot}}</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2041-->
   <string ID="the cradle of {{M|Girsh Bethsaida}}">[届：\TODO]the cradle of {{M|Girsh Bethsaida}}</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2088-->
   <string ID="the village lair of {{M|Mamon Souldrinker}}">[届：\TODO]the village lair of {{M|Mamon Souldrinker}}</string>
-  <!--Code references:
-Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2174
-Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2194
-Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2243
-Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2254
--->
   <string ID="Bey Lah">[届：\TODO]Bey Lah</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2193-->
   <string ID="outskirts">[届：\TODO]outskirts</string>
-  <!--Code references:
-Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2276
-Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2284
--->
   <string ID="Hydropon">[届：\TODO]Hydropon</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2296-->
   <string ID="the Hydropon">[届：\TODO]the Hydropon</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2306-->
   <string ID="Hamilcrab's shop">[届：\TODO]Hamilcrab's shop</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2580-->
   <string ID="Generating village history...">[届：\TODO]Generating village history...</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2594-->
   <string ID="some flattened remains">[届：\TODO]some flattened remains</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2628-->
   <string ID="a secluded merchant from the Consortium of Phyta">[届：\TODO]a secluded merchant from the Consortium of Phyta</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2648-->
   <string ID="the Ruin of House Isner">[届：\TODO]the Ruin of House Isner</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2663-->
   <string ID="Gyl">[届：\TODO]Gyl</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2666-->
   <string ID="Recoming nook at Gyl">[届：\TODO]Recoming nook at Gyl</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2689-->
-  <string ID="a {{w|dromad}} caravan">[届：\TODO]a {{w|dromad}} caravan</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2699-->
+  <string ID="a {{w|dromad}} caravan">{{w|遊牧駝民}}のキャラバン</string>
   <string ID="Kindrish, the ancestral bracelet of the hindren">[届：\TODO]Kindrish, the ancestral bracelet of the hindren</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2723-->
-  <string ID="a {{g|slime}} bog">[届：\TODO]a {{g|slime}} bog</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2728-->
-  <string ID="some {{fiery|flaming}} {{K|tar}} pits">[届：\TODO]some {{fiery|flaming}} {{K|tar}} pits</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2733-->
-  <string ID="a {{rusty|rust}} bog">[届：\TODO]a {{rusty|rust}} bog</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2738-->
-  <string ID="a {{m|fungus}} forest">[届：\TODO]a {{m|fungus}} forest</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2742-->
+  <string ID="a {{g|slime}} bog">{{g|滑り}}の沼地</string>
+  <string ID="some {{fiery|flaming}} {{K|tar}} pits">{{fiery|燃える}}{{K|タール}}ピット</string>
+  <string ID="a {{rusty|rust}} bog">{{rusty|錆び}}の沼地</string>
+  <string ID="a {{m|fungus}} forest">{{m|菌類}}の森</string>
   <string ID="=biome.a= region">[届：\TODO]=biome.a= region</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:3121-->
-  <string ID="lair noun:lair">[届：\TODO]lair</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:3123-->
-  <string ID="the =lairname= of =subject.refname:long:withTitles:LairName=">[届：\TODO]the =lairname= of =subject.refname:long:withTitles:LairName=</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:3142-->
-  <string ID="the lair of =subject.refname:long:withTitles:LairName|strip=">[届：\TODO]the lair of =subject.refname:long:withTitles:LairName|strip=</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:3222-->
-  <string ID="lair">[届：\TODO]lair</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:3998-->
-  <string ID="Generating deep history...">[届：\TODO]Generating deep history...</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:4002-->
-  <string ID="Generating historical sites...">[届：\TODO]Generating historical sites...</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:4035-->
-  <string ID="abandoned village">[届：\TODO]abandoned village</string>
-  <!--Code references: Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:4046-->
-  <string ID="salt marsh">[届：\TODO]salt marsh</string>
+  <string ID="lair noun:lair">巣窟</string>
+  <string ID="the =lairname= of =subject.refname:long:withTitles:LairName=">=subject.refname:long:withTitles:LairName=の=lairname</string>
+  <string ID="the lair of =subject.refname:long:withTitles:LairName|strip=">=subject.refname:long:withTitles:LairName|strip=の巣窟</string>
+  <string ID="lair">巣窟</string>
+  <string ID="Generating deep history...">深い歴史を生成中…</string>
+  <string ID="Generating historical sites...">史跡を生成中…</string>
+  <string ID="abandoned village">廃村</string>
+  <string ID="salt marsh">塩性湿地</string>
 </strings>

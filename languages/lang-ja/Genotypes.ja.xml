@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <genotypes Lang="ja" Encoding="utf-8">
 
-  <genotype Name="Mutated Human" DisplayName="[突然変異\とつぜんへんい]した[人間\にんげん]">
-    <stat Name="Strength" ChargenDescription="Your {{W|[筋力\きんりょく]}} score determines how effectively you penetrate your opponents' armor with melee attacks, how much damage your melee attacks do, your ability to resist forced movement, and your carry capacity."/>
-    <stat Name="Agility" ChargenDescription="Your {{W|[敏捷力\びんしょう力]}} score determines your accuracy with both melee and ranged weapons and your ability to dodge attacks."/>
-    <stat Name="Toughness" ChargenDescription="Your {{W|[忍耐力\にんたいりょく]}} score determines your number of hit points, your natural healing rate, and your ability to resist poison and disease."/>
-    <stat Name="Intelligence" ChargenDescription="Your {{W|[知力\ちりょく]}} score determines your number of skill points and your ability to examine artifacts."/>
-    <stat Name="Willpower" ChargenDescription="Your {{W|[意志力\いしりょく]}} score modifies the cooldowns of your activated abilities, determines your ability to resist mental attacks, and modifies your natural healing rate."/>
-    <stat Name="Ego" ChargenDescription="Your {{W|[魅力\みりょく]}} score determines the potency of your mental mutations, your ability to haggle with merchants, and your ability to dominate the wills of other living creatures."/>
+  <genotype Name="Mutated Human" DisplayName="突然変異した人間">
+    <stat Name="Strength" ChargenDescription="Your {{W|筋力}} score determines how effectively you penetrate your opponents' armor with melee attacks, how much damage your melee attacks do, your ability to resist forced movement, and your carry capacity."/>
+    <stat Name="Agility" ChargenDescription="Your {{W|敏捷力}} score determines your accuracy with both melee and ranged weapons and your ability to dodge attacks."/>
+    <stat Name="Toughness" ChargenDescription="Your {{W|忍耐力}} score determines your number of hit points, your natural healing rate, and your ability to resist poison and disease."/>
+    <stat Name="Intelligence" ChargenDescription="Your {{W|知力}} score determines your number of skill points and your ability to examine artifacts."/>
+    <stat Name="Willpower" ChargenDescription="Your {{W|意志力}} score modifies the cooldowns of your activated abilities, determines your ability to resist mental attacks, and modifies your natural healing rate."/>
+    <stat Name="Ego" ChargenDescription="Your {{W|魅力}} score determines the potency of your mental mutations, your ability to haggle with merchants, and your ability to dominate the wills of other living creatures."/>
     <!-- extrainfo tags get added to the base ones instead of replacing -->
     <removeextrainfo>Mutations</removeextrainfo>
     <removeextrainfo>Moderate starting attributes</removeextrainfo>
@@ -18,12 +18,12 @@
   </genotype>
 
   <genotype Name="True Kin" DisplayName="[届：\TODO]True Kin">
-    <stat Name="Strength" ChargenDescription="Your {{W|[筋力\きんりょく]}} score determines how effectively you penetrate your opponents' armor with melee attacks, how much damage your melee attacks do, your ability to resist forced movement, and your carry capacity."/>
-    <stat Name="Agility" ChargenDescription="Your {{W|[敏捷力\びんしょう力]}} score determines your accuracy with both melee and ranged weapons and your ability to dodge attacks."/>
-    <stat Name="Toughness" ChargenDescription="Your {{W|[忍耐力\にんたいりょく]}} score determines your number of hit points, your natural healing rate, and your ability to resist poison and disease."/>
-    <stat Name="Intelligence" ChargenDescription="Your {{W|[知力\ちりょく]}} score determines your number of skill points and your ability to examine artifacts."/>
-    <stat Name="Willpower" ChargenDescription="Your {{W|[意志力\いしりょく]}} score modifies the cooldowns of your activated abilities, determines your ability to resist mental attacks, and modifies your natural healing rate."/>
-    <stat Name="Ego" ChargenDescription="Your {{W|[魅力\みりょく]}} score determines the potency of your ability to haggle with merchants, and your ability to dominate the wills of other living creatures."/>
+    <stat Name="Strength" ChargenDescription="Your {{W|筋力}} score determines how effectively you penetrate your opponents' armor with melee attacks, how much damage your melee attacks do, your ability to resist forced movement, and your carry capacity."/>
+    <stat Name="Agility" ChargenDescription="Your {{W|敏捷力}} score determines your accuracy with both melee and ranged weapons and your ability to dodge attacks."/>
+    <stat Name="Toughness" ChargenDescription="Your {{W|忍耐力}} score determines your number of hit points, your natural healing rate, and your ability to resist poison and disease."/>
+    <stat Name="Intelligence" ChargenDescription="Your {{W|知力}} score determines your number of skill points and your ability to examine artifacts."/>
+    <stat Name="Willpower" ChargenDescription="Your {{W|意志力}} score modifies the cooldowns of your activated abilities, determines your ability to resist mental attacks, and modifies your natural healing rate."/>
+    <stat Name="Ego" ChargenDescription="Your {{W|魅力}} score determines the potency of your ability to haggle with merchants, and your ability to dominate the wills of other living creatures."/>
     <removeextrainfo>High starting attributes</removeextrainfo>
     <removeextrainfo>Access to cybernetics</removeextrainfo>
     <removeextrainfo>{{C|20}} bonus skill points each level</removeextrainfo>

@@ -28,8 +28,8 @@ Comments should be deleted when copied to a new translation table.
   <string ID="🧭:SE">南東,[南東\なんとう]</string>
   <string ID="🧭:U">上,[上\うえ]</string>
   <string ID="🧭:D">下,[下\した]</string>
-  <string ID="🧭:.">[此処\ここ]</string>
-  <string ID="🧭:?">[何処\どこ]か</string>
+  <string ID="🧭:.">ここ,[此処\ここ]</string>
+  <string ID="🧭:?">どこか,[何処\どこ]か</string>
 
 <!-- biomes & regions -->
   <string ID="glossary:The Great Salt Desert">大の塩砂漠,[大\だい]の[塩\しお][砂漠\さばく]</string>
@@ -73,8 +73,10 @@ Comments should be deleted when copied to a new translation table.
 
 <!-- religion -->
   <string ID="glossary:convert">への改宗者,[改心者\かいしゅうしゃ]</string>
-  <string ID="glossary:Mechanimism">機械(精)霊信仰,[機械\きかい][精霊\せいれい][信仰\しんこう]</string>
+  <string ID="glossary:Mechanimism">機械(精)霊信仰,[機械\きかい][(精)霊\(せい)れい][信仰\しんこう]</string>
   <string ID="glossary:Mechanimist convert">機構霊信仰への改宗者</string>  
+  <!-- "The <profession> who is a convert to <faith>": "<faith>への改宗者である<profession>" -->
+  <string ID="glossary:watervine farmer and Mechanimist convert">機構霊信仰への改宗者である水草農家</string>
 
 <!-- references to W. B. Yeats "The Second Coming" -->
   <string ID="glossary:widening gyre">広がる渦</string>

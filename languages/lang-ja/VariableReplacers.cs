@@ -129,6 +129,21 @@ namespace LanguagesOfQud
             return Context.Explicit + "は";
         }
 
+            // adding a comma 、after は
+            [VariableObjectReplacer]
+        public static string あなたは、(DelegateContext Context)
+        {
+            if (Context.Target is GameObject target)
+            {
+                if (target.IsPlayer())
+                {
+                    return "あなたは、";
+                }
+                return GetDisplayNameOf(target) + "は、";
+            }
+            return Context.Explicit + "は、";
+        }
+
         [VariableObjectReplacer]
         public static string あなたが(DelegateContext Context)
         {

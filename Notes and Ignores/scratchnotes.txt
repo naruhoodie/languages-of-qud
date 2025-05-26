@@ -37,6 +37,8 @@ checking afterwards:
 	<string[^\>]+>[^\[][^\<届]+<\/string>
 
 VS Code
+regexp for removing ruby text tags (except the TODOs):
+\[([^届\\]+)\\[^\]]+\]	$1
 regexp for processing Naming.xml namingstyle elements:
 (Name=")([^"]+)("(?: Weight="[0-9]+")? \/>)	$1$3<!-- Original="$2" -->
 regexp for adding DisplayName to mutations:
