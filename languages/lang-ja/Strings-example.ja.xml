@@ -156,7 +156,7 @@ Caves of Qud code extracted string table.
   <string ID="Help">ヘルプ</string>
   <string ID="Language (=currentLanguage=)">言語（=currentLanguage=）</string>
   <string ID="Select Language">言語を選択</string>
-  <string ID="Note: Playing a saved game in a language other than that game's original language will result in partial and incomplete translations.">注意：『キャアァ』『キャアァ』『キャアァ』『キャアァ』『キャアァ』『キャアァ』『キャアァ』『キャアァ』『キャアァ』セーブデータをゲームのオリジナル言語以外の言語でプレイすると、翻訳が不完全または部分的になってしまいます。</string>
+  <string ID="Note: Playing a saved game in a language other than that game's original language will result in partial and incomplete translations.&#xA;&#xA;Changing language requires restart." Value="注意：セーブデータをゲームのオリジナル言語以外の言語でプレイすると、翻訳が不完全または部分的になってしまいます。&#xA;&#xA;Changing language requires restart." />
   <string ID="That save file looks like it's from an older save format revision (=gameVersion=). Sorry!&#xA;&#xA;You can probably change to a previous branch in your game client and get it to load if you want to finish it off." Value="[届：\TODO]That save file looks like it's from an older save format revision (=gameVersion=). Sorry!&#xA;&#xA;You can probably change to a previous branch in your game client and get it to load if you want to finish it off." />
   <string ID="Are you sure you want to quit?">本当に終了してもよろしいですか？</string>
   <string ID="navigate">航行する</string>
@@ -342,15 +342,15 @@ Caves of Qud code extracted string table.
   <!--
 	Journal strings
   -->
-  <string ID="journal category:Artifacts">[届：\TODO]Artifacts</string>
-  <string ID="journal category:Historic Sites">[届：\TODO]Historic Sites</string>
-  <string ID="journal category:Lairs">[届：\TODO]Lairs</string>
-  <string ID="journal category:Merchants">[届：\TODO]Merchants</string>
-  <string ID="journal category:Natural Features">[届：\TODO]Natural Features</string>
-  <string ID="journal category:Oddities">[届：\TODO]Oddities</string>
-  <string ID="journal category:Ruins with Becoming Nooks">[届：\TODO]Ruins with Becoming Nooks</string>
-  <string ID="journal category:Ruins">[届：\TODO]Ruins</string>
-  <string ID="journal category:Settlements">[届：\TODO]Settlements</string>
+  <string ID="journal category:Artifacts">遺物</string>
+  <string ID="journal category:Historic Sites">史跡</string>
+  <string ID="journal category:Lairs">巣窟</string>
+  <string ID="journal category:Merchants">商者</string>
+  <string ID="journal category:Natural Features">地勢</string>
+  <string ID="journal category:Oddities">奇妙であること</string>
+  <string ID="journal category:Ruins with Becoming Nooks">成る隅のある廃墟</string>
+  <string ID="journal category:Ruins">廃墟</string>
+  <string ID="journal category:Settlements">集落</string>
 
   <!--
 	Effect and spot strings
@@ -429,7 +429,7 @@ Caves of Qud code extracted string table.
   <!--
 	Mutation strings
   -->
-  <string ID="hostile perception verb:sense">sense</string>
+  <string ID="hostile perception verb:sense">[届：\TODO]sense</string>
   <string ID="Your adrenaline subsides.">[届：\TODO]Your adrenaline subsides.</string>
   <string ID="Your adrenaline starts to flow.">[届：\TODO]Your adrenaline starts to flow.</string>
   <string ID="Release Adrenaline">[届：\TODO]Release Adrenaline</string>
@@ -441,12 +441,15 @@ Caves of Qud code extracted string table.
   <string ID="=subject.does:fail= to tighten =subject.possessive= =carapace.name=">[届：\TODO]=subject.does:fail= to tighten =subject.possessive= =carapace.name=</string>
   <string ID="carapace">[届：\TODO]carapace</string>
   <string ID="You tighten your =carapace.name=. Your AV increases by {{G|=tightFactor.name=}}.">[届：\TODO]You tighten your =carapace.name=. Your AV increases by {{G|=tightFactor.name=}}.</string>
-  <string ID="=subject.does:tighten= =subject.possesive= =carapace.name=">[届：\TODO]=subject.does:tighten= =subject.possesive= =carapace.name=</string>
+  <string ID="=subject.does:tighten= =subject.possessive= =carapace.name=">[届：\TODO]=subject.does:tighten= =subject.possessive= =carapace.name=</string>
   <string ID="=carapace.does:loosen=. =subject.Name's= AV decreases by {{R|=tightFactor.name=}}.">[届：\TODO]=carapace.does:loosen=. =subject.Name's= AV decreases by {{R|=tightFactor.name=}}.</string>
   <string ID="=subject.Name's= =carapace.does:loosen=.">[届：\TODO]=subject.Name's= =carapace.does:loosen=.</string>
   <string ID="=subject.Does:discharge= =amount= units of electrical charge!">[届：\TODO]=subject.Does:discharge= =amount= units of electrical charge!</string>
   <string ID="=subject.Does:discharge= an electrical arc!">[届：\TODO]=subject.Does:discharge= an electrical arc!</string>
   <string ID="Discharge [=charge= charge]">[届：\TODO]Discharge [=charge= charge]</string>
+  <string ID="=squareSize=x=squareSize=">[届：\TODO]=squareSize=x=squareSize=</string>
+  <string ID="=subject.Does:emit= an electromagnetic pulse.">[届：\TODO]=subject.Does:emit= an electromagnetic pulse.</string>
+  <string ID="EMP Ability Name:Emit Pulse">[届：\TODO]Emit Pulse</string>
   <string ID="mutation sleep gas ability name:Release Sleep Gas">[届：\TODO]Release Sleep Gas</string>
   <string ID="mutation corrosive gas abilty name:Release Corrosive Gas">[届：\TODO]Release Corrosive Gas</string>
   <string ID="mutation plasma gas abilty name:Release Plasma">[届：\TODO]Release Plasma</string>
@@ -474,26 +477,26 @@ Caves of Qud code extracted string table.
 
   <!--
 	WorldBuilder strings
-  -->
+  -->You discover the Dead Sea.
   <string ID="Generating lairs...">巣窟を生成中…</string>
-  <string ID="You notice some ruins nearby. Would you like to investigate?">[届：\TODO]You notice some ruins nearby. Would you like to investigate?</string>
-  <string ID="=goatfolkvillagename=, goatfolk village">[届：\TODO]=goatfolkvillagename=, goatfolk village</string>
-  <string ID="You smell roasted boar nearby. Would you like to investigate?">[届：\TODO]You smell roasted boar nearby. Would you like to investigate?</string>
-  <string ID="=villagename=, goatfolk haunt">[届：\TODO]=villagename=, goatfolk haunt</string>
+  <string ID="You notice some ruins nearby. Would you like to investigate?">近くに廃墟があることに気づく。調査してみるか？</string>
+  <string ID="=goatfolkvillagename=, goatfolk village">山羊族の村の=goatfolkvillagename=</string>
+  <string ID="You smell roasted boar nearby. Would you like to investigate?">近くでイノシシのチャーシューの匂いがする。調査してみるか？</string>
+  <string ID="=villagename=, goatfolk haunt">山羊族の幽霊巣の=villagename=</string>
   <string ID="You experience a sense memory of roasted boar smell. Would you like to investigate?">[届：\TODO]You experience a sense memory of roasted boar smell. Would you like to investigate?</string>
   <string ID=" {{K|-learned from =factionname=}}" Value="[届：\TODO] {{K|-learned from =factionname=}}" />
-  <string ID="You discover an abandoned village. Would you like to investigate?">[届：\TODO]You discover an abandoned village. Would you like to investigate?</string>
-  <string ID="You discover a village. Would you like to investigate?">[届：\TODO]You discover a village. Would you like to investigate?</string>
-  <string ID="You discover =regionName=.">[届：\TODO]You discover =regionName=.</string>
+  <string ID="You discover an abandoned village. Would you like to investigate?">廃村を発見した。調査してみるか？</string>
+  <string ID="You discover a village. Would you like to investigate?">村を発見した。調査してみるか？</string>
+  <string ID="You discover =regionName=.">=regionName=を発見した。</string>
   <string ID=" {{K|-known by =faction.t:Joppa=}}" Value="[届：\TODO] {{K|-known by =faction.t:Joppa=}}" />
-  <string ID="You discover some historic ruins. Would you like to investigate?">[届：\TODO]You discover some historic ruins. Would you like to investigate?</string>
+  <string ID="You discover some historic ruins. Would you like to investigate?">歴史的な遺跡を発見した。調査してみるか？</string>
   <string ID="sultan dungeon:liminal floor">[届：\TODO]liminal floor</string>
   <string ID="Building forts...">砦を建設中…</string>
   <string ID="the snapjaw who wields {{R-r-K-y-Y sequence|Stopsvalinn}}">{{R-r-K-y-Y sequence|ストップスヴァリン}}を振るうパクッと口</string>
   <string ID="a snapjaw fort">パクッと口の砦</string>
   <string ID="Building farms...">農場を建設中…</string>
-  <string ID="the lair of {{M|Oboroqoru, Ape God}}">[届：\TODO]the lair of {{M|Oboroqoru, Ape God}}</string>
-  <string ID="You discover a lair. Would you like to investigate?">[届：\TODO]You discover a lair. Would you like to investigate?</string>
+  <string ID="the lair of {{M|Oboroqoru, Ape God}}">{{M|猿神オボロコル}}の巣窟</string>
+  <string ID="You discover a lair. Would you like to investigate?">巣窟を発見した。[届：\TODO]You discover a lair. Would you like to investigate?</string>
   <string ID="the lair of Oboroqoru, Ape God">[届：\TODO]the lair of Oboroqoru, Ape God</string>
   <string ID="the mouth of {{M|Shug'ruith the Burrower}}">[届：\TODO]the mouth of {{M|Shug'ruith the Burrower}}</string>
   <string ID="You come upon a yawning pit. Would you like to investigate?">[届：\TODO]You come upon a yawning pit. Would you like to investigate?</string>
@@ -502,18 +505,18 @@ Caves of Qud code extracted string table.
   <string ID="the cradle of {{M|Girsh Rermadon}}">[届：\TODO]the cradle of {{M|Girsh Rermadon}}</string>
   <string ID="the cradle of {{M|Girsh Agolgot}}">[届：\TODO]the cradle of {{M|Girsh Agolgot}}</string>
   <string ID="the cradle of {{M|Girsh Bethsaida}}">[届：\TODO]the cradle of {{M|Girsh Bethsaida}}</string>
-  <string ID="the village lair of {{M|Mamon Souldrinker}}">[届：\TODO]the village lair of {{M|Mamon Souldrinker}}</string>
-  <string ID="Bey Lah">[届：\TODO]Bey Lah</string>
-  <string ID="outskirts">[届：\TODO]outskirts</string>
+  <string ID="the village lair of {{M|Mamon Souldrinker}}">{{M|魂を飲む者のマーモン}}の村の隠れ家</string>
+  <string ID="Bey Lah">ベイ・ラー</string>
+  <string ID="outskirts">の外れ</string>
   <string ID="Hydropon">[届：\TODO]Hydropon</string>
   <string ID="the Hydropon">[届：\TODO]the Hydropon</string>
   <string ID="Hamilcrab's shop">[届：\TODO]Hamilcrab's shop</string>
-  <string ID="Generating village history...">[届：\TODO]Generating village history...</string>
-  <string ID="some flattened remains">[届：\TODO]some flattened remains</string>
+  <string ID="Generating village history...">村の歴史を生成中…</string>
+  <string ID="some flattened remains">平らになった残骸</string>
   <string ID="a secluded merchant from the Consortium of Phyta">[届：\TODO]a secluded merchant from the Consortium of Phyta</string>
   <string ID="the Ruin of House Isner">[届：\TODO]the Ruin of House Isner</string>
-  <string ID="Gyl">[届：\TODO]Gyl</string>
-  <string ID="Recoming nook at Gyl">[届：\TODO]Recoming nook at Gyl</string>
+  <string ID="Gyl">ギール</string>
+  <string ID="Recoming nook at Gyl">ギールの帰る隅</string>
   <string ID="a {{w|dromad}} caravan">{{w|遊牧駝民}}のキャラバン</string>
   <string ID="Kindrish, the ancestral bracelet of the hindren">[届：\TODO]Kindrish, the ancestral bracelet of the hindren</string>
   <string ID="a {{g|slime}} bog">{{g|滑り}}の沼地</string>

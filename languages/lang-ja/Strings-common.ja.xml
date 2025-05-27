@@ -31,7 +31,11 @@ Comments should be deleted when copied to a new translation table.
   <string ID="🧭:.">ここ,[此処\ここ]</string>
   <string ID="🧭:?">どこか,[何処\どこ]か</string>
 
+<!-- foods -->
+  <string ID="glossary:roasted boar">イノシシのチャーシュー,[猪\イノシシ]の[叉焼\チャーシュー]</string>
+
 <!-- biomes & regions -->
+  <string ID="glossary:Moghra'yi">モグラーイ</string>
   <string ID="glossary:The Great Salt Desert">大の塩砂漠,[大\だい]の[塩\しお][砂漠\さばく]</string>
   <string ID="glossary:salt marsh">塩性湿地,[塩性\えんせい][湿地\しっち]</string>
   <string ID="glossary:salt dunes">塩の砂丘,[塩\しお]の[砂丘\さきゅう]</string>
@@ -66,10 +70,13 @@ Comments should be deleted when copied to a new translation table.
   <string ID="glossary:lair">巣窟,[巣窟\そうくつ]</string>
   <string ID="glossary:fort">砦,[砦\とりで]</string>
   <string ID="glossary:hideout">隠れ家,[隠\かく]れ[家\が]</string>
+  <!-- "becoming nook" is for adding cybernetics, "recoming" for returning from REDACTED -->
+  <string ID="glossary:becoming nook">成る隅,[成\な]る[隅\すみ]</string>
+  <string ID="glossary:recoming nook">帰る隅,[帰\かえ]る[隅\すみ]</string>
 
 <!-- creatures -->
   <!-- "putus" - Latin for "pure, unadulterated" -->
-  <string ID="glossary:a Putus Templar">プトス・テンプル騎士団員</string>
+  <string ID="glossary:a Putus Templar">プトゥス・テンプル騎士団員</string>
   <string ID="glossary:mutated human">突然変異した人間,[突然変異\とつぜんへんい]した[人間\にんげん]</string>
   <string ID="glossary:True Kin">真の親族,[真\しん]の[親族\しんぞく]</string>
   <string ID="glossary:snapjaw">パクッと口,パクッと[口\くち]</string>
@@ -78,6 +85,7 @@ Comments should be deleted when copied to a new translation table.
   <string ID="glossary:clam">貝,[貝\かい]</string>
   <string ID="glossary:crab">蟹,[蟹\かに]</string>
   <string ID="glossary:goatfolk">山羊族,[山羊\やぎ][族\ぞく]</string>
+  <string ID="glossary:Oboroqoru, Ape God">猿神オボロコル,[猿神\さるしん]オボロコル</string>
 
 <!-- plants -->
   <string ID="glossary:watervine">水蔓,[水蔓\みずづる]</string>
@@ -85,11 +93,15 @@ Comments should be deleted when copied to a new translation table.
   <string ID="glossary:qudzu">クヅ</string>
 
 <!-- place names -->
+  <!-- from "al-Quds", Arabic for "Jerusalem" -->
   <string ID="glossary:Qud">クド</string>
   <string ID="glossary:Caves of Qud">クドの洞窟</string>
+  <!-- older English name for modern-day Jaffa -->
   <string ID="glossary:Joppa">ジョッパ</string>
   <string ID="glossary:Bethesda Susa">ベトザタ・スーサ</string>
   <string ID="glossary:Bethsaida">ベツサイダ</string>
+  <!-- from Hebrew for "rejoice"? -->
+  <string ID="glossary:Gyl">ギール</string>
 
 <!-- tribes (of Israel) -->
   <string ID="glossary:Issachari">イッサカル族</string>
