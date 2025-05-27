@@ -41,6 +41,24 @@ Comments should be deleted when copied to a new translation table.
   <string ID="glossary:rust bog">錆びの沼地,[錆\さ]びの[沼地\ぬまち]</string>
   <string ID="glossary:fungus forest">菌類の森,[菌類\きんるい]の[森\もり]</string>
 
+<!-- types of sites (from Naming.xml)-->
+  <string ID="site:Banana Grove">バナナ林,バナナ[林\りん]</string>
+  <string ID="site:Baroque Ruins">バロック廃墟,バロック[廃墟\はいきょ]</string>
+  <string ID="site:Deep Jungle">深いジャングル,[深\ふか]いジャングル</string>
+  <string ID="site:Desert Canyon">砂漠の峡谷,[砂漠\さばく]の[峡谷\きょうこく]</string>
+  <string ID="site:Flower Fields">花畑,[花畑\はなばたけ]</string>
+  <string ID="site:Fungal">菌類,[菌類\きんるい]</string>
+  <string ID="site:Hills">丘,[丘\おか]</string>
+  <string ID="site:Jungle">ジャングル</string>
+  <string ID="site:Water">水上,[水上\すいじょう]</string>
+  <string ID="site:Moon Stair">[届：\TODO]Moon Stair</string>
+  <string ID="site:Mountains">山間,[山間\さんかん]</string>
+  <string ID="site:Palladium Reef">[届：\TODO]Palladium Reef</string>
+  <string ID="site:Ruins">廃墟,[廃墟\はいきょ]</string>
+  <string ID="site:Salt Dunes">塩の砂丘,[塩\しお]の[砂丘\さきゅう]</string>
+  <string ID="site:Salt Marsh">塩性湿地,[塩性\えんせい][湿地\しっち]</string>
+  <string ID="site:Spindle">[届：\TODO]Spindle</string>
+
 <!-- types of places -->
   <string ID="glossary:village">村,[村\むら]</string>
   <string ID="glossary:farm">農場,[農場\のうじょう]</string>
@@ -50,13 +68,25 @@ Comments should be deleted when copied to a new translation table.
   <string ID="glossary:hideout">隠れ家,[隠\かく]れ[家\が]</string>
 
 <!-- creatures -->
+  <!-- "putus" - Latin for "pure, unadulterated" -->
+  <string ID="glossary:a Putus Templar">プトス・テンプル騎士団員</string>
+  <string ID="glossary:mutated human">突然変異した人間,[突然変異\とつぜんへんい]した[人間\にんげん]</string>
+  <string ID="glossary:True Kin">真の親族,[真\しん]の[親族\しんぞく]</string>
   <string ID="glossary:snapjaw">パクッと口,パクッと[口\くち]</string>
   <string ID="glossary:dromad">遊牧駝民,[遊牧\ゆうぼく][駝\だ][民\みん]</string>
+  <string ID="glossary:baboon">ヒヒ</string>
+  <string ID="glossary:clam">貝,[貝\かい]</string>
+  <string ID="glossary:crab">蟹,[蟹\かに]</string>
+  <string ID="glossary:goatfolk">山羊族,[山羊\やぎ][族\ぞく]</string>
 
 <!-- plants -->
   <string ID="glossary:watervine">水蔓,[水蔓\みずづる]</string>
+  <!-- should pun on "Qud"-->
+  <string ID="glossary:qudzu">クヅ</string>
 
 <!-- place names -->
+  <string ID="glossary:Qud">クド</string>
+  <string ID="glossary:Caves of Qud">クドの洞窟</string>
   <string ID="glossary:Joppa">ジョッパ</string>
   <string ID="glossary:Bethesda Susa">ベトザタ・スーサ</string>
   <string ID="glossary:Bethsaida">ベツサイダ</string>
@@ -65,7 +95,7 @@ Comments should be deleted when copied to a new translation table.
   <string ID="glossary:Issachari">イッサカル族</string>
   <string ID="glossary:Naphtaali">ナフタリ族</string>
 
-<!-- Judaism -->
+<!-- Judaism & Hebrew -->
   <string ID="glossary:minyan">ミニヤーン</string>
   <string ID="glossary:May their memories bless you.">その人の記憶が祝福でありますように。</string>
   <string ID="glossary:dybbuk">ディバク,[死人の霊\ディバク]</string>
@@ -79,9 +109,14 @@ Comments should be deleted when copied to a new translation table.
   <string ID="glossary:watervine farmer and Mechanimist convert">機構霊信仰への改宗者である水草農家</string>
 
 <!-- references to W. B. Yeats "The Second Coming" -->
-  <string ID="glossary:widening gyre">広がる渦</string>
+  <string ID="glossary:widening gyre">広がる渦,[広\ひろ]がる[渦\うず]</string>
+  <string ID="glossary:the Gyre">ウズ,[渦\ウズ]</string>
 
-  <string ID="glossary:dybbuk">ディバク,[死人の霊\ディバク]</string>
+<!-- Girsh -->
+  <!-- "girsh/qirsh" - Arabic for "shark", related to the verb "qarasha" (chew, gnash, nibble)
+  also a coin of multiple M. Eastern & N. African countries (etymologically unrelated) -->
+  <string ID="glossary:Girsh">ガーシュ</string>
+  <string ID="glossary:girshling">ガーシュ之子</string>
 
   <!-- 中 at the end indicates "in progress" -->
   <string ID="verb:generating">を生成中,(を)[生成中\せいせいちゅう]</string>

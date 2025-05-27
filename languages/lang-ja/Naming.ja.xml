@@ -581,18 +581,18 @@
     <!-- baboon is ヒヒ, monkey sound in Japanese is ウキ -->
     <namestyle Name="Baboon" HyphenationChance="0" TwoNameChance="1" Format="AsIs">
       <prefixes Amount="1-3" Load="Replace">
-        <prefix Name="ゥ" /><!-- Original="oo" -->
-        <prefix Name="ゥー" /><!-- Original="ooo" -->
-        <prefix Name="ォ" /><!-- Original="o" -->
-        <prefix Name="オ" /><!-- Original="oh" -->
-        <prefix Name="オー" /><!-- Original="ooh" -->
+        <prefix Name="ウ" /><!-- Original="oo" -->
+        <prefix Name="ウゥ" /><!-- Original="ooo" -->
+        <prefix Name="オ" Weight="2" /><!-- Original="o" -->
+        <!-- <prefix Name="オ" Original="oh" -->
+        <prefix Name="オォ" /><!-- Original="ooh" -->
         <prefix Name="ホ" /><!-- Original="ho" -->
-        <prefix Name="ホー" /><!-- Original="hoo" -->
+        <prefix Name="ホォ" /><!-- Original="hoo" -->
       </prefixes>
       <infixes Amount="1-3" Load="Replace">
         <infix Name="オ゙" /><!-- Original="O" -->
-        <infix Name="ウ" Weight="2" /><!-- Original="OO" -->
-        <infix Name="ウー" /><!-- Original="OOO" -->
+        <infix Name="ウ゚" Weight="2" /><!-- Original="OO" -->
+        <infix Name="ウ゚ー" /><!-- Original="OOO" -->
         <infix Name="フー" Weight="2" /><!-- Original="HOO" -->
         <infix Name="オ゙ー" /><!-- Original="HOOO" -->
         <infix Name="ア" /><!-- Original="AH" -->
@@ -612,7 +612,7 @@
         <postfix Name="ホー" /><!-- Original="hoo" -->
         <postfix Name="イ" /><!-- Original="e" -->
         <postfix Name="イー" /><!-- Original="ee" -->
-        <postfix Name="キー" /><!-- Original="eee" -->
+        <postfix Name="キー" Weight="4" /><!-- Original="eee" -->
       </postfixes>
     </namestyle>
 
@@ -860,7 +860,7 @@
 
     <namestyle Name="Goatfolk Hero Title">
       <templates Load="Replace">
-        <template Name="*Clan*氏族の山羊族のシャーマン" />
+        <template Name="*Clan*氏族の山羊族のシャーマン" /><!-- Original="the Goatfolk Shaman of Clan *Clan*" -->
       </templates>
       <templatevars>
         <templatevar Name="Clan">
