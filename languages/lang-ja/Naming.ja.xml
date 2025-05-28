@@ -635,16 +635,16 @@
           <value Name="指輪が11輪" />
           <value Name="指輪が12輪" />
         </templatevar>
-        <templatevar Name="Position">
+        <templatevar Name="Position" Load="Replace">
     <!-- NOTE: Position is used to decide on special hero attributes
         and maybe should be treated as a keyword to replace with localized string -->
-          <value Name="[浮気者\うわきもの]" /><!-- Original="Philanderer" -->
-          <value Name="[謎\なぞ]かけ[屋\や]" /><!-- Original="Riddler" -->
-          <value Name="[隠者\いんじゃ]" /><!-- Original="Hermit" -->
-          <value Name="[洗練\せんれん]された[者\じゃ]" /><!-- Original="Sophisticate" -->
-          <value Name="[扇動家\せんどうか]" /><!-- Original="Demagogue" -->
-          <value Name="[王\おう]" /><!-- Original="King" -->
-          <value Name="[女王\じょおう]" /><!-- Original="Queen" -->
+          <value Name="浮気者" /><!-- Original="Philanderer" -->
+          <value Name="謎かけ屋" /><!-- Original="Riddler" -->
+          <value Name="隠者" /><!-- Original="Hermit" -->
+          <value Name="洗練された者" /><!-- Original="Sophisticate" -->
+          <value Name="扇動家" /><!-- Original="Demagogue" -->
+          <value Name="王" /><!-- Original="King" -->
+          <value Name="女王" /><!-- Original="Queen" -->
         </templatevar>
       </templatevars>
     </namestyle>
@@ -847,7 +847,7 @@
         <template Name="*Epithet*" />
       </templates>
       <templatevars Load="Replace">
-        <templatevar Name="Epithet">
+        <templatevar Name="Epithet" Load="Replace">
           <value Name="天体観測者" /><!-- Original="Stargazer" -->
           <value Name="心を噛む者" /><!-- Original="Heartbiter" -->
           <value Name="二度話す者" /><!-- Original="Twicetalker" -->
@@ -863,7 +863,7 @@
         <template Name="*Clan*氏族の山羊族のシャーマン" /><!-- Original="the Goatfolk Shaman of Clan *Clan*" -->
       </templates>
       <templatevars>
-        <templatevar Name="Clan">
+        <templatevar Name="Clan" Load="Replace">
           <value Name="ホトゥール" /><!-- Original="Hotur" -->
           <value Name="アイベックス" /><!-- Original="Ibex" -->
           <value Name="ソル" /><!-- Original="sol" -->
@@ -879,15 +879,15 @@
         <template Name="*Name**Suffix*" Weight="1800" />
         <template Name="*Prefix**Suffix*" Weight="1800" />
         <template Name="*Sultan**Suffix*" Weight="450" />
-        <template Name="*Name*の*Location*" Weight="1125" />
-        <template Name="*Prefix*の*Location*" Weight="1125" />
-        <template Name="*Sultan*の*Location*" Weight="250" />
-        <template Name="*Name*の*Forest*" Weight="1575" />
-        <template Name="*Prefix*の*Forest*" Weight="1575" />
-        <template Name="*Sultan*の*Forest*" Weight="350" />
+        <template Name="*Name**Location*" Weight="1125" />
+        <template Name="*Prefix**Location*" Weight="1125" />
+        <template Name="*Sultan**Location*" Weight="250" />
+        <template Name="*Name**Forest*" Weight="1575" />
+        <template Name="*Prefix**Forest*" Weight="1575" />
+        <template Name="*Sultan**Forest*" Weight="350" />
       </templates>
       <templatevars Load="Replace">
-        <templatevar Name="Prefix">
+        <templatevar Name="Prefix" Load="Replace">
           <value Name="灰" /><!-- Original="Ash" -->
           <value Name="黒" /><!-- Original="Black" -->
           <value Name="血" /><!-- Original="Blood" -->
@@ -903,10 +903,10 @@
           <value Name="星" /><!-- Original="Star" -->
           <value Name="白" /><!-- Original="White" -->
         </templatevar>
-        <templatevar Name="Sultan">
+        <templatevar Name="Sultan" Load="Replace">
           <value Name="レシェフ" /><!-- Original="Resheph" -->
         </templatevar>
-        <templatevar Name="Suffix">
+        <templatevar Name="Suffix" Load="Replace">
           <value Name="バア" Weight="2" /><!-- Original="baa" -->
           <value Name="バアァアァアー" /><!-- Original="baaaaaah" -->
           <value Name="バアァアアー" Weight="3" /><!-- Original="baaaaah" -->
@@ -925,28 +925,28 @@
           <value Name="ラアアー" Weight="3" /><!-- Original="raaah" -->
           <value Name="ラアー" Weight="2" /><!-- Original="raah" -->
         </templatevar>
-        <templatevar Name="Forest">
-          <value Name="林" /><!-- Original="bosk" -->
+        <templatevar Name="Forest" Load="Replace">
+<!--          <value Name="林" />--><!-- Original="bosk" -->
           <value Name="谷" /><!-- Original="dale" -->
           <value Name="谷間" /><!-- Original="dell" -->
-<!--          <value Name="" />--><!-- Original="glade" -->
-<!--          <value Name="" />--><!-- Original="glen" -->
-<!--          <value Name="" />--><!-- Original="gorge" -->
-<!--          <value Name="" />--><!-- Original="grove" -->
-<!--          <value Name="" />--><!-- Original="meadow" -->
-<!--          <value Name="" />--><!-- Original="root" -->
-<!--          <value Name="" />--><!-- Original="vale" -->
-<!--          <value Name="" />--><!-- Original="weald" -->
-<!--          <value Name="" />--><!-- Original="weep" -->
+<!--          <value Name="林間の空き地" />--><!-- Original="glade" -->
+          <value Name="峡" /><!-- Original="glen" --><!-- archaic kanji -->
+          <value Name="渓" /><!-- Original="gorge" -->
+          <value Name="林" /><!-- Original="grove" -->
+          <value Name="草地" /><!-- Original="meadow" -->
+          <value Name="根" /><!-- Original="root" -->
+<!--          <value Name="谷" />--><!-- Original="vale" -->
+          <value Name="森林" /><!-- Original="weald" -->
+          <value Name="枝垂れ" /><!-- Original="weep" --><!-- "weep(ing)" as in a tree -->
           <value Name="森" /><!-- Original="wood" -->
         </templatevar>
-        <templatevar Name="Location">
-          <value Name="曲げ" /><!-- Original="bend" -->
-          <value Name="噛み" /><!-- Original="bite" -->
+        <templatevar Name="Location" Load="Replace">
+          <value Name="湾曲" /><!-- Original="bend" -->
+          <value Name="湾" /><!-- Original="bite" --><!-- is the OG meant to be "bight"? -->
           <value Name="弓" /><!-- Original="bow" -->
           <value Name="割れ目" /><!-- Original="cleft" -->
           <value Name="三日月" /><!-- Original="crescent" -->
-          <value Name="穴" /><!-- Original="deep" -->
+          <value Name="穴" /><!-- Original="deep" --><!-- more lit. "hole, hollow"-->
           <value Name="池" /><!-- Original="pool" -->
           <value Name="星" /><!-- Original="star" -->
           <value Name="空洞" /><!-- Original="void" -->
