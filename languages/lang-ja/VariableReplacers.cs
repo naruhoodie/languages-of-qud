@@ -49,7 +49,7 @@ namespace LanguagesOfQud
             return Context.Explicit + "が";
         }
 
-            // the を(wo) particle for direct objects
+            // the を(wo) particle for direct object
             [VariableObjectReplacer]
         public static string を(DelegateContext Context)
         {
@@ -65,7 +65,7 @@ namespace LanguagesOfQud
             return Context.Explicit + "を";
         }
 
-        // the の(no) particle for possessive/"of" relations
+        // the の(no) particle for possessive/"of" relations, etc.
         [VariableObjectReplacer]
         public static string の(DelegateContext Context)
         {
@@ -81,7 +81,7 @@ namespace LanguagesOfQud
             return Context.Explicit + "の";
         }
 
-        // the と(to) particle
+        // the と(to) particle for "with", "and" lists of nouns, quoting, etc.
         [VariableObjectReplacer]
         public static string と(DelegateContext Context)
         {
@@ -97,9 +97,9 @@ namespace LanguagesOfQud
             return Context.Explicit + "と";
         }
 
-        // the に(ni) particle for locations, "by" relations, etc.
-        [VariableObjectReplacer("に")]
-        public static string にReplacer(DelegateContext Context)
+        // the に(ni) particle for locations, destinations, "by" relations, etc.
+        [VariableObjectReplacer]
+        public static string に(DelegateContext Context)
         {
             if (Context.Target is GameObject target)
             {
@@ -111,6 +111,34 @@ namespace LanguagesOfQud
                 return GetDisplayNameOf(target) + "に";
             }
             return Context.Explicit + "に";
+        }
+
+        // the で(de) particle for location, means, etc.
+        [VariableObjectReplacer]
+        public static string で(DelegateContext Context)
+        {
+            if (Context.Target is GameObject target)
+            {
+                if (target.IsPlayer())
+                {
+                    // Japanese tends to drop 1st- & 2nd-person pronouns
+                    return "";
+                }
+                return GetDisplayNameOf(target) + "で";
+            }
+            return Context.Explicit + "で";
+        }
+
+        // the も(mo) particle for "too", "also", "even"
+        [VariableObjectReplacer]
+        public static string も(DelegateContext Context)
+        {
+            if (Context.Target is GameObject target)
+            {
+                //も is for emphasis; its noun wouldn't be dropped
+                return GetDisplayNameOf(target) + "も";
+            }
+            return Context.Explicit + "も";
         }
 
         // where it'd say あなた(anata) instead of dropping the 2nd-pers pronoun
@@ -212,6 +240,20 @@ namespace LanguagesOfQud
                 return GetDisplayNameOf(target) + "に";
             }
             return Context.Explicit + "に";
+        }
+
+        [VariableObjectReplacer]
+        public static string あなたで(DelegateContext Context)
+        {
+            if (Context.Target is GameObject target)
+            {
+                if (target.IsPlayer())
+                {
+                    return "あなたで";
+                }
+                return GetDisplayNameOf(target) + "で";
+            }
+            return Context.Explicit + "で";
         }
 
         [VariableObjectReplacer(Default = "どこか")]

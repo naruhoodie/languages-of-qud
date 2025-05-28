@@ -5,4 +5,9 @@
     <part Name="Book" ID="UirouUri" />
     <part Name="Commerce" Value="150" />
   </object>
+  <object Name="IsoppuTaiyouToKaze" Inherits="Book">
+    <part Name="Render" DisplayName="{{W|イソップ童話集／太陽と風}}" ColorString="&amp;Y" RenderString="=" RenderLayer="5" Tile="Items/sw_book_2.bmp" TileColor="&amp;y" DetailColor="W" />
+    <part Name="Book" ID="IsoppuTaiyouToKaze" />
+    <part Name="Commerce" Value="150" />
+  </object>
 </objects>
