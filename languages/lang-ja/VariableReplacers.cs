@@ -1,4 +1,5 @@
 using XRL.World;
+using XRL.World.Text;
 using XRL.World.Text.Attributes;
 using XRL.World.Text.Delegates;
 
@@ -13,224 +14,299 @@ namespace LanguagesOfQud
         }
 
         //AllowSecondPerson = false is for using third-person for player,
-            // like in player recipe names, player history
+        // like in player recipe names, player history
 
-            //standard particles
+        //standard particles
 
-            // the は(wa) particle for topic
-            [VariableObjectReplacer]
-        public static string は(DelegateContext Context)
+        /// <summary>
+        /// the は(wa) particle for topic
+        /// </summary>
+        [VariableReplacer("は", Capitalization = false)]
+        [VariableExample("", "Player")]
+        [VariableExample("メフメットは", "Mehmet")]
+        public static string は(VariableContext Context, GameObject target)
         {
-            if (Context.Target is GameObject target)
+            if (target.IsPlayer())
             {
-                if (target.IsPlayer())
-                {
-                    // Japanese tends to drop 1st- & 2nd-person pronouns
-                    return "";
-                }
-                return GetDisplayNameOf(target) + "は";
+                // Japanese tends to drop 1st- & 2nd-person pronouns
+                return "";
             }
-            return Context.Explicit + "は";
+            return GetDisplayNameOf(target) + "は";
         }
 
-        // the が(ga) particle for subject
-        [VariableObjectReplacer]
-        public static string が(DelegateContext Context)
+        /// <summary>
+        /// the は(wa) particle for topic
+        /// </summary>
+        [VariableReplacer("は", Capitalization = false)]
+        public static string は(VariableContext Context, ExplicitObject Explicit)
         {
-            if (Context.Target is GameObject target)
-            {
-                if (target.IsPlayer())
-                {
-                    // Japanese tends to drop 1st- & 2nd-person pronouns
-                    return "";
-                }
-                return GetDisplayNameOf(target) + "が";
-            }
-            return Context.Explicit + "が";
+            return Explicit.Name + "は";
         }
 
-            // the を(wo) particle for direct objects
-            [VariableObjectReplacer]
-        public static string を(DelegateContext Context)
+        /// <summary>
+        /// the が(ga) particle for subject
+        /// </summary>
+        [VariableReplacer("が", Capitalization = false)]
+        [VariableExample("", "Player")]
+        [VariableExample("メフメットが", "Mehmet")]
+        public static string が(VariableContext Context, GameObject target)
         {
-            if (Context.Target is GameObject target)
+            if (target.IsPlayer())
             {
-                if (target.IsPlayer())
-                {
-                    // Japanese tends to drop 1st- & 2nd-person pronouns
-                    return "";
-                }
-                return GetDisplayNameOf(target) + "を";
+                // Japanese tends to drop 1st- & 2nd-person pronouns
+                return "";
             }
-            return Context.Explicit + "を";
+            return GetDisplayNameOf(target) + "が";
         }
 
-        // the の(no) particle for possessive/"of" relations
-        [VariableObjectReplacer]
-        public static string の(DelegateContext Context)
+        /// <summary>
+        /// the が(ga) particle for subject
+        /// </summary>
+        [VariableReplacer("が", Capitalization = false)]
+
+        public static string が(VariableContext Context, ExplicitObject target)
         {
-            if (Context.Target is GameObject target)
-            {
-                if (target.IsPlayer())
-                {
-                    // Japanese tends to drop 1st- & 2nd-person pronouns
-                    return "";
-                }
-                return GetDisplayNameOf(target) + "の";
-            }
-            return Context.Explicit + "の";
+            return target.Name + "が";
         }
 
-        // the と(to) particle
-        [VariableObjectReplacer]
-        public static string と(DelegateContext Context)
+        /// <summary>
+        /// the を(wo) particle for direct objects
+        /// </summary>
+        [VariableReplacer("を", Capitalization = false)]
+        [VariableExample("", "Player")]
+        [VariableExample("メフメットを", "Mehmet")]
+        public static string を(VariableContext Context, GameObject target)
         {
-            if (Context.Target is GameObject target)
+            if (target.IsPlayer())
             {
-                if (target.IsPlayer())
-                {
-                    // Japanese tends to drop 1st- & 2nd-person pronouns
-                    return "";
-                }
-                return GetDisplayNameOf(target) + "と";
+                // Japanese tends to drop 1st- & 2nd-person pronouns
+                return "";
             }
-            return Context.Explicit + "と";
+            return GetDisplayNameOf(target) + "を";
+        }
+        
+        /// <summary>
+        /// the を(wo) particle for direct objects
+        /// </summary>
+        [VariableReplacer("を", Capitalization = false)]
+        public static string を(VariableContext Context, ExplicitObject Explicit)
+        {
+            return Explicit.Name + "を";
         }
 
-        // the に(ni) particle for locations, "by" relations, etc.
-        [VariableObjectReplacer("に")]
-        public static string にReplacer(DelegateContext Context)
+        /// <summary>
+        /// the の(no) particle for possessive/"of" relations
+        /// </summary>
+        [VariableReplacer("の", Capitalization = false)]
+        public static string の(VariableContext Context, GameObject target)
         {
-            if (Context.Target is GameObject target)
+            if (target.IsPlayer())
             {
-                if (target.IsPlayer())
-                {
-                    // Japanese tends to drop 1st- & 2nd-person pronouns
-                    return "";
-                }
-                return GetDisplayNameOf(target) + "に";
+                // Japanese tends to drop 1st- & 2nd-person pronouns
+                return "";
             }
-            return Context.Explicit + "に";
+            return GetDisplayNameOf(target) + "の";
+        }
+        /// <summary>
+        /// the の(no) particle for possessive/"of" relations
+        /// </summary>
+        [VariableReplacer("の", Capitalization = false)]
+        public static string の(VariableContext Context, ExplicitObject Explicit)
+        {
+            return Explicit.Name + "の";
         }
 
-        // where it'd say あなた(anata) instead of dropping the 2nd-pers pronoun
-
-        [VariableObjectReplacer]
-        public static string あなたは(DelegateContext Context)
+        /// <summary>
+        /// the と(to) particle
+        /// </summary>
+        [VariableReplacer("と", Capitalization = false)]
+        public static string と(VariableContext Context, GameObject target)
         {
-            if (Context.Target is GameObject target)
+            if (target.IsPlayer())
             {
-                if (target.IsPlayer())
-                {
-                    return "あなたは";
-                }
-                return GetDisplayNameOf(target) + "は";
+                // Japanese tends to drop 1st- & 2nd-person pronouns
+                return "";
             }
-            return Context.Explicit + "は";
+            return GetDisplayNameOf(target) + "と";
+        }
+        /// <summary>
+        /// the と(to) particle
+        /// </summary>
+        [VariableReplacer("と", Capitalization = false)]
+        public static string と(VariableContext Context, ExplicitObject Explicit)
+        {
+            return Explicit.Name + "と";
         }
 
-        // adding a comma 、after は
-        [VariableObjectReplacer("あなたは、")]
-        public static string あなたはWithComma(DelegateContext Context)
+        /// <summary>
+        /// the に(ni) particle for locations, "by" relations, etc.
+        /// </summary>
+        [VariableReplacer("に", Capitalization = false)]
+        public static string にReplacer(VariableContext Context, GameObject target)
         {
-            if (Context.Target is GameObject target)
+            if (target.IsPlayer())
             {
-                if (target.IsPlayer())
-                {
-                    return "あなたは、";
-                }
-                return GetDisplayNameOf(target) + "は、";
+                // Japanese tends to drop 1st- & 2nd-person pronouns
+                return "";
             }
-            return Context.Explicit + "は、";
+            return GetDisplayNameOf(target) + "に";
+        }
+        /// <summary>
+        /// the に(ni) particle for locations, "by" relations, etc.
+        /// </summary>
+        [VariableReplacer("に", Capitalization = false)]
+        public static string にReplacer(VariableContext Context, ExplicitObject Explicit)
+        {
+            return Explicit.Name + "に";
         }
 
-        [VariableObjectReplacer]
-        public static string あなたが(DelegateContext Context)
+        /// <summary>
+        /// where it'd say あなた(anata) instead of dropping the 2nd-pers pronoun
+        /// </summary>
+
+        [VariableReplacer("あなたは", Capitalization = false)]
+        public static string あなたは(VariableContext Context, GameObject target)
         {
-            if (Context.Target is GameObject target)
+            if (target.IsPlayer())
             {
-                if (target.IsPlayer())
-                {
-                    return "あなたが";
-                }
-                return GetDisplayNameOf(target) + "が";
+                return "あなたは";
             }
-            return Context.Explicit + "が";
+            return GetDisplayNameOf(target) + "は";
         }
 
-        [VariableObjectReplacer]
-        public static string あなたを(DelegateContext Context)
+        /// <summary>
+        /// where it'd say あなた(anata) instead of dropping the 2nd-pers pronoun
+        /// </summary>
+
+        [VariableReplacer("あなたは", Capitalization = false)]
+        public static string あなたは(VariableContext Context, ExplicitObject Explicit)
         {
-            if (Context.Target is GameObject target)
-            {
-                if (target.IsPlayer())
-                {
-                    return "あなたを";
-                }
-                return GetDisplayNameOf(target) + "を";
-            }
-            return Context.Explicit + "を";
+            return Explicit.Name + "は";
         }
 
-        [VariableObjectReplacer]
-        public static string あなたの(DelegateContext Context)
+        /// <summary>
+        /// adding a comma 、after は
+        /// </summary>
+        [VariableReplacer("あなたは、", Capitalization = false)]
+        public static string あなたはWithComma(VariableContext Context, GameObject target)
         {
-            if (Context.Target is GameObject target)
+            if (target.IsPlayer())
             {
-                if (target.IsPlayer())
-                {
-                    return "あなたの";
-                }
-                return GetDisplayNameOf(target) + "の";
+                return "あなたは、";
             }
-            return Context.Explicit + "の";
+            return GetDisplayNameOf(target) + "は、";
+        }
+        /// <summary>
+        /// adding a comma 、after は
+        /// </summary>
+        [VariableReplacer("あなたは、", Capitalization = false)]
+        public static string あなたはWithComma(VariableContext Context, ExplicitObject Explicit)
+        {
+            return Explicit.Name + "は、";
         }
 
-        [VariableObjectReplacer]
-        public static string あなたと(DelegateContext Context)
+        [VariableReplacer("あなたが", Capitalization = false)]
+        public static string あなたが(VariableContext Context, GameObject target)
         {
-            if (Context.Target is GameObject target)
+            if (target.IsPlayer())
             {
-                if (target.IsPlayer())
-                {
-                    return "あなたと";
-                }
-                return GetDisplayNameOf(target) + "と";
+                return "あなたが";
             }
-            return Context.Explicit + "と";
+            return GetDisplayNameOf(target) + "が";
+        }
+        [VariableReplacer("あなたが", Capitalization = false)]
+        public static string あなたが(VariableContext Context, ExplicitObject Explicit)
+        {
+            return Explicit.Name + "が";
         }
 
-        [VariableObjectReplacer]
-        public static string あなたに(DelegateContext Context)
+        [VariableReplacer("あなたを", Capitalization = false)]
+        public static string あなたを(VariableContext Context, GameObject target)
         {
-            if (Context.Target is GameObject target)
+            if (target.IsPlayer())
             {
-                if (target.IsPlayer())
-                {
-                    return "あなたに";
-                }
-                return GetDisplayNameOf(target) + "に";
+                return "あなたを";
             }
-            return Context.Explicit + "に";
+            return GetDisplayNameOf(target) + "を";
+        }
+        [VariableReplacer("あなたを", Capitalization = false)]
+        public static string あなたを(VariableContext Context, ExplicitObject Explicit)
+        {
+            return Explicit.Name + "を";
         }
 
-        [VariableObjectReplacer(Default = "どこか")]
-        public static string Direction(DelegateContext Context)
+        [VariableReplacer("あなたの", Capitalization = false)]
+        public static string あなたの(VariableContext Context, GameObject target)
+        {
+            if (target.IsPlayer())
+            {
+                return "あなたの";
+            }
+            return GetDisplayNameOf(target) + "の";
+        }
+        [VariableReplacer("あなたの", Capitalization = false)]
+        public static string あなたの(VariableContext Context, ExplicitObject Explicit)
+        {
+            return Explicit.Name + "の";
+        }
+
+        [VariableReplacer("あなたと", Capitalization = false)]
+        public static string あなたと(VariableContext Context, GameObject target)
+        {
+            if (target.IsPlayer())
+            {
+                return "あなたと";
+            }
+            return GetDisplayNameOf(target) + "と";
+        }
+        [VariableReplacer("あなたと", Capitalization = false)]
+        public static string あなたと(VariableContext Context, ExplicitObject Explicit)
+        {
+            return Explicit.Name + "と";
+        }
+
+        [VariableReplacer("あなたに", Capitalization = false)]
+        public static string あなたに(VariableContext Context, GameObject target)
+        {
+            if (target.IsPlayer())
+            {
+                return "あなたに";
+            }
+            return GetDisplayNameOf(target) + "に";
+        }
+        [VariableReplacer("あなたに", Capitalization = false)]
+        public static string あなたに(VariableContext Context, ExplicitObject Explicit)
+        {
+            return Explicit.Name + "に";
+        }
+
+        [VariableReplacer(Default = "どこか", Capitalization = false)]
+        public static string Direction(VariableContext Context, GameObject Target)
         {
             var result = Context.Default;
             var origin = XRL.The.Player;
-            var destination = Context.Target;
-            if (Context.Arguments.Count >= 2)
-            {
-                origin = Context.Target;
-                destination = Context.Arguments[1].Object;
-            }
+            var destination = Target;
+            // if (Context.Arguments.Count >= 2)
+            // {
+            //     origin = Context.Target;
+            //     destination = Context.Arguments[1].Object;
+            // }
 
             if (origin != null && destination != null)
             {
                 // TODO: process the short direction into Japanese
                 result = origin.DescribeDirectionToward(destination, Short: true);
             }
+
+            return result;
+        }
+
+        [VariableReplacer(Default = "どこか", Capitalization = false)]
+        public static string Direction(VariableContext Context, GameObject Origin, GameObject Target)
+        {
+            var result = Context.Default;
+            // TODO: process the short direction into Japanese
+            result = Origin.DescribeDirectionToward(Target, Short: true);
 
             return result;
         }
