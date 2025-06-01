@@ -390,6 +390,14 @@ Assets/XRL Application/Game Core/EmbarkBuilder/EmbarkBuilderModuleWindowBase.cs:
   <string ID="{{W|[=commandKey:CmdOptions=]}} {{y|Hold to Accept}}">{{W|[=commandKey:CmdOptions=]}} {{y|Hold to Accept}}</string>
   <!--Code references _T(): Assets/Game/UI/Windows/PopupMessage/PopupMessage.cs:265-->
   <string ID="[{{W|=commandKey:CmdStartTrade=}}] {{y|Trade}}">[{{W|=commandKey:CmdStartTrade=}}] {{y|Trade}}</string>
+  <!--Code references _S(): Assets/Language/Translator.cs:111-->
+  <string ID="MakeAndList Default two-word join: and " Value=" and " />
+  <!--Code references _S(): Assets/Language/Translator.cs:113-->
+  <string ID="MakeAndList Default Separator:, ">, </string>
+  <!--Code references _S(): Assets/Language/Translator.cs:118-->
+  <string ID="MakeAndList Alternate Separator:; ">; </string>
+  <!--Code references _S(): Assets/Language/Translator.cs:126-->
+  <string ID="MakeAndList NoSerialComma Separator: " Value=" " />
   <!--Code references _S(): Assets/XRL Application/Game Core/EmbarkBuilder/EmbarkBuilder.cs:183-->
   <string ID="{{r|Error!}}">{{r|Error!}}</string>
   <!--Code references _T(): Assets/XRL Application/Game Core/EmbarkBuilder/EmbarkBuilder.cs:189-->
@@ -732,26 +740,141 @@ Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudMutationsModuleWindow.cs:3
   <string ID="journal category:Ruins">Ruins</string>
   <!--Code references _S(): Assets/XRL Application/Qud.API/Qud.API.Journal.cs:1429-->
   <string ID="journal category:Settlements">Settlements</string>
-  <!--Code references _T(): Assets/XRL Application/World/Encounters/Race Builders/BaboonHero.cs:18-->
+  <!--Code references _T(): Assets/XRL Application/World/Encounters/Race Builders/BaboonHero.cs:19-->
   <string ID="Baboon Hero Naming.xml Context:=rings.toString=-ringed">=rings.toString=-ringed</string>
-  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/BaboonHero.cs:35-->
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/BaboonHero.cs:37-->
   <string ID="Baboon Hero Naming.xml Context:King">King</string>
-  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/BaboonHero.cs:35-->
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/BaboonHero.cs:37-->
   <string ID="Baboon Hero Naming.xml Context:Queen">Queen</string>
-  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/BaboonHero.cs:44-->
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/BaboonHero.cs:46-->
   <string ID="Baboon Hero Naming.xml Context:Philanderer">Philanderer</string>
-  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/BaboonHero.cs:48-->
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/BaboonHero.cs:50-->
   <string ID="Baboon Hero Naming.xml Context:Riddler">Riddler</string>
-  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/BaboonHero.cs:52-->
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/BaboonHero.cs:54-->
   <string ID="Baboon Hero Naming.xml Context:Hermit">Hermit</string>
-  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/BaboonHero.cs:57-->
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/BaboonHero.cs:59-->
   <string ID="Baboon Hero Naming.xml Context:Sophisticate">Sophisticate</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/EyelessKingCrabHero.cs:28-->
+  <string ID="Eyeless King Crab Naming.xml Context:many-legged">many-legged</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/EyelessKingCrabHero.cs:32-->
+  <string ID="Eyeless King Crab Naming.xml Context:one-clawed">one-clawed</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/EyelessKingCrabHero.cs:36-->
+  <string ID="Eyeless King Crab Naming.xml Context:massive">massive</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/EyelessKingCrabHero.cs:41-->
+  <string ID="Eyeless King Crab Naming.xml Context:echoing">echoing</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/EyelessKingCrabHero.cs:45-->
+  <string ID="Eyeless King Crab Naming.xml Context:frenetic">frenetic</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/EyelessKingCrabHero.cs:49-->
+  <string ID="Eyeless King Crab Naming.xml Context:shell-cracked">shell-cracked</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/EyelessKingCrabHero.cs:54-->
+  <string ID="Eyeless King Crab Naming.xml Context:Skuttler">Skuttler</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/EyelessKingCrabHero.cs:58-->
+  <string ID="Eyeless King Crab Naming.xml Context:Ancient">Ancient</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/EyelessKingCrabHero.cs:62-->
+  <string ID="Eyeless King Crab Naming.xml Context:Deepcrawler">Deepcrawler</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/EyelessKingCrabHero.cs:66-->
+  <string ID="Eyeless King Crab Naming.xml Context:Goliath">Goliath</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/EyelessKingCrabHero.cs:72-->
+  <string ID="Eyeless King Crab Naming.xml Context:Lord">Lord</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/EyelessKingCrabHero.cs:72-->
+  <string ID="Eyeless King Crab Naming.xml Context:Patriarch">Patriarch</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/GoatfolkHero.cs:59-->
+  <string ID="Goatfolk Hero Naming.xml Context:Stargazer">Stargazer</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/GoatfolkHero.cs:68-->
+  <string ID="Goatfolk Hero Naming.xml Context:Heartbiter">Heartbiter</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/GoatfolkHero.cs:76-->
+  <string ID="Goatfolk Hero Naming.xml Context:Twicetalker">Twicetalker</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/GoatfolkHero.cs:85-->
+  <string ID="Goatfolk Hero Naming.xml Context:Souldrinker">Souldrinker</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/GoatfolkHero.cs:93-->
+  <string ID="Goatfolk Hero Naming.xml Context:Whitefinger">Whitefinger</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/GoatfolkHero.cs:101-->
+  <string ID="Goatfolk Hero Naming.xml Context:Clovenhorn">Clovenhorn</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/GoatfolkHero.cs:115-->
+  <string ID="Goatfolk Hero Naming.xml Context:Clan Hotur">Clan Hotur</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/GoatfolkHero.cs:119-->
+  <string ID="Goatfolk Hero Naming.xml Context:Clan Ibex">Clan Ibex</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/GoatfolkHero.cs:123-->
+  <string ID="Goatfolk Hero Naming.xml Context:Clan Sol">Clan Sol</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/GoatfolkHero.cs:135-->
+  <string ID="Goatfolk Hero Naming.xml Context:Clan Whitetongue">Clan Whitetongue</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/GoatfolkHero.cs:141-->
+  <string ID="Goatfolk Hero Naming.xml Context:Clan Yr">Clan Yr</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/GoatfolkHero.cs:145-->
+  <string ID="Goatfolk Hero Naming.xml Context:Clan Mnim">Clan Mnim</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/SnapjawHero.cs:20-->
+  <string ID="Snapjaw Hero Naming.xml Context:fleet-footed">fleet-footed</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/SnapjawHero.cs:24-->
+  <string ID="Snapjaw Hero Naming.xml Context:learned">learned</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/SnapjawHero.cs:28-->
+  <string ID="Snapjaw Hero Naming.xml Context:stalwart">stalwart</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/SnapjawHero.cs:32-->
+  <string ID="Snapjaw Hero Naming.xml Context:fearsome">fearsome</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/SnapjawHero.cs:36-->
+  <string ID="Snapjaw Hero Naming.xml Context:nimble">nimble</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/SnapjawHero.cs:40-->
+  <string ID="Snapjaw Hero Naming.xml Context:hulking">hulking</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/SnapjawHero.cs:44-->
+  <string ID="Snapjaw Hero Naming.xml Context:calloused">calloused</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/SnapjawHero.cs:48-->
+  <string ID="Snapjaw Hero Naming.xml Context:Skullsplitter">Skullsplitter</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/SnapjawHero.cs:55-->
+  <string ID="Snapjaw Hero Naming.xml Context:Firesnarler">Firesnarler</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/SnapjawHero.cs:60-->
+  <string ID="Snapjaw Hero Naming.xml Context:Bear-baiter">Bear-baiter</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/SnapjawHero.cs:64-->
+  <string ID="Snapjaw Hero Naming.xml Context:Tot-eater">Tot-eater</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/SnapjawHero.cs:68-->
+  <string ID="Snapjaw Hero Naming.xml Context:Gutspiller">Gutspiller</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/SnapjawHero.cs:72-->
+  <string ID="Snapjaw Hero Naming.xml Context:King">King</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:28-->
+  <string ID="Troll Hero Naming.xml Context:frenetic">frenetic</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:32-->
+  <string ID="Troll Hero Naming.xml Context:learned">learned</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:36-->
+  <string ID="Troll Hero Naming.xml Context:everlasting">everlasting</string>
+  <!--Code references _S():
+Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:40
+Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:44
+-->
+  <string ID="Troll Hero Naming.xml Context:bestial">bestial</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:48-->
+  <string ID="Troll Hero Naming.xml Context:bloodthirsty">bloodthirsty</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:52-->
+  <string ID="Troll Hero Naming.xml Context:hulking">hulking</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:56-->
+  <string ID="Troll Hero Naming.xml Context:rubberhide">rubberhide</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:60-->
+  <string ID="Troll Hero Naming.xml Context:Skull-collector">Skull-collector</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:68-->
+  <string ID="Troll Hero Naming.xml Context:Heart-eater">Heart-eater</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:72-->
+  <string ID="Troll Hero Naming.xml Context:Hunt-master">Hunt-master</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:76-->
+  <string ID="Troll Hero Naming.xml Context:Man-eater">Man-eater</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:80-->
+  <string ID="Troll Hero Naming.xml Context:two-headed">two-headed</string>
+  <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:84-->
+  <string ID="Troll Hero Naming.xml Context:Caveking">Caveking</string>
+  <!--Code references _T(): Assets/XRL Application/World/Events/DescriptionBuilder.cs:315-->
+  <string ID="DescriptionBuilder Multiple Titles Clause:, =titles.andList:noSerial=">, =titles.andList:noSerial=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Events/DescriptionBuilder.cs:322-->
+  <string ID="DescriptionBuilder Single Title Clause With Epithets:, =title.toString=">, =title.toString=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Events/DescriptionBuilder.cs:328-->
+  <string ID="DescriptionBuilder Single Title Clause:and =title.toString=">and =title.toString=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Events/DescriptionBuilder.cs:342-->
+  <string ID="DescriptionBuilder Multiple With Clause:with =withClauses.andList=">with =withClauses.andList=</string>
   <!--Code references _S(): Assets/XRL Application/World/Events/ExtraHostilePerceptionEvent.cs:21-->
   <string ID="hostile perception verb:perceive">perceive</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Capabilities/Firefighting.cs:148-->
   <string ID="=subject.Does:beat= at the flames with =subject.its= =hands.name=!">=subject.Does:beat= at the flames with =subject.its= =hands.name=!</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Capabilities/Firefighting.cs:158-->
   <string ID="=subject.Does:beat= at the flames on =object.t= with =subject.its= =hands.name=!">=subject.Does:beat= at the flames on =object.t= with =subject.its= =hands.name=!</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Effects/ContainedAcidEating.cs:19-->
+  <string ID="ContainedAcidEating Display Name:{{Y|sizzling}}">{{Y|sizzling}}</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Effects/ContainedAcidEating.cs:84-->
+  <string ID="ContainedAcidEating Adjective:{{Y|sizzling}}" OrderAdjust="0">{{Y|sizzling}}</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Effects/HolographicBleeding.cs:48-->
   <string ID="=subject.Does:begin= =effect.name|strip= from another wound!">=subject.Does:begin= =effect.name|strip= from another wound!</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Effects/HolographicBleeding.cs:56-->

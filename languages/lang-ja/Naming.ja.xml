@@ -725,71 +725,72 @@
       </postfixes>
     </namestyle>
     
-    <namestyle Name="Crab-ja" TwoNameChance="20" Format="AsIs">
+    <namestyle Name="Crab" TwoNameChance="20" Format="AsIs">
       <prefixes Amount="1" Load="Replace">
-        <prefix Name="" /><!-- Original="aco" -->
-        <prefix Name="" /><!-- Original="aga" -->
-        <prefix Name="" /><!-- Original="ba" -->
-        <prefix Name="" /><!-- Original="bo" -->
-        <prefix Name="" /><!-- Original="ca" -->
-        <prefix Name="" /><!-- Original="di" -->
-        <prefix Name="" /><!-- Original="gi" -->
-        <prefix Name="" Weight="2" /><!-- Original="ha" -->
-        <prefix Name="" /><!-- Original="hi" -->
-        <prefix Name="" /><!-- Original="ja" -->
-        <prefix Name="" /><!-- Original="ma" -->
-        <prefix Name="" /><!-- Original="mu" -->
-        <prefix Name="" /><!-- Original="rho" -->
-        <prefix Name="" /><!-- Original="sa" -->
-        <prefix Name="" /><!-- Original="so" -->
-        <prefix Name="" /><!-- Original="te" -->
-        <prefix Name="" /><!-- Original="y" -->
-        <prefix Name="" /><!-- Original="za" -->
+        <prefix Name="アコ" /><!-- Original="aco" -->
+        <prefix Name="アガ" /><!-- Original="aga" -->
+        <prefix Name="バ" /><!-- Original="ba" -->
+        <prefix Name="ボ" /><!-- Original="bo" -->
+        <prefix Name="カ" /><!-- Original="ca" -->
+        <prefix Name="ディ" /><!-- Original="di" -->
+        <prefix Name="ギ" /><!-- Original="gi" -->
+        <prefix Name="ハ" Weight="2" /><!-- Original="ha" -->
+        <prefix Name="ヒ" /><!-- Original="hi" -->
+        <prefix Name="ジャ" /><!-- Original="ja" -->
+        <prefix Name="マ" /><!-- Original="ma" -->
+        <prefix Name="ム" /><!-- Original="mu" -->
+        <prefix Name="ロ" /><!-- Original="rho" -->
+        <prefix Name="サ" /><!-- Original="sa" -->
+        <prefix Name="ソ" /><!-- Original="so" -->
+        <prefix Name="テ" /><!-- Original="te" -->
+        <prefix Name="イ" /><!-- Original="y" -->
+        <prefix Name="ザ" /><!-- Original="za" -->
       </prefixes>
       <infixes Amount="1-2" Load="Replace">
-        <infix Name="" /><!-- Original="bni" -->
-        <infix Name="" /><!-- Original="do" -->
-        <infix Name="" /><!-- Original="ggi" -->
-        <infix Name="" /><!-- Original="go" -->
-        <infix Name="" /><!-- Original="l" -->
-        <infix Name="" /><!-- Original="mil" -->
-        <infix Name="" /><!-- Original="mpsi" -->
-        <infix Name="" /><!-- Original="nni" -->
-        <infix Name="" /><!-- Original="pho" -->
-        <infix Name="" /><!-- Original="ra" -->
-        <infix Name="" /><!-- Original="rca" -->
-        <infix Name="" /><!-- Original="rtha" -->
-        <infix Name="" /><!-- Original="sdru" -->
-        <infix Name="" /><!-- Original="sgo" -->
-        <infix Name="" /><!-- Original="tra" -->
-        <infix Name="" /><!-- Original="tti" -->
-        <infix Name="" /><!-- Original="ze" -->
+        <infix Name="ブニ" /><!-- Original="bni" -->
+        <infix Name="ド" /><!-- Original="do" -->
+        <infix Name="ッギ" /><!-- Original="ggi" -->
+        <infix Name="ゴ" /><!-- Original="go" -->
+        <infix Name="ル" /><!-- Original="l" -->
+        <infix Name="ミル" /><!-- Original="mil" -->
+        <infix Name="ンプシ" /><!-- Original="mpsi" -->
+        <infix Name="ンニ" /><!-- Original="nni" -->
+        <infix Name="フォ" /><!-- Original="pho" -->
+        <infix Name="ラ" /><!-- Original="ra" -->
+        <infix Name="ルカ" /><!-- Original="rca" -->
+        <infix Name="ルサ" /><!-- Original="rtha" -->
+        <infix Name="スドル" /><!-- Original="sdru" -->
+        <infix Name="スゴ" /><!-- Original="sgo" -->
+        <infix Name="トラ" /><!-- Original="tra" -->
+        <infix Name="ッティ" /><!-- Original="tti" -->
+        <infix Name="ゼ" /><!-- Original="ze" -->
       </infixes>
       <postfixes Amount="1" Load="Replace">
-        <postfix Name="[蟹\かに]" /><!-- Original="crab" -->
+        <postfix Name="蟹" /><!-- Original="crab" -->
       </postfixes>
     </namestyle>   
 
-    <namestyle Name="Crab Hero Title-ja">
+    <namestyle Name="Crab Hero Title">
       <templates Load="Replace">
-        <template Name="the *Adjective* *CreatureTypeCap* *Position*" />
+        <template Name="*Adjective**CreatureType*の*Position*" />
       </templates>
       <templatevars Load="Replace">
         <templatevar Name="Adjective">
-          <value Name="" /><!-- Original="echoing" -->
-          <value Name="" /><!-- Original="frenetic" -->
-          <value Name="" /><!-- Original="many-legged" -->
-          <value Name="" /><!-- Original="massive" -->
-          <value Name="" /><!-- Original="one-clawed" -->
-          <value Name="" /><!-- Original="shell-cracked" -->
+          <value Name="高らかな" /><!-- Original="echoing" -->
+          <value Name="激しい" /><!-- Original="frenetic" -->
+          <value Name="多足の" /><!-- Original="many-legged" -->
+          <value Name="でかい" /><!-- Original="massive" -->
+          <value Name="片ハサミの" /><!-- Original="one-clawed" -->
+          <value Name="殻が割れた" /><!-- Original="shell-cracked" -->
         </templatevar>
         <templatevar Name="Position">
-          <value Name="" /><!-- Original="Ancient" -->
-          <value Name="" /><!-- Original="Deepcrawler" -->
-          <value Name="" /><!-- Original="Goliath" -->
-          <value Name="" /><!-- Original="Lord" -->
-          <value Name="" /><!-- Original="Patriarch" -->
-          <value Name="" /><!-- Original="Skuttler" -->
+          <value Name="古代者" /><!-- Original="Ancient" -->
+          <value Name="深海這う者" /><!-- Original="Deepcrawler" -->
+          <value Name="ゴリアテ" /><!-- Original="Goliath" -->
+          <value Name="大名" /><!-- Original="Lord" -->
+          <value Name="家父長" /><!-- Original="Patriarch" -->
+          <!-- "scuttle" as in scurry, or ship-sinking? maybe both! -->
+          <value Name="スカトラー" /><!-- Original="Skuttler" -->
         </templatevar>
       </templatevars>
     </namestyle>
@@ -837,7 +838,7 @@
           <value Name="心を噛む者" /><!-- Original="Heartbiter" -->
           <value Name="二度話す者" /><!-- Original="Twicetalker" -->
           <value Name="魂を飲む者" /><!-- Original="Souldrinker" -->
-          <value Name="白い指" /><!-- Original="Whitefinger" -->
+          <value Name="白指" /><!-- Original="Whitefinger" -->
           <value Name="割れた角" /><!-- Original="Clovenhorn" -->
         </templatevar>
       </templatevars>
@@ -845,16 +846,16 @@
 
     <namestyle Name="Goatfolk Hero Title">
       <templates Load="Replace">
-        <template Name="*Clan*氏族の山羊族のシャーマン" /><!-- Original="the Goatfolk Shaman of Clan *Clan*" -->
+        <template Name="*Clan*の山羊族のシャーマン" /><!-- Original="the Goatfolk Shaman of Clan *Clan*" -->
       </templates>
       <templatevars>
         <templatevar Name="Clan" Load="Replace">
-          <value Name="ホトゥール" /><!-- Original="Hotur" -->
-          <value Name="アイベックス" /><!-- Original="Ibex" -->
-          <value Name="ソル" /><!-- Original="sol" -->
-          <value Name="白い舌" /><!-- Original="Whitetongue" -->
-          <value Name="イル" /><!-- Original="Yr" -->
-          <value Name="ムニム" /><!-- Original="Mnim" -->
+          <value Name="ホトゥール氏族" /><!-- Original="Hotur" -->
+          <value Name="アイベックス氏族" /><!-- Original="Ibex" -->
+          <value Name="ソル氏族" /><!-- Original="sol" -->
+          <value Name="白舌氏族" /><!-- Original="Whitetongue" -->
+          <value Name="イル氏族" /><!-- Original="Yr" -->
+          <value Name="ムニム氏族" /><!-- Original="Mnim" -->
         </templatevar>
       </templatevars>
     </namestyle>
