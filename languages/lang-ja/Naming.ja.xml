@@ -618,26 +618,11 @@
 
     <namestyle Name="Baboon Hero Title">
       <templates Load="Replace">
-        <template Name="*Yubiwa*のヒヒの*Position*" />
+        <template Name="*Rings*ヒヒの*Position*" />
       </templates>
-      <templatevars Load="Replace">
-        <templatevar Name="Yubiwa">
-    <!-- NOTE: *Rings* count is used to give HP buffs
-        and maybe should be replaced in code with a localized template -->
-          <value Name="指輪が3輪" />
-          <value Name="指輪が4輪" />
-          <value Name="指輪が5輪" />
-          <value Name="指輪が6輪" />
-          <value Name="指輪が7輪" />
-          <value Name="指輪が8輪" />
-          <value Name="指輪が9輪" />
-          <value Name="指輪が10輪" />
-          <value Name="指輪が11輪" />
-          <value Name="指輪が12輪" />
-        </templatevar>
+      <templatevars>
+        <!-- Update Strings.xml "Baboon Hero Naming.xml Context" -->
         <templatevar Name="Position" Load="Replace">
-    <!-- NOTE: Position is used to decide on special hero attributes
-        and maybe should be treated as a keyword to replace with localized string -->
           <value Name="浮気者" /><!-- Original="Philanderer" -->
           <value Name="謎かけ屋" /><!-- Original="Riddler" -->
           <value Name="隠者" /><!-- Original="Hermit" -->

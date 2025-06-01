@@ -33,7 +33,6 @@ namespace LanguagesOfQud
             }
             return GetDisplayNameOf(target) + "は";
         }
-
         /// <summary>
         /// the は(wa) particle for topic
         /// </summary>
@@ -58,7 +57,6 @@ namespace LanguagesOfQud
             }
             return GetDisplayNameOf(target) + "が";
         }
-
         /// <summary>
         /// the が(ga) particle for subject
         /// </summary>
@@ -84,7 +82,6 @@ namespace LanguagesOfQud
             }
             return GetDisplayNameOf(target) + "を";
         }
-        
         /// <summary>
         /// the を(wo) particle for direct objects
         /// </summary>
@@ -98,6 +95,8 @@ namespace LanguagesOfQud
         /// the の(no) particle for possessive/"of" relations, etc.
         /// </summary>
         [VariableReplacer("の", Capitalization = false)]
+        [VariableExample("", "Player")]
+        [VariableExample("メフメットの", "Mehmet")]
         public static string の(VariableContext Context, GameObject target)
         {
             if (target.IsPlayer())
@@ -142,6 +141,8 @@ namespace LanguagesOfQud
         /// the に(ni) particle for locations, destinations, "by" relations, etc.
         /// </summary>
         [VariableReplacer("に", Capitalization = false)]
+        [VariableExample("", "Player")]
+        [VariableExample("メフメットに", "Mehmet")]
         public static string に(VariableContext Context, GameObject target)
         {
             if (target.IsPlayer())
@@ -164,6 +165,9 @@ namespace LanguagesOfQud
         /// the で(de) particle for location, means, etc.
         /// </summary>
         [VariableReplacer("で", Capitalization = false)]
+        [VariableExample("", "Player")]
+        [VariableExample("メフメットで", "Mehmet")]
+        [VariableExample("松明で", "Torch")]
         public static string で(VariableContext Context, GameObject target)
         {
             if (target.IsPlayer())
@@ -186,9 +190,15 @@ namespace LanguagesOfQud
         /// the も(mo) particle for "too", "also", "even"
         /// </summary>
         [VariableReplacer("も", Capitalization = false)]
+        [VariableExample("あなたも", "Player")]
+        [VariableExample("メフメットも", "Mehmet")]
         public static string も(VariableContext Context, GameObject target)
         {
             //も is for emphasis; its noun wouldn't be dropped
+            if (target.IsPlayer())
+            {
+                return "あなたも";
+            }
             return GetDisplayNameOf(target) + "も";
         }
         /// <summary>
@@ -205,6 +215,8 @@ namespace LanguagesOfQud
         /// </summary>
 
         [VariableReplacer("あなたは", Capitalization = false)]
+        [VariableExample("あなたは", "Player")]
+        [VariableExample("メフメットは", "Mehmet")]
         public static string あなたは(VariableContext Context, GameObject target)
         {
             if (target.IsPlayer())
@@ -228,6 +240,8 @@ namespace LanguagesOfQud
         /// adding a comma 、after は
         /// </summary>
         [VariableReplacer("あなたは、", Capitalization = false)]
+        [VariableExample("あなたは、", "Player")]
+        [VariableExample("メフメットは、", "Mehmet")]
         public static string あなたはWithComma(VariableContext Context, GameObject target)
         {
             if (target.IsPlayer())
@@ -246,6 +260,8 @@ namespace LanguagesOfQud
         }
 
         [VariableReplacer("あなたが", Capitalization = false)]
+        [VariableExample("あなたが", "Player")]
+        [VariableExample("メフメットが", "Mehmet")]
         public static string あなたが(VariableContext Context, GameObject target)
         {
             if (target.IsPlayer())
@@ -335,17 +351,12 @@ namespace LanguagesOfQud
             return Explicit.Name + "で";
         }
 
-        [VariableReplacer(Default = "どこか", Capitalization = false)]
-        public static string Direction(VariableContext Context, GameObject Target)
+        [VariableReplacer(Default = "どこか", Capitalization = false, Override = true)]
+        public static string direction(VariableContext Context, GameObject Target)
         {
             var result = Context.Default;
             var origin = XRL.The.Player;
             var destination = Target;
-            // if (Context.Arguments.Count >= 2)
-            // {
-            //     origin = Context.Target;
-            //     destination = Context.Arguments[1].Object;
-            // }
 
             if (origin != null && destination != null)
             {
@@ -356,8 +367,8 @@ namespace LanguagesOfQud
             return result;
         }
 
-        [VariableReplacer(Default = "どこか", Capitalization = false)]
-        public static string Direction(VariableContext Context, GameObject Origin, GameObject Target)
+        [VariableReplacer(Default = "どこか", Capitalization = false, Override = true)]
+        public static string direction(VariableContext Context, GameObject Origin, GameObject Target)
         {
             var result = Context.Default;
             // TODO: process the short direction into Japanese

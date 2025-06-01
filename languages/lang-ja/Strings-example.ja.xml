@@ -353,6 +353,17 @@ Caves of Qud code extracted string table.
   <string ID="journal category:Settlements">集落</string>
 
   <!--
+	Hero strings - make sure they match their counterparts in Naming.xml
+  -->
+  <string ID="Baboon Hero Naming.xml Context:=rings.toString=-ringed">指輪が=rings.toString=輪の</string>
+  <string ID="Baboon Hero Naming.xml Context:King">王</string>
+  <string ID="Baboon Hero Naming.xml Context:Queen">女王</string>
+  <string ID="Baboon Hero Naming.xml Context:Philanderer">浮気者</string>
+  <string ID="Baboon Hero Naming.xml Context:Riddler">謎かけ屋</string>
+  <string ID="Baboon Hero Naming.xml Context:Hermit">隠者</string>
+  <string ID="Baboon Hero Naming.xml Context:Sophisticate">洗練された者</string>
+
+  <!--
 	Effect and spot strings
   -->
   <string ID="hostile perception verb:perceive">[届：\TODO]perceive</string>
