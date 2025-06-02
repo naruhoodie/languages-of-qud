@@ -2,7 +2,7 @@
 <naming Lang="ja" Encoding="utf-8" Load="Merge">
 
 <!-- u\1F60A and further are emoji sprites, could be good for Entropic Beings -->
-  <namestyles>
+  <namestyles HyphenSeparator="＝" NameSeparator="・">
 
     <namestyle Name="Qudish" Format="AsIs">
     <!-- name syllables from Arabic & Biblical Hebrew  -->
@@ -270,10 +270,66 @@
       </templates>
     </namestyle>
 
+    <!-- syllables from ancient Macedonian & Persian? used for Sultan names -->
+    <namestyle Name="Eater-jp" HyphenationChance="5" Format="AsIs">
+      <prefixes Amount="1">
+        <prefix Name="" /><!-- Original="anti" -->
+        <prefix Name="" /><!-- Original="arta" -->
+        <prefix Name="" /><!-- Original="ba" -->
+        <prefix Name="" /><!-- Original="da" -->
+        <prefix Name="" /><!-- Original="dari" -->
+        <prefix Name="" /><!-- Original="dja" -->
+        <prefix Name="" /><!-- Original="gi" -->
+        <prefix Name="" /><!-- Original="i" -->
+        <prefix Name="" /><!-- Original="kho" -->
+        <prefix Name="" /><!-- Original="khu" -->
+        <prefix Name="" /><!-- Original="meh" -->
+        <prefix Name="" /><!-- Original="mi" -->
+        <prefix Name="" /><!-- Original="mu" -->
+        <prefix Name="" /><!-- Original="na" -->
+        <prefix Name="" /><!-- Original="o" -->
+        <prefix Name="" /><!-- Original="oro" -->
+        <prefix Name="" /><!-- Original="poly" -->
+        <prefix Name="" /><!-- Original="q" -->
+        <prefix Name="" /><!-- Original="sha" -->
+        <prefix Name="" /><!-- Original="su" -->
+        <prefix Name="" /><!-- Original="u" -->
+        <prefix Name="" /><!-- Original="uu" -->
+        <prefix Name="" /><!-- Original="xer" -->
+        <prefix Name="" /><!-- Original="y" -->
+        <prefix Name="" /><!-- Original="ya" -->
+        <prefix Name="" /><!-- Original="yu" -->
+        <prefix Name="" /><!-- Original="yy" -->
+      </prefixes>
+      <infixes Amount="0-1">
+        <infix Name="" /><!-- Original="le" -->
+        <infix Name="" /><!-- Original="ra" -->
+        <infix Name="" /><!-- Original="thri" -->
+        <infix Name="" /><!-- Original="xer" -->
+        <infix Name="" /><!-- Original="yu" -->
+      </infixes>
+      <postfixes Amount="1">
+        <postfix Name="" /><!-- Original="dates" -->
+        <postfix Name="" /><!-- Original="dokht" -->
+        <postfix Name="" /><!-- Original="dukht" -->
+        <postfix Name="" /><!-- Original="him" -->
+        <postfix Name="" /><!-- Original="masp" -->
+        <postfix Name="" /><!-- Original="med" -->
+        <postfix Name="" /><!-- Original="pater" -->
+        <postfix Name="" /><!-- Original="pur" -->
+        <postfix Name="" /><!-- Original="rad" -->
+        <postfix Name="" /><!-- Original="ram" -->
+        <postfix Name="" /><!-- Original="seh" -->
+        <postfix Name="" /><!-- Original="shid" -->
+        <postfix Name="" /><!-- Original="shir" -->
+        <postfix Name="" /><!-- Original="tafa" -->
+        <postfix Name="" /><!-- Original="xes" -->
+      </postfixes>
+    </namestyle>
 
     <namestyle Name="Ekuemekiyyen" Format="AsIs">
       <templates Load="Replace">
-        <template Name="*Name**Suffix*" />
+        <template Name="" /><!-- Original="*Name**Suffix*" -->
       </templates>
       <templatevars Load="Replace">
         <templatevar Name="Suffix">
@@ -1053,6 +1109,7 @@
       </infixes>
     </namestyle>
 
+    <!-- "transparent names", where the names are meaningful phrases in the language -->
     <namestyle Name="Issachari" HyphenationChance="0" TwoNameChance="0">
       <!-- prefixes & postfixes reversed from en -->
       <prefixes Amount="1" Load="Replace">
@@ -1080,6 +1137,71 @@
         <postfix Name="泣く" /><!-- Original="Cries" -->
         <postfix Name="飲む" /><!-- Original="Drinks" -->
         <postfix Name="皮剥ぐ" /><!-- Original="Flays" -->
+      </postfixes>
+    </namestyle>
+
+  </namestyles>
+
+  <!-- use for Robots and other intentionally romaji names -->
+  <namestyles HyphenSeparator="-" NameSeparator=" ">
+
+    <namestyle Name="Robot" Format="AsIs">
+      <prefixes Amount="1-2" Load="Replace">
+        <prefix Name="[ERROR: MISSING HEX VALUE]" />
+        <prefix Name="0" Weight="3" />
+        <prefix Name="1" Weight="3" />
+        <prefix Name="2" Weight="3" />
+        <prefix Name="3" Weight="3" />
+        <prefix Name="4" Weight="3" />
+        <prefix Name="5" Weight="3" />
+        <prefix Name="6" Weight="3" />
+        <prefix Name="7" Weight="3" />
+        <prefix Name="8" Weight="3" />
+        <prefix Name="9" Weight="3" />
+        <prefix Name="A" Weight="3" />
+        <prefix Name="B" Weight="3" />
+        <prefix Name="C" Weight="3" />
+        <prefix Name="D" Weight="3" />
+        <prefix Name="E" Weight="3" />
+        <prefix Name="F" Weight="3" />
+      </prefixes>
+      <infixes Amount="1" Load="Replace">
+        <infix Name="[ERROR: MISSING HEX VALUE]" />
+        <infix Name="0" Weight="3" />
+        <infix Name="1" Weight="3" />
+        <infix Name="2" Weight="3" />
+        <infix Name="3" Weight="3" />
+        <infix Name="4" Weight="3" />
+        <infix Name="5" Weight="3" />
+        <infix Name="6" Weight="3" />
+        <infix Name="7" Weight="3" />
+        <infix Name="8" Weight="3" />
+        <infix Name="9" Weight="3" />
+        <infix Name="A" Weight="3" />
+        <infix Name="B" Weight="3" />
+        <infix Name="C" Weight="3" />
+        <infix Name="D" Weight="3" />
+        <infix Name="E" Weight="3" />
+        <infix Name="F" Weight="3" />
+      </infixes>
+      <postfixes Amount="1-2" Load="Replace">
+        <postfix Name="[ERROR: MISSING HEX VALUE]" />
+        <postfix Name="0" Weight="3" />
+        <postfix Name="1" Weight="3" />
+        <postfix Name="2" Weight="3" />
+        <postfix Name="3" Weight="3" />
+        <postfix Name="4" Weight="3" />
+        <postfix Name="5" Weight="3" />
+        <postfix Name="6" Weight="3" />
+        <postfix Name="7" Weight="3" />
+        <postfix Name="8" Weight="3" />
+        <postfix Name="9" Weight="3" />
+        <postfix Name="A" Weight="3" />
+        <postfix Name="B" Weight="3" />
+        <postfix Name="C" Weight="3" />
+        <postfix Name="D" Weight="3" />
+        <postfix Name="E" Weight="3" />
+        <postfix Name="F" Weight="3" />
       </postfixes>
     </namestyle>
 

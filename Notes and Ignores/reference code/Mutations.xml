@@ -127,8 +127,26 @@
         <p>Melee attacks heat opponents by <stat Name="HeatOnHit" Unit="degree" /></p>
       </leveltext>
     </mutation>
-    <mutation Name="Freezing Ray" Cost="5" MaxSelected="1" Class="FreezingRay" Exclusions="Flaming Ray" BearerDescription="the frozen-handed" Tile="Mutations/freezing_ray.bmp" />
-    <mutation Name="Heightened Hearing" Cost="2" MaxSelected="1" Class="HeightenedHearing" Exclusions="" BearerDescription="those with heightened hearing" Tile="Mutations/heightened_hearing.bmp" />
+    <mutation Name="Freezing Ray" Cost="5" MaxSelected="1" Class="FreezingRay" Exclusions="Flaming Ray" BearerDescription="the frozen-handed" Tile="Mutations/freezing_ray.bmp">
+      <description>
+        <p>You emit a ray of frost<switch Name="BodyPartName"><case Value="" /><default> from your <stat Name="BodyPartName" /></default></switch>.</p>
+      </description>
+      <leveltext>
+        <p>Emits a <stat Name="Range" />-square ray of frost in the direction of your choice.</p>
+        <statline Name="Damage" />
+        <statline Name="Cooldown" />
+        <p>Melee attacks cool opponents by <stat Name="CoolOnHit" Unit="degree" /></p>
+      </leveltext>
+    </mutation>
+    <mutation Name="Heightened Hearing" Cost="2" MaxSelected="1" Class="HeightenedHearing" Exclusions="" BearerDescription="those with heightened hearing" Tile="Mutations/heightened_hearing.bmp">
+      <description>
+        <p>You are possessed of unnaturally acute hearing.</p>
+      </description>
+      <leveltext>
+        <p>You detect the presence of creatures within a radius of <stat Name="Radius" />.</p>
+        <p><switch Name="LevelDiff"><case Value="1">{{rules|Increased chance to identify nearby detected creatures}}</case><default>Chance to identify nearby detected creatures</default></switch></p>
+      </leveltext>
+    </mutation>
     <mutation Name="Heightened Quickness" Cost="3" MaxSelected="1" Class="HeightenedSpeed" Exclusions="" BearerDescription="the quick" Tile="Mutations/heightened_quickness.bmp">
       <description>
         <p>You are gifted with tremendous speed.</p>
@@ -137,7 +155,25 @@
         <p>+<stat Name="SpeedBonus" /> Quickness</p>
       </leveltext>
     </mutation>
-    <mutation Name="Horns" Cost="4" MaxSelected="1" Class="Horns" Exclusions="" BearerDescription="the horned" Tile="Mutations/horns.bmp" />
+    <mutation Name="Horns" Cost="4" MaxSelected="1" Class="Horns" Exclusions="" BearerDescription="the horned" Tile="Mutations/horns.bmp">
+      <description>
+        <p><vartext>=horns.A.name.or.plural= =horns.verb:jut= out of your head.</vartext></p>
+      </description>
+      <leveltext>
+        <p>20% chance on melee attack to gore your opponent</p>
+        <statline Name="Damage" DisplayName="Damage increment" />
+        <statline Name="ToHitBonus" DisplayName="To-hit bonus" />
+        <switch Name="LevelMode">
+          <case Value="BleedBonus"><p>{{rules|Increased bleeding save difficulty and intensity}}</p></case>
+          <case Value="LevelUp"><p>{{rules|Increased bleeding save difficulty}}</p></case>
+          <default><p>Goring attacks may cause bleeding</p></default>
+        </switch>
+        <p><vartext>=horns.Name= =horns.verb:are= a short-blade class natural weapon.</vartext></p>
+        <p>+<stat Name="AV" /> AV</p>
+        <p>Cannot wear helmets</p>
+        <p>+100 reputation with {{w|antelopes}} and {{w|goatfolk}}</p>
+      </leveltext>
+    </mutation>
     <mutation Name="Metamorphosis" Cost="4" MaxSelected="1" Class="Metamorphosis" Exclusions="" BearerDescription="shapeshifters" Prerelease="true" Tile="Mutations/metamorphosis.bmp" />
     <mutation Name="Multiple Arms" Cost="4" MaxSelected="1" Class="MultipleArms" Exclusions="" BearerDescription="the many-armed" Tile="Mutations/multiple_arms.bmp" />
     <mutation Name="Multiple Legs" Cost="5" MaxSelected="1" Class="MultipleLegs" Exclusions="" BearerDescription="the many-legged" Tile="Mutations/multiple_legs.bmp" />
