@@ -1243,6 +1243,7 @@
         <template Name="the *Adjective* *CreatureTypeCap* *Position*" />
       </templates>
       <templatevars>
+        <!-- Make sure to update Strings.xml "Eyeless King Crab Naming.xml Context" strings -->
         <templatevar Name="Adjective">
           <value Name="echoing" />
           <value Name="frenetic" />
@@ -1310,6 +1311,7 @@
         <template Name="*Epithet*" />
       </templates>
       <templatevars>
+        <!-- Be sure to update the Strings.xml Goatfolk Hero Naming.xml Context entries -->
         <templatevar Name="Epithet">
           <value Name="Stargazer" />
           <value Name="Heartbiter" />
@@ -1326,9 +1328,11 @@
         <scope Name="Main" Type="Title" Special="Hero" Faction="Goatfolk" Priority="200" Combine="false" />
       </scopes>
       <templates>
+        <!-- Be sure to update the Strings.xml Goatfolk Hero Naming.xml Context entries -->
         <template Name="the Goatfolk Shaman of Clan *Clan*" />
       </templates>
       <templatevars>
+        <!-- Be sure to update the Strings.xml Goatfolk Hero Naming.xml Context entries -->
         <templatevar Name="Clan">
           <value Name="Hotur" />
           <value Name="Ibex" />
@@ -1746,6 +1750,7 @@
         <template Name="the *Adjective* Snapjaw *Occupation*" />
       </templates>
       <templatevars>
+        <!-- Make sure to update Strings.xml "Snapjaw Hero Naming.xml Context" strings -->
         <templatevar Name="Adjective">
           <value Name="calloused" />
           <value Name="fearsome" />
@@ -1974,6 +1979,7 @@
         <template Name="the *Adjective* Troll *Occupation*" />
       </templates>
       <templatevars>
+        <!-- Make sure to update Strings.xml "Troll Hero Naming.xml Context" -->
         <templatevar Name="Adjective">
           <value Name="twisted" />
           <value Name="everlasting" />

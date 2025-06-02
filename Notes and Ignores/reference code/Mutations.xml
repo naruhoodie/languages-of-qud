@@ -20,7 +20,7 @@
         <p>You gain one extra mutation each time you buy this, but the mutations don't manifest right away.</p>
         <p>Whenever you gain a level, there's a 33% chance that your genome destabilizes and you get to choose from 3 random mutations.</p>
       </description>
-      <leveltext />
+      <leveltext></leveltext>
     </mutation>
   </category>
 
@@ -72,14 +72,71 @@
         <p>Cannot wear body armor.</p>
       </leveltext>
     </mutation>
-    <mutation Name="Corrosive Gas Generation" Cost="3" MaxSelected="1" Class="CorrosiveGasGeneration" BearerDescription="those who expel corrosive gas" Tile="Mutations/gas_generation.bmp" />
-    <mutation Name="Double-muscled" Cost="3" MaxSelected="1" Class="HeightenedStrength" Exclusions="" BearerDescription="the double-muscled" Tile="Mutations/double-muscled.bmp" />
-    <mutation Name="Electrical Generation" Cost="4" MaxSelected="1" Class="ElectricalGeneration" Exclusions="" BearerDescription="those who generate electricity" Tile="Mutations/electrical_generation.bmp" />
-    <mutation Name="Electromagnetic Pulse" Cost="2" MaxSelected="1" Class="ElectromagneticPulse" Exclusions="" BearerDescription="those who emit electromagnetic pulses" Tile="Mutations/electromagnetic_pulse.bmp" />
-    <mutation Name="Flaming Ray" Cost="4" MaxSelected="1" Class="FlamingRay" Exclusions="Freezing Ray" BearerDescription="the flaming-handed" Tile="Mutations/flaming_ray.bmp" />
+    <mutation Name="Corrosive Gas Generation" Cost="3" MaxSelected="1" Class="CorrosiveGasGeneration" BearerDescription="those who expel corrosive gas" Tile="Mutations/gas_generation.bmp">
+      <description>
+        <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
+      </description>
+      <leveltext>
+        <p>Releases gas for <stat Name="Duration" /></p>
+        <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
+        <statline Name="Cooldown" />
+      </leveltext>
+    </mutation>
+    <mutation Name="Double-muscled" Cost="3" MaxSelected="1" Class="HeightenedStrength" Exclusions="" BearerDescription="the double-muscled" Tile="Mutations/double-muscled.bmp">
+      <description>
+        <p>You are possessed of hulking strength.</p>
+      </description>
+      <leveltext>
+        <p>+<stat Name="Strength" /> Strength</p>
+        <p><stat Name="DazeChance" />% chance to daze your opponent on a successful melee attack for 2-3 rounds</p>
+      </leveltext>
+    </mutation>
+    <mutation Name="Electrical Generation" Cost="4" MaxSelected="1" Class="ElectricalGeneration" Exclusions="" BearerDescription="those who generate electricity" Tile="Mutations/electrical_generation.bmp">
+      <description>
+        <p>You accrue electrical charge that you can use and discharge to deal damage.</p>
+      </description>
+      <leveltext>
+        <p>Maximum charge: <stat Name="MaxCharge" /></p>
+        <p>Accrue base <stat Name="BaseChargePerTurn" /> charge per turn</p>
+        <p>Can discharge all held charge for 1d4 damage per <stat Name="DischargeChunk" /> charge</p>
+        <p>Discharge can arc to adjacent targets dealing reduced damage, up to 1 target per <stat Name="DischargeChunk" /> charge</p>
+        <p>EMP causes involuntary discharge (difficulty 18 Willpower save)</p>
+        <switch Name="CanDrinkTransient"><case Value="true"><p>You can drink change from electrical power sources.</p></case><default><p>You can drink charge from energy cells and capacitors.</p></default></switch>
+        <p>You gain <stat Name="DamageAbsorbFactor" /> charge per point of electrical damage taken.</p>
+        <p>You can provide charge to equipped devices that have integrated power systems.</p>
+      </leveltext>
+    </mutation>
+    <mutation Name="Electromagnetic Pulse" Cost="2" MaxSelected="1" Class="ElectromagneticPulse" Exclusions="" BearerDescription="those who emit electromagnetic pulses" Tile="Mutations/electromagnetic_pulse.bmp">
+      <description>
+        <p>You generate an electromagnetic pulse that disables nearby artifacts and machines.</p>
+      </description>
+      <leveltext>
+        <p>Area: <stat Name="Area" /> centered around yourself</p>
+        <statline Name="Duration" />
+        <statline Name="Cooldown" />
+      </leveltext>
+    </mutation>
+    <mutation Name="Flaming Ray" Cost="4" MaxSelected="1" Class="FlamingRay" Exclusions="Freezing Ray" BearerDescription="the flaming-handed" Tile="Mutations/flaming_ray.bmp">
+      <description>
+        <p>You emit a ray of flame<switch Name="BodyPartName"><case Value="" /><default> from your <stat Name="BodyPartName" /></default></switch>.</p>
+      </description>
+      <leveltext>
+        <p>Emits a <stat Name="Range" />-square ray of flame in the direction of your choice.</p>
+        <statline Name="Damage" />
+        <statline Name="Cooldown" />
+        <p>Melee attacks heat opponents by <stat Name="HeatOnHit" Unit="degree" /></p>
+      </leveltext>
+    </mutation>
     <mutation Name="Freezing Ray" Cost="5" MaxSelected="1" Class="FreezingRay" Exclusions="Flaming Ray" BearerDescription="the frozen-handed" Tile="Mutations/freezing_ray.bmp" />
     <mutation Name="Heightened Hearing" Cost="2" MaxSelected="1" Class="HeightenedHearing" Exclusions="" BearerDescription="those with heightened hearing" Tile="Mutations/heightened_hearing.bmp" />
-    <mutation Name="Heightened Quickness" Cost="3" MaxSelected="1" Class="HeightenedSpeed" Exclusions="" BearerDescription="the quick" Tile="Mutations/heightened_quickness.bmp" />
+    <mutation Name="Heightened Quickness" Cost="3" MaxSelected="1" Class="HeightenedSpeed" Exclusions="" BearerDescription="the quick" Tile="Mutations/heightened_quickness.bmp">
+      <description>
+        <p>You are gifted with tremendous speed.</p>
+      </description>
+      <leveltext>
+        <p>+<stat Name="SpeedBonus" /> Quickness</p>
+      </leveltext>
+    </mutation>
     <mutation Name="Horns" Cost="4" MaxSelected="1" Class="Horns" Exclusions="" BearerDescription="the horned" Tile="Mutations/horns.bmp" />
     <mutation Name="Metamorphosis" Cost="4" MaxSelected="1" Class="Metamorphosis" Exclusions="" BearerDescription="shapeshifters" Prerelease="true" Tile="Mutations/metamorphosis.bmp" />
     <mutation Name="Multiple Arms" Cost="4" MaxSelected="1" Class="MultipleArms" Exclusions="" BearerDescription="the many-armed" Tile="Mutations/multiple_arms.bmp" />
@@ -89,7 +146,16 @@
     <mutation Name="Photosynthetic Skin" Cost="2" MaxSelected="1" Class="PhotosyntheticSkin" Exclusions="Albino,Carnivorous" BearerDescription="the green-skinned" Tile="Mutations/photosynthetic_skin.bmp" />
     <mutation Name="Quills" Cost="3" MaxSelected="1" Class="Quills" Exclusions="Carapace" BearerDescription="the quilled" Tile="Mutations/quills.bmp" />
     <mutation Name="Regeneration" Cost="4" MaxSelected="1" Class="Regeneration" Exclusions="" BearerDescription="those who regenerate" Tile="Mutations/regeneration.bmp" />
-    <mutation Name="Sleep Gas Generation" Cost="3" MaxSelected="1" Class="SleepGasGeneration" BearerDescription="those who expel sleep gas" Tile="Mutations/gas_generation.bmp" />
+    <mutation Name="Sleep Gas Generation" Cost="3" MaxSelected="1" Class="SleepGasGeneration" BearerDescription="those who expel sleep gas" Tile="Mutations/gas_generation.bmp">
+      <description>
+        <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
+      </description>
+      <leveltext>
+        <p>Releases gas for <stat Name="Duration" /></p>
+        <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
+        <statline Name="Cooldown" />
+      </leveltext>
+    </mutation>
     <mutation Name="Slime Glands" Cost="1" MaxSelected="1" Class="SlimeGlands" Exclusions="" BearerDescription="slime spitters" Tile="Mutations/slime_glands.bmp" />
     <mutation Name="Spinnerets" Cost="3" MaxSelected="1" Class="Spinnerets" Exclusions="" BearerDescription="web weavers" Tile="Mutations/spinnerets.bmp" />
     <mutation Name="Stinger (Confusing Venom)" Cost="3" MaxSelected="1" Class="Stinger" Variant="Stinger Confusion" Exclusions="Stinger (Paralyzing Venom),Stinger (Poisoning Venom)" BearerDescription="those with stingers tipped with confusing venom" Tile="Mutations/stinger.bmp" />

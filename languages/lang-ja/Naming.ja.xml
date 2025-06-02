@@ -775,6 +775,7 @@
         <template Name="*Adjective**CreatureType*の*Position*" />
       </templates>
       <templatevars Load="Replace">
+        <!-- Make sure to update Strings.xml "Eyeless King Crab Naming.xml Context" strings -->
         <templatevar Name="Adjective">
           <value Name="高らかな" /><!-- Original="echoing" -->
           <value Name="激しい" /><!-- Original="frenetic" -->
@@ -833,11 +834,12 @@
         <template Name="*Epithet*" />
       </templates>
       <templatevars Load="Replace">
+        <!-- Be sure to update the Strings.xml Goatfolk Hero Naming.xml Context entries -->
         <templatevar Name="Epithet" Load="Replace">
-          <value Name="天体観測者" /><!-- Original="Stargazer" -->
-          <value Name="心を噛む者" /><!-- Original="Heartbiter" -->
-          <value Name="二度話す者" /><!-- Original="Twicetalker" -->
-          <value Name="魂を飲む者" /><!-- Original="Souldrinker" -->
+          <value Name="星空観り" /><!-- Original="Stargazer" -->
+          <value Name="心噛み" /><!-- Original="Heartbiter" -->
+          <value Name="倍喋り" /><!-- Original="Twicetalker" -->
+          <value Name="魂飲み" /><!-- Original="Souldrinker" -->
           <value Name="白指" /><!-- Original="Whitefinger" -->
           <value Name="割れた角" /><!-- Original="Clovenhorn" -->
         </templatevar>
@@ -846,16 +848,18 @@
 
     <namestyle Name="Goatfolk Hero Title">
       <templates Load="Replace">
-        <template Name="*Clan*の山羊族のシャーマン" /><!-- Original="the Goatfolk Shaman of Clan *Clan*" -->
+        <!-- Be sure to update the Strings.xml Goatfolk Hero Naming.xml Context entries -->
+        <template Name="*Clan*氏族の山羊族のシャーマン" /><!-- Original="the Goatfolk Shaman of Clan *Clan*" -->
       </templates>
       <templatevars>
+        <!-- Be sure to update the Strings.xml Goatfolk Hero Naming.xml Context entries -->
         <templatevar Name="Clan" Load="Replace">
-          <value Name="ホトゥール氏族" /><!-- Original="Hotur" -->
-          <value Name="アイベックス氏族" /><!-- Original="Ibex" -->
-          <value Name="ソル氏族" /><!-- Original="sol" -->
-          <value Name="白舌氏族" /><!-- Original="Whitetongue" -->
-          <value Name="イル氏族" /><!-- Original="Yr" -->
-          <value Name="ムニム氏族" /><!-- Original="Mnim" -->
+          <value Name="ホトゥール" /><!-- Original="Hotur" -->
+          <value Name="アイベックス" /><!-- Original="Ibex" -->
+          <value Name="ソル" /><!-- Original="Sol" -->
+          <value Name="白舌" /><!-- Original="Whitetongue" -->
+          <value Name="イル" /><!-- Original="Yr" -->
+          <value Name="ムニム" /><!-- Original="Mnim" -->
         </templatevar>
       </templatevars>
     </namestyle>
@@ -1050,6 +1054,7 @@
     </namestyle>
 
     <namestyle Name="Issachari" HyphenationChance="0" TwoNameChance="0">
+      <!-- prefixes & postfixes reversed from en -->
       <prefixes Amount="1" Load="Replace">
         <prefix Name="瀝青" /><!-- Original="Asphalt" -->
         <prefix Name="火" /><!-- Original="Fire" -->

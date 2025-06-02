@@ -857,13 +857,13 @@ Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:44
   <string ID="Troll Hero Naming.xml Context:two-headed">two-headed</string>
   <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:84-->
   <string ID="Troll Hero Naming.xml Context:Caveking">Caveking</string>
-  <!--Code references _T(): Assets/XRL Application/World/Events/DescriptionBuilder.cs:315-->
+  <!--Code references _T(): Assets/XRL Application/World/Events/DescriptionBuilder.cs:337-->
   <string ID="DescriptionBuilder Multiple Titles Clause:, =titles.andList:noSerial=">, =titles.andList:noSerial=</string>
-  <!--Code references _T(): Assets/XRL Application/World/Events/DescriptionBuilder.cs:322-->
+  <!--Code references _T(): Assets/XRL Application/World/Events/DescriptionBuilder.cs:344-->
   <string ID="DescriptionBuilder Single Title Clause With Epithets:, =title.toString=">, =title.toString=</string>
-  <!--Code references _T(): Assets/XRL Application/World/Events/DescriptionBuilder.cs:328-->
+  <!--Code references _T(): Assets/XRL Application/World/Events/DescriptionBuilder.cs:350-->
   <string ID="DescriptionBuilder Single Title Clause:and =title.toString=">and =title.toString=</string>
-  <!--Code references _T(): Assets/XRL Application/World/Events/DescriptionBuilder.cs:342-->
+  <!--Code references _T(): Assets/XRL Application/World/Events/DescriptionBuilder.cs:364-->
   <string ID="DescriptionBuilder Multiple With Clause:with =withClauses.andList=">with =withClauses.andList=</string>
   <!--Code references _S(): Assets/XRL Application/World/Events/ExtraHostilePerceptionEvent.cs:21-->
   <string ID="hostile perception verb:perceive">perceive</string>
@@ -1000,17 +1000,17 @@ Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:1181
   <string ID="You can't excavate the sky!">You can't excavate the sky!</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/BurrowingClaws.cs:177-->
   <string ID="=subject.T= =subject.verb:dig= a passage up.">=subject.T= =subject.verb:dig= a passage up.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/Carapace.cs:195-->
-  <string ID="=subject.Does:fail= to tighten =subject.possessive= =carapace.name=">=subject.Does:fail= to tighten =subject.possessive= =carapace.name=</string>
-  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/Carapace.cs:198-->
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/Carapace.cs:184-->
   <string ID="carapace">carapace</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/Carapace.cs:255-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/Carapace.cs:193-->
+  <string ID="=subject.Does:fail= to tighten =subject.possessive= =carapace.name=">=subject.Does:fail= to tighten =subject.possessive= =carapace.name=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/Carapace.cs:253-->
   <string ID="You tighten your =carapace.name=. Your AV increases by {{G|=tightFactor.name=}}.">You tighten your =carapace.name=. Your AV increases by {{G|=tightFactor.name=}}.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/Carapace.cs:263-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/Carapace.cs:261-->
   <string ID="=subject.Does:tighten= =subject.possessive= =carapace.name=">=subject.Does:tighten= =subject.possessive= =carapace.name=</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/Carapace.cs:293-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/Carapace.cs:291-->
   <string ID="=carapace.Does:loosen=. =subject.Name's= AV decreases by {{R|=tightFactor.name=}}.">=carapace.Does:loosen=. =subject.Name's= AV decreases by {{R|=tightFactor.name=}}.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/Carapace.cs:304-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/Carapace.cs:302-->
   <string ID="=subject.Name's= =carapace.does:loosen=.">=subject.Name's= =carapace.does:loosen=.</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/ElectricalGeneration.cs:181-->
   <string ID="=subject.Does:discharge= =amount= units of electrical charge!">=subject.Does:discharge= =amount= units of electrical charge!</string>
@@ -1024,6 +1024,22 @@ Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:1181
   <string ID="=subject.Does:emit= an electromagnetic pulse.">=subject.Does:emit= an electromagnetic pulse.</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/ElectromagneticPulse.cs:186-->
   <string ID="EMP Ability Name:Emit Pulse">Emit Pulse</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/FlamingRay.cs:118-->
+  <string ID="You cannot do that on the world map.">You cannot do that on the world map.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/FlamingRay.cs:127-->
+  <string ID="Your =part.ordinalName= =part.is= too damaged to do that!">Your =part.ordinalName= =part.is= too damaged to do that!</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/FlamingRay.cs:135-->
+  <string ID="Your =bodyPartType|lower= is too damaged to do that!">Your =bodyPartType|lower= is too damaged to do that!</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/FlamingRay.cs:244-->
+  <string ID="Flaming Ray Targeting Screen Title:Flaming Ray">Flaming Ray</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/FlamingRay.cs:287-->
+  <string ID="FlamingRay emit:=subject.Does:emit= a flaming ray from =subject.its= =part.ordinalName=!">=subject.Does:emit= a flaming ray from =subject.its= =part.ordinalName=!</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/FlamingRay.cs:294-->
+  <string ID="FlamingRay emit no part:=subject.Does:emit= a flaming ray!">=subject.Does:emit= a flaming ray!</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/FlamingRay.cs:343-->
+  <string ID="Flaming Ray Ability Name:Flaming Ray">Flaming Ray</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/FlamingRay.cs:384-->
+  <string ID="Flaming Ray Missing Limb Message:Missing =part.name=">Missing =part.name=</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/GasGeneration.cs:31-->
   <string ID="mutation sleep gas ability name:Release Sleep Gas">Release Sleep Gas</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/GasGeneration.cs:56-->
@@ -1058,138 +1074,173 @@ Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:1181
   <string ID="hostile perception verb:hear">hear</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/HeightenedSmell.cs:39-->
   <string ID="hostile perception verb:smell">smell</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:4869-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Pets/ReflectShame.cs:73-->
+  <string ID="=subject.Does:are= shamed by =subject.possessive= reflection!">=subject.Does:are= shamed by =subject.possessive= reflection!</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Pets/RepellingForce.cs:94-->
+  <string ID="You cannot use =mutation.name= on the world map.">You cannot use =mutation.name= on the world map.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Pets/RepellingForce.cs:101-->
+  <string ID="=subject.Does:flip= polarity.">=subject.Does:flip= polarity.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Pets/World.Parts.Mutation.ErosTeleportation.cs:140-->
+  <string ID="ErosTeleportaion FailMessage:You can only teleport to a place you have seen before!">You can only teleport to a place you have seen before!</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Pets/World.Parts.Mutation.ErosTeleportation.cs:147-->
+  <string ID="ErosTeleportation FailMessage:You may only teleport into an empty square!">You may only teleport into an empty square!</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Pets/World.Parts.Mutation.ErosTeleportation.cs:169-->
+  <string ID="ErosTeleportation Shout:I'm coming, =partyLeader.basename=!">I'm coming, =partyLeader.basename=!</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Pets/World.Parts.Mutation.ErosTeleportation.cs:174-->
+  <string ID="ErosTeleportation Shout MessageLog:=subject.Basename|strip= =subject.verb:yell=, {{W|'=shoutMessage='}}">=subject.Basename|strip= =subject.verb:yell=, {{W|'=shoutMessage='}}</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Pets/World.Parts.Mutation.ErosTeleportation.cs:204-->
+  <string ID="ErosTeleportation Ability Name:Teleport">Teleport</string>
+  <!--Code references _T():
+Assets/XRL Application/World/Game Objects/Parts/Physics.cs:849
+Assets/XRL Application/World/Game Objects/Parts/Physics.cs:879
+-->
+  <string ID="=subject.Does:are= knocked =direction.directionDescription=.">=subject.Does:are= knocked =direction.directionDescription=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:916-->
+  <string ID="=subject.Does:collide= with =object.a.name=.">=subject.Does:collide= with =object.a.name=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:978-->
+  <string ID="Physics AccelerateInternal my damage message:from colliding with =object.a.name=.">from colliding with =object.a.name=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:980-->
+  <string ID="Physics AccelerateInternal my damage message w/ pens:=pens.pens= from colliding with =object.a.name=.">=pens.pens= from colliding with =object.a.name=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:1010-->
+  <string ID="Physics AccelerateInternal my damage message:from =subject.a.name= colliding with =object.them=.">from =subject.a.name= colliding with =object.them=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:1012-->
+  <string ID="Physics AccelerateInternal my damage message w/ pens:=pens.pens= from =subject.a.name= colliding with =object.them=.">=pens.pens= from =subject.a.name= colliding with =object.them=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:4908-->
   <string ID="=subject.An= =subject.verb#ArriveVerb= =subject.direction=.">=subject.An= =subject.verb#ArriveVerb= =subject.direction=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/IComponent.cs:1270-->
+  <string ID="TargetSelfConfirm:Are you sure you want to target =subject.itself=?">Are you sure you want to target =subject.itself=?</string>
   <!--Code references _S(): Assets/XRL Application/World/Text/Delegates.cs:680-->
   <string ID="keybind:unknown key">unknown key</string>
   <!--Code references _S(): Assets/XRL Application/World/Text/Delegates.cs:695-->
   <string ID="keybind:{{W|Alt}}">{{W|Alt}}</string>
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:234-->
+  <!--Code references _T(): Assets/XRL Application/World/Text/Delegates/Delegates.Numbers.cs:43-->
+  <string ID="damage penetrations:(x=number.toString=)">(x=number.toString=)</string>
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:235-->
   <string ID="Generating lairs...">Generating lairs...</string>
   <!--Code references _S():
-Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:301
-Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:336
-Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2670
+Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:302
+Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:337
+Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2671
 -->
   <string ID="You notice some ruins nearby. Would you like to investigate?">You notice some ruins nearby. Would you like to investigate?</string>
-  <!--Code references _T(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:360-->
+  <!--Code references _T(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:361-->
   <string ID="=goatfolkvillagename=, goatfolk village">=goatfolkvillagename=, goatfolk village</string>
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:371-->
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:372-->
   <string ID="You smell roasted boar nearby. Would you like to investigate?">You smell roasted boar nearby. Would you like to investigate?</string>
-  <!--Code references _T(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:393-->
+  <!--Code references _T(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:394-->
   <string ID="=villagename=, goatfolk haunt">=villagename=, goatfolk haunt</string>
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:402-->
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:403-->
   <string ID="You experience a sense memory of roasted boar smell. Would you like to investigate?">You experience a sense memory of roasted boar smell. Would you like to investigate?</string>
-  <!--Code references _T(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1041-->
+  <!--Code references _T(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1042-->
   <string ID=" {{K|-learned from =factionname=}}" Value=" {{K|-learned from =factionname=}}" />
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1048-->
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1049-->
   <string ID="You discover an abandoned village. Would you like to investigate?">You discover an abandoned village. Would you like to investigate?</string>
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1052-->
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1053-->
   <string ID="You discover a village. Would you like to investigate?">You discover a village. Would you like to investigate?</string>
-  <!--Code references _T(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1269-->
+  <!--Code references _T(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1270-->
   <string ID="You discover =regionName=.">You discover =regionName=.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1289-->
+  <!--Code references _T(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1290-->
   <string ID=" {{K|-known by =faction.t:Joppa=}}" Value=" {{K|-known by =faction.t:Joppa=}}" />
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1292-->
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1293-->
   <string ID="You discover some historic ruins. Would you like to investigate?">You discover some historic ruins. Would you like to investigate?</string>
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1386-->
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1387-->
   <string ID="sultan dungeon:liminal floor">liminal floor</string>
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1634-->
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1635-->
   <string ID="Building forts...">Building forts...</string>
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1646-->
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1647-->
   <string ID="the snapjaw who wields {{R-r-K-y-Y sequence|Stopsvalinn}}">the snapjaw who wields {{R-r-K-y-Y sequence|Stopsvalinn}}</string>
   <!--Code references _S():
-Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1658
-Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1662
+Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1659
+Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1663
 -->
   <string ID="a snapjaw fort">a snapjaw fort</string>
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1726-->
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1727-->
   <string ID="Building farms...">Building farms...</string>
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1758-->
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1759-->
   <string ID="the lair of {{M|Oboroqoru, Ape God}}">the lair of {{M|Oboroqoru, Ape God}}</string>
   <!--Code references _S():
-Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1763
-Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1961
-Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1992
-Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:3268
+Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1764
+Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1962
+Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1993
+Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:3269
 -->
   <string ID="You discover a lair. Would you like to investigate?">You discover a lair. Would you like to investigate?</string>
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1787-->
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1788-->
   <string ID="the lair of Oboroqoru, Ape God">the lair of Oboroqoru, Ape God</string>
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1861-->
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1862-->
   <string ID="the mouth of {{M|Shug'ruith the Burrower}}">the mouth of {{M|Shug'ruith the Burrower}}</string>
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1867-->
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1868-->
   <string ID="You come upon a yawning pit. Would you like to investigate?">You come upon a yawning pit. Would you like to investigate?</string>
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1939-->
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1940-->
   <string ID="the cradle of {{M|Shug'ruith the Burrower}}">the cradle of {{M|Shug'ruith the Burrower}}</string>
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1957-->
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1958-->
   <string ID="the chuppah of {{M|Girsh Qas and Girsh Qon}}">the chuppah of {{M|Girsh Qas and Girsh Qon}}</string>
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1988-->
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:1989-->
   <string ID="the cradle of {{M|Girsh Rermadon}}">the cradle of {{M|Girsh Rermadon}}</string>
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2024-->
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2025-->
   <string ID="the cradle of {{M|Girsh Agolgot}}">the cradle of {{M|Girsh Agolgot}}</string>
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2041-->
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2042-->
   <string ID="the cradle of {{M|Girsh Bethsaida}}">the cradle of {{M|Girsh Bethsaida}}</string>
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2088-->
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2089-->
   <string ID="the village lair of {{M|Mamon Souldrinker}}">the village lair of {{M|Mamon Souldrinker}}</string>
   <!--Code references _S():
-Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2174
-Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2194
-Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2243
-Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2254
+Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2175
+Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2195
+Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2244
+Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2255
 -->
   <string ID="Bey Lah">Bey Lah</string>
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2193-->
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2194-->
   <string ID="outskirts">outskirts</string>
   <!--Code references _S():
-Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2276
-Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2284
+Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2277
+Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2285
 -->
   <string ID="Hydropon">Hydropon</string>
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2296-->
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2297-->
   <string ID="the Hydropon">the Hydropon</string>
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2306-->
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2307-->
   <string ID="Hamilcrab's shop">Hamilcrab's shop</string>
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2580-->
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2581-->
   <string ID="Generating village history...">Generating village history...</string>
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2594-->
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2595-->
   <string ID="some flattened remains">some flattened remains</string>
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2628-->
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2629-->
   <string ID="a secluded merchant from the Consortium of Phyta">a secluded merchant from the Consortium of Phyta</string>
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2648-->
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2649-->
   <string ID="the Ruin of House Isner">the Ruin of House Isner</string>
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2663-->
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2664-->
   <string ID="Gyl">Gyl</string>
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2666-->
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2667-->
   <string ID="Recoming nook at Gyl">Recoming nook at Gyl</string>
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2689-->
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2690-->
   <string ID="a {{w|dromad}} caravan">a {{w|dromad}} caravan</string>
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2699-->
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2700-->
   <string ID="Kindrish, the ancestral bracelet of the hindren">Kindrish, the ancestral bracelet of the hindren</string>
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2723-->
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2724-->
   <string ID="a {{g|slime}} bog">a {{g|slime}} bog</string>
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2728-->
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2729-->
   <string ID="some {{fiery|flaming}} {{K|tar}} pits">some {{fiery|flaming}} {{K|tar}} pits</string>
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2733-->
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2734-->
   <string ID="a {{rusty|rust}} bog">a {{rusty|rust}} bog</string>
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2738-->
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2739-->
   <string ID="a {{m|fungus}} forest">a {{m|fungus}} forest</string>
-  <!--Code references _T(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2742-->
+  <!--Code references _T(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2743-->
   <string ID="=biome.a= region">=biome.a= region</string>
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:3121-->
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:3122-->
   <string ID="lair noun:lair">lair</string>
-  <!--Code references _T(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:3123-->
+  <!--Code references _T(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:3124-->
   <string ID="the =lairname= of =subject.refname:long:withTitles:LairName=">the =lairname= of =subject.refname:long:withTitles:LairName=</string>
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:3142-->
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:3143-->
   <string ID="the lair of =subject.refname:long:withTitles:LairName|strip=">the lair of =subject.refname:long:withTitles:LairName|strip=</string>
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:3222-->
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:3223-->
   <string ID="lair">lair</string>
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:3998-->
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:3999-->
   <string ID="Generating deep history...">Generating deep history...</string>
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:4002-->
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:4003-->
   <string ID="Generating historical sites...">Generating historical sites...</string>
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:4035-->
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:4036-->
   <string ID="abandoned village">abandoned village</string>
-  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:4046-->
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:4047-->
   <string ID="salt marsh">salt marsh</string>
 </strings>

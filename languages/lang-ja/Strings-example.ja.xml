@@ -382,10 +382,10 @@ Caves of Qud code extracted string table.
   <string ID="Eyeless King Crab Naming.xml Context:Goliath">ゴリアテ</string>
   <string ID="Eyeless King Crab Naming.xml Context:Lord">大名</string>
   <string ID="Eyeless King Crab Naming.xml Context:Patriarch">家父長</string>
-  <string ID="Goatfolk Hero Naming.xml Context:Stargazer">天体観測者</string>
-  <string ID="Goatfolk Hero Naming.xml Context:Heartbiter">心を噛む者</string>
-  <string ID="Goatfolk Hero Naming.xml Context:Twicetalker">二度話す者</string>
-  <string ID="Goatfolk Hero Naming.xml Context:Souldrinker">魂を飲む者</string>
+  <string ID="Goatfolk Hero Naming.xml Context:Stargazer">星空観り</string>
+  <string ID="Goatfolk Hero Naming.xml Context:Heartbiter">心噛み</string>
+  <string ID="Goatfolk Hero Naming.xml Context:Twicetalker">倍喋り</string>
+  <string ID="Goatfolk Hero Naming.xml Context:Souldrinker">魂飲み</string>
   <string ID="Goatfolk Hero Naming.xml Context:Whitefinger">白指</string>
   <string ID="Goatfolk Hero Naming.xml Context:Clovenhorn">割れた角</string>
   <string ID="Goatfolk Hero Naming.xml Context:Clan Hotur">ホトゥール氏族</string>
@@ -543,8 +543,8 @@ Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:44
   <string ID="=subject.T= =subject.verb:dig= a passage down.">[届：\TODO]=subject.T= =subject.verb:dig= a passage down.</string>
   <string ID="You can't excavate the sky!">[届：\TODO]You can't excavate the sky!</string>
   <string ID="=subject.T= =subject.verb:dig= a passage up.">[届：\TODO]=subject.T= =subject.verb:dig= a passage up.</string>
-  <string ID="=subject.does:fail= to tighten =subject.possessive= =carapace.name=">[届：\TODO]=subject.does:fail= to tighten =subject.possessive= =carapace.name=</string>
   <string ID="carapace">[届：\TODO]carapace</string>
+  <string ID="=subject.does:fail= to tighten =subject.possessive= =carapace.name=">[届：\TODO]=subject.does:fail= to tighten =subject.possessive= =carapace.name=</string>
   <string ID="You tighten your =carapace.name=. Your AV increases by {{G|=tightFactor.name=}}.">[届：\TODO]You tighten your =carapace.name=. Your AV increases by {{G|=tightFactor.name=}}.</string>
   <string ID="=subject.does:tighten= =subject.possessive= =carapace.name=">[届：\TODO]=subject.does:tighten= =subject.possessive= =carapace.name=</string>
   <string ID="=carapace.does:loosen=. =subject.Name's= AV decreases by {{R|=tightFactor.name=}}.">[届：\TODO]=carapace.does:loosen=. =subject.Name's= AV decreases by {{R|=tightFactor.name=}}.</string>
@@ -555,6 +555,14 @@ Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:44
   <string ID="=squareSize=x=squareSize=">[届：\TODO]=squareSize=x=squareSize=</string>
   <string ID="=subject.Does:emit= an electromagnetic pulse.">[届：\TODO]=subject.Does:emit= an electromagnetic pulse.</string>
   <string ID="EMP Ability Name:Emit Pulse">[届：\TODO]Emit Pulse</string>
+  <string ID="You cannot do that on the world map.">[届：\TODO]You cannot do that on the world map.</string>
+  <string ID="Your =part.ordinalName= =part.is= too damaged to do that!">[届：\TODO]Your =part.ordinalName= =part.is= too damaged to do that!</string>
+  <string ID="Your =bodyPartType|lower= is too damaged to do that!">[届：\TODO]Your =bodyPartType|lower= is too damaged to do that!</string>
+  <string ID="Flaming Ray Targeting Screen Title:Flaming Ray">[届：\TODO]Flaming Ray</string>
+  <string ID="FlamingRay emit:=subject.Does:emit= a flaming ray from =subject.its= =part.ordinalName=!">[届：\TODO]=subject.Does:emit= a flaming ray from =subject.its= =part.ordinalName=!</string>
+  <string ID="FlamingRay emit no part:=subject.Does:emit= a flaming ray!">[届：\TODO]=subject.Does:emit= a flaming ray!</string>
+  <string ID="Flaming Ray Ability Name:Flaming Ray">[届：\TODO]Flaming Ray</string>
+  <string ID="Flaming Ray Missing Limb Message:Missing =part.name=">[届：\TODO]Missing =part.name=</string>
   <string ID="mutation sleep gas ability name:Release Sleep Gas">[届：\TODO]Release Sleep Gas</string>
   <string ID="mutation corrosive gas abilty name:Release Corrosive Gas">[届：\TODO]Release Corrosive Gas</string>
   <string ID="mutation plasma gas abilty name:Release Plasma">[届：\TODO]Release Plasma</string>
@@ -572,7 +580,26 @@ Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:44
   <string ID="=subject.Does:start= releasing =gasdisplayname=.">[届：\TODO]=subject.Does:start= releasing =gasdisplayname=.</string>
   <string ID="hostile perception verb:hear">[届：\TODO]hear</string>
   <string ID="hostile perception verb:smell">[届：\TODO]smell</string>
+  <string ID="=subject.Does:are= shamed by =subject.possessive= reflection!">[届：\TODO]=subject.Does:are= shamed by =subject.possessive= reflection!</string>
+  <string ID="You cannot use =mutation.name= on the world map.">[届：\TODO]You cannot use =mutation.name= on the world map.</string>
+  <string ID="=subject.Does:flip= polarity.">[届：\TODO]=subject.Does:flip= polarity.</string>
+  <string ID="ErosTeleportaion FailMessage:You can only teleport to a place you have seen before!">[届：\TODO]You can only teleport to a place you have seen before!</string>
+  <string ID="ErosTeleportation FailMessage:You may only teleport into an empty square!">[届：\TODO]You may only teleport into an empty square!</string>
+  <string ID="ErosTeleportation Shout:I'm coming, =partyLeader.basename=!">[届：\TODO]I'm coming, =partyLeader.basename=!</string>
+  <string ID="ErosTeleportation Shout MessageLog:=subject.Basename|strip= =subject.verb:yell=, {{W|'=shoutMessage='}}">[届：\TODO]=subject.Basename|strip= =subject.verb:yell=, {{W|'=shoutMessage='}}</string>
+  <string ID="ErosTeleportation Ability Name:Teleport">[届：\TODO]Teleport</string>
+
+  <!--
+	Physics strings
+  -->
+  <string ID="=subject.Does:are= knocked =direction.directionDescription=.">[届：\TODO]=subject.Does:are= knocked =direction.directionDescription=.</string>
+  <string ID="=subject.Does:collide= with =object.a.name=.">[届：\TODO]=subject.Does:collide= with =object.a.name=.</string>
+  <string ID="Physics AccelerateInternal my damage message:from colliding with =object.a.name=.">[届：\TODO]from colliding with =object.a.name=.</string>
+  <string ID="Physics AccelerateInternal my damage message w/ pens:=pens.pens= from colliding with =object.a.name=.">[届：\TODO]=pens.pens= from colliding with =object.a.name=.</string>
+  <string ID="Physics AccelerateInternal my damage message:from =subject.a.name= colliding with =object.them=.">[届：\TODO]from =subject.a.name= colliding with =object.them=.</string>
+  <string ID="Physics AccelerateInternal my damage message w/ pens:=pens.pens= from =subject.a.name= colliding with =object.them=.">[届：\TODO]=pens.pens= from =subject.a.name= colliding with =object.them=.</string>
   <string ID="=subject.An= =subject.verb#ArriveVerb= =subject.direction=.">[届：\TODO]=subject.An= =subject.verb#ArriveVerb= =subject.direction=.</string>
+  <string ID="TargetSelfConfirm:Are you sure you want to target =subject.itself=?">[届：\TODO]Are you sure you want to target =subject.itself=?</string>
 
   <!--
 	Keybind strings
@@ -580,9 +607,11 @@ Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:44
   <string ID="keybind:unknown key">不明なキー</string>
   <string ID="keybind:{{W|Alt}}">{{W|ＡＬＴ}}</string>
 
+  <string ID="damage penetrations:(x=number.toString=)">[届：\TODO](x=number.toString=)</string>
+
   <!--
 	WorldBuilder strings
-  -->You discover the Dead Sea.
+  -->
   <string ID="Generating lairs...">巣窟を生成中…</string>
   <string ID="You notice some ruins nearby. Would you like to investigate?">近くに廃墟があることに気づく。調査してみるか？</string>
   <string ID="=goatfolkvillagename=, goatfolk village">山羊族の村の=goatfolkvillagename=</string>
@@ -601,8 +630,8 @@ Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:44
   <string ID="a snapjaw fort">パクッと口の砦</string>
   <string ID="Building farms...">農場を建設中…</string>
   <string ID="the lair of {{M|Oboroqoru, Ape God}}">{{M|猿神オボロコル}}の巣窟</string>
-  <string ID="You discover a lair. Would you like to investigate?">巣窟を発見した。[届：\TODO]You discover a lair. Would you like to investigate?</string>
-  <string ID="the lair of Oboroqoru, Ape God">[届：\TODO]the lair of Oboroqoru, Ape God</string>
+  <string ID="You discover a lair. Would you like to investigate?">巣窟を発見した。調査してみるか？</string>
+  <string ID="the lair of Oboroqoru, Ape God">猿神オボロコルの巣窟</string>
   <string ID="the mouth of {{M|Shug'ruith the Burrower}}">[届：\TODO]the mouth of {{M|Shug'ruith the Burrower}}</string>
   <string ID="You come upon a yawning pit. Would you like to investigate?">[届：\TODO]You come upon a yawning pit. Would you like to investigate?</string>
   <string ID="the cradle of {{M|Shug'ruith the Burrower}}">[届：\TODO]the cradle of {{M|Shug'ruith the Burrower}}</string>
@@ -610,7 +639,7 @@ Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:44
   <string ID="the cradle of {{M|Girsh Rermadon}}">[届：\TODO]the cradle of {{M|Girsh Rermadon}}</string>
   <string ID="the cradle of {{M|Girsh Agolgot}}">[届：\TODO]the cradle of {{M|Girsh Agolgot}}</string>
   <string ID="the cradle of {{M|Girsh Bethsaida}}">[届：\TODO]the cradle of {{M|Girsh Bethsaida}}</string>
-  <string ID="the village lair of {{M|Mamon Souldrinker}}">{{M|魂を飲む者のマーモン}}の村の隠れ家</string>
+  <string ID="the village lair of {{M|Mamon Souldrinker}}">{{M|魂飲みのマモン}}の村の隠れ家</string>
   <string ID="Bey Lah">ベイ・ラー</string>
   <string ID="outskirts">の外れ</string>
   <string ID="Hydropon">[届：\TODO]Hydropon</string>
