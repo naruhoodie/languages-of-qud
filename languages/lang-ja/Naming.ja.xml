@@ -736,48 +736,49 @@
       </templatevars>
     </namestyle>
 
-    <namestyle Name="Clam-ja" TwoNameChance="20" Format="AsIs">
+<!-- same basename generation for clams & crabs -->
+    <namestyle Name="Clam" TwoNameChance="20" Format="AsIs">
       <prefixes Amount="1" Load="Replace">
-        <prefix Name="" /><!-- Original="aco" -->
-        <prefix Name="" /><!-- Original="aga" -->
-        <prefix Name="" /><!-- Original="ba" -->
-        <prefix Name="" /><!-- Original="bo" -->
-        <prefix Name="" /><!-- Original="ca" -->
-        <prefix Name="" /><!-- Original="di" -->
-        <prefix Name="" /><!-- Original="gi" -->
-        <prefix Name="" Weight="2" /><!-- Original="ha" -->
-        <prefix Name="" /><!-- Original="hi" -->
-        <prefix Name="" /><!-- Original="ja" -->
-        <prefix Name="" /><!-- Original="ma" -->
-        <prefix Name="" /><!-- Original="mu" -->
-        <prefix Name="" /><!-- Original="rho" -->
-        <prefix Name="" /><!-- Original="sa" -->
-        <prefix Name="" /><!-- Original="so" -->
-        <prefix Name="" /><!-- Original="te" -->
-        <prefix Name="" /><!-- Original="y" -->
-        <prefix Name="" /><!-- Original="za" -->
+        <prefix Name="アコ" /><!-- Original="aco" -->
+        <prefix Name="アガ" /><!-- Original="aga" -->
+        <prefix Name="バ" /><!-- Original="ba" -->
+        <prefix Name="ボ" /><!-- Original="bo" -->
+        <prefix Name="カ" /><!-- Original="ca" -->
+        <prefix Name="ディ" /><!-- Original="di" -->
+        <prefix Name="ギ" /><!-- Original="gi" -->
+        <prefix Name="ハ" Weight="2" /><!-- Original="ha" -->
+        <prefix Name="ヒ" /><!-- Original="hi" -->
+        <prefix Name="ジャ" /><!-- Original="ja" -->
+        <prefix Name="マ" /><!-- Original="ma" -->
+        <prefix Name="ム" /><!-- Original="mu" -->
+        <prefix Name="ロー" /><!-- Original="rho" -->
+        <prefix Name="サ" /><!-- Original="sa" -->
+        <prefix Name="ソ" /><!-- Original="so" -->
+        <prefix Name="テ" /><!-- Original="te" -->
+        <prefix Name="イ" /><!-- Original="y" -->
+        <prefix Name="ザ" /><!-- Original="za" -->
       </prefixes>
       <infixes Amount="1-2" Load="Replace">
-        <infix Name="" /><!-- Original="bni" -->
-        <infix Name="" /><!-- Original="do" -->
-        <infix Name="" /><!-- Original="ggi" -->
-        <infix Name="" /><!-- Original="go" -->
-        <infix Name="" /><!-- Original="l" -->
-        <infix Name="" /><!-- Original="mil" -->
-        <infix Name="" /><!-- Original="mpsi" -->
-        <infix Name="" /><!-- Original="nni" -->
-        <infix Name="" /><!-- Original="pho" -->
-        <infix Name="" /><!-- Original="ra" -->
-        <infix Name="" /><!-- Original="rca" -->
-        <infix Name="" /><!-- Original="rtha" -->
-        <infix Name="" /><!-- Original="sdru" -->
-        <infix Name="" /><!-- Original="sgo" -->
-        <infix Name="" /><!-- Original="tra" -->
-        <infix Name="" /><!-- Original="tti" -->
-        <infix Name="" /><!-- Original="ze" -->
+        <infix Name="ブニ" /><!-- Original="bni" -->
+        <infix Name="ド" /><!-- Original="do" -->
+        <infix Name="ッギ" /><!-- Original="ggi" -->
+        <infix Name="ゴ" /><!-- Original="go" -->
+        <infix Name="ル" /><!-- Original="l" -->
+        <infix Name="ミル" /><!-- Original="mil" -->
+        <infix Name="ンプシ" /><!-- Original="mpsi" -->
+        <infix Name="ンニ" /><!-- Original="nni" -->
+        <infix Name="フォー" /><!-- Original="pho" -->
+        <infix Name="ラ" /><!-- Original="ra" -->
+        <infix Name="ルカ" /><!-- Original="rca" -->
+        <infix Name="ルサ" /><!-- Original="rtha" -->
+        <infix Name="スドル" /><!-- Original="sdru" -->
+        <infix Name="スゴ" /><!-- Original="sgo" -->
+        <infix Name="トラ" /><!-- Original="tra" -->
+        <infix Name="ッティ" /><!-- Original="tti" -->
+        <infix Name="ゼ" /><!-- Original="ze" -->
       </infixes>
       <postfixes Amount="1" Load="Replace">
-        <postfix Name="[貝\かい]" /><!-- Original="clam" -->
+        <postfix Name="貝" /><!-- Original="clam" -->
       </postfixes>
     </namestyle>
     
@@ -795,7 +796,7 @@
         <prefix Name="ジャ" /><!-- Original="ja" -->
         <prefix Name="マ" /><!-- Original="ma" -->
         <prefix Name="ム" /><!-- Original="mu" -->
-        <prefix Name="ロ" /><!-- Original="rho" -->
+        <prefix Name="ロー" /><!-- Original="rho" -->
         <prefix Name="サ" /><!-- Original="sa" -->
         <prefix Name="ソ" /><!-- Original="so" -->
         <prefix Name="テ" /><!-- Original="te" -->
@@ -811,7 +812,7 @@
         <infix Name="ミル" /><!-- Original="mil" -->
         <infix Name="ンプシ" /><!-- Original="mpsi" -->
         <infix Name="ンニ" /><!-- Original="nni" -->
-        <infix Name="フォ" /><!-- Original="pho" -->
+        <infix Name="フォー" /><!-- Original="pho" -->
         <infix Name="ラ" /><!-- Original="ra" -->
         <infix Name="ルカ" /><!-- Original="rca" -->
         <infix Name="ルサ" /><!-- Original="rtha" -->
@@ -1108,6 +1109,99 @@
         <infix Name="ラア" /><!-- Original="raa" -->
       </infixes>
     </namestyle>
+
+    <namestyle Name="Snapjaw-ja" HyphenationChance="15" TwoNameChance="1" Format="AsIs">
+      <prefixes Amount="0-2">
+        <prefix Name="バル" /><!-- Original="bar" -->
+        <prefix Name="バール" /><!-- Original="bawl" -->
+        <prefix Name="ボル" /><!-- Original="bor" -->
+        <prefix Name="ボール" /><!-- Original="bowl" -->
+        <prefix Name="ブル" /><!-- Original="bur" -->
+        <prefix Name="ブール" /><!-- Original="buwl" -->
+        <prefix Name="ダ" /><!-- Original="da" -->
+        <prefix Name="ド" /><!-- Original="do" -->
+        <prefix Name="ドゥ" /><!-- Original="du" -->
+        <prefix Name="グラ" /><!-- Original="gra" -->
+        <prefix Name="グロ" /><!-- Original="gro" -->
+        <prefix Name="グル" /><!-- Original="gru" -->
+        <prefix Name="マフ" /><!-- Original="maf" -->
+        <prefix Name="モフ" /><!-- Original="mof" -->
+        <prefix Name="ムフ" /><!-- Original="muf" -->
+        <prefix Name="ラフ" /><!-- Original="raf" -->
+        <prefix Name="ロフ" /><!-- Original="rof" -->
+        <prefix Name="ルフ" /><!-- Original="ruf" -->
+        <prefix Name="スカー" /><!-- Original="scar" -->
+        <prefix Name="スコー" /><!-- Original="scor" -->
+        <prefix Name="スクー" /><!-- Original="scur" -->
+      </prefixes>
+      <infixes Amount="1-4">
+        <infix Name="アフォ" /><!-- Original="afo" -->
+        <infix Name="アゴ" /><!-- Original="ago" -->
+        <infix Name="アホ" /><!-- Original="aho" -->
+        <infix Name="オボ" /><!-- Original="obo" -->
+        <infix Name="オフォ" /><!-- Original="ofo" -->
+        <infix Name="オゴ" /><!-- Original="ogo" -->
+        <infix Name="オホ" /><!-- Original="oho" -->
+        <infix Name="ス" /><!-- Original="su" -->
+        <infix Name="ウブ" /><!-- Original="ubu" -->
+        <infix Name="ウフォ" /><!-- Original="ufo" -->
+        <infix Name="ウゴ" /><!-- Original="ugo" -->
+        <infix Name="ウホ" /><!-- Original="uho" -->
+        <infix Name="ウル" /><!-- Original="ulu" -->
+        <infix Name="ウォフ" /><!-- Original="wof" -->
+      </infixes>
+      <postfixes Amount="0-2">
+        <postfix Name="アブ" /><!-- Original="ab" -->
+        <postfix Name="アフ" /><!-- Original="af" -->
+        <postfix Name="アゴ" /><!-- Original="ago" -->
+        <postfix Name="アー" /><!-- Original="aw" -->
+        <postfix Name="アズ" /><!-- Original="az" -->
+        <postfix Name="バ" /><!-- Original="ba" -->
+        <postfix Name="ボ" /><!-- Original="bo" -->
+        <postfix Name="ブ" /><!-- Original="bu" -->
+        <postfix Name="マ" /><!-- Original="ma" -->
+        <postfix Name="モ" /><!-- Original="mo" -->
+        <postfix Name="ム" /><!-- Original="mu" -->
+        <postfix Name="オブ" /><!-- Original="ob" -->
+        <postfix Name="オフ" /><!-- Original="of" -->
+        <postfix Name="オー" /><!-- Original="ow" -->
+        <postfix Name="オズ" /><!-- Original="oz" -->
+        <postfix Name="ウブ" /><!-- Original="ub" -->
+        <postfix Name="ウフ" /><!-- Original="uf" -->
+        <postfix Name="ウー" /><!-- Original="uw" -->
+        <postfix Name="ウズ" /><!-- Original="uz" -->
+      </postfixes>
+    </namestyle>
+
+    <namestyle Name="Snapjaw Hero Title-ja">
+      <scopes>
+        <scope Name="Main" Type="Title" Special="Hero" Faction="Snapjaws" Priority="200" Combine="false" />
+      </scopes>
+      <templates>
+        <template Name="*Adjective*パクッと口の*Occupation*" /><!-- Original="the *Adjective* Snapjaw *Occupation*" -->
+      </templates>
+      <templatevars>
+        <!-- Make sure to update Strings.xml "Snapjaw Hero Naming.xml Context" strings -->
+        <templatevar Name="Adjective">
+          <value Name="" /><!-- Original="calloused" -->
+          <value Name="" /><!-- Original="fearsome" -->
+          <value Name="" /><!-- Original="fleet-footed" -->
+          <value Name="" /><!-- Original="hulking" -->
+          <value Name="" /><!-- Original="learned" -->
+          <value Name="" /><!-- Original="nimble" -->
+          <value Name="" /><!-- Original="stalwart" -->
+        </templatevar>
+        <templatevar Name="Occupation">
+          <value Name="" /><!-- Original="Bear-baiter" -->
+          <value Name="" /><!-- Original="Firesnarler" -->
+          <value Name="" /><!-- Original="Gutspiller" -->
+          <value Name="王" /><!-- Original="King" -->
+          <value Name="" /><!-- Original="Skullsplitter" -->
+          <value Name="" /><!-- Original="Tot-eater" -->
+        </templatevar>
+      </templatevars>
+    </namestyle>
+
 
     <!-- "transparent names", where the names are meaningful phrases in the language -->
     <namestyle Name="Issachari" HyphenationChance="0" TwoNameChance="0">
