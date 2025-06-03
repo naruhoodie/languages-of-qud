@@ -676,9 +676,9 @@
       <templates Load="Replace">
         <template Name="*Rings*ヒヒの*Position*" />
       </templates>
-      <templatevars>
+      <templatevars Load="Replace">
         <!-- Update Strings.xml "Baboon Hero Naming.xml Context" -->
-        <templatevar Name="Position" Load="Replace">
+        <templatevar Name="Position">
           <value Name="浮気者" /><!-- Original="Philanderer" -->
           <value Name="謎かけ屋" /><!-- Original="Riddler" -->
           <value Name="隠者" /><!-- Original="Hermit" -->
@@ -891,7 +891,7 @@
       </templates>
       <templatevars Load="Replace">
         <!-- Be sure to update the Strings.xml Goatfolk Hero Naming.xml Context entries -->
-        <templatevar Name="Epithet" Load="Replace">
+        <templatevar Name="Epithet">
           <value Name="星空観り" /><!-- Original="Stargazer" -->
           <value Name="心噛み" /><!-- Original="Heartbiter" -->
           <value Name="倍喋り" /><!-- Original="Twicetalker" -->
@@ -907,9 +907,9 @@
         <!-- Be sure to update the Strings.xml Goatfolk Hero Naming.xml Context entries -->
         <template Name="*Clan*氏族の山羊族のシャーマン" /><!-- Original="the Goatfolk Shaman of Clan *Clan*" -->
       </templates>
-      <templatevars>
+      <templatevars Load="Replace">
         <!-- Be sure to update the Strings.xml Goatfolk Hero Naming.xml Context entries -->
-        <templatevar Name="Clan" Load="Replace">
+        <templatevar Name="Clan">
           <value Name="ホトゥール" /><!-- Original="Hotur" -->
           <value Name="アイベックス" /><!-- Original="Ibex" -->
           <value Name="ソル" /><!-- Original="Sol" -->
@@ -933,7 +933,7 @@
         <template Name="*Sultan**Forest*" Weight="350" />
       </templates>
       <templatevars Load="Replace">
-        <templatevar Name="Prefix" Load="Replace">
+        <templatevar Name="Prefix">
           <value Name="灰" /><!-- Original="Ash" -->
           <value Name="黒" /><!-- Original="Black" -->
           <value Name="血" /><!-- Original="Blood" -->
@@ -949,10 +949,10 @@
           <value Name="星" /><!-- Original="Star" -->
           <value Name="白" /><!-- Original="White" -->
         </templatevar>
-        <templatevar Name="Sultan" Load="Replace">
+        <templatevar Name="Sultan">
           <value Name="レシェフ" /><!-- Original="Resheph" -->
         </templatevar>
-        <templatevar Name="Suffix" Load="Replace">
+        <templatevar Name="Suffix">
           <value Name="バア" Weight="2" /><!-- Original="baa" -->
           <value Name="バアァアァアー" /><!-- Original="baaaaaah" -->
           <value Name="バアァアアー" Weight="3" /><!-- Original="baaaaah" -->
@@ -971,7 +971,7 @@
           <value Name="ラアアー" Weight="3" /><!-- Original="raaah" -->
           <value Name="ラアー" Weight="2" /><!-- Original="raah" -->
         </templatevar>
-        <templatevar Name="Forest" Load="Replace">
+        <templatevar Name="Forest">
 <!--          <value Name="林" />--><!-- Original="bosk" -->
           <value Name="谷" /><!-- Original="dale" -->
           <value Name="谷間" /><!-- Original="dell" -->
@@ -983,19 +983,19 @@
           <value Name="根" /><!-- Original="root" -->
 <!--          <value Name="谷" />--><!-- Original="vale" -->
           <value Name="森林" /><!-- Original="weald" -->
-          <value Name="枝垂れ" /><!-- Original="weep" --><!-- "weep(ing)" as in a tree -->
+          <value Name="枝垂れ" /><!-- Original="weep" --><!-- ja is "weep(ing)" as in a tree -->
           <value Name="森" /><!-- Original="wood" -->
         </templatevar>
-        <templatevar Name="Location" Load="Replace">
+        <templatevar Name="Location">
           <value Name="湾曲" /><!-- Original="bend" -->
           <value Name="湾" /><!-- Original="bite" --><!-- is the OG meant to be "bight"? -->
           <value Name="弓" /><!-- Original="bow" -->
           <value Name="割れ目" /><!-- Original="cleft" -->
           <value Name="三日月" /><!-- Original="crescent" -->
-          <value Name="穴" /><!-- Original="deep" --><!-- more lit. "hole, hollow"-->
+          <value Name="深海" /><!-- Original="deep" -->
           <value Name="池" /><!-- Original="pool" -->
           <value Name="星" /><!-- Original="star" -->
-          <value Name="空洞" /><!-- Original="void" -->
+          <value Name="空々" /><!-- Original="void" -->
           <value Name="井" /><!-- Original="well" -->
         </templatevar>
       </templatevars>
@@ -1016,7 +1016,7 @@
       </infixes>
     </namestyle>
 
-    <namestyle Name="Qlippoth Site-ja" Format="AsIs">
+    <namestyle Name="Qlippoth Site" Format="AsIs">
       <templates Load="Replace">
         <template Name="*Prefix**Suffix*" Weight="1800" />        
         <template Name="*Name**Location*" Weight="1125" />
@@ -1024,88 +1024,88 @@
         <template Name="*Sultan**Location*" Weight="250" />        
         <template Name="*Prefix**Forest*" Weight="1575" />        
       </templates>
-      <templatevars>
+      <templatevars Load="Replace">
         <templatevar Name="Prefix">
-          <value Name="" /><!-- Original="Ash" -->
-          <value Name="" /><!-- Original="Black" -->
-          <value Name="" /><!-- Original="Ghost" -->
-          <value Name="" /><!-- Original="Dust" -->          
-          <value Name="" /><!-- Original="Wraith" -->
-          <value Name="" /><!-- Original="Moon" -->
-          <value Name="" /><!-- Original="Dream" -->          
-          <value Name="" /><!-- Original="Star" -->
-          <value Name="" /><!-- Original="White" -->
-          <value Name="" /><!-- Original="Grey" -->
-          <value Name="" /><!-- Original="Gloom" -->
-          <value Name="" /><!-- Original="Dim" -->
-          <value Name="" /><!-- Original="Dusk" -->
-          <value Name="" /><!-- Original="Ever" -->
-          <value Name="" /><!-- Original="Null" -->
+          <value Name="灰" /><!-- Original="Ash" -->
+          <value Name="黒" /><!-- Original="Black" -->
+          <value Name="幽霊" /><!-- Original="Ghost" -->
+          <value Name="塵" /><!-- Original="Dust" -->          
+          <value Name="亡霊" /><!-- Original="Wraith" -->
+          <value Name="月" /><!-- Original="Moon" -->
+          <value Name="夢" /><!-- Original="Dream" -->          
+          <value Name="星" /><!-- Original="Star" -->
+          <value Name="白" /><!-- Original="White" -->
+          <value Name="霜" /><!-- Original="Grey" --><!-- "frost" since grey includes ash(灰) -->
+          <value Name="暗闇" /><!-- Original="Gloom" -->
+          <value Name="薄暗" /><!-- Original="Dim" -->
+          <value Name="黄昏" /><!-- Original="Dusk" -->
+          <value Name="永遠" /><!-- Original="Ever" -->
+          <value Name="零" /><!-- Original="Null" -->
         </templatevar>
         <templatevar Name="Sultan">
           <value Name="レシェフ" /><!-- Original="Resheph" -->
         </templatevar>
         <templatevar Name="Suffix">
-          <value Name="" Weight="2" /><!-- Original="baa" -->
-          <value Name="" /><!-- Original="baaaaaah" -->
-          <value Name="" Weight="3" /><!-- Original="baaaaah" -->
-          <value Name="" Weight="3" /><!-- Original="baaaah" -->
-          <value Name="" Weight="3" /><!-- Original="baaah" -->
-          <value Name="" Weight="2" /><!-- Original="baah" -->
-          <value Name="" /><!-- Original="naaa" -->
-          <value Name="" /><!-- Original="naaaaaah" -->
-          <value Name="" /><!-- Original="naaaaah" -->
-          <value Name="" /><!-- Original="naaaah" -->
-          <value Name="" /><!-- Original="naaah" -->
-          <value Name="" Weight="2" /><!-- Original="raa" -->
-          <value Name="" /><!-- Original="raaaaaah" -->
-          <value Name="" Weight="3" /><!-- Original="raaaaah" -->
-          <value Name="" Weight="3" /><!-- Original="raaaah" -->
-          <value Name="" Weight="3" /><!-- Original="raaah" -->
-          <value Name="" Weight="2" /><!-- Original="raah" -->
+          <value Name="バア" Weight="2" /><!-- Original="baa" -->
+          <value Name="バアァアァアー" /><!-- Original="baaaaaah" -->
+          <value Name="バアァアアー" Weight="3" /><!-- Original="baaaaah" -->
+          <value Name="バアァアー" Weight="3" /><!-- Original="baaaah" -->
+          <value Name="バアアー" Weight="3" /><!-- Original="baaah" -->
+          <value Name="バアー" Weight="2" /><!-- Original="baah" -->
+          <value Name="ナアァア" /><!-- Original="naaa" -->
+          <value Name="ナアァアァアー" /><!-- Original="naaaaaah" -->
+          <value Name="ナアァアアー" /><!-- Original="naaaaah" -->
+          <value Name="ナアァアー" /><!-- Original="naaaah" -->
+          <value Name="ナアアー" /><!-- Original="naaah" -->
+          <value Name="ラア" Weight="2" /><!-- Original="raa" -->
+          <value Name="ラアァアァアー" /><!-- Original="raaaaaah" -->
+          <value Name="ラアァアアー" Weight="3" /><!-- Original="raaaaah" -->
+          <value Name="ラアァアー" Weight="3" /><!-- Original="raaaah" -->
+          <value Name="ラアアー" Weight="3" /><!-- Original="raaah" -->
+          <value Name="ラアー" Weight="2" /><!-- Original="raah" -->
         </templatevar>
         <templatevar Name="Forest">
-          <value Name="" /><!-- Original="bosk" -->
-          <value Name="" /><!-- Original="dale" -->
-          <value Name="" /><!-- Original="dell" -->
-          <value Name="" /><!-- Original="glade" -->
-          <value Name="" /><!-- Original="glen" -->
-          <value Name="" /><!-- Original="gorge" -->
-          <value Name="" /><!-- Original="grove" -->
-          <value Name="" /><!-- Original="meadow" -->
-          <value Name="" /><!-- Original="root" -->
-          <value Name="" /><!-- Original="vale" -->
-          <value Name="" /><!-- Original="weald" -->
-          <value Name="" /><!-- Original="weep" -->
-          <value Name="" /><!-- Original="wood" -->
-          <value Name="" /><!-- Original="hollow" -->
+<!--          <value Name="林" />--><!-- Original="bosk" -->
+          <value Name="谷" /><!-- Original="dale" -->
+          <value Name="谷間" /><!-- Original="dell" -->
+<!--          <value Name="林間の空き地" />--><!-- Original="glade" -->
+          <value Name="峡" /><!-- Original="glen" --><!-- archaic kanji -->
+          <value Name="渓" /><!-- Original="gorge" -->
+          <value Name="林" /><!-- Original="grove" -->
+          <value Name="草地" /><!-- Original="meadow" -->
+          <value Name="根" /><!-- Original="root" -->
+<!--          <value Name="谷" />--><!-- Original="vale" -->
+          <value Name="森林" /><!-- Original="weald" -->
+          <value Name="枝垂れ" /><!-- Original="weep" --><!-- ja is "weep(ing)" as in a tree -->
+          <value Name="森" /><!-- Original="wood" -->
+          <value Name="穴" /><!-- Original="hollow" -->
         </templatevar>
         <templatevar Name="Location">                          
-          <value Name="" /><!-- Original="crescent" -->
-          <value Name="" /><!-- Original="deep" -->
-          <value Name="" /><!-- Original="pool" -->
-          <value Name="" /><!-- Original="star" -->
-          <value Name="" /><!-- Original="void" -->
-          <value Name="" /><!-- Original="well" -->
-          <value Name="" /><!-- Original="dream" -->
-          <value Name="" /><!-- Original="myth" -->          
-          <value Name="" /><!-- Original="calm" -->
+          <value Name="三日月" /><!-- Original="crescent" -->
+          <value Name="深海" /><!-- Original="deep" -->
+          <value Name="池" /><!-- Original="pool" -->
+          <value Name="星" /><!-- Original="star" -->
+          <value Name="空々" /><!-- Original="void" -->
+          <value Name="井" /><!-- Original="well" -->
+          <value Name="夢" /><!-- Original="dream" -->
+          <value Name="神話" /><!-- Original="myth" -->          
+          <value Name="冷静" /><!-- Original="calm" -->
         </templatevar>
       </templatevars>
       <prefixes Amount="1" Load="Replace">
-        <prefix Name="" /><!-- Original="ba" -->
-        <prefix Name="" Weight="2" /><!-- Original="baa" -->
-        <prefix Name="" /><!-- Original="na" -->
-        <prefix Name="" /><!-- Original="naa" -->
-        <prefix Name="" /><!-- Original="ra" -->
-        <prefix Name="" /><!-- Original="raa" -->
+        <prefix Name="バ" /><!-- Original="ba" -->
+        <prefix Name="バア" Weight="2" /><!-- Original="baa" -->
+        <prefix Name="ナ" /><!-- Original="na" -->
+        <prefix Name="ナア" /><!-- Original="naa" -->
+        <prefix Name="ラ" /><!-- Original="ra" -->
+        <prefix Name="ラア" /><!-- Original="raa" -->
       </prefixes>
       <infixes Amount="0-1" Load="Replace">
-        <infix Name="" Weight="2" /><!-- Original="ba" -->
-        <infix Name="" /><!-- Original="baa" -->
-        <infix Name="" /><!-- Original="naa" -->
-        <infix Name="" Weight="2" /><!-- Original="ra" -->
-        <infix Name="" /><!-- Original="raa" -->
+        <infix Name="バ" Weight="2" /><!-- Original="ba" -->
+        <infix Name="バア" /><!-- Original="baa" -->
+        <infix Name="ナア" /><!-- Original="naa" -->
+        <infix Name="ラ" Weight="2" /><!-- Original="ra" -->
+        <infix Name="ラア" /><!-- Original="raa" -->
       </infixes>
     </namestyle>
 
