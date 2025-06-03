@@ -20,7 +20,7 @@
         <p>[届：\TODO]You gain one extra mutation each time you buy this, but the mutations don't manifest right away.</p>
         <p>[届：\TODO]Whenever you gain a level, there's a 33% chance that your genome destabilizes and you get to choose from 3 random mutations.</p>
       </description>
-      <leveltext />
+      <leveltext></leveltext>
     </mutation>
   </category>
 
@@ -72,55 +72,166 @@
         <p>[届：\TODO]Cannot wear body armor.</p>
       </leveltext>
     </mutation>
-    <mutation Name="Corrosive Gas Generation" DisplayName="[届：\TODO]Corrosive Gas Generation" Class="CorrosiveGasGeneration" BearerDescription="[届：\TODO]those who expel corrosive gas" />
-    <mutation Name="Double-muscled" DisplayName="[届：\TODO]Double-muscled" Class="HeightenedStrength" BearerDescription="[届：\TODO]the double-muscled" />
-    <mutation Name="Electrical Generation" DisplayName="[届：\TODO]Electrical Generation" Cost="4" MaxSelected="1" Class="ElectricalGeneration" Exclusions="" BearerDescription="[届：\TODO]those who generate electricity" Tile="Mutations/electrical_generation.bmp" />
-    <mutation Name="Electromagnetic Pulse" DisplayName="[届：\TODO]Electromagnetic Pulse" Cost="2" MaxSelected="1" Class="ElectromagneticPulse" Exclusions="" BearerDescription="[届：\TODO]those who emit electromagnetic pulses" Tile="Mutations/electromagnetic_pulse.bmp" />
-    <mutation Name="Flaming Ray" DisplayName="[届：\TODO]Flaming Ray" Cost="4" MaxSelected="1" Class="FlamingRay" Exclusions="Freezing Ray" BearerDescription="[届：\TODO]the flaming-handed" Tile="Mutations/flaming_ray.bmp" />
-    <mutation Name="Freezing Ray" DisplayName="[届：\TODO]Freezing Ray" Cost="5" MaxSelected="1" Class="FreezingRay" Exclusions="Flaming Ray" BearerDescription="[届：\TODO]the frozen-handed" Tile="Mutations/freezing_ray.bmp" />
-    <mutation Name="Heightened Hearing" DisplayName="[届：\TODO]Heightened Hearing" Cost="2" MaxSelected="1" Class="HeightenedHearing" Exclusions="" BearerDescription="[届：\TODO]those with heightened hearing" Tile="Mutations/heightened_hearing.bmp" />
-    <mutation Name="Heightened Quickness" DisplayName="[届：\TODO]Heightened Quickness" Cost="3" MaxSelected="1" Class="HeightenedSpeed" Exclusions="" BearerDescription="[届：\TODO]the quick" Tile="Mutations/heightened_quickness.bmp" />
-    <mutation Name="Horns" DisplayName="[届：\TODO]Horns" Cost="4" MaxSelected="1" Class="Horns" Exclusions="" BearerDescription="[届：\TODO]the horned" Tile="Mutations/horns.bmp" />
-    <mutation Name="Metamorphosis" DisplayName="[届：\TODO]Metamorphosis" Cost="4" MaxSelected="1" Class="Metamorphosis" Exclusions="" BearerDescription="[届：\TODO]shapeshifters" Prerelease="true" Tile="Mutations/metamorphosis.bmp" />
-    <mutation Name="Multiple Arms" DisplayName="[届：\TODO]Multiple Arms" Cost="4" MaxSelected="1" Class="MultipleArms" Exclusions="" BearerDescription="[届：\TODO]the many-armed" Tile="Mutations/multiple_arms.bmp" />
-    <mutation Name="Multiple Legs" DisplayName="[届：\TODO]Multiple Legs" Cost="5" MaxSelected="1" Class="MultipleLegs" Exclusions="" BearerDescription="[届：\TODO]the many-legged" Tile="Mutations/multiple_legs.bmp" />
-    <mutation Name="Night Vision" DisplayName="[届：\TODO]Night Vision" Cost="1" MaxSelected="1" Class="DarkVision" Exclusions="" BearerDescription="[届：\TODO]the darksighted" Tile="Mutations/night_vision_mutation.bmp" />
-    <mutation Name="Phasing" DisplayName="[届：\TODO]Phasing" Cost="4" MaxSelected="1" Class="Phasing" Exclusions="" BearerDescription="[届：\TODO]those who phase" Tile="Mutations/phasing.bmp" />
-    <mutation Name="Photosynthetic Skin" DisplayName="[届：\TODO]Photosynthetic Skin" Cost="2" MaxSelected="1" Class="PhotosyntheticSkin" Exclusions="Albino,Carnivorous" BearerDescription="[届：\TODO]the green-skinned" Tile="Mutations/photosynthetic_skin.bmp" />
-    <mutation Name="Quills" DisplayName="[届：\TODO]Quills" Cost="3" MaxSelected="1" Class="Quills" Exclusions="Carapace" BearerDescription="[届：\TODO]the quilled" Tile="Mutations/quills.bmp" />
-    <mutation Name="Regeneration" DisplayName="[届：\TODO]Regeneration" Cost="4" MaxSelected="1" Class="Regeneration" Exclusions="" BearerDescription="[届：\TODO]those who regenerate" Tile="Mutations/regeneration.bmp" />
-    <mutation Name="Sleep Gas Generation" DisplayName="[届：\TODO]Sleep Gas Generation" Cost="3" MaxSelected="1" Class="SleepGasGeneration" BearerDescription="[届：\TODO]those who expel sleep gas" Tile="Mutations/gas_generation.bmp" />
-    <mutation Name="Slime Glands" DisplayName="[届：\TODO]Slime Glands" Cost="1" MaxSelected="1" Class="SlimeGlands" Exclusions="" BearerDescription="[届：\TODO]slime spitters" Tile="Mutations/slime_glands.bmp" />
-    <mutation Name="Spinnerets" DisplayName="[届：\TODO]Spinnerets" Cost="3" MaxSelected="1" Class="Spinnerets" Exclusions="" BearerDescription="[届：\TODO]web weavers" Tile="Mutations/spinnerets.bmp" />
-    <mutation Name="Stinger (Confusing Venom)" DisplayName="[届：\TODO]Stinger (Confusing Venom)" Cost="3" MaxSelected="1" Class="Stinger" Variant="Stinger Confusion" Exclusions="Stinger (Paralyzing Venom),Stinger (Poisoning Venom)" BearerDescription="[届：\TODO]those with stingers tipped with confusing venom" Tile="Mutations/stinger.bmp" />
-    <mutation Name="Stinger (Paralyzing Venom)" DisplayName="[届：\TODO]Stinger (Paralyzing Venom)" Cost="4" MaxSelected="1" Class="Stinger" Variant="Stinger Paralysis" Exclusions="Stinger (Confusing Venom),Stinger (Poisoning Venom)" BearerDescription="[届：\TODO]those with stingers tipped with paralyzing venom" Tile="Mutations/stinger.bmp" />
-    <mutation Name="Stinger (Poisoning Venom)" DisplayName="[届：\TODO]Stinger (Poisoning Venom)" Cost="4" MaxSelected="1" Class="Stinger" Variant="Stinger Poison" Exclusions="Stinger (Confusing Venom),Stinger (Paralyzing Venom)" BearerDescription="[届：\TODO]those with stingers tipped with poisoning venom" Tile="Mutations/stinger.bmp" />
-    <mutation Name="Thick Fur" DisplayName="[届：\TODO]Thick Fur" Cost="1" MaxSelected="1" Class="ThickFur" Exclusions="" BearerDescription="[届：\TODO]the thickly furred" Tile="Mutations/thick_fur.bmp" />
-    <mutation Name="Triple-jointed" DisplayName="[届：\TODO]Triple-jointed" Cost="3" MaxSelected="1" Class="HeightenedAgility" Exclusions="" BearerDescription="[届：\TODO]the triple-jointed" Tile="Mutations/triple-jointed.bmp" />
-    <mutation Name="Two-headed" DisplayName="[届：\TODO]Two-headed" Cost="3" MaxSelected="1" Class="TwoHeaded" Exclusions="" BearerDescription="[届：\TODO]the two-headed" Tile="Mutations/two-headed.bmp" />
-    <mutation Name="Two-hearted" DisplayName="[届：\TODO]Two-hearted" Cost="3" MaxSelected="1" Class="TwoHearted" Exclusions="" BearerDescription="[届：\TODO]the two-hearted" Tile="Mutations/two-hearted.bmp" />
-    <mutation Name="Wings" DisplayName="[届：\TODO]Wings" Cost="4" MaxSelected="1" Class="Wings" Exclusions="" BearerDescription="[届：\TODO]the winged" Tile="Mutations/wings.bmp" />
+    <mutation Name="Corrosive Gas Generation" DisplayName="[届：\TODO]Corrosive Gas Generation" Class="CorrosiveGasGeneration" BearerDescription="[届：\TODO]those who expel corrosive gas">
+      <description>
+        <p>[届：\TODO]You release a burst of <stat Name="GasName" /> around yourself.</p>
+      </description>
+      <leveltext>
+        <p>[届：\TODO]Releases gas for <stat Name="Duration" /></p>
+        <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
+        <statline Name="Cooldown" />
+      </leveltext>
+    </mutation>
+    <mutation Name="Double-muscled" DisplayName="[届：\TODO]Double-muscled" Class="HeightenedStrength" BearerDescription="[届：\TODO]the double-muscled">      <description>
+        <p>[届：\TODO]You are possessed of hulking strength.</p>
+      </description>
+      <leveltext>
+        <p>[届：\TODO]+<stat Name="Strength" /> Strength</p>
+        <p>[届：\TODO]<stat Name="DazeChance" />% chance to daze your opponent on a successful melee attack for 2-3 rounds</p>
+      </leveltext>
+    </mutation>
+    <mutation Name="Electrical Generation" DisplayName="[届：\TODO]Electrical Generation" Class="ElectricalGeneration" BearerDescription="[届：\TODO]those who generate electricity">
+      <description>
+        <p>[届：\TODO]You accrue electrical charge that you can use and discharge to deal damage.</p>
+      </description>
+      <leveltext>
+        <p>[届：\TODO]Maximum charge: <stat Name="MaxCharge" /></p>
+        <p>[届：\TODO]Accrue base <stat Name="BaseChargePerTurn" /> charge per turn</p>
+        <p>[届：\TODO]Can discharge all held charge for 1d4 damage per <stat Name="DischargeChunk" /> charge</p>
+        <p>[届：\TODO]Discharge can arc to adjacent targets dealing reduced damage, up to 1 target per <stat Name="DischargeChunk" /> charge</p>
+        <p>[届：\TODO]EMP causes involuntary discharge (difficulty 18 Willpower save)</p>
+        <switch Name="CanDrinkTransient"><case Value="true"><p>[届：\TODO]You can drink change from electrical power sources.</p></case><default><p>[届：\TODO]You can drink charge from energy cells and capacitors.</p></default></switch>
+        <p>[届：\TODO]You gain <stat Name="DamageAbsorbFactor" /> charge per point of electrical damage taken.</p>
+        <p>[届：\TODO]You can provide charge to equipped devices that have integrated power systems.</p>
+      </leveltext>
+    </mutation>
+    <mutation Name="Electromagnetic Pulse" DisplayName="[届：\TODO]Electromagnetic Pulse" Class="ElectromagneticPulse" BearerDescription="[届：\TODO]those who emit electromagnetic pulses">
+      <description>
+        <p>[届：\TODO]You generate an electromagnetic pulse that disables nearby artifacts and machines.</p>
+      </description>
+      <leveltext>
+        <p>[届：\TODO]Area: <stat Name="Area" /> centered around yourself</p>
+        <statline Name="Duration" />
+        <statline Name="Cooldown" />
+      </leveltext>
+    </mutation>
+    <mutation Name="Flaming Ray" DisplayName="[届：\TODO]Flaming Ray" Class="FlamingRay" BearerDescription="[届：\TODO]the flaming-handed">
+      <description>
+        <p>[届：\TODO]You emit a ray of flame<switch Name="BodyPartName"><case Value="" /><default> from your <stat Name="BodyPartName" /></default></switch>.</p>
+      </description>
+      <leveltext>
+        <p>[届：\TODO]Emits a <stat Name="Range" />-square ray of flame in the direction of your choice.</p>
+        <statline Name="Damage" />
+        <statline Name="Cooldown" />
+        <p>[届：\TODO]Melee attacks heat opponents by <stat Name="HeatOnHit" Unit="degree" /></p>
+      </leveltext>
+    </mutation>
+    <mutation Name="Freezing Ray" DisplayName="[届：\TODO]Freezing Ray" Class="FreezingRay" BearerDescription="[届：\TODO]the frozen-handed">
+      <description>
+        <p>[届：\TODO]You emit a ray of frost<switch Name="BodyPartName"><case Value="" /><default> from your <stat Name="BodyPartName" /></default></switch>.</p>
+      </description>
+      <leveltext>
+        <p>[届：\TODO]Emits a <stat Name="Range" />-square ray of frost in the direction of your choice.</p>
+        <statline Name="Damage" />
+        <statline Name="Cooldown" />
+        <p>[届：\TODO]Melee attacks cool opponents by <stat Name="CoolOnHit" Unit="degree" /></p>
+      </leveltext>
+    </mutation>
+    <mutation Name="Heightened Hearing" DisplayName="[届：\TODO]Heightened Hearing" Class="HeightenedHearing" BearerDescription="[届：\TODO]those with heightened hearing">
+      <description>
+        <p>[届：\TODO]You are possessed of unnaturally acute hearing.</p>
+      </description>
+      <leveltext>
+        <p>[届：\TODO]You detect the presence of creatures within a radius of <stat Name="Radius" />.</p>
+        <p><switch Name="LevelDiff"><case Value="1">[届：\TODO]{{rules|Increased chance to identify nearby detected creatures}}</case><default>[届：\TODO]Chance to identify nearby detected creatures</default></switch></p>
+      </leveltext>
+    </mutation>
+    <mutation Name="Heightened Quickness" DisplayName="[届：\TODO]Heightened Quickness" Class="HeightenedSpeed" BearerDescription="[届：\TODO]the quick">
+      <description>
+        <p>[届：\TODO]You are gifted with tremendous speed.</p>
+      </description>
+      <leveltext>
+        <p>[届：\TODO]+<stat Name="SpeedBonus" /> Quickness</p>
+      </leveltext>
+    </mutation>
+    <mutation Name="Horns" DisplayName="[届：\TODO]Horns" Class="Horns" BearerDescription="[届：\TODO]the horned">
+      <description>
+        <p>[届：\TODO]<vartext>=horns.A.name.or.plural= =horns.verb:jut= out of your head.</vartext></p>
+      </description>
+      <leveltext>
+        <p>[届：\TODO]20% chance on melee attack to gore your opponent</p>
+        <statline Name="Damage" DisplayName="[届：\TODO]Damage increment" />
+        <statline Name="ToHitBonus" DisplayName="[届：\TODO]To-hit bonus" />
+        <switch Name="LevelMode">
+          <case Value="BleedBonus"><p>[届：\TODO]{{rules|Increased bleeding save difficulty and intensity}}</p></case>
+          <case Value="LevelUp"><p>[届：\TODO]{{rules|Increased bleeding save difficulty}}</p></case>
+          <default><p>[届：\TODO]Goring attacks may cause bleeding</p></default>
+        </switch>
+        <p>[届：\TODO]<vartext>=horns.Name= =horns.verb:are= a short-blade class natural weapon.</vartext></p>
+        <p>[届：\TODO]+<stat Name="AV" /> AV</p>
+        <p>[届：\TODO]Cannot wear helmets</p>
+        <p>[届：\TODO]+100 reputation with {{w|antelopes}} and {{w|goatfolk}}</p>
+      </leveltext>
+    </mutation>
+    <mutation Name="Multiple Arms" DisplayName="[届：\TODO]Multiple Arms" Class="MultipleArms" BearerDescription="[届：\TODO]the many-armed" />
+    <mutation Name="Multiple Legs" DisplayName="[届：\TODO]Multiple Legs" Class="MultipleLegs" BearerDescription="[届：\TODO]the many-legged" />
+    <mutation Name="Night Vision" DisplayName="[届：\TODO]Night Vision" Class="DarkVision" BearerDescription="[届：\TODO]the darksighted" />
+    <mutation Name="Phasing" DisplayName="[届：\TODO]Phasing" Class="Phasing" BearerDescription="[届：\TODO]those who phase" />
+    <mutation Name="Photosynthetic Skin" DisplayName="[届：\TODO]Photosynthetic Skin" Class="PhotosyntheticSkin" BearerDescription="[届：\TODO]the green-skinned" />
+    <mutation Name="Quills" DisplayName="[届：\TODO]Quills" Class="Quills" Exclusions="Carapace" BearerDescription="[届：\TODO]the quilled" />
+    <mutation Name="Regeneration" DisplayName="[届：\TODO]Regeneration" Class="Regeneration" BearerDescription="[届：\TODO]those who regenerate" />
+    <mutation Name="Sleep Gas Generation" DisplayName="[届：\TODO]Sleep Gas Generation" Class="SleepGasGeneration" BearerDescription="[届：\TODO]those who expel sleep gas">
+      <description>
+        <p>[届：\TODO]You release a burst of <stat Name="GasName" /> around yourself.</p>
+      </description>
+      <leveltext>
+        <p>[届：\TODO]Releases gas for <stat Name="Duration" /></p>
+        <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
+        <statline Name="Cooldown" />
+      </leveltext>
+    </mutation>
+    <mutation Name="Slime Glands" DisplayName="[届：\TODO]Slime Glands" Class="SlimeGlands" BearerDescription="[届：\TODO]slime spitters">
+      <description>
+        <p>[届：\TODO]You produce a viscous slime that you can spit at things.</p>
+        <p></p>
+        <p>[届：\TODO]Covers an area with slime</p>
+        <statline Name="Range" />
+        <statline Name="Area" />
+        <statline Name="Cooldown" />
+        <p>[届：\TODO]You can walk over slime without slipping.</p>
+      </description>
+      <leveltext />
+    </mutation>
+    <mutation Name="Spinnerets" DisplayName="[届：\TODO]Spinnerets" Class="Spinnerets" BearerDescription="[届：\TODO]web weavers" />
+    <mutation Name="Stinger (Confusing Venom)" DisplayName="[届：\TODO]Stinger (Confusing Venom)" Class="Stinger" Variant="Stinger Confusion" BearerDescription="[届：\TODO]those with stingers tipped with confusing venom" />
+    <mutation Name="Stinger (Paralyzing Venom)" DisplayName="[届：\TODO]Stinger (Paralyzing Venom)" Class="Stinger" Variant="Stinger Paralysis" BearerDescription="[届：\TODO]those with stingers tipped with paralyzing venom" />
+    <mutation Name="Stinger (Poisoning Venom)" DisplayName="[届：\TODO]Stinger (Poisoning Venom)" Class="Stinger" Variant="Stinger Poison" BearerDescription="[届：\TODO]those with stingers tipped with poisoning venom" />
+    <mutation Name="Thick Fur" DisplayName="[届：\TODO]Thick Fur" Class="ThickFur" BearerDescription="[届：\TODO]the thickly furred" />
+    <mutation Name="Triple-jointed" DisplayName="[届：\TODO]Triple-jointed" Class="HeightenedAgility" BearerDescription="[届：\TODO]the triple-jointed" />
+    <mutation Name="Two-headed" DisplayName="[届：\TODO]Two-headed" Class="TwoHeaded" BearerDescription="[届：\TODO]the two-headed" />
+    <mutation Name="Two-hearted" DisplayName="[届：\TODO]Two-hearted" Class="TwoHearted" BearerDescription="[届：\TODO]the two-hearted" />
+    <mutation Name="Wings" DisplayName="[届：\TODO]Wings" Class="Wings" BearerDescription="[届：\TODO]the winged" />
   </category>
 
-  <category Name="PhysicalDefects" DisplayName="[届：\TODO]{{R|Physical Defects}}" Foreground="w" Detail="W" Defect="true">
-    <mutation Name="Albino" DisplayName="[届：\TODO]Albino" Cost="-2" MaxSelected="1" Class="Albino" Exclusions="Photosynthetic Skin" BearerDescription="[届：\TODO]albinos" Tile="Mutations/albino.bmp" />
-    <mutation Name="Amphibious" DisplayName="[届：\TODO]Amphibious" Cost="-3" MaxSelected="1" Class="Amphibious" Exclusions="" BearerDescription="[届：\TODO]the amphibious" Tile="Mutations/amphibious.bmp" />
-    <mutation Name="Brittle Bones" DisplayName="[届：\TODO]Brittle Bones" Cost="-4" MaxSelected="1" Class="BrittleBones" Exclusions="" BearerDescription="[届：\TODO]the brittle-boned" Tile="Mutations/brittle_bones.bmp" />
-    <mutation Name="Nerve Poppy" DisplayName="[届：\TODO]Nerve Poppy" Cost="-2" MaxSelected="1" Class="Analgesia" Exclusions="" BearerDescription="[届：\TODO]those who cannot feel pain" Tile="Mutations/nerve_poppy.bmp" />
-    <mutation Name="Carnivorous" DisplayName="[届：\TODO]Carnivorous" Cost="-2" MaxSelected="1" Class="Carnivorous" Exclusions="Photosynthetic Skin" BearerDescription="[届：\TODO]the carnivorous" Tile="Items/sw_rawmeat1.bmp" />
-    <mutation Name="Cold-Blooded" DisplayName="[届：\TODO]Cold-Blooded" Cost="-2" MaxSelected="1" Class="ColdBlooded" Exclusions="" BearerDescription="[届：\TODO]the cold-blooded" Tile="Mutations/cold-blooded.bmp" />
-    <mutation Name="Electromagnetic Impulse" DisplayName="[届：\TODO]Electromagnetic Impulse" Cost="-2" MaxSelected="1" Class="ElectromagneticImpulse" Exclusions="" BearerDescription="[届：\TODO]those who cannot control their electromagnetic pulses" Tile="Mutations/electromagnetic_impulse.bmp" />
-    <mutation Name="Hooks for Feet" DisplayName="[届：\TODO]Hooks for Feet" Cost="-4" MaxSelected="1" Class="HooksForFeet" Exclusions="" BearerDescription="[届：\TODO]those with hooks for feet" Tile="Mutations/hooks_for_feet.bmp" />
-    <mutation Name="Irritable Genome" DisplayName="[届：\TODO]Irritable Genome" Cost="-4" MaxSelected="1" Class="IrritableGenome" Exclusions="" BearerDescription="[届：\TODO]those with irritable genomes" Tile="Mutations/irritable_genome.bmp" />
-    <mutation Name="Myopic" DisplayName="[届：\TODO]Myopic" Cost="-3" MaxSelected="1" Class="Myopia" Exclusions="" BearerDescription="[届：\TODO]the myopic" Tile="Mutations/myopia.bmp" />
-    <mutation Name="Spontaneous Combustion" DisplayName="[届：\TODO]Spontaneous Combustion" Cost="-3" MaxSelected="1" Class="SpontaneousCombustion" BearerDescription="[届：\TODO]those who spontaneously combust" Exclusions="" Tile="Mutations/spontaneous_combustion.bmp" />
-    <mutation Name="Tonic Allergy" DisplayName="[届：\TODO]Tonic Allergy" Cost="-4" MaxSelected="1" Class="TonicAllergy" Exclusions="" BearerDescription="[届：\TODO]the allergic" Tile="Mutations/tonic_allergy.bmp" />
+  <category Name="PhysicalDefects" DisplayName="[届：\TODO]{{R|Physical Defects}}">
+    <mutation Name="Albino" DisplayName="[届：\TODO]Albino" Class="Albino" BearerDescription="[届：\TODO]albinos" />
+    <mutation Name="Amphibious" DisplayName="[届：\TODO]Amphibious" Class="Amphibious" BearerDescription="[届：\TODO]the amphibious" />
+    <mutation Name="Brittle Bones" DisplayName="[届：\TODO]Brittle Bones" Class="BrittleBones" BearerDescription="[届：\TODO]the brittle-boned" />
+    <mutation Name="Nerve Poppy" DisplayName="[届：\TODO]Nerve Poppy" Class="Analgesia" BearerDescription="[届：\TODO]those who cannot feel pain" />
+    <mutation Name="Carnivorous" DisplayName="[届：\TODO]Carnivorous" Class="Carnivorous" BearerDescription="[届：\TODO]the carnivorous" />
+    <mutation Name="Cold-Blooded" DisplayName="[届：\TODO]Cold-Blooded" Class="ColdBlooded" BearerDescription="[届：\TODO]the cold-blooded" />
+    <mutation Name="Electromagnetic Impulse" DisplayName="[届：\TODO]Electromagnetic Impulse" Class="ElectromagneticImpulse" BearerDescription="[届：\TODO]those who cannot control their electromagnetic pulses" />
+    <mutation Name="Hooks for Feet" DisplayName="[届：\TODO]Hooks for Feet" Class="HooksForFeet" BearerDescription="[届：\TODO]those with hooks for feet" />
+    <mutation Name="Irritable Genome" DisplayName="[届：\TODO]Irritable Genome" Class="IrritableGenome" BearerDescription="[届：\TODO]those with irritable genomes" />
+    <mutation Name="Myopic" DisplayName="[届：\TODO]Myopic" Class="Myopia" BearerDescription="[届：\TODO]the myopic" />
+    <mutation Name="Spontaneous Combustion" DisplayName="[届：\TODO]Spontaneous Combustion" Class="SpontaneousCombustion" BearerDescription="[届：\TODO]those who spontaneously combust" />
+    <mutation Name="Tonic Allergy" DisplayName="[届：\TODO]Tonic Allergy" Class="TonicAllergy" BearerDescription="[届：\TODO]the allergic" />
   </category>
 
-  <category Name="Mental" DisplayName="[届：\TODO]{{G|Mental Mutations}}" Foreground="b" Detail="M" Stat="Ego" Property="MentalMutationShift" ForceProperty="MentalMutationForceShift">
-    <mutation Name="Beguiling" DisplayName="[届：\TODO]Beguiling" Cost="5" MaxSelected="1" Class="Beguiling" Exclusions="" BearerDescription="[届：\TODO]beguilers" BiomeEpithet="encomium" Tile="Mutations/beguiling.bmp" />
-    <mutation Name="Burgeoning" DisplayName="[届：\TODO]Burgeoning" Cost="3" MaxSelected="1" Class="Burgeoning" Exclusions="" BearerDescription="[届：\TODO]psychic gardeners" BiomeAdjective="burgeoning" Tile="Mutations/burgeoning.bmp" />
-    <mutation Name="Clairvoyance" DisplayName="[届：\TODO]Clairvoyance" Cost="2" MaxSelected="1" Class="Clairvoyance" Exclusions="" BearerDescription="[届：\TODO]the clairvoyant" BiomeEpithet="panopticon" Tile="Mutations/clairvoyance.bmp">
+  <category Name="Mental" DisplayName="[届：\TODO]{{G|Mental Mutations}}">
+    <mutation Name="Beguiling" DisplayName="[届：\TODO]Beguiling" Cost="5" MaxSelected="1" Class="Beguiling" Exclusions="" BearerDescription="[届：\TODO]beguilers" BiomeEpithet="[届：\TODO]encomium" Tile="Mutations/beguiling.bmp" />
+    <mutation Name="Burgeoning" DisplayName="[届：\TODO]Burgeoning" Cost="3" MaxSelected="1" Class="Burgeoning" Exclusions="" BearerDescription="[届：\TODO]psychic gardeners" BiomeAdjective="[届：\TODO]burgeoning" Tile="Mutations/burgeoning.bmp" />
+    <mutation Name="Clairvoyance" DisplayName="[届：\TODO]Clairvoyance" Cost="2" MaxSelected="1" Class="Clairvoyance" Exclusions="" BearerDescription="[届：\TODO]the clairvoyant" BiomeEpithet="[届：\TODO]panopticon" Tile="Mutations/clairvoyance.bmp">
       <description>[届：\TODO]You briefly gain vision of a nearby area.</description>
       <leveltext>[届：\TODO]
         <statline Name="VisionRadius" DisplayName="[届：\TODO]Vision radius"/>
@@ -128,22 +239,31 @@
         <statline Name="Cooldown" Unit="round" />
       </leveltext>
     </mutation>
-    <mutation Name="Confusion" DisplayName="[届：\TODO]Confusion" Cost="4" MaxSelected="1" Class="Confusion" Exclusions="" BearerDescription="[届：\TODO]riddlers" BiomeEpithet="[届：\TODO]psychic maze" Tile="Mutations/confusion.bmp" />
-    <mutation Name="Cryokinesis" DisplayName="[届：\TODO]Cryokinesis" Cost="4" MaxSelected="1" Class="Cryokinesis" Exclusions="" BearerDescription="[届：\TODO]cryomancers" BiomeEpithet="[届：\TODO]frost meadow" Tile="Mutations/cryokinesis.bmp" />
-    <mutation Name="Disintegration" DisplayName="[届：\TODO]Disintegration" Cost="3" MaxSelected="1" Class="Disintegration" Exclusions="" BearerDescription="[届：\TODO]disintegrators" BiomeAdjective="rapidly resonating" Tile="Mutations/disintergration.bmp" />
-    <mutation Name="Domination" DisplayName="[届：\TODO]Domination" Cost="5" MaxSelected="1" Class="Domination" Exclusions="" BearerDescription="[届：\TODO]those who dominate the wills of others" BiomeEpithet="[届：\TODO]theater of wills" Tile="Mutations/domination.bmp" />
-    <mutation Name="Ego Projection" DisplayName="[届：\TODO]Ego Projection" Cost="4" MaxSelected="1" Class="WillForce" Exclusions="" BearerDescription="[届：\TODO]those who project their egos onto the physical realm" BiomeAdjective="[届：\TODO]psychically refractive" Tile="Mutations/ego_projection.bmp" />
-    <mutation Name="Force Bubble" DisplayName="[届：\TODO]Force Bubble" Cost="4" MaxSelected="1" Class="ForceBubble" Exclusions="" BearerDescription="bubble folk" BiomeAdjective="[届：\TODO]bubbly"  Tile="Mutations/force_bubble.bmp" />
-    <mutation Name="Force Wall" DisplayName="[届：\TODO]Force Wall" Cost="3" MaxSelected="1" Class="ForceWall" Exclusions="" BearerDescription="[届：\TODO]architects of force walls" BiomeEpithet="[届：\TODO]force bastion" Tile="Mutations/force_wall.bmp" />
-    <mutation Name="Kindle" DisplayName="[届：\TODO]Kindle" Cost="1" MaxSelected="1" Class="Kindle" Exclusions="" BearerDescription="[届：\TODO]kindlers" BiomeAdjective="[届：\TODO]kindling" Tile="Mutations/kindle.bmp" />
-    <mutation Name="Light Manipulation" DisplayName="[届：\TODO]Light Manipulation" Cost="4" MaxSelected="1" Class="LightManipulation" Exclusions="" BearerDescription="[届：\TODO]manipulators of light" BiomeAdjective="[届：\TODO]illuminated" Tile="Mutations/light_manipulation.bmp" />
-    <mutation Name="Mass Mind" DisplayName="[届：\TODO]Mass Mind" Cost="4" MaxSelected="1" Class="MassMind" Exclusions="" BearerDescription="[届：\TODO]those who tap the Mass Mind" BiomeEpithet="[届：\TODO]mindmoot" Tile="Mutations/mass_mind.bmp" />
-    <mutation Name="Mental Mirror" DisplayName="[届：\TODO]Mental Mirror" Cost="2" MaxSelected="1" Class="MentalMirror" Exclusions="" BearerDescription="[届：\TODO]the mentally reflective" BiomeEpithet="[届：\TODO]mirrorsteppe" Tile="Mutations/mental_mirror.bmp" />
-    <mutation Name="Precognition" DisplayName="[届：\TODO]Precognition" Cost="4" MaxSelected="1" Class="Precognition" Exclusions="" BearerDescription="[届：\TODO]the prescient" BiomeEpithet="[届：\TODO]future site" Tile="Mutations/precognition.bmp" />
-    <mutation Name="Psychometry" DisplayName="[届：\TODO]Psychometry" Cost="3" MaxSelected="1" Class="Psychometry" Exclusions="Dystechnia" BearerDescription="[届：\TODO]the psychometrically sensitive" BiomeAdjective="[届：\TODO]retrocognate" Tile="Mutations/psychometry.bmp" />
-    <mutation Name="Pyrokinesis" DisplayName="[届：\TODO]Pyrokinesis" Cost="4" MaxSelected="1" Class="Pyrokinesis" Exclusions="" BearerDescription="[届：\TODO]pyromancers" BiomeEpithet="[届：\TODO]flame meadow" Tile="Mutations/pyrokinesis.bmp">
+    <mutation Name="Confusion" DisplayName="[届：\TODO]Confusion" Class="Confusion" BearerDescription="[届：\TODO]riddlers" BiomeEpithet="[届：\TODO]psychic maze" />
+    <mutation Name="Cryokinesis" DisplayName="[届：\TODO]Cryokinesis" Class="Cryokinesis" BearerDescription="[届：\TODO]cryomancers" BiomeEpithet="[届：\TODO]frost meadow" />
+    <mutation Name="Disintegration" DisplayName="[届：\TODO]Disintegration" Class="Disintegration" BearerDescription="[届：\TODO]disintegrators" BiomeAdjective="[届：\TODO]rapidly resonating" />
+    <mutation Name="Domination" DisplayName="[届：\TODO]Domination" Class="Domination" BearerDescription="[届：\TODO]those who dominate the wills of others" BiomeEpithet="[届：\TODO]theater of wills" />
+    <mutation Name="Ego Projection" DisplayName="[届：\TODO]Ego Projection" Class="WillForce" BearerDescription="[届：\TODO]those who project their egos onto the physical realm" BiomeAdjective="[届：\TODO]psychically refractive" />
+    <mutation Name="Force Bubble" DisplayName="[届：\TODO]Force Bubble" Class="ForceBubble" BearerDescription="[届：\TODO]bubble folk" BiomeAdjective="[届：\TODO]bubbly"  />
+    <mutation Name="Force Wall" DisplayName="[届：\TODO]Force Wall" Class="ForceWall" BearerDescription="[届：\TODO]architects of force walls" BiomeEpithet="[届：\TODO]force bastion" />
+    <mutation Name="Kindle" DisplayName="[届：\TODO]Kindle" Class="Kindle" BearerDescription="[届：\TODO]kindlers" BiomeAdjective="[届：\TODO]kindling" />
+    <mutation Name="Light Manipulation" DisplayName="[届：\TODO]Light Manipulation" Class="LightManipulation" BearerDescription="[届：\TODO]manipulators of light" BiomeAdjective="[届：\TODO]illuminated" />
+    <mutation Name="Mass Mind" DisplayName="[届：\TODO]Mass Mind" Class="MassMind" BearerDescription="[届：\TODO]those who tap the Mass Mind" BiomeEpithet="[届：\TODO]mindmoot" />
+    <mutation Name="Mental Mirror" DisplayName="[届：\TODO]Mental Mirror" Class="MentalMirror" BearerDescription="[届：\TODO]the mentally reflective" BiomeEpithet="[届：\TODO]mirrorsteppe" />
+    <mutation Name="Precognition" DisplayName="[届：\TODO]Precognition" Class="Precognition" BearerDescription="[届：\TODO]the prescient" BiomeEpithet="[届：\TODO]future site" />
+    <mutation Name="Psychometry" DisplayName="[届：\TODO]Psychometry" Class="Psychometry" BearerDescription="[届：\TODO]the psychometrically sensitive" BiomeAdjective="[届：\TODO]retrocognate">
       <description>
-        <p>You heat a nearby area with your mind.</p>
+        <p>[届：\TODO]You read the history of artifacts by touching them, learning what they do and how they were made.</p>
+      </description>
+      <leveltext>
+        <p>[届：\TODO]Unerringly identify artifacts up to complexity tier <stat Name="IdentifyComplexity" />.</p>
+        <p>[届：\TODO]Learn how to construct identified artifacts up to complexity tier <stat Name="ConstructComplexity" /> (must have the appropriate Tinker skill).</p>
+        <p>[届：\TODO]You may open security doors and use some secure devices by touching them.</p>
+      </leveltext>
+    </mutation>
+    <mutation Name="Pyrokinesis" DisplayName="[届：\TODO]Pyrokinesis" Class="Pyrokinesis" BearerDescription="[届：\TODO]pyromancers" BiomeEpithet="[届：\TODO]flame meadow">
+      <description>
+        <p>[届：\TODO]You heat a nearby area with your mind.</p>
       </description>
       <leveltext>
         <stat Name="Intro" />
@@ -155,27 +275,40 @@
         <statline Name="Cooldown" Unit="round" />
       </leveltext>
     </mutation>
-    <mutation Name="Sense Psychic" DisplayName="[届：\TODO]Sense Psychic" Cost="1" MaxSelected="1" Class="SensePsychic" Exclusions="" BearerDescription="[届：\TODO]the psychically sensitive" BiomeAdjective="[届：\TODO]naked" Tile="Mutations/sense_psychic.bmp" />
-    <mutation Name="Spacetime Vortex" DisplayName="[届：\TODO]Spacetime Vortex" Cost="3" MaxSelected="1" Class="SpacetimeVortex" Exclusions="" BearerDescription="[届：\TODO]spacefolders" BiomeAdjective="[届：\TODO]warped" Tile="Mutations/spacetime_vortex.bmp" />
-    <mutation Name="Stunning Force" DisplayName="[届：\TODO]Stunning Force" Cost="3" MaxSelected="1" Class="StunningForce" Exclusions="" BearerDescription="[届：\TODO]the telekinetic" BiomeAdjective="[届：\TODO]telekinetic" Tile="Mutations/stunning_force.bmp" />
-    <mutation Name="Sunder Mind" DisplayName="[届：\TODO]Sunder Mind" Cost="4" MaxSelected="1" Class="SunderMind" Exclusions="" BearerDescription="[届：\TODO]mind sunderers" BiomeEpithet="[届：\TODO]psychic graveyard" Tile="Mutations/sunder_mind.bmp" />
-    <mutation Name="Syphon Vim" DisplayName="[届：\TODO]Syphon Vim" Cost="3" MaxSelected="1" Class="LifeDrain" Exclusions="" BearerDescription="[届：\TODO]life leeches" BiomeEpithet="[届：\TODO]slaughterfield" Tile="Mutations/syphon_vim.bmp" />
-    <mutation Name="Telepathy" DisplayName="[届：\TODO]Telepathy" Cost="1" MaxSelected="1" Class="Telepathy" Exclusions="" BearerDescription="[届：\TODO]the telepathic" BiomeAdjective="[届：\TODO]telepathic" Tile="Mutations/telepathy.bmp" />
-    <mutation Name="Teleportation" DisplayName="[届：\TODO]Teleportation" Cost="5" MaxSelected="1" Class="Teleportation" Exclusions="" BearerDescription="[届：\TODO]teleporters" BiomeEpithet="[届：\TODO]spacetime karst" Tile="Mutations/teleportation.bmp" />
-    <mutation Name="Teleport Other" DisplayName="[届：\TODO]Teleport Other" Cost="2" MaxSelected="1" Class="TeleportOther" Exclusions="" BearerDescription="[届：\TODO]those who teleport others" BiomeEpithet="[届：\TODO]hermitage" Tile="Mutations/teleport_other.bmp" />
-    <mutation Name="Time Dilation" DisplayName="[届：\TODO]Time Dilation" Cost="4" MaxSelected="1" Class="TimeDilation" Exclusions="" BearerDescription="[届：\TODO]time dilators" BiomeEpithet="[届：\TODO]time prism" Tile="Mutations/time_dilation.bmp" />
-    <mutation Name="Temporal Fugue" DisplayName="[届：\TODO]Temporal Fugue" Cost="5" MaxSelected="1" Class="TemporalFugue" Exclusions="" BearerDescription="[届：\TODO]temporal fugitives" BiomeEpithet="[届：\TODO]spacetime hub" Tile="Mutations/temporal_fugue.bmp" />
+    <mutation Name="Sense Psychic" DisplayName="[届：\TODO]Sense Psychic" Class="SensePsychic" BearerDescription="[届：\TODO]the psychically sensitive" BiomeAdjective="[届：\TODO]naked" />
+    <mutation Name="Spacetime Vortex" DisplayName="[届：\TODO]Spacetime Vortex" Class="SpacetimeVortex" BearerDescription="[届：\TODO]spacefolders" BiomeAdjective="[届：\TODO]warped" />
+    <mutation Name="Stunning Force" DisplayName="[届：\TODO]Stunning Force" Class="StunningForce" BearerDescription="[届：\TODO]the telekinetic" BiomeAdjective="[届：\TODO]telekinetic" />
+    <mutation Name="Sunder Mind" DisplayName="[届：\TODO]Sunder Mind" Class="SunderMind" BearerDescription="[届：\TODO]mind sunderers" BiomeEpithet="[届：\TODO]psychic graveyard">
+      <description>
+        <p>[届：\TODO]You sunder the mind of an enemy, leaving them reeling in pain.</p>
+      </description>
+      <leveltext>
+        <p>[届：\TODO]For up to 10 rounds, you engage in psychic combat with an opponent, dealing damage each round.</p>
+        <p>[届：\TODO]Taking any action other than passing the turn will break the connection.</p>
+        <p>[届：\TODO]Each round you make a mental attack vs mental armor (MA).</p>
+        <statline Name="DamageIncrement" DisplayName="[届：\TODO]Damage increment" />
+        <p>[届：\TODO]After the tenth round, you deal bonus damage equal to the total amount of damage you've done so far.</p>
+        <statline Name="Range" />
+        <statline Name="Cooldown" />
+      </leveltext>
+    </mutation>
+    <mutation Name="Syphon Vim" DisplayName="[届：\TODO]Syphon Vim" Class="LifeDrain" BearerDescription="[届：\TODO]life leeches" BiomeEpithet="[届：\TODO]slaughterfield" />
+    <mutation Name="Telepathy" DisplayName="[届：\TODO]Telepathy" Class="Telepathy" BearerDescription="[届：\TODO]the telepathic" BiomeAdjective="[届：\TODO]telepathic" />
+    <mutation Name="Teleportation" DisplayName="[届：\TODO]Teleportation" Class="Teleportation" BearerDescription="[届：\TODO]teleporters" BiomeEpithet="[届：\TODO]spacetime karst" />
+    <mutation Name="Teleport Other" DisplayName="[届：\TODO]Teleport Other" Class="TeleportOther" BearerDescription="[届：\TODO]those who teleport others" BiomeEpithet="[届：\TODO]hermitage" />
+    <mutation Name="Time Dilation" DisplayName="[届：\TODO]Time Dilation" Class="TimeDilation" BearerDescription="[届：\TODO]time dilators" BiomeEpithet="[届：\TODO]time prism" />
+    <mutation Name="Temporal Fugue" DisplayName="[届：\TODO]Temporal Fugue" Class="TemporalFugue" BearerDescription="[届：\TODO]temporal fugitives" BiomeEpithet="[届：\TODO]spacetime hub" />
   </category>
 
-  <category Name="MentalDefects" DisplayName="[届：\TODO]{{R|Mental Defects}}" Foreground="b" Detail="M" Defect="true">
-    <mutation Name="Amnesia" DisplayName="[届：\TODO]Amnesia" Cost="-2" MaxSelected="1" Class="Amnesia" Exclusions="" BearerDescription="[届：\TODO]those who cannot remember" BiomeAdjective="[届：\TODO]pastless" Tile="Mutations/amnesia.bmp" />
-    <mutation Name="Blinking Tic" DisplayName="[届：\TODO]Blinking Tic" Cost="-3" MaxSelected="1" Class="BlinkingTic" Exclusions="" BearerDescription="[届：\TODO]compulsive teleporters" BiomeAdjective="[届：\TODO]blinking" Tile="Mutations/blinking_tic.bmp" />
-    <mutation Name="Dystechnia" DisplayName="[届：\TODO]Dystechnia" Cost="-2" MaxSelected="1" Class="Dystechnia" Exclusions="Psychometry" BearerDescription="[届：\TODO]those who are befuddled by technological complexity" BiomeAdjective="[届：\TODO]regressive" Tile="Mutations/dystechnia.bmp" />
-    <mutation Name="Evil Twin" DisplayName="[届：\TODO]Evil Twin" Cost="-3" MaxSelected="1" Class="EvilTwin" Exclusions="" BearerDescription="[届：\TODO]those with dopplegangers" BiomeEpithet="[届：\TODO]selfmoot" Tile="Mutations/evil_twin.bmp" />
-    <mutation Name="Narcolepsy" DisplayName="[届：\TODO]Narcolepsy" Cost="-3" MaxSelected="1" Class="Narcolepsy" Exclusions="" BearerDescription="[届：\TODO]the narcoleptic" BiomeAdjective="[届：\TODO]drowsy" Tile="Mutations/narcolepsy.bmp" />
-    <mutation Name="Psionic Migraines" DisplayName="[届：\TODO]Psionic Migraines" Cost="-4" MaxSelected="1" Class="PsionicMigraines" Exclusions="Horns" BearerDescription="[届：\TODO]those who suffer from psionic migraines" BiomeAdjective="[届：\TODO]blaring" Tile="Mutations/psionic_migraines.bmp" />
-    <mutation Name="Quantum Jitters" DisplayName="[届：\TODO]Quantum Jitters" Cost="-4" MaxSelected="1" Class="QuantumJitters" Exclusions="" BearerDescription="[届：\TODO]those who are quantumly uncertain" BiomeAdjective="[届：\TODO]jittery" Tile="Mutations/quantum_jitters.bmp" />
-    <mutation Name="Socially Repugnant" DisplayName="[届：\TODO]Socially Repugnant" Cost="-2" MaxSelected="1" Class="SociallyRepugnant" Exclusions="" BearerDescription="[届：\TODO]the socially repugnant" BiomeEpithet="[届：\TODO]wretchmoot" Tile="Mutations/socially_repugnant.bmp" />
+  <category Name="MentalDefects" DisplayName="[届：\TODO]{{R|Mental Defects}}">
+    <mutation Name="Amnesia" DisplayName="[届：\TODO]Amnesia" Class="Amnesia" BearerDescription="[届：\TODO]those who cannot remember" BiomeAdjective="[届：\TODO]pastless" />
+    <mutation Name="Blinking Tic" DisplayName="[届：\TODO]Blinking Tic" Class="BlinkingTic" BearerDescription="[届：\TODO]compulsive teleporters" BiomeAdjective="[届：\TODO]blinking" />
+    <mutation Name="Dystechnia" DisplayName="[届：\TODO]Dystechnia" Class="Dystechnia" BearerDescription="[届：\TODO]those who are befuddled by technological complexity" BiomeAdjective="[届：\TODO]regressive" />
+    <mutation Name="Evil Twin" DisplayName="[届：\TODO]Evil Twin" Class="EvilTwin" BearerDescription="[届：\TODO]those with dopplegangers" BiomeEpithet="[届：\TODO]selfmoot" />
+    <mutation Name="Narcolepsy" DisplayName="[届：\TODO]Narcolepsy" Class="Narcolepsy" BearerDescription="[届：\TODO]the narcoleptic" BiomeAdjective="[届：\TODO]drowsy" />
+    <mutation Name="Psionic Migraines" DisplayName="[届：\TODO]Psionic Migraines" Class="PsionicMigraines" BearerDescription="[届：\TODO]those who suffer from psionic migraines" BiomeAdjective="[届：\TODO]blaring" />
+    <mutation Name="Quantum Jitters" DisplayName="[届：\TODO]Quantum Jitters" Class="QuantumJitters" BearerDescription="[届：\TODO]those who are quantumly uncertain" BiomeAdjective="[届：\TODO]jittery" />
+    <mutation Name="Socially Repugnant" DisplayName="[届：\TODO]Socially Repugnant" Class="SociallyRepugnant" BearerDescription="[届：\TODO]the socially repugnant" BiomeEpithet="[届：\TODO]wretchmoot" />
   </category>
 </mutations>
 

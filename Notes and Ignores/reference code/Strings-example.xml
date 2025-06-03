@@ -980,8 +980,91 @@ Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:1181
   <string ID="door open reason: because you cannot figure out how" Value=" because you cannot figure out how" />
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Inventory.cs:1639-->
   <string ID="=subject.Does:take= =object.the.name= from =container.the.name= =subject.direction#container=.">=subject.Does:take= =object.the.name= from =container.the.name= =subject.direction#container=.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Psychometry.cs:57-->
+  <string ID="Psychometry Failure Examine:Do you want to continue despite being unable to use Psychometry?">Do you want to continue despite being unable to use Psychometry?</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Psychometry.cs:76-->
+  <string ID="Psychometry Failure Repair:Do you want to continue despite being unable to use Psychometry?">Do you want to continue despite being unable to use Psychometry?</string>
+  <!--Code references _S():
+Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Psychometry.cs:95
+Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Psychometry.cs:134
+-->
+  <string ID="Psychometry Inventory Action:read history with Psychometry">read history with Psychometry</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Psychometry.cs:163-->
+  <string ID="Psychometry Fail Identify:=object.This= =object.isplural:artifacts:artifact= =object.is= too complex for you to decipher =object.its= function.">=object.This= =object.isplural:artifacts:artifact= =object.is= too complex for you to decipher =object.its= function.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Psychometry.cs:175-->
+  <string ID="Psychometry Success Identify:You flush with understanding of the =object.isplural:artifacts':artifact's= past and determine =object.them= to be =object.a.name=.">You flush with understanding of the =object.isplural:artifacts':artifact's= past and determine =object.them= to be =object.a.name=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Psychometry.cs:188-->
+  <string ID="Psychometry can't identify:=object.This= =object.isplural:artifacts:artifact= =object.is= too complex for you to decipher =object.its= method of construction.">=object.This= =object.isplural:artifacts:artifact= =object.is= too complex for you to decipher =object.its= method of construction.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Psychometry.cs:211-->
+  <string ID="Psychometry reverse engineer:You abide the memory of =object.a.or.the==object.shortsingle's= creation. You learn to build =sample.pluralize=.">You abide the memory of =object.a.or.the==object.shortsingle's= creation. You learn to build =sample.pluralize=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Psychometry.cs:251-->
+  <string ID="Psychometry Ability Placeholder Text:To use Psychometry, interact with an artifact and then choose 'read history with Psychometry.">To use Psychometry, interact with an artifact and then choose 'read history with Psychometry.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Psychometry.cs:318-->
+  <string ID="Psychometry Activated Ability Name:Psychometry">Psychometry</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Psychometry.cs:365-->
+  <string ID="Psychometry Activate Fail Confused:You strain to part the veil of time in order to use psychometry on =object.t=, but you are too confused.">You strain to part the veil of time in order to use psychometry on =object.t=, but you are too confused.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Psychometry.cs:377-->
+  <string ID="Psychometry Activate Fail Cooldown:You strain to part the veil of time in order to use psychometry on =object.t=, but your psyche is too exhausted.">You strain to part the veil of time in order to use psychometry on =object.t=, but your psyche is too exhausted.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Psychometry.cs:397-->
+  <string ID="Psychometry InitiateRealityDistortionTransit Purpose:use psychometry on =object.t">use psychometry on =object.t</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/SensePsychic.cs:99-->
   <string ID="hostile perception verb:sense">sense</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/SunderMind.cs:49-->
+  <string ID="SunderMind MemberOfPsychicBattle Effect Description:locked in psychic battle">locked in psychic battle</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/SunderMind.cs:296-->
+  <string ID="SunderMind Canceled:Your concentration slips and the channel between you and =object.the.name= dissipates into aether.">Your concentration slips and the channel between you and =object.the.name= dissipates into aether.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/SunderMind.cs:306-->
+  <string ID="SunderMind Canceled:Your concentration slips and the channel dissipates.">Your concentration slips and the channel dissipates.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/SunderMind.cs:394-->
+  <string ID="SunderMind Start Channeling:You burrow a channel through the psychic aether to =object.the.name= and begin to sunder =object.its= mind!">You burrow a channel through the psychic aether to =object.the.name= and begin to sunder =object.its= mind!</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/SunderMind.cs:405-->
+  <string ID="SunderMind Start Channeling against player:=subject.The.name= =player.direction#subject= =subject.verb:burrow= a channel through the psychic aether and =subject.verb:begin= to sunder your mind!">=subject.The.name= =player.direction#subject= =subject.verb:burrow= a channel through the psychic aether and =subject.verb:begin= to sunder your mind!</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/SunderMind.cs:498-->
+  <string ID="SunderMind death by head explode pt.1:Your sense of self is pulled apart by what feels like a billion years of geologic pressure.">Your sense of self is pulled apart by what feels like a billion years of geologic pressure.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/SunderMind.cs:499-->
+  <string ID="SunderMind death by head explode pt.2:Your head explodes!">Your head explodes!</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/SunderMind.cs:505-->
+  <string ID="SunderMind head explode witnessed:=subject.The.name's= head explodes!">=subject.The.name's= head explodes!</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/SunderMind.cs:522-->
+  <string ID="SunderMind DeathReason:Your head was exploded by =subject.a.name=.">Your head was exploded by =subject.a.name=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/SunderMind.cs:523-->
+  <string ID="SunderMind ThirdPerson DeathReason:=subject.Its= head was exploded by =subject.a.name=.">=subject.Its= head was exploded by =subject.a.name=.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/SunderMind.cs:547-->
+  <string ID="SunderMind Nosebleed death source:psychic attack">psychic attack</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/SunderMind.cs:553-->
+  <string ID="SunderMind Nosebleed start:=subject.The.name's= nose begins to bleed.">=subject.The.name's= nose begins to bleed.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/SunderMind.cs:557-->
+  <string ID="SunderMind Nosebleed death source:nosebleed">nosebleed</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/SunderMind.cs:565-->
+  <string ID="SunderMind Nosebleed start vs robot:=subject.The.name's= core begins to leak.">=subject.The.name's= core begins to leak.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/SunderMind.cs:569-->
+  <string ID="SunderMind Nosebleed death source:processor leak">processor leak</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/SunderMind.cs:576-->
+  <string ID="SunderMind Nosebleed start vs robot:=subject.The.name's= brain begins to hemorrhage.">=subject.The.name's= brain begins to hemorrhage.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/SunderMind.cs:580-->
+  <string ID="SunderMind Nosebleed death source:hemorrhage">hemorrhage</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/SunderMind.cs:585-->
+  <string ID="SunderMind Nosebleed death reason:You died from =source|article=.">You died from =source|article=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/SunderMind.cs:588-->
+  <string ID="SunderMind damage message:from =source|article=.">from =source|article=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/SunderMind.cs:613-->
+  <string ID="SunderMind PenetrationFailure:Your attack fails to penetrate =object.the.name's= mental defenses.">Your attack fails to penetrate =object.the.name's= mental defenses.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/SunderMind.cs:661-->
+  <string ID="SunderMind Blast Damage Message:=subject.Does:sunder= =object.the.name's= mind=pens.pens= for %d damage!">=subject.Does:sunder= =object.the.name's= mind=pens.pens= for %d damage!</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/SunderMind.cs:708-->
+  <string ID="SunderMind Blast attempt but 0:=subject.Does:attempt to burrow a channel through the psychic aether and sunder =object.the.name's= mind but the attack has no effect.">=subject.Does:attempt to burrow a channel through the psychic aether and sunder =object.the.name's= mind but the attack has no effect.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/SunderMind.cs:748-->
+  <string ID="SunderMind Target Picker Title:Sunder Mind">Sunder Mind</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/SunderMind.cs:780-->
+  <string ID="SunderMind Confirm Self Target:Are you sure you want to sunder your own mind?">Are you sure you want to sunder your own mind?</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/SunderMind.cs:791-->
+  <string ID="SunderMind target slipped:You cannot sufficiently grasp the mind there to sunder it.">You cannot sufficiently grasp the mind there to sunder it.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/SunderMind.cs:795-->
+  <string ID="SunderMind no target:There's no target with a mind there.">There's no target with a mind there.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/SunderMind.cs:805-->
+  <string ID="SunderMind already being sundered:That target is already locked in psychic battle!">That target is already locked in psychic battle!</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/SunderMind.cs:844-->
+  <string ID="SunderMind Ability Name:Sunder Mind">Sunder Mind</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/AdrenalControl.cs:178-->
   <string ID="Your adrenaline subsides.">Your adrenaline subsides.</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/AdrenalControl.cs:190-->
@@ -1025,6 +1108,7 @@ Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:1181
   <!--Code references _T():
 Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/FlamingRay.cs:118
 Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/FreezingRay.cs:90
+Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/SlimeGlands.cs:66
 -->
   <string ID="You cannot do that on the world map.">You cannot do that on the world map.</string>
   <!--Code references _T():
@@ -1093,6 +1177,14 @@ Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/FreezingRay.c
   <string ID="hostile perception verb:hear">hear</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/HeightenedSmell.cs:39-->
   <string ID="hostile perception verb:smell">smell</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/SlimeGlands.cs:73-->
+  <string ID="SlimeGlands Targeting Title:Spit Slime">Spit Slime</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/SlimeGlands.cs:81-->
+  <string ID="SlimeGlands Target Pick Error:That is out of range! (=range.things:square=)">That is out of range! (=range.things:square=)</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/SlimeGlands.cs:101-->
+  <string ID="Slime Glands spit:=subject.Does:spit= a pool of slime!">=subject.Does:spit= a pool of slime!</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/SlimeGlands.cs:210-->
+  <string ID="SlimeGlands Ability Name:Spit Slime">Spit Slime</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Pets/ReflectShame.cs:73-->
   <string ID="=subject.Does:are= shamed by =subject.possessive= reflection!">=subject.Does:are= shamed by =subject.possessive= reflection!</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Pets/RepellingForce.cs:94-->
@@ -1126,11 +1218,33 @@ Assets/XRL Application/World/Game Objects/Parts/Physics.cs:879
   <string ID="Physics AccelerateInternal my damage message w/ pens:=pens.pens= from =subject.a.name= colliding with =object.them=.">=pens.pens= from =subject.a.name= colliding with =object.them=.</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:4908-->
   <string ID="=subject.An= =subject.verb#ArriveVerb= =subject.direction=.">=subject.An= =subject.verb#ArriveVerb= =subject.direction=.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Persuasion/Proselytize.cs:135-->
+  <string ID="Proselytize Ability Name:Proselytize">Proselytize</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Persuasion/Proselytize.cs:159-->
+  <string ID="Proselytize Fail Glotrot:You cannot proselytize without a tongue.">You cannot proselytize without a tongue.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Persuasion/Proselytize.cs:167-->
+  <string ID="Proselytize Target Picker Title:Proselytize">Proselytize</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Persuasion/Proselytize.cs:175-->
+  <string ID="Proselytize No Target:There are no valid targets in that square.">There are no valid targets in that square.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Persuasion/Proselytize.cs:180-->
+  <string ID="Proselytize Select Target:Who would you like to proselytize?">Who would you like to proselytize?</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Persuasion/Proselytize.cs:187-->
+  <string ID="Proselytize Fail Target Self:You can't proselytize =subject.itself=!">You can't proselytize =subject.itself=!</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Persuasion/Proselytize.cs:195-->
+  <string ID="Proselytize Fail no tongue, telepathy failed:Without a tongue, you cannot proselytize =object.t=, as you cannot make telepathic contact with =object.them=.">Without a tongue, you cannot proselytize =object.t=, as you cannot make telepathic contact with =object.them=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Persuasion/Proselytize.cs:203-->
+  <string ID="Proselytize Fail no tongue:Without a tongue, you cannot proselytize =object.t=.">Without a tongue, you cannot proselytize =object.t=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Persuasion/Proselytize.cs:212-->
+  <string ID="Proselytize Fail Frozen:Frozen solid, you cannot proselytize =object.t=.">Frozen solid, you cannot proselytize =object.t=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Persuasion/Proselytize.cs:228-->
+  <string ID="Proselytize confirm proselytize follower:=object.Does:are= already your follower. Do you want to proselytize =object.them= anyway?">=object.Does:are= already your follower. Do you want to proselytize =object.them= anyway?</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Persuasion/Proselytize.cs:278-->
+  <string ID="Proselytize Fail Message:=object.Does:are= unconvinced by your pleas.">=object.Does:are= unconvinced by your pleas.</string>
   <!--Code references _T(): Assets/XRL Application/World/IComponent.cs:1270-->
   <string ID="TargetSelfConfirm:Are you sure you want to target =subject.itself=?">Are you sure you want to target =subject.itself=?</string>
-  <!--Code references _S(): Assets/XRL Application/World/Text/Delegates.cs:680-->
+  <!--Code references _S(): Assets/XRL Application/World/Text/Delegates.cs:684-->
   <string ID="keybind:unknown key">unknown key</string>
-  <!--Code references _S(): Assets/XRL Application/World/Text/Delegates.cs:695-->
+  <!--Code references _S(): Assets/XRL Application/World/Text/Delegates.cs:699-->
   <string ID="keybind:{{W|Alt}}">{{W|Alt}}</string>
   <!--Code references _T(): Assets/XRL Application/World/Text/Delegates/Delegates.Numbers.cs:44-->
   <string ID="damage penetrations:(x=number.toString=)">(x=number.toString=)</string>

@@ -192,7 +192,18 @@
         <statline Name="Cooldown" />
       </leveltext>
     </mutation>
-    <mutation Name="Slime Glands" Cost="1" MaxSelected="1" Class="SlimeGlands" Exclusions="" BearerDescription="slime spitters" Tile="Mutations/slime_glands.bmp" />
+    <mutation Name="Slime Glands" Cost="1" MaxSelected="1" Class="SlimeGlands" Exclusions="" BearerDescription="slime spitters" Tile="Mutations/slime_glands.bmp">
+      <description>
+        <p>You produce a viscous slime that you can spit at things.</p>
+        <p></p>
+        <p>Covers an area with slime</p>
+        <statline Name="Range" />
+        <statline Name="Area" />
+        <statline Name="Cooldown" />
+        <p>You can walk over slime without slipping.</p>
+      </description>
+      <leveltext />
+    </mutation>
     <mutation Name="Spinnerets" Cost="3" MaxSelected="1" Class="Spinnerets" Exclusions="" BearerDescription="web weavers" Tile="Mutations/spinnerets.bmp" />
     <mutation Name="Stinger (Confusing Venom)" Cost="3" MaxSelected="1" Class="Stinger" Variant="Stinger Confusion" Exclusions="Stinger (Paralyzing Venom),Stinger (Poisoning Venom)" BearerDescription="those with stingers tipped with confusing venom" Tile="Mutations/stinger.bmp" />
     <mutation Name="Stinger (Paralyzing Venom)" Cost="4" MaxSelected="1" Class="Stinger" Variant="Stinger Paralysis" Exclusions="Stinger (Confusing Venom),Stinger (Poisoning Venom)" BearerDescription="those with stingers tipped with paralyzing venom" Tile="Mutations/stinger.bmp" />
@@ -242,7 +253,16 @@
     <mutation Name="Mass Mind" Cost="4" MaxSelected="1" Class="MassMind" Exclusions="" BearerDescription="those who tap the Mass Mind" BiomeEpithet="mindmoot" Tile="Mutations/mass_mind.bmp" />
     <mutation Name="Mental Mirror" Cost="2" MaxSelected="1" Class="MentalMirror" Exclusions="" BearerDescription="the mentally reflective" BiomeEpithet="mirrorsteppe" Tile="Mutations/mental_mirror.bmp" />
     <mutation Name="Precognition" Cost="4" MaxSelected="1" Class="Precognition" Exclusions="" BearerDescription="the prescient" BiomeEpithet="future site" Tile="Mutations/precognition.bmp" />
-    <mutation Name="Psychometry" Cost="3" MaxSelected="1" Class="Psychometry" Exclusions="Dystechnia" BearerDescription="the psychometrically sensitive" BiomeAdjective="retrocognate" Tile="Mutations/psychometry.bmp" />
+    <mutation Name="Psychometry" Cost="3" MaxSelected="1" Class="Psychometry" Exclusions="Dystechnia" BearerDescription="the psychometrically sensitive" BiomeAdjective="retrocognate" Tile="Mutations/psychometry.bmp">
+      <description>
+        <p>You read the history of artifacts by touching them, learning what they do and how they were made.</p>
+      </description>
+      <leveltext>
+        <p>Unerringly identify artifacts up to complexity tier <stat Name="IdentifyComplexity" />.</p>
+        <p>Learn how to construct identified artifacts up to complexity tier <stat Name="ConstructComplexity" /> (must have the appropriate Tinker skill).</p>
+        <p>You may open security doors and use some secure devices by touching them.</p>
+      </leveltext>
+    </mutation>
     <mutation Name="Pyrokinesis" Cost="4" MaxSelected="1" Class="Pyrokinesis" Exclusions="" BearerDescription="pyromancers" BiomeEpithet="flame meadow" Tile="Mutations/pyrokinesis.bmp">
       <description>
         <p>You heat a nearby area with your mind.</p>
@@ -260,7 +280,20 @@
     <mutation Name="Sense Psychic" Cost="1" MaxSelected="1" Class="SensePsychic" Exclusions="" BearerDescription="the psychically sensitive" BiomeAdjective="naked" Tile="Mutations/sense_psychic.bmp" />
     <mutation Name="Spacetime Vortex" Cost="3" MaxSelected="1" Class="SpacetimeVortex" Exclusions="" BearerDescription="spacefolders" BiomeAdjective="warped" Tile="Mutations/spacetime_vortex.bmp" />
     <mutation Name="Stunning Force" Cost="3" MaxSelected="1" Class="StunningForce" Exclusions="" BearerDescription="the telekinetic" BiomeAdjective="telekinetic" Tile="Mutations/stunning_force.bmp" />
-    <mutation Name="Sunder Mind" Cost="4" MaxSelected="1" Class="SunderMind" Exclusions="" BearerDescription="mind sunderers" BiomeEpithet="psychic graveyard" Tile="Mutations/sunder_mind.bmp" />
+    <mutation Name="Sunder Mind" Cost="4" MaxSelected="1" Class="SunderMind" Exclusions="" BearerDescription="mind sunderers" BiomeEpithet="psychic graveyard" Tile="Mutations/sunder_mind.bmp">
+      <description>
+        <p>You sunder the mind of an enemy, leaving them reeling in pain.</p>
+      </description>
+      <leveltext>
+        <p>For up to 10 rounds, you engage in psychic combat with an opponent, dealing damage each round.</p>
+        <p>Taking any action other than passing the turn will break the connection.</p>
+        <p>Each round you make a mental attack vs mental armor (MA).</p>
+        <statline Name="DamageIncrement" DisplayName="Damage increment" />
+        <p>After the tenth round, you deal bonus damage equal to the total amount of damage you've done so far.</p>
+        <statline Name="Range" />
+        <statline Name="Cooldown" />
+      </leveltext>
+    </mutation>
     <mutation Name="Syphon Vim" Cost="3" MaxSelected="1" Class="LifeDrain" Exclusions="" BearerDescription="life leeches" BiomeEpithet="slaughterfield" Tile="Mutations/syphon_vim.bmp" />
     <mutation Name="Telepathy" Cost="1" MaxSelected="1" Class="Telepathy" Exclusions="" BearerDescription="the telepathic" BiomeAdjective="telepathic" Tile="Mutations/telepathy.bmp" />
     <mutation Name="Teleportation" Cost="5" MaxSelected="1" Class="Teleportation" Exclusions="" BearerDescription="teleporters" BiomeEpithet="spacetime karst" Tile="Mutations/teleportation.bmp" />

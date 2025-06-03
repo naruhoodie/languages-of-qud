@@ -33,14 +33,6 @@ namespace LanguagesOfQud
             }
             return GetDisplayNameOf(target) + "は";
         }
-        /// <summary>
-        /// the は(wa) particle for topic
-        /// </summary>
-        [VariableReplacer("は", Capitalization = false)]
-        public static string は(VariableContext Context, ExplicitObject Explicit)
-        {
-            return Explicit.Name + "は";
-        }
 
         /// <summary>
         /// the が(ga) particle for subject
@@ -56,15 +48,6 @@ namespace LanguagesOfQud
                 return "";
             }
             return GetDisplayNameOf(target) + "が";
-        }
-        /// <summary>
-        /// the が(ga) particle for subject
-        /// </summary>
-        [VariableReplacer("が", Capitalization = false)]
-
-        public static string が(VariableContext Context, ExplicitObject target)
-        {
-            return target.Name + "が";
         }
 
         /// <summary>
@@ -82,14 +65,6 @@ namespace LanguagesOfQud
             }
             return GetDisplayNameOf(target) + "を";
         }
-        /// <summary>
-        /// the を(wo) particle for direct objects
-        /// </summary>
-        [VariableReplacer("を", Capitalization = false)]
-        public static string を(VariableContext Context, ExplicitObject Explicit)
-        {
-            return Explicit.Name + "を";
-        }
 
         /// <summary>
         /// the の(no) particle for possessive/"of" relations, etc.
@@ -106,14 +81,6 @@ namespace LanguagesOfQud
             }
             return GetDisplayNameOf(target) + "の";
         }
-        /// <summary>
-        /// the の(no) particle for possessive/"of" relations, etc.
-        /// </summary>
-        [VariableReplacer("の", Capitalization = false)]
-        public static string の(VariableContext Context, ExplicitObject Explicit)
-        {
-            return Explicit.Name + "の";
-        }
 
         /// <summary>
         /// the と(to) particle for "with", "and" lists of nouns, quoting, etc.
@@ -127,14 +94,6 @@ namespace LanguagesOfQud
                 return "";
             }
             return GetDisplayNameOf(target) + "と";
-        }
-        /// <summary>
-        /// the と(to) particle for "with", "and" lists of nouns, quoting, etc.
-        /// </summary>
-        [VariableReplacer("と", Capitalization = false)]
-        public static string と(VariableContext Context, ExplicitObject Explicit)
-        {
-            return Explicit.Name + "と";
         }
 
         /// <summary>
@@ -151,14 +110,6 @@ namespace LanguagesOfQud
                 return "";
             }
             return GetDisplayNameOf(target) + "に";
-        }
-        /// <summary>
-        /// the に(ni) particle for locations, "by" relations, etc.
-        /// </summary>
-        [VariableReplacer("に", Capitalization = false)]
-        public static string に(VariableContext Context, ExplicitObject Explicit)
-        {
-            return Explicit.Name + "に";
         }
 
         /// <summary>
@@ -177,14 +128,6 @@ namespace LanguagesOfQud
             }
             return GetDisplayNameOf(target) + "で";
         }
-        /// <summary>
-        /// the で(de) particle for location, means, etc.
-        /// </summary>
-        [VariableReplacer("で", Capitalization = false)]
-        public static string で(VariableContext Context, ExplicitObject Explicit)
-        {
-            return Explicit.Name + "で";
-        }
 
         /// <summary>
         /// the も(mo) particle for "too", "also", "even"
@@ -200,14 +143,6 @@ namespace LanguagesOfQud
                 return "あなたも";
             }
             return GetDisplayNameOf(target) + "も";
-        }
-        /// <summary>
-        /// the も(mo) particle for "too", "also", "even"
-        /// </summary>
-        [VariableReplacer("も", Capitalization = false)]
-        public static string も(VariableContext Context, ExplicitObject Explicit)
-        {
-            return Explicit.Name + "も";
         }
 
         /// <summary>
@@ -227,16 +162,6 @@ namespace LanguagesOfQud
         }
 
         /// <summary>
-        /// where it'd say あなた(anata) instead of dropping the 2nd-pers pronoun
-        /// </summary>
-
-        [VariableReplacer("あなたは", Capitalization = false)]
-        public static string あなたは(VariableContext Context, ExplicitObject Explicit)
-        {
-            return Explicit.Name + "は";
-        }
-
-        /// <summary>
         /// adding a comma 、after は
         /// </summary>
         [VariableReplacer("あなたは、", Capitalization = false)]
@@ -250,14 +175,6 @@ namespace LanguagesOfQud
             }
             return GetDisplayNameOf(target) + "は、";
         }
-        /// <summary>
-        /// adding a comma 、after は
-        /// </summary>
-        [VariableReplacer("あなたは、", Capitalization = false)]
-        public static string あなたはWithComma(VariableContext Context, ExplicitObject Explicit)
-        {
-            return Explicit.Name + "は、";
-        }
 
         [VariableReplacer("あなたが", Capitalization = false)]
         [VariableExample("あなたが", "Player")]
@@ -270,11 +187,6 @@ namespace LanguagesOfQud
             }
             return GetDisplayNameOf(target) + "が";
         }
-        [VariableReplacer("あなたが", Capitalization = false)]
-        public static string あなたが(VariableContext Context, ExplicitObject Explicit)
-        {
-            return Explicit.Name + "が";
-        }
 
         [VariableReplacer("あなたを", Capitalization = false)]
         public static string あなたを(VariableContext Context, GameObject target)
@@ -284,11 +196,6 @@ namespace LanguagesOfQud
                 return "あなたを";
             }
             return GetDisplayNameOf(target) + "を";
-        }
-        [VariableReplacer("あなたを", Capitalization = false)]
-        public static string あなたを(VariableContext Context, ExplicitObject Explicit)
-        {
-            return Explicit.Name + "を";
         }
 
         [VariableReplacer("あなたの", Capitalization = false)]
@@ -300,11 +207,6 @@ namespace LanguagesOfQud
             }
             return GetDisplayNameOf(target) + "の";
         }
-        [VariableReplacer("あなたの", Capitalization = false)]
-        public static string あなたの(VariableContext Context, ExplicitObject Explicit)
-        {
-            return Explicit.Name + "の";
-        }
 
         [VariableReplacer("あなたと", Capitalization = false)]
         public static string あなたと(VariableContext Context, GameObject target)
@@ -314,11 +216,6 @@ namespace LanguagesOfQud
                 return "あなたと";
             }
             return GetDisplayNameOf(target) + "と";
-        }
-        [VariableReplacer("あなたと", Capitalization = false)]
-        public static string あなたと(VariableContext Context, ExplicitObject Explicit)
-        {
-            return Explicit.Name + "と";
         }
 
         [VariableReplacer("あなたに", Capitalization = false)]
@@ -330,11 +227,6 @@ namespace LanguagesOfQud
             }
             return GetDisplayNameOf(target) + "に";
         }
-        [VariableReplacer("あなたに", Capitalization = false)]
-        public static string あなたに(VariableContext Context, ExplicitObject Explicit)
-        {
-            return Explicit.Name + "に";
-        }
 
         [VariableReplacer("あなたで", Capitalization = false)]
         public static string あなたで(VariableContext Context, GameObject target)
@@ -344,11 +236,6 @@ namespace LanguagesOfQud
                 return "あなたで";
             }
             return GetDisplayNameOf(target) + "で";
-        }
-        [VariableReplacer("あなたで", Capitalization = false)]
-        public static string あなたで(VariableContext Context, ExplicitObject Explicit)
-        {
-            return Explicit.Name + "で";
         }
 
         [VariableReplacer(Default = "どこか", Capitalization = false, Override = true)]

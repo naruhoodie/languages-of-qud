@@ -528,7 +528,47 @@ Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:44
   <!--
 	Mutation strings
   -->
+  <string ID="Psychometry Failure Examine:Do you want to continue despite being unable to use Psychometry?">[届：\TODO]Do you want to continue despite being unable to use Psychometry?</string>
+  <string ID="Psychometry Failure Repair:Do you want to continue despite being unable to use Psychometry?">[届：\TODO]Do you want to continue despite being unable to use Psychometry?</string>
+  <string ID="Psychometry Inventory Action:read history with Psychometry">[届：\TODO]read history with Psychometry</string>
+  <string ID="Psychometry Fail Identify:=object.This= =object.isplural:artifacts:artifact= =object.is= too complex for you to decipher =object.its= function.">[届：\TODO]=object.This= =object.isplural:artifacts:artifact= =object.is= too complex for you to decipher =object.its= function.</string>
+  <string ID="Psychometry Success Identify:You flush with understanding of the =object.isplural:artifacts':artifact's= past and determine =object.them= to be =object.a.name=.">[届：\TODO]You flush with understanding of the =object.isplural:artifacts':artifact's= past and determine =object.them= to be =object.a.name=.</string>
+  <string ID="Psychometry can't identify:=object.This= =object.isplural:artifacts:artifact= =object.is= too complex for you to decipher =object.its= method of construction.">[届：\TODO]=object.This= =object.isplural:artifacts:artifact= =object.is= too complex for you to decipher =object.its= method of construction.</string>
+  <string ID="Psychometry reverse engineer:You abide the memory of =object.a.or.the==object.shortsingle's= creation. You learn to build =sample.pluralize=.">[届：\TODO]You abide the memory of =object.a.or.the==object.shortsingle's= creation. You learn to build =sample.pluralize=.</string>
+  <string ID="Psychometry Ability Placeholder Text:To use Psychometry, interact with an artifact and then choose 'read history with Psychometry.">[届：\TODO]To use Psychometry, interact with an artifact and then choose 'read history with Psychometry.</string>
+  <string ID="Psychometry Activated Ability Name:Psychometry">[届：\TODO]Psychometry</string>
+  <string ID="Psychometry Activate Fail Confused:You strain to part the veil of time in order to use psychometry on =object.t=, but you are too confused.">[届：\TODO]You strain to part the veil of time in order to use psychometry on =object.t=, but you are too confused.</string>
+  <string ID="Psychometry Activate Fail Cooldown:You strain to part the veil of time in order to use psychometry on =object.t=, but your psyche is too exhausted.">[届：\TODO]You strain to part the veil of time in order to use psychometry on =object.t=, but your psyche is too exhausted.</string>
+  <string ID="Psychometry InitiateRealityDistortionTransit Purpose:use psychometry on =object.t">[届：\TODO]use psychometry on =object.t</string>
   <string ID="hostile perception verb:sense">[届：\TODO]sense</string>
+  <string ID="SunderMind MemberOfPsychicBattle Effect Description:locked in psychic battle">locked in psychic battle</string>
+  <string ID="SunderMind Canceled:Your concentration slips and the channel between you and =object.the.name= dissipates into aether.">[届：\TODO]Your concentration slips and the channel between you and =object.the.name= dissipates into aether.</string>
+  <string ID="SunderMind Canceled:Your concentration slips and the channel dissipates.">[届：\TODO]Your concentration slips and the channel dissipates.</string>
+  <string ID="SunderMind Start Channeling:You burrow a channel through the psychic aether to =object.the.name= and begin to sunder =object.its= mind!">[届：\TODO]You burrow a channel through the psychic aether to =object.the.name= and begin to sunder =object.its= mind!</string>
+  <string ID="SunderMind Start Channeling against player:=subject.The.name= =player.direction#subject= =subject.verb:burrow= a channel through the psychic aether and =subject.verb:begin= to sunder your mind!">[届：\TODO]=subject.The.name= =player.direction#subject= =subject.verb:burrow= a channel through the psychic aether and =subject.verb:begin= to sunder your mind!</string>
+  <string ID="SunderMind death by head explode pt.1:Your sense of self is pulled apart by what feels like a billion years of geologic pressure.">[届：\TODO]Your sense of self is pulled apart by what feels like a billion years of geologic pressure.</string>
+  <string ID="SunderMind death by head explode pt.2:Your head explodes!">[届：\TODO]Your head explodes!</string>
+  <string ID="SunderMind head explode witnessed:=subject.The.name's= head explodes!">[届：\TODO]=subject.The.name's= head explodes!</string>
+  <string ID="SunderMind DeathReason:Your head was exploded by =subject.a.name=.">[届：\TODO]Your head was exploded by =subject.a.name=.</string>
+  <string ID="SunderMind ThirdPerson DeathReason:=subject.Its= head was exploded by =subject.a.name=.">[届：\TODO]=subject.Its= head was exploded by =subject.a.name=.</string>
+  <string ID="SunderMind Nosebleed death source:psychic attack">[届：\TODO]psychic attack</string>
+  <string ID="SunderMind Nosebleed start:=subject.The.name's= nose begins to bleed.">[届：\TODO]=subject.The.name's= nose begins to bleed.</string>
+  <string ID="SunderMind Nosebleed death source:nosebleed">[届：\TODO]nosebleed</string>
+  <string ID="SunderMind Nosebleed start vs robot:=subject.The.name's= core begins to leak.">[届：\TODO]=subject.The.name's= core begins to leak.</string>
+  <string ID="SunderMind Nosebleed death source:processor leak">[届：\TODO]processor leak</string>
+  <string ID="SunderMind Nosebleed start vs robot:=subject.The.name's= brain begins to hemorrhage.">[届：\TODO]=subject.The.name's= brain begins to hemorrhage.</string>
+  <string ID="SunderMind Nosebleed death source:hemorrhage">[届：\TODO]hemorrhage</string>
+  <string ID="SunderMind Nosebleed death reason:You died from =source|article=.">[届：\TODO]You died from =source|article=.</string>
+  <string ID="SunderMind damage message:from =source|article=.">[届：\TODO]from =source|article=.</string>
+  <string ID="SunderMind PenetrationFailure:Your attack fails to penetrate =object.the.name's= mental defenses.">[届：\TODO]Your attack fails to penetrate =object.the.name's= mental defenses.</string>
+  <string ID="SunderMind Blast Damage Message:=subject.Does:sunder= =object.the.name's= mind=pens.pens= for %d damage!">[届：\TODO]=subject.Does:sunder= =object.the.name's= mind=pens.pens= for %d damage!</string>
+  <string ID="SunderMind Blast attempt but 0:=subject.Does:attempt to burrow a channel through the psychic aether and sunder =object.the.name's= mind but the attack has no effect.">[届：\TODO]=subject.Does:attempt to burrow a channel through the psychic aether and sunder =object.the.name's= mind but the attack has no effect.</string>
+  <string ID="SunderMind Target Picker Title:Sunder Mind">[届：\TODO]Sunder Mind</string>
+  <string ID="SunderMind Confirm Self Target:Are you sure you want to sunder your own mind?">[届：\TODO]Are you sure you want to sunder your own mind?</string>
+  <string ID="SunderMind target slipped:You cannot sufficiently grasp the mind there to sunder it.">[届：\TODO]You cannot sufficiently grasp the mind there to sunder it.</string>
+  <string ID="SunderMind no target:There's no target with a mind there.">[届：\TODO]There's no target with a mind there.</string>
+  <string ID="SunderMind already being sundered:That target is already locked in psychic battle!">[届：\TODO]That target is already locked in psychic battle!</string>
+  <string ID="SunderMind Ability Name:Sunder Mind">[届：\TODO]Sunder Mind</string>
   <string ID="Your adrenaline subsides.">[届：\TODO]Your adrenaline subsides.</string>
   <string ID="Your adrenaline starts to flow.">[届：\TODO]Your adrenaline starts to flow.</string>
   <string ID="Release Adrenaline">[届：\TODO]Release Adrenaline</string>
@@ -580,6 +620,10 @@ Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:44
   <string ID="=subject.Does:start= releasing =gasdisplayname=.">[届：\TODO]=subject.Does:start= releasing =gasdisplayname=.</string>
   <string ID="hostile perception verb:hear">[届：\TODO]hear</string>
   <string ID="hostile perception verb:smell">[届：\TODO]smell</string>
+  <string ID="SlimeGlands Targeting Title:Spit Slime">[届：\TODO]Spit Slime</string>
+  <string ID="SlimeGlands Target Pick Error:That is out of range! (=range.things:square=)">[届：\TODO]That is out of range! (=range.things:square=)</string>
+  <string ID="Slime Glands spit:=subject.Does:spit= a pool of slime!">[届：\TODO]=subject.Does:spit= a pool of slime!</string>
+  <string ID="SlimeGlands Ability Name:Spit Slime">[届：\TODO]Spit Slime</string>
   <string ID="=subject.Does:are= shamed by =subject.possessive= reflection!">[届：\TODO]=subject.Does:are= shamed by =subject.possessive= reflection!</string>
   <string ID="You cannot use =mutation.name= on the world map.">[届：\TODO]You cannot use =mutation.name= on the world map.</string>
   <string ID="=subject.Does:flip= polarity.">[届：\TODO]=subject.Does:flip= polarity.</string>
@@ -588,10 +632,6 @@ Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:44
   <string ID="ErosTeleportation Shout:I'm coming, =partyLeader.basename=!">[届：\TODO]I'm coming, =partyLeader.basename=!</string>
   <string ID="ErosTeleportation Shout MessageLog:=subject.Basename|strip= =subject.verb:yell=, {{W|'=shoutMessage='}}">[届：\TODO]=subject.Basename|strip= =subject.verb:yell=, {{W|'=shoutMessage='}}</string>
   <string ID="ErosTeleportation Ability Name:Teleport">[届：\TODO]Teleport</string>
-
-  <!--
-	Physics strings
-  -->
   <string ID="=subject.Does:are= knocked =direction.directionDescription=.">[届：\TODO]=subject.Does:are= knocked =direction.directionDescription=.</string>
   <string ID="=subject.Does:collide= with =object.a.name=.">[届：\TODO]=subject.Does:collide= with =object.a.name=.</string>
   <string ID="Physics AccelerateInternal my damage message:from colliding with =object.a.name=.">[届：\TODO]from colliding with =object.a.name=.</string>
@@ -599,6 +639,17 @@ Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:44
   <string ID="Physics AccelerateInternal my damage message:from =subject.a.name= colliding with =object.them=.">[届：\TODO]from =subject.a.name= colliding with =object.them=.</string>
   <string ID="Physics AccelerateInternal my damage message w/ pens:=pens.pens= from =subject.a.name= colliding with =object.them=.">[届：\TODO]=pens.pens= from =subject.a.name= colliding with =object.them=.</string>
   <string ID="=subject.An= =subject.verb#ArriveVerb= =subject.direction=.">[届：\TODO]=subject.An= =subject.verb#ArriveVerb= =subject.direction=.</string>
+  <string ID="Proselytize Ability Name:Proselytize">[届：\TODO]Proselytize</string>
+  <string ID="Proselytize Fail Glotrot:You cannot proselytize without a tongue.">[届：\TODO]You cannot proselytize without a tongue.</string>
+  <string ID="Proselytize Target Picker Title:Proselytize">[届：\TODO]Proselytize</string>
+  <string ID="Proselytize No Target:There are no valid targets in that square.">[届：\TODO]There are no valid targets in that square.</string>
+  <string ID="Proselytize Select Target:Who would you like to proselytize?">[届：\TODO]Who would you like to proselytize?</string>
+  <string ID="Proselytize Fail Target Self:You can't proselytize =subject.itself=!">[届：\TODO]You can't proselytize =subject.itself=!</string>
+  <string ID="Proselytize Fail no tongue, telepathy failed:Without a tongue, you cannot proselytize =object.t=, as you cannot make telepathic contact with =object.them=.">[届：\TODO]Without a tongue, you cannot proselytize =object.t=, as you cannot make telepathic contact with =object.them=.</string>
+  <string ID="Proselytize Fail no tongue:Without a tongue, you cannot proselytize =object.t=.">[届：\TODO]Without a tongue, you cannot proselytize =object.t=.</string>
+  <string ID="Proselytize Fail Frozen:Frozen solid, you cannot proselytize =object.t=.">[届：\TODO]Frozen solid, you cannot proselytize =object.t=.</string>
+  <string ID="Proselytize confirm proselytize follower:=object.Does:are= already your follower. Do you want to proselytize =object.them= anyway?">[届：\TODO]=object.Does:are= already your follower. Do you want to proselytize =object.them= anyway?</string>
+  <string ID="Proselytize Fail Message:=object.Does:are= unconvinced by your pleas.">[届：\TODO]=object.Does:are= unconvinced by your pleas.</string>
   <string ID="TargetSelfConfirm:Are you sure you want to target =subject.itself=?">[届：\TODO]Are you sure you want to target =subject.itself=?</string>
 
   <!--
