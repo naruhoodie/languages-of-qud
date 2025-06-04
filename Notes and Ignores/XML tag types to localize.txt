@@ -96,10 +96,14 @@
 <mutations>
     <mutation Name="<KEY>" DisplayName="<LOCALIZE>" BearerDescription="<LOCALIZE>" BiomeEpithet="<LOCALIZE>" BiomeAdjective="<LOCALIZE>">
 		<description><LOCALIZE>
-			<leveltext><LOCALIZE>
-				<statline Name="<KEY>" DisplayName="<LOCALIZE>"/>
-			</leveltext>
+			<stat Name="<KEY>" DisplayName="<LOCALIZE>" Unit="<LOCALIZE>"/>
+			<vartext><LOCALIZE></vartext>
 		</description>
+		<leveltext><LOCALIZE>
+			<stat Name="<KEY>" DisplayName="<LOCALIZE>" Unit="<LOCALIZE>"/>
+			<statline Name="<KEY>" DisplayName="<LOCALIZE>" Unit="<LOCALIZE>"/>
+			<vartext><LOCALIZE></vartext>
+		</leveltext>
 	</mutation>
 </mutations>
 

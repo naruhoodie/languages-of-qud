@@ -31,8 +31,8 @@
       </description>
       <leveltext>
         <p>[届：\TODO]You can increase your body's adrenaline flow for <stat Name="Duration" />.</p>
-        <p>[届：\TODO]While it's flowing, you gain +<stat Name="QuicknessBonus" /> quickness and other physical mutations gain +<stat Name="MutationBonus" Unit="rank" />.</p>         
-        <statline Name="Cooldown" />
+        <p>[届：\TODO]While it's flowing, you gain +<stat Name="QuicknessBonus" /> quickness and other physical mutations gain +<stat Name="MutationBonus" Unit="ランク" />.</p>         
+        <statline Name="Cooldown" DisplayName="冷却期間" Unit="[周\ラウンド]" />
       </leveltext>
     </mutation>
     <mutation Name="Beak" DisplayName="[届：\TODO]Beak" BearerDescription="[届：\TODO]those with beaks">
@@ -52,7 +52,7 @@
       </description>
       <leveltext>
         <p>[届：\TODO]<vartext>=weapon.Name=</vartext> penetration vs. walls: <stat Name="WallPenetration" /></p>
-        <p>[届：\TODO]<vartext>=weapon.Name|pluralize=</vartext> destroy walls after <stat Name="WallHits" Unit="penetrating hit" />.</p>
+        <p>[届：\TODO]<vartext>=weapon.Name|pluralize=</vartext> destroy walls after <stat Name="WallHits" Unit="[届：\TODO]penetrating hit" />.</p>
         <switch Name="PrereleaseContent"><case Value="true"><p>[届：\TODO]Can dig passages up or down when outside of combat</p></case></switch>
         <p>[届：\TODO]<vartext>=weapon.Name|pluralize= are also a =weaponClass.name= class natural weapon that deal <stat Name="Damage" /> base damage to non-walls.</vartext></p>
       </leveltext>
@@ -63,10 +63,10 @@
         <p>[届：\TODO]You are protected by a durable carapace.</p>
       </description>
       <leveltext>
-        <p>[届：\TODO]<stat Name="AV" Filters="signed" /> AV</p>
-        <p>[届：\TODO]<stat Name="DV" Filters="signed" /> DV</p>
-        <p>[届：\TODO]<stat Name="HeatResist" Filters="signed" /> Heat Resistance</p>
-        <p>[届：\TODO]<stat Name="ColdResist" Filters="signed" /> Cold Resistance</p>
+        <p><stat Name="AV" Filters="signed" />ＡＶ</p>
+        <p><stat Name="DV" Filters="signed" />ＤＶ</p>
+        <p><stat Name="HeatResist" Filters="signed" />耐熱性</p>
+        <p><stat Name="ColdResist" Filters="signed" />耐寒性</p>
         <switch Name="AddsRep"><case Value="" /><default><p>[届：\TODO]<stat Name="AddsRep" /></p></default></switch>
         <p>[届：\TODO]You may tighten your <stat Name="CarapaceName" /> to receive double the AV bonus at a -2 DV penalty as long as you remain still.</p>
         <p>[届：\TODO]Cannot wear body armor.</p>
@@ -77,16 +77,17 @@
         <p>[届：\TODO]You release a burst of <stat Name="GasName" /> around yourself.</p>
       </description>
       <leveltext>
-        <p>[届：\TODO]Releases gas for <stat Name="Duration" /></p>
+        <p>[届：\TODO]Releases gas for <stat Name="Duration" Unit="[周\ラウンド]" /></p>
         <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
-        <statline Name="Cooldown" />
+        <statline Name="Cooldown" DisplayName="冷却期間" Unit="[周\ラウンド]" />
       </leveltext>
     </mutation>
-    <mutation Name="Double-muscled" DisplayName="[届：\TODO]Double-muscled" BearerDescription="[届：\TODO]the double-muscled">      <description>
+    <mutation Name="Double-muscled" DisplayName="[届：\TODO]Double-muscled" BearerDescription="[届：\TODO]the double-muscled">
+      <description>
         <p>[届：\TODO]You are possessed of hulking strength.</p>
       </description>
       <leveltext>
-        <p>[届：\TODO]+<stat Name="Strength" /> Strength</p>
+        <p>+<stat Name="Strength" />筋力</p>
         <p>[届：\TODO]<stat Name="DazeChance" />% chance to daze your opponent on a successful melee attack for 2-3 rounds</p>
       </leveltext>
     </mutation>
@@ -110,9 +111,9 @@
         <p>[届：\TODO]You generate an electromagnetic pulse that disables nearby artifacts and machines.</p>
       </description>
       <leveltext>
-        <p>[届：\TODO]Area: <stat Name="Area" /> centered around yourself</p>
-        <statline Name="Duration" />
-        <statline Name="Cooldown" />
+        <p>[届：\TODO]面積: <stat Name="Area" /> centered around yourself</p>
+        <statline Name="Duration" DisplayName="期間" Unit="[周\ラウンド]" />
+        <statline Name="Cooldown" DisplayName="冷却期間" Unit="[周\ラウンド]" />
       </leveltext>
     </mutation>
     <mutation Name="Flaming Ray" DisplayName="[届：\TODO]Flaming Ray" BearerDescription="[届：\TODO]the flaming-handed">
@@ -121,9 +122,9 @@
       </description>
       <leveltext>
         <p>[届：\TODO]Emits a <stat Name="Range" />-square ray of flame in the direction of your choice.</p>
-        <statline Name="Damage" />
-        <statline Name="Cooldown" />
-        <p>[届：\TODO]Melee attacks heat opponents by <stat Name="HeatOnHit" Unit="degree" /></p>
+        <statline Name="Damage" DisplayName="ダメージ" />
+        <statline Name="Cooldown" DisplayName="冷却期間" Unit="[周\ラウンド]" />
+        <p>[届：\TODO]Melee attacks heat opponents by <stat Name="HeatOnHit" Unit="[届：\TODO]degree" /></p>
       </leveltext>
     </mutation>
     <mutation Name="Freezing Ray" DisplayName="[届：\TODO]Freezing Ray" BearerDescription="[届：\TODO]the frozen-handed">
@@ -132,8 +133,8 @@
       </description>
       <leveltext>
         <p>[届：\TODO]Emits a <stat Name="Range" />-square ray of frost in the direction of your choice.</p>
-        <statline Name="Damage" />
-        <statline Name="Cooldown" />
+        <statline Name="Damage" DisplayName="ダメージ" />
+        <statline Name="Cooldown" DisplayName="冷却期間" Unit="[周\ラウンド]" />
         <p>[届：\TODO]Melee attacks cool opponents by <stat Name="CoolOnHit" Unit="degree" /></p>
       </leveltext>
     </mutation>
@@ -185,9 +186,9 @@
         <p>[届：\TODO]You release a burst of <stat Name="GasName" /> around yourself.</p>
       </description>
       <leveltext>
-        <p>[届：\TODO]Releases gas for <stat Name="Duration" /></p>
+        <p>[届：\TODO]Releases gas for <stat Name="Duration" Unit="[周\ラウンド]" /></p>
         <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
-        <statline Name="Cooldown" />
+        <statline Name="Cooldown" DisplayName="冷却期間" Unit="[周\ラウンド]" />
       </leveltext>
     </mutation>
     <mutation Name="Slime Glands" DisplayName="[届：\TODO]Slime Glands" BearerDescription="[届：\TODO]slime spitters">
@@ -195,9 +196,9 @@
         <p>[届：\TODO]You produce a viscous slime that you can spit at things.</p>
         <p></p>
         <p>[届：\TODO]Covers an area with slime</p>
-        <statline Name="Range" />
-        <statline Name="Area" />
-        <statline Name="Cooldown" />
+        <statline Name="Range" DisplayName="射程" />
+        <statline Name="Area" DisplayName="面積" />
+        <statline Name="Cooldown" DisplayName="冷却期間" Unit="[周\ラウンド]" />
         <p>[届：\TODO]You can walk over slime without slipping.</p>
       </description>
       <leveltext />
@@ -236,7 +237,7 @@
       <leveltext>[届：\TODO]
         <statline Name="VisionRadius" DisplayName="[届：\TODO]Vision radius"/>
         <statline Name="VisionDuration" DisplayName="[届：\TODO]Vision duration" Unit="round" />
-        <statline Name="Cooldown" Unit="round" />
+        <statline Name="Cooldown" DisplayName="冷却期間" Unit="[周\ラウンド]" />
       </leveltext>
     </mutation>
     <mutation Name="Confusion" DisplayName="[届：\TODO]Confusion" BearerDescription="[届：\TODO]riddlers" BiomeEpithet="[届：\TODO]psychic maze" />
@@ -267,12 +268,12 @@
       </description>
       <leveltext>
         <stat Name="Intro" />
-        <statline Name="Range" />
-        <statline Name="Area" />
+        <statline Name="Range" DisplayName="射程" />
+        <statline Name="Area" DisplayName="面積" />
         <statline Name="DamageRound1" DisplayName="[届：\TODO]Round 1 damage" />
         <statline Name="DamageRound2" DisplayName="[届：\TODO]Round 2 damage" />
         <statline Name="DamageRound3" DisplayName="[届：\TODO]Round 3 damage" />
-        <statline Name="Cooldown" Unit="round" />
+        <statline Name="Cooldown" DisplayName="冷却期間" Unit="[周\ラウンド]" />
       </leveltext>
     </mutation>
     <mutation Name="Sense Psychic" DisplayName="[届：\TODO]Sense Psychic" BearerDescription="[届：\TODO]the psychically sensitive" BiomeAdjective="[届：\TODO]naked" />
@@ -288,8 +289,8 @@
         <p>[届：\TODO]Each round you make a mental attack vs mental armor (MA).</p>
         <statline Name="DamageIncrement" DisplayName="[届：\TODO]Damage increment" />
         <p>[届：\TODO]After the tenth round, you deal bonus damage equal to the total amount of damage you've done so far.</p>
-        <statline Name="Range" />
-        <statline Name="Cooldown" />
+        <statline Name="Range" DisplayName="射程" />
+        <statline Name="Cooldown" DisplayName="冷却期間" Unit="[周\ラウンド]" />
       </leveltext>
     </mutation>
     <mutation Name="Syphon Vim" DisplayName="[届：\TODO]Syphon Vim" BearerDescription="[届：\TODO]life leeches" BiomeEpithet="[届：\TODO]slaughterfield" />
