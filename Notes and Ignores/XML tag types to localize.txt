@@ -1,5 +1,5 @@
 <!--
-	xml tags from ObjectBlueprints files that should be localized
+	xml tags from ObjectBlueprints files and others that should be localized
 	<LOCALIZE>: should use _S or _T, or replace inside the xml
 	<GRAMMAR...>: used for English grammar code, keep it in mind
 	<??LOCALIZE>: might be a keyword meriting an _S entry; check code
@@ -168,4 +168,26 @@
   </module>
 
 </embarkmodules>
+
+<!-- Genotypes.xml -->
+<genotypes>
+  <genotype Name="<KEY>" DisplayName="<LOCALIZE>" BodyObject="<??LOCALIZE>">
+    <stat Name="<KEY>" ChargenDescription="<LOCALIZE>"/>
+	<!-- <removeextrainfo> must match <extrainfo> from en being replaced -->
+    <removeextrainfo><MATCH></removeextrainfo>
+    <extrainfo><LOCALIZE></extrainfo>
+  </genotype>
+</genotypes>
+
+<!-- Subtypes.xml -->
+<subtypes>
+
+  <class ID="<KEY>" ChargenTitle="<LOCALIZE>">
+    <category Name="<KEY>" DisplayName="<LOCALIZE>">
+      <subtype Name="<KEY>" DisplayName="<LOCALIZE>">
+	    <!-- <removeextrainfo> must match <extrainfo> from en being replaced -->
+        <removeextrainfo><MATCH></removeextrainfo>
+        <extrainfo><LOCALIZE></extrainfo>
+      </subtype>
+    </category>
 
