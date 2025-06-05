@@ -1,6 +1,7 @@
 using System;
 using XRL;
 using System.Globalization;
+using XRL.World;
 
 namespace XRL.Language
 {
@@ -67,6 +68,11 @@ namespace XRL.Language
                 if (BreakBeforeIndex < Span.Length) BreakBeforeIndex++;
             }
             ReplaceIfBroken = BreakBeforeIndex < Span.Length && (Span[BreakBeforeIndex] == ' ' || Span[BreakBeforeIndex] == '\n');
+        }
+        
+        public override DescriptionBuilder CreateDescriptionBuilder(int Cutoff = int.MaxValue, bool BaseOnly = false)
+        {
+            return new DescriptionBuilderJa { Cutoff = int.MaxValue, BaseOnly = BaseOnly };
         }
 
     }
