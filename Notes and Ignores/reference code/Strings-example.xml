@@ -390,13 +390,13 @@ Assets/XRL Application/Game Core/EmbarkBuilder/EmbarkBuilderModuleWindowBase.cs:
   <string ID="{{W|[=commandKey:CmdOptions=]}} {{y|Hold to Accept}}">{{W|[=commandKey:CmdOptions=]}} {{y|Hold to Accept}}</string>
   <!--Code references _T(): Assets/Game/UI/Windows/PopupMessage/PopupMessage.cs:265-->
   <string ID="[{{W|=commandKey:CmdStartTrade=}}] {{y|Trade}}">[{{W|=commandKey:CmdStartTrade=}}] {{y|Trade}}</string>
-  <!--Code references _S(): Assets/Language/Translator.cs:111-->
+  <!--Code references _S(): Assets/Language/Translator.cs:127-->
   <string ID="MakeAndList Default two-word join: and " Value=" and " />
-  <!--Code references _S(): Assets/Language/Translator.cs:113-->
+  <!--Code references _S(): Assets/Language/Translator.cs:129-->
   <string ID="MakeAndList Default Separator:, ">, </string>
-  <!--Code references _S(): Assets/Language/Translator.cs:118-->
+  <!--Code references _S(): Assets/Language/Translator.cs:134-->
   <string ID="MakeAndList Alternate Separator:; ">; </string>
-  <!--Code references _S(): Assets/Language/Translator.cs:126-->
+  <!--Code references _S(): Assets/Language/Translator.cs:142-->
   <string ID="MakeAndList NoSerialComma Separator: " Value=" " />
   <!--Code references _S(): Assets/XRL Application/Game Core/EmbarkBuilder/EmbarkBuilder.cs:183-->
   <string ID="{{r|Error!}}">{{r|Error!}}</string>
@@ -853,15 +853,15 @@ Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:44
   <string ID="Troll Hero Naming.xml Context:two-headed">two-headed</string>
   <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:84-->
   <string ID="Troll Hero Naming.xml Context:Caveking">Caveking</string>
-  <!--Code references _T(): Assets/XRL Application/World/Events/DescriptionBuilder.cs:321-->
+  <!--Code references _T(): Assets/XRL Application/World/Events/DescriptionBuilder.cs:330-->
   <string ID="DescriptionBuilder Epithets Join:=epithets.join:, =">=epithets.join:, =</string>
-  <!--Code references _T(): Assets/XRL Application/World/Events/DescriptionBuilder.cs:339-->
-  <string ID="DescriptionBuilder Multiple Titles Clause:, =titles.andList:noSerial=">, =titles.andList:noSerial=</string>
-  <!--Code references _T(): Assets/XRL Application/World/Events/DescriptionBuilder.cs:346-->
-  <string ID="DescriptionBuilder Single Title Clause With Epithets:, =title.toString=">, =title.toString=</string>
   <!--Code references _T(): Assets/XRL Application/World/Events/DescriptionBuilder.cs:352-->
+  <string ID="DescriptionBuilder Multiple Titles Clause:, =titles.andList:noSerial=">, =titles.andList:noSerial=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Events/DescriptionBuilder.cs:359-->
+  <string ID="DescriptionBuilder Single Title Clause With Epithets:, =title.toString=">, =title.toString=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Events/DescriptionBuilder.cs:365-->
   <string ID="DescriptionBuilder Single Title Clause:and =title.toString=">and =title.toString=</string>
-  <!--Code references _T(): Assets/XRL Application/World/Events/DescriptionBuilder.cs:366-->
+  <!--Code references _T(): Assets/XRL Application/World/Events/DescriptionBuilder.cs:383-->
   <string ID="DescriptionBuilder Multiple With Clause:with =withClauses.andList=">with =withClauses.andList=</string>
   <!--Code references _S(): Assets/XRL Application/World/Events/ExtraHostilePerceptionEvent.cs:21-->
   <string ID="hostile perception verb:perceive">perceive</string>
@@ -881,6 +881,16 @@ Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:44
   <string ID="=subject.Does:begin= acting like =subject.itis= =effect.name|strip= from another wound.">=subject.Does:begin= acting like =subject.itis= =effect.name|strip= from another wound.</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Effects/HolographicBleeding.cs:75-->
   <string ID="=subject.Does:begin= acting like =subject.itis= =effect.name|strip=.">=subject.Does:begin= acting like =subject.itis= =effect.name|strip=.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Effects/Rebuked.cs:25-->
+  <string ID="Rebuked Effect DisplayName:{{C|rebuked}}">{{C|rebuked}}</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Effects/Rebuked.cs:69-->
+  <string ID="Rebuked InventoryAction:dismiss">dismiss</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Effects/Rebuked.cs:85-->
+  <string ID="Rebuked Dismiss:=subject.Does:dismiss= =object.the.name= from =subject.its= service.">=subject.Does:dismiss= =object.the.name= from =subject.its= service.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Effects/Rebuked.cs:113-->
+  <string ID="Rebuked Applied:=subject.Does:rebuke= =object.the.name= into submission.">=subject.Does:rebuke= =object.the.name= into submission.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Effects/Rebuked.cs:147-->
+  <string ID="Rebuke Removed:=subject.Does:wander away disinterestedly.">=subject.Does:wander away disinterestedly.</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/GameObject.cs:12788-->
   <string ID="spotmessage.defaultVerb:see">see</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/GameObject.cs:12790-->
@@ -989,7 +999,7 @@ Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:104
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Examiner.cs:693-->
   <string ID="Examiner Identify Snapshot Name:=subject.the.name=">=subject.the.name=</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Examiner.cs:767-->
-  <string ID="Examiner Idenitfy Message - Snapshot Matched:You commit the distinguishing characteristics of =snapshot= to memory.">You commit the distinguishing characteristics of =snapshot= to memory.</string>
+  <string ID="Examiner Identify Message - Snapshot Matched:You commit the distinguishing characteristics of =snapshot= to memory.">You commit the distinguishing characteristics of =snapshot= to memory.</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Examiner.cs:774-->
   <string ID="Examiner Identify Message:You identify =snapshot= as =subject.a.name=.">You identify =snapshot= as =subject.a.name=.</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Examiner.cs:789-->
@@ -1281,9 +1291,9 @@ Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/FreezingRay.c
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/GasGeneration.cs:31-->
   <string ID="mutation sleep gas ability name:Release Sleep Gas">Release Sleep Gas</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/GasGeneration.cs:56-->
-  <string ID="mutation corrosive gas abilty name:Release Corrosive Gas">Release Corrosive Gas</string>
+  <string ID="mutation corrosive gas ability name:Release Corrosive Gas">Release Corrosive Gas</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/GasGeneration.cs:88-->
-  <string ID="mutation plasma gas abilty name:Release Plasma">Release Plasma</string>
+  <string ID="mutation plasma gas ability name:Release Plasma">Release Plasma</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/GasGeneration.cs:113-->
   <string ID="mutation poison gas:Release Poison Gas">Release Poison Gas</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/GasGeneration.cs:138-->
@@ -1375,6 +1385,18 @@ Assets/XRL Application/World/Game Objects/Parts/Physics.cs:879
   <string ID="Proselytize confirm proselytize follower:=object.Does:are= already your follower. Do you want to proselytize =object.them= anyway?">=object.Does:are= already your follower. Do you want to proselytize =object.them= anyway?</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Persuasion/Proselytize.cs:273-->
   <string ID="Proselytize Fail Message:=object.Does:are= unconvinced by your pleas.">=object.Does:are= unconvinced by your pleas.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Persuasion/RebukeRobot.cs:83-->
+  <string ID="Rebuke Robot Ability Name:Rebuke Robot">Rebuke Robot</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Persuasion/RebukeRobot.cs:104-->
+  <string ID="Rebuke Robot Fail:You cannot rebuke without a tongue.">You cannot rebuke without a tongue.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Persuasion/RebukeRobot.cs:112-->
+  <string ID="Rebuke Robot Target Title:Rebuke what robot?">Rebuke what robot?</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Persuasion/RebukeRobot.cs:157-->
+  <string ID="Rebuke Robot invalid target:There is nothing there to rebuke.">There is nothing there to rebuke.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Persuasion/RebukeRobot.cs:168-->
+  <string ID="Rebuke Robot failure:Your argument does not compute.">Your argument does not compute.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Persuasion/RebukeRobot.cs:175-->
+  <string ID="Rebuke Robot neutralize:=subject.Does:wander= away disinterestedly">=subject.Does:wander= away disinterestedly</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Tinkering/Tinker1.cs:73-->
   <string ID="Tinker Recharge:You don't have any =bits.bitString= bits, which are required for recharging.">You don't have any =bits.bitString= bits, which are required for recharging.</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Tinkering/Tinker1.cs:81-->
@@ -1390,7 +1412,75 @@ Assets/XRL Application/World/Game Objects/Parts/Physics.cs:879
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Tinkering/Tinker1.cs:170-->
   <string ID="Tinker Recharge pick item title:Select an item to charge.">Select an item to charge.</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Tinkering/Tinker1.cs:192-->
-  <string ID="Tinker Recharge Ablity Name:Recharge">Recharge</string>
+  <string ID="Tinker Recharge Ability Name:Recharge">Recharge</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Tinkering/Disassembly.cs:64-->
+  <string ID="Disassembly action description:disassembling">disassembling</string>
+  <!--Code references _S():
+Assets/XRL Application/World/Game Objects/Tinkering/Disassembly.cs:77
+Assets/XRL Application/World/Game Objects/Tinkering/Disassembly.cs:87
+-->
+  <string ID="Disassembly InterruptBecause:the item you were working on disappeared">the item you were working on disappeared</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Tinkering/Disassembly.cs:82-->
+  <string ID="Disassembly InterruptBecause:the item you were working on was destroyed">the item you were working on was destroyed</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Tinkering/Disassembly.cs:92-->
+  <string ID="Disassembly InterruptBecause:=object.does:are= no longer within your reach">=object.does:are= no longer within your reach</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Tinkering/Disassembly.cs:98-->
+  <string ID="Disassembly InterruptBecause:you can no longer interact with =object.the.name=">you can no longer interact with =object.the.name=</string>
+  <!--Code references _T():
+Assets/XRL Application/World/Game Objects/Tinkering/Disassembly.cs:104
+Assets/XRL Application/World/Game Objects/Tinkering/Disassembly.cs:115
+-->
+  <string ID="Disassembly InterruptBecause:=object.the.name= can no longer be disassembled">=object.the.name= can no longer be disassembled</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Tinkering/Disassembly.cs:110-->
+  <string ID="Disassembly InterruptBecause:you no longer know how to disassemble things">you no longer know how to disassemble things</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Tinkering/Disassembly.cs:121-->
+  <string ID="Disassembly InterruptBecause:you can no longer move your extremities">you can no longer move your extremities</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Tinkering/Disassembly.cs:232-->
+  <string ID="Disassembly Item (fragment):=object.the.name=">=object.the.name=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Tinkering/Disassembly.cs:235-->
+  <string ID="Disassembly:You start disassembling =object.the.name=.">You start disassembling =object.the.name=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Tinkering/Disassembly.cs:241-->
+  <string ID="Disassembly where(fragment):=subject.direction#object=">=subject.direction#object=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Tinkering/Disassembly.cs:294-->
+  <string ID="Disassembly learn to build (fragment):build =object.pluralName=">build =object.pluralName=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Tinkering/Disassembly.cs:311-->
+  <string ID="Disassembly learn to build (fragment):mod items with the =mods.andList= =mods.pluralize:mod=">mod items with the =mods.andList= =mods.pluralize:mod=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Tinkering/Disassembly.cs:334-->
+  <string ID="Disassembly learned message:Eureka! You may now =fragments.andList=.">Eureka! You may now =fragments.andList=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Tinkering/Disassembly.cs:336-->
+  <string ID="Disassembly learned message:Eureka! You may now =fragments.andList=... and were able to work out how without needing to destroy =object.isplural:these:this one=!">Eureka! You may now =fragments.andList=... and were able to work out how without needing to destroy =object.isplural:these:this one=!</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Tinkering/Disassembly.cs:338-->
+  <string ID="Disassembly learned message:Eureka! You may now =fragments.andList=... and were able to work out how without needing to destroy =object.the.name=!">Eureka! You may now =fragments.andList=... and were able to work out how without needing to destroy =object.the.name=!</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Tinkering/Disassembly.cs:378-->
+  <string ID="Disassembly Loading Status Bar:Disassembled =done.things:item= of =wanted=...">Disassembled =done.things:item= of =wanted=...</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Tinkering/Disassembly.cs:465-->
+  <string ID="Disassembly Interrupted Loading Status:Interrupted!">Interrupted!</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Tinkering/Disassembly.cs:474-->
+  <string ID="Disassembly Complete Loading Status:Finished disassembling.">Finished disassembling.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Tinkering/Disassembly.cs:491-->
+  <string ID="Disassembly Report ItemsList Items (fragment):=items.andList=">=items.andList=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Tinkering/Disassembly.cs:495-->
+  <string ID="Disassembly Report ItemsList Items Where (fragment):=items.andList= =where=">=items.andList= =where=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Tinkering/Disassembly.cs:498-->
+  <string ID="Disassembly Report Items (fragment):You disassemble =items.andList=.">You disassemble =items.andList=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Tinkering/Disassembly.cs:526-->
+  <string ID="Disassembly BitMessage (fragment):You receive tinkering bits &lt;=bits.bits=&gt;.">You receive tinkering bits &lt;=bits.bits=&gt;.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Tinkering/Disassembly.cs:532-->
+  <string ID="Disassembly BitMessage temporary (fragment):The parts crumble into dust.">The parts crumble into dust.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Tinkering/Disassembly.cs:541-->
+  <string ID="Disassembly Message, has both, learned has newline:=itemsMessage=&#xA;&#xA;=learnedMessage=&#xA;&#xA;=bitMessage=" Value="=itemsMessage=&#xA;&#xA;=learnedMessage=&#xA;&#xA;=bitMessage=" />
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Tinkering/Disassembly.cs:543-->
+  <string ID="Disassembly Message, has both, learned no newline:=itemsMessage= =learnedMessage= =bitMessage=">=itemsMessage= =learnedMessage= =bitMessage=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Tinkering/Disassembly.cs:545-->
+  <string ID="Disassembly Message, learned has newline:=itemsMessage=&#xA;&#xA;=learnedMessage=" Value="=itemsMessage=&#xA;&#xA;=learnedMessage=" />
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Tinkering/Disassembly.cs:547-->
+  <string ID="Disassembly Message, learned no newline:=itemsMessage= =learnedMessage=">=itemsMessage= =learnedMessage=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Tinkering/Disassembly.cs:549-->
+  <string ID="Disassembly Message, only bits:=itemsMessage= =bitMessage=">=itemsMessage= =bitMessage=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Tinkering/Disassembly.cs:551-->
+  <string ID="Disassembly Message, nothing gained:=itemsMessage=">=itemsMessage=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Tinkering/Disassembly.cs:619-->
+  <string ID="Disassembly Item Stack (fragment):=item= x=done=">=item= x=done=</string>
   <!--Code references _T(): Assets/XRL Application/World/IComponent.cs:1270-->
   <string ID="TargetSelfConfirm:Are you sure you want to target =subject.itself=?">Are you sure you want to target =subject.itself=?</string>
   <!--Code references _S(): Assets/XRL Application/World/Text/Delegates.cs:106-->

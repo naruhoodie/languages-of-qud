@@ -461,6 +461,11 @@ Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:44
   <string ID="=subject.Does:begin= =effect.name|strip=!">[届：\TODO]=subject.Does:begin= =effect.name|strip=!</string>
   <string ID="=subject.Does:begin= acting like =subject.itis= =effect.name|strip= from another wound.">[届：\TODO]=subject.Does:begin= acting like =subject.itis= =effect.name|strip= from another wound.</string>
   <string ID="=subject.Does:begin= acting like =subject.itis= =effect.name|strip=.">[届：\TODO]=subject.Does:begin= acting like =subject.itis= =effect.name|strip=.</string>
+  <string ID="Rebuked Effect DisplayName:{{C|rebuked}}">[届：\TODO]{{C|rebuked}}</string>
+  <string ID="Rebuked InventoryAction:dismiss">[届：\TODO]dismiss</string>
+  <string ID="Rebuked Dismiss:=subject.Does:dismiss= =object.the.name= from =subject.its= service.">[届：\TODO]=subject.Does:dismiss= =object.the.name= from =subject.its= service.</string>
+  <string ID="Rebuked Applied:=subject.Does:rebuke= =object.the.name= into submission.">[届：\TODO]=subject.Does:rebuke= =object.the.name= into submission.</string>
+  <string ID="Rebuke Removed:=subject.Does:wander away disinterestedly.">[届：\TODO]=subject.Does:wander away disinterestedly.</string>
   <string ID="spotmessage.defaultVerb:see">[届：\TODO]see</string>
   <string ID="spotmessage:=subject.Does#verb= =object.an= =subject.direction#object=, so you refrain from =autoActDescription=.">[届：\TODO]=subject.Does#verb= =object.an= =subject.direction#object=, so you refrain from =autoActDescription=.</string>
   <string ID="spotmessage:=subject.Does#verb= =object.an= =subject.direction#object= and stop =autoActDescription=.">[届：\TODO]=subject.Does#verb= =object.an= =subject.direction#object= and stop =autoActDescription=.</string>
@@ -530,7 +535,7 @@ Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:44
   <string ID="Examiner damage risk warning:=object.Does:are= not owned by you, and examining =object.them= risks damaging =object.them=. Are you sure you want to do so?">[届：\TODO]=object.Does:are= not owned by you, and examining =object.them= risks damaging =object.them=. Are you sure you want to do so?</string>
   <string ID="Examiner damage contained risk warning:=container.Does:are= not owned by you, and examining =object.a.name= inside =container.them= risks causing damage. Are you sure you want to do so?">[届：\TODO]=container.Does:are= not owned by you, and examining =object.a.name= inside =container.them= risks causing damage. Are you sure you want to do so?</string>
   <string ID="Examiner Identify Snapshot Name:=subject.the.name=">[届：\TODO]=subject.the.name=</string>
-  <string ID="Examiner Idenitfy Message - Snapshot Matched:You commit the distinguishing characteristics of =snapshot= to memory.">[届：\TODO]You commit the distinguishing characteristics of =snapshot= to memory.</string>
+  <string ID="Examiner Identify Message - Snapshot Matched:You commit the distinguishing characteristics of =snapshot= to memory.">[届：\TODO]You commit the distinguishing characteristics of =snapshot= to memory.</string>
   <string ID="Examiner Identify Message:You identify =snapshot= as =subject.a.name=.">[届：\TODO]You identify =snapshot= as =subject.a.name=.</string>
   <string ID="Examiner ResultSuccess:You now understand =subject.the.name=.">[届：\TODO]You now understand =subject.the.name=.</string>
   <string ID="Examiner ResultExceptionalSuccess:You discover something about =snapshot= that was hidden!">[届：\TODO]You discover something about =snapshot= that was hidden!</string>
@@ -681,8 +686,8 @@ Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:44
   <string ID="Freezing Ray Ability Name:Freezing Ray">[届：\TODO]Freezing Ray</string>
   <string ID="Freezing Ray Missing Limb Message:Missing =part.name=">[届：\TODO]Missing =part.name=</string>
   <string ID="mutation sleep gas ability name:Release Sleep Gas">[届：\TODO]Release Sleep Gas</string>
-  <string ID="mutation corrosive gas abilty name:Release Corrosive Gas">[届：\TODO]Release Corrosive Gas</string>
-  <string ID="mutation plasma gas abilty name:Release Plasma">[届：\TODO]Release Plasma</string>
+  <string ID="mutation corrosive gas ability name:Release Corrosive Gas">[届：\TODO]Release Corrosive Gas</string>
+  <string ID="mutation plasma gas ability name:Release Plasma">[届：\TODO]Release Plasma</string>
   <string ID="mutation poison gas:Release Poison Gas">[届：\TODO]Release Poison Gas</string>
   <string ID="mutation defoliant gas ability name:Release Defoliant">[届：\TODO]Release Defoliant</string>
   <string ID="mutation fungicide gas ability name:Release Fungicide">[届：\TODO]Release Fungicide</string>
@@ -735,6 +740,16 @@ Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:44
   <string ID="Proselytize Fail Frozen:Frozen solid, you cannot proselytize =object.t=.">[届：\TODO]Frozen solid, you cannot proselytize =object.t=.</string>
   <string ID="Proselytize confirm proselytize follower:=object.Does:are= already your follower. Do you want to proselytize =object.them= anyway?">[届：\TODO]=object.Does:are= already your follower. Do you want to proselytize =object.them= anyway?</string>
   <string ID="Proselytize Fail Message:=object.Does:are= unconvinced by your pleas.">[届：\TODO]=object.Does:are= unconvinced by your pleas.</string>
+  <string ID="Rebuke Robot Ability Name:Rebuke Robot">[届：\TODO]Rebuke Robot</string>
+  <string ID="Rebuke Robot Fail:You cannot rebuke without a tongue.">[届：\TODO]You cannot rebuke without a tongue.</string>
+  <string ID="Rebuke Robot Target Title:Rebuke what robot?">[届：\TODO]Rebuke what robot?</string>
+  <string ID="Rebuke Robot invalid target:There is nothing there to rebuke.">[届：\TODO]There is nothing there to rebuke.</string>
+  <string ID="Rebuke Robot failure:Your argument does not compute.">[届：\TODO]Your argument does not compute.</string>
+  <string ID="Rebuke Robot neutralize:=subject.Does:wander= away disinterestedly">[届：\TODO]=subject.Does:wander= away disinterestedly</string>
+
+  <!--
+	Tinker strings
+  -->
   <string ID="Tinker Recharge:You don't have any =bits.bitString= bits, which are required for recharging.">[届：\TODO]You don't have any =bits.bitString= bits, which are required for recharging.</string>
   <string ID="Tinker Recharge:It would take {{C|=needed=}} =bits.bitString= =needed.ifplural:bits:bit= to fully recharge =object.the.name=. You have {{C|=available=}}. How many do you want to use?">[届：\TODO]It would take {{C|=needed=}} =bits.bitString= =needed.ifplural:bits:bit= to fully recharge =object.the.name=. You have {{C|=available=}}. How many do you want to use?</string>
   <string ID="Tinker Recharge:You have =partial.if:partially =recharged =object.the.name=.">[届：\TODO]You have =partial.if:partially =recharged =object.the.name=.</string>
@@ -742,14 +757,46 @@ Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:44
   <string ID="Thinker Recharge not recharge:=object.The.name= can't be recharged that way.">[届：\TODO]=object.The.name= can't be recharged that way.</string>
   <string ID="Tinker Recharge:You have no items that require charging.">[届：\TODO]You have no items that require charging.</string>
   <string ID="Tinker Recharge pick item title:Select an item to charge.">[届：\TODO]Select an item to charge.</string>
-  <string ID="Tinker Recharge Ablity Name:Recharge">[届：\TODO]Recharge</string>
+  <string ID="Tinker Recharge Ability Name:Recharge">[届：\TODO]Recharge</string>
+  <string ID="Disassembly action description:disassembling">[届：\TODO]disassembling</string>
+  <string ID="Disassembly InterruptBecause:the item you were working on disappeared">[届：\TODO]the item you were working on disappeared</string>
+  <string ID="Disassembly InterruptBecause:the item you were working on was destroyed">[届：\TODO]the item you were working on was destroyed</string>
+  <string ID="Disassembly InterruptBecause:=object.does:are= no longer within your reach">[届：\TODO]=object.does:are= no longer within your reach</string>
+  <string ID="Disassembly InterruptBecause:you can no longer interact with =object.the.name=">[届：\TODO]you can no longer interact with =object.the.name=</string>
+  <string ID="Disassembly InterruptBecause:=object.the.name= can no longer be disassembled">[届：\TODO]=object.the.name= can no longer be disassembled</string>
+  <string ID="Disassembly InterruptBecause:you no longer know how to disassemble things">[届：\TODO]you no longer know how to disassemble things</string>
+  <string ID="Disassembly InterruptBecause:you can no longer move your extremities">[届：\TODO]you can no longer move your extremities</string>
+  <string ID="Disassembly Item (fragment):=object.the.name=">[届：\TODO]=object.the.name=</string>
+  <string ID="Disassembly:You start disassembling =object.the.name=.">[届：\TODO]You start disassembling =object.the.name=.</string>
+  <string ID="Disassembly where(fragment):=subject.direction#object=">[届：\TODO]=subject.direction#object=</string>
+  <string ID="Disassembly learn to build (fragment):build =object.pluralName=">[届：\TODO]build =object.pluralName=</string>
+  <string ID="Disassembly learn to build (fragment):mod items with the =mods.andList= =mods.pluralize:mod=">[届：\TODO]mod items with the =mods.andList= =mods.pluralize:mod=</string>
+  <string ID="Disassembly learned message:Eureka! You may now =fragments.andList=.">[届：\TODO]Eureka! You may now =fragments.andList=.</string>
+  <string ID="Disassembly learned message:Eureka! You may now =fragments.andList=... and were able to work out how without needing to destroy =object.isplural:these:this one=!">[届：\TODO]Eureka! You may now =fragments.andList=... and were able to work out how without needing to destroy =object.isplural:these:this one=!</string>
+  <string ID="Disassembly learned message:Eureka! You may now =fragments.andList=... and were able to work out how without needing to destroy =object.the.name=!">[届：\TODO]Eureka! You may now =fragments.andList=... and were able to work out how without needing to destroy =object.the.name=!</string>
+  <string ID="Disassembly Loading Status Bar:Disassembled =done.things:item= of =wanted=...">[届：\TODO]Disassembled =done.things:item= of =wanted=...</string>
+  <string ID="Disassembly Interrupted Loading Status:Interrupted!">[届：\TODO]Interrupted!</string>
+  <string ID="Disassembly Complete Loading Status:Finished disassembling.">[届：\TODO]Finished disassembling.</string>
+  <string ID="Disassembly Report ItemsList Items (fragment):=items.andList=">[届：\TODO]=items.andList=</string>
+  <string ID="Disassembly Report ItemsList Items Where (fragment):=items.andList= =where=">[届：\TODO]=items.andList= =where=</string>
+  <string ID="Disassembly Report Items (fragment):You disassemble =items.andList=.">[届：\TODO]You disassemble =items.andList=.</string>
+  <string ID="Disassembly BitMessage (fragment):You receive tinkering bits &lt;=bits.bits=&gt;.">[届：\TODO]You receive tinkering bits &lt;=bits.bits=&gt;.</string>
+  <string ID="Disassembly BitMessage temporary (fragment):The parts crumble into dust.">[届：\TODO]The parts crumble into dust.</string>
+  <string ID="Disassembly Message, has both, learned has newline:=itemsMessage=&#xA;&#xA;=learnedMessage=&#xA;&#xA;=bitMessage=" Value="[届：\TODO]=itemsMessage=&#xA;&#xA;=learnedMessage=&#xA;&#xA;=bitMessage=" />
+  <string ID="Disassembly Message, has both, learned no newline:=itemsMessage= =learnedMessage= =bitMessage=">[届：\TODO]=itemsMessage= =learnedMessage= =bitMessage=</string>
+  <string ID="Disassembly Message, learned has newline:=itemsMessage=&#xA;&#xA;=learnedMessage=" Value="[届：\TODO]=itemsMessage=&#xA;&#xA;=learnedMessage=" />
+  <string ID="Disassembly Message, learned no newline:=itemsMessage= =learnedMessage=">[届：\TODO]=itemsMessage= =learnedMessage=</string>
+  <string ID="Disassembly Message, only bits:=itemsMessage= =bitMessage=">[届：\TODO]=itemsMessage= =bitMessage=</string>
+  <string ID="Disassembly Message, nothing gained:=itemsMessage=">[届：\TODO]=itemsMessage=</string>
+  <string ID="Disassembly Item Stack (fragment):=item= x=done=">[届：\TODO]=item= x=done=</string>
+
   <string ID="TargetSelfConfirm:Are you sure you want to target =subject.itself=?">[届：\TODO]Are you sure you want to target =subject.itself=?</string>
 
   <!--
 	Keybind strings
   -->
   <string ID="keybind:unknown key">不明なキー</string>
-  <string ID="keybind:{{W|Alt}}">{{W|ＡＬＴ}}</string>
+<!-- no change: <string ID="keybind:{{W|Alt}}">{{W|Alt}}</string> -->
 
   <string ID="damage penetrations:(x=number.toString=)">[届：\TODO](x=number.toString=)</string>
 
