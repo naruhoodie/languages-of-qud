@@ -189,7 +189,7 @@ Caves of Qud code extracted string table.
   <string ID="MakeAndList Default two-word join: and " Value="と" />
   <string ID="MakeAndList Default Separator:, ">、</string>
   <string ID="MakeAndList Alternate Separator:; ">；</string>
-  <string ID="MakeAndList NoSerialComma Separator: " Value=" " />
+  <string ID="MakeAndList NoSerialComma Separator: " Value="、" />
 
   <!--
 	CharGen strings
@@ -256,22 +256,22 @@ Caves of Qud code extracted string table.
   <string ID="No game mode selected.">[届：\TODO]No game mode selected.</string>
   <string ID="Start a new game with one button.">[届：\TODO]Start a new game with one button.</string>
   <string ID="Quickstart">[届：\TODO]Quickstart</string>
-  <string ID="Choose Game Mode">[届：\TODO]Choose Game Mode</string>
+  <string ID="Choose Game Mode">ゲームモードを選択する</string>
   <string ID="[Debug] Quickstart">[届：\TODO][Debug] Quickstart</string>
-  <string ID="{{important|=genotype=}} genotype">[届：\TODO]{{important|=genotype=}} genotype</string>
-  <string ID="Choose Genotype">[届：\TODO]Choose Genotype</string>
+  <string ID="{{important|=genotype=}} genotype">{{important|=genotype=}}の遺伝子型</string>
+  <string ID="Choose Genotype">遺伝子型を選択する</string>
   <string ID="You have unspent mutation points.">[届：\TODO]You have unspent mutation points.</string>
   <string ID="You have spent too many mutation points.">[届：\TODO]You have spent too many mutation points.</string>
   <string ID="=mutation= x=count=">[届：\TODO]=mutation= x=count=</string>
   <string ID="none">[届：\TODO]none</string>
   <string ID="Mutations">[届：\TODO]Mutations</string>
-  <string ID="=mutation= (=variant=)">[届：\TODO]=mutation= (=variant=)</string>
-  <string ID="mutation variant available:=displayName= [{{W|V}}]">[届：\TODO]=displayName= [{{W|V}}]</string>
-  <string ID="[=numberselected=]">[=numberselected=]</string>
-  <string ID="=checkbox=[=nodecost=]">[届：\TODO]=checkbox=[=nodecost=]</string>
+  <string ID="=mutation= (=variant=)">=mutation=（=variant=）</string>
+  <string ID="mutation variant available:=displayName= [{{W|V}}]">=displayName=［{{W|V}}］</string>
+  <string ID="[=numberselected=]">［=numberselected=］</string>
+  <string ID="=checkbox=[=nodecost=]">=checkbox=［=nodecost=］</string>
   <string ID="Points Remaining: =mp=">[届：\TODO]Points Remaining: =mp=</string>
-  <string ID="Choose Variant">[届：\TODO]Choose Variant</string>
-  <string ID="Choose variant">[届：\TODO]Choose variant</string>
+  <string ID="Choose Variant">異形を選択する</string>
+  <string ID="Choose variant">異形を選択する</string>
   <string ID="Pregens">[届：\TODO]Pregens</string>
   <string ID="You embark for the caves of Qud.">クドの洞窟へ出発する。</string>
   <string ID="{{important|=subtype=}} =singularname=">[届：\TODO]{{important|=subtype=}} =singularname=</string>
@@ -312,7 +312,7 @@ Caves of Qud code extracted string table.
   <string ID="direction.description:here">‽此処</string>
   <string ID="direction.description:somewhere">‽何処か</string>
   <string ID="direction.description:to the =dir.expandedDirection=">=dir.expandedDirection=に</string>
-  <string ID="direction.description.player:=dir.directionDescription=">=dir.directionDescription=</string>
+  <string ID="direction.description.player:=dir.directionDescription=">[届：\TODO]=dir.directionDescription=</string>
   <string ID="direction.description.actor:below =subject.them=">その下で</string>
   <string ID="direction.description.actor:above =subject.them=">その上で</string>
   <string ID="direction.description.actor:near =subject.them=">その近くで</string>
@@ -322,8 +322,8 @@ Caves of Qud code extracted string table.
   <string ID="direction.description.incoming:from nearby">近くから</string>
   <string ID="direction.description.incoming:from somewhere">何処かから</string>
   <string ID="direction.description.incoming:from the =dir.expandedDirection=">=dir.expandedDirection=から</string>
-  <string ID="direction.description.incoming.player:=dir.incomingDirectionDescription=">=dir.incomingDirectionDescription=</string>
-  <string ID="direction.description.incoming.null:=dir.incomingDirectionDescription=">=dir.incomingDirectionDescription=</string>
+  <string ID="direction.description.incoming.player:=dir.incomingDirectionDescription=">[届：\TODO]=dir.incomingDirectionDescription=</string>
+  <string ID="direction.description.incoming.null:=dir.incomingDirectionDescription=">[届：\TODO]=dir.incomingDirectionDescription=</string>
   <string ID="direction.description.incoming.actor:from below =subject.them=">下から</string>
   <string ID="direction.description.incoming.actor:from above =subject.them=">上から</string>
   <string ID="direction.description.incoming.actor:from near =subject.them=">近くから</string>
@@ -389,60 +389,60 @@ Caves of Qud code extracted string table.
   <string ID="Goatfolk Hero Naming.xml Context:Clan Yr">イル氏族</string>
   <string ID="Goatfolk Hero Naming.xml Context:Clan Mnim">ムニム氏族</string>
   <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/SnapjawHero.cs:20-->
-  <string ID="Snapjaw Hero Naming.xml Context:fleet-footed">fleet-footed</string>
+  <string ID="Snapjaw Hero Naming.xml Context:fleet-footed">[届：\TODO]fleet-footed</string>
   <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/SnapjawHero.cs:24-->
-  <string ID="Snapjaw Hero Naming.xml Context:learned">learned</string>
+  <string ID="Snapjaw Hero Naming.xml Context:learned">[届：\TODO]learned</string>
   <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/SnapjawHero.cs:28-->
-  <string ID="Snapjaw Hero Naming.xml Context:stalwart">stalwart</string>
+  <string ID="Snapjaw Hero Naming.xml Context:stalwart">[届：\TODO]stalwart</string>
   <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/SnapjawHero.cs:32-->
-  <string ID="Snapjaw Hero Naming.xml Context:fearsome">fearsome</string>
+  <string ID="Snapjaw Hero Naming.xml Context:fearsome">[届：\TODO]fearsome</string>
   <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/SnapjawHero.cs:36-->
-  <string ID="Snapjaw Hero Naming.xml Context:nimble">nimble</string>
+  <string ID="Snapjaw Hero Naming.xml Context:nimble">[届：\TODO]nimble</string>
   <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/SnapjawHero.cs:40-->
-  <string ID="Snapjaw Hero Naming.xml Context:hulking">hulking</string>
+  <string ID="Snapjaw Hero Naming.xml Context:hulking">[届：\TODO]hulking</string>
   <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/SnapjawHero.cs:44-->
-  <string ID="Snapjaw Hero Naming.xml Context:calloused">calloused</string>
+  <string ID="Snapjaw Hero Naming.xml Context:calloused">[届：\TODO]calloused</string>
   <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/SnapjawHero.cs:48-->
-  <string ID="Snapjaw Hero Naming.xml Context:Skullsplitter">Skullsplitter</string>
+  <string ID="Snapjaw Hero Naming.xml Context:Skullsplitter">[届：\TODO]Skullsplitter</string>
   <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/SnapjawHero.cs:55-->
-  <string ID="Snapjaw Hero Naming.xml Context:Firesnarler">Firesnarler</string>
+  <string ID="Snapjaw Hero Naming.xml Context:Firesnarler">[届：\TODO]Firesnarler</string>
   <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/SnapjawHero.cs:60-->
-  <string ID="Snapjaw Hero Naming.xml Context:Bear-baiter">Bear-baiter</string>
+  <string ID="Snapjaw Hero Naming.xml Context:Bear-baiter">[届：\TODO]Bear-baiter</string>
   <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/SnapjawHero.cs:64-->
-  <string ID="Snapjaw Hero Naming.xml Context:Tot-eater">Tot-eater</string>
+  <string ID="Snapjaw Hero Naming.xml Context:Tot-eater">[届：\TODO]Tot-eater</string>
   <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/SnapjawHero.cs:68-->
-  <string ID="Snapjaw Hero Naming.xml Context:Gutspiller">Gutspiller</string>
+  <string ID="Snapjaw Hero Naming.xml Context:Gutspiller">[届：\TODO]Gutspiller</string>
   <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/SnapjawHero.cs:72-->
-  <string ID="Snapjaw Hero Naming.xml Context:King">King</string>
+  <string ID="Snapjaw Hero Naming.xml Context:King">[届：\TODO]King</string>
   <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:28-->
-  <string ID="Troll Hero Naming.xml Context:frenetic">frenetic</string>
+  <string ID="Troll Hero Naming.xml Context:frenetic">[届：\TODO]frenetic</string>
   <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:32-->
-  <string ID="Troll Hero Naming.xml Context:learned">learned</string>
+  <string ID="Troll Hero Naming.xml Context:learned">[届：\TODO]learned</string>
   <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:36-->
-  <string ID="Troll Hero Naming.xml Context:everlasting">everlasting</string>
+  <string ID="Troll Hero Naming.xml Context:everlasting">[届：\TODO]everlasting</string>
   <!--Code references _S():
 Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:40
 Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:44
 -->
-  <string ID="Troll Hero Naming.xml Context:bestial">bestial</string>
+  <string ID="Troll Hero Naming.xml Context:bestial">[届：\TODO]bestial</string>
   <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:48-->
-  <string ID="Troll Hero Naming.xml Context:bloodthirsty">bloodthirsty</string>
+  <string ID="Troll Hero Naming.xml Context:bloodthirsty">[届：\TODO]bloodthirsty</string>
   <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:52-->
-  <string ID="Troll Hero Naming.xml Context:hulking">hulking</string>
+  <string ID="Troll Hero Naming.xml Context:hulking">[届：\TODO]hulking</string>
   <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:56-->
-  <string ID="Troll Hero Naming.xml Context:rubberhide">rubberhide</string>
+  <string ID="Troll Hero Naming.xml Context:rubberhide">[届：\TODO]rubberhide</string>
   <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:60-->
-  <string ID="Troll Hero Naming.xml Context:Skull-collector">Skull-collector</string>
+  <string ID="Troll Hero Naming.xml Context:Skull-collector">[届：\TODO]Skull-collector</string>
   <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:68-->
-  <string ID="Troll Hero Naming.xml Context:Heart-eater">Heart-eater</string>
+  <string ID="Troll Hero Naming.xml Context:Heart-eater">[届：\TODO]Heart-eater</string>
   <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:72-->
-  <string ID="Troll Hero Naming.xml Context:Hunt-master">Hunt-master</string>
+  <string ID="Troll Hero Naming.xml Context:Hunt-master">[届：\TODO]Hunt-master</string>
   <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:76-->
-  <string ID="Troll Hero Naming.xml Context:Man-eater">Man-eater</string>
+  <string ID="Troll Hero Naming.xml Context:Man-eater">[届：\TODO]Man-eater</string>
   <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:80-->
-  <string ID="Troll Hero Naming.xml Context:two-headed">two-headed</string>
+  <string ID="Troll Hero Naming.xml Context:two-headed">[届：\TODO]two-headed</string>
   <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:84-->
-  <string ID="Troll Hero Naming.xml Context:Caveking">Caveking</string>
+  <string ID="Troll Hero Naming.xml Context:Caveking">[届：\TODO]Caveking</string>
   <string ID="DescriptionBuilder Epithets Join:=epithets.join:, =">=epithets.join:、=</string>
   <string ID="DescriptionBuilder Multiple Titles Clause:, =titles.andList:noSerial=">、=titles.andList:noSerial=</string>
   <string ID="DescriptionBuilder Single Title Clause With Epithets:, =title.toString=">、=title.toString=</string>
@@ -472,7 +472,32 @@ Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:44
   <string ID="There =pool.is= =pool.a.name= that way. Move =direction.expandedDirection= again to enter =pool.them= and start swimming.">向こうに=pool.が=ある。再び=direction.expandedDirection=へ進むと、そこに入って泳ぎ始める。</string>
 
   <!--
-	Activated abilities
+	Random Altar Baetyl strings
+  -->
+  <string ID="RandomAltarBaetyl Mod Demand Prefix Name:=number.cardinal= =mod.name= =number.pluralize:item=">[届：\TODO]=number.cardinal= =mod.name= =number.pluralize:item=</string>
+  <string ID="RandomAltarBaetyl Mod Demand Suffix Name:=number.cardinal= =number.pluralize:item= =mod.name=">[届：\TODO]=number.cardinal= =number.pluralize:item= =mod.name=</string>
+  <string ID="RandomAltarBaetyl:I AM SATED, MORTAL. BEGONE.">[届：\TODO]I AM SATED, MORTAL. BEGONE.</string>
+  <string ID="RandomAltarBaetyl:PETTY MORTAL! BRING ME =demand|upper=, AND I SHALL REWARD YOU WITH =reward|upper=.">[届：\TODO]PETTY MORTAL! BRING ME =demand|upper=, AND I SHALL REWARD YOU WITH =reward|upper=.</string>
+  <string ID="RandomAltarBaetyl Offer Message:Offer =subject.the.name= =needed= out of =nearby.andList:definiteArticles= nearby and =inventory.andList:asPossessed=?">[届：\TODO]Offer =subject.the.name= =needed= out of =nearby.andList:definiteArticles= nearby and =inventory.andList:asPossessed=?</string>
+  <string ID="RandomAltarBaetyl Offer Message:Offer =subject.the.name= =needed= out of =nearby.andList:definiteArticles= nearby?">[届：\TODO]Offer =subject.the.name= =needed= out of =nearby.andList:definiteArticles= nearby?</string>
+  <string ID="RandomAltarBaetyl Offer Message:Offer =subject.the.name= =needed= out of =inventory.andList:asPossessed=?">[届：\TODO]Offer =subject.the.name= =needed= out of =inventory.andList:asPossessed=?</string>
+  <string ID="RandomAltarBaetyl Offer Message:Offer =subject.the.name= =nearby.andList:definiteArticles= nearby and =inventory.andList:asPossessed=?">[届：\TODO]Offer =subject.the.name= =nearby.andList:definiteArticles= nearby and =inventory.andList:asPossessed=?</string>
+  <string ID="RandomAltarBaetyl Offer Message:Offer =subject.the.name= =nearby.andList:definiteArticles= nearby?">[届：\TODO]Offer =subject.the.name= =nearby.andList:definiteArticles= nearby?</string>
+  <string ID="RandomAltarBaetyl Offer Message:Offer =subject.the.name= =inventory.andList:asPossessed=?">[届：\TODO]Offer =subject.the.name= =inventory.andList:asPossessed=?</string>
+  <string ID="RandomAltarBaetyl:I ACCEPT YOUR OFFERING!&#xA;&#xA;The sparking baetyl gives you =reward=!" Value="[届：\TODO]I ACCEPT YOUR OFFERING!&#xA;&#xA;The sparking baetyl gives you =reward=!" />
+  <string ID="RandomAltarBaetyl Reward List:=object.a.name=">[届：\TODO]=object.a.name=</string>
+  <string ID="RandomAltarBaetyl Reward List:=points= attribute =points.pluralize:point=">[届：\TODO]=points= attribute =points.pluralize:point=</string>
+  <string ID="RandomAltarBaetyl Reward List:=points= mutation =points.pluralize:point=">[届：\TODO]=points= mutation =points.pluralize:point=</string>
+  <string ID="RandomAltarBaetyl Reward List:=points= skill =points.pluralize:point=">[届：\TODO]=points= skill =points.pluralize:point=</string>
+  <string ID="RandomAltarBaetyl Reward List:=points= experience =points.pluralize:point=">[届：\TODO]=points= experience =points.pluralize:point=</string>
+  <string ID="RandomAltarBaetyl Reward List:=points= cybernetics license =points.pluralize:point=">[届：\TODO]=points= cybernetics license =points.pluralize:point=</string>
+  <string ID="RandomAltarBaetyl Reward List:=points= reputation with =faction.factionName=">[届：\TODO]=points= reputation with =faction.factionName=</string>
+  <string ID="RandomAltarBaetyl Reward List:=list.andList=">[届：\TODO]=list.andList=</string>
+  <string ID="RandomAltarBaetyl Journal Entry:A &quot;SATED&quot; baetyl">[届：\TODO]A "SATED" baetyl</string>
+  <string ID="RandomAltarBaetyl Journal Entry:A baetyl demanding &quot;=demand=&quot; and promising &quot;=reward=&quot;.">[届：\TODO]A baetyl demanding "=demand=" and promising "=reward=".</string>
+
+  <!--
+	Activated ability classes
   -->
   <string ID="activated ability classes:Cybernetics">[届：\TODO]Cybernetics</string>
   <string ID="activated ability classes:Items">[届：\TODO]Items</string>
@@ -483,7 +508,7 @@ Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:44
   <string ID="activated ability classes:Skills">[届：\TODO]Skills</string>
   <string ID="activated ability classes:Stances">[届：\TODO]Stances</string>
   <string ID="activated ability classes:Tinkering">[届：\TODO]Tinkering</string>
-  <string ID="activated ability classes:Tonics">Tonics</string>
+  <string ID="activated ability classes:Tonics">[届：\TODO]Tonics</string>
   <string ID="activated ability classes:Vehicle">[届：\TODO]Vehicle</string>
 
   <!--
@@ -496,6 +521,29 @@ Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:44
   <string ID="Joppa Zealot Yell:=subject.Does:yell=, {{W|'=message='}}">=subject.あなたは、={{W|「=message=」}}と叫ぶ。</string>
 
   <string ID="hostile perception verb:detect">[届：\TODO]detect</string>
+
+  <!--
+	Examiner strings
+  -->
+  <string ID="Examiner Inventory Action:examine">[届：\TODO]examine</string>
+  <string ID="Examiner already broken:Whatever =object.it= =object.is=, =object.itis= broken...">[届：\TODO]Whatever =object.it= =object.is=, =object.itis= broken...</string>
+  <string ID="Examiner damage risk warning:=object.Does:are= not owned by you, and examining =object.them= risks damaging =object.them=. Are you sure you want to do so?">[届：\TODO]=object.Does:are= not owned by you, and examining =object.them= risks damaging =object.them=. Are you sure you want to do so?</string>
+  <string ID="Examiner damage contained risk warning:=container.Does:are= not owned by you, and examining =object.a.name= inside =container.them= risks causing damage. Are you sure you want to do so?">[届：\TODO]=container.Does:are= not owned by you, and examining =object.a.name= inside =container.them= risks causing damage. Are you sure you want to do so?</string>
+  <string ID="Examiner Identify Snapshot Name:=subject.the.name=">[届：\TODO]=subject.the.name=</string>
+  <string ID="Examiner Idenitfy Message - Snapshot Matched:You commit the distinguishing characteristics of =snapshot= to memory.">[届：\TODO]You commit the distinguishing characteristics of =snapshot= to memory.</string>
+  <string ID="Examiner Identify Message:You identify =snapshot= as =subject.a.name=.">[届：\TODO]You identify =snapshot= as =subject.a.name=.</string>
+  <string ID="Examiner ResultSuccess:You now understand =subject.the.name=.">[届：\TODO]You now understand =subject.the.name=.</string>
+  <string ID="Examiner ResultExceptionalSuccess:You discover something about =snapshot= that was hidden!">[届：\TODO]You discover something about =snapshot= that was hidden!</string>
+  <string ID="Examiner Partial Success snapshotDoesSeem:=subject.Does:seem=">[届：\TODO]=subject.Does:seem=</string>
+  <string ID="Examiner Result Partial default adjunctNoun:=subject.isPlural:set:one=">[届：\TODO]=subject.isPlural:set:one=</string>
+  <string ID="Examiner Result Partial Snapshot Mismatch Variant:You make some progress understanding =snapshot=. =snapshotDoesSeem= to be =subject.a.name=, and you think =subject.it's= probably a variety of =subject.basename:asIfKnown=; you believe you would be able to recognize an ordinary =adjunctNoun= of =subject.isPlural:that:those= now.">[届：\TODO]You make some progress understanding =snapshot=. =snapshotDoesSeem= to be =subject.a.name=, and you think =subject.it's= probably a variety of =subject.basename:asIfKnown=; you believe you would be able to recognize an ordinary =adjunctNoun= of =subject.isPlural:that:those= now.</string>
+  <string ID="Examiner Result Partial Snapshot Match Variant:You make some progress understanding =snapshot=. You think =subject.it's= probably a variety of =subject.basename:asIfKnown=, and you believe you would be able to recognize an ordinary =adjunctNoun= of =subject.isPlural:that:those= now.">[届：\TODO]You make some progress understanding =snapshot=. You think =subject.it's= probably a variety of =subject.basename:asIfKnown=, and you believe you would be able to recognize an ordinary =adjunctNoun= of =subject.isPlural:that:those= now.</string>
+  <string ID="Examiner ResultPartialSuccess Snapshot Mismatch:You make some progress understanding =snapshot=. =snapshotDoesSeem= =subject.a.name=.">[届：\TODO]You make some progress understanding =snapshot=. =snapshotDoesSeem= =subject.a.name=.</string>
+  <string ID="Examiner ResultPartialSuccess Snapshot Match:You make some progress understanding =snapshot=.">[届：\TODO]You make some progress understanding =snapshot=.</string>
+  <string ID="Examiner Failure:You are puzzled by =subject.the.name=.">[届：\TODO]You are puzzled by =subject.the.name=.</string>
+  <string ID="Examiner FakeConfusionFailure:You think you broke =subject.them=...">[届：\TODO]You think you broke =subject.them=...</string>
+  <string ID="Examiner CriticalFail:You think you broke =subject.them=...">[届：\TODO]You think you broke =subject.them=...</string>
+  <string ID="Examiner CriticalFail puzzled:You are puzzled by =subject.the.name=.">[届：\TODO]You are puzzled by =subject.the.name=.</string>
 
   <!--
 	Door strings
@@ -515,19 +563,48 @@ Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:44
   <string ID="You cannot close =object.t==reason=.">=reason=、=object.を=閉めることができない。</string>
   <string ID="=subject.T= cannot be closed with =object.t= in the way.">=object.あなたが=邪魔になっていると=subject.を=閉めることができない。</string>
   <string ID="=subject.T= cannot be closed with =object.t= in the way =subject.direction#object=.">=object.あなたが==subject.direction#object=側にいると=subject.を=閉めることができない。</string>
-  <string ID="You hack =object.t=.">[届：\TODO]You hack =object.t=.</string>
-  <string ID="You hack =object.t= and find tinkering bits &lt;{{|=bits=}}&gt; in =object.them=!">[届：\TODO]You hack =object.t= and find tinkering bits &lt;{{|=bits=}}&gt; in =object.them=!</string>
-  <string ID="You hack =object.t= and find =item.an= stuck in =object.them=!">[届：\TODO]You hack =object.t= and find =item.an= stuck in =object.them=!</string>
-  <string ID="You feel like you're making progress on hacking =object.t= open.">[届：\TODO]You feel like you're making progress on hacking =object.t= open.</string>
-  <string ID="You cannot seem to work out how to hack =object.t=.">[届：\TODO]You cannot seem to work out how to hack =object.t=.</string>
-  <string ID="Your attempt to hack =object.t= has gone very wrong.">[届：\TODO]Your attempt to hack =object.t= has gone very wrong.</string>
   <string ID="door open reason: because you cannot figure out how" Value="方法が分からないので" />
 
+  <!--
+	Container interaction strings
+  -->
   <string ID="=subject.Does:take= =object.the.name= from =container.the.name= =subject.direction#container=.">=subject.が==subject.direction#container=ある=container.name=から=object.を=取る。</string>
 
   <!--
-	Mutation strings
+	Mutation/Ability strings
   -->
+  <string ID="FactionDeed Description Tag:[=faction.name= chapter]" OrderAdjust="-60">[=faction.name= chapter]</string>
+  <string ID="FactionDeed Description Tag:[chapter unspecified]" OrderAdjust="-60">[chapter unspecified]</string>
+  <string ID="FactionDeed InventoryAction:entangle text">[届：\TODO]entangle text</string>
+  <string ID="FactionDeed Owner Confirm:=object.Does:are= not owned by you, and using =object.them= will consume =object.them=. Are you sure you want to do so?">[届：\TODO]=object.Does:are= not owned by you, and using =object.them= will consume =object.them=. Are you sure you want to do so?</string>
+  <string ID="FactionDeed Owner Confirm From Container:=container.Does:are= not owned by you, and using =object.the.name= will consume =object.them=. Are you sure you want to do so?">[届：\TODO]=container.Does:are= not owned by you, and using =object.the.name= will consume =object.them=. Are you sure you want to do so?</string>
+  <string ID="FactionDeed Temporary message:=object.Does:seem= to be behaving as nothing more than an ordinary piece of paper.">[届：\TODO]=object.Does:seem= to be behaving as nothing more than an ordinary piece of paper.</string>
+  <string ID="FactionDeed Pick Faction Option:=faction.name=">[届：\TODO]=faction.name=</string>
+  <string ID="FactionDeed Pick Faction Title:Choose a faction's chapter to insert your good deed.">[届：\TODO]Choose a faction's chapter to insert your good deed.</string>
+  <string ID="FactionDeed Popup Message:You add the following entry into the {{K|Annals of Qud}}.&#xA;&#xA;&quot;On the =date.day= of =date.month=, {{Y|=subject.basename=}} became =positive.if:admired:despised= by =faction.formattedName= for =reason=.&quot;" Value="[届：\TODO]You add the following entry into the {{K|Annals of Qud}}.&#xA;&#xA;&quot;On the =date.day= of =date.month=, {{Y|=subject.basename=}} became =positive.if:admired:despised= by =faction.formattedName= for =reason=.&quot;" />
+  <string ID="Beguile Pick Direction Title:[Select a direction to beguile a creature]">[届：\TODO][Select a direction to beguile a creature]</string>
+  <string ID="There are no valid targets in that square.">[届：\TODO]There are no valid targets in that square.</string>
+  <string ID="Beguile Pick Creature:Who would you like to beguile?">[届：\TODO]Who would you like to beguile?</string>
+  <string ID="Beguiling Fail Self-Target:You can't beguile =player.itself=!">[届：\TODO]You can't beguile =player.itself=!</string>
+  <string ID="Beguiling failure immune:=object.Does:seem= utterly impervious to your charms.">[届：\TODO]=object.Does:seem= utterly impervious to your charms.</string>
+  <string ID="Beguiling failure already beguiled:You have already beguiled =object.the.name=.">[届：\TODO]You have already beguiled =object.the.name=.</string>
+  <string ID="Beguiling confirm already beguiled:=object.Does:are|strip= already your follower. Do you want to beguile =object.them= anyway?">[届：\TODO]=object.Does:are|strip= already your follower. Do you want to beguile =object.them= anyway?</string>
+  <string ID="Beguiling failure lost contest:You fail to outshine the current object of =object.the.name's= affection.">[届：\TODO]You fail to outshine the current object of =object.the.name's= affection.</string>
+  <string ID="Beguile failure:Your coquetry infuriates =object.the.name=.">[届：\TODO]Your coquetry infuriates =object.the.name=.</string>
+  <string ID="Beguiling Active Ability Name:Beguile Creature">[届：\TODO]Beguile Creature</string>
+  <string ID="Dominate Ability Name:Dominate Creature">[届：\TODO]Dominate Creature</string>
+  <string ID="Domination broken:{{r|Your domination is broken!}}">[届：\TODO]{{r|Your domination is broken!}}</string>
+  <string ID="Domination stranded:{{r|Your mind is stranded here.}}">[届：\TODO]{{r|Your mind is stranded here.}}</string>
+  <string ID="Domination stranded journal entry:Your mind was stranded inside =subject.a==subject.refname|strip=.">[届：\TODO]Your mind was stranded inside =subject.a==subject.refname|strip=.</string>
+  <string ID="Dominate Dominate:=subject.Does:take= control of =object.a.name=!">[届：\TODO]=subject.Does:take= control of =object.a.name=!</string>
+  <string ID="Dominate Fail Immune:Something prevents you from dominating =object.the.name=.">[届：\TODO]Something prevents you from dominating =object.the.name=.</string>
+  <string ID="Dominate Fail:=subject.Does:resist= =object.name's= domination!">[届：\TODO]=subject.Does:resist= =object.name's= domination!</string>
+  <string ID="Dominate Failure:There seems to be no mind in =object.the.name= to dominate.">[届：\TODO]There seems to be no mind in =object.the.name= to dominate.</string>
+  <string ID="Dominate Failure:You can't dominate =object.itself=!">[届：\TODO]You can't dominate =object.itself=!</string>
+  <string ID="Dominate Failure:You can't dominate someone you are already dominating.">[届：\TODO]You can't dominate someone you are already dominating.</string>
+  <string ID="Dominate Failure:You can't do that.">[届：\TODO]You can't do that.</string>
+  <string ID="Dominate Failure:=object.Does:do= not have a consciousness you can make psychic contact with.">[届：\TODO]=object.Does:do= not have a consciousness you can make psychic contact with.</string>
+  <string ID="Dominate Failure:Nothing happens.">[届：\TODO]Nothing happens.</string>
   <string ID="Psychometry Failure Examine:Do you want to continue despite being unable to use Psychometry?">[届：\TODO]Do you want to continue despite being unable to use Psychometry?</string>
   <string ID="Psychometry Failure Repair:Do you want to continue despite being unable to use Psychometry?">[届：\TODO]Do you want to continue despite being unable to use Psychometry?</string>
   <string ID="Psychometry Inventory Action:read history with Psychometry">[届：\TODO]read history with Psychometry</string>
@@ -541,7 +618,7 @@ Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:44
   <string ID="Psychometry Activate Fail Cooldown:You strain to part the veil of time in order to use psychometry on =object.t=, but your psyche is too exhausted.">[届：\TODO]You strain to part the veil of time in order to use psychometry on =object.t=, but your psyche is too exhausted.</string>
   <string ID="Psychometry InitiateRealityDistortionTransit Purpose:use psychometry on =object.t">[届：\TODO]use psychometry on =object.t</string>
   <string ID="hostile perception verb:sense">[届：\TODO]sense</string>
-  <string ID="SunderMind MemberOfPsychicBattle Effect Description:locked in psychic battle">locked in psychic battle</string>
+  <string ID="SunderMind MemberOfPsychicBattle Effect Description:locked in psychic battle">[届：\TODO]locked in psychic battle</string>
   <string ID="SunderMind Canceled:Your concentration slips and the channel between you and =object.the.name= dissipates into aether.">[届：\TODO]Your concentration slips and the channel between you and =object.the.name= dissipates into aether.</string>
   <string ID="SunderMind Canceled:Your concentration slips and the channel dissipates.">[届：\TODO]Your concentration slips and the channel dissipates.</string>
   <string ID="SunderMind Start Channeling:You burrow a channel through the psychic aether to =object.the.name= and begin to sunder =object.its= mind!">[届：\TODO]You burrow a channel through the psychic aether to =object.the.name= and begin to sunder =object.its= mind!</string>
@@ -632,6 +709,10 @@ Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:44
   <string ID="ErosTeleportation Shout:I'm coming, =partyLeader.basename=!">[届：\TODO]I'm coming, =partyLeader.basename=!</string>
   <string ID="ErosTeleportation Shout MessageLog:=subject.Basename|strip= =subject.verb:yell=, {{W|'=shoutMessage='}}">[届：\TODO]=subject.Basename|strip= =subject.verb:yell=, {{W|'=shoutMessage='}}</string>
   <string ID="ErosTeleportation Ability Name:Teleport">[届：\TODO]Teleport</string>
+
+  <!--
+	collide/arrive strings
+  -->
   <string ID="=subject.Does:are= knocked =direction.directionDescription=.">[届：\TODO]=subject.Does:are= knocked =direction.directionDescription=.</string>
   <string ID="=subject.Does:collide= with =object.a.name=.">[届：\TODO]=subject.Does:collide= with =object.a.name=.</string>
   <string ID="Physics AccelerateInternal my damage message:from colliding with =object.a.name=.">[届：\TODO]from colliding with =object.a.name=.</string>
@@ -639,6 +720,10 @@ Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:44
   <string ID="Physics AccelerateInternal my damage message:from =subject.a.name= colliding with =object.them=.">[届：\TODO]from =subject.a.name= colliding with =object.them=.</string>
   <string ID="Physics AccelerateInternal my damage message w/ pens:=pens.pens= from =subject.a.name= colliding with =object.them=.">[届：\TODO]=pens.pens= from =subject.a.name= colliding with =object.them=.</string>
   <string ID="=subject.An= =subject.verb#ArriveVerb= =subject.direction=.">[届：\TODO]=subject.An= =subject.verb#ArriveVerb= =subject.direction=.</string>
+
+  <!--
+	Skill/Ability strings
+  -->
   <string ID="Proselytize Ability Name:Proselytize">[届：\TODO]Proselytize</string>
   <string ID="Proselytize Fail Glotrot:You cannot proselytize without a tongue.">[届：\TODO]You cannot proselytize without a tongue.</string>
   <string ID="Proselytize Target Picker Title:Proselytize">[届：\TODO]Proselytize</string>
@@ -650,6 +735,14 @@ Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:44
   <string ID="Proselytize Fail Frozen:Frozen solid, you cannot proselytize =object.t=.">[届：\TODO]Frozen solid, you cannot proselytize =object.t=.</string>
   <string ID="Proselytize confirm proselytize follower:=object.Does:are= already your follower. Do you want to proselytize =object.them= anyway?">[届：\TODO]=object.Does:are= already your follower. Do you want to proselytize =object.them= anyway?</string>
   <string ID="Proselytize Fail Message:=object.Does:are= unconvinced by your pleas.">[届：\TODO]=object.Does:are= unconvinced by your pleas.</string>
+  <string ID="Tinker Recharge:You don't have any =bits.bitString= bits, which are required for recharging.">[届：\TODO]You don't have any =bits.bitString= bits, which are required for recharging.</string>
+  <string ID="Tinker Recharge:It would take {{C|=needed=}} =bits.bitString= =needed.ifplural:bits:bit= to fully recharge =object.the.name=. You have {{C|=available=}}. How many do you want to use?">[届：\TODO]It would take {{C|=needed=}} =bits.bitString= =needed.ifplural:bits:bit= to fully recharge =object.the.name=. You have {{C|=available=}}. How many do you want to use?</string>
+  <string ID="Tinker Recharge:You have =partial.if:partially =recharged =object.the.name=.">[届：\TODO]You have =partial.if:partially =recharged =object.the.name=.</string>
+  <string ID="Tinker Recharge not recharge:That isn't an energy cell and does not have a rechargeable capacitor.">[届：\TODO]That isn't an energy cell and does not have a rechargeable capacitor.</string>
+  <string ID="Thinker Recharge not recharge:=object.The.name= can't be recharged that way.">[届：\TODO]=object.The.name= can't be recharged that way.</string>
+  <string ID="Tinker Recharge:You have no items that require charging.">[届：\TODO]You have no items that require charging.</string>
+  <string ID="Tinker Recharge pick item title:Select an item to charge.">[届：\TODO]Select an item to charge.</string>
+  <string ID="Tinker Recharge Ablity Name:Recharge">[届：\TODO]Recharge</string>
   <string ID="TargetSelfConfirm:Are you sure you want to target =subject.itself=?">[届：\TODO]Are you sure you want to target =subject.itself=?</string>
 
   <!--
