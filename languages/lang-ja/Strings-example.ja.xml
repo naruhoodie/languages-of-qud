@@ -479,10 +479,10 @@ Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:44
   <!--
 	Random Altar Baetyl strings
   -->
-  <string ID="RandomAltarBaetyl Mod Demand Prefix Name:=number.cardinal= =mod.name= =number.pluralize:item=">[届：\TODO]=number.cardinal= =mod.name= =number.pluralize:item=</string>
-  <string ID="RandomAltarBaetyl Mod Demand Suffix Name:=number.cardinal= =number.pluralize:item= =mod.name=">[届：\TODO]=number.cardinal= =number.pluralize:item= =mod.name=</string>
+  <string ID="RandomAltarBaetyl Mod Demand Prefix Name:=number.cardinal= =mod.name= =number.pluralize:item=">=mod.name=の品物⁂=number.基数=個</string>
+  <string ID="RandomAltarBaetyl Mod Demand Suffix Name:=number.cardinal= =number.pluralize:item= =mod.name=">[届：\TODO]=number.基数= =mod.name=の=number.pluralize:item=</string>
   <string ID="RandomAltarBaetyl:I AM SATED, MORTAL. BEGONE.">[届：\TODO]I AM SATED, MORTAL. BEGONE.</string>
-  <string ID="RandomAltarBaetyl:PETTY MORTAL! BRING ME =demand|upper=, AND I SHALL REWARD YOU WITH =reward|upper=.">[届：\TODO]PETTY MORTAL! BRING ME =demand|upper=, AND I SHALL REWARD YOU WITH =reward|upper=.</string>
+  <string ID="RandomAltarBaetyl:PETTY MORTAL! BRING ME =demand|upper=, AND I SHALL REWARD YOU WITH =reward|upper=.">些細な者よ！！=demand.を=持って来れば、=reward.で=報いよう！！</string>
   <string ID="RandomAltarBaetyl Offer Message:Offer =subject.the.name= =needed= out of =nearby.andList:definiteArticles= nearby and =inventory.andList:asPossessed=?">[届：\TODO]Offer =subject.the.name= =needed= out of =nearby.andList:definiteArticles= nearby and =inventory.andList:asPossessed=?</string>
   <string ID="RandomAltarBaetyl Offer Message:Offer =subject.the.name= =needed= out of =nearby.andList:definiteArticles= nearby?">[届：\TODO]Offer =subject.the.name= =needed= out of =nearby.andList:definiteArticles= nearby?</string>
   <string ID="RandomAltarBaetyl Offer Message:Offer =subject.the.name= =needed= out of =inventory.andList:asPossessed=?">[届：\TODO]Offer =subject.the.name= =needed= out of =inventory.andList:asPossessed=?</string>

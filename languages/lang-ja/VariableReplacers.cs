@@ -2,6 +2,7 @@ using XRL.World;
 using XRL.World.Text;
 using XRL.World.Text.Attributes;
 using XRL.World.Text.Delegates;
+using XRL.Language;
 
 namespace LanguagesOfQud
 {
@@ -21,7 +22,7 @@ namespace LanguagesOfQud
         /// <summary>
         /// the は(wa) particle for topic
         /// </summary>
-        [VariableReplacer("は", Capitalization = false)]
+        [VariableReplacer("は")]
         [VariableExample("", "Player")]
         [VariableExample("メフメットは", "Mehmet")]
         public static string は(VariableContext Context, GameObject target)
@@ -37,7 +38,7 @@ namespace LanguagesOfQud
         /// <summary>
         /// the が(ga) particle for subject
         /// </summary>
-        [VariableReplacer("が", Capitalization = false)]
+        [VariableReplacer("が")]
         [VariableExample("", "Player")]
         [VariableExample("メフメットが", "Mehmet")]
         public static string が(VariableContext Context, GameObject target)
@@ -53,7 +54,7 @@ namespace LanguagesOfQud
         /// <summary>
         /// the を(wo) particle for direct objects
         /// </summary>
-        [VariableReplacer("を", Capitalization = false)]
+        [VariableReplacer("を")]
         [VariableExample("", "Player")]
         [VariableExample("メフメットを", "Mehmet")]
         public static string を(VariableContext Context, GameObject target)
@@ -67,9 +68,22 @@ namespace LanguagesOfQud
         }
 
         /// <summary>
+        /// the を(wo) particle for direct objects
+        /// </summary>
+        [VariableReplacer("を")]
+        public static string を(VariableContext Context, string target)
+        {
+            if (target.Contains("⁂"))
+            {
+                return target.Replace("⁂", "を");
+            }
+            return target + "を";
+        }
+
+        /// <summary>
         /// the の(no) particle for possessive/"of" relations, etc.
         /// </summary>
-        [VariableReplacer("の", Capitalization = false)]
+        [VariableReplacer("の")]
         [VariableExample("", "Player")]
         [VariableExample("メフメットの", "Mehmet")]
         public static string の(VariableContext Context, GameObject target)
@@ -85,7 +99,7 @@ namespace LanguagesOfQud
         /// <summary>
         /// the と(to) particle for "with", "and" lists of nouns, quoting, etc.
         /// </summary>
-        [VariableReplacer("と", Capitalization = false)]
+        [VariableReplacer("と")]
         public static string と(VariableContext Context, GameObject target)
         {
             if (target.IsPlayer())
@@ -99,7 +113,7 @@ namespace LanguagesOfQud
         /// <summary>
         /// the に(ni) particle for locations, destinations, "by" relations, etc.
         /// </summary>
-        [VariableReplacer("に", Capitalization = false)]
+        [VariableReplacer("に")]
         [VariableExample("", "Player")]
         [VariableExample("メフメットに", "Mehmet")]
         public static string に(VariableContext Context, GameObject target)
@@ -115,7 +129,7 @@ namespace LanguagesOfQud
         /// <summary>
         /// the で(de) particle for location, means, etc.
         /// </summary>
-        [VariableReplacer("で", Capitalization = false)]
+        [VariableReplacer("で")]
         [VariableExample("", "Player")]
         [VariableExample("メフメットで", "Mehmet")]
         [VariableExample("松明で", "Torch")]
@@ -130,9 +144,22 @@ namespace LanguagesOfQud
         }
 
         /// <summary>
+        /// the で(de) particle for location, means, etc.
+        /// </summary>
+        [VariableReplacer("で")]
+        public static string で(VariableContext Context, string target)
+        {
+            if (target.Contains("⁂"))
+            {
+                return target.Replace("⁂", "で");
+            }
+            return target + "で";
+        }
+
+        /// <summary>
         /// the も(mo) particle for "too", "also", "even"
         /// </summary>
-        [VariableReplacer("も", Capitalization = false)]
+        [VariableReplacer("も")]
         [VariableExample("あなたも", "Player")]
         [VariableExample("メフメットも", "Mehmet")]
         public static string も(VariableContext Context, GameObject target)
@@ -149,7 +176,7 @@ namespace LanguagesOfQud
         /// cases where it'd say あなた(anata) instead of dropping the 2nd-pers pronoun
         /// </summary>
 
-        [VariableReplacer("あなたは", Capitalization = false)]
+        [VariableReplacer("あなたは")]
         [VariableExample("あなたは", "Player")]
         [VariableExample("メフメットは", "Mehmet")]
         public static string あなたは(VariableContext Context, GameObject target)
@@ -164,7 +191,7 @@ namespace LanguagesOfQud
         /// <summary>
         /// adding a comma 、after は
         /// </summary>
-        [VariableReplacer("あなたは、", Capitalization = false)]
+        [VariableReplacer("あなたは、")]
         [VariableExample("あなたは、", "Player")]
         [VariableExample("メフメットは、", "Mehmet")]
         public static string あなたはWithComma(VariableContext Context, GameObject target)
@@ -176,7 +203,7 @@ namespace LanguagesOfQud
             return GetDisplayNameOf(target) + "は、";
         }
 
-        [VariableReplacer("あなたが", Capitalization = false)]
+        [VariableReplacer("あなたが")]
         [VariableExample("あなたが", "Player")]
         [VariableExample("メフメットが", "Mehmet")]
         public static string あなたが(VariableContext Context, GameObject target)
@@ -188,7 +215,7 @@ namespace LanguagesOfQud
             return GetDisplayNameOf(target) + "が";
         }
 
-        [VariableReplacer("あなたを", Capitalization = false)]
+        [VariableReplacer("あなたを")]
         public static string あなたを(VariableContext Context, GameObject target)
         {
             if (target.IsPlayer())
@@ -198,7 +225,7 @@ namespace LanguagesOfQud
             return GetDisplayNameOf(target) + "を";
         }
 
-        [VariableReplacer("あなたの", Capitalization = false)]
+        [VariableReplacer("あなたの")]
         public static string あなたの(VariableContext Context, GameObject target)
         {
             if (target.IsPlayer())
@@ -208,7 +235,7 @@ namespace LanguagesOfQud
             return GetDisplayNameOf(target) + "の";
         }
 
-        [VariableReplacer("あなたと", Capitalization = false)]
+        [VariableReplacer("あなたと")]
         public static string あなたと(VariableContext Context, GameObject target)
         {
             if (target.IsPlayer())
@@ -218,7 +245,7 @@ namespace LanguagesOfQud
             return GetDisplayNameOf(target) + "と";
         }
 
-        [VariableReplacer("あなたに", Capitalization = false)]
+        [VariableReplacer("あなたに")]
         public static string あなたに(VariableContext Context, GameObject target)
         {
             if (target.IsPlayer())
@@ -228,7 +255,7 @@ namespace LanguagesOfQud
             return GetDisplayNameOf(target) + "に";
         }
 
-        [VariableReplacer("あなたで", Capitalization = false)]
+        [VariableReplacer("あなたで")]
         public static string あなたで(VariableContext Context, GameObject target)
         {
             if (target.IsPlayer())
@@ -238,7 +265,7 @@ namespace LanguagesOfQud
             return GetDisplayNameOf(target) + "で";
         }
 
-        [VariableReplacer(Default = "どこか", Capitalization = false, Override = true)]
+        [VariableReplacer(Default = "どこか", Override = true)]
         public static string direction(VariableContext Context, GameObject Target)
         {
             var result = Context.Default;
@@ -254,7 +281,7 @@ namespace LanguagesOfQud
             return result;
         }
 
-        [VariableReplacer(Default = "どこか", Capitalization = false, Override = true)]
+        [VariableReplacer(Default = "どこか", Override = true)]
         public static string direction(VariableContext Context, GameObject Origin, GameObject Target)
         {
             var result = Context.Default;
@@ -262,6 +289,28 @@ namespace LanguagesOfQud
             result = Origin.DescribeDirectionToward(Target, Short: true);
 
             return result;
+        }
+
+        /// <summary>
+        /// 基数(kisuu, "cardinal number") - equivalent of "Cardinal" replacer 
+        /// </summary>
+       [VariableReplacer("基数")]
+        [VariableExample("零", 0)]
+        [VariableExample("二十一", 21)]
+        [VariableExample("マイナス二十一", -21)]
+        [VariableExample("一千三百三十七", 1337)]
+        public static string 基数(VariableContext Context, int Number)
+        {
+            return TranslatorJapanese.Cardinal(Number);
+        }
+
+        /// <summary>
+        /// 助詞(joshi, "particle") - fills in with the parameter 
+        /// </summary>
+       [VariableReplacer("助詞", Default = "が")]
+        public static string 助詞(VariableContext Context)
+        {
+            return Context.Parameters.Count > 0 ? Context.Parameters[0] : Context.Default;
         }
 
         //TODO: add a postprocessor StripRubyText to ReplacerBuilder
