@@ -853,15 +853,15 @@ Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:44
   <string ID="Troll Hero Naming.xml Context:two-headed">two-headed</string>
   <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:84-->
   <string ID="Troll Hero Naming.xml Context:Caveking">Caveking</string>
-  <!--Code references _T(): Assets/XRL Application/World/Events/DescriptionBuilder.cs:330-->
+  <!--Code references _T(): Assets/XRL Application/World/Events/DescriptionBuilder.cs:338-->
   <string ID="DescriptionBuilder Epithets Join:=epithets.join:, =">=epithets.join:, =</string>
-  <!--Code references _T(): Assets/XRL Application/World/Events/DescriptionBuilder.cs:352-->
+  <!--Code references _T(): Assets/XRL Application/World/Events/DescriptionBuilder.cs:360-->
   <string ID="DescriptionBuilder Multiple Titles Clause:, =titles.andList:noSerial=">, =titles.andList:noSerial=</string>
-  <!--Code references _T(): Assets/XRL Application/World/Events/DescriptionBuilder.cs:359-->
+  <!--Code references _T(): Assets/XRL Application/World/Events/DescriptionBuilder.cs:367-->
   <string ID="DescriptionBuilder Single Title Clause With Epithets:, =title.toString=">, =title.toString=</string>
-  <!--Code references _T(): Assets/XRL Application/World/Events/DescriptionBuilder.cs:365-->
+  <!--Code references _T(): Assets/XRL Application/World/Events/DescriptionBuilder.cs:373-->
   <string ID="DescriptionBuilder Single Title Clause:and =title.toString=">and =title.toString=</string>
-  <!--Code references _T(): Assets/XRL Application/World/Events/DescriptionBuilder.cs:383-->
+  <!--Code references _T(): Assets/XRL Application/World/Events/DescriptionBuilder.cs:391-->
   <string ID="DescriptionBuilder Multiple With Clause:with =withClauses.andList=">with =withClauses.andList=</string>
   <!--Code references _S(): Assets/XRL Application/World/Events/ExtraHostilePerceptionEvent.cs:21-->
   <string ID="hostile perception verb:perceive">perceive</string>
@@ -901,58 +901,74 @@ Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:44
   <string ID="spotmessage:=subject.Does#verb= =object.an:notvisible= =subject.direction#object=, so you refrain from =autoActDescription=.">=subject.Does#verb= =object.an:notvisible= =subject.direction#object=, so you refrain from =autoActDescription=.</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/GameObject.cs:12793-->
   <string ID="spotmessage:=subject.Does#verb= =object.an:notvisible= =subject.direction#object= and stop =autoActDescription=.">=subject.Does#verb= =object.an:notvisible= =subject.direction#object= and stop =autoActDescription=.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/GameObject.cs:18416-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/GameObject.cs:18334-->
   <string ID="There =pool.is= a dangerous-looking =pool.short= that way. Do you want to go =direction.indicativeDirection= and start swimming?">There =pool.is= a dangerous-looking =pool.short= that way. Do you want to go =direction.indicativeDirection= and start swimming?</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/GameObject.cs:18417-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/GameObject.cs:18335-->
   <string ID="There =pool.is= =pool.a.name= that way. Do you want to go =direction.indicativeDirection= and start swimming?">There =pool.is= =pool.a.name= that way. Do you want to go =direction.indicativeDirection= and start swimming?</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/GameObject.cs:18418-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/GameObject.cs:18336-->
   <string ID="There =pool.is= a dangerous-looking =pool.short= that way. Move =direction.expandedDirection= again to enter =pool.them= and start swimming.">There =pool.is= a dangerous-looking =pool.short= that way. Move =direction.expandedDirection= again to enter =pool.them= and start swimming.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/GameObject.cs:18419-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/GameObject.cs:18337-->
   <string ID="There =pool.is= =pool.a.name= that way. Move =direction.expandedDirection= again to enter =pool.them= and start swimming.">There =pool.is= =pool.a.name= that way. Move =direction.expandedDirection= again to enter =pool.them= and start swimming.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:218-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:217-->
   <string ID="RandomAltarBaetyl Mod Demand Prefix Name:=number.cardinal= =mod.name= =number.pluralize:item=">=number.cardinal= =mod.name= =number.pluralize:item=</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:219-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:218-->
   <string ID="RandomAltarBaetyl Mod Demand Suffix Name:=number.cardinal= =number.pluralize:item= =mod.name=">=number.cardinal= =number.pluralize:item= =mod.name=</string>
-  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:749-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:315-->
+  <string ID="RandomAltarBaetyl Object Demand (fragment):=number.cardinal= =demandName= =adjunctNoun.pluralize=">=number.cardinal= =demandName= =adjunctNoun.pluralize=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:316-->
+  <string ID="RandomAltarBaetyl Object Demand (fragment):=demandName|article= =adjunctNoun=">=demandName|article= =adjunctNoun=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:317-->
+  <string ID="RandomAltarBaetyl Object Demand (fragment):=number.cardinal= =adjunctNoun|pluralize= of =demandName=">=number.cardinal= =adjunctNoun|pluralize= of =demandName=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:318-->
+  <string ID="RandomAltarBaetyl Object Demand (fragment):=adjunctNoun|article= of =demandName=">=adjunctNoun|article= of =demandName=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:319-->
+  <string ID="RandomAltarBaetyl Object Demand (fragment):=number.cardinal= sets of =demandName=">=number.cardinal= sets of =demandName=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:320-->
+  <string ID="RandomAltarBaetyl Object Demand (fragment):a set of =demandName=">a set of =demandName=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:321-->
+  <string ID="RandomAltarBaetyl Object Demand (fragment):=number.cardinal= =demandName|pluralize=">=number.cardinal= =demandName|pluralize=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:322-->
+  <string ID="RandomAltarBaetyl Object Demand (fragment):=demandName|article=">=demandName|article=</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:854-->
   <string ID="RandomAltarBaetyl:I AM SATED, MORTAL. BEGONE.">I AM SATED, MORTAL. BEGONE.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:755-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:860-->
   <string ID="RandomAltarBaetyl:PETTY MORTAL! BRING ME =demand|upper=, AND I SHALL REWARD YOU WITH =reward|upper=.">PETTY MORTAL! BRING ME =demand|upper=, AND I SHALL REWARD YOU WITH =reward|upper=.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:830-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:935-->
   <string ID="RandomAltarBaetyl Offer Message:Offer =subject.the.name= =needed= out of =nearby.andList:definiteArticles= nearby and =inventory.andList:asPossessed=?">Offer =subject.the.name= =needed= out of =nearby.andList:definiteArticles= nearby and =inventory.andList:asPossessed=?</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:831-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:936-->
   <string ID="RandomAltarBaetyl Offer Message:Offer =subject.the.name= =needed= out of =nearby.andList:definiteArticles= nearby?">Offer =subject.the.name= =needed= out of =nearby.andList:definiteArticles= nearby?</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:832-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:937-->
   <string ID="RandomAltarBaetyl Offer Message:Offer =subject.the.name= =needed= out of =inventory.andList:asPossessed=?">Offer =subject.the.name= =needed= out of =inventory.andList:asPossessed=?</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:833-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:938-->
   <string ID="RandomAltarBaetyl Offer Message:Offer =subject.the.name= =nearby.andList:definiteArticles= nearby and =inventory.andList:asPossessed=?">Offer =subject.the.name= =nearby.andList:definiteArticles= nearby and =inventory.andList:asPossessed=?</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:834-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:939-->
   <string ID="RandomAltarBaetyl Offer Message:Offer =subject.the.name= =nearby.andList:definiteArticles= nearby?">Offer =subject.the.name= =nearby.andList:definiteArticles= nearby?</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:835-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:940-->
   <string ID="RandomAltarBaetyl Offer Message:Offer =subject.the.name= =inventory.andList:asPossessed=?">Offer =subject.the.name= =inventory.andList:asPossessed=?</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:895-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:1000-->
   <string ID="RandomAltarBaetyl:I ACCEPT YOUR OFFERING!&#xA;&#xA;The sparking baetyl gives you =reward=!" Value="I ACCEPT YOUR OFFERING!&#xA;&#xA;The sparking baetyl gives you =reward=!" />
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:928-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:1033-->
   <string ID="RandomAltarBaetyl Reward List:=object.a.name=">=object.a.name=</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:941-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:1046-->
   <string ID="RandomAltarBaetyl Reward List:=points= attribute =points.pluralize:point=">=points= attribute =points.pluralize:point=</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:955-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:1060-->
   <string ID="RandomAltarBaetyl Reward List:=points= mutation =points.pluralize:point=">=points= mutation =points.pluralize:point=</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:969-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:1074-->
   <string ID="RandomAltarBaetyl Reward List:=points= skill =points.pluralize:point=">=points= skill =points.pluralize:point=</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:986-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:1091-->
   <string ID="RandomAltarBaetyl Reward List:=points= experience =points.pluralize:point=">=points= experience =points.pluralize:point=</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:999-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:1104-->
   <string ID="RandomAltarBaetyl Reward List:=points= cybernetics license =points.pluralize:point=">=points= cybernetics license =points.pluralize:point=</string>
   <!--Code references _T():
-Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:1031
-Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:1049
+Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:1136
+Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:1154
 -->
   <string ID="RandomAltarBaetyl Reward List:=points= reputation with =faction.factionName=">=points= reputation with =faction.factionName=</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:1057-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:1162-->
   <string ID="RandomAltarBaetyl Reward List:=list.andList=">=list.andList=</string>
-  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:1106-->
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:1211-->
   <string ID="RandomAltarBaetyl Journal Entry:A &quot;SATED&quot; baetyl">A "SATED" baetyl</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:1111-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:1216-->
   <string ID="RandomAltarBaetyl Journal Entry:A baetyl demanding &quot;=demand=&quot; and promising &quot;=reward=&quot;.">A baetyl demanding "=demand=" and promising "=reward=".</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Creature/ActivatedAbilities.cs:36-->
   <string ID="activated ability classes:Cybernetics">Cybernetics</string>

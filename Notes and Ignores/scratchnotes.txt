@@ -46,7 +46,6 @@ regexp for adding DisplayName to mutations:
 
 regexp for adding [届：\TODO]: 
 (ID=")([^:]+:)?([^"]+)(" Value=")(?:\3)(")	$1$2$3$4[届：\\TODO]$3$5
-# this covers text in Value="" in the string tag
 (ID=")([^:]+:)?([^"]+)(">)(?:\3)(<\/string>)	$1$2$3$4[届：\\TODO]$3$5
 (>)([^\[\<ぁ-ゔァ-ヺＡ-Ｚ][^\<ぁ-ゔァ-ヺＡ-Ｚ]+)(<\/string\>)	$1\[届：\\TODO\]$2$3
 checking afterwards:
