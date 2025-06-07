@@ -94,6 +94,7 @@
 </objects>
 
 <mutations>
+    <!-- TODO: BearerDescription isn't being read for other lang? -->
     <mutation Name="<KEY>" DisplayName="<LOCALIZE>" BearerDescription="<LOCALIZE>" BiomeEpithet="<LOCALIZE>" BiomeAdjective="<LOCALIZE>">
 		<description><LOCALIZE>
 			<stat Name="<KEY>" DisplayName="<LOCALIZE>" Unit="<LOCALIZE>"/>
@@ -193,7 +194,7 @@
 
 <!-- Skills.xml -->
 <skills>
-  <!-- Note: DisplayName isn't supported yet! -->
+  <!-- TODO: DisplayName isn't supported yet! -->
   <skill Name="<KEY>" DisplayName="<LOCALIZE>" Description="<LOCALIZE>" Snippet="<LOCALIZE>">
     <power Name="<KEY>" DisplayName="<LOCALIZE>" Snippet="<LOCALIZE>" Description="<LOCALIZE>"></power>
   </skill>
@@ -202,7 +203,15 @@
 <!-- Factions.xml -->
 <factions>
   <!-- Note: DisplayName isn't processed when Visible="false" -->
-  <faction Name="<KEY>" DisplayName="<LOCALIZE>"></faction>
+  <!-- FormatWithArticle & Plural are grammar-related, some lang may decide on usage -->
+  <faction Name="<KEY>" DisplayName="<LOCALIZE>" FormatWithArticle="<GRAMMAR>" Plural="<GRAMMAR>">
+    <!-- Note: RecipeText isn't processed when no Recipe -->
+    <waterritual RecipeText="<LOCALIZE>" />
+    <ranks>
+      <!-- TODO: DisplayName isn't supported yet! -->
+      <rank Name="<KEY>" DisplayName="<LOCALIZE>" />
+    </ranks>
+  </faction>
 </factions>
 
 <!-- SparkingBaetyls.xml -->
