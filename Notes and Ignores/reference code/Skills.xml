@@ -1,0 +1,289 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<skills>
+
+  <skill Name="Acrobatics" Class="Acrobatics" Description="You are skilled at acrobatics." Cost="75" Attribute="Strength" Snippet="acrobatics" Tile="Abilities/sw_skill_acrobatics.png" Foreground="y" Detail="G">
+    <power Name="Swift Reflexes" Cost="0" Attribute="Agility" Minimum="17" Class="Acrobatics_SwiftReflexes" Snippet="reacting swiftly" Description="You gain a +5 bonus to your DV when flinching away from missile attacks." Tile="Abilities/sw_skill_swift_reflexes.png" Foreground="y" Detail="G"></power>
+    <power Name="Spry" Cost="100" Attribute="Agility" Minimum="17" Class="Acrobatics_Dodge" Snippet="being spry" Description="You gain a +2 bonus to your DV." Tile="Abilities/sw_skill_spry.png" Foreground="y" Detail="G"></power>
+    <power Name="Jump" Cost="100" Attribute="Strength" Minimum="17" Class="Acrobatics_Jump" Snippet="jumping" Description="You jump into an unoccupied square within range 2. You cannot jump over a square occupied by a creature, unless you have an ability (such as flight) that augments your jump." Tile="Abilities/abil_jump.bmp" Foreground="y" Detail="G"></power>
+    <power Name="Tumble" Cost="150" Attribute="Agility" Minimum="23" Prereq="Tactics_Juke" Class="Acrobatics_Tumble" Snippet="tumbling" Description="You gain a +1 bonus to your DV. Additionally, Juke's cooldown is reduced to 20." Tile="Abilities/sw_skill_tumble.png" Foreground="y" Detail="G"></power>
+  </skill>
+
+  <skill Name="Axe" Class="Axe" Description="You are skilled with axes." Cost="50" Attribute="Strength" Snippet="the axe" Tile="Abilities/sw_skill_axe.png" Foreground="y" Detail="R">
+    <power Name="Axe Proficiency" Cost="0" Attribute="Strength" Minimum="0" Class="Axe_Expertise" Snippet="the axe" Description="You get +2 to hit with axes." Tile="Abilities/sw_skill_axe_proficiency.png" Foreground="y" Detail="R"></power>
+    <power Name="Cleave" Cost="150" Attribute="Strength" Minimum="19" Class="Axe_Cleave" Snippet="cleaving" Description="Whenever you hit an opponent with an axe, there's a 75% chance you cleave their armor, giving them a -1 penalty to their AV. This penalty can stack a number of times up to half your Str modifier, rounded up, +1 on a critical hit." Tile="Abilities/sw_skill_cleave.png" Foreground="y" Detail="R"></power>
+    <power Name="Charging Strike" Cost="100" Attribute="Strength" Minimum="19" Class="Cudgel_ChargingStrike" Prereq="Axe_Cleave,Tactics_Charge" Snippet="charging and striking" Description="When you charge with an axe and hit, if you cleave their armor, they get an additional -1 penalty to their AV. If you have Dismember, your chance to dismember when charging with an axe is doubled. When you charge with a cudgel and hit, you automatically daze your opponent." Tile="Abilities/sw_skill_axe_charging_strike.png" Foreground="y" Detail="R"></power>
+    <power Name="Dismember" Cost="150" Attribute="Strength" Minimum="21" Class="Axe_Dismember" Snippet="dismembering" Description="Activated; cooldown 30. Axe attack. If you hit and penetrate, you dismember one of their limbs at random and they start bleeding (1-2 damage per turn. toughness save; difficulty 35). Additionally, your axe attacks that penetrate have a percentage chance to dismember: 3% for one-handed axes and 6% for two-handed axes." Tile="Abilities/abil_dismember.bmp" Foreground="y" Detail="R"></power>
+    <power Name="Hook and Drag" Cost="150" Attribute="Strength" Minimum="23" Class="Axe_HookAndDrag" Snippet="hooking and dragging" Description="Activated; cooldown 50. You grab an opponent's limb with the heel of your axe. If successful, you pull your opponent with you as you move and make a free attack with your axe. Your opponent gets a chance to resist the move (strength save; difficulty 20 + your Str modifier) and a chance to break free at the start of their turn (same save). Lasts for 9 rounds or until you dismember the opponent." Tile="Abilities/abil_hook_and_drag.bmp" Foreground="y" Detail="R"></power>
+    <power Name="Decapitate" Cost="150" Attribute="Strength" Minimum="25" Class="Axe_Decapitate" Prereq="Axe_Dismember" Snippet="decapitating" Description="Heads are added to the list of possible limbs you can dismember. Chopping off the only head of a creature kills them instantly. If the creature has multiple heads, they start bleeding profusely (2-3 damage per turn. toughness save; difficulty 35)." Tile="Abilities/abil_decapitate_toggle_off.bmp" Foreground="y" Detail="R"></power>
+    <power Name="Berserk!" Cost="300" Attribute="Strength" Minimum="29" Class="Axe_Berserk" Prereq="Axe_Dismember" Snippet="going berserk" Description="Activated; cooldown 100.
+You enter a blood frenzy, and for 5 rounds your chance to dismember with axe attacks is 100%. To use Berserk, Dismember must be off cooldown, and using Berserk puts Dismember on cooldown." Tile="Abilities/abil_berserk.bmp" Foreground="y" Detail="R"></power>
+  </skill>
+
+  <skill Name="Bow and Rifle" Class="Rifles" Description="You are skilled with bows and rifles." Cost="100" Attribute="Agility" Snippet="the bow and the rifle" Tile="Abilities/sw_skill_bow_and_rifle.png" Foreground="y" Detail="B">
+    <power Name="Steady Hands" Cost="0" Attribute="Agility" Minimum="19" Class="Rifle_SteadyHands" Snippet="the bow and the rifle" Description="For the purpose of determining your accuracy with bows and rifles, your agility is treated as if it were 4 points higher." Tile="Abilities/sw_skill_steady_hands.png" Foreground="y" Detail="B"></power>
+    <power Name="Draw a Bead" Cost="0" Attribute="Agility" Minimum="19" Class="Rifle_DrawABead" Snippet="drawing a bead" Description="You spend a turn to draw a bead on a target and mark it. Whenever you fire at a marked target with a bow or rifle, your agility is treated as if it were 2 points higher for the purpose of determining your accuracy. You may only mark one target at a time. Targets get unmarked if you lose vision of them." Tile="Abilities/abil_mark_target.bmp" Foreground="y" Detail="B"></power>
+    <power Name="Suppressive Fire" Cost="150" Attribute="Agility" Minimum="19" Class="Rifle_SuppressiveFire" Prereq="Rifle_DrawABead" Snippet="suppressive fire" Description="You fire at a marked target. If your shot penetrates, your target is suppressed and can't move for 3-5 rounds. Then your target is unmarked." Tile="Abilities/tile_supressive_fire.png" Foreground="y" Detail="B"></power>
+    <power Name="Flattening Fire" Cost="200" Attribute="Agility" Minimum="25" Class="Rifle_FlatteningFire" Prereq="Rifle_DrawABead,Rifle_SuppressiveFire" Snippet="flattening fire" Description="As long as your target is surrounded by 6 or more solid obstacles, Suppressive Fire is upgraded to Flattening Fire. Flattening Fire also knocks your target prone and disarms them." Tile="Abilities/sw_skill_flattening_fire.png" Foreground="y" Detail="B"></power>
+    <power Name="Wounding Fire" Cost="150" Attribute="Agility" Minimum="19" Class="Rifle_WoundingFire" Prereq="Rifle_DrawABead" Snippet="wounding fire" Description="You fire at a marked target. For each penetration on each shot that hits, your target bleeds 1 point of damage per round (save: 20 + max damage of the weapon). Then your target is unmarked." Tile="Abilities/sw_skill_wounding_fire.png" Foreground="y" Detail="B"></power>
+    <power Name="Disorienting Fire" Cost="200" Attribute="Agility" Minimum="25" Class="Rifle_DisorientingFire" Snippet="disorienting fire" Prereq="Rifle_DrawABead,Rifle_WoundingFire" Description="As long as your target can't see or hear any faction allies, Wounding Fire is upgraded to Disorienting Fire. Disorienting Fire also reduces your target's DV and MA by 4." Tile="Abilities/sw_skill_disorienting_fire.png" Foreground="y" Detail="B"></power>
+    <power Name="Sure Fire" Cost="150" Attribute="Agility" Minimum="19" Class="Rifle_SureFire" Prereq="Rifle_DrawABead" Snippet="sure fire" Description="You fire at a marked target with no accuracy penalty (the accuracy of your weapon still matters). Then your target is unmarked." Tile="Abilities/sw_skill_sure_fire.png" Foreground="y" Detail="B"></power>
+    <power Name="Beacon Fire" Cost="200" Attribute="Agility" Minimum="25" Class="Rifle_BeaconFire" Prereq="Rifle_DrawABead,Rifle_SureFire" Snippet="beacon fire" Description="As long as your target is flaming, luminous, or phosphorescent, Sure Fire is upgraded to Beacon Fire. Beacon Fire shots are also treated as critical hits." Tile="Abilities/sw_skill_beacon_fire.png" Foreground="y" Detail="B"></power>
+    <power Name="Ultra Fire" Cost="300" Attribute="Agility" Minimum="29" Class="Rifle_OneShot" Prereq="Rifle_DrawABead" Snippet="ultra fire" Description="Cooldown 100. You fire at a marked target. Your shot combines the effects of all the other Fire powers you have." Tile="Abilities/sw_skill_ultra_fire.png" Foreground="y" Detail="B"></power>
+  </skill>
+
+  <skill Name="Cooking and Gathering" Class="CookingAndGathering" Description="You are skilled at cooking and gathering meal ingredients." Cost="100" Attribute="Intelligence" Snippet="cooking and gathering" Tile="Abilities/sw_skill_cooking_and_gathering.png" Foreground="y" Detail="r">
+    <power Name="Meal Preparation" Cost="0" Attribute="Intelligence" Minimum="15" Class="CookingAndGathering_MealPreparation" Snippet="meal preparation" Description="While at a campfire, you can cook from recipes, choose up to two ingredients to cook with, and preserve fresh foods.
+Meals cooked from recipes bestow special status effects. Meals cooked with selected ingredients bestow dynamically-generated status effects.
+Preserved foods are used as meal ingredients." Tile="Abilities/sw_skill_meal_preperation.png" Foreground="y" Detail="r"></power>
+    <power Name="Harvestry" Cost="50" Attribute="Intelligence" Minimum="15" Class="CookingAndGathering_Harvestry" Snippet="harvestry" Description="You can harvest fresh ingredients and other usable parts from plants." Tile="Abilities/abil_harvest_toggle_off.bmp" Foreground="y" Detail="r"></power>
+    <power Name="Butchery" Cost="50" Attribute="Intelligence" Minimum="15" Class="CookingAndGathering_Butchery" Snippet="butchery" Description="You can butcher fresh ingredients and other usable parts from animal corpses." Tile="Abilities/abil_butcher_toggle_off.bmp" Foreground="y" Detail="r"></power>
+    <power Name="Spicer" Cost="50" Attribute="Intelligence" Minimum="17" Class="CookingAndGathering_Spicer" Snippet="spicing" Description="When you choose ingredients to cook with, you can choose up to three instead of two. Meals cooked with three ingredients bestow more powerful status effects." Tile="Abilities/sw_skill_spicer.png" Foreground="y" Detail="r"></power>
+    <power Name="Carbide Chef" Cost="100" Attribute="Intelligence" Minimum="17" Class="CookingAndGathering_CarbideChef" Snippet="the carbide chef" Description="Whenever you gain a level, and 5% of the time you explore a new map, you become inspired for two days. While inspired, the next time you cook a meal by choosing ingredients, you get a choice of three dynamically-generated effects to apply. You create a recipe for the chosen effect." Tile="Abilities/sw_skill_carbide_chef.png" Foreground="y" Detail="r"></power>
+  </skill>
+
+  <skill Name="Cudgel" Class="Cudgel" Description="You are skilled with crushing and bludgeoning weapons." Cost="50" Attribute="Strength" Snippet="the cudgel" Tile="Abilities/sw_skill_cudgel.png" Foreground="y" Detail="g">
+    <power Name="Cudgel Proficiency" Cost="0" Attribute="Strength" Minimum="0" Class="Cudgel_Expertise" Snippet="the cudgel" Description="You get +2 to hit with cudgels." Tile="Abilities/sw_skill_cudgel_proficiency.png" Foreground="y" Detail="g"></power>
+    <power Name="Bludgeon" Cost="150" Attribute="Strength" Minimum="17" Class="Cudgel_Bludgeon" Snippet="bludgeoning" Tile="Abilities/sw_skill_bludgeon.bmp"  Foreground="y" Detail="g" Description="Whenever you hit with a cudgel, there's a 50% chance to daze your opponent (-4 int, -4 agi, -10 movespeed) for 3-4 rounds. If you daze a dazed opponent, they're stunned for 1 round instead (cannot take actions and 0 DV)."></power>
+    <power Name="Charging Strike" Cost="100" Attribute="Strength" Minimum="19" Class="Cudgel_ChargingStrike" Prereq="Cudgel_Bludgeon,Tactics_Charge" Snippet="charging and striking" Description="When you charge with a cudgel and hit, you automatically daze your opponent. When you charge with an axe and hit, if you cleave their armor, they get an additional -1 penalty to their AV. If you have Dismember, your chance to dismember when charging with an axe is doubled." Tile="Abilities/sw_skill_cudgel_charging_strike.png" Foreground="y" Detail="g"></power>
+    <power Name="Conk" Cost="150" Attribute="Strength" Minimum="21" Class="Cudgel_Conk" Prereq="Cudgel_Bludgeon" Snippet="conking" Description="Activated; cooldown 10.
+You make an attack with a cudgel at an adjacent opponent. If you hit, you automatically daze them for 3-4 rounds. Dazing a dazed opponent stuns them. Conking a stunned opponent instead knocks them unconscious for 30-40 rounds (unconscious opponents wake up dazed when they take damage)." Tile="Abilities/abil_conk.bmp" Foreground="y" Detail="g"></power>
+    <power Name="Backswing" Cost="100" Attribute="Strength" Minimum="23" Class="Cudgel_Backswing" Snippet="the backswing" Description="Whenever you make a cudgel attack with your primary hand, there's a 25% chance you make an additional free attack with the same hand." Tile="Abilities/sw_skill_backswing.png" Foreground="y" Detail="g"></power>
+    <power Name="Slam" Cost="150" Attribute="Strength" Minimum="25" Class="Cudgel_Slam" Snippet="slamming" Description="Activated; cooldown 50. You make an attack with a cudgel at an adjacent opponent with +1 to your penetration roll. If you hit, you slam your opponent backwards up to 3 spaces, pushing other creatures and breaking through walls if their AVs are less than 5 times your Strength modifier. Opponents who get pushed are stunned for 1 round plus an additional round for each space pushed. Opponents who are pushed through or against walls take extra weapon damage for each wall. Gigantic opponents don't get pushed but are still stunned for 1 round. Destroys a wall or door if its AV is under 5 times your Strength modifier." Tile="Abilities/abil_slam.bmp" Foreground="y" Detail="g"></power>
+    <power Name="Demolish" Cost="300" Attribute="Strength" Minimum="29" Class="Cudgel_SmashUp" Prereq="Cudgel_Slam" Snippet="demolishing" Description="Activated; cooldown 100.
+For the next 5 rounds, your chance to daze with cudgel attacks is 100% and Slam has no cooldown. To use Demolish, Slam must be off cooldown, and using Demolish puts Slam on cooldown." Tile="Abilities/abil_demolish.bmp" Foreground="y" Detail="g"></power>
+  </skill>
+
+  <skill Name="Customs and Folklore" Class="Customs" Description="You are familiar with the customs and folklore of Qud." Cost="150" Attribute="Intelligence" Snippet="customs and folklore" Tile="Abilities/sw_skill_customs_and_folklore.png" Foreground="y" Detail="B">
+    <power Name="Tactful" Cost="0" Attribute="Intelligence" Minimum="19" Class="Customs_Tactful" Snippet="being tactful" Description="Whenever you begin the water ritual with a new creature, you gain 25 bonus reputation. If you purchase this power after you treat with a creature, you gain 25 bonus reputation the next time you treat with them." Tile="Abilities/sw_skill_tactful.png" Foreground="y" Detail="B"></power>
+    <power Name="Trash Divining" Cost="150" Attribute="Intelligence" Minimum="21" Class="Customs_TrashDivining" Snippet="trash divining" Description="Whenever you rifle through trash, there's a 5% chance you piece together clues and learn a random secret." Tile="Abilities/abil_trash_toggle_off.bmp" Foreground="y" Detail="B"></power>
+  </skill>
+
+  <skill Name="Single Weapon Fighting"
+          Cost="100"
+          Attribute="Agility|Strength"
+          Class="SingleWeaponFighting"
+          Snippet="single weapon fighting"
+          Description="You may choose not to make offhand attacks in exchange for mastery with a single weapon."
+          Tile="Abilities/sw_skill_single_weapon_fighting.png" Foreground="y" Detail="W">
+    <power Name="Opportune Attacks"
+            Cost="0"
+            Attribute="Agility|Strength"
+            Minimum="17|17"
+            Class="SingleWeaponFighting_OpportuneAttacks"
+            Snippet="opportune attacks"
+            Description="Whenever you score a critical hit with a melee weapon while single-weapon fighting, the cooldowns of up to two random weapon or shield skills are immediately refreshed." 
+           Tile="Abilities/sw_skill_opportune_attacks.png"  Foreground="y" Detail="W"/>
+    <power Name="Weapon Expertise"
+            Cost="150"
+            Attribute="Agility|Strength"
+            Minimum="21|21"
+            Class="SingleWeaponFighting_WeaponExpertise"
+            Snippet="single weapon expertise"
+            Description="Whenever you make a melee attack while single-weapon fighting, there's a 50% chance you immediately make a second attack for free." 
+           Tile="Abilities/sw_skill_weapon_expertise.png"  Foreground="y" Detail="W"/>
+    <power Name="Penetrating Strikes"
+            Cost="200"
+            Attribute="Agility|Strength"
+            Minimum="23|23"
+            Class="SingleWeaponFighting_PenetratingStrikes"
+            Snippet="penetrating strikes"
+            Description="While single-weapon fighting, your melee attacks always penetrate one extra time."
+            Tile="Abilities/sw_skill_penetrating_strikes.png"  Foreground="y" Detail="W"/>
+    <power Name="Weapon Mastery"
+            Cost="300"
+            Attribute="Agility|Strength"
+            Minimum="29|29"
+            Class="SingleWeaponFighting_WeaponMastery"
+            Prereq="SingleWeaponFighting_WeaponExpertise"
+            Snippet="single weapon mastery"
+            Description="Whenever you make a melee attack while single-weapon fighting, immediately make a second attack for free."
+            Tile="Abilities/sw_skill_weapon_mastery.png"  Foreground="y" Detail="W"/>
+  </skill>
+
+  <skill Name="Multiweapon Fighting" Class="Multiweapon_Fighting" Description="You are skilled at multiweapon fighting. Your chance to attack with offhand weapons is increased." Cost="150" Attribute="Agility" Snippet="dual wielding" Tile="Abilities/sw_skill_multiweapon_fighting.png"  Foreground="y" Detail="M">
+    <power Name="Flurry"
+            Cost="0"
+            Attribute="Agility|Strength"
+            Minimum="17|17"
+            Class="Multiweapon_Flurry"
+            Snippet="flurrying"
+            Description="Activated; cooldown 60. You make an attack with every weapon-wielding limb, including extra limbs granted by mutation or technology." 
+            Tile="Abilities/abil_flurry.bmp" Foreground="y" Detail="M"/>
+    <power Name="Multiweapon Proficiency"
+            Cost="0"
+            Attribute="Agility|Strength"
+            Minimum="17|17"
+            Class="Multiweapon_Proficiency"
+            Snippet="striking with the offhand"
+            Description="Your chance to strike with each of your offhand weapons is increased by 20%."
+            Tile="Abilities/sw_skill_multiweapon_proficiency.png" Foreground="y" Detail="M"/>
+    <power Name="Multiweapon Expertise"
+            Prereq="Multiweapon_Proficiency"
+            Cost="150"
+            Attribute="Agility|Strength"
+            Minimum="23|23"
+            Class="Multiweapon_Expertise"
+            Snippet="ambidexterity"
+            Description="Your chance to strike with each of your offhand weapons is increased by 35%."
+            Tile="Abilities/sw_skill_multiweapon_expertise.png" Foreground="y" Detail="M"/>
+    <power Name="Multiweapon Mastery"
+            Prereq="Multiweapon_Expertise"
+            Cost="200"
+            Attribute="Agility|Strength"
+            Minimum="27|27"
+            Class="Multiweapon_Mastery"
+            Snippet="multiweapon fighting"
+            Description="Your chance to strike with each of your offhand weapons is increased by 50%."
+            Tile="Abilities/sw_skill_multiweapon_mastery.png" Foreground="y" Detail="M"/>
+  </skill>
+
+  <skill Name="Endurance" Class="Endurance" Description="You are skilled at enduring harsh conditions and situations." Cost="100" Attribute="Toughness" Snippet="endurance" Tile="Abilities/sw_skill_endurance.png" Foreground="y" Detail="w">
+    <power Name="Shake It Off" Cost="0" Attribute="Toughness" Minimum="0" Class="Endurance_ShakeItOff" Snippet="shaking it off" Description="Each round you are dazed or stunned, you have a (Toughness-10)% chance to shake off the effect. You also take 25% less damage from poison." Tile="Abilities/sw_skill_shake_it_off.png" Foreground="y" Detail="w"></power>
+    <power Name="Swimming" Cost="100" Attribute="Toughness" Minimum="15" Class="Endurance_Swimming" Snippet="swimming" Description="Reduces the movement speed penalty when swimming (normally 50 points) by 25 points." Tile="Abilities/sw_skill_swimming.png" Foreground="y" Detail="w"></power>
+    <power Name="Poison Tolerance" Cost="100" Attribute="Toughness" Minimum="19" Class="Endurance_PoisonTolerance" Snippet="poison tolerance" Description="You take 25% less damage from poison." Tile="Abilities/sw_skill_poison_tolerance.png" Foreground="y" Detail="w"></power>
+    <power Name="Weathered" Cost="200" Attribute="Toughness" Minimum="21" Class="Endurance_Weathered" Snippet="weathering" Description="You take 15% less damage from heating and cooling effects. Additionally, the severities of effects that change your temperature are reduced by 15%." Tile="Abilities/sw_skill_weathered.png" Foreground="y" Detail="w"></power>
+    <power Name="Juicer" Cost="150" Attribute="Toughness" Minimum="23" Class="Endurance_Juicer" Snippet="juicing" Description="You may ingest one additional tonic without it reacting adversely to the tonic you have already ingested." Tile="Abilities/sw_skill_juicer.png" Foreground="y" Detail="w"></power>
+    <power Name="Calloused" Cost="200" Attribute="Toughness" Minimum="23" Class="Endurance_Calloused" Snippet="being calloused" Description="Your natural AV improves to 1." Tile="Abilities/sw_skill_calloused.png" Foreground="y" Detail="w"></power>
+    <power Name="Longstrider" Cost="250" Attribute="Toughness" Minimum="25" Class="Endurance_Longstrider" Snippet="longstriding" Description="You may sprint for an additional 10 turns." Tile="Abilities/sw_skill_longstrider.png" Foreground="y" Detail="w"></power>
+  </skill>
+
+  <skill Name="Physic" Class="Physic" Description="You are skilled at physicking." Cost="50" Attribute="Intelligence" Snippet="physic" Tile="Abilities/sw_skill_physic.png" Foreground="y" Detail="R">
+    <power Name="Staunch Wounds" Cost="0" Attribute="Intelligence" Minimum="0" Class="Physic_StaunchWounds" Snippet="staunching wounds" Description="Bandages you apply are much more effective at stopping bleeding." Tile="Abilities/sw_skill_staunch_wounds.png" Foreground="y" Detail="R"></power>
+    <power Name="Nostrums" Cost="100" Attribute="Intelligence" Minimum="21" Class="Physic_Nostrums" Snippet="brewing nostrums" Description="You can treat bleeding, poison, illness, and disease onset for you and your companions at a campfire." Tile="Abilities/sw_skill_nostrums.png" Foreground="y" Detail="R"></power>
+    <power Name="Amputate Limb" Cost="50" Attribute="Intelligence" Minimum="23" Class="Physic_AmputateLimb" Snippet="amputating limbs" Description="You can voluntarily amputate your own limbs and the limbs of infected companions." Tile="Abilities/abil_amputate_limb.bmp" Foreground="y" Detail="R"></power>
+    <power Name="Apothecary" Cost="100" Attribute="Intelligence" Minimum="25" Class="Physic_Apothecary" Snippet="administering healing" Description="Healing tonics you apply last an extra round." Tile="Abilities/sw_skill_apothecary.png" Foreground="y" Detail="R"></power>
+  </skill>
+
+  <skill Name="Heavy Weapon" Class="HeavyWeapons" Description="You are skilled with heavy weapons." Cost="100" Attribute="Strength" Snippet="heavy weapons" Tile="Abilities/sw_skill_heavy_weapon.png" Foreground="y" Detail="C">
+    <power Name="Strapping Shoulders" Cost="0" Attribute="Strength" Minimum="19" Class="HeavyWeapons_StrappingShoulders" Snippet="the strapping shoulder" Description="You shoulder your weapons more effectively. Heavy weapons count for half their weight toward your encumbrance." Tile="Abilities/sw_skill_strapping_shoulders.png" Foreground="y" Detail="C"></power>
+    <power Name="Tank" Cost="150" Attribute="Strength" Minimum="23" Class="HeavyWeapons_Tank" Snippet="tanking" Description="You suffer no movement penalty while wielding a heavy weapon." Tile="Abilities/sw_skill_tank.png" Foreground="y" Detail="C"></power>
+    <power Name="Sweep" Cost="200" Attribute="Strength" Minimum="27" Class="HeavyWeapons_Sweep" Snippet="sweeping a gun back and forth" Description="You fire 5 shots with your heavy weapon, sweeping over a 90 degree cone. Your heavy weapon is reloaded before each shot." Tile="Abilities/abil_sweep.bmp" Foreground="y" Detail="C"></power>
+  </skill>
+
+  <skill Name="Long Blade" Class="LongBlades" Description="You are skilled with long thrusting and slashing blades." Cost="100" Attribute="Agility" Snippet="the long blade" Tile="Abilities/sw_skill_long_blade.png" Foreground="y" Detail="Y">
+    <power Name="Long Blade Proficiency" Cost="0" Attribute="Strength" Minimum="0" Class="LongBladesProficiency" Snippet="the long blade" Description="You gain access to two stances.
+Aggressive stance: With a long blade in your primary hand, your long blade and short blade attacks gain +1 to your penetration roll but -2 to hit.
+Defensive stance: While wielding a long blade in your primary hand, you gain +2 DV." Tile="Abilities/sw_skill_long_blade_proficiency.png" Foreground="y" Detail="Y"></power>
+    <power Name="Lunge" Cost="200" Attribute="Agility" Minimum="17" Class="LongBladesLunge" Snippet="lunging" Description="Activated; cooldown 15.
+Aggressive stance: Lunge through an empty space at an opponent and attack with +2 to your penetration roll. You must move through the empty space.
+Defensive stance: Attack an opponent then lunge backward 2 spaces.
+Dueling stance: Attack an opponent with +1 to your penetration roll. The attack is guaranteed to hit and penetrate at least once." Tile="Abilities/abil_lunge.bmp" Foreground="y" Detail="Y"></power>
+    <power Name="Swipe" Cost="200" Attribute="Strength" Minimum="17" Class="LongBladesSwipe" Snippet="swiping" Description="Activated; cooldown 15.
+Aggressive stance: Make an attack against all adjacent opponents.
+Defensive stance: Push all adjacent creatures back 1 space and attempt to trip opponents (strength/agility save; difficulty 30).
+Dueling stance: Attack an opponent and attempt to disarm them (strength save; difficulty 25 + your Agi modifier). The attack is guaranteed to hit and penetrate at least once." Tile="Abilities/abil_swipe.bmp" Foreground="y" Detail="Y"></power>
+    <power Name="Dueling Stance" Cost="200" Attribute="Intelligence" Minimum="17" Class="LongBladesDuelingStance" Snippet="dueling stance" Description="You gain access to dueling stance. While wielding a long blade in your primary hand, you get +2 to hit with long blades and short blades." Tile="Abilities/abil_dueling_stance_toggle_off.bmp" Foreground="y" Detail="Y"></power>
+    <power Name="Improved Aggressive Stance" Cost="100" Attribute="Strength" Minimum="23" Class="LongBladesImprovedAggressiveStance" Snippet="improved aggressive stance" Description="Your penetration bonus in aggressive stance is increased to +2, but your to-hit penalty is increased to -3." Tile="Abilities/sw_skill_improved_aggressive_stance.png" Foreground="y" Detail="Y"></power>
+    <power Name="Improved Defensive Stance" Cost="100" Attribute="Agility" Minimum="23" Class="LongBladesImprovedDefensiveStance" Snippet="improved defensive stance" Description="Your DV bonus in defensive stance is increased to +3." Tile="Abilities/sw_skill_improved_defensive_stance.png" Foreground="y" Detail="Y"></power>
+    <power Name="Improved Dueling Stance" Cost="100" Attribute="Intelligence" Minimum="21" Class="LongBladesImprovedDuelistStance" Prereq="LongBladesDuelingStance" Snippet="improved dueling stance" Description="Your to-hit bonus in dueling stance is increased to +3." Tile="Abilities/sw_skill_improved_dueling_stance.png" Foreground="y" Detail="Y"></power>
+    <power Name="En Garde!" Cost="300" Attribute="Strength,Agility|Agility,Strength" Minimum="29,23|29,23" Class="LongBladesDeathblow" Snippet="yelling 'en garde!'" Description="Activated; cooldown 100. For the next 10 rounds, Lunge and Swipe have no cooldown." Tile="Abilities/abil_engarde.bmp" Foreground="y" Detail="Y"></power>
+  </skill>
+
+  <skill Name="Persuasion" Class="Persuasion" Description="You are skilled at convincing others." Cost="100" Attribute="Ego" Snippet="persuasion" Tile="Abilities/sw_skill_persuasion.png" Foreground="y" Detail="m">
+    <power Name="Menacing Stare" Cost="0" Attribute="Ego" Minimum="17" Class="Persuasion_MenacingStare" Snippet="the menacing stare" Description="You stare down a nearby opponent and send them fleeing in terror." Tile="Abilities/abil_menacing_stare.bmp" Foreground="y" Detail="m"></power>
+    <power Name="Intimidate" Cost="200" Attribute="Ego" Minimum="17" Class="Persuasion_Intimidate" Snippet="intimidating" Description="Cooldown 50. You try to terrify adjacent, hostile creatures (1d8 + [Ego modifier] penetration roll vs. MA). On success, a frightened creature flees from you for 6d4 rounds." Tile="Abilities/abil_intimidate.bmp" Foreground="y" Detail="m"></power>
+    <power Name="Berate" Cost="150" Attribute="Ego" Minimum="19" Class="Persuasion_Berate" Snippet="berating" Description="Cooldown 50. You shame a nearby creature for 6d6 rounds, giving it a -4 penalty to DV, to-hit, Ego, Willpower and a -10% penalty to quickness." Tile="Abilities/abil_berate.bmp" Foreground="y" Detail="m"></power>
+    <power Name="Snake Oiler" Cost="150" Attribute="Ego" Minimum="19" Class="Persuasion_SnakeOiler" Snippet="hustling" Description="For purposes of bartering, your ego is treated as though it were 4 points higher." Tile="Abilities/sw_skill_snake_oiler.png" Foreground="y" Detail="m"></power>
+    <power Name="Proselytize" Cost="300" Attribute="Ego" Minimum="23" Class="Persuasion_Proselytize" Snippet="proselytizing" Description="You persuade an intelligent creature to join you." Tile="Abilities/abil_proselytize.bmp" Foreground="y" Detail="m"></power>
+    <power Name="Inspiring Presence" Cost="250" Attribute="Ego" Minimum="25" Class="Persuasion_InspiringPresence" Snippet="being inspiring" Description="Your words embolden your companions." Tile="Abilities/sw_skill_inspiring_presence.png" Foreground="y" Detail="m"></power>
+  </skill>
+
+  <skill Name="Pistol" Class="Pistol" Description="You are skilled with pistols of various kinds." Cost="100" Attribute="Agility" Snippet="the pistol" Tile="Abilities/sw_skill_pistol.png" Foreground="y" Detail="c">
+    <power Name="Steady Hand" Cost="0" Attribute="Agility" Minimum="0" Class="Pistol_SteadyHands" Snippet="the pistol" Description="For purposes of determining your accuracy with pistols, your agility is treated as if it were 4 points higher." Tile="Abilities/sw_skill_steady_hand.png" Foreground="y" Detail="c"></power>
+    <power Name="Akimbo" Cost="150" Attribute="Agility" Minimum="17" Class="Pistol_Akimbo" Snippet="akimbo" Description="Whenever you make a ranged attack while wielding multiple guns, you fire a shot with each of them." Tile="Abilities/abil_akimbo_toggle_off.bmp" Foreground="y" Detail="c"></power>
+    <power Name="Weak Spotter" Cost="150" Attribute="Agility" Minimum="19" Class="Pistol_WeakSpotter" Snippet="spotting weakness" Description="You are 5% more likely to score critical hits with pistols (standard chance is 5%)." Tile="Abilities/sw_skill_weak_spotter.png" Foreground="y" Detail="c"></power>
+    <power Name="Sling and Run" Cost="50" Attribute="Agility" Minimum="21" Class="Pistol_SlingAndRun" Snippet="slinging and running" Description="You receive no accuracy penalties for firing pistols while running." Tile="Abilities/sw_skill_sling_and_run.png" Foreground="y" Detail="c"></power>
+    <power Name="Disarming Shot" Cost="100" Attribute="Agility" Minimum="23" Class="Pistol_DisarmingShot" Snippet="disarming with a gun" Description="You have an agility-based chance to disarm your opponent when you score a hit with a pistol." Tile="Abilities/sw_skill_disarming_shot.png" Foreground="y" Detail="c"></power>
+    <power Name="Dead Shot" Cost="200" Attribute="Agility" Minimum="25" Class="Pistol_DeadShot" Snippet="critical aim" Description="Critical hits you score with pistols are more deadly." Tile="Abilities/sw_skill_dead_shot.png" Foreground="y" Detail="c"></power>
+    <power Name="Empty the Clips" Cost="300" Attribute="Agility" Minimum="27" Class="Pistol_EmptyTheClips" Snippet="emptying the clips" Description="Cooldown 200. For 20 rounds, firing a pistol only takes half a round instead of a full round." Tile="Abilities/abil_empty_the_clips.bmp" Foreground="y" Detail="c"></power>
+    <power Name="Fastest Gun in the Rust" Cost="400" Attribute="Agility" Minimum="29" Class="Pistol_FastestGun" Snippet="the lightning-quick draw" Description="The action cost of firing pistols is reduced by 25%." Tile="Abilities/sw_skill_fastest_gun_in_the_rust.png" Foreground="y" Detail="c"></power>
+  </skill>
+
+  <skill Name="Self-discipline" Class="Discipline" Description="You are skilled at maintaining self-discipline." Cost="150" Attribute="Willpower" Snippet="self-discipline" Tile="Abilities/sw_skill_self_discipline.png" Foreground="y" Detail="g">
+    <power Name="Meditate" Cost="0" Attribute="Willpower" Minimum="0" Class="Discipline_Meditate" Snippet="meditation" Description="While meditating, you regenerate three times as fast, and negative status effects wear out three times as fast. The only action you can take while meditating is Wait. You stop meditating if you take damage in a single round exceeding (Willpower*3)-60. If you rest for 10 or more turns, you automatically begin meditating." Tile="Abilities/abil_meditate.bmp" Foreground="y" Detail="g"></power>
+    <power Name="Fasting Way" Cost="50" Attribute="Willpower" Minimum="17" Class="Discipline_FastingWay" Snippet="fasting" Description="You hunger and thirst at one-half the normal rate.
+Metabolic effects from meals last twice as long." Tile="Abilities/sw_skill_fasting_way.png" Foreground="y" Detail="g"></power>
+    <power Name="Iron Mind" Cost="100" Attribute="Willpower" Minimum="21" Class="Discipline_IronMind" Snippet="the iron mind" Description="Each round you are confused, you have a (Willpower-10)% chance to shake off the effect." Tile="Abilities/sw_skill_iron_mind.png" Foreground="y" Detail="g"></power>
+    <power Name="Lionheart" Cost="100" Attribute="Willpower" Minimum="21" Class="Discipline_Lionheart" Snippet="the lionheart" Description="Each round you are terrified, you have a (Willpower-10)% chance to shake off the effect." Tile="Abilities/sw_skill_lionheart.png" Foreground="y" Detail="g"></power>
+    <power Name="Conatus" Cost="150" Attribute="Willpower" Minimum="23" Class="Discipline_Conatus" Snippet="conatus" Description="You may sprint for an additional 10 turns." Tile="Abilities/sw_skill_conatus.png" Foreground="y" Detail="g"></power>
+    <power Name="Mind over Body" Cost="150" Attribute="Willpower" Minimum="29" Class="Discipline_MindOverBody" Snippet="putting the mind over the body" Description="You hunger and thirst at one-sixth rate.
+Metabolic effects from meals last six times as long.
+You suffer no penalty for becoming famished." Tile="Abilities/sw_skill_mind_over_body.png" Foreground="y" Detail="g"></power>
+  </skill>
+
+  <skill Name="Shield" Class="Shield" Description="You are skilled at wielding shields." Cost="100" Attribute="Strength" Snippet="the shield" Tile="Abilities/sw_skill_shield.png" Foreground="y" Detail="b">
+    <power Name="Block" Cost="0" Attribute="Strength" Minimum="0" Class="Shield_Block" Snippet="blocking" Description="As long as you wield a shield, there is a 50% chance you block one melee attack per round. When you block an attack, you add the shield's AV bonus to your AV for that attack. If you equip multiple shields, the one block per round limit is per shield, and you only can attempt to block a given attack once, using your best usable shield." Tile="Abilities/sw_skill_block.png" Foreground="y" Detail="b"></power>
+    <power Name="Shield Slam" Cost="100" Attribute="Strength" Minimum="17" Class="Shield_Slam" Snippet="shield slamming" Description="Activated; cooldown 40. You attempt to knock an opponent down and deal (Str modifier)d2 + your shield's AV bonus in damage. Your opponent gets a chance to resist (strength save; difficulty 20 + your Str modifier). Whenever you charge an opponent with a shield equipped, you get a free Shield Slam attack against them." Tile="Abilities/abil_shield_slam.bmp" Foreground="y" Detail="b"></power>
+    <power Name="Deft Blocking" Cost="200" Attribute="Agility" Minimum="19" Class="Shield_DeftBlocking" Snippet="blocking deftly" Description="Your chance to block with a shield improves to 75%." Tile="Abilities/sw_skill_deft_blocking.png" Foreground="y" Detail="b"></power>
+    <power Name="Swift Blocking" Cost="200" Attribute="Agility" Minimum="19" Class="Shield_SwiftBlocking" Snippet="blocking swiftly" Description="You may block an additional attack per round per shield." Tile="Abilities/sw_skill_swift_blocking.png" Foreground="y" Detail="b"></power>
+    <power Name="Staggering Block" Cost="200" Attribute="Strength" Minimum="21" Class="Shield_StaggeringBlock" Snippet="staggering blocks" Description="Whenever you block an opponent's attack, there is a (Strength*2)-35% chance that your opponent is stunned for 1d2 rounds." Tile="Abilities/sw_skill_staggering_block.png" Foreground="y" Detail="b"></power>
+    <power Name="Shield Wall" Cost="200" Attribute="Willpower" Minimum="25" Class="Shield_ShieldWall" Snippet="forming a wall with your shield" Description="For the next three rounds, you automatically block all incoming melee attacks (may not be used with bucklers)." Tile="Abilities/abil_shield_wall.bmp" Foreground="y" Detail="b"></power>
+  </skill>
+
+  <skill Name="Short Blade" Class="ShortBlades" Description="You are skilled with small one-handed knives and blades." Cost="50" Attribute="Agility" Snippet="the short blade" Tile="Abilities/sw_skill_short_blade.png" Foreground="y" Detail="m">
+    <power Name="Short Blade Expertise" Cost="0" Attribute="Agility" Minimum="0" Class="ShortBlades_Expertise" Snippet="the short blade" Description="You get +1 to hit with short blades. Also, the action costs of attacking with a short blade in your primary hand is reduced by 25%." Tile="Abilities/sw_skill_short_blade_expertise.png" Foreground="y" Detail="m"></power>
+    <power Name="Bloodletter" Cost="150" Attribute="Agility" Minimum="17" Class="ShortBlades_Bloodletter" Snippet="bloodletting" Description="Your short blade attacks that penetrate have a 75% chance to cause your opponent to bleed (0-1 damage per turn. toughness save; difficulty 20 + your Agi modifier). The opponent saves to stop bleeding each round, and the save difficulty decreases by 1 each round. This effect can stack a number of times equal to 1 plus your Agi modifier." Tile="Abilities/sw_skill_bloodletter.png" Foreground="y" Detail="m"></power>
+    <power Name="Jab" Cost="100" Attribute="Agility" Minimum="17" Class="ShortBlades_Jab" Snippet="jabbing" Description="Whenever you make an offhand attack with a short blade, you immediately make another attack with that same weapon. Flurry attacks do not trigger this." Tile="Abilities/sw_skill_jab.png" Foreground="y" Detail="m"></power>
+    <power Name="Hobble" Cost="150" Attribute="Agility" Minimum="21" Class="ShortBlades_Hobble" Snippet="hobbling" Description="You make an attack with a short blade in your primary hand, looking for a weak spot in your opponent's armor. If you hit, you penetrate exactly once and hobble them (-50% movespeed for 16-20 rounds)." Tile="Abilities/abil_hobble.bmp" Foreground="y" Detail="m"></power>
+    <power Name="Pointed Circle" Prereq="Tactics_Juke" Cost="100" Attribute="Agility" Minimum="23" Class="ShortBlades_PointedCircle" Snippet="the pointed circle" Description="Whenever you juke an opponent while wielding a short blade in your primary hand, you make a free attack. If you have Bloodletter, the attack's chance to cause bleeding is 100%." Tile="Abilities/sw_skill_pointed_circle.png" Foreground="y" Detail="m"></power>
+    <power Name="Rejoinder" Cost="250" Attribute="Agility" Minimum="25" Class="ShortBlades_Rejoinder" Snippet="rejoindering" Description="Once per turn, when an opponent misses you with a melee attack, there's a 40% chance you make a free attack with a short blade you're wielding." Tile="Abilities/abil_rejoinder_toggle_off.bmp" Foreground="y" Detail="m"></power>
+    <power Name="Shank" Cost="250" Attribute="Agility" Minimum="27" Class="ShortBlades_Shank" Snippet="shanking" Description="Activated; cooldown 10 (primary) or 20 (offhand). You make a melee attack with a short blade in your primary hand (preferred) or offhand. If you hit, the attack gets +2 to penetration rolls for each negative status effect your opponent suffers from." Tile="Abilities/abil_shank.bmp" Foreground="y" Detail="m"></power>
+  </skill>
+
+  <skill Name="Tactics" Class="Tactics" Description="You are aware of basic combat tactics." Cost="50" Attribute="Agility" Snippet="tactics" Tile="Abilities/sw_skill_tactics.png" Foreground="y" Detail="B">
+    <power Name="Hurdle" Cost="0" Attribute="Agility" Minimum="0" Class="Tactics_Hurdle" Snippet="hurdling" Description="You receive no penalty to your DV while sprinting and can jump without interrupting your sprint." Tile="Abilities/sw_skill_hurdle.png" Foreground="y" Detail="B"></power>
+    <power Name="Deft Throwing" Cost="50" Attribute="Agility" Minimum="10" Class="Tactics_Throwing" Snippet="throwing" Description="Your throw range is increased by 3 and your throw variance is halved when throwing at a target inside your throw range." Tile="Abilities/sw_skill_deft_throwing.png" Foreground="y" Detail="B"></power>
+    <power Name="Charge" Cost="150" Attribute="Strength" Minimum="17" Class="Tactics_Charge" Snippet="charging" Description="You charge forward two or three squares and perform a melee attack with +1 to your penetration roll." Tile="Abilities/abil_charge.bmp" Foreground="y" Detail="B"></power>
+    <power Name="Kickback" Cost="50" Attribute="Strength" Minimum="19" Class="Tactics_Kickback" Snippet="kicking back" Description="Whenever you fire a missile weapon at a target in melee range, you attempt to kick the target backwards." Tile="Abilities/sw_skill_kickback.png" Foreground="y" Detail="B"></power>
+    <power Name="Juke" Cost="200" Attribute="Agility" Minimum="21" Class="Tactics_Juke" Snippet="juking" Description="Activated; cooldown 40. You move one square at no action cost. You may swap squares with a hostile opponent." Tile="Abilities/abil_juke.bmp" Foreground="y" Detail="B"></power>
+  </skill>
+
+  <skill Name="Tinkering" Class="Tinkering" Description="You are skilled at examining, building, repairing and modding artifacts." Cost="100" Attribute="Intelligence" Snippet="tinkering" Tile="Abilities/sw_skill_tinkering.png" Foreground="y" Detail="c">
+    <power Name="Gadget Inspector" Cost="0" Attribute="Intelligence" Minimum="15" Class="Tinkering_GadgetInspector" Snippet="inspecting gadgets" Description="You are much more successful at examining artifacts, and you can deploy wiring." Tile="Abilities/sw_skill_gadget_inspector.png" Foreground="y" Detail="c"></power>
+    <power Name="Disassemble" Cost="100" Attribute="Intelligence" Minimum="15" Class="Tinkering_Disassemble" Snippet="disassembling" Description="You can disassemble scrap and artifacts for bits. You get the most significant bit from the item schematic plus a 50% chance to receive each remaining bit." Tile="Abilities/sw_skill_disassemble.png" Foreground="y" Detail="c"></power>
+    <power Name="Reverse Engineer" Cost="100" Prereq="Tinkering_Disassemble" Attribute="Intelligence" Minimum="25" Class="Tinkering_ReverseEngineer" Snippet="reverse engineering" Description="Whenever you disassemble an item, you have a 25% chance to learn how to build the item. If the item was modded, you also have a 15% chance per mod to learn the mod." Tile="Abilities/sw_skill_reverse_engineer.png" Foreground="y" Detail="c"></power>
+    <power Name="Scavenger" Cost="100" Attribute="Intelligence" Minimum="15" Class="Tinkering_Scavenger" Snippet="scavenging" Description="Whenever you step over garbage, you astutely rifle through it and occasionally discover scrap. Additionally, you harvest extra scrap from robots you destroy." Tile="Abilities/sw_skill_scavenger.png" Foreground="y" Detail="c"></power>
+    <power Name="Repair" Cost="100" Attribute="Intelligence" Minimum="17" Class="Tinkering_Repair" Snippet="repairing" Description="You may repair broken items with Bits." Tile="Items/sw_toolbox_large.bmp" Foreground="y" Detail="c"></power>
+    <power Name="Deploy Turret" Cost="100" Attribute="Intelligence" Minimum="17" Class="Tinkering_DeployTurret" Snippet="deploying turrets" Description="You may deploy missile weapons as static turrets." Tile="Abilities/abil_deploy_turret.bmp" Foreground="y" Detail="c"></power>
+    <power Name="Lay Mine / Set Bomb" Cost="50" Attribute="Intelligence" Minimum="17" Class="Tinkering_LayMine" Snippet="laying mines and setting bombs" Description="You may lay down grenades as mines or set them as bombs." Tile="Abilities/abil_lay_mine.bmp" Foreground="y" Detail="c"></power>
+    <power Name="Tinker I" Cost="100" Attribute="Intelligence" Minimum="19" Class="Tinkering_Tinker1" Snippet="tinkering" Description="You may build items from low-tier schematics and you get 1 free schematic. You can also recharge energy cells and capacitors." Tile="Abilities/sw_skill_tinker_1.png" Foreground="y" Detail="c"></power>
+    <power Name="Tinker II" Cost="200" Prereq="Tinkering_Tinker1" Attribute="Intelligence" Minimum="23" Class="Tinkering_Tinker2" Snippet="advanced tinkering" Description="You may build items from medium-tier schematics and you get 1 free schematic." Tile="Abilities/sw_skill_tinker_2.png" Foreground="y" Detail="c"></power>
+    <power Name="Tinker III" Cost="300" Prereq="Tinkering_Tinker2" Attribute="Intelligence" Minimum="29" Class="Tinkering_Tinker3" Snippet="masterful tinkering" Description="You may build items from high-tier schematics and you get 1 free schematic." Tile="Abilities/sw_skill_tinker_3.png" Foreground="y" Detail="c"></power>
+  </skill>
+
+  <skill Name="Wayfaring" Class="Survival" Description="You are skilled at wilderness survival." Cost="100" Attribute="Intelligence" Snippet="wayfaring" Tile="Abilities/sw_skill_wayfaring.png" Foreground="y" Detail="w">
+    <power Name="Make Camp" Cost="0" Attribute="Intelligence" Minimum="15" Class="Survival_Camp" Snippet="making camp" Description="Start a campfire for cooking meals and preserving foods." Tile="Items/sw_campfire.bmp" Foreground="y" Detail="w"></power>
+    <power Name="Mind's Compass" Cost="0" Attribute="Intelligence" Minimum="15" Class="Survival_Trailblazer" Snippet="the mind's compass" Description="Doubles the chance of regaining your bearings when you are lost.
+Reduces chance of getting lost by about 15%.
+You travel on the world map twice as quickly." Tile="Abilities/sw_skill_minds_compass.png" Foreground="y" Detail="w"></power>
+    <power Name="Wilderness Lore: Flower Fields" Cost="25" Attribute="Intelligence" Minimum="15" Class="Survival_PlainsSurvival" Snippet="navigating the flower fields" Description="Doubles the chance of interesting encounters while traveling through the flower fields on the world map.
+Reduces the chance of getting lost in the flower fields from base 12% to 1%.
+On the world map, you travel through the flower fields twice as quickly." Tile="Abilities/sw_skill_wayfaring_flowers.png" Foreground="y" Detail="w"></power>
+    <power Name="Wilderness Lore: Marshes" Cost="50" Attribute="Intelligence" Minimum="15" Class="Survival_SaltmarshSurvival" Snippet="navigating the marshes" Description="Doubles the chance of interesting encounters while traveling through the salt marshes and watervine fields on the world map.
+Reduces the chance of getting lost in the salt marshes and watervine fields from base 12% to 1%.
+On the world map, you travel through the salt marshes and watervine fields twice as quickly." Tile="Abilities/sw_skill_wayfaring_marshes.png" Foreground="y" Detail="w"></power>
+    <power Name="Wilderness Lore: Hills and Mountains" Cost="50" Attribute="Intelligence" Minimum="17" Class="Survival_MountainsSurvival" Snippet="navigating the hills and mountains" Description="Doubles the chance of interesting encounters while traveling through the hills and mountains on the world map.
+Reduces the chance of getting lost in the hills and mountains from base 12% to 1%.
+On the world map, you travel through the hills and mountains twice as quickly." Tile="Abilities/sw_skill_hills.png" Foreground="y" Detail="w"></power>
+    <power Name="Wilderness Lore: Canyons" Cost="50" Attribute="Intelligence" Minimum="17" Class="Survival_DesertCanyonSurvival" Snippet="navigating the desert canyons" Description="Doubles the chance of interesting encounters while traveling through the desert canyons on the world map.
+Reduces the chance of getting lost in the desert canyons from base 12% to 1%.
+On the world map, you travel through the desert canyons twice as quickly." Tile="Abilities/sw_skill_wayfaring_canyons.png" Foreground="y" Detail="w"></power>
+    <power Name="Wilderness Lore: Salt Dunes" Cost="50" Attribute="Intelligence" Minimum="19" Class="Survival_SaltDesertSurvival" Snippet="navigating the salt desert" Description="Doubles the chance of interesting encounters while traveling through the salt dunes on the world map.
+Reduces the chance of getting lost in the salt dunes from base 10% to 1%.
+On the world map, you travel through the salt dunes twice as quickly." Tile="Abilities/sw_skill_wayfaring_dunes.png" Foreground="y" Detail="w"></power>
+    <power Name="Wilderness Lore: Jungles" Cost="50" Attribute="Intelligence" Minimum="19" Class="Survival_JungleSurvival" Snippet="navigating the jungles" Description="Doubles the chance of interesting encounters while traveling through the jungles on the world map.
+Reduces the chance of getting lost in the jungles from base 12% to 1%.
+On the world map, you travel through the jungles twice as quickly." Tile="Abilities/sw_skill_wayfaring_flowers.png" Foreground="y" Detail="w"></power>
+    <power Name="Wilderness Lore: Rivers and Lakes" Cost="50" Attribute="Intelligence" Minimum="19" Class="Survival_RiversLakesSurvival" Snippet="navigating the rivers and lakes" Description="Doubles the chance of interesting encounters while traveling across rivers and lakes on the world map.
+Reduces the chance of getting lost in rivers and lakes from base 12% to 1%.
+On the world map, you travel across rivers and lakes twice as quickly." Tile="Abilities/sw_skill_wayfaring_rivers.png" Foreground="y" Detail="w"></power>
+    <power Name="Wilderness Lore: Ruins" Cost="50" Attribute="Intelligence" Minimum="21" Class="Survival_RuinsSurvival" Snippet="navigating ruins" Description="Doubles the chance of interesting encounters while traveling through chrome ruins on the world map.
+Reduces the chance of getting lost in ruins from base 12% to 1%.
+On the world map, you travel through ruins twice as quickly." Tile="Abilities/sw_skill_wayfaring_ruins.png" Foreground="y" Detail="w"></power>
+  </skill>
+
+  <skill Name="Nonlinearity" Class="Nonlinearity" Hidden="true" Description="You extend." Cost="0" Attribute="Ego" Snippet="nonlinearity" Tile="Mutations/precognition.bmp" Foreground="K" Detail="m">
+    <power Name="Tomorrowful" Cost="200" Attribute="Ego" Minimum="30" Class="Nonlinearity_Tomorrowful" Snippet="experiencing tomorrow today" Description="Your precognitive visions last twice as long." Tile="Mutations/precognition.bmp" Foreground="K" Detail="m"/>
+  </skill>
+
+</skills>

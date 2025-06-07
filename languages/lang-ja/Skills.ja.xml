@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<skills Lang="ja" Encoding="utf-8" Load="Merge">
+
+  <skill Name="Acrobatics" DisplayName="[届：\TODO]Acrobatics" Description="[届：\TODO]You are skilled at acrobatics." Snippet="[届：\TODO]acrobatics">
+    <power Name="Swift Reflexes" DisplayName="[届：\TODO]Swift Reflexes" Snippet="[届：\TODO]reacting swiftly" Description="[届：\TODO]You gain a +5 bonus to your DV when flinching away from missile attacks."></power>
+    <power Name="Spry" DisplayName="[届：\TODO]Spry" Snippet="[届：\TODO]being spry" Description="[届：\TODO]You gain a +2 bonus to your DV."></power>
+    <power Name="Jump" DisplayName="[届：\TODO]Jump" Snippet="[届：\TODO]jumping" Description="[届：\TODO]You jump into an unoccupied square within range 2. You cannot jump over a square occupied by a creature, unless you have an ability (such as flight) that augments your jump."></power>
+    <power Name="Tumble" DisplayName="[届：\TODO]Tumble" Snippet="[届：\TODO]tumbling" Description="[届：\TODO]You gain a +1 bonus to your DV. Additionally, Juke's cooldown is reduced to 20."></power>
+  </skill>
+
+  <skill Name="Axe" DisplayName="[届：\TODO]Axe" Description="[届：\TODO]You are skilled with axes." Snippet="[届：\TODO]the axe">
+    <power Name="Axe Proficiency" DisplayName="[届：\TODO]Axe Proficiency" Snippet="[届：\TODO]the axe" Description="[届：\TODO]You get +2 to hit with axes."></power>
+    <power Name="Cleave" DisplayName="[届：\TODO]Cleave" Snippet="[届：\TODO]cleaving" Description="[届：\TODO]Whenever you hit an opponent with an axe, there's a 75% chance you cleave their armor, giving them a -1 penalty to their AV. This penalty can stack a number of times up to half your Str modifier, rounded up, +1 on a critical hit."></power>
+    <power Name="Charging Strike" DisplayName="[届：\TODO]Charging Strike" Snippet="[届：\TODO]charging and striking" Description="[届：\TODO]When you charge with an axe and hit, if you cleave their armor, they get an additional -1 penalty to their AV. If you have Dismember, your chance to dismember when charging with an axe is doubled. When you charge with a cudgel and hit, you automatically daze your opponent."></power>
+    <power Name="Dismember" DisplayName="[届：\TODO]Dismember" Snippet="[届：\TODO]dismembering" Description="[届：\TODO]Activated; cooldown 30. Axe attack. If you hit and penetrate, you dismember one of their limbs at random and they start bleeding (1-2 damage per turn. toughness save; difficulty 35). Additionally, your axe attacks that penetrate have a percentage chance to dismember: 3% for one-handed axes and 6% for two-handed axes."></power>
+    <power Name="Hook and Drag" DisplayName="[届：\TODO]Hook and Drag" Snippet="[届：\TODO]hooking and dragging" Description="[届：\TODO]Activated; cooldown 50. You grab an opponent's limb with the heel of your axe. If successful, you pull your opponent with you as you move and make a free attack with your axe. Your opponent gets a chance to resist the move (strength save; difficulty 20 + your Str modifier) and a chance to break free at the start of their turn (same save). Lasts for 9 rounds or until you dismember the opponent."></power>
+    <power Name="Decapitate" DisplayName="[届：\TODO]Decapitate" Snippet="[届：\TODO]decapitating" Description="[届：\TODO]Heads are added to the list of possible limbs you can dismember. Chopping off the only head of a creature kills them instantly. If the creature has multiple heads, they start bleeding profusely (2-3 damage per turn. toughness save; difficulty 35)."></power>
+    <power Name="Berserk!" DisplayName="[届：\TODO]Berserk!" Snippet="[届：\TODO]going berserk" Description="[届：\TODO]Activated; cooldown 100.
+You enter a blood frenzy, and for 5 rounds your chance to dismember with axe attacks is 100%. To use Berserk, Dismember must be off cooldown, and using Berserk puts Dismember on cooldown."></power>
+  </skill>
+
+</skills>

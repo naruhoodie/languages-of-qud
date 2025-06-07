@@ -191,3 +191,24 @@
       </subtype>
     </category>
 
+<!-- Skills.xml -->
+<skills>
+  <!-- Note: DisplayName isn't supported yet! -->
+  <skill Name="<KEY>" DisplayName="<LOCALIZE>" Description="<LOCALIZE>" Snippet="<LOCALIZE>">
+    <power Name="<KEY>" DisplayName="<LOCALIZE>" Snippet="<LOCALIZE>" Description="<LOCALIZE>"></power>
+  </skill>
+</skills>
+
+<!-- Factions.xml -->
+<factions>
+  <!-- Note: DisplayName isn't processed when Visible="false" -->
+  <faction Name="<KEY>" DisplayName="<LOCALIZE>"></faction>
+</factions>
+
+<!-- SparkingBaetyls.xml -->
+<sparkingbaetyls>
+  <rewards>
+    <reward Name="<KEY>" Description="<LOCALIZE>" />
+  </rewards>
+</sparkingbaetyls>
+
