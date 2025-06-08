@@ -214,6 +214,21 @@
   </faction>
 </factions>
 
+<!-- Quests.xml -->
+<!-- in <quest> & <step>, have to copy Name to ID then change Name -->
+<quests>
+  <quest ID="<KEY>"
+         Name="<LOCALIZE>"
+         Accomplishment="<LOCALIZE>"
+         Hagiograph="<LOCALIZE>"
+         Gospel="<LOCALIZE,SPICE>" >
+    <step ID="<KEY>" Name="<LOCALIZE>">
+      <text><LOCALIZE></text>
+    </step>
+  </quest>
+</quests>
+
+
 <!-- SparkingBaetyls.xml -->
 <sparkingbaetyls>
   <rewards>

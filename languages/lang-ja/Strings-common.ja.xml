@@ -79,17 +79,46 @@ Comments should be deleted when copied to a new translation table.
   -->
   <string ID="glossary:weep">ジンワリ</string>
 
+<!-- NOTE: trying to avoid 人"(human) person" except when specifically a humanoid! -->
+  <string ID="glossary:villagers">村民,[村民\そんみん]</string>
+  <string ID="glossary:faction">派閥,[派閥\はばつ]</string><!-- use 閥 as a suffix -->
+  <string ID="glossary:baetyl">[聖石\ビーティル]</string>
+
 <!-- creatures -->
   <!-- "putus" - Latin for "pure, unadulterated" -->
-  <string ID="glossary:a Putus Templar">プトゥス・テンプル騎士団員</string>
+  <string ID="glossary:a Putus Templar (member)">プトゥス・テンプル騎士団員</string>
+  <string ID="glossary:(the) Putus Templar">プトゥス・テンプル騎士団</string>
   <string ID="glossary:mutated human">突然変異した人間,[突然変異\とつぜんへんい]した[人間\にんげん]</string>
   <string ID="glossary:True Kin">真の親族,[真\しん]の[親族\しんぞく]</string>
-  <string ID="glossary:snapjaw">パクッと口,パクッと[口\くち]</string>
-  <string ID="glossary:dromad">遊牧駝民,[遊牧\ゆうぼく][駝\だ][民\みん]</string>
+  <string ID="glossary:snapjaw (type)">パクッと口族,パクッと[口\くち][族\ぞく]</string>
+  <string ID="glossary:snapjaw (person)">パクッと口人,パクッと[口\くち][人\ひと]</string>
+  <string ID="glossary:goatfolk (type)">山羊族,[山羊\やぎ][族\ぞく]</string>
+  <string ID="glossary:goatfolk (person)">山羊人,[山羊\やぎ][人\ひと]</string>
+  <string ID="glossary:dromad (type)">駱駝族,[駱駝\らくだ][族\ぞく]</string>
+  <string ID="glossary:dromad (person)">駱駝人,[駱駝\らくだ][人\ひと]</string>
+<!--  <string ID="glossary:dromad">遊牧駝民,[遊牧\ゆうぼく][駝\だ][民\みん]</string> -->
+  <string ID="glossary:cannibal(s)">人食い人種,[人食\ひとぐ]い[人種\じんしゅ]</string>
+  <string ID="glossary:mysterious stranger">不思議な他所者,[不思議\ふしぎ]な[他所者\よそもの]</string>
+
+<!-- Hindren terms -->
+  <string ID="glossary:hindren"></string>
+  <!-- kendren - ones beyond our ken? -->
+  <string ID="glossary:kendren"></string>
+
+<!-- animals -->
+  <string ID="glossary:camel">駱駝,[駱駝\らくだ]</string><!-- base for "dromad" -->
   <string ID="glossary:baboon">ヒヒ</string>
   <string ID="glossary:clam">貝,[貝\かい]</string>
   <string ID="glossary:crab">蟹,[蟹\かに]</string>
-  <string ID="glossary:goatfolk">山羊族,[山羊\やぎ][族\ぞく]</string>
+  <string ID="glossary:bird">鳥,[鳥\とり]</string>
+  <string ID="glossary:fish">魚,[魚\さかな]</string>
+  <string ID="glossary:insect">昆虫,[昆虫\こんちゅう]</string>
+  <string ID="glossary:worm">蠕虫,[蠕虫\ぜんちゅう],ワーム</string>
+  <string ID="glossary:swine">豚,[豚\ぶた]</string>
+  <string ID="glossary:tortoise">亀,[亀\かめ]</string>
+  <string ID="glossary:arachnids">蜘蛛形類,[蜘蛛\クモ][形\がた][類\るい]</string>
+  <string ID="glossary:unshelled reptiles">殻がない爬虫類,[殻\から]がない[爬虫類\はちゅうるい]</string>
+  <string ID="glossary:winged mammals">有翼の哺乳類,[有翼\ゆうよく]の[哺乳類\ほにゅうるい]</string>
   <string ID="glossary:ape">類人猿,[類人猿\るいじんえん]</string>
   <string ID="glossary:Oboroqoru, Ape God">猿神オボロコル,[猿神\さるがみ]オボロコル</string>
 
@@ -101,7 +130,7 @@ Comments should be deleted when copied to a new translation table.
 <!-- place names -->
   <!-- from "al-Quds", Arabic for "Jerusalem" -->
   <string ID="glossary:Qud">クド</string>
-  <string ID="glossary:Caves of Qud">クドの洞窟</string>
+  <string ID="glossary:Caves of Qud">クドの洞窟,クドの[洞窟\どうくつ]</string>
   <!-- older English name for modern-day Jaffa -->
   <string ID="glossary:Joppa">ジョッパ</string>
   <string ID="glossary:Bethesda Susa">ベトザタ・スーサ</string>
@@ -131,7 +160,7 @@ Comments should be deleted when copied to a new translation table.
   <string ID="glossary:the Gyre">ウズ,[渦\ウズ]</string>
 
 <!-- Girsh -->
-  <!-- "girsh/qirsh" - Arabic for "shark", related to the verb "qarasha" (chew, gnash, nibble)
+  <!-- "girsh/qirsh" - Arabic for "shark", related to the verb "qarasha" (chew, gnash, nibble)?
   also a coin of multiple M. Eastern & N. African countries (etymologically unrelated) -->
   <string ID="glossary:Girsh">ガーシュ</string>
   <string ID="glossary:girshling">ガーシュ之子</string>

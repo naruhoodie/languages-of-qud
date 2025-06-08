@@ -270,8 +270,8 @@
       </templates>
     </namestyle>
 
-    <!-- syllables from ancient Macedonian & Persian? used for Sultan names -->
     <namestyle Name="Eater-jp" HyphenationChance="5" Format="AsIs">
+    <!-- syllables from ancient Macedonian & Persian? used for Sultan names -->
       <prefixes Amount="1">
         <prefix Name="" /><!-- Original="anti" -->
         <prefix Name="" /><!-- Original="arta" -->
@@ -1110,7 +1110,7 @@
       </infixes>
     </namestyle>
 
-    <namestyle Name="Snapjaw-ja" HyphenationChance="15" TwoNameChance="1" Format="AsIs">
+    <namestyle Name="Snapjaw" HyphenationChance="15" TwoNameChance="1" Format="AsIs">
       <prefixes Amount="0-2">
         <prefix Name="バル" /><!-- Original="bar" -->
         <prefix Name="バール" /><!-- Original="bawl" -->
@@ -1202,6 +1202,478 @@
       </templatevars>
     </namestyle>
 
+
+    <namestyle Name="Animal-ja" TwoNameChance="20" Format="TitleCase">
+      <scopes>
+        <scope Name="Faction" Faction="Beasts" Priority="50" Combine="true" />
+        <scope Name="Culture" Culture="Animal" Priority="50" Combine="true" />
+      </scopes>
+      <prefixes Amount="1">
+        <prefix Name="" />
+        <prefix Name="a" />
+        <prefix Name="ba" Weight="2" />
+        <prefix Name="bi" />
+        <prefix Name="da" />
+        <prefix Name="e" />
+        <prefix Name="fa" />
+        <prefix Name="ga" />
+        <prefix Name="he" />
+        <prefix Name="i" />
+        <prefix Name="ka" />
+        <prefix Name="kha" />
+        <prefix Name="khe" />
+        <prefix Name="na" />
+        <prefix Name="naf" />
+        <prefix Name="ne" />
+        <prefix Name="qa" />
+        <prefix Name="qe" />
+        <prefix Name="sa" />
+        <prefix Name="sha" />
+        <prefix Name="so" />
+        <prefix Name="su" />
+        <prefix Name="ta" Weight="2" />
+        <prefix Name="te" />
+        <prefix Name="tsi" />
+        <prefix Name="u" />
+        <prefix Name="wa" />
+        <prefix Name="y" />
+        <prefix Name="yy" />
+        <prefix Name="za" />
+      </prefixes>
+      <infixes Amount="0-3">
+        <infix Name="'" />
+        <infix Name="ba" />
+        <infix Name="hi" />
+        <infix Name="la" />
+        <infix Name="lho" />
+        <infix Name="ma" />
+        <infix Name="me" />
+        <infix Name="msa" />
+        <infix Name="nya" />
+        <infix Name="qa" />
+        <infix Name="ra" />
+        <infix Name="ri" />
+        <infix Name="she" />
+        <infix Name="ssa" />
+        <infix Name="ta" Weight="2" />
+        <infix Name="tha" />
+      </infixes>
+      <postfixes Amount="1">
+        <postfix Name="ah" />
+        <postfix Name="ayl" />
+        <postfix Name="char" />
+        <postfix Name="faat" />
+        <postfix Name="fah" />
+        <postfix Name="fan" />
+        <postfix Name="ghaa" />
+        <postfix Name="ki" />
+        <postfix Name="lb" Weight="2" />
+        <postfix Name="lef" />
+        <postfix Name="li" />
+        <postfix Name="maar" />
+        <postfix Name="mak" />
+        <postfix Name="mer" />
+        <postfix Name="min" />
+        <postfix Name="n" />
+        <postfix Name="nahr" />
+        <postfix Name="por" />
+        <postfix Name="qerd" />
+        <postfix Name="r" />
+        <postfix Name="rah" />
+        <postfix Name="ras" />
+        <postfix Name="rn" />
+        <postfix Name="roof" />
+        <postfix Name="sad" />
+        <postfix Name="sher" />
+        <postfix Name="shi" />
+        <postfix Name="sr" />
+        <postfix Name="tt" />
+        <postfix Name="tul" />
+        <postfix Name="vish" />
+        <postfix Name="wr" />
+        <postfix Name="zeer" />
+      </postfixes>
+    </namestyle>
+
+    <namestyle Name="Bear-ja" HyphenationChance="10" TwoNameChance="20" Format="TitleCase">
+      <scopes>
+        <scope Name="Faction" Faction="Bears" Priority="100" Combine="false" />
+        <scope Name="Species" Species="bear" Priority="50" Combine="true" />
+        <scope Name="Culture" Culture="Bear" Priority="50" Combine="true" />
+      </scopes>
+      <prefixes Amount="1-5">
+        <prefix Name="ba" />
+        <prefix Name="baka" />
+        <prefix Name="bama" />
+        <prefix Name="baya" />
+        <prefix Name="be" />
+        <prefix Name="bee" />
+        <prefix Name="bi" />
+        <prefix Name="bo" />
+        <prefix Name="boko" />
+        <prefix Name="bomo" />
+        <prefix Name="boo" />
+        <prefix Name="boyo" />
+        <prefix Name="bu" />
+        <prefix Name="buku" />
+        <prefix Name="bumu" />
+        <prefix Name="buyu" />
+      </prefixes>
+      <postfixes Amount="0-1">
+        <postfix Name="ba" />
+        <postfix Name="bam" />
+        <postfix Name="bat" />
+        <postfix Name="be" />
+        <postfix Name="bee" />
+        <postfix Name="bo" />
+        <postfix Name="bom" />
+        <postfix Name="boo" />
+        <postfix Name="bum" />
+        <postfix Name="bym" />
+        <postfix Name="gee" />
+        <postfix Name="gy" />
+        <postfix Name="gye" />
+      </postfixes>
+    </namestyle>
+
+    <namestyle Name="Bear Hero Title-ja">
+      <scopes>
+        <scope Name="Main" Type="Title" Special="Hero" Faction="Bears" Priority="200" Combine="false" />
+        <scope Name="Culture" Type="Title" Special="Hero" Culture="Bear" Priority="150" Combine="true" />
+      </scopes>
+      <templates>
+        <template Name="renowned honey loving *CreatureType*" />
+      </templates>
+    </namestyle>
+
+    <namestyle Name="Ape-ja" HyphenationChance="10" TwoNameChance="20" Format="TitleCase">
+      <scopes>
+        <scope Name="Faction" Faction="Apes" Priority="100" Combine="false" />
+        <scope Name="Species" Species="ape" Priority="50" Combine="true" />
+      </scopes>
+      <prefixes Amount="1-5">
+        <prefix Name="ka" />
+        <prefix Name="kaka" />
+        <prefix Name="kama" />
+        <prefix Name="kaya" />
+        <prefix Name="ke" />
+        <prefix Name="kee" />
+        <prefix Name="ki" />
+        <prefix Name="ko" />
+        <prefix Name="koko" />
+        <prefix Name="komo" />
+        <prefix Name="koo" />
+        <prefix Name="koyo" />
+        <prefix Name="ku" />
+        <prefix Name="kuku" />
+        <prefix Name="kumu" />
+        <prefix Name="kuyu" />
+        <prefix Name="o" />
+        <prefix Name="oka" />
+        <prefix Name="oko" />
+        <prefix Name="oku" />
+        <prefix Name="oma" />
+        <prefix Name="omo" />
+        <prefix Name="omu" />
+        <prefix Name="oo" />
+        <prefix Name="oya" />
+        <prefix Name="oyu" />
+      </prefixes>
+      <postfixes Amount="0-1">
+        <postfix Name="ka" />
+        <postfix Name="kam" />
+        <postfix Name="kat" />
+        <postfix Name="ke" />
+        <postfix Name="kee" Weight="2" />
+        <postfix Name="ko" />
+        <postfix Name="kom" />
+        <postfix Name="koo" />
+        <postfix Name="kum" />
+        <postfix Name="ky" />
+        <postfix Name="kye" />
+        <postfix Name="kym" />
+        <postfix Name="o" />
+        <postfix Name="oee" />
+        <postfix Name="oo" />
+        <postfix Name="oy" />
+        <postfix Name="oye" />
+        <postfix Name="oym" />
+      </postfixes>
+    </namestyle>
+
+    <namestyle Name="Ape Hero Epithet-ja">
+      <scopes>
+        <scope Name="Main" Type="Epithet" Special="Hero" Faction="Apes" Priority="200" Combine="false" />
+        <scope Name="Culture" Type="Epithet" Special="Hero" Culture="Ape" Priority="150" Combine="true" />
+      </scopes>
+      <templates>
+        <template Name="the *Adjective*" />
+      </templates>
+      <templatevars>
+        <templatevar Name="Adjective">
+          <value Name="Colorful" />
+          <value Name="Elegant" />
+          <value Name="Fashionable" />
+          <value Name="Prismatic" />
+          <value Name="Stylish" />
+          <value Name="Suave" />
+          <value Name="Well-Dressed" />
+          <value Name="Well-Garbed" />
+        </templatevar>
+      </templatevars>
+    </namestyle>
+
+    <namestyle Name="Ape Hero Title-ja">
+      <scopes>
+        <scope Name="Main" Type="Title" Special="Hero" Faction="Apes" Priority="200" Combine="false" />
+        <scope Name="Culture" Type="Title" Special="Hero" Culture="Ape" Priority="150" Combine="true" />
+      </scopes>
+      <templates>
+        <template Name="legendary *CreatureType*" />
+      </templates>
+    </namestyle>
+
+
+    <namestyle Name="Reptile-ja" HyphenationChance="10" TwoNameChance="20" Format="AsIs">
+    <!-- syllables from Nahuatl/Aztecan -->
+      <prefixes Amount="1">
+        <prefix Name="a" />
+        <prefix Name="ata" />
+        <prefix Name="cha" />
+        <prefix Name="chi" />
+        <prefix Name="ci" />
+        <prefix Name="co" />
+        <prefix Name="e" />
+        <prefix Name="hu" />
+        <prefix Name="hue" />
+        <prefix Name="hui" />
+        <prefix Name="i" />
+        <prefix Name="ku" />
+        <prefix Name="ma" />
+        <prefix Name="o" />
+        <prefix Name="pa" Weight="2" />
+        <prefix Name="pi" />
+        <prefix Name="que" />
+        <prefix Name="te" />
+        <prefix Name="tla" />
+        <prefix Name="to" />
+        <prefix Name="xo" />
+        <prefix Name="ya" />
+        <prefix Name="za" />
+      </prefixes>
+      <infixes Amount="1-2">
+        <infix Name="ca" />
+        <infix Name="ctla" />
+        <infix Name="cto" />
+        <infix Name="la" />
+        <infix Name="lci" />
+        <infix Name="lco" />
+        <infix Name="lo" />
+        <infix Name="lte" />
+        <infix Name="me" />
+        <infix Name="nqui" />
+        <infix Name="pa" />
+        <infix Name="po" Weight="2" />
+        <infix Name="te" />
+        <infix Name="teo" />
+        <infix Name="tla" />
+        <infix Name="tli" />
+        <infix Name="tza" />
+        <infix Name="xco" />
+        <infix Name="xo" />
+        <infix Name="xto" />
+        <infix Name="ya" />
+        <infix Name="zca" />
+      </infixes>
+      <postfixes Amount="1">
+        <postfix Name="catl" />
+        <postfix Name="ci" />
+        <postfix Name="coa" />
+        <postfix Name="cue" />
+        <postfix Name="hil" />
+        <postfix Name="hua" />
+        <postfix Name="huatl" />
+        <postfix Name="lisk" />
+        <postfix Name="loc" />
+        <postfix Name="lotl" />
+        <postfix Name="mo" />
+        <postfix Name="nal" />
+        <postfix Name="nen" />
+        <postfix Name="qui" />
+        <postfix Name="teo" />
+        <postfix Name="teotl" />
+        <postfix Name="tin" />
+        <postfix Name="tiuh" />
+        <postfix Name="ton" />
+        <postfix Name="trice" />
+        <postfix Name="tzal" />
+        <postfix Name="xtli" />
+        <postfix Name="ya" />
+        <postfix Name="yotl" />
+      </postfixes>
+    </namestyle>
+
+    <namestyle Name="Tortoise-ja" HyphenationChance="10" TwoNameChance="20" Format="TitleCase">
+      <scopes>
+        <scope Name="Faction" Faction="Tortoises" Priority="100" Combine="false" />
+        <scope Name="Species" Species="tortoise" Priority="50" Combine="true" />
+      </scopes>
+      <prefixes Amount="1">
+        <prefix Name="mar" />
+        <prefix Name="mir" />
+        <prefix Name="mor" />
+        <prefix Name="mur" />
+        <prefix Name="myr" />
+        <prefix Name="nar" />
+        <prefix Name="nir" />
+        <prefix Name="nor" />
+        <prefix Name="nur" />
+        <prefix Name="nyr" />
+      </prefixes>
+      <infixes Amount="1-2">
+        <infix Name="la" />
+        <infix Name="le" />
+        <infix Name="lo" />
+        <infix Name="lu" />
+      </infixes>
+      <postfixes Amount="0-1">
+        <postfix Name="lab" />
+        <postfix Name="leb" />
+        <postfix Name="lob" />
+        <postfix Name="lub" />
+        <postfix Name="mab" />
+        <postfix Name="meb" />
+        <postfix Name="mib" />
+        <postfix Name="mob" />
+        <postfix Name="mub" />
+      </postfixes>
+    </namestyle>
+
+    <namestyle Name="Tortoise Hero Epithet-ja">
+      <scopes>
+        <scope Name="Main" Type="Epithet" Special="Hero" Faction="Tortoises" Priority="200" Combine="false" />
+        <scope Name="Culture" Type="Epithet" Special="Hero" Culture="Tortoise" Priority="150" Combine="true" />
+      </scopes>
+      <templates>
+        <template Name="the *Disposition*" />
+      </templates>
+      <templatevars>
+        <templatevar Name="Disposition">
+          <value Name="Cantankerous" />
+          <value Name="Choleric" />
+          <value Name="Grouchy" />
+          <value Name="Morose" />
+          <value Name="Querulous" />
+          <value Name="Surly" />
+        </templatevar>
+      </templatevars>
+    </namestyle>
+
+    <namestyle Name="Tortoise Hero Title-ja">
+      <scopes>
+        <scope Name="Main" Type="Title" Special="Hero" Faction="Tortoises" Priority="200" Combine="false" />
+        <scope Name="Culture" Type="Title" Special="Hero" Culture="Tortoise" Priority="150" Combine="true" />
+      </scopes>
+      <templates>
+        <template Name="legendary *CreatureType*" />
+      </templates>
+    </namestyle>
+
+    <namestyle Name="Fish-ja" TwoNameChance="20" Format="TitleCase">
+      <scopes>
+        <scope Name="Faction" Faction="Fish" Priority="100" Combine="false" />
+        <scope Name="Species" Species="Fish" Priority="50" Combine="true" />
+      </scopes>
+      <prefixes Amount="1">
+        <prefix Name="a" Weight="5" />
+        <prefix Name="be" />
+        <prefix Name="boa" />
+        <prefix Name="bri" />
+        <prefix Name="ci" />
+        <prefix Name="co" />
+        <prefix Name="dy" />
+        <prefix Name="e" />
+        <prefix Name="fa" />
+        <prefix Name="ge" />
+        <prefix Name="gra" />
+        <prefix Name="i" Weight="2" />
+        <prefix Name="io" Weight="6" />
+        <prefix Name="la" />
+        <prefix Name="le" />
+        <prefix Name="li" />
+        <prefix Name="lly" />
+        <prefix Name="lu" />
+        <prefix Name="mo" />
+        <prefix Name="mu" />
+        <prefix Name="o" />
+        <prefix Name="se" Weight="2" />
+        <prefix Name="si" />
+        <prefix Name="sme" />
+        <prefix Name="tri" />
+      </prefixes>
+      <infixes Amount="0-2">
+        <infix Name="ba" />
+        <infix Name="bi" />
+        <infix Name="bno" />
+        <infix Name="bra" />
+        <infix Name="cau" />
+        <infix Name="co" />
+        <infix Name="cu" />
+        <infix Name="dia" />
+        <infix Name="dsu" />
+        <infix Name="fa" />
+        <infix Name="ga" />
+        <infix Name="gro" />
+        <infix Name="lau" />
+        <infix Name="li" />
+        <infix Name="lla" />
+        <infix Name="mpe" />
+        <infix Name="nca" />
+        <infix Name="nda" />
+        <infix Name="ndo" />
+        <infix Name="nti" />
+        <infix Name="ntu" />
+        <infix Name="rdui" />
+        <infix Name="ri" />
+        <infix Name="sa" />
+        <infix Name="sme" />
+        <infix Name="so" />
+        <infix Name="ta" />
+        <infix Name="ve" Weight="2" />
+        <infix Name="vell" />
+        <infix Name="xe" />
+      </infixes>
+      <postfixes Amount="1">
+        <postfix Name="cura" />
+        <postfix Name="dens" Weight="2" />
+        <postfix Name="dros" />
+        <postfix Name="grus" />
+        <postfix Name="gus" />
+        <postfix Name="llio" />
+        <postfix Name="lus" />
+        <postfix Name="ma" />
+        <postfix Name="mios" />
+        <postfix Name="mna" />
+        <postfix Name="mos" />
+        <postfix Name="na" />
+        <postfix Name="nann" />
+        <postfix Name="niae" />
+        <postfix Name="nn" />
+        <postfix Name="nna" />
+        <postfix Name="nnan" />
+        <postfix Name="nnos" />
+        <postfix Name="nnus" />
+        <postfix Name="nus" />
+        <postfix Name="ris" />
+        <postfix Name="rnus" />
+        <postfix Name="rrum" />
+        <postfix Name="stres" />
+        <postfix Name="sus" />
+        <postfix Name="thus" />
+        <postfix Name="tis" Weight="2" />
+        <postfix Name="trios" />
+      </postfixes>
+    </namestyle>
 
     <!-- "transparent names", where the names are meaningful phrases in the language -->
     <namestyle Name="Issachari" HyphenationChance="0" TwoNameChance="0">
