@@ -8,17 +8,17 @@
 
   <!-- "The <profession> who is a convert to <faith>": "<faith>への改宗者である<profession>" -->
   <object Name="VillageZeroConvert" Load="Merge">
-    <part Name="Render" DisplayName="機構霊信仰への改宗者である水草農家" />
+    <part Name="Render" DisplayName="機構霊信仰への改宗者である水草農民" />
   </object>
   <object Name="WatervineFarmerConvert" Load="Merge">
     <part Name="Description" Short="[届：\TODO]=pronouns.Possessive= kufiya has been cut and resewn to a cowl, and =pronouns.subjective= =verb:have:afterpronoun= tailored a vinewafer sack to approximate the slate habit of the chromaic people. A sheaf of watervine bundled in copper wire is slung on =pronouns.possessive= hip, and =pronouns.subjective= =verb:rub:afterpronoun= a salt-nailed thumb over a talisman of cracked circuitboard." />
   </object>
   <object Name="PigFarmerConvert" Load="Merge">
-    <part Name="Render" DisplayName="機構霊信仰への改宗者である養豚農家" />
+    <part Name="Render" DisplayName="機構霊信仰への改宗者である養豚農民" />
     <part Name="Description" Short="[届：\TODO]=pronouns.Possessive= kufiya has been cut and resewn to a cowl, and =pronouns.subjective= =verb:have:afterpronoun= tailored an apple sack to approximate the slate habit of the chromaic people. A herding crook sheathed in copper wire is slung on =pronouns.possessive= hip, and =pronouns.subjective= =verb:rub:afterpronoun= a salt-nailed thumb over a talisman of cracked circuitboard." />
   </object>
   <object Name="CannibalConvert" Load="Merge">
-    <part Name="Render" DisplayName="機構霊信仰への改宗者であるcannibal" />
+    <part Name="Render" DisplayName="機構霊信仰への改宗者である人食い人種" />
     <part Name="Description" Short="[届：\TODO]A torn kufiya has been cut and resewn to a cowl, and =pronouns.subjective= =verb:have:afterpronoun= tailored a knapsack to approximate the slate habit of the chromaic people. A human bone sheathed in copper wire is slung on =pronouns.possessive= hip, and =pronouns.subjective= =verb:rub:afterpronoun= a salt-nailed thumb over a talisman of cracked circuitboard." />
   </object>
   <object Name="IssachariConvert" Load="Merge">
@@ -28,32 +28,32 @@
 
   <!-- Snapjaws -->
   <object Name="Snapjaw" Load="Merge">
-    <part Name="Render" DisplayName="パクッと口" />
+    <part Name="Render" DisplayName="パクッち族" />
     <part Name="Description" Short="[届：\TODO]Tussocks of fur dress skin stretched over taut muscle. Upright =pronouns.subjective= =verb:stand:afterpronoun=, but =pronouns.subjective= =verb:look:afterpronoun= ready to drop onto fours. =pronouns.Possessive= snout snarls and =pronouns.possessive= ears twitch. =pronouns.Subjective= =verb:bark:afterpronoun=, and =pronouns.possessive= hyena tribeskin answer." />
     <xtagTextFragments YounglingNoise="*heh*,*heheh*,*heheheh*" Activity="hunting and gathering,raiding villages,howling at the Beetle Moon,picking the meat off bones" VillageActivity="sleeping in our bedrolls and sitting in our chairs,lounging around,reading books,peeling and eating musa,howling at the moon,picking the meat off discarded bones" NeedsItemFor="for my own collection,to slake my greed,because of its trade value,to inspire my art,to inspire my poetry,to snarl at meaninglessly,as something to howl at,to be my muse,to help with farm work,for the games we play under the Beetle Moon" SacredThing="the act of procreating,philosophy,the tilled land of others,howling at the Beetle Moon,snarling,picking the meat from bones,alcohol,grains of the earth,stone fruit,artistry,poetry,warm meals,bread and wine,pottery,painting" ArableLand="defenseless villages,hapless farmers,the homes of sedentary creatures" ValuedOre="meat and bone,fresh meat,tracks" />
   </object>
   <object Name="Snapjaw Corpse" Load="Merge">
-    <part Name="Render" DisplayName="パクッと口の死体" />
+    <part Name="Render" DisplayName="パクッち族の死体" />
     <part Name="Description" Short="[届：\TODO]A mound of wet fur and rotting flesh puts some elevation to the ground." />
     <part Name="Food" Message="[届：\TODO]The bite burst into so many strands of sinew." />
   </object>  
   <object Name="Snapjaw Scavenger" Load="Merge">
-    <part Name="Render" DisplayName="パクッと口のスカベンジャー" />
+    <part Name="Render" DisplayName="パクッち族のスカベンジャー" />
   </object>
   <object Name="Snapjaw Hunter" Load="Merge">
-    <part Name="Render" DisplayName="パクッと口の猟師" />
+    <part Name="Render" DisplayName="パクッち族の猟師" />
   </object>
   <object Name="Snapjaw Shotgunner" Load="Merge">
-    <part Name="Render" DisplayName="パクッと口の散弾銃使い" />
+    <part Name="Render" DisplayName="パクッち族の散弾銃使い" />
   </object>
   <object Name="Snapjaw Brute" Load="Merge">
-    <part Name="Render" DisplayName="パクッと口の凶行人" />
+    <part Name="Render" DisplayName="パクッち族の凶行人" />
   </object>
   <object Name="Snapjaw Warrior" Load="Merge">
-    <part Name="Render" DisplayName="パクッと口の戦士" />
+    <part Name="Render" DisplayName="パクッち族の戦士" />
   </object>
   <object Name="Snapjaw Warlord" Load="Merge">
-    <part Name="Render" DisplayName="パクッと口の軍閥" />
+    <part Name="Render" DisplayName="パクッち族の軍閥" />
   </object>
 
   <object Name="White Esh" Load="Merge">

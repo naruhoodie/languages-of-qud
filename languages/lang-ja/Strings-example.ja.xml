@@ -489,15 +489,15 @@ Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:44
   <string ID="RandomAltarBaetyl Object Demand (fragment):a set of =demandName=">=demandName=⁂=number.基数=個</string>
   <string ID="RandomAltarBaetyl Object Demand (fragment):=number.cardinal= =demandName|pluralize=">=demandName=⁂=number.基数=個</string>
   <string ID="RandomAltarBaetyl Object Demand (fragment):=demandName|article=">=demandName=⁂=number.基数=個</string>
-  <string ID="RandomAltarBaetyl:I AM SATED, MORTAL. BEGONE.">[届：\TODO]I AM SATED, MORTAL. BEGONE.</string>
-  <string ID="RandomAltarBaetyl:PETTY MORTAL! BRING ME =demand|upper=, AND I SHALL REWARD YOU WITH =reward|upper=.">些細な者よ！！=demand.を=持って来れば、我輩が=reward.を=与えて報いよう！！</string>
+  <string ID="RandomAltarBaetyl:I AM SATED, MORTAL. BEGONE.">我輩様は満腹だ、生物氏よ。去れ。</string>
+  <string ID="RandomAltarBaetyl:PETTY MORTAL! BRING ME =demand|upper=, AND I SHALL REWARD YOU WITH =reward|upper=.">些細な生物氏よ！！=demand.を=持って来れば、我輩様が=reward.を=与えて報いよう！！</string>
   <string ID="RandomAltarBaetyl Offer Message:Offer =subject.the.name= =needed= out of =nearby.andList:definiteArticles= nearby and =inventory.andList:asPossessed=?">[届：\TODO]Offer =subject.the.name= =needed= out of =nearby.andList:definiteArticles= nearby and =inventory.andList:asPossessed=?</string>
   <string ID="RandomAltarBaetyl Offer Message:Offer =subject.the.name= =needed= out of =nearby.andList:definiteArticles= nearby?">[届：\TODO]Offer =subject.the.name= =needed= out of =nearby.andList:definiteArticles= nearby?</string>
   <string ID="RandomAltarBaetyl Offer Message:Offer =subject.the.name= =needed= out of =inventory.andList:asPossessed=?">[届：\TODO]Offer =subject.the.name= =needed= out of =inventory.andList:asPossessed=?</string>
   <string ID="RandomAltarBaetyl Offer Message:Offer =subject.the.name= =nearby.andList:definiteArticles= nearby and =inventory.andList:asPossessed=?">[届：\TODO]Offer =subject.the.name= =nearby.andList:definiteArticles= nearby and =inventory.andList:asPossessed=?</string>
   <string ID="RandomAltarBaetyl Offer Message:Offer =subject.the.name= =nearby.andList:definiteArticles= nearby?">[届：\TODO]Offer =subject.the.name= =nearby.andList:definiteArticles= nearby?</string>
   <string ID="RandomAltarBaetyl Offer Message:Offer =subject.the.name= =inventory.andList:asPossessed=?">[届：\TODO]Offer =subject.the.name= =inventory.andList:asPossessed=?</string>
-  <string ID="RandomAltarBaetyl:I ACCEPT YOUR OFFERING!&#xA;&#xA;The sparking baetyl gives you =reward=!" Value="[届：\TODO]I ACCEPT YOUR OFFERING!&#xA;&#xA;The sparking baetyl gives you =reward=!" />
+  <string ID="RandomAltarBaetyl:I ACCEPT YOUR OFFERING!&#xA;&#xA;The sparking baetyl gives you =reward=!" Value="我輩様は生物氏の供物を貰うことに同意する！！&#xA;&#xA;バチバチとするビーティルは=reward.を=与える！" />
   <string ID="RandomAltarBaetyl Reward List:=object.a.name=">[届：\TODO]=object.a.name=</string>
   <string ID="RandomAltarBaetyl Reward List:=points= attribute =points.pluralize:point=">[届：\TODO]=points= attribute =points.pluralize:point=</string>
   <string ID="RandomAltarBaetyl Reward List:=points= mutation =points.pluralize:point=">[届：\TODO]=points= mutation =points.pluralize:point=</string>
@@ -506,8 +506,8 @@ Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:44
   <string ID="RandomAltarBaetyl Reward List:=points= cybernetics license =points.pluralize:point=">[届：\TODO]=points= cybernetics license =points.pluralize:point=</string>
   <string ID="RandomAltarBaetyl Reward List:=points= reputation with =faction.factionName=">[届：\TODO]=points= reputation with =faction.factionName=</string>
   <string ID="RandomAltarBaetyl Reward List:=list.andList=">[届：\TODO]=list.andList=</string>
-  <string ID="RandomAltarBaetyl Journal Entry:A &quot;SATED&quot; baetyl">[届：\TODO]A "SATED" baetyl</string>
-  <string ID="RandomAltarBaetyl Journal Entry:A baetyl demanding &quot;=demand=&quot; and promising &quot;=reward=&quot;.">[届：\TODO]A baetyl demanding "=demand=" and promising "=reward=".</string>
+  <string ID="RandomAltarBaetyl Journal Entry:A &quot;SATED&quot; baetyl">「満腹」なビーティル</string>
+  <string ID="RandomAltarBaetyl Journal Entry:A baetyl demanding &quot;=demand=&quot; and promising &quot;=reward=&quot;.">「=demand.を=」要求し、「=reward.を」=約束するビーティル</string>
 
   <!--
 	Activated ability classes
@@ -825,8 +825,8 @@ Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:44
   <string ID="You discover some historic ruins. Would you like to investigate?">歴史的な遺跡を発見した。調査してみるか？</string>
   <string ID="sultan dungeon:liminal floor">[届：\TODO]liminal floor</string>
   <string ID="Building forts...">砦を建設中…</string>
-  <string ID="the snapjaw who wields {{R-r-K-y-Y sequence|Stopsvalinn}}">{{R-r-K-y-Y sequence|ストップスヴァリン}}を振るうパクッと口</string>
-  <string ID="a snapjaw fort">パクッと口の砦</string>
+  <string ID="the snapjaw who wields {{R-r-K-y-Y sequence|Stopsvalinn}}">{{R-r-K-y-Y sequence|ストップスヴァリン}}を振るうパクッち族</string>
+  <string ID="a snapjaw fort">パクッち族の砦</string>
   <string ID="Building farms...">農場を建設中…</string>
   <string ID="the lair of {{M|Oboroqoru, Ape God}}">{{M|猿神オボロコル}}の巣窟</string>
   <string ID="You discover a lair. Would you like to investigate?">巣窟を発見した。調査してみるか？</string>

@@ -51,6 +51,10 @@ regexp for adding [届：\TODO]:
 checking afterwards:
 ID="[^"]*&quot;[^"]*" Value="[^\[][^届]
 <string ID="[^"]*&quot;[^"]*">[^<\[][^<届]+<\/string>
+checking for non-TODO strings:
+ID="[^"]*" Value="(?!\[届：)
+<string ID="[^"]*">(?!\[届：)
+
 
 adding [届：\TODO] to various tag attributes:
 ( (?:DisplayName|Description|Snippet)=")([^\["][^届"]+)"	$1[届：\TODO]$2"
@@ -59,3 +63,11 @@ stripping out unneeded attributes:
 Japanese punctuation
 ［］（）、。
 no bananas	バナナなし
+
+"You believe you would be able to recognize an ordinary =adjunctNoun= of =subject.isPlural:that:those= now."
+mass noun: "You believe you would be able to recognize an ordinary [amount] of [that] now."
+has adjunctNoun: "You believe you would be able to recognize an ordinary [pair] of [those] now."
+no adjunct, singular: "You believe you would be able to recognize an ordinary [one] of [those] now."
+no adjunct, plural: "You believe you would be able to recognize an ordinary [set] of [those] now."
+
+Bodies.xml - no DisplayName for parts? though laterality plays a role

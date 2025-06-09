@@ -82,23 +82,26 @@ Comments should be deleted when copied to a new translation table.
 <!-- NOTE: trying to avoid 人"(human) person" except when specifically a humanoid! -->
   <string ID="glossary:villagers">村民,[村民\そんみん]</string>
   <string ID="glossary:faction">派閥,[派閥\はばつ]</string><!-- use 閥 as a suffix -->
-  <string ID="glossary:baetyl">[聖石\ビーティル]</string>
+  <!-- "The <profession> who is a convert to <faith>": "<faith>への改宗者である<profession>" -->
+  <string ID="glossary:Mechanimist convert">機構霊信仰への改宗者</string>
+  <string ID="glossary:watervine farmer">水草農民</string>
+  <string ID="glossary:pig farmer">養豚農民</string>
 
-<!-- creatures -->
+<!-- humanoids -->
   <!-- "putus" - Latin for "pure, unadulterated" -->
   <string ID="glossary:a Putus Templar (member)">プトゥス・テンプル騎士団員</string>
   <string ID="glossary:(the) Putus Templar">プトゥス・テンプル騎士団</string>
+  <string ID="glossary:mysterious stranger">不思議な他所者,[不思議\ふしぎ]な[他所者\よそもの]</string>
   <string ID="glossary:mutated human">突然変異した人間,[突然変異\とつぜんへんい]した[人間\にんげん]</string>
   <string ID="glossary:True Kin">真の親族,[真\しん]の[親族\しんぞく]</string>
-  <string ID="glossary:snapjaw (type)">パクッと口族,パクッと[口\くち][族\ぞく]</string>
-  <string ID="glossary:snapjaw (person)">パクッと口人,パクッと[口\くち][人\ひと]</string>
-  <string ID="glossary:goatfolk (type)">山羊族,[山羊\やぎ][族\ぞく]</string>
-  <string ID="glossary:goatfolk (person)">山羊人,[山羊\やぎ][人\ひと]</string>
-  <string ID="glossary:dromad (type)">駱駝族,[駱駝\らくだ][族\ぞく]</string>
-  <string ID="glossary:dromad (person)">駱駝人,[駱駝\らくだ][人\ひと]</string>
+  <!-- パクッち is short for パクッとする口(pakuttosuru kuchi), "snapping mouth" -->
+  <string ID="glossary:snapjaw">パクッち族,[ハイエナ\パクッち][族\ぞく]</string>
+  <string ID="glossary:goatfolk">山羊族,[山羊\やぎ][族\ぞく]</string>
+  <string ID="glossary:dromad">駱駝族,[駱駝\らくだ][族\ぞく]</string>
 <!--  <string ID="glossary:dromad">遊牧駝民,[遊牧\ゆうぼく][駝\だ][民\みん]</string> -->
   <string ID="glossary:cannibal(s)">人食い人種,[人食\ひとぐ]い[人種\じんしゅ]</string>
-  <string ID="glossary:mysterious stranger">不思議な他所者,[不思議\ふしぎ]な[他所者\よそもの]</string>
+  <string ID="glossary:baetyl">[聖石\ビーティル]</string>
+  <string ID="glossary:sparking baetyl">バチバチとするビーティル,バチバチとする[聖石\ビーティル]</string>
 
 <!-- Hindren terms -->
   <string ID="glossary:hindren"></string>
