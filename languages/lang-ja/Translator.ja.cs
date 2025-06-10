@@ -1,8 +1,10 @@
 using System;
 using XRL;
 using System.Globalization;
+using Cysharp.Text;
 using XRL.World;
 using System.Text;
+using System.Collections.Generic;
 
 namespace XRL.Language
 {
@@ -85,7 +87,7 @@ namespace XRL.Language
             {
                 magnitude -= magnitude % 4;
             }
-            int offset = (int) Math.Floor(Math.Exp(magnitude * Math.Log(10)));
+            int offset = (int)Math.Floor(Math.Exp(magnitude * Math.Log(10)));
             int remainder = num % offset;
             int val = num - remainder;
             int count = val / offset;
@@ -105,99 +107,8 @@ namespace XRL.Language
         {
             switch (magnitude)
             {
-            case 20:
-                ProcessMagnitude(ref num, ref magnitude, result, "垓");
-                if (num == 0)
-                {
-                    if (suffix != null)
-                    {
-                        result.Append(suffix);
-                    }
-                    return true;
-                }
-                goto case 16;
-            case 19:
-            case 18:
-            case 17:
-            case 16:
-                ProcessMagnitude(ref num, ref magnitude, result, "京");
-                if (num == 0)
-                {
-                    if (suffix != null)
-                    {
-                        result.Append(suffix);
-                    }
-                    return true;
-                }
-                goto case 12;
-            case 15:
-            case 14:
-            case 13:
-            case 12:
-                ProcessMagnitude(ref num, ref magnitude, result, "兆");
-                if (num == 0)
-                {
-                    if (suffix != null)
-                    {
-                        result.Append(suffix);
-                    }
-                    return true;
-                }
-                goto case 8;
-            case 11:
-            case 10:
-            case 9:
-            case 8:
-                ProcessMagnitude(ref num, ref magnitude, result, "億");
-                if (num == 0)
-                {
-                    if (suffix != null)
-                    {
-                        result.Append(suffix);
-                    }
-                    return true;
-                }
-                goto case 4;
-            case 7:
-            case 6:
-            case 5:
-            case 4:
-                ProcessMagnitude(ref num, ref magnitude, result, "万");
-                if (num == 0)
-                {
-                    if (suffix != null)
-                    {
-                        result.Append(suffix);
-                    }
-                    return true;
-                }
-                goto case 2;
-            case 3:
-                ProcessMagnitude(ref num, ref magnitude, result, "千");
-                if (num == 0)
-                {
-                    if (suffix != null)
-                    {
-                        result.Append(suffix);
-                    }
-                    return true;
-                }
-                goto case 2;
-            case 2:
-                ProcessMagnitude(ref num, ref magnitude, result, "百");
-                if (num == 0)
-                {
-                    if (suffix != null)
-                    {
-                        result.Append(suffix);
-                    }
-                    return true;
-                }
-                goto case 1;
-            case 1:
-                if (magnitude > 0)
-                {
-                    ProcessMagnitude(ref num, ref magnitude, result, "十");
+                case 20:
+                    ProcessMagnitude(ref num, ref magnitude, result, "垓");
                     if (num == 0)
                     {
                         if (suffix != null)
@@ -206,8 +117,99 @@ namespace XRL.Language
                         }
                         return true;
                     }
-                }
-                break;
+                    goto case 16;
+                case 19:
+                case 18:
+                case 17:
+                case 16:
+                    ProcessMagnitude(ref num, ref magnitude, result, "京");
+                    if (num == 0)
+                    {
+                        if (suffix != null)
+                        {
+                            result.Append(suffix);
+                        }
+                        return true;
+                    }
+                    goto case 12;
+                case 15:
+                case 14:
+                case 13:
+                case 12:
+                    ProcessMagnitude(ref num, ref magnitude, result, "兆");
+                    if (num == 0)
+                    {
+                        if (suffix != null)
+                        {
+                            result.Append(suffix);
+                        }
+                        return true;
+                    }
+                    goto case 8;
+                case 11:
+                case 10:
+                case 9:
+                case 8:
+                    ProcessMagnitude(ref num, ref magnitude, result, "億");
+                    if (num == 0)
+                    {
+                        if (suffix != null)
+                        {
+                            result.Append(suffix);
+                        }
+                        return true;
+                    }
+                    goto case 4;
+                case 7:
+                case 6:
+                case 5:
+                case 4:
+                    ProcessMagnitude(ref num, ref magnitude, result, "万");
+                    if (num == 0)
+                    {
+                        if (suffix != null)
+                        {
+                            result.Append(suffix);
+                        }
+                        return true;
+                    }
+                    goto case 2;
+                case 3:
+                    ProcessMagnitude(ref num, ref magnitude, result, "千");
+                    if (num == 0)
+                    {
+                        if (suffix != null)
+                        {
+                            result.Append(suffix);
+                        }
+                        return true;
+                    }
+                    goto case 2;
+                case 2:
+                    ProcessMagnitude(ref num, ref magnitude, result, "百");
+                    if (num == 0)
+                    {
+                        if (suffix != null)
+                        {
+                            result.Append(suffix);
+                        }
+                        return true;
+                    }
+                    goto case 1;
+                case 1:
+                    if (magnitude > 0)
+                    {
+                        ProcessMagnitude(ref num, ref magnitude, result, "十");
+                        if (num == 0)
+                        {
+                            if (suffix != null)
+                            {
+                                result.Append(suffix);
+                            }
+                            return true;
+                        }
+                    }
+                    break;
             }
             return false;
         }
@@ -241,6 +243,41 @@ namespace XRL.Language
             return result.ToString();
         }
 
-    }
+        public static string GetAdjectiveてForm(string Adjective)
+        {
+            using var SB = ZString.CreateStringBuilder();
+            if (Adjective.EndsWith("い"))
+            {
+                SB.Remove(SB.Length - 1, 1);
+                SB.Append("くて");
+            }
+            else if (Adjective.EndsWith("な"))
+            {
+                SB.Remove(SB.Length - 1, 1);
+                SB.Append("で");
+            }
+            return SB.ToString();
+        }
+
+        public static string MakeてList(IReadOnlyList<string> List)
+        {
+            if (List.Count == 0)
+            {
+                return "";
+            }
+            if (List.Count == 1)
+            {
+                return GetAdjectiveてForm(List[0]);
+            }
+            using var SB = ZString.CreateStringBuilder();
+            for (int i = 0, j = List.Count - 1; i < j; i++)
+            {
+                SB.Append(GetAdjectiveてForm(List[i]));
+            }
+            SB.Append(List[List.Count - 1]);
+            return SB.ToString();
+        }
+
+    } 
 
 }

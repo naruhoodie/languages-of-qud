@@ -709,7 +709,7 @@
 
     <namestyle Name="Bird Hero Epithet">
       <templates Load="Replace">
-        <template Name="*Singer*" />
+        <template Name="*Singer*の" />
       </templates>
       <templatevars Load="Replace">
         <templatevar Name="Singer">
@@ -881,13 +881,13 @@
     </namestyle>
 
     <namestyle Name="Goatfolk Hero" Base="Goatfolk">
-      <templates>
+      <templates Load="Replace">
         <template Name="*Name*" />
       </templates>
     </namestyle>
 
     <namestyle Name="Goatfolk Hero Epithet">
-      <templates>
+      <templates Load="Replace">
         <template Name="*Epithet*" />
       </templates>
       <templatevars Load="Replace">
@@ -1346,90 +1346,78 @@
       </templates>
     </namestyle>
 
-    <namestyle Name="Ape-ja" HyphenationChance="10" TwoNameChance="20" Format="TitleCase">
-      <scopes>
-        <scope Name="Faction" Faction="Apes" Priority="100" Combine="false" />
-        <scope Name="Species" Species="ape" Priority="50" Combine="true" />
-      </scopes>
-      <prefixes Amount="1-5">
-        <prefix Name="ka" />
-        <prefix Name="kaka" />
-        <prefix Name="kama" />
-        <prefix Name="kaya" />
-        <prefix Name="ke" />
-        <prefix Name="kee" />
-        <prefix Name="ki" />
-        <prefix Name="ko" />
-        <prefix Name="koko" />
-        <prefix Name="komo" />
-        <prefix Name="koo" />
-        <prefix Name="koyo" />
-        <prefix Name="ku" />
-        <prefix Name="kuku" />
-        <prefix Name="kumu" />
-        <prefix Name="kuyu" />
-        <prefix Name="o" />
-        <prefix Name="oka" />
-        <prefix Name="oko" />
-        <prefix Name="oku" />
-        <prefix Name="oma" />
-        <prefix Name="omo" />
-        <prefix Name="omu" />
-        <prefix Name="oo" />
-        <prefix Name="oya" />
-        <prefix Name="oyu" />
+    <namestyle Name="Ape" HyphenationChance="10" TwoNameChance="20" Format="AsIs">
+      <prefixes Amount="1-5" Load="Replace">
+        <prefix Name="カ" /><!-- Original="ka" -->
+        <prefix Name="カカ" /><!-- Original="kaka" -->
+        <prefix Name="カマ" /><!-- Original="kama" -->
+        <prefix Name="カヤ" /><!-- Original="kaya" -->
+        <prefix Name="ケ" /><!-- Original="ke" -->
+        <prefix Name="ケー" /><!-- Original="kee" -->
+        <prefix Name="キ" /><!-- Original="ki" -->
+        <prefix Name="コ" /><!-- Original="ko" -->
+        <prefix Name="ココ" /><!-- Original="koko" -->
+        <prefix Name="コモ" /><!-- Original="komo" -->
+        <prefix Name="コー" /><!-- Original="koo" -->
+        <prefix Name="コヨ" /><!-- Original="koyo" -->
+        <prefix Name="ク" /><!-- Original="ku" -->
+        <prefix Name="クク" /><!-- Original="kuku" -->
+        <prefix Name="クム" /><!-- Original="kumu" -->
+        <prefix Name="クユ" /><!-- Original="kuyu" -->
+        <prefix Name="オ" /><!-- Original="o" -->
+        <prefix Name="オカ" /><!-- Original="oka" -->
+        <prefix Name="オコ" /><!-- Original="oko" -->
+        <prefix Name="オク" /><!-- Original="oku" -->
+        <prefix Name="オマ" /><!-- Original="oma" -->
+        <prefix Name="オモ" /><!-- Original="omo" -->
+        <prefix Name="オム" /><!-- Original="omu" -->
+        <prefix Name="オー" /><!-- Original="oo" -->
+        <prefix Name="オヤ" /><!-- Original="oya" -->
+        <prefix Name="オユ" /><!-- Original="oyu" -->
       </prefixes>
-      <postfixes Amount="0-1">
-        <postfix Name="ka" />
-        <postfix Name="kam" />
-        <postfix Name="kat" />
-        <postfix Name="ke" />
-        <postfix Name="kee" Weight="2" />
-        <postfix Name="ko" />
-        <postfix Name="kom" />
-        <postfix Name="koo" />
-        <postfix Name="kum" />
-        <postfix Name="ky" />
-        <postfix Name="kye" />
-        <postfix Name="kym" />
-        <postfix Name="o" />
-        <postfix Name="oee" />
-        <postfix Name="oo" />
-        <postfix Name="oy" />
-        <postfix Name="oye" />
-        <postfix Name="oym" />
+      <postfixes Amount="0-1" Load="Replace">
+        <postfix Name="カ" /><!-- Original="ka" -->
+        <postfix Name="カム" /><!-- Original="kam" -->
+        <postfix Name="カト" /><!-- Original="kat" -->
+        <postfix Name="ケ" /><!-- Original="ke" -->
+        <postfix Name="ケー" Weight="2" /><!-- Original="kee" -->
+        <postfix Name="コ" /><!-- Original="ko" -->
+        <postfix Name="コム" /><!-- Original="kom" -->
+        <postfix Name="コー" /><!-- Original="koo" -->
+        <postfix Name="クム" /><!-- Original="kum" -->
+        <postfix Name="カイ" /><!-- Original="ky" -->
+        <postfix Name="カイエ" /><!-- Original="kye" -->
+        <postfix Name="カイム" /><!-- Original="kym" -->
+        <postfix Name="オ" /><!-- Original="o" -->
+        <postfix Name="オエー" /><!-- Original="oee" -->
+        <postfix Name="オー" /><!-- Original="oo" -->
+        <postfix Name="オイ" /><!-- Original="oy" -->
+        <postfix Name="オイェ" /><!-- Original="oye" -->
+        <postfix Name="オイム" /><!-- Original="oym" -->
       </postfixes>
     </namestyle>
 
-    <namestyle Name="Ape Hero Epithet-ja">
-      <scopes>
-        <scope Name="Main" Type="Epithet" Special="Hero" Faction="Apes" Priority="200" Combine="false" />
-        <scope Name="Culture" Type="Epithet" Special="Hero" Culture="Ape" Priority="150" Combine="true" />
-      </scopes>
-      <templates>
-        <template Name="the *Adjective*" />
+    <namestyle Name="Ape Hero Epithet">
+      <templates Load="Replace">
+        <template Name="*Adjective*" /><!-- Original="the *Adjective*" -->
       </templates>
-      <templatevars>
+      <templatevars Load="Replace">
         <templatevar Name="Adjective">
-          <value Name="Colorful" />
-          <value Name="Elegant" />
-          <value Name="Fashionable" />
-          <value Name="Prismatic" />
-          <value Name="Stylish" />
-          <value Name="Suave" />
-          <value Name="Well-Dressed" />
-          <value Name="Well-Garbed" />
+          <value Name="カラフルな" /><!-- Original="Colorful" -->
+          <value Name="エレガントな" /><!-- Original="Elegant" -->
+          <value Name="ファッショナブルな" /><!-- Original="Fashionable" -->
+          <value Name="プリズマティックな" /><!-- Original="Prismatic" -->
+          <value Name="スタイリッシュな" /><!-- Original="Stylish" -->
+          <value Name="上品な" /><!-- Original="Suave" -->
+          <value Name="身なりのよい" /><!-- Original="Well-Dressed" -->
+          <value Name="きちんとした服装の" /><!-- Original="Well-Garbed" -->
         </templatevar>
       </templatevars>
     </namestyle>
 
-    <namestyle Name="Ape Hero Title-ja">
-      <scopes>
-        <scope Name="Main" Type="Title" Special="Hero" Faction="Apes" Priority="200" Combine="false" />
-        <scope Name="Culture" Type="Title" Special="Hero" Culture="Ape" Priority="150" Combine="true" />
-      </scopes>
-      <templates>
-        <template Name="legendary *CreatureType*" />
+    <namestyle Name="Ape Hero Title">
+      <templates Load="Replace">
+        <template Name="伝説の*CreatureType*" /><!-- Original="legendary *CreatureType*" -->
       </templates>
     </namestyle>
 

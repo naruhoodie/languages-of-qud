@@ -3,6 +3,8 @@ using XRL.World.Text;
 using XRL.World.Text.Attributes;
 using XRL.World.Text.Delegates;
 using XRL.Language;
+using System.Collections.Generic;
+
 
 namespace LanguagesOfQud
 {
@@ -294,7 +296,7 @@ namespace LanguagesOfQud
         /// <summary>
         /// 基数(kisuu, "cardinal number") - equivalent of "Cardinal" replacer 
         /// </summary>
-       [VariableReplacer("基数")]
+        [VariableReplacer("基数")]
         [VariableExample("零", 0)]
         [VariableExample("二十一", 21)]
         [VariableExample("マイナス二十一", -21)]
@@ -307,7 +309,7 @@ namespace LanguagesOfQud
         /// <summary>
         /// 助詞(joshi, "particle") - fills in with the parameter 
         /// </summary>
-       [VariableReplacer("助詞", Default = "が")]
+        [VariableReplacer("助詞", Default = "が")]
         public static string 助詞(VariableContext Context)
         {
             return Context.Parameters.Count > 0 ? Context.Parameters[0] : Context.Default;
@@ -316,5 +318,19 @@ namespace LanguagesOfQud
         //TODO: add a postprocessor StripRubyText to ReplacerBuilder
         //  e.g. "[届：\TODO]blah[thing\ruby] [b]leh blah" -> "届：blahthing [b]leh blah"
         //  probably should go in Qud code if we'll support ruby formatting generally
+
+        /// <summary>
+        /// Join together a list of "adjective" strings by converting to て-form.
+        /// な-adjectives: replace with で
+        /// い-adjectives: replace with くて
+        /// の-adjectives: no change
+        /// </summary>
+        [VariableReplacer("てList")]
+        [VariableExample("one, two, and three", "one;;two;;three")]
+        public static string てList(VariableContext Context, IReadOnlyList<string> Strings)
+        {
+            return TranslatorJapanese.MakeてList(Strings);
+        }
     }
+
 }

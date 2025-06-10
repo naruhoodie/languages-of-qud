@@ -443,11 +443,16 @@ Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:44
   <string ID="Troll Hero Naming.xml Context:two-headed">[届：\TODO]two-headed</string>
   <!--Code references _S(): Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:84-->
   <string ID="Troll Hero Naming.xml Context:Caveking">[届：\TODO]Caveking</string>
-  <string ID="DescriptionBuilder Epithets Join:=epithets.join:, =">=epithets.join:、=</string>
-  <string ID="DescriptionBuilder Multiple Titles Clause:, =titles.andList:noSerial=">、=titles.andList:noSerial=</string>
-  <string ID="DescriptionBuilder Single Title Clause With Epithets:, =title.toString=">、=title.toString=</string>
+
+  <!--
+	DescriptionBuilder strings
+  -->
+  <string ID="DescriptionBuilder Epithets Join:=epithets.join:, =">=epithets.てList=</string>
+  <string ID="DescriptionBuilder Multiple Titles Clause:, =titles.andList=">=titles.andList=、</string>
+  <string ID="DescriptionBuilder Single Title Clause With Epithets:, =title.toString=">=title.toString=、</string>
   <string ID="DescriptionBuilder Single Title Clause:and =title.toString=">と=title.toString=</string>
-  <string ID="DescriptionBuilder Multiple With Clause:with =withClauses.andList=">=withClauses.andList=で</string>
+<!-- typically for item mods -->
+  <string ID="DescriptionBuilder Multiple With Clause:with =withClauses.andList=">=withClauses.andList=を備えた</string>
 
   <!--
 	Effect and spot strings

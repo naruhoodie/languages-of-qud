@@ -40,7 +40,7 @@ VS Code
 regexp for removing ruby text tags (except the TODOs):
 \[([^届\\]+)\\[^\]]+\]	$1
 regexp for processing Naming.xml namingstyle elements:
-(Name=")([^"]+)("(?: Weight="[0-9]+")? \/>[^-<])	$1$3<!-- Original="$2" -->
+(Name=")([^"]+)("(?: Weight="[0-9]+")? \/>)(?!<!--)	$1$3<!-- Original="$2" -->
 regexp for adding DisplayName to mutations etc.:
 ( Name=")([^"]+")((?![\s]*DisplayName))	$1$2 DisplayName="[届：\TODO]$2$3
 
@@ -54,7 +54,6 @@ ID="[^"]*&quot;[^"]*" Value="[^\[][^届]
 checking for non-TODO strings:
 ID="[^"]*" Value="(?!\[届：)
 <string ID="[^"]*">(?!\[届：)
-
 
 adding [届：\TODO] to various tag attributes:
 ( (?:DisplayName|Description|Snippet)=")([^\["][^届"]+)"	$1[届：\TODO]$2"
@@ -71,3 +70,9 @@ no adjunct, singular: "You believe you would be able to recognize an ordinary [o
 no adjunct, plural: "You believe you would be able to recognize an ordinary [set] of [those] now."
 
 Bodies.xml - no DisplayName for parts? though laterality plays a role
+
+a slimy slim feathered solar cell with suspensors and grips
+Tanaka the Cheerful, the Celebrated, the Wise, Savior of Miyajima
+Tanaka the convenient, the tiny, the hot, the cheerful, the wise, the plant, the mouse
+[Title]、[Epithet][Name][Honorific]
+Albino ape
