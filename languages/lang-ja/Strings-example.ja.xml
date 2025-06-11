@@ -447,7 +447,9 @@ Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:44
   <!--
 	DescriptionBuilder strings
   -->
-  <string ID="DescriptionBuilder Epithets Join:=epithets.join:, =">=epithets.てList=</string>
+  <string ID="DescriptionBuilder Epithets Join:=epithets.join:, =">=epithets.join:、=</string>
+  <!-- special just for ja! -->
+  <string ID="DescriptionBuilder Epithets Few:=epithets.てList=">=epithets.てList=</string>
   <string ID="DescriptionBuilder Multiple Titles Clause:, =titles.andList=">=titles.andList=、</string>
   <string ID="DescriptionBuilder Single Title Clause With Epithets:, =title.toString=">=title.toString=、</string>
   <string ID="DescriptionBuilder Single Title Clause:and =title.toString=">と=title.toString=</string>

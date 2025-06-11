@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud code extracted string table TO BE!
-Comments should be deleted when copied to a new translation table.
+Effectively a glossary of common words, creatures, places, and things
+worth tracking in 1 spot, along with a bit of background info
 -->
 <strings Lang="ja-ref" Encoding="utf-8">
   
@@ -79,9 +79,11 @@ Comments should be deleted when copied to a new translation table.
   -->
   <string ID="glossary:weep">ジンワリ</string>
 
-<!-- NOTE: trying to avoid 人"(human) person" except when specifically a humanoid! -->
+<!-- NOTE: trying to avoid 人"(human) person" except maybe when specifically a humanoid!
+    using 民 or 者 for individuals, 民 or 族 for peoples/a tribe
+-->
   <string ID="glossary:villagers">村民,[村民\そんみん]</string>
-  <string ID="glossary:faction">派閥,[派閥\はばつ]</string><!-- use 閥 as a suffix -->
+  <string ID="glossary:faction">派閥,[派閥\はばつ]</string><!-- use 閥 as a faction suffix -->
   <!-- "The <profession> who is a convert to <faith>": "<faith>への改宗者である<profession>" -->
   <string ID="glossary:Mechanimist convert">機構霊信仰への改宗者</string>
   <string ID="glossary:watervine farmer">水草農民</string>

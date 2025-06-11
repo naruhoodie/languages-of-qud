@@ -248,13 +248,17 @@ namespace XRL.Language
             using var SB = ZString.CreateStringBuilder();
             if (Adjective.EndsWith("い"))
             {
-                SB.Remove(SB.Length - 1, 1);
+                SB.Append(Adjective.Substring(0, Adjective.Length - 1));
                 SB.Append("くて");
             }
             else if (Adjective.EndsWith("な"))
             {
-                SB.Remove(SB.Length - 1, 1);
+                SB.Append(Adjective.Substring(0, Adjective.Length - 1));
                 SB.Append("で");
+            }
+            else
+            {
+                SB.Append(Adjective);
             }
             return SB.ToString();
         }
@@ -267,7 +271,7 @@ namespace XRL.Language
             }
             if (List.Count == 1)
             {
-                return GetAdjectiveてForm(List[0]);
+                return List[0];
             }
             using var SB = ZString.CreateStringBuilder();
             for (int i = 0, j = List.Count - 1; i < j; i++)

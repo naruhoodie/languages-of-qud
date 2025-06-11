@@ -26,15 +26,15 @@ I like cake.
 
 Notepad++
 regexp for derubifying:
-	\[([^"\<\>\\\]]+)\\[^A-Z"\<\>\\\]]+\]	\1
-	# this will not match any ruby text containing uppercase letters A-Z
+\[([^"\<\>\\\]]+)\\[^A-Z"\<\>\\\]]+\]	\1
+# this will not match any ruby text containing uppercase letters A-Z
 regexp for adding [届：\TODO]: 
-	(Value=")([^"\[]+)(")	\1\[届：\\TODO\]\2\3
-	# this covers text in Value="" in the string tag
-	(>)([^\[\<ぁ-ゔァ-ヺＡ-Ｚ][^\<ぁ-ゔァ-ヺＡ-Ｚ]+)(<\/string\>)	\1\[届：\\TODO\]\2\3
+(Value=")([^"\[]+)(")	\1\[届：\\TODO\]\2\3
+# this covers text in Value="" in the string tag
+(>)([^\[\<ぁ-ゔァ-ヺＡ-Ｚ][^\<ぁ-ゔァ-ヺＡ-Ｚ]+)(<\/string\>)	\1\[届：\\TODO\]\2\3
 checking afterwards:
-	Value="[^\[][^届]
-	<string[^\>]+>[^\[][^\<届]+<\/string>
+Value="[^\[][^届]
+<string[^\>]+>[^\[][^\<届]+<\/string>
 
 VS Code
 regexp for removing ruby text tags (except the TODOs):
@@ -73,6 +73,7 @@ Bodies.xml - no DisplayName for parts? though laterality plays a role
 
 a slimy slim feathered solar cell with suspensors and grips
 Tanaka the Cheerful, the Celebrated, the Wise, Savior of Miyajima
+甘くて便利な田中
 Tanaka the convenient, the tiny, the hot, the cheerful, the wise, the plant, the mouse
 [Title]、[Epithet][Name][Honorific]
 Albino ape

@@ -5,7 +5,8 @@ using XRL.World.Text.Delegates;
 using XRL.Language;
 using System.Collections.Generic;
 
-
+// TODO: split out replacers into sub-files by argument and/or processing type
+// e.g. VariableReplacers.List.cs, VariableReplacers.String.cs, VariableReplacers.Number.cs
 namespace LanguagesOfQud
 {
     [HasVariableReplacer(Lang = "ja")]
@@ -54,6 +55,22 @@ namespace LanguagesOfQud
         }
 
         /// <summary>
+        /// the が(ga) particle for subject
+        /// 
+        /// Phrase may contain a ⁂ as an infix location for the particle,
+        /// otherwise it goes at the end.
+        /// </summary>
+        [VariableReplacer("が")]
+        public static string が(VariableContext Context, string Phrase)
+        {
+            if (Phrase.Contains("⁂"))
+            {
+                return Phrase.Replace("⁂", "が");
+            }
+            return Phrase + "が";
+        }
+
+        /// <summary>
         /// the を(wo) particle for direct objects
         /// </summary>
         [VariableReplacer("を")]
@@ -71,15 +88,18 @@ namespace LanguagesOfQud
 
         /// <summary>
         /// the を(wo) particle for direct objects
+        /// 
+        /// Phrase may contain a ⁂ as an infix location for the particle,
+        /// otherwise it goes at the end.
         /// </summary>
         [VariableReplacer("を")]
-        public static string を(VariableContext Context, string target)
+        public static string を(VariableContext Context, string Phrase)
         {
-            if (target.Contains("⁂"))
+            if (Phrase.Contains("⁂"))
             {
-                return target.Replace("⁂", "を");
+                return Phrase.Replace("⁂", "を");
             }
-            return target + "を";
+            return Phrase + "を";
         }
 
         /// <summary>
@@ -147,15 +167,18 @@ namespace LanguagesOfQud
 
         /// <summary>
         /// the で(de) particle for location, means, etc.
+        /// 
+        /// Phrase may contain a ⁂ as an infix location for the particle,
+        /// otherwise it goes at the end.
         /// </summary>
         [VariableReplacer("で")]
-        public static string で(VariableContext Context, string target)
+        public static string で(VariableContext Context, string Phrase)
         {
-            if (target.Contains("⁂"))
+            if (Phrase.Contains("⁂"))
             {
-                return target.Replace("⁂", "で");
+                return Phrase.Replace("⁂", "で");
             }
-            return target + "で";
+            return Phrase + "で";
         }
 
         /// <summary>
@@ -315,10 +338,6 @@ namespace LanguagesOfQud
             return Context.Parameters.Count > 0 ? Context.Parameters[0] : Context.Default;
         }
 
-        //TODO: add a postprocessor StripRubyText to ReplacerBuilder
-        //  e.g. "[届：\TODO]blah[thing\ruby] [b]leh blah" -> "届：blahthing [b]leh blah"
-        //  probably should go in Qud code if we'll support ruby formatting generally
-
         /// <summary>
         /// Join together a list of "adjective" strings by converting to て-form.
         /// な-adjectives: replace with で
@@ -326,11 +345,16 @@ namespace LanguagesOfQud
         /// の-adjectives: no change
         /// </summary>
         [VariableReplacer("てList")]
-        [VariableExample("one, two, and three", "one;;two;;three")]
+        [VariableExample("甘くて便利で温かくて本当のすてきな", "甘い;;便利な;;温かい;;本当の;;すてきな")]
         public static string てList(VariableContext Context, IReadOnlyList<string> Strings)
         {
             return TranslatorJapanese.MakeてList(Strings);
         }
+
+        //TODO: add a postprocessor StripRubyText to ReplacerBuilder
+        //  e.g. "[届：\TODO]blah[thing\ruby] [b]leh blah" -> "届：blahthing [b]leh blah"
+        //  probably should go in Qud code if we'll support ruby formatting generally
+
     }
 
 }

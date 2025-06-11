@@ -5,9 +5,28 @@ using static XRL.Language.Strings;
 
 namespace XRL.Language
 {
+    /// <summary>
+    /// used for building a complete DisplayName
+    /// with descriptive elements ordered appropriately around the base name.
+    /// 
+    /// (Hero) creatures may have epithets and titles.
+    /// Japanese-style ordering: [Title]、[FewShortEpithets][HeroName][Honorific]、[ManyEpithets]
+    /// 
+    /// Items could have mods (some of which are "with"-clauses e.g. "with suspensors")
+    /// Japanese-style ordering: [Mark][WithClauses]を備えた、[Adjectives][ItemName]
+    /// </summary>
     public class DescriptionBuilderJa : DescriptionBuilder
     {
+        // const values from DescriptionBuilder, for reference
+
+        //public const int ORDER_BASE = 10;
+        //public const int ORDER_ADJECTIVE = -500;
+        //public const int ORDER_CLAUSE = 600;
+        //public const int ORDER_TAG = 1100;
+        //public const int ORDER_MARK = -800;
+
         public DescriptionBuilderJa() { }
+
         protected override bool ShouldAddSpaceBetween(ReadOnlySpan<char> Building, string Adding)
         {
             // temporary return false just to prove the issue
@@ -17,26 +36,36 @@ namespace XRL.Language
 
         /// <summary>
         /// Epithets in Japanese go before the name
-        /// They will be "adjectives" of some form
-        /// for multiples, all but the last is converted to て-form
+        /// if more than 3, do as a comma-separated list after the name
         /// </summary>
         protected override void ResolveEpithets()
         {
             if (Epithets != null && Epithets.Count > 0)
             {
                 string clause;
-                if (Epithets.Count > 1)
+                if (Epithets.Count > 3)
                 {
                     Epithets.Sort(SortEpithets);
                     clause = _T("DescriptionBuilder Epithets Join", "=epithets.join:, =")
                         .AddArgument(Epithets, "epithets")
                         .ToString();
+                    AddClause(clause, ORDER_ADJUST_VERY_EARLY);
                 }
                 else
                 {
-                    clause = Epithets[0];
+                    if (Epithets.Count > 1)
+                    {
+                    Epithets.Sort(SortEpithets);
+                    clause = _T("DescriptionBuilder Epithets Few", "=epithets.てList=")
+                        .AddArgument(Epithets, "epithets")
+                        .ToString();
+                    }
+                    else
+                    {
+                        clause = Epithets[0];
+                    }
+                    AddBase(clause, ORDER_ADJUST_VERY_EARLY);
                 }
-                AddBase(clause, ORDER_ADJUST_VERY_EARLY);
                 Epithets.Clear();
                 EpithetOrder?.Clear();
             }
