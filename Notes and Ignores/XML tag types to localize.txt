@@ -47,6 +47,12 @@
 		<part Name="VibroWeapon" NameForStatus="<??LOCALIZE>" />
 		<part Name="Toolbox" NameForStatus="<??LOCALIZE>" />
 		<part Name="RulesDescription" Text="<LOCALIZE>" GenotypeAlt="<LOCALIZE>" />
+	<!-- Items.xml - parts with Verbs! -->
+	    <part Name="Projectile" PassByVerb="<LOCALIZE>" />
+	    <part Name="DeploymentGrenade" ActivationVerb="<LOCALIZE>" />
+	    <part Name="BootSequence" VerbOnBootInitialized="<LOCALIZE>" VerbOnBootAborted="<LOCALIZE>" VerbOnBootDone="<LOCALIZE>" />
+	    <part Name="Harvestable" HarvestVerb="<LOCALIZE>" />
+	    <part Name="RefractLight" Verb="<LOCALIZE>" />
 	<!-- Food.xml -->
 		<part Name="Food" Message="<LOCALIZE>" />
 	<!-- Widgets.xml -->
