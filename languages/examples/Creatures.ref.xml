@@ -48,6 +48,19 @@
     <tag Name="DynamicObjectsTable:Flowerfields_Creatures" />
   </object>
 
+  <object Name="Bear" Inherits="BaseBear">
+    <part Name="Render" DisplayName="bear" Tile="creatures/sw_angrybear.bmp" RenderString="u" ColorString="&amp;w" DetailColor="y" />
+		<part Name="Description" Short="&quot;The Grizzly Bear is huge and wild; 
+=pronouns.Subjective= =verb:have:afterpronoun= devoured the infant child.
+The infant child is unaware
+=pronouns.Subjective= =verb:have:afterpronoun= been eaten by the bear.&quot;
+-A.E. Housman" />
+		<inventoryobject Blueprint="Bear_Bite" Number="1" />
+    <inventoryobject Blueprint="Bear_Claw" Number="2" />
+    <tag Name="VerseDescription" />
+    <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_bear" />
+  </object>
+
   <!-- NPCs -->
   <object Name="Mehmet" Inherits="WatervineFarmerJoppa">
     <part Name="Render" DisplayName="Mehmet" ColorString="&amp;W" RenderString="f" Tile="Creatures/npc-mehmet.bmp" />

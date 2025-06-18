@@ -12,42 +12,41 @@
   -->
 
   <object Name="Creature" Load="Merge">
-    <tag Name="PetResponse" Value="[LOC]=subject.T= =verb:stare= at =object.t= blankly." />
-    <tag Name="SimpleConversation" Value="[LOC]Moon and Sun. Wisdom and will.~May the earth yield for us this season.~Peace, =player.formalAddressTerm=." />
-  <!-- <xtagTextFragments Skin="skin" PoeticFeatures="shiny teeth,coarse hair,sunken eyes" YounglingNoise="*heh*" Activity="roaming around idly" VillageActivity="sleeping in our homes" NeedsItemFor="for my own collection,to slake my greed,because of its trade value" SacredThing="the act of procreating" ArableLand="arable land" ValuedOre="precious metals" /> -->
-    <stag Name="HardMaterial" Value="bone" />
+    <tag Name="PetResponse" Value="[!!]=subject.T= =verb:stare= at =object.t= blankly." />
+    <tag Name="SimpleConversation" Value="[!!]Moon and Sun. Wisdom and will.~May the earth yield for us this season.~Peace, =player.formalAddressTerm=." />
+    <xtagTextFragments Skin="[!!]skin" PoeticFeatures="[!!]shiny teeth,coarse hair,sunken eyes" YounglingNoise="[!!]*heh*" Activity="[!!]roaming around idly" VillageActivity="[!!]sleeping in our homes" NeedsItemFor="[!!]for my own collection,to slake my greed,because of its trade value" SacredThing="[!!]the act of procreating" ArableLand="[!!]arable land" ValuedOre="[!!]precious metals" />
+    <stag Name="HardMaterial" Value="[!!]bone" />
   </object>
   
   <!-- Base animals -->
-  <object Name="BaseAnimal" Inherits="Animal">
-    <xtagTextFragments Skin="skin" PoeticFeatures="shiny teeth,hispid skin,spheric hooves" YounglingNoise="*whine*" Activity="roaming around idly,scrounging for food,napping under the high salt sun" VillageActivity="sleeping in our homes,eating our food" GuestActivity="breaking bread" NeedsItemFor="for my own collection,to slake my greed,because of its trade value" SacredThing="the act of procreating,shade from the salt sun,naps,abundant food" ArableLand="grazeland" ValuedOre="shade and vittle" />
-    <tag Name="SimpleConversation" Value="&amp;w*soft growling*&amp;y" />
-    <tag Name="PetResponse" Value="=subject.T= =verb:growl= softly." />
+  <object Name="BaseAnimal" Load="Merge">
+    <xtagTextFragments Skin="[!!]skin" PoeticFeatures="[!!]shiny teeth,hispid skin,spheric hooves" YounglingNoise="[!!]*whine*" Activity="[!!]roaming around idly,scrounging for food,napping under the high salt sun" VillageActivity="[!!]sleeping in our homes,eating our food" GuestActivity="[!!]breaking bread" NeedsItemFor="[!!]for my own collection,to slake my greed,because of its trade value" SacredThing="[!!]the act of procreating,shade from the salt sun,naps,abundant food" ArableLand="[!!]grazeland" ValuedOre="[!!]shade and vittle" />
+    <tag Name="SimpleConversation" Value="[!!]&amp;w*soft growling*&amp;y" />
+    <tag Name="PetResponse" Value="[!!]=subject.T= =verb:growl= softly." />
   </object>
-  <object Name="BaseAntelope" Inherits="BaseGrazingAnimal">
-    <tag Name="Species" Value="antelope" />
-    <tag Name="SimpleConversation" Value="&amp;w*idly grazes*&amp;y" />
+  <object Name="BaseAntelope" Load="Merge">
+    <tag Name="Species" Value="[!!]antelope" />
+    <tag Name="SimpleConversation" Value="[!!]&amp;w*idly grazes*&amp;y" />
   </object>
-	<object Name="BaseBat" Inherits="BaseAnimal">
-		<tag Name="Species" Value="bat" />		
-		<tag Name="SimpleConversation" Value="{{emote|*idly flaps wings*}}" />
+	<object Name="BaseBat" Load="Merge">
+		<tag Name="Species" Value="[!!]bat" />		
+		<tag Name="SimpleConversation" Value="[!!]{{emote|*idly flaps wings*}}" />
   </object>
-  <object Name="BaseBear" Inherits="BaseAnimal">
-    <part Name="Render" DisplayName="base bear" />
-    <tag Name="Species" Value="bear" />
+  <object Name="BaseBear" Load="Merge">
+    <tag Name="Species" Value="[!!]bear" />
     <tag Name="HeroNameTitleWiseDescriptor" Value="Ruminative,Wise,Sensible,Undrowsy,Great,Spirited" />
     <tag Name="HeroNameTitleMayorSyn" Value="spirit bear,mayor,elder" />
     <tag Name="HeroNameTitleMayorSynCap" Value="Spirit Bear,Mayor,Elder" />
     <xtagTextFragments Skin="fur" PoeticFeatures="vast shoulders,oily nose,ageless eyes" YounglingNoise="*growl*" Activity="roaring at glowfish" VillageActivity="hibernating by our hearth" SacredThing="honey" />
   </object>
-  <object Name="BaseBird" Inherits="Animal">
+  <object Name="BaseBird" Load="Merge">
     <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Sage,Erudite,Great,Colorful,Chatty,Loud,Sensible,Shrewd,Noisy,Full-Throated,Sonorous" />
     <tag Name="HeroNameTitleMayorSyn" Value="speaker,orator,songstress,sage,mayor,elder-bird" />
     <tag Name="HeroNameTitleMayorSynCap" Value="Speaker,Orator,Songstress,Sage,Mayor,Elder-Bird" />
     <xtagTextFragments Skin="feathers" PoeticFeatures="sagittal beak,cherubic wings,proud bearing" YounglingNoise="*chirp*" Activity="chirping at peers,singing birdsong,nesting,basking in the sun" VillageActivity="chirping at us,basking in the sun,belting out birdsong" NeedsItemFor="for my own collection,to slake my greed,because of its trade value,to hide in my nest,to chirp at" SacredThing="the art of speech and song,prattle,the gift of flight,worms,the salt-strewn air" ArableLand="high branches" ValuedOre="chrome baubles,shiny baubles" />
     <tag Name="PetResponse" Value="=subject.T= =verb:chirp=." />    
   </object>
-  <object Name="BaseCat" Inherits="BaseAnimal">
+  <object Name="BaseCat" Load="Merge">
     <tag Name="HeroNameTitleWiseDescriptor" Value="Sleek,Sphinx,Sphinx-like,Cunning,Graceful,Lithe,Wise,Sage,Sophic" />
     <tag Name="HeroNameTitleMayorSyn" Value="sphinx,mayor,elder" />
     <tag Name="HeroNameTitleMayorSynCap" Value="Sphinx,Mayor,Elder" />
@@ -55,7 +54,7 @@
     <tag Name="PetResponse" Value="=subject.T= =verb:meow=." />
     <xtagTextFragments Skin="fur" PoeticFeatures="triangle ears,pearly whiskers,ageless eyes" YounglingNoise="*mew*,*prrrup*" Activity="sleeping and chasing birds all through the day" VillageActivity="sleeping in our homes" SacredThing="judgemental silence" />
   </object>
-  <object Name="BaseClam" Inherits="Animal">
+  <object Name="BaseClam" Load="Merge">
     <tag Name="Species" Value="clam" />
     <tag Name="HeroNameTitleWiseDescriptor" Value="Inviting,Tempting,Open,Wide-Open,Hospitable,Seductive" />
     <tag Name="HeroNameTitleMayorSyn" Value="clam god,clam mayor,elder clam" />
@@ -65,7 +64,7 @@
     <tag Name="SimpleConversation" Value="{{emote|*sitting open invitingly*}}" />
     <tag Name="PetResponse" Value="=subject.T= =verb:shloop=." />
   </object>
-  <object Name="BaseCrab" Inherits="Animal">
+  <object Name="BaseCrab" Load="Merge">
     <tag Name="Species" Value="crab" />
     <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Great,Sage,Judicious,Giant,Dense,Thick,Ornately-Shelled" />
     <tag Name="HeroNameTitleMayorSyn" Value="king,mayor,elder" />
@@ -75,11 +74,11 @@
     <tag Name="SimpleConversation" Value="&amp;w*raucous croaking*&amp;y" />
     <tag Name="PetResponse" Value="=subject.T= =verb:croak=." />    
   </object>
-  <object Name="BaseDog" Inherits="BaseAnimal">
+  <object Name="BaseDog" Load="Merge">
     <tag Name="PetResponse" Value="=subject.T= =verb:bark=." />
     <tag Name="Species" Value="dog" />
   </object>  
-  <object Name="BaseFish" Inherits="Animal">
+  <object Name="BaseFish" Load="Merge">
     <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Sage,Old,Great,Giant,Ornately-Finned,Fleet,Many-Finned" />
     <tag Name="HeroNameTitleMayorSyn" Value="fish god,fish mayor,elder-fish" />
     <tag Name="HeroNameTitleMayorSynCap" Value="Fish God,Fish Mayor,Elder-Fish" />
@@ -87,7 +86,7 @@
     <stag Name="HardMaterial" Value="scale" />
     <tag Name="PetResponse" Value="=subject.T= =verb:gurgle=." />    
   </object>
-  <object Name="BaseInsect" Inherits="Animal">
+  <object Name="BaseInsect" Load="Merge">
     <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Great,Vibrant,Motley,Limber,Giant,Pupated" />
     <tag Name="HeroNameTitleMayorSyn" Value="queen,mayor,elder" />
     <tag Name="HeroNameTitleMayorSynCap" Value="Queen,Mayor,Elder" />
@@ -96,7 +95,7 @@
     <tag Name="SimpleConversation" Value="&amp;w*sharp clicking*&amp;y~&amp;w*soft buzzing*&amp;y" />
     <tag Name="PetResponse" Value="=subject.T= =verb:buzz=." />
   </object>
-  <object Name="BaseOoze" Inherits="Animal">
+  <object Name="BaseOoze" Load="Merge">
     <tag Name="BleedPrefix" Value="{{g|slimy}}" />
     <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Great,Sage,Judicious,Giant,Sophic,Erudite,Cubic,Regular,Spherical,Platonic,Symmetric,Triangular" />
     <tag Name="HeroNameTitleMayorSyn" Value="philosopher,mayor,elder,theorist,sophist" />
@@ -107,13 +106,13 @@
     <tag Name="SimpleConversation" Value="&amp;w*exudes loudly*&amp;y~&amp;w*soft gushing*&amp;y" />
     <tag Name="PetResponse" Value="=subject.T= =verb:spurt=." />
   </object>
-  <object Name="BaseJelly" Inherits="BaseOoze">
+  <object Name="BaseJelly" Load="Merge">
     <tag Name="Species" Value="jelly" />
   </object>
-  <object Name="BaseSlug" Inherits="BaseWorm">
+  <object Name="BaseSlug" Load="Merge">
     <tag Name="Species" Value="slug" />
   </object>
-  <object Name="BaseReptile" Inherits="Animal">
+  <object Name="BaseReptile" Load="Merge">
     <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Sage,Judicious,Wary,Shrewd,Warm,Sun-Bathed,Still" />
     <tag Name="HeroNameTitleMayorSyn" Value="daemon,wyrm,mayor,elder" />
     <tag Name="HeroNameTitleMayorSynCap" Value="Daemon,Wyrm,Mayor,Elder" />
@@ -122,7 +121,7 @@
     <tag Name="SimpleConversation" Value="{{w|*soft hissing*}}" />
     <tag Name="PetResponse" Value="=subject.T= =verb:hiss=." />
   </object>	
-  <object Name="BaseFrog" Inherits="BaseReptile">
+  <object Name="BaseFrog" Load="Merge">
     <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Sage,Judicious,Wary,Shrewd,Warm,Sun-Bathed,Still" />
     <tag Name="HeroNameTitleMayorSyn" Value="daemon,frog,mayor,elder" />
     <tag Name="HeroNameTitleMayorSynCap" Value="Daemon,Frog,Mayor,Elder" />
@@ -133,10 +132,10 @@
     <tag Name="SimpleConversation" Value="{{emote|*ribbits*}}" />
     <tag Name="PetResponse" Value="=subject.T= =verb:croak=." />
   </object>
-  <object Name="BaseSnail" Inherits="BaseShelledMollusk">    
+  <object Name="BaseSnail" Load="Merge">    
     <tag Name="Species" Value="snail" />
   </object>
-  <object Name="BaseSpider" Inherits="Animal">
+  <object Name="BaseSpider" Load="Merge">
     <tag Name="Species" Value="spider" />
     <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Shrewd,Wary,Erudite,Great,Giant,Many-Legged" />
     <tag Name="HeroNameTitleMayorSyn" Value="weaver,mayor,elder" />
@@ -145,7 +144,7 @@
     <stag Name="HardMaterial" Value="chitin" />
     <tag Name="SimpleConversation" Value="&amp;w*idly weaving*&amp;y" />    
   </object>
-  <object Name="BaseStar" Inherits="Animal">
+  <object Name="BaseStar" Load="Merge">
     <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Sage,Wary,Erudite,Great,Giant,Long,Girthy,Thick" />
     <tag Name="HeroNameTitleMayorSyn" Value="star god,star mayor,elder star" />
     <tag Name="HeroNameTitleMayorSynCap" Value="Star God,Star Mayor,Elder Star" />
@@ -155,7 +154,7 @@
     <tag Name="SimpleConversation" Value="{{emote|*inscrutably being*}}" />
     <tag Name="PetResponse" Value="{{emote|*xxxff*}}" />
   </object>
-  <object Name="BaseTortoise" Inherits="BaseReptile">
+  <object Name="BaseTortoise" Load="Merge">
     <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Sage,Wary,Erudite,Great,Giant,Ornately-Shelled,Slow,Stone-like" />
     <tag Name="HeroNameTitleMayorSyn" Value="sage,mayor,elder" />
     <tag Name="HeroNameTitleMayorSynCap" Value="Sage,Mayor,Elder" />
@@ -165,7 +164,7 @@
     <tag Name="SimpleConversation" Value="&amp;w*sniffles and sneezes*&amp;y" />
     <tag Name="PetResponse" Value="=subject.T= =verb:croak=." />
   </object>
-  <object Name="BaseUrchin" Inherits="Animal">
+  <object Name="BaseUrchin" Load="Merge">
     <tag Name="Species" Value="urchin" />
     <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Sage,Wary,Erudite,Great,Giant,Broad,Bulbous" />
     <tag Name="HeroNameTitleMayorSyn" Value="urchin god,urchin mayor,elder urchin" />
@@ -175,7 +174,7 @@
     <tag Name="SimpleConversation" Value="{{w|*idly undulating*}}" />
     <tag Name="PetResponse" Value="=subject.T= =verb:undulate=." />
   </object>
-  <object Name="BaseWorm" Inherits="Animal">
+  <object Name="BaseWorm" Load="Merge">
     <tag Name="Species" Value="worm" />
     <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Sage,Wary,Erudite,Great,Giant,Long,Girthy,Thick" />
     <tag Name="HeroNameTitleMayorSyn" Value="worm god,worm mayor,elder worm" />
@@ -187,12 +186,12 @@
   </object>
   
   <!-- Base robots -->
-  <object Name="Robot" Inherits="Creature">
+  <object Name="Robot" Load="Merge">
     <tag Name="BleedPrefix" Value="{{K|oily}}" />
     <tag Name="PetResponse" Value="=subject.T= =verb:beep= and =verb:boop=." />
     <stag Name="HardMaterial" Value="casing" />    
   </object>
-  <object Name="BaseRobot" Inherits="Robot">
+  <object Name="BaseRobot" Load="Merge">
     <tag Name="HeroNameTitleWiseDescriptor" Value="Unerring,Updated,Rustless,Oracular,Man-like,Woman-like,Lossless,Invariant,Certain" />
     <tag Name="HeroNameTitleMayorSyn" Value="seer,administrator,oracle,mayor,elder" />
     <tag Name="HeroNameTitleMayorSynCap" Value="Seer,Administrator,Oracle,Mayor,Elder" />
@@ -200,24 +199,24 @@
     <stag Name="HardMaterial" Value="casing" />
     <tag Name="SimpleConversation" Value="&amp;w*beep boop*&amp;y~&amp;w*boop beep*&amp;y~&amp;w*beep boop beep*&amp;y~&amp;w*boop beep boop*&amp;y" />
   </object>
-  <object Name="BaseMiner" Inherits="BaseRobot">
+  <object Name="BaseMiner" Load="Merge">
     <part Name="Description" Short="Stilt pistons fire in alternating quatro and tote the miner and =pronouns.possessive= mines in esoteric patterns across the ground. When =pronouns.possessive= topographic instincts are sated, a hatch opens and =pronouns.subjective= =verb:lay:afterpronoun= =pronouns.possessive= explosive egg." />
   </object>
-  <object Name="Turret Tinker" Inherits="BaseRobot">
+  <object Name="Turret Tinker" Load="Merge">
     <tag Name="Species" Value="hexapedal robot" />
     <part Name="Description" Short="=pronouns.Possessive= cylindric head is embellished with a frilly crest whose symbolism is unknown. =pronouns.Subjective= dutifully =verb:march:afterpronoun= on a pair of chrome pistons toward =pronouns.possessive= final purpose." />
   </object>
   
   <!-- Base humanoids -->
-  <object Name="Humanoid" Inherits="Creature">
+  <object Name="Humanoid" Load="Merge">
     <tag Name="BodyDisplayName" Value="Humanoid" />
     <tag Name="Species" Value="human" />
   </object>
-  <object Name="BaseHumanoid" Inherits="Humanoid">
+  <object Name="BaseHumanoid" Load="Merge">
     <xtagTextFragments Skin="skin" PoeticFeatures="tall forehead,outstretched legs,eyes full of wonder" Activity="going about the tedious work of speaking to peers,hunting and gathering,wandering the salt dunes" VillageActivity="sleeping in our bedrolls and sitting in our chairs,lounging around,reading books,peeling and eating musa" NeedsItemFor="for my own collection,to slake my greed,because of its trade value,to inspire my art,to inspire my poetry,to be my muse,to help with farm work,for the games we play under the Beetle Moon" SacredThing="the act of procreating,philosophy,alcohol,grains of the earth,stone fruit,artistry,poetry,warm meals,bread and wine,pottery,painting" ArableLand="arable land,livestock,the bounty of the earth" ValuedOre="precious metals,artifacts,chrome,jasper,cybernetics,the nectar of the Eaters" />
     <tag Name="SimpleConversation" Value="Moon and Sun. Wisdom and will.~May the earth yield for us this season.~Peace, =player.formalAddressTerm=." />
   </object>
-  <object Name="BaseApe" Inherits="Humanoid">
+  <object Name="BaseApe" Load="Merge">
     <intproperty Name="Ape" Value="1" />
     <tag Name="Species" Value="ape" />
     <tag Name="HeroNameTitleWiseDescriptor" Value="Ruminative,Wise,Sensible,Shrewd,Great,Spirited,Judicious" />
@@ -227,43 +226,43 @@
     <tag Name="SimpleConversation" Value="&amp;w*pounds chest*&amp;y" />
     <tag Name="PetResponse" Value="=subject.T= =verb:gibber=." />
   </object>
-  <object Name="BaseBaboon" Inherits="BaseApe">
+  <object Name="BaseBaboon" Load="Merge">
     <part Name="Description" Short="Wet nostrils flare at the seat of =pronouns.possessive= dropped snout, and furry arms wave in unpredicted motions. =pronouns.Possessive= eyes are full of stony mischief." />
     <tag Name="Species" Value="baboon" />
   </object>
-	<object Name="BaseGoat" Inherits="BaseAnimal">
+	<object Name="BaseGoat" Load="Merge">
 		<tag Name="Species" Value="goat" />
 	</object>
-  <object Name="BaseIssachari" Inherits="BaseHumanoid">
+  <object Name="BaseIssachari" Load="Merge">
     <part Name="Description" Short="Wind presses a sunbleached thawb and neckdress against a humanoid form. The fabric is embroidered to rhyme with patterns in the salt." />
     <tag Name="SecretAdjectives" Value="humanoid" />
   </object>
-  <object Name="BaseMopango" Inherits="BaseHumanoid">
+  <object Name="BaseMopango" Load="Merge">
     <tag Name="Species" Value="mopango" />
     <xtagTextFragments YounglingNoise="*squeak*" Activity="finding weird artifacts" VillageActivity="communing with objects" SacredThing="the Kasaphescence" />
   </object>
-  <object Name="Mopango Corpse" Inherits="Animal Corpse">
+  <object Name="Mopango Corpse" Load="Merge">
     <part Name="Render" DisplayName="mopango corpse" />
     <part Name="Description" Short="Scratched scales lay in a coiled mound." />    
     <part Name="Food" Message="The meat is mildly gamey." />    
   </object>
-	<object Name="BaseSwine" Inherits="BaseAnimal">
+	<object Name="BaseSwine" Load="Merge">
 		<tag Name="Species" Value="pig" />
 	</object>
-  <object Name="Templar" Inherits="BaseTrueKin">
+  <object Name="Templar" Load="Merge">
     <part Name="Description" Short="Oiled and brushed mail hang across =pronouns.possessive= crooked spine and salient jaw. The color too was sucked out of =pronouns.possessive= irises by =pronouns.possessive= tangled lineage, and =pronouns.possessive= wet rosy lips catch the light and toss it back across a sharp sneer." />
     <tag Name="SecretAdjectives" Value="templar" />
   </object>
   
   <!-- this was in Items.xml ?? -->
-  <object Name="Plant" Inherits="PhysicalObject">
+  <object Name="Plant" Load="Merge">
     <stag Name="Plank" Value="plank" />
     <stag Name="Fiber" Value="strip" />
     <stag Name="FiberMaterial" Value="bark" />
   </object>
 
   <!-- Base plants -->
-  <object Name="BasePlant" Inherits="ActivePlant">
+  <object Name="BasePlant" Load="Merge">
     <tag Name="BleedPrefix" Value="{{W|sappy}}" />
     <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Sage,Erudite,Sensible,Sophic,Leafy,Verduous,Flowery,Old,Ripe" />
     <tag Name="HeroNameTitleMayorSyn" Value="sultan,monarch,mayor-plant,elder-plant" />
@@ -274,10 +273,10 @@
     <tag Name="SimpleConversation" Value="{{emote|*The plant gives no indication of understanding*.}}" />
     <tag Name="PetResponse" Value="=subject.T= =verb:sway= gently." />
   </object>
-  <object Name="BaseAloe" Inherits="BasePlant">
+  <object Name="BaseAloe" Load="Merge">
     <tag Name="Species" Value="aloe" />
   </object> 
-  <object Name="MutatedPlant" Inherits="Creature">
+  <object Name="MutatedPlant" Load="Merge">
     <tag Name="BleedPrefix" Value="{{W|sappy}}" />
     <tag Name="HeroNameTitleMayorSyn" Value="mayor-plant,elder-plant" />
     <tag Name="HeroNameTitleMayorSynCap" Value="Mayor-Plant,Elder-Plant" />
@@ -286,35 +285,35 @@
     <stag Name="Plank" Value="strip" />
     <stag Name="HardMaterial" Value="stem" />
   </object>
-  <object Name="MutatedBush" Inherits="MutatedPlant">
+  <object Name="MutatedBush" Load="Merge">
     <tag Name="Species" Value="bush" />
     <xtagTextFragments Skin="cuticle" PoeticFeatures="braided feet,gentle stillness,lust for water" />
   </object>
-  <object Name="MutatedSucculent" Inherits="MutatedPlant">
+  <object Name="MutatedSucculent" Load="Merge">
     <tag Name="Species" Value="succulent" />
     <xtagTextFragments Skin="cuticle" PoeticFeatures="quincunx spines,fluted stems,plush hair" />
   </object>
-  <object Name="MutatedFlower" Inherits="MutatedPlant">
+  <object Name="MutatedFlower" Load="Merge">
     <tag Name="Species" Value="flower" />
     <tag Name="SecretAdjectives" Value="flower" />
     <xtagTextFragments Skin="cuticle" PoeticFeatures="ethereal petals,simple geometry,ageless beauty" />
   </object>
-  <object Name="MutatedVine" Inherits="MutatedPlant">
+  <object Name="MutatedVine" Load="Merge">
     <tag Name="Species" Value="vine" />
     <xtagTextFragments Skin="cuticle" PoeticFeatures="verdurous bearing,labyrinth of fingers,sensuality" />
   </object>
-  <object Name="MutatedTree" Inherits="MutatedPlant">
+  <object Name="MutatedTree" Load="Merge">
     <tag Name="Species" Value="tree" />
     <xtagTextFragments Skin="cuticle" PoeticFeatures="enormity,verdurous bearing,gentle stillness" />
   </object>
 
   <!-- was in Items.xml -->
-  <object Name="Fungus" Inherits="PhysicalObject">
+  <object Name="Fungus" Load="Merge">
     <stag Name="Plank" Value="mass" />
   </object>
 
   <!-- Base fungi -->  
-  <object Name="BaseFungus" Inherits="ActiveFungus">
+  <object Name="BaseFungus" Load="Merge">
     <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Sage,Erudite,Sensible,Sophic,Frilled,Pallid,Fecund,Old,Sporulous" />
     <tag Name="HeroNameTitleMayorSyn" Value="sultan,monarch,mayor-fungus,elder-fungus" />
     <tag Name="HeroNameTitleMayorSynCap" Value="Sultan,Monarch,Mayor-Fungus,Elder-Fungus" />
@@ -322,7 +321,7 @@
     <stag Name="HardMaterial" Value="flesh" />
     <tag Name="PetResponse" Value="=subject.T= =verb:squish=." />
   </object>
-  <object Name="MutatedFungus" Inherits="Creature">
+  <object Name="MutatedFungus" Load="Merge">
     <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Sage,Erudite,Sensible,Sophic,Frilled,Pallid,Fecund,Old,Sporulous" />
     <tag Name="HeroNameTitleMayorSyn" Value="sultan,monarch,mayor-fungus,elder-fungus" />
     <tag Name="HeroNameTitleMayorSynCap" Value="Sultan,Monarch,Mayor-Fungus,Elder-Fungus" />
@@ -332,7 +331,7 @@
   </object>
   
   <!-- Base oddities -->
-  <object Name="BaseNest" Inherits="Creature">
+  <object Name="BaseNest" Load="Merge">
     <xtagTextFragments YounglingNoise="*squish*" Activity="incubating larvae" VillageActivity="incubating larvae" NeedsItemFor="for my own collection,to slake my greed,because of its trade value" SacredThing="nesting" ArableLand="a moist place" ValuedOre="moisture" />
   </object>
 	
