@@ -1,0 +1,1424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- the originals of some creature object definitions, for reference -->
+<objects Encoding="utf-8" Lang="ref">
+
+  <!--
+
+    ***************************
+       Base creature objects
+    ***************************
+
+  -->
+
+  <object Name="Creature" Inherits="PhysicalObject">
+    <part Name="Render" DisplayName="[Creature]" RenderString="@" RenderLayer="10" RenderIfDark="false" DetailColor="w" Tile="Assets_Content_Textures_Creatures_sw_farmer.bmp" />
+    <tag Name="OverlayColor" Value="&amp;G^k" />
+    <part Name="Physics" Organic="true" Takeable="false" Solid="false" Weight="201" Category="Creatures" />
+    <part Name="Brain" Hostile="false" Wanders="true" Factions="Beasts-100" />
+    <part Name="Body" Anatomy="Humanoid" />
+    <part Name="Combat" />
+    <part Name="Experience" />
+    <part Name="Inventory" />
+    <part Name="Mutations" />
+    <part Name="Skills" />
+    <part Name="ActivatedAbilities" />
+    <part Name="RandomLoot" />
+    <part Name="Springy" Factor="0.5" />
+    <stat Name="Strength" ShortName="ST" Min="1" Max="9000" Value="16" />
+    <stat Name="Agility" ShortName="AG" Min="1" Max="9000" Value="16" />
+    <stat Name="Toughness" ShortName="TO" Min="1" Max="9000" Value="16" />
+    <stat Name="Intelligence" ShortName="IN" Min="1" Max="9000" Value="16" />
+    <stat Name="Willpower" ShortName="WI" Min="1" Max="9000" Value="16" />
+    <stat Name="Ego" ShortName="EG" Min="1" Max="9000" Value="16" />
+    <stat Name="Hitpoints" ShortName="HP" Min="0" Max="64000" Value="16" />
+    <stat Name="Energy" ShortName="EN" Min="-100000" Max="100000" Value="0" />
+    <stat Name="Speed" ShortName="SP" Min="1" Max="10000" Value="100" />
+    <stat Name="MoveSpeed" ShortName="MS" Min="-1800" Max="195" Value="100" />
+    <stat Name="AV" ShortName="AV" Min="0" Max="100" Value="0" />
+    <stat Name="DV" ShortName="DV" Min="-100" Max="100" Value="0" />
+    <stat Name="XP" ShortName="XP" Min="0" Max="2147483647" Value="0" />
+    <stat Name="XPValue" ShortName="XPValue" sValue="*XP" Min="0" Max="2147483647" />
+    <stat Name="SP" ShortName="SP" Min="0" Max="2147483647" Value="0" />
+    <stat Name="MP" ShortName="MP" Min="0" Max="2147483647" Value="0" />
+    <stat Name="AP" ShortName="AP" Min="0" Max="2147483647" Value="0" />
+    <stat Name="MA" ShortName="MA" Min="-100" Max="2147483647" Value="0" />
+    <stat Name="HeatResistance" ShortName="HeatResistance" Min="-100" Max="100" Value="0" />
+    <stat Name="ColdResistance" ShortName="ColdResistance" Min="-100" Max="100" Value="0" />
+    <stat Name="ElectricResistance" ShortName="ElectricResistance" Min="-100" Max="100" Value="0" />
+    <stat Name="AcidResistance" ShortName="AcidResistance" Min="-100" Max="100" Value="0" />
+    <part Name="Leveler" />
+    <part Name="Commerce" Value="100" />
+    <part Name="Stomach" />
+    <part Name="Corpse" CorpseChance="0" BurntCorpseChance="100" BurntCorpseBlueprint="Ashes" />
+    <removepart Name="BurnToAshesIfOrganic" />
+    <stat Name="Level" ShortName="LV" Min="1" Max="10000" Value="1" />
+    <tag Name="Role" Value="Unspecified" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <builder Name="Roboticized" ChanceOneIn="20000" />
+    <tag Name="NeverStack" />
+    <tag Name="Creature" />    
+    <tag Name="PetResponse" Value="=subject.T= =verb:stare= at =object.t= blankly." />
+    <tag Name="SimpleConversation" Value="Moon and Sun. Wisdom and will.~May the earth yield for us this season.~Peace, =player.formalAddressTerm=." />
+    <xtagTextFragments Skin="skin" PoeticFeatures="shiny teeth,coarse hair,sunken eyes" YounglingNoise="*heh*" Activity="roaming around idly" VillageActivity="sleeping in our homes" NeedsItemFor="for my own collection,to slake my greed,because of its trade value" SacredThing="the act of procreating" ArableLand="arable land" ValuedOre="precious metals" />
+    <stag Name="HardMaterial" Value="bone" />
+  </object>
+  
+  <!-- Base animals -->
+  <object Name="Animal" Inherits="Creature">
+    <part Name="Render" DisplayName="[Animal]" RenderString="@" />
+    <part Name="Body" Anatomy="Quadruped" />
+    <stat Name="Strength" Value="14" />
+    <stat Name="Agility" Value="14" />
+    <stat Name="Toughness" Value="14" />
+    <stat Name="Intelligence" Value="6" />
+    <stat Name="Willpower" Value="6" />
+    <stat Name="Ego" Value="6" />
+    <mutation Name="DarkVision" Level="6" />
+    <tag Name="RandomGender" Value="male,female" />
+    <tag Name="BaseObject" Value="*noinherit" />    
+    <tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_animal_grazingAnimal_vo_die" />
+    <tag Name="PrimaryLimbType" Value="Face" />
+  </object>
+  <object Name="BaseAnimal" Inherits="Animal">
+    <stat Name="Strength" sValue="16,1d3,(t-1)d2" />
+    <stat Name="Agility" sValue="14,1d3,(t-1)d1" />
+    <stat Name="Toughness" sValue="16,1d3,(t-1)d2" />
+    <stat Name="Intelligence" sValue="7,1d3,(t-1)d2-1" />
+    <stat Name="Willpower" sValue="7,1d3,(t-1)d2-1" />
+    <stat Name="Ego" sValue="7,1d3,(t-1)d2-1" />
+    <intproperty Name="Bleeds" Value="1" />
+    <mutation Name="DarkVision" Level="6" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <part Name="ConversationScript" ConversationID="Animals" />
+    <xtagTextFragments Skin="skin" PoeticFeatures="shiny teeth,hispid skin,spheric hooves" YounglingNoise="*whine*" Activity="roaming around idly,scrounging for food,napping under the high salt sun" VillageActivity="sleeping in our homes,eating our food" GuestActivity="breaking bread" NeedsItemFor="for my own collection,to slake my greed,because of its trade value" SacredThing="the act of procreating,shade from the salt sun,naps,abundant food" ArableLand="grazeland" ValuedOre="shade and vittle" />
+    <tag Name="Class" Value="grazer" />
+    <tag Name="Culture" Value="Animal" />
+    <tag Name="SimpleConversation" Value="&amp;w*soft growling*&amp;y" />
+    <tag Name="PetResponse" Value="=subject.T= =verb:growl= softly." />
+  </object>
+  <object Name="BaseGrazingAnimal" Inherits="BaseAnimal">
+    <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_grazingAnimal" />
+		<tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_animal_grazingAnimal_vo_die" />
+    <tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_animal_grazingAnimal_vo_hurt"/>
+    <tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_creature_animal_grazingAnimal_vo_idle"/>
+    <tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_creature_animal_grazingAnimal_vo_attack"/>
+  </object>
+  <object Name="BaseAntelope" Inherits="BaseGrazingAnimal">
+    <part Name="Brain" Factions="Antelopes-100" />
+    <tag Name="Class" Value="antelope" />
+    <tag Name="Species" Value="antelope" />
+    <tag Name="Culture" Value="Antelope" />
+    <tag Name="HeroStrBoost" Value="2" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <part Name="ConversationScript" ConversationID="Antelopes" />
+    <tag Name="SimpleConversation" Value="&amp;w*idly grazes*&amp;y" />
+  </object>
+	<object Name="BaseBat" Inherits="BaseAnimal">
+		<part Name="Brain" Factions="Winged Mammals-100" />
+		<tag Name="Class" Value="winged mammal" />
+		<tag Name="Species" Value="bat" />		
+		<mutation Name="Wings" Level="10" CapOverride="10" />
+		<tag Name="BaseObject" Value="*noinherit" />		
+		<tag Name="SimpleConversation" Value="{{emote|*idly flaps wings*}}" />
+    <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_bats" />
+		<tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_animal_bat_vo_die" />
+		<tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_animal_bat_vo_hurt"/>
+		<tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_creature_animal_bat_vo_idle"/>
+		<tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_creature_animal_bat_vo_attack"/>
+  </object>
+  <object Name="BaseBear" Inherits="BaseAnimal">
+    <part Name="Render" DisplayName="base bear" Tile="assets_content_textures_creatures_creatures-3-13.png" RenderString="u" ColorString="&amp;w" />
+    <part Name="Corpse" CorpseChance="50" CorpseBlueprint="Bear Corpse" />
+    <stat Name="Level" Value="6" />
+    <stat Name="AV" Value="4" />
+    <stat Name="Toughness" Boost="1" />
+    <stat Name="Hitpoints" Value="27" />
+    <part Name="Brain" Hostile="false" Factions="Bears-100" />    
+    <tag Name="Role" Value="Brute" />
+    <tag Name="Class" Value="bear" />
+    <tag Name="Species" Value="bear" />
+    <tag Name="Culture" Value="Bear" />
+    <tag Name="HeroHPBoost" Value="2" />
+    <tag Name="HeroStrBoost" Value="2" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="Ruminative,Wise,Sensible,Undrowsy,Great,Spirited" />
+    <tag Name="HeroNameTitleMayorSyn" Value="spirit bear,mayor,elder" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="Spirit Bear,Mayor,Elder" />
+    <xtagTextFragments Skin="fur" PoeticFeatures="vast shoulders,oily nose,ageless eyes" YounglingNoise="*growl*" Activity="roaring at glowfish" VillageActivity="hibernating by our hearth" SacredThing="honey" />
+    <tag Name="PrimaryLimbType" Value="Foot" />
+		<tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_animal_bear_vo_die" />
+		<tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_animal_bear_vo_hurt"/>	
+		<tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_creature_animal_bear_vo_attack"/>
+  </object>
+  <object Name="BaseBird" Inherits="Animal">
+    <stat Name="Strength" sValue="10,1d3,(t-1)d2" />
+    <stat Name="Agility" sValue="18,1d4,(t-1)d3" />
+    <stat Name="Toughness" sValue="10,1d3,(t-1)d1" />
+    <stat Name="Intelligence" sValue="5,1d2,(t-1)d2-1" />
+    <stat Name="Willpower" sValue="5,1d2,(t-1)d2-1" />
+    <stat Name="Ego" sValue="5,1d2,(t-1)d2-1" />
+    <intproperty Name="Bleeds" Value="1" />
+    <mutation Name="DarkVision" Level="3"/>
+    <part Name="Body" Anatomy="Bird" />
+    <mutation Name="Wings" Level="10" CapOverride="10"/>
+    <mutation Name="Beak" />
+    <part Name="Brain" Factions="Birds-100" />
+    <part Name="Render" Tile="Creatures/sw_crow.bmp" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <part Name="ConversationScript" ConversationID="Birds" />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Sage,Erudite,Great,Colorful,Chatty,Loud,Sensible,Shrewd,Noisy,Full-Throated,Sonorous" />
+    <tag Name="HeroNameTitleMayorSyn" Value="speaker,orator,songstress,sage,mayor,elder-bird" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="Speaker,Orator,Songstress,Sage,Mayor,Elder-Bird" />
+    <xtagTextFragments Skin="feathers" PoeticFeatures="sagittal beak,cherubic wings,proud bearing" YounglingNoise="*chirp*" Activity="chirping at peers,singing birdsong,nesting,basking in the sun" VillageActivity="chirping at us,basking in the sun,belting out birdsong" NeedsItemFor="for my own collection,to slake my greed,because of its trade value,to hide in my nest,to chirp at" SacredThing="the art of speech and song,prattle,the gift of flight,worms,the salt-strewn air" ArableLand="high branches" ValuedOre="chrome baubles,shiny baubles" />
+    <tag Name="Class" Value="bird" />
+    <tag Name="Culture" Value="Bird" />
+    <tag Name="PetResponse" Value="=subject.T= =verb:chirp=." />    
+    <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_bird" />
+		<tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_animal_bird_vo_die" />
+		<tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_animal_bird_vo_hurt"/>
+		<tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_creature_animal_bird_vo_idle"/>
+		<tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_creature_animal_bird_vo_attack"/>
+  </object>
+  <object Name="BaseCat" Inherits="BaseAnimal">
+    <part Name="Brain" Factions="Cats-100" />
+    <stat Name="Strength" sValue="16,1d3,(t-1)d2" />
+    <stat Name="Agility" sValue="20,1d3,(t-1)d1" />
+    <stat Name="Toughness" sValue="16,1d3,(t-1)d2" />
+    <stat Name="Intelligence" sValue="7,1d3,(t-1)d2-1" />
+    <stat Name="Willpower" sValue="7,1d3,(t-1)d2-1" />
+    <stat Name="Ego" sValue="7,1d3,(t-1)d2-1" />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="Sleek,Sphinx,Sphinx-like,Cunning,Graceful,Lithe,Wise,Sage,Sophic" />
+    <tag Name="HeroNameTitleMayorSyn" Value="sphinx,mayor,elder" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="Sphinx,Mayor,Elder" />
+    <tag Name="Class" Value="cat" />
+    <tag Name="Species" Value="cat" />
+		<tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_creature_animal_cat_vo_idle"/>
+		<tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_creature_animal_cat_vo_attack"/>
+		<tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_animal_cat_vo_die" />
+		<tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_animal_cat_vo_hurt"/>
+    <tag Name="BaseObject" Value="*noinherit" />
+    <part Name="Pettable" UseFactionForFeelingFloor="Cats" />
+    <tag Name="PetResponse" Value="=subject.T= =verb:meow=." />
+    <part Name="SmartuseForceTwiddles" />
+    <xtagTextFragments Skin="fur" PoeticFeatures="triangle ears,pearly whiskers,ageless eyes" YounglingNoise="*mew*,*prrrup*" Activity="sleeping and chasing birds all through the day" VillageActivity="sleeping in our homes" SacredThing="judgemental silence" />
+    <tag Name="PrimaryLimbType" Value="Foot" />
+    <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_cat" />
+  </object>
+  <object Name="BaseClam" Inherits="Animal">
+    <part Name="Brain" Factions="Mollusks-100" />
+    <part Name="Body" Anatomy="Clam" />
+    <stat Name="Strength" sValue="16,1d3,(t-1)d3" />
+    <stat Name="Agility" sValue="7,1d3,(t-1)d2-1" />
+    <stat Name="Toughness" sValue="16,1d3,(t-1)d2" />
+    <stat Name="Intelligence" sValue="2,1d2,(t-1)d2-1" />
+    <stat Name="Willpower" sValue="2,1d2,(t-1)d2-1" />
+    <stat Name="Ego" sValue="2,1d2,(t-1)d2-1" />
+    <intproperty Name="Bleeds" Value="1" />
+    <mutation Name="DarkVision" Level="3" />
+    <part Name="Render" Tile="creatures/sw_giant_clam.bmp" />
+    <part Name="NoKnockdown" />
+    <part Name="Springy" Factor="1.2" />
+    <tag Name="Class" Value="clam" />
+    <tag Name="Species" Value="clam" />
+    <tag Name="Gender" Value="neuter" />
+    <part Name="ConversationScript" ConversationID="Clams" />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="Inviting,Tempting,Open,Wide-Open,Hospitable,Seductive" />
+    <tag Name="HeroNameTitleMayorSyn" Value="clam god,clam mayor,elder clam" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="Clam God,Clam Mayor,Elder Clam" />
+    <xtagTextFragments Skin="shell" PoeticFeatures="dazzling pearls,geometric beauty,ageless bearing" YounglingNoise="*shloop*" Activity="sitting open invitingly" VillageActivity="sitting open invitingly" SacredThing="pocket dimensions,the safety of enclosure" />
+    <stag Name="HardMaterial" Value="shell" />
+    <tag Name="Culture" Value="Clam" />
+    <tag Name="SimpleConversation" Value="{{emote|*sitting open invitingly*}}" />
+    <tag Name="PetResponse" Value="=subject.T= =verb:shloop=." />
+    <tag Name="PrimaryLimbType" Value="Body" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_animal_mollusk_shelled_vo_die" />
+    <tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_animal_mollusk_shelled_vo_hurt"/>
+    <tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_creature_animal_mollusk_shelled_vo_idle"/>
+    <tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_creature_animal_mollusk_shelled_vo_attack"/>
+  </object>
+  <object Name="BaseCrab" Inherits="Animal">
+    <part Name="Body" Anatomy="Crab" />
+    <stat Name="Strength" sValue="18,1d4,(t-1)d3" />
+    <stat Name="Agility" sValue="6,1d3,(t-1)d2-1" />
+    <stat Name="Toughness" sValue="16,1d3,(t-1)d2" />
+    <stat Name="Intelligence" sValue="3,1d2,(t-1)d2-1" />
+    <stat Name="Willpower" sValue="3,1d2,(t-1)d2-1" />
+    <stat Name="Ego" sValue="3,1d2,(t-1)d2-1" />
+    <intproperty Name="Bleeds" Value="1" />
+    <mutation Name="DarkVision" Level="6" />
+    <part Name="Render" Tile="Assets_Content_Textures_Creatures_sw_crab.bmp" />
+    <part Name="Brain" Factions="Crabs-100" />
+    <part Name="Springy" Factor="0.1" />
+    <tag Name="Class" Value="crab" />
+    <tag Name="Species" Value="crab" />
+    <tag Name="Culture" Value="Crab" />
+		<tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_creature_animal_crab_vo_idle"/>
+		<tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_creature_animal_crab_vo_attack"/>
+		<tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_animal_crab_vo_die" />
+		<tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_animal_crab_vo_hurt"/>
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="Gender" Value="neuter" />
+    <part Name="ConversationScript" ConversationID="Crabs" />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Great,Sage,Judicious,Giant,Dense,Thick,Ornately-Shelled" />
+    <tag Name="HeroNameTitleMayorSyn" Value="king,mayor,elder" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="King,Mayor,Elder" />
+    <xtagTextFragments Skin="chitin" PoeticFeatures="ageless shelf of shell,titanic claws,stilted eyes" YounglingNoise="*click*,*croak*" Activity="scuttling without purpose" VillageActivity="reinforcing the walls of our homes" SacredThing="the art of pinching" />
+    <stag Name="HardMaterial" Value="chitin" />
+    <tag Name="SimpleConversation" Value="&amp;w*raucous croaking*&amp;y" />
+    <tag Name="PetResponse" Value="=subject.T= =verb:croak=." />    
+    <tag Name="PrimaryLimbType" Value="Hand" />
+    <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_crab" />
+  </object>
+  <object Name="BaseDog" Inherits="BaseAnimal">
+    <part Name="Brain" Hostile="false" Factions="Dogs-100" />
+    <part Name="Pettable" UseFactionForFeelingFloor="Dogs" />
+    <tag Name="PetResponse" Value="=subject.T= =verb:bark=." />
+    <part Name="SmartuseForceTwiddles" />
+    <tag Name="Class" Value="dog" />
+    <tag Name="Species" Value="dog" />
+		<tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_creature_animal_dog_vo_idle"/>
+		<tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_creature_animal_dog_vo_attack"/>
+		<tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_animal_dog_vo_die" />
+		<tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_animal_dog_vo_hurt"/>
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_dog" />
+  </object>  
+  <object Name="BaseFish" Inherits="Animal">
+    <part Name="Render" RenderString="224" />
+    <part Name="Body" Anatomy="Fish" />
+    <stat Name="Strength" sValue="8,1d2,(t-1)d2-1" />
+    <stat Name="Agility" sValue="14,1d3,(t-1)d2" />
+    <stat Name="Toughness" sValue="10,1d2,(t-1)d2-1" />
+    <stat Name="Intelligence" sValue="3,1d2,(t-1)d2-1" />
+    <stat Name="Willpower" sValue="3,1d2,(t-1)d2-1" />
+    <stat Name="Ego" sValue="3,1d2,(t-1)d2-1" />
+    <intproperty Name="Bleeds" Value="1" />
+    <mutation Name="DarkVision" Level="2" />
+    <stat Name="ElectricResistance" Value="-25" />
+    <part Name="Brain" Factions="Fish-100" />
+    <part Name="NoKnockdown" />
+    <part Name="Aquatic" />
+    <skill Name="Endurance_Swimming" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="Gender" Value="neuter" />
+    <part Name="ConversationScript" ConversationID="Fish" />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Sage,Old,Great,Giant,Ornately-Finned,Fleet,Many-Finned" />
+    <tag Name="HeroNameTitleMayorSyn" Value="fish god,fish mayor,elder-fish" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="Fish God,Fish Mayor,Elder-Fish" />
+    <xtagTextFragments Skin="scales" PoeticFeatures="contoured fins,iridescence,slim dimensionality" YounglingNoise="*blub*" Activity="swimming in circles,nibbling algae,laying eggs,nestling in brineweed" VillageActivity="nestling in our brineweed,laying its eggs" NeedsItemFor="for my own collection,to slake my greed,because of its trade value,to hide in the water" SacredThing="the necessity of water,water,burrowing,the fin" ArableLand="pools of water,rivers,lakes" ValuedOre="sunken treasure" />
+    <stag Name="HardMaterial" Value="scale" />
+    <tag Name="Class" Value="fish" />
+    <tag Name="Culture" Value="Fish" />
+		<tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_creature_animal_fish_vo_idle"/>
+		<tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_creature_animal_fish_vo_attack"/>
+		<tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_animal_fish_vo_die" />
+		<tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_animal_fish_vo_hurt"/>
+    <tag Name="SimpleConversation" Value="&amp;w*stares at you unblinking*&amp;y" />
+    <part Name="SpawnWithLiquid" />
+    <tag Name="PetResponse" Value="=subject.T= =verb:gurgle=." />    
+    <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_fish" />
+  </object>
+  <object Name="BaseInsect" Inherits="Animal">
+    <stat Name="Strength" sValue="16,1d3,(t-1)d2" />
+    <stat Name="Agility" sValue="16,1d3,(t-1)d2" />
+    <stat Name="Toughness" sValue="16,1d3,(t-1)d2" />
+    <stat Name="Intelligence" sValue="2,1d2,(t-1)d2-1" />
+    <stat Name="Willpower" sValue="2,1d2,(t-1)d2-1" />
+    <stat Name="Ego" sValue="2,1d2,(t-1)d2-1" />
+    <intproperty Name="Bleeds" Value="1" />
+    <mutation Name="DarkVision" Level="6" />
+    <part Name="Body" Anatomy="Insect" />
+    <part Name="Brain" Factions="Insects-100" />
+    <part Name="Springy" Factor="0.1" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="Gender" Value="neuter" />
+    <part Name="ConversationScript" ConversationID="Insects" />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Great,Vibrant,Motley,Limber,Giant,Pupated" />
+    <tag Name="HeroNameTitleMayorSyn" Value="queen,mayor,elder" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="Queen,Mayor,Elder" />
+    <xtagTextFragments Skin="chitin" PoeticFeatures="diaphanous wings,airy spiracles,photofractal eyes" YounglingNoise="*bzzz*" Activity="droning for the hive,burrowing into the earth,rummaging through dung" VillageActivity="fastidiously nesting,multiplying in droves,laying eggs and clicking" NeedsItemFor="for my own collection,to slake my greed,because of its trade value,to nest more effectively,for my hive" SacredThing="chirping by the light of the Beetle Moon,xenophagy,hexapoda,larvae,chitin,the protection of an exoskeleton" ArableLand="nesting grounds,hiving grounds" ValuedOre="pollen" />
+    <stag Name="HardMaterial" Value="chitin" />
+    <tag Name="Class" Value="insect" />
+    <tag Name="Culture" Value="Insect" />
+    <tag Name="SimpleConversation" Value="&amp;w*sharp clicking*&amp;y~&amp;w*soft buzzing*&amp;y" />
+    <tag Name="PetResponse" Value="=subject.T= =verb:buzz=." />
+    <tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_insect_generic_vo_die" />
+    <tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_insect_generic_vo_hurt"/>
+    <tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_creature_insect_generic_vo_idle"/>
+    <tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_creature_insect_generic_vo_attack"/>
+    <tag Name="PrimaryLimbType" Value="Face" />
+    <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_insect" />
+  </object>
+  <object Name="BaseOoze" Inherits="Animal">
+    <part Name="Body" Anatomy="Ooze" />
+    <part Name="Brain" Factions="Oozes-100" />
+    <stat Name="Strength" sValue="20,1d6,(t-1)d4" />
+    <stat Name="Agility" sValue="2,1d2,(t-1)d2-1" />
+    <stat Name="Toughness" sValue="12,1d3,(t-1)d2" />
+    <stat Name="Intelligence" sValue="1" />
+    <stat Name="Willpower" sValue="1" />
+    <stat Name="Ego" sValue="1" />
+    <intproperty Name="Slimewalking" Value="1" />
+    <mutation Name="DarkVision" Level="8" />
+    <part Name="MentalShield" />
+    <part Name="NoKnockdown" />
+    <part Name="OozeProperties" />
+    <part Name="Springy" Factor="0.9" />
+    <tag Name="Ooze" Value="true" />
+    <tag Name="WaterRitualLiquid" Value="slime" />
+    <part Name="Render" Tile="Creatures/sw_amoeba.bmp" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <part Name="ConversationScript" ConversationID="Oozes" />
+    <intproperty Name="Bleeds" Value="1" />
+    <tag Name="BleedLiquid" Value="slime-1000" />
+    <tag Name="BleedColor" Value="&amp;g" />
+    <tag Name="BleedPrefix" Value="{{g|slimy}}" />
+		<tag Name="SeveredLimbColorString" Value="&amp;g" />
+		<tag Name="SeveredLimbTileColor" Value="&amp;G" />
+		<tag Name="SeveredLimbDetailColor" Value="g" />
+    <tag Name="Gender" Value="neuter" />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Great,Sage,Judicious,Giant,Sophic,Erudite,Cubic,Regular,Spherical,Platonic,Symmetric,Triangular" />
+    <tag Name="HeroNameTitleMayorSyn" Value="philosopher,mayor,elder,theorist,sophist" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="Philosopher,Mayor,Elder,Theorist,Sophist" />
+    <xtagTextFragments Skin="membrane" PoeticFeatures="flawless geometry,translucence,peaceful squish" YounglingNoise="*squish*,*spurt*" Activity="resorbing matter,undulating,liquifying and congealing" VillageActivity="jiggling rhythmically,undulating,liquifying and congealing" NeedsItemFor="for my own collection,to slake my greed,because of its trade value,for resorbing purposes,so I can engulf it,to absorb it" SacredThing="platonic solids,ooze,gelatin,fluid dynamics,the membrane" ArableLand="pools of liquid,free matter,gelatin" ValuedOre="matter,life" />
+    <stag Name="HardMaterial" Value="membrane" />
+    <tag Name="Class" Value="ooze" />
+    <tag Name="Species" Value="ooze" />
+    <tag Name="Culture" Value="Ooze" />
+    <tag Name="SimpleConversation" Value="&amp;w*exudes loudly*&amp;y~&amp;w*soft gushing*&amp;y" />
+    <tag Name="PetResponse" Value="=subject.T= =verb:spurt=." />
+    <tag Name="PrimaryLimbType" Value="Hand" />
+    <tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_ooze_generic_vo_die" />
+    <tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_ooze_generic_vo_hurt"/>
+    <tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_ooze_generic_vo_idle"/>
+    <tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_ooze_generic_vo_attack"/>
+    <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_ooze" />
+  </object>
+  <object Name="BaseJelly" Inherits="BaseOoze">
+    <part Name="Body" Anatomy="Jelly" />
+    <stat Name="Strength" sValue="18,1d6,(t-1)d3" />
+    <stat Name="Agility" sValue="14,1d2,(t-1)d2-1" />
+    <stat Name="Toughness" sValue="12,1d3,(t-1)d2" />
+    <stat Name="Intelligence" sValue="1" />
+    <stat Name="Willpower" sValue="1" />
+    <stat Name="Ego" sValue="1" />
+    <skill Name="Multiweapon_Fighting" />
+    <skill Name="Multiweapon_Expertise" />
+    <skill Name="Multiweapon_Mastery" />
+    <tag Name="Class" Value="jelly" />
+    <tag Name="Species" Value="jelly" />
+    <tag Name="BaseObject" Value="*noinherit" />
+  </object>
+  <object Name="BaseSlug" Inherits="BaseWorm">
+    <part Name="Brain" Factions="Mollusks-100" />
+    <part Name="Body" Anatomy="Slug" />
+    <part Name="Springy" Factor="0.6" />
+    <tag Name="Species" Value="slug" />
+    <tag Name="WaterRitualLiquid" Value="slime" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_animal_mollusk_unshelled_vo_die" />
+    <tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_animal_mollusk_unshelled_vo_hurt"/>
+    <tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_creature_animal_mollusk_unshelled_vo_idle"/>
+    <tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_creature_animal_mollusk_unshelled_vo_attack"/>
+  </object>
+  <object Name="BaseReptile" Inherits="Animal">
+    <stat Name="Strength" sValue="12,1d3,(t-1)d2" />
+    <stat Name="Agility" sValue="16,1d3,(t-1)d3" />
+    <stat Name="Toughness" sValue="12,1d3,(t-1)d1" />
+    <stat Name="Intelligence" sValue="4,1d2,(t-1)d2-1" />
+    <stat Name="Willpower" sValue="4,1d2,(t-1)d2-1" />
+    <stat Name="Ego" sValue="6,1d2,(t-1)d2" />
+    <intproperty Name="Bleeds" Value="1" />
+    <mutation Name="DarkVision" Level="4" />
+    <stat Name="ColdResistance" Value="-25" />
+    <part Name="Brain" Factions="Unshelled Reptiles-100" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <part Name="ConversationScript" ConversationID="Reptiles" />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Sage,Judicious,Wary,Shrewd,Warm,Sun-Bathed,Still" />
+    <tag Name="HeroNameTitleMayorSyn" Value="daemon,wyrm,mayor,elder" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="Daemon,Wyrm,Mayor,Elder" />
+    <xtagTextFragments Skin="scales" PoeticFeatures="stony stillness,iridescence,lidded eyes" YounglingNoise="*ssss*" Activity="basking in the sun,reclining on warm rocks,hissing under the Beetle Moon,swallowing insects" VillageActivity="basking in the sun,reclining on warm rocks,hissing under the Beetle Moon" NeedsItemFor="for my own collection,to slake my greed,because of its trade value,to sit on and keep me warm,for hissing at" SacredThing="warm rocks,the salt sun,insect larvae,warmth,burrows" ArableLand="warm rocks" ValuedOre="insect larvae,warm rocks"></xtagTextFragments>
+    <stag Name="HardMaterial" Value="scale" />
+    <tag Name="Class" Value="reptile" />
+    <tag Name="Culture" Value="Reptile" />
+    <tag Name="SimpleConversation" Value="{{w|*soft hissing*}}" />
+    <tag Name="PetResponse" Value="=subject.T= =verb:hiss=." />
+    <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_reptile" />
+    <tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_animal_reptile_vo_die" />
+    <tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_animal_reptile_vo_hurt"/>
+    <tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_creature_animal_reptile_vo_idle"/>
+    <tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_creature_animal_reptile_vo_attack"/>
+  </object>	
+  <object Name="BaseFrog" Inherits="BaseReptile">
+    <stat Name="Strength" sValue="12,1d3,(t-1)d2" />
+    <stat Name="Agility" sValue="16,1d3,(t-1)d3" />
+    <stat Name="Toughness" sValue="12,1d3,(t-1)d1" />
+    <stat Name="Intelligence" sValue="4,1d2,(t-1)d2-1" />
+    <stat Name="Willpower" sValue="4,1d2,(t-1)d2-1" />
+    <stat Name="Ego" sValue="6,1d2,(t-1)d2" />
+    <intproperty Name="Bleeds" Value="1" />
+    <mutation Name="DarkVision" Level="4" />
+    <stat Name="ColdResistance" Value="-25" />
+    <part Name="Brain" Factions="Frogs-100" />    
+    <part Name="ConversationScript" ConversationID="Frogs" />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Sage,Judicious,Wary,Shrewd,Warm,Sun-Bathed,Still" />
+    <tag Name="HeroNameTitleMayorSyn" Value="daemon,frog,mayor,elder" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="Daemon,Frog,Mayor,Elder" />
+    <xtagTextFragments Skin="skin" PoeticFeatures="stony stillness,iridescence,lidded eyes" YounglingNoise="*bthp*" Activity="basking in the sun,reclining on warm rocks,croaking under the Beetle Moon,swallowing insects" VillageActivity="basking in the sun,reclining on warm rocks,croaking under the Beetle Moon" NeedsItemFor="for my own collection,to slake my greed,because of its trade value,to sit on and keep me warm,for croaking at" SacredThing="warm rocks,the salt sun,insect larvae,warmth,ponds" ArableLand="warm rocks" ValuedOre="insect larvae,warm rocks"></xtagTextFragments>
+    <stag Name="HardMaterial" Value="bone" />
+    <tag Name="Culture" Value="Reptile" />
+    <tag Name="Class" Value="frog" />
+    <tag Name="Species" Value="frog" />
+		<tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_creature_animal_frog_vo_idle"/>
+		<tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_creature_animal_frog_vo_attack"/>
+		<tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_animal_frog_vo_die" />
+		<tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_animal_frog_vo_hurt"/>
+    <tag Name="SecretAdjectives" Value="frog" />
+    <tag Name="SimpleConversation" Value="{{emote|*ribbits*}}" />
+    <tag Name="PetResponse" Value="=subject.T= =verb:croak=." />
+    <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_frog" />
+    <tag Name="BaseObject" Value="*noinherit" />
+  </object>
+  <object Name="BaseShelledMollusk" Inherits="BaseWorm">
+		<part Name="Brain" Factions="Mollusks-100" />
+		<tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_mollusk_shelled" />
+		<tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_animal_mollusk_shelled_vo_die" />
+    <tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_animal_mollusk_shelled_vo_hurt"/>
+    <tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_creature_animal_mollusk_shelled_vo_idle"/>
+    <tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_creature_animal_mollusk_shelled_vo_attack"/>
+  </object>
+  <object Name="BaseSnail" Inherits="BaseShelledMollusk">    
+    <part Name="Body" Anatomy="Snail" />
+    <mutation Name="Carapace" Level="3" />
+    <tag Name="Species" Value="snail" />
+    <tag Name="BaseObject" Value="*noinherit" />
+  </object>
+  <object Name="BaseSpider" Inherits="Animal">
+    <stat Name="Strength" sValue="12,1d3,(t-1)d2" />
+    <stat Name="Agility" sValue="18,1d4,(t-1)d3" />
+    <stat Name="Toughness" sValue="10,1d3,(t-1)d1" />
+    <stat Name="Intelligence" sValue="4,1d2,(t-1)d2-1" />
+    <stat Name="Willpower" sValue="4,1d2,(t-1)d2-1" />
+    <stat Name="Ego" sValue="4,1d2,(t-1)d2-1" />
+    <intproperty Name="Bleeds" Value="1" />
+    <mutation Name="DarkVision" Level="8" />
+    <part Name="Body" Anatomy="Spider" />
+    <part Name="AIKillStuckStuff" />
+    <part Name="Brain" Factions="Arachnids-100" />
+    <part Name="Render" Tile="Assets_Content_Textures_Creatures_sw_spider.bmp" DetailColor="w" />
+    <part Name="Springy" Factor="0.1" />
+    <tag Name="Species" Value="spider" />
+    <tag Name="HeroHPBoost" Value="2" />
+    <tag Name="HeroAgiBoost" Value="2" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="Gender" Value="neuter" />
+    <part Name="ConversationScript" ConversationID="Spiders" />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Shrewd,Wary,Erudite,Great,Giant,Many-Legged" />
+    <tag Name="HeroNameTitleMayorSyn" Value="weaver,mayor,elder" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="Weaver,Mayor,Elder" />
+    <xtagTextFragments Skin="chitin" PoeticFeatures="eightfold gams,hundred lenses,ageless bearing" YounglingNoise="*click*" Activity="waiting for errant insects" VillageActivity="weaving webs in our homes" SacredThing="graph theory" />
+    <stag Name="HardMaterial" Value="chitin" />
+    <tag Name="Class" Value="spider" />
+    <tag Name="Culture" Value="Arachnid" />
+    <tag Name="SimpleConversation" Value="&amp;w*idly weaving*&amp;y" />    
+    <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_spider" />
+		<tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_insect_generic_vo_die" />
+		<tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_insect_generic_vo_hurt"/>
+		<tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_creature_insect_generic_vo_idle"/>
+		<tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_creature_insect_generic_vo_attack"/>
+  </object>
+  <object Name="BaseStar" Inherits="Animal">
+    <part Name="Body" Anatomy="Star" />
+    <part Name="Brain" Factions="Strangers-100" />
+    <stat Name="Strength" sValue="16,1d3,(t-1)d3" />
+    <stat Name="Agility" sValue="7,1d3,(t-1)d2-1" />
+    <stat Name="Toughness" sValue="16,1d3,(t-1)d2" />
+    <stat Name="Intelligence" sValue="2,1d2,(t-1)d2-1" />
+    <stat Name="Willpower" sValue="2,1d2,(t-1)d2-1" />
+    <stat Name="Ego" sValue="2,1d2,(t-1)d2-1" />
+    <intproperty Name="Bleeds" Value="1" />
+    <mutation Name="DarkVision" Level="3" />
+    <part Name="Render" Tile="creatures/sw_star_kraken.bmp" />
+    <part Name="NoKnockdown" />
+    <part Name="Springy" Factor="0.6" />		
+    <tag Name="Gender" Value="neuter" />
+    <part Name="ConversationScript" ConversationID="Star" />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Sage,Wary,Erudite,Great,Giant,Long,Girthy,Thick" />
+    <tag Name="HeroNameTitleMayorSyn" Value="star god,star mayor,elder star" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="Star God,Star Mayor,Elder Star" />
+    <xtagTextFragments Skin="branchiae" PoeticFeatures="undulation,geometric simplicity,ageless bearing" YounglingNoise="*xxxff*" Activity="roaming the curvature" VillageActivity="crawling about,being inscrutable" SacredThing="otherness,pentalogies,quincunxes" />
+    <stag Name="HardMaterial" Value="spines" />
+    <tag Name="Class" Value="star" />
+    <tag Name="Species" Value="star" />
+    <tag Name="Culture" Value="Star" />
+    <tag Name="SimpleConversation" Value="{{emote|*inscrutably being*}}" />
+    <tag Name="PetResponse" Value="{{emote|*xxxff*}}" />
+    <tag Name="PrimaryLimbType" Value="Arm" />
+    <tag Name="BaseObject" Value="*noinherit" />
+  </object>
+  <object Name="BaseTortoise" Inherits="BaseReptile">
+    <part Name="Brain" Factions="Tortoises-100" />
+    <tag Name="HeroHPBoost" Value="2" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <stat Name="Speed" Value="60" />
+    <part Name="ConversationScript" ConversationID="Tortoises" />
+    <part Name="Springy" Factor="0.6" />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Sage,Wary,Erudite,Great,Giant,Ornately-Shelled,Slow,Stone-like" />
+    <tag Name="HeroNameTitleMayorSyn" Value="sage,mayor,elder" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="Sage,Mayor,Elder" />
+    <xtagTextFragments Skin="keratin" PoeticFeatures="stony stillness,ageless bearing,lidded eyes" YounglingNoise="*croak*" Activity="plodding along,inside shells,napping in the shade" VillageActivity="sleeping inside its shell" NeedsItemFor="for my own collection,to slake my greed,because of its trade value,to hide in my shell" SacredThing="the sanctum of a hollow place,the carapace,vegetables,peace and quiet,the home" ArableLand="quiet meadows,shady nooks" ValuedOre="peace and quiet" />
+    <stag Name="HardMaterial" Value="shell" />
+    <tag Name="Class" Value="tortoise" />		
+    <tag Name="Species" Value="tortoise" />
+    <tag Name="Culture" Value="Tortoise" />
+    <tag Name="SimpleConversation" Value="&amp;w*sniffles and sneezes*&amp;y" />
+    <tag Name="PetResponse" Value="=subject.T= =verb:croak=." />
+    <mutation Name="Carapace" Level="5" />
+    <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_tortoise" />
+    <tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_animal_tortoise_vo_die" />
+    <tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_animal_tortoise_vo_hurt"/>
+    <tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_creature_animal_tortoise_vo_idle"/>
+    <tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_creature_animal_tortoise_vo_attack"/>
+  </object>
+  <object Name="BaseUrchin" Inherits="Animal">
+    <part Name="Body" Anatomy="Echinoid" />
+    <part Name="Brain" Hostile="false" Wanders="false" Mobile="false" Factions="Urchins-100" HostileWalkRadius="0" />
+    <stat Name="Strength" sValue="8,1d3,(t)d1" />
+    <stat Name="Agility" sValue="8,1d3,(t)d1" />
+    <stat Name="Toughness" sValue="14,1d3,(t)d1" />
+    <stat Name="Intelligence" sValue="8,1d3" />
+    <stat Name="Willpower" sValue="14,1d3,(t)d1" />
+    <stat Name="Ego" sValue="8,1d3" />
+    <stat Name="ColdResistance" Value="60" />
+    <intproperty Name="Bleeds" Value="1" />
+    <tag Name="BleedLiquid" Value="ink-1000" />
+    <mutation Name="DarkVision" Level="1" />
+    <part Name="Render" RenderIfDark="true" Tile="Creatures/sw_urchin.bmp" DisplayName="[urchin]" RenderString="*" ColorString="&amp;y" DetailColor="Y" />
+    <part Name="Corpse" CorpseChance="0" />
+    <part Name="NoKnockdown" />
+    <tag Name="Noswap" />
+    <tag Name="Class" Value="urchin" />		
+    <tag Name="Species" Value="urchin" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="Gender" Value="neuter" />
+    <tag Name="Culture" Value="Urchin" />
+    <part Name="ConversationScript" ConversationID="Worms" />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Sage,Wary,Erudite,Great,Giant,Broad,Bulbous" />
+    <tag Name="HeroNameTitleMayorSyn" Value="urchin god,urchin mayor,elder urchin" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="Urchin God,Urchin Mayor,Elder Urchin" />
+    <xtagTextFragments Skin="annuli" PoeticFeatures="undulation,geometric simplicity,ageless bearing" YounglingNoise="*undulate*" Activity="undulating serenely" VillageActivity="bathing in our stews,undulating near our stews" SacredThing="having neither arms nor legs nor a head" />
+    <stag Name="HardMaterial" Value="spines" />
+    <tag Name="SimpleConversation" Value="{{w|*idly undulating*}}" />
+    <tag Name="PetResponse" Value="=subject.T= =verb:undulate=." />
+    <tag Name="PrimaryLimbType" Value="Body" />
+    <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_nest_urchin" />
+    <tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_animal_nest-urchin_vo_die" />
+    <tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_animal_nest-urchin_vo_hurt"/>
+    <tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_creature_animal_nest-urchin_vo_idle"/>
+    <tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_creature_animal_nest-urchin_vo_attack"/>
+  </object>
+  <object Name="BaseWorm" Inherits="Animal">
+    <part Name="Body" Anatomy="Worm" />
+    <part Name="Brain" Factions="Worms-100" />
+    <stat Name="Strength" sValue="16,1d3,(t-1)d3" />
+    <stat Name="Agility" sValue="7,1d3,(t-1)d2-1" />
+    <stat Name="Toughness" sValue="16,1d3,(t-1)d2" />
+    <stat Name="Intelligence" sValue="2,1d2,(t-1)d2-1" />
+    <stat Name="Willpower" sValue="2,1d2,(t-1)d2-1" />
+    <stat Name="Ego" sValue="2,1d2,(t-1)d2-1" />
+    <intproperty Name="Bleeds" Value="1" />
+    <mutation Name="DarkVision" Level="3" />
+    <part Name="Render" Tile="creatures/sw_slug.bmp" />
+    <part Name="NoKnockdown" />
+    <part Name="Springy" Factor="0.6" />
+    <tag Name="Class" Value="worm" />
+    <tag Name="Species" Value="worm" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="Gender" Value="neuter" />
+    <part Name="ConversationScript" ConversationID="Worms" />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Sage,Wary,Erudite,Great,Giant,Long,Girthy,Thick" />
+    <tag Name="HeroNameTitleMayorSyn" Value="worm god,worm mayor,elder worm" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="Worm God,Worm Mayor,Elder Worm" />
+    <xtagTextFragments Skin="annuli" PoeticFeatures="undulation,geometric simplicity,ageless bearing" YounglingNoise="*slither*" Activity="tunneling through the earth" VillageActivity="bathing in our stews, making worm stews of our stews" SacredThing="having neither arms nor legs" />
+    <stag Name="HardMaterial" Value="cocoon" />
+    <tag Name="Culture" Value="Worm" />
+    <tag Name="SimpleConversation" Value="&amp;w*idly undulating*&amp;y" />
+    <tag Name="PetResponse" Value="=subject.T= =verb:slither=." />
+    <tag Name="PrimaryLimbType" Value="Body" />
+    <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_worm" />
+    <tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_animal_worm_vo_die" />
+    <tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_animal_worm_vo_hurt"/>
+    <tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_creature_animal_worm_vo_idle"/>
+    <tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_creature_animal_worm_vo_attack"/>
+  </object>
+  
+  <!-- Base robots -->
+  <object Name="Robot" Inherits="Creature">
+    <part Name="Robot" />
+    <part Name="Body" Anatomy="HumanoidRobot" />
+    <stat Name="Strength" Value="14" />
+    <stat Name="Agility" Value="14" />
+    <stat Name="Toughness" Value="14" />
+    <stat Name="Intelligence" Value="14" />
+    <stat Name="Willpower" Value="14" />
+    <stat Name="Ego" Value="14" />
+    <part Name="MentalShield" />
+    <part Name="Metal" />
+    <part Name="MaintenanceSystems" />
+    <part Name="Physics" Organic="false" />
+    <removepart Name="Springy" />
+    <removepart Name="Stomach" />
+    <mutation Name="NightVision" Level="12" />
+    <stat Name="ElectricResistance" Value="-50" />
+    <stat Name="HeatResistance" Value="25" />
+    <stat Name="ColdResistance" Value="25" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="SeveredLimbBlueprint" Value="RobotLimb" />
+    <tag Name="SeveredHeadBlueprint" Value="RobotHead1" />
+    <tag Name="SeveredFaceBlueprint" Value="RobotFace" />
+    <tag Name="SeveredArmBlueprint" Value="RobotArm" />
+    <tag Name="SeveredHandBlueprint" Value="RobotHand" />
+    <tag Name="SeveredLegBlueprint" Value="RobotLeg" />
+    <tag Name="SeveredFootBlueprint" Value="RobotFoot" />
+    <tag Name="SeveredFeetBlueprint" Value="RobotFeet" />
+    <tag Name="SeveredTailBlueprint" Value="RobotTail" />
+    <tag Name="SeveredRootsBlueprint" Value="RobotRoots" />
+    <tag Name="SeveredFinBlueprint" Value="RobotFin" />
+    <!--<removepart Name="Stomach" />-->
+    <intproperty Name="Bleeds" Value="1" />
+    <tag Name="BleedLiquid" Value="oil-1000" />
+    <tag Name="BleedColor" Value="&amp;K" />
+    <tag Name="BleedPrefix" Value="{{K|oily}}" />
+    <tag Name="PetResponse" Value="=subject.T= =verb:beep= and =verb:boop=." />
+    <stag Name="HardMaterial" Value="casing" />    
+    <tag Name="PrimaryLimbType" Value="Hand" />
+  </object>
+  <object Name="BaseRobot" Inherits="Robot">
+    <part Name="Brain" Factions="Robots-100" />
+    <stat Name="Strength" sValue="20,1d4,(t-1)d3" />
+    <stat Name="Agility" sValue="10,1d3,(t-1)d1" />
+    <stat Name="Toughness" sValue="20,1d4,(t-1)d3" />
+    <stat Name="Intelligence" sValue="9,1d3,(t-1)d1" />
+    <stat Name="Willpower" sValue="20,1d4,(t-1)d3" />
+    <stat Name="Ego" sValue="5,1d2,(t-1)d2-1" />
+    <tag Name="Robot" Value="true" />
+    <tag Name="WaterRitualLiquid" Value="oil" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <part Name="ConversationScript" ConversationID="Robots" ClearLost="true" />
+    <part Name="Corpse" BurntCorpseChance="0" />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="Unerring,Updated,Rustless,Oracular,Man-like,Woman-like,Lossless,Invariant,Certain" />
+    <tag Name="HeroNameTitleMayorSyn" Value="seer,administrator,oracle,mayor,elder" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="Seer,Administrator,Oracle,Mayor,Elder" />
+    <xtagTextFragments Skin="chassis" PoeticFeatures="chromium sheen,winking diodes,air vents" YounglingNoise="*beep*,*boop*" Activity="recompositing meaning from centuries of bit flips" VillageActivity="emitting a monotone pulse" SacredThing="machine life" />
+    <stag Name="HardMaterial" Value="casing" />
+    <tag Name="NonMutant" />
+    <tag Name="Class" Value="humanoid robot" />
+    <tag Name="Culture" Value="Robot" />
+    <tag Name="SimpleConversation" Value="&amp;w*beep boop*&amp;y~&amp;w*boop beep*&amp;y~&amp;w*beep boop beep*&amp;y~&amp;w*boop beep boop*&amp;y" />
+    <tag Name="PrimaryLimbType" Value="Hand" />
+    <tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_robot_generic_vo_idle"/>
+    <tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_robot_generic_vo_attack"/>
+    <tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_robot_generic_vo_die" />
+    <tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_robot_generic_vo_hurt"/>
+    <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_robot_lesser" />
+  </object>
+  <object Name="BaseMiner" Inherits="BaseRobot">
+    <part Name="Render" DisplayName="miner" Tile="Creatures/sw_miner.bmp" RenderString="2" ColorString="&amp;g" TileColor="&amp;c" />
+    <part Name="Description" Short="Stilt pistons fire in alternating quatro and tote the miner and =pronouns.possessive= mines in esoteric patterns across the ground. When =pronouns.possessive= topographic instincts are sated, a hatch opens and =pronouns.subjective= =verb:lay:afterpronoun= =pronouns.possessive= explosive egg." />
+    <part Name="Body" Anatomy="QuadrupedalRobot" />
+    <tag Name="Species" Value="quadrupedal robot" />
+    <inventoryobject Blueprint="@DynamicObjectsTable:EnergyCells:Tier{ownertier}" Number="1-2" Chance="4" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="Gender" Value="female" />
+    <tag Name="Role" Value="Summoner" />
+  </object>
+  <object Name="Turret Tinker" Inherits="BaseRobot">
+    <part Name="Render" DisplayName="turret tinker" Tile="Creatures/sw_turret_tinker.bmp" RenderString="1" ColorString="&amp;g" DetailColor="C" />
+    <part Name="Body" Anatomy="HexapedalRobot" />
+    <tag Name="Species" Value="hexapedal robot" />
+    <part Name="Description" Short="=pronouns.Possessive= cylindric head is embellished with a frilly crest whose symbolism is unknown. =pronouns.Subjective= dutifully =verb:march:afterpronoun= on a pair of chrome pistons toward =pronouns.possessive= final purpose." />
+    <part Name="TurretTinker" MaxTurretsPlaced="5" />
+    <stat Name="Level" Value="15" />
+    <tag Name="Role" Value="Summoner" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="Gender" Value="neuter" />
+  </object>
+  
+  <!-- Base humanoids -->
+  <object Name="Humanoid" Inherits="Creature">
+    <tag Name="BodyDisplayName" Value="Humanoid" />
+    <part Name="Body" Anatomy="Humanoid" />
+    <part Name="Brain" Factions="Humanoids-100" />
+    <intproperty Name="Bleeds" Value="1" />
+    <tag Name="Class" Value="human" />
+    <tag Name="Species" Value="human" />
+    <tag Name="RandomGender" Value="male,female" />
+		<tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_humanoid_generic_vo_attack"/>
+		<tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_humanoid_generic_vo_die" />
+		<tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_humanoid_generic_vo_hurt"/>
+		<tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_humanoid_generic_vo_idle"/>
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="PrimaryLimbType" Value="Hand" />
+    <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_humanoid_generic" />
+  </object>
+  <object Name="BaseHumanoid" Inherits="Humanoid">
+    <part Name="Render" RenderString="h" />
+    <part Name="Corpse" CorpseChance="90" CorpseBlueprint="Human Corpse" />
+    <stat Name="Strength" sValue="14,1d3,(t)d1" />
+    <stat Name="Agility" sValue="14,1d3,(t)d1" />
+    <stat Name="Toughness" sValue="14,1d3,(t)d1" />
+    <stat Name="Intelligence" sValue="14,1d3,(t)d1" />
+    <stat Name="Willpower" sValue="14,1d3,(t)d1" />
+    <stat Name="Ego" sValue="14,1d3,(t)d1" />
+    <intproperty Name="Bleeds" Value="1" />
+    <intproperty Name="Humanoid" Value="1" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <part Name="ConversationScript" ConversationID="Humanoids" ClearLost="true" />
+    <tag Name="Humanoid" />
+    <xtagTextFragments Skin="skin" PoeticFeatures="tall forehead,outstretched legs,eyes full of wonder" Activity="going about the tedious work of speaking to peers,hunting and gathering,wandering the salt dunes" VillageActivity="sleeping in our bedrolls and sitting in our chairs,lounging around,reading books,peeling and eating musa" NeedsItemFor="for my own collection,to slake my greed,because of its trade value,to inspire my art,to inspire my poetry,to be my muse,to help with farm work,for the games we play under the Beetle Moon" SacredThing="the act of procreating,philosophy,alcohol,grains of the earth,stone fruit,artistry,poetry,warm meals,bread and wine,pottery,painting" ArableLand="arable land,livestock,the bounty of the earth" ValuedOre="precious metals,artifacts,chrome,jasper,cybernetics,the nectar of the Eaters" />
+    <tag Name="SimpleConversation" Value="Moon and Sun. Wisdom and will.~May the earth yield for us this season.~Peace, =player.formalAddressTerm=." />
+    <tag Name="PrimaryLimbType" Value="Hand" />    		
+    <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_humanoid_generic" />        
+  </object>
+  <object Name="BaseApe" Inherits="Humanoid">
+    <stat Name="Strength" sValue="18,1d3,(t-1)d2" />
+    <stat Name="Agility" sValue="14,1d3,(t-1)d2" />
+    <stat Name="Toughness" sValue="12,1d3,(t-1)d1" />
+    <stat Name="Intelligence" sValue="9,1d3,(t-1)d1" />
+    <stat Name="Willpower" sValue="9,1d3,(t-1)d1" />
+    <stat Name="Ego" sValue="9,1d3,(t-1)d1" />
+    <intproperty Name="Bleeds" Value="1" />
+    <mutation Name="DarkVision" Level="3" />
+    <part Name="Brain" Factions="Apes-100" />
+    <part Name="Render" Tile="assets_content_textures_creatures_creatures-ape.png"  DetailColor="w" />
+    <intproperty Name="Ape" Value="1" />
+    <tag Name="Class" Value="ape" />
+    <tag Name="Species" Value="ape" />
+    <tag Name="HeroHPBoost" Value="2" />
+    <tag Name="HeroStrBoost" Value="2" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <part Name="ConversationScript" ConversationID="Apes" />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="Ruminative,Wise,Sensible,Shrewd,Great,Spirited,Judicious" />
+    <tag Name="HeroNameTitleMayorSyn" Value="king,queen,mayor,elder" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="King,Queen,Mayor,Elder" />
+    <xtagTextFragments Skin="fur" PoeticFeatures="vast shoulders,gentle countenance,musing eyes" YounglingNoise="*hoot*" Activity="bludgeoning things to death" VillageActivity="sitting in a ruminative pose" SacredThing="berries and twigs"></xtagTextFragments>
+    <tag Name="SimpleConversation" Value="&amp;w*pounds chest*&amp;y" />
+    <tag Name="PetResponse" Value="=subject.T= =verb:gibber=." />
+    <tag Name="PrimaryLimbType" Value="Hand" />
+    <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_ape" />
+		<tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_animal_ape_vo_die" />
+		<tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_animal_ape_vo_hurt"/>
+		<tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_creature_animal_ape_vo_idle"/>
+		<tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_creature_animal_ape_vo_attack"/>
+  </object>
+  <object Name="BaseBaboon" Inherits="BaseApe">
+    <part Name="Render" DisplayName="baboon" Tile="Assets_Content_Textures_Creatures_sw_baboon.bmp" RenderString="a" ColorString="&amp;w" DetailColor="r" />
+    <part Name="Corpse" CorpseChance="40" CorpseBlueprint="Baboon Corpse" />
+    <part Name="Brain" Hostile="False" Factions="Baboons-100" />
+    <part Name="AIThrowAndScoot" />
+    <stat Name="Hitpoints" Value="5" />
+    <stat Name="Level" Value="1" />
+    <stat Name="AV" Value="2" />
+    <part Name="Description" Short="Wet nostrils flare at the seat of =pronouns.possessive= dropped snout, and furry arms wave in unpredicted motions. =pronouns.Possessive= eyes are full of stony mischief." />
+    <part Name="BloodRingWeakness" />
+    <tag Name="PrimaryLimbType" Value="Face" />
+    <tag Name="Species" Value="baboon" />
+    <tag Name="Culture" Value="Baboon" />
+    <tag Name="DynamicObjectsTable:Baboons" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_baboon" />
+		<tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_animal_baboon_vo_die" />
+		<tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_animal_baboon_vo_hurt" />
+		<tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_creature_animal_baboon_vo_idle" />
+		<tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_creature_animal_baboon_vo_attack" />
+  </object>
+  <object Name="BaseCannibal" Inherits="BaseHumanoid">
+    <part Name="Brain" Factions="Cannibals-100" />
+    <part Name="ConversationScript" ConversationID="Cannibal" />
+    <tag Name="WaterRitualLiquid" Value="blood" />
+    <tag Name="BaseObject" Value="*noinherit" />
+  </object>
+	<object Name="BaseGoat" Inherits="BaseAnimal">
+		<part Name="Render" DisplayName="goat" Tile="Assets_Content_Textures_Creatures_sw_goat.bmp" RenderString="g" ColorString="&amp;w" DetailColor="y" />
+		<part Name="Corpse" CorpseChance="10" CorpseBlueprint="Goat Corpse" />		
+		<part Name="Brain" Hostile="false" Factions="Prey-100" />		
+		<skill Name="Endurance" />
+		<skill Name="Shield" />
+		<part Name="ConversationScript" ConversationID="Goats" />				
+		<part Name="InhabitAchievement" AchievementID="ACH_INHABIT_GOAT" />
+		<tag Name="Species" Value="goat" />
+		<tag Name="DynamicObjectsTable:Hills_Creatures" />
+		<tag Name="DynamicObjectsTable:Mountains_Creatures" />
+		<tag Name="Cervine" />
+		<tag Name="BaseObject" Value="*noinherit" />
+		<tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_grazingAnimal" />
+		<tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_animal_goat_vo_die" />
+		<tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_animal_goat_vo_hurt"/>
+		<tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_creature_animal_goat_vo_idle"/>
+		<tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_creature_animal_goat_vo_attack"/>
+	</object>
+  <object Name="BaseFarmer" Inherits="NPC">
+    <part Name="Render" DisplayName="[farmer]" ColorString="&amp;y" RenderString="f" />
+    <builder Name="RandomTile" Tiles="Creatures/sw_farmer1.bmp,Creatures/sw_farmer2.bmp,Creatures/sw_farmer3.bmp,Creatures/sw_farmer4.bmp,Creatures/sw_farmer5.bmp,Creatures/sw_farmer6.bmp" />
+    <part Name="Brain" Wanders="false" Factions="Farmers-100" />
+    <part Name="AISelfPreservation" Threshold="30" />
+    <inventoryobject Blueprint="Woven Tunic" Number="1" />
+    <inventoryobject Blueprint="Sandals" Number="1" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <!--
+    <tag Name="RandomGender" Value="male,female,genericpersonalsingular,personalsingular" />
+    <tag Name="RandomPronounSet" Value="genericpersonalsingular,personalsingular,generate" />
+    <tag Name="RandomPronounSetChance" Value="10" />-->
+  </object>	
+	<object Name="BaseGyreWight" Inherits="BaseHumanoid">
+		<part Name="Render" DisplayName="gyre wight" Tile="Creatures/wight_agolgot.bmp" RenderString="z" ColorString="&amp;m" />
+		<part Name="Brain" Factions="Gyre Wights-100" Hostile="false" />
+		<stat Name="Hitpoints" Value="25" />
+		<stat Name="Level" Value="14" />
+		<tag Name="InventoryPopulationTable" Value="HumanoidEquipment" />
+		<inventoryobject Blueprint="Cloth Robe" Number="1" />
+		<tag Name="BaseObject" Value="*noinherit" />
+		<xtagWaterRitual numSecrets="2" />
+		<stag Name="Contemporary" />
+	</object>
+  <object Name="BaseIssachari" Inherits="BaseHumanoid">
+    <part Name="Render" DisplayName="Issachari raider" RenderString="h" Tile="Creatures/sw_raider1.bmp" ColorString="&amp;Y" DetailColor="R" />
+    <part Name="Corpse" CorpseChance="0" CorpseBlueprint="Snapjaw Corpse" />
+    <part Name="Brain" Hostile="false" Factions="Issachari-100" />
+    <part Name="ConversationScript" ConversationID="Issachari" />
+    <stat Name="Hitpoints" Value="16" />
+    <part Name="Description" Short="Wind presses a sunbleached thawb and neckdress against a humanoid form. The fabric is embroidered to rhyme with patterns in the salt." />
+    <inventoryobject Blueprint="Dagger" Number="1" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <tag Name="HeroHPBoost" Value="2" />
+    <tag Name="HeroIntBoost" Value="2" />
+    <tag Name="SecretAdjectives" Value="humanoid" />
+    <tag Name="Culture" Value="Issachari" />
+		<stag Name="Contemporary" />
+  </object>
+  <object Name="Mechanimist" Inherits="BaseHumanoid">
+    <part Name="Brain" Hostile="false" Factions="Mechanimists-100" />
+    <part Name="Render" Tile="creatures/sw_mechanimist.bmp" DetailColor="w" />
+    <stat Name="Level" Value="8" />
+    <stat Name="AV" Value="3" />
+    <stat Name="DV" Value="3" />    
+    <tag Name="Culture" Value="Mechanimist" />
+    <tag Name="HeroHPBoost" Value="2" />
+    <tag Name="HeroIntBoost" Value="2" />
+    <tag Name="NoHateFactions" Value="Wardens,Dromad" />
+    <!--
+    <tag Name="RandomGender" Value="male,female,genericpersonalsingular,personalsingular,generate" />
+    <tag Name="RandomPronounSet" Value="genericpersonalsingular,personalsingular,personal,any,generate" />
+    <tag Name="RandomPronounSetChance" Value="10" />-->
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+  </object>
+  <object Name="BaseMopango" Inherits="BaseHumanoid">
+    <part Name="Corpse" CorpseChance="10" CorpseBlueprint="Mopango Corpse" />
+    <part Name="Render" DisplayName="[base mopango]" RenderString="v" DetailColor="y" ColorString="&amp;w" Tile="creatures/sw_mopango_villager.bmp" />
+    <part Name="AISelfPreservation" Threshold="50" />
+    <part Name="Body" Anatomy="TailedBiped" />
+    <mutation Name="Carapace" Level="6" />
+    <mutation Name="LightManipulation" Level="4" />
+    <mutation Name="Psychometry" Level="2" />
+    <stat Name="Strength" sValue="16,1d4" />
+    <stat Name="Agility" sValue="22,1d4" />
+    <stat Name="Toughness" sValue="24,1d4" />
+    <stat Name="Intelligence" sValue="20,1d4" />
+    <stat Name="Willpower" sValue="15,1d4" />
+    <stat Name="Ego" sValue="15,1d4" />
+    <stat Name="Hitpoints" Value="100" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="RandomGender" Value="elverson" />
+    <tag Name="Culture" Value="Mopango" />
+    <tag Name="Species" Value="mopango" />
+    <part Name="ConversationScript" ConversationID="MopangoStranger" />
+    <intproperty Name="HasMarkOfDeath" Value="1" />
+    <xtagTextFragments YounglingNoise="*squeak*" Activity="finding weird artifacts" VillageActivity="communing with objects" SacredThing="the Kasaphescence" />
+    <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_pangolin" />
+    <tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_animal_pangolin_vo_die" />
+    <tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_animal_pangolin_vo_hurt"/>
+    <tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_creature_animal_pangolin_vo_idle"/>
+    <tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_creature_animal_pangolin_vo_attack"/>
+		<stag Name="Contemporary" />
+  </object>
+  <object Name="Mopango Corpse" Inherits="Animal Corpse">
+    <part Name="Render" DisplayName="mopango corpse" ColorString="&amp;w" />
+    <part Name="Description" Short="Scratched scales lay in a coiled mound." />    
+    <part Name="Food" Message="The meat is mildly gamey." />    
+    <part Name="Physics" Weight="80" />
+    <part Name="Commerce" Value="2" />
+    <tag Name="Tier" Value="6" />    
+    <tag Name="DynamicObjectsTable:HumanoidCorpses" />
+  </object>
+  <object Name="BaseSightless" Inherits="BaseHumanoid">
+    <part Name="Brain" Hostile="false" Factions="Seekers-100" />
+    <part Name="Render" RenderString="e" Tile="Creatures/caste_13.bmp" />    
+    <stat Name="Ego" Boost="1" />
+    <stat Name="Level" Value="8" />
+    <stat Name="Willpower" Boost="1" />
+    <stat Name="Toughness" Boost="-2" />
+    <stat Name="Hitpoints" Value="8" />
+    <stat Name="Speed" Value="100" />    
+    <tag Name="Culture" Value="Sightless Way" />
+    <tag Name="Genotype" Value="Mutated Human" />
+    <tag Name="HeroGenotype" Value="Esper" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+    <tag Name="HeroHPBoost" Value="2" />
+    <tag Name="HeroEgoBoost" Value="2" />
+    <tag Name="HeroTouBoost" Value="1" />
+    <tag Name="HeroHasThralls" Value="4-6" />
+    <!--
+    <tag Name="RandomGender" Value="male,female,nonspecific,genericpersonalsingular,personalsingular,any,generate" />
+    <tag Name="RandomPronounSet" Value="genericpersonalsingular,personalsingular,personal,any,generate" />
+    <tag Name="RandomPronounSetChance" Value="25" />-->
+  </object>
+	<object Name="BaseSwine" Inherits="BaseAnimal">
+		<part Name="Render" DisplayName="pig" RenderString="o"  Tile="creatures/sw_boar2.bmp" ColorString="&amp;y" />		
+		<part Name="Corpse" CorpseChance="100" CorpseBlueprint="Pig Corpse" />
+		<part Name="Brain" Factions="Swine-100" />
+		<tag Name="Class" Value="swine" />
+		<tag Name="Species" Value="pig" />
+		<tag Name="Grazer" />
+		<tag Name="BaseObject" Value="*noinherit" />
+		<tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_pig" />
+		<tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_animal_swine_vo_die" />
+		<tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_animal_swine_vo_hurt"/>
+		<tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_creature_animal_swine_vo_idle"/>
+		<tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_creature_animal_swine_vo_attack"/>
+	</object>
+  <object Name="Templar" Inherits="BaseTrueKin">
+    <part Name="Corpse" CorpseChance="100" CorpseBlueprint="Human Corpse" />
+    <part Name="Brain" Hostile="false" Factions="Templar-100" />
+    <part Name="Description" Short="Oiled and brushed mail hang across =pronouns.possessive= crooked spine and salient jaw. The color too was sucked out of =pronouns.possessive= irises by =pronouns.possessive= tangled lineage, and =pronouns.possessive= wet rosy lips catch the light and toss it back across a sharp sneer." />
+    <tag Name="HeroIntBoost" Value="0" />
+    <tag Name="HeroAgiBoost" Value="0" />
+    <tag Name="SecretAdjectives" Value="templar" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <skill Name="LongBlades" />
+    <skill Name="LongBladesProficiency" />
+    <skill Name="Shield" />
+    <skill Name="Shield_Block" />
+    <tag Name="Culture" Value="Templar" />
+    <tag Name="Unenslavable" />
+		<stag Name="Contemporary" />
+  </object>
+  <object Name="BaseTrueKin" Inherits="BaseHumanoid">
+    <skill Name="Persuasion_RebukeRobot" />
+    <tag Name="NonMutant" />
+    <tag Name="Genotype" Value="True Kin" />
+    <tag Name="HeroGenotype" Value="True Kin" />
+    <tag Name="BaseObject" Value="*noinherit" />
+  </object>  
+  
+  <!-- this was in Items.xml ?? -->
+  <object Name="Plant" Inherits="PhysicalObject">
+    <part Name="Render" DisplayName="[Plant]" RenderLayer="3" RenderString="157" Tile="assets_content_textures_tiles_tile-9-4.png" ColorString="&amp;G" Occluding="false" />
+    <part Name="Physics" Conductivity="60" Solid="false" Weight="200" Category="Plants" Takeable="false" />
+    <part Name="MentalShield" />
+    <part Name="PlantProperties" />
+    <part Name="NoBleed" />
+    <part Name="Springy" Factor="0.8" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="Plant" />
+    <tag Name="LivePlant" />
+    <tag Name="BodyType" Value="Bush" />
+    <stag Name="Plank" Value="plank" />
+    <stag Name="Fiber" Value="strip" />
+    <stag Name="FiberMaterial" Value="bark" />
+    <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_tree"></tag>
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_genPlant" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_genPlant" />
+  </object>
+
+  <!-- Base plants -->
+  <object Name="ActivePlant" Inherits="Plant">
+    <part Name="Brain" Mobile="false" Hostile="false" Factions="Beasts-100" />
+    <stat Name="Energy" ShortName="EN" Min="-100000" Max="100000" Value="0" />
+    <stat Name="Speed" ShortName="SP" Min="1" Max="10000" Value="100" />
+    <stat Name="MoveSpeed" ShortName="MS" Min="-1800" Max="195" Value="100" />
+    <stat Name="ColdResistance" Value="50" />
+    <stat Name="ElectricResistance" Value="50" />
+    <stat Name="AcidResistance" Value="0" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <stat Name="Level" ShortName="LV" Min="1" Max="10000" Value="1" />
+    <tag Name="Creature" />
+    <part Name="ActivatedAbilities" />
+    <tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_animal_plant_vo_die" />
+    <tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_animal_plant_vo_hurt"/>
+    <tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_creature_animal_plant_vo_idle"/>
+    <tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_creature_animal_plant_vo_attack"/>
+  </object>
+  <object Name="BasePlant" Inherits="ActivePlant">
+    <stat Name="Strength" sValue="6,1d3,(t-1)d2" />
+    <stat Name="Agility" sValue="6,1d3,(t-1)d2" />
+    <stat Name="Toughness" sValue="14,1d3,(t-1)d2" />
+    <stat Name="Intelligence" sValue="2,1d2,(t-1)d2-1" />
+    <stat Name="Willpower" sValue="1" />
+    <stat Name="Ego" sValue="1" />
+    <part Name="Brain" Wanders="false" Mobile="false" />
+    <part Name="NoKnockdown" />
+    <part Name="Springy" Factor="0.8" />
+    <mutation Name="DarkVision" Level="2" />
+    <stat Name="HeatResistance" Value="-25" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <part Name="ConversationScript" ConversationID="Plants" />
+    <intproperty Name="Bleeds" Value="1" />
+    <tag Name="BleedLiquid" Value="sap-1000" />
+    <tag Name="BleedColor" Value="&amp;W" />
+    <tag Name="BleedPrefix" Value="{{W|sappy}}" />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Sage,Erudite,Sensible,Sophic,Leafy,Verduous,Flowery,Old,Ripe" />
+    <tag Name="HeroNameTitleMayorSyn" Value="sultan,monarch,mayor-plant,elder-plant" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="Sultan,Monarch,Mayor-Plant,Elder-Plant" />
+    <xtagTextFragments Skin="cuticle" PoeticFeatures="braided feet,gentle stillness,verdurous bearing" YounglingNoise="*sway*" Activity="basking in the sun,swaying in the wind,putting roots down in the ground,being crawled over by insects" VillageActivity="basking in the sun,putting roots down in the ground,swaying in the wind" NeedsItemFor="for my own collection,to slake my greed,because of its trade value,for burying in the soil,to impress the other plants" SacredThing="carbon dioxide,the sun,water,laying roots,drinking water from the soil,every hue of green" ArableLand="ample sunlight" ValuedOre="water,carbon dioxide,sunlight" />
+    <tag Name="LivePlant" />
+    <stag Name="Plank" Value="plank" />
+    <stag Name="HardMaterial" Value="wood" />
+    <tag Name="Culture" Value="Plant" />
+    <tag Name="SimpleConversation" Value="{{emote|*The plant gives no indication of understanding*.}}" />
+    <tag Name="PetResponse" Value="=subject.T= =verb:sway= gently." />
+    <tag Name="Gender" Value="neuter" />
+    <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_plant" />
+  </object>
+  <object Name="BaseAloe" Inherits="BasePlant">
+    <part Name="Render" RenderString="15" />
+    <part Name="Brain" Factions="Succulents-100" />
+    <tag Name="Role" Value="Controller" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <stat Name="Hitpoints" Value="20" />
+    <intproperty Name="NavigationWeight" Value="97" />
+    <tag Name="Class" Value="succulent" />
+    <tag Name="Species" Value="aloe" />
+  </object> 
+  <object Name="MutatedPlant" Inherits="Creature">
+    <stat Name="Strength" sValue="6,1d3,(t-1)d2" />
+    <stat Name="Agility" sValue="6,1d3,(t-1)d2" />
+    <stat Name="Toughness" sValue="14,1d3,(t-1)d2" />
+    <stat Name="Intelligence" sValue="2,1d2,(t-1)d2-1" />
+    <stat Name="Willpower" sValue="1" />
+    <stat Name="Ego" sValue="1" />
+    <part Name="PlantProperties" />
+    <part Name="Render" DisplayName="[Mutated Plant]" RenderString="@" ColorString="&amp;G" />
+    <part Name="MentalShield" />
+    <part Name="Inventory" />
+    <part Name="Springy" Factor="0.8" />
+    <tag Name="Genotype" Value="Mutated Plant" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <part Name="ConversationScript" ConversationID="Plants" />
+    <intproperty Name="Bleeds" Value="1" />
+    <tag Name="BleedLiquid" Value="sap-1000" />
+    <tag Name="BleedColor" Value="&amp;W" />
+    <tag Name="BleedPrefix" Value="{{W|sappy}}" />
+    <tag Name="HeroNameTitleMayorSyn" Value="mayor-plant,elder-plant" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="Mayor-Plant,Elder-Plant" />
+    <xtagTextFragments Skin="cuticle" PoeticFeatures="braided feet,gentle stillness,verdurous bearing" YounglingNoise="*sway*" Activity="basking in the sun,swaying in the wind,putting roots down in the ground,being crawled over by insects" VillageActivity="basking in the sun,putting roots down in the ground,swaying in the wind" NeedsItemFor="for my own collection,to slake my greed,because of its trade value,for burying in the soil,to impress the other plants" SacredThing="carbon dioxide,the sun,water,laying roots,drinking water from the soil,every hue of green" ArableLand="ample sunlight" ValuedOre="water,carbon dioxide,sunlight" />
+    <tag Name="LivePlant" />
+    <tag Name="Culture" Value="Plant" />
+    <tag Name="PetResponse" Value="=subject.T= =verb:sway= gently." />
+    <tag Name="SeveredLimbBlueprint" Value="PlantLimb" />
+    <tag Name="SeveredHeadBlueprint" Value="PlantHead" />
+    <tag Name="SeveredFaceBlueprint" Value="PlantFace" />
+    <tag Name="SeveredArmBlueprint" Value="PlantLimb" />
+    <tag Name="SeveredHandBlueprint" Value="PlantLimb" />
+    <tag Name="SeveredLegBlueprint" Value="PlantLimb" />
+    <tag Name="SeveredFootBlueprint" Value="PlantLimb" />
+    <tag Name="SeveredFeetBlueprint" Value="PlantLimb" />
+    <tag Name="SeveredTailBlueprint" Value="PlantLimb" />
+    <tag Name="SeveredRootsBlueprint" Value="PlantLimb" />
+    <tag Name="SeveredFinBlueprint" Value="PlantLimb" />
+    <tag Name="PrimaryLimbType" Value="Arm" />
+    <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_plant" />
+    <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_genPlant" />
+    <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_genPlant" />
+    <stag Name="Plank" Value="strip" />
+    <stag Name="HardMaterial" Value="stem" />
+  </object>
+  <object Name="MutatedBush" Inherits="MutatedPlant">
+    <part Name="Body" Anatomy="Bush" />    
+    <tag Name="Class" Value="bush" />
+    <tag Name="Species" Value="bush" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <stat Name="Strength" sValue="10,1d3,(t)d1" />
+    <stat Name="Agility" sValue="10,1d3,(t)d1" />
+    <stat Name="Toughness" sValue="14,1d3,(t)d1" />
+    <stat Name="Intelligence" sValue="4,1d3" />
+    <stat Name="Willpower" sValue="12,1d3,(t)d1" />
+    <stat Name="Ego" sValue="2,1d3" />
+    <tag Name="PrimaryLimbType" Value="Hand" />
+    <tag Name="LairAmbientBed" Value="amb_creature_tree" />
+    <xtagTextFragments Skin="cuticle" PoeticFeatures="braided feet,gentle stillness,lust for water" />
+  </object>
+	<object Name="MutatedRoots" Inherits="MutatedBush">		
+		<tag Name="BaseObject" Value="*noinherit" />
+		<tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_root" />		
+		<tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_animal_root_vo_die" />
+		<tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_animal_root_vo_hurt"/>
+		<tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_creature_animal_root_vo_idle"/>
+		<tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_creature_animal_root_vo_attack"/>
+	</object>
+  <object Name="MutatedSucculent" Inherits="MutatedPlant">
+    <part Name="Body" Anatomy="Cactus" />
+    <part Name="Brain" Factions="Succulents-100" />    
+    <tag Name="Class" Value="succulent" />
+    <tag Name="Species" Value="succulent" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <stat Name="Strength" sValue="8,1d3,(t)d1" />
+    <stat Name="Agility" sValue="8,1d3,(t)d1" />
+    <stat Name="Toughness" sValue="20,1d3,(t)d1" />
+    <stat Name="Intelligence" sValue="6,1d3" />
+    <stat Name="Willpower" sValue="18,1d3,(t)d1" />
+    <stat Name="Ego" sValue="2,1d3" />
+    <tag Name="PrimaryLimbType" Value="Arm" />
+    <xtagTextFragments Skin="cuticle" PoeticFeatures="quincunx spines,fluted stems,plush hair" />
+  </object>
+  <object Name="MutatedFlower" Inherits="MutatedPlant">
+    <stat Name="Strength" sValue="6,1d3,(t)d1" />
+    <stat Name="Agility" sValue="16,1d3,(t)d1" />
+    <stat Name="Toughness" sValue="10,1d3,(t)d1" />
+    <stat Name="Intelligence" sValue="8,1d3" />
+    <stat Name="Willpower" sValue="8,1d3" />
+    <stat Name="Ego" sValue="20,1d3,(t)d1" />
+    <part Name="Body" Anatomy="Flower" />
+    <part Name="Brain" Factions="Flowers-100" />    
+    <tag Name="Class" Value="flower" />
+    <tag Name="Species" Value="flower" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="SecretAdjectives" Value="flower" />
+    <tag Name="PrimaryLimbType" Value="Head" />
+    <xtagTextFragments Skin="cuticle" PoeticFeatures="ethereal petals,simple geometry,ageless beauty" />
+  </object>
+  <object Name="MutatedVine" Inherits="MutatedPlant">
+    <stat Name="Strength" sValue="12,1d3,(t)d1" />
+    <stat Name="Agility" sValue="14,1d3,(t)d1" />
+    <stat Name="Toughness" sValue="10,1d3,(t)d1" />
+    <stat Name="Intelligence" sValue="8,1d3" />
+    <stat Name="Willpower" sValue="10,1d3,(t)d1" />
+    <stat Name="Ego" sValue="8,1d3" />
+    <part Name="Body" Anatomy="Vine" />
+    <part Name="Brain" Factions="Vines-100" />    
+    <tag Name="Class" Value="vine" />
+    <tag Name="Species" Value="vine" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="PrimaryLimbType" Value="Hand" />
+    <xtagTextFragments Skin="cuticle" PoeticFeatures="verdurous bearing,labyrinth of fingers,sensuality" />
+  </object>
+  <object Name="MutatedTree" Inherits="MutatedPlant">
+    <part Name="Brain" Factions="Trees-100" />
+    <stat Name="Strength" sValue="24,1d3,(t)d1" />
+    <stat Name="Agility" sValue="8,1d3,(t)d1" />
+    <stat Name="Toughness" sValue="28,1d3,(t)d1" />
+    <stat Name="Intelligence" sValue="8,1d3" />
+    <stat Name="Willpower" sValue="16,1d3,(t)d1" />
+    <stat Name="Ego" sValue="8,1d3" />
+    <part Name="Body" Anatomy="Tree" />
+    <tag Name="Tree" />
+    <tag Name="Class" Value="tree" />
+    <tag Name="Species" Value="tree" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="PrimaryLimbType" Value="Arm" />
+    <xtagTextFragments Skin="cuticle" PoeticFeatures="enormity,verdurous bearing,gentle stillness" />
+    <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_tree" />
+    <tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_animal_tree_vo_die" />
+    <tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_animal_tree_vo_hurt"/>
+    <tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_creature_animal_tree_vo_idle"/>
+    <tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_creature_animal_tree_vo_attack"/>
+  </object>
+  <object Name="SapientMutatedBush" Inherits="MutatedBush">
+    <stat Name="Intelligence" sValue="14,1d3,(t)d1" />
+    <stat Name="Willpower" sValue="14,1d3,(t)d1" />
+    <stat Name="Ego" sValue="14,1d3,(t)d1" />
+    <part Name="ConversationScript" ConversationID="SapientPlants" ClearLost="true" />
+    <removepart Name="MentalShield" />
+    <tag Name="BaseObject" Value="*noinherit" />
+  </object>
+  <object Name="SapientMutatedSucculent" Inherits="MutatedSucculent">
+    <stat Name="Intelligence" sValue="14,1d3,(t)d1" />
+    <stat Name="Willpower" sValue="20,1d3,(t)d1" />
+    <stat Name="Ego" sValue="14,1d3,(t)d1" />
+    <part Name="ConversationScript" ConversationID="SapientPlants" ClearLost="true" />
+    <removepart Name="MentalShield" />
+    <tag Name="BaseObject" Value="*noinherit" />
+  </object>
+  <object Name="SapientMutatedFlower" Inherits="MutatedFlower">
+    <stat Name="Intelligence" sValue="14,1d3,(t)d1" />
+    <stat Name="Willpower" sValue="14,1d3,(t)d1" />
+    <stat Name="Ego" sValue="20,1d3,(t)d1" />
+    <part Name="ConversationScript" ConversationID="SapientPlants" ClearLost="true"/>
+    <removepart Name="MentalShield" />
+    <tag Name="BaseObject" Value="*noinherit" />
+  </object>
+  <object Name="SapientMutatedVine" Inherits="MutatedVine">
+    <stat Name="Intelligence" sValue="16,1d3,(t)d1" />
+    <stat Name="Willpower" sValue="16,1d3,(t)d1" />
+    <stat Name="Ego" sValue="16,1d3,(t)d1" />
+    <part Name="ConversationScript" ConversationID="SapientPlants" ClearLost="true" />
+    <removepart Name="MentalShield" />
+    <tag Name="BaseObject" Value="*noinherit" />
+  </object>
+  <object Name="SapientMutatedTree" Inherits="MutatedTree">
+    <stat Name="Intelligence" sValue="16,1d3,(t)d1" />
+    <stat Name="Willpower" sValue="20,1d3,(t)d1" />
+    <stat Name="Ego" sValue="16,1d3,(t)d1" />
+    <part Name="ConversationScript" ConversationID="SapientPlants" ClearLost="true" />
+    <removepart Name="MentalShield" />
+    <tag Name="BaseObject" Value="*noinherit" />
+  </object>
+
+  <!-- this was in Items.xml ?? -->
+  <object Name="Fungus" Inherits="PhysicalObject">
+    <part Name="Render" DisplayName="[Fungus]" RenderLayer="3" RenderString="157" Tile="assets_content_textures_tiles_tile-9-4.png" ColorString="&amp;G" Occluding="false" />
+    <part Name="Physics" Conductivity="60" Solid="false" Weight="200" Category="Fungus" Takeable="false" />
+    <part Name="MentalShield" />
+    <part Name="FungusProperties" />
+    <part Name="NoBleed" />
+    <part Name="Springy" Factor="0.8" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="BodyType" Value="Fungus" />
+    <tag Name="Fungus" />
+    <tag Name="LiveFungus" />
+    <stag Name="Plank" Value="mass" />
+  </object>
+
+  <!-- Base fungi -->  
+  <object Name="ActiveFungus" Inherits="Fungus">
+    <part Name="Render" RenderLayer="7"></part>
+    <part Name="Brain" Mobile="false" Hostile="false" Factions="Fungi-100" />
+    <stat Name="Energy" ShortName="EN" Min="-100000" Max="100000" Value="0" />
+    <stat Name="Speed" ShortName="SP" Min="1" Max="10000" Value="100" />
+    <stat Name="MoveSpeed" ShortName="MS" Min="-1800" Max="195" Value="100" />
+    <stat Name="ElectricResistance" Value="50" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <stat Name="Level" ShortName="LV" Min="1" Max="10000" Value="1" />
+    <tag Name="Creature" />
+    <part Name="ActivatedAbilities" />
+  </object>
+  <object Name="BaseFungus" Inherits="ActiveFungus">
+    <stat Name="Strength" sValue="6,1d3,(t-1)d2" />
+    <stat Name="Agility" sValue="8,1d3,(t-1)d2" />
+    <stat Name="Toughness" sValue="12,1d3,(t-1)d2" />
+    <stat Name="Intelligence" sValue="3,1d2,(t-1)d2-1" />
+    <stat Name="Willpower" sValue="3,1d2,(t-1)d2-1" />
+    <stat Name="Ego" sValue="3,1d2,(t-1)d2-1" />
+    <part Name="Brain" />
+    <part Name="NoKnockdown" />
+    <part Name="Springy" Factor="0.8" />
+    <mutation Name="DarkVision" Level="2" />
+    <stat Name="AcidResistance" Value="-10" />
+    <stat Name="HeatResistance" Value="-10" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <part Name="ConversationScript" ConversationID="Fungi" />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Sage,Erudite,Sensible,Sophic,Frilled,Pallid,Fecund,Old,Sporulous" />
+    <tag Name="HeroNameTitleMayorSyn" Value="sultan,monarch,mayor-fungus,elder-fungus" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="Sultan,Monarch,Mayor-Fungus,Elder-Fungus" />
+    <xtagTextFragments Skin="stipe" PoeticFeatures="wheezing gills,turgidness,hunger for dead things" YounglingNoise="*squish*" Activity="basking in the shade" VillageActivity="basking in the shade" NeedsItemFor="for my own collection,to slake my greed,because of its trade value" SacredThing="necrotic biomass" ArableLand="ripe corpses" ValuedOre="organic matter" />
+    <tag Name="Culture" Value="Fungal" />
+    <tag Name="Class" Value="fungus" />
+		<tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_creature_animal_fungi_vo_idle"/>
+		<tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_creature_animal_fungi_vo_attack"/>
+		<tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_animal_fungi_vo_die" />
+		<tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_animal_fungi_vo_hurt"/>
+		<tag Name="LiveFungus" />
+    <stag Name="HardMaterial" Value="flesh" />
+    <tag Name="PetResponse" Value="=subject.T= =verb:squish=." />
+    <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_fungi" />
+  </object>
+  <object Name="MutatedFungus" Inherits="Creature">
+    <stat Name="Strength" sValue="10,1d3,(t)d1" />
+    <stat Name="Agility" sValue="10,1d3,(t)d1" />
+    <stat Name="Toughness" sValue="16,1d3,(t)d1" />
+    <stat Name="Intelligence" sValue="8,1d3" />
+    <stat Name="Willpower" sValue="16,1d3" />
+    <stat Name="Ego" sValue="6,1d3" />
+    <part Name="Brain" Mobile="false" Factions="Fungi-100" />
+    <part Name="Body" Anatomy="Fungus" />
+    <part Name="FungusProperties" />
+    <part Name="Render" DisplayName="[Mutated Fungus]" RenderString="@" ColorString="&amp;m" />    
+    <part Name="MentalShield" />
+    <part Name="Inventory" />
+    <part Name="Springy" Factor="0.8" />
+    <tag Name="Genotype" Value="Mutated Fungus" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <part Name="ConversationScript" ConversationID="Fungi" />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Sage,Erudite,Sensible,Sophic,Frilled,Pallid,Fecund,Old,Sporulous" />
+    <tag Name="HeroNameTitleMayorSyn" Value="sultan,monarch,mayor-fungus,elder-fungus" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="Sultan,Monarch,Mayor-Fungus,Elder-Fungus" />
+    <xtagTextFragments PoeticFeatures="wheezing gills,turgidness,hunger for dead things" YounglingNoise="*squish*" Activity="basking in the shade" VillageActivity="basking in the shade" NeedsItemFor="for my own collection,to slake my greed,because of its trade value" SacredThing="necrotic biomass" ArableLand="ripe corpses" ValuedOre="organic matter" />
+    <tag Name="LiveFungus" />
+    <tag Name="Class" Value="fungus" />
+    <tag Name="Culture" Value="Fungal" />
+    <stag Name="HardMaterial" Value="flesh" />
+    <tag Name="PetResponse" Value="=subject.T= =verb:squish=." />
+    <tag Name="SeveredLimbBlueprint" Value="FungusLimb" />
+    <tag Name="SeveredHeadBlueprint" Value="FungusHead" />
+    <tag Name="SeveredFaceBlueprint" Value="FungusFace" />
+    <tag Name="SeveredArmBlueprint" Value="FungusLimb" />
+    <tag Name="SeveredHandBlueprint" Value="FungusLimb" />
+    <tag Name="SeveredLegBlueprint" Value="FungusLimb" />
+    <tag Name="SeveredFootBlueprint" Value="FungusLimb" />
+    <tag Name="SeveredFeetBlueprint" Value="FungusLimb" />
+    <tag Name="SeveredTailBlueprint" Value="FungusLimb" />
+    <tag Name="SeveredRootsBlueprint" Value="FungusLimb" />
+    <tag Name="SeveredFinBlueprint" Value="FungusLimb" />
+    <tag Name="PrimaryLimbType" Value="Hand" />
+  </object>
+  <object Name="SapientMutatedFungus" Inherits="MutatedFungus">
+    <stat Name="Intelligence" sValue="16,1d3,(t)d1" />
+    <stat Name="Willpower" sValue="16,1d3,(t)d1" />
+    <stat Name="Ego" sValue="16,1d3,(t)d1" />
+    <part Name="ConversationScript" ConversationID="SapientFungi" ClearLost="true" />
+    <removepart Name="MentalShield" />
+    <tag Name="BaseObject" Value="*noinherit" />
+  </object>
+  
+  <!-- Base oddities -->
+  <object Name="BaseNest" Inherits="Creature">
+    <part Name="Render" DisplayName="[Nest]" RenderLayer="7" RenderString="15" Tile="Creatures/sw_nest.bmp" ColorString="&amp;w" DetailColor="y" Occluding="false" />
+    <part Name="Physics" Solid="false" Weight="200" Category="Nest" Takeable="false" />
+    <part Name="Body" Anatomy="Nest" />
+    <part Name="Brain" Mobile="false" Hostile="false" Factions="Beasts-100" />
+    <part Name="NoKnockdown" />
+    <part Name="Springy" Factor="0.2" />
+    <tag Name="DeathMessageAsInanimate" />
+    <part Name="MentalShield" />
+    <xtagTextFragments YounglingNoise="*squish*" Activity="incubating larvae" VillageActivity="incubating larvae" NeedsItemFor="for my own collection,to slake my greed,because of its trade value" SacredThing="nesting" ArableLand="a moist place" ValuedOre="moisture" />
+    <tag Name="Class" Value="nest" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="ExcludeFromVillagePopulations" />
+		<tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_nest_urchin" />
+		<tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_animal_nest-urchin_vo_die" />
+    <tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_animal_nest-urchin_vo_hurt"/>
+    <tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_creature_animal_nest-urchin_vo_idle"/>
+    <tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_creature_animal_nest-urchin_vo_attack"/>
+  </object>
+	
+	<!-- Base animated objects -->
+	<object Name="BaseAnimatedObject">
+		<mixin Name="Creature" Exclude="part" />
+		<part Name="Brain" Factions="Newly Sentient Beings-100" Wanders="true" />
+		<part Name="ConversationScript" ConversationID="NewlySentientBeings" />
+		<part Name="Body" />
+		<part Name="Combat" />
+		<part Name="Experience" />
+		<part Name="Inventory" />
+		<part Name="Mutations" />
+		<part Name="Skills" />
+		<part Name="ActivatedAbilities" />
+		<part Name="Leveler" />
+		<part Name="Stomach" />
+		<part Name="Corpse" />
+		<part Name="AnimatedObject" />
+		<intproperty Name="Anchoring" Value="*delete" />
+		<tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_animatedFurniture_vo_die" />
+		<tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_animatedFurniture_vo_hurt"/>
+		<tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_animatedFurniture_vo_idle"/>
+		<tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_animatedFurniture_vo_attack"/>
+		<tag Name="UseExtendedDisplayNameForCreatureType" />
+		<tag Name="NoAnimatedNamePrefix" />
+		<tag Name="NoEffects" Value="*delete" />
+		<tag Name="BaseObject" Value="*noinherit" />
+		<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+	</object>
+
+</objects>
