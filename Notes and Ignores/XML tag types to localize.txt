@@ -19,9 +19,9 @@
 		<part Name="Description" Short="<LOCALIZE>" />
 		<tag Name="GasGenerationName" Value="<LOCALIZE>" />
 		<tag Name="LevelEffectDescription" Value="<LOCALIZE>" />
-		<part Name="GasDamaging" Noun="<??LOCALIZE>" />
+		<part Name="GasDamaging" Noun="<LOCALIZE>" />
 	<!-- Data.xml -->
-		<part Name="SizeAdjective" Adjective="<??LOCALIZE>" />    
+		<part Name="SizeAdjective" Adjective="<LOCALIZE>" />    
 		<xtagGrammar adjunctNoun="<GRAMMAR><LOCALIZE>" />
 	<!-- Data.xml - "IngredientMapping" objects -->
 		<tag Name="Description" Value="<LOCALIZE>" />
@@ -84,6 +84,7 @@
 		<part Name="TreatAsSolid" Message="<LOCALIZE>" />    
 		<part Name="Interactable" Action="<??LOCALIZE>" Message="<LOCALIZE>" />
 	<!-- Creatures.xml -->
+		<tag Name="Species" Value="<??LOCALIZE>" />
 		<tag Name="PetResponse" Value="<LOCALIZE>" />
 		<tag Name="SimpleConversation" Value="<LOCALIZE><EMOTE><CHOICES~>" />
 		<xtagTextFragments Skin="<??LOCALIZE>" PoeticFeatures="<CHOICES,>" YounglingNoise="<EMOTE><CHOICES,>" Activity="<CHOICES,>" VillageActivity="<CHOICES,>" NeedsItemFor="<CHOICES,>" SacredThing="<CHOICES,>" ArableLand="<CHOICES,>" ValuedOre="<CHOICES,>" />

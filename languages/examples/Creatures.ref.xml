@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- the originals of some creature object definitions, for reference -->
+<objects Encoding="utf-8" Lang="ref">
+
+	<!-- some animals -->
+	<object Name="BaseGoat" Inherits="BaseAnimal">
+		<part Name="Render" DisplayName="goat" Tile="Assets_Content_Textures_Creatures_sw_goat.bmp" RenderString="g" ColorString="&amp;w" DetailColor="y" />
+		<part Name="Corpse" CorpseChance="10" CorpseBlueprint="Goat Corpse" />		
+		<part Name="Brain" Hostile="false" Factions="Prey-100" />		
+		<skill Name="Endurance" />
+		<skill Name="Shield" />
+		<part Name="ConversationScript" ConversationID="Goats" />				
+		<part Name="InhabitAchievement" AchievementID="ACH_INHABIT_GOAT" />
+		<tag Name="Species" Value="goat" />
+		<tag Name="DynamicObjectsTable:Hills_Creatures" />
+		<tag Name="DynamicObjectsTable:Mountains_Creatures" />
+		<tag Name="Cervine" />
+		<tag Name="BaseObject" Value="*noinherit" />
+		<tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_grazingAnimal" />
+		<tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_animal_goat_vo_die" />
+		<tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_animal_goat_vo_hurt"/>
+		<tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_creature_animal_goat_vo_idle"/>
+		<tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_creature_animal_goat_vo_attack"/>
+	</object>
+
+	<object Name="BaseSwine" Inherits="BaseAnimal">
+		<part Name="Render" DisplayName="pig" RenderString="o"  Tile="creatures/sw_boar2.bmp" ColorString="&amp;y" />		
+		<part Name="Corpse" CorpseChance="100" CorpseBlueprint="Pig Corpse" />
+		<part Name="Brain" Factions="Swine-100" />
+		<tag Name="Class" Value="swine" />
+		<tag Name="Species" Value="pig" />
+		<tag Name="Grazer" />
+		<tag Name="BaseObject" Value="*noinherit" />
+		<tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_pig" />
+		<tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_animal_swine_vo_die" />
+		<tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_animal_swine_vo_hurt"/>
+		<tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_creature_animal_swine_vo_idle"/>
+		<tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_creature_animal_swine_vo_attack"/>
+	</object>
+
+	<object Name="Dog" Inherits="BaseDog">
+    	<part Name="Render" DisplayName="feral dog" Tile="creatures/sw_dog.bmp" RenderString="d" ColorString="&amp;y" />
+    	<part Name="Corpse" CorpseChance="100" CorpseBlueprint="Dog Corpse" />
+    	<stat Name="AV" Value="2" />
+    	<stat Name="Hitpoints" Value="8" />
+    	<part Name="Description" Short="=pronouns.Subjective= =verb:are:afterpronoun= a snarling mess of matted hair." />
+    	<inventoryobject Blueprint="Dog_Bite" Number="1" />
+    	<part Name="Swarmer" />
+    	<tag Name="Role" Value="Minion" />
+    	<part Name="AIPilgrim" Chance ="10" MapNoteAttributes="humanoid,settlement" />
+    	<stat Name="Level" Value="1" />
+    	<tag Name="DynamicObjectsTable:DesertCanyon_Creatures" />
+    	<tag Name="DynamicObjectsTable:Hills_Creatures" />
+    	<tag Name="DynamicObjectsTable:Mountains_Creatures" />
+    	<tag Name="DynamicObjectsTable:Flowerfields_Creatures" />
+  	</object>
+
+	<!-- NPCs -->
+	<object Name="Mehmet" Inherits="WatervineFarmerJoppa">
+		<part Name="Render" DisplayName="Mehmet" ColorString="&amp;W" RenderString="f" Tile="Creatures/npc-mehmet.bmp" />
+    	<part Name="Description" Short="=pronouns.Subjective= =verb:are:afterpronoun= a wind-carved man with the posture of a vinereaper; =pronouns.possessive= spine is bent to point the bright turquoise of =pronouns.possessive= eyes at the tilling angle, =pronouns.possessive= hips are pushed odd-forward with the slumping ease of a stance much more relaxed than =pronouns.possessive=. If it weren't for the salt on =pronouns.possessive= brow and the scarred knuckles, =pronouns.subjective= would seem a marble Saad perched under a crumbling tomb." />
+    	<part Name="ConversationScript" ConversationID="Mehmet" />
+    	<part Name="Brain" Wanders="false" Factions="Joppa-100" />
+    	<removebuilder Name="RandomTile" />
+    	<inventoryobject Blueprint="Vinewafer" Number="1-2" />
+    	<stat Name="Level" Value="16" />
+    	<stat Name="Hitpoints" Value="100" />
+    	<mutation Name="MentalMirror" />
+    	<skill Name="CookingAndGathering_Harvestry" />
+    	<skill Name="Survival" />
+    	<part Name="GivesRep" />
+    	<!-- <tag Name="NoHateFactions" Value="Wardens,Fish,Dromad,Farmers" /> -->
+    	<tag Name="Gender" Value="male" />
+    	<tag Name="NoSleep" />
+    	<tag Name="AllowIdleBehavior" Value="*delete" />
+    	<tag Name="QuestGiver" Value="What's Eating the Watervine?" />
+    	<tag Name="NoSignpost" />
+    	<xtagGrammar Proper="true" />
+    	<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+  </object>
+
+</objects>

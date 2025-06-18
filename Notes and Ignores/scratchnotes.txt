@@ -56,7 +56,7 @@ ID="[^"]*" Value="(?!\[届：)
 <string ID="[^"]*">(?!\[届：)
 
 adding [届：\TODO] to various tag attributes:
-( (?:DisplayName|Description|Snippet)=")([^\["][^届"]+)"	$1[届：\TODO]$2"
+( (?:DisplayName|Description|Snippet)=")([^\["][^届"]+)"		$1[届：\TODO]$2"
 stripping out unneeded attributes:
  (?:Class|Cost|Attribute|Tile|Foreground|Detail|Minimum|Prereq|Hidden)(="[^"]+")
 Japanese punctuation
