@@ -922,7 +922,6 @@ Assets/HistoryKit/VillageHistory/SharedMutation.cs:208
   <string ID="=mutation= x=count=">[届：\TODO]=mutation= x=count=</string>
   <string ID="none">[届：\TODO]none</string>
   <string ID="Mutations">[届：\TODO]Mutations</string>
-  <string ID="=mutation= (=variant=)">=mutation=（=variant=）</string>
   <string Context="mutation variant available" ID="=displayName= [{{W|V}}]">=displayName=［{{W|V}}］</string>
   <string ID="[=numberselected=]">［=numberselected=］</string>
   <string ID="=checkbox=[=nodecost=]">=checkbox=［=nodecost=］</string>
@@ -986,7 +985,7 @@ Assets/HistoryKit/VillageHistory/SharedMutation.cs:208
   <string Context="direction.description.incoming.actor" ID="from below =subject.them=">下から</string>
   <string Context="direction.description.incoming.actor" ID="from above =subject.them=">上から</string>
   <string Context="direction.description.incoming.actor" ID="from near =subject.them=">近くから</string>
-  <string Context="direction.description.incoming.actor" ID="from =subject.its= =dir.expandedDirection=">=dir.expandedDirection=から</string>
+  <string Context="direction.description.incoming.actor" ID="from =subject.their= =dir.expandedDirection=">=dir.expandedDirection=から</string>
  <string Context="direction.short" ID="N">北</string>
   <string Context="direction.short" ID="S">南</string>
   <string Context="direction.short" ID="E">東</string>
@@ -1196,7 +1195,7 @@ Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:44
   <string Context="DescriptionBuilder Epithets Join" ID="=epithets.join:, =">=epithets.join:、=</string>
   <!-- special just for ja! -->
   <string Context="DescriptionBuilder Epithets Few" ID="=epithets.てList=">=epithets.てList=</string>
-  <string Context="DescriptionBuilder Multiple Titles Clause" ID=", =titles.andList=">=titles.andList=、</string>
+  <string Context="DescriptionBuilder Multiple Titles Clause" ID=", =titles.andList:noSerial=">=titles.andList=、</string>
   <string Context="DescriptionBuilder Single Title Clause With Epithets" ID=", =title.toString=">=title.toString=、</string>
   <string Context="DescriptionBuilder Single Title Clause" ID="and =title.toString=">と=title.toString=</string>
 <!-- typically for item mods -->
@@ -1433,7 +1432,7 @@ Assets/XRL Application/World/Factions/Faction.cs:1637
   <string Context="Rebuked InventoryAction" ID="dismiss">[届：\TODO]dismiss</string>
   <string Context="Rebuked Dismiss" ID="=subject.Does:dismiss= =object.the.name= from =subject.its= service.">[届：\TODO]=subject.Does:dismiss= =object.the.name= from =subject.its= service.</string>
   <string Context="Rebuked Applied" ID="=subject.Does:rebuke= =object.the.name= into submission.">[届：\TODO]=subject.Does:rebuke= =object.the.name= into submission.</string>
-  <string Context="Rebuke Removed" ID="=subject.Does:wander away disinterestedly.">[届：\TODO]=subject.Does:wander away disinterestedly.</string>
+  <string Context="Rebuke Removed" ID="=subject.Does:wander= away disinterestedly.">[届：\TODO]=subject.Does:wander= away disinterestedly.</string>
   <string Context="spotmessage.defaultVerb" ID="see">[届：\TODO]see</string>
   <string Context="spotmessage" ID="=subject.Does#verb= =object.an= =subject.generalDirection#object=, so you refrain from =autoActDescription=.">[届：\TODO]=subject.Does#verb= =object.an= =subject.generalDirection#object=, so you refrain from =autoActDescription=.</string>
   <string Context="spotmessage" ID="=subject.Does#verb= =object.an= =subject.generalDirection#object= and stop =autoActDescription=.">[届：\TODO]=subject.Does#verb= =object.an= =subject.generalDirection#object= and stop =autoActDescription=.</string>
@@ -1722,10 +1721,10 @@ Assets/XRL Application/World/Factions/Faction.cs:1637
   <string ID="You can't excavate the sky!">[届：\TODO]You can't excavate the sky!</string>
   <string ID="=subject.T= =subject.verb:dig= a passage up.">[届：\TODO]=subject.T= =subject.verb:dig= a passage up.</string>
   <string ID="carapace">[届：\TODO]carapace</string>
-  <string ID="=subject.does:fail= to tighten =subject.possessive= =carapace.name=">[届：\TODO]=subject.does:fail= to tighten =subject.possessive= =carapace.name=</string>
+  <string ID="=subject.Does:fail= to tighten =subject.possessive= =carapace.name=">[届：\TODO]=subject.Does:fail= to tighten =subject.possessive= =carapace.name=</string>
   <string ID="You tighten your =carapace.name=. Your AV increases by {{G|=tightFactor.name=}}.">[届：\TODO]You tighten your =carapace.name=. Your AV increases by {{G|=tightFactor.name=}}.</string>
-  <string ID="=subject.does:tighten= =subject.possessive= =carapace.name=">[届：\TODO]=subject.does:tighten= =subject.possessive= =carapace.name=</string>
-  <string ID="=carapace.does:loosen=. =subject.Name's= AV decreases by {{R|=tightFactor.name=}}.">[届：\TODO]=carapace.does:loosen=. =subject.Name's= AV decreases by {{R|=tightFactor.name=}}.</string>
+  <string ID="=subject.Does:tighten= =subject.possessive= =carapace.name=">[届：\TODO]=subject.Does:tighten= =subject.possessive= =carapace.name=</string>
+  <string ID="=carapace.Does:loosen=. =subject.Name's= AV decreases by {{R|=tightFactor.name=}}.">[届：\TODO]=carapace.Does:loosen=. =subject.Name's= AV decreases by {{R|=tightFactor.name=}}.</string>
   <string ID="=subject.Name's= =carapace.does:loosen=.">[届：\TODO]=subject.Name's= =carapace.does:loosen=.</string>
   <string ID="=subject.Does:discharge= =amount= units of electrical charge!">[届：\TODO]=subject.Does:discharge= =amount= units of electrical charge!</string>
   <string ID="=subject.Does:discharge= an electrical arc!">[届：\TODO]=subject.Does:discharge= an electrical arc!</string>
@@ -1826,7 +1825,7 @@ Assets/XRL Application/World/Factions/Faction.cs:1637
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/CookingRecipe.cs:215-->
   <string Context="CookingRecipie GetAnnotatedDisplayName has ingredients, single-line" ID="=favorite.if:{{R|♥}} ==displayName= [=components.join:, =]">=favorite.if:{{R|♥}} ==displayName= [=components.join:, =]</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/CookingRecipe.cs:286-->
-  <string Context="CookingRecipie ApplyEffects Popup" Context="You start to metabolize the meal, gaining the following effect for the rest of the day" ID="&#xA;&#xA;{{W|=messages.join:&#xA;=}}" Value="You start to metabolize the meal, gaining the following effect for the rest of the day:&#xA;&#xA;{{W|=messages.join:&#xA;=}}" />
+  <string Context="CookingRecipie ApplyEffects Popup" ID="You start to metabolize the meal, gaining the following effect for the rest of the day:&#xA;&#xA;{{W|=messages.join:&#xA;=}}" Value="You start to metabolize the meal, gaining the following effect for the rest of the day:&#xA;&#xA;{{W|=messages.join:&#xA;=}}" />
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/CookingRecipe.cs:516-->
   <string Context="CookingRecipe Naming Ingredient" ID="=item.short|strip=">=item.short|strip=</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/CookingRecipe.cs:524-->
@@ -1945,7 +1944,7 @@ Assets/XRL Application/World/Settlements/World.Settlements.cs:111
   <!--
 	Keybind strings
   -->
-  <string ID="keybind:unknown key">不明なキー</string>
+  <string Context="keybind" ID="unknown key">不明なキー</string>
 <!-- no change: <string ID="keybind:{{W|Alt}}">{{W|Alt}}</string> -->
 
   <string Context="damage penetrations" ID="(x=number.toString=)">[届：\TODO](x=number.toString=)</string>
