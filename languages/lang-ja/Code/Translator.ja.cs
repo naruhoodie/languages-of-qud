@@ -81,7 +81,7 @@ namespace XRL.Language
         /**
          * support method for Cardinal() and Ordinal()
          */
-        private static void ProcessMagnitude(ref int num, ref int magnitude, StringBuilder result, string place)
+        private static void ProcessMagnitude(ref int num, ref int magnitude, Utf16ValueStringBuilder result, string place)
         {
             if (magnitude > 4)
             {
@@ -103,7 +103,7 @@ namespace XRL.Language
         /**
          * support method for Cardinal() and Ordinal()
          */
-        private static bool ProcessMagnitudes(ref int num, ref int magnitude, StringBuilder result, string suffix = null)
+        private static bool ProcessMagnitudes(ref int num, ref int magnitude, Utf16ValueStringBuilder result, string suffix = null)
         {
             switch (magnitude)
             {
@@ -220,7 +220,7 @@ namespace XRL.Language
             {
                 return "零";
             }
-            StringBuilder result = Event.NewStringBuilder();
+            using var result = ZString.CreateStringBuilder();
             if (num < 0)
             {
                 result.Append("マイナス");
