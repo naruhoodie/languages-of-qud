@@ -176,7 +176,7 @@
         <scope Name="Main" Type="Site" Region="BananaGrove" Priority="200" Combine="false" />
       </scopes>
       <templates>
-        <template Name="Banana Grove *Name*" />
+        <template Name="Banana Grove =name=" />
       </templates>
     </namestyle>
 
@@ -185,7 +185,7 @@
         <scope Name="Main" Type="Site" Region="BaroqueRuins" Priority="200" Combine="false" />
       </scopes>
       <templates>
-        <template Name="Baroque Ruins *Name*" />
+        <template Name="Baroque Ruins =name=" />
       </templates>
     </namestyle>
 
@@ -194,7 +194,7 @@
         <scope Name="Main" Type="Site" Region="DeepJungle" Priority="200" Combine="false" />
       </scopes>
       <templates>
-        <template Name="Deep Jungle *Name*" />
+        <template Name="Deep Jungle =name=" />
       </templates>
     </namestyle>
 
@@ -203,7 +203,7 @@
         <scope Name="Main" Type="Site" Region="DesertCanyon" Priority="200" Combine="false" />
       </scopes>
       <templates>
-        <template Name="Desert Canyon *Name*" />
+        <template Name="Desert Canyon =name=" />
       </templates>
     </namestyle>
 
@@ -212,7 +212,7 @@
         <scope Name="Main" Type="Site" Region="Flowerfields" Priority="200" Combine="false" />
       </scopes>
       <templates>
-        <template Name="Flower Fields *Name*" />
+        <template Name="Flower Fields =name=" />
       </templates>
     </namestyle>
 
@@ -221,7 +221,7 @@
         <scope Name="Main" Type="Site" Region="Fungal" Priority="200" Combine="false" />
       </scopes>
       <templates>
-        <template Name="Fungal *Name*" />
+        <template Name="Fungal =name=" />
       </templates>
     </namestyle>
 
@@ -230,7 +230,7 @@
         <scope Name="Main" Type="Site" Region="Hills" Priority="200" Combine="false" />
       </scopes>
       <templates>
-        <template Name="Hills *Name*" />
+        <template Name="Hills =name=" />
       </templates>
     </namestyle>
 
@@ -239,7 +239,7 @@
         <scope Name="Main" Type="Site" Region="Jungle" Priority="200" Combine="false" />
       </scopes>
       <templates>
-        <template Name="Jungle *Name*" />
+        <template Name="Jungle =name=" />
       </templates>
     </namestyle>
 
@@ -248,7 +248,7 @@
         <scope Name="Main" Type="Site" Region="LakeHinnom" Priority="200" Combine="false" />
       </scopes>
       <templates>
-        <template Name="Water *Name*" />
+        <template Name="Water =name=" />
       </templates>
     </namestyle>
 
@@ -257,7 +257,7 @@
         <scope Name="Main" Type="Site" Region="MoonStair" Priority="200" Combine="false" />
       </scopes>
       <templates>
-        <template Name="Moon Stair *Name*" />
+        <template Name="Moon Stair =name=" />
       </templates>
     </namestyle>
 
@@ -266,7 +266,7 @@
         <scope Name="Main" Type="Site" Region="Mountains" Priority="200" Combine="false" />
       </scopes>
       <templates>
-        <template Name="Mountains *Name*" />
+        <template Name="Mountains =name=" />
       </templates>
     </namestyle>
 
@@ -275,7 +275,7 @@
         <scope Name="Main" Type="Site" Region="PalladiumReef" Priority="200" Combine="false" />
       </scopes>
       <templates>
-        <template Name="Palladium Reef *Name*" />
+        <template Name="Palladium Reef =name=" />
       </templates>
     </namestyle>
 
@@ -284,7 +284,7 @@
         <scope Name="Main" Type="Site" Region="Ruins" Priority="200" Combine="false" />
       </scopes>
       <templates>
-        <template Name="Ruins *Name*" />
+        <template Name="Ruins =name=" />
       </templates>
     </namestyle>
 
@@ -293,7 +293,7 @@
         <scope Name="Main" Type="Site" Region="Saltdunes" Priority="200" Combine="false" />
       </scopes>
       <templates>
-        <template Name="Salt Dunes *Name*" />
+        <template Name="Salt Dunes =name=" />
       </templates>
     </namestyle>
 
@@ -302,7 +302,7 @@
         <scope Name="Main" Type="Site" Region="Saltmarsh" Priority="200" Combine="false" />
       </scopes>
       <templates>
-        <template Name="Salt Marsh *Name*" />
+        <template Name="Salt Marsh =name=" />
       </templates>
     </namestyle>
 
@@ -311,7 +311,7 @@
         <scope Name="Main" Type="Site" Region="TheSpindle" Priority="200" Combine="false" />
       </scopes>
       <templates>
-        <template Name="Spindle *Name*" />
+        <template Name="Spindle =name=" />
       </templates>
     </namestyle>
 
@@ -320,7 +320,7 @@
         <scope Name="Main" Type="Site" Region="Water" Priority="200" Combine="false" />
       </scopes>
       <templates>
-        <template Name="Water *Name*" />
+        <template Name="Water =name=" />
       </templates>
     </namestyle>
 
@@ -393,10 +393,10 @@
         <scope Name="Culture" Culture="Ekuemekiyyen" Priority="100" Combine="false" />
       </scopes>
       <templates>
-        <template Name="*Name* *Suffix*" />
+        <template Name="=name= =suffix=" />
       </templates>
       <templatevars>
-        <templatevar Name="Suffix">
+        <templatevar Name="suffix">
           <value Name="ka" />
           <value Name="ki" />
           <value Name="ku" />
@@ -1118,11 +1118,15 @@
         <scope Name="Main" Type="Title" Special="Hero" Faction="Baboons" Priority="200" Combine="false" />
       </scopes>
       <templates>
-        <template Name="the *Rings* Baboon *Position*" />
+        <template Name="the =rings= Baboon =position=" />
       </templates>
       <templatevars>
+        <templatevar Name="rings">
+          <!-- this value shouldn't be used, but lets just pick a number in case it is-->
+          <value Name="7-ringed" />
+        </templatevar>
         <!-- Update Strings.xml "Baboon Hero Naming.xml Context" -->
-        <templatevar Name="Position">
+        <templatevar Name="position">
           <value Name="Philanderer" />
           <value Name="Riddler" />
           <value Name="Hermit" />
@@ -1239,11 +1243,11 @@
         <scope Name="Main" Type="Title" Special="Hero" Faction="Crabs" Priority="200" Combine="false" />
       </scopes>
       <templates>
-        <template Name="the *Adjective* *CreatureTypeCap* *Position*" />
+        <template Name="the =adjective= =creatureTypeCap= =position=" />
       </templates>
       <templatevars>
         <!-- Make sure to update Strings.xml "Eyeless King Crab Naming.xml Context" strings -->
-        <templatevar Name="Adjective">
+        <templatevar Name="adjective">
           <value Name="echoing" />
           <value Name="frenetic" />
           <value Name="many-legged" />
@@ -1251,7 +1255,7 @@
           <value Name="one-clawed" />
           <value Name="shell-cracked" />
         </templatevar>
-        <templatevar Name="Position">
+        <templatevar Name="position">
           <value Name="Ancient" />
           <value Name="Deepcrawler" />
           <value Name="Goliath" />
@@ -1298,7 +1302,7 @@
         <scope Name="Main" Special="Hero" Faction="Goatfolk" Priority="200" Combine="false" />
       </scopes>
       <templates>
-        <template Name="*Name*" />
+        <template Name="=name=" />
       </templates>
     </namestyle>
 
@@ -1307,11 +1311,11 @@
         <scope Name="Main" Type="Epithet" Special="Hero" Faction="Goatfolk" Priority="200" Combine="false" />
       </scopes>
       <templates>
-        <template Name="*Epithet*" />
+        <template Name="=epithet=" />
       </templates>
       <templatevars>
         <!-- Be sure to update the Strings.xml Goatfolk Hero Naming.xml Context entries -->
-        <templatevar Name="Epithet">
+        <templatevar Name="epithet">
           <value Name="Stargazer" />
           <value Name="Heartbiter" />
           <value Name="Twicetalker" />
@@ -1328,11 +1332,11 @@
       </scopes>
       <templates>
         <!-- Be sure to update the Strings.xml Goatfolk Hero Naming.xml Context entries -->
-        <template Name="the Goatfolk Shaman of Clan *Clan*" />
+        <template Name="the Goatfolk Shaman of Clan =clan=" />
       </templates>
       <templatevars>
         <!-- Be sure to update the Strings.xml Goatfolk Hero Naming.xml Context entries -->
-        <templatevar Name="Clan">
+        <templatevar Name="clan">
           <value Name="Hotur" />
           <value Name="Ibex" />
           <value Name="Sol" />
@@ -1348,18 +1352,18 @@
         <scope Name="Main" Type="Site" Culture="Goatfolk" Priority="100" Combine="false" />
       </scopes>
       <templates>
-        <template Name="*Name**Suffix*" Weight="1800" />
-        <template Name="*Prefix**Suffix*" Weight="1800" />
-        <template Name="*Sultan**Suffix*" Weight="450" />
-        <template Name="*Name**Location*" Weight="1125" />
-        <template Name="*Prefix**Location*" Weight="1125" />
-        <template Name="*Sultan**Location*" Weight="250" />
-        <template Name="*Name**Forest*" Weight="1575" />
-        <template Name="*Prefix**Forest*" Weight="1575" />
-        <template Name="*Sultan**Forest*" Weight="350" />
+        <template Name="=name==suffix=" Weight="1800" />
+        <template Name="=prefix==suffix=" Weight="1800" />
+        <template Name="=sultan==suffix=" Weight="450" />
+        <template Name="=name==location=" Weight="1125" />
+        <template Name="=prefix==location=" Weight="1125" />
+        <template Name="=sultan==location=" Weight="250" />
+        <template Name="=name==forest=" Weight="1575" />
+        <template Name="=prefix==forest=" Weight="1575" />
+        <template Name="=sultan==forest=" Weight="350" />
       </templates>
       <templatevars>
-        <templatevar Name="Prefix">
+        <templatevar Name="prefix">
           <value Name="Ash" />
           <value Name="Black" />
           <value Name="Blood" />
@@ -1375,10 +1379,10 @@
           <value Name="Star" />
           <value Name="White" />
         </templatevar>
-        <templatevar Name="Sultan">
+        <templatevar Name="sultan">
           <value Name="Resheph" />
         </templatevar>
-        <templatevar Name="Suffix">
+        <templatevar Name="suffix">
           <value Name="baa" Weight="2" />
           <value Name="baaaaaah" />
           <value Name="baaaaah" Weight="3" />
@@ -1397,7 +1401,7 @@
           <value Name="raaah" Weight="3" />
           <value Name="raah" Weight="2" />
         </templatevar>
-        <templatevar Name="Forest">
+        <templatevar Name="forest">
           <value Name="bosk" />
           <value Name="dale" />
           <value Name="dell" />
@@ -1412,7 +1416,7 @@
           <value Name="weep" />
           <value Name="wood" />
         </templatevar>
-        <templatevar Name="Location">
+        <templatevar Name="location">
           <value Name="bend" />
           <value Name="bite" />
           <value Name="bow" />
@@ -1447,14 +1451,14 @@
         <scope Name="Main" Type="Site" Culture="Goatfolk" Special="Qlippoth" Priority="100" Combine="false" />
       </scopes>
       <templates>        
-        <template Name="*Prefix**Suffix*" Weight="1800" />        
-        <template Name="*Name**Location*" Weight="1125" />
-        <template Name="*Prefix**Location*" Weight="1125" />
-        <template Name="*Sultan**Location*" Weight="250" />        
-        <template Name="*Prefix**Forest*" Weight="1575" />        
+        <template Name="=prefix==suffix=" Weight="1800" />        
+        <template Name="=name==location=" Weight="1125" />
+        <template Name="=prefix==location=" Weight="1125" />
+        <template Name="=sultan==location=" Weight="250" />        
+        <template Name="=prefix==forest=" Weight="1575" />        
       </templates>
       <templatevars>
-        <templatevar Name="Prefix">
+        <templatevar Name="prefix">
           <value Name="Ash" />
           <value Name="Black" />
           <value Name="Ghost" />
@@ -1471,10 +1475,10 @@
           <value Name="Ever" />
           <value Name="Null" />
         </templatevar>
-        <templatevar Name="Sultan">
+        <templatevar Name="sultan">
           <value Name="Resheph" />
         </templatevar>
-        <templatevar Name="Suffix">
+        <templatevar Name="suffix">
           <value Name="baa" Weight="2" />
           <value Name="baaaaaah" />
           <value Name="baaaaah" Weight="3" />
@@ -1493,7 +1497,7 @@
           <value Name="raaah" Weight="3" />
           <value Name="raah" Weight="2" />
         </templatevar>
-        <templatevar Name="Forest">
+        <templatevar Name="forest">
           <value Name="bosk" />
           <value Name="dale" />
           <value Name="dell" />
@@ -1509,7 +1513,7 @@
           <value Name="wood" />
           <value Name="hollow" />
         </templatevar>
-        <templatevar Name="Location">                          
+        <templatevar Name="location">                          
           <value Name="crescent" />
           <value Name="deep" />
           <value Name="pool" />
@@ -1614,10 +1618,10 @@
 				<scope Name="Main" Type="Honorific" Special="Hero" Faction="Naphtaali" Priority="200" Combine="false" Chance="40" SkipIfHasEpithet="true" Tag="Godhed" />
 			</scopes>
 			<templates>
-				<template Name="*Honorific* Godhed" />				
+				<template Name="=honorific= Godhed" />				
 			</templates>
 			<templatevars>
-				<templatevar Name="Honorific">
+				<templatevar Name="honorific">
 					<value Name="spice.adjectives.!random" />
 					<value Name="spice.nouns.!random" />					
 				</templatevar>				
@@ -1629,10 +1633,10 @@
 				<scope Name="Main" Type="Epithet" Special="Hero" Faction="Naphtaali" Priority="200" Combine="false" Chance="33" SkipIfHasHonorific="true" Tag="Godhed" />
 			</scopes>
 			<templates>				
-				<template Name="*Adjective*-Godhed" />
+				<template Name="=adjective=-Godhed" />
 			</templates>
 			<templatevars>				
-				<templatevar Name="Adjective">
+				<templatevar Name="adjective">
 					<value Name="spice.adjectives.!random" />
 				</templatevar>
 			</templatevars>
@@ -1643,22 +1647,19 @@
 				<scope Name="Main" Type="Title" Special="Hero" Faction="Naphtaali" Priority="200" Combine="true" SkipIfHasHonorific="true" SkipIfHasEpithet="true" Tag="Godhed" />
 			</scopes>
 			<templates>				
-				<template Name="Godhed of the *Noun1*" />
-				<template Name="Godhed of the *Noun1*-*Noun2*" Weight="2" />
-				<template Name="Godhed of the *Adj*-*Noun1*" Weight="2" />
-				<template Name="Godhed of *NounPlural*" />
+				<template Name="Godhed of the =noun1=" />
+				<template Name="Godhed of the =noun1=-=noun2=" Weight="2" />
+				<template Name="Godhed of the =adj=-=noun1=" Weight="2" />
+				<template Name="Godhed of =noun1|pluralize=" />
 			</templates>
 			<templatevars>				
-				<templatevar Name="Noun1">
+				<templatevar Name="noun1">
 					<value Name="spice.nouns.!random" />
 				</templatevar>
-				<templatevar Name="Noun2">
+				<templatevar Name="noun2">
 					<value Name="spice.nouns.!random" />
 				</templatevar>
-				<templatevar Name="NounPlural">
-					<value Name="spice.nouns.!random.pluralize" />
-				</templatevar>
-				<templatevar Name="Adj">
+				<templatevar Name="adj">
 					<value Name="spice.adjectives.!random" />
 				</templatevar>
 			</templatevars>
@@ -1746,11 +1747,11 @@
         <scope Name="Main" Type="Title" Special="Hero" Faction="Snapjaws" Priority="200" Combine="false" />
       </scopes>
       <templates>
-        <template Name="the *Adjective* Snapjaw *Occupation*" />
+        <template Name="the =adjective= Snapjaw =occupation=" />
       </templates>
       <templatevars>
         <!-- Make sure to update Strings.xml "Snapjaw Hero Naming.xml Context" strings -->
-        <templatevar Name="Adjective">
+        <templatevar Name="adjective">
           <value Name="calloused" />
           <value Name="fearsome" />
           <value Name="fleet-footed" />
@@ -1759,7 +1760,7 @@
           <value Name="nimble" />
           <value Name="stalwart" />
         </templatevar>
-        <templatevar Name="Occupation">
+        <templatevar Name="occupation">
           <value Name="Bear-baiter" />
           <value Name="Firesnarler" />
           <value Name="Gutspiller" />
@@ -1975,11 +1976,11 @@
         <scope Name="Main" Type="Title" Special="Hero" Faction="Trolls" Priority="200" Combine="false" />
       </scopes>
       <templates>
-        <template Name="the *Adjective* Troll *Occupation*" />
+        <template Name="the =adjective= Troll =occupation=" />
       </templates>
       <templatevars>
         <!-- Make sure to update Strings.xml "Troll Hero Naming.xml Context" -->
-        <templatevar Name="Adjective">
+        <templatevar Name="adjective">
           <value Name="twisted" />
           <value Name="everlasting" />
           <value Name="hulking" />
@@ -1989,7 +1990,7 @@
           <value Name="bloodthirsty" />
           <value Name="two-headed" />
         </templatevar>
-        <templatevar Name="Occupation">
+        <templatevar Name="occupation">
           <value Name="Skull-collector" />
           <value Name="Heart-eater" />
           <value Name="Hunt-master" />
@@ -2112,10 +2113,10 @@
         <scope Name="Alt" Type="Title" Special="Hero" Faction="MechaSub" Priority="200" Combine="false" />
       </scopes>
       <templates>
-        <template Name="*Cognomen*" />
+        <template Name="=cognomen=" />
       </templates>
       <templatevars>
-        <templatevar Name="Cognomen">
+        <templatevar Name="cognomen">
           <value Name="chosen by Shekhinah" />
           <value Name="Chrome-Tauted" />
           <value Name="Favorite of the Argent Fathers" />
@@ -2263,7 +2264,7 @@
         <scope Name="Culture" Type="Title" Special="Hero" Culture="Bear" Priority="150" Combine="true" />
       </scopes>
       <templates>
-        <template Name="renowned honey loving *CreatureType*" />
+        <template Name="renowned honey loving =creatureType=" />
       </templates>
     </namestyle>
 
@@ -2328,10 +2329,10 @@
         <scope Name="Culture" Type="Epithet" Special="Hero" Culture="Ape" Priority="150" Combine="true" />
       </scopes>
       <templates>
-        <template Name="the *Adjective*" />
+        <template Name="the =adjective=" />
       </templates>
       <templatevars>
-        <templatevar Name="Adjective">
+        <templatevar Name="adjective">
           <value Name="Colorful" />
           <value Name="Elegant" />
           <value Name="Fashionable" />
@@ -2350,7 +2351,7 @@
         <scope Name="Culture" Type="Title" Special="Hero" Culture="Ape" Priority="150" Combine="true" />
       </scopes>
       <templates>
-        <template Name="legendary *CreatureType*" />
+        <template Name="legendary =creatureType=" />
       </templates>
     </namestyle>
 
@@ -2773,10 +2774,10 @@
         <scope Name="Culture" Type="Epithet" Special="Hero" Culture="Tortoise" Priority="150" Combine="true" />
       </scopes>
       <templates>
-        <template Name="the *Disposition*" />
+        <template Name="the =disposition=" />
       </templates>
       <templatevars>
-        <templatevar Name="Disposition">
+        <templatevar Name="disposition">
           <value Name="Cantankerous" />
           <value Name="Choleric" />
           <value Name="Grouchy" />
@@ -2793,7 +2794,7 @@
         <scope Name="Culture" Type="Title" Special="Hero" Culture="Tortoise" Priority="150" Combine="true" />
       </scopes>
       <templates>
-        <template Name="legendary *CreatureType*" />
+        <template Name="legendary =creatureType=" />
       </templates>
     </namestyle>
 
@@ -2928,7 +2929,7 @@
         <scope Name="Culture" Type="Title" Special="Hero" Culture="Arachnid" Priority="150" Combine="true" />
       </scopes>
       <templates>
-        <template Name="legendary *CreatureType* and virtuoso weaver" />
+        <template Name="legendary =creatureType= and virtuoso weaver" />
       </templates>
     </namestyle>
 
@@ -2959,10 +2960,10 @@
         <scope Name="Culture" Type="Epithet" Special="Hero" Culture="Bird" Priority="150" Combine="true" />
       </scopes>
       <templates>
-        <template Name="the *Singer*" />
+        <template Name="the =singer=" />
       </templates>
       <templatevars>
-        <templatevar Name="Singer">
+        <templatevar Name="singer">
           <value Name="Bard" />
           <value Name="Minstrel" />
           <value Name="Songster" />
@@ -2978,10 +2979,10 @@
         <scope Name="Culture" Type="Title" Special="Hero" Culture="Bird" Priority="150" Combine="true" />
       </scopes>
       <templates>
-        <template Name="*Disposition* *CreatureType*" />
+        <template Name="=disposition= =creatureType=" />
       </templates>
       <templatevars>
-        <templatevar Name="Disposition">
+        <templatevar Name="disposition">
           <value Name="brooding" />
           <value Name="cheerful" />
           <value Name="dour" />
@@ -3298,10 +3299,10 @@
         <scope Name="Culture" Special="Hero" Culture="Antelope" Priority="150" Combine="true" />
       </scopes>
       <templates>
-        <template Name="*Name* *Adjective*" />
+        <template Name="=name= =adjective=" />
       </templates>
       <templatevars>
-        <templatevar Name="Adjective">
+        <templatevar Name="adjective">
           <value Name="Fleet-Hoofed" />
           <value Name="Quickskipper" />
           <value Name="Frolicker" />
@@ -3318,7 +3319,7 @@
         <scope Name="Culture" Type="Title" Special="Hero" Culture="Antelope" Priority="150" Combine="true" />
       </scopes>
       <templates>
-        <template Name="legendary *CreatureType*" />
+        <template Name="legendary =creatureType=" />
       </templates>
     </namestyle>
 
@@ -3613,7 +3614,7 @@
         <scope Name="Main" Special="Hero" Faction="Templar" Tag="GrandNewfather" Priority="300" Combine="false" />
       </scopes>
       <templates>
-        <template Name="*Name*" />
+        <template Name="=name=" />
       </templates>
     </namestyle>
 
@@ -3904,15 +3905,15 @@
         <scope Name="Culture" Type="Title" Special="Hero" Culture="Barathrumite" Priority="150" Combine="true" />
       </scopes>
       <templates>
-        <template Name="*Adjective* Barathrumite *Role*" />
+        <template Name="=adjective= Barathrumite =role=" />
       </templates>
       <templatevars>
-        <templatevar Name="Adjective">
+        <templatevar Name="adjective">
           <value Name="acclaimed" />
           <value Name="distinguished" />
           <value Name="esteemed" />
         </templatevar>
-        <templatevar Name="Role">
+        <templatevar Name="role">
           <value Name="arconaut" />
           <value Name="lecturer" />
           <value Name="tinker" />
@@ -4080,7 +4081,7 @@
         <scope Name="Mutation" Mutation="Two-Headed" Priority="300" Chance="15" Combine="false" />
       </scopes>
       <templates>
-        <template Name="*Name*/*AltName*" />
+        <template Name="=name=/=altName=" />
       </templates>
     </namestyle>
 
@@ -4090,7 +4091,7 @@
         <scope Name="Culture" Culture="Sightless Way" Priority="100" Combine="false" />
       </scopes>
       <templates>
-        <template Name="*Name*-No-Longer" />
+        <template Name="=name=-No-Longer" />
       </templates>
     </namestyle>
 
@@ -4100,10 +4101,10 @@
         <scope Name="PsychicHunter" Type="Title" Special="PsychicHunter" Faction="Seekers" Priority="200" Combine="false" />
       </scopes>
       <templates>
-        <template Name="*Position*" />
+        <template Name="=position=" />
       </templates>
       <templatevars>
-        <templatevar Name="Position">
+        <templatevar Name="position">
           <value Name="servant of Ptoh" />
         </templatevar>
       </templatevars>
@@ -4114,7 +4115,7 @@
         <scope Name="Main" Type="Title" Special="Hero" Faction="Seekers" Priority="300" Tag="Dervish" Combine="false" />
       </scopes>
       <templates>
-        <template Name="legendary *CreatureType*" />
+        <template Name="legendary =creatureType=" />
       </templates>
     </namestyle>
 
@@ -4123,7 +4124,7 @@
         <scope Name="Main" Type="Title" Special="Hero" Faction="Pariahs" Priority="200" Combine="false" />
       </scopes>
       <templates>
-        <template Name="*CreatureTypeCap* Pariah" />
+        <template Name="=creatureTypeCap= Pariah" />
       </templates>
     </namestyle>
 
@@ -4132,7 +4133,7 @@
         <scope Name="Main" Type="Title" Special="Hero" Faction="Pariahs" Culture="Barathrumite" Priority="300" Combine="false" />
       </scopes>
       <templates>
-        <template Name="*CreatureTypeCap* Iconoclast" />
+        <template Name="=creatureTypeCap= Iconoclast" />
       </templates>
     </namestyle>
 
@@ -4141,7 +4142,7 @@
         <scope Name="Main" Type="Title" Special="Hero" Faction="Pariahs" Culture="Mechanimist" Priority="300" Combine="false" />
       </scopes>
       <templates>
-        <template Name="*CreatureTypeCap* Heretic" />
+        <template Name="=creatureTypeCap= Heretic" />
       </templates>
     </namestyle>
 
@@ -4150,7 +4151,7 @@
         <scope Name="Main" Type="Title" Special="Hero" Faction="Pariahs" Culture="HindrenPariah" Priority="300" Combine="false" />
       </scopes>
       <templates>
-        <template Name="*CreatureTypeCap*" />
+        <template Name="=creatureTypeCap=" />
       </templates>
     </namestyle>
 
@@ -4159,7 +4160,7 @@
         <scope Name="Main" Type="Title" Special="Hero" Priority="0" Combine="false" />
       </scopes>
       <templates>
-        <template Name="legendary *CreatureType*" />
+        <template Name="legendary =creatureType=" />
       </templates>
     </namestyle>
 
@@ -4168,7 +4169,7 @@
         <scope Name="Main" Type="Title" Special="Lair" Priority="0" Combine="false" />
       </scopes>
       <templates>
-        <template Name="legendary *CreatureType*" />
+        <template Name="legendary =creatureType=" />
       </templates>
     </namestyle>
 
@@ -4177,7 +4178,7 @@
         <scope Name="Main" Type="Honorific" Special="Hero" Tag="Animated" Priority="300" Combine="true" Chance="25" />
       </scopes>
       <templates>
-        <template Name="*Descriptor*" />
+        <template Name="=descriptor=" />
       </templates>
     </namestyle>
 
@@ -4186,7 +4187,7 @@
         <scope Name="Main" Type="Epithet" Special="Hero" Tag="Animated" Priority="300" Combine="true" SkipIfHasHonorific="true" />
       </scopes>
       <templates>
-        <template Name="the *Descriptor*" />
+        <template Name="the =descriptor=" />
       </templates>
     </namestyle>
 
@@ -4195,8 +4196,8 @@
         <scope Name="Main" Type="Title" Special="Hero" Tag="Animated" Priority="300" Combine="true" Chance="50" />
       </scopes>
       <templates>
-        <template Name="legendary *CreatureType*" Weight="6" />
-        <template Name="renowned *CreatureType*" />
+        <template Name="legendary =creatureType=" Weight="6" />
+        <template Name="renowned =creatureType=" />
       </templates>
     </namestyle>
 
@@ -4205,7 +4206,7 @@
         <scope Name="Main" Type="ExtraTitle" Special="Hero" Tag="Animated" Priority="300" Combine="true" Chance="50" />
       </scopes>
       <templates>
-        <template Name="friend to *Clientele*" />
+        <template Name="friend to =clientele=" />
       </templates>
     </namestyle>
 
@@ -4214,16 +4215,12 @@
         <scope Name="Main" Type="Honorific" Special="Mayor" Priority="400" Chance="40" Combine="true" />
       </scopes>
       <templates>
-        <template Name="*MayorSynCap*" />
+        <template Name="=mayorSyn|capitalize=" />
       </templates>
       <templatevars>
-        <templatevar Name="MayorSyn">
+        <templatevar Name="mayorSyn">
           <value Name="mayor" />
           <value Name="elder" />
-        </templatevar>
-        <templatevar Name="MayorSynCap">
-          <value Name="Mayor" />
-          <value Name="Elder" />
         </templatevar>
       </templatevars>
     </namestyle>
@@ -4233,17 +4230,13 @@
         <scope Name="Main" Type="Title" Special="Mayor" Priority="400" Chance="40" Combine="true" />
       </scopes>
       <templates>
-        <template Name="village *MayorSyn*" />
-        <template Name="the village *MayorSyn*" />
+        <template Name="village =mayorSyn=" />
+        <template Name="the village =mayorSyn=" />
       </templates>
       <templatevars>
-        <templatevar Name="MayorSyn">
+        <templatevar Name="mayorSyn">
           <value Name="mayor" />
           <value Name="elder" />
-        </templatevar>
-        <templatevar Name="MayorSynCap">
-          <value Name="Mayor" />
-          <value Name="Elder" />
         </templatevar>
       </templatevars>
     </namestyle>
@@ -4253,13 +4246,13 @@
         <scope Name="Main" Type="Honorific" Special="King" Priority="100" Combine="true" />
       </scopes>
       <templates>
-        <template Name="*MonarchSynCap*" />
+        <template Name="=monarchSynCap=" />
       </templates>
       <templatevars>
-        <templatevar Name="MonarchSyn">
+        <templatevar Name="monarchSyn">
           <value Name="king" />
         </templatevar>
-        <templatevar Name="MonarchSynCap">
+        <templatevar Name="monarchSynCap">
           <value Name="King" />
         </templatevar>
       </templatevars>
@@ -4270,13 +4263,13 @@
         <scope Name="Main" Type="Honorific" Special="King" Priority="100" Combine="true" />
       </scopes>
       <templates>
-        <template Name="*MonarchSynCap*" />
+        <template Name="=monarchSynCap=" />
       </templates>
       <templatevars>
-        <templatevar Name="MonarchSyn">
+        <templatevar Name="monarchSyn">
           <value Name="queen" />
         </templatevar>
-        <templatevar Name="MonarchSynCap">
+        <templatevar Name="monarchSynCap">
           <value Name="Queen" />
         </templatevar>
       </templatevars>
@@ -4287,13 +4280,13 @@
         <scope Name="Main" Type="Honorific" Special="Councilor" Priority="100" Combine="true" />
       </scopes>
       <templates>
-        <template Name="*CouncilorSynCap*" />
+        <template Name="=councilorSynCap=" />
       </templates>
       <templatevars>
-        <templatevar Name="CouncilorSyn">
+        <templatevar Name="councilorSyn">
           <value Name="councilor" />
         </templatevar>
-        <templatevar Name="CouncilorSynCap">
+        <templatevar Name="councilorSynCap">
           <value Name="Councilor" />
         </templatevar>
       </templatevars>
@@ -4304,13 +4297,13 @@
         <scope Name="Main" Type="Honorific" Special="Senator" Priority="100" Combine="true" />
       </scopes>
       <templates>
-        <template Name="*CouncilorSynCap*" />
+        <template Name="=councilorSynCap=" />
       </templates>
       <templatevars>
-        <templatevar Name="CouncilorSyn">
+        <templatevar Name="councilorSyn">
           <value Name="senator" />
         </templatevar>
-        <templatevar Name="CouncilorSynCap">
+        <templatevar Name="councilorSynCap">
           <value Name="Senator" />
         </templatevar>
       </templatevars>
@@ -4321,13 +4314,13 @@
         <scope Name="Main" Type="Honorific" Special="Parliamentarian" Priority="100" Combine="true" />
       </scopes>
       <templates>
-        <template Name="*CouncilorSynCap*" />
+        <template Name="=councilorSynCap=" />
       </templates>
       <templatevars>
-        <templatevar Name="CouncilorSyn">
+        <templatevar Name="councilorSyn">
           <value Name="parliamentarian" />
         </templatevar>
-        <templatevar Name="CouncilorSynCap">
+        <templatevar Name="councilorSynCap">
           <value Name="Parliamentarian" />
         </templatevar>
       </templatevars>
@@ -4338,13 +4331,13 @@
         <scope Name="Main" Type="Honorific" Special="Viceroy" Priority="100" Combine="true" />
       </scopes>
       <templates>
-        <template Name="*ViceroySynCap*" />
+        <template Name="=viceroySynCap=" />
       </templates>
       <templatevars>
-        <templatevar Name="ViceroySyn">
+        <templatevar Name="viceroySyn">
           <value Name="viceroy" />
         </templatevar>
-        <templatevar Name="ViceroySynCap">
+        <templatevar Name="viceroySynCap">
           <value Name="Viceroy" />
         </templatevar>
       </templatevars>
@@ -4355,13 +4348,13 @@
         <scope Name="Main" Type="Honorific" Special="Governor" Priority="100" Combine="true" />
       </scopes>
       <templates>
-        <template Name="*ViceroySynCap*" />
+        <template Name="=viceroySynCap=" />
       </templates>
       <templatevars>
-        <templatevar Name="ViceroySyn">
+        <templatevar Name="viceroySyn">
           <value Name="governor" />
         </templatevar>
-        <templatevar Name="ViceroySynCap">
+        <templatevar Name="viceroySynCap">
           <value Name="governor" />
         </templatevar>
       </templatevars>
@@ -4379,10 +4372,10 @@
         <scope Name="Governor" Type="Epithet" Special="Governor" Priority="100" Chance="33" Combine="true" />
       </scopes>
       <templates>
-        <template Name="the *WiseAdjective*" />
+        <template Name="the =wiseAdjective=" />
       </templates>
       <templatevars>
-        <templatevar Name="WiseAdjective">
+        <templatevar Name="wiseAdjective">
           <value Name="Erudite" />
           <value Name="Judicious" />
           <value Name="Sage" />

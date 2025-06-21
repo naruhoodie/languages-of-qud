@@ -12,8 +12,7 @@
   <option ID="OptionUseCombatSounds" Requires="OptionSound==Yes,OptionShowAdvancedOptions==Yes" DisplayText="Combat sounds" Category="Sound" Type="Checkbox" Default="Yes"></option>
   <option ID="OptionCombatVolume" Requires="OptionUseCombatSounds==Yes,OptionShowAdvancedOptions==Yes" DisplayText="Combat volume" Category="Sound" Type="Slider" Min="0" Max="100" Increment="5" Default="100"></option>
   <option ID="OptionPlayFireSounds" Requires="OptionSound==Yes,OptionShowAdvancedOptions==Yes" DisplayText="Fire crackling sounds" Category="Sound" Type="Checkbox" Default="Yes"></option>
-  
-  
+
   <option ID="OptionDisplayBrightness" DisplayText="Brightness" Category="Display" Type="Slider" Min="-100" Max="100" Increment="5" Default="0"></option>
   <option ID="OptionDisplayContrast" DisplayText="Contrast" Category="Display" Type="Slider" Min="-100" Max="100" Increment="5" Default="0"></option>
   <option ID="OptionDisplayFullscreen" DisplayText="Fullscreen" Category="Display" Type="Checkbox" Default="Yes"></option>
@@ -31,7 +30,8 @@
   <option ID="OptionDisableSmoke" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Disable smoke effects" Category="Display" Type="Checkbox" Default="No"></option>
   <option ID="OptionDisableImposters" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Disable modern, tile-based graphical effects" Category="Display" Type="Checkbox" Default="No"></option>
   <option ID="OptionMainMenuBackground" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Main menu background art" Category="Display" Type="Combo" Values="Modern,Classic" Default="Modern"></option>
-  
+  <option ID="OptionImposterChars" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Imposter text tiles" Category="Display" Type="Checkbox" Default="No"></option>
+
 
   <option ID="OptionsKeybindings" DisplayText="Control Mapping" Category="Controls" Type="Button" OnClick="Qud.UI.KeybindsScreen.ShowKeybindsClick" SearchKeywords="Control bindings"></option>
   <option ID="OptionKeyRepeatDelay" DisplayText="Key repeat delay" Category="Controls" Type="Slider" Min="5" Max="100" Increment="5" Default="10"></option>
@@ -145,7 +145,8 @@
   <option ID="OptionConfirmSwimming" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Prompt before swimming" Category="Prompts" Type="Checkbox" Default="Yes"></option>
   <option ID="OptionConfirmDangerousLiquid" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Prompt before drinking and moving into certain dangerous liquids" Category="Prompts" Type="Checkbox" Default="Yes"></option>
   <option ID="OptionAskForOneItem" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Prompt list of items when getting from the ground, even if there's only one" Category="Prompts" Type="Checkbox" Default="No"></option>
-  <option ID="OptionDisplayHPWarning" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Threshold for low hitpoint warning" Category="Prompts" Type="Combo" Values="20%,40%,60%,80%,100%,No Warning" Default="40%"></option>  
+  <option ID="OptionDisplayHPWarning" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Threshold for low hitpoint warning" Category="Prompts" Type="Combo" Values="20%,40%,60%,80%,100%,No Warning" Default="40%"></option>
+  <option ID="OptionDismemberAsPopup" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Show popups when you dismember or decapitate someone" Category="Prompts" Type="Checkbox" Default="No"></option>
   <option ID="OptionAbilityCooldownWarningAsMessage" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Show ability-on-cooldown prompts as message log entries instead of popups" Category="Prompts" Type="Checkbox" Default="No"></option>
   <option ID="OptionShowScavengeItemAsMessage" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Show scavenged items as message log entries instead of popups" Category="Prompts" Type="Checkbox" Default="No"></option>
   <option ID="OptionPopupJournalNote" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Display popups when noting information in your journal" Category="Prompts" Type="Checkbox" Default="Yes"></option>
@@ -182,7 +183,6 @@
   <option ID="OptionAllowReallydie" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Get prompted to confirm deaths" Category="Debug" Type="Checkbox" Default="No"></option>    
   <option ID="OptionEnablePrereleaseContent" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Enable unfinished and unsupported content" Category="Debug" Type="Checkbox" Default="No" Restart="true"></option>
   <option ID="OptionDisableDefectLimit" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Allow creatures to have multiple defects " Category="Debug" Type="Checkbox" Default="No"></option>
-  <option ID="OptionStripUIColorText" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Strip color formatting from UI text" Category="Debug" Type="Checkbox" Default="No"></option>
   <option ID="OptionEnableColorTextInput" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Enable color menu for text input" Category="Debug" Type="Checkbox" Default="No"></option>
   <option ID="OptionDisableAchievements" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Disable achievements" Category="Debug" Type="Checkbox" Default="No"></option>
   <option ID="OptionShowQuickstart" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Show quickstart option during character creation" Category="Debug" Type="Checkbox" Default="No"></option>
@@ -220,5 +220,21 @@
   <option ID="OptionInventoryConsistencyCheck" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Perform inventory consistency checks" Category="Debug" Type="Checkbox" Default="No"></option>
   <option ID="OptionShowErrorPopups" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Show error popups" Category="Debug" Type="Checkbox" Default="No"></option>
   <option ID="OptionDisableBindConflictChecking" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Disable conflict checking when rebinding controls" Category="Debug" Type="Checkbox" Default="No"></option>
-  <option ID="OptionDebugStringTable" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Render string table ID instead of translated text" Default="No" Category="Debug" Type="Checkbox" />
+  <option ID="OptionBugDeckKeyboardShift" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Enable workaround for Steam Deck shift key bug" Category="Debug" Type="Checkbox" Default="No"></option>
+
+  <!-- TODO jason: not sure how much you care about text, but it felt better to group all these new debug options into their own category, we can back this out. -->
+  <option ID="OptionDebugTranslations" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Show Debug (Translation) options" Category="Debug" Type="Checkbox" Default="No">
+    <helptext>A group of debug options for strings &amp; translations.</helptext>
+  </option>
+  <option ID="OptionStripUIColorText" Requires="OptionDebugTranslations==Yes" DisplayText="Strip color formatting from UI text" Category="Debug (Translation)" Type="Checkbox" Default="No">
+    <helptext>Removes color formatting from all UI strings.</helptext>
+  </option>
+  <option ID="OptionDebugStringTable" Requires="OptionDebugTranslations==Yes" DisplayText="Render string table ID instead of translated text" Default="No" Category="Debug (Translation)" Type="Checkbox">
+    <helptext>Renders additional S: T: hints on translated strings instead of translation</helptext>
+  </option>
+  <option ID="OptionDebugStringTableMisses" Requires="OptionDebugTranslations==Yes" DisplayText="Log string table lookup misses as errors to Player.log" Default="No" Category="Debug (Translation)" Type="Checkbox"></option>
+  <option ID="OptionDebugStringTableLoadingChecks" Requires="OptionDebugTranslations==Yes" DisplayText="Enable extra strings xml loading checks" Default="No" Category="Debug (Translation)" Type="Checkbox">
+    <helptext>Log warnings when loading strings XML if string is not present in current Strings-example.xml</helptext>
+  </option>
+  <!-- <option ID="OptionDebugGameTextTemplate" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Debug game text templates to template_log.txt" Default="No" Category="Debug" Type="Checkbox" /> -->
 </options>

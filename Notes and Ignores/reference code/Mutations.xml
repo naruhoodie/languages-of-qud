@@ -231,7 +231,18 @@
   </category>
 
   <category Name="Mental" DisplayName="{{G|Mental Mutations}}" Foreground="b" Detail="M" Stat="Ego" Property="MentalMutationShift" ForceProperty="MentalMutationForceShift">
-    <mutation Name="Beguiling" Cost="5" MaxSelected="1" Class="Beguiling" Exclusions="" BearerDescription="beguilers" BiomeEpithet="encomium" Tile="Mutations/beguiling.bmp" />
+    <mutation Name="Beguiling" Cost="5" MaxSelected="1" Class="Beguiling" Exclusions="" BearerDescription="beguilers" BiomeEpithet="encomium" Tile="Mutations/beguiling.bmp">
+      <description>
+        <p>You beguile a nearby creature into serving you loyally.</p>
+      </description>
+      <leveltext>
+        <p>Mental attack versus a creature with a mind</p>
+        <p>Success roll: {{rules|mutation rank}} or Ego mod (whichever is higher) + character level + 1d8 VS. Defender MA + character level</p>
+        <statline Name="Range" />
+        <p>Beguiled creature: +<stat Name="BonusHP" /> bonus hit points</p>
+        <statline Name="Cooldown" />
+      </leveltext>
+    </mutation>
     <mutation Name="Burgeoning" Cost="3" MaxSelected="1" Class="Burgeoning" Exclusions="" BearerDescription="psychic gardeners" BiomeAdjective="burgeoning" Tile="Mutations/burgeoning.bmp" />
     <mutation Name="Clairvoyance" Cost="2" MaxSelected="1" Class="Clairvoyance" Exclusions="" BearerDescription="the clairvoyant" BiomeEpithet="panopticon" Tile="Mutations/clairvoyance.bmp">
       <description>You briefly gain vision of a nearby area.</description>
@@ -244,7 +255,18 @@
     <mutation Name="Confusion" Cost="4" MaxSelected="1" Class="Confusion" Exclusions="" BearerDescription="riddlers" BiomeEpithet="psychic maze" Tile="Mutations/confusion.bmp" />
     <mutation Name="Cryokinesis" Cost="4" MaxSelected="1" Class="Cryokinesis" Exclusions="" BearerDescription="cryomancers" BiomeEpithet="frost meadow" Tile="Mutations/cryokinesis.bmp" />
     <mutation Name="Disintegration" Cost="3" MaxSelected="1" Class="Disintegration" Exclusions="" BearerDescription="disintegrators" BiomeAdjective="rapidly resonating" Tile="Mutations/disintergration.bmp" />
-    <mutation Name="Domination" Cost="5" MaxSelected="1" Class="Domination" Exclusions="" BearerDescription="those who dominate the wills of others" BiomeEpithet="theater of wills" Tile="Mutations/domination.bmp" />
+    <mutation Name="Domination" Cost="5" MaxSelected="1" Class="Domination" Exclusions="" BearerDescription="those who dominate the wills of others" BiomeEpithet="theater of wills" Tile="Mutations/domination.bmp">
+      <description>
+        <p>You garrote an adjacent creature's mind and control its actions while your own body lies dormant.</p>
+      </description>
+      <leveltext>
+        <p>Mental attack versus creature with a mind</p>
+        <p>Success roll: {{rules|mutation rank}} or Ego mod (whichever is higher) + character level + 1d8 VS. Defender MA + character level</p>
+        <p>Range: 1</p>
+        <statline Name="Duration" />
+        <statline Name="Cooldown" />
+      </leveltext>
+    </mutation>
     <mutation Name="Ego Projection" Cost="4" MaxSelected="1" Class="WillForce" Exclusions="" BearerDescription="those who project their egos onto the physical realm" BiomeAdjective="psychically refractive" Tile="Mutations/ego_projection.bmp" />
     <mutation Name="Force Bubble" Cost="4" MaxSelected="1" Class="ForceBubble" Exclusions="" BearerDescription="bubble folk" BiomeAdjective="bubbly"  Tile="Mutations/force_bubble.bmp" />
     <mutation Name="Force Wall" Cost="3" MaxSelected="1" Class="ForceWall" Exclusions="" BearerDescription="architects of force walls" BiomeEpithet="force bastion" Tile="Mutations/force_wall.bmp" />

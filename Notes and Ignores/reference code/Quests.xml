@@ -45,7 +45,7 @@
          Accomplishment="You fetched a trinket for an old man."
          Hagiograph="Inside a temple of water and vine, =name= taught an old man the value of chrome."
          HagiographCategory="Trysts"
-         Gospel="&lt;spice.elements.entity$elements[random].weddingConditions.!random.capitalize&gt;, =name= cemented =player.possessive= friendship with the Tinkers' Guild by marrying Argyve.">
+         Gospel="&lt;spice.elements.entity@elements[random].weddingConditions.!random.capitalize&gt;, =name= cemented =player.possessive= friendship with the Tinkers' Guild by marrying Argyve.">
     
     <step Name="Find a Knickknack" XP="0">
       <text>Search the regions surrounding Joppa for an artifact.</text>
@@ -61,7 +61,7 @@
          Accomplishment="You fetched another trinket for an old man."
          Hagiograph="In the shadow of steel beneath the High Salt Sun, =name= taught an old man the value of chrome."
          HagiographCategory="Trysts"
-         Gospel="&lt;spice.elements.entity$elements[random].weddingConditions.!random.capitalize&gt;, =name= cemented =player.possessive= friendship with the Tinkers' Guild by marrying Argyve for a second time.">
+         Gospel="&lt;spice.elements.entity@elements[random].weddingConditions.!random.capitalize&gt;, =name= cemented =player.possessive= friendship with the Tinkers' Guild by marrying Argyve for a second time.">
 
     <step Name="Find Another Knickknack" XP="0">
 			<text>Search the regions surrounding Joppa for another artifact.</text>
@@ -191,7 +191,7 @@
 		 Achievement="ACH_OMONPORCH_EARL"
          Hagiograph="In the month of =month= of =year=, =name= appointed Asphodel the Lovely earl of Omonporch and Protector of the Spindle Gjaus."
          HagiographCategory="Treats"
-         Gospel="In =year=, =name= appointed the corrupt administrator Asphodel as earl and minister of Omonporch. There xe mandated the practice of &lt;spice.elements.entity$elements[random].practices.!random&gt; in =player.t's= name.">
+         Gospel="In =year=, =name= appointed the corrupt administrator Asphodel as earl and minister of Omonporch. There xe mandated the practice of &lt;spice.elements.entity@elements[random].practices.!random&gt; in =player.t's= name.">
 
     <step Name="Travel to Omonporch" XP="1000">
       <text>Travel north to the Spindle at Omonporch.</text>
@@ -323,7 +323,7 @@
          Accomplishment="For better or worse to the fate of Bey Lah, you solved the mystery of Kindrish's disappearance and helped Warden Neelahind administer justice."
          Hagiograph="Hallowed savior! =name= brought peace and prosperity to the troubled deerfolk of the Bey Lah meadow."
          HagiographCategory="BecomesLoved"
-         Gospel="Acting against thieves and the authorities who empower them, =name= led an investigation in the village of Bey Lah. Because of =player.t's= &lt;spice.elements.entity$elements[random].adjectives.!random&gt; wit, the Warden Neelahind was able to properly administer justice.">
+         Gospel="Acting against thieves and the authorities who empower them, =name= led an investigation in the village of Bey Lah. Because of =player.t's= &lt;spice.elements.entity@elements[random].adjectives.!random&gt; wit, the Warden Neelahind was able to properly administer justice.">
 
     <step Name="Brief Warden Neelahind" XP="250">
       <text>Tell Bey Lah's Warden about the disputed nature of Kindrish's theft.</text>

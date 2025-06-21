@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<templates>
+    <template ID="Effect.AdrenalControl2Boosted.Details">
+        <p>+<stat Name="QuicknessBonus" /> Quickness</p>
+        <p>+<stat Name="MutationBonus" Unit="rank" /> to physical mutations</p>
+    </template>
+    <template ID="Effect.MemberOfPsychicBattle.Details">
+        <p>Locked in psychic battle with a foe. (<stat Name="Turns" Unit="turn" /> remaining)</p>
+        <switch Name="BloodyNose"><case Value="Yes"><p>Has a bloody nose.</p></case></switch>
+    </template>
+    <template ID="Effect.Rebuked.Details">
+        <p>Rebuked into obedience by another creature.</p>
+    </template>
+</templates>

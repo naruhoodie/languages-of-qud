@@ -55,6 +55,9 @@ checking for non-TODO strings:
 ID="[^"]*" Value="(?!\[届：)
 <string ID="[^"]*">(?!\[届：)
 
+regex for splitting ID="" into Context="" ID="":
+(?!Context="[^"]*") (ID=")([^&{":=]+):([^"]+")	 Context="$2" $1$3
+
 adding [届：\TODO] to various tag attributes:
 ( (?:DisplayName|Description|Snippet)=")([^\["][^届"]+)"		$1[届：\TODO]$2"
 stripping out unneeded attributes:
@@ -79,3 +82,5 @@ Tanaka the convenient, the tiny, the hot, the cheerful, the wise, the plant, the
 Albino ape
 
 PassByVerb
+
+2 pairs of socks

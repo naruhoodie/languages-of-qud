@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mutations Hidden="true" ExcludeFromPool="true">
+  <category Name="Physical">
+    <mutation Name="Dark Vision" Cost="1" Class="NightVision" BearerDescription="the darksighted" Tile="Mutations/dark_vision.png" />
+    <mutation Name="Heightened Smell" Cost="2" Class="HeightenedSmell" BearerDescription="those with heightened smell" Tile="Mutations/heightened_smell.png" />
+    <mutation Name="Gills" Cost="1" Class="Gills" BearerDescription="those with gills" Tile="Mutations/gills.png" />
+    <mutation Name="Infiltrate" Cost="1" Class="Infiltrate" BearerDescription="those who infiltrate" Tile="Abilities/abil_infiltrate.bmp" />
+    <mutation Name="Heat Absorption" Cost="1" Class="HeatAbsorption" BearerDescription="those who absorb heat" Tile="Mutations/heat_absorption.png" />
+    <mutation Name="Wall Climber" Cost="1" Class="WallWalker" BearerDescription="wall climbers" Tile="Mutations/wall_climber.png" />
+    <mutation Name="Spider Webs" Cost="3" Class="SpiderWebs" BearerDescription="web weavers" Tile="Mutations/spinnerets.bmp" />
+    <mutation Name="Frost Webs" Cost="3" Class="FrostWebs" BearerDescription="frost web weavers" Tile="Mutations/spinnerets.bmp" />
+    <mutation Name="Acid Slime Glands" Cost="1" Class="AcidSlimeGlands" BearerDescription="acid spitters" Tile="Mutations/slime_glands.bmp" />
+    <mutation Name="Sticky Tongue" Cost="1" Class="StickyTongue" BearerDescription="those with sticky tongues" Tile="Abilities/abil_tongue.bmp" />
+    <mutation Name="Spore Puff" Cost="1" Class="SporePuffer" BearerDescription="those who puff spores" Tile="Items/sw_ficklegill.bmp" />
+    <mutation Name="Magnetic Pulse" Cost="1" Class="MagneticPulse" BearerDescription="those who emit magnetic pulses" Tile="Abilities/abil_magnetic_pulse.bmp" />
+    <mutation Name="Urchin Belching" Cost="1" Class="UrchinBelcher" BearerDescription="those who belch urchins" Tile="Abilities/abil_belch.bmp" />
+    <mutation Name="Waveform" Cost="1" Class="WaveformWorm" BearerDescription="those who dash along a waveform" Tile="Mutations/waveform.png" />
+    <mutation Name="Multiple Horns" Cost="1" Class="MultiHorns" BearerDescription="those with multiple horns" Tile="Mutations/multihorns.png" />
+    <mutation Name="Astral" Cost="1" Class="Astral" BearerDescription="the astral" Tile="Mutations/astral.png" />
+    <mutation Name="Decarbonizer" Cost="1" Class="Decarbonizer" BearerDescription="those who extract carbon" Tile="Abilities/abil_decarbonize.bmp" />
+    <mutation Name="Lithifying Gaze" Cost="1" Class="StoneGaze" BearerDescription="those who lithify with their gaze" Tile="Abilities/abil_gaze.bmp" />
+    <mutation Name="Crungling Gaze" Cost="1" Class="CrungleGaze" BearerDescription="those who provoke dreams with their gaze" Tile="Abilities/abil_gaze.bmp" />
+    <mutation Name="Liquid Font" Cost="1" Class="LiquidFont" BearerDescription="those who ooze fluids" Tile="Mutations/liquid_font.png" />
+    <mutation Name="Irisdual Beam" Cost="1" Class="IrisdualBeam" BearerDescription="those who molt beams" Tile="Mutations/irisdual_beam.png" />
+    <mutation Name="Bilge Sphincter" Cost="1" Class="SlogGlands" BearerDescription="the bilge sphinctered" Tile="Mutations/bilge_sphincter.png" />
+    <mutation Name="Crystallinity" Cost="1" Class="Crystallinity" BearerDescription="the crystalline" Tile="Mutations/crystallinity.png" />
+    <mutation Name="Fear Aura" Cost="1" Class="FearAura" BearerDescription="those with frightful airs" Tile="Mutations/fear_aura.png" />
+    <mutation Name="Burrowing" Cost="1" Class="Burrowing" BearerDescription="those who burrow underground" Tile="Abilities/abil_burrow.bmp" />
+    <mutation Name="Liquid Spitter" Cost="1" Class="LiquidSpitter" BearerDescription="liquid spitters" Tile="Mutations/slime_glands.bmp" />
+    <mutation Name="Freezing Ultraray" Cost="1" Class="FreezeBreath" BearerDescription="the frozen-handed" Tile="Mutations/freezing_ray.bmp" />
+    <mutation Name="Defensive Chromatophores" Cost="1" Class="DefensiveChromatophores" BearerDescription="those who scintillate" Tile="Abilities/abil_scintillate.bmp" />
+    <!-- Breathers -->
+    <mutation Name="Fire Breath" Cost="1" Class="FireBreather" BearerDescription="those who breathe fire" Tile="Abilities/abil_breathe.bmp" />
+    <mutation Name="Ice Breath" Cost="1" Class="IceBreather" BearerDescription="those who breathe ice" Tile="Abilities/abil_breathe.bmp" />
+    <mutation Name="Normality Breath" Cost="1" Class="NormalityBreather" BearerDescription="those who breathe normality" Tile="Abilities/abil_breathe.bmp" />
+    <mutation Name="Corrosive Breath" Cost="1" Class="CorrosiveBreather" BearerDescription="those with corrosive breath" Tile="Abilities/abil_breathe.bmp" />
+    <mutation Name="Confusing Breath" Cost="1" Class="ConfusionBreather" BearerDescription="those with confusing breath" Tile="Abilities/abil_breathe.bmp" />
+    <mutation Name="Stun Breath" Cost="1" Class="StunBreather" BearerDescription="those with stunning breath" Tile="Abilities/abil_breathe.bmp" />
+    <mutation Name="Poison Breath" Cost="1" Class="PoisonBreather" BearerDescription="those with poisonous breath" Tile="Abilities/abil_breathe.bmp" />
+    <mutation Name="Sleep Breath" Cost="1" Class="SleepBreather" BearerDescription="those with lulling breath" Tile="Abilities/abil_breathe.bmp" />
+    <mutation Name="Shame Breath" Cost="1" Class="ShameBreather" BearerDescription="those with shaming breath" Tile="Abilities/abil_breathe.bmp" />
+    <!-- Gas Generation -->
+    <mutation Name="Plasma Emission" Cost="3" MaxSelected="1" Class="PlasmaGeneration" BearerDescription="those who emit plasma" Tile="Mutations/gas_generation.bmp">
+      <description>
+        <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
+      </description>
+      <leveltext>
+        <p>Releases gas for <stat Name="Duration" /></p>
+        <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
+        <statline Name="Cooldown" />
+      </leveltext>
+    </mutation>
+    <mutation Name="Poison Gas Generation" Cost="3" MaxSelected="1" Class="PoisonGasGeneration" BearerDescription="those who expel poison gas" Tile="Mutations/gas_generation.bmp">
+      <description>
+        <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
+      </description>
+      <leveltext>
+        <p>Releases gas for <stat Name="Duration" /></p>
+        <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
+        <statline Name="Cooldown" />
+      </leveltext>
+    </mutation>
+    <mutation Name="Defoliant Generation" Cost="3" MaxSelected="1" Class="DefoliantGeneration" BearerDescription="those who expel defoliant" Tile="Mutations/gas_generation.bmp">
+      <description>
+        <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
+      </description>
+      <leveltext>
+        <p>Releases gas for <stat Name="Duration" /></p>
+        <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
+        <statline Name="Cooldown" />
+      </leveltext>
+    </mutation>
+    <mutation Name="Fungicide Generation" Cost="3" MaxSelected="1" Class="FungicideGeneration" BearerDescription="those who expel fungicide" Tile="Mutations/gas_generation.bmp">
+      <description>
+        <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
+      </description>
+      <leveltext>
+        <p>Releases gas for <stat Name="Duration" /></p>
+        <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
+        <statline Name="Cooldown" />
+      </leveltext>
+    </mutation>
+    <mutation Name="Confusion Gas Generation" Cost="3" MaxSelected="1" Class="ConfusionGasGeneration" BearerDescription="those who expel confusion gas" Tile="Mutations/gas_generation.bmp">
+      <description>
+        <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
+      </description>
+      <leveltext>
+        <p>Releases gas for <stat Name="Duration" /></p>
+        <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
+        <statline Name="Cooldown" />
+      </leveltext>
+    </mutation>
+    <mutation Name="Normality Gas Generation" Cost="3" MaxSelected="1" Class="NormalityGasGeneration" BearerDescription="those who expel normality gas" Tile="Mutations/gas_generation.bmp">
+      <description>
+        <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
+      </description>
+      <leveltext>
+        <p>Releases gas for <stat Name="Duration" /></p>
+        <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
+        <statline Name="Cooldown" />
+      </leveltext>
+    </mutation>
+    <mutation Name="Glitter Dust Generation" Cost="3" MaxSelected="1" Class="GlitterDustGeneration" BearerDescription="those who expel glitter dust" Tile="Mutations/gas_generation.bmp">
+      <description>
+        <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
+      </description>
+      <leveltext>
+        <p>Releases gas for <stat Name="Duration" /></p>
+        <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
+        <statline Name="Cooldown" />
+      </leveltext>
+    </mutation>
+  </category>
+  <category Name="Mental">
+    <mutation Name="Invisibility" Cost="1" Class="Invisibility" BearerDescription="the invisible" Tile="Mutations/invisibility.png" />
+    <mutation Name="Interdiction" Cost="1" Class="Interdiction" BearerDescription="those who interdict" Tile="Mutations/interdiction.png" />
+    <mutation Name="Ley Shifting" Cost="1" Class="LeyShifting" BearerDescription="those who shift spacetime" Tile="Abilities/abil_ley_shift.bmp" />
+    <mutation Name="Quantum Fugue" Cost="5" Class="QuantumFugue" BearerDescription="quantum fugitives" Tile="Mutations/quantum_fugue.png" />
+    <mutation Name="Reflect Shame" Cost="1" Class="ReflectShame" BearerDescription="those who reflect shame" Tile="Mutations/reflect_shame.png">
+      <description>
+        <p>You reflect the shameful countenance of nearby creatures.</p>
+      </description>
+      <leveltext></leveltext>
+    </mutation>
+    <mutation Name="Repelling Force" Cost="1" Class="RepellingForce" BearerDescription="the repelling" Tile="Abilities/abil_repel.bmp">
+      <description>
+        <p>You invoke a repelling force in the surrounding area, throwing enemies back.</p>
+      </description>
+      <leveltext>
+        <statline Name="Area" />
+        <p><switch Name="LevelDiff"><case Value="0">Creatures are pushed away from center of blast.</case><default>{{rules|Increased push force}}</default></switch></p>
+        <statline Name="Cooldown" />
+      </leveltext>
+    </mutation>
+  </category>
+</mutations>
+
