@@ -61,6 +61,17 @@ The infant child is unaware
     <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_bear" />
   </object>
 
+	<object Name="Dream Wren" Inherits="BaseBird">
+		<part Name="Render" DisplayName="dream wren" RenderString="b" Tile="creatures/sw_chavvah_bird.bmp" ColorString="&amp;b" TileColor="&amp;b" DetailColor="M" />
+		<part Name="Description" Short="A long and split tail feather drapes below =pronouns.possessive= talons at an immaterial buoyancy. =pronouns.Possessive= epaulets are incandescent and =pronouns.possessive= frill is a vane for astral weather." />
+		<part Name="Brain" Hostile="false" Factions="Chavvah-100" />
+		<stat Name="Level" Value="35" />
+		<stat Name="Hitpoints" sValue="100" />
+		<inventoryobject Blueprint="DreamWren_Peck" Number="1" />
+		<mutation Name="SleepBreather" Level="4" />
+		<tag Name="NoGuard" />
+	</object>
+
   <!-- NPCs -->
   <object Name="Mehmet" Inherits="WatervineFarmerJoppa">
     <part Name="Render" DisplayName="Mehmet" ColorString="&amp;W" RenderString="f" Tile="Creatures/npc-mehmet.bmp" />
@@ -83,6 +94,14 @@ The infant child is unaware
     <tag Name="NoSignpost" />
     <xtagGrammar Proper="true" />
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
+  </object>
+
+  <!-- others -->
+  <object Name="SparkingBaetyl" Inherits="Baetyl">
+    <part Name="Render" DisplayName="{{W|sparking baetyl}}" RenderLayer="6" RenderString="004" ColorString="&amp;W^g" Occluding="true" />
+		<part Name="Description" Short="A lens of glass has crusted over the smooth stone where the heat of sacred math burned the air then cooled in Q.E.D. Under that dermis and the meteoritic layer, an electric heart grinds on the field of magnets at the earth's core and radiates a shower of sparks." />
+    <part Name="ConversationScript" ConversationID="SparkingBaetyl" />
+    <part Name="RandomAltarBaetyl" />
   </object>
 
 </objects>

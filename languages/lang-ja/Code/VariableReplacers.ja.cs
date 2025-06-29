@@ -324,7 +324,22 @@ namespace LanguagesOfQud
         [VariableExample("二十一", 21)]
         [VariableExample("マイナス二十一", -21)]
         [VariableExample("一千三百三十七", 1337)]
+        [VariableExample("三万七千五百六十四", 37564)]
         public static string 基数(VariableContext Context, int Number)
+        {
+            return TranslatorJapanese.Cardinal(Number);
+        }
+
+        /// <summary>
+        /// 基数(kisuu, "cardinal number") - equivalent of "Cardinal" replacer 
+        /// </summary>
+        [VariableReplacer("基数")]
+        [VariableExample("零", 0)]
+        [VariableExample("二十一", 21)]
+        [VariableExample("マイナス二十一", -21)]
+        [VariableExample("一千三百三十七", 1337)]
+        [VariableExample("三万七千五百六十四", 37564)]
+        public static string 基数(VariableContext Context, long Number)
         {
             return TranslatorJapanese.Cardinal(Number);
         }

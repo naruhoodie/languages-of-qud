@@ -108,11 +108,13 @@
 	<object Name="UnknownGoggles" Load="Merge">
 		<part Name="Render" DisplayName="眼鏡" /><!-- "goggles" -->
 		<part Name="Description" Short="[届：\TODO]Rounded seers are held by a strap." />
+		<xtagGrammar adjunctNoun="" />
 	</object>
 	<object Name="UnknownGloves" Load="Merge">
 		<part Name="Render" DisplayName="手袋" /><!-- "gloves" -->
 		<part Name="Description" Short="奇妙なミトンはほとんどの手首と指に適する。" /><!-- "Strange mitts will fit most wrists and fingers." -->
 		<tag Name="CollectiveCounter" Value="1組" />
+		<xtagGrammar adjunctNoun="1組" />
 	</object>
 	<object Name="UnknownJewelry" Load="Merge">
 		<part Name="Render" DisplayName="[届：\TODO]jewelry" />
@@ -130,6 +132,7 @@
 		<part Name="Render" DisplayName="靴" /><!-- "boots" -->
 		<part Name="Description" Short="長年の使用による傷が履物の表面を十字になる。" /><!-- "Blemishes of long use cross the surface of the footwear." -->
 		<tag Name="CollectiveCounter" Value="1足" />
+		<xtagGrammar adjunctNoun="1足" />
 	</object>
 	<object Name="UnknownBottle" Load="Merge">
 		<part Name="Render" DisplayName="[届：\TODO]bottle" />

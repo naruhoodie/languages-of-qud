@@ -170,103 +170,103 @@
 
     <namestyle Name="Qudish Banana Grove Site" Base="Qudish Site">
       <templates Load="Replace">
-        <template Name="バナナ[林\りん]の*Name*" />
+        <template Name="バナナ[林\りん]の=name=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Qudish Baroque Ruins Site" Base="Qudish Site">
       <templates Load="Replace">
-        <template Name="バロック[廃墟\はいきょ]の*Name*" />
+        <template Name="バロック[廃墟\はいきょ]の=name=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Qudish Deep Jungle Site" Base="Qudish Site">
       <templates Load="Replace">
-        <template Name="[深\ふか]いジャングルの*Name*" />
+        <template Name="[深\ふか]いジャングルの=name=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Qudish Desert Canyon Site" Base="Qudish Site">
       <templates Load="Replace">
-        <template Name="[砂漠\さばく]の[峡谷\きょうこく]の*Name*" />
+        <template Name="[砂漠\さばく]の[峡谷\きょうこく]の=name=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Qudish Flower Fields Site" Base="Qudish Site">
       <templates Load="Replace">
-        <template Name="[花畑\はなばたけ]の*Name*" />
+        <template Name="[花畑\はなばたけ]の=name=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Qudish Fungal Site" Base="Qudish Site">
       <templates Load="Replace">
-        <template Name="[菌類\きんるい]の*Name*" />
+        <template Name="[菌類\きんるい]の=name=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Qudish Hills Site" Base="Qudish Site">
       <templates Load="Replace">
-        <template Name="[丘\おか]の*Name*" />
+        <template Name="[丘\おか]の=name=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Qudish Jungle Site" Base="Qudish Site">
       <templates Load="Replace">
-        <template Name="ジャングルの*Name*" />
+        <template Name="ジャングルの=name=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Qudish Lake Hinnom Site" Base="Qudish Site">
       <templates Load="Replace">
-        <template Name="[水上\すいじょう]の*Name*" />
+        <template Name="[水上\すいじょう]の=name=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Qudish Moon Stair Site" Base="Qudish Site">
       <templates Load="Replace">
-        <template Name="[届：\TODO]Moon Stair *Name*" />
+        <template Name="[届：\TODO]Moon Stair =name=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Qudish Mountains Site" Base="Qudish Site">
       <templates Load="Replace">
-        <template Name="[山間\さんかん]の*Name*" />
+        <template Name="[山間\さんかん]の=name=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Qudish Palladium Reef Site" Base="Qudish Site">
       <templates Load="Replace">
-        <template Name="[届：\TODO]Palladium Reef *Name*" />
+        <template Name="[届：\TODO]Palladium Reef =name=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Qudish Ruins Site" Base="Qudish Site">
       <templates Load="Replace">
-        <template Name="[廃墟\はいきょ]の*Name*" />
+        <template Name="[廃墟\はいきょ]の=name=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Qudish Salt Dunes Site" Base="Qudish Site">
       <templates Load="Replace">
-        <template Name="[塩\しお]の[砂丘\さきゅう]の*Name*" />
+        <template Name="[塩\しお]の[砂丘\さきゅう]の=name=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Qudish Salt Marsh Site" Base="Qudish Site">
       <templates Load="Replace">
-        <template Name="[塩性\えんせい][湿地\しっち]の*Name*" />
+        <template Name="[塩性\えんせい][湿地\しっち]の=name=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Qudish Spindle Site" Base="Qudish Site">
       <templates Load="Replace">
-        <template Name="[届：\TODO]Spindle *Name*" />
+        <template Name="[届：\TODO]Spindle =name=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Qudish Water Site" Base="Qudish Site">
       <templates Load="Replace">
-        <template Name="[水上\すいじょう]の*Name*" />
+        <template Name="[水上\すいじょう]の=name=" />
       </templates>
     </namestyle>
 
@@ -329,10 +329,10 @@
 
     <namestyle Name="Ekuemekiyyen" Format="AsIs">
       <templates Load="Replace">
-        <template Name="" /><!-- Original="*Name**Suffix*" -->
+        <template Name="=name==suffix=" />
       </templates>
       <templatevars Load="Replace">
-        <templatevar Name="Suffix">
+        <templatevar Name="suffix">
           <value Name="・カ" /><!-- Original="ka" -->
           <value Name="・キ" /><!-- Original="ki" -->
           <value Name="・ク" /><!-- Original="ku" -->
@@ -674,11 +674,11 @@
 
     <namestyle Name="Baboon Hero Title">
       <templates Load="Replace">
-        <template Name="*Rings*ヒヒの*Position*" />
+        <template Name="=rings=ヒヒの=position=" />
       </templates>
       <templatevars Load="Replace">
         <!-- Update Strings.xml "Baboon Hero Naming.xml Context" -->
-        <templatevar Name="Position">
+        <templatevar Name="position">
           <value Name="浮気者" /><!-- Original="Philanderer" -->
           <value Name="謎かけ屋" /><!-- Original="Riddler" -->
           <value Name="隠者" /><!-- Original="Hermit" -->
@@ -709,10 +709,10 @@
 
     <namestyle Name="Bird Hero Epithet">
       <templates Load="Replace">
-        <template Name="*Singer*の" />
+        <template Name="=singer=の" />
       </templates>
       <templatevars Load="Replace">
-        <templatevar Name="Singer">
+        <templatevar Name="singer">
           <value Name="バード" /><!-- Original="Bard" -->
           <value Name="吟遊詩人" /><!-- Original="Bard" -->
           <value Name="ミンストレル" /><!-- Original="Minstrel" -->
@@ -724,10 +724,10 @@
 
     <namestyle Name="Bird Hero Title">
       <templates Load="Replace">
-        <template Name="*Disposition**CreatureType*" />
+        <template Name="=disposition==creatureType=" />
       </templates>
       <templatevars Load="Replace">
-        <templatevar Name="Disposition">
+        <templatevar Name="disposition">
           <value Name="陰気な" /><!-- Original="brooding" -->
           <value Name="明るい" /><!-- Original="cheerful" -->
           <value Name="陰気な" /><!-- Original="dour" -->
@@ -829,11 +829,11 @@
 
     <namestyle Name="Crab Hero Title">
       <templates Load="Replace">
-        <template Name="*Adjective**CreatureType*の*Position*" />
+        <template Name="=adjective==creatureType=の=position=" />
       </templates>
       <templatevars Load="Replace">
         <!-- Make sure to update Strings.xml "Eyeless King Crab Naming.xml Context" strings -->
-        <templatevar Name="Adjective">
+        <templatevar Name="adjective">
           <value Name="高らかな" /><!-- Original="echoing" -->
           <value Name="激しい" /><!-- Original="frenetic" -->
           <value Name="多足の" /><!-- Original="many-legged" -->
@@ -841,7 +841,7 @@
           <value Name="片ハサミの" /><!-- Original="one-clawed" -->
           <value Name="殻が割れた" /><!-- Original="shell-cracked" -->
         </templatevar>
-        <templatevar Name="Position">
+        <templatevar Name="position">
           <value Name="古代者" /><!-- Original="Ancient" -->
           <value Name="深海這う者" /><!-- Original="Deepcrawler" -->
           <value Name="ゴリアテ" /><!-- Original="Goliath" -->
@@ -882,17 +882,17 @@
 
     <namestyle Name="Goatfolk Hero" Base="Goatfolk">
       <templates Load="Replace">
-        <template Name="*Name*" />
+        <template Name="=name=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Goatfolk Hero Epithet">
       <templates Load="Replace">
-        <template Name="*Epithet*" />
+        <template Name="=epithet=" />
       </templates>
       <templatevars Load="Replace">
         <!-- Be sure to update the Strings.xml Goatfolk Hero Naming.xml Context entries -->
-        <templatevar Name="Epithet">
+        <templatevar Name="epithet">
           <value Name="星空観りの" /><!-- Original="Stargazer" -->
           <value Name="心噛みの" /><!-- Original="Heartbiter" -->
           <value Name="倍喋りの" /><!-- Original="Twicetalker" -->
@@ -906,11 +906,11 @@
     <namestyle Name="Goatfolk Hero Title">
       <templates Load="Replace">
         <!-- Be sure to update the Strings.xml Goatfolk Hero Naming.xml Context entries -->
-        <template Name="*Clan*氏族の山羊族のシャーマン" /><!-- Original="the Goatfolk Shaman of Clan *Clan*" -->
+        <template Name="=clan=氏族の山羊族のシャーマン" /><!-- Original="the Goatfolk Shaman of Clan =clan=" -->
       </templates>
       <templatevars Load="Replace">
         <!-- Be sure to update the Strings.xml Goatfolk Hero Naming.xml Context entries -->
-        <templatevar Name="Clan">
+        <templatevar Name="clan">
           <value Name="ホトゥール" /><!-- Original="Hotur" -->
           <value Name="アイベックス" /><!-- Original="Ibex" -->
           <value Name="ソル" /><!-- Original="Sol" -->
@@ -923,18 +923,18 @@
 
     <namestyle Name="Goatfolk Site" Format="AsIs">
       <templates Load="Replace">
-        <template Name="*Name**Suffix*" Weight="1800" />
-        <template Name="*Prefix**Suffix*" Weight="1800" />
-        <template Name="*Sultan**Suffix*" Weight="450" />
-        <template Name="*Name**Location*" Weight="1125" />
-        <template Name="*Prefix**Location*" Weight="1125" />
-        <template Name="*Sultan**Location*" Weight="250" />
-        <template Name="*Name**Forest*" Weight="1575" />
-        <template Name="*Prefix**Forest*" Weight="1575" />
-        <template Name="*Sultan**Forest*" Weight="350" />
+        <template Name="=name==suffix=" Weight="1800" />
+        <template Name="=prefix==suffix=" Weight="1800" />
+        <template Name="=sultan==suffix=" Weight="450" />
+        <template Name="=name==location=" Weight="1125" />
+        <template Name="=prefix==location=" Weight="1125" />
+        <template Name="=sultan==location=" Weight="250" />
+        <template Name="=name==forest=" Weight="1575" />
+        <template Name="=prefix==forest=" Weight="1575" />
+        <template Name="=sultan==forest=" Weight="350" />
       </templates>
       <templatevars Load="Replace">
-        <templatevar Name="Prefix">
+        <templatevar Name="prefix">
           <value Name="灰" /><!-- Original="Ash" -->
           <value Name="黒" /><!-- Original="Black" -->
           <value Name="血" /><!-- Original="Blood" -->
@@ -950,10 +950,10 @@
           <value Name="星" /><!-- Original="Star" -->
           <value Name="白" /><!-- Original="White" -->
         </templatevar>
-        <templatevar Name="Sultan">
+        <templatevar Name="sultan">
           <value Name="レシェフ" /><!-- Original="Resheph" -->
         </templatevar>
-        <templatevar Name="Suffix">
+        <templatevar Name="suffix">
           <value Name="バア" Weight="2" /><!-- Original="baa" -->
           <value Name="バアァアァアー" /><!-- Original="baaaaaah" -->
           <value Name="バアァアアー" Weight="3" /><!-- Original="baaaaah" -->
@@ -972,7 +972,7 @@
           <value Name="ラアアー" Weight="3" /><!-- Original="raaah" -->
           <value Name="ラアー" Weight="2" /><!-- Original="raah" -->
         </templatevar>
-        <templatevar Name="Forest">
+        <templatevar Name="forest">
 <!--          <value Name="林" />--><!-- Original="bosk" -->
           <value Name="谷" /><!-- Original="dale" -->
           <value Name="谷間" /><!-- Original="dell" -->
@@ -987,7 +987,7 @@
           <value Name="枝垂れ" /><!-- Original="weep" --><!-- ja is "weep(ing)" as in a tree -->
           <value Name="森" /><!-- Original="wood" -->
         </templatevar>
-        <templatevar Name="Location">
+        <templatevar Name="location">
           <value Name="湾曲" /><!-- Original="bend" -->
           <value Name="湾" /><!-- Original="bite" --><!-- is the OG meant to be "bight"? -->
           <value Name="弓" /><!-- Original="bow" -->
@@ -1019,14 +1019,14 @@
 
     <namestyle Name="Qlippoth Site" Format="AsIs">
       <templates Load="Replace">
-        <template Name="*Prefix**Suffix*" Weight="1800" />        
-        <template Name="*Name**Location*" Weight="1125" />
-        <template Name="*Prefix**Location*" Weight="1125" />
-        <template Name="*Sultan**Location*" Weight="250" />        
-        <template Name="*Prefix**Forest*" Weight="1575" />        
+        <template Name="=prefix==suffix=" Weight="1800" />        
+        <template Name="=name==location=" Weight="1125" />
+        <template Name="=prefix==location=" Weight="1125" />
+        <template Name="=sultan==location=" Weight="250" />        
+        <template Name="=prefix==forest=" Weight="1575" />        
       </templates>
       <templatevars Load="Replace">
-        <templatevar Name="Prefix">
+        <templatevar Name="prefix">
           <value Name="灰" /><!-- Original="Ash" -->
           <value Name="黒" /><!-- Original="Black" -->
           <value Name="幽霊" /><!-- Original="Ghost" -->
@@ -1043,10 +1043,10 @@
           <value Name="永遠" /><!-- Original="Ever" -->
           <value Name="零" /><!-- Original="Null" -->
         </templatevar>
-        <templatevar Name="Sultan">
+        <templatevar Name="sultan">
           <value Name="レシェフ" /><!-- Original="Resheph" -->
         </templatevar>
-        <templatevar Name="Suffix">
+        <templatevar Name="suffix">
           <value Name="バア" Weight="2" /><!-- Original="baa" -->
           <value Name="バアァアァアー" /><!-- Original="baaaaaah" -->
           <value Name="バアァアアー" Weight="3" /><!-- Original="baaaaah" -->
@@ -1065,7 +1065,7 @@
           <value Name="ラアアー" Weight="3" /><!-- Original="raaah" -->
           <value Name="ラアー" Weight="2" /><!-- Original="raah" -->
         </templatevar>
-        <templatevar Name="Forest">
+        <templatevar Name="forest">
 <!--          <value Name="林" />--><!-- Original="bosk" -->
           <value Name="谷" /><!-- Original="dale" -->
           <value Name="谷間" /><!-- Original="dell" -->
@@ -1081,7 +1081,7 @@
           <value Name="森" /><!-- Original="wood" -->
           <value Name="穴" /><!-- Original="hollow" -->
         </templatevar>
-        <templatevar Name="Location">                          
+        <templatevar Name="location">                          
           <value Name="三日月" /><!-- Original="crescent" -->
           <value Name="深海" /><!-- Original="deep" -->
           <value Name="池" /><!-- Original="pool" -->
@@ -1178,11 +1178,11 @@
         <scope Name="Main" Type="Title" Special="Hero" Faction="Snapjaws" Priority="200" Combine="false" />
       </scopes>
       <templates>
-        <template Name="*Adjective*パクッと口の*Occupation*" /><!-- Original="the *Adjective* Snapjaw *Occupation*" -->
+        <template Name="=adjective=パクッと口の=occupation=" /><!-- Original="the =adjective= Snapjaw =occupation=" -->
       </templates>
       <templatevars>
         <!-- Make sure to update Strings.xml "Snapjaw Hero Naming.xml Context" strings -->
-        <templatevar Name="Adjective">
+        <templatevar Name="adjective">
           <value Name="" /><!-- Original="calloused" -->
           <value Name="" /><!-- Original="fearsome" -->
           <value Name="" /><!-- Original="fleet-footed" -->
@@ -1191,7 +1191,7 @@
           <value Name="" /><!-- Original="nimble" -->
           <value Name="" /><!-- Original="stalwart" -->
         </templatevar>
-        <templatevar Name="Occupation">
+        <templatevar Name="occupation">
           <value Name="" /><!-- Original="Bear-baiter" -->
           <value Name="" /><!-- Original="Firesnarler" -->
           <value Name="" /><!-- Original="Gutspiller" -->
@@ -1342,7 +1342,7 @@
         <scope Name="Culture" Type="Title" Special="Hero" Culture="Bear" Priority="150" Combine="true" />
       </scopes>
       <templates>
-        <template Name="renowned honey loving *CreatureType*" />
+        <template Name="renowned honey loving =creatureType=" />
       </templates>
     </namestyle>
 
@@ -1399,10 +1399,10 @@
 
     <namestyle Name="Ape Hero Epithet">
       <templates Load="Replace">
-        <template Name="*Adjective*" /><!-- Original="the *Adjective*" -->
+        <template Name="=adjective=" /><!-- Original="the =adjective=" -->
       </templates>
       <templatevars Load="Replace">
-        <templatevar Name="Adjective">
+        <templatevar Name="adjective">
           <value Name="カラフルな" /><!-- Original="Colorful" -->
           <value Name="エレガントな" /><!-- Original="Elegant" -->
           <value Name="ファッショナブルな" /><!-- Original="Fashionable" -->
@@ -1417,7 +1417,7 @@
 
     <namestyle Name="Ape Hero Title">
       <templates Load="Replace">
-        <template Name="伝説の*CreatureType*" /><!-- Original="legendary *CreatureType*" -->
+        <template Name="伝説の=creatureType=" /><!-- Original="legendary =creatureType=" -->
       </templates>
     </namestyle>
 
@@ -1543,10 +1543,10 @@
         <scope Name="Culture" Type="Epithet" Special="Hero" Culture="Tortoise" Priority="150" Combine="true" />
       </scopes>
       <templates>
-        <template Name="the *Disposition*" />
+        <template Name="the =disposition=" />
       </templates>
       <templatevars>
-        <templatevar Name="Disposition">
+        <templatevar Name="disposition">
           <value Name="Cantankerous" />
           <value Name="Choleric" />
           <value Name="Grouchy" />
@@ -1563,7 +1563,7 @@
         <scope Name="Culture" Type="Title" Special="Hero" Culture="Tortoise" Priority="150" Combine="true" />
       </scopes>
       <templates>
-        <template Name="legendary *CreatureType*" />
+        <template Name="legendary =creatureType=" />
       </templates>
     </namestyle>
 

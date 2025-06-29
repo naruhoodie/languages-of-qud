@@ -29,10 +29,23 @@ The infant child is unaware
 -A.E. Housman" />
   </object>
 
+	<object Name="Dream Wren" Load="Merge">
+		<part Name="Render" DisplayName="[!!]dream wren" />
+		<part Name="Description" Short="[!!]A long and split tail feather drapes below =pronouns.possessive= talons at an immaterial buoyancy. =pronouns.Possessive= epaulets are incandescent and =pronouns.possessive= frill is a vane for astral weather." />
+	</object>
+
   <!-- NPCs -->
   <object Name="Mehmet" Load="Merge">
     <part Name="Render" DisplayName="[!!]Mehmet" />
     <part Name="Description" Short="[!!]=pronouns.Subjective= =verb:are:afterpronoun= a wind-carved man with the posture of a vinereaper; =pronouns.possessive= spine is bent to point the bright turquoise of =pronouns.possessive= eyes at the tilling angle, =pronouns.possessive= hips are pushed odd-forward with the slumping ease of a stance much more relaxed than =pronouns.possessive=. If it weren't for the salt on =pronouns.possessive= brow and the scarred knuckles, =pronouns.subjective= would seem a marble Saad perched under a crumbling tomb." />
+  </object>
+
+  <!-- others -->
+  <object Name="SparkingBaetyl" Load="Merge">
+    <part Name="Render" DisplayName="[!!]{{W|sparking baetyl}}" />
+		<part Name="Description" Short="A lens of glass has crusted over the smooth stone where the heat of sacred math burned the air then cooled in Q.E.D. Under that dermis and the meteoritic layer, an electric heart grinds on the field of magnets at the earth's core and radiates a shower of sparks." />
+    <part Name="ConversationScript" ConversationID="SparkingBaetyl" />
+    <part Name="RandomAltarBaetyl" />
   </object>
 
 </objects>
