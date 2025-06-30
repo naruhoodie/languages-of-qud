@@ -929,7 +929,14 @@
       "itemDeath": [ "crushed to death by a falling =itemName=", "had =their= =bodyPartName= =spice:instancesOf.bodyPartMaimed.!random= by =itemName-an=", "killed in a duel over =itemName-an=", "fell from a cliff trying to recover a lost =itemName=", "succumbed to despair after losing =itemName-an=", "smashed =itemName-an= into =itemName2-an=", "=spice:commonPhrases.bludgeoned.!random= with =itemName-an= by =^:aCreature.!random=", "=spice:commonPhrases.bludgeoned.!random= with =itemName-an= by =^:aCreature.!random=", "swallowed =itemName-an=", "tried using =itemName-an= as =bodyPartName-a= prosthetic =bodyPartName=" ]
     },
     "villages": {
-      "description": [ "=terrainFragment=, =spice:commonPhrases.people.!random= =spice:commonPhrases.gather.!random= in =spice:commonPhrases.reverence.!random= of =sacredThing=", "=spice:commonPhrases.people.!random= =spice:commonPhrases.gather.!random= =terrainFragment= in =spice:commonPhrases.reverence.!random= of =sacredThing=", "=terrainFragment=, =spice:commonPhrases.people.!random= =spice:commonPhrases.gather.!random= to =spice:commonPhrases.profane.!random= =profaneThing=", "=spice:commonPhrases.people.!random= =spice:commonPhrases.gather.!random= =terrainFragment= to =spice:commonPhrases.profane.!random= =profaneThing=", "=terrainFragment=, there's a =spice:commonPhrases.gathering.!random= of =faction= and their =spice:commonPhrases.kin.!random=", "there's a =spice:commonPhrases.gathering.!random= of =faction= and their =spice:commonPhrases.kin.!random= =terrainFragment=" ],
+      "description": [
+        "=terrainFragment=, =spice:commonPhrases.people.!random= =spice:commonPhrases.gather.!random= in =spice:commonPhrases.reverence.!random= of =spice.entity:sacredThing=",
+        "=spice:commonPhrases.people.!random= =spice:commonPhrases.gather.!random= =terrainFragment= in =spice:commonPhrases.reverence.!random= of =spice.entity:sacredThing=",
+        "=terrainFragment=, =spice:commonPhrases.people.!random= =spice:commonPhrases.gather.!random= to =spice:commonPhrases.profane.!random= =spice.entity:profaneThing=",
+        "=spice:commonPhrases.people.!random= =spice:commonPhrases.gather.!random= =terrainFragment= to =spice:commonPhrases.profane.!random= =spice.entity:profaneThing=",
+        "=terrainFragment=, there's a =spice:commonPhrases.gathering.!random= of =faction.the.name= and their =spice:commonPhrases.kin.!random=",
+        "there's a =spice:commonPhrases.gathering.!random= of =faction.the.name= and their =spice:commonPhrases.kin.!random= =terrainFragment="
+      ],
       "reasonForFounding": {
         "farming": {
           "defaultFoundingText": [ "because of the =arableLand= nearby" ],
@@ -1005,9 +1012,17 @@
         "reasonIBecame": [ "=spice:villages.grewTiredOf.!random|capitalize=. =^:settledHere.!random|capitalize=" ],
         "settledHere": [ "I came upon this village and its inhabitants. They asked me to =^:villageTask.!random=." ],
         "villageTask": [ "employ my magisterial skills and lead the village" ],
-        "introDialog": [ "=^:welcome.!random|capitalize=. =^:hereYoullFind.!random|capitalize=. =^:youMayDrink.!random|capitalize=." ],
-        "welcome": [ "welcome to the village of =villageName=, =spice:commonPhrases.adventurer.!random=", "=spice:commonPhrases.adventurer.!random=, welcome to the village of =villageName=" ],
-        "hereYoullFind": [ "here you will find shade and vittle, along with other provisions to help you better scour the rust-caves for treasure", "we are a =spice:commonPhrases.clan.!random= who =spice:commonPhrases.love.!random= =sacredThing= and =spice:commonPhrases.abhor.!random= =profaneThing=" ],
+        "introDialog": [
+          "=^:welcome.!random|capitalize=. =^:hereYoullFind.!random|capitalize=. =^:youMayDrink.!random|capitalize=."
+        ],
+        "welcome": [
+          "welcome to the village of =spice.entity:name=, =spice:commonPhrases.adventurer.!random=",
+          "=spice:commonPhrases.adventurer.!random=, welcome to the village of =spice.entity:name="
+        ],
+        "hereYoullFind": [
+          "here you will find shade and vittle, along with other provisions to help you better scour the rust-caves for treasure",
+          "we are a =spice:commonPhrases.clan.!random= who =spice:commonPhrases.love.!random= =spice.entity:sacredThing= and =spice:commonPhrases.abhor.!random= =spice.entity:profaneThing="
+        ],
         "youMayDrink": [ "=spice:instancesOf.aboveAllElse.!random=, you may drink of our freshwater and quench your thirst" ]
       },
       "warden": {
@@ -1037,7 +1052,26 @@
         "villageTask": [ "settled down" ]
       },
       "pet": {
-        "originStory": [ "@Name@ just showed up one day and started =villageActivity=.", "@They@ just showed up one day and started =villageActivity=.", "@They've@ been here for as long as I remember, =villageActivity=.", "@Name@ @has@ been here for as long as I remember, =villageActivity=.", "@Name@? Who knows.", "Ask @them@ yourself.", "Perhaps @they@ thought @they@ could find =valuedOre= here.", "Oh, @Name@? I assume because of @their@ love of =sacredThing=." ]
+        "originStorySingle": [
+          "=petName|capitalize= just showed up one day and started =villageActivity=.",
+          "=sample.They= just showed up one day and started =villageActivity=.",
+          "=sample.They've= been here for as long as I remember, =villageActivity=.",
+          "=petName|capitalize= =sample.verb:has= been here for as long as I remember, =villageActivity=.",
+          "=petName|capitalize=? Who knows.",
+          "Ask =sample.them= yourself.",
+          "Perhaps =sample.they= thought =sample.they= could find =valuedOre= here.",
+          "Oh, =petName|capitalize=? I assume because of =sample.their= love of =spice.entity:sacredThing=."
+        ],
+        "originStoryMultiple": [
+          "=petNames.andList|capitalize= just showed up one day and started =villageActivity=.",
+          "They just showed up one day and started =villageActivity=.",
+          "They've been here for as long as I remember, =villageActivity=.",
+          "=petNames.andList|capitalize= has been here for as long as I remember, =villageActivity=.",
+          "=petNames.andList|capitalize=? Who knows.",
+          "Ask them yourself.",
+          "Perhaps they thought they could find =valuedOre= here.",
+          "Oh, =petNames.andList=? I assume because of their love of =spice.entity:sacredThing=."
+        ]
       }
     },
     "quests": {
@@ -1052,64 +1086,119 @@
           "afterLearning": [ "but after =spice:commonPhrases.learning.!random= the =sanctityOfSacredThing=, we =^:changedAndComposed.!random=" ],
           "weUsedTo": [ "my =spice:commonPhrases.kin.!random= =^:spentOurDays.!random=", "you know, once my =spice:commonPhrases.kin.!random= =^:spentOurDays.!random=", "there was a time where my =spice:commonPhrases.kin.!random= =^:spentOurDays.!random=" ],
           "heyWeUsedTo": [ "=spice:commonPhrases.greetingFriend.!random=, =^:weUsedTo.!random=" ],
-          "spentOurDays": [ "used to spend our days =activity=", "would spend all our time =activity=", "would be =activity= all day", "would spend our days =activity=" ],
+          "spentOurDays": [
+            "used to spend our days =sample.fragment:Activity:activity=",
+            "would spend all our time =sample.fragment:Activity:activity=",
+            "would be =sample.fragment:Activity:activity= all day",
+            "would spend our days =sample.fragment:Activity:activity="
+          ],
           "changedAndComposed": [ "=^:changedWays.!random= and =^:composedRituals.!random=" ],
           "changedWays": [ "changed our =spice:commonPhrases.ways.!random=" ],
           "composedRituals": [ "=spice:commonPhrases.composed.!random= new =spice:commonPhrases.rituals.!random=" ],
-          "lostOur": [ "=name= lost our =itemName=", "our =itemName= =were= stolen from us", "=spice:instancesOf.fate.!random= has separated us from our =itemName=" ],
-          "willingToRecover": [ "would you be willing to recover =it= for us?", "would you seek =it= out and return =it= to us?", "we need someone to recover =it=, =spice:commonPhrases.greetingFriend.!random=. Will you do it?" ],
-          "takenTo": [ "my =spice:commonPhrases.kin.!random= tell me =it= =has= been taken to =deliveryTarget=", "we hear =it= =has= been taken to =deliveryTarget=", "I hear =it= =has= been taken to =deliveryTarget=" ],
+          "lostOur": [
+            "=villager.the.basename:withoutTitles|strip= lost our =item.name=",
+            "our =item.name= =item.verb:were= stolen from us",
+            "=spice:instancesOf.fate.!random= has separated us from our =item.name="
+          ],
+          "willingToRecover": [
+            "would you be willing to recover =item.them= for us?",
+            "would you seek =item.them= out and return =item.them= to us?",
+            "we need someone to recover =item.them=, =spice:commonPhrases.greetingFriend.!random=. Will you do it?"
+          ],
+          "takenTo": [
+            "my =spice:commonPhrases.kin.!random= tell me =item.them= =item.verb:have= been taken to =deliveryTarget=",
+            "we hear =item.them= =item.verb:have= been taken to =deliveryTarget=",
+            "I hear =item.them= =item.verb:have= been taken to =deliveryTarget="
+          ],
           "rewardYou": [ "we will =spice:instancesOf.reward.!random= your =spice:commonPhrases.services.!random=" ]
         },
         "personal": {
-          "intro": [ "=spice:instancesOf.comeClose.!random=", "=spice:instancesOf.thank.!random= the =spice:adjectives.!random= =spice:nouns.!random= that you are here, =spice:commonPhrases.greetingFriend.!random=." ],
-          "iHaveATask": [ "I have a =spice:commonPhrases.task.!random= for you", "I have a =spice:commonPhrases.task.!random= that needs doing", "I could use you for a =spice:commonPhrases.task.!random=", "there's a =spice:commonPhrases.task.!random= you could do for me" ],
-          "rumor": [ "=spice:instancesOf.recently.!random= =^:someoneLearned.!random=", "=spice:instancesOf.recently.!random= =^:iVisited.!random=", "=spice:instancesOf.recently.!random= =^:iLost.!random=" ],
-          "someoneLearned": [ "I =spice:commonPhrases.learned.!random= that =^:itemAtPlace.!random=", "=villagerName= =spice:commonPhrases.learned.!random= that =^:itemAtPlace.!random=", "it was brought to my attention that =^:itemAtPlace.!random=" ],
-          "itemAtPlace": [ "there's =itemName-an= nearby in =itemLocation=", "=itemLocation= is home to =itemName-an=", "=itemName-an= =itemName-have= arrived at =itemLocation=" ],
-          "iVisited": [ "I =spice:commonPhrases.visited.!random= =itemLocation= and =spice:commonPhrases.saw.!random= =itemName-an=" ],
-          "iLost": [ "I =spice:commonPhrases.visited.!random= =itemLocation= and lost =itemName-an=", "I lost my =itemName= at =itemLocation=" ],
-          "loveToHave": [ "=needsItemFor=, I =spice:instancesOf.desire.!random= =it=", "=needsItemFor=, I =spice:instancesOf.wouldLikeTo.!random= =spice:instancesOf.have.!random= =it=" ],
-          "ifYouRetrieveIt": [ "if you =spice:commonPhrases.retrieve.!random= =it= for me, I'll =spice:instancesOf.reward.!random= your =spice:commonPhrases.services.!random=", "=spice:commonPhrases.retrieve.!random= =it= and I'll =spice:instancesOf.reward.!random= your =spice:commonPhrases.services.!random=", "I'm willing to =spice:instancesOf.reward.!random= your =spice:commonPhrases.services.!random= if you =spice:commonPhrases.retrieve.!random= =it= for me" ],
+          "intro": [
+            "=spice:instancesOf.comeClose.!random=",
+            "=spice:instancesOf.thank.!random= the =spice:adjectives.!random= =spice:nouns.!random= that you are here, =spice:commonPhrases.greetingFriend.!random=."
+          ],
+          "iHaveATask": [
+            "I have a =spice:commonPhrases.task.!random= for you",
+            "I have a =spice:commonPhrases.task.!random= that needs doing",
+            "I could use you for a =spice:commonPhrases.task.!random=",
+            "there's a =spice:commonPhrases.task.!random= you could do for me"
+          ],
+          "rumor": [
+            "=spice:instancesOf.recently.!random= =^:someoneLearned.!random=",
+            "=spice:instancesOf.recently.!random= =^:iVisited.!random=",
+            "=spice:instancesOf.recently.!random= =^:iLost.!random="
+          ],
+          "someoneLearned": [
+            "I =spice:commonPhrases.learned.!random= that =^:itemAtPlace.!random=",
+            "=villagerName= =spice:commonPhrases.learned.!random= that =^:itemAtPlace.!random=",
+            "it was brought to my attention that =^:itemAtPlace.!random="
+          ],
+          "itemAtPlace": [
+            "there's =item.a.name= nearby in =deliveryTarget|colorSafe=",
+            "=deliveryTarget|colorSafe= is home to =item.a.name=",
+            "=item.a.name= =item.verb:have= arrived at =deliveryTarget|colorSafe="
+          ],
+          "iVisited": [
+            "I =spice:commonPhrases.visited.!random= =deliveryTarget|colorSafe= and =spice:commonPhrases.saw.!random= =item.a.name="
+          ],
+          "iLost": [
+            "I =spice:commonPhrases.visited.!random= =deliveryTarget|colorSafe= and lost =item.a.name=",
+            "I lost my =item.name= at =deliveryTarget|colorSafe="
+          ],
+          "loveToHave": [
+            "=subject.fragment:NeedsItemFor=, I =spice:instancesOf.desire.!random= =item.them=",
+            "=needsItemFor=, I =spice:instancesOf.wouldLikeTo.!random= =spice:instancesOf.have.!random= =item.them="
+          ],
+          "ifYouRetrieveIt": [
+            "if you =spice:commonPhrases.retrieve.!random= =item.name= for me, I'll =spice:instancesOf.reward.!random= your =spice:commonPhrases.services.!random=",
+            "=spice:commonPhrases.retrieve.!random= =item.them= and I'll =spice:instancesOf.reward.!random= your =spice:commonPhrases.services.!random=",
+            "I'm willing to =spice:instancesOf.reward.!random= your =spice:commonPhrases.services.!random= if you =spice:commonPhrases.retrieve.!random= =item.them= for me"
+          ],
           "willYouDoIt": [ "will you do it?", "will you?", "what say you?", "what do you think?" ]
         }
       },
       "FindaSite": {
         "travelers": {
           "intro": [ "=spice:quests.FindaSpecificItem.personal.intro.!random=" ],
-          "cameToOurVillage": [ "=spice:commonPhrases.traveling.!random= ==spice-personNouns-!random== came to our village the other day" ],
-          "spokeOfPlace": [ "while =guestActivity=, they spoke of a =spice:commonPhrases.interesting.!random= place, =site=" ],
+          "cameToOurVillage": [ "=spice:commonPhrases.traveling.!random= =spice:personNouns.!random|pluralize= came to our village the other day" ],
+          "spokeOfPlace": [ "while =sample.fragment:GuestActivity:breaking bread=, they spoke of a =spice:commonPhrases.interesting.!random= place, =siteName=" ],
           "wouldYouFindIt": [ "will you find it for us?", "would you be willing to locate it?" ],
           "greatBoon": [ "it would be a great =spice:commonPhrases.gift.!random= to the =spice:instancesOf.villageActivityAdj.!random= prospects of our village" ],
           "rewardYou": [ "we will =spice:instancesOf.reward.!random= your =spice:commonPhrases.services.!random=" ]
         },
         "records": {
-          "intro": [ "=spice:commonPhrases.adventurer.!random=, we've been =^:poringOver.!random= and =^:weHaveLearned.!random= a nearby location forgotten to our people, =siteInitLower=" ],
-          "whatTreasures": [ "what =spice:commonPhrases.treasures.!random= might this place =spice:commonPhrases.hold.!random=" ],
-          "ifYouFindIt": [ "if you =spice:commonPhrases.find.!random= it for us, =spice:quests.FindaSpecificItem.sacred.rewardYou.!random=" ],
-          "poringOver": [ "poring over our records", "sharing stories with each other", "reading the village annals", "speaking to ==spice-personNouns-!random==" ],
+          "intro": [
+            "=spice:commonPhrases.adventurer.!random=, we've been =^:poringOver.!random= and =^:weHaveLearned.!random= a nearby location forgotten to our people, =siteName|initLowerIfArticle="
+          ],
+          "whatTreasures": [
+            "what =spice:commonPhrases.treasures.!random= might this place =spice:commonPhrases.hold.!random="
+          ],
+          "ifYouFindIt": [
+            "if you =spice:commonPhrases.find.!random= it for us, =spice:quests.FindaSpecificItem.sacred.rewardYou.!random="
+          ],
+          "poringOver": [ "poring over our records", "sharing stories with each other", "reading the village annals", "speaking to =spice:personNouns.!random|pluralize=" ],
           "weHaveLearned": [ "we =spice:commonPhrases.learnedOf.!random=" ]
         },
         "typeOfDirections": {
           "radius": {
-            "intro": [ "we hear that it's located next to =landmark=" ]
+            "intro": [ "we hear that it's located next to =landmark.text=" ]
           },
           "direction": {
-            "intro": [ "we hear it's located somewhere between =min= and =max= parasangs =direction= of =landmark=" ]
+            "intro": [ "we hear it's located somewhere between =min= and =max= parasangs =direction.expandedDirection= of =landmark.text=" ]
           },
           "path": {
-            "intro": [ "we hear you can find it by following the =path= that passes through =landmark= =direction=" ]
+            "intro": [ "we hear you can find it by following the =path= that passes through =landmark.text= =direction.expandedDirection=" ]
           }
         }
       },
       "InteractWithAnObject": {
         "holyitem": {
-          "intro": [ "=spice:commonPhrases.adventurer.!random=, =spice:instancesOf.haveYouHeardOf.!random= the =itemName= at =deliveryTarget=" ],
-          "itIsHoly": [ "=it= is a =spice:commonPhrases.sacred.!random= =spice:commonPhrases.shrine.!random= to us" ],
-          "itIsDespicable": [ "=it= is a =spice:commonPhrases.despicable.!random= =spice:commonPhrases.horror.!random= to =sacredThing= and everything else we =spice:instancesOf.holdDear.!random=" ],
-          "willInteract": [ "often we make pilgrimages to =verb= =it= and contemplate =sacredThing=" ],
+          "intro": [ "=spice:commonPhrases.adventurer.!random=, =spice:instancesOf.haveYouHeardOf.!random= =item.the.name|strip= at =deliveryTarget|strip=" ],
+          "itIsHoly": [ "=item.it= is a =spice:commonPhrases.sacred.!random= =spice:commonPhrases.shrine.!random= to us" ],
+          "itIsDespicable": [ "=item.it= is a =spice:commonPhrases.despicable.!random= =spice:commonPhrases.horror.!random= to =sacredThing= and everything else we =spice:instancesOf.holdDear.!random=" ],
+          "willInteract": [ "often we make pilgrimages to =verb= =item.it= and contemplate =sacredThing=" ],
           "honorUs": [ "it would honor us =spice:instancesOf.ifYouWouldDoTheSame.!random=", "it would be a =spice:commonPhrases.blessing.!random= =spice:instancesOf.ifYouWouldDoTheSame.!random=" ],
-          "honorUsDesecrate": [ "it would honor us =spice:commonPhrases.greatly.!random= if you =verb= =it=", "it would be a =spice:commonPhrases.blessing.!random= if you =verb= it" ],
+          "honorUsDesecrate": [ "it would honor us =spice:commonPhrases.greatly.!random= if you =verb= =item.it=", "it would be a =spice:commonPhrases.blessing.!random= if you =verb= =item.it=" ],
           "willYou": [ "=spice:instancesOf.willYou.!random=" ],
           "rewardYou": [ "we will =spice:instancesOf.reward.!random= your =spice:commonPhrases.services.!random=" ]
         },
@@ -1118,7 +1207,7 @@
           "comeClose": [ "=spice:instancesOf.comeClose.!random=" ],
           "myPlan": [ "my =plan= has nearly come to fruition. =^:oneMoreStep.!random|capitalize=", "my =plan= is nearly complete. =^:oneMoreStep.!random|capitalize=", "I have a secret =plan= I'm =spice:commonPhrases.enacting.!random=" ],
           "oneMoreStep": [ "there is but one more step", "there is just a single step remaining", "only one more thing must be done" ],
-          "goTo": [ "I need someone to go to =deliveryTarget= and =verb= the =itemName= there" ],
+          "goTo": [ "I need someone to go to =deliveryTarget= and =verb= =item.the.name|strip= there" ],
           "IRewardYou": [ "I will =spice:instancesOf.reward.!random= your =spice:commonPhrases.services.!random=" ],
           "byThe_TellNoOne": [ "by =sacredThing=, =^:tellNoOne.!random=", "=^:tellNoOne.!random=" ],
           "tellNoOne": [ "tell no one of this", "speak to no one about this", "this conversation never happened" ]
@@ -1130,7 +1219,12 @@
     },
     "cooking": {
       "ate": [ "You eat the meal." ],
-      "cookTemplate": [ "You toss =ingredients= into a pot and stir.", "You gather whatever you can find for your meal: =ingredients=.\n\nYou toss them in a pot and stir.", "Rummaging over your surroundings, you find these ingredients: =ingredients=.\n\nYou toss them in a pot and stir.", "You gather some fixings: =ingredients=.\n\nYou toss them in a pot and stir." ],
+      "cookTemplate": [
+        "You toss =ingredients.andList= into a pot and stir.",
+        "You gather whatever you can find for your meal: =ingredients.andList=.\n\nYou toss them in a pot and stir.",
+        "Rummaging over your surroundings, you find these ingredients: =ingredients.andList=.\n\nYou toss them in a pot and stir.",
+        "You gather some fixings: =ingredients.andList=.\n\nYou toss them in a pot and stir."
+      ],
       "ingredient": [ "=^:pinchOf.!random= =^:terrain.$terrain.someIngredients.!random=", "=^:pinchOf.!random= =spice:adjectives.!random= =^:terrain.$terrain.someIngredients.!random=", "=^:terrain.$terrain.aIngredients.!random|article=", "=spice:adjectives.!random|article= =^:terrain.$terrain.aIngredients.!random=", "=^:pinchOf.!random= =^:terrain.$terrain.someIngredients.!random=", "=^:pinchOf.!random= =spice:adjectives.!random= =^:terrain.$terrain.someIngredients.!random=", "=^:terrain.$terrain.aIngredients.!random|article=", "=spice:adjectives.!random|article= =^:terrain.$terrain.aIngredients.!random=", "=^:pinchOf.!random= =^:terrain.General.someIngredients.!random=", "=^:pinchOf.!random= =spice:adjectives.!random= =^:terrain.General.someIngredients.!random=", "=^:terrain.General.aIngredients.!random|article=", "=spice:adjectives.!random|article= =^:terrain.General.aIngredients.!random=" ],
       "pinchOf": [ "a pinch of", "some", "some", "a dash of", "a smidgen of", "a sprinkle of", "a nip of", "a dram of" ],
       "cookbooks": {
@@ -1697,82 +1791,90 @@
         "General": {
           "someIngredients": [ "=^:someEdible.!random=", "=^:someEdible.!random=", "=^:someInedible.!random=" ],
           "someEdible": [ "salt", "bones", "water", "mint", "saffron", "sesame", "bulgur", "cardamom", "anise", "berries", "cinnamon", "cumin", "fenugreek", "uuyr", "yyrabra", "paprika", "vanilla" ],
-          "someInedible": [ "foamcrete flake", "rust", "fulcrete flake", "chrome", "ash", "trash", "congealed $tonicName" ],
+          "someInedible": [ "foamcrete flake", "rust", "fulcrete flake", "chrome", "ash", "trash", "congealed =tonicName=" ],
           "aIngredients": [ "=^:aEdible.!random=", "=^:aEdible.!random=", "=^:aInedible.!random=" ],
           "aEdible": [ "hunk of cheese", "crust of bread", "mung bean", "soy bean", "chickpea", "sesame seed", "aniseed", "berry", "apricot", "uuyr seed", "yyrabra root" ],
-          "aInedible": [ "small stone", "cracked lens", "fractured microchip", "burnt capacitor", "corroded circuit board", "page torn from $bookName", "=spice:commonPhrases.puff.!random= of $gasName" ]
+          "aInedible": [
+            "small stone",
+            "cracked lens",
+            "fractured microchip",
+            "burnt capacitor",
+            "corroded circuit board",
+            "page torn from =bookName=",
+            "=spice:commonPhrases.puff.!random= of =gasName="
+          ]
         },
         "Saltdunes": {
           "someIngredients": [ "salt", "brinestalk", "dogthorn", "salt kraken larvae", "dromad hair", "dromad dander", "ash", "Issachari nomad hair" ],
-          "aIngredients": [ "dawnglider feather", "dawnglider egg", "dogthorn leaf", "thread from an Issachari banner", "fractus thorn", "$creaturePossessive $creatureBodyPart", "$creaturePossessive $creatureBodyPart" ]
+          "aIngredients": [ "dawnglider feather", "dawnglider egg", "dogthorn leaf", "thread from an Issachari banner", "fractus thorn", "=creaturePossessive= =creatureBodyPart=", "=creaturePossessive= =creatureBodyPart=" ]
         },
         "Saltmarsh": {
           "someIngredients": [ "=^:someEdible.!random=", "=^:someEdible.!random=", "=^:someInedible.!random=" ],
           "aIngredients": [ "=^:aEdible.!random=", "=^:aEdible.!random=", "=^:aInedible.!random=" ],
           "someEdible": [ "brineweed", "brine", "witchwood", "salt", "glowfish cheek", "dragonfly thorax", "brinestalk", "dogthorn", "croc meat", "fish meat" ],
           "someInedible": [ "brineweed", "brine", "witchwood", "salt", "glowfish cheek", "dragonfly thorax", "brinestalk", "dogthorn", "croc meat", "fish meat" ],
-          "aEdible": [ "glowpad leaf", "blade of grass", "diaphanous wing", "dram of water", "dogthorn leaf", "$creaturePossessive $creatureBodyPart", "$creaturePossessive $creatureBodyPart" ],
-          "aInedible": [ "glowpad leaf", "blade of grass", "diaphanous wing", "dram of water", "dogthorn leaf", "$creaturePossessive $creatureBodyPart", "$creaturePossessive $creatureBodyPart" ]
+          "aEdible": [ "glowpad leaf", "blade of grass", "diaphanous wing", "dram of water", "dogthorn leaf", "=creaturePossessive= =creatureBodyPart=", "=creaturePossessive= =creatureBodyPart=" ],
+          "aInedible": [ "glowpad leaf", "blade of grass", "diaphanous wing", "dram of water", "dogthorn leaf", "=creaturePossessive= =creatureBodyPart=", "=creaturePossessive= =creatureBodyPart=" ]
         },
         "DesertCanyon": {
           "someIngredients": [ "rust", "seed spit", "dog hair", "shavings from a tortoise shell", "equimax hair", "dogthorn", "shale" ],
-          "aIngredients": [ "flake of shale", "thorn from a jilted lover", "boar tooth", "chameleon horn", "salthopper wing", "glowcrow feather", "diaphanous wing", "$creaturePossessive $creatureBodyPart", "$creaturePossessive $creatureBodyPart" ]
+          "aIngredients": [ "flake of shale", "thorn from a jilted lover", "boar tooth", "chameleon horn", "salthopper wing", "glowcrow feather", "diaphanous wing", "=creaturePossessive= =creatureBodyPart=", "=creaturePossessive= =creatureBodyPart=" ]
         },
         "Hills": {
           "someIngredients": [ "shale", "limestone", "dust", "clay", "gravel", "equimax hair", "silt", "tortoise shell", "hermit dander", "goat hair" ],
-          "aIngredients": [ "blade of grass", "flake of shale", "chameleon horn", "small stone", "pebble", "$creaturePossessive $creatureBodyPart", "$creaturePossessive $creatureBodyPart", "snapjaw fang" ]
+          "aIngredients": [ "blade of grass", "flake of shale", "chameleon horn", "small stone", "pebble", "=creaturePossessive= =creatureBodyPart=", "=creaturePossessive= =creatureBodyPart=", "snapjaw fang" ]
         },
         "Flowerfields": {
           "someIngredients": [ "rust", "seed spit", "dog hair", "shavings from a tortoise shell", "equimax hair", "dogthorn", "shale", "flower petals", "flowers" ],
-          "aIngredients": [ "flower petal", "thorn from a jilted lover", "boar tooth", "chameleon horn", "salthopper wing", "glowcrow feather", "diaphanous wing", "$creaturePossessive $creatureBodyPart", "$creaturePossessive $creatureBodyPart" ]
+          "aIngredients": [ "flower petal", "thorn from a jilted lover", "boar tooth", "chameleon horn", "salthopper wing", "glowcrow feather", "diaphanous wing", "=creaturePossessive= =creatureBodyPart=", "=creaturePossessive= =creatureBodyPart=" ]
         },
         "Jungle": {
           "someIngredients": [ "rust", "boar hair", "ice frog spittle", "albino ape hair", "leech blood", "beetlebum chitin", "skunk hair", "hermit dander", "slug spit", "beetle chitin" ],
-          "aIngredients": [ "diaphanous wing", "chameleon horn", "chip from the horn of a goatfolk", "swarmshade leaf", "swarmshade root", "ziv leaf", "ziv root", "shimscale leaf", "star palm frond", "shimscale root", "quillipede quill", "mushroom cap", "$creaturePossessive $creatureBodyPart", "$creaturePossessive $creatureBodyPart" ]
+          "aIngredients": [ "diaphanous wing", "chameleon horn", "chip from the horn of a goatfolk", "swarmshade leaf", "swarmshade root", "ziv leaf", "ziv root", "shimscale leaf", "star palm frond", "shimscale root", "quillipede quill", "mushroom cap", "=creaturePossessive= =creatureBodyPart=", "=creaturePossessive= =creatureBodyPart=" ]
         },
         "DeepJungle": {
           "someIngredients": [ "rust", "ogre ape hair", "crysteel shards", "flower petals", "lush acid", "purple membrane", "smeared urberry", "nimbus bark", "star orchid dust", "displaced air", "mudroot" ],
-          "aIngredients": [ "sunflower petal", "nachash tendril", "nachash root", "chip from the horn of a goatfolk", "nimbus leaf", "prism fragment", "diaphanous wing", "ziv leaf", "ziv root", "star palm frond", "shimscale leaf", "shimscale root", "fulcrete brick", "$creaturePossessive $creatureBodyPart", "$creaturePossessive $creatureBodyPart" ]
+          "aIngredients": [ "sunflower petal", "nachash tendril", "nachash root", "chip from the horn of a goatfolk", "nimbus leaf", "prism fragment", "diaphanous wing", "ziv leaf", "ziv root", "star palm frond", "shimscale leaf", "shimscale root", "fulcrete brick", "=creaturePossessive= =creatureBodyPart=", "=creaturePossessive= =creatureBodyPart=" ]
         },
         "Ruins": {
           "someIngredients": [ "rust", "scrap", "chrome", "scrap crystal", "scrap metal", "scrap electronics", "pure alloy", "boar hair", "ice frog spittle", "albino ape hair", "gunpowder", "leech blood", "beetlebum chitin", "skunk hair", "hermit dander", "slug spit", "beetle chitin" ],
-          "aIngredients": [ "roasted antenna", "musket muzzle", "bolt from a rifle turret", "light attenuator", "diaphanous wing", "chameleon horn", "chip from the horn of a goatfolk", "shimscale leaf", "shimscale root", "quillipede quill", "mushroom cap", "$creaturePossessive $creatureBodyPart", "$creaturePossessive $creatureBodyPart" ]
+          "aIngredients": [ "roasted antenna", "musket muzzle", "bolt from a rifle turret", "light attenuator", "diaphanous wing", "chameleon horn", "chip from the horn of a goatfolk", "shimscale leaf", "shimscale root", "quillipede quill", "mushroom cap", "=creaturePossessive= =creatureBodyPart=", "=creaturePossessive= =creatureBodyPart=" ]
         },
         "BaroqueRuins": {
           "someIngredients": [ "rust", "scrap", "chrome", "scrap crystal", "scrap metal", "scrap electronics", "pure alloy", "svardym spittle", "ogre ape hair", "gunpowder", "hermit dander", "slug spit", "astral dander", "purple membrane", "smeared urberry", "nimbus bark", "star orchid dust", "displaced air", "mudroot", "crysteel shards", "coolant", "antifreeze", "glass microtubing", "tetraxenonoglass", "psionic residue", "plasma", "nanomaterials", "photonic matter", "vectorized pebbles" ],
-          "aIngredients": [ "light attenuator", "sunflower petal", "nachash tendril", "nachash root", "chip from the horn of a goatfolk", "nimbus leaf", "prism fragment", "diaphanous wing", "ziv leaf", "ziv root", "star palm frond", "shimscale leaf", "shimscale root", "fulcrete brick", "magnet", "microcontroller", "pristine circuit", "vectorized fossil", "$creaturePossessive $creatureBodyPart", "$creaturePossessive $creatureBodyPart" ]
+          "aIngredients": [ "light attenuator", "sunflower petal", "nachash tendril", "nachash root", "chip from the horn of a goatfolk", "nimbus leaf", "prism fragment", "diaphanous wing", "ziv leaf", "ziv root", "star palm frond", "shimscale leaf", "shimscale root", "fulcrete brick", "magnet", "microcontroller", "pristine circuit", "vectorized fossil", "=creaturePossessive= =creatureBodyPart=", "=creaturePossessive= =creatureBodyPart=" ]
         },
         "TheSpindle": {
           "someIngredients": [ "rust", "scrap", "chrome", "scrap crystal", "scrap metal", "scrap electronics", "Eater dander", "Spindle glitter", "ash", "flakes of grave moss", "bone dust", "petrified hair", "grave goods", "digestive jelly", "marble chalk", "sarcophagus juice", "bone brine" ],
-          "aIngredients": [ "bone", "skull", "clump of hair", "piece of marble", "stillvine leaf", "synthetic wing", "bone", "charred bone", "mopango scale", "circuitboard", "cube of gelatin", "fingernail", "$creaturePossessive $creatureBodyPart", "$creaturePossessive $creatureBodyPart" ]
+          "aIngredients": [ "bone", "skull", "clump of hair", "piece of marble", "stillvine leaf", "synthetic wing", "bone", "charred bone", "mopango scale", "circuitboard", "cube of gelatin", "fingernail", "=creaturePossessive= =creatureBodyPart=", "=creaturePossessive= =creatureBodyPart=" ]
         },
         "Water": {
           "someIngredients": [ "croc meat", "glowfish cheek", "fish meat", "brine", "brineweed", "madpole cheek" ],
-          "aIngredients": [ "swarmshade leaf", "swarmshade root", "ziv leaf", "ziv root", "star palm frond", "shimscale leaf", "shimscale root", "diaphanous wing", "glowpad leaf", "madpole tooth", "dragonfly thorax", "$creaturePossessive $creatureBodyPart", "$creaturePossessive $creatureBodyPart" ]
+          "aIngredients": [ "swarmshade leaf", "swarmshade root", "ziv leaf", "ziv root", "star palm frond", "shimscale leaf", "shimscale root", "diaphanous wing", "glowpad leaf", "madpole tooth", "dragonfly thorax", "=creaturePossessive= =creatureBodyPart=", "=creaturePossessive= =creatureBodyPart=" ]
         },
         "Mountains": {
           "someIngredients": [ "shale", "limestone", "dust", "clay", "gravel", "dog hair", "goat hair", "silt" ],
-          "aIngredients": [ "flake of shale", "bone of a cannibal", "small stone", "pebble", "$creaturePossessive $creatureBodyPart", "$creaturePossessive $creatureBodyPart" ]
+          "aIngredients": [ "flake of shale", "bone of a cannibal", "small stone", "pebble", "=creaturePossessive= =creatureBodyPart=", "=creaturePossessive= =creatureBodyPart=" ]
         },
         "Fungal": {
           "someIngredients": [ "lichen", "mold", "fungus", "goop", "smut", "rust", "sludge" ],
-          "aIngredients": [ "mushroom stalk", "toadstool", "mushroom cap", "$creaturePossessive $creatureBodyPart", "$creaturePossessive $creatureBodyPart" ]
+          "aIngredients": [ "mushroom stalk", "toadstool", "mushroom cap", "=creaturePossessive= =creatureBodyPart=", "=creaturePossessive= =creatureBodyPart=" ]
         },
         "BananaGrove": {
           "someIngredients": [ "chrome", "rust", "musa", "Eater dander", "Spindle glitter", "goat hair", "marble chalk", "plant matter", "gibbon hair", "asphodelyte petals", "scrap", "scrap crystal", "scrap metal", "scrap electronics", "abraded stone" ],
-          "aIngredients": [ "banana leaf", "banana peel", "blade of grass", "chipped-off chunk of the Spindle", "pebble", "diaphanous wing", "palm frond", "dacca root", "diacalyptus leaf", "gibbon eye", "mural shaving", "$creaturePossessive $creatureBodyPart", "$creaturePossessive $creatureBodyPart" ]
+          "aIngredients": [ "banana leaf", "banana peel", "blade of grass", "chipped-off chunk of the Spindle", "pebble", "diaphanous wing", "palm frond", "dacca root", "diacalyptus leaf", "gibbon eye", "mural shaving", "=creaturePossessive= =creatureBodyPart=", "=creaturePossessive= =creatureBodyPart=" ]
         },
         "LakeHinnom": {
           "someIngredients": [ "algae", "svardym egg shell", "kelp", "crysteel shards", "perch cheek", "fish meat", "brine", "eel hair", "tunnel sponge", "svardym drool", "algal water" ],
-          "aIngredients": [ "prism perch", "perch scale", "white esh feather", "junk dollar", "junk dollar spine", "sponge", "spongy mass", "coral finger", "crysteel shard", "$creaturePossessive $creatureBodyPart", "$creaturePossessive $creatureBodyPart" ]
+          "aIngredients": [ "prism perch", "perch scale", "white esh feather", "junk dollar", "junk dollar spine", "sponge", "spongy mass", "coral finger", "crysteel shard", "=creaturePossessive= =creatureBodyPart=", "=creaturePossessive= =creatureBodyPart=" ]
         },
         "PalladiumReef": {
           "someIngredients": [ "red coral", "blue coral", "gold coral", "palladium", "algae", "svardym egg shell", "scrap crystal", "scrap metal", "scrap electronics", "kelp", "crysteel shards", "perch cheek", "fish meat", "brine", "eel hair", "tunnel sponge", "svardym drool", "algal water" ],
-          "aIngredients": [ "coral polyp", "palladium strut", "prism perch", "perch scale", "white esh feather", "junk dollar", "junk dollar spine", "sponge", "spongy mass", "coral finger", "crysteel shard", "$creaturePossessive $creatureBodyPart", "$creaturePossessive $creatureBodyPart" ]
+          "aIngredients": [ "coral polyp", "palladium strut", "prism perch", "perch scale", "white esh feather", "junk dollar", "junk dollar spine", "sponge", "spongy mass", "coral finger", "crysteel shard", "=creaturePossessive= =creatureBodyPart=", "=creaturePossessive= =creatureBodyPart=" ]
         },
         "MoonStair": {
           "someIngredients": [ "cool static", "crystalline nectar", "dilute static", "psychal rhythm", "candle quartz", "quantum fuzz", "algebraic salt", "quartz dust", "hexagons", "compressed thoughtstuff", "entropy fungus", "glitchtree leaves", "unimax tail hair", "dreamcrunglem", "photons", "thoughtforms", "crystal flowers" ],
-          "aIngredients": [ "crystal petal", "psychal rhythm pebble", "hexagon", "glitchtree leaf", "icosahedron", "photon", "metacrystal", "negative number", "imaginary number", "dream wren feather", "leaf from Chavvah, the Tree of Life", "platonic solid", "starshell scute", "blade of noise grass", "$creaturePossessive $creatureBodyPart", "$creaturePossessive $creatureBodyPart" ]
+          "aIngredients": [ "crystal petal", "psychal rhythm pebble", "hexagon", "glitchtree leaf", "icosahedron", "photon", "metacrystal", "negative number", "imaginary number", "dream wren feather", "leaf from Chavvah, the Tree of Life", "platonic solid", "starshell scute", "blade of noise grass", "=creaturePossessive= =creatureBodyPart=", "=creaturePossessive= =creatureBodyPart=" ]
         },
         "Brightsheol": {
           "someIngredients": [ "indeterminable qualia", "dream dust", "dim light", "=spice:commonPhrases.astral.!random= =spice:objectNouns.!random|pluralize=", "=spice:commonPhrases.astral.!random= =spice:objectNouns.!random|pluralize=", "=spice:commonPhrases.astral.!random= =spice:objectNouns.!random|pluralize=" ],

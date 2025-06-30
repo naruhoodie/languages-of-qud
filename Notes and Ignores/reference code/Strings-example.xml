@@ -1050,6 +1050,56 @@ Assets/HistoryKit/VillageHistory/SharedMutation.cs:208
   <string Context="MakeAndList Alternate Separator" ID="; ">; </string>
   <!--Code references _S(): Assets/Language/Translator.cs:154-->
   <string Context="MakeAndList NoSerialComma Separator" ID=" " Value=" " />
+  <!--Code references _S(): Assets/XRL Application/Game Core/ActionManager.cs:751-->
+  <string Context="Message Log Turn Separator" ID="[--turn start--]">[--turn start--]</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/ActionManager.cs:996-->
+  <string Context="AutoAct gather interrupt popup" ID="You cannot find a path to =object.the.name:withoutTitles=.">You cannot find a path to =object.the.name:withoutTitles=.</string>
+  <!--Code references _S(): Assets/XRL Application/Game Core/ActionManager.cs:1010-->
+  <string Context="AutoAct gather interrupt popup" ID="You cannot find a path to your destination.">You cannot find a path to your destination.</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/ActionManager.cs:1193-->
+  <string Context="AutoAct gather interrupt popup" ID="You cannot find a path toward the =dir.expandedDirection=.">You cannot find a path toward the =dir.expandedDirection=.</string>
+  <!--Code references _S(): Assets/XRL Application/Game Core/ActionManager.cs:1325-->
+  <string Context="AutoAct explore interrupt popup" ID="There doesn't seem to be anywhere else to explore.">There doesn't seem to be anywhere else to explore.</string>
+  <!--Code references _S(): Assets/XRL Application/Game Core/ActionManager.cs:1343-->
+  <string Context="AutoAct explore interrupt popup" ID="There is only darkness from an unusual source left to explore.">There is only darkness from an unusual source left to explore.</string>
+  <!--Code references _S(): Assets/XRL Application/Game Core/ActionManager.cs:1350-->
+  <string Context="AutoAct explore interrupt popup" ID="There doesn't seem to be anywhere else to explore from here.">There doesn't seem to be anywhere else to explore from here.</string>
+  <!--Code references _S(): Assets/XRL Application/Game Core/ActionManager.cs:1389-->
+  <string Context="AutoAct climb methods 'stairways'" ID="stairways leading upward">stairways leading upward</string>
+  <!--Code references _S(): Assets/XRL Application/Game Core/ActionManager.cs:1401-->
+  <string Context="AutoAct climb methods 'stairways'" ID="stairways leading downward">stairways leading downward</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/ActionManager.cs:1408-->
+  <string Context="AutoAct climb interrupt popup" ID="There are no =stairways= nearby.">There are no =stairways= nearby.</string>
+  <!--Code references _S(): Assets/XRL Application/Game Core/ActionManager.cs:1429-->
+  <string Context="AutoAct climb interrupt message" ID="You can't figure out how to safely reach the stairs from here.">You can't figure out how to safely reach the stairs from here.</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/ActionManager.cs:1646-->
+  <string Context="AutoAct Rest Loading Status Bar" ID="Resting until party healed... Turn: =num=">Resting until party healed... Turn: =num=</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/ActionManager.cs:1656-->
+  <string Context="AutoAct Rest Loading Status Bar" ID="Resting until healed... Turn: =num=">Resting until healed... Turn: =num=</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/ActionManager.cs:1728-->
+  <string Context="AutoAct attack interrupt message" ID="You will not auto-attack =target.the.name:withoutTitles= because =target.itis= not hostile to you.">You will not auto-attack =target.the.name:withoutTitles= because =target.itis= not hostile to you.</string>
+  <!--Code references _S(): Assets/XRL Application/Game Core/ActionManager.cs:1755-->
+  <string Context="AutoAct attack interrupt message" ID="You cannot see your target.">You cannot see your target.</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/ActionManager.cs:1772-->
+  <string Context="AutoAct attack interrupt message" ID="You can't find a way to navigate to =target.the.name:withoutTitles=.">You can't find a way to navigate to =target.the.name:withoutTitles=.</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/ActionManager.cs:1806-->
+  <string Context="AutoAct attack interrupt message" ID="You are unable to attack =target.the.name:withoutTitles=.">You are unable to attack =target.the.name:withoutTitles=.</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/ActionManager.cs:1860-->
+  <string Context="AutoAct attack interrupt message" ID="You can't seem to find a way to reach =target.the.name:withoutTitles=.">You can't seem to find a way to reach =target.the.name:withoutTitles=.</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/ActionManager.cs:1892-->
+  <string Context="AutoAct Wait Loading Status Bar" ID="Waiting for =num.things:turn=...">Waiting for =num.things:turn=...</string>
+  <!--Code references _S():
+Assets/XRL Application/Game Core/ActionManager.cs:1914
+Assets/XRL Application/Game Core/ActionManager.cs:1949
+-->
+  <string Context="AutoAct Wait Loading Status Complete" ID="Done waiting.">Done waiting.</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/ActionManager.cs:1929-->
+  <string Context="AutoAct Wait Loading Status Bar" ID="Waiting for =remaining.things:round=...">Waiting for =remaining.things:round=...</string>
+  <!--Code references _T():
+Assets/XRL Application/Game Core/ActionManager.cs:1976
+Assets/XRL Application/World/Game Objects/GameObject.cs:18132
+-->
+  <string Context="AutoAct interrupt 'because' (clause)" ID="of =object.the.name:withoutTitles= =subject.direction#object=">of =object.the.name:withoutTitles= =subject.direction#object=</string>
   <!--Code references _S(): Assets/XRL Application/Game Core/EmbarkBuilder/EmbarkBuilder.cs:183-->
   <string ID="{{r|Error!}}">{{r|Error!}}</string>
   <!--Code references _T(): Assets/XRL Application/Game Core/EmbarkBuilder/EmbarkBuilder.cs:189-->
@@ -1256,6 +1306,12 @@ Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudMutationsModuleWindow.cs:3
   <string ID=":=subtypetitle=:">:=subtypetitle=:</string>
   <!--Code references _T(): Assets/XRL Application/Game Core/Names.cs:73-->
   <string Context="Naming Expand Property Spice" ID="=spice#query|title=">=spice#query|title=</string>
+  <!--Code references _S():
+Assets/XRL Application/Game Core/OngoingAction.cs:11
+Assets/XRL Application/World/Game Objects/Capabilities/AutoAct.cs:352
+Assets/XRL Application/World/Game Objects/Capabilities/AutoAct.cs:371
+-->
+  <string Context="OngoingAction/autoActDescription (verb gerund)" ID="acting">acting</string>
   <!--Code references _S(): Assets/XRL Application/Game Core/Rules/Directions.cs:108-->
   <string Context="direction.expanded" ID="north">north</string>
   <!--Code references _S(): Assets/XRL Application/Game Core/Rules/Directions.cs:109-->
@@ -1436,6 +1492,12 @@ Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudMutationsModuleWindow.cs:3
   <string Context="journal category" ID="Ruins">Ruins</string>
   <!--Code references _S(): Assets/XRL Application/Qud.API/Qud.API.Journal.cs:1430-->
   <string Context="journal category" ID="Settlements">Settlements</string>
+  <!--Code references _T(): Assets/XRL Application/World/Dynamic Quests/Dynamic Quest Templates/InteractWithAnObjectDynamicQuestTemplate.cs:65-->
+  <string Context="InteractWithAnObjectDynamicQuestTemplate accomplishment" ID="You =verb.pastTense= =item.the.name:long:withoutTitles=.">You =verb.pastTense= =item.the.name:long:withoutTitles=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Dynamic Quests/Dynamic Quest Templates/InteractWithAnObjectDynamicQuestTemplate.cs:71-->
+  <string Context="InteractWithAnObjectDynamicQuestTemplate muralText" ID="While exploring =object.zone.name=, =name= =verb.pastTense= the fabled contraption called =item.the.basename=.">While exploring =object.zone.name=, =name= =verb.pastTense= the fabled contraption called =item.the.basename=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Dynamic Quests/Dynamic Quest Templates/InteractWithAnObjectDynamicQuestTemplate.cs:80-->
+  <string Context="InteractWithAnObjectDynamicQuestTemplate gospelText" ID="While visiting an obscure =spice:professions.$profession.guildhall=, =name= met with a group of =spice:professions.$profession.plural= and commissed what came to be known as =item.the.basename=.">While visiting an obscure =spice:professions.$profession.guildhall=, =name= met with a group of =spice:professions.$profession.plural= and commissed what came to be known as =item.the.basename=.</string>
   <!--Code references _S():
 Assets/XRL Application/World/Dynamic Quests/VillageDynamicQuestContext.cs:299
 Assets/XRL Application/World/Dynamic Quests/VillageDynamicQuestContext.cs:320
@@ -1809,6 +1871,40 @@ Assets/XRL Application/World/Factions/Faction.cs:1637
   <string Context="FactionInterest" ID="the locations of apple farms">the locations of apple farms</string>
   <!--Code references _T(): Assets/XRL Application/World/Factions/FactionInterest.cs:285-->
   <string Context="FactionInterest" ID="the locations of =tagList.join: |pluralize=">the locations of =tagList.join: |pluralize=</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Capabilities/AutoAct.cs:358-->
+  <string Context="autoActDescription (verb gerund)" ID="exploring">exploring</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Capabilities/AutoAct.cs:360-->
+  <string Context="autoActDescription (verb gerund)" ID="waiting">waiting</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Capabilities/AutoAct.cs:364-->
+  <string Context="autoActDescription (verb gerund)" ID="digging">digging</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Capabilities/AutoAct.cs:368-->
+  <string Context="autoActDescription (verb gerund)" ID="gathering">gathering</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Capabilities/AutoAct.cs:374-->
+  <string Context="autoActDescription (verb gerund)" ID="resting">resting</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Capabilities/AutoAct.cs:376-->
+  <string Context="autoActDescription (verb gerund)" ID="attacking">attacking</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Capabilities/AutoAct.cs:378-->
+  <string Context="autoActDescription (verb gerund)" ID="moving">moving</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Capabilities/AutoAct.cs:425-->
+  <string Context="AutoAct Interrupt Message" ID="You stop =autoActDescription= because =because=.">You stop =autoActDescription= because =because=.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Capabilities/AutoAct.cs:521-->
+  <string Context="AutoAct Interrupt 'because' (clause)" ID="your spacetime context is incoherent">your spacetime context is incoherent</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Capabilities/AutoAct.cs:532-->
+  <string Context="AutoAct Interrupt 'because' (clause)" ID="you can go no further">you can go no further</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Capabilities/AutoAct.cs:539-->
+  <string Context="AutoAct Interrupt 'because' (clause)" ID="something is wrong with the spacetime connectivity of your environment">something is wrong with the spacetime connectivity of your environment</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Capabilities/AutoAct.cs:550-->
+  <string Context="AutoAct interrupt 'because' (clause)" ID="the direction you seem to be trying to go makes no sense">the direction you seem to be trying to go makes no sense</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Capabilities/AutoAct.cs:565-->
+  <string Context="AutoAct interrupt 'because' (clause)" ID="you cannot keep =openable.the.name:withoutTitles= open">you cannot keep =openable.the.name:withoutTitles= open</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Capabilities/AutoAct.cs:591-->
+  <string Context="AutoAct interrupt 'because' (clause)" ID="you cannot open =openable.the.name:withoutTitles=">you cannot open =openable.the.name:withoutTitles=</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Capabilities/AutoAct.cs:608-->
+  <string Context="AutoAct interrupt 'because' clause" ID="you cannot seem to make any progress">you cannot seem to make any progress</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Capabilities/AutoAct.cs:655-->
+  <string Context="AutoAct interrupt 'because' (clause)" ID="=blocker.does:are= in the way">=blocker.does:are= in the way</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Capabilities/AutoAct.cs:675-->
+  <string Context="AutoAct interrupt 'because' clause" ID="you tried to move but stayed in the same place">you tried to move but stayed in the same place</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Capabilities/Firefighting.cs:148-->
   <string ID="=subject.Does:beat= at the flames with =subject.its= =hands.name=!">=subject.Does:beat= at the flames with =subject.its= =hands.name=!</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Capabilities/Firefighting.cs:158-->
@@ -1835,30 +1931,34 @@ Assets/XRL Application/World/Factions/Faction.cs:1637
   <string Context="Rebuked Applied" ID="=subject.Does:rebuke= =object.the.name= into submission.">=subject.Does:rebuke= =object.the.name= into submission.</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Effects/Rebuked.cs:147-->
   <string Context="Rebuke Removed" ID="=subject.Does:wander= away disinterestedly.">=subject.Does:wander= away disinterestedly.</string>
-  <!--Code references _S(): Assets/XRL Application/World/Game Objects/GameObject.cs:12802-->
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/GameObject.cs:471-->
+  <string Context="CellTeleport default arriveVerb" ID="appear">appear</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/GameObject.cs:472-->
+  <string Context="CellTeleport default LeaveVerb" ID="disappear">disappear</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/GameObject.cs:12804-->
   <string Context="spotmessage.defaultVerb" ID="see">see</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/GameObject.cs:12804-->
-  <string Context="spotmessage" ID="=subject.Does#verb= =object.an= =subject.generalDirection#object=, so you refrain from =autoActDescription=.">=subject.Does#verb= =object.an= =subject.generalDirection#object=, so you refrain from =autoActDescription=.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/GameObject.cs:12805-->
-  <string Context="spotmessage" ID="=subject.Does#verb= =object.an= =subject.generalDirection#object= and stop =autoActDescription=.">=subject.Does#verb= =object.an= =subject.generalDirection#object= and stop =autoActDescription=.</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/GameObject.cs:12806-->
-  <string Context="spotmessage" ID="=subject.Does#verb= =object.an:notvisible= =subject.generalDirection#object=, so you refrain from =autoActDescription=.">=subject.Does#verb= =object.an:notvisible= =subject.generalDirection#object=, so you refrain from =autoActDescription=.</string>
+  <string Context="spotmessage" ID="=subject.Does#verb= =object.an= =subject.generalDirection#object=, so you refrain from =autoActDescription=.">=subject.Does#verb= =object.an= =subject.generalDirection#object=, so you refrain from =autoActDescription=.</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/GameObject.cs:12807-->
+  <string Context="spotmessage" ID="=subject.Does#verb= =object.an= =subject.generalDirection#object= and stop =autoActDescription=.">=subject.Does#verb= =object.an= =subject.generalDirection#object= and stop =autoActDescription=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/GameObject.cs:12808-->
+  <string Context="spotmessage" ID="=subject.Does#verb= =object.an:notvisible= =subject.generalDirection#object=, so you refrain from =autoActDescription=.">=subject.Does#verb= =object.an:notvisible= =subject.generalDirection#object=, so you refrain from =autoActDescription=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/GameObject.cs:12809-->
   <string Context="spotmessage" ID="=subject.Does#verb= =object.an:notvisible= =subject.generalDirection#object= and stop =autoActDescription=.">=subject.Does#verb= =object.an:notvisible= =subject.generalDirection#object= and stop =autoActDescription=.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/GameObject.cs:18348-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/GameObject.cs:18355-->
   <string Context="ConfirmMoveInto LiquidPool Up or Down" ID="There =pool.is= a dangerous-looking =pool.short= that way. Do you want to go =direction.indicativeDirection= and start swimming?">There =pool.is= a dangerous-looking =pool.short= that way. Do you want to go =direction.indicativeDirection= and start swimming?</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/GameObject.cs:18349-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/GameObject.cs:18356-->
   <string Context="ConfirmMoveInto LiquidPool Up or Down" ID="There =pool.is= =pool.a.name= that way. Do you want to go =direction.indicativeDirection= and start swimming?">There =pool.is= =pool.a.name= that way. Do you want to go =direction.indicativeDirection= and start swimming?</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/GameObject.cs:18350-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/GameObject.cs:18357-->
   <string Context="ConfirmMoveInto LiquidPool" ID="There =pool.is= a dangerous-looking =pool.short= that way. Move =direction.expandedDirection= again to enter =pool.them= and start swimming.">There =pool.is= a dangerous-looking =pool.short= that way. Move =direction.expandedDirection= again to enter =pool.them= and start swimming.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/GameObject.cs:18351-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/GameObject.cs:18358-->
   <string Context="ConfirmMoveInto LiquidPool" ID="There =pool.is= =pool.a.name= that way. Move =direction.expandedDirection= again to enter =pool.them= and start swimming.">There =pool.is= =pool.a.name= that way. Move =direction.expandedDirection= again to enter =pool.them= and start swimming.</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:218-->
   <string Context="RandomAltarBaetyl Mod Demand Prefix Name" ID="=number.cardinal= =mod.name= =number.pluralize:item=">=number.cardinal= =mod.name= =number.pluralize:item=</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:219-->
   <string Context="RandomAltarBaetyl Mod Demand Suffix Name" ID="=number.cardinal= =number.pluralize:item= =mod.name=">=number.cardinal= =number.pluralize:item= =mod.name=</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:316-->
-  <string Context="RandomAltarBaetyl Object Demand (fragment)" ID="=number.cardinal= =demandName= =adjunctNoun.pluralize=">=number.cardinal= =demandName= =adjunctNoun.pluralize=</string>
+  <string Context="RandomAltarBaetyl Object Demand (fragment)" ID="=number.cardinal= =demandName= =adjunctNoun|pluralize=">=number.cardinal= =demandName= =adjunctNoun|pluralize=</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:317-->
   <string Context="RandomAltarBaetyl Object Demand (fragment)" ID="=demandName|article= =adjunctNoun=">=demandName|article= =adjunctNoun=</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:318-->
@@ -2393,6 +2493,249 @@ Assets/XRL Application/World/Game Objects/Parts/Physics.cs:880
   <string Context="Physics AccelerateInternal my damage message w/ pens" ID="=pens.pens= from =subject.a.name= colliding with =object.them=.">=pens.pens= from =subject.a.name= colliding with =object.them=.</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:4909-->
   <string ID="=subject.An= =subject.verb#ArriveVerb= =subject.direction=.">=subject.An= =subject.verb#ArriveVerb= =subject.direction=.</string>
+  <!--Code references _S():
+Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:94
+Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:99
+-->
+  <string Context="Campfire GetPointsOfInterest" ID="nearest">nearest</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:177-->
+  <string Context="Campfire InventoryAction" ID="cook">cook</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:180-->
+  <string Context="Campfire InventoryAction" ID="extinguish">extinguish</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:235-->
+  <string Context="Campfire PresetMeal CookingActions" ID="Eat =cookingRecipe.name.recolor:Y=">Eat =cookingRecipe.name.recolor:Y=</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:254-->
+  <string Context="Campfire CookingActions" ID="Whip up a meal.">Whip up a meal.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:261-->
+  <string Context="Campfire CookingActions" ID="Choose ingredients to cook with.">Choose ingredients to cook with.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:269-->
+  <string Context="Campfire CookingActions" ID="Cook from a recipe.">Cook from a recipe.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:277-->
+  <string Context="Campfire CookingActions" ID="Preserve your fresh foods.">Preserve your fresh foods.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:287-->
+  <string Context="Campfire CookingActions" ID="Preserve your exotic foods.">Preserve your exotic foods.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:299-->
+  <string Context="Campfire CookingActions" ID="Stop bleeding.">Stop bleeding.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:307-->
+  <string Context="Campfire CookingActions" ID="Treat poison.">Treat poison.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:315-->
+  <string Context="Campfire CookingActions" ID="Treat illness.">Treat illness.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:323-->
+  <string Context="Campfire CookingActions" ID="Treat disease onset.">Treat disease onset.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:759-->
+  <string Context="Campfire PreserveItems default ServingType" ID="serving">serving</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:761-->
+  <string Context="Campfire PreserveItems default ServingName" ID="=sample.displayNameOnlyDirect=">=sample.displayNameOnlyDirect=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:766-->
+  <string Context="Campfire PreserveItem item n=1, capitalize" ID="=item.A.name= into =servingNum= =servingType.pluralize#servingNum= of =servingName=">=item.A.name= into =servingNum= =servingType.pluralize#servingNum= of =servingName=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:768-->
+  <string Context="Campfire PreserveItem item n=1, no capitalize" ID="=item.a.name= into =servingNum= =servingType.pluralize#servingNum= of =servingName=">=item.a.name= into =servingNum= =servingType.pluralize#servingNum= of =servingName=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:770-->
+  <string Context="Campfire PreserveItem item n!=1, capitalize" ID="=num= =item.pluralize= into =servingNum= =servingType.pluralize#servingNum= of =servingName=">=num= =item.pluralize= into =servingNum= =servingType.pluralize#servingNum= of =servingName=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:772-->
+  <string Context="Campfire PreserveItem item n!=1, no capitalize" ID="=num= =item.pluralize= into =servingNum= =servingType.pluralize#servingNum= of =servingName=">=num= =item.pluralize= into =servingNum= =servingType.pluralize#servingNum= of =servingName=</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:855-->
+  <string Context="Campfire Preserve error" ID="You don't have the Cooking and Gathering skill.">You don't have the Cooking and Gathering skill.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:861-->
+  <string Context="Campfire Preserve error" ID="You don't have anything to preserve.">You don't have anything to preserve.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:870-->
+  <string Context="Campfire Preserve final message" ID="You preserved:&#xA;&#xA;=items.join:.&#xA;=." Value="You preserved:&#xA;&#xA;=items.join:.&#xA;=." />
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:882-->
+  <string Context="Campfire PreserveExotic error" ID="You don't have the Cooking and Gathering skill.">You don't have the Cooking and Gathering skill.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:888-->
+  <string Context="Campfire PreserveExotic error" ID="You don't have anything to preserve.">You don't have anything to preserve.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:905-->
+  <string Context="Campfire PreserveExotic item name" ID="=item.name=">=item.name=</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:911-->
+  <string Context="Campfire PreserveExoctic" ID="Choose exotic foods to preserve.">Choose exotic foods to preserve.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:922-->
+  <string Context="Campfire PreserveExotic ConfirmUseImportant verb" ID="preserve">preserve</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:932-->
+  <string Context="Campfire PreserveExotic AskNumber Title" ID="=item.DisplayNameOnlyDirect= how many do you want to preserve? (max = =item.count=)">=item.DisplayNameOnlyDirect= how many do you want to preserve? (max = =item.count=)</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:967-->
+  <string Context="Campfire PreserveExotic Final Message" ID="You preserved:&#xA;&#xA;=preserveItem=." Value="You preserved:&#xA;&#xA;=preserveItem=." />
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:987-->
+  <string Context="Campfire CookPreseMeal error" ID="You aren't hungry. Instead, you relax by the warmth of the fire.">You aren't hungry. Instead, you relax by the warmth of the fire.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:1002-->
+  <string Context="Campfire CookPresetMeal Carnivorous Sick" ID="Ugh, you feel sick.">Ugh, you feel sick.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:1059-->
+  <string Context="Campfire CookFromIngredients error" ID="You aren't hungry. Instead, you relax by the warmth of the fire.">You aren't hungry. Instead, you relax by the warmth of the fire.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:1077-->
+  <string Context="Campfire CookFromIngredients ingredient name" ID="=subject.cookingIngredientName=">=subject.cookingIngredientName=</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:1118-->
+  <string Context="Campfire CookFromIngredients Error" ID="You don't have the Cooking and Gathering skill.">You don't have the Cooking and Gathering skill.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:1199-->
+  <string Context="Campfire CookFromIngredients remaining, selected &lt; max" ID="&#xA;{{y|[up to =n= remaining]}}" Value="&#xA;{{y|[up to =n= remaining]}}" />
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:1205-->
+  <string Context="Campfire CookFromIngredients remaining, selected = max" ID="&#xA;{{y|[0 remaining]}}" Value="&#xA;{{y|[0 remaining]}}" />
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:1207-->
+  <string Context="Campfire CookFromIngredients - select ingredients cook action" ID="{{W|Cook with the {{=color=|=n=}} selected ingredients.}}=remaining=">{{W|Cook with the {{=color=|=n=}} selected ingredients.}}=remaining=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:1235-->
+  <string Context="Campfire CookFromIngredients ingredient selector menu" ID="=selected.checkbox=  =name= {{{{K|x=count=}}}}">=selected.checkbox=  =name= {{{{K|x=count=}}}}</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:1246-->
+  <string Context="Campfire CookFromIngredients ingredient selector menu title" ID="Choose ingredients to cook with.">Choose ingredients to cook with.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:1359-->
+  <string Context="Campfire CookFromIngredients Inspired Picker Title" ID="You let inspiration guide you toward a mouthwatering dish.">You let inspiration guide you toward a mouthwatering dish.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:1372-->
+  <string Context="Campfire CookFromIngredientes Inspired Recipe" ID="You create a new recipe for {{|=recipe.name=}}!">You create a new recipe for {{|=recipe.name=}}!</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:1378-->
+  <string Context="Campfire CookFromIngredientes Inspired Recipe Accomplishment" ID="You invented a mouthwatering dish called {{|=recipe.name=}}!">You invented a mouthwatering dish called {{|=recipe.name=}}!</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:1384-->
+  <string Context="Campfire CookFromIngredientes Inspired Recipe MuralText" ID="In a moment of divine inspiration, the Carbide Chef =player.name= invented the mouthwatering dish called {{|=recipe.name=}}.">In a moment of divine inspiration, the Carbide Chef =player.name= invented the mouthwatering dish called {{|=recipe.name=}}.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:1392-->
+  <string Context="Campfire CookFromIngredientes Inspired Recipe MuralText" ID="At a remote tavern near =landmark.nearest=, =player.name= met with a group of kippers and, divinely inspired by =spice:elements.$domain.practices.!random&gt;, invented the dish called =recipe.name=.">At a remote tavern near =landmark.nearest=, =player.name= met with a group of kippers and, divinely inspired by =spice:elements.$domain.practices.!random&gt;, invented the dish called =recipe.name=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:1430-->
+  <string Context="Campfire CookFromIngredients final message" ID="You start to metabolize the meal, gaining the following effect for the rest of the day:&#xA;&#xA;{{W|=effect=}}" Value="You start to metabolize the meal, gaining the following effect for the rest of the day:&#xA;&#xA;{{W|=effect=}}" />
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:1500-->
+  <string Context="Campfire CookFromRecipe Error" ID="You don't have the Cooking and Gathering skill.">You don't have the Cooking and Gathering skill.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:1505-->
+  <string Context="Campfire CookFromRecipe Error" ID="You aren't hungry. Instead, you relax by the warmth of the fire.">You aren't hungry. Instead, you relax by the warmth of the fire.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:1547-->
+  <string Context="Campfire CookFromRecipe Error" ID="You don't know any recipes.">You don't know any recipes.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:1556-->
+  <string Context="Campfire CookFromRecipe Menu - hidden display" ID="{{K|&lt; =countMissing= hidden for missing ingredients &gt;}}">{{K|&lt; =countMissing= hidden for missing ingredients &gt;}}</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:1560-->
+  <string Context="Campfire CookFromRecipe Menu - Show hidden option" ID="Show =countMissing= hidden recipes missing ingredients">Show =countMissing= hidden recipes missing ingredients</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:1567-->
+  <string Context="Campfire CookFromRecipe Menu Title" ID="Choose a recipe">Choose a recipe</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:1583-->
+  <string Context="Campfire CookFromRecipe Menu Action Menu" ID="Add to favorite recipes">Add to favorite recipes</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:1586-->
+  <string Context="Campfire CookFromRecipe Menu Action Menu" ID="Remove from favorite recipes">Remove from favorite recipes</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:1591-->
+  <string Context="Campfire CookFromRecipe Menu Action Menu" ID="Cook">Cook</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:1593-->
+  <string Context="Campfire CookFromRecipe Menu Action Menu" ID="Forget">Forget</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:1594-->
+  <string Context="Campfire CookFromRecipe Menu Action Menu" ID="Back">Back</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:1612-->
+  <string Context="Campfire CookFromRecipe Confirm Forget" ID="Are you sure you want to forget this recipe?">Are you sure you want to forget this recipe?</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:1671-->
+  <string Context="Campfire Cook Error" ID="You can't cook with hostile creatures nearby.">You can't cook with hostile creatures nearby.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:1679-->
+  <string Context="Campfire Cook Error" ID="=subject.Does:are= turned off.">=subject.Does:are= turned off.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:1684-->
+  <string Context="Campfire Cook Error" ID="=subject.Does:do= not have enough charge to operate.">=subject.Does:do= not have enough charge to operate.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:1689-->
+  <string Context="Campfire Cook Error" ID="=subject.Does:need= to be hung up first.">=subject.Does:need= to be hung up first.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:1693-->
+  <string Context="Campfire Cook Error" ID="=subject.Does:do= not seem to be working.">=subject.Does:do= not seem to be working.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:1715-->
+  <string Context="Campfire Cook CookingActions Menu Title" ID="{{W|The fire breathes its warmth on your bones.}}">{{W|The fire breathes its warmth on your bones.}}</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:1831-->
+  <string Context="Campfire RollTasty" ID="You eat the meal. It's tastier than usual.">You eat the meal. It's tastier than usual.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:1831-->
+  <string Context="Campfire RollTasty" ID="You gorge on the succulent meat. It's tastier than usual.">You gorge on the succulent meat. It's tastier than usual.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:1867-->
+  <string Context="Campfire RollIngredients Failure" ID="a pinch of salt">a pinch of salt</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:1884-->
+  <string Context="Campfire RollIngredients ingredient name" ID="=ingredient.cookingIngredientName=">=ingredient.cookingIngredientName=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:1903-->
+  <string Context="Campfire RollIngredients random ingredient" ID="=spice:cooking.ingredient.!random=">=spice:cooking.ingredient.!random=</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:1927-->
+  <string Context="Campfire DescribeMeal fallback default ingredients" ID="unknown">unknown</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:1932-->
+  <string Context="Campfire DescribeMeal" ID="=spice:cooking.cookTemplate.!random=">=spice:cooking.cookTemplate.!random=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2063-->
+  <string Context="Campfire NostrumsStopBleeding" ID="You try to staunch the wounds of =object.the.name:withoutTitles=, but your limbs pass through =object.them=.">You try to staunch the wounds of =object.the.name:withoutTitles=, but your limbs pass through =object.them=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2072-->
+  <string Context="Campfire NostrumsStopBleeding" ID="You try to staunch the wounds of =object.the.name:withoutTitles=, but cannot affect =object.them=.">You try to staunch the wounds of =object.the.name:withoutTitles=, but cannot affect =object.them=.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2087-->
+  <string Context="Campfire NostrumsStopBleeding" ID="You staunch your wounds, though some are too deep to treat.">You staunch your wounds, though some are too deep to treat.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2091-->
+  <string Context="Campfire NostrumsStopBleeding" ID="You staunch the wounds of =object.the.name:withoutTitles=, though some are too deep to treat.">You staunch the wounds of =object.the.name:withoutTitles=, though some are too deep to treat.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2101-->
+  <string Context="Campfire NostrumsStopBleeding" ID="You staunch your wounds.">You staunch your wounds.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2105-->
+  <string Context="Campfire NostrumsStopBleeding" ID="You staunch the wounds of =object.the.name:withoutTitles=.">You staunch the wounds of =object.the.name:withoutTitles=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2124-->
+  <string Context="Campfire NostrumsStopBleeding" ID="=object.name's= wounds are too deep to treat.">=object.name's= wounds are too deep to treat.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2137-->
+  <string Context="Campfire NostrumsStopBleeding" ID="You are not bleeding.">You are not bleeding.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2142-->
+  <string Context="Campfire NostrumsStopBleeding" ID="Neither you nor =object.the.name= are bleeding.">Neither you nor =object.the.name= are bleeding.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2149-->
+  <string Context="Campfire NostrumsStopBleeding" ID="Neither you nor any of your nearby companions are bleeding.">Neither you nor any of your nearby companions are bleeding.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2170-->
+  <string Context="Campfire NostrumsTreatPoison" ID="Treat whom first?">Treat whom first?</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2170-->
+  <string Context="Campfire NostrumsTreatPoison" ID="Treat whom next?">Treat whom next?</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2187-->
+  <string Context="Campfire NostrumsTreatPoison" ID="You have no medicinal ingredients with which to treat the poison coursing through =object.the.name=.">You have no medicinal ingredients with which to treat the poison coursing through =object.the.name=.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2194-->
+  <string Context="Campfire NostrumsTreatPoison" ID="Select an ingredient to use.">Select an ingredient to use.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2201-->
+  <string Context="Campfire NostrumsTreatPoison" ID="You try to cure the poison coursing through =object.the.name=, but your limbs pass through =object.them=.">You try to cure the poison coursing through =object.the.name=, but your limbs pass through =object.them=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2211-->
+  <string Context="Campfire NostrumsTreatPoison" ID="You try to cure the poison coursing through =object.the.name=, but cannot affect =object.them=.">You try to cure the poison coursing through =object.the.name=, but cannot affect =object.them=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2222-->
+  <string Context="Campfire NostrumsTreatPoison" ID="You cure the =result.pluralize:poison= coursing through =object.the.name= with a balm made from =cure.a.name=.">You cure the =result.pluralize:poison= coursing through =object.the.name= with a balm made from =cure.a.name=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2233-->
+  <string Context="Campfire NostrumsTreatPoison" ID="You try to cure the poison coursing through =object.the.name=, but your cures are ineffective.">You try to cure the poison coursing through =object.the.name=, but your cures are ineffective.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2249-->
+  <string Context="Campfire NostrumsTreatPoison" ID="The poison affecting you is too strong to be cured by your nostrums.">The poison affecting you is too strong to be cured by your nostrums.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2254-->
+  <string Context="Campfire NostrumsTreatPoison" ID="The poison affecting you and =object.the.name= is too strong to be cured by your nostrums.">The poison affecting you and =object.the.name= is too strong to be cured by your nostrums.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2262-->
+  <string Context="Campfire NostrumsTreatPoison" ID="The poison affecting you and your companions is too strong to be cured by your nostrums.">The poison affecting you and your companions is too strong to be cured by your nostrums.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2267-->
+  <string Context="Campfire NostrumsTreatPoison" ID="The poison affecting =list.andList= is too strong to be cured by your nostrums.">The poison affecting =list.andList= is too strong to be cured by your nostrums.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2277-->
+  <string Context="Campfire NostrumsTreatPoison" ID="You are not poisoned.">You are not poisoned.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2282-->
+  <string Context="Campfire NostrumsTreatPoison" ID="Neither you nor =object.the.name= are poisoned.">Neither you nor =object.the.name= are poisoned.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2290-->
+  <string Context="Campfire NostrumsTreatPoison" ID="Neither you nor any of your nearby companions are poisoned.">Neither you nor any of your nearby companions are poisoned.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2312-->
+  <string Context="Campfire NostrumsTreatIllness" ID="Treat whom first?">Treat whom first?</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2312-->
+  <string Context="Campfire NostrumsTreatIllness" ID="Treat whom next?">Treat whom next?</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2329-->
+  <string Context="Campfire NostrumsTreatIllness" ID="You have no medicinal ingredients with which to treat =object.name's= illness.">You have no medicinal ingredients with which to treat =object.name's= illness.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2336-->
+  <string Context="Campfire NostrumsTreatIllness" ID="Select an ingredient to use.">Select an ingredient to use.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2344-->
+  <string Context="Campfire NostrumsTreatIllness" ID="You try to cure =object.name's= illness, but your limbs pass through =object.them=.">You try to cure =object.name's= illness, but your limbs pass through =object.them=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2355-->
+  <string Context="Campfire NostrumsTreatIllness" ID="You try to cure =object.name's= illness, but cannot affect =object.them=.">You try to cure =object.name's= illness, but cannot affect =object.them=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2366-->
+  <string Context="Campfire NostrumsTreatIllness" ID="You cure =object.name's= illness with a balm made from =cure.a.name=.">You cure =object.name's= illness with a balm made from =cure.a.name=.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2379-->
+  <string Context="Campfire NostrumsTreatIllness" ID="You are not ill.">You are not ill.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2384-->
+  <string Context="Campfire NostrumsTreatIllness" ID="Neither you nor =object.the.name= are ill.">Neither you nor =object.the.name= are ill.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2391-->
+  <string Context="Campfire NostrumsTreatIllness" ID="Neither you nor any of your nearby companions are ill.">Neither you nor any of your nearby companions are ill.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2425-->
+  <string Context="Campfire NostrumsTreatDiseaseOnset" ID="Treat whom first?">Treat whom first?</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2425-->
+  <string Context="Campfire NostrumsTreatDiseaseOnset" ID="Treat whom next?">Treat whom next?</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2445-->
+  <string Context="Campfire NostrumsTreatDiseaseOnest" ID="=object.Does:already:have= boosted immunity from a nostrum.">=object.Does:already:have= boosted immunity from a nostrum.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2455-->
+  <string Context="Campfire NostrumsTreadDiseaseOnset" ID="You have no medicinal ingredients with which to treat =object.name's= =effect.description=.">You have no medicinal ingredients with which to treat =object.name's= =effect.description=.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2463-->
+  <string Context="Campfire NostrumsTreatDiseaseOnset" ID="Select an ingredient to use.">Select an ingredient to use.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2470-->
+  <string Context="Campfire NostrumsTreatDiseaseOnset" ID="You try to cure =object.name's= disease onset, but your limbs pass through =object.them=.">You try to cure =object.name's= disease onset, but your limbs pass through =object.them=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2480-->
+  <string Context="Campfire NostrumsTreatDiseaseOnset" ID="You try to cure =object.name's= disease onset, but cannot affect =object.them=.">You try to cure =object.name's= disease onset, but cannot affect =object.them=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2492-->
+  <string Context="Campfire NostrumsTreatDiseaseOnset" ID="You cure =object.name's= =effect.description= with a balm made from =cure.a.name=.">You cure =object.name's= =effect.description= with a balm made from =cure.a.name=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2507-->
+  <string Context="Campfire NostrumsTreatDiseaseOnset" ID="You boost =object.name's= immunity with a balm made from =cure.a.name=.">You boost =object.name's= immunity with a balm made from =cure.a.name=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2518-->
+  <string Context="Campfire NostrumsTreatDiseaseOnset" ID="You try to boost =object.name's= immunity with a balm made from =cure.a.name=, but it is ineffective.">You try to boost =object.name's= immunity with a balm made from =cure.a.name=, but it is ineffective.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2533-->
+  <string Context="Campfire NostrumsTreatDiseaseOnset" ID="You are not suffering from the onset of a disease.">You are not suffering from the onset of a disease.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2538-->
+  <string Context="Campfire NostrumsTreatDiseaseOnset" ID="Neither you nor =object.the.name= are suffering from the onset of a disease.">Neither you nor =object.the.name= are suffering from the onset of a disease.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2545-->
+  <string Context="Campfire NostrumsTreatDiseaseOnset" ID="Neither you nor any of your nearby companions are suffering from the onset of a disease.">Neither you nor any of your nearby companions are suffering from the onset of a disease.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2555-->
+  <string Context="Campfire Extinguish" ID="=subject.Does:extinguish= =object.the.name=.">=subject.Does:extinguish= =object.the.name=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:2563-->
+  <string Context="Campfire Extinguish" ID="=subject.Does:are= extinguished =object.the.name=.">=subject.Does:are= extinguished =object.the.name=.</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Cookbook.cs:58-->
   <string Context="Cookbook Inventory Action" ID="read">read</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Cookbook.cs:107-->
@@ -2410,25 +2753,25 @@ Assets/XRL Application/World/Game Objects/Parts/Physics.cs:880
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Cookbook.cs:192-->
   <string Context="Cookbook Finalize Name" ID="{{g|=name|title=}}">{{g|=name|title=}}</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Cookbook.cs:282-->
-  <string Context="Cookbook ChefName for Recipie" ID="Chef =chefName=">Chef =chefName=</string>
+  <string Context="Cookbook ChefName for Recipe" ID="Chef =chefName=">Chef =chefName=</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/CookingRecipe.cs:39-->
   <string Context="CookingRecipe GetDisplayName" ID="=chefName|'s= =displayName=">=chefName|'s= =displayName=</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/CookingRecipe.cs:198-->
-  <string Context="CookingRecipie GetAnnotatedDisplayName (component fragment)" ID="=component.name={{K|(=component.quanitiy=)}}">=component.name={{K|(=component.quanitiy=)}}</string>
+  <string Context="CookingRecipe GetAnnotatedDisplayName (component fragment)" ID="=component.name={{K|(=component.quanitiy=)}}">=component.name={{K|(=component.quanitiy=)}}</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/CookingRecipe.cs:200-->
-  <string Context="CookingRecipie GetAnnotatedDisplayName (component fragment)" ID="=component.name=">=component.name=</string>
+  <string Context="CookingRecipe GetAnnotatedDisplayName (component fragment)" ID="=component.name=">=component.name=</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/CookingRecipe.cs:209-->
-  <string Context="CookingRecipie GetAnnotatedDisplayName missing ingredients, multi-line" ID="=favorite.if:{{R|♥}} ={{K|=displayName|strip=}}&#xA;=components.join:, =">=favorite.if:{{R|♥}} ={{K|=displayName|strip=}}
+  <string Context="CookingRecipe GetAnnotatedDisplayName missing ingredients, multi-line" ID="=favorite.if:{{R|♥}} ={{K|=displayName|strip=}}&#xA;=components.join:, =">=favorite.if:{{R|♥}} ={{K|=displayName|strip=}}
 =components.join:, =</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/CookingRecipe.cs:211-->
-  <string Context="CookingRecipie GetAnnotatedDisplayName missing ingredients, single-line" ID="=favorite.if:{{R|♥}} ={{K|=displayName|strip=}} [=components.join:, =]">=favorite.if:{{R|♥}} ={{K|=displayName|strip=}} [=components.join:, =]</string>
+  <string Context="CookingRecipe GetAnnotatedDisplayName missing ingredients, single-line" ID="=favorite.if:{{R|♥}} ={{K|=displayName|strip=}} [=components.join:, =]">=favorite.if:{{R|♥}} ={{K|=displayName|strip=}} [=components.join:, =]</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/CookingRecipe.cs:213-->
-  <string Context="CookingRecipie GetAnnotatedDisplayName has ingredients, multi-line" ID="=favorite.if:{{R|♥}} ==displayName=&#xA;=components.join:, =">=favorite.if:{{R|♥}} ==displayName=
+  <string Context="CookingRecipe GetAnnotatedDisplayName has ingredients, multi-line" ID="=favorite.if:{{R|♥}} ==displayName=&#xA;=components.join:, =">=favorite.if:{{R|♥}} ==displayName=
 =components.join:, =</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/CookingRecipe.cs:215-->
-  <string Context="CookingRecipie GetAnnotatedDisplayName has ingredients, single-line" ID="=favorite.if:{{R|♥}} ==displayName= [=components.join:, =]">=favorite.if:{{R|♥}} ==displayName= [=components.join:, =]</string>
+  <string Context="CookingRecipe GetAnnotatedDisplayName has ingredients, single-line" ID="=favorite.if:{{R|♥}} ==displayName= [=components.join:, =]">=favorite.if:{{R|♥}} ==displayName= [=components.join:, =]</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/CookingRecipe.cs:286-->
-  <string Context="CookingRecipie ApplyEffects Popup" ID="You start to metabolize the meal, gaining the following effect for the rest of the day:&#xA;&#xA;{{W|=messages.join:&#xA;=}}" Value="You start to metabolize the meal, gaining the following effect for the rest of the day:&#xA;&#xA;{{W|=messages.join:&#xA;=}}" />
+  <string Context="CookingRecipe ApplyEffects Popup" ID="You start to metabolize the meal, gaining the following effect for the rest of the day:&#xA;&#xA;{{W|=messages.join:&#xA;=}}" Value="You start to metabolize the meal, gaining the following effect for the rest of the day:&#xA;&#xA;{{W|=messages.join:&#xA;=}}" />
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/CookingRecipe.cs:516-->
   <string Context="CookingRecipe Naming Ingredient" ID="=item.short|strip=">=item.short|strip=</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/CookingRecipe.cs:524-->
@@ -2485,6 +2828,15 @@ Assets/XRL Application/World/Game Objects/Parts/Physics.cs:880
   <string Context="Tinker Recharge pick item title" ID="Select an item to charge.">Select an item to charge.</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Tinkering/Tinker1.cs:192-->
   <string Context="Tinker Recharge Ability Name" ID="Recharge">Recharge</string>
+  <!--Code references _T():
+Assets/XRL Application/World/Game Objects/Parts/Terrain/VillageTerrain.cs:77
+Assets/XRL Application/World/Game Objects/Parts/Terrain/VillageTerrain.cs:87
+-->
+  <string Context="VillageTerrain text fragment" ID="=spice:history.regions.terrain.$terrain.over.!random=">=spice:history.regions.terrain.$terrain.over.!random=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Terrain/VillageTerrain.cs:94-->
+  <string Context="VillageTerrain text terrainFragment double" ID="=terrainFragment= and =terrainFragment2=">=terrainFragment= and =terrainFragment2=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Terrain/VillageTerrain.cs:109-->
+  <string Context="VillageTerrain Description" ID="=spice:villages.description.!random=">=spice:villages.description.!random=</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Relics/World.RelicGenerator.cs:42-->
   <string ID="Loading Relics.xml">Loading Relics.xml</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Relics/World.RelicGenerator.cs:153-->
@@ -2600,6 +2952,106 @@ Assets/XRL Application/World/Settlements/World.Settlements.cs:111
   <string Context="Default LairName" ID="lair">lair</string>
   <!--Code references _T(): Assets/XRL Application/World/Text/Delegates/Delegates.Numbers.cs:65-->
   <string Context="damage penetrations" ID="(x=number.toString=)">(x=number.toString=)</string>
+  <!--Code references _S(): Assets/XRL Application/World/Zones/Builders/Villages/Village.cs:129-->
+  <string Context="Village Warden friend reason" ID="defending their village">defending their village</string>
+  <!--Code references _T(): Assets/XRL Application/World/Zones/Builders/Villages/Village.cs:146-->
+  <string Context="Village Warden Conversation dialog" ID="=spice:villages.warden.introDialog.!random=">=spice:villages.warden.introDialog.!random=</string>
+  <!--Code references _S(): Assets/XRL Application/World/Zones/Builders/Villages/Village.cs:153-->
+  <string Context="Village Warden Conversation response" ID="Live and drink.">Live and drink.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Zones/Builders/Villages/Village.cs:240-->
+  <string Context="Village mayor teaches dish conversation prompt" ID="What a savory smell! Teach me to cook the favorite dish of =villageName=.&#xA;">What a savory smell! Teach me to cook the favorite dish of =villageName=.
+</string>
+  <!--Code references _T(): Assets/XRL Application/World/Zones/Builders/Villages/Village.cs:256-->
+  <string Context="Village mayor conversation welcome message" ID="=spice:villages.mayor.introDialog.!random=">=spice:villages.mayor.introDialog.!random=</string>
+  <!--Code references _S(): Assets/XRL Application/World/Zones/Builders/Villages/Village.cs:261-->
+  <string Context="Village Mayor conversation prompt" ID="Live and drink, =pronouns.formalAddressTerm=.">Live and drink, =pronouns.formalAddressTerm=.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Zones/Builders/Villages/Village.cs:322-->
+  <string Context="Village merchant conversation intro" ID="Welcome, =player.species=. What do you desire?">Welcome, =player.species=. What do you desire?</string>
+  <!--Code references _S(): Assets/XRL Application/World/Zones/Builders/Villages/Village.cs:327-->
+  <string Context="Village merchant conversation intro" ID="Come. Browse my wares, =player.formalAddressTerm=.">Come. Browse my wares, =player.formalAddressTerm=.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Zones/Builders/Villages/Village.cs:328-->
+  <string Context="Village merchant conversation prompt" ID="Live and drink, =pronouns.formalAddressTerm=.">Live and drink, =pronouns.formalAddressTerm=.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Zones/Builders/Villages/Village.cs:440-->
+  <string Context="Village apothecary conversation intro low tier" ID="I've the cure for what ails you.~You don't look so good. You need more yuckwheat and honey in your diet.~Cook your meals with yuckwheat if you feel sick. Catch a disease early enough and you can kill it.~&quot;Ease the pain, addle the brain.&quot; Be careful when you chew witchwood bark.">I've the cure for what ails you.~You don't look so good. You need more yuckwheat and honey in your diet.~Cook your meals with yuckwheat if you feel sick. Catch a disease early enough and you can kill it.~"Ease the pain, addle the brain." Be careful when you chew witchwood bark.</string>
+  <!--Code references _S():
+Assets/XRL Application/World/Zones/Builders/Villages/Village.cs:441
+Assets/XRL Application/World/Zones/Builders/Villages/Village.cs:450
+-->
+  <string Context="Village apothecary conversation prompt" ID="Live and drink.">Live and drink.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Zones/Builders/Villages/Village.cs:449-->
+  <string Context="Village apothecary conversation intro" ID="I've the cure for what ails you.~You don't look so good. You need more yuckwheat and honey in your diet.~Cook your meals with yuckwheat if you feel sick. Catch a disease early enough and you can kill it.~&quot;Ease the pain, addle the brain.&quot; Be careful when you chew witchwood bark.~In the market for a tonic, =player.formalAddressTerm=? Spend water now or blood later, your choice.~Prickly-boons and yuckwheat for trade.~If you came for the humble pie, you had best not have led any mind-hunters here.~Have you got enough tonics?">I've the cure for what ails you.~You don't look so good. You need more yuckwheat and honey in your diet.~Cook your meals with yuckwheat if you feel sick. Catch a disease early enough and you can kill it.~"Ease the pain, addle the brain." Be careful when you chew witchwood bark.~In the market for a tonic, =player.formalAddressTerm=? Spend water now or blood later, your choice.~Prickly-boons and yuckwheat for trade.~If you came for the humble pie, you had best not have led any mind-hunters here.~Have you got enough tonics?</string>
+  <!--Code references _S(): Assets/XRL Application/World/Zones/Builders/Villages/Village.cs:532-->
+  <string Context="Village tinker conversation intro" ID="Need a gadget repaired or identified, =player.formalAddressTerm=? Or if you're a tinker =player.reflexive=, perhaps you'd like to peruse my schematics?">Need a gadget repaired or identified, =player.formalAddressTerm=? Or if you're a tinker =player.reflexive=, perhaps you'd like to peruse my schematics?</string>
+  <!--Code references _S(): Assets/XRL Application/World/Zones/Builders/Villages/Village.cs:533-->
+  <string Context="Village tinker conversation prompt" ID="Live and drink, tinker.">Live and drink, tinker.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Zones/Builders/Villages/Village.cs:618-->
+  <string Context="Village immigrant conversation intro" ID="Moon and Sun. Wisdom and will.~May the earth yield for us this season.~Peace, =player.formalAddressTerm=.">Moon and Sun. Wisdom and will.~May the earth yield for us this season.~Peace, =player.formalAddressTerm=.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Zones/Builders/Villages/Village.cs:657-->
+  <string Context="Village pet conversation intro" ID="*does not react*">*does not react*</string>
+  <!--Code references _S(): Assets/XRL Application/World/Zones/Builders/Villages/Village.cs:658-->
+  <string Context="Village pet conversation prompt" ID="Live and drink.">Live and drink.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Zones/Builders/Villages/Village.cs:2023-->
+  <string Context="Village colonist conversation intro texts" ID="Moon and Sun. Wisdom and will.~May the earth yield for us this season.~Peace, =player.formalAddressTerm=.">Moon and Sun. Wisdom and will.~May the earth yield for us this season.~Peace, =player.formalAddressTerm=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Zones/Builders/Villages/Village.cs:2083-->
+  <string Context="Village pet question answer for single pet" ID="=spice:villages.pet.originStorySingle.!random=">=spice:villages.pet.originStorySingle.!random=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Zones/Builders/Villages/Village.cs:2092-->
+  <string Context="Village pet question answer for single pet" ID="=spice:villages.pet.originStoryMultiple.!random=">=spice:villages.pet.originStoryMultiple.!random=</string>
+  <!--Code references _S(): Assets/XRL Application/World/Zones/Builders/Villages/Village.cs:2117-->
+  <string Context="Village villager conversation intro" ID="Moon and Sun. Wisdom and will.~May the earth yield for us this season.~Peace, =player.formalAddressTerm=.">Moon and Sun. Wisdom and will.~May the earth yield for us this season.~Peace, =player.formalAddressTerm=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Zones/Builders/Villages/Village.cs:2265-->
+  <string Context="Village reveal string" ID="You discover the abandoned village of =villageName=.">You discover the abandoned village of =villageName=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Zones/Builders/Villages/Village.cs:2271-->
+  <string Context="Village reveal string" ID="You discover the village of =villageName=.">You discover the village of =villageName=.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Zones/Builders/Villages/VillageBase.cs:230-->
+  <string Context="VillageBase AddVillagerConversation default response" ID="Live and drink.">Live and drink.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Zones/Builders/Villages/VillageBase.cs:301-->
+  <string Context="VillageBase generateVillager default SimpleConversation Prompts" ID="Moon and Sun. Wisdom and will.~May the earth yield for us this season.~Peace, =player.formalAddressTerm=.">Moon and Sun. Wisdom and will.~May the earth yield for us this season.~Peace, =player.formalAddressTerm=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Zones/Builders/Villages/VillageBase.cs:2057-->
+  <string Context="VillageBase placeStories tattoo" ID="a scene from the history of the village {{M|=villageName=}}{{C|: =story=}}">a scene from the history of the village {{M|=villageName=}}{{C|: =story=}}</string>
+  <!--Code references _S(): Assets/XRL Application/World/Zones/Builders/Villages/VillageBase.cs:2147-->
+  <string Context="VillageBase placeStories crier conversation default" ID="I know a lot about the town!">I know a lot about the town!</string>
+  <!--Code references _T(): Assets/XRL Application/World/Zones/Builders/Villages/VillageBase.cs:2154-->
+  <string Context="VillageBase placeStories crier conversation prompt" ID="Tell me about {{=mainColor=|=snippet=}}...">Tell me about {{=mainColor=|=snippet=}}...</string>
+  <!--Code references _S(): Assets/XRL Application/World/Zones/Builders/Villages/VillageBase.cs:2334-->
+  <string Context="VillageBase placeStories robot default conversation" ID="I know a lot about the town!">I know a lot about the town!</string>
+  <!--Code references _T(): Assets/XRL Application/World/Zones/Builders/Villages/VillageBase.cs:2341-->
+  <string Context="VillageBase placeStories robot conversation prompt" ID="Tell me about {{=mainColor=|=snippet=}}...">Tell me about {{=mainColor=|=snippet=}}...</string>
+  <!--Code references _T(): Assets/XRL Application/World/Zones/Builders/Villages/VillageBase.cs:2505-->
+  <string Context="VillageBase generateHistoryBooks book title" ID="History of =villageName=, Vol. =num.roman=">History of =villageName=, Vol. =num.roman=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Zones/Builders/Villages/VillageBase.cs:2513-->
+  <string Context="VillageBase generateHistoryBooks book content" ID="{{w|This book recounts a tale from the history of the village =villageName=.}}&#xA;&#xA;=story=" Value="{{w|This book recounts a tale from the history of the village =villageName=.}}&#xA;&#xA;=story=" />
+  <!--Code references _T(): Assets/XRL Application/World/Zones/Builders/Villages/VillageBase.cs:2534-->
+  <string Context="VillageBase generatePreacherBooks title" ID="History of =villageName=">History of =villageName=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Zones/Builders/Villages/VillageBase.cs:2554-->
+  <string Context="VillageBase generatePreacherBook book text" ID="{{w|This book recounts a tale from the history of the village =villageName=.}}&#xA;&#xA;=stories.join:&#xA;=" Value="{{w|This book recounts a tale from the history of the village =villageName=.}}&#xA;&#xA;=stories.join:&#xA;=" />
+  <!--Code references _T(): Assets/XRL Application/World/Zones/Builders/Villages/VillageBase.cs:3023-->
+  <string Context="VillageBase getAVillageCanvas display name" ID="=primaryAnimal.species= =primaryAnimal.fragment:Skin:skin= tent">=primaryAnimal.species= =primaryAnimal.fragment:Skin:skin= tent</string>
+  <!--Code references _T(): Assets/XRL Application/World/Zones/Builders/Villages/VillageBase.cs:3044-->
+  <string Context="VillageBase getAVillageCanvas canvas description" ID="A leather wrought from the peeled and tanned =primaryAnimal.fragment:Skin:skin= of =primaryAnimal.refname:VillageCanvas:withIndefiniteArticle|strip= was hung in a fashion inspired by =spice:nouns.!random=.">A leather wrought from the peeled and tanned =primaryAnimal.fragment:Skin:skin= of =primaryAnimal.refname:VillageCanvas:withIndefiniteArticle|strip= was hung in a fashion inspired by =spice:nouns.!random=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Zones/Builders/Villages/VillageBase.cs:3080-->
+  <string Context="VillageBase getAVillageWall planks display name" ID="=primaryPlant.refname|strip|makeHedge=">=primaryPlant.refname|strip|makeHedge=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Zones/Builders/Villages/VillageBase.cs:3095-->
+  <string Context="VillageBase getAVillageWall planks description" ID="=primaryPlant.semantic:Plank:plank|pluralize|capitalize= of =primaryPlant.refname|strip= have been cut in a =spice:elements.!random.adjectives.!random= style and bound together with =spice:instancesOf.tar.!random= and rope.">=primaryPlant.semantic:Plank:plank|pluralize|capitalize= of =primaryPlant.refname|strip= have been cut in a =spice:elements.!random.adjectives.!random= style and bound together with =spice:instancesOf.tar.!random= and rope.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Zones/Builders/Villages/VillageBase.cs:3115-->
+  <string Context="VillageBase getAVillageWall planks description" ID="=primaryPlant.semantic:Plank:plank|pluralize|capitalize= of =primaryPlant.refname|strip= have been cut in a =spice:elements.!random.adjectives.!random= style and bound together with =spice:instancesOf.tar.!random= and =secondaryPlant.semantic:Fiber:strip|pluralize= of =secondaryPlant.refname|strip= =secondaryPlant.semantic:FiberMaterial:bark=.">=primaryPlant.semantic:Plank:plank|pluralize|capitalize= of =primaryPlant.refname|strip= have been cut in a =spice:elements.!random.adjectives.!random= style and bound together with =spice:instancesOf.tar.!random= and =secondaryPlant.semantic:Fiber:strip|pluralize= of =secondaryPlant.refname|strip= =secondaryPlant.semantic:FiberMaterial:bark=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Zones/Builders/Villages/VillageBase.cs:3134-->
+  <string Context="VillageBase getAVillageWall planks sinew display name" ID="=primaryPlant.refname|strip|makeHedge=">=primaryPlant.refname|strip|makeHedge=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Zones/Builders/Villages/VillageBase.cs:3163-->
+  <string Context="VillageBase getAVillageWall planks sinew description animal has proper name" ID="=primaryPlant.semantic:Plank:plank|pluralize|capitalize= of =primaryPlant.refname|strip= have been cut in a =spice:elements.!random.adjectives.!random= style and bound together with =spice:instancesOf.tar.!random= and =secondaryAnimal.semantic:Skin:skin= of =secondaryAnimal.refname|strip=.">=primaryPlant.semantic:Plank:plank|pluralize|capitalize= of =primaryPlant.refname|strip= have been cut in a =spice:elements.!random.adjectives.!random= style and bound together with =spice:instancesOf.tar.!random= and =secondaryAnimal.semantic:Skin:skin= of =secondaryAnimal.refname|strip=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Zones/Builders/Villages/VillageBase.cs:3173-->
+  <string Context="VillageBase getAVillageWall planks sinew description animal no proper name" ID="=primaryPlant.semantic:Plank:plank|pluralize|capitalize= of =primaryPlant.refname|strip= have been cut in a =spice:elements.!random.adjectives.!random= style and bound together with =spice:instancesOf.tar.!random= and =secondaryAnimal.refname|strip= =secondaryAnimal.semantic:Skin:skin=.">=primaryPlant.semantic:Plank:plank|pluralize|capitalize= of =primaryPlant.refname|strip= have been cut in a =spice:elements.!random.adjectives.!random= style and bound together with =spice:instancesOf.tar.!random= and =secondaryAnimal.refname|strip= =secondaryAnimal.semantic:Skin:skin=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Zones/Builders/Villages/VillageBase.cs:3197-->
+  <string Context="VillageBase getAVillageWall bone display name animal proper name" ID="compacted =primaryAnimal.semantic:HardMaterial:bone= of =primaryAnimal.refname|strip=">compacted =primaryAnimal.semantic:HardMaterial:bone= of =primaryAnimal.refname|strip=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Zones/Builders/Villages/VillageBase.cs:3205-->
+  <string Context="VillageBase getAVillageWall bone display name animal not proper name" ID="compacted =primaryAnimal.refname|strip= =primaryAnimal.semantic:HardMaterial:bone=">compacted =primaryAnimal.refname|strip= =primaryAnimal.semantic:HardMaterial:bone=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Zones/Builders/Villages/VillageBase.cs:3225-->
+  <string Context="VillageBase getAVillageWall bone description animal proper name" ID="Crack-stuck =spice:instancesOf.tar.!random= binds together the stiff and =spice:elements.!random.adjectives.!random= =primaryAnimal.semantic:HardMaterial:bone= of =primaryAnimal.refname|strip=.">Crack-stuck =spice:instancesOf.tar.!random= binds together the stiff and =spice:elements.!random.adjectives.!random= =primaryAnimal.semantic:HardMaterial:bone= of =primaryAnimal.refname|strip=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Zones/Builders/Villages/VillageBase.cs:3239-->
+  <string Context="VillageBase getAVillageWall bone description animal not proper name" ID="Crack-stuck =spice:instancesOf.tar.!random= binds together the stiff and =spice:elements.!random.adjectives.!random= =primaryAnimal.semantic:HardMaterial:bone|plural= of several slaughtered =primaryAnimal.refname|strip|pluralize=.">Crack-stuck =spice:instancesOf.tar.!random= binds together the stiff and =spice:elements.!random.adjectives.!random= =primaryAnimal.semantic:HardMaterial:bone|plural= of several slaughtered =primaryAnimal.refname|strip|pluralize=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Zones/Builders/Villages/VillageBase.cs:3297-->
+  <string Context="VillageBase getAVillageWall description finalizer" ID="=description|strip|capitalize=">=description|strip|capitalize=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Zones/Builders/Villages/VillageBase.cs:3327-->
+  <string Context="VillageBase CreateVillageFaction faction display name" ID="villagers of =spice.entity:name=">villagers of =spice.entity:name=</string>
   <!--Code references _S(): Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:235-->
   <string ID="Generating lairs...">Generating lairs...</string>
   <!--Code references _S():

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<objects>
+
+  <!-- todo:jason review Projectile PassByVerb settings (can search for PassByVerb) -->
+  
+  <!--
+
+    Render Layers
+    ************************
+    7 - Overlay (Gas)
+    6 - Creature Decal (Bloodsplatter)
+    5 - Creature
+    4 - Object (Table)
+    3 - Wall Decal (Bloodsplatter)
+    2 - Wall
+    1 - Floor Decal (Liquid)
+    0 - Floor
+    ************************
+
+  -->
+
+  <object Name="Object">
+    <part Name="Physics" IsReal="true" Solid="false" Weight="0" />
+  </object>
+  <object Name="*PooledObject" Inherits="Object">
+  </object>
+  <object Name="CosmeticObject" Inherits="Object">
+    <part Name="Render" DisplayName="[Object]" RenderString="?" RenderLayer="0" RenderIfDark="true" />
+    <part Name="Physics" IsReal="true" Weight="-1" />
+    <part Name="NoDamage" />
+    <tag Name="NoEffects" />
+    <tag Name="Cosmetic" />
+    <tag Name="Gender" Value="neuter" />
+    <tag Name="BaseObject" Value="*noinherit" />
+    <tag Name="Immutable" />
+  </object>
+
+	<!--
+	description work
+	
+	DONE Creatures
+	DONE Items	
+	DONE Data (artifacts)	
+	DONE Foods
+	DONE Furniture
+	DONE Physical Phenomena
+	DONE Walls
+	DONE Widgets
+	DONE Worldterrain	
+	DONE Zoneterrain
+  -->
+</objects>

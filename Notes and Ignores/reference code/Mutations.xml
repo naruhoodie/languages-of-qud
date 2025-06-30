@@ -41,7 +41,7 @@
         <br />
         <p>+1 Ego</p>
         <p>You occasionally peck at your opponents.</p>
-        <p>+200 reputation with {{w|<vartext>=faction:Birds=</vartext>}}</p>
+        <p><vartext>+200 reputation with {{w|=faction:Birds=}}</vartext></p>
       </description>
       <leveltext></leveltext>
     </mutation>
@@ -171,7 +171,7 @@
         <p><vartext>=horns.Name= =horns.verb:are= a short-blade class natural weapon.</vartext></p>
         <p>+<stat Name="AV" /> AV</p>
         <p>Cannot wear helmets</p>
-        <p>+100 reputation with {{w|antelopes}} and {{w|goatfolk}}</p>
+        <p><vartext>+100 reputation with {{w|=faction:Antelopes=}} and {{w|=faction:Goatfolk=}}</vartext></p>
       </leveltext>
     </mutation>
     <mutation Name="Metamorphosis" Cost="4" MaxSelected="1" Class="Metamorphosis" Exclusions="" BearerDescription="shapeshifters" Prerelease="true" Tile="Mutations/metamorphosis.bmp" />
