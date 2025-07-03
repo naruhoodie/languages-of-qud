@@ -62,6 +62,16 @@ adding [届：\TODO] to various tag attributes:
 ( (?:DisplayName|Description|Snippet)=")([^\["][^届"]+)"		$1[届：\TODO]$2"
 stripping out unneeded attributes:
  (?:Class|Cost|Attribute|Tile|Foreground|Detail|Minimum|Prereq|Hidden)(="[^"]+")
+more general [!!] for Lang="min" tag attributes on object blueprints: 
+( (?:PoeticFeatures|Activity|VillageActivity|NeedsItemFor|SacredThing|ArableLand|ValuedOre)=")((?!\[!!,\])[^"]+)"		$1[!!,]$2"
+( (?:YounglingNoise)=")((?!\[!!\*\*\,])[^"]+)"		$1[!!**,]$2"
+( (?:Skin)=")((?!\[!!\])[^"]+)"	$1[!!]$2"
+( (?:Name="(?:SecretAdjectives|HeroNameTitle[^"]*)" Value)=")((?!\[!!,\])[^"]+)"		$1[!!,]$2"
+( (?:Name="(?:SimpleConversation)" Value)=")((?!\[!!~\])[^"]+)"		$1[!!~]$2"
+( (?:Name="(?:Species|PetResponse|HardMaterial|Plank|BodyDisplayName|Plant|Fiber|FiberMaterial)" Value)=")((?!\[!!\])[^"]+)"	$1[!!]$2"
+(?:Name="(?:Description)" Short=")((?!\[!!\])[^"]+)"	$1[!!]$2"
+check afterward:
+( (?:Name="[^"]+)" Value=")((?!\[!![^\]]*\])[^"]+)"
 Japanese punctuation
 ［］（）、。
 no bananas	バナナなし
@@ -84,3 +94,12 @@ Albino ape
 PassByVerb
 
 2 pairs of socks
+boy baby
+girl baby
+negative twenty-one
+bir milyon yüz on bir bin yüz on bir
+tadpole
+water vine
+I gave her the grape and the red strawberries.
+I went home and had dinner.
+You give him your steel arrow and your 2 books.

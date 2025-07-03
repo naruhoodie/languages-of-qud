@@ -13,326 +13,326 @@
 
   <object Name="Creature" Load="Merge">
     <tag Name="PetResponse" Value="[!!]=subject.T= =verb:stare= at =object.t= blankly." />
-    <tag Name="SimpleConversation" Value="[!!]Moon and Sun. Wisdom and will.~May the earth yield for us this season.~Peace, =player.formalAddressTerm=." />
-    <xtagTextFragments Skin="[!!]skin" PoeticFeatures="[!!]shiny teeth,coarse hair,sunken eyes" YounglingNoise="[!!]*heh*" Activity="[!!]roaming around idly" VillageActivity="[!!]sleeping in our homes" NeedsItemFor="[!!]for my own collection,to slake my greed,because of its trade value" SacredThing="[!!]the act of procreating" ArableLand="[!!]arable land" ValuedOre="[!!]precious metals" />
+    <tag Name="SimpleConversation" Value="[!!~]Moon and Sun. Wisdom and will.~May the earth yield for us this season.~Peace, =player.formalAddressTerm=." />
+    <xtagTextFragments Skin="[!!]skin" PoeticFeatures="[!!,]shiny teeth,coarse hair,sunken eyes" YounglingNoise="[!!**,]*heh*" Activity="[!!,]roaming around idly" VillageActivity="[!!,]sleeping in our homes" NeedsItemFor="[!!,]for my own collection,to slake my greed,because of its trade value" SacredThing="[!!,]the act of procreating" ArableLand="[!!,]arable land" ValuedOre="[!!,]precious metals" />
     <stag Name="HardMaterial" Value="[!!]bone" />
   </object>
   
   <!-- Base animals -->
   <object Name="BaseAnimal" Load="Merge">
-    <xtagTextFragments Skin="[!!]skin" PoeticFeatures="[!!]shiny teeth,hispid skin,spheric hooves" YounglingNoise="[!!]*whine*" Activity="[!!]roaming around idly,scrounging for food,napping under the high salt sun" VillageActivity="[!!]sleeping in our homes,eating our food" GuestActivity="[!!]breaking bread" NeedsItemFor="[!!]for my own collection,to slake my greed,because of its trade value" SacredThing="[!!]the act of procreating,shade from the salt sun,naps,abundant food" ArableLand="[!!]grazeland" ValuedOre="[!!]shade and vittle" />
-    <tag Name="SimpleConversation" Value="[!!]&amp;w*soft growling*&amp;y" />
+    <xtagTextFragments Skin="[!!]skin" PoeticFeatures="[!!,]shiny teeth,hispid skin,spheric hooves" YounglingNoise="[!!**,]*whine*" Activity="[!!,]roaming around idly,scrounging for food,napping under the high salt sun" VillageActivity="[!!,]sleeping in our homes,eating our food" GuestActivity="[!!,]breaking bread" NeedsItemFor="[!!,]for my own collection,to slake my greed,because of its trade value" SacredThing="[!!,]the act of procreating,shade from the salt sun,naps,abundant food" ArableLand="[!!,]grazeland" ValuedOre="[!!,]shade and vittle" />
+    <tag Name="SimpleConversation" Value="[!!~]&amp;w*soft growling*&amp;y" />
     <tag Name="PetResponse" Value="[!!]=subject.T= =verb:growl= softly." />
   </object>
   <object Name="BaseAntelope" Load="Merge">
     <tag Name="Species" Value="[!!]antelope" />
-    <tag Name="SimpleConversation" Value="[!!]&amp;w*idly grazes*&amp;y" />
+    <tag Name="SimpleConversation" Value="[!!~]&amp;w*idly grazes*&amp;y" />
   </object>
 	<object Name="BaseBat" Load="Merge">
 		<tag Name="Species" Value="[!!]bat" />		
-		<tag Name="SimpleConversation" Value="[!!]{{emote|*idly flaps wings*}}" />
+		<tag Name="SimpleConversation" Value="[!!~]{{emote|*idly flaps wings*}}" />
   </object>
   <object Name="BaseBear" Load="Merge">
     <tag Name="Species" Value="[!!]bear" />
-    <tag Name="HeroNameTitleWiseDescriptor" Value="Ruminative,Wise,Sensible,Undrowsy,Great,Spirited" />
-    <tag Name="HeroNameTitleMayorSyn" Value="spirit bear,mayor,elder" />
-    <tag Name="HeroNameTitleMayorSynCap" Value="Spirit Bear,Mayor,Elder" />
-    <xtagTextFragments Skin="fur" PoeticFeatures="vast shoulders,oily nose,ageless eyes" YounglingNoise="*growl*" Activity="roaring at glowfish" VillageActivity="hibernating by our hearth" SacredThing="honey" />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="[!!,]Ruminative,Wise,Sensible,Undrowsy,Great,Spirited" />
+    <tag Name="HeroNameTitleMayorSyn" Value="[!!,]spirit bear,mayor,elder" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="[!!,]Spirit Bear,Mayor,Elder" />
+    <xtagTextFragments Skin="[!!]fur" PoeticFeatures="[!!,]vast shoulders,oily nose,ageless eyes" YounglingNoise="[!!**,]*growl*" Activity="[!!,]roaring at glowfish" VillageActivity="[!!,]hibernating by our hearth" SacredThing="[!!,]honey" />
   </object>
   <object Name="BaseBird" Load="Merge">
-    <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Sage,Erudite,Great,Colorful,Chatty,Loud,Sensible,Shrewd,Noisy,Full-Throated,Sonorous" />
-    <tag Name="HeroNameTitleMayorSyn" Value="speaker,orator,songstress,sage,mayor,elder-bird" />
-    <tag Name="HeroNameTitleMayorSynCap" Value="Speaker,Orator,Songstress,Sage,Mayor,Elder-Bird" />
-    <xtagTextFragments Skin="feathers" PoeticFeatures="sagittal beak,cherubic wings,proud bearing" YounglingNoise="*chirp*" Activity="chirping at peers,singing birdsong,nesting,basking in the sun" VillageActivity="chirping at us,basking in the sun,belting out birdsong" NeedsItemFor="for my own collection,to slake my greed,because of its trade value,to hide in my nest,to chirp at" SacredThing="the art of speech and song,prattle,the gift of flight,worms,the salt-strewn air" ArableLand="high branches" ValuedOre="chrome baubles,shiny baubles" />
-    <tag Name="PetResponse" Value="=subject.T= =verb:chirp=." />    
+    <tag Name="HeroNameTitleWiseDescriptor" Value="[!!,]Wise,Sage,Erudite,Great,Colorful,Chatty,Loud,Sensible,Shrewd,Noisy,Full-Throated,Sonorous" />
+    <tag Name="HeroNameTitleMayorSyn" Value="[!!,]speaker,orator,songstress,sage,mayor,elder-bird" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="[!!,]Speaker,Orator,Songstress,Sage,Mayor,Elder-Bird" />
+    <xtagTextFragments Skin="[!!]feathers" PoeticFeatures="[!!,]sagittal beak,cherubic wings,proud bearing" YounglingNoise="[!!**,]*chirp*" Activity="[!!,]chirping at peers,singing birdsong,nesting,basking in the sun" VillageActivity="[!!,]chirping at us,basking in the sun,belting out birdsong" NeedsItemFor="[!!,]for my own collection,to slake my greed,because of its trade value,to hide in my nest,to chirp at" SacredThing="[!!,]the art of speech and song,prattle,the gift of flight,worms,the salt-strewn air" ArableLand="[!!,]high branches" ValuedOre="[!!,]chrome baubles,shiny baubles" />
+    <tag Name="PetResponse" Value="[!!]=subject.T= =verb:chirp=." />    
   </object>
   <object Name="BaseCat" Load="Merge">
-    <tag Name="HeroNameTitleWiseDescriptor" Value="Sleek,Sphinx,Sphinx-like,Cunning,Graceful,Lithe,Wise,Sage,Sophic" />
-    <tag Name="HeroNameTitleMayorSyn" Value="sphinx,mayor,elder" />
-    <tag Name="HeroNameTitleMayorSynCap" Value="Sphinx,Mayor,Elder" />
-    <tag Name="Species" Value="cat" />
-    <tag Name="PetResponse" Value="=subject.T= =verb:meow=." />
-    <xtagTextFragments Skin="fur" PoeticFeatures="triangle ears,pearly whiskers,ageless eyes" YounglingNoise="*mew*,*prrrup*" Activity="sleeping and chasing birds all through the day" VillageActivity="sleeping in our homes" SacredThing="judgemental silence" />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="[!!,]Sleek,Sphinx,Sphinx-like,Cunning,Graceful,Lithe,Wise,Sage,Sophic" />
+    <tag Name="HeroNameTitleMayorSyn" Value="[!!,]sphinx,mayor,elder" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="[!!,]Sphinx,Mayor,Elder" />
+    <tag Name="Species" Value="[!!]cat" />
+    <tag Name="PetResponse" Value="[!!]=subject.T= =verb:meow=." />
+    <xtagTextFragments Skin="[!!]fur" PoeticFeatures="[!!,]triangle ears,pearly whiskers,ageless eyes" YounglingNoise="[!!**,]*mew*,*prrrup*" Activity="[!!,]sleeping and chasing birds all through the day" VillageActivity="[!!,]sleeping in our homes" SacredThing="[!!,]judgemental silence" />
   </object>
   <object Name="BaseClam" Load="Merge">
-    <tag Name="Species" Value="clam" />
-    <tag Name="HeroNameTitleWiseDescriptor" Value="Inviting,Tempting,Open,Wide-Open,Hospitable,Seductive" />
-    <tag Name="HeroNameTitleMayorSyn" Value="clam god,clam mayor,elder clam" />
-    <tag Name="HeroNameTitleMayorSynCap" Value="Clam God,Clam Mayor,Elder Clam" />
-    <xtagTextFragments Skin="shell" PoeticFeatures="dazzling pearls,geometric beauty,ageless bearing" YounglingNoise="*shloop*" Activity="sitting open invitingly" VillageActivity="sitting open invitingly" SacredThing="pocket dimensions,the safety of enclosure" />
-    <stag Name="HardMaterial" Value="shell" />
-    <tag Name="SimpleConversation" Value="{{emote|*sitting open invitingly*}}" />
-    <tag Name="PetResponse" Value="=subject.T= =verb:shloop=." />
+    <tag Name="Species" Value="[!!]clam" />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="[!!,]Inviting,Tempting,Open,Wide-Open,Hospitable,Seductive" />
+    <tag Name="HeroNameTitleMayorSyn" Value="[!!,]clam god,clam mayor,elder clam" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="[!!,]Clam God,Clam Mayor,Elder Clam" />
+    <xtagTextFragments Skin="[!!]shell" PoeticFeatures="[!!,]dazzling pearls,geometric beauty,ageless bearing" YounglingNoise="[!!**,]*shloop*" Activity="[!!,]sitting open invitingly" VillageActivity="[!!,]sitting open invitingly" SacredThing="[!!,]pocket dimensions,the safety of enclosure" />
+    <stag Name="HardMaterial" Value="[!!]shell" />
+    <tag Name="SimpleConversation" Value="[!!~]{{emote|*sitting open invitingly*}}" />
+    <tag Name="PetResponse" Value="[!!]=subject.T= =verb:shloop=." />
   </object>
   <object Name="BaseCrab" Load="Merge">
-    <tag Name="Species" Value="crab" />
-    <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Great,Sage,Judicious,Giant,Dense,Thick,Ornately-Shelled" />
-    <tag Name="HeroNameTitleMayorSyn" Value="king,mayor,elder" />
-    <tag Name="HeroNameTitleMayorSynCap" Value="King,Mayor,Elder" />
-    <xtagTextFragments Skin="chitin" PoeticFeatures="ageless shelf of shell,titanic claws,stilted eyes" YounglingNoise="*click*,*croak*" Activity="scuttling without purpose" VillageActivity="reinforcing the walls of our homes" SacredThing="the art of pinching" />
-    <stag Name="HardMaterial" Value="chitin" />
-    <tag Name="SimpleConversation" Value="&amp;w*raucous croaking*&amp;y" />
-    <tag Name="PetResponse" Value="=subject.T= =verb:croak=." />    
+    <tag Name="Species" Value="[!!]crab" />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="[!!,]Wise,Great,Sage,Judicious,Giant,Dense,Thick,Ornately-Shelled" />
+    <tag Name="HeroNameTitleMayorSyn" Value="[!!,]king,mayor,elder" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="[!!,]King,Mayor,Elder" />
+    <xtagTextFragments Skin="[!!]chitin" PoeticFeatures="[!!,]ageless shelf of shell,titanic claws,stilted eyes" YounglingNoise="[!!**,]*click*,*croak*" Activity="[!!,]scuttling without purpose" VillageActivity="[!!,]reinforcing the walls of our homes" SacredThing="[!!,]the art of pinching" />
+    <stag Name="HardMaterial" Value="[!!]chitin" />
+    <tag Name="SimpleConversation" Value="[!!~]&amp;w*raucous croaking*&amp;y" />
+    <tag Name="PetResponse" Value="[!!]=subject.T= =verb:croak=." />    
   </object>
   <object Name="BaseDog" Load="Merge">
-    <tag Name="PetResponse" Value="=subject.T= =verb:bark=." />
-    <tag Name="Species" Value="dog" />
+    <tag Name="PetResponse" Value="[!!]=subject.T= =verb:bark=." />
+    <tag Name="Species" Value="[!!]dog" />
   </object>  
   <object Name="BaseFish" Load="Merge">
-    <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Sage,Old,Great,Giant,Ornately-Finned,Fleet,Many-Finned" />
-    <tag Name="HeroNameTitleMayorSyn" Value="fish god,fish mayor,elder-fish" />
-    <tag Name="HeroNameTitleMayorSynCap" Value="Fish God,Fish Mayor,Elder-Fish" />
-    <xtagTextFragments Skin="scales" PoeticFeatures="contoured fins,iridescence,slim dimensionality" YounglingNoise="*blub*" Activity="swimming in circles,nibbling algae,laying eggs,nestling in brineweed" VillageActivity="nestling in our brineweed,laying its eggs" NeedsItemFor="for my own collection,to slake my greed,because of its trade value,to hide in the water" SacredThing="the necessity of water,water,burrowing,the fin" ArableLand="pools of water,rivers,lakes" ValuedOre="sunken treasure" />
-    <stag Name="HardMaterial" Value="scale" />
-    <tag Name="PetResponse" Value="=subject.T= =verb:gurgle=." />    
+    <tag Name="HeroNameTitleWiseDescriptor" Value="[!!,]Wise,Sage,Old,Great,Giant,Ornately-Finned,Fleet,Many-Finned" />
+    <tag Name="HeroNameTitleMayorSyn" Value="[!!,]fish god,fish mayor,elder-fish" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="[!!,]Fish God,Fish Mayor,Elder-Fish" />
+    <xtagTextFragments Skin="[!!]scales" PoeticFeatures="[!!,]contoured fins,iridescence,slim dimensionality" YounglingNoise="[!!**,]*blub*" Activity="[!!,]swimming in circles,nibbling algae,laying eggs,nestling in brineweed" VillageActivity="[!!,]nestling in our brineweed,laying its eggs" NeedsItemFor="[!!,]for my own collection,to slake my greed,because of its trade value,to hide in the water" SacredThing="[!!,]the necessity of water,water,burrowing,the fin" ArableLand="[!!,]pools of water,rivers,lakes" ValuedOre="[!!,]sunken treasure" />
+    <stag Name="HardMaterial" Value="[!!]scale" />
+    <tag Name="PetResponse" Value="[!!]=subject.T= =verb:gurgle=." />    
   </object>
   <object Name="BaseInsect" Load="Merge">
-    <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Great,Vibrant,Motley,Limber,Giant,Pupated" />
-    <tag Name="HeroNameTitleMayorSyn" Value="queen,mayor,elder" />
-    <tag Name="HeroNameTitleMayorSynCap" Value="Queen,Mayor,Elder" />
-    <xtagTextFragments Skin="chitin" PoeticFeatures="diaphanous wings,airy spiracles,photofractal eyes" YounglingNoise="*bzzz*" Activity="droning for the hive,burrowing into the earth,rummaging through dung" VillageActivity="fastidiously nesting,multiplying in droves,laying eggs and clicking" NeedsItemFor="for my own collection,to slake my greed,because of its trade value,to nest more effectively,for my hive" SacredThing="chirping by the light of the Beetle Moon,xenophagy,hexapoda,larvae,chitin,the protection of an exoskeleton" ArableLand="nesting grounds,hiving grounds" ValuedOre="pollen" />
-    <stag Name="HardMaterial" Value="chitin" />
-    <tag Name="SimpleConversation" Value="&amp;w*sharp clicking*&amp;y~&amp;w*soft buzzing*&amp;y" />
-    <tag Name="PetResponse" Value="=subject.T= =verb:buzz=." />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="[!!,]Wise,Great,Vibrant,Motley,Limber,Giant,Pupated" />
+    <tag Name="HeroNameTitleMayorSyn" Value="[!!,]queen,mayor,elder" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="[!!,]Queen,Mayor,Elder" />
+    <xtagTextFragments Skin="[!!]chitin" PoeticFeatures="[!!,]diaphanous wings,airy spiracles,photofractal eyes" YounglingNoise="[!!**,]*bzzz*" Activity="[!!,]droning for the hive,burrowing into the earth,rummaging through dung" VillageActivity="[!!,]fastidiously nesting,multiplying in droves,laying eggs and clicking" NeedsItemFor="[!!,]for my own collection,to slake my greed,because of its trade value,to nest more effectively,for my hive" SacredThing="[!!,]chirping by the light of the Beetle Moon,xenophagy,hexapoda,larvae,chitin,the protection of an exoskeleton" ArableLand="[!!,]nesting grounds,hiving grounds" ValuedOre="[!!,]pollen" />
+    <stag Name="HardMaterial" Value="[!!]chitin" />
+    <tag Name="SimpleConversation" Value="[!!~]&amp;w*sharp clicking*&amp;y~&amp;w*soft buzzing*&amp;y" />
+    <tag Name="PetResponse" Value="[!!]=subject.T= =verb:buzz=." />
   </object>
   <object Name="BaseOoze" Load="Merge">
-    <tag Name="BleedPrefix" Value="{{g|slimy}}" />
-    <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Great,Sage,Judicious,Giant,Sophic,Erudite,Cubic,Regular,Spherical,Platonic,Symmetric,Triangular" />
-    <tag Name="HeroNameTitleMayorSyn" Value="philosopher,mayor,elder,theorist,sophist" />
-    <tag Name="HeroNameTitleMayorSynCap" Value="Philosopher,Mayor,Elder,Theorist,Sophist" />
-    <xtagTextFragments Skin="membrane" PoeticFeatures="flawless geometry,translucence,peaceful squish" YounglingNoise="*squish*,*spurt*" Activity="resorbing matter,undulating,liquifying and congealing" VillageActivity="jiggling rhythmically,undulating,liquifying and congealing" NeedsItemFor="for my own collection,to slake my greed,because of its trade value,for resorbing purposes,so I can engulf it,to absorb it" SacredThing="platonic solids,ooze,gelatin,fluid dynamics,the membrane" ArableLand="pools of liquid,free matter,gelatin" ValuedOre="matter,life" />
-    <stag Name="HardMaterial" Value="membrane" />
-    <tag Name="Species" Value="ooze" />
-    <tag Name="SimpleConversation" Value="&amp;w*exudes loudly*&amp;y~&amp;w*soft gushing*&amp;y" />
-    <tag Name="PetResponse" Value="=subject.T= =verb:spurt=." />
+    <tag Name="BleedPrefix" Value="[!!]{{g|slimy}}" />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="[!!,]Wise,Great,Sage,Judicious,Giant,Sophic,Erudite,Cubic,Regular,Spherical,Platonic,Symmetric,Triangular" />
+    <tag Name="HeroNameTitleMayorSyn" Value="[!!,]philosopher,mayor,elder,theorist,sophist" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="[!!,]Philosopher,Mayor,Elder,Theorist,Sophist" />
+    <xtagTextFragments Skin="[!!]membrane" PoeticFeatures="[!!,]flawless geometry,translucence,peaceful squish" YounglingNoise="[!!**,]*squish*,*spurt*" Activity="[!!,]resorbing matter,undulating,liquifying and congealing" VillageActivity="[!!,]jiggling rhythmically,undulating,liquifying and congealing" NeedsItemFor="[!!,]for my own collection,to slake my greed,because of its trade value,for resorbing purposes,so I can engulf it,to absorb it" SacredThing="[!!,]platonic solids,ooze,gelatin,fluid dynamics,the membrane" ArableLand="[!!,]pools of liquid,free matter,gelatin" ValuedOre="[!!,]matter,life" />
+    <stag Name="HardMaterial" Value="[!!]membrane" />
+    <tag Name="Species" Value="[!!]ooze" />
+    <tag Name="SimpleConversation" Value="[!!~]&amp;w*exudes loudly*&amp;y~&amp;w*soft gushing*&amp;y" />
+    <tag Name="PetResponse" Value="[!!]=subject.T= =verb:spurt=." />
   </object>
   <object Name="BaseJelly" Load="Merge">
-    <tag Name="Species" Value="jelly" />
+    <tag Name="Species" Value="[!!]jelly" />
   </object>
   <object Name="BaseSlug" Load="Merge">
-    <tag Name="Species" Value="slug" />
+    <tag Name="Species" Value="[!!]slug" />
   </object>
   <object Name="BaseReptile" Load="Merge">
-    <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Sage,Judicious,Wary,Shrewd,Warm,Sun-Bathed,Still" />
-    <tag Name="HeroNameTitleMayorSyn" Value="daemon,wyrm,mayor,elder" />
-    <tag Name="HeroNameTitleMayorSynCap" Value="Daemon,Wyrm,Mayor,Elder" />
-    <xtagTextFragments Skin="scales" PoeticFeatures="stony stillness,iridescence,lidded eyes" YounglingNoise="*ssss*" Activity="basking in the sun,reclining on warm rocks,hissing under the Beetle Moon,swallowing insects" VillageActivity="basking in the sun,reclining on warm rocks,hissing under the Beetle Moon" NeedsItemFor="for my own collection,to slake my greed,because of its trade value,to sit on and keep me warm,for hissing at" SacredThing="warm rocks,the salt sun,insect larvae,warmth,burrows" ArableLand="warm rocks" ValuedOre="insect larvae,warm rocks"></xtagTextFragments>
-    <stag Name="HardMaterial" Value="scale" />
-    <tag Name="SimpleConversation" Value="{{w|*soft hissing*}}" />
-    <tag Name="PetResponse" Value="=subject.T= =verb:hiss=." />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="[!!,]Wise,Sage,Judicious,Wary,Shrewd,Warm,Sun-Bathed,Still" />
+    <tag Name="HeroNameTitleMayorSyn" Value="[!!,]daemon,wyrm,mayor,elder" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="[!!,]Daemon,Wyrm,Mayor,Elder" />
+    <xtagTextFragments Skin="[!!]scales" PoeticFeatures="[!!,]stony stillness,iridescence,lidded eyes" YounglingNoise="[!!**,]*ssss*" Activity="[!!,]basking in the sun,reclining on warm rocks,hissing under the Beetle Moon,swallowing insects" VillageActivity="[!!,]basking in the sun,reclining on warm rocks,hissing under the Beetle Moon" NeedsItemFor="[!!,]for my own collection,to slake my greed,because of its trade value,to sit on and keep me warm,for hissing at" SacredThing="[!!,]warm rocks,the salt sun,insect larvae,warmth,burrows" ArableLand="[!!,]warm rocks" ValuedOre="[!!,]insect larvae,warm rocks"></xtagTextFragments>
+    <stag Name="HardMaterial" Value="[!!]scale" />
+    <tag Name="SimpleConversation" Value="[!!~]{{w|*soft hissing*}}" />
+    <tag Name="PetResponse" Value="[!!]=subject.T= =verb:hiss=." />
   </object>	
   <object Name="BaseFrog" Load="Merge">
-    <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Sage,Judicious,Wary,Shrewd,Warm,Sun-Bathed,Still" />
-    <tag Name="HeroNameTitleMayorSyn" Value="daemon,frog,mayor,elder" />
-    <tag Name="HeroNameTitleMayorSynCap" Value="Daemon,Frog,Mayor,Elder" />
-    <xtagTextFragments Skin="skin" PoeticFeatures="stony stillness,iridescence,lidded eyes" YounglingNoise="*bthp*" Activity="basking in the sun,reclining on warm rocks,croaking under the Beetle Moon,swallowing insects" VillageActivity="basking in the sun,reclining on warm rocks,croaking under the Beetle Moon" NeedsItemFor="for my own collection,to slake my greed,because of its trade value,to sit on and keep me warm,for croaking at" SacredThing="warm rocks,the salt sun,insect larvae,warmth,ponds" ArableLand="warm rocks" ValuedOre="insect larvae,warm rocks"></xtagTextFragments>
-    <stag Name="HardMaterial" Value="bone" />
-    <tag Name="Species" Value="frog" />
-    <tag Name="SecretAdjectives" Value="frog" />
-    <tag Name="SimpleConversation" Value="{{emote|*ribbits*}}" />
-    <tag Name="PetResponse" Value="=subject.T= =verb:croak=." />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="[!!,]Wise,Sage,Judicious,Wary,Shrewd,Warm,Sun-Bathed,Still" />
+    <tag Name="HeroNameTitleMayorSyn" Value="[!!,]daemon,frog,mayor,elder" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="[!!,]Daemon,Frog,Mayor,Elder" />
+    <xtagTextFragments Skin="[!!]skin" PoeticFeatures="[!!,]stony stillness,iridescence,lidded eyes" YounglingNoise="[!!**,]*bthp*" Activity="[!!,]basking in the sun,reclining on warm rocks,croaking under the Beetle Moon,swallowing insects" VillageActivity="[!!,]basking in the sun,reclining on warm rocks,croaking under the Beetle Moon" NeedsItemFor="[!!,]for my own collection,to slake my greed,because of its trade value,to sit on and keep me warm,for croaking at" SacredThing="[!!,]warm rocks,the salt sun,insect larvae,warmth,ponds" ArableLand="[!!,]warm rocks" ValuedOre="[!!,]insect larvae,warm rocks"></xtagTextFragments>
+    <stag Name="HardMaterial" Value="[!!]bone" />
+    <tag Name="Species" Value="[!!]frog" />
+    <tag Name="SecretAdjectives" Value="[!!,]frog" />
+    <tag Name="SimpleConversation" Value="[!!~]{{emote|*ribbits*}}" />
+    <tag Name="PetResponse" Value="[!!]=subject.T= =verb:croak=." />
   </object>
-  <object Name="BaseSnail" Load="Merge">    
-    <tag Name="Species" Value="snail" />
+  <object Name="BaseSnail" Load="Merge">
+    <tag Name="Species" Value="[!!]snail" />
   </object>
   <object Name="BaseSpider" Load="Merge">
-    <tag Name="Species" Value="spider" />
-    <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Shrewd,Wary,Erudite,Great,Giant,Many-Legged" />
-    <tag Name="HeroNameTitleMayorSyn" Value="weaver,mayor,elder" />
-    <tag Name="HeroNameTitleMayorSynCap" Value="Weaver,Mayor,Elder" />
-    <xtagTextFragments Skin="chitin" PoeticFeatures="eightfold gams,hundred lenses,ageless bearing" YounglingNoise="*click*" Activity="waiting for errant insects" VillageActivity="weaving webs in our homes" SacredThing="graph theory" />
-    <stag Name="HardMaterial" Value="chitin" />
-    <tag Name="SimpleConversation" Value="&amp;w*idly weaving*&amp;y" />    
+    <tag Name="Species" Value="[!!]spider" />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="[!!,]Wise,Shrewd,Wary,Erudite,Great,Giant,Many-Legged" />
+    <tag Name="HeroNameTitleMayorSyn" Value="[!!,]weaver,mayor,elder" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="[!!,]Weaver,Mayor,Elder" />
+    <xtagTextFragments Skin="[!!]chitin" PoeticFeatures="[!!,]eightfold gams,hundred lenses,ageless bearing" YounglingNoise="[!!**,]*click*" Activity="[!!,]waiting for errant insects" VillageActivity="[!!,]weaving webs in our homes" SacredThing="[!!,]graph theory" />
+    <stag Name="HardMaterial" Value="[!!]chitin" />
+    <tag Name="SimpleConversation" Value="[!!~]&amp;w*idly weaving*&amp;y" />    
   </object>
   <object Name="BaseStar" Load="Merge">
-    <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Sage,Wary,Erudite,Great,Giant,Long,Girthy,Thick" />
-    <tag Name="HeroNameTitleMayorSyn" Value="star god,star mayor,elder star" />
-    <tag Name="HeroNameTitleMayorSynCap" Value="Star God,Star Mayor,Elder Star" />
-    <xtagTextFragments Skin="branchiae" PoeticFeatures="undulation,geometric simplicity,ageless bearing" YounglingNoise="*xxxff*" Activity="roaming the curvature" VillageActivity="crawling about,being inscrutable" SacredThing="otherness,pentalogies,quincunxes" />
-    <stag Name="HardMaterial" Value="spines" />
-    <tag Name="Species" Value="star" />
-    <tag Name="SimpleConversation" Value="{{emote|*inscrutably being*}}" />
-    <tag Name="PetResponse" Value="{{emote|*xxxff*}}" />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="[!!,]Wise,Sage,Wary,Erudite,Great,Giant,Long,Girthy,Thick" />
+    <tag Name="HeroNameTitleMayorSyn" Value="[!!,]star god,star mayor,elder star" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="[!!,]Star God,Star Mayor,Elder Star" />
+    <xtagTextFragments Skin="[!!]branchiae" PoeticFeatures="[!!,]undulation,geometric simplicity,ageless bearing" YounglingNoise="[!!**,]*xxxff*" Activity="[!!,]roaming the curvature" VillageActivity="[!!,]crawling about,being inscrutable" SacredThing="[!!,]otherness,pentalogies,quincunxes" />
+    <stag Name="HardMaterial" Value="[!!]spines" />
+    <tag Name="Species" Value="[!!]star" />
+    <tag Name="SimpleConversation" Value="[!!~]{{emote|*inscrutably being*}}" />
+    <tag Name="PetResponse" Value="[!!]{{emote|*xxxff*}}" />
   </object>
   <object Name="BaseTortoise" Load="Merge">
-    <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Sage,Wary,Erudite,Great,Giant,Ornately-Shelled,Slow,Stone-like" />
-    <tag Name="HeroNameTitleMayorSyn" Value="sage,mayor,elder" />
-    <tag Name="HeroNameTitleMayorSynCap" Value="Sage,Mayor,Elder" />
-    <xtagTextFragments Skin="keratin" PoeticFeatures="stony stillness,ageless bearing,lidded eyes" YounglingNoise="*croak*" Activity="plodding along,inside shells,napping in the shade" VillageActivity="sleeping inside its shell" NeedsItemFor="for my own collection,to slake my greed,because of its trade value,to hide in my shell" SacredThing="the sanctum of a hollow place,the carapace,vegetables,peace and quiet,the home" ArableLand="quiet meadows,shady nooks" ValuedOre="peace and quiet" />
-    <stag Name="HardMaterial" Value="shell" />
-    <tag Name="Species" Value="tortoise" />
-    <tag Name="SimpleConversation" Value="&amp;w*sniffles and sneezes*&amp;y" />
-    <tag Name="PetResponse" Value="=subject.T= =verb:croak=." />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="[!!,]Wise,Sage,Wary,Erudite,Great,Giant,Ornately-Shelled,Slow,Stone-like" />
+    <tag Name="HeroNameTitleMayorSyn" Value="[!!,]sage,mayor,elder" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="[!!,]Sage,Mayor,Elder" />
+    <xtagTextFragments Skin="[!!]keratin" PoeticFeatures="[!!,]stony stillness,ageless bearing,lidded eyes" YounglingNoise="[!!**,]*croak*" Activity="[!!,]plodding along,inside shells,napping in the shade" VillageActivity="[!!,]sleeping inside its shell" NeedsItemFor="[!!,]for my own collection,to slake my greed,because of its trade value,to hide in my shell" SacredThing="[!!,]the sanctum of a hollow place,the carapace,vegetables,peace and quiet,the home" ArableLand="[!!,]quiet meadows,shady nooks" ValuedOre="[!!,]peace and quiet" />
+    <stag Name="HardMaterial" Value="[!!]shell" />
+    <tag Name="Species" Value="[!!]tortoise" />
+    <tag Name="SimpleConversation" Value="[!!~]&amp;w*sniffles and sneezes*&amp;y" />
+    <tag Name="PetResponse" Value="[!!]=subject.T= =verb:croak=." />
   </object>
   <object Name="BaseUrchin" Load="Merge">
-    <tag Name="Species" Value="urchin" />
-    <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Sage,Wary,Erudite,Great,Giant,Broad,Bulbous" />
-    <tag Name="HeroNameTitleMayorSyn" Value="urchin god,urchin mayor,elder urchin" />
-    <tag Name="HeroNameTitleMayorSynCap" Value="Urchin God,Urchin Mayor,Elder Urchin" />
-    <xtagTextFragments Skin="annuli" PoeticFeatures="undulation,geometric simplicity,ageless bearing" YounglingNoise="*undulate*" Activity="undulating serenely" VillageActivity="bathing in our stews,undulating near our stews" SacredThing="having neither arms nor legs nor a head" />
-    <stag Name="HardMaterial" Value="spines" />
-    <tag Name="SimpleConversation" Value="{{w|*idly undulating*}}" />
-    <tag Name="PetResponse" Value="=subject.T= =verb:undulate=." />
+    <tag Name="Species" Value="[!!]urchin" />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="[!!,]Wise,Sage,Wary,Erudite,Great,Giant,Broad,Bulbous" />
+    <tag Name="HeroNameTitleMayorSyn" Value="[!!,]urchin god,urchin mayor,elder urchin" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="[!!,]Urchin God,Urchin Mayor,Elder Urchin" />
+    <xtagTextFragments Skin="[!!]annuli" PoeticFeatures="[!!,]undulation,geometric simplicity,ageless bearing" YounglingNoise="[!!**,]*undulate*" Activity="[!!,]undulating serenely" VillageActivity="[!!,]bathing in our stews,undulating near our stews" SacredThing="[!!,]having neither arms nor legs nor a head" />
+    <stag Name="HardMaterial" Value="[!!]spines" />
+    <tag Name="SimpleConversation" Value="[!!~]{{w|*idly undulating*}}" />
+    <tag Name="PetResponse" Value="[!!]=subject.T= =verb:undulate=." />
   </object>
   <object Name="BaseWorm" Load="Merge">
-    <tag Name="Species" Value="worm" />
-    <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Sage,Wary,Erudite,Great,Giant,Long,Girthy,Thick" />
-    <tag Name="HeroNameTitleMayorSyn" Value="worm god,worm mayor,elder worm" />
-    <tag Name="HeroNameTitleMayorSynCap" Value="Worm God,Worm Mayor,Elder Worm" />
-    <xtagTextFragments Skin="annuli" PoeticFeatures="undulation,geometric simplicity,ageless bearing" YounglingNoise="*slither*" Activity="tunneling through the earth" VillageActivity="bathing in our stews, making worm stews of our stews" SacredThing="having neither arms nor legs" />
-    <stag Name="HardMaterial" Value="cocoon" />
-    <tag Name="SimpleConversation" Value="&amp;w*idly undulating*&amp;y" />
-    <tag Name="PetResponse" Value="=subject.T= =verb:slither=." />
+    <tag Name="Species" Value="[!!]worm" />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="[!!,]Wise,Sage,Wary,Erudite,Great,Giant,Long,Girthy,Thick" />
+    <tag Name="HeroNameTitleMayorSyn" Value="[!!,]worm god,worm mayor,elder worm" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="[!!,]Worm God,Worm Mayor,Elder Worm" />
+    <xtagTextFragments Skin="[!!]annuli" PoeticFeatures="[!!,]undulation,geometric simplicity,ageless bearing" YounglingNoise="[!!**,]*slither*" Activity="[!!,]tunneling through the earth" VillageActivity="[!!,]bathing in our stews, making worm stews of our stews" SacredThing="[!!,]having neither arms nor legs" />
+    <stag Name="HardMaterial" Value="[!!]cocoon" />
+    <tag Name="SimpleConversation" Value="[!!~]&amp;w*idly undulating*&amp;y" />
+    <tag Name="PetResponse" Value="[!!]=subject.T= =verb:slither=." />
   </object>
   
   <!-- Base robots -->
   <object Name="Robot" Load="Merge">
-    <tag Name="BleedPrefix" Value="{{K|oily}}" />
-    <tag Name="PetResponse" Value="=subject.T= =verb:beep= and =verb:boop=." />
-    <stag Name="HardMaterial" Value="casing" />    
+    <tag Name="BleedPrefix" Value="[!!]{{K|oily}}" />
+    <tag Name="PetResponse" Value="[!!]=subject.T= =verb:beep= and =verb:boop=." />
+    <stag Name="HardMaterial" Value="[!!]casing" />    
   </object>
   <object Name="BaseRobot" Load="Merge">
-    <tag Name="HeroNameTitleWiseDescriptor" Value="Unerring,Updated,Rustless,Oracular,Man-like,Woman-like,Lossless,Invariant,Certain" />
-    <tag Name="HeroNameTitleMayorSyn" Value="seer,administrator,oracle,mayor,elder" />
-    <tag Name="HeroNameTitleMayorSynCap" Value="Seer,Administrator,Oracle,Mayor,Elder" />
-    <xtagTextFragments Skin="chassis" PoeticFeatures="chromium sheen,winking diodes,air vents" YounglingNoise="*beep*,*boop*" Activity="recompositing meaning from centuries of bit flips" VillageActivity="emitting a monotone pulse" SacredThing="machine life" />
-    <stag Name="HardMaterial" Value="casing" />
-    <tag Name="SimpleConversation" Value="&amp;w*beep boop*&amp;y~&amp;w*boop beep*&amp;y~&amp;w*beep boop beep*&amp;y~&amp;w*boop beep boop*&amp;y" />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="[!!,]Unerring,Updated,Rustless,Oracular,Man-like,Woman-like,Lossless,Invariant,Certain" />
+    <tag Name="HeroNameTitleMayorSyn" Value="[!!,]seer,administrator,oracle,mayor,elder" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="[!!,]Seer,Administrator,Oracle,Mayor,Elder" />
+    <xtagTextFragments Skin="[!!]chassis" PoeticFeatures="[!!,]chromium sheen,winking diodes,air vents" YounglingNoise="[!!**,]*beep*,*boop*" Activity="[!!,]recompositing meaning from centuries of bit flips" VillageActivity="[!!,]emitting a monotone pulse" SacredThing="[!!,]machine life" />
+    <stag Name="HardMaterial" Value="[!!]casing" />
+    <tag Name="SimpleConversation" Value="[!!~]&amp;w*beep boop*&amp;y~&amp;w*boop beep*&amp;y~&amp;w*beep boop beep*&amp;y~&amp;w*boop beep boop*&amp;y" />
   </object>
   <object Name="BaseMiner" Load="Merge">
-    <part Name="Description" Short="Stilt pistons fire in alternating quatro and tote the miner and =pronouns.possessive= mines in esoteric patterns across the ground. When =pronouns.possessive= topographic instincts are sated, a hatch opens and =pronouns.subjective= =verb:lay:afterpronoun= =pronouns.possessive= explosive egg." />
+    <part Name="Description" Short="[!!]Stilt pistons fire in alternating quatro and tote the miner and =pronouns.possessive= mines in esoteric patterns across the ground. When =pronouns.possessive= topographic instincts are sated, a hatch opens and =pronouns.subjective= =verb:lay:afterpronoun= =pronouns.possessive= explosive egg." />
   </object>
   <object Name="Turret Tinker" Load="Merge">
-    <tag Name="Species" Value="hexapedal robot" />
-    <part Name="Description" Short="=pronouns.Possessive= cylindric head is embellished with a frilly crest whose symbolism is unknown. =pronouns.Subjective= dutifully =verb:march:afterpronoun= on a pair of chrome pistons toward =pronouns.possessive= final purpose." />
+    <tag Name="Species" Value="[!!]hexapedal robot" />
+    <part Name="Description" Short="[!!]=pronouns.Possessive= cylindric head is embellished with a frilly crest whose symbolism is unknown. =pronouns.Subjective= dutifully =verb:march:afterpronoun= on a pair of chrome pistons toward =pronouns.possessive= final purpose." />
   </object>
   
   <!-- Base humanoids -->
   <object Name="Humanoid" Load="Merge">
-    <tag Name="BodyDisplayName" Value="Humanoid" />
-    <tag Name="Species" Value="human" />
+    <tag Name="BodyDisplayName" Value="[!!]Humanoid" />
+    <tag Name="Species" Value="[!!]human" />
   </object>
   <object Name="BaseHumanoid" Load="Merge">
-    <xtagTextFragments Skin="skin" PoeticFeatures="tall forehead,outstretched legs,eyes full of wonder" Activity="going about the tedious work of speaking to peers,hunting and gathering,wandering the salt dunes" VillageActivity="sleeping in our bedrolls and sitting in our chairs,lounging around,reading books,peeling and eating musa" NeedsItemFor="for my own collection,to slake my greed,because of its trade value,to inspire my art,to inspire my poetry,to be my muse,to help with farm work,for the games we play under the Beetle Moon" SacredThing="the act of procreating,philosophy,alcohol,grains of the earth,stone fruit,artistry,poetry,warm meals,bread and wine,pottery,painting" ArableLand="arable land,livestock,the bounty of the earth" ValuedOre="precious metals,artifacts,chrome,jasper,cybernetics,the nectar of the Eaters" />
-    <tag Name="SimpleConversation" Value="Moon and Sun. Wisdom and will.~May the earth yield for us this season.~Peace, =player.formalAddressTerm=." />
+    <xtagTextFragments Skin="[!!]skin" PoeticFeatures="[!!,]tall forehead,outstretched legs,eyes full of wonder" Activity="[!!,]going about the tedious work of speaking to peers,hunting and gathering,wandering the salt dunes" VillageActivity="[!!,]sleeping in our bedrolls and sitting in our chairs,lounging around,reading books,peeling and eating musa" NeedsItemFor="[!!,]for my own collection,to slake my greed,because of its trade value,to inspire my art,to inspire my poetry,to be my muse,to help with farm work,for the games we play under the Beetle Moon" SacredThing="[!!,]the act of procreating,philosophy,alcohol,grains of the earth,stone fruit,artistry,poetry,warm meals,bread and wine,pottery,painting" ArableLand="[!!,]arable land,livestock,the bounty of the earth" ValuedOre="[!!,]precious metals,artifacts,chrome,jasper,cybernetics,the nectar of the Eaters" />
+    <tag Name="SimpleConversation" Value="[!!~]Moon and Sun. Wisdom and will.~May the earth yield for us this season.~Peace, =player.formalAddressTerm=." />
   </object>
   <object Name="BaseApe" Load="Merge">
     <intproperty Name="Ape" Value="1" />
-    <tag Name="Species" Value="ape" />
-    <tag Name="HeroNameTitleWiseDescriptor" Value="Ruminative,Wise,Sensible,Shrewd,Great,Spirited,Judicious" />
-    <tag Name="HeroNameTitleMayorSyn" Value="king,queen,mayor,elder" />
-    <tag Name="HeroNameTitleMayorSynCap" Value="King,Queen,Mayor,Elder" />
-    <xtagTextFragments Skin="fur" PoeticFeatures="vast shoulders,gentle countenance,musing eyes" YounglingNoise="*hoot*" Activity="bludgeoning things to death" VillageActivity="sitting in a ruminative pose" SacredThing="berries and twigs"></xtagTextFragments>
-    <tag Name="SimpleConversation" Value="&amp;w*pounds chest*&amp;y" />
-    <tag Name="PetResponse" Value="=subject.T= =verb:gibber=." />
+    <tag Name="Species" Value="[!!]ape" />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="[!!,]Ruminative,Wise,Sensible,Shrewd,Great,Spirited,Judicious" />
+    <tag Name="HeroNameTitleMayorSyn" Value="[!!,]king,queen,mayor,elder" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="[!!,]King,Queen,Mayor,Elder" />
+    <xtagTextFragments Skin="[!!]fur" PoeticFeatures="[!!,]vast shoulders,gentle countenance,musing eyes" YounglingNoise="[!!**,]*hoot*" Activity="[!!,]bludgeoning things to death" VillageActivity="[!!,]sitting in a ruminative pose" SacredThing="[!!,]berries and twigs"></xtagTextFragments>
+    <tag Name="SimpleConversation" Value="[!!~]&amp;w*pounds chest*&amp;y" />
+    <tag Name="PetResponse" Value="[!!]=subject.T= =verb:gibber=." />
   </object>
   <object Name="BaseBaboon" Load="Merge">
-    <part Name="Description" Short="Wet nostrils flare at the seat of =pronouns.possessive= dropped snout, and furry arms wave in unpredicted motions. =pronouns.Possessive= eyes are full of stony mischief." />
-    <tag Name="Species" Value="baboon" />
+    <part Name="Description" Short="[!!]Wet nostrils flare at the seat of =pronouns.possessive= dropped snout, and furry arms wave in unpredicted motions. =pronouns.Possessive= eyes are full of stony mischief." />
+    <tag Name="Species" Value="[!!]baboon" />
   </object>
 	<object Name="BaseGoat" Load="Merge">
-		<tag Name="Species" Value="goat" />
+		<tag Name="Species" Value="[!!]goat" />
 	</object>
   <object Name="BaseIssachari" Load="Merge">
-    <part Name="Description" Short="Wind presses a sunbleached thawb and neckdress against a humanoid form. The fabric is embroidered to rhyme with patterns in the salt." />
-    <tag Name="SecretAdjectives" Value="humanoid" />
+    <part Name="Description" Short="[!!]Wind presses a sunbleached thawb and neckdress against a humanoid form. The fabric is embroidered to rhyme with patterns in the salt." />
+    <tag Name="SecretAdjectives" Value="[!!,]humanoid" />
   </object>
   <object Name="BaseMopango" Load="Merge">
-    <tag Name="Species" Value="mopango" />
-    <xtagTextFragments YounglingNoise="*squeak*" Activity="finding weird artifacts" VillageActivity="communing with objects" SacredThing="the Kasaphescence" />
+    <tag Name="Species" Value="[!!]mopango" />
+    <xtagTextFragments YounglingNoise="[!!**,]*squeak*" Activity="[!!,]finding weird artifacts" VillageActivity="[!!,]communing with objects" SacredThing="[!!,]the Kasaphescence" />
   </object>
   <object Name="Mopango Corpse" Load="Merge">
     <part Name="Render" DisplayName="mopango corpse" />
-    <part Name="Description" Short="Scratched scales lay in a coiled mound." />    
+    <part Name="Description" Short="[!!]Scratched scales lay in a coiled mound." />    
     <part Name="Food" Message="The meat is mildly gamey." />    
   </object>
 	<object Name="BaseSwine" Load="Merge">
-		<tag Name="Species" Value="pig" />
+		<tag Name="Species" Value="[!!]pig" />
 	</object>
   <object Name="Templar" Load="Merge">
-    <part Name="Description" Short="Oiled and brushed mail hang across =pronouns.possessive= crooked spine and salient jaw. The color too was sucked out of =pronouns.possessive= irises by =pronouns.possessive= tangled lineage, and =pronouns.possessive= wet rosy lips catch the light and toss it back across a sharp sneer." />
-    <tag Name="SecretAdjectives" Value="templar" />
+    <part Name="Description" Short="[!!]Oiled and brushed mail hang across =pronouns.possessive= crooked spine and salient jaw. The color too was sucked out of =pronouns.possessive= irises by =pronouns.possessive= tangled lineage, and =pronouns.possessive= wet rosy lips catch the light and toss it back across a sharp sneer." />
+    <tag Name="SecretAdjectives" Value="[!!,]templar" />
   </object>
   
   <!-- this was in Items.xml ?? -->
   <object Name="Plant" Load="Merge">
-    <stag Name="Plank" Value="plank" />
-    <stag Name="Fiber" Value="strip" />
-    <stag Name="FiberMaterial" Value="bark" />
+    <stag Name="Plank" Value="[!!]plank" />
+    <stag Name="Fiber" Value="[!!]strip" />
+    <stag Name="FiberMaterial" Value="[!!]bark" />
   </object>
 
   <!-- Base plants -->
   <object Name="BasePlant" Load="Merge">
-    <tag Name="BleedPrefix" Value="{{W|sappy}}" />
-    <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Sage,Erudite,Sensible,Sophic,Leafy,Verduous,Flowery,Old,Ripe" />
-    <tag Name="HeroNameTitleMayorSyn" Value="sultan,monarch,mayor-plant,elder-plant" />
-    <tag Name="HeroNameTitleMayorSynCap" Value="Sultan,Monarch,Mayor-Plant,Elder-Plant" />
-    <xtagTextFragments Skin="cuticle" PoeticFeatures="braided feet,gentle stillness,verdurous bearing" YounglingNoise="*sway*" Activity="basking in the sun,swaying in the wind,putting roots down in the ground,being crawled over by insects" VillageActivity="basking in the sun,putting roots down in the ground,swaying in the wind" NeedsItemFor="for my own collection,to slake my greed,because of its trade value,for burying in the soil,to impress the other plants" SacredThing="carbon dioxide,the sun,water,laying roots,drinking water from the soil,every hue of green" ArableLand="ample sunlight" ValuedOre="water,carbon dioxide,sunlight" />
-    <stag Name="Plank" Value="plank" />
-    <stag Name="HardMaterial" Value="wood" />
-    <tag Name="SimpleConversation" Value="{{emote|*The plant gives no indication of understanding*.}}" />
-    <tag Name="PetResponse" Value="=subject.T= =verb:sway= gently." />
+    <tag Name="BleedPrefix" Value="[!!]{{W|sappy}}" />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="[!!,]Wise,Sage,Erudite,Sensible,Sophic,Leafy,Verduous,Flowery,Old,Ripe" />
+    <tag Name="HeroNameTitleMayorSyn" Value="[!!,]sultan,monarch,mayor-plant,elder-plant" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="[!!,]Sultan,Monarch,Mayor-Plant,Elder-Plant" />
+    <xtagTextFragments Skin="[!!]cuticle" PoeticFeatures="[!!,]braided feet,gentle stillness,verdurous bearing" YounglingNoise="[!!**,]*sway*" Activity="[!!,]basking in the sun,swaying in the wind,putting roots down in the ground,being crawled over by insects" VillageActivity="[!!,]basking in the sun,putting roots down in the ground,swaying in the wind" NeedsItemFor="[!!,]for my own collection,to slake my greed,because of its trade value,for burying in the soil,to impress the other plants" SacredThing="[!!,]carbon dioxide,the sun,water,laying roots,drinking water from the soil,every hue of green" ArableLand="[!!,]ample sunlight" ValuedOre="[!!,]water,carbon dioxide,sunlight" />
+    <stag Name="Plank" Value="[!!]plank" />
+    <stag Name="HardMaterial" Value="[!!]wood" />
+    <tag Name="SimpleConversation" Value="[!!~]{{emote|*The plant gives no indication of understanding*.}}" />
+    <tag Name="PetResponse" Value="[!!]=subject.T= =verb:sway= gently." />
   </object>
   <object Name="BaseAloe" Load="Merge">
-    <tag Name="Species" Value="aloe" />
+    <tag Name="Species" Value="[!!]aloe" />
   </object> 
   <object Name="MutatedPlant" Load="Merge">
-    <tag Name="BleedPrefix" Value="{{W|sappy}}" />
-    <tag Name="HeroNameTitleMayorSyn" Value="mayor-plant,elder-plant" />
-    <tag Name="HeroNameTitleMayorSynCap" Value="Mayor-Plant,Elder-Plant" />
-    <xtagTextFragments Skin="cuticle" PoeticFeatures="braided feet,gentle stillness,verdurous bearing" YounglingNoise="*sway*" Activity="basking in the sun,swaying in the wind,putting roots down in the ground,being crawled over by insects" VillageActivity="basking in the sun,putting roots down in the ground,swaying in the wind" NeedsItemFor="for my own collection,to slake my greed,because of its trade value,for burying in the soil,to impress the other plants" SacredThing="carbon dioxide,the sun,water,laying roots,drinking water from the soil,every hue of green" ArableLand="ample sunlight" ValuedOre="water,carbon dioxide,sunlight" />
-    <tag Name="PetResponse" Value="=subject.T= =verb:sway= gently." />
-    <stag Name="Plank" Value="strip" />
-    <stag Name="HardMaterial" Value="stem" />
+    <tag Name="BleedPrefix" Value="[!!]{{W|sappy}}" />
+    <tag Name="HeroNameTitleMayorSyn" Value="[!!,]mayor-plant,elder-plant" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="[!!,]Mayor-Plant,Elder-Plant" />
+    <xtagTextFragments Skin="[!!]cuticle" PoeticFeatures="[!!,]braided feet,gentle stillness,verdurous bearing" YounglingNoise="[!!**,]*sway*" Activity="[!!,]basking in the sun,swaying in the wind,putting roots down in the ground,being crawled over by insects" VillageActivity="[!!,]basking in the sun,putting roots down in the ground,swaying in the wind" NeedsItemFor="[!!,]for my own collection,to slake my greed,because of its trade value,for burying in the soil,to impress the other plants" SacredThing="[!!,]carbon dioxide,the sun,water,laying roots,drinking water from the soil,every hue of green" ArableLand="[!!,]ample sunlight" ValuedOre="[!!,]water,carbon dioxide,sunlight" />
+    <tag Name="PetResponse" Value="[!!]=subject.T= =verb:sway= gently." />
+    <stag Name="Plank" Value="[!!]strip" />
+    <stag Name="HardMaterial" Value="[!!]stem" />
   </object>
   <object Name="MutatedBush" Load="Merge">
-    <tag Name="Species" Value="bush" />
-    <xtagTextFragments Skin="cuticle" PoeticFeatures="braided feet,gentle stillness,lust for water" />
+    <tag Name="Species" Value="[!!]bush" />
+    <xtagTextFragments Skin="[!!]cuticle" PoeticFeatures="[!!,]braided feet,gentle stillness,lust for water" />
   </object>
   <object Name="MutatedSucculent" Load="Merge">
-    <tag Name="Species" Value="succulent" />
-    <xtagTextFragments Skin="cuticle" PoeticFeatures="quincunx spines,fluted stems,plush hair" />
+    <tag Name="Species" Value="[!!]succulent" />
+    <xtagTextFragments Skin="[!!]cuticle" PoeticFeatures="[!!,]quincunx spines,fluted stems,plush hair" />
   </object>
   <object Name="MutatedFlower" Load="Merge">
-    <tag Name="Species" Value="flower" />
-    <tag Name="SecretAdjectives" Value="flower" />
-    <xtagTextFragments Skin="cuticle" PoeticFeatures="ethereal petals,simple geometry,ageless beauty" />
+    <tag Name="Species" Value="[!!]flower" />
+    <tag Name="SecretAdjectives" Value="[!!,]flower" />
+    <xtagTextFragments Skin="[!!]cuticle" PoeticFeatures="[!!,]ethereal petals,simple geometry,ageless beauty" />
   </object>
   <object Name="MutatedVine" Load="Merge">
-    <tag Name="Species" Value="vine" />
-    <xtagTextFragments Skin="cuticle" PoeticFeatures="verdurous bearing,labyrinth of fingers,sensuality" />
+    <tag Name="Species" Value="[!!]vine" />
+    <xtagTextFragments Skin="[!!]cuticle" PoeticFeatures="[!!,]verdurous bearing,labyrinth of fingers,sensuality" />
   </object>
   <object Name="MutatedTree" Load="Merge">
-    <tag Name="Species" Value="tree" />
-    <xtagTextFragments Skin="cuticle" PoeticFeatures="enormity,verdurous bearing,gentle stillness" />
+    <tag Name="Species" Value="[!!]tree" />
+    <xtagTextFragments Skin="[!!]cuticle" PoeticFeatures="[!!,]enormity,verdurous bearing,gentle stillness" />
   </object>
 
   <!-- was in Items.xml -->
   <object Name="Fungus" Load="Merge">
-    <stag Name="Plank" Value="mass" />
+    <stag Name="Plank" Value="[!!]mass" />
   </object>
 
   <!-- Base fungi -->  
   <object Name="BaseFungus" Load="Merge">
-    <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Sage,Erudite,Sensible,Sophic,Frilled,Pallid,Fecund,Old,Sporulous" />
-    <tag Name="HeroNameTitleMayorSyn" Value="sultan,monarch,mayor-fungus,elder-fungus" />
-    <tag Name="HeroNameTitleMayorSynCap" Value="Sultan,Monarch,Mayor-Fungus,Elder-Fungus" />
-    <xtagTextFragments Skin="stipe" PoeticFeatures="wheezing gills,turgidness,hunger for dead things" YounglingNoise="*squish*" Activity="basking in the shade" VillageActivity="basking in the shade" NeedsItemFor="for my own collection,to slake my greed,because of its trade value" SacredThing="necrotic biomass" ArableLand="ripe corpses" ValuedOre="organic matter" />
-    <stag Name="HardMaterial" Value="flesh" />
-    <tag Name="PetResponse" Value="=subject.T= =verb:squish=." />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="[!!,]Wise,Sage,Erudite,Sensible,Sophic,Frilled,Pallid,Fecund,Old,Sporulous" />
+    <tag Name="HeroNameTitleMayorSyn" Value="[!!,]sultan,monarch,mayor-fungus,elder-fungus" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="[!!,]Sultan,Monarch,Mayor-Fungus,Elder-Fungus" />
+    <xtagTextFragments Skin="[!!]stipe" PoeticFeatures="[!!,]wheezing gills,turgidness,hunger for dead things" YounglingNoise="[!!**,]*squish*" Activity="[!!,]basking in the shade" VillageActivity="[!!,]basking in the shade" NeedsItemFor="[!!,]for my own collection,to slake my greed,because of its trade value" SacredThing="[!!,]necrotic biomass" ArableLand="[!!,]ripe corpses" ValuedOre="[!!,]organic matter" />
+    <stag Name="HardMaterial" Value="[!!]flesh" />
+    <tag Name="PetResponse" Value="[!!]=subject.T= =verb:squish=." />
   </object>
   <object Name="MutatedFungus" Load="Merge">
-    <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Sage,Erudite,Sensible,Sophic,Frilled,Pallid,Fecund,Old,Sporulous" />
-    <tag Name="HeroNameTitleMayorSyn" Value="sultan,monarch,mayor-fungus,elder-fungus" />
-    <tag Name="HeroNameTitleMayorSynCap" Value="Sultan,Monarch,Mayor-Fungus,Elder-Fungus" />
-    <xtagTextFragments PoeticFeatures="wheezing gills,turgidness,hunger for dead things" YounglingNoise="*squish*" Activity="basking in the shade" VillageActivity="basking in the shade" NeedsItemFor="for my own collection,to slake my greed,because of its trade value" SacredThing="necrotic biomass" ArableLand="ripe corpses" ValuedOre="organic matter" />
-    <stag Name="HardMaterial" Value="flesh" />
-    <tag Name="PetResponse" Value="=subject.T= =verb:squish=." />
+    <tag Name="HeroNameTitleWiseDescriptor" Value="[!!,]Wise,Sage,Erudite,Sensible,Sophic,Frilled,Pallid,Fecund,Old,Sporulous" />
+    <tag Name="HeroNameTitleMayorSyn" Value="[!!,]sultan,monarch,mayor-fungus,elder-fungus" />
+    <tag Name="HeroNameTitleMayorSynCap" Value="[!!,]Sultan,Monarch,Mayor-Fungus,Elder-Fungus" />
+    <xtagTextFragments PoeticFeatures="[!!,]wheezing gills,turgidness,hunger for dead things" YounglingNoise="[!!**,]*squish*" Activity="[!!,]basking in the shade" VillageActivity="[!!,]basking in the shade" NeedsItemFor="[!!,]for my own collection,to slake my greed,because of its trade value" SacredThing="[!!,]necrotic biomass" ArableLand="[!!,]ripe corpses" ValuedOre="[!!,]organic matter" />
+    <stag Name="HardMaterial" Value="[!!]flesh" />
+    <tag Name="PetResponse" Value="[!!]=subject.T= =verb:squish=." />
   </object>
   
   <!-- Base oddities -->
   <object Name="BaseNest" Load="Merge">
-    <xtagTextFragments YounglingNoise="*squish*" Activity="incubating larvae" VillageActivity="incubating larvae" NeedsItemFor="for my own collection,to slake my greed,because of its trade value" SacredThing="nesting" ArableLand="a moist place" ValuedOre="moisture" />
+    <xtagTextFragments YounglingNoise="[!!**,]*squish*" Activity="[!!,]incubating larvae" VillageActivity="[!!,]incubating larvae" NeedsItemFor="[!!,]for my own collection,to slake my greed,because of its trade value" SacredThing="[!!,]nesting" ArableLand="[!!,]a moist place" ValuedOre="[!!,]moisture" />
   </object>
 	
 </objects>
