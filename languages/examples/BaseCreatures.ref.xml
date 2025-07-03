@@ -1013,8 +1013,8 @@
     <tag Name="BaseObject" Value="*noinherit" />
   </object>  
   
-  <!-- this was in Items.xml ?? -->
-  <object Name="Plant" Inherits="PhysicalObject">
+  <!-- this was in Items.xml ?? here just for reference -->
+<!--  <object Name="Plant" Inherits="PhysicalObject">
     <part Name="Render" DisplayName="[Plant]" RenderLayer="3" RenderString="157" Tile="assets_content_textures_tiles_tile-9-4.png" ColorString="&amp;G" Occluding="false" />
     <part Name="Physics" Conductivity="60" Solid="false" Weight="200" Category="Plants" Takeable="false" />
     <part Name="MentalShield" />
@@ -1031,7 +1031,7 @@
     <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_tree"></tag>
     <tag Name="TakeDamageSound" Value="Sounds/Damage/sfx_damage_genPlant" />
     <tag Name="DeathSounds" Value="Sounds/Damage/sfx_destroy_genPlant" />
-  </object>
+  </object> -->
 
   <!-- Base plants -->
   <object Name="ActivePlant" Inherits="Plant">
