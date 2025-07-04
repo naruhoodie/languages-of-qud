@@ -55,13 +55,14 @@ checking for non-TODO strings:
 ID="[^"]*" Value="(?!\[届：)
 <string ID="[^"]*">(?!\[届：)
 
-regex for splitting string ID="" into Context="" ID="":
+regex for splitting string ID="" into Context="" ID="" (Strings-example.xml):
 (?!Context="[^"]*") (ID=")([^&{":=]+):([^"]+")	 Context="$2" $1$3
 
 adding [届：\TODO] to various tag attributes:
 ( (?:DisplayName|Description|Snippet)=")([^\["][^届"]+)"		$1[届：\TODO]$2"
 stripping out unneeded attributes:
  (?:Class|Cost|Attribute|Tile|Foreground|Detail|Minimum|Prereq|Hidden)(="[^"]+")
+
 more general [!!] for Lang="min" tag attributes on object blueprints: 
 ( (?:PoeticFeatures|Activity|VillageActivity|NeedsItemFor|SacredThing|ArableLand|ValuedOre)=")((?!\[!!,\])[^"]+)"		$1[!!,]$2"
 ( (?:YounglingNoise)=")((?!\[!!\*\*\,])[^"]+)"		$1[!!**,]$2"
@@ -69,7 +70,13 @@ more general [!!] for Lang="min" tag attributes on object blueprints:
 ( (?:Name="(?:SecretAdjectives|HeroNameTitle[^"]*)" Value)=")((?!\[!!,\])[^"]+)"		$1[!!,]$2"
 ( (?:Name="(?:SimpleConversation)" Value)=")((?!\[!!~\])[^"]+)"		$1[!!~]$2"
 ( (?:Name="(?:Species|PetResponse|HardMaterial|Plank|BodyDisplayName|Plant|Fiber|FiberMaterial)" Value)=")((?!\[!!\])[^"]+)"	$1[!!]$2"
-(?:Name="(?:Description)" Short=")((?!\[!!\])[^"]+)"	$1[!!]$2"
+( (?:Name="(?:Render)" DisplayName)=")((?!\[!!\])[^"]+)"		$1[!!]$2"
+( (?:Name="(?:Description)" Short)=")((?!\[!!\])[^"]+)"		$1[!!]$2"
+( (?:adjunctNoun)=")((?!\[!!\])[^"]+)"	$1[!!]$2"
+inherits -> Load=Merge:
+(?:Inherits)(="[^"]+")	Load="Merge"
+stripping unneeded attributes (part Name="Render"):
+(?:Tile|RenderLayer|RenderString|ColorString|TileColor|DetailColor||Occluding|RenderIfDark|Hidden)(="[^"]+" )
 check afterward:
 ( (?:Name="[^"]+)" Value=")((?!\[!![^\]]*\])[^"]+)"
 Japanese punctuation
