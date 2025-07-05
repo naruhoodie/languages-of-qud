@@ -509,46 +509,26 @@ alone if no match found.
   <!--
 	Action Manager/AutoAct strings
   -->
-  <!--Code references _S(): Assets/XRL Application/Game Core/ActionManager.cs:751-->
   <string Context="Message Log Turn Separator" ID="[--turn start--]">[届：\TODO][--turn start--]</string>
-  <!--Code references _T(): Assets/XRL Application/Game Core/ActionManager.cs:996-->
   <string Context="AutoAct gather interrupt popup" ID="You cannot find a path to =object.the.name:withoutTitles=.">[届：\TODO]You cannot find a path to =object.the.name:withoutTitles=.</string>
-  <!--Code references _S(): Assets/XRL Application/Game Core/ActionManager.cs:1010-->
   <string Context="AutoAct gather interrupt popup" ID="You cannot find a path to your destination.">[届：\TODO]You cannot find a path to your destination.</string>
-  <!--Code references _T(): Assets/XRL Application/Game Core/ActionManager.cs:1193-->
   <string Context="AutoAct gather interrupt popup" ID="You cannot find a path toward the =dir.expandedDirection=.">[届：\TODO]You cannot find a path toward the =dir.expandedDirection=.</string>
-  <!--Code references _S(): Assets/XRL Application/Game Core/ActionManager.cs:1325-->
   <string Context="AutoAct explore interrupt popup" ID="There doesn't seem to be anywhere else to explore.">[届：\TODO]There doesn't seem to be anywhere else to explore.</string>
-  <!--Code references _S(): Assets/XRL Application/Game Core/ActionManager.cs:1343-->
   <string Context="AutoAct explore interrupt popup" ID="There is only darkness from an unusual source left to explore.">[届：\TODO]There is only darkness from an unusual source left to explore.</string>
-  <!--Code references _S(): Assets/XRL Application/Game Core/ActionManager.cs:1350-->
   <string Context="AutoAct explore interrupt popup" ID="There doesn't seem to be anywhere else to explore from here.">[届：\TODO]There doesn't seem to be anywhere else to explore from here.</string>
-  <!--Code references _S(): Assets/XRL Application/Game Core/ActionManager.cs:1389-->
   <string Context="AutoAct climb methods 'stairways'" ID="stairways leading upward">[届：\TODO]stairways leading upward</string>
-  <!--Code references _S(): Assets/XRL Application/Game Core/ActionManager.cs:1401-->
   <string Context="AutoAct climb methods 'stairways'" ID="stairways leading downward">[届：\TODO]stairways leading downward</string>
-  <!--Code references _T(): Assets/XRL Application/Game Core/ActionManager.cs:1408-->
   <string Context="AutoAct climb interrupt popup" ID="There are no =stairways= nearby.">[届：\TODO]There are no =stairways= nearby.</string>
-  <!--Code references _S(): Assets/XRL Application/Game Core/ActionManager.cs:1429-->
   <string Context="AutoAct climb interrupt message" ID="You can't figure out how to safely reach the stairs from here.">[届：\TODO]You can't figure out how to safely reach the stairs from here.</string>
-  <!--Code references _T(): Assets/XRL Application/Game Core/ActionManager.cs:1646-->
   <string Context="AutoAct Rest Loading Status Bar" ID="Resting until party healed... Turn: =num=">[届：\TODO]Resting until party healed... Turn: =num=</string>
-  <!--Code references _T(): Assets/XRL Application/Game Core/ActionManager.cs:1656-->
   <string Context="AutoAct Rest Loading Status Bar" ID="Resting until healed... Turn: =num=">[届：\TODO]Resting until healed... Turn: =num=</string>
-  <!--Code references _T(): Assets/XRL Application/Game Core/ActionManager.cs:1728-->
   <string Context="AutoAct attack interrupt message" ID="You will not auto-attack =target.the.name:withoutTitles= because =target.itis= not hostile to you.">[届：\TODO]You will not auto-attack =target.the.name:withoutTitles= because =target.itis= not hostile to you.</string>
-  <!--Code references _S(): Assets/XRL Application/Game Core/ActionManager.cs:1755-->
   <string Context="AutoAct attack interrupt message" ID="You cannot see your target.">[届：\TODO]You cannot see your target.</string>
-  <!--Code references _T(): Assets/XRL Application/Game Core/ActionManager.cs:1772-->
   <string Context="AutoAct attack interrupt message" ID="You can't find a way to navigate to =target.the.name:withoutTitles=.">[届：\TODO]You can't find a way to navigate to =target.the.name:withoutTitles=.</string>
-  <!--Code references _T(): Assets/XRL Application/Game Core/ActionManager.cs:1806-->
   <string Context="AutoAct attack interrupt message" ID="You are unable to attack =target.the.name:withoutTitles=.">[届：\TODO]You are unable to attack =target.the.name:withoutTitles=.</string>
-  <!--Code references _T(): Assets/XRL Application/Game Core/ActionManager.cs:1860-->
   <string Context="AutoAct attack interrupt message" ID="You can't seem to find a way to reach =target.the.name:withoutTitles=.">[届：\TODO]You can't seem to find a way to reach =target.the.name:withoutTitles=.</string>
-  <!--Code references _T(): Assets/XRL Application/Game Core/ActionManager.cs:1892-->
   <string Context="AutoAct Wait Loading Status Bar" ID="Waiting for =num.things:turn=...">[届：\TODO]Waiting for =num.things:turn=...</string>
   <string Context="AutoAct Wait Loading Status Complete" ID="Done waiting.">[届：\TODO]Done waiting.</string>
-  <!--Code references _T(): Assets/XRL Application/Game Core/ActionManager.cs:1929-->
   <string Context="AutoAct Wait Loading Status Bar" ID="Waiting for =remaining.things:round=...">[届：\TODO]Waiting for =remaining.things:round=...</string>
   <string Context="AutoAct interrupt 'because' (clause)" ID="of =object.the.name:withoutTitles= =subject.direction#object=">[届：\TODO]of =object.the.name:withoutTitles= =subject.direction#object=</string>
 
@@ -694,7 +674,7 @@ alone if no match found.
   <string Context="direction.description.incoming.actor" ID="from above =subject.them=">上から</string>
   <string Context="direction.description.incoming.actor" ID="from near =subject.them=">近くから</string>
   <string Context="direction.description.incoming.actor" ID="from =subject.their= =dir.expandedDirection=">=dir.expandedDirection=から</string>
- <string Context="direction.short" ID="N">北</string>
+  <string Context="direction.short" ID="N">北</string>
   <string Context="direction.short" ID="S">南</string>
   <string Context="direction.short" ID="E">東</string>
   <string Context="direction.short" ID="W">西</string>
@@ -770,7 +750,7 @@ alone if no match found.
   <string Context="DimensionManager Journal Observation" ID="There exists a pocket dimension known as {{O|Tzimtzlum}}.">[届：\TODO]There exists a pocket dimension known as {{O|Tzimtzlum}}.</string>
 
   <!--
-	Hero strings - make sure they match their counterparts in Naming.xml
+	Hero strings - make sure they match their counterparts in Naming.xml!!
   -->
   <string Context="Baboon Hero Naming.xml Context" ID="=rings.toString=-ringed">指輪が=rings.toString=輪の</string>
   <string Context="Baboon Hero Naming.xml Context" ID="King">王</string>
@@ -845,7 +825,7 @@ alone if no match found.
   <string Context="hostile perception verb" ID="perceive">[届：\TODO]perceive</string>
 
   <!--
-	Factions & related strings
+	Factions & related strings - see Factions.xml for definitions
   -->
   <string Context="Faction GetFormattedName *" ID="everyone">[届：\TODO]everyone</string>
   <string Context="Faction Feeling" ID="{{C|=faction.formattedName|capitalize=}} =faction.ifPlural:despise:despises= you. Even docile =faction.ifPlural:ones:members= will attack you.">[届：\TODO]{{C|=faction.formattedName|capitalize=}} =faction.ifPlural:despise:despises= you. Even docile =faction.ifPlural:ones:members= will attack you.</string>
@@ -947,7 +927,7 @@ alone if no match found.
   <string Context="FactionInterest" ID="the locations of =tagList.join: |pluralize=">[届：\TODO]the locations of =tagList.join: |pluralize=</string>
 
   <!--
-	AutoAct message partial strings
+	AutoAct message elements
   -->
   <string Context="autoActDescription (verb gerund)" ID="exploring">[届：\TODO]exploring</string>
   <string Context="autoActDescription (verb gerund)" ID="waiting">[届：\TODO]waiting</string>
@@ -1433,7 +1413,7 @@ alone if no match found.
   <string Context="Campfire Extinguish" ID="=subject.Does:are= extinguished =object.the.name=.">[届：\TODO]=subject.Does:are= extinguished =object.the.name=.</string>
 
   <!--
-	Skill/Ability strings
+	Cooking & Recipe strings
   -->
   <string Context="Cookbook Inventory Action" ID="read">[届：\TODO]read</string>
   <string Context="Cookbook Accomplishment" ID="You read =object.refname=.">[届：\TODO]You read =object.refname=.</string>
@@ -1457,6 +1437,10 @@ alone if no match found.
   <string Context="CookingRecipe Naming Ingredient" ID="=item.short|strip=">[届：\TODO]=item.short|strip=</string>
   <string Context="CookingRecipe Naming Ingredient" ID="=liquid=">[届：\TODO]=liquid=</string>
   <string Context="CookingRecipe Name Generator" ID="=spice:cooking.recipeNames.$ingredientCount.!random|title=">[届：\TODO]=spice:cooking.recipeNames.$ingredientCount.!random|title=</string>
+
+  <!--
+	Skill/Ability strings
+  -->
   <string Context="Proselytize Ability Name" ID="Proselytize">[届：\TODO]Proselytize</string>
   <string Context="Proselytize Fail Glotrot" ID="You cannot proselytize without a tongue.">[届：\TODO]You cannot proselytize without a tongue.</string>
   <string Context="Proselytize Target Picker Title" ID="Proselytize">[届：\TODO]Proselytize</string>
@@ -1560,6 +1544,9 @@ alone if no match found.
   -->
   <string Context="keybind" ID="unknown key">不明なキー</string>
 <!-- no change: <string ID="keybind:{{W|Alt}}">{{W|Alt}}</string> -->
+
+  <string ID="an uncharted dimension">[届：\TODO]an uncharted dimension</string>
+  <string Context="Default LairName" ID="lair">[届：\TODO]lair</string>
 
   <string Context="damage penetrations" ID="(x=number.toString=)">[届：\TODO](x=number.toString=)</string>
 
