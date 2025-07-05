@@ -4,7 +4,7 @@
   <conversation ID="BaseConversation" Load="Merge">
     <!-- Conversation level choices are distributed to all start nodes by default -->
     <choice ID="WaterRitualChoice" IfSpeakerHavePart="GivesRep" IfAllowEscape="true" Target="WaterRitual" Ordinal="980">
-<!-- possibly more natural with a 1st-person pronoun and the other person's name without honorifics? my kochira/sochira is very sidestepping the issue -->
+	  <!-- possibly more natural with a 1st-person pronoun and the other person's name without honorifics? my kochira/sochira is very sidestepping the issue -->
       <text>=subject.name:short=の渇きは自分の、自分の水は=subject.name:short=の。</text>
       <text IfHavePart="SociallyRepugnant" Priority="1">
         唾液を交換する？~
@@ -18,34 +18,26 @@
         自分の水は渇き、そちらの水はそちらの。~
         お前の渇はおれの、おれの水はダメよ。
       </text>
-      <part Name="WaterRitualBegin" />
     </choice>
     <node ID="WaterRitual">
       <text>生きて飲んで、=subject.waterRitualLiquid=きょうだい。</text>
-      <part Name="WaterRitual" />
       <choice ID="ShareGossipChoice">
         <text>=subject.waterRitualLiquid=きょうだいにとって興味深いかもしれない情報がいくつかある。</text>
-        <part Name="WaterRitualSellSecret" Gossip="true" />
       </choice>
       <choice ID="ShareSecretListenerChoice">
         <text>=subject.waterRitualLiquid=きょうだいと共有したい秘密がある。</text>
-        <part Name="WaterRitualSellSecret" />
       </choice>
       <choice ID="ShareSecretSpeakerChoice">
         <text>秘密を教えて、=subject.waterRitualLiquid=きょうだい。</text>
-        <part Name="WaterRitualBuySecret" />
       </choice>
       <choice ID="LearnSkillChoice">
         <text>=subject.waterRitualLiquid=きょうだいの遣り方を教えてください。</text>
-        <part Name="WaterRitualLearnSkill" />
       </choice>
       <choice ID="CookingRecipeChoice">
         <text>国の人々の好きな料理を教えてください。</text>
-        <part Name="WaterRitualCookingRecipe" />
       </choice>
       <choice ID="JoinPartyChoice">
         <text>=subject.waterRitualLiquid=きょうだいにも参加してもらいたい。</text>
-        <part Name="WaterRitualJoinParty" />
       </choice>
       <choice ID="EndChoice" Target="Start" Ordinal="1000">
         <text>生きて飲んで、=subject.waterRitualLiquid=きょうだい。</text>
@@ -54,7 +46,6 @@
     </node>
     <choice ID="Trade" Ordinal="990">
       <text>商売をしましょう。</text>
-      <part Name="Trade" />
     </choice>
   </conversation>
 
@@ -86,8 +77,8 @@
 			<choice Target="Village">村について教えてくれませんか？ジョッパ</choice>
 			<choice Target="Work" IfNotHaveQuest="What's Eating the Watervine?">仕事を探しています</choice>
 			<choice Target="End">生きて飲んで</choice>
-		</start>						
-		<node ID="Name" Inherits="Welcome">
+		</start>
+		<node ID="Name">
 			<text Load="Replace" Priority="1">
 				 メフメットって、舌が言う。生きて飲んで、=name=さん
 			</text>
@@ -98,7 +89,7 @@
 			</text>
 			<choice Target="VillageMore">…</choice>			
 		</node>
-		<node ID="VillageMore" Inherits="Welcome">
+		<node ID="VillageMore">
 			<text>
 				大砂漠からの風が少し冷たくなり、湿気を放出する。ちょうどいい具合だ。舌は百通りの風を味わえるんだぞ？&#xA;
 				いずれにせよ、心はあそこへさまよう。ジョッパについてもっと知りたいなら、イルダド長老に話を聞いてくれ。北の小道を上って行くんだ。
@@ -120,7 +111,7 @@
 			<choice Target="End" StartQuest="What's Eating the Watervine?">要求通りにします。</choice>
 			<choice Target="Start">興味ないです。</choice>
 		</node>
-		<node ID="Aye" Inherits="Welcome">
+		<node ID="Aye">
 			<text>
 				やあ
 			</text>
