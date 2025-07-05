@@ -6,6 +6,8 @@ regexp for adding DisplayName to mutations etc.:
 ( Name=")([^"]+")((?![\s]*DisplayName))	$1$2 DisplayName="[届：\TODO]$2$3
 
 Strings-example.xml
+removing <!--Code references lines:
+^\s+<!--Code references[^>]+-->\s*$\n	
 regexp for adding [届：\TODO]: 
 (ID=")([^"]+)(" Value=")(?:\2)(")	$1$2$3[届：\\TODO]$2$4
 (ID=")([^"]+)(">)(?:\2)(<\/string>)		$1$2$3[届：\\TODO]$2$4
