@@ -1,7 +1,13 @@
 regexp for removing ruby text tags (except the TODOs):
 \[([^届\\]+)\\[^\]]+\]	$1
 regexp for processing Naming.xml namingstyle elements:
-(Name=")([^"]+)("(?: Weight="[0-9]+")? \/>)(?!<!--)	$1$3<!-- Original="$2" -->
+(<(?:prefix|infix|postfix)es Amount="[0-9]+(?:-[0-9]+)*")>	$1 Load="Replace">
+(<templatevars)(>)	$1 Load="Replace">
+(<template Name=")([^"]+"\s*/>)		$1[!!]$2
+(<value Name=")([^"]+"(?: Weight="[0-9]+")*\s*/>)	$1[!!]$2
+regexp for moving original Name contents to a comment:
+(Name=")([^"]+)("(?: Weight="[0-9]+")? \/>)(?!<!--)		$1$3<!-- Original="$2" -->
+
 regexp for adding DisplayName to mutations etc.:
 ( Name=")([^"]+")((?![\s]*DisplayName))	$1$2 DisplayName="[届：\TODO]$2$3
 

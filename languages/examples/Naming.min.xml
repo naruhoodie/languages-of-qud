@@ -9,12 +9,16 @@
 
     <!-- change to Format="AsIs" if your language doesn't do upper/lowercase letters -->
     <namestyle Name="Qudish" Format="TitleCase">
-    <!-- Qudish name syllables are probably from Arabic (& Biblical Hebrew?) -->
-
-      <!-- random syllables to pick from for name generation, default Weight is "1"
-           change these as needed if your language uses a different writing system,
-           or even different Latin letters for phonetic spellings than English does -->
-      <prefixes Amount="1">
+    <!-- Qudish name syllables are probably from Arabic (& Biblical Hebrew?),
+         used for Mutated Human genotypes -->
+    <!-- NOTE: the following suggestions for handling prefixes/infixes/postfixes
+         apply to other namestyles too; handle them as appropriate -->
+      <!-- random syllables that are picked from for name generation, default Weight is "1" -->
+      <!-- change these as needed if your language uses a different writing system,
+           or even different Latin letters for phonetic spellings than English does. -->
+      <!-- If you DON'T need to change any prefix here,
+           remove the entire <prefixes></prefixes> node -->
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="fa" />
         <prefix Name="ha" />
         <prefix Name="i" Weight="2" />
@@ -45,7 +49,9 @@
         <prefix Name="yi" />
         <prefix Name="yy" />
       </prefixes>
-      <infixes Amount="0-2">
+      <!-- If you DON'T need to change any infix here,
+           remove the entire <infixes></infixes> node -->
+      <infixes Amount="0-2" Load="Replace">
         <infix Name="ga" />
         <infix Name="me" />
         <infix Name="mo" />
@@ -67,7 +73,9 @@
         <infix Name="shwu" />
         <infix Name="yu" Weight="2" />
       </infixes>
-      <postfixes Amount="1">
+      <!-- If you DON'T need to change any postfix here,
+           remove the entire <postfixes></postfixes> node -->
+      <postfixes Amount="1" Load="Replace">
         <postfix Name="bas" />
         <postfix Name="d" />
         <postfix Name="jr" />
@@ -96,7 +104,7 @@
     </namestyle>
 
     <namestyle Name="Qudish Site" Format="TitleCase">
-      <prefixes Amount="1">
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="a" />
         <prefix Name="ala" />
         <prefix Name="bi" />
@@ -121,7 +129,7 @@
         <prefix Name="tu" />
         <prefix Name="u" />
       </prefixes>
-      <infixes Amount="0-1">
+      <infixes Amount="0-1" Load="Replace">
         <infix Name="arra" />
         <infix Name="azo" />
         <infix Name="ba" />
@@ -138,7 +146,7 @@
         <infix Name="rsi" />
         <infix Name="rva" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Amount="1" Load="Replace">
         <postfix Name="bal" />
         <postfix Name="d" />
         <postfix Name="kesh" />
@@ -175,112 +183,111 @@
     </namestyle>
 
     <namestyle Name="Qudish Banana Grove Site" Base="Qudish Site">
-      <templates>
-        <template Name="Banana Grove =name=" />
+      <templates Load="Replace">
+        <template Name="[!!]Banana Grove =name=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Qudish Baroque Ruins Site" Base="Qudish Site">
-      <templates>
-        <template Name="Baroque Ruins =name=" />
+      <templates Load="Replace">
+        <template Name="[!!]Baroque Ruins =name=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Qudish Deep Jungle Site" Base="Qudish Site">
-      <templates>
-        <template Name="Deep Jungle =name=" />
+      <templates Load="Replace">
+        <template Name="[!!]Deep Jungle =name=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Qudish Desert Canyon Site" Base="Qudish Site">
-      <templates>
-        <template Name="Desert Canyon =name=" />
+      <templates Load="Replace">
+        <template Name="[!!]Desert Canyon =name=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Qudish Flower Fields Site" Base="Qudish Site">
-      <templates>
-        <template Name="Flower Fields =name=" />
+      <templates Load="Replace">
+        <template Name="[!!]Flower Fields =name=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Qudish Fungal Site" Base="Qudish Site">
-      <templates>
-        <template Name="Fungal =name=" />
+      <templates Load="Replace">
+        <template Name="[!!]Fungal =name=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Qudish Hills Site" Base="Qudish Site">
-      <templates>
-        <template Name="Hills =name=" />
+      <templates Load="Replace">
+        <template Name="[!!]Hills =name=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Qudish Jungle Site" Base="Qudish Site">
-      <templates>
-        <template Name="Jungle =name=" />
+      <templates Load="Replace">
+        <template Name="[!!]Jungle =name=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Qudish Lake Hinnom Site" Base="Qudish Site">
-      <templates>
-        <template Name="Water =name=" />
+      <templates Load="Replace">
+        <template Name="[!!]Water =name=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Qudish Moon Stair Site" Base="Qudish Site">
-      <templates>
-        <template Name="Moon Stair =name=" />
+      <templates Load="Replace">
+        <template Name="[!!]Moon Stair =name=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Qudish Mountains Site" Base="Qudish Site">
-      <templates>
-        <template Name="Mountains =name=" />
+      <templates Load="Replace">
+        <template Name="[!!]Mountains =name=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Qudish Palladium Reef Site" Base="Qudish Site">
-      <templates>
-        <template Name="Palladium Reef =name=" />
+      <templates Load="Replace">
+        <template Name="[!!]Palladium Reef =name=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Qudish Ruins Site" Base="Qudish Site">
-      <templates>
-        <template Name="Ruins =name=" />
+      <templates Load="Replace">
+        <template Name="[!!]Ruins =name=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Qudish Salt Dunes Site" Base="Qudish Site">
-      <templates>
-        <template Name="Salt Dunes =name=" />
+      <templates Load="Replace">
+        <template Name="[!!]Salt Dunes =name=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Qudish Salt Marsh Site" Base="Qudish Site">
-      <templates>
-        <template Name="Salt Marsh =name=" />
+      <templates Load="Replace">
+        <template Name="[!!]Salt Marsh =name=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Qudish Spindle Site" Base="Qudish Site">
-      <templates>
-        <template Name="Spindle =name=" />
+      <templates Load="Replace">
+        <template Name="[!!]Spindle =name=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Qudish Water Site" Base="Qudish Site">
-      <templates>
-        <template Name="Water =name=" />
+      <templates Load="Replace">
+        <template Name="[!!]Water =name=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Eater" HyphenationChance="5" Format="TitleCase">
-
     <!-- Eater name syllables seem to be from ancient Macedonian, Persian & Egyptian?
          used for Sultan names -->
-      <prefixes Amount="1">
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="anti" />
         <prefix Name="arta" />
         <prefix Name="ba" />
@@ -309,14 +316,14 @@
         <prefix Name="yu" />
         <prefix Name="yy" />
       </prefixes>
-      <infixes Amount="0-1">
+      <infixes Amount="0-1" Load="Replace">
         <infix Name="le" />
         <infix Name="ra" />
         <infix Name="thri" />
         <infix Name="xer" />
         <infix Name="yu" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Amount="1" Load="Replace">
         <postfix Name="dates" />
         <postfix Name="dokht" />
         <postfix Name="dukht" />
@@ -336,21 +343,21 @@
     </namestyle>
 
     <namestyle Name="Ekuemekiyyen" Format="TitleCase">
-
-    <!-- Ekuemekiyyen name syllables seem to be Nigerian (Igbo & Yoruba, others?) -->
-      <templates>
-        <template Name="=name= =suffix=" />
+    <!-- Ekuemekiyyen name syllables seem to be Nigerian (Igbo & Yoruba, others?),
+         used for True Kin genotype - Ekuemekiyye -->
+      <templates Load="Replace">
+        <template Name="[!!]=name= =suffix=" />
       </templates>
-      <templatevars>
+      <templatevars Load="Replace">
         <templatevar Name="suffix">
-          <value Name="ka" />
-          <value Name="ki" />
-          <value Name="ku" />
-          <value Name="ko" />
+          <value Name="[!!]ka" />
+          <value Name="[!!]ki" />
+          <value Name="[!!]ku" />
+          <value Name="[!!]ko" />
           <value Name="" Weight="5" />
         </templatevar>
       </templatevars>
-      <prefixes Amount="1">
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="ab" />
         <prefix Name="ad" />
         <prefix Name="afi" />
@@ -391,7 +398,7 @@
         <prefix Name="za" />
         <prefix Name="zu" />
       </prefixes>
-      <infixes Amount="0-2">
+      <infixes Amount="0-2" Load="Replace">
         <infix Name="ama" />
         <infix Name="ba" />
         <infix Name="baji" />
@@ -420,7 +427,7 @@
         <infix Name="tu" />
         <infix Name="ye" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Amount="1" Load="Replace">
         <postfix Name="bem" />
         <postfix Name="bi" />
         <postfix Name="bola" />
@@ -463,9 +470,9 @@
     </namestyle>
 
     <namestyle Name="Ibulian" TwoNameChance="80" Format="TitleCase">
-
-    <!-- Ibulian name syllables are from Ancient Rome (Latin) -->
-      <prefixes Amount="1">
+    <!-- Ibulian name syllables are from Ancient Rome (Latin),
+         used for True Kin genotype - Ibul -->
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="a" Weight="2" />
         <prefix Name="ae" />
         <prefix Name="an" />
@@ -527,7 +534,7 @@
         <prefix Name="ve" />
         <prefix Name="vi" />
       </prefixes>
-      <infixes Amount="0-1">
+      <infixes Amount="0-1" Load="Replace">
         <infix Name="bi" Weight="2" />
         <infix Name="bri" />
         <infix Name="ce" />
@@ -562,7 +569,7 @@
         <infix Name="xe" />
         <infix Name="xi" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Amount="1" Load="Replace">
         <postfix Name="ba" />
         <postfix Name="bius" />
         <postfix Name="bus" />
@@ -599,9 +606,9 @@
     </namestyle>
 
     <namestyle Name="Yawningmoon" TwoNameChance="50" Format="TitleCase">
-
-    <!-- Yawningmoon name syllables seem to be from Sanskrit or related south-Asian languages -->
-      <prefixes Amount="1">
+    <!-- Yawningmoon name syllables seem to be from Sanskrit or related south-Asian languages,
+         used for True Kin genotype - Yawningmoon -->
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="apa" />
         <prefix Name="dya" />
         <prefix Name="ghrta" />
@@ -622,12 +629,12 @@
         <prefix Name="ur" />
         <prefix Name="vri" />
       </prefixes>
-      <infixes Amount="0-1">
+      <infixes Amount="0-1" Load="Replace">
         <infix Name="rth" />
         <infix Name="sh" />
         <infix Name="th" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Amount="1" Load="Replace">
         <postfix Name="tar" />
         <postfix Name="dra" />
         <postfix Name="vra" />
@@ -646,9 +653,8 @@
     </namestyle>
 
     <namestyle Name="Arcologian" TwoNameChance="80" Format="TitleCase">
-
     <!-- Arcologian name syllables seem to be Biblical Greek -->
-      <prefixes Amount="1">
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="a" Weight="3" />
         <prefix Name="ado" />
         <prefix Name="ae" />
@@ -712,7 +718,7 @@
         <prefix Name="xa" />
         <prefix Name="ze" />
       </prefixes>
-      <infixes Amount="0-1">
+      <infixes Amount="0-1" Load="Replace">
         <infix Name="ande" />
         <infix Name="bi" />
         <infix Name="biu" />
@@ -774,7 +780,7 @@
         <infix Name="xia" />
         <infix Name="ya" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Amount="1" Load="Replace">
         <postfix Name="a" />
         <postfix Name="an" />
         <postfix Name="be" />
@@ -898,9 +904,8 @@
     </namestyle>
 
     <namestyle Name="Baboon" HyphenationChance="100" TwoNameChance="1" Format="Capitalized">
-
     <!-- Baboon name syllables are baboon or monkey calls, localize as you will -->
-      <prefixes Amount="1-3">
+      <prefixes Amount="1-3" Load="Replace">
         <prefix Name="oo" />
         <prefix Name="ooo" />
         <prefix Name="o" />
@@ -909,7 +914,7 @@
         <prefix Name="ho" />
         <prefix Name="hoo" />
       </prefixes>
-      <infixes Amount="1-3">
+      <infixes Amount="1-3" Load="Replace">
         <infix Name="O" />
         <infix Name="OO" Weight="2" />
         <infix Name="OOO" />
@@ -920,7 +925,7 @@
         <infix Name="EE" />
         <infix Name="EEE" />
       </infixes>
-      <postfixes Amount="0-2">
+      <postfixes Amount="0-2" Load="Replace">
         <postfix Name="ah" />
         <postfix Name="ahh" />
         <postfix Name="o" />
@@ -934,34 +939,33 @@
       </postfixes>
     </namestyle>
 
-    <!-- example of full name with title:
+    <!-- example of full name with title: "=name=, =title="
          "Oo-AH-E-hoo, the 5-ringed Baboon Hermit" -->
     <namestyle Name="Baboon Hero Title">
-      <templates>
-        <template Name="the =rings= Baboon =position=" />
+      <templates Load="Replace">
+        <template Name="[!!]the =rings= Baboon =position=" />
       </templates>
-      <templatevars>
+      <templatevars Load="Replace">
         <templatevar Name="rings">
           <!-- this value shouldn't be used, but lets just pick a number in case it is-->
-          <value Name="7-ringed" />
+          <value Name="[!!]7-ringed" />
         </templatevar>
         <!-- Update Strings.xml "Baboon Hero Naming.xml Context" -->
         <templatevar Name="position">
-          <value Name="Philanderer" />
-          <value Name="Riddler" />
-          <value Name="Hermit" />
-          <value Name="Sophisticate" />
-          <value Name="Demagogue" />
-          <value Name="King" />
-          <value Name="Queen" />
+          <value Name="[!!]Philanderer" />
+          <value Name="[!!]Riddler" />
+          <value Name="[!!]Hermit" />
+          <value Name="[!!]Sophisticate" />
+          <value Name="[!!]Demagogue" />
+          <value Name="[!!]King" />
+          <value Name="[!!]Queen" />
         </templatevar>
       </templatevars>
     </namestyle>
 
     <namestyle Name="Clam" TwoNameChance="20" Format="TitleCase">
-
     <!-- shellfish name syllables (source?) -->
-      <prefixes Amount="1">
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="aco" />
         <prefix Name="aga" />
         <prefix Name="ba" />
@@ -981,7 +985,7 @@
         <prefix Name="y" />
         <prefix Name="za" />
       </prefixes>
-      <infixes Amount="1-2">
+      <infixes Amount="1-2" Load="Replace">
         <infix Name="bni" />
         <infix Name="do" />
         <infix Name="ggi" />
@@ -1000,15 +1004,14 @@
         <infix Name="tti" />
         <infix Name="ze" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Amount="1" Load="Replace">
         <postfix Name="clam" />
       </postfixes>
     </namestyle>
     
     <namestyle Name="Crab" TwoNameChance="20" Format="TitleCase">
-
     <!-- shellfish name syllables (source?) -->
-      <prefixes Amount="1">
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="aco" />
         <prefix Name="aga" />
         <prefix Name="ba" />
@@ -1028,7 +1031,7 @@
         <prefix Name="y" />
         <prefix Name="za" />
       </prefixes>
-      <infixes Amount="1-2">
+      <infixes Amount="1-2" Load="Replace">
         <infix Name="bni" />
         <infix Name="do" />
         <infix Name="ggi" />
@@ -1047,42 +1050,41 @@
         <infix Name="tti" />
         <infix Name="ze" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Amount="1" Load="Replace">
         <postfix Name="crab" />
       </postfixes>
     </namestyle>   
 
-    <!-- example of full name with title:
+    <!-- example of full name with title: "=name=, =title="
          "Acozecrab, the Frenetic Eyeless King Crab Lord" -->
     <namestyle Name="Crab Hero Title">
-      <templates>
-        <template Name="the =adjective= =creatureTypeCap= =position=" />
+      <templates Load="Replace">
+        <template Name="[!!]the =adjective= =creatureTypeCap= =position=" />
       </templates>
-      <templatevars>
+      <templatevars Load="Replace">
         <!-- Make sure to update Strings.xml "Eyeless King Crab Naming.xml Context" strings -->
         <templatevar Name="adjective">
-          <value Name="echoing" />
-          <value Name="frenetic" />
-          <value Name="many-legged" />
-          <value Name="massive" />
-          <value Name="one-clawed" />
-          <value Name="shell-cracked" />
+          <value Name="[!!]echoing" />
+          <value Name="[!!]frenetic" />
+          <value Name="[!!]many-legged" />
+          <value Name="[!!]massive" />
+          <value Name="[!!]one-clawed" />
+          <value Name="[!!]shell-cracked" />
         </templatevar>
         <templatevar Name="position">
-          <value Name="Ancient" />
-          <value Name="Deepcrawler" />
-          <value Name="Goliath" />
-          <value Name="Lord" />
-          <value Name="Patriarch" />
-          <value Name="Skuttler" />
+          <value Name="[!!]Ancient" />
+          <value Name="[!!]Deepcrawler" />
+          <value Name="[!!]Goliath" />
+          <value Name="[!!]Lord" />
+          <value Name="[!!]Patriarch" />
+          <value Name="[!!]Skuttler" />
         </templatevar>
       </templatevars>
     </namestyle>
 
     <namestyle Name="Goatfolk" TwoNameChance="1" Format="TitleCase">
-
     <!-- Goatfolk name syllables are goat/sheep sounds, localize as you will -->
-      <prefixes Amount="0-1">
+      <prefixes Amount="0-1" Load="Replace">
         <prefix Name="ba" />
         <prefix Name="baa" Weight="2" />
         <prefix Name="na" />
@@ -1090,14 +1092,14 @@
         <prefix Name="ra" />
         <prefix Name="raa" />
       </prefixes>
-      <infixes Amount="0-3">
+      <infixes Amount="0-3" Load="Replace">
         <infix Name="ba" Weight="2" />
         <infix Name="baa" />
         <infix Name="naa" />
         <infix Name="ra" Weight="2" />
         <infix Name="raa" />
       </infixes>
-      <postfixes Amount="1-2">
+      <postfixes Amount="1-2" Load="Replace">
         <postfix Name="a" />
         <postfix Name="aaa" />
         <postfix Name="aaaaah" />
@@ -1107,51 +1109,51 @@
       </postfixes>
     </namestyle>
 
-    <!-- example of full name with epithet & title:
+    <!-- example of full name with epithet & title: "=name= =epithet=, =title="
          "Babaaah Clovenhorn, the Goatfolk Shaman of Clan Yr" -->
     <namestyle Name="Goatfolk Hero" Base="Goatfolk">
-      <templates>
-        <template Name="=name=" />
+      <templates Load="Replace">
+        <template Name="[!!]=name=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Goatfolk Hero Epithet">
-      <templates>
-        <template Name="=epithet=" />
+      <templates Load="Replace">
+        <template Name="[!!]=epithet=" />
       </templates>
-      <templatevars>
+      <templatevars Load="Replace">
         <!-- Be sure to update the Strings.xml Goatfolk Hero Naming.xml Context entries -->
         <templatevar Name="epithet">
-          <value Name="Stargazer" />
-          <value Name="Heartbiter" />
-          <value Name="Twicetalker" />
-          <value Name="Souldrinker" />
-          <value Name="Whitefinger" />
-          <value Name="Clovenhorn" />
+          <value Name="[!!]Stargazer" />
+          <value Name="[!!]Heartbiter" />
+          <value Name="[!!]Twicetalker" />
+          <value Name="[!!]Souldrinker" />
+          <value Name="[!!]Whitefinger" />
+          <value Name="[!!]Clovenhorn" />
         </templatevar>
       </templatevars>
     </namestyle>
 
     <namestyle Name="Goatfolk Hero Title">
-      <templates>
+      <templates Load="Replace">
         <!-- Be sure to update the Strings.xml Goatfolk Hero Naming.xml Context entries -->
-        <template Name="the Goatfolk Shaman of Clan =clan=" />
+        <template Name="[!!]the Goatfolk Shaman of Clan =clan=" />
       </templates>
-      <templatevars>
+      <templatevars Load="Replace">
         <!-- Be sure to update the Strings.xml Goatfolk Hero Naming.xml Context entries -->
         <templatevar Name="clan">
-          <value Name="Hotur" />
-          <value Name="Ibex" />
-          <value Name="Sol" />
-          <value Name="Whitetongue" />
-          <value Name="Yr" />
-          <value Name="Mnim" />
+          <value Name="[!!]Hotur" />
+          <value Name="[!!]Ibex" />
+          <value Name="[!!]Sol" />
+          <value Name="[!!]Whitetongue" />
+          <value Name="[!!]Yr" />
+          <value Name="[!!]Mnim" />
         </templatevar>
       </templatevars>
     </namestyle>
 
     <namestyle Name="Goatfolk Site" Format="TitleCase">
-      <templates>
+      <templates Load="Replace">
         <template Name="=name==suffix=" Weight="1800" />
         <template Name="=prefix==suffix=" Weight="1800" />
         <template Name="=sultan==suffix=" Weight="450" />
@@ -1162,29 +1164,29 @@
         <template Name="=prefix==forest=" Weight="1575" />
         <template Name="=sultan==forest=" Weight="350" />
       </templates>
-      <templatevars>
+      <templatevars Load="Replace">
         <templatevar Name="prefix">
-          <value Name="Ash" />
-          <value Name="Black" />
-          <value Name="Blood" />
-          <value Name="Bone" />
-          <value Name="Cloven" />
-          <value Name="Fern" />
-          <value Name="Heart" />
-          <value Name="Moon" />
-          <value Name="Moss" />
-          <value Name="Rain" />
-          <value Name="Sap" />
-          <value Name="Skull" />
-          <value Name="Star" />
-          <value Name="White" />
+          <value Name="[!!]Ash" />
+          <value Name="[!!]Black" />
+          <value Name="[!!]Blood" />
+          <value Name="[!!]Bone" />
+          <value Name="[!!]Cloven" />
+          <value Name="[!!]Fern" />
+          <value Name="[!!]Heart" />
+          <value Name="[!!]Moon" />
+          <value Name="[!!]Moss" />
+          <value Name="[!!]Rain" />
+          <value Name="[!!]Sap" />
+          <value Name="[!!]Skull" />
+          <value Name="[!!]Star" />
+          <value Name="[!!]White" />
         </templatevar>
         <templatevar Name="sultan">
-          <!-- the dynamic sultan names come from Eater namestyle -->
-          <value Name="Resheph" />
+          <!-- there are dynamic sultan names, which come from the Eater namestyle -->
+          <value Name="[!!]Resheph" />
         </templatevar>
+        <!-- NOTE: same as "Goatfolk" namestyle postfixes; make sure they match -->
         <templatevar Name="suffix">
-          <!-- same as "Goatfolk" postfix values -->
           <value Name="baa" Weight="2" />
           <value Name="baaaaaah" />
           <value Name="baaaaah" Weight="3" />
@@ -1204,34 +1206,35 @@
           <value Name="raah" Weight="2" />
         </templatevar>
         <templatevar Name="forest">
-          <value Name="bosk" />
-          <value Name="dale" />
-          <value Name="dell" />
-          <value Name="glade" />
-          <value Name="glen" />
-          <value Name="gorge" />
-          <value Name="grove" />
-          <value Name="meadow" />
-          <value Name="root" />
-          <value Name="vale" />
-          <value Name="weald" />
-          <value Name="weep" />
-          <value Name="wood" />
+          <value Name="[!!]bosk" />
+          <value Name="[!!]dale" />
+          <value Name="[!!]dell" />
+          <value Name="[!!]glade" />
+          <value Name="[!!]glen" />
+          <value Name="[!!]gorge" />
+          <value Name="[!!]grove" />
+          <value Name="[!!]meadow" />
+          <value Name="[!!]root" />
+          <value Name="[!!]vale" />
+          <value Name="[!!]weald" />
+          <value Name="[!!]weep" />
+          <value Name="[!!]wood" />
         </templatevar>
         <templatevar Name="location">
-          <value Name="bend" />
-          <value Name="bite" />
-          <value Name="bow" />
-          <value Name="cleft" />
-          <value Name="crescent" />
-          <value Name="deep" />
-          <value Name="pool" />
-          <value Name="star" />
-          <value Name="void" />
-          <value Name="well" />
+          <value Name="[!!]bend" />
+          <value Name="[!!]bite" />
+          <value Name="[!!]bow" />
+          <value Name="[!!]cleft" />
+          <value Name="[!!]crescent" />
+          <value Name="[!!]deep" />
+          <value Name="[!!]pool" />
+          <value Name="[!!]star" />
+          <value Name="[!!]void" />
+          <value Name="[!!]well" />
         </templatevar>
       </templatevars>
-      <prefixes Amount="1">
+      <!-- same as "Goatfolk" namestyle prefixes & infixes; make sure they match -->
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="ba" />
         <prefix Name="baa" Weight="2" />
         <prefix Name="na" />
@@ -1239,7 +1242,7 @@
         <prefix Name="ra" />
         <prefix Name="raa" />
       </prefixes>
-      <infixes Amount="0-1">
+      <infixes Amount="0-1" Load="Replace">
         <infix Name="ba" Weight="2" />
         <infix Name="baa" />
         <infix Name="naa" />
@@ -1249,34 +1252,35 @@
     </namestyle>
 
     <namestyle Name="Qlippoth Site" Format="TitleCase">
-      <templates>        
+      <templates Load="Replace">        
         <template Name="=prefix==suffix=" Weight="1800" />        
         <template Name="=name==location=" Weight="1125" />
         <template Name="=prefix==location=" Weight="1125" />
         <template Name="=sultan==location=" Weight="250" />        
         <template Name="=prefix==forest=" Weight="1575" />        
       </templates>
-      <templatevars>
+      <templatevars Load="Replace">
         <templatevar Name="prefix">
-          <value Name="Ash" />
-          <value Name="Black" />
-          <value Name="Ghost" />
-          <value Name="Dust" />          
-          <value Name="Wraith" />
-          <value Name="Moon" />
-          <value Name="Dream" />          
-          <value Name="Star" />
-          <value Name="White" />
-          <value Name="Grey" />
-          <value Name="Gloom" />
-          <value Name="Dim" />
-          <value Name="Dusk" />
-          <value Name="Ever" />
-          <value Name="Null" />
+          <value Name="[!!]Ash" />
+          <value Name="[!!]Black" />
+          <value Name="[!!]Ghost" />
+          <value Name="[!!]Dust" />          
+          <value Name="[!!]Wraith" />
+          <value Name="[!!]Moon" />
+          <value Name="[!!]Dream" />          
+          <value Name="[!!]Star" />
+          <value Name="[!!]White" />
+          <value Name="[!!]Grey" />
+          <value Name="[!!]Gloom" />
+          <value Name="[!!]Dim" />
+          <value Name="[!!]Dusk" />
+          <value Name="[!!]Ever" />
+          <value Name="[!!]Null" />
         </templatevar>
         <templatevar Name="sultan">
-          <value Name="Resheph" />
+          <value Name="[!!]Resheph" />
         </templatevar>
+        <!-- NOTE: same as "Goatfolk" namestyle postfixes; make sure they match -->
         <templatevar Name="suffix">
           <value Name="baa" Weight="2" />
           <value Name="baaaaaah" />
@@ -1297,34 +1301,35 @@
           <value Name="raah" Weight="2" />
         </templatevar>
         <templatevar Name="forest">
-          <value Name="bosk" />
-          <value Name="dale" />
-          <value Name="dell" />
-          <value Name="glade" />
-          <value Name="glen" />
-          <value Name="gorge" />
-          <value Name="grove" />
-          <value Name="meadow" />
-          <value Name="root" />
-          <value Name="vale" />
-          <value Name="weald" />
-          <value Name="weep" />
-          <value Name="wood" />
-          <value Name="hollow" />
+          <value Name="[!!]bosk" />
+          <value Name="[!!]dale" />
+          <value Name="[!!]dell" />
+          <value Name="[!!]glade" />
+          <value Name="[!!]glen" />
+          <value Name="[!!]gorge" />
+          <value Name="[!!]grove" />
+          <value Name="[!!]meadow" />
+          <value Name="[!!]root" />
+          <value Name="[!!]vale" />
+          <value Name="[!!]weald" />
+          <value Name="[!!]weep" />
+          <value Name="[!!]wood" />
+          <value Name="[!!]hollow" />
         </templatevar>
         <templatevar Name="location">                          
-          <value Name="crescent" />
-          <value Name="deep" />
-          <value Name="pool" />
-          <value Name="star" />
-          <value Name="void" />
-          <value Name="well" />
-          <value Name="dream" />
-          <value Name="myth" />          
-          <value Name="calm" />
+          <value Name="[!!]crescent" />
+          <value Name="[!!]deep" />
+          <value Name="[!!]pool" />
+          <value Name="[!!]star" />
+          <value Name="[!!]void" />
+          <value Name="[!!]well" />
+          <value Name="[!!]dream" />
+          <value Name="[!!]myth" />          
+          <value Name="[!!]calm" />
         </templatevar>
       </templatevars>
-      <prefixes Amount="1">
+      <!-- NOTE: same as "Goatfolk" namestyle prefixes & infixes; make sure they match -->
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="ba" />
         <prefix Name="baa" Weight="2" />
         <prefix Name="na" />
@@ -1332,7 +1337,7 @@
         <prefix Name="ra" />
         <prefix Name="raa" />
       </prefixes>
-      <infixes Amount="0-1">
+      <infixes Amount="0-1" Load="Replace">
         <infix Name="ba" Weight="2" />
         <infix Name="baa" />
         <infix Name="naa" />
@@ -1342,7 +1347,7 @@
     </namestyle>
 
     <namestyle Name="Naphtaali" HyphenationChance="25" TwoNameChance="1" Format="TitleCase">
-      <prefixes Amount="1">
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="a" />
 				<prefix Name="baa" />
 				<prefix Name="bee" />
@@ -1366,7 +1371,7 @@
 				<prefix Name="ya" />
 				<prefix Name="su" />
       </prefixes>
-      <infixes Amount="1-2">
+      <infixes Amount="1-2" Load="Replace">
         <infix Name="dramme" />
 				<infix Name="mu" />
 				<infix Name="nammele" />
@@ -1389,7 +1394,7 @@
 				<infix Name="ra" />
         <infix Name="hwe" />				
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Amount="1" Load="Replace">
         <postfix Name="ch" />
         <postfix Name="n" />
         <postfix Name="h" />
@@ -1409,11 +1414,12 @@
     </namestyle>   
 
 		<namestyle Name="Godhed Hero Honorific">
-			<templates>
-				<template Name="=honorific= Godhed" />				
+			<templates Load="Replace">
+				<template Name="[!!]=honorific= Godhed" />				
 			</templates>
-			<templatevars>
+			<templatevars Load="Replace">
 				<templatevar Name="honorific">
+          <!-- "spice" elements come from HistorySpice.json -->
 					<value Name="spice.adjectives.!random" />
 					<value Name="spice.nouns.!random" />					
 				</templatevar>				
@@ -1421,10 +1427,10 @@
 		</namestyle>
 
 		<namestyle Name="Godhed Hero Epithet">
-			<templates>				
-				<template Name="=adjective=-Godhed" />
+			<templates Load="Replace">				
+				<template Name="[!!]=adjective=-Godhed" />
 			</templates>
-			<templatevars>				
+			<templatevars Load="Replace">				
 				<templatevar Name="adjective">
 					<value Name="spice.adjectives.!random" />
 				</templatevar>
@@ -1432,13 +1438,13 @@
 		</namestyle>
 
 		<namestyle Name="Godhed Hero Title">
-			<templates>				
-				<template Name="Godhed of the =noun1=" />
-				<template Name="Godhed of the =noun1=-=noun2=" Weight="2" />
-				<template Name="Godhed of the =adj=-=noun1=" Weight="2" />
-				<template Name="Godhed of =noun1|pluralize=" />
+			<templates Load="Replace">				
+				<template Name="[!!]Godhed of the =noun1=" />
+				<template Name="[!!]Godhed of the =noun1=-=noun2=" Weight="2" />
+				<template Name="[!!]Godhed of the =adj=-=noun1=" Weight="2" />
+				<template Name="[!!]Godhed of =noun1|pluralize=" />
 			</templates>
-			<templatevars>				
+			<templatevars Load="Replace">				
 				<templatevar Name="noun1">
 					<value Name="spice.nouns.!random" />
 				</templatevar>
@@ -1451,14 +1457,8 @@
 			</templatevars>
 		</namestyle>
 
-		<namestyle Name="Godhed Hero Title Empty">
-			<templates>
-				<template Name="" />
-			</templates>
-		</namestyle>
-
     <namestyle Name="Snapjaw" HyphenationChance="15" TwoNameChance="1" Format="TitleCase">
-      <prefixes Amount="0-2">
+      <prefixes Amount="0-2" Load="Replace">
         <prefix Name="bar" />
         <prefix Name="bawl" />
         <prefix Name="bor" />
@@ -1481,7 +1481,7 @@
         <prefix Name="scor" />
         <prefix Name="scur" />
       </prefixes>
-      <infixes Amount="1-4">
+      <infixes Amount="1-4" Load="Replace">
         <infix Name="afo" />
         <infix Name="ago" />
         <infix Name="aho" />
@@ -1497,7 +1497,7 @@
         <infix Name="ulu" />
         <infix Name="wof" />
       </infixes>
-      <postfixes Amount="0-2">
+      <postfixes Amount="0-2" Load="Replace">
         <postfix Name="ab" />
         <postfix Name="af" />
         <postfix Name="ago" />
@@ -1521,33 +1521,33 @@
     </namestyle>
 
     <namestyle Name="Snapjaw Hero Title">
-      <templates>
-        <template Name="the =adjective= Snapjaw =occupation=" />
+      <templates Load="Replace">
+        <template Name="[!!]the =adjective= Snapjaw =occupation=" />
       </templates>
-      <templatevars>
+      <templatevars Load="Replace">
         <!-- Make sure to update Strings.xml "Snapjaw Hero Naming.xml Context" strings -->
         <templatevar Name="adjective">
-          <value Name="calloused" />
-          <value Name="fearsome" />
-          <value Name="fleet-footed" />
-          <value Name="hulking" />
-          <value Name="learned" />
-          <value Name="nimble" />
-          <value Name="stalwart" />
+          <value Name="[!!]calloused" />
+          <value Name="[!!]fearsome" />
+          <value Name="[!!]fleet-footed" />
+          <value Name="[!!]hulking" />
+          <value Name="[!!]learned" />
+          <value Name="[!!]nimble" />
+          <value Name="[!!]stalwart" />
         </templatevar>
         <templatevar Name="occupation">
-          <value Name="Bear-baiter" />
-          <value Name="Firesnarler" />
-          <value Name="Gutspiller" />
-          <value Name="King" />
-          <value Name="Skullsplitter" />
-          <value Name="Tot-eater" />
+          <value Name="[!!]Bear-baiter" />
+          <value Name="[!!]Firesnarler" />
+          <value Name="[!!]Gutspiller" />
+          <value Name="[!!]King" />
+          <value Name="[!!]Skullsplitter" />
+          <value Name="[!!]Tot-eater" />
         </templatevar>
       </templatevars>
     </namestyle>
 
     <namestyle Name="Star" HyphenationChance="10" TwoNameChance="20" Format="TitleCase">
-      <prefixes Amount="1">
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="abho" />
         <prefix Name="ala" />
         <prefix Name="ammu" />
@@ -1644,7 +1644,7 @@
         <prefix Name="ytho" />
         <prefix Name="zsty" />        
       </prefixes>
-      <infixes Amount="1-2">
+      <infixes Amount="1-2" Load="Replace">
         <infix Name="lo" />
         <infix Name="tse" />
         <infix Name="n-" />
@@ -1674,7 +1674,7 @@
         <infix Name="na" />
         <infix Name="thne" />        
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Amount="1" Load="Replace">
         <postfix Name="los" />
         <postfix Name="ba" />
         <postfix Name="th" Weight="4" />
@@ -1708,7 +1708,7 @@
     </namestyle>
 
     <namestyle Name="Troll" HyphenationChance="15" TwoNameChance="1" Format="TitleCase">
-      <prefixes Amount="0-1">
+      <prefixes Amount="0-1" Load="Replace">
         <prefix Name="lur" />
         <prefix Name="mub" />
         <prefix Name="mur" />
@@ -1717,7 +1717,7 @@
         <prefix Name="ur" />
         <prefix Name="wub" />
       </prefixes>
-      <infixes Amount="0-3">
+      <infixes Amount="0-3" Load="Replace">
         <infix Name="mon" />
         <infix Name="nom" />
         <infix Name="non" />
@@ -1726,7 +1726,7 @@
         <infix Name="zow" />
         <infix Name="zoz" />
       </infixes>
-      <postfixes Amount="1-2">
+      <postfixes Amount="1-2" Load="Replace">
         <postfix Name="mmu" />
         <postfix Name="mumm" />
         <postfix Name="nnum" />
@@ -1738,35 +1738,34 @@
     </namestyle>
 
     <namestyle Name="Troll Hero Title">
-      <templates>
-        <template Name="the =adjective= Troll =occupation=" />
+      <templates Load="Replace">
+        <template Name="[!!]the =adjective= Troll =occupation=" />
       </templates>
-      <templatevars>
+      <templatevars Load="Replace">
         <!-- Make sure to update Strings.xml "Troll Hero Naming.xml Context" -->
         <templatevar Name="adjective">
-          <value Name="twisted" />
-          <value Name="everlasting" />
-          <value Name="hulking" />
-          <value Name="bestial" />
-          <value Name="frenetic" />
-          <value Name="rubberhide" />
-          <value Name="bloodthirsty" />
-          <value Name="two-headed" />
+          <value Name="[!!]twisted" />
+          <value Name="[!!]everlasting" />
+          <value Name="[!!]hulking" />
+          <value Name="[!!]bestial" />
+          <value Name="[!!]frenetic" />
+          <value Name="[!!]rubberhide" />
+          <value Name="[!!]bloodthirsty" />
+          <value Name="[!!]two-headed" />
         </templatevar>
         <templatevar Name="occupation">
-          <value Name="Skull-collector" />
-          <value Name="Heart-eater" />
-          <value Name="Hunt-master" />
-          <value Name="Man-eater" />
-          <value Name="Caveking" />
+          <value Name="[!!]Skull-collector" />
+          <value Name="[!!]Heart-eater" />
+          <value Name="[!!]Hunt-master" />
+          <value Name="[!!]Man-eater" />
+          <value Name="[!!]Caveking" />
         </templatevar>
       </templatevars>
     </namestyle>
 
     <namestyle Name="Mechanimist" TwoNameChance="100" Format="TitleCase">
-
     <!-- Mechanimist name pieces are Biblical, Hebrew/Aramaic/Greek? -->
-      <prefixes Amount="1">
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="aba" />
         <prefix Name="abba" />
         <prefix Name="abi" />
@@ -1826,7 +1825,7 @@
         <prefix Name="sulu" />
         <prefix Name="tobi" />
       </prefixes>
-      <postfixes Amount="1">
+      <postfixes Amount="1" Load="Replace">
         <postfix Name="cai" />
         <postfix Name="diah" />
         <postfix Name="dias" />
@@ -1868,21 +1867,21 @@
     </namestyle>
 
     <namestyle Name="Mechanimist Hero Title">
-      <templates>
+      <templates Load="Replace">
         <template Name="=cognomen=" />
       </templates>
-      <templatevars>
+      <templatevars Load="Replace">
         <templatevar Name="cognomen">
-          <value Name="chosen by Shekhinah" />
-          <value Name="Chrome-Tauted" />
-          <value Name="Favorite of the Argent Fathers" />
-          <value Name="Baetyl Boy" />
+          <value Name="[!!]chosen by Shekhinah" />
+          <value Name="[!!]Chrome-Tauted" />
+          <value Name="[!!]Favorite of the Argent Fathers" />
+          <value Name="[!!]Baetyl Boy" />
         </templatevar>
       </templatevars>
     </namestyle>
 
     <namestyle Name="Animal" TwoNameChance="20" Format="TitleCase">
-      <prefixes Amount="1">
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="" />
         <prefix Name="a" />
         <prefix Name="ba" Weight="2" />
@@ -1914,7 +1913,7 @@
         <prefix Name="yy" />
         <prefix Name="za" />
       </prefixes>
-      <infixes Amount="0-3">
+      <infixes Amount="0-3" Load="Replace">
         <infix Name="'" />
         <infix Name="ba" />
         <infix Name="hi" />
@@ -1932,7 +1931,7 @@
         <infix Name="ta" Weight="2" />
         <infix Name="tha" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Amount="1" Load="Replace">
         <postfix Name="ah" />
         <postfix Name="ayl" />
         <postfix Name="char" />
@@ -1970,7 +1969,7 @@
     </namestyle>
 
     <namestyle Name="Bear" HyphenationChance="10" TwoNameChance="20" Format="TitleCase">
-      <prefixes Amount="1-5">
+      <prefixes Amount="1-5" Load="Replace">
         <prefix Name="ba" />
         <prefix Name="baka" />
         <prefix Name="bama" />
@@ -1988,7 +1987,7 @@
         <prefix Name="bumu" />
         <prefix Name="buyu" />
       </prefixes>
-      <postfixes Amount="0-1">
+      <postfixes Amount="0-1" Load="Replace">
         <postfix Name="ba" />
         <postfix Name="bam" />
         <postfix Name="bat" />
@@ -2006,13 +2005,13 @@
     </namestyle>
 
     <namestyle Name="Bear Hero Title">
-      <templates>
-        <template Name="renowned honey loving =creatureType=" />
+      <templates Load="Replace">
+        <template Name="[!!]renowned honey loving =creatureType=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Ape" HyphenationChance="10" TwoNameChance="20" Format="TitleCase">
-      <prefixes Amount="1-5">
+      <prefixes Amount="1-5" Load="Replace">
         <prefix Name="ka" />
         <prefix Name="kaka" />
         <prefix Name="kama" />
@@ -2040,7 +2039,7 @@
         <prefix Name="oya" />
         <prefix Name="oyu" />
       </prefixes>
-      <postfixes Amount="0-1">
+      <postfixes Amount="0-1" Load="Replace">
         <postfix Name="ka" />
         <postfix Name="kam" />
         <postfix Name="kat" />
@@ -2063,31 +2062,33 @@
     </namestyle>
 
     <namestyle Name="Ape Hero Epithet">
-      <templates>
-        <template Name="the =adjective=" />
+      <templates Load="Replace">
+        <template Name="[!!]the =adjective=" />
       </templates>
-      <templatevars>
+      <templatevars Load="Replace">
         <templatevar Name="adjective">
-          <value Name="Colorful" />
-          <value Name="Elegant" />
-          <value Name="Fashionable" />
-          <value Name="Prismatic" />
-          <value Name="Stylish" />
-          <value Name="Suave" />
-          <value Name="Well-Dressed" />
-          <value Name="Well-Garbed" />
+          <value Name="[!!]Colorful" />
+          <value Name="[!!]Elegant" />
+          <value Name="[!!]Fashionable" />
+          <value Name="[!!]Prismatic" />
+          <value Name="[!!]Stylish" />
+          <value Name="[!!]Suave" />
+          <value Name="[!!]Well-Dressed" />
+          <value Name="[!!]Well-Garbed" />
         </templatevar>
       </templatevars>
     </namestyle>
 
     <namestyle Name="Ape Hero Title">
-      <templates>
-        <template Name="legendary =creatureType=" />
+      <templates Load="Replace">
+        <template Name="[!!]legendary =creatureType=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Robot" HyphenationChance="30" TwoNameChance="20" Format="TitleCase">
-      <prefixes Amount="1-2">
+    <!-- Robot name elements are hexadecimal values and shouldn't be changed.
+         You could localize the "[ERROR: MISSING HEX VALUE]" but it's funnier not to. -->
+      <prefixes Amount="1-2" Load="Replace">
         <prefix Name="[ERROR: MISSING HEX VALUE]" />
         <prefix Name="0" Weight="2" />
         <prefix Name="1" Weight="2" />
@@ -2106,7 +2107,7 @@
         <prefix Name="E" Weight="2" />
         <prefix Name="F" Weight="2" />
       </prefixes>
-      <infixes Amount="1">
+      <infixes Amount="1" Load="Replace">
         <infix Name="[ERROR: MISSING HEX VALUE]" />
         <infix Name="0" Weight="2" />
         <infix Name="1" Weight="2" />
@@ -2125,7 +2126,7 @@
         <infix Name="E" Weight="2" />
         <infix Name="F" Weight="2" />
       </infixes>
-      <postfixes Amount="1-2">
+      <postfixes Amount="1-2" Load="Replace">
         <postfix Name="[ERROR: MISSING HEX VALUE]" />
         <postfix Name="0" Weight="2" />
         <postfix Name="1" Weight="2" />
@@ -2147,7 +2148,7 @@
     </namestyle>
 
     <namestyle Name="Insect" TwoNameChance="50" Format="TitleCase">
-      <prefixes Amount="1">
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="a" />
         <prefix Name="ac" />
         <prefix Name="apa" />
@@ -2183,7 +2184,7 @@
         <prefix Name="thy" />
         <prefix Name="va" />
       </prefixes>
-      <infixes Amount="1-2">
+      <infixes Amount="1-2" Load="Replace">
         <infix Name="be" />
         <infix Name="ca" />
         <infix Name="ce" />
@@ -2221,7 +2222,7 @@
         <infix Name="vitt" />
         <infix Name="xen" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Amount="1" Load="Replace">
         <postfix Name="bella" />
         <postfix Name="cus" />
         <postfix Name="dae" />
@@ -2255,9 +2256,8 @@
     </namestyle>
 
     <namestyle Name="Ooze" HyphenationChance="10" TwoNameChance="20" Format="TitleCase">
-
-    <!-- Ooze name pieces are Latin/Greek, the prefixes specifically mathematical shapes -->
-      <prefixes Amount="1">
+    <!-- Ooze name pieces are Latin/Greek, especially ones for mathematical shapes & solids -->
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="annu" />
         <prefix Name="astroi" />
         <prefix Name="cubi" />
@@ -2290,7 +2290,7 @@
         <prefix Name="trape" />
         <prefix Name="tri" />
       </prefixes>
-      <infixes Amount="0-1">
+      <infixes Amount="0-1" Load="Replace">
         <infix Name="chrys" />
         <infix Name="dron" />
         <infix Name="kle" />
@@ -2316,7 +2316,7 @@
         <infix Name="xa" />
         <infix Name="xi" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Amount="1" Load="Replace">
         <postfix Name="aios" />
         <postfix Name="aster" />
         <postfix Name="bion" />
@@ -2366,9 +2366,9 @@
     </namestyle>
 
     <namestyle Name="Reptile" HyphenationChance="10" TwoNameChance="20" Format="TitleCase">
-
-    <!-- Reptile name syllables seem to be from Nahuatl/Aztecan -->
-      <prefixes Amount="1">
+    <!-- Reptile name syllables seem to be from Nahuatl/Aztecan,
+         but also postfixes "trice" (from cockatrice) & "lisk" (from basilisk) -->
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="a" />
         <prefix Name="ata" />
         <prefix Name="cha" />
@@ -2393,7 +2393,7 @@
         <prefix Name="ya" />
         <prefix Name="za" />
       </prefixes>
-      <infixes Amount="1-2">
+      <infixes Amount="1-2" Load="Replace">
         <infix Name="ca" />
         <infix Name="ctla" />
         <infix Name="cto" />
@@ -2417,7 +2417,7 @@
         <infix Name="ya" />
         <infix Name="zca" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Amount="1" Load="Replace">
         <postfix Name="catl" />
         <postfix Name="ci" />
         <postfix Name="coa" />
@@ -2446,7 +2446,7 @@
     </namestyle>
 
     <namestyle Name="Tortoise" HyphenationChance="10" TwoNameChance="20" Format="TitleCase">
-      <prefixes Amount="1">
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="mar" />
         <prefix Name="mir" />
         <prefix Name="mor" />
@@ -2458,13 +2458,13 @@
         <prefix Name="nur" />
         <prefix Name="nyr" />
       </prefixes>
-      <infixes Amount="1-2">
+      <infixes Amount="1-2" Load="Replace">
         <infix Name="la" />
         <infix Name="le" />
         <infix Name="lo" />
         <infix Name="lu" />
       </infixes>
-      <postfixes Amount="0-1">
+      <postfixes Amount="0-1" Load="Replace">
         <postfix Name="lab" />
         <postfix Name="leb" />
         <postfix Name="lob" />
@@ -2478,29 +2478,29 @@
     </namestyle>
 
     <namestyle Name="Tortoise Hero Epithet">
-      <templates>
-        <template Name="the =disposition=" />
+      <templates Load="Replace">
+        <template Name="[!!]the =disposition=" />
       </templates>
-      <templatevars>
+      <templatevars Load="Replace">
         <templatevar Name="disposition">
-          <value Name="Cantankerous" />
-          <value Name="Choleric" />
-          <value Name="Grouchy" />
-          <value Name="Morose" />
-          <value Name="Querulous" />
-          <value Name="Surly" />
+          <value Name="[!!]Cantankerous" />
+          <value Name="[!!]Choleric" />
+          <value Name="[!!]Grouchy" />
+          <value Name="[!!]Morose" />
+          <value Name="[!!]Querulous" />
+          <value Name="[!!]Surly" />
         </templatevar>
       </templatevars>
     </namestyle>
 
     <namestyle Name="Tortoise Hero Title">
-      <templates>
-        <template Name="legendary =creatureType=" />
+      <templates Load="Replace">
+        <template Name="[!!]legendary =creatureType=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Fish" TwoNameChance="20" Format="TitleCase">
-      <prefixes Amount="1">
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="a" Weight="5" />
         <prefix Name="be" />
         <prefix Name="boa" />
@@ -2527,7 +2527,7 @@
         <prefix Name="sme" />
         <prefix Name="tri" />
       </prefixes>
-      <infixes Amount="0-2">
+      <infixes Amount="0-2" Load="Replace">
         <infix Name="ba" />
         <infix Name="bi" />
         <infix Name="bno" />
@@ -2559,7 +2559,7 @@
         <infix Name="vell" />
         <infix Name="xe" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Amount="1" Load="Replace">
         <postfix Name="cura" />
         <postfix Name="dens" Weight="2" />
         <postfix Name="dros" />
@@ -2592,7 +2592,7 @@
     </namestyle>
 
     <namestyle Name="Arachnid" HyphenationChance="10" TwoNameChance="20" Format="TitleCase">
-      <prefixes Amount="1">
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="phthis" />
         <prefix Name="sheb" />
         <prefix Name="shob" />
@@ -2602,7 +2602,7 @@
         <prefix Name="tyth" />
         <prefix Name="yith" />
       </prefixes>
-      <postfixes Amount="1-3">
+      <postfixes Amount="1-3" Load="Replace">
         <postfix Name="is" />
         <postfix Name="ith" />
         <postfix Name="os" />
@@ -2615,13 +2615,14 @@
     </namestyle>
 
     <namestyle Name="Arachnid Hero Title">
-      <templates>
-        <template Name="legendary =creatureType= and virtuoso weaver" />
+      <templates Load="Replace">
+        <template Name="[!!]legendary =creatureType= and virtuoso weaver" />
       </templates>
     </namestyle>
 
     <namestyle Name="Bird" HyphenationChance="100" TwoNameChance="20" Format="Capitalized">
-      <prefixes Amount="3-6">
+    <!-- Bird name syllables are just crow caws, localize as you will -->
+      <prefixes Amount="3-6" Load="Replace">
         <prefix Name="ca" Weight="2" />
         <prefix Name="CA" Weight="2" />
         <prefix Name="CAAAAAAAAW" />
@@ -2638,30 +2639,30 @@
     </namestyle>
 
     <namestyle Name="Bird Hero Epithet">
-      <templates>
-        <template Name="the =singer=" />
+      <templates Load="Replace">
+        <template Name="[!!]the =singer=" />
       </templates>
-      <templatevars>
+      <templatevars Load="Replace">
         <templatevar Name="singer">
-          <value Name="Bard" />
-          <value Name="Minstrel" />
-          <value Name="Songster" />
-          <value Name="Songstress" />
-          <value Name="Troubadour" />
+          <value Name="[!!]Bard" />
+          <value Name="[!!]Minstrel" />
+          <value Name="[!!]Songster" />
+          <value Name="[!!]Songstress" />
+          <value Name="[!!]Troubadour" />
         </templatevar>
       </templatevars>
     </namestyle>
 
     <namestyle Name="Bird Hero Title">
-      <templates>
-        <template Name="=disposition= =creatureType=" />
+      <templates Load="Replace">
+        <template Name="[!!]=disposition= =creatureType=" />
       </templates>
-      <templatevars>
+      <templatevars Load="Replace">
         <templatevar Name="disposition">
-          <value Name="brooding" />
-          <value Name="cheerful" />
-          <value Name="dour" />
-          <value Name="merry" />
+          <value Name="[!!]brooding" />
+          <value Name="[!!]cheerful" />
+          <value Name="[!!]dour" />
+          <value Name="[!!]merry" />
         </templatevar>
       </templatevars>
     </namestyle>
@@ -2669,7 +2670,7 @@
     <namestyle Name="Worm" TwoNameChance="20" Format="TitleCase">
 
     <!-- worm/urchin name syllables (source?) -->
-      <prefixes Amount="1">
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="bru" />
         <prefix Name="drau" />
         <prefix Name="ei" />
@@ -2687,7 +2688,7 @@
         <prefix Name="ra" />
         <prefix Name="ta" />
       </prefixes>
-      <infixes Amount="0-1">
+      <infixes Amount="0-1" Load="Replace">
         <infix Name="dho" />
         <infix Name="fgu" />
         <infix Name="hri" />
@@ -2703,7 +2704,7 @@
         <infix Name="ta" />
         <infix Name="to" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Amount="1" Load="Replace">
         <postfix Name="fa" />
         <postfix Name="gg" />
         <postfix Name="ggr" />
@@ -2722,7 +2723,7 @@
         <postfix Name="snir" />
         <postfix Name="str" />
         <postfix Name="ttir" />
-        <postfix Name="worm" />
+        <postfix Name="worm" /><!-- localize "worm" -->
       </postfixes>
     </namestyle>
 
@@ -2731,7 +2732,7 @@
         <scope Name="Faction" Faction="Consortium" Priority="100" Combine="false" />
         <scope Name="Culture" Culture="Plant" Priority="50" Combine="true" />
       </scopes>
-      <prefixes Amount="1">
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="a" />
         <prefix Name="bo" />
         <prefix Name="ca" />
@@ -2758,7 +2759,7 @@
         <prefix Name="we" />
         <prefix Name="wi" Weight="2" />
       </prefixes>
-      <infixes Amount="1-2">
+      <infixes Amount="1-2" Load="Replace">
         <infix Name="chardi" />
         <infix Name="de" />
         <infix Name="degge" />
@@ -2792,34 +2793,35 @@
         <infix Name="tzsche" />
         <infix Name="xi" />
       </infixes>
-      <postfixes Amount="1">
-        <postfix Name="beech" />
-        <postfix Name="bert" />
-        <postfix Name="boldt" />
-        <postfix Name="bulb" />
-        <postfix Name="bush" />
-        <postfix Name="fern" />
-        <postfix Name="frond" />
-        <postfix Name="grove" />
-        <postfix Name="hold" />
-        <postfix Name="leaf" />
-        <postfix Name="lock" />
-        <postfix Name="lotze" />
-        <postfix Name="moss" />
-        <postfix Name="oak" />
-        <postfix Name="pine" />
-        <postfix Name="plum" />
-        <postfix Name="root" />
-        <postfix Name="rut" />
-        <postfix Name="shrub" />
-        <postfix Name="sprig" />
-        <postfix Name="spruce" />
-        <postfix Name="stumpf" />
-        <postfix Name="tarch" />
-        <postfix Name="vine" />
-        <postfix Name="willow" />
-        <postfix Name="wood" />
-        <postfix Name="wort" />
+      <postfixes Amount="1" Load="Replace">
+      <!-- words related to plants, translate -->
+        <postfix Name="[!!]beech" />
+        <postfix Name="[!!]bert" />
+        <postfix Name="[!!]boldt" />
+        <postfix Name="[!!]bulb" />
+        <postfix Name="[!!]bush" />
+        <postfix Name="[!!]fern" />
+        <postfix Name="[!!]frond" />
+        <postfix Name="[!!]grove" />
+        <postfix Name="[!!]hold" />
+        <postfix Name="[!!]leaf" />
+        <postfix Name="[!!]lock" />
+        <postfix Name="[!!]lotze" />
+        <postfix Name="[!!]moss" />
+        <postfix Name="[!!]oak" />
+        <postfix Name="[!!]pine" />
+        <postfix Name="[!!]plum" />
+        <postfix Name="[!!]root" />
+        <postfix Name="[!!]rut" />
+        <postfix Name="[!!]shrub" />
+        <postfix Name="[!!]sprig" />
+        <postfix Name="[!!]spruce" />
+        <postfix Name="[!!]stumpf" />
+        <postfix Name="[!!]tarch" />
+        <postfix Name="[!!]vine" />
+        <postfix Name="[!!]willow" />
+        <postfix Name="[!!]wood" />
+        <postfix Name="[!!]wort" />
       </postfixes>
     </namestyle>
 
@@ -2828,7 +2830,7 @@
         <scope Name="Faction" Faction="Fungi" Priority="100" Combine="false" />
         <scope Name="Culture" Culture="Fungal" Priority="50" Combine="true" />
       </scopes>
-      <prefixes Amount="1">
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="ama" />
         <prefix Name="aman" />
         <prefix Name="b" />
@@ -2852,7 +2854,7 @@
         <prefix Name="um" />
         <prefix Name="vir" />
       </prefixes>
-      <infixes Amount="1-2">
+      <infixes Amount="1-2" Load="Replace">
         <infix Name="ake" />
         <infix Name="ceps" />
         <infix Name="cini" />
@@ -2876,7 +2878,8 @@
         <infix Name="osa" />
         <infix Name="zhi" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Amount="1" Load="Replace">
+      <!-- words related to fungi, translate -->
         <postfix Name="aecium" />
         <postfix Name="agaric" />
         <postfix Name="bolete" />
@@ -2904,12 +2907,7 @@
     </namestyle>
 
     <namestyle Name="Antelope" HyphenationChance="15" TwoNameChance="20" Format="TitleCase">
-      <scopes>
-        <scope Name="Faction" Faction="Antelopes" Priority="100" Combine="false" />
-        <scope Name="Species" Species="antelope" Priority="50" Combine="true" />
-        <scope Name="Culture" Culture="Antelope" Priority="50" Combine="true" />
-      </scopes>
-      <prefixes Amount="1-5">
+      <prefixes Amount="1-5" Load="Replace">
         <prefix Name="ga" />
         <prefix Name="gaka" />
         <prefix Name="gama" />
@@ -2941,7 +2939,7 @@
         <prefix Name="gumu" />
         <prefix Name="guyu" />
       </prefixes>
-      <postfixes Amount="0-1">
+      <postfixes Amount="0-1" Load="Replace">
         <postfix Name="ga" />
         <postfix Name="gam" />
         <postfix Name="gat" />
@@ -2967,42 +2965,29 @@
     </namestyle>
 
     <namestyle Name="Antelope Hero" Base="Antelope">
-      <scopes>
-        <scope Name="Main" Special="Hero" Faction="Antelopes" Priority="200" Combine="false" />
-        <scope Name="Culture" Special="Hero" Culture="Antelope" Priority="150" Combine="true" />
-      </scopes>
-      <templates>
-        <template Name="=name= =adjective=" />
+      <templates Load="Replace">
+        <template Name="[!!]=name= =adjective=" />
       </templates>
-      <templatevars>
+      <templatevars Load="Replace">
         <templatevar Name="adjective">
-          <value Name="Fleet-Hoofed" />
-          <value Name="Quickskipper" />
-          <value Name="Frolicker" />
-          <value Name="Skitterhoof" />
-          <value Name="Prancekitter" />
-          <value Name="Kitedancer" />
+          <value Name="[!!]Fleet-Hoofed" />
+          <value Name="[!!]Quickskipper" />
+          <value Name="[!!]Frolicker" />
+          <value Name="[!!]Skitterhoof" />
+          <value Name="[!!]Prancekitter" />
+          <value Name="[!!]Kitedancer" />
         </templatevar>
       </templatevars>
     </namestyle>
 
     <namestyle Name="Antelope Hero Title">
-      <scopes>
-        <scope Name="Main" Type="Title" Special="Hero" Faction="Antelopes" Priority="200" Combine="false" />
-        <scope Name="Culture" Type="Title" Special="Hero" Culture="Antelope" Priority="150" Combine="true" />
-      </scopes>
-      <templates>
-        <template Name="legendary =creatureType=" />
+      <templates Load="Replace">
+        <template Name="[!!]legendary =creatureType=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Dromad" TwoNameChance="10" Format="TitleCase">
-      <scopes>
-        <scope Name="Faction" Faction="Dromad" Priority="100" Combine="false" />
-        <scope Name="Species" Species="dromad" Priority="50" Combine="true" />
-        <scope Name="Culture" Culture="Dromad" Priority="50" Combine="true" />
-      </scopes>
-      <prefixes Amount="1-2">
+      <prefixes Amount="1-2" Load="Replace">
         <prefix Name="a" />
         <prefix Name="da" />
         <prefix Name="di" />
@@ -3022,7 +3007,7 @@
         <prefix Name="tu" />
         <prefix Name="u" />
       </prefixes>
-      <postfixes Amount="1">
+      <postfixes Amount="1" Load="Replace">
         <postfix Name="l" />
         <postfix Name="m" />
         <postfix Name="n" />
@@ -3032,11 +3017,7 @@
     </namestyle>
 
     <namestyle Name="Urchin" TwoNameChance="20" Format="TitleCase">
-      <scopes>
-        <scope Name="Faction" Faction="Urchins" Priority="100" Combine="false" />
-        <scope Name="Culture" Culture="Urchin" Priority="50" Combine="true" />
-      </scopes>
-      <prefixes Amount="1">
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="bru" />
         <prefix Name="drau" />
         <prefix Name="ei" />
@@ -3054,7 +3035,7 @@
         <prefix Name="ra" />
         <prefix Name="ta" />
       </prefixes>
-      <infixes Amount="0-1">
+      <infixes Amount="0-1" Load="Replace">
         <infix Name="dho" />
         <infix Name="fgu" />
         <infix Name="hri" />
@@ -3070,7 +3051,7 @@
         <infix Name="ta" />
         <infix Name="to" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Amount="1" Load="Replace">
         <postfix Name="fa" />
         <postfix Name="gg" />
         <postfix Name="ggr" />
@@ -3094,39 +3075,39 @@
     </namestyle>
 
     <namestyle Name="Issachari" HyphenationChance="100" TwoNameChance="0">
-
-    <!-- "transparent names", where the names are meaningful phrases in the language -->
-      <prefixes Amount="1">
-        <prefix Name="Bathes" />
-        <prefix Name="Chews" />
-        <prefix Name="Chokes" />
-        <prefix Name="Chugs" />
-        <prefix Name="Cries" />
-        <prefix Name="Drinks" />
-        <prefix Name="Flays" />
+    <!-- "transparent names", where the names are meaningful phrases; translate them
+         (switch the prefixes with postfixes if that ordering is more natural) -->
+      <prefixes Amount="1" Load="Replace">
+        <prefix Name="[!!]Bathes" />
+        <prefix Name="[!!]Chews" />
+        <prefix Name="[!!]Chokes" />
+        <prefix Name="[!!]Chugs" />
+        <prefix Name="[!!]Cries" />
+        <prefix Name="[!!]Drinks" />
+        <prefix Name="[!!]Flays" />
       </prefixes>
-      <infixes Amount="1">
-        <infix Name="by" />
-        <infix Name="in" />
-        <infix Name="near" />
-        <infix Name="on" />
-        <infix Name="upon" />
+      <infixes Amount="1" Load="Replace">
+        <infix Name="[!!]by" />
+        <infix Name="[!!]in" />
+        <infix Name="[!!]near" />
+        <infix Name="[!!]on" />
+        <infix Name="[!!]upon" />
       </infixes>
-      <postfixes Amount="1">
-        <postfix Name="Asphalt" />
-        <postfix Name="Fire" />
-        <postfix Name="Oil" />
-        <postfix Name="Quicksalt" />
-        <postfix Name="Salt" />
-        <postfix Name="Serpents" />
-        <postfix Name="the-Feathered-Serpent" />
-        <postfix Name="the-Sun" />
+      <postfixes Amount="1" Load="Replace">
+        <postfix Name="[!!]Asphalt" />
+        <postfix Name="[!!]Fire" />
+        <postfix Name="[!!]Oil" />
+        <postfix Name="[!!]Quicksalt" />
+        <postfix Name="[!!]Salt" />
+        <postfix Name="[!!]Serpents" />
+        <postfix Name="[!!]the-Feathered-Serpent" />
+        <postfix Name="[!!]the-Sun" />
       </postfixes>
     </namestyle>
 
     <namestyle Name="Templar" TwoNameChance="100" Format="TitleCase">
-
-      <prefixes Amount="1">
+    <!-- Templar name syllables seem Arthurian? very "knight" names -->
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="a" />
         <prefix Name="ba" />
         <prefix Name="be" />
@@ -3166,7 +3147,7 @@
         <prefix Name="se" />
         <prefix Name="tho" />
       </prefixes>
-      <infixes Amount="0-1">
+      <infixes Amount="0-1" Load="Replace">
         <infix Name="bso" />
         <infix Name="cho" />
         <infix Name="cque" />
@@ -3193,7 +3174,7 @@
         <infix Name="xe" />
         <infix Name="xi" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Amount="1" Load="Replace">
         <postfix Name="belle" />
         <postfix Name="bert" />
         <postfix Name="beth" />
@@ -3242,78 +3223,80 @@
     </namestyle>
 
     <namestyle Name="Templar Hero Title">
-      <templates>
-        <template Name="Warmonger amongst the True" />
+      <templates Load="Replace">
+        <template Name="[!!]Warmonger amongst the True" />
       </templates>
     </namestyle>
 
     <namestyle Name="Templar Commander Title">
-      <templates>
-        <template Name="Knight Commander of the Holy Temple" />
+      <templates Load="Replace">
+        <template Name="[!!]Knight Commander of the Holy Temple" />
       </templates>
     </namestyle>
 
     <namestyle Name="Templar Wraith Title">
-      <templates>
-        <template Name="Wraith-Knight Templar of the Binary Honorum" />
+      <templates Load="Replace">
+        <template Name="[!!]Wraith-Knight Templar of the Binary Honorum" />
       </templates>
     </namestyle>
 
     <namestyle Name="Templar Grand Newfather Title">
-      <templates>
+      <templates Load="Replace">
         <template Name="" />
       </templates>
     </namestyle>
 
     <namestyle Name="Templar Grand Newfather" Base="Templar" TwoNameChance="0">
-      <templates>
+      <templates Load="Replace">
         <template Name="=name=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Templar Grand Newfather Honorific">
-      <templates>
-        <template Name="Grand Newfather" />
+      <templates Load="Replace">
+        <template Name="[!!]Grand Newfather" />
       </templates>
     </namestyle>
 
 		<namestyle Name="Templar Mecha Honorific">
-			<templates>
-				<template Name="High Mecha" />
+			<templates Load="Replace">
+				<template Name="[!!]High Mecha" />
 			</templates>
 		</namestyle>
 
 		<namestyle Name="Templar Mecha Title">
-			<templates>
+			<templates Load="Replace">
 				<template Name="" />
 			</templates>
 		</namestyle>
 
 		<namestyle Name="Templar Mecha 1" TwoNameChance="0" Format="TitleCase">
-			<prefixes Amount="1">
-				<prefix Name="bright" />
-				<prefix Name="pearl" />
-				<prefix Name="pure" />
-				<prefix Name="honor" />
-				<prefix Name="free" />
-				<prefix Name="faith" />
-				<prefix Name="pale" />
-				<prefix Name="star" />
-				<prefix Name="win" />
-				<prefix Name="true" />
-				<prefix Name="war" />
-				<prefix Name="sun" />
-				<prefix Name="moon" />
-				<prefix Name="right" Weight="2" />
-				<prefix Name="sure" />
-				<prefix Name="just" />
-				<prefix Name="jewel" />
-				<prefix Name="rock" />
-				<prefix Name="chrome" />
-				<prefix Name="fair" />
-				<prefix Name="high" />
+			<prefixes Amount="1" Load="Replace">
+      <!-- egoistic crusader words; localize -->
+				<prefix Name="[!!]bright" />
+				<prefix Name="[!!]pearl" />
+				<prefix Name="[!!]pure" />
+				<prefix Name="[!!]honor" />
+				<prefix Name="[!!]free" />
+				<prefix Name="[!!]faith" />
+				<prefix Name="[!!]pale" />
+				<prefix Name="[!!]star" />
+				<prefix Name="[!!]win" />
+				<prefix Name="[!!]true" />
+				<prefix Name="[!!]war" />
+				<prefix Name="[!!]sun" />
+				<prefix Name="[!!]moon" />
+				<prefix Name="[!!]right" Weight="2" />
+				<prefix Name="[!!]sure" />
+				<prefix Name="[!!]just" />
+				<prefix Name="[!!]jewel" />
+				<prefix Name="[!!]rock" />
+				<prefix Name="[!!]chrome" />
+				<prefix Name="[!!]fair" />
+				<prefix Name="[!!]high" />
 			</prefixes>
-			<infixes Amount="1">
+      <!-- NOTE: same as "Templar" namestyle infixes & postfixes, make sure they match -->
+			<infixes Amount="1" Load="Replace">
 				<infix Name="bso" />
 				<infix Name="cho" />
 				<infix Name="cque" />
@@ -3340,7 +3323,7 @@
 				<infix Name="xe" />
 				<infix Name="xi" />
 			</infixes>
-			<postfixes Amount="1">
+			<postfixes Amount="1" Load="Replace">
 				<postfix Name="belle" />
 				<postfix Name="bert" />
 				<postfix Name="beth" />
@@ -3389,7 +3372,8 @@
 		</namestyle>
 
 		<namestyle Name="Templar Mecha 2" TwoNameChance="0" Format="TitleCase">
-			<prefixes Amount="1">
+      <!-- NOTE: same as "Templar" namestyle prefixes & infixes, make sure they match -->
+			<prefixes Amount="1" Load="Replace">
 				<prefix Name="a" />
 				<prefix Name="ba" />
 				<prefix Name="be" />
@@ -3429,7 +3413,7 @@
 				<prefix Name="se" />
 				<prefix Name="tho" />
 			</prefixes>
-			<infixes Amount="1">
+			<infixes Amount="1" Load="Replace">
 				<infix Name="bso" />
 				<infix Name="cho" />
 				<infix Name="cque" />
@@ -3456,7 +3440,8 @@
 				<infix Name="xe" />
 				<infix Name="xi" />
 			</infixes>
-		  <postfixes Amount="1">
+      <!-- translate these -->
+		  <postfixes Amount="1" Load="Replace">
 			  <postfix Name="belle" Weight="2" />
 			  <postfix Name="son" />
 			  <postfix Name="daughter" />
@@ -3479,7 +3464,7 @@
 		</namestyle>
 
     <namestyle Name="Barathrumite" TwoNameChance="20" Format="TitleCase">
-      <prefixes Amount="1">
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="b" />
         <prefix Name="ch" />
         <prefix Name="d" />
@@ -3494,7 +3479,7 @@
         <prefix Name="sp" />
         <prefix Name="th" />
       </prefixes>
-      <infixes Amount="1">
+      <infixes Amount="1" Load="Replace">
         <infix Name="aco" />
         <infix Name="afe" />
         <infix Name="afo" />
@@ -3514,7 +3499,7 @@
         <infix Name="otho" />
         <infix Name="otti" />
       </infixes>
-      <postfixes Amount="0-1">
+      <postfixes Amount="0-1" Load="Replace">
         <postfix Name="ccea" />
         <postfix Name="cceo" />
         <postfix Name="da" />
@@ -3534,26 +3519,26 @@
     </namestyle>
 
     <namestyle Name="Barathrumite Hero Title">
-      <templates>
-        <template Name="=adjective= Barathrumite =role=" />
+      <templates Load="Replace">
+        <template Name="[!!]=adjective= Barathrumite =role=" />
       </templates>
-      <templatevars>
+      <templatevars Load="Replace">
         <templatevar Name="adjective">
-          <value Name="acclaimed" />
-          <value Name="distinguished" />
-          <value Name="esteemed" />
+          <value Name="[!!]acclaimed" />
+          <value Name="[!!]distinguished" />
+          <value Name="[!!]esteemed" />
         </templatevar>
         <templatevar Name="role">
-          <value Name="arconaut" />
-          <value Name="lecturer" />
-          <value Name="tinker" />
-          <value Name="tutor" />
+          <value Name="[!!]arconaut" />
+          <value Name="[!!]lecturer" />
+          <value Name="[!!]tinker" />
+          <value Name="[!!]tutor" />
         </templatevar>
       </templatevars>
     </namestyle>
 
     <namestyle Name="Hindren" HyphenationChance="10" TwoNameChance="20" Format="TitleCase">
-      <prefixes Amount="1">
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="bi" />
         <prefix Name="da" />
         <prefix Name="de" />
@@ -3585,7 +3570,7 @@
         <prefix Name="vi" />
         <prefix Name="vo" />
       </prefixes>
-      <infixes Amount="0-2">
+      <infixes Amount="0-2" Load="Replace">
         <infix Name="aa" />
         <infix Name="ah" />
         <infix Name="aw" />
@@ -3612,7 +3597,7 @@
         <infix Name="teh" />
         <infix Name="ti" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Amount="1" Load="Replace">
         <postfix Name="" />
         <postfix Name="hart" Weight="2" />
         <postfix Name="hind" Weight="11" />
@@ -3620,7 +3605,7 @@
     </namestyle>
 
     <namestyle Name="Mopango" HyphenationChance="10" TwoNameChance="20" Format="TitleCase">
-      <prefixes Amount="1">
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="a" />
         <prefix Name="da" />
         <prefix Name="do" />
@@ -3645,7 +3630,7 @@
         <prefix Name="ya" />
         <prefix Name="yo" />
       </prefixes>
-      <infixes Amount="0-2">
+      <infixes Amount="0-2" Load="Replace">
         <infix Name="ba" />
         <infix Name="chra" />
         <infix Name="chre" />
@@ -3676,7 +3661,7 @@
         <infix Name="vy" />
         <infix Name="zo" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Amount="1" Load="Replace">
         <postfix Name="b" />
         <postfix Name="ba" />
         <postfix Name="ch" />
@@ -3697,284 +3682,286 @@
       </postfixes>
     </namestyle>
 
+    <!-- change if you need to use a different separator than '/', otherwise remove -->
     <namestyle Name="Two-Headed" Base="*">
-      <templates>
+      <templates Load="Replace">
         <template Name="=name=/=altName=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Seeker" Base="*" Format="SpacesToHyphens">
-      <templates>
-        <template Name="=name=-No-Longer" />
+      <templates Load="Replace">
+        <template Name="[!!]=name=-No-Longer" />
       </templates>
     </namestyle>
 
     <namestyle Name="Seeker Hero Title">
-      <templates>
+      <templates Load="Replace">
         <template Name="=position=" />
       </templates>
-      <templatevars>
+      <templatevars Load="Replace">
         <templatevar Name="position">
-          <value Name="servant of Ptoh" />
+          <value Name="[!!]servant of Ptoh" />
         </templatevar>
       </templatevars>
     </namestyle>
 
     <namestyle Name="Seeker Dervish Title">
-      <templates>
-        <template Name="legendary =creatureType=" />
+      <templates Load="Replace">
+        <template Name="[!!]legendary =creatureType=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Pariah Hero Title">
-      <templates>
-        <template Name="=creatureTypeCap= Pariah" />
+      <templates Load="Replace">
+        <template Name="[!!]=creatureTypeCap= Pariah" />
       </templates>
     </namestyle>
 
     <namestyle Name="Barathrumite Pariah Hero Title">
-      <templates>
-        <template Name="=creatureTypeCap= Iconoclast" />
+      <templates Load="Replace">
+        <template Name="[!!]=creatureTypeCap= Iconoclast" />
       </templates>
     </namestyle>
 
     <namestyle Name="Mechanimist Pariah Hero Title">
-      <templates>
-        <template Name="=creatureTypeCap= Heretic" />
+      <templates Load="Replace">
+        <template Name="[!!]=creatureTypeCap= Heretic" />
       </templates>
     </namestyle>
 
     <namestyle Name="Hindren Pariah Hero Title">
-      <templates>
-        <template Name="=creatureTypeCap=" />
+      <templates Load="Replace">
+        <template Name="[!!]=creatureTypeCap=" />
       </templates>
     </namestyle>
 
     <namestyle Name="General Hero Title">
-      <templates>
-        <template Name="legendary =creatureType=" />
+      <templates Load="Replace">
+        <template Name="[!!]legendary =creatureType=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Lair Hero Title">
-      <templates>
-        <template Name="legendary =creatureType=" />
+      <templates Load="Replace">
+        <template Name="[!!]legendary =creatureType=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Newly Sentient Being Hero Honorific">
-      <templates>
-        <template Name="=descriptor=" />
+      <templates Load="Replace">
+        <template Name="[!!]=descriptor=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Newly Sentient Being Hero Epithet">
-      <templates>
-        <template Name="the =descriptor=" />
+      <templates Load="Replace">
+        <template Name="[!!]the =descriptor=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Newly Sentient Being Hero Title">
-      <templates>
-        <template Name="legendary =creatureType=" Weight="6" />
-        <template Name="renowned =creatureType=" />
+      <templates Load="Replace">
+        <template Name="[!!]legendary =creatureType=" Weight="6" />
+        <template Name="[!!]renowned =creatureType=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Newly Sentient Being Hero Extra Title">
-      <templates>
-        <template Name="friend to =clientele=" />
+      <templates Load="Replace">
+        <template Name="[!!]friend to =clientele=" />
       </templates>
     </namestyle>
 
     <namestyle Name="Mayor Honorific">
-      <templates>
-        <template Name="=mayorSyn|capitalize=" />
+      <templates Load="Replace">
+        <template Name="[!!]=mayorSyn|capitalize=" />
       </templates>
-      <templatevars>
+      <templatevars Load="Replace">
         <templatevar Name="mayorSyn">
-          <value Name="mayor" />
-          <value Name="elder" />
+          <value Name="[!!]mayor" />
+          <value Name="[!!]elder" />
         </templatevar>
       </templatevars>
     </namestyle>
 
     <namestyle Name="Mayor Title">
-      <templates>
-        <template Name="village =mayorSyn=" />
-        <template Name="the village =mayorSyn=" />
+      <templates Load="Replace">
+        <template Name="[!!]village =mayorSyn=" />
+        <template Name="[!!]the village =mayorSyn=" />
       </templates>
-      <templatevars>
+      <templatevars Load="Replace">
         <templatevar Name="mayorSyn">
-          <value Name="mayor" />
-          <value Name="elder" />
+          <value Name="[!!]mayor" />
+          <value Name="[!!]elder" />
         </templatevar>
       </templatevars>
     </namestyle>
 
     <namestyle Name="King Honorific">
-      <templates>
-        <template Name="=monarchSynCap=" />
+      <templates Load="Replace">
+        <template Name="[!!]=monarchSynCap=" />
       </templates>
-      <templatevars>
+      <templatevars Load="Replace">
         <templatevar Name="monarchSyn">
-          <value Name="king" />
+          <value Name="[!!]king" />
         </templatevar>
         <templatevar Name="monarchSynCap">
-          <value Name="King" />
+          <value Name="[!!]King" />
         </templatevar>
       </templatevars>
     </namestyle>
 
     <namestyle Name="Queen Honorific">
-      <templates>
-        <template Name="=monarchSynCap=" />
+      <templates Load="Replace">
+        <template Name="[!!]=monarchSynCap=" />
       </templates>
-      <templatevars>
+      <templatevars Load="Replace">
         <templatevar Name="monarchSyn">
-          <value Name="queen" />
+          <value Name="[!!]queen" />
         </templatevar>
         <templatevar Name="monarchSynCap">
-          <value Name="Queen" />
+          <value Name="[!!]Queen" />
         </templatevar>
       </templatevars>
     </namestyle>
 
     <namestyle Name="Councilor Honorific">
-      <templates>
-        <template Name="=councilorSynCap=" />
+      <templates Load="Replace">
+        <template Name="[!!]=councilorSynCap=" />
       </templates>
-      <templatevars>
+      <templatevars Load="Replace">
         <templatevar Name="councilorSyn">
-          <value Name="councilor" />
+          <value Name="[!!]councilor" />
         </templatevar>
         <templatevar Name="councilorSynCap">
-          <value Name="Councilor" />
+          <value Name="[!!]Councilor" />
         </templatevar>
       </templatevars>
     </namestyle>
 
     <namestyle Name="Senator Honorific">
-      <templates>
-        <template Name="=councilorSynCap=" />
+      <templates Load="Replace">
+        <template Name="[!!]=councilorSynCap=" />
       </templates>
-      <templatevars>
+      <templatevars Load="Replace">
         <templatevar Name="councilorSyn">
-          <value Name="senator" />
+          <value Name="[!!]senator" />
         </templatevar>
         <templatevar Name="councilorSynCap">
-          <value Name="Senator" />
+          <value Name="[!!]Senator" />
         </templatevar>
       </templatevars>
     </namestyle>
 
     <namestyle Name="Parliamentarian Honorific">
-      <templates>
-        <template Name="=councilorSynCap=" />
+      <templates Load="Replace">
+        <template Name="[!!]=councilorSynCap=" />
       </templates>
-      <templatevars>
+      <templatevars Load="Replace">
         <templatevar Name="councilorSyn">
-          <value Name="parliamentarian" />
+          <value Name="[!!]parliamentarian" />
         </templatevar>
         <templatevar Name="councilorSynCap">
-          <value Name="Parliamentarian" />
+          <value Name="[!!]Parliamentarian" />
         </templatevar>
       </templatevars>
     </namestyle>
 
     <namestyle Name="Viceroy Honorific">
-      <templates>
-        <template Name="=viceroySynCap=" />
+      <templates Load="Replace">
+        <template Name="[!!]=viceroySynCap=" />
       </templates>
-      <templatevars>
+      <templatevars Load="Replace">
         <templatevar Name="viceroySyn">
-          <value Name="viceroy" />
+          <value Name="[!!]viceroy" />
         </templatevar>
         <templatevar Name="viceroySynCap">
-          <value Name="Viceroy" />
+          <value Name="[!!]Viceroy" />
         </templatevar>
       </templatevars>
     </namestyle>
 
     <namestyle Name="Governor Honorific">
-      <templates>
-        <template Name="=viceroySynCap=" />
+      <templates Load="Replace">
+        <template Name="[!!]=viceroySynCap=" />
       </templates>
-      <templatevars>
+      <templatevars Load="Replace">
         <templatevar Name="viceroySyn">
-          <value Name="governor" />
+          <value Name="[!!]governor" />
         </templatevar>
         <templatevar Name="viceroySynCap">
-          <value Name="governor" />
+          <value Name="[!!]governor" />
         </templatevar>
       </templatevars>
     </namestyle>
 
     <namestyle Name="Administrator Epithet">
-      <templates>
-        <template Name="the =wiseAdjective=" />
+      <templates Load="Replace">
+        <template Name="[!!]the =wiseAdjective=" />
       </templates>
-      <templatevars>
+      <templatevars Load="Replace">
         <templatevar Name="wiseAdjective">
-          <value Name="Erudite" />
-          <value Name="Judicious" />
-          <value Name="Sage" />
-          <value Name="Sensible" />
-          <value Name="Shrewd" />
-          <value Name="Sophic" />
-          <value Name="Wary" />
-          <value Name="Wise" />
+          <value Name="[!!]Erudite" />
+          <value Name="[!!]Judicious" />
+          <value Name="[!!]Sage" />
+          <value Name="[!!]Sensible" />
+          <value Name="[!!]Shrewd" />
+          <value Name="[!!]Sophic" />
+          <value Name="[!!]Wary" />
+          <value Name="[!!]Wise" />
         </templatevar>
       </templatevars>
     </namestyle>
 
     <namestyle Name="Warden Honorific">
-      <templates>
-        <template Name="Warden" />
+      <templates Load="Replace">
+        <template Name="[!!]Warden" />
       </templates>
     </namestyle>
 
     <namestyle Name="Warden Two-Headed Honorific">
-      <templates>
-        <template Name="Wardens" />
+      <templates Load="Replace">
+        <template Name="[!!]Wardens" />
       </templates>
     </namestyle>
 
     <namestyle Name="Warden Plural Honorific">
-      <templates>
-        <template Name="Wardens" />
+      <templates Load="Replace">
+        <template Name="[!!]Wardens" />
       </templates>
     </namestyle>
 
     <namestyle Name="Merchant Title">
-      <templates>
-        <template Name="village merchant" Weight="2" />
-        <template Name="the village merchant" />
+      <templates Load="Replace">
+        <template Name="[!!]village merchant" Weight="2" />
+        <template Name="[!!]the village merchant" />
       </templates>
     </namestyle>
 
     <namestyle Name="Dromad Merchant Title">
-      <templates>
-        <template Name="dromad merchant" />
+      <templates Load="Replace">
+        <template Name="[!!]dromad merchant" />
       </templates>
     </namestyle>
 
     <namestyle Name="Tinker Title">
-      <templates>
-        <template Name="village tinker" Weight="2" />
-        <template Name="the village tinker" />
+      <templates Load="Replace">
+        <template Name="[!!]village tinker" Weight="2" />
+        <template Name="[!!]the village tinker" />
       </templates>
     </namestyle>
 
     <namestyle Name="Apothecary Title">
-      <templates>
-        <template Name="village apothecary" Weight="2" />
-        <template Name="the village apothecary" />
+      <templates Load="Replace">
+        <template Name="[!!]village apothecary" Weight="2" />
+        <template Name="[!!]the village apothecary" />
       </templates>
     </namestyle>
 
+    <!-- these are used to generate Gender-related words for random gendersets -->
     <namestyle Name="GeneralGenderName" HyphenationChance="1" TwoNameChance="20" Format="TitleCase">
-      <prefixes Amount="1">
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="" Weight="2" />
         <prefix Name="a" />
         <prefix Name="al" />
@@ -3993,7 +3980,7 @@
         <prefix Name="xeno" />
         <prefix Name="xyn" />
       </prefixes>
-      <infixes Amount="1">
+      <infixes Amount="1" Load="Replace">
         <infix Name="cla" />
         <infix Name="dre" />
         <infix Name="fa" />
@@ -4013,7 +4000,7 @@
         <infix Name="va" />
         <infix Name="ve" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Amount="1" Load="Replace">
         <postfix Name="cer" />
         <postfix Name="dan" />
         <postfix Name="de" />
@@ -4037,7 +4024,7 @@
     </namestyle>
 
     <namestyle Name="GeneralGenderPersonTerm">
-      <prefixes Amount="1">
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="ch" />
         <prefix Name="exm" />
         <prefix Name="gl" />
@@ -4046,7 +4033,7 @@
         <prefix Name="st" />
         <prefix Name="wom" />
       </prefixes>
-      <infixes Amount="1">
+      <infixes Amount="1" Load="Replace">
         <infix Name="aa" />
         <infix Name="a" Weight="3" />
         <infix Name="ada" />
@@ -4056,7 +4043,7 @@
         <infix Name="ya" />
         <infix Name="y" Weight="2" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Amount="1" Load="Replace">
         <postfix Name="k" />
         <postfix Name="l" />
         <postfix Name="n" />
@@ -4067,7 +4054,7 @@
     </namestyle>
 
     <namestyle Name="GeneralGenderImmaturePersonTerm">
-      <prefixes Amount="1">
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="b" />
         <prefix Name="bh" />
         <prefix Name="ch" />
@@ -4076,7 +4063,7 @@
         <prefix Name="x" />
         <prefix Name="zh" />
       </prefixes>
-      <infixes Amount="1">
+      <infixes Amount="1" Load="Replace">
         <infix Name="a" />
         <infix Name="e" />
         <infix Name="i" />
@@ -4084,7 +4071,7 @@
         <infix Name="ya" />
         <infix Name="y" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Amount="1" Load="Replace">
         <postfix Name="dy" />
         <postfix Name="ld" />
         <postfix Name="li" />
@@ -4096,7 +4083,7 @@
     </namestyle>
 
     <namestyle Name="GeneralGenderFormalAddressTerm">
-      <prefixes Amount="1">
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="fr" />
         <prefix Name="gr" />
         <prefix Name="m" />
@@ -4105,7 +4092,7 @@
         <prefix Name="s" />
         <prefix Name="v" />
       </prefixes>
-      <infixes Amount="1">
+      <infixes Amount="1" Load="Replace">
         <infix Name="a" />
         <infix Name="e" />
         <infix Name="i" />
@@ -4113,7 +4100,7 @@
         <infix Name="u" />
         <infix Name="y" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Amount="1" Load="Replace">
         <postfix Name="ia" />
         <postfix Name="i" />
         <postfix Name="m" />
@@ -4126,7 +4113,7 @@
     </namestyle>
 
     <namestyle Name="GeneralGenderOffspringTerm">
-      <prefixes Amount="1">
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="b" />
         <prefix Name="bh" />
         <prefix Name="ch" />
@@ -4137,7 +4124,7 @@
         <prefix Name="x" />
         <prefix Name="zh" />
       </prefixes>
-      <infixes Amount="1">
+      <infixes Amount="1" Load="Replace">
         <infix Name="a" />
         <infix Name="au" />
         <infix Name="e" />
@@ -4146,7 +4133,7 @@
         <infix Name="ya" />
         <infix Name="y" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Amount="1" Load="Replace">
         <postfix Name="by" />
         <postfix Name="dy" />
         <postfix Name="ghter" />
@@ -4163,7 +4150,7 @@
     </namestyle>
 
     <namestyle Name="GeneralGenderSiblingTerm">
-      <prefixes Amount="1">
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="b" />
         <prefix Name="bh" />
         <prefix Name="br" />
@@ -4175,7 +4162,7 @@
         <prefix Name="x" />
         <prefix Name="zh" />
       </prefixes>
-      <infixes Amount="1">
+      <infixes Amount="1" Load="Replace">
         <infix Name="a" />
         <infix Name="au" />
         <infix Name="e" />
@@ -4184,7 +4171,7 @@
         <infix Name="ya" />
         <infix Name="y" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Amount="1" Load="Replace">
         <postfix Name="b" />
         <postfix Name="bby" />
         <postfix Name="dy" />
@@ -4201,7 +4188,7 @@
     </namestyle>
 
     <namestyle Name="GeneralGenderParentTerm">
-      <prefixes Amount="1">
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="b" />
         <prefix Name="bh" />
         <prefix Name="br" />
@@ -4215,7 +4202,7 @@
         <prefix Name="x" />
         <prefix Name="zh" />
       </prefixes>
-      <infixes Amount="1">
+      <infixes Amount="1" Load="Replace">
         <infix Name="a" />
         <infix Name="au" />
         <infix Name="e" />
@@ -4224,7 +4211,7 @@
         <infix Name="ya" />
         <infix Name="y" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Amount="1" Load="Replace">
         <postfix Name="b" />
         <postfix Name="d" />
         <postfix Name="ddy" />
@@ -4243,8 +4230,10 @@
       </postfixes>
     </namestyle>
 
+    <!-- used for all objects/creatures when the player character is 'confused';
+         you can change to more appropriate confusion syllables for your language -->
     <namestyle Name="Confused" TwoNameChance="1" Format="TitleCase">
-      <prefixes Amount="1-2">
+      <prefixes Amount="1-2" Load="Replace">
         <prefix Name="duh" />
         <prefix Name="er" />
         <prefix Name="hu" />
@@ -4254,7 +4243,7 @@
         <prefix Name="wah" />
         <prefix Name="wuh" />
       </prefixes>
-      <infixes Amount="1-2">
+      <infixes Amount="1-2" Load="Replace">
         <infix Name="cal" />
         <infix Name="chu" />
         <infix Name="er" />
@@ -4263,7 +4252,7 @@
         <infix Name="umm" />
         <infix Name="wah" />
       </infixes>
-      <postfixes Amount="1-2">
+      <postfixes Amount="1-2" Load="Replace">
         <postfix Name="cal" />
         <postfix Name="cha" />
         <postfix Name="chu" />
@@ -4276,8 +4265,10 @@
       </postfixes>
     </namestyle>
 
+    <!-- used for all objects/creatures when the player character is 'confused' & mad;
+         you can change to more appropriate fury word pieces for your language -->
     <namestyle Name="FuriousConfused" TwoNameChance="1">
-      <prefixes Amount="1-2">
+      <prefixes Amount="1-2" Load="Replace">
         <prefix Name="AH" />
         <prefix Name="BAH" />
         <prefix Name="GAR" />
@@ -4287,7 +4278,7 @@
         <prefix Name="Ur" />
         <prefix Name="UR" />
       </prefixes>
-      <infixes Amount="1-2">
+      <infixes Amount="1-2" Load="Replace">
         <infix Name="AAA" />
         <infix Name="AHH" />
         <infix Name="ARG" />
@@ -4297,7 +4288,7 @@
         <infix Name="RGG" />
         <infix Name="RGH" />
       </infixes>
-      <postfixes Amount="1-2">
+      <postfixes Amount="1-2" Load="Replace">
         <postfix Name="!!!" />
         <postfix Name="!!" />
         <postfix Name="!!1!" />
@@ -4311,7 +4302,7 @@
     </namestyle>
 
 		<namestyle Name="Gyre Wight" HyphenationChance="10" TwoNameChance="0" Format="TitleCase">
-			<prefixes Amount="1">
+			<prefixes Amount="1" Load="Replace">
 				<prefix Name="fa" />
 				<prefix Name="ha" />
 				<prefix Name="i" Weight="2" />
@@ -4342,7 +4333,7 @@
 				<prefix Name="yi" />
 				<prefix Name="yy" />
 			</prefixes>
-			<infixes Amount="0-1">
+			<infixes Amount="0-1" Load="Replace">
 				<infix Name="ga" />
 				<infix Name="me" />
 				<infix Name="mo" />
@@ -4364,7 +4355,7 @@
 				<infix Name="shwu" />
 				<infix Name="yu" Weight="2" />
 			</infixes>
-			<postfixes Amount="1">
+			<postfixes Amount="1" Load="Replace">
 				<postfix Name="bas" />
 				<postfix Name="d" />
 				<postfix Name="jr" />
@@ -4393,90 +4384,90 @@
 		</namestyle>
 
     <namestyle Name="Gyre Wight Title">
-      <templates>
+      <templates Load="Replace">
         <template Name="" />
       </templates>
     </namestyle>
 
     <namestyle Name="Agolgot Gyre Wight Honorific">
-      <templates>
-        <template Name="Pipe Milker" />
+      <templates Load="Replace">
+        <template Name="[!!]Pipe Milker" />
       </templates>
     </namestyle>
     <namestyle Name="Agolgot Gyre Wight Epithet">
-      <templates>
-        <template Name="of Agolgot" />
+      <templates Load="Replace">
+        <template Name="[!!]of Agolgot" />
       </templates>
     </namestyle>
     <namestyle Name="Agolgot Gyre Wight Title">
-      <templates>
+      <templates Load="Replace">
         <template Name="" />
       </templates>
     </namestyle>
 
     <namestyle Name="Bethsaida Gyre Wight Honorific">
-      <templates>
-        <template Name="Gyre-Twin" />
+      <templates Load="Replace">
+        <template Name="[!!]Gyre-Twin" />
       </templates>
     </namestyle>
     <namestyle Name="Bethsaida Gyre Wight Epithet">
-      <templates>
-        <template Name="of Bethsaida" />
+      <templates Load="Replace">
+        <template Name="[!!]of Bethsaida" />
       </templates>
     </namestyle>
     <namestyle Name="Bethsaida Gyre Wight Title">
-      <templates>
+      <templates Load="Replace">
         <template Name="" />
       </templates>
     </namestyle>
 
     <namestyle Name="Shug'ruith Gyre Wight Honorific">
-      <templates>
-        <template Name="Deep" />
+      <templates Load="Replace">
+        <template Name="[!!]Deep" />
       </templates>
     </namestyle>
     <namestyle Name="Shug'ruith Gyre Wight Epithet">
-      <templates>
-        <template Name="of Shug'ruith" />
+      <templates Load="Replace">
+        <template Name="[!!]of Shug'ruith" />
       </templates>
     </namestyle>
     <namestyle Name="Shug'ruith Gyre Wight Title">
-      <templates>
+      <templates Load="Replace">
         <template Name="" />
       </templates>
     </namestyle>
 
     <namestyle Name="Rermadon Gyre Wight Honorific">
-      <templates>
-        <template Name="Gasbright" />
+      <templates Load="Replace">
+        <template Name="[!!]Gasbright" />
       </templates>
     </namestyle>
     <namestyle Name="Rermadon Gyre Wight Epithet">
-      <templates>
-        <template Name="-Rermadon" />
+      <templates Load="Replace">
+        <template Name="[!!]-Rermadon" />
       </templates>
     </namestyle>
     <namestyle Name="Rermadon Gyre Wight Title">
-      <templates>
+      <templates Load="Replace">
         <template Name="" />
       </templates>
     </namestyle>
 
     <namestyle Name="Qas Gyre Wight Title">
-      <templates>
-        <template Name="Bridesmaid of Qas" />
+      <templates Load="Replace">
+        <template Name="[!!]Bridesmaid of Qas" />
       </templates>
     </namestyle>
 
     <namestyle Name="Qon Gyre Wight Title">
-      <templates>
-        <template Name="Bridesmaid of Qon" />
+      <templates Load="Replace">
+        <template Name="[!!]Bridesmaid of Qon" />
       </templates>
     </namestyle>
 
     <!-- Coda -->
     <namestyle Name="Chiliad Qudish" HyphenationChance="10" TwoNameChance="20" Format="TitleCase">
-      <prefixes Amount="1">
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="fa" />
         <prefix Name="ha" />
         <prefix Name="y" Weight="2" />
@@ -4502,7 +4493,7 @@
         <prefix Name="ya" />
         <prefix Name="yy" />
       </prefixes>
-      <infixes Amount="0-2">
+      <infixes Amount="0-2" Load="Replace">
         <infix Name="ga" />
         <infix Name="me" />
         <infix Name="no" />
@@ -4521,7 +4512,7 @@
         <infix Name="svo" />
         <infix Name="yu" Weight="2" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Amount="1" Load="Replace">
         <postfix Name="bas" />
         <postfix Name="d" />
         <postfix Name="jl" />
@@ -4549,7 +4540,7 @@
     </namestyle>
 
     <namestyle Name="Chiliad Qudish Site" Format="TitleCase">
-      <prefixes Amount="1">
+      <prefixes Amount="1" Load="Replace">
         <prefix Name="a" />
         <prefix Name="ala" />
         <prefix Name="by" />
@@ -4573,7 +4564,7 @@
         <prefix Name="tu" />
         <prefix Name="u" />
       </prefixes>
-      <infixes Amount="0-1">
+      <infixes Amount="0-1" Load="Replace">
         <infix Name="arra" />
         <infix Name="azo" />
         <infix Name="ba" />
@@ -4590,7 +4581,7 @@
         <infix Name="rsy" />
         <infix Name="rva" />
       </infixes>
-      <postfixes Amount="1">
+      <postfixes Amount="1" Load="Replace">
         <postfix Name="bal" />
         <postfix Name="d" />
         <postfix Name="kevh" />
