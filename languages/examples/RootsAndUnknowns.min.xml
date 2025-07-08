@@ -4,7 +4,7 @@
 <objects Encoding="utf-8" Lang="min">
 
   <!-- leave the DisplayName unlocalized here as it's not meant for the end user,
-  	   but this is a good place to put language-specific <tag>s that apply to every object -->
+  	   but this is a good place to put default language-specific <tag>s -->
   <object Name="CosmeticObject" Load="Merge">
     <!-- <part Name="Render" DisplayName="[Object]" /> -->
     <!-- <tag Name="Gender" Value="neuter" /> -->
@@ -19,13 +19,14 @@
   -->
 
 	<!-- Unknown names -->
+
 	<object Name="BaseUnknown" Load="Merge">
 		<part Name="Render" DisplayName="[!!]weird artifact" />
 		<part Name="Description" Short="[!!]Dust powders the puzzling device." />
 	</object>
   <object Name="UnknownGigantic" Load="Merge">
     <part Name="Description" Short="[!!]Dust powders the gigantic device." />
-    <part Name="SizeAdjective" Adjective="gigantic" />
+    <part Name="SizeAdjective" Adjective="[!!]gigantic" />
   </object>
 	<object Name="UnknownOddTrinket" Load="Merge">
 		<part Name="Render" DisplayName="[!!]odd trinket" />
@@ -52,7 +53,7 @@
 	<object Name="UnknownMed" Load="Merge">
 		<part Name="Render" DisplayName="[!!]tube" />
 		<part Name="Description" Short="[!!]A strange substance fills a channel of glass." />
-		<part Name="SizeAdjective" Adjective="small" />
+		<part Name="SizeAdjective" Adjective="[!!]small" />
 	</object>
 	<object Name="UnknownStrangeMeat" Load="Merge">
 		<part Name="Render" DisplayName="[!!]strange piece of meat" />
@@ -64,6 +65,7 @@
 	</object>
 
 	<!-- Partially known names -->
+
 	<object Name="UnknownPistol" Load="Merge">
 		<part Name="Render" DisplayName="[!!]pistol" />
 		<part Name="Description" Short="[!!]Blemishes cross the short barrel of an unidentified gun." />
@@ -174,7 +176,8 @@
 		<part Name="Description" Short="[!!]The array of strange parts are summed together as a kind of tool." />
 	</object>
 
-  <!-- tonics -->
+	<!-- tonics -->
+
 	<object Name="UnknownEmptyMed" Load="Merge">
 		<part Name="Render" DisplayName="[!!]tube" />
 		<part Name="Description" Short="[!!]Empty air pressurizes a channel of glass." />
