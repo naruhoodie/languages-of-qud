@@ -9,7 +9,7 @@ using System.Collections.Generic;
 
 namespace XRL.Language
 {
-    [Translator.LanguageProvider("ja")]
+    [LanguageProvider("ja")]
     public class TranslatorJapanese : TranslatorBase
     {
         private const char HIGH_SURROGATE_START = '\ud800';
