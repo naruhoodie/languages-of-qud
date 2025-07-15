@@ -7,6 +7,7 @@
         Used to make extradimensional creatures feel "off".
 
         Try for weird characters in the CP437 codepage first, other DOS codepages next.
+        If you want to "remove" an existing weirdSet, make its Set equal to its Base.
     -->
     <weirdSets Load="Replace">
         <weirdSet Base="a" Set="aâäàåáªα" />
