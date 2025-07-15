@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<textconstants Encoding="utf-8">
+    <!--
+        Weirdify character sets, the "Base" letter should also be the first letter in the set.
+        These specific characters are used because they exist in the CP437 font used by the tiles.
+    -->
+    <weirdSets>
+        <weirdSet Base="a" Set="aâäàåáªα" />
+        <weirdSet Base="A" Set="AÄÅÆ" />
+        <weirdSet Base="B" Set="Bß" />
+        <weirdSet Base="c" Set="cç¢" />
+        <weirdSet Base="C" Set="CÇ" />
+        <weirdSet Base="e" Set="eéêëèε" />
+        <weirdSet Base="E" Set="EÉΣ" />
+        <weirdSet Base="f" Set="fƒ" />
+        <weirdSet Base="i" Set="iïîìí¡" />
+        <weirdSet Base="I" Set="I¡│" />
+        <weirdSet Base="L" Set="L£" />
+        <weirdSet Base="n" Set="nñπ∩" />
+        <weirdSet Base="N" Set="NÑ" />
+        <weirdSet Base="o" Set="oôöòóσ°" />
+        <weirdSet Base="O" Set="OÖΦΘφ" />
+        <weirdSet Base="R" Set="R₧" />
+        <weirdSet Base="t" Set="tτ" />
+        <weirdSet Base="u" Set="uûùúµ" />
+        <weirdSet Base="U" Set="UÜµ" />
+        <weirdSet Base="y" Set="yÿ" />
+        <weirdSet Base="Y" Set="Y¥" />
+    </weirdSets>
+</textconstants>
