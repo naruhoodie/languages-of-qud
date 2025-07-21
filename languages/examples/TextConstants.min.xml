@@ -7,9 +7,11 @@
         Used to make extradimensional creatures feel "off".
 
         Try for weird characters in the CP437 codepage first, other DOS codepages next.
+        Avoid having a character in multiple weirdSets, except maybe
+        for the same letter upper- & lower-cased.
         If you want to "remove" an existing weirdSet, make its Set equal to its Base.
     -->
-    <weirdSets Load="Replace">
+    <weirdSets>
         <weirdSet Base="a" Set="aâäàåáªα" />
         <weirdSet Base="A" Set="AÄÅÆ" />
         <weirdSet Base="B" Set="Bß" />
@@ -32,4 +34,5 @@
         <weirdSet Base="y" Set="yÿ" />
         <weirdSet Base="Y" Set="Y¥" />
     </weirdSets>
+    <crypticMachineCharset Set="│┤╡╢╖╕╣║╗╝╜╛┐└┴┬├─┼╞╟╚╔╩╦╠═╬╧╨╤╥╙╘╒╓╫╪┘┌" WordLengthMin="3" WordLengthMax="10" SentenceLengthMin="3" SentenceLengthMax="40" />
 </textconstants>
