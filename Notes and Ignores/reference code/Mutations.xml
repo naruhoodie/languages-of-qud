@@ -41,7 +41,7 @@
         <br />
         <p>+1 Ego</p>
         <p>You occasionally peck at your opponents.</p>
-        <p><vartext>+200 reputation with {{w|=faction:Birds=}}</vartext></p>
+        <p><gametext>+200 reputation with {{w|=faction:Birds=}}</gametext></p>
       </description>
       <leveltext></leveltext>
     </mutation>
@@ -51,10 +51,10 @@
         <p>You bear spade-like claws that can burrow through the earth.</p>
       </description>
       <leveltext>
-        <p><vartext>=weapon.Name=</vartext> penetration vs. walls: <stat Name="WallPenetration" /></p>
-        <p><vartext>=weapon.Name|pluralize=</vartext> destroy walls after <stat Name="WallHits" Unit="penetrating hit" />.</p>
+        <p><gametext>=weapon.Name=</gametext> penetration vs. walls: <stat Name="WallPenetration" /></p>
+        <p><gametext>=weapon.Name|pluralize=</gametext> destroy walls after <stat Name="WallHits" Unit="penetrating hit" />.</p>
         <switch Name="PrereleaseContent"><case Value="true"><p>Can dig passages up or down when outside of combat</p></case></switch>
-        <p><vartext>=weapon.Name|pluralize= are also a =weaponClass.name= class natural weapon that deal <stat Name="Damage" /> base damage to non-walls.</vartext></p>
+        <p><gametext>=weapon.Name|pluralize= are also a =weaponClass.name= class natural weapon that deal <stat Name="Damage" /> base damage to non-walls.</gametext></p>
       </leveltext>
     </mutation>
     <mutation Name="Carapace" Cost="3" MaxSelected="1" Class="Carapace" Exclusions="Quills" BearerDescription="the carapaced" Tile="Mutations/carapace.bmp">
@@ -157,7 +157,7 @@
     </mutation>
     <mutation Name="Horns" Cost="4" MaxSelected="1" Class="Horns" Exclusions="" BearerDescription="the horned" Tile="Mutations/horns.bmp">
       <description>
-        <p><vartext>=horns.A.name.or.plural= =horns.verb:jut= out of your head.</vartext></p>
+        <p><gametext>=horns.A.name.or.plural= =horns.verb:jut= out of your head.</gametext></p>
       </description>
       <leveltext>
         <p>20% chance on melee attack to gore your opponent</p>
@@ -168,13 +168,21 @@
           <case Value="LevelUp"><p>{{rules|Increased bleeding save difficulty}}</p></case>
           <default><p>Goring attacks may cause bleeding</p></default>
         </switch>
-        <p><vartext>=horns.Name= =horns.verb:are= a short-blade class natural weapon.</vartext></p>
+        <p><gametext>=horns.Name= =horns.verb:are= a short-blade class natural weapon.</gametext></p>
         <p>+<stat Name="AV" /> AV</p>
         <p>Cannot wear helmets</p>
-        <p><vartext>+100 reputation with {{w|=faction:Antelopes=}} and {{w|=faction:Goatfolk=}}</vartext></p>
+        <p><gametext>+100 reputation with {{w|=faction:Antelopes=}} and {{w|=faction:Goatfolk=}}</gametext></p>
       </leveltext>
     </mutation>
-    <mutation Name="Metamorphosis" Cost="4" MaxSelected="1" Class="Metamorphosis" Exclusions="" BearerDescription="shapeshifters" Prerelease="true" Tile="Mutations/metamorphosis.bmp" />
+    <mutation Name="Metamorphosis" Cost="4" MaxSelected="1" Class="Metamorphosis" Exclusions="" BearerDescription="shapeshifters" Prerelease="true" Tile="Mutations/metamorphosis.bmp">
+      <description>
+        <p>You assume the form of any creature you touch.</p>
+      </description>
+      <leveltext>
+        <p>May only assume the form of creatures level <stat Name="MaxLevel" /> or lower.</p>
+        <statline Name="Cooldown" />
+      </leveltext>
+    </mutation>
     <mutation Name="Multiple Arms" Cost="4" MaxSelected="1" Class="MultipleArms" Exclusions="" BearerDescription="the many-armed" Tile="Mutations/multiple_arms.bmp" />
     <mutation Name="Multiple Legs" Cost="5" MaxSelected="1" Class="MultipleLegs" Exclusions="" BearerDescription="the many-legged" Tile="Mutations/multiple_legs.bmp" />
     <mutation Name="Night Vision" Cost="1" MaxSelected="1" Class="DarkVision" Exclusions="" BearerDescription="the darksighted" Tile="Mutations/night_vision_mutation.bmp" />

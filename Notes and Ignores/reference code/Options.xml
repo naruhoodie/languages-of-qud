@@ -130,7 +130,7 @@
   <option ID="OptionAutogetTradeGoods" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Autoget trade goods" Category="Autoget" Type="Checkbox"  Default="Yes"></option>
   <option ID="OptionAutogetFood" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Autoget food" Category="Autoget" Type="Checkbox" Default="Yes"></option>
   <option ID="OptionAutogetFreshWater" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Autoget fresh water" Category="Autoget" Type="Checkbox"  Default="Yes"></option>
-  <option ID="OptionAutogetNoDroppedLiquid" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Don't autoget liquid from containers you've dropped" Category="Autoget" Type="Checkbox" Default="No"></option>
+  <option ID="OptionAutogetDroppedLiquid" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Autoget liquids from containers you've dropped" Category="Autoget" Type="Checkbox" Default="Yes"></option>
   <option ID="OptionAutogetSpecialItems" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Autoget special items" Category="Autoget" Type="Checkbox"  Default="Yes"></option>
   <option ID="OptionAutogetArtifacts" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Autoget artifacts" Category="Autoget" Type="Checkbox"  Default="Yes"></option>  
   <option ID="OptionAutogetScrap" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Autoget scrap" Category="Autoget" Type="Checkbox" Default="Yes"></option>  
@@ -190,7 +190,7 @@
   <option ID="OptionDisableZoneCaching2" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Disable zone caching" Category="Debug" Type="Checkbox" Default="No"></option>
   <option ID="OptionDisableTryLimit" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Disable limit on zone build tries" Category="Debug" Type="Checkbox" Default="No"></option>
   <option ID="OptionEnableWishRegionNames" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Pregenerate zone names for wish support" Category="Debug" Type="Checkbox" Default="No"></option>
-  <option ID="OptionGivesRepShowsCurrentRep" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Show reputation with a creature's factions when looking an them" Category="Debug" Type="Checkbox" Default="No"></option>
+  <option ID="OptionGivesRepShowsCurrentRep" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Show reputation with a creature's factions when looking at them" Category="Debug" Type="Checkbox" Default="No"></option>
   <option ID="OptionDebugShowConversationNode" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Show XML conversation and node names during conversation" Category="Debug" Type="Checkbox" Default="No"></option>
   <option ID="OptionDebugShowFullZoneDuringBuild" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Show the full zone ID during zone creation" Category="Debug" Type="Checkbox" Default="No"></option>
   <option ID="OptionDebugDamagePenetrations" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Show damage penetration debug text" Category="Debug" Type="Checkbox" Default="No"></option>

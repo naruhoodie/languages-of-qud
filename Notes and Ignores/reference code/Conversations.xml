@@ -5949,7 +5949,7 @@
   <conversation ID="Birds">
     <node ID="Start">
       <text>
-        {{emote|*CAAW*}} =MARKOVCORVIDSENTENCE= {{emote|*CAAW*}}
+        {{emote|*CAAW*}} =MARKOVSENTENCE|corvid= {{emote|*CAAW*}}
       </text>
       <choice GotoID="End">Live and drink, nonsense bird.</choice>
     </node>
@@ -5957,7 +5957,7 @@
   <conversation ID="WaterBirds">
     <node ID="Start">
       <text>
-        {{emote|*HONK*}} =MARKOVWATERBIRDSENTENCE= {{emote|*HONK*}}
+        {{emote|*HONK*}} =MARKOVSENTENCE|waterbird= {{emote|*HONK*}}
       </text>
       <choice GotoID="End">Live and drink, nonsense bird.</choice>
     </node>

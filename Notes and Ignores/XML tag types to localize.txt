@@ -100,12 +100,12 @@
 		<tag Name="staticFactionN" Value="<??LOCALIZE>,<??LOCALIZE>,<LOCALIZE>" />
 		<part Name="Honorifics" Primary="<LOCALIZE>" />
 		<tag Name="SharesRecipeText" Value="<LOCALIZE>" />
-	    <part Name="SecretObject" text="<LOCALIZE>" message="<LOCALIZE>" adjectives="<??LOCALIZE>" />
+	    <part Name="SecretObject" text="<LOCALIZE>" message="<LOCALIZE>" />
+	    <part Name="SecretObjectTalk" text="<LOCALIZE>" message="<LOCALIZE>" />
 	</object>
 </objects>
 
 <mutations>
-    <!-- TODO: BearerDescription isn't being read for other lang? -->
     <mutation Name="<KEY>" DisplayName="<LOCALIZE>" BearerDescription="<LOCALIZE>" BiomeEpithet="<LOCALIZE>" BiomeAdjective="<LOCALIZE>">
 		<description><LOCALIZE>
 			<stat Name="<KEY>" DisplayName="<LOCALIZE>" Unit="<LOCALIZE>"/>

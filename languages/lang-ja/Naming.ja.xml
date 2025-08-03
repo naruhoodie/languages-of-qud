@@ -677,6 +677,10 @@
         <template Name="=rings=ヒヒの=position=" />
       </templates>
       <templatevars Load="Replace">
+        <templatevar Name="rings">
+          <!-- this value shouldn't be used, but lets just pick a number in case it is-->
+          <value Name="7-ringed" />
+        </templatevar>
         <!-- Update Strings.xml "Baboon Hero Naming.xml Context" -->
         <templatevar Name="position">
           <value Name="浮気者" /><!-- Original="Philanderer" -->
