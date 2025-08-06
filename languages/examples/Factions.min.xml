@@ -1,0 +1,512 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- counterpart to the .ref.xml, with the minimal tags needed for a working translation -->
+<!-- copy this, change Lang to your lang code, and use for localization! -->
+<factions Encoding="utf-8" Lang="min" LoadPriority="1000">
+
+  <!-- by default, a faction is assumed to have attribute Plural="true";
+      add Plural="false" when not plural, or if your language's grammar
+      doesn't make a distinction for plurals -->
+
+  <faction
+    Name="Prey"
+    DisplayName="[!!]grazing hedonists"
+  >
+  </faction>
+
+  <!-- some factions use FormatWithArticle="true" to add definite article "the" 
+      before the name when it's displaying the faction name as an official group.
+      (It's complicated.)
+      If your language doesn't use definite articles in this way or for this faction,
+      change to FormatWithArticle="false" -->
+
+  <faction
+    Name="Joppa"
+    DisplayName="[!!]villagers of Joppa"
+    FormatWithArticle="true"
+  >
+  </faction>
+
+  <faction
+    Name="Kyakukya"
+    DisplayName="[!!]villagers of Kyakukya"
+    FormatWithArticle="true"
+  >
+    <waterritual
+      RecipeText="[!!]Would you share the favorite dish of Kyakukya's villagers?"
+    />
+  </faction>
+
+  <faction
+    Name="Ezra"
+    DisplayName="[!!]villagers of Ezra"
+    FormatWithArticle="true"
+  >
+    <waterritual
+      RecipeText="[!!]Would you share the favorite dish of Ezra's villagers?"
+    />
+  </faction>
+
+  <faction
+    Name="Snapjaws"
+    DisplayName="[!!]snapjaws"
+  >
+  </faction>
+
+  <faction
+    Name="Baboons"
+    DisplayName="[!!]baboons"
+  >
+  </faction>
+
+  <faction
+    Name="Apes"
+    DisplayName="[!!]apes"
+  >
+  </faction>
+
+  <faction
+    Name="Crabs"
+    DisplayName="[!!]crabs"
+  >
+  </faction>
+
+  <faction
+    Name="Bears"
+    DisplayName="[!!]bears"
+  >
+  </faction>
+
+  <faction
+    Name="Winged Mammals"
+    DisplayName="[!!]winged mammals"
+  >
+  </faction>
+
+  <faction
+    Name="Birds"
+    DisplayName="[!!]birds"
+  >
+  </faction>
+
+  <faction
+    Name="Fish"
+    DisplayName="[!!]fish"
+  >
+    <interests>
+      <interest Tags="opalduskwaters,riveryonth,riversvy,mountainstream,riveropal" MatchAny="true" Description="[!!]watery locations" />
+    </interests>
+  </faction>
+
+  <faction
+    Name="Insects"
+    DisplayName="[!!]insects"
+  >
+  </faction>
+
+  <faction
+    Name="Swine"
+    DisplayName="[!!]swine"
+  >
+  </faction>
+
+  <faction
+    Name="Unshelled Reptiles"
+    DisplayName="[!!]unshelled reptiles"
+  >
+  </faction>
+
+  <faction
+    Name="Cannibals"
+    DisplayName="[!!]cannibals"
+  >
+  </faction>
+
+  <faction
+    Name="Arachnids"
+    DisplayName="[!!]arachnids"
+  >
+  </faction>
+
+  <faction
+    Name="Cats"
+    DisplayName="[!!]cats"
+  >
+  </faction>
+
+  <faction
+    Name="Dogs"
+    DisplayName="[!!]dogs"
+  >
+  </faction>
+
+  <faction
+    Name="Cragmensch"
+    DisplayName="[!!]cragmensch"
+  >
+  </faction>
+
+  <faction
+    Name="Mollusks"
+    DisplayName="[!!]mollusks"
+  >
+  </faction>
+
+  <faction
+    Name="Tortoises"
+    DisplayName="[!!]tortoises"
+  >
+  </faction>
+
+  <faction
+    Name="Robots"
+    DisplayName="[!!]robots"
+  >
+  </faction>
+
+  <faction
+    Name="Baetyls"
+    DisplayName="[!!]baetyls"
+  >
+  </faction>
+
+  <faction
+    Name="Dromad"
+    DisplayName="[!!]dromad merchants"
+  >
+  </faction>
+
+  <faction
+    Name="Entropic"
+    DisplayName="[!!]highly entropic beings"
+  >
+  </faction>
+
+  <faction
+    Name="Antelopes"
+    DisplayName="[!!]antelopes"
+  >
+  </faction>
+
+  <faction
+    Name="Worms"
+    DisplayName="[!!]worms"
+  >
+  </faction>
+
+  <faction
+    Name="Oozes"
+    DisplayName="[!!]oozes"
+  >
+  </faction>
+
+  <faction
+    Name="Equines"
+    DisplayName="[!!]equines"
+  >
+  </faction>
+
+  <faction
+    Name="Newly Sentient Beings"
+    DisplayName="[!!]newly sentient beings"
+  >
+    <interests BuyTargetedSecrets="false" Blurb="[!!] don't know anything">
+    </interests>
+  </faction>
+
+  <faction
+    Name="Goatfolk"
+    DisplayName="[!!]goatfolk"
+  >
+  </faction>
+
+  <faction
+    Name="Hermits"
+    DisplayName="[!!]hermits"
+  >
+  </faction>
+
+  <faction
+    Name="Frogs"
+    DisplayName="[!!]frogs"
+  >
+  </faction>
+
+  <faction
+    Name="Svardym"
+    DisplayName="[!!]svardym"
+  >
+    <interests>
+      <interest Tags="gyreplagues" WillBuy="false" WillSell="true" Description="[!!]the plagues of the Gyre" />
+    </interests>
+  </faction>
+
+  <faction
+    Name="Naphtaali"
+    DisplayName="[!!]Naphtaali tribe"
+    Plural="false"
+    FormatWithArticle="true"
+  >
+  </faction>
+
+  <faction
+    Name="Trolls"
+    DisplayName="[!!]trolls"
+  >
+  </faction>
+
+  <faction
+    Name="Issachari"
+    DisplayName="[!!]Issachari tribe"
+    Plural="false"
+    FormatWithArticle="true"
+  >
+  </faction>
+
+  <faction
+    Name="Strangers"
+    DisplayName="[!!]mysterious strangers"
+  >
+  </faction>
+
+  <faction
+    Name="Pariahs"
+    DisplayName="[!!]pariahs"
+  >
+    <interests BuyDescription="[!!] interested in the resources necessary for building new societies: ">
+    </interests>
+  </faction>
+
+  <faction
+    Name="Hindren"
+    DisplayName="[!!]hindren of Bey Lah"
+    FormatWithArticle="true"
+  >
+  </faction>
+
+  <faction
+    Name="Mopango"
+    DisplayName="[!!]mopango"
+    FormatWithArticle="true"
+  >
+    <waterritual
+      RecipeText="[!!]Would you share the favorite dish of the mopango?"
+    />
+  </faction>
+
+  <faction
+    Name="Girsh"
+    DisplayName="[!!]Girsh"
+    FormatWithArticle="true"
+  >
+  </faction>
+
+  <faction
+    Name="Barathrumites"
+    DisplayName="[!!]Barathrumites"
+    FormatWithArticle="true"
+  >
+    <waterritual
+      RecipeText="[!!]What a... pungent smell. Would you teach me to cook the Barathrumites' favorite dish?"
+    />
+    <ranks>
+      <rank Name="apprentice" DisplayName="[!!]apprentice" />
+      <rank Name="journeyfriend" DisplayName="[!!]journeyfriend" />
+      <rank Name="disciple" DisplayName="[!!]disciple" />
+      <rank Name="meyvn" DisplayName="[!!]meyvn" />
+    </ranks>
+  </faction>
+
+  <faction
+    Name="Consortium"
+    DisplayName="[!!]Consortium of Phyta"
+    Plural="false"
+    FormatWithArticle="true"
+  >
+  </faction>
+
+  <faction
+    Name="Templar"
+    DisplayName="[!!]Putus Templar"
+    FormatWithArticle="true"
+  >
+    <interests>
+      <interest Tags="ruins,tech,historic,sultan,cybernetics,rebekah,sultanTombPropaganda" WillBuy="true" WillSell="false" MatchAny="true" Inverse="true" Description="[!!]the modern world" />
+    </interests>
+  </faction>
+
+  <faction
+    Name="Mechanimists"
+    DisplayName="[!!]Mechanimists"
+    FormatWithArticle="true"
+  >
+  </faction>
+
+  <faction
+    Name="Gyre Wights"
+    DisplayName="[!!]Gyre wights"
+    FormatWithArticle="true"
+  >
+  </faction>
+
+  <faction
+    Name="Mamon"
+    DisplayName="[!!]Children of Mamon"
+    FormatWithArticle="true"
+  >
+  </faction>
+
+  <faction
+    Name="Seekers"
+    DisplayName="[!!]Seekers of the Sightless Way"
+    FormatWithArticle="true"
+  >
+  </faction>
+
+  <faction
+    Name="Wardens"
+    DisplayName="[!!]Fellowship of Wardens"
+    Plural="false"
+    FormatWithArticle="true"
+  >
+  </faction>
+
+  <faction
+    Name="Water"
+    DisplayName="[!!]water barons"
+  >
+  </faction>
+
+  <faction
+    Name="Flowers"
+    DisplayName="[!!]flowers"
+  >
+  </faction>
+
+  <faction
+    Name="Roots"
+    DisplayName="[!!]roots"
+  >
+  </faction>
+
+  <faction
+    Name="Fungi"
+    DisplayName="[!!]fungi"
+  >
+  </faction>
+
+  <faction
+    Name="Vines"
+    DisplayName="[!!]vines"
+  >
+  </faction>
+
+  <faction
+    Name="Urchins"
+    DisplayName="[!!]urchins"
+  >
+  </faction>
+
+  <faction
+    Name="Succulents"
+    DisplayName="[!!]succulents"
+  >
+  </faction>
+
+  <faction
+    Name="Trees"
+    DisplayName="[!!]trees"
+  >
+  </faction>
+
+  <faction
+    Name="Merchants"
+    DisplayName="[!!]Merchants' Guild"
+    Plural="false"
+    FormatWithArticle="true"
+  >
+  </faction>
+
+  <faction
+    Name="Farmers"
+    DisplayName="[!!]Farmers' Guild"
+    Plural="false"
+    FormatWithArticle="true"
+  >
+  </faction>
+
+  <faction
+    Name="Resheph"
+    DisplayName="[!!]Cult of the Coiled Lamb"
+    Plural="false"
+    FormatWithArticle="true"
+  >
+  </faction>
+
+  <faction
+    Name="Daughters"
+    DisplayName="[!!]Daughters of Exile"
+    Plural="true"
+    FormatWithArticle="true"
+  >
+  </faction>
+
+  <faction
+    Name="YdFreehold"
+    DisplayName="[!!]denizens of the Yd Freehold"
+    FormatWithArticle="true"
+  >
+    <waterritual
+      RecipeText="[!!]Would you share the favorite dish of the Yd Freehold's denizens?"
+    />
+  </faction>
+
+  <faction
+    Name="Chavvah"
+    DisplayName="[!!]Chavvah, the Tree of Life"
+    FormatWithArticle="false"
+    Plural="false"
+  >
+    <waterritual
+      RecipeText="[!!]Would you share the favorite dish of the entities of Chavvah?"
+    />
+  </faction>
+
+  <!-- NOTE: each "SultanCultN"'s DisplayName is generated, based on
+      one of the spice-generated characteristics of that generated sultan -->
+
+  <faction
+    Name="SultanCult1"
+    Plural="false"
+    FormatWithArticle="true"
+  >
+  </faction>
+
+  <faction
+    Name="SultanCult2"
+    Plural="false"
+    FormatWithArticle="true"
+  >
+  </faction>
+
+  <faction
+    Name="SultanCult3"
+    Plural="false"
+    FormatWithArticle="true"
+  >
+  </faction>
+
+  <faction
+    Name="SultanCult4"
+    Plural="false"
+    FormatWithArticle="true"
+  >
+  </faction>
+
+  <faction
+    Name="SultanCult5"
+    Plural="false"
+    FormatWithArticle="true"
+  >
+  </faction>
+
+</factions>
