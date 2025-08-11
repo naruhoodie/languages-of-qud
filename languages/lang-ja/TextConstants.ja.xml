@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<textconstants Encoding="utf-8" Lang="ja">
+    <!--
+        Weirdify character sets, the "Base" letter should also be the first letter in the set.
+        Used to make extradimensional creatures feel "off".
+
+        Try for weird characters in the CP437 codepage first, other DOS codepages next.
+        Avoid having a character in multiple weirdSets, except maybe
+        for the same letter upper- & lower-cased.
+        If you want to "remove" an existing weirdSet, make its Set equal to its Base.
+    -->
+    <weirdSets>
+        <weirdSet Base="a" Set="aâäàåáªα" />
+        <weirdSet Base="A" Set="AÄÅÆ" />
+        <weirdSet Base="B" Set="Bß" />
+        <weirdSet Base="c" Set="cç¢" />
+        <weirdSet Base="C" Set="CÇ" />
+        <weirdSet Base="e" Set="eéêëèε" />
+        <weirdSet Base="E" Set="EÉΣ" />
+        <weirdSet Base="f" Set="fƒ" />
+        <weirdSet Base="i" Set="iïîìí¡" />
+        <weirdSet Base="I" Set="I¡│" />
+        <weirdSet Base="L" Set="L£" />
+        <weirdSet Base="n" Set="nñπ∩" />
+        <weirdSet Base="N" Set="NÑ" />
+        <weirdSet Base="o" Set="oôöòóσ°" />
+        <weirdSet Base="O" Set="OÖΦΘφ" />
+        <weirdSet Base="R" Set="R₧" />
+        <weirdSet Base="t" Set="tτ" />
+        <weirdSet Base="u" Set="uûùúµ" />
+        <weirdSet Base="U" Set="UÜµ" />
+        <weirdSet Base="y" Set="yÿ" />
+        <weirdSet Base="Y" Set="Y¥" />
+        <!-- now for Japanese katakana! -->
+        <weirdSet Base="ァ" Set="ァｧａ" />
+        <weirdSet Base="ィ" Set="ィｨｉ" />
+        <weirdSet Base="ゥ" Set="ゥｩｕ" />
+        <weirdSet Base="ェ" Set="ェｪｅ" />
+        <weirdSet Base="ォ" Set="ォｫｏ" />
+        <weirdSet Base="ャ" Set="ャｬ" />
+        <weirdSet Base="ュ" Set="ュｭ" />
+        <weirdSet Base="ョ" Set="ョｮㅌ" />
+        <weirdSet Base="ッ" Set="ッｯ" />
+        <weirdSet Base="ア" Set="ア㋐ｱＡ" />
+        <weirdSet Base="イ" Set="イ㋑ｲＩ１ㄔ" />
+        <weirdSet Base="ウ" Set="ウ㋒ｳＵ" />
+        <weirdSet Base="エ" Set="エ㋓ｴヱＥ" />
+        <weirdSet Base="オ" Set="オ㋔ｵＯ" />
+        <weirdSet Base="カ" Set="カ㋕ｶㄌ" />
+        <weirdSet Base="キ" Set="キ㋖ｷ" />
+        <weirdSet Base="ク" Set="ク㋗ｸＫ９ㄑ" />
+        <weirdSet Base="ケ" Set="ケ㋘ｹ" />
+        <weirdSet Base="コ" Set="コ㋙ｺㄈ" />
+        <weirdSet Base="ゴ" Set="ゴ５" />
+        <weirdSet Base="サ" Set="サ㋚ｻㄜ" />
+        <weirdSet Base="シ" Set="シ㋛ｼＣ" />
+        <weirdSet Base="ス" Set="ス㋜ｽＳ" />
+        <weirdSet Base="セ" Set="セ㋝ｾㄝ" />
+        <weirdSet Base="ソ" Set="ソ㋞ｿ" />
+        <weirdSet Base="タ" Set="タ㋟ﾀ" />
+        <weirdSet Base="チ" Set="チ㋠ﾁㄘ" />
+        <weirdSet Base="ツ" Set="ツ㋡ﾂ２" />
+        <weirdSet Base="テ" Set="テ㋢ﾃ〒〶누" />
+        <weirdSet Base="ト" Set="ト㋣ﾄ" />
+        <weirdSet Base="ナ" Set="ナ㋤ﾅ７" />
+        <weirdSet Base="二" Set="二㋥ﾆ〓느" />
+        <weirdSet Base="ヌ" Set="ヌ㋦ﾇㄡㄆ" />
+        <weirdSet Base="ネ" Set="ネ㋧ﾈ" />
+        <weirdSet Base="ノ" Set="ノ㋨ﾉ" />
+        <weirdSet Base="ハ" Set="ハ㋩ﾊ８" />
+        <weirdSet Base="ヒ" Set="ヒ㋪ﾋ" />
+        <weirdSet Base="ビ" Set="ビＢ" />
+        <weirdSet Base="ピ" Set="ピＰ" />
+        <weirdSet Base="フ" Set="フ㋫ﾌＦ" />
+        <weirdSet Base="ヘ" Set="ヘ㋬ﾍㄟ" />
+        <weirdSet Base="ホ" Set="ホ㋭ﾎ" />
+        <weirdSet Base="マ" Set="マ㋮ﾏ" />
+        <weirdSet Base="ミ" Set="ミ㋯ﾐ３" />
+        <weirdSet Base="ム" Set="ム㋰ﾑＭㄙ" />
+        <weirdSet Base="メ" Set="メ㋱ﾒㄨ" />
+        <weirdSet Base="モ" Set="モ㋲ﾓ" />
+        <weirdSet Base="ヤ" Set="ヤ㋳ﾔ" />
+        <weirdSet Base="ユ" Set="ユ㋴ﾕ" />
+        <weirdSet Base="ヨ" Set="ヨ㋵ﾖ４" />
+        <weirdSet Base="ラ" Set="ラ㋶ﾗ" />
+        <weirdSet Base="リ" Set="リ㋷ﾘ" />
+        <weirdSet Base="ル" Set="ル㋸ﾙㄦ" />
+        <weirdSet Base="レ" Set="レ㋹ﾚＬㄥ" />
+        <weirdSet Base="ロ" Set="ロ㋺ﾛ６ㄖㅁ" />
+        <weirdSet Base="ワ" Set="ワ㋻ﾜ" />
+        <weirdSet Base="ヲ" Set="ヲ㋾ｦ" />
+        <weirdSet Base="ン" Set="ンﾝＮ" />
+        <weirdSet Base="ヴ" Set="ヴＶ" />
+    </weirdSets>
+    <crypticMachineCharset Set="│┤╡╢╖╕╣║╗╝╜╛┐└┴┬├─┼╞╟╚╔╩╦╠═╬╧╨╤╥╙╘╒╓╫╪┘┌" WordLengthMin="3" WordLengthMax="10" SentenceLengthMin="3" SentenceLengthMax="40" />
+</textconstants>

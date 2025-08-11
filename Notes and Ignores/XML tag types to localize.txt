@@ -26,6 +26,8 @@
 		<xtagGrammar adjunctNoun="<GRAMMAR><LOCALIZE>" />
 	<!-- Data.xml - "IngredientMapping" objects -->
 		<tag Name="Description" Value="<LOCALIZE>" />
+	<!-- Data.xml - "Faction data bucket" objects -->
+	    <tag Name="DishNames" Value="<LOCALIZE>" />
 	<!-- Items.xml -->
 		<tag Name="TinkerCategory" Value="<??LOCALIZE>" />
 		<tag Name="Mods" Value="<??LOCALIZE>" /><!-- NOTE: are displayed in Tinkering :P -->
@@ -84,8 +86,8 @@
 		<part Name="TreatAsSolid" Message="<LOCALIZE>" />    
 		<part Name="Interactable" Action="<??LOCALIZE>" Message="<LOCALIZE>" />
 	<!-- Creatures.xml -->
-    <!-- how to localize stat tag Name & ShortName? -->
-    <stat Name="<?KEY,??LOCALIZE>" ShortName="<?KEY,??LOCALIZE>" />
+    <!-- how to localize stat tag ShortName? -->
+    <stat Name="<KEY>" ShortName="<?KEY,??LOCALIZE>" />
 		<tag Name="Species" Value="<??LOCALIZE>" />
 		<tag Name="PetResponse" Value="<LOCALIZE>" />
 		<tag Name="SimpleConversation" Value="<LOCALIZE><EMOTE><CHOICES~>" />

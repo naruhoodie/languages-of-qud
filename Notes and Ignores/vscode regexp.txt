@@ -44,12 +44,23 @@ more general [!!] for Lang="min" tag attributes on object blueprints:
 ( (?:Name="(?:Description)" Short)=")((?!\[!!\])[^"]+)"		$1[!!]$2"
 ( (?:adjunctNoun)=")((?!\[!!\])[^"]+)"	$1[!!]$2"
 inherits -> Load=Merge:
-(?:Inherits)(="[^"]+")	Load="Merge"
+(<object .*) (?:Inherits)(="[^"]+")	$1Load="Merge"
 stripping unneeded attributes (part Name="Render"):
-(?:Tile|RenderLayer|RenderString|ColorString|TileColor|DetailColor||Occluding|RenderIfDark|Hidden)(="[^"]+" )
+( (?:Tile|RenderLayer|RenderString|ColorString|TileColor|DetailColor|Occluding|RenderIfDark|Hidden))(="[^"]+")
 (<conversation ID="[^"]")[^>]*		$1 Load="Merge"
 check afterward:
 ( (?:Name="[^"]+)" Value=")((?!\[!![^\]]*\])[^"]+)"
+
+removing unneeded stat lines:
+^\s+<stat Name="(?:AV|DV|Hitpoints|ColdResistance|HeatResistance|ElectricResistance|AcidResistance|Strength|Agility|Toughness|Intelligence|Willpower|Ego|Speed)" [s]*Value="[^"]+" />\s*\n
+
+Furniture.xml
+removing unneeded tag lines:
+^\s+<tag Name="(?:NoAutoGet|DiscardInsteadOfGeneratingStacked|VaporObject|SuspendedPlatform|BaseObject|Furniture|NeverStack|BlocksDoors|NoSparkingQuest|Tier|NoTrade|OverlayColor|TechTier|ForceRepaintSolid|PaintedFence|PaintPart|PaintWith|Door|Flyover|NoEffects|Transparent)"[^\/]*/>\s*\n
+^\s+<tag Name="(ExcludeFromDynamicEncounters|IncludeInDynamicSemanticTables|ForceSmartUse|AutoexploreChest|GritGateJourneyfriendIdentify|Animatable|PlacementHint|HangingSupport)"[^\/]*/>\s*\n
+
+removing stag lines:
+^\s+<stag Name="[^"]+" [^/]*/>\s*\n
 
 Conversations.xml
 (<conversation ID="[^"]+")[^>]*		$1 Load="Merge"
