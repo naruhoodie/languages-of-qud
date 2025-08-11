@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8"?>
+<help>
+	<topic name="Quickstart">
+These are nine things you should do when you start your game.
+After that, use the rest of this Help as a reference manual.
+
+{{W|1. Walk around}}
+
+{{?KB|Move by pressing directional keys (~CmdMoveN, ~CmdMoveE, etc) or by clicking on the map.}}{{?Gamepad|Indicate direction with ~UI:Navigate and press ~Take A Step to move or hold ~Take A Step to move continuously.}}{{?Gamepad|
+You can also auto-explore the map with ~CmdAutoExplore.}}
+
+{{W|2. Interact with things}}
+
+Walk next to an NPC or other object and press ~CmdUse.
+
+{{W|3. Look at things}}
+
+{{?KB|Press }}~CmdLook to enter Look mode and then move the cursor around the map.{{?KB|
+Or {{hotkey|right-click}} to quick look.}}
+
+{{W|4. Use your abilities}}
+
+{{?KB|Click on a button on the ability bar at the bottom of your screen
+or press its hotkey.}}{{?Gamepad|Navigate the hotbar at the bottom of your screen with ~UI:Navigate/left and ~UI:Navigate/right
+and then press ~Use Ability to use an ability.}}
+
+{{W|5. View your character sheet}}
+
+{{?KB|Press ~CmdCharacter to view your core character info.
+Press ~CmdEquipment to view your equipment.
+Press ~CmdInventory to view your inventory.
+Press ~CmdJournal to view your journal.
+Press ~CmdQuests to view your quests.
+Press ~CmdSkillsPowers to view your skills.
+Press ~CmdFactions to view your faction relationships.
+
+You can scroll through these pages with ~Page Left and ~Page Right.}}{{?Gamepad|Press ~CmdCharacter to view your core character info.
+Navigate to other pages in your character sheet with ~Page Left and ~Page Right.}}
+
+{{W|6. Bring up a list of points of interest}}
+
+Press ~CmdMoveToPointOfInterest.
+
+{{W|7. Bring up additional information about objects on the map}}
+
+Press ~Highlight for an overlay with extra info like creature hostility 
+(red = hostile, yellow = neutral, green = friendly) and a clear view of 
+interesting items.
+
+{{W|8. Walk to another map}}
+
+Simply walk offscreen, or go to the world map with ~CmdMoveU.
+
+{{W|9. Attack an enemy}}
+
+To perform a basic attack, just walk into a hostile creature.
+Or you can use an attack ability.
+</topic>	
+  <topic name="Attributes">
+[[{{C|Strength}}]]
+Your strength score determines how much melee damage you do (by improving 
+your armor penetration), your ability to resist forced movement, and your
+carry capacity.
+
+[[{{C|Agility}}]]
+Your agility score determines your accuracy with both melee and ranged
+weapons and your ability to dodge attacks.
+
+[[{{C|Toughness}}]]
+Your toughness score determines your number of hit points, your hit point
+regeneration rate, and your ability to resist poison and disease.
+
+[[{{C|Intelligence}}]]
+Your intelligence score determines your number of skill points and your
+ability to examine artifacts.
+
+[[{{C|Willpower}}]]
+Your willpower score modifies the cooldowns of your activated abilities,
+determines your ability to resist mental attacks, and modifies your hit
+point regeneration rate.
+
+[[{{C|Ego}}]]
+Your ego score determines the potency of your mental mutations, your
+ability to haggle with merchants, and your ability to dominate the wills
+of other living creatures.
+
+[[{{C|Armor Value and Dodge Value (AV / DV)}}]]
+Your armor value (AV) is a measurement of how well protected you are
+against physical attacks that hit you. The higher your score, the less
+likely an opponent's attack will do severe damage to you. Most characters
+start with a base AV score of 0.
+
+Your dodge value (DV) is a measurement of how likely you are to be hit by
+physical attacks. The higher your score, the less likely an opponent's
+attack will hit you. Your DV is modified by your Agility modifier. Most
+characters start with a base DV of 6.
+
+[[{{C|Mental Armor (MA)}}]]
+Your mental armor (MA) is a measurement of how well protected you are
+against mental attacks, much as your armor value is a measurement of how
+well protected you are from physical attacks. The higher your score, the
+less likely an opponent's mental attack will have a severe effect on you.
+Your MA is modified by your Willpower modifier. Most characters start
+with a base MA of 4.
+
+[[{{C|Quickness (QN)}}]]
+Your quickness score is a measurement of how quickly you perform each and
+every action you take. Your base quickness score is 100. Note that there
+are very few ways to augment this score.
+
+[[{{C|Movement Speed (MS)}}]]
+Your movement speed is a measurement of how quickly you walk or fly.
+Your base movement speed is 100.
+
+[[{{C|Temperature (T)}}]]
+Your temperature is a measurement of how hot or cold you are. If you are
+Cold, your quickness score is reduced by half. If you are Frozen, you are
+unable to take physical actions. If you are Flaming, you take heat damage
+every turn until you reduce your temperature.
+
+[[{{C|Acid Resist}}]]
+Your acid resist is a measurement of how much acid damage you ablate. Your
+base acid resist score is 0. At 100, you are immune to acid damage.
+
+[[{{C|Cold Resist}}]]
+Your cold resist is a measurement of how much cold damage you ablate and how
+insulated you are from effects that reduce your temperature. Your base cold
+resist score is 0. At 100, you are immune to cold damage and your
+temperature cannot be reduced.
+
+[[{{C|Electrical Resist}}]]
+Your electrical resist is a measurement of how much electrical damage you
+ablate and how resistive you are to electric current. Your base electrical
+resist score is 0. At 100, you are immune to electrical damage and you do
+not conduct electricity.
+
+[[{{C|Heat Resist}}]]
+Your heat resist is a measurement of how much heat damage you ablate and how
+insulated you are from effects that increase your temperature. Your base
+heat resist score is 0. At 100, you are immune to heat damage and your
+temperature cannot be increased.
+
+</topic>
+  <topic name="Skills">
+Your skills represent the abilities you have learned in your
+life. Each skill tree has several skills associated with it. You begin with
+several skills determined by your caste or calling. You may purchase other
+skills by spending skill points which you earn when you gain a level (the
+higher your intelligence score, the more skill points you earn).
+
+To purchase a new skill, you must first purchase the entry skill in its
+skill tree. You must meet any attribute or power requirements of the skill
+you are trying to purchase. It is possible to begin with certain skills 
+without having its entry skill if your caste or calling has granted it to
+you.
+
+Skills often grant you activated abilities. Once you purchase a skill, you
+may access your new activated ability from the Manage Abilities menu ('a').
+</topic>
+  <topic name="Mutations and Defects">
+Mutations are special biological powers gifted to the denizens of Qud --
+true kin from the outer arcologies do not possess mutations. There are two
+types of mutations: physical and mental. Each mutation has a mutation score
+associated with it. The scores of your physical mutations and the cooldowns
+of activated abilities granted by your physical mutations are static. On
+the other hand, the scores of your mental mutations are modified by your
+Ego modifier and the cooldowns of abilities granted by your mental
+mutations are modulated by 5% for each point of Willpower you possess above
+or below 16.
+
+Most characters begin with mutation scores of 1. You earn a mutation point
+when you gain a new level which you may spend to augment the score of one
+of your mutations by 1. The mutation score of none of your mutations may
+exceed 1 plus your character level divided by 2. Additionally, mutations
+may only be augmented by mutation points up to a maximum score of 10,
+though your mental mutations may exceed this score if your Ego further
+augments them beyond 10.
+
+Alternatively, you may spend 4 mutation points to choose a new mutation
+from three randomly selected mutations. The mutation you choose begins
+with a score of 1. If you are a chimera, you are offered a choice of
+physical mutations, if you are an esper, you are offered mental mutations,
+otherwise you are offered three completely random mutations. Mutations
+often grant you activated abilities. Once you gain a mutation, you may
+access your new activated ability from the Manage Abilities menu ('a').
+
+Defects are mutations with primarily negative effects. Certain mutants
+begin with a single defect. There is no score associated with defects.
+</topic>
+  <topic name="Artifacts">
+Artifacts are items so technologically complex that few of Qud's denizens
+understand them. An unidentified artifact will appear to you as a
+"Weird Artifact". You may examine an artifact to try to identify it. If you
+are successful, you will narrow down the possibilities of that artifact's
+function (what was once a "club", for example, you may now identify as a
+"rifle"). Eventually you may completely identify the artifact. Each time
+you attempt to identify something and fail, however, there is a small
+chance you will break it. Your chance of successfully identifying an
+artifact is based on your intelligence score.
+</topic>
+  <topic name="Tonics">
+Tonics are chemical concoctions that enhance your mental and physical stats
+in a variety of ways. They are artifacts, and so you must successfully
+identify them to understand what they do. Ingesting one tonic while under
+the effects of another is dangerous; for each new tonic you ingest, there is
+a greater and greater chance that the tonics will react adversely to each
+other. The higher your Toughness score is, the greater the chance that you
+will be able to ingest multiple tonics without incurring undesired effects.
+
+Tonics produce more potent effects in true kin than they do in mutated
+humans. Also, as the body chemistry of mutants is inherently unstable,
+there is a 5% chance that a tonic ingested by a mutant will instead produce
+an undesired effect.
+
+Tonics may be concocted with the Tinker skill. In addition to bits,
+concocting a tonic often requires a natural ingredient.
+</topic>
+  <topic name="Weapons and Armor">
+[[{{C|Weapons}}]]
+Every weapon has a penetration value and a damage value
+(for example, {{C|&#x1A;}}4, {{R|&#x3;}}1d4). The penetration value of melee weapons is related
+to your strength score, though the value is capped based on the material of
+the weapon ('l'ook at a weapon to view its penetration cap). Missile weapons
+have static penetration values that do not change based on your strength score.
+Weapons may modify other statistics; 'l'ook at a weapon to fully determine
+what it does.
+
+[[{{C|Armor}}]]
+Most pieces of armor have an armor value and a dodge value
+(for example, {{b|&#x4;}}4 {{K|&#x9;}}4)) that augment your own {{b|&#x4;}}AV and {{K|&#x9;}}DV (see {{g|Attributes}}).
+Pieces of armor may modify other statistics; 'l'ook at a piece of armor to
+fully determine what it does.
+</topic>
+  <topic name="Combat">
+[[{{C|Melee Combat}}]]
+Melee combat is combat between two adjacent opponents with standard melee
+weapons such as swords, daggers, axes, and clubs. To attack a hostile
+adjacent opponent, simply move in the direction of the opponent. To attack
+something else, such as a non-hostile opponent or a wall, hold 'control'
+and move in the direction in which you wish to attack.
+
+When you make a melee attack against a target, the following sequence of
+events occurs:
+
+[[{{c|1. Determine whether or not you hit the target.}}]]
+Your to-hit roll is 1d20 plus your agility modifier plus any bonuses you
+receive from your weapon or skill powers. If this roll exceeds your
+opponent's dodge value (DV), then you hit. An empty circle icon over your
+target indicates that your attack missed.
+
+[[{{c|2. Determine whether a shield block takes place.}}]]
+If the target has a shield equipped, they have a base 25% chance to block
+with it, increasing with skill. A successful block adds the shield's armor
+value (AV) to the target's AV for this attack.
+
+[[{{c|3. Determine how severely your attack penetrates your target's armor.}}]]
+Each weapon has a penetration value ({{C|&#x1A;}}4, for example). This value
+represents the armor value (AV) that your weapon will usually penetrate
+with ease. If your weapon's penetration value far exceeds your target's AV,
+your weapon will likely penetrate several times. Each time your weapon
+penetrates your target's armor, your target is dealt damage equal to your
+weapon's damage value ({{R|&#x3;}}1d4, for example). A filled circle icon over your
+target indicates that your attack hit but failed to penetrate your target's
+armor. A heart icon indicates that your attack hit and penetrated your
+target's armor.
+
+[[{{c|4. Determine if multiple attacks are made.}}]]
+There is a 15% chance that you make an additional attack with your
+secondary hand. Characters with multiple limbs may make additional attacks
+beyond this.
+
+[[{{C|Missile Combat}}]]
+Missile combat is combat between two opponents with missile weapons such
+as bows, pistols, and rifles. To make a missile attack, press 'f' to aim
+your weapon, then 'f' again to fire.
+
+When you make a missile attack, the following sequence of events occurs:
+
+[[{{c|1. Determine the trajectory of your missile.}}]]
+How far a missile is likely to veer from its projected path is determined
+by your agility score and the weapon's accuracy.
+
+[[{{c|2. Hit the first medium-sized or larger object along the missile's}}
+{{c|trajectory.}}]]
+
+[[{{c|3. Determine how severely the missile penetrates your target's armor.}}]]
+This is resolved in the same way as a melee attack.
+
+[[{{c|4. Determine if multiple attacks are made.}}]]
+Certain powers allow you to fire multiple missiles with certain missile
+weapons.
+
+If you are engaged in melee combat with more than one hostile opponent,
+there is a 50% chance that each missile attack you make goes wild (veers
+45 degrees to the left or right).
+</topic>
+  <topic name="Saving Throws">
+Certain effects or abilities require creatures to make saving throws or face 
+consequences. Saving throws each have an attribute and difficulty associated 
+with them. To pass a saving throw, a base 1d20 is rolled and then your 
+relevant attribute modifier is added. If that number meets or exceeds the 
+difficulty, you pass. Otherwise you fail. Some saving throws against 
+creature abilities add the creature's attribute modifier to the difficulty 
+as well.
+</topic>
+
+  <topic name="Action Costs">
+The amount of time it takes to do something is assessed in terms of an
+action cost. Most tasks have an action cost of 1000. Your Quickness
+increases the rate at which you recover this cost, enabling you to act
+more often than slower creatures.
+
+Some skills, mutations, and equipment enable you to take specific actions
+at reduced or zero action cost.
+</topic>
+<topic name="Credits">
+
+                                 [[{{C|Created by}}
+                      Brian Bucklew and Jason Grinblat
+                      
+
+              QA &amp;&amp; Additional Design - Nick Decapua
+              Additional Programming - Corey Frang
+                               Music - Craig Hamilton            
+                                  QA - Autumn McDonell
+              Additional Programming - Bastia Rosen
+         Additional Writing &amp;&amp; Design - Caelyn Sandel
+                    Additional Music - Brandon Tanner        
+                            Tile Art - Samuel Wilson
+                Additional UI Design - Polat Yarisci
+                        Sound Design - A Shell in the Pit
+            QA, Additional Design, &amp;&amp;
+              Additional Programming - Thaumatic Systems              
+                       Legal Counsel - Thomas C. Allison, P.A.
+                      
+                      Background Art - Cyril van der Haegen
+                            Logo Art - Laura &amp;&amp; Jeff Bucholtz
+                Community Management - Ivy Melinda &amp;&amp; the mayor team
+
+
+                                {{C|Published by}}
+                                Kitfox Games
+
+                                Tina Liu
+                                Xin Ran Liu
+                                Alexandra Orlando
+                                Tanya X. Short
+                                
+
+                                {{C|Special thanks}}
+                                Ashenai
+                                Riley Vincent
+                                Gibbed
+                                Floorislava
+                                Dr Amazing
+                                Devonaut
+                                Vaos
+                                Tyskil
+                                Lakren
+                                Stelas
+                                Social Animal
+                                Contra Duck
+                                Saberwulf
+                                Megaflare
+                                Doctorfrog
+                                Palecur
+                                NovaPolice
+                                Mirdath
+                                The Glow
+                                Dyzzy
+                                Schister
+                                Lazybuttons
+                                Colonp
+                                Niff
+                                Matterhorn
+                                Clamiam
+                                Donraj
+                                Randy Marsh
+                                Rabbi
+                                Getter77
+                                Capuchin
+                                Wafflecopter
+                                Nomikos
+                                Magitek
+                                Andrew Smash
+                                Vastin
+                                Frumple
+                                Sappho
+                                Soulwynd
+                                Cpbpunch
+                                Tarran
+                                Brian Turcotte
+                                Oryx
+                                Jim Shepard, Dungeonmans
+                                MightyMerch
+                                Eva Problems, Carbide Chef
+                                a nonsense bird
+                                Tarn &amp;&amp; Zach Adams
+                                
+
+                                {{C|Patrons}}
+                                Reed (mutated human) and Tiffany (rabbit)
+                                epsalon
+                                Tim Linscott
+                                Cody, The Rat
+                                iconmaster
+                                Coal
+                                Reuben Eadon
+                                Goldkin
+                                mdct
+                                Rusted Jake Matz
+                                Benjamin T. Steed
+                                Xerkie!
+                                Dij
+                                LongueVanne
+                                50RCERESS
+                                Chef Agate Severance Star
+                                awful_falafel
+                                Jonny Robertson
+                                Ian Wall
+                                Orion Perruc-Reyes
+                                Ryan Orlando (Fat Thunder)
+                                FS Colley
+                                Asunaro
+                                Trevor Clack
+                                Gillian Eggleston
+                                Nerem
+                                Somsnosa
+                                Ivy Sly
+                                livelongcoffee
+                                SMB64 (Koshi)
+                                NO Press
+                                EveryZig314
+                                Floopygapples
+                                Eric Hulen
+                                Caine DeWitt
+                                Eric Anthony Rodriguez
+                                Nathaniel Krell
+                                Boo-cher
+                                Pax Frank
+                                Matteo De Cristofaro
+                                Meo
+                                Boyarde Roneen
+                                wastrel
+                                Drew Kerrigan
+                                Jordan Wood
+                                Kasey Patrick Morgan
+                                Callum Love
+                                Petrichor "petrak@7604"
+                                Devon Cupo
+                                Big Simple
+                                Kevin Orren
+                                Lennart Schefe
+                                Beemancer
+                                Lady Eithn&#130;, Queen of Brokilon
+                                Nic Gard
+                                NeroPrime
+                                InfiniteTidalWave
+                                Aveon Zero
+                                Joshua Southerland
+                                _tr
+                                James Earle
+                                Nick Correale
+                                Micha&#143;‚ Byczko                                
+                                Reuben Eadon
+                                Shane Allcroft
+                                Aidan Page
+                                Earthly Delights Ogdo
+                                John Szevin
+                                Shane Allcroft
+                                Kelly Joyce
+                                Cleo Lamb
+                                Mike Sipior
+                                James Canter
+                                Joshua Buckley
+                                Qingyao Sun
+                                CHOWARD
+                                Luke J.
+                                Gobi Silverfrog, siver and gold goddess
+                                Ethan Rigby
+                                Ethan "Kobold" CB
+                                Maria Ross Colton Chamberlin
+                                {{w-W-Y-Y-Y-Y-Y-W-w sequence|Paingouin}} "Jordan B."
+                                James Lagervall
+                                Doug "Severian" Callahan
+                                Leo Durante
+                                Rarden
+                                Ray ({{r|books}})
+                                awful_falafel
+                                ambersand
+                                dmajorduckie
+                                Lukas Wagner (K&#148;nig Muskelmagen)
+                                Marek Pohlodek
+                                Kamille Rose
+                                Retes;Nome
+                                Sabboth Ochoa
+                                Almea
+                                Caleb Ulichney
+                                Visnex
+                                CreativeCorpse
+                                Kelly Vincent
+                                Teagan Erika Stephanie Strickland
+                                Mirthful Sloth
+                                beepy roboticvenusian (enchiridion)
+                                AvianAnarchy
+                                Gavin Conover
+
+  ]]
+</topic>
+<topic name="Open Source Licenses">
+[[{{c|License for Harmony (https://github.com/pardeike/Harmony)}}
+  {{W|MIT License}}
+
+  Copyright (c) 2017 Andreas Pardeike
+
+{{c|License for FuzzySharp (https://github.com/JakeBayer/FuzzySharp)}}
+  {{W|MIT License}}
+
+  Copyright (c) 2018 
+  
+{{c|License for UnityStandaloneFileBrowser
+ (https://github.com/gkngkc/UnityStandaloneFileBrowser)}}
+  {{W|MIT License}}
+
+  Copyright (c) 2017 Gökhan Gökçe
+
+{{c|License for ZString (https://github.com/Cysharp/ZString)}}
+  {{W|MIT License}}
+
+  Copyright (c) 2020 Yoshifumi Kawai / Cysharp, Inc.
+
+{{c|License for UniTask (https://github.com/Cysharp/UniTask)}}
+  {{W|MIT License}}
+
+  Copyright (c) 2019 Yoshifumi Kawai / Cysharp, Inc.
+
+
+{{W|MIT License}} {{c|- Full Text}}
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in all
+  copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.]]
+
+</topic>
+</help>
