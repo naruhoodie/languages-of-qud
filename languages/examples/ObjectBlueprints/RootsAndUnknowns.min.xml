@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <!-- counterpart to the .ref.xml, with the minimal tags needed for a working translation -->
 <!-- copy this, change Lang to your lang code, and use for localization! -->
+<!-- any fields starting with [!!] should be localized; also localize
+    fields starting with `[!!,]` or `[!!~]` which contain a group of strings
+    that the game will select from at random ([!!,] split at `,` while [!!~] split at `~`)
+    within text, stuff between `=` are special text replacers processed by code;
+    we will make custom replacers for you to use depending on the needs of your language. -->
 <objects Encoding="utf-8" Lang="min">
 
   <!-- leave the DisplayName unlocalized here as it's not meant for the end user,

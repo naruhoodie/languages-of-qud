@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- counterpart to the .ref.xml, with the minimal tags needed for a working translation -->
 <!-- copy this, change Lang to your lang code, and use for localization! -->
+<!-- any fields starting with [!!] should be localized, as should text outside of xml tags -->
 <books Encoding="utf-8" Lang="min">
 <!-- NOTE: These contents are used to generate a corpus for Markov text generation. 
       Only the ones that are physical books need the Title localized (marked with [!!])
@@ -1364,6 +1365,7 @@ But Aphir did not believe her lost -- on sacred nights he would gaze over the Sp
 </book>
   
 <book ID="Sonnet" Title="[!!]{{W|a crumpled sheet of paper}}" Format="Auto" Margins="1,2,2,2">
+<!-- a Shakepearean-style sonnet written by Eskhind for her love, Warden Neelahind -->
     <page>
 When all four limbs of mine do long to run
 and I can feel my walls are closing in
@@ -1664,6 +1666,8 @@ Since the first festival of Ut yara Ux, the villagers of Joppa have feasted on w
 	</book>
 
   <book ID="LoveinBeyLah" Title="[!!]{{W|A Tale of Love in Bey Lah}}" Format="Auto" Margins="1,2,2,2">
+    <!-- Used if the player gave <book ID="Sonnet"> to its intended recipient.
+      =name= is the player character's name, using the unknown-gender singular "they" -->
     <page>Once, in the final days of the hindriarchy, before they ended the practice, a pariah of no particular importance did find herself consigned to the gulag. Though she herself bore no honor, in her grasping hands she held the burning heart of the village champion, freely given -- for the two had fallen in love long before the heretic's conviction.
 
       When the jealous hindriarch discovered the missing heart of her beloved champion, she swore cruel vengeance upon the pariah. Pulling upon dark forces, she ensorcelled the pariah’s ex-lover and ordered him to steal her heart again and deliver it to the hindriarch’s crushing fist.
@@ -1675,6 +1679,9 @@ Since the first festival of Ut yara Ux, the villagers of Joppa have feasted on w
   </book>
   
   <book ID="FearinBeyLah" Title="[!!]{{W|A Tale of Fear in Bey Lah}}" Format="Auto" Margins="1,2,2,2">
+    <!-- Used if the player didn't give <book ID="Sonnet"> to its intended recipient.
+      A hindren (implied to be Neelahind) later finds the Sonnet at the destroyed tree.
+    -->
     <page>In the small days of Bey Lah, between Way Back Then and Back Then,
       a hindren took to the paths in silent walking eulogy.
 
