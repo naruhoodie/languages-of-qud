@@ -361,9 +361,10 @@ namespace LanguagesOfQud
         /// </summary>
         [VariableReplacer("てList")]
         [VariableExample("甘くて便利で温かくて本当のすてきな", "甘い;;便利な;;温かい;;本当の;;すてきな")]
-        public static string てList(VariableContext Context, IReadOnlyList<string> Strings)
+        [VariableExample("{{Y|甘くて}}{{g|便利で}}{{R|温かくて}}{{c|本当の}}{{M|すてきな}}", "{{Y|甘い}};;{{g|便利な}};;{{R|温かい}};;{{c|本当の}};;{{M|すてきな}}")]
+        public static void てList(VariableContext Context, IReadOnlyList<string> Strings)
         {
-            return TranslatorJapanese.MakeてList(Strings);
+            Context.Value.AppendてList(Strings);
         }
 
         //TODO: add a postprocessor StripRubyText to ReplacerBuilder

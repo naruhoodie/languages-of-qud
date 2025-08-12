@@ -82,7 +82,7 @@ namespace XRL.Language
         /**
          * support method for Cardinal() and Ordinal()
          */
-        private static void ProcessMagnitude(ref long num, ref int magnitude, TextBuilder result, string place)
+        private static void ProcessMagnitude(ref long num, ref int magnitude, TextBuilder SB, string place)
         {
             if (magnitude > 4)
             {
@@ -94,8 +94,8 @@ namespace XRL.Language
             long count = val / offset;
             if (count > 0)
             {
-                result.Append(Cardinal(count));
-                result.Append(place);
+                SB.Append(Cardinal(count));
+                SB.Append(place);
                 num = remainder;
             }
             magnitude--;
@@ -104,17 +104,17 @@ namespace XRL.Language
         /**
          * support method for Cardinal() and Ordinal()
          */
-        private static bool ProcessMagnitudes(ref long num, ref int magnitude, TextBuilder result, string suffix = null)
+        private static bool ProcessMagnitudes(ref long num, ref int magnitude, TextBuilder SB, string suffix = null)
         {
             switch (magnitude)
             {
                 case 20:
-                    ProcessMagnitude(ref num, ref magnitude, result, "垓");
+                    ProcessMagnitude(ref num, ref magnitude, SB, "垓");
                     if (num == 0)
                     {
                         if (suffix != null)
                         {
-                            result.Append(suffix);
+                            SB.Append(suffix);
                         }
                         return true;
                     }
@@ -123,12 +123,12 @@ namespace XRL.Language
                 case 18:
                 case 17:
                 case 16:
-                    ProcessMagnitude(ref num, ref magnitude, result, "京");
+                    ProcessMagnitude(ref num, ref magnitude, SB, "京");
                     if (num == 0)
                     {
                         if (suffix != null)
                         {
-                            result.Append(suffix);
+                            SB.Append(suffix);
                         }
                         return true;
                     }
@@ -137,12 +137,12 @@ namespace XRL.Language
                 case 14:
                 case 13:
                 case 12:
-                    ProcessMagnitude(ref num, ref magnitude, result, "兆");
+                    ProcessMagnitude(ref num, ref magnitude, SB, "兆");
                     if (num == 0)
                     {
                         if (suffix != null)
                         {
-                            result.Append(suffix);
+                            SB.Append(suffix);
                         }
                         return true;
                     }
@@ -151,12 +151,12 @@ namespace XRL.Language
                 case 10:
                 case 9:
                 case 8:
-                    ProcessMagnitude(ref num, ref magnitude, result, "億");
+                    ProcessMagnitude(ref num, ref magnitude, SB, "億");
                     if (num == 0)
                     {
                         if (suffix != null)
                         {
-                            result.Append(suffix);
+                            SB.Append(suffix);
                         }
                         return true;
                     }
@@ -165,34 +165,34 @@ namespace XRL.Language
                 case 6:
                 case 5:
                 case 4:
-                    ProcessMagnitude(ref num, ref magnitude, result, "万");
+                    ProcessMagnitude(ref num, ref magnitude, SB, "万");
                     if (num == 0)
                     {
                         if (suffix != null)
                         {
-                            result.Append(suffix);
+                            SB.Append(suffix);
                         }
                         return true;
                     }
                     goto case 3;
                 case 3:
-                    ProcessMagnitude(ref num, ref magnitude, result, "千");
+                    ProcessMagnitude(ref num, ref magnitude, SB, "千");
                     if (num == 0)
                     {
                         if (suffix != null)
                         {
-                            result.Append(suffix);
+                            SB.Append(suffix);
                         }
                         return true;
                     }
                     goto case 2;
                 case 2:
-                    ProcessMagnitude(ref num, ref magnitude, result, "百");
+                    ProcessMagnitude(ref num, ref magnitude, SB, "百");
                     if (num == 0)
                     {
                         if (suffix != null)
                         {
-                            result.Append(suffix);
+                            SB.Append(suffix);
                         }
                         return true;
                     }
@@ -200,12 +200,12 @@ namespace XRL.Language
                 case 1:
                     if (magnitude > 0)
                     {
-                        ProcessMagnitude(ref num, ref magnitude, result, "十");
+                        ProcessMagnitude(ref num, ref magnitude, SB, "十");
                         if (num == 0)
                         {
                             if (suffix != null)
                             {
-                                result.Append(suffix);
+                                SB.Append(suffix);
                             }
                             return true;
                         }
@@ -221,7 +221,7 @@ namespace XRL.Language
             {
                 return "零";
             }
-            return Cardinal((long) num);
+            return Cardinal((long)num);
         }
         public static string Cardinal(long num)
         {
@@ -229,68 +229,71 @@ namespace XRL.Language
             {
                 return "零";
             }
-            using var result = TextBuilder.Get();
+            using var SB = TextBuilder.Get();
             if (num < 0)
             {
-                result.Append("マイナス");
+                SB.Append("マイナス");
                 num = -num;
             }
             int magnitude = (int)Math.Floor(Math.Log10(num));
-            ProcessMagnitudes(ref num, ref magnitude, result);
+            ProcessMagnitudes(ref num, ref magnitude, SB);
             switch (num)
             {
-                case 1: result.Append("一"); break;
-                case 2: result.Append("二"); break;
-                case 3: result.Append("三"); break;
-                case 4: result.Append("四"); break;
-                case 5: result.Append("五"); break;
-                case 6: result.Append("六"); break;
-                case 7: result.Append("七"); break;
-                case 8: result.Append("八"); break;
-                case 9: result.Append("九"); break;
+                case 1: SB.Append("一"); break;
+                case 2: SB.Append("二"); break;
+                case 3: SB.Append("三"); break;
+                case 4: SB.Append("四"); break;
+                case 5: SB.Append("五"); break;
+                case 6: SB.Append("六"); break;
+                case 7: SB.Append("七"); break;
+                case 8: SB.Append("八"); break;
+                case 9: SB.Append("九"); break;
             }
-            return result.ToString();
+            return SB.ToString();
         }
 
-        public static string GetAdjectiveてForm(string Adjective)
+    }
+
+    public static class TranslatorJapaneseExtensions
+    {
+        /// <summary>
+        /// Converts an "adjective" to て-form.
+        /// な-adjectives: replace with で
+        /// い-adjectives: replace with くて
+        /// の-adjectives: no change
+        /// </summary>
+        public static void GetAdjectiveてForm(TextBuilder Adjective)
         {
-            using var SB = ZString.CreateStringBuilder();
+            //TODO: need to handle Color Formatting!
             if (Adjective.EndsWith("い"))
             {
-                SB.Append(Adjective.Substring(0, Adjective.Length - 1));
-                SB.Append("くて");
+                Adjective.Remove(Adjective.Length - 1, 1).Append("くて");
             }
             else if (Adjective.EndsWith("な"))
             {
-                SB.Append(Adjective.Substring(0, Adjective.Length - 1));
-                SB.Append("で");
+                Adjective.Remove(Adjective.Length - 1, 1).Append("で");
             }
-            else
-            {
-                SB.Append(Adjective);
-            }
-            return SB.ToString();
         }
 
-        public static string MakeてList(IReadOnlyList<string> List)
+        /// <summary>
+        /// Creates an adjective "and" list
+        /// </summary>
+        /// <param name="List"></param>
+        /// <returns></returns>
+        public static void AppendてList(this TextBuilder SB, IReadOnlyList<string> List)
         {
             if (List.Count == 0)
             {
-                return "";
+                return;
             }
-            if (List.Count == 1)
-            {
-                return List[0];
-            }
-            using var SB = ZString.CreateStringBuilder();
             for (int i = 0, j = List.Count - 1; i < j; i++)
             {
-                SB.Append(GetAdjectiveてForm(List[i]));
+                SB.Append(List[i]);
+                GetAdjectiveてForm(SB);
             }
-            SB.Append(List[List.Count - 1]);
-            return SB.ToString();
+            SB.Append(List[^1]);
         }
 
-    } 
+    }
 
 }
