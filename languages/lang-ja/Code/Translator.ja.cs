@@ -1,11 +1,9 @@
 using System;
-using XRL;
 using System.Globalization;
-using Cysharp.Text;
 using XRL.World;
 using XRL.World.Text;
-using System.Text;
 using System.Collections.Generic;
+using ConsoleLib.Console;
 
 namespace XRL.Language
 {
@@ -265,13 +263,15 @@ namespace XRL.Language
         public static void GetAdjectiveてForm(TextBuilder Adjective)
         {
             //TODO: need to handle Color Formatting!
-            if (Adjective.EndsWith("い"))
+            var last = ColorUtility.LastCharacterExceptFormatting(Adjective.ToString(), out var lindex);
+            MetricsManager.LogWarning($"Test GetAdjectiveてForm: \"{Adjective}\" {Adjective.Length}, {lindex}, {last}");
+            if (last == 'い')
             {
-                Adjective.Remove(Adjective.Length - 1, 1).Append("くて");
+                Adjective.Remove(lindex, 1).Insert(lindex, "くて");
             }
-            else if (Adjective.EndsWith("な"))
+            else if (last == 'な')
             {
-                Adjective.Remove(Adjective.Length - 1, 1).Append("で");
+                Adjective.Remove(lindex, 1).Insert(lindex, "で");
             }
         }
 
