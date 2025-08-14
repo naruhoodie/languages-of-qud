@@ -183,12 +183,68 @@
         <statline Name="Cooldown" />
       </leveltext>
     </mutation>
-    <mutation Name="Multiple Arms" Cost="4" MaxSelected="1" Class="MultipleArms" Exclusions="" BearerDescription="the many-armed" Tile="Mutations/multiple_arms.bmp" />
-    <mutation Name="Multiple Legs" Cost="5" MaxSelected="1" Class="MultipleLegs" Exclusions="" BearerDescription="the many-legged" Tile="Mutations/multiple_legs.bmp" />
-    <mutation Name="Night Vision" Cost="1" MaxSelected="1" Class="DarkVision" Exclusions="" BearerDescription="the darksighted" Tile="Mutations/night_vision_mutation.bmp" />
-    <mutation Name="Phasing" Cost="4" MaxSelected="1" Class="Phasing" Exclusions="" BearerDescription="those who phase" Tile="Mutations/phasing.bmp" />
-    <mutation Name="Photosynthetic Skin" Cost="2" MaxSelected="1" Class="PhotosyntheticSkin" Exclusions="Albino,Carnivorous" BearerDescription="the green-skinned" Tile="Mutations/photosynthetic_skin.bmp" />
-    <mutation Name="Quills" Cost="3" MaxSelected="1" Class="Quills" Exclusions="Carapace" BearerDescription="the quilled" Tile="Mutations/quills.bmp" />
+    <mutation Name="Multiple Arms" Cost="4" MaxSelected="1" Class="MultipleArms" Exclusions="" BearerDescription="the many-armed" Tile="Mutations/multiple_arms.bmp">
+      <description>
+        <p>You have an extra set of arms.</p>
+      </description>
+      <leveltext>
+        <p><stat Name="AttackChance" />% chance for each extra arm to deliver an additional melee attack whenever you make a melee attack</p>
+      </leveltext>
+    </mutation>
+    <mutation Name="Multiple Legs" Cost="5" MaxSelected="1" Class="MultipleLegs" Exclusions="" BearerDescription="the many-legged" Tile="Mutations/multiple_legs.bmp">
+      <description>
+        <p>You have an extra set of legs.</p>
+      </description>
+      <leveltext>
+        <p>+<stat Name="MoveSpeed" /> move speed</p>
+        <p>+<stat Name="CarryCapacity" />% carry capacity</p>
+      </leveltext>
+    </mutation>
+    <mutation Name="Night Vision" Cost="1" MaxSelected="1" Class="DarkVision" Exclusions="" BearerDescription="the darksighted" Tile="Mutations/night_vision_mutation.bmp">
+      <description>
+        <p>You see in the dark.</p>
+      </description>
+      <leveltext>
+      </leveltext>
+    </mutation>
+    <mutation Name="Phasing" Cost="4" MaxSelected="1" Class="Phasing" Exclusions="" BearerDescription="those who phase" Tile="Mutations/phasing.bmp">
+      <description>
+        <p>You may phase through solid objects for brief periods of time.</p>
+      </description>
+      <leveltext>
+        <statline Name="Duration" />
+        <statline Name="Cooldown" />
+      </leveltext>
+    </mutation>
+    <mutation Name="Photosynthetic Skin" Cost="2" MaxSelected="1" Class="PhotosyntheticSkin" Exclusions="Albino,Carnivorous" BearerDescription="the green-skinned" Tile="Mutations/photosynthetic_skin.bmp">
+      <description>
+        <p>You replenish yourself by absorbing sunlight through your hearty green skin.</p>
+      </description>
+      <leveltext>
+        <p>You can bask in the sunlight instead of eating a meal to gain a special metabolizing effect for <stat Name="DurationDay" Unit="day" />: +<stat Name="BonusRegen" /> to natural healing rate and +<stat Name="BonusQuickness" /> Quickness</p>
+        <p>While in the sunlight, you accrue starch and lignin that you can use as ingredients in meals you cook (max <stat Name="StarchServings" Unit="serving" /> of each).</p>
+        <p>+<stat Name="BonusCamoflage" /> DV while occupying the same space as foliage</p>
+        <p>+200 reputation with {{w|roots}}, {{w|trees}}, {{w|vines}}, and {{w|the Consortium of Phyta}}</p>
+      </leveltext>
+    </mutation>
+    <mutation Name="Quills" Cost="3" MaxSelected="1" Class="Quills" Exclusions="Carapace" BearerDescription="the quilled" Tile="Mutations/quills.bmp">
+      <description>
+        <!-- description will be replaced with the Quill Blueprint VariantDescription if it has one. -->
+        <p>Hundreds of needle-pointed quills cover your body.</p>
+      </description>
+      <leveltext>
+        <switch Name="LevelMatch">
+          <case Value="true"><p><stat Name="MaxQuills" /> <stat Name="Quills" /></p></case>
+          <default><p>+{{rules|80-120}} <stat Name="Quills" /></p></default>
+        </switch>
+        <p>May expel 10% of your <stat Name="Quills" /> in a burst around yourself ({{c|&#x1A;}}<stat Name="QuillPen" /> {{r|&#x3;}}<stat Name="QuillDamage" />)</p>
+        <p>Regenerate <stat Name="Quills" /> at the approximate rate of <stat Name="RegenRate" /> per round</p>
+        <p>+<stat Name="AV" /> AV as long as you retain half your <stat Name="Quills" /> (+<stat Name="AVWithPenalty" /> AV otherwise)</p>
+        <p>Creatures attacking you in melee may impale themselves on your <stat Name="Quills" />, breaking roughly 1% of them and reflecting 3% damage per <stat Name="Quill" /> broken.</p>
+        <p>Cannot wear body armor</p>
+        <p>Immune to other creatures' <stat Name="Quills" /></p>
+      </leveltext>
+    </mutation>
     <mutation Name="Regeneration" Cost="4" MaxSelected="1" Class="Regeneration" Exclusions="" BearerDescription="those who regenerate" Tile="Mutations/regeneration.bmp" />
     <mutation Name="Sleep Gas Generation" Cost="3" MaxSelected="1" Class="SleepGasGeneration" BearerDescription="those who expel sleep gas" Tile="Mutations/gas_generation.bmp">
       <description>
@@ -212,7 +268,23 @@
       </description>
       <leveltext />
     </mutation>
-    <mutation Name="Spinnerets" Cost="3" MaxSelected="1" Class="Spinnerets" Exclusions="" BearerDescription="web weavers" Tile="Mutations/spinnerets.bmp" />
+    <mutation Name="Spinnerets" Cost="3" MaxSelected="1" Class="Spinnerets" Exclusions="" BearerDescription="web weavers" Tile="Mutations/spinnerets.bmp">
+      <description>
+        <p>You can spin sticky silk webs.</p>
+      </description>
+      <leveltext>
+        <p>While spinning, you leave webs in your wake as you move.</p>
+        <switch Name="LevelMatch">
+          <case Value="true"></case>
+          <default><p>{{rules|Increased web strength}}</p></default>
+        </switch>
+        <statline Name="SpinDuration" DisplayName="Duration" Unit="move action" />
+        <saveline Name="MoveSave" />
+        <statline Name="Cooldown" />
+        <p>You are immune to getting stuck.</p>
+        <p>+300 reputation with {{w|arachnids}}</p>
+      </leveltext>
+    </mutation>
     <mutation Name="Stinger (Confusing Venom)" Cost="3" MaxSelected="1" Class="Stinger" Variant="Stinger Confusion" Exclusions="Stinger (Paralyzing Venom),Stinger (Poisoning Venom)" BearerDescription="those with stingers tipped with confusing venom" Tile="Mutations/stinger.bmp" />
     <mutation Name="Stinger (Paralyzing Venom)" Cost="4" MaxSelected="1" Class="Stinger" Variant="Stinger Paralysis" Exclusions="Stinger (Confusing Venom),Stinger (Poisoning Venom)" BearerDescription="those with stingers tipped with paralyzing venom" Tile="Mutations/stinger.bmp" />
     <mutation Name="Stinger (Poisoning Venom)" Cost="4" MaxSelected="1" Class="Stinger" Variant="Stinger Poison" Exclusions="Stinger (Confusing Venom),Stinger (Paralyzing Venom)" BearerDescription="those with stingers tipped with poisoning venom" Tile="Mutations/stinger.bmp" />

@@ -2464,7 +2464,7 @@
 
 		<node ID="Golem">
 			<text>
-				High on the mount above Omonporch, the Putus Templar watch us through their war lenses and prepare an attack. The nephilim, too, stir from their cradles on the Moon Stair and slump with infernal purpose. The short of this is, due to a dearth of prep time and inadequate armament, Pax Klanq no longer believes in the viability of Q Girl's climber design. We must take Klanq at its word, here...				
+				High on the mount above Omonporch, the Putus Templar watch us through their war lenses and prepare an attack. The nephilim, too, stir from their cradles on the Moon Stair and slump with infernal purpose. The short of this is, due to a dearth of prep time and inadequate armament, Pax Klanq no longer believes in the viability of Q Girl's climber design. We must take Klanq at their word, here...				
 			</text>			
 			<choice GotoID="Golem2">*continue listening*</choice>
 		</node>
@@ -5538,7 +5538,7 @@
       </text>
       <choice GotoID="Who">Who are you?</choice>
       <choice GotoID="What">What are you talking about?</choice>
-      <choice GotoID="Mamon">I must talk with the shaman Mamon Souldrinker.</choice>
+      <choice GotoID="Mamon" IfHaveActiveQuest="Raising Indrix">I must talk with the shaman Mamon Souldrinker.</choice>
       <choice GotoID="End">I must go.</choice>
     </node>
     <node ID="Who">
@@ -5546,7 +5546,7 @@
         Who am I? Who are you? What does it matter? You and I are nothing, the most insignificant afterthoughts of an amaranthine shade.
       </text>
       <choice GotoID="What">What are you talking about?</choice>
-      <choice GotoID="Mamon">I must talk with the shaman Mamon Souldrinker.</choice>
+      <choice GotoID="Mamon" IfHaveActiveQuest="Raising Indrix">I must talk with the shaman Mamon Souldrinker.</choice>
       <choice GotoID="End">I must go.</choice>
     </node>
     <node ID="What">
@@ -5554,7 +5554,7 @@
         The amaranthine dream! The heights within ourselves we might yet reach with his guidance. There it is in all of us -- shades of our elder selves. Within each man, a goat. Within each goat, a man!
       </text>
       <choice GotoID="Who">Who are you?</choice>
-      <choice GotoID="Mamon">I must talk with the shaman Mamon Souldrinker.</choice>
+      <choice GotoID="Mamon" IfHaveActiveQuest="Raising Indrix">I must talk with the shaman Mamon Souldrinker.</choice>
       <choice GotoID="End">I must go.</choice>
     </node>
     <node ID="Mamon">

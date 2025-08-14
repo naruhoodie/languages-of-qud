@@ -1186,7 +1186,7 @@
     <description>
       <p>You bask in sunlight and absorb the sun's nourishing rays instead of eating a meal.</p>
       <br />
-      <p>You gain a special metabolizing effect for <stat Name="DurationDay" />.</p>
+      <p>You gain a special metabolizing effect for <stat Name="DurationDay" Unit="day" />.</p>
       <br />
       <statline Name="BonusRegen" DisplayName="Bonus to natural healing rate"/>
       <statline Name="BonusQuickness" DisplayName="Quickness bonus" />
@@ -1199,8 +1199,8 @@
       <p>You regenerate <stat Name="Quills" /> at the approximate rate of <stat Name="RegenRate" /> per round.</p>
       <p>If you drop below half your <stat Name="Quills" />, you lose <stat Name="AVPenalty"/> AV.</p>
       <br />
-      <p><stat Name="QuillPen" /></p>
-      <p><stat Name="QuillDamage" /></p>
+      <p><gametext>=quill|capitalize= penetration:</gametext> <stat Name="QuillPen" /></p>
+      <p><gametext>=quill|capitalize= damage:</gametext> <stat Name="QuillDamage" /></p>
     </description>  
     <UITile Tile="Mutations/quills.bmp" Foreground="r" Detail="W" />
   </ability>

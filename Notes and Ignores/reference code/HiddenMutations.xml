@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <mutations Hidden="true" ExcludeFromPool="true">
   <category Name="Physical">
-    <mutation Name="Dark Vision" Cost="1" Class="NightVision" BearerDescription="the darksighted" Tile="Mutations/dark_vision.png" />
+    <mutation Name="Dark Vision" Cost="1" Class="NightVision" BearerDescription="the darksighted" Tile="Mutations/dark_vision.png">
+      <description>
+      </description>
+      <leveltext>
+        <p>You see in the dark.</p>
+      </leveltext>
+    </mutation>
     <mutation Name="Heightened Smell" Cost="2" Class="HeightenedSmell" BearerDescription="those with heightened smell" Tile="Mutations/heightened_smell.png" />
     <mutation Name="Gills" Cost="1" Class="Gills" BearerDescription="those with gills" Tile="Mutations/gills.png" />
     <mutation Name="Infiltrate" Cost="1" Class="Infiltrate" BearerDescription="those who infiltrate" Tile="Abilities/abil_infiltrate.bmp" />

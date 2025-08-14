@@ -4009,7 +4009,7 @@ The infant child is unaware
   <object Name="Chitinous Puma Corpse" Inherits="Animal Corpse">
     <part Name="Butcherable" OnSuccess="Puma Chitin Vest" />
     <part Name="Render" DisplayName="chitinous puma corpse" ColorString="&amp;w" />
-    <part Name="Food" Message="The meat is touch and crunchy with chipped plating." />
+    <part Name="Food" Message="The meat is tough and crunchy with chipped plating." />
     <part Name="Physics" Weight="150" />
     <part Name="Commerce" Value="10" />
     <tag Name="Tier" Value="3" />    
@@ -6320,6 +6320,7 @@ The infant child is unaware
     <skill Name="Multiweapon_Mastery" />
     <tag Name="Role" Value="Tank" />
     <mutation Name="Spinnerets" Phase="true" Level="7" />
+    <mutation Name="Astral" />
     <tag Name="Restless" />
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
   </object>
@@ -7889,7 +7890,7 @@ The infant child is unaware
 	<object Name="Dream Wren" Inherits="BaseBird">
 		<part Name="Render" DisplayName="dream wren" RenderString="b" Tile="creatures/sw_chavvah_bird.bmp" ColorString="&amp;b" TileColor="&amp;b" DetailColor="M" />
 		<part Name="Description" Short="A long and split tail feather drapes below =pronouns.possessive= talons at an immaterial buoyancy. =pronouns.Possessive= epaulets are incandescent and =pronouns.possessive= frill is a vane for astral weather." />
-		<part Name="Brain" Hostile="false" Factions="Chavvah-100" />
+		<part Name="Brain" Hostile="false" Factions="Birds-100" />
 		<stat Name="Level" Value="35" />
 		<stat Name="Hitpoints" sValue="100" />
 		<inventoryobject Blueprint="DreamWren_Peck" Number="1" />
@@ -14156,6 +14157,7 @@ In Barathrum's name, =pronouns.subjective==verb:'ve:afterpronoun= conferred onto
     <property Name="WontSell" Value="Leather Apron" />
     <part Name="Brain" Wanders="false" Factions="Kyakukya-100" />
     <tag Name="Gender" Value="nonspecific" />
+    <xtagGrammar Proper="true" />
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
   </object>
   
