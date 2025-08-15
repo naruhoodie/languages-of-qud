@@ -1221,8 +1221,7 @@ Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudAttributesModule.cs:25
   <!--Code references _S(): Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudCyberneticsModule.cs:26-->
   <string Context="QudCyberneticsModule GetDescription" ID="&lt;none&gt;">&lt;none&gt;</string>
   <!--Code references _S(): Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudCyberneticsModule.cs:39-->
-  <string Context="QudCyberneticsModule GetLongDescription" ID="{{C|-2 License Tier&#xA;+1 Toughness}}">{{C|-2 License Tier
-+1 Toughness}}</string>
+  <string Context="QudCyberneticsModule GetLongDescription" ID="{{C|-2 License Tier&#xA;+1 Toughness}}" Value="{{C|-2 License Tier&#xA;+1 Toughness}}" />
   <!--Code references _S(): Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudCyberneticsModule.cs:63-->
   <string Context="QudCyberneticsModule DataErrors" ID="Invalid choice selected">Invalid choice selected</string>
   <!--Code references _S(): Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudCyberneticsModule.cs:141-->
@@ -2403,10 +2402,7 @@ Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:117
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Cybernetics/CyberneticsSocialCoprocessor.cs:21-->
   <string Context="CyberneticsSocialCoprocessor Tech-Scanning Status Name" ID="SocialCoprocessor">SocialCoprocessor</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Cybernetics/CyberneticsSocialCoprocessor.cs:57-->
-  <string Context="CyberneticsSocialCoprocessor GetCyberneticsBehaviorDescriptionEvent Description" ID="Whenever you perform the water ritual with a new creature, you gain an extra =repBonus= reputation. If you install this implant after you treat with a creature for the first time, you gain =repBonus= reputation the next time you treat with them.&#xA;Reputation costs in the water ritual are reduced by =ritualCostReduction=%.&#xA;You may Proselytize =proselytizeLimitBonus.things:additional creature=.&#xA;Compute power on the local lattice increases this implant's effectiveness.">Whenever you perform the water ritual with a new creature, you gain an extra =repBonus= reputation. If you install this implant after you treat with a creature for the first time, you gain =repBonus= reputation the next time you treat with them.
-Reputation costs in the water ritual are reduced by =ritualCostReduction=%.
-You may Proselytize =proselytizeLimitBonus.things:additional creature=.
-Compute power on the local lattice increases this implant's effectiveness.</string>
+  <string Context="CyberneticsSocialCoprocessor GetCyberneticsBehaviorDescriptionEvent Description" ID="Whenever you perform the water ritual with a new creature, you gain an extra =repBonus= reputation. If you install this implant after you treat with a creature for the first time, you gain =repBonus= reputation the next time you treat with them.&#xA;Reputation costs in the water ritual are reduced by =ritualCostReduction=%.&#xA;You may Proselytize =proselytizeLimitBonus.things:additional creature=.&#xA;Compute power on the local lattice increases this implant's effectiveness." Value="Whenever you perform the water ritual with a new creature, you gain an extra =repBonus= reputation. If you install this implant after you treat with a creature for the first time, you gain =repBonus= reputation the next time you treat with them.&#xA;Reputation costs in the water ritual are reduced by =ritualCostReduction=%.&#xA;You may Proselytize =proselytizeLimitBonus.things:additional creature=.&#xA;Compute power on the local lattice increases this implant's effectiveness." />
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Encounters/OpeningStory.cs:90-->
   <string Context="OpeningStory Accomplishment" ID="On the =day= of =month=, you arrived at =villageName=.">On the =day= of =month=, you arrived at =villageName=.</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Encounters/OpeningStory.cs:94-->
@@ -3106,13 +3102,11 @@ Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfi
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/CookingRecipe.cs:211-->
   <string Context="CookingRecipe GetAnnotatedDisplayName (component fragment)" ID="=component.name=">=component.name=</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/CookingRecipe.cs:220-->
-  <string Context="CookingRecipe GetAnnotatedDisplayName missing ingredients, multi-line" ID="=favorite.if:{{R|♥}} ={{K|=displayName|strip=}}&#xA;=components.join:, =">=favorite.if:{{R|♥}} ={{K|=displayName|strip=}}
-=components.join:, =</string>
+  <string Context="CookingRecipe GetAnnotatedDisplayName missing ingredients, multi-line" ID="=favorite.if:{{R|♥}} ={{K|=displayName|strip=}}&#xA;=components.join:, =" Value="=favorite.if:{{R|♥}} ={{K|=displayName|strip=}}&#xA;=components.join:, =" />
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/CookingRecipe.cs:222-->
   <string Context="CookingRecipe GetAnnotatedDisplayName missing ingredients, single-line" ID="=favorite.if:{{R|♥}} ={{K|=displayName|strip=}} [=components.join:, =]">=favorite.if:{{R|♥}} ={{K|=displayName|strip=}} [=components.join:, =]</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/CookingRecipe.cs:224-->
-  <string Context="CookingRecipe GetAnnotatedDisplayName has ingredients, multi-line" ID="=favorite.if:{{R|♥}} ==displayName=&#xA;=components.join:, =">=favorite.if:{{R|♥}} ==displayName=
-=components.join:, =</string>
+  <string Context="CookingRecipe GetAnnotatedDisplayName has ingredients, multi-line" ID="=favorite.if:{{R|♥}} ==displayName=&#xA;=components.join:, =" Value="=favorite.if:{{R|♥}} ==displayName=&#xA;=components.join:, =" />
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/CookingRecipe.cs:226-->
   <string Context="CookingRecipe GetAnnotatedDisplayName has ingredients, single-line" ID="=favorite.if:{{R|♥}} ==displayName= [=components.join:, =]">=favorite.if:{{R|♥}} ==displayName= [=components.join:, =]</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/CookingRecipe.cs:297-->
@@ -3304,8 +3298,7 @@ Assets/XRL Application/World/Settlements/World.Settlements.cs:111
   <!--Code references _S(): Assets/XRL Application/World/Zones/Builders/Villages/Village.cs:153-->
   <string Context="Village Warden Conversation response" ID="Live and drink.">Live and drink.</string>
   <!--Code references _T(): Assets/XRL Application/World/Zones/Builders/Villages/Village.cs:240-->
-  <string Context="Village mayor teaches dish conversation prompt" ID="What a savory smell! Teach me to cook the favorite dish of =villageName=.&#xA;">What a savory smell! Teach me to cook the favorite dish of =villageName=.
-</string>
+  <string Context="Village mayor teaches dish conversation prompt" ID="What a savory smell! Teach me to cook the favorite dish of =villageName=.&#xA;" Value="What a savory smell! Teach me to cook the favorite dish of =villageName=.&#xA;" />
   <!--Code references _T(): Assets/XRL Application/World/Zones/Builders/Villages/Village.cs:256-->
   <string Context="Village mayor conversation welcome message" ID="=spice:villages.mayor.introDialog.!random=">=spice:villages.mayor.introDialog.!random=</string>
   <!--Code references _S(): Assets/XRL Application/World/Zones/Builders/Villages/Village.cs:261-->

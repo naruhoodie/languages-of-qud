@@ -14,6 +14,8 @@ regexp for adding DisplayName to mutations etc.:
 Strings-example.xml
 removing <!--Code references lines:
 ^\s+<!--Code references[^>]+-->\s*$\n	
+removing lines with spice variables (if desired):
+^\s+<.*=spice.*$\n	
 regexp for adding [届：\TODO]: 
 (ID=")([^"]+)(" Value=")(?:\2)(")	$1$2$3[届：\\TODO]$2$4
 (ID=")([^"]+)(">)(?:\2)(<\/string>)		$1$2$3[届：\\TODO]$2$4
@@ -32,6 +34,9 @@ adding [届：\TODO] to various tag attributes:
 ( (?:DisplayName|Description|Snippet)=")([^\["][^届"]+)"		$1[届：\TODO]$2"
 stripping out unneeded attributes:
  (?:Class|Cost|Attribute|Tile|Foreground|Detail|Minimum|Prereq|Hidden)(="[^"]+")
+
+adding [!!] to various tag attributes:
+( (?:DisplayName|RecipeText)=")((?!\[!!\])[^"]+)"	$1[!!]$2"
 
 more general [!!] for Lang="min" tag attributes on object blueprints: 
 ( (?:PoeticFeatures|Activity|VillageActivity|NeedsItemFor|SacredThing|ArableLand|ValuedOre)=")((?!\[!!,\])[^"]+)"		$1[!!,]$2"
