@@ -5,7 +5,7 @@
     <!-- Conversation level choices are distributed to all start nodes by default -->
     <choice ID="WaterRitualChoice" IfSpeakerHavePart="GivesRep" IfAllowEscape="true" Target="WaterRitual" Ordinal="980">
 	  <!-- possibly more natural with a 1st-person pronoun and the other person's name without honorifics? my kochira/sochira is very sidestepping the issue -->
-      <text>=subject.name:short=の渇きは自分の、自分の水は=subject.name:short=の。</text>
+      <text>[届：\\TODÖ]=subject.name:short=の渇きは自分の、自分の水は=subject.name:short=の。</text>
       <text IfHavePart="SociallyRepugnant" Priority="1">
         唾液を交換する？~
         さあ、遣りましょう！~
