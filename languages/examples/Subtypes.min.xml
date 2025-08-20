@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- counterpart to the .ref.xml, with the minimal tags needed for a working translation -->
+<!-- copy this, change Lang to your lang code, and use for localization! -->
+<!-- any fields starting with [!!] should be localized, as should text outside of xml tags -->
+<subtypes Encoding="utf-8" Lang="min">
+
+  <!-- True Kin societies have castes -->
+  <class ID="Castes" ChargenTitle="[!!]choose caste" SingularTitle="[!!]caste">
+
+    <category Name="Ekuemekiyye" DisplayName="[!!]{{G|The Toxic Arboreta of Ekuemekiyye, the Holy City}}">
+
+      <subtype Name="Horticulturist" DisplayName="[!!]Horticulturist">
+      </subtype>
+
+      <subtype Name="Priest of All Suns" DisplayName="[!!]Priest of All Suns">
+      </subtype>
+
+      <subtype Name="Priest of All Moons" DisplayName="[!!]Priest of All Moons">
+      </subtype>
+
+      <subtype Name="Syzygyrior" DisplayName="[!!]Syzygyrior">
+      </subtype>
+
+    </category>
+
+    <category Name="Ibul" DisplayName="[!!]{{C|The Ice-Sheathed Arcology of Ibul}}">
+
+      <subtype Name="Artifex" DisplayName="[!!]Artifex">
+      </subtype>
+
+      <subtype Name="Consul" DisplayName="[!!]Consul">
+      </subtype>
+
+      <subtype Name="Praetorian" DisplayName="[!!]Praetorian">
+      </subtype>
+
+      <subtype Name="Eunuch" DisplayName="[!!]Eunuch">
+      </subtype>
+
+    </category>
+
+    <category Name="Yawningmoon" DisplayName="[!!]{{R|The Crustal Mortars of Yawningmoon}}">
+
+      <subtype Name="Child of the Hearth" DisplayName="[!!]Child of the Hearth">
+      </subtype>
+
+      <subtype Name="Child of the Wheel" DisplayName="[!!]Child of the Wheel">
+      </subtype>
+
+      <subtype Name="Child of the Deep" DisplayName="[!!]Child of the Deep">
+      </subtype>
+
+      <subtype Name="Fuming God-Child" DisplayName="[!!]Fuming God-Child">
+      </subtype>
+
+    </category>
+
+  </class>
+
+  <!-- Mutated Human societies have "callings"
+      (like a religious calling, but could also be a chosen profession or background) -->
+  <class ID="Callings" ChargenTitle="[!!]choose calling" SingularTitle="[!!]calling">
+
+    <subtype Name="Apostle" DisplayName="[!!]Apostle">
+    </subtype>
+
+    <subtype Name="Arconaut" DisplayName="[!!]Arconaut">
+    <!-- extrainfo tags get added to the base ones instead of replacing;
+        don't change the removeextrainfo, they're used to "remove" the original ones -->
+      <removeextrainfo>Starts with random junk and artifacts</removeextrainfo>
+      <extrainfo>[!!]Starts with random junk and artifacts</extrainfo>
+    </subtype>
+
+    <subtype Name="Greybeard" DisplayName="[!!]Greybeard">
+    </subtype>
+
+    <subtype Name="Gunslinger" DisplayName="[!!]Gunslinger">
+    </subtype>
+
+    <subtype Name="Marauder" DisplayName="[!!]Marauder">
+    </subtype>
+
+    <subtype Name="Pilgrim" DisplayName="[!!]Pilgrim">
+    </subtype>
+
+    <subtype Name="Nomad" DisplayName="[!!]Nomad">
+    <!-- extrainfo tags get added to the base ones instead of replacing;
+        don't change the removeextrainfo, they're used to "remove" the original ones -->
+      <removeextrainfo>Starts with a {{B|recycling suit}}</removeextrainfo>
+      <extrainfo>[!!]Starts with a {{B|recycling suit}}</extrainfo>
+    </subtype>
+
+    <subtype Name="Scholar" DisplayName="[!!]Scholar">
+    </subtype>
+
+    <subtype Name="Tinker" DisplayName="[!!]Tinker">
+    <!-- extrainfo tags get added to the base ones instead of replacing;
+        don't change the removeextrainfo, they're used to "remove" the original ones -->
+      <removeextrainfo>Begins with a number of random artifacts and scrap</removeextrainfo>
+      <extrainfo>[!!]Begins with a number of random artifacts and scrap</extrainfo>
+    </subtype>
+
+    <subtype Name="Warden" DisplayName="[!!]Warden">
+    </subtype>
+
+    <subtype Name="Water Merchant" DisplayName="[!!]Water Merchant">
+    <!-- extrainfo tags get added to the base ones instead of replacing;
+        don't change the removeextrainfo, they're used to "remove" the original ones -->
+      <removeextrainfo>Allowed entrance to many settlements for purposes of trade</removeextrainfo>
+      <extrainfo>[!!]Allowed entrance to many settlements for purposes of trade</extrainfo>
+      <removeextrainfo>Starts with trade goods</removeextrainfo>
+      <extrainfo>[!!]Starts with trade goods</extrainfo>
+    </subtype>
+
+    <subtype Name="Watervine Farmer" DisplayName="[!!]Watervine Farmer">
+    <!-- extrainfo tags get added to the base ones instead of replacing;
+        don't change the removeextrainfo, they're used to "remove" the original ones -->
+      <removeextrainfo>Starts with random cooking ingredients</removeextrainfo>
+      <extrainfo>[!!]Starts with random cooking ingredients</extrainfo>
+    </subtype>
+
+  </class>
+
+</subtypes>

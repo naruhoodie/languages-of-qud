@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<!-- counterpart to the .ref.xml, with the minimal tags needed for a working translation -->
+<!-- copy this, change Lang to your lang code, and use for localization! -->
+<!-- any fields starting with [!!] should be localized, as should text outside of xml tags -->
+<genotypes Encoding="utf-8" Lang="min">
+
+  <genotype Name="Mutated Human" DisplayName="[!!]Mutated Human">
+    <stat Name="Strength" ChargenDescription="[!!]Your {{W|Strength}} score determines how effectively you penetrate your opponents' armor with melee attacks, how much damage your melee attacks do, your ability to resist forced movement, and your carry capacity."/>
+    <stat Name="Agility" ChargenDescription="[!!]Your {{W|Agility}} score determines your accuracy with both melee and ranged weapons and your ability to dodge attacks."/>
+    <stat Name="Toughness" ChargenDescription="[!!]Your {{W|Toughness}} score determines your number of hit points, your natural healing rate, and your ability to resist poison and disease."/>
+    <stat Name="Intelligence" ChargenDescription="[!!]Your {{W|Intelligence}} score determines your number of skill points and your ability to examine artifacts."/>
+    <stat Name="Willpower" ChargenDescription="[!!]Your {{W|Willpower}} score modifies the cooldowns of your activated abilities, determines your ability to resist mental attacks, and modifies your natural healing rate."/>
+    <stat Name="Ego" ChargenDescription="[!!]Your {{W|Ego}} score determines the potency of your mental mutations, your ability to haggle with merchants, and your ability to dominate the wills of other living creatures."/>
+    <!-- extrainfo tags get added to the base ones instead of replacing;
+        don't change the removeextrainfo, they're used to "remove" the original ones -->
+    <removeextrainfo>Mutations</removeextrainfo>
+    <extrainfo>[!!]Mutations</extrainfo>
+    <removeextrainfo>Moderate starting attributes</removeextrainfo>
+    <extrainfo>[!!]Moderate starting attributes</extrainfo>
+    <removeextrainfo>-600 reputation with {{C|the Putus Templar}}</removeextrainfo>
+    <extrainfo>[!!]-600 reputation with {{C|the Putus Templar}}</extrainfo>
+  </genotype>
+
+  <genotype Name="True Kin" DisplayName="[!!]True Kin">
+    <stat Name="Strength" ChargenDescription="[!!]Your {{W|Strength}} score determines how effectively you penetrate your opponents' armor with melee attacks, how much damage your melee attacks do, your ability to resist forced movement, and your carry capacity."/>
+    <stat Name="Agility" ChargenDescription="[!!]Your {{W|Agility}} score determines your accuracy with both melee and ranged weapons and your ability to dodge attacks."/>
+    <stat Name="Toughness" ChargenDescription="[!!]Your {{W|Toughness}} score determines your number of hit points, your natural healing rate, and your ability to resist poison and disease."/>
+    <stat Name="Intelligence" ChargenDescription="[!!]Your {{W|Intelligence}} score determines your number of skill points and your ability to examine artifacts."/>
+    <stat Name="Willpower" ChargenDescription="[!!]Your {{W|Willpower}} score modifies the cooldowns of your activated abilities, determines your ability to resist mental attacks, and modifies your natural healing rate."/>
+    <stat Name="Ego" ChargenDescription="[!!]Your {{W|Ego}} score determines the potency of your ability to haggle with merchants, and your ability to dominate the wills of other living creatures."/>
+    <!-- extrainfo tags get added to the base ones instead of replacing;
+        don't change the removeextrainfo, they're used to "remove" the original ones -->
+    <removeextrainfo>High starting attributes</removeextrainfo>
+    <extrainfo>[!!]High starting attributes</extrainfo>
+    <removeextrainfo>Access to cybernetics</removeextrainfo>
+    <extrainfo>[!!]Access to cybernetics</extrainfo>
+    <removeextrainfo>{{C|20}} bonus skill points each level</removeextrainfo>
+    <extrainfo>[!!]{{C|20}} bonus skill points each level</extrainfo>
+    <removeextrainfo>Bonus resistances based on arcology of origin</removeextrainfo>
+    <extrainfo>[!!]Bonus resistances based on arcology of origin</extrainfo>
+    <removeextrainfo>May rebuke robots</removeextrainfo>
+    <extrainfo>[!!]May rebuke robots</extrainfo>
+  </genotype>
+
+</genotypes>
