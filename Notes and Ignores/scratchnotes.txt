@@ -1,3 +1,4 @@
+git update-index --no-assume-unchanged "Assets/Resources/Fonts/SourceCodePro-Regular SDF Dynamic.asset"
 
 zh-CN 中文（简体）
 zh-HK 中文（繁體）
@@ -68,6 +69,8 @@ Kraliyet Altesleri Galler Prensi William
 His Majesty Charles III, King of England
 Majesteleri III. Charles, İngiltere Kralı
 Diana, Princess of Wales
+King Henry I of England
+İngiltere Kralı I. Henry
 
 a pair of boots
 bir çift çizme
@@ -96,3 +99,10 @@ MÖ 230 yılında,
 %=year=% yılının =spice:commonPhrases.allThroughout.!random=,
 In early 230 BC,
 the village was abandoned in 230 BC.
+
+dogs
+kudzu
+the People's Republic of Banana
+
+=spice:elements.entity@elements[random].nouns.!random|article=
+=spice.set:$prof:^:@professions.!random==spice:professions.$prof.singular=

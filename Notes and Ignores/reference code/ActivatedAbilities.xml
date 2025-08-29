@@ -1222,6 +1222,7 @@
       <statline Name="StingerPen" DisplayName="Stinger penetration" />
       <statline Name="StingerDamage" DisplayName="Stinger damage" />
       <p><switch Name="VenomType">
+        <!-- These values for the case statement should match the strings for "Stinger VenomType" strings. -->
         <case Value="paralyzing">Venom paralyzes opponents for <stat Name="Duration" />.</case>
         <case Value="confusing">Venom confuses opponents for <stat Name="Duration" />.</case>
         <case Value="poisonous">Venom poisons opponents for <stat Name="Duration" />.</case>

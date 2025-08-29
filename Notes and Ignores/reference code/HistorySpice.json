@@ -2,7 +2,7 @@
   "spice": {
     "elements": {
       "glass": {
-        "professions": [ "glassblower", "window maker" ],
+        "@professions": [ "glassblower", "window maker" ],
         "materials": [ "glass", "sand" ],
         "adjectives": [ "glazed", "stained", "clear", "prismatic" ],
         "nouns": [ "prism", "glass", "mirror" ],
@@ -16,12 +16,12 @@
         "ruinReason": "devastated by torrential glass storms",
         "ruinDescription": "glass-swept knolls",
         "thingsTheyDid": [ "=spice:history.regions.organizingPrinciple.religion.generic.thingsTheyDid.!random=" ],
-        "mythicalEvent": [ "a =var= shattered in every home", "a famous =^:professions.!random= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
+        "mythicalEvent": [ "a =var= shattered in every home", "=spice.set:$prof:spice.elements.glass.@professions.!random=a famous =spice:professions.$prof.singular= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
         "weddingConditions": [ "in a cathedral of stained glass", "in a hall of mirrors", "inside a colossal prism", "during a torrential glass storm" ],
         "mythicalBattleVista": [ "curtained under a =var= lune" ]
       },
       "jewels": {
-        "professions": [ "jeweler", "geologist" ],
+        "@professions": [ "jeweler", "geologist" ],
         "materials": [ "jewels", "crystal", "ruby", "sapphire", "emerald", "agate", "jasper", "gemstones", "peridot" ],
         "adjectives": [ "jeweled", "shining", "radiant", "lustrous", "lucent", "glittering" ],
         "nouns": [ "jewel", "ruby", "sapphire", "emerald", "agate", "jasper stone", "gemstone", "amethyst", "peridot" ],
@@ -35,12 +35,12 @@
         "ruinReason": "bristling with carnivorous geodes",
         "ruinDescription": "man-eating geodes",
         "thingsTheyDid": [ "=spice:history.regions.organizingPrinciple.religion.generic.thingsTheyDid.!random=" ],
-        "mythicalEvent": [ "=spice:commonPhrases.epic.!random|article= =var= was discovered", "a famous =^:professions.!random= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
+        "mythicalEvent": [ "=spice:commonPhrases.epic.!random|article= =var= was discovered", "=spice.set:$prof:spice.elements.jewels.@professions.!random=a famous =spice:professions.$prof.singular= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
         "weddingConditions": [ "adorned with =^:nounsPlural.!random= and =^:nounsPlural.!random=", "inside a colossal =^:nouns.!random=", "in a cathedral ornamented with =^:nounsPlural.!random=", "Waist deep in a lake of =^:materials.!random=" ],
         "mythicalBattleVista": [ "bathed in =var= light" ]
       },
       "stars": {
-        "professions": [ "astrologist", "astronomer", "stargazer" ],
+        "@professions": [ "astrologist", "astronomer", "stargazer" ],
         "materials": [ "stardust", "meteorite", "motes of light", "starlight" ],
         "adjectives": [ "shining", "radiant", "luminous", "gleaming", "white-hot" ],
         "nouns": [ "meteorite", "mote of light", "star in a bottle", "telescope" ],
@@ -54,12 +54,12 @@
         "ruinReason": "devastated by smoldering stardust",
         "ruinDescription": "fuming stardew",
         "thingsTheyDid": [ "=spice:history.regions.organizingPrinciple.religion.generic.thingsTheyDid.!random=" ],
-        "mythicalEvent": [ "the stars aligned to form a constellation in the shape of a =var=", "a famous =^:professions.!random= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
+        "mythicalEvent": [ "the stars aligned to form a constellation in the shape of a =var=", "=spice.set:$prof:spice.elements.stars.@professions.!random=a famous =spice:professions.$prof.singular= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
         "weddingConditions": [ "while reciting the properties of =spice.entity:possessivePronoun= favorite star", "inside a colossal =^:nouns.!random=", "in a cathedral ornamented with =^:nounsPlural.!random=", "Waist deep in a lake of =^:materials.!random=" ],
         "mythicalBattleVista": [ "bathed in =var= light" ]
       },
       "time": {
-        "professions": [ "historian", "scribe" ],
+        "@professions": [ "historian", "scribe" ],
         "materials": [ "tiny gears", "time itself", "the fabric of time" ],
         "adjectives": [ "perpetual", "boundless", "periodic", "rhythmic", "orbital" ],
         "nouns": [ "miniature clock", "moment in time chosen arbitrarily", "hourglass", "atomic clock" ],
@@ -73,12 +73,12 @@
         "ruinReason": "rife with stray portals to other places and times",
         "ruinDescription": "fraying reality-edges",
         "thingsTheyDid": [ "=spice:history.regions.organizingPrinciple.religion.generic.thingsTheyDid.!random=" ],
-        "mythicalEvent": [ "a =var= stopped working in every home", "a famous =^:professions.!random= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
+        "mythicalEvent": [ "a =var= stopped working in every home", "=spice.set:$prof:spice.elements.time.@professions.!random=a famous =spice:professions.$prof.singular= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
         "weddingConditions": [ "in a ceremony that lasted a full year", "inside a colossal =^:nouns.!random=", "in a cathedral ornamented with =^:nounsPlural.!random=", "Waist deep in a lake of =^:materials.!random=" ],
         "mythicalBattleVista": [ "with graceful, =var= movement" ]
       },
       "salt": {
-        "professions": [ "cook" ],
+        "@professions": [ "cook" ],
         "materials": [ "salt", "briny water" ],
         "adjectives": [ "briny", "salt-spangled", "desiccated" ],
         "nouns": [ "pinch of salt", "dram of brine", "spice root", "leaf" ],
@@ -92,12 +92,12 @@
         "ruinReason": "evaporated of all moisture",
         "ruinDescription": "bone-dry desert",
         "thingsTheyDid": [ "=spice:history.regions.organizingPrinciple.religion.generic.thingsTheyDid.!random=" ],
-        "mythicalEvent": [ "the taste of =var= filled everyone's mouth", "a famous =^:professions.!random= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
+        "mythicalEvent": [ "the taste of =var= filled everyone's mouth", "=spice.set:$prof:spice.elements.salt.@professions.!random=a famous =spice:professions.$prof.singular= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
         "weddingConditions": [ "after abstaining from drinking water for =spice:instancesOf.twoToTen.!random= days", "inside a colossal =^:nouns.!random=", "in a cathedral ornamented with =^:nounsPlural.!random=", "Waist deep in a lake of =^:materials.!random=" ],
         "mythicalBattleVista": [ "upon chewing the =var= leaf" ]
       },
       "ice": {
-        "professions": [ "geologist", "stargazer", "astronomer", "glassblower", "winter eremite" ],
+        "@professions": [ "geologist", "stargazer", "astronomer", "glassblower", "winter eremite" ],
         "materials": [ "ice", "snow", "frost", "rime" ],
         "adjectives": [ "frigid", "frosty", "icy", "freezing", "glacial", "wintry" ],
         "nouns": [ "block of ice", "miniature glacier", "snowflake", "icicle" ],
@@ -111,12 +111,12 @@
         "ruinReason": "devastated by icy winds",
         "ruinDescription": "scathing gales",
         "thingsTheyDid": [ "=spice:history.regions.organizingPrinciple.religion.generic.thingsTheyDid.!random=" ],
-        "mythicalEvent": [ "snow fell everywhere", "a famous =^:professions.!random= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
+        "mythicalEvent": [ "snow fell everywhere", "=spice.set:$prof:spice.elements.ice.@professions.!random=a famous =spice:professions.$prof.singular= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
         "weddingConditions": [ "while stark naked in freezing temperatures", "inside a colossal =^:nouns.!random=", "in a cathedral ornamented with =^:nounsPlural.!random=", "Waist deep in a lake of =^:materials.!random=" ],
         "mythicalBattleVista": [ "in the thin and =var= air" ]
       },
       "scholarship": {
-        "professions": [ "scholar", "scribe", "philosopher", "scientist", "historian" ],
+        "@professions": [ "scholar", "scribe", "philosopher", "scientist", "historian" ],
         "materials": [ "ink", "clockwork tools", "data disks" ],
         "adjectives": [ "philosophical", "shrewd", "inquisitive" ],
         "nouns": [ "quill", "inkwell", "scroll" ],
@@ -130,12 +130,12 @@
         "ruinReason": "rife with burnt books and corroded data disks",
         "ruinDescription": "data corruption",
         "thingsTheyDid": [ "=spice:history.regions.organizingPrinciple.religion.generic.thingsTheyDid.!random=" ],
-        "mythicalEvent": [ "a college was founded", "a famous =^:professions.!random= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
+        "mythicalEvent": [ "a college was founded", "=spice.set:$prof:spice.elements.scholarship.@professions.!random=a famous =spice:professions.$prof.singular= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
         "weddingConditions": [ "while reciting =spice.entity:possessivePronoun= favorite treatise", "inside a colossal =^:nouns.!random=", "in a cathedral ornamented with =^:nounsPlural.!random=", "Waist deep in a lake of =^:materials.!random=" ],
         "mythicalBattleVista": [ "with =var= eyes peeled" ]
       },
       "might": {
-        "professions": [ "soldier", "gladiator" ],
+        "@professions": [ "soldier", "gladiator" ],
         "materials": [ "zetachrome", "crysteel", "iron", "diamond", "bone" ],
         "adjectives": [ "mighty", "colossal", "dominant", "potent", "commanding" ],
         "nouns": [ "sword", "mace", "axe", "iron gauntlet", "skull", "hammer", "pummel", "helmet", "breastplate", "gauntlet", "boot" ],
@@ -149,12 +149,12 @@
         "ruinReason": "rife with smashed rubble",
         "ruinDescription": "trash heaps",
         "thingsTheyDid": [ "=spice:history.regions.organizingPrinciple.religion.generic.thingsTheyDid.!random=" ],
-        "mythicalEvent": [ "a great battle was won", "a famous =^:professions.!random= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
+        "mythicalEvent": [ "a great battle was won", "=spice.set:$prof:spice.elements.might.@professions.!random=a famous =spice:professions.$prof.singular= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
         "weddingConditions": [ "after murdering a foe =^:murdermethods.!random=", "inside a colossal =^:nouns.!random=", "in a cathedral ornamented with =^:nounsPlural.!random=", "Waist deep in a lake of =^:materials.!random=" ],
         "mythicalBattleVista": [ "looming with =var= presence" ]
       },
       "chance": {
-        "professions": [ "gambler" ],
+        "@professions": [ "gambler" ],
         "materials": [ "chance itself", "copper", "luck", "fate", "silver", "gold", "platinum" ],
         "adjectives": [ "lucky", "random", "arbitrary", "fateful", "fortuitous", "charmed", "weighted", "cursed", "blessed" ],
         "nouns": [ "=spice:numbers.!random=-sided die", "coin", "good omen", "bad omen", "token", "charm", "vessel of the Fates" ],
@@ -168,12 +168,12 @@
         "ruinReason": "rife with bad omens",
         "ruinDescription": "rotten luck",
         "thingsTheyDid": [ "=spice:history.regions.organizingPrinciple.religion.generic.thingsTheyDid.!random=" ],
-        "mythicalEvent": [ "a =var= was found in every home", "a famous =^:professions.!random= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
+        "mythicalEvent": [ "a =var= was found in every home", "=spice.set:$prof:spice.elements.chance.@professions.!random=a famous =spice:professions.$prof.singular= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
         "weddingConditions": [ "after choosing a spouse at random", "inside a colossal =^:nouns.!random=", "in a cathedral ornamented with =^:nounsPlural.!random=", "Waist deep in a lake of =^:materials.!random=" ],
         "mythicalBattleVista": [ "after auguring a =var= omen" ]
       },
       "circuitry": {
-        "professions": [ "tinker", "electrician" ],
+        "@professions": [ "tinker", "electrician" ],
         "materials": [ "wire", "copper", "silicon", "circuits", "electric current", "logic", "diodes", "transistors", "capacitors", "coils", "vacuum tubes" ],
         "adjectives": [ "analog", "digital", "logical", "voltaic", "computerized", "electric", "wired", "copper-plated", "coiled" ],
         "nouns": [ "circuitboard", "circuit", "logic gate", "light bulb", "battery", "vacuum tube", "oscilloscope" ],
@@ -187,12 +187,12 @@
         "ruinReason": "rife with electric arcs",
         "ruinDescription": "voltaic lunes",
         "thingsTheyDid": [ "=spice:history.regions.organizingPrinciple.religion.generic.thingsTheyDid.!random=" ],
-        "mythicalEvent": [ "a =var= lit up in every home", "a famous =^:professions.!random= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
+        "mythicalEvent": [ "a =var= lit up in every home", "=spice.set:$prof:spice.elements.circuitry.@professions.!random=a famous =spice:professions.$prof.singular= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
         "weddingConditions": [ "while telecommuting", "inside a colossal =^:nouns.!random=", "in a cathedral ornamented with =^:nounsPlural.!random=", "Waist deep in a lake of =^:materials.!random=" ],
         "mythicalBattleVista": [ "inside a =var= machine" ]
       },
       "travel": {
-        "professions": [ "explorer", "nomad" ],
+        "@professions": [ "explorer", "nomad" ],
         "materials": [ "water", "farewells", "brick", "leather", "wood", "silk", "paper", "rope", "wind", "canvas", "campfire ashes" ],
         "adjectives": [ "foreign", "unfamiliar", "strange", "timeworn", "worldly", "traveling", "wandering", "otherworldly" ],
         "nouns": [ "compass", "altimeter", "astrolabe", "map", "sextant", "bedroll", "journal", "boat", "pair of sandals" ],
@@ -206,7 +206,7 @@
         "ruinReason": "vacant of signs of life",
         "ruinDescription": "emptiness",
         "thingsTheyDid": [ "=spice:history.regions.organizingPrinciple.religion.generic.thingsTheyDid.!random=" ],
-        "mythicalEvent": [ "a new planet was discovered", "a famous =^:professions.!random= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
+        "mythicalEvent": [ "a new planet was discovered", "=spice.set:$prof:spice.elements.travel.@professions.!random=a famous =spice:professions.$prof.singular= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
         "weddingConditions": [ "upon the completion of a great pilgrimage", "inside a colossal =^:nouns.!random=", "in a cathedral ornamented with =^:nounsPlural.!random=", "Waist deep in a lake of =^:materials.!random=" ],
         "mythicalBattleVista": [ "in view of odd and =var= sands" ]
       }
@@ -507,8 +507,8 @@
     "time": {
       "partsOfDay": [ "dusk", "dawn", "noon", "midnight", "first light", "twilight" ]
     },
-    "siteModifiers1": [ "anatomicalLocation", "2Dshapes", "3Dshapes", "typeOfVillage", "geometricPatterns", "ordinal" ],
-    "siteModifiers2": [ "basicColors", "ordinal", "anatomicalLocation", "2Dshapes", "3Dshapes", "metals" ],
+    "@siteModifiers1": [ "anatomicalLocation", "2Dshapes", "3Dshapes", "typeOfVillage", "geometricPatterns", "ordinal" ],
+    "@siteModifiers2": [ "basicColors", "ordinal", "anatomicalLocation", "2Dshapes", "3Dshapes", "metals" ],
     "basicColors": [ "red", "blue", "green", "ivory", "silver", "ebony", "amber", "cyan", "yellow", "purple", "black", "white", "brown" ],
     "colors": [ "crimson", "scarlet", "cornsilk", "magnolia", "ivory", "silver", "platinum", "ebony", "onyx", "amaranth", "magenta", "telemagenta", "burgundy", "fuchsia", "vermilion", "amber", "citrine", "mahogany", "maroon", "coral", "marigold", "aurelion", "chartreuse", "cyan", "moss green", "pistachio", "turquoise", "viridian", "aquamarine", "cerulean", "azure", "cobalt", "indigo", "ultramarine" ],
     "ordinal": [ "-1st", "0th", "1st", "2nd", "3rd", "4th", "5th", "6th", "7th", "8th", "9th", "10th", "11th", "12th", "13th", "14th", "15th", "16th", "17th", "18th", "19th", "20th", "21st", "22nd", "23rd", "24th", "25th", "26th", "27th", "28th", "29th", "30th" ],
@@ -613,7 +613,7 @@
       "bygone": [ "bygone", "erstwhile", "once", "old" ],
       "hearth": [ "hearth", "home", "hearthstone", "haunt", "seat", "roost" ],
       "shortHearth": [ "home", "holme" ],
-      "yard": [ "yard", "fold", " quadrangle", "square", "quad" ],
+      "yard": [ "yard", "fold", "quadrangle", "square", "quad" ],
       "stretches": [ "stretches" ],
       "lost": [ "lost", "vanished", "moldered", "desolate", "extinct" ],
       "stamped": [ "stamped", "painted", "engraved", "embossed", "etched", "adorned", "carved" ],
@@ -700,7 +700,7 @@
       "shrine": [ "relic", "shrine", "altar" ],
       "blessing": [ "blessing", "honor", "favor", "boon", "comfort", "gift" ],
       "despicable": [ "despicable", "disgraceful", "vile", "wretched", "loathsome", "foul", "cursed", "ghastly" ],
-      "horror": [ "horror", "abomination", "shame", "anathama", "atrocity" ],
+      "horror": [ "horror", "abomination", "shame", "anathema", "atrocity" ],
       "greatly": [ "greatly", "mightily", "much", "immensely" ],
       "find": [ "find", "locate", "pinpoint" ],
       "treasures": [ "treasures", "secrets", "riches", "pearls", "mysteries" ],
@@ -957,7 +957,7 @@
       "Syphon Vim": [ "vampiric =cult=", "=cult=, the Succubus" ],
       "Telekinesis": [ "=cult=, the Mover", "Long-Arm =cult=" ],
       "Teleportation": [ "=cult=, the Here and There", "entangled =cult=" ],
-      "Teleport Other": [ "fickle *cult", "whimsical =cult=" ],
+      "Teleport Other": [ "fickle =cult=", "whimsical =cult=" ],
       "Time Dilation": [ "=cult=, Now and Then", "Immortal =cult=" ],
       "Temporal Fugue": [ "=cult=, the Many", "popular =cult=" ],
       "_failureredirect": "spice.extradimensional.cultForms"
@@ -2043,7 +2043,7 @@
         "names": [
           "the =spice:itemTypes.$itemType.!random= of the =spice:adjectives.!random= =spice:elements.$element.nouns.!random=",
           "the =spice:itemTypes.$itemType.!random= of the =spice:elements.$element.adjectives.!random= =spice:nouns.!random=",
-          "the =spice:itemTypes.$itemType.!random= of the =spice:adjectives.!random= =spice:elements.$element.professions.!random=",
+          "the =spice:itemTypes.$itemType.!random= of the =spice:adjectives.!random= =spice:elements.$element.@professions.!random=",
           "=person.name's= =spice:elements.$element.adjectives.!random= =spice:itemTypes.$itemType.!random=",
           "=creature.a.name's:withoutTitles|strip= =spice:elements.$element.adjectives.!random= =spice:itemTypes.$itemType.!random=",
           "=creature.a.name's:withoutTitles|strip= =spice:itemTypes.$itemType.!random=",
@@ -2148,7 +2148,7 @@
           }
         },
         "government": {
-          "types": [ "city-states", "precincts", "districts", "quarters", "provinces", "city-states", "city-states" ],
+          "@types": [ "city-states", "precincts", "districts", "quarters", "provinces", "city-states", "city-states" ],
           "city-states": {
             "name": [ "autarchy", "republic", "city-state", "monarchy", "aristocracy", "oligarchy", "democracy", "theocracy" ],
             "nameArticle": "the",
@@ -2176,21 +2176,21 @@
           }
         },
         "topology": {
-          "types": [ "random" ],
+          "@types": [ "random" ],
           "random": {}
         },
         "organizingPrinciple": {
-          "types": [ "function", "wealth", "profession", "function", "religion" ],
+          "@types": [ "function", "wealth", "profession", "function", "religion" ],
           "profession": {
             "name": "profession",
-            "types": [ "=spice:professions.!random.singular=" ],
+            "types": [ "=spice:professions.@random.singular=" ],
             "generic": {
-              "thingsTheyDid": [ "=spice.set:$prof:entity.organizingPrincipleType==spice:professions.$prof.plural= plied their craft in isolation", "=spice.set:$prof:entity.organizingPrincipleType==spice:professions.$prof.plural= gathered to exercise their art" ]
+              "thingsTheyDid": [ "=spice.set:$prof:entity.organizingPrincipleType==spice:professions.$prof.plural= plied their craft in isolation", "=spice.set:$prof:entity@organizingPrincipleType==spice:professions.$prof.plural= gathered to exercise their art" ]
             },
             "_staticfailureredirect": "spice.history.regions.organizingPrinciple.profession.generic.thingsTheyDid.!random"
           },
           "function": {
-            "types": [ "gardens", "pools", "museums", "college", "waste", "consulate", "market", "forums", "residential", "theaters", "food storage", "pipe hub", "prison", "barracks", "temple", "tavern" ],
+            "@types": [ "gardens", "pools", "museums", "college", "waste", "consulate", "market", "forums", "residential", "theaters", "food storage", "pipe hub", "prison", "barracks", "temple", "tavern" ],
             "gardens": {
               "titles": [ "garden", "arboretum", "orchard" ],
               "thingsTheyDid": [ "the Eaters admired their strange flora" ]
@@ -2257,7 +2257,7 @@
             }
           },
           "wealth": {
-            "types": [ "poor", "middle-class", "rich" ],
+            "@types": [ "poor", "middle-class", "rich" ],
             "poor": {
               "titles": [ "slums", "ghetto", "barrio" ],
               "titleArticle": "the",
@@ -2275,7 +2275,7 @@
             }
           },
           "religion": {
-            "types": [ "=spice:elements.@random=", "=spice:elements.@random=", "=spice:elements.@random=", "=spice:elements.@random=", "=spice:elements.@random=", "=spice:elements.@random=", "=spice:elements.@random=", "=spice:elements.@random=", "=spice:elements.@random=", "sultans", "godless", "godless", "godless" ],
+            "@types": [ "=spice:elements.@random=", "=spice:elements.@random=", "=spice:elements.@random=", "=spice:elements.@random=", "=spice:elements.@random=", "=spice:elements.@random=", "=spice:elements.@random=", "=spice:elements.@random=", "=spice:elements.@random=", "sultans", "godless", "godless", "godless" ],
             "sultans": {
               "nouns": [ "sultan" ],
               "thingsTheyDid": [ "the Eaters canonized past sultans and sang their praises" ]
