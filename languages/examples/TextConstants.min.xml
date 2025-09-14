@@ -3,13 +3,23 @@
 <!-- copy this, change Lang to your lang code, and use for localization! -->
 <textconstants Encoding="utf-8" Lang="min">
     <!--
-        Weirdify character sets, the "Base" letter should also be the first letter in the set.
-        Used to make extradimensional creatures feel "off".
+        Weirdify character sets: Used to replace letters in text, especially names,
+        in order to make extradimensional creatures feel otherworldly.
+        The "Base" letter should also be the first letter in the set.
 
-        Try for weird characters in the CP437 codepage first, other DOS codepages next.
-        Avoid having a character in multiple weirdSets, except maybe
-        for the same letter upper- & lower-cased.
+        Feel free to add new weird sets for letters. "Weird" letters should not
+        be any character you would use when translating text for this game, so please
+        remove any such characters from existing weird sets.
+        Currency symbols other than "$" should be fine to include.
+
         If you want to "remove" an existing weirdSet, make its Set equal to its Base.
+
+        NOTE: no weird letter should appear in more than 1 weirdSet.
+
+        To keep to the game's aesthetic, try for weird letters in the
+        CP437 codepage first, your language's DOS codepage(s) next,
+        then other languages' DOS codepages, and lastly Unicode
+        (preferably non-combining single UTF-16 characters).
     -->
     <weirdSets>
         <weirdSet Base="a" Set="aâäàåáªα" />
@@ -21,7 +31,7 @@
         <weirdSet Base="E" Set="EÉΣ" />
         <weirdSet Base="f" Set="fƒ" />
         <weirdSet Base="i" Set="iïîìí¡" />
-        <weirdSet Base="I" Set="I¡│" />
+        <weirdSet Base="I" Set="I│" />
         <weirdSet Base="L" Set="L£" />
         <weirdSet Base="n" Set="nñπ∩" />
         <weirdSet Base="N" Set="NÑ" />
@@ -30,9 +40,8 @@
         <weirdSet Base="R" Set="R₧" />
         <weirdSet Base="t" Set="tτ" />
         <weirdSet Base="u" Set="uûùúµ" />
-        <weirdSet Base="U" Set="UÜµ" />
+        <weirdSet Base="U" Set="UÜ" />
         <weirdSet Base="y" Set="yÿ" />
         <weirdSet Base="Y" Set="Y¥" />
     </weirdSets>
-    <crypticMachineCharset Set="│┤╡╢╖╕╣║╗╝╜╛┐└┴┬├─┼╞╟╚╔╩╦╠═╬╧╨╤╥╙╘╒╓╫╪┘┌" WordLengthMin="3" WordLengthMax="10" SentenceLengthMin="3" SentenceLengthMax="40" />
 </textconstants>
