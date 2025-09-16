@@ -362,6 +362,12 @@ Assets/XRL Application/Game Core/EmbarkBuilder/EmbarkBuilderModuleWindowBase.cs:
   <string ID="select">select</string>
   <!--Code references _S(): Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:441-->
   <string ID="quit">quit</string>
+  <!--Code references _S(): Assets/Game/UI/View Prefabs/StatusScreens/SkillsAndPowers/SkillsAndPowersStatusScreen.cs:59-->
+  <string Context="SkillsAndPowersStatusScreen a skill that has not been learned" ID="{{R|[Unlearned]}}">{{R|[Unlearned]}}</string>
+  <!--Code references _S(): Assets/Game/UI/View Prefabs/StatusScreens/SkillsAndPowers/SkillsAndPowersStatusScreen.cs:60-->
+  <string Context="SkillsAndPowersStatusScreen a power is known but not the base skill" ID="{{W|[Unlearned]}}">{{W|[Unlearned]}}</string>
+  <!--Code references _S(): Assets/Game/UI/View Prefabs/StatusScreens/SkillsAndPowers/SkillsAndPowersStatusScreen.cs:61-->
+  <string Context="SkillsAndPowersStatusScreen a known power and skill" ID="{{G|[Learned]}}">{{G|[Learned]}}</string>
   <!--Code references _T(): Assets/Game/UI/Windows/PopupMessage/PopupMessage.cs:48-->
   <string ID="{{W|[=commandKey:Cancel=]}} {{y|Cancel}}">{{W|[=commandKey:Cancel=]}} {{y|Cancel}}</string>
   <!--Code references _T(): Assets/Game/UI/Windows/PopupMessage/PopupMessage.cs:68-->
@@ -452,6 +458,8 @@ Assets/XRL Application/Game Core/EmbarkBuilder/EmbarkBuilderModuleWindowBase.cs:
   <string Context="QudHistoryHelpers Sultanate Era (Before Resheph)" ID="=year= BR">=year= BR</string>
   <!--Code references _T(): Assets/HistoryKit/QudHistoryHelpers.cs:775-->
   <string Context="QudHistoryHelpers Sultanate Era (After Resheph)" ID="=year= AR">=year= AR</string>
+  <!--Code references _T(): Assets/HistoryKit/RegionHistory/InitializeLocation.cs:31-->
+  <string Context="InitializeLocation History Decorate Generated Name" ID="=spice:history.regions.names.!random=">=spice:history.regions.names.!random=</string>
   <!--Code references _T(): Assets/HistoryKit/RegionHistory/InitializeRegion.cs:39-->
   <string Context="HistoricEvent InitializeRegion" ID="=spice:history.regions.organizingPrinciple.entity@organizingPrinciple.@types.!random=">=spice:history.regions.organizingPrinciple.entity@organizingPrinciple.@types.!random=</string>
   <!--Code references _T(): Assets/HistoryKit/RegionHistory/InitializeRegion.cs:44-->
@@ -655,7 +663,7 @@ Assets/XRL Application/Game Core/EmbarkBuilder/EmbarkBuilderModuleWindowBase.cs:
   <!--Code references _T(): Assets/HistoryKit/SultanHistory/FakedDeath.cs:41-->
   <string Context="HistoricEvent FakedDeath cognomen" ID="the =spice:elements.$element.adjectives.!random|title= =spice:commonPhrases.ghost.!random|title=">the =spice:elements.$element.adjectives.!random|title= =spice:commonPhrases.ghost.!random|title=</string>
   <!--Code references _T(): Assets/HistoryKit/SultanHistory/FakedDeath.cs:54-->
-  <string Context="HistoricEvent FakedDeath cognomen" ID="the =spice.entity:colors.!random|title= =spice:commonPhrases.ghost.!random|title=">the =spice.entity:colors.!random|title= =spice:commonPhrases.ghost.!random|title=</string>
+  <string Context="HistoricEvent FakedDeath cognomen" ID="the =spice.entity:colors[random]|title= =spice:commonPhrases.ghost.!random|title=">the =spice.entity:colors[random]|title= =spice:commonPhrases.ghost.!random|title=</string>
   <!--Code references _T(): Assets/HistoryKit/SultanHistory/FakedDeath.cs:64-->
   <string Context="HistoricEvent FakedDeath cognomen suffix" ID="=cognomen= of =spice.entity:region=">=cognomen= of =spice.entity:region=</string>
   <!--Code references _T(): Assets/HistoryKit/SultanHistory/FakedDeath.cs:101-->
@@ -912,7 +920,7 @@ Assets/HistoryKit/SultanHistory/MeetFaction.cs:116
   <!--Code references _T(): Assets/HistoryKit/VillageHistory/BecomesKnownFor.cs:218-->
   <string Context="HistoricEvent BecomesKnownFor profaneThing" ID="the =spice:commonPhrases.misuse.!random= of =partEntry.snippet=">the =spice:commonPhrases.misuse.!random= of =partEntry.snippet=</string>
   <!--Code references _T(): Assets/HistoryKit/VillageHistory/BecomesKnownFor.cs:249-->
-  <string Context="HistoricEvent BecomesKnownFor Gospel" ID="=spice:instancesOf.openingTime.!random|capitalize=, =person.a.name= from =spice.entity:name= =spice:commonPhrases.trekked.!random= through land =spice:history.regions.terrain.entity$region.over.!random=. There =person.subjective= visited =spice:professions.!random.guildhall|article= and met =person2.a.name= who taught =person.objective= the way of =partEntry.snippet=. =person.Subjective= returned home and taught what =person.subjective= had learned to the =spice:commonPhrases.cult.!random= of =spice.entity:name=.|=id=">=spice:instancesOf.openingTime.!random|capitalize=, =person.a.name= from =spice.entity:name= =spice:commonPhrases.trekked.!random= through land =spice:history.regions.terrain.entity$region.over.!random=. There =person.subjective= visited =spice:professions.!random.guildhall|article= and met =person2.a.name= who taught =person.objective= the way of =partEntry.snippet=. =person.Subjective= returned home and taught what =person.subjective= had learned to the =spice:commonPhrases.cult.!random= of =spice.entity:name=.|=id=</string>
+  <string Context="HistoricEvent BecomesKnownFor Gospel" ID="=spice:instancesOf.openingTime.!random|capitalize=, =person.a.name= from =spice.entity:name= =spice:commonPhrases.trekked.!random= through land =spice:history.regions.terrain.entity$region.over.!random=. There =person.subjective= visited =spice:professions.@random.guildhall|article= and met =person2.a.name= who taught =person.objective= the way of =partEntry.snippet=. =person.Subjective= returned home and taught what =person.subjective= had learned to the =spice:commonPhrases.cult.!random= of =spice.entity:name=.|=id=">=spice:instancesOf.openingTime.!random|capitalize=, =person.a.name= from =spice.entity:name= =spice:commonPhrases.trekked.!random= through land =spice:history.regions.terrain.entity$region.over.!random=. There =person.subjective= visited =spice:professions.@random.guildhall|article= and met =person2.a.name= who taught =person.objective= the way of =partEntry.snippet=. =person.Subjective= returned home and taught what =person.subjective= had learned to the =spice:commonPhrases.cult.!random= of =spice.entity:name=.|=id=</string>
   <!--Code references _T(): Assets/HistoryKit/VillageHistory/BecomesKnownFor.cs:286-->
   <string Context="HistoricEvent BecomesKnownFor Gospel" ID="=spice:instancesOf.openingTime.!random|capitalize=, =person.a.name= from a nearby =spice:placeNouns.!random= visited =spice.entity:name= and insulted =spice.entity:sacredThing=. The villagers of =spice.entity:name= responded with great =spice:temperaments.Angry.synonym.!random= and had =person.objective= =spice:temperaments.Angry.action.!random=.|=id=">=spice:instancesOf.openingTime.!random|capitalize=, =person.a.name= from a nearby =spice:placeNouns.!random= visited =spice.entity:name= and insulted =spice.entity:sacredThing=. The villagers of =spice.entity:name= responded with great =spice:temperaments.Angry.synonym.!random= and had =person.objective= =spice:temperaments.Angry.action.!random=.|=id=</string>
   <!--Code references _T(): Assets/HistoryKit/VillageHistory/BecomesKnownFor.cs:331-->
@@ -1721,7 +1729,9 @@ Assets/XRL Application/World/Dynamic Quests/VillageDynamicQuestContext.cs:405
 -->
   <string Context="VillageDynamicQuestContext QuestVerb" ID="desecrate">desecrate</string>
   <!--Code references _T(): Assets/XRL Application/World/Dynamic Quests/VillageDynamicQuestContext.cs:537-->
-  <string Context="VillageDynamicQuestContext" ID="=spice:quests.questContext.itemNameMutation.!random=">=spice:quests.questContext.itemNameMutation.!random=</string>
+  <string Context="VillageDynamicQuestContext item name mutation - adjectify itemAdjectiveRoot" ID="=root.adjectify=">=root.adjectify=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Dynamic Quests/VillageDynamicQuestContext.cs:547-->
+  <string Context="VillageDynamicQuestContext item name mutation" ID="=spice:quests.questContext.itemNameMutation.!random=">=spice:quests.questContext.itemNameMutation.!random=</string>
   <!--Code references _T(): Assets/XRL Application/World/Encounters/Interdimensional Psychic Builders/DimensionManager.cs:137-->
   <string Context="DimensionManager faction.cultForm no mutation" ID="=spice:extradimensional.cultForms.!random|title=">=spice:extradimensional.cultForms.!random|title=</string>
   <!--Code references _T(): Assets/XRL Application/World/Encounters/Interdimensional Psychic Builders/DimensionManager.cs:146-->
@@ -2697,6 +2707,14 @@ Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Psychometry.cs:
   <string Context="SunderMind already being sundered" ID="That target is already locked in psychic battle!">That target is already locked in psychic battle!</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/SunderMind.cs:846-->
   <string Context="SunderMind Ability Name" ID="Sunder Mind">Sunder Mind</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Monster/Infiltrate.cs:94-->
+  <string Context="Infiltrate Target Picker Title" ID="Infiltrate">Infiltrate</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Monster/Infiltrate.cs:163-->
+  <string Context="Infiltrate notify player enemy teleported them" ID="You are teleported by =object.the.name=.">You are teleported by =object.the.name=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Monster/Infiltrate.cs:275-->
+  <string Context="Infiltrate targeting" ID="=subject.Does:focus= =subject.its= sensor somewhere else.">=subject.Does:focus= =subject.its= sensor somewhere else.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Monster/Infiltrate.cs:320-->
+  <string Context="Infiltrate Activated Ablity Name" ID="Infiltrate">Infiltrate</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/AdrenalControl.cs:178-->
   <string ID="Your adrenaline subsides.">Your adrenaline subsides.</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/AdrenalControl.cs:190-->
@@ -2805,6 +2823,8 @@ Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/FreezingRay.c
   <string ID="=subject.Does:stop= releasing =gasdisplayname=.">=subject.Does:stop= releasing =gasdisplayname=.</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/GasGeneration.cs:529-->
   <string ID="=subject.Does:start= releasing =gasdisplayname=.">=subject.Does:start= releasing =gasdisplayname=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/HeatAbsorption.cs:63-->
+  <string Context="HeatAbsorbtion heal message (player only)" ID="You are healed for =amount= by the heat.">You are healed for =amount= by the heat.</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/HeightenedAgility.cs:36-->
   <string Context="Triple-Jointed Triggered Message Log" ID="You do that with ease.">You do that with ease.</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/HeightenedAgility.cs:37-->
@@ -3274,21 +3294,21 @@ Assets/XRL Application/World/Game Objects/Parts/Terrain/VillageTerrain.cs:87
   <string Context="VillageTerrain text terrainFragment double" ID="=terrainFragment= and =terrainFragment2=">=terrainFragment= and =terrainFragment2=</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Terrain/VillageTerrain.cs:109-->
   <string Context="VillageTerrain Description" ID="=spice:villages.description.!random|capitalize=.">=spice:villages.description.!random|capitalize=.</string>
-  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Relics/World.RelicGenerator.cs:42-->
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Relics/World.RelicGenerator.cs:43-->
   <string ID="Loading Relics.xml">Loading Relics.xml</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Relics/World.RelicGenerator.cs:153-->
-  <string Context="RelicGenerator personNounPossessive" ID="=spice:personNouns.!random|possessive=">=spice:personNouns.!random|possessive=</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Relics/World.RelicGenerator.cs:154-->
+  <string Context="RelicGenerator personNounPossessive" ID="=spice:personNouns.!random|possessive=">=spice:personNouns.!random|possessive=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Relics/World.RelicGenerator.cs:155-->
   <string Context="RelicGenerator Name" ID="=spice:history.relics.names.!random|title=">=spice:history.relics.names.!random|title=</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Relics/World.RelicGenerator.cs:172-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Relics/World.RelicGenerator.cs:173-->
   <string Context="RelicGenerator Name By Region" ID="=spice:elements.$element.adjectives.!random|title= =spice:itemTypes.$itemType.!random|title= of =spice.entity:newName|title=">=spice:elements.$element.adjectives.!random|title= =spice:itemTypes.$itemType.!random|title= of =spice.entity:newName|title=</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Relics/World.RelicGenerator.cs:1890-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Relics/World.RelicGenerator.cs:1891-->
   <string Context="RelicGenerator Element Bestowal" ID=" =subject.Itis= =spice:instancesOf.stamped_VAR.!random=." Value=" =subject.Itis= =spice:instancesOf.stamped_VAR.!random=." />
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Relics/World.RelicGenerator.cs:1917-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Relics/World.RelicGenerator.cs:1918-->
   <string Context="RelicGenerator Liked Factions" ID=" There's an engraving of =faction.factionName= being =spice:instancesOf.venerated.!random=." Value=" There's an engraving of =faction.factionName= being =spice:instancesOf.venerated.!random=." />
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Relics/World.RelicGenerator.cs:1930-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Relics/World.RelicGenerator.cs:1931-->
   <string Context="RelicGenerator Loved Factions" ID=" There's an engraving of =faction.factionName= being =spice:instancesOf.venerated.!random=." Value=" There's an engraving of =faction.factionName= being =spice:instancesOf.venerated.!random=." />
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Relics/World.RelicGenerator.cs:1945-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Relics/World.RelicGenerator.cs:1946-->
   <string Context="RelicGenerator Liked Factions" ID=" There's an engraving of =faction.factionName= being =spice:instancesOf.disparaged.!random=." Value=" There's an engraving of =faction.factionName= being =spice:instancesOf.disparaged.!random=." />
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Tinkering/Disassembly.cs:65-->
   <string Context="Disassembly action description" ID="disassembling">disassembling</string>

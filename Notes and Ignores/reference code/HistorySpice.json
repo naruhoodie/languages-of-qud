@@ -16,7 +16,7 @@
         "ruinReason": "devastated by torrential glass storms",
         "ruinDescription": "glass-swept knolls",
         "thingsTheyDid": [ "=spice:history.regions.organizingPrinciple.religion.generic.thingsTheyDid.!random=" ],
-        "mythicalEvent": [ "a =var= shattered in every home", "=spice.set:$prof:spice.elements.glass.@professions.!random=a famous =spice:professions.$prof.singular= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
+        "mythicalEvent": [ "a =var= shattered in every home", "a famous =^.set:@professions.!random:$prof==spice:professions.$prof.singular= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
         "weddingConditions": [ "in a cathedral of stained glass", "in a hall of mirrors", "inside a colossal prism", "during a torrential glass storm" ],
         "mythicalBattleVista": [ "curtained under a =var= lune" ]
       },
@@ -35,7 +35,7 @@
         "ruinReason": "bristling with carnivorous geodes",
         "ruinDescription": "man-eating geodes",
         "thingsTheyDid": [ "=spice:history.regions.organizingPrinciple.religion.generic.thingsTheyDid.!random=" ],
-        "mythicalEvent": [ "=spice:commonPhrases.epic.!random|article= =var= was discovered", "=spice.set:$prof:spice.elements.jewels.@professions.!random=a famous =spice:professions.$prof.singular= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
+        "mythicalEvent": [ "=spice:commonPhrases.epic.!random|article= =var= was discovered", "a famous =^.set:@professions.!random:$prof==spice:professions.$prof.singular= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
         "weddingConditions": [ "adorned with =^:nounsPlural.!random= and =^:nounsPlural.!random=", "inside a colossal =^:nouns.!random=", "in a cathedral ornamented with =^:nounsPlural.!random=", "Waist deep in a lake of =^:materials.!random=" ],
         "mythicalBattleVista": [ "bathed in =var= light" ]
       },
@@ -54,7 +54,7 @@
         "ruinReason": "devastated by smoldering stardust",
         "ruinDescription": "fuming stardew",
         "thingsTheyDid": [ "=spice:history.regions.organizingPrinciple.religion.generic.thingsTheyDid.!random=" ],
-        "mythicalEvent": [ "the stars aligned to form a constellation in the shape of a =var=", "=spice.set:$prof:spice.elements.stars.@professions.!random=a famous =spice:professions.$prof.singular= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
+        "mythicalEvent": [ "the stars aligned to form a constellation in the shape of a =var=", "a famous =^.set:@professions.!random:$prof==spice:professions.$prof.singular= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
         "weddingConditions": [ "while reciting the properties of =spice.entity:possessivePronoun= favorite star", "inside a colossal =^:nouns.!random=", "in a cathedral ornamented with =^:nounsPlural.!random=", "Waist deep in a lake of =^:materials.!random=" ],
         "mythicalBattleVista": [ "bathed in =var= light" ]
       },
@@ -73,7 +73,7 @@
         "ruinReason": "rife with stray portals to other places and times",
         "ruinDescription": "fraying reality-edges",
         "thingsTheyDid": [ "=spice:history.regions.organizingPrinciple.religion.generic.thingsTheyDid.!random=" ],
-        "mythicalEvent": [ "a =var= stopped working in every home", "=spice.set:$prof:spice.elements.time.@professions.!random=a famous =spice:professions.$prof.singular= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
+        "mythicalEvent": [ "a =var= stopped working in every home", "a famous =^.set:@professions.!random:$prof==spice:professions.$prof.singular= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
         "weddingConditions": [ "in a ceremony that lasted a full year", "inside a colossal =^:nouns.!random=", "in a cathedral ornamented with =^:nounsPlural.!random=", "Waist deep in a lake of =^:materials.!random=" ],
         "mythicalBattleVista": [ "with graceful, =var= movement" ]
       },
@@ -92,7 +92,7 @@
         "ruinReason": "evaporated of all moisture",
         "ruinDescription": "bone-dry desert",
         "thingsTheyDid": [ "=spice:history.regions.organizingPrinciple.religion.generic.thingsTheyDid.!random=" ],
-        "mythicalEvent": [ "the taste of =var= filled everyone's mouth", "=spice.set:$prof:spice.elements.salt.@professions.!random=a famous =spice:professions.$prof.singular= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
+        "mythicalEvent": [ "the taste of =var= filled everyone's mouth", "a famous =^.set:@professions.!random:$prof==spice:professions.$prof.singular= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
         "weddingConditions": [ "after abstaining from drinking water for =spice:instancesOf.twoToTen.!random= days", "inside a colossal =^:nouns.!random=", "in a cathedral ornamented with =^:nounsPlural.!random=", "Waist deep in a lake of =^:materials.!random=" ],
         "mythicalBattleVista": [ "upon chewing the =var= leaf" ]
       },
@@ -111,7 +111,7 @@
         "ruinReason": "devastated by icy winds",
         "ruinDescription": "scathing gales",
         "thingsTheyDid": [ "=spice:history.regions.organizingPrinciple.religion.generic.thingsTheyDid.!random=" ],
-        "mythicalEvent": [ "snow fell everywhere", "=spice.set:$prof:spice.elements.ice.@professions.!random=a famous =spice:professions.$prof.singular= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
+        "mythicalEvent": [ "snow fell everywhere", "a famous =^.set:@professions.!random:$prof==spice:professions.$prof.singular= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
         "weddingConditions": [ "while stark naked in freezing temperatures", "inside a colossal =^:nouns.!random=", "in a cathedral ornamented with =^:nounsPlural.!random=", "Waist deep in a lake of =^:materials.!random=" ],
         "mythicalBattleVista": [ "in the thin and =var= air" ]
       },
@@ -130,7 +130,7 @@
         "ruinReason": "rife with burnt books and corroded data disks",
         "ruinDescription": "data corruption",
         "thingsTheyDid": [ "=spice:history.regions.organizingPrinciple.religion.generic.thingsTheyDid.!random=" ],
-        "mythicalEvent": [ "a college was founded", "=spice.set:$prof:spice.elements.scholarship.@professions.!random=a famous =spice:professions.$prof.singular= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
+        "mythicalEvent": [ "a college was founded", "a famous =^.set:@professions.!random:$prof==spice:professions.$prof.singular= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
         "weddingConditions": [ "while reciting =spice.entity:possessivePronoun= favorite treatise", "inside a colossal =^:nouns.!random=", "in a cathedral ornamented with =^:nounsPlural.!random=", "Waist deep in a lake of =^:materials.!random=" ],
         "mythicalBattleVista": [ "with =var= eyes peeled" ]
       },
@@ -149,7 +149,7 @@
         "ruinReason": "rife with smashed rubble",
         "ruinDescription": "trash heaps",
         "thingsTheyDid": [ "=spice:history.regions.organizingPrinciple.religion.generic.thingsTheyDid.!random=" ],
-        "mythicalEvent": [ "a great battle was won", "=spice.set:$prof:spice.elements.might.@professions.!random=a famous =spice:professions.$prof.singular= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
+        "mythicalEvent": [ "a great battle was won", "a famous =^.set:@professions.!random:$prof==spice:professions.$prof.singular= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
         "weddingConditions": [ "after murdering a foe =^:murdermethods.!random=", "inside a colossal =^:nouns.!random=", "in a cathedral ornamented with =^:nounsPlural.!random=", "Waist deep in a lake of =^:materials.!random=" ],
         "mythicalBattleVista": [ "looming with =var= presence" ]
       },
@@ -168,7 +168,7 @@
         "ruinReason": "rife with bad omens",
         "ruinDescription": "rotten luck",
         "thingsTheyDid": [ "=spice:history.regions.organizingPrinciple.religion.generic.thingsTheyDid.!random=" ],
-        "mythicalEvent": [ "a =var= was found in every home", "=spice.set:$prof:spice.elements.chance.@professions.!random=a famous =spice:professions.$prof.singular= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
+        "mythicalEvent": [ "a =var= was found in every home", "a famous =^.set:@professions.!random:$prof==spice:professions.$prof.singular= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
         "weddingConditions": [ "after choosing a spouse at random", "inside a colossal =^:nouns.!random=", "in a cathedral ornamented with =^:nounsPlural.!random=", "Waist deep in a lake of =^:materials.!random=" ],
         "mythicalBattleVista": [ "after auguring a =var= omen" ]
       },
@@ -187,7 +187,7 @@
         "ruinReason": "rife with electric arcs",
         "ruinDescription": "voltaic lunes",
         "thingsTheyDid": [ "=spice:history.regions.organizingPrinciple.religion.generic.thingsTheyDid.!random=" ],
-        "mythicalEvent": [ "a =var= lit up in every home", "=spice.set:$prof:spice.elements.circuitry.@professions.!random=a famous =spice:professions.$prof.singular= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
+        "mythicalEvent": [ "a =var= lit up in every home", "a famous =^.set:@professions.!random:$prof==spice:professions.$prof.singular= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
         "weddingConditions": [ "while telecommuting", "inside a colossal =^:nouns.!random=", "in a cathedral ornamented with =^:nounsPlural.!random=", "Waist deep in a lake of =^:materials.!random=" ],
         "mythicalBattleVista": [ "inside a =var= machine" ]
       },
@@ -206,7 +206,7 @@
         "ruinReason": "vacant of signs of life",
         "ruinDescription": "emptiness",
         "thingsTheyDid": [ "=spice:history.regions.organizingPrinciple.religion.generic.thingsTheyDid.!random=" ],
-        "mythicalEvent": [ "a new planet was discovered", "=spice.set:$prof:spice.elements.travel.@professions.!random=a famous =spice:professions.$prof.singular= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
+        "mythicalEvent": [ "a new planet was discovered", "a famous =^.set:@professions.!random:$prof==spice:professions.$prof.singular= completed =spice:pronouns.possessive.!random= work on a legendary =var=" ],
         "weddingConditions": [ "upon the completion of a great pilgrimage", "inside a colossal =^:nouns.!random=", "in a cathedral ornamented with =^:nounsPlural.!random=", "Waist deep in a lake of =^:materials.!random=" ],
         "mythicalBattleVista": [ "in view of odd and =var= sands" ]
       }
@@ -2052,6 +2052,8 @@
         ]
       },
       "regions": {
+        "names": [ "=name=", "=^:namesWithFlair.!random=" ],
+        "namesWithFlair": [ "=basename= Spire", "the Hamlet of =basename=", "the Shrine at =basename=", "=basename= Steeple", "=basename= Mesh", "New =basename=", "Old =basename=", "=basename= Grotto", "=basename= Cave", "=basename= Den", "=basename= Hollow", "=basename= Dune", "=basename= Tangle", "=basename= Morass", "=basename= Knot" ],
         "terrain": {
           "Saltdunes": {
             "over": [ "over the flats", "neath gusts of poisoned salt", "buried under the crescent dunes" ]
@@ -2183,9 +2185,9 @@
           "@types": [ "function", "wealth", "profession", "function", "religion" ],
           "profession": {
             "name": "profession",
-            "types": [ "=spice:professions.@random.singular=" ],
+            "@types": [ "=spice:professions.@random=" ],
             "generic": {
-              "thingsTheyDid": [ "=spice.set:$prof:entity.organizingPrincipleType==spice:professions.$prof.plural= plied their craft in isolation", "=spice.set:$prof:entity@organizingPrincipleType==spice:professions.$prof.plural= gathered to exercise their art" ]
+              "thingsTheyDid": [ "=spice:professions.entity@organizingPrincipleType.plural= plied their craft in isolation", "=spice:professions.entity@organizingPrincipleType.plural= gathered to exercise their art" ]
             },
             "_staticfailureredirect": "spice.history.regions.organizingPrinciple.profession.generic.thingsTheyDid.!random"
           },

@@ -8,10 +8,42 @@
         <p>You see in the dark.</p>
       </leveltext>
     </mutation>
-    <mutation Name="Heightened Smell" Cost="2" Class="HeightenedSmell" BearerDescription="those with heightened smell" Tile="Mutations/heightened_smell.png" />
-    <mutation Name="Gills" Cost="1" Class="Gills" BearerDescription="those with gills" Tile="Mutations/gills.png" />
-    <mutation Name="Infiltrate" Cost="1" Class="Infiltrate" BearerDescription="those who infiltrate" Tile="Abilities/abil_infiltrate.bmp" />
-    <mutation Name="Heat Absorption" Cost="1" Class="HeatAbsorption" BearerDescription="those who absorb heat" Tile="Mutations/heat_absorption.png" />
+    <mutation Name="Heightened Smell" Cost="2" Class="HeightenedSmell" BearerDescription="those with heightened smell" Tile="Mutations/heightened_smell.png">
+      <description>
+        <p>You are possessed of exceptionally acute smell.</p>
+      </description>
+      <leveltext>
+        <p>You detect the presence of creatures within a distance typically up to <stat Name="Radius" Unit="square" /> depending on terrain</p>
+        <switch Name="LevelMatch">
+          <case Value="yes"><p>Chance to identify nearby detected creatures</p></case>
+          <case Value="no"><p>{{rules|Increased chance to identify nearby detected creatures}}</p></case>
+        </switch>
+      </leveltext>
+    </mutation>
+    <mutation Name="Gills" Cost="1" Class="Gills" BearerDescription="those with gills" Tile="Mutations/gills.png">
+      <!-- TODO: Jason - mutation had no description or leveltext -->
+    </mutation>
+    <mutation Name="Infiltrate" Cost="1" Class="Infiltrate" BearerDescription="those who infiltrate" Tile="Abilities/abil_infiltrate.bmp">
+      <description>
+        <p>You teleport and bring creatures along with you.</p>
+      </description>
+      <leveltext>
+        <p>You teleport to a nearby location and bring everyone within radius <stat Name="TeleportRadius" /> along with you.</p>
+        <statline Name="Cooldown" />
+      </leveltext>
+    </mutation>
+    <mutation Name="Heat Absorption" Cost="1" Class="HeatAbsorption" BearerDescription="those who absorb heat" Tile="Mutations/heat_absorption.png">
+      <description>
+        <p>You regenerate by absorbing heat.</p>
+      </description>
+      <leveltext>
+        <p>Immune to heat damage</p>
+        <switch Name="HealFactor">
+          <case Value="0"></case>
+          <default><p>Whenever you would have taken heat damage, you heal for <stat Name="HealFactor" />% of that damage instead</p></default>
+        </switch>
+      </leveltext>
+    </mutation>
     <mutation Name="Wall Climber" Cost="1" Class="WallWalker" BearerDescription="wall climbers" Tile="Mutations/wall_climber.png" />
     <mutation Name="Spider Webs" Cost="3" Class="SpiderWebs" BearerDescription="web weavers" Tile="Mutations/spinnerets.bmp" />
     <mutation Name="Frost Webs" Cost="3" Class="FrostWebs" BearerDescription="frost web weavers" Tile="Mutations/spinnerets.bmp" />
