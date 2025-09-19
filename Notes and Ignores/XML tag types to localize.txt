@@ -215,11 +215,15 @@
 
 <!-- Factions.xml -->
 <factions>
-  <!-- Note: DisplayName isn't processed when Visible="false" -->
+  <!-- Note: doesn't need to be localized when Visible="false" -->
   <!-- FormatWithArticle & Plural are grammar-related, some lang may decide on usage -->
   <faction Name="<KEY>" DisplayName="<LOCALIZE>" FormatWithArticle="<GRAMMAR>" Plural="<GRAMMAR>">
     <!-- Note: RecipeText isn't processed when no Recipe -->
     <waterritual RecipeText="<LOCALIZE>" />
+    <interests>
+      <!-- Note: doesn't need to be localized unless Description is set -->
+      <interest Tags="<KEY,>" MatchAny="<KEY>" Description="<LOCALIZE>" />
+    </interests>
     <ranks>
       <!-- TODO: DisplayName isn't supported yet! -->
       <rank Name="<KEY>" DisplayName="<LOCALIZE>" />
