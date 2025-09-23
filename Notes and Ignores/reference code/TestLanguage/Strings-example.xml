@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud code extracted string table.
+Caves of Qud code extracted string table. 2.0.212.1
 
 Comments should be deleted when copied to a new translation table, but are provided to
 help find the usage of the string in the base source code.
@@ -400,19 +400,27 @@ Assets/XRL Application/Game Core/EmbarkBuilder/EmbarkBuilderModuleWindowBase.cs:
   <string ID="{{W|[=commandKey:CmdOptions=]}} {{y|Hold to Accept}}">{{W|[=commandKey:CmdOptions=]}} {{y|Hold to Accept}}</string>
   <!--Code references _T(): Assets/Game/UI/Windows/PopupMessage/PopupMessage.cs:265-->
   <string ID="[{{W|=commandKey:CmdStartTrade=}}] {{y|Trade}}">[{{W|=commandKey:CmdStartTrade=}}] {{y|Trade}}</string>
-  <!--Code references _T(): Assets/HistoryKit/HistoricEvent.cs:475-->
+  <!--Code references _T(): Assets/HistoryKit/HistoricEvent.cs:449-->
+  <string Context="Region Discovery Popup" ID="You discover the location of =region=.">You discover the location of =region=.</string>
+  <!--Code references _T(): Assets/HistoryKit/HistoricEvent.cs:457-->
+  <string Context="Region Discovery Accomplishment" ID="You discovered the location of =region=.">You discovered the location of =region=.</string>
+  <!--Code references _T(): Assets/HistoryKit/HistoricEvent.cs:460-->
+  <string Context="Region Discovery mural text" ID="=spice:commonPhrases.intrepid.!random|capitalize= =name= discovered the location of =region=, once thought lost to the sands of time.">=spice:commonPhrases.intrepid.!random|capitalize= =name= discovered the location of =region=, once thought lost to the sands of time.</string>
+  <!--Code references _T(): Assets/HistoryKit/HistoricEvent.cs:465-->
+  <string Context="Region Discovery gospel text" ID="In =year=, =name= appointed a corrupt administrator as minister of =region=. =person.Subjective= mandated the practice of =spice:elements.$domain.practices.!random= in =player.possessiveAdjective= name.">In =year=, =name= appointed a corrupt administrator as minister of =region=. =person.Subjective= mandated the practice of =spice:elements.$domain.practices.!random= in =player.possessiveAdjective= name.</string>
+  <!--Code references _T(): Assets/HistoryKit/HistoricEvent.cs:496-->
   <string Context="HistoricEvent AddQuestsForRegion Step Name" ID="Travel to the historical site of =region=">Travel to the historical site of =region=</string>
-  <!--Code references _T(): Assets/HistoryKit/HistoricEvent.cs:484-->
+  <!--Code references _T(): Assets/HistoryKit/HistoricEvent.cs:505-->
   <string Context="HistoricEvent AddQuestsForRegion Quest Name" ID="Visit =region=">Visit =region=</string>
-  <!--Code references _T(): Assets/HistoryKit/HistoricEvent.cs:540-->
+  <!--Code references _T(): Assets/HistoryKit/HistoricEvent.cs:561-->
   <string Context="HistoricEvent AddQuestsForRelic Step 1 Name" ID="Locate =region=">Locate =region=</string>
-  <!--Code references _T(): Assets/HistoryKit/HistoricEvent.cs:544-->
+  <!--Code references _T(): Assets/HistoryKit/HistoricEvent.cs:565-->
   <string Context="HistoricEvent AddQuestsForRelic Step 1 Text" ID="Travel to the historical site of =region=.">Travel to the historical site of =region=.</string>
-  <!--Code references _T(): Assets/HistoryKit/HistoricEvent.cs:552-->
+  <!--Code references _T(): Assets/HistoryKit/HistoricEvent.cs:573-->
   <string Context="HistoricEvent AddQuestsForRelic Step 2 Name" ID="Recover =relic|strip=">Recover =relic|strip=</string>
-  <!--Code references _T(): Assets/HistoryKit/HistoricEvent.cs:555-->
+  <!--Code references _T(): Assets/HistoryKit/HistoricEvent.cs:576-->
   <string Context="HistoricEvent AddQuestsForRelic Step 2 Text" ID="Recover =relic|strip= at =location=.">Recover =relic|strip= at =location=.</string>
-  <!--Code references _T(): Assets/HistoryKit/HistoricEvent.cs:564-->
+  <!--Code references _T(): Assets/HistoryKit/HistoricEvent.cs:585-->
   <string Context="HistoricEvent AddQuestsForRelic Quest Name" ID="Recover =relic|strip=">Recover =relic|strip=</string>
   <!--Code references _T(): Assets/HistoryKit/QudHistoryHelpers.cs:372-->
   <string Context="QudHistoryHelpers NameItem" ID="=object|wordRoot|initCap==spice:items.suffixes.!random=">=object|wordRoot|initCap==spice:items.suffixes.!random=</string>
@@ -690,7 +698,7 @@ Assets/HistoryKit/SultanHistory/ForgeItem.cs:153
   <!--Code references _T(): Assets/HistoryKit/SultanHistory/ForgeItem.cs:89-->
   <string Context="HistoricEvent ForgeItem gospel" ID="=prefix=, =spice.entity:name= =spice:professions.$profession.forged= =item|article= that evoked the presence of =itemDescriptionAdjective|article= =itemDescriptionNoun=.">=prefix=, =spice.entity:name= =spice:professions.$profession.forged= =item|article= that evoked the presence of =itemDescriptionAdjective|article= =itemDescriptionNoun=.</string>
   <!--Code references _T(): Assets/HistoryKit/SultanHistory/ForgeItem.cs:113-->
-  <string Context="HistoricEvent ForgeItem tombInscription" ID="=spice:commonPhrases.inspired.!random|capitalize= by a =spice:commonPhrases.prized.!random= =itemDescriptionNoun= =spice:history.gospels.ObjectFoundBy.entity@era.!random=, =spice.entity:name= visited =spice.entity:possessivePronoun= =spice:professions.$profession.guildhall= =spice:professions.$profession.forged= =item|article=.">=spice:commonPhrases.inspired.!random|capitalize= by a =spice:commonPhrases.prized.!random= =itemDescriptionNoun= =spice:history.gospels.ObjectFoundBy.entity@era.!random=, =spice.entity:name= visited =spice.entity:possessivePronoun= =spice:professions.$profession.guildhall= =spice:professions.$profession.forged= =item|article=.</string>
+  <string Context="HistoricEvent ForgeItem tombInscription" ID="=spice:commonPhrases.inspired.!random|capitalize= by a =spice:commonPhrases.prized.!random= =itemDescriptionNoun= =spice:history.gospels.ObjectFoundBy.entity@era.!random=, =spice.entity:name= visited =spice.entity:possessivePronoun= =spice:professions.$profession.guildhall= and =spice:professions.$profession.forged= =item|article=.">=spice:commonPhrases.inspired.!random|capitalize= by a =spice:commonPhrases.prized.!random= =itemDescriptionNoun= =spice:history.gospels.ObjectFoundBy.entity@era.!random=, =spice.entity:name= visited =spice.entity:possessivePronoun= =spice:professions.$profession.guildhall= and =spice:professions.$profession.forged= =item|article=.</string>
   <!--Code references _T(): Assets/HistoryKit/SultanHistory/ForgeItem.cs:165-->
   <string Context="HistoricEvent ForgeItem gospel" ID="=prefix=, =spice.entity:name= met with a group of =spice:professions.$profession.plural= and commissioned =item|article= that evoked the presence of =itemDescriptionAdjective|article= =itemDescriptionNoun=.">=prefix=, =spice.entity:name= met with a group of =spice:professions.$profession.plural= and commissioned =item|article= that evoked the presence of =itemDescriptionAdjective|article= =itemDescriptionNoun=.</string>
   <!--Code references _T(): Assets/HistoryKit/SultanHistory/ForgeItem.cs:189-->
@@ -791,7 +799,7 @@ Assets/HistoryKit/SultanHistory/LiberateCity.cs:286
   <!--Code references _T(): Assets/HistoryKit/SultanHistory/Marry.cs:229-->
   <string Context="HistoricEntity Marry gospel appendix profession friend" ID="=gospel= =spice:commonPhrases.inHonorOf.!random|capitalize=, the =spice:professions.$profession.plural= bestowed upon =spice.entity:name= a wedding gift they called =itemName=.">=gospel= =spice:commonPhrases.inHonorOf.!random|capitalize=, the =spice:professions.$profession.plural= bestowed upon =spice.entity:name= a wedding gift they called =itemName=.</string>
   <!--Code references _T(): Assets/HistoryKit/SultanHistory/Marry.cs:248-->
-  <string Context="HistoricEvent Marry tombInscription group" ID="=spice:professions.$profession.plural=">=spice:professions.$profession.plural=</string>
+  <string Context="HistoricEvent Marry tombInscription profession friend =group=" ID="=spice:professions.$profession.plural=">=spice:professions.$profession.plural=</string>
   <!--Code references _T(): Assets/HistoryKit/SultanHistory/Marry.cs:252-->
   <string Context="HistoricEvent Marry tombInscription" ID="=spice:instancesOf.marriageBlessing.!random|capitalize=, =spice.entity:name= and =spouseName=, whose =spice:commonPhrases.historic.!random= alliance by marriage =spice:history.gospels.MarriageAllianceResult.entity@era.!random=.">=spice:instancesOf.marriageBlessing.!random|capitalize=, =spice.entity:name= and =spouseName=, whose =spice:commonPhrases.historic.!random= alliance by marriage =spice:history.gospels.MarriageAllianceResult.entity@era.!random=.</string>
   <!--Code references _T(): Assets/HistoryKit/SultanHistory/MeetFaction.cs:74-->
@@ -1101,13 +1109,13 @@ Assets/HistoryKit/VillageHistory/SharedMutation.cs:208
   <string Context="History Worships Gospel" ID="The villagers of =spice.entity:name= laid offerings at the feet of =subject.refname:Worship:long:withTitles|strip= in exchange for =spice:commonPhrases.wisdom.!random= about =sacredThing=.|=id=">The villagers of =spice.entity:name= laid offerings at the feet of =subject.refname:Worship:long:withTitles|strip= in exchange for =spice:commonPhrases.wisdom.!random= about =sacredThing=.|=id=</string>
   <!--Code references _T(): Assets/HistoryKit/VillageHistory/Worships.cs:250-->
   <string Context="History Worships itemAdjectiveRoots" ID="=subject.refname:Worship|strip=">=subject.refname:Worship|strip=</string>
-  <!--Code references _S(): Assets/Language/Translator.cs:371-->
+  <!--Code references _S(): Assets/Language/Translator.cs:536-->
   <string Context="MakeAndList Default two-word join" ID=" and " Value=" and " />
-  <!--Code references _S(): Assets/Language/Translator.cs:373-->
+  <!--Code references _S(): Assets/Language/Translator.cs:538-->
   <string Context="MakeAndList Default Separator" ID=", " Value=", " />
-  <!--Code references _S(): Assets/Language/Translator.cs:378-->
+  <!--Code references _S(): Assets/Language/Translator.cs:543-->
   <string Context="MakeAndList Alternate Separator" ID="; " Value="; " />
-  <!--Code references _S(): Assets/Language/Translator.cs:386-->
+  <!--Code references _S(): Assets/Language/Translator.cs:551-->
   <string Context="MakeAndList NoSerialComma Separator" ID=" " Value=" " />
   <!--Code references _S(): Assets/XRL Application/Game Core/ActionManager.cs:751-->
   <string Context="Message Log Turn Separator" ID="[--turn start--]">[--turn start--]</string>
@@ -1362,6 +1370,8 @@ Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudMutationsModuleWindow.cs:3
   <string ID="subtype">subtype</string>
   <!--Code references _T(): Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudSubtypeModuleWindow.cs:61-->
   <string ID=":=subtypetitle=:">:=subtypetitle=:</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudSubtypeModuleWindow.cs:79-->
+  <string Context="Chargen Subtype Breadcrumb" ID="=subtypeSingularTitle|capitalize=">=subtypeSingularTitle|capitalize=</string>
   <!--Code references _T(): Assets/XRL Application/Game Core/Names.cs:73-->
   <string Context="Naming Expand Property Spice" ID="=spice#query|title=">=spice#query|title=</string>
   <!--Code references _S():
@@ -1878,96 +1888,96 @@ Assets/XRL Application/World/Encounters/Race Builders/TrollHero.cs:44
   <string Context="DescriptionBuilder Multiple With Clause" ID="with =withClauses.andList=">with =withClauses.andList=</string>
   <!--Code references _S(): Assets/XRL Application/World/Events/ExtraHostilePerceptionEvent.cs:21-->
   <string Context="hostile perception verb" ID="perceive">perceive</string>
-  <!--Code references _S(): Assets/XRL Application/World/Factions/Faction.cs:209-->
+  <!--Code references _S(): Assets/XRL Application/World/Factions/Faction.cs:211-->
   <string Context="Faction GetFormattedName *" ID="everyone">everyone</string>
-  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:259-->
+  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:249-->
   <string Context="Faction Feeling" ID="{{C|=faction.formattedName|capitalize=}} =faction.ifPlural:despise:despises= you. Even docile =faction.ifPlural:ones:members= will attack you.">{{C|=faction.formattedName|capitalize=}} =faction.ifPlural:despise:despises= you. Even docile =faction.ifPlural:ones:members= will attack you.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:261-->
+  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:251-->
   <string Context="Faction Feeling" ID="{{C|=faction.formattedName|capitalize=}} =faction.ifPlural:dislike:dislikes= you, but docile =faction.ifPlural:ones:members= won't attack you.">{{C|=faction.formattedName|capitalize=}} =faction.ifPlural:dislike:dislikes= you, but docile =faction.ifPlural:ones:members= won't attack you.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:263-->
+  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:253-->
   <string Context="Faction Feeling" ID="{{C|=faction.formattedName|capitalize=}} =faction.ifPlural:favor:favors= you. Aggressive =faction.ifPlural:ones:members= won't attack you.">{{C|=faction.formattedName|capitalize=}} =faction.ifPlural:favor:favors= you. Aggressive =faction.ifPlural:ones:members= won't attack you.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:265-->
+  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:255-->
   <string Context="Faction Feeling" ID="{{C|=faction.formattedName|capitalize=}} =faction.ifPlural:revere:reveres= you and =faction.ifPlural:consider:considers= you one of their own.">{{C|=faction.formattedName|capitalize=}} =faction.ifPlural:revere:reveres= you and =faction.ifPlural:consider:considers= you one of their own.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:267-->
+  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:257-->
   <string Context="Faction Feeling" ID="{{C|=faction.formattedName|capitalize=}} =faction.ifPlural:don't:doesn't= care about you, but aggressive =faction.ifPlural:ones:members= will attack you.">{{C|=faction.formattedName|capitalize=}} =faction.ifPlural:don't:doesn't= care about you, but aggressive =faction.ifPlural:ones:members= will attack you.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:278-->
+  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:268-->
   <string Context="Faction Pet Text" ID="{{C|=faction.formattedName|capitalize=}} will usually let you pet them.">{{C|=faction.formattedName|capitalize=}} will usually let you pet them.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:279-->
+  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:269-->
   <string Context="Faction Pet Text" ID="{{C|=faction.formattedName|capitalize=}} won't usually let you pet them.">{{C|=faction.formattedName|capitalize=}} won't usually let you pet them.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:290-->
+  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:280-->
   <string Context="Faction Rank Text" ID="You hold the =faction.rankTerm= of =rank= among them.">You hold the =faction.rankTerm= of =rank= among them.</string>
-  <!--Code references _S(): Assets/XRL Application/World/Factions/Faction.cs:301-->
+  <!--Code references _S(): Assets/XRL Application/World/Factions/Faction.cs:291-->
   <string Context="Faction Holy Place Text" ID="You are welcome in their holy places.">You are welcome in their holy places.</string>
-  <!--Code references _S(): Assets/XRL Application/World/Factions/Faction.cs:302-->
+  <!--Code references _S(): Assets/XRL Application/World/Factions/Faction.cs:292-->
   <string Context="Faction Holy Place Text" ID="You aren't welcome in their holy places.">You aren't welcome in their holy places.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:320-->
+  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:310-->
   <string Context="Faction Feeling Description" ID="=feelingText=&#xA;&#xA;=fragments.join: =" Value="=feelingText=&#xA;&#xA;=fragments.join: =" />
   <!--Code references _T():
-Assets/XRL Application/World/Factions/Faction.cs:395
-Assets/XRL Application/World/Factions/Faction.cs:399
-Assets/XRL Application/World/Factions/Faction.cs:404
+Assets/XRL Application/World/Factions/Faction.cs:385
+Assets/XRL Application/World/Factions/Faction.cs:389
+Assets/XRL Application/World/Factions/Faction.cs:394
 -->
   <string Context="Faction Secret Description (fragment)" ID="the =sultanTerm= they worship">the =sultanTerm= they worship</string>
   <!--Code references _T():
-Assets/XRL Application/World/Factions/Faction.cs:423
-Assets/XRL Application/World/Factions/Faction.cs:431
-Assets/XRL Application/World/Factions/Faction.cs:442
+Assets/XRL Application/World/Factions/Faction.cs:413
+Assets/XRL Application/World/Factions/Faction.cs:421
+Assets/XRL Application/World/Factions/Faction.cs:432
 -->
   <string Context="Faction Secret Description (fragment)" ID="=sultanTerm|plural= they admire or despise">=sultanTerm|plural= they admire or despise</string>
-  <!--Code references _S(): Assets/XRL Application/World/Factions/Faction.cs:463-->
+  <!--Code references _S(): Assets/XRL Application/World/Factions/Faction.cs:453-->
   <string Context="Faction Secret Description (fragment)" ID="gossip that's about them">gossip that's about them</string>
-  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:469-->
+  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:459-->
   <string Context="Faction Secret Description (fragment)" ID="=faction.FormattedName|rules= =interestsBlurb=.">=faction.FormattedName|rules= =interestsBlurb=.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:479-->
+  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:469-->
   <string Context="Faction Secret Description (fragment)" ID="=faction.FormattedName|rules= =faction.ifPlural:are:is= interested in trading secrets about =both.andList=.">=faction.FormattedName|rules= =faction.ifPlural:are:is= interested in trading secrets about =both.andList=.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:487-->
+  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:477-->
   <string Context="Faction Secret Description (fragment)" ID="=faction.FormattedName|rules= =faction.ifPlural:are:is= =bothDescription= =both.andList=.">=faction.FormattedName|rules= =faction.ifPlural:are:is= =bothDescription= =both.andList=.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:499-->
+  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:489-->
   <string Context="Faction Secret Description (fragment)" ID="=faction.FormattedName|rules= =faction.ifPlural:are:is= interested in sharing secrets about =sell.andList=.">=faction.FormattedName|rules= =faction.ifPlural:are:is= interested in sharing secrets about =sell.andList=.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:507-->
+  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:497-->
   <string Context="Faction Secret Description (fragment)" ID="=faction.FormattedName|rules= =faction.ifPlural:are:is= =sellDescription= =sell.andList=.">=faction.FormattedName|rules= =faction.ifPlural:are:is= =sellDescription= =sell.andList=.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:519-->
+  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:509-->
   <string Context="Faction Secret Description (fragment)" ID="=faction.FormattedName|rules= =faction.ifPlural:are:is= interested in learning about =buy.andList=.">=faction.FormattedName|rules= =faction.ifPlural:are:is= interested in learning about =buy.andList=.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:527-->
+  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:517-->
   <string Context="Faction Secret Description (fragment)" ID="=faction.FormattedName|rules= =faction.ifPlural:are:is= =buyDescription= =buy.andList=.">=faction.FormattedName|rules= =faction.ifPlural:are:is= =buyDescription= =buy.andList=.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:537-->
+  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:527-->
   <string Context="Faction Secret Description (pre-extra)" ID="=fragments.join:&#xA;&#xA;=" Value="=fragments.join:&#xA;&#xA;=" />
-  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:552-->
+  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:542-->
   <string Context="Faction Secret Description Extra (fragment)" ID="=faction.FormattedName|rules= =faction.ifPlural:are:is= interested in trading secrets about =sultanTerm|plural= they admire or despise and hearing gossip that's about them.">=faction.FormattedName|rules= =faction.ifPlural:are:is= interested in trading secrets about =sultanTerm|plural= they admire or despise and hearing gossip that's about them.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:554-->
+  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:544-->
   <string Context="Faction Secret Description Extra (fragment)" ID="They're also interested in trading secrets about =sultanTerm|plural= they admire or despise and hearing gossip that's about them.">They're also interested in trading secrets about =sultanTerm|plural= they admire or despise and hearing gossip that's about them.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:556-->
+  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:546-->
   <string Context="Faction Secret Description Extra (fragment)" ID="=faction.FormattedName|rules= =faction.ifPlural:are:is= interested in learning about =sultanTerm|plural= they admire or despise and hearing gossip that's about them.">=faction.FormattedName|rules= =faction.ifPlural:are:is= interested in learning about =sultanTerm|plural= they admire or despise and hearing gossip that's about them.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:558-->
+  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:548-->
   <string Context="Faction Secret Description Extra (fragment)" ID="They're also interested in learning about =sultanTerm|plural= they admire or despise and hearing gossip that's about them.">They're also interested in learning about =sultanTerm|plural= they admire or despise and hearing gossip that's about them.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:560-->
+  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:550-->
   <string Context="Faction Secret Description Extra (fragment)" ID="=faction.FormattedName|rules= =faction.ifPlural:are:is= interested in sharing secrets about =sultanTerm|plural= they admire or despise and hearing gossip that's about them.">=faction.FormattedName|rules= =faction.ifPlural:are:is= interested in sharing secrets about =sultanTerm|plural= they admire or despise and hearing gossip that's about them.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:562-->
+  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:552-->
   <string Context="Faction Secret Description Extra (fragment)" ID="They're also interested in sharing secrets about =sultanTerm|plural= they admire or despise and hearing gossip that's about them.">They're also interested in sharing secrets about =sultanTerm|plural= they admire or despise and hearing gossip that's about them.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:564-->
+  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:554-->
   <string Context="Faction Secret Description Extra (fragment)" ID="=faction.FormattedName|rules= =faction.ifPlural:are:is= interested in hearing gossip that's about them.">=faction.FormattedName|rules= =faction.ifPlural:are:is= interested in hearing gossip that's about them.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:566-->
+  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:556-->
   <string Context="Faction Secret Description Extra (fragment)" ID="They're also interested in hearing gossip that's about them.">They're also interested in hearing gossip that's about them.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:580-->
+  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:570-->
   <string Context="Faction Secret Description Extra (fragment)" ID="=faction.FormattedName|rules= =faction.ifPlural:are:is= interested in trading secrets about =sultanTerm|plural= they admire or despise.">=faction.FormattedName|rules= =faction.ifPlural:are:is= interested in trading secrets about =sultanTerm|plural= they admire or despise.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:582-->
+  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:572-->
   <string Context="Faction Secret Description Extra (fragment)" ID="They're also interested in trading secrets about =sultanTerm|plural= they admire or despise.">They're also interested in trading secrets about =sultanTerm|plural= they admire or despise.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:584-->
+  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:574-->
   <string Context="Faction Secret Description Extra (fragment)" ID="=faction.FormattedName|rules= =faction.ifPlural:are:is= interested in learning about =sultanTerm|plural= they admire or despise.">=faction.FormattedName|rules= =faction.ifPlural:are:is= interested in learning about =sultanTerm|plural= they admire or despise.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:586-->
+  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:576-->
   <string Context="Faction Secret Description Extra (fragment)" ID="They're also interested in learning about =sultanTerm|plural= they admire or despise.">They're also interested in learning about =sultanTerm|plural= they admire or despise.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:588-->
+  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:578-->
   <string Context="Faction Secret Description Extra (fragment)" ID="=faction.FormattedName|rules= =faction.ifPlural:are:is= interested in sharing secrets about =sultanTerm|plural= they admire or despise.">=faction.FormattedName|rules= =faction.ifPlural:are:is= interested in sharing secrets about =sultanTerm|plural= they admire or despise.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:590-->
+  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:580-->
   <string Context="Faction Secret Description Extra (fragment)" ID="They're also interested in sharing secrets about =sultanTerm|plural= they admire or despise.">They're also interested in sharing secrets about =sultanTerm|plural= they admire or despise.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:602-->
+  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:592-->
   <string Context="Faction Secret Description (extras)" ID="=fragments.join: =">=fragments.join: =</string>
   <!--Code references _S():
-Assets/XRL Application/World/Factions/Faction.cs:632
-Assets/XRL Application/World/Factions/Faction.cs:702
+Assets/XRL Application/World/Factions/Faction.cs:622
+Assets/XRL Application/World/Factions/Faction.cs:689
 -->
   <string Context="Faction Default Rank Term" ID="rank">rank</string>
-  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:682-->
+  <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:672-->
   <string Context="Faction FormattedName" ID="=withArticle.if:the ==displayName=">=withArticle.if:the ==displayName=</string>
   <!--Code references _T(): Assets/XRL Application/World/Factions/Faction.cs:1220-->
   <string Context="Faction Heirloom Name" ID="=spice:elements.$element.adjectives.!random= =spice:itemTypes.$type.!random= of =namedRuin=">=spice:elements.$element.adjectives.!random= =spice:itemTypes.$type.!random= of =namedRuin=</string>
@@ -2830,9 +2840,9 @@ Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/FreezingRay.c
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/HeightenedAgility.cs:37-->
   <string Context="Triple-Jointed Triggered Combat Text" ID="No cooldown!">No cooldown!</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/HeightenedHearing.cs:39-->
-  <string Context="hostile perception verb" ID="hear">hear</string>
+  <string Context="HeightenedHearing hostile perception verb" ID="hear">hear</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/HeightenedSmell.cs:39-->
-  <string Context="HightenedSmell hostile perception verb" ID="smell">smell</string>
+  <string Context="HeightenedSmell hostile perception verb" ID="smell">smell</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/Metamorphosis.cs:20-->
   <string Context="Metamorphed Effect DisplayName" ID="metamorphed">metamorphed</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/Metamorphosis.cs:57-->
@@ -3294,21 +3304,21 @@ Assets/XRL Application/World/Game Objects/Parts/Terrain/VillageTerrain.cs:87
   <string Context="VillageTerrain text terrainFragment double" ID="=terrainFragment= and =terrainFragment2=">=terrainFragment= and =terrainFragment2=</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Terrain/VillageTerrain.cs:109-->
   <string Context="VillageTerrain Description" ID="=spice:villages.description.!random|capitalize=.">=spice:villages.description.!random|capitalize=.</string>
-  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Relics/World.RelicGenerator.cs:43-->
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Relics/World.RelicGenerator.cs:45-->
   <string ID="Loading Relics.xml">Loading Relics.xml</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Relics/World.RelicGenerator.cs:154-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Relics/World.RelicGenerator.cs:185-->
   <string Context="RelicGenerator personNounPossessive" ID="=spice:personNouns.!random|possessive=">=spice:personNouns.!random|possessive=</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Relics/World.RelicGenerator.cs:155-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Relics/World.RelicGenerator.cs:186-->
   <string Context="RelicGenerator Name" ID="=spice:history.relics.names.!random|title=">=spice:history.relics.names.!random|title=</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Relics/World.RelicGenerator.cs:173-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Relics/World.RelicGenerator.cs:204-->
   <string Context="RelicGenerator Name By Region" ID="=spice:elements.$element.adjectives.!random|title= =spice:itemTypes.$itemType.!random|title= of =spice.entity:newName|title=">=spice:elements.$element.adjectives.!random|title= =spice:itemTypes.$itemType.!random|title= of =spice.entity:newName|title=</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Relics/World.RelicGenerator.cs:1891-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Relics/World.RelicGenerator.cs:1922-->
   <string Context="RelicGenerator Element Bestowal" ID=" =subject.Itis= =spice:instancesOf.stamped_VAR.!random=." Value=" =subject.Itis= =spice:instancesOf.stamped_VAR.!random=." />
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Relics/World.RelicGenerator.cs:1918-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Relics/World.RelicGenerator.cs:1949-->
   <string Context="RelicGenerator Liked Factions" ID=" There's an engraving of =faction.factionName= being =spice:instancesOf.venerated.!random=." Value=" There's an engraving of =faction.factionName= being =spice:instancesOf.venerated.!random=." />
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Relics/World.RelicGenerator.cs:1931-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Relics/World.RelicGenerator.cs:1962-->
   <string Context="RelicGenerator Loved Factions" ID=" There's an engraving of =faction.factionName= being =spice:instancesOf.venerated.!random=." Value=" There's an engraving of =faction.factionName= being =spice:instancesOf.venerated.!random=." />
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Relics/World.RelicGenerator.cs:1946-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Relics/World.RelicGenerator.cs:1977-->
   <string Context="RelicGenerator Liked Factions" ID=" There's an engraving of =faction.factionName= being =spice:instancesOf.disparaged.!random=." Value=" There's an engraving of =faction.factionName= being =spice:instancesOf.disparaged.!random=." />
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Tinkering/Disassembly.cs:65-->
   <string Context="Disassembly action description" ID="disassembling">disassembling</string>
@@ -3403,7 +3413,7 @@ Assets/XRL Application/World/Settlements/World.Settlements.cs:111
   <string Context="keybind" ID="unknown key">unknown key</string>
   <!--Code references _S(): Assets/XRL Application/World/Text/Delegates.cs:141-->
   <string Context="keybind" ID="{{W|Alt}}">{{W|Alt}}</string>
-  <!--Code references _S(): Assets/XRL Application/World/Text/Delegates.cs:198-->
+  <!--Code references _S(): Assets/XRL Application/World/Text/Delegates.cs:193-->
   <string ID="an uncharted dimension">an uncharted dimension</string>
   <!--Code references _S(): Assets/XRL Application/World/Text/Delegates/Delegates.GameObjectBlueprint.cs:45-->
   <string Context="Default LairName" ID="lair">lair</string>
