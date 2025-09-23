@@ -736,7 +736,6 @@
     Name="Antelopes"
     DisplayName="antelopes"
     Parent="Beasts"
-    InterestedInSultans="true"
     InitialPlayerReputation="0"
     PositiveSound="Sounds/Reputation/sfx_reputation_antelopes_positive"
     NegativeSound="Sounds/Reputation/sfx_reputation_antelopes_negative"
@@ -1702,8 +1701,10 @@
     <waterritual
       Skill="Physic_StaunchWounds"
     />
-    <interest Tags="sultan" WillBuy="false" WillSell="false" />
-    <interest Tags="sultanTombPropaganda" WillBuy="false" WillSell="false"></interest>
+    <interests>
+      <interest Tags="sultan" WillBuy="false" WillSell="false" />
+      <interest Tags="sultanTombPropaganda" WillBuy="false" WillSell="false" />
+    </interests>
     <feeling About="*" Value="0" />
     <factionworshipattitudes>
       <factionworshipattitude Name="Girsh" Attitude="-200" />

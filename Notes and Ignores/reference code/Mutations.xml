@@ -237,7 +237,7 @@
           <case Value="true"><p><stat Name="MaxQuills" /> <stat Name="Quills" /></p></case>
           <default><p>+{{rules|80-120}} <stat Name="Quills" /></p></default>
         </switch>
-        <p>May expel 10% of your <stat Name="Quills" /> in a burst around yourself ({{c|&#x1A;}}<stat Name="QuillPen" /> {{r|&#x3;}}<stat Name="QuillDamage" />)</p>
+        <p>May expel 10% of your <stat Name="Quills" /> in a burst around yourself (<gametext>=pv=<stat Name="QuillPen" /> =damage=<stat Name="QuillDamage" /></gametext>)</p>
         <p>Regenerate <stat Name="Quills" /> at the approximate rate of <stat Name="RegenRate" /> per round</p>
         <p>+<stat Name="AV" /> AV as long as you retain half your <stat Name="Quills" /> (+<stat Name="AVWithPenalty" /> AV otherwise)</p>
         <p>Creatures attacking you in melee may impale themselves on your <stat Name="Quills" />, breaking roughly 1% of them and reflecting 3% damage per <stat Name="Quill" /> broken.</p>
@@ -285,29 +285,214 @@
         <p>+300 reputation with {{w|arachnids}}</p>
       </leveltext>
     </mutation>
-    <mutation Name="Stinger (Confusing Venom)" Cost="3" MaxSelected="1" Class="Stinger" Variant="Stinger Confusion" Exclusions="Stinger (Paralyzing Venom),Stinger (Poisoning Venom)" BearerDescription="those with stingers tipped with confusing venom" Tile="Mutations/stinger.bmp" />
-    <mutation Name="Stinger (Paralyzing Venom)" Cost="4" MaxSelected="1" Class="Stinger" Variant="Stinger Paralysis" Exclusions="Stinger (Confusing Venom),Stinger (Poisoning Venom)" BearerDescription="those with stingers tipped with paralyzing venom" Tile="Mutations/stinger.bmp" />
-    <mutation Name="Stinger (Poisoning Venom)" Cost="4" MaxSelected="1" Class="Stinger" Variant="Stinger Poison" Exclusions="Stinger (Confusing Venom),Stinger (Paralyzing Venom)" BearerDescription="those with stingers tipped with poisoning venom" Tile="Mutations/stinger.bmp" />
-    <mutation Name="Thick Fur" Cost="1" MaxSelected="1" Class="ThickFur" Exclusions="" BearerDescription="the thickly furred" Tile="Mutations/thick_fur.bmp" />
-    <mutation Name="Triple-jointed" Cost="3" MaxSelected="1" Class="HeightenedAgility" Exclusions="" BearerDescription="the triple-jointed" Tile="Mutations/triple-jointed.bmp" />
-    <mutation Name="Two-headed" Cost="3" MaxSelected="1" Class="TwoHeaded" Exclusions="" BearerDescription="the two-headed" Tile="Mutations/two-headed.bmp" />
-    <mutation Name="Two-hearted" Cost="3" MaxSelected="1" Class="TwoHearted" Exclusions="" BearerDescription="the two-hearted" Tile="Mutations/two-hearted.bmp" />
-    <mutation Name="Wings" Cost="4" MaxSelected="1" Class="Wings" Exclusions="" BearerDescription="the winged" Tile="Mutations/wings.bmp" />
+    <mutation Name="Stinger (Confusing Venom)" Cost="3" MaxSelected="1" Class="Stinger" Variant="Stinger Confusion" Exclusions="Stinger (Paralyzing Venom),Stinger (Poisoning Venom)" BearerDescription="those with stingers tipped with confusing venom" Tile="Mutations/stinger.bmp">
+      <description>
+        <p>You bear a tail with a stinger that delivers <stat Name="VenomType" /> venom to your enemies.</p>
+      </description>
+      <leveltext>
+        <p>20% chance on melee attack to sting your opponent <gametext>(=pv=<stat Name="StingerPen" /> =damage=<stat Name="StingerDamage" /></gametext>)</p>
+        <p>Stinger is a long blade and can only penetrate once.</p>
+        <p>Always sting on charge or lunge.</p>
+        <p>Stinger applies venom on damage (only 20% chance if Stinger is your primary weapon).</p>
+        <p>May use Sting activated ability to strike with your stinger and automatically hit and penetrate.</p>
+        <statline Name="Cooldown" DisplayName="Sting cooldown" />
+        <p>Venom confuses opponents for <stat Name="Duration" /></p>
+        <p>+200 reputation with {{w|arachnids}}</p>
+      </leveltext>
+    </mutation>
+    <mutation Name="Stinger (Paralyzing Venom)" Cost="4" MaxSelected="1" Class="Stinger" Variant="Stinger Paralysis" Exclusions="Stinger (Confusing Venom),Stinger (Poisoning Venom)" BearerDescription="those with stingers tipped with paralyzing venom" Tile="Mutations/stinger.bmp">
+      <description>
+        <p>You bear a tail with a stinger that delivers <stat Name="VenomType" /> venom to your enemies.</p>
+      </description>
+      <leveltext>
+        <p>20% chance on melee attack to sting your opponent <gametext>(=pv=<stat Name="StingerPen" /> =damage=<stat Name="StingerDamage" /></gametext>)</p>
+        <p>Stinger is a long blade and can only penetrate once.</p>
+        <p>Always sting on charge or lunge.</p>
+        <p>Stinger applies venom on damage (only 20% chance if Stinger is your primary weapon).</p>
+        <p>May use Sting activated ability to strike with your stinger and automatically hit and penetrate.</p>
+        <statline Name="Cooldown" DisplayName="Sting cooldown" />
+        <p>Venom paralyzes opponents for <stat Name="Duration" /></p>
+        <p>+200 reputation with {{w|arachnids}}</p>
+      </leveltext>
+    </mutation>
+    <mutation Name="Stinger (Poisoning Venom)" Cost="4" MaxSelected="1" Class="Stinger" Variant="Stinger Poison" Exclusions="Stinger (Confusing Venom),Stinger (Paralyzing Venom)" BearerDescription="those with stingers tipped with poisoning venom" Tile="Mutations/stinger.bmp">
+      <description>
+        <p>You bear a tail with a stinger that delivers <stat Name="VenomType" /> venom to your enemies.</p>
+      </description>
+      <leveltext>
+        <p>20% chance on melee attack to sting your opponent <gametext>(=pv=<stat Name="StingerPen" /> =damage=<stat Name="StingerDamage" /></gametext>)</p>
+        <p>Stinger is a long blade and can only penetrate once.</p>
+        <p>Always sting on charge or lunge.</p>
+        <p>Stinger applies venom on damage (only 20% chance if Stinger is your primary weapon).</p>
+        <p>May use Sting activated ability to strike with your stinger and automatically hit and penetrate.</p>
+        <statline Name="Cooldown" DisplayName="Sting cooldown" />
+        <p>Venom poisons opponents for <stat Name="Duration" /> (damage increment <stat Name="PoisonDamage" />)</p>
+        <p>+200 reputation with {{w|arachnids}}</p>
+      </leveltext>
+    </mutation>
+    <mutation Name="Thick Fur" Cost="1" MaxSelected="1" Class="ThickFur" Exclusions="" BearerDescription="the thickly furred" Tile="Mutations/thick_fur.bmp">
+      <description>
+        <p>You are covered in a thick coat of fur, which protects you from the elements.</p>
+        <p></p>
+        <p>+5 Heat Resistance</p>
+        <p>+5 Cold Resistance</p>
+        <p>+100 reputation with {{w|apes}}, {{w|baboons}}, {{w|bears}}, and {{w|grazing hedonists}}</p>
+      </description>
+      <leveltext></leveltext>
+    </mutation>
+    <mutation Name="Triple-jointed" Cost="3" MaxSelected="1" Class="HeightenedAgility" Exclusions="" BearerDescription="the triple-jointed" Tile="Mutations/triple-jointed.bmp">
+      <description>
+        <p>Your joints stretch much further than usual.</p>
+      </description>
+      <leveltext>
+        <p>+<stat Name="Agility" /> Agility</p>
+        <p><stat Name="Chance" />% chance that Sprint and skills with Agility prerequisites don't go on cooldown after use</p>
+      </leveltext>
+    </mutation>
+    <mutation Name="Two-headed" Cost="3" MaxSelected="1" Class="TwoHeaded" Exclusions="" BearerDescription="the two-headed" Tile="Mutations/two-headed.bmp">
+      <description>
+        <p>You have two heads.</p>
+      </description>
+      <leveltext>
+        <p>Mental actions have <stat Name="MentalActionDiscount" />% lower action costs</p>
+        <p><stat Name="ShakeOff" />% chance initially and each round to shake off a negative mental status effect</p>
+      </leveltext>
+    </mutation>
+    <mutation Name="Two-hearted" Cost="3" MaxSelected="1" Class="TwoHearted" Exclusions="" BearerDescription="the two-hearted" Tile="Mutations/two-hearted.bmp">
+      <description>
+        <p>You have two hearts.</p>
+      </description>
+      <leveltext>
+        <p>+<stat Name="Toughness"/> Toughness</p>
+        <p>You can sprint for <stat Name="SprintBonus" />% longer.</p>
+      </leveltext>
+    </mutation>
+    <mutation Name="Wings" Cost="4" MaxSelected="1" Class="Wings" Exclusions="" BearerDescription="the winged" Tile="Mutations/wings.bmp">
+      <description>
+        <!-- Will be replaced with blueprints VariantDescription if it exists. -->
+        <p>You fly.</p>
+      </description>
+      <leveltext>
+        <p>You travel on the world map at <stat Name="WorldMapTravelSpeed" />x speed.</p>
+        <p><stat Name="LostSaveBonus" />% reduced chance of becoming lost</p>
+        <p>While outside, you may fly. You cannot be hit in melee by grounded creatures while flying.</p>
+        <p><stat Name="CrashChance" />% chance of falling clumsily to the ground</p>
+        <p><stat Name="SprintingMoveSpeedBonus" Filters="signed" />% move speed while sprinting</p>
+        <p>You can jump <stat Name="JumpDistanceBonus" Unit="square" /> farther.</p>
+        <p>You can charge <stat Name="ChargeDistanceBonus" Unit="square" /> farther.</p>
+        <p>+300 reputation with {{w|birds}} and {{w|winged mammals}}</p>
+      </leveltext>
+    </mutation>
   </category>
 
   <category Name="PhysicalDefects" DisplayName="{{R|Physical Defects}}" Foreground="w" Detail="W" Defect="true">
-    <mutation Name="Albino" Cost="-2" MaxSelected="1" Class="Albino" Exclusions="Photosynthetic Skin" BearerDescription="albinos" Tile="Mutations/albino.bmp" />
-    <mutation Name="Amphibious" Cost="-3" MaxSelected="1" Class="Amphibious" Exclusions="" BearerDescription="the amphibious" Tile="Mutations/amphibious.bmp" />
-    <mutation Name="Brittle Bones" Cost="-4" MaxSelected="1" Class="BrittleBones" Exclusions="" BearerDescription="the brittle-boned" Tile="Mutations/brittle_bones.bmp" />
-    <mutation Name="Nerve Poppy" Cost="-2" MaxSelected="1" Class="Analgesia" Exclusions="" BearerDescription="those who cannot feel pain" Tile="Mutations/nerve_poppy.bmp" />
-    <mutation Name="Carnivorous" Cost="-2" MaxSelected="1" Class="Carnivorous" Exclusions="Photosynthetic Skin" BearerDescription="the carnivorous" Tile="Items/sw_rawmeat1.bmp" />
-    <mutation Name="Cold-Blooded" Cost="-2" MaxSelected="1" Class="ColdBlooded" Exclusions="" BearerDescription="the cold-blooded" Tile="Mutations/cold-blooded.bmp" />
-    <mutation Name="Electromagnetic Impulse" Cost="-2" MaxSelected="1" Class="ElectromagneticImpulse" Exclusions="" BearerDescription="those who cannot control their electromagnetic pulses" Tile="Mutations/electromagnetic_impulse.bmp" />
-    <mutation Name="Hooks for Feet" Cost="-4" MaxSelected="1" Class="HooksForFeet" Exclusions="" BearerDescription="those with hooks for feet" Tile="Mutations/hooks_for_feet.bmp" />
-    <mutation Name="Irritable Genome" Cost="-4" MaxSelected="1" Class="IrritableGenome" Exclusions="" BearerDescription="those with irritable genomes" Tile="Mutations/irritable_genome.bmp" />
-    <mutation Name="Myopic" Cost="-3" MaxSelected="1" Class="Myopia" Exclusions="" BearerDescription="the myopic" Tile="Mutations/myopia.bmp" />
-    <mutation Name="Spontaneous Combustion" Cost="-3" MaxSelected="1" Class="SpontaneousCombustion" BearerDescription="those who spontaneously combust" Exclusions="" Tile="Mutations/spontaneous_combustion.bmp" />
-    <mutation Name="Tonic Allergy" Cost="-4" MaxSelected="1" Class="TonicAllergy" Exclusions="" BearerDescription="the allergic" Tile="Mutations/tonic_allergy.bmp" />
+    <mutation Name="Albino" Cost="-2" MaxSelected="1" Class="Albino" Exclusions="Photosynthetic Skin" BearerDescription="albinos" Tile="Mutations/albino.bmp">
+      <description>
+        <p>Your skin, hair, and eyes are absent of pigment.</p>
+        <p></p>
+        <p>You regenerate hit points at one-fifth the usual rate in the daylight.</p>
+      </description>
+      <leveltext></leveltext>
+    </mutation>
+    <mutation Name="Amphibious" Cost="-3" MaxSelected="1" Class="Amphibious" Exclusions="" BearerDescription="the amphibious" Tile="Mutations/amphibious.bmp">
+      <description>
+        <p>Your skin must be kept moist with fresh water.</p>
+        <p></p>
+        <p>You pour water on yourself rather than drinking it to quench your thirst.</p>
+        <p>You require about two-thirds more water than usual.</p>
+        <p>+100 reputation with {{w|frogs}}</p>
+      </description>
+      <leveltext></leveltext>
+    </mutation>
+    <mutation Name="Brittle Bones" Cost="-4" MaxSelected="1" Class="BrittleBones" Exclusions="" BearerDescription="the brittle-boned" Tile="Mutations/brittle_bones.bmp">
+      <description>
+        <p>Your bones are brittle.</p>
+        <p></p>
+        <p>You suffer 50% more damage from bludgeoning attacks, falling, and other sources of concussive damage.</p>
+      </description>
+      <leveltext></leveltext>
+    </mutation>
+    <mutation Name="Nerve Poppy" Cost="-2" MaxSelected="1" Class="Analgesia" Exclusions="" BearerDescription="those who cannot feel pain" Tile="Mutations/nerve_poppy.bmp">
+      <description>
+        <p>You lack a developed sense of pain.</p>
+        <p></p>
+        <p>You only know your general state of health and not your precise number of hit points.</p>
+      </description>
+      <leveltext></leveltext>
+    </mutation>
+    <mutation Name="Carnivorous" Cost="-2" MaxSelected="1" Class="Carnivorous" Exclusions="Photosynthetic Skin" BearerDescription="the carnivorous" Tile="Items/sw_rawmeat1.bmp">
+      <description>
+        <p>You eat meat exclusively.</p>
+        <p></p>
+        <p>You get no satiation from foods that aren't meat.</p>
+        <p>If you eat raw food that isn't meat, there's a 50% chance you become ill for 2 hours.</p>
+        <p>You can't cook with plant or fungus ingredients.</p>
+        <p>You don't get ill when you eat raw meat.</p>
+        <p>You can eat raw meat without being famished.</p>
+      </description>
+      <leveltext></leveltext>
+    </mutation>
+    <mutation Name="Cold-Blooded" Cost="-2" MaxSelected="1" Class="ColdBlooded" Exclusions="" BearerDescription="the cold-blooded" Tile="Mutations/cold-blooded.bmp">
+      <description>
+        <p>Your vitality depends on your temperature; at higher temperatures, you are more lively. At lower temperatures, you are more torpid.</p>
+        <p></p>
+        <p>Your base quickness score is reduced by 10.</p>
+        <p>Your quickness increases as your temperature increases and decreases as your temperature decreases.</p>
+        <p>+100 reputation with {{w|unshelled reptiles}}</p>
+      </description>
+      <leveltext></leveltext>
+    </mutation>
+    <mutation Name="Electromagnetic Impulse" Cost="-2" MaxSelected="1" Class="ElectromagneticImpulse" Exclusions="" BearerDescription="those who cannot control their electromagnetic pulses" Tile="Mutations/electromagnetic_impulse.bmp">
+      <description>
+        <p>You involuntarily release electromagnetic pulses, deactivating robots and artifacts around yourself.</p>
+        <p></p>
+        <p>Small chance each round you're in combat that you release an electromagnetic pulse with radius 3, deactivating robots and artifacts (including those you carry) for 11-20 rounds.</p>
+      </description>
+      <leveltext></leveltext>
+    </mutation>
+    <mutation Name="Hooks for Feet" Cost="-4" MaxSelected="1" Class="HooksForFeet" Exclusions="" BearerDescription="those with hooks for feet" Tile="Mutations/hooks_for_feet.bmp">
+      <description>
+        <!-- will be replaced by blueprint's VariantDescription property if it exists. -->
+        <p>You have <stat Name="BlueprintName" /> for feet.</p>
+        <p></p>
+        <p>You cannot wear shoes.</p>
+      </description>
+      <leveltext></leveltext>
+    </mutation>
+    <mutation Name="Irritable Genome" Cost="-4" MaxSelected="1" Class="IrritableGenome" Exclusions="" BearerDescription="those with irritable genomes" Tile="Mutations/irritable_genome.bmp">
+      <description>
+        <p>Your genome is irritable and unpredictable.</p>
+        <p></p>
+        <p>Whenever you spend a mutation point, the next mutation point you gain will be spent randomly.</p>
+        <p>Whenever you buy a new mutation, you get a random one instead of a choice of three.</p>
+      </description>
+      <leveltext></leveltext>
+    </mutation>
+    <mutation Name="Myopic" Cost="-3" MaxSelected="1" Class="Myopia" Exclusions="" BearerDescription="the myopic" Tile="Mutations/myopia.bmp">
+      <description>
+        <p>You are nearsighted.</p>
+        <p></p>
+        <p>You can only see up to a radius of 10.</p>
+      </description>
+      <leveltext></leveltext>
+    </mutation>
+    <mutation Name="Spontaneous Combustion" Cost="-3" MaxSelected="1" Class="SpontaneousCombustion" BearerDescription="those who spontaneously combust" Exclusions="" Tile="Mutations/spontaneous_combustion.bmp">
+      <description>
+        <p>You spontaneously erupt into flames.</p>
+        <p></p>
+        <p>Small chance each round you're in combat that you spontaneously erupt into flames.</p>
+      </description>
+      <leveltext></leveltext>
+    </mutation>
+    <mutation Name="Tonic Allergy" Cost="-4" MaxSelected="1" Class="TonicAllergy" Exclusions="" BearerDescription="the allergic" Tile="Mutations/tonic_allergy.bmp">
+      <description>
+        <p>You are allergic to tonics.</p>
+        <p></p>
+        <p>The chance your mutant physiology reacts adversely to a tonic is increased to 33%.</p>
+        <p>If you react adversely this way to a salve or ubernostrum tonic, the adverse reaction effect is chosen randomly from among other tonic effects. You will still heal.</p>
+      </description>
+      <leveltext></leveltext>
+    </mutation>
   </category>
 
   <category Name="Mental" DisplayName="{{G|Mental Mutations}}" Foreground="b" Detail="M" Stat="Ego" Property="MentalMutationShift" ForceProperty="MentalMutationForceShift">
