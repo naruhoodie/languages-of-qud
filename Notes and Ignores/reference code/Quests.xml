@@ -5,7 +5,7 @@
          Accomplishment="You solved the mystery of the chewed-up watervine and warned the villagers of Joppa of the Girsh." 
          Hagiograph="In the month of =month= of =year=, =name= walked below the chrome arches, beat back the throng of girshlings, and healed the wilting crops."
          HagiographCategory="DoesSomethingRad"
-         Gospel="At the bloody Battle of Red Rock, =name= fought the combined girshling and baboon forces to liberate the villagers of Joppa. In =player.t's= honor they &lt;spice.history.gospels.Celebration.LateSultanate.!random&gt;.">
+         Gospel="At the bloody Battle of Red Rock, =name= fought the combined girshling and baboon forces to liberate the villagers of Joppa. In =player.t's= honor they =spice:history.gospels.Celebration.LateSultanate.!random=.">
 
     <step Name="Travel to Red Rock" XP="50">
       <text>Journey two parasangs north of Joppa to Red Rock.</text>
@@ -45,7 +45,7 @@
          Accomplishment="You fetched a trinket for an old man."
          Hagiograph="Inside a temple of water and vine, =name= taught an old man the value of chrome."
          HagiographCategory="Trysts"
-         Gospel="&lt;spice.elements.entity@elements[random].weddingConditions.!random.capitalize&gt;, =name= cemented =player.possessive= friendship with the Tinkers' Guild by marrying Argyve.">
+         Gospel="=spice:elements.entity@elements[random].weddingConditions.!random.capitalize=, =name= cemented =player.possessive= friendship with the Tinkers' Guild by marrying Argyve.">
     
     <step Name="Find a Knickknack" XP="0">
       <text>Search the regions surrounding Joppa for an artifact.</text>
@@ -61,7 +61,7 @@
          Accomplishment="You fetched another trinket for an old man."
          Hagiograph="In the shadow of steel beneath the High Salt Sun, =name= taught an old man the value of chrome."
          HagiographCategory="Trysts"
-         Gospel="&lt;spice.elements.entity@elements[random].weddingConditions.!random.capitalize&gt;, =name= cemented =player.possessive= friendship with the Tinkers' Guild by marrying Argyve for a second time.">
+         Gospel="=spice:elements.entity@elements[random].weddingConditions.!random.capitalize=, =name= cemented =player.possessive= friendship with the Tinkers' Guild by marrying Argyve for a second time.">
 
     <step Name="Find Another Knickknack" XP="0">
 			<text>Search the regions surrounding Joppa for another artifact.</text>
@@ -191,7 +191,7 @@
 		 Achievement="ACH_OMONPORCH_EARL"
          Hagiograph="In the month of =month= of =year=, =name= appointed Asphodel the Lovely earl of Omonporch and Protector of the Spindle Gjaus."
          HagiographCategory="Treats"
-         Gospel="In =year=, =name= appointed the corrupt administrator Asphodel as earl and minister of Omonporch. There xe mandated the practice of &lt;spice.elements.entity@elements[random].practices.!random&gt; in =player.t's= name.">
+         Gospel="In =year=, =name= appointed the corrupt administrator Asphodel as earl and minister of Omonporch. There xe mandated the practice of =spice:elements.entity@elements[random].practices.!random= in =player.t's= name.">
 
     <step Name="Travel to Omonporch" XP="1000">
       <text>Travel north to the Spindle at Omonporch.</text>
@@ -274,7 +274,7 @@
          Accomplishment="At the behest of a hindren pariah, you traveled to the hidden village of Bey Lah to investigate a mystery."
          Hagiograph="Benevolent =name= agreed to meddle in the affairs of the meadow at the behest of a deerfolk pariah. The sultan reigns with kindheartedness!"
          HagiographCategory="MeetsWithCounselors"
-         Gospel="At &lt;spice.time.partsOfDay.!random&gt; under a &lt;spice.commonPhrases.strange.!random.article&gt; and meadowed sky, the hindren of Bey Lah saw an image on the horizon that looked like a great looking glass. It was =name=, and once =player.subjective= arrived, the hindren built a monument to =player.objective= and thenceforth called =player.objective= the Looking Glass Kendren.">
+         Gospel="At =spice:time.partsOfDay.!random= under a =spice:commonPhrases.strange.!random.article= and meadowed sky, the hindren of Bey Lah saw an image on the horizon that looked like a great looking glass. It was =name=, and once =player.subjective= arrived, the hindren built a monument to =player.objective= and thenceforth called =player.objective= the Looking Glass Kendren.">
 
     <step Name="Investigate Bey Lah" XP="250">
       <text>Travel to the hidden village of Bey Lah and investigate the problems there.</text>
@@ -323,7 +323,7 @@
          Accomplishment="For better or worse to the fate of Bey Lah, you solved the mystery of Kindrish's disappearance and helped Warden Neelahind administer justice."
          Hagiograph="Hallowed savior! =name= brought peace and prosperity to the troubled deerfolk of the Bey Lah meadow."
          HagiographCategory="BecomesLoved"
-         Gospel="Acting against thieves and the authorities who empower them, =name= led an investigation in the village of Bey Lah. Because of =player.t's= &lt;spice.elements.entity@elements[random].adjectives.!random&gt; wit, the Warden Neelahind was able to properly administer justice.">
+         Gospel="Acting against thieves and the authorities who empower them, =name= led an investigation in the village of Bey Lah. Because of =player.t's= =spice:elements.entity@elements[random].adjectives.!random= wit, the Warden Neelahind was able to properly administer justice.">
 
     <step Name="Brief Warden Neelahind" XP="250">
       <text>Tell Bey Lah's Warden about the disputed nature of Kindrish's theft.</text>

@@ -934,7 +934,6 @@
       "void": [ "void", "nether", "vacuum", "nihility", "nullity", "abyss", "chasm", "fissure", "gulf", "gap", "lacuna", "womb", "nothingness", "schism" ],
       "vacuous": [ "vacuous", "vacant", "hollow", "barren", "pale", "spotless", "blank", "empty", "prosaic", "dreary", "dead", "flat", "inert", "forsaken" ],
       "immense": [ "colossal", "vast", "eternal", "boundless", "infinite" ],
-      "symbolOrNot": [ " ", " of =cultSymbol=" ],
       "Beguiling": [ "Charming =cult=", "=cult= and Love" ],
       "Burgeoning": [ "Verdant =cult=", "=cult=, Aspect of Plants" ],
       "Clairvoyance": [ "All-Seeing =cult=", "=cult= and the Eye" ],
@@ -974,35 +973,213 @@
       "barathrumiteUrnIntro": [ "In Memory of", "In Loving Memory of", "Dream in Peace", "Here Lie the Remains of" ],
       "ydFreeholderUrnIntro": [ "Here Rests in the Light of Friends", "Rest with Friends", "Under this Reef Lies", "Dream by the Light of Our Freehold", "=^:genericUrnIntro.!random=", "=^:genericUrnIntro.!random=", "=^:genericUrnIntro.!random=", "=^:genericUrnIntro.!random=" ],
       "eaterUrnIntro": [ "Here Rests in the Light of Gjaus", "Here Sheltered under Gjaus is", "In Memory of", "Rest in the Light of Gjaus", "In Loving Memory of", "Dream in Peace", "Dream in the Light of Gjaus" ],
-      "cryptIntroSingular": [ "Here Rests =familyCognomen=", "Here Lies =familyCognomen=", "Inside Lies =familyCognomen=", "Inside Rests =familyCognomen=", "Sheltered Here under Gjaus is =familyCognomen=" ],
-      "cryptIntroPlural": [ "Here Rest =familyCognomen=", "Here Lie =familyCognomen=", "Inside Lie =familyCognomen=", "Inside Rest =familyCognomen=", "Sheltered Here under Gjaus are =familyCognomen=" ],
+      "urnIntroByFaction": {
+        "Eater": "=spice:tombstones.eaterUrnIntro.!random=",
+        "YdFreehold": "=spice:tombstones.ydFreeholderUrnIntro.!random=",
+        "Barathrumites": "=spice:tombstones.barathrumiteUrnIntro.!random=",
+        "generic": "=spice:tombstones.genericUrnIntro.!random=",
+        "_failureredirect": "spice.tombstones.urnIntroByFaction.generic"
+      },
+      "cryptIntroSingular": [ 
+        "Here Rests=maybeFamilyCognomen|spaceBefore=",
+        "Here Lies=maybeFamilyCognomen|spaceBefore=",
+        "Inside Lies=maybeFamilyCognomen|spaceBefore=",
+        "Inside Rests=maybeFamilyCognomen|spaceBefore=",
+        "Sheltered Here under Gjaus is=maybeFamilyCognomen|spaceBefore="
+      ],
+      "cryptIntroPlural": [
+        "Here Rest=maybeFamilyCognomen|spaceBefore=",
+        "Here Lie=maybeFamilyCognomen|spaceBefore=",
+        "Inside Lie=maybeFamilyCognomen|spaceBefore=",
+        "Inside Rest=maybeFamilyCognomen|spaceBefore=",
+        "Sheltered Here under Gjaus are=maybeFamilyCognomen|spaceBefore="
+      ],
       "inscriptionBody": [ "=spice:instancesOf.murdered.!random= by =^:aCreature.!random=", "=^:itemDeath.!random=", "=^:factionDeath.!random=", "=^:specialCausesDeath.!random=", "=^:furnitureDeath.!random=", "=^:martyrDeath.!random=" ],
       "cryptPlaque": {
         "familyTitleSingular": [ "=familyName=", "The =spice:commonPhrases.familySingular.!random= of =familyName=", "The =familyName= =spice:commonPhrases.familySingular.!random=", "The Family of =familyName=", "The =familyName= Family" ],
         "familyTitlePlural": [ "The =spice:commonPhrases.familyPlural.!random= of =familyName=", "The =familyName= =spice:commonPhrases.familyPlural.!random=" ],
         "tutor": {
-          "familyCognomen": [ "the =tutor= of", "the =spice:instancesOf.tutorAdj.!random= =tutor= of", "the =spice:instancesOf.tutorAdj.!random= =personNouns= of", "the =spice:adjectives.!random= =tutor= of" ],
-          "familyWords": [ "=spice:commonPhrases.wisdom.!random= =markovSeed-is=", "Only the =spice:instancesOf.tutorAdj.!random= know =markovSeed-what=", "=spice:commonPhrases.wisdom.!random=, =spice:elements.scholarship.nounsPlural.!random=, and =markovSeed-a=", "Question =markovSeed-the=" ]
+          "cognomenNoun": "=spice:instancesOf.tutor.!random=",
+          "familyCognomen": [
+            "the =^:cognomenNoun|pluralize= of",
+            "the =spice:instancesOf.tutorAdj.!random= =^:cognomenNoun|pluralize= of",
+            "the =spice:instancesOf.tutorAdj.!random= =spice:personNouns.!random|pluralize= of",
+            "the =spice:adjectives.!random= =^:cognomenNoun|pluralize= of"
+          ],
+          "familyWords": [
+            "=spice:commonPhrases.wisdom.!random= =markovSeed:is=",
+            "Only the =spice:instancesOf.tutorAdj.!random= know =markovSeed:what=",
+            "=spice:commonPhrases.wisdom.!random=, =spice:elements.scholarship.nounsPlural.!random=, and =markovSeed:a=",
+            "Question =markovSeed:the="
+          ]
         },
         "warrior": {
-          "familyCognomen": [ "the =warrior= of", "the =spice:instancesOf.warriorAdj.!random= =warrior= of", "the =spice:instancesOf.warriorAdj.!random= =personNouns= of", "the =spice:adjectives.!random= =warrior= of" ],
-          "familyWords": [ "=spice:instancesOf.warriorIdeal.!random= =markovSeed-is=", "=spice:instancesOf.approach.!random= =spice:instancesOf.warriorFoe.!random= =markovSeed-with=", "=spice:instancesOf.trembleBefore.!random= =markovSeed-the=", "=spice:instancesOf.warriorIdeal.!random=, =spice:elements.might.nounsPlural.!random=, and =markovSeed-a=" ]
+          "cognomenNoun": "=spice:instancesOf.warrior.!random=",
+          "familyCognomen": [
+            "the =^:cognomenNoun|pluralize= of",
+            "the =spice:instancesOf.warriorAdj.!random= =^:cognomenNoun|pluralize= of",
+            "the =spice:instancesOf.warriorAdj.!random= =spice:personNouns.!random|pluralize= of",
+            "the =spice:adjectives.!random= =^:cognomenNoun|pluralize= of"
+          ],
+          "familyWords": [
+            "=spice:instancesOf.warriorIdeal.!random= =markovSeed:is=",
+            "=spice:instancesOf.approach.!random= =spice:instancesOf.warriorFoe.!random= =markovSeed:with=",
+            "=spice:instancesOf.trembleBefore.!random= =markovSeed:the=",
+            "=spice:instancesOf.warriorIdeal.!random=, =spice:elements.might.nounsPlural.!random=, and =markovSeed:a="
+          ]
         },
         "priest": {
-          "familyCognomen": [ "the =priest= of", "the =spice:instancesOf.priestAdj.!random= =priest= of", "the =spice:instancesOf.priestAdj.!random= =personNouns= of", "the =spice:adjectives.!random= =priest= of" ],
-          "familyWords": [ "=spice:instancesOf.priestIdeal.!random= =markovSeed-is=", "=spice:instancesOf.bless.!random= =markovSeed-the=", "=spice:commonPhrases.love.!random= the =spice:nouns.!random=, =markovSeed-for,so,because=", "=spice:commonPhrases.voice.!random= a =spice:commonPhrases.prayer.!random= =markovSeed-for=" ]
+          "cognomenNoun": "=spice:instancesOf.priest.!random=",
+          "familyCognomen": [
+            "the =^:cognomenNoun|pluralize= of",
+            "the =spice:instancesOf.priestAdj.!random= =^:cognomenNoun|pluralize= of",
+            "the =spice:instancesOf.priestAdj.!random= =spice:personNouns.!random|pluralize= of",
+            "the =spice:adjectives.!random= =^:cognomenNoun|pluralize= of"
+          ],
+          "familyWords": [
+            "=spice:instancesOf.priestIdeal.!random= =markovSeed:is=",
+            "=spice:instancesOf.bless.!random= =markovSeed:the=",
+            "=spice:commonPhrases.love.!random= the =spice:nouns.!random=, =markovSeed:for,so,because=",
+            "=spice:commonPhrases.voice.!random= a =spice:commonPhrases.prayer.!random= =markovSeed:for="
+          ]
         },
         "royal": {
-          "familyCognomen": [ "the =kindred= of", "the =spice:instancesOf.royalAdj.!random= =kindred= of", "the =spice:instancesOf.royalAdj.!random= =personNouns= of", "the =spice:adjectives.!random= =kindred= of" ],
-          "familyWords": [ "Our =spice:nouns.!random= =markovSeed-is=", "We =markovSeed-are,do,see,feel,know,have,say,go,take=", "=spice:commonPhrases.hark.!random=! =shortMarkov=" ]
+          "cognomenNoun": "=spice:instancesOf.kindred.!random=",
+          "familyCognomen": [
+            "the =^:cognomenNoun|pluralize= of",
+            "the =spice:instancesOf.royalAdj.!random= =^:cognomenNoun|pluralize= of",
+            "the =spice:instancesOf.royalAdj.!random= =spice:personNouns.!random|pluralize= of",
+            "the =spice:adjectives.!random= =^:cognomenNoun|pluralize= of"
+          ],
+          "familyWords": [
+            "Our =spice:nouns.!random= =markovSeed:is=",
+            "We =markovSeed:are,do,see,feel,know,have,say,go,take=",
+            "=spice:commonPhrases.hark.!random=! =shortMarkov="
+          ]
         }
       },
       "aCreature": [ "=aCreatureName=", "=aCreatureName=", "=aLegendaryCreatureName=" ],
       "specialCausesDeath": [ "died of natural causes", "died of old age", "died of =spice:adjectives.!random= causes", "died of =spice:adjectives.!random= causes" ],
-      "factionDeath": [ "=spice:instancesOf.murdered.!random= by =factionName=", "=spice:instancesOf.groupMurdered.!random= =factionName=" ],
       "furnitureDeath": [ "crushed under =furnitureName-an=", "trapped inside =furnitureName-an=", "got =their= =bodyPartName= stuck =spice:instancesOf.furnitureStuckPreposition.!random= =furnitureName-an=" ],
       "martyrDeath": [ "=spice:instancesOf.murdered.!random= for =spice:commonPhrases.honoring.!random= =sacredThing=", "=spice:instancesOf.murdered.!random= for =sacredThing=", "=spice:instancesOf.groupMurdered_By.!random= for =spice:commonPhrases.honoring.!random= =sacredThing=", "=spice:instancesOf.groupMurdered_By.!random= for =sacredThing=" ],
-      "itemDeath": [ "crushed to death by a falling =itemName=", "had =their= =bodyPartName= =spice:instancesOf.bodyPartMaimed.!random= by =itemName-an=", "killed in a duel over =itemName-an=", "fell from a cliff trying to recover a lost =itemName=", "succumbed to despair after losing =itemName-an=", "smashed =itemName-an= into =itemName2-an=", "=spice:commonPhrases.bludgeoned.!random= with =itemName-an= by =^:aCreature.!random=", "=spice:commonPhrases.bludgeoned.!random= with =itemName-an= by =^:aCreature.!random=", "swallowed =itemName-an=", "tried using =itemName-an= as =bodyPartName-a= prosthetic =bodyPartName=" ]
+      "itemDeath": [ "crushed to death by a falling =itemName=", "had =their= =bodyPartName= =spice:instancesOf.bodyPartMaimed.!random= by =itemName-an=", "killed in a duel over =itemName-an=", "fell from a cliff trying to recover a lost =itemName=", "succumbed to despair after losing =itemName-an=", "smashed =itemName-an= into =itemName2-an=", "=spice:commonPhrases.bludgeoned.!random= with =itemName-an= by =^:aCreature.!random=", "=spice:commonPhrases.bludgeoned.!random= with =itemName-an= by =^:aCreature.!random=", "swallowed =itemName-an=", "tried using =itemName-an= as =bodyPartName-a= prosthetic =bodyPartName=" ],
+      "generallyMurdered": [
+        "Stabbed to death by =dude.a.name|strip=",
+        "Shanked by =dude.a.name|strip=",
+        "Gunned down by =dude.a.name|strip=",
+        "Poisoned by =dude.a.name|strip=",
+        "Pushed off a cliff by =dude.a.name|strip=",
+        "Tricked into jumping into a pool of lava by =dude.a.name|strip=",
+        "Drowned in a lake by =dude.a.name|strip=",
+        "Thrown into a pool of acid by =dude.a.name|strip="
+      ],
+      "itemDeath1": [
+        "Killed in a duel over =item.a.name|strip=",
+        "[x3]Killed in a duel over =item.a.name:asIfKnown|strip=",
+        "Succumbed to despair after losing =item.a.name|strip=",
+        "[x3]Succumbed to despair after losing =item.a.name:asIfKnown|strip="
+      ],
+      "itemDeath2": [
+        "Crushed to death by a falling =item.name|strip=",
+        "[x3]Crushed to death by a falling =item.name:asIfKnown|strip=",
+        "Fell from a cliff trying to recover a lost =item.name|strip=",
+        "[x3]Fell from a cliff trying to recover a lost =item.name:asIfKnown|strip="
+      ],
+      "factionDeath": [
+        "Murdered under mysterious circumstances by =faction.the.name=",
+        "Eaten alive by =faction.the.name=",
+        "Sacrificed by =faction.the.name=",
+        "Assassinated after disparaging =faction.the.name=",
+        "Killed after cooking a rancid meal for =faction.the.name=",
+        "Burned at the stake by =faction.the.name=",
+        "Thrown from a cliff by =faction.the.name=",
+        "Buried alive by =faction.the.name=",
+        "Brained in retaliation for stealing from =faction.the.name=",
+        "Shanked in retaliation for stealing from =faction.the.name=",
+        "Shot in retaliation for stealing from =faction.the.name=",
+        "Cooked for sustenance by =faction.the.name=",
+        "Mummified by =faction.the.name=",
+        "Chopped into small pieces by =faction.the.name=",
+        "Covered in molten wax by =faction.the.name=",
+        "Drawn and quartered by =faction.the.name="
+      ],
+      "foodDeath": [
+        "Choked on =food.a.name|strip=",
+        "Ate too much =food.shortname|strip=",
+        "Died of malnutrition after eating only =food.shortname|strip="
+      ],
+      "tonicDeath1": [
+        "Swallowed =tonic.a.name|strip=",
+        "[x3]Swallowed =tonic.a.name:asIfKnown|strip=",
+        "Overdosed on =tonic.a.name|strip=",
+        "[x3]Overdosed on =tonic.a.name:asIfKnown|strip=",
+        "Accidentally ingested =tonic.a.name|strip=",
+        "[x3]Accidentally ingested =tonic.a.name:asIfKnown|strip="
+      ],
+      "tonicDeath2": [
+        "Injected one =tonic.name|strip= too many",
+        "[x3]Injected one =tonic.name:asIfKnown|strip= too many"
+      ],
+      "gasDeath": [
+        "Choked to death on =gas.a.name|strip=",
+        "[x3]Choked to death on =gas.a.name:asIfKnown|strip=",
+        "Suffocated in =gas.name:includeAdjunctNoun|strip=",
+        "[x3]Suffocated in =gas.name:includeAdjunctNoun:asIfKnown|strip=",
+        "Breathed too much =gas.name:includeAdjunctNoun|strip=",
+        "[x3]Breathed too much =gas.name:includeAdjunctNoun:asIfKnown|strip=",
+        "Released a canister of =gas.name:includeAdjunctNoun|strip=",
+        "[x3]Released a canister of =gas.name:includeAdjunctNoun:asIfKnown|strip="
+      ],
+      "grenadeDeath": [
+        "Sat on =grenade.a.name|strip=",
+        "[x3]Sat on =grenade.a.name:asIfKnown|strip=",
+        "Swallowed =grenade.a.name|strip=",
+        "[x3]Swallowed =grenade.a.name:asIfKnown|strip=",
+        "Forgot about =grenade.a.name|strip=",
+        "[x3]Forgot about =grenade.a.name:asIfKnown|strip=",
+        "Knocked over =grenade.a.name|strip=",
+        "[x3]Knocked over =grenade.a.name:asIfKnown|strip="
+      ],
+      "bookDeath1": [
+        "Knocked over the head with a copy of =book.name:asIfKnown|strip=",
+        "Burned at the stake for promulgating =book.name:asIfKnown|strip="
+      ],
+      "bookDeath2": [
+        "Became obsessed with =book.name:asIfKnown|strip= and forgot to eat"
+      ],
+      "lightDeath": [
+        "Burned to death by =light.a.name|strip=",
+        "[x3]Burned to death by =light.a.name:asIfKnown|strip=",
+        "Immolated in =light.a.name|strip=",
+        "[x3]Immolated in =light.a.name:asIfKnown|strip=",
+        "Engulfed in flame by =light.a.name|strip=",
+        "[x3]Engulfed in flame by =light.a.name|strip=",
+        "Fell asleep on =light.a.name|strip=",
+        "[x3]Fell asleep on =light.a.name:asIfKnown|strip="
+      ],
+      "liquidDeath": [
+        "Drank from a poisoned =liquid.name:includeAdjunctNoun|strip=",
+        "[x3]Drank from a poisoned =liquid.name:asIfKnown:includeAdjunctNoun|strip="
+      ],
+      "apeDeath": [
+        "Made too many mocking sounds at =ape.a.name|strip=",
+        "[x3]Made too many mocking sounds at =ape.a.name:asIfKnown|strip="
+      ],
+      "naturalDeath": [
+        "Died of old age",
+        "Died of natural causes"
+      ],
+      "genericDeath": [
+        "Died of natural causes",
+        "Died of unnatural causes",
+        "Died of mysterious causes",
+        "Died of metaphysical causes",
+        "Died of mathematical causes",
+        "Died of chemical causes",
+        "Died of ceremonial causes",
+        "Died of unknown causes",
+        "Died of magmatic causes"
+      ]
     },
     "villages": {
       "description": [

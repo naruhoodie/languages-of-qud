@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.1
+Caves of Qud - Generated Localizable XML 2.0.212.2
 
 <quests>
 
@@ -16,7 +16,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.1
 
 -->
 <quests Lang="example" Encoding="utf-8">
-  <quest ID="What's Eating the Watervine?" Name="[!quests.quest.What's Eating the Watervine?.Name!]What's Eating the Watervine?" Accomplishment="[!quests.quest.What's Eating the Watervine?.Accomplishment!]You solved the mystery of the chewed-up watervine and warned the villagers of Joppa of the Girsh." Hagiograph="[!quests.quest.What's Eating the Watervine?.Hagiograph!]In the month of =month= of =year=, =name= walked below the chrome arches, beat back the throng of girshlings, and healed the wilting crops." Gospel="[!quests.quest.What's Eating the Watervine?.Gospel!]At the bloody Battle of Red Rock, =name= fought the combined girshling and baboon forces to liberate the villagers of Joppa. In =player.t's= honor they &lt;spice.history.gospels.Celebration.LateSultanate.!random&gt;.">
+  <quest ID="What's Eating the Watervine?" Name="[!quests.quest.What's Eating the Watervine?.Name!]What's Eating the Watervine?" Accomplishment="[!quests.quest.What's Eating the Watervine?.Accomplishment!]You solved the mystery of the chewed-up watervine and warned the villagers of Joppa of the Girsh." Hagiograph="[!quests.quest.What's Eating the Watervine?.Hagiograph!]In the month of =month= of =year=, =name= walked below the chrome arches, beat back the throng of girshlings, and healed the wilting crops." Gospel="[!quests.quest.What's Eating the Watervine?.Gospel!]At the bloody Battle of Red Rock, =name= fought the combined girshling and baboon forces to liberate the villagers of Joppa. In =player.t's= honor they =spice:history.gospels.Celebration.LateSultanate.!random=.">
     <step ID="Travel to Red Rock" Name="[!quests.quest.What's Eating the Watervine?.step.Travel to Red Rock.Name!]Travel to Red Rock">
       <!-- [!quests.quest.What's Eating the Watervine?.step.Travel to Red Rock.text!] -->
       <text>Journey two parasangs north of Joppa to Red Rock.</text>
@@ -44,7 +44,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.1
       <text>Return the amaranthine prism to Warden Indrix.</text>
     </step>
   </quest>
-  <quest ID="Fetch Argyve a Knickknack" Name="[!quests.quest.Fetch Argyve a Knickknack.Name!]Fetch Argyve a Knickknack" Accomplishment="[!quests.quest.Fetch Argyve a Knickknack.Accomplishment!]You fetched a trinket for an old man." Hagiograph="[!quests.quest.Fetch Argyve a Knickknack.Hagiograph!]Inside a temple of water and vine, =name= taught an old man the value of chrome." Gospel="[!quests.quest.Fetch Argyve a Knickknack.Gospel!]&lt;spice.elements.entity@elements[random].weddingConditions.!random.capitalize&gt;, =name= cemented =player.possessive= friendship with the Tinkers' Guild by marrying Argyve.">
+  <quest ID="Fetch Argyve a Knickknack" Name="[!quests.quest.Fetch Argyve a Knickknack.Name!]Fetch Argyve a Knickknack" Accomplishment="[!quests.quest.Fetch Argyve a Knickknack.Accomplishment!]You fetched a trinket for an old man." Hagiograph="[!quests.quest.Fetch Argyve a Knickknack.Hagiograph!]Inside a temple of water and vine, =name= taught an old man the value of chrome." Gospel="[!quests.quest.Fetch Argyve a Knickknack.Gospel!]=spice:elements.entity@elements[random].weddingConditions.!random.capitalize=, =name= cemented =player.possessive= friendship with the Tinkers' Guild by marrying Argyve.">
     <step ID="Find a Knickknack" Name="[!quests.quest.Fetch Argyve a Knickknack.step.Find a Knickknack.Name!]Find a Knickknack">
       <!-- [!quests.quest.Fetch Argyve a Knickknack.step.Find a Knickknack.text!] -->
       <text>Search the regions surrounding Joppa for an artifact.</text>
@@ -54,7 +54,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.1
       <text>Bring the artifact to Argyve.</text>
     </step>
   </quest>
-  <quest ID="Fetch Argyve Another Knickknack" Name="[!quests.quest.Fetch Argyve Another Knickknack.Name!]Fetch Argyve Another Knickknack" Accomplishment="[!quests.quest.Fetch Argyve Another Knickknack.Accomplishment!]You fetched another trinket for an old man." Hagiograph="[!quests.quest.Fetch Argyve Another Knickknack.Hagiograph!]In the shadow of steel beneath the High Salt Sun, =name= taught an old man the value of chrome." Gospel="[!quests.quest.Fetch Argyve Another Knickknack.Gospel!]&lt;spice.elements.entity@elements[random].weddingConditions.!random.capitalize&gt;, =name= cemented =player.possessive= friendship with the Tinkers' Guild by marrying Argyve for a second time.">
+  <quest ID="Fetch Argyve Another Knickknack" Name="[!quests.quest.Fetch Argyve Another Knickknack.Name!]Fetch Argyve Another Knickknack" Accomplishment="[!quests.quest.Fetch Argyve Another Knickknack.Accomplishment!]You fetched another trinket for an old man." Hagiograph="[!quests.quest.Fetch Argyve Another Knickknack.Hagiograph!]In the shadow of steel beneath the High Salt Sun, =name= taught an old man the value of chrome." Gospel="[!quests.quest.Fetch Argyve Another Knickknack.Gospel!]=spice:elements.entity@elements[random].weddingConditions.!random.capitalize=, =name= cemented =player.possessive= friendship with the Tinkers' Guild by marrying Argyve for a second time.">
     <step ID="Find Another Knickknack" Name="[!quests.quest.Fetch Argyve Another Knickknack.step.Find Another Knickknack.Name!]Find Another Knickknack">
       <!-- [!quests.quest.Fetch Argyve Another Knickknack.step.Find Another Knickknack.text!] -->
       <text>Search the regions surrounding Joppa for another artifact.</text>
@@ -144,7 +144,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.1
       <text>Journey through the Great Salt Desert to visit the merchant bazaar and Mechanimist cathedral, where a proselyte asked you to make an offering of a trinket.</text>
     </step>
   </quest>
-  <quest ID="The Earl of Omonporch" Name="[!quests.quest.The Earl of Omonporch.Name!]The Earl of Omonporch" Accomplishment="[!quests.quest.The Earl of Omonporch.Accomplishment!]You dealt with Asphodel and secured the grounds at the base of the Spindle." Hagiograph="[!quests.quest.The Earl of Omonporch.Hagiograph!]In the month of =month= of =year=, =name= appointed Asphodel the Lovely earl of Omonporch and Protector of the Spindle Gjaus." Gospel="[!quests.quest.The Earl of Omonporch.Gospel!]In =year=, =name= appointed the corrupt administrator Asphodel as earl and minister of Omonporch. There xe mandated the practice of &lt;spice.elements.entity@elements[random].practices.!random&gt; in =player.t's= name.">
+  <quest ID="The Earl of Omonporch" Name="[!quests.quest.The Earl of Omonporch.Name!]The Earl of Omonporch" Accomplishment="[!quests.quest.The Earl of Omonporch.Accomplishment!]You dealt with Asphodel and secured the grounds at the base of the Spindle." Hagiograph="[!quests.quest.The Earl of Omonporch.Hagiograph!]In the month of =month= of =year=, =name= appointed Asphodel the Lovely earl of Omonporch and Protector of the Spindle Gjaus." Gospel="[!quests.quest.The Earl of Omonporch.Gospel!]In =year=, =name= appointed the corrupt administrator Asphodel as earl and minister of Omonporch. There xe mandated the practice of =spice:elements.entity@elements[random].practices.!random= in =player.t's= name.">
     <step ID="Travel to Omonporch" Name="[!quests.quest.The Earl of Omonporch.step.Travel to Omonporch.Name!]Travel to Omonporch">
       <!-- [!quests.quest.The Earl of Omonporch.step.Travel to Omonporch.text!] -->
       <text>Travel north to the Spindle at Omonporch.</text>
@@ -210,7 +210,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.1
       <text>Return to Grit Gate and speak to Barathrum.</text>
     </step>
   </quest>
-  <quest ID="Petals on the Wind" Name="[!quests.quest.Petals on the Wind.Name!]Petals on the Wind" Accomplishment="[!quests.quest.Petals on the Wind.Accomplishment!]At the behest of a hindren pariah, you traveled to the hidden village of Bey Lah to investigate a mystery." Hagiograph="[!quests.quest.Petals on the Wind.Hagiograph!]Benevolent =name= agreed to meddle in the affairs of the meadow at the behest of a deerfolk pariah. The sultan reigns with kindheartedness!" Gospel="[!quests.quest.Petals on the Wind.Gospel!]At &lt;spice.time.partsOfDay.!random&gt; under a &lt;spice.commonPhrases.strange.!random.article&gt; and meadowed sky, the hindren of Bey Lah saw an image on the horizon that looked like a great looking glass. It was =name=, and once =player.subjective= arrived, the hindren built a monument to =player.objective= and thenceforth called =player.objective= the Looking Glass Kendren.">
+  <quest ID="Petals on the Wind" Name="[!quests.quest.Petals on the Wind.Name!]Petals on the Wind" Accomplishment="[!quests.quest.Petals on the Wind.Accomplishment!]At the behest of a hindren pariah, you traveled to the hidden village of Bey Lah to investigate a mystery." Hagiograph="[!quests.quest.Petals on the Wind.Hagiograph!]Benevolent =name= agreed to meddle in the affairs of the meadow at the behest of a deerfolk pariah. The sultan reigns with kindheartedness!" Gospel="[!quests.quest.Petals on the Wind.Gospel!]At =spice:time.partsOfDay.!random= under a =spice:commonPhrases.strange.!random.article= and meadowed sky, the hindren of Bey Lah saw an image on the horizon that looked like a great looking glass. It was =name=, and once =player.subjective= arrived, the hindren built a monument to =player.objective= and thenceforth called =player.objective= the Looking Glass Kendren.">
     <step ID="Investigate Bey Lah" Name="[!quests.quest.Petals on the Wind.step.Investigate Bey Lah.Name!]Investigate Bey Lah">
       <!-- [!quests.quest.Petals on the Wind.step.Investigate Bey Lah.text!] -->
       <text>Travel to the hidden village of Bey Lah and investigate the problems there.</text>
@@ -240,7 +240,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.1
       <text>Give the crumpled sheet of paper to its author or intended recipient.</text>
     </step>
   </quest>
-  <quest ID="Kith and Kin" Name="[!quests.quest.Kith and Kin.Name!]Kith and Kin" Accomplishment="[!quests.quest.Kith and Kin.Accomplishment!]For better or worse to the fate of Bey Lah, you solved the mystery of Kindrish's disappearance and helped Warden Neelahind administer justice." Hagiograph="[!quests.quest.Kith and Kin.Hagiograph!]Hallowed savior! =name= brought peace and prosperity to the troubled deerfolk of the Bey Lah meadow." Gospel="[!quests.quest.Kith and Kin.Gospel!]Acting against thieves and the authorities who empower them, =name= led an investigation in the village of Bey Lah. Because of =player.t's= &lt;spice.elements.entity@elements[random].adjectives.!random&gt; wit, the Warden Neelahind was able to properly administer justice.">
+  <quest ID="Kith and Kin" Name="[!quests.quest.Kith and Kin.Name!]Kith and Kin" Accomplishment="[!quests.quest.Kith and Kin.Accomplishment!]For better or worse to the fate of Bey Lah, you solved the mystery of Kindrish's disappearance and helped Warden Neelahind administer justice." Hagiograph="[!quests.quest.Kith and Kin.Hagiograph!]Hallowed savior! =name= brought peace and prosperity to the troubled deerfolk of the Bey Lah meadow." Gospel="[!quests.quest.Kith and Kin.Gospel!]Acting against thieves and the authorities who empower them, =name= led an investigation in the village of Bey Lah. Because of =player.t's= =spice:elements.entity@elements[random].adjectives.!random= wit, the Warden Neelahind was able to properly administer justice.">
     <step ID="Brief Warden Neelahind" Name="[!quests.quest.Kith and Kin.step.Brief Warden Neelahind.Name!]Brief Warden Neelahind">
       <!-- [!quests.quest.Kith and Kin.step.Brief Warden Neelahind.text!] -->
       <text>Tell Bey Lah's Warden about the disputed nature of Kindrish's theft.</text>
