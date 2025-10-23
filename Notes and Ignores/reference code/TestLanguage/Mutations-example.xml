@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.2
+Caves of Qud - Generated Localizable XML 2.0.212.3
 
 <mutations Hidden="" ExcludeFromPool="">
 
@@ -14,703 +14,712 @@ Caves of Qud - Generated Localizable XML 2.0.212.2
 
 -->
 <mutations Lang="example" Encoding="utf-8">
-  <category Name="Morphotypes" DisplayName="[!mutations.category.Morphotypes.DisplayName!]{{W|Morphotypes}}">
-    <mutation Name="Chimera" DisplayName="[!mutations.category.Morphotypes.mutation.Chimera.DisplayName!]Chimera">
+  <category Name="Morphotypes" DisplayName="▶{{W|Morphotypes}}">
+    <mutation Name="Chimera" DisplayName="▶Chimera">
       <!-- [!mutations.category.Morphotypes.mutation.Chimera.description!] -->
       <description>
-        <p>You only manifest physical mutations, and all of your mutation choices when manifesting a new mutation are physical.</p>
-        <br />
-        <p>Whenever you manifest a new mutation, one of your choices will also cause you to grow a new limb at random.</p>
-      </description>
+            <p>You only manifest physical mutations, and all of your mutation choices when manifesting a new mutation are physical.</p>
+            <br />
+            <p>Whenever you manifest a new mutation, one of your choices will also cause you to grow a new limb at random.</p>
+          </description>
       <!-- [!mutations.category.Morphotypes.mutation.Chimera.leveltext!] -->
       <leveltext></leveltext>
     </mutation>
-    <mutation Name="Esper" DisplayName="[!mutations.category.Morphotypes.mutation.Esper.DisplayName!]Esper">
+    <mutation Name="Esper" DisplayName="▶Esper">
       <!-- [!mutations.category.Morphotypes.mutation.Esper.description!] -->
       <description>
-        <p>You only manifest mental mutations, and all of your mutation choices when manifesting a new mutation are mental.</p>
-      </description>
+            <p>You only manifest mental mutations, and all of your mutation choices when manifesting a new mutation are mental.</p>
+          </description>
       <!-- [!mutations.category.Morphotypes.mutation.Esper.leveltext!] -->
       <leveltext></leveltext>
     </mutation>
-    <mutation Name="Unstable Genome" DisplayName="[!mutations.category.Morphotypes.mutation.Unstable Genome.DisplayName!]Unstable Genome">
+    <mutation Name="Unstable Genome" DisplayName="▶Unstable Genome">
       <!-- [!mutations.category.Morphotypes.mutation.Unstable Genome.description!] -->
       <description>
-        <p>You gain one extra mutation each time you buy this, but the mutations don't manifest right away.</p>
-        <p>Whenever you gain a level, there's a 33% chance that your genome destabilizes and you get to choose from 3 random mutations.</p>
-      </description>
+            <p>You gain one extra mutation each time you buy this, but the mutations don't manifest right away.</p>
+            <p>Whenever you gain a level, there's a 33% chance that your genome destabilizes and you get to choose from 3 random mutations.</p>
+          </description>
       <!-- [!mutations.category.Morphotypes.mutation.Unstable Genome.leveltext!] -->
       <leveltext></leveltext>
     </mutation>
   </category>
-  <category Name="Physical" DisplayName="[!mutations.category.Physical.DisplayName!]{{G|Physical Mutations}}">
-    <mutation Name="Adrenal Control" DisplayName="[!mutations.category.Physical.mutation.Adrenal Control.DisplayName!]Adrenal Control" BearerDescription="[!mutations.category.Physical.mutation.Adrenal Control.BearerDescription!]those with control over their adrenal glands">
+  <category Name="Physical" DisplayName="▶{{G|Physical Mutations}}">
+    <mutation Name="Adrenal Control" DisplayName="▶Adrenal Control" BearerDescription="▶those with control over their adrenal glands">
       <!-- [!mutations.category.Physical.mutation.Adrenal Control.description!] -->
       <description>
-        <p>You regulate your body's release of adrenaline.</p>
-      </description>
+            <p>You regulate your body's release of adrenaline.</p>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Adrenal Control.leveltext!] -->
       <leveltext>
-        <p>You can increase your body's adrenaline flow for <stat Name="Duration" />.</p>
-        <p>While it's flowing, you gain +<stat Name="QuicknessBonus" /> quickness and other physical mutations gain +<stat Name="MutationBonus" Unit="rank" />.</p>         
-        <statline Name="Cooldown" />
-      </leveltext>
+            <p>You can increase your body's adrenaline flow for <stat Name="Duration" />.</p>
+            <p>While it's flowing, you gain +<stat Name="QuicknessBonus" /> quickness and other physical mutations gain +<stat Name="MutationBonus" Unit="rank" />.</p>         
+            <statline Name="Cooldown" />
+          </leveltext>
     </mutation>
-    <mutation Name="Beak" DisplayName="[!mutations.category.Physical.mutation.Beak.DisplayName!]Beak" BearerDescription="[!mutations.category.Physical.mutation.Beak.BearerDescription!]those with beaks">
+    <mutation Name="Beak" DisplayName="▶Beak" BearerDescription="▶those with beaks">
       <!-- [!mutations.category.Physical.mutation.Beak.description!] -->
       <description>
-        <p>Your face bears a sightly <stat Name="BeakName" />.</p>
-        <br />
-        <p>+1 Ego</p>
-        <p>You occasionally peck at your opponents.</p>
-        <p><gametext>+200 reputation with {{w|=faction:Birds=}}</gametext></p>
-      </description>
+            <p>Your face bears a sightly <stat Name="BeakName" />.</p>
+            <br />
+            <p>+1 Ego</p>
+            <p>You occasionally peck at your opponents.</p>
+            <p><gametext>+200 reputation with {{w|=faction:Birds=}}</gametext></p>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Beak.leveltext!] -->
       <leveltext></leveltext>
     </mutation>
-    <mutation Name="Burrowing Claws" DisplayName="[!mutations.category.Physical.mutation.Burrowing Claws.DisplayName!]Burrowing Claws" BearerDescription="[!mutations.category.Physical.mutation.Burrowing Claws.BearerDescription!]burrowers">
+    <mutation Name="Burrowing Claws" DisplayName="▶Burrowing Claws" BearerDescription="▶burrowers">
       <!-- [!mutations.category.Physical.mutation.Burrowing Claws.description!] -->
       <description>
-        <!-- code will prefix this with "Burrowing Claws Claw" blueprints VariantDescription -->
-        <p>You bear spade-like claws that can burrow through the earth.</p>
-      </description>
+            <!-- code will prefix this with "Burrowing Claws Claw" blueprints VariantDescription -->
+            <p>You bear spade-like claws that can burrow through the earth.</p>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Burrowing Claws.leveltext!] -->
       <leveltext>
-        <p><gametext>=weapon.Name=</gametext> penetration vs. walls: <stat Name="WallPenetration" /></p>
-        <p><gametext>=weapon.Name|pluralize=</gametext> destroy walls after <stat Name="WallHits" Unit="penetrating hit" />.</p>
-        <switch Name="PrereleaseContent"><case Value="true"><p>Can dig passages up or down when outside of combat</p></case></switch>
-        <p><gametext>=weapon.Name|pluralize= are also a =weaponClass.name= class natural weapon that deal <stat Name="Damage" /> base damage to non-walls.</gametext></p>
-      </leveltext>
+            <p><gametext>=weapon.Name=</gametext> penetration vs. walls: <stat Name="WallPenetration" /></p>
+            <p><gametext>=weapon.Name|pluralize=</gametext> destroy walls after <stat Name="WallHits" Unit="penetrating hit" />.</p>
+            <switch Name="PrereleaseContent"><case Value="true"><p>Can dig passages up or down when outside of combat</p></case></switch>
+            <p><gametext>=weapon.Name|pluralize= are also a =weaponClass.name= class natural weapon that deal <stat Name="Damage" /> base damage to non-walls.</gametext></p>
+          </leveltext>
     </mutation>
-    <mutation Name="Carapace" DisplayName="[!mutations.category.Physical.mutation.Carapace.DisplayName!]Carapace" BearerDescription="[!mutations.category.Physical.mutation.Carapace.BearerDescription!]the carapaced">
+    <mutation Name="Carapace" DisplayName="▶Carapace" BearerDescription="▶the carapaced">
       <!-- [!mutations.category.Physical.mutation.Carapace.description!] -->
       <description>
-        <!-- code will prefix this with blueprints VariantDescription -->
-        <p>You are protected by a durable carapace.</p>
-      </description>
+            <!-- code will prefix this with blueprints VariantDescription -->
+            <p>You are protected by a durable carapace.</p>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Carapace.leveltext!] -->
       <leveltext>
-        <p><stat Name="AV" Filters="signed" /> AV</p>
-        <p><stat Name="DV" Filters="signed" /> DV</p>
-        <p><stat Name="HeatResist" Filters="signed" /> Heat Resistance</p>
-        <p><stat Name="ColdResist" Filters="signed" /> Cold Resistance</p>
-        <switch Name="AddsRep"><case Value="" /><default><p><stat Name="AddsRep" /></p></default></switch>
-        <p>You may tighten your <stat Name="CarapaceName" /> to receive double the AV bonus at a -2 DV penalty as long as you remain still.</p>
-        <p>Cannot wear body armor.</p>
-      </leveltext>
+            <p><stat Name="AV" Filters="signed" /> AV</p>
+            <p><stat Name="DV" Filters="signed" /> DV</p>
+            <p><stat Name="HeatResist" Filters="signed" /> Heat Resistance</p>
+            <p><stat Name="ColdResist" Filters="signed" /> Cold Resistance</p>
+            <switch Name="AddsRep"><case Value="" /><default><p><stat Name="AddsRep" /></p></default></switch>
+            <p>You may tighten your <stat Name="CarapaceName" /> to receive double the AV bonus at a -2 DV penalty as long as you remain still.</p>
+            <p>Cannot wear body armor.</p>
+          </leveltext>
     </mutation>
-    <mutation Name="Corrosive Gas Generation" DisplayName="[!mutations.category.Physical.mutation.Corrosive Gas Generation.DisplayName!]Corrosive Gas Generation" BearerDescription="[!mutations.category.Physical.mutation.Corrosive Gas Generation.BearerDescription!]those who expel corrosive gas">
+    <mutation Name="Corrosive Gas Generation" DisplayName="▶Corrosive Gas Generation" BearerDescription="▶those who expel corrosive gas">
       <!-- [!mutations.category.Physical.mutation.Corrosive Gas Generation.description!] -->
       <description>
-        <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
-      </description>
+            <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Corrosive Gas Generation.leveltext!] -->
       <leveltext>
-        <p>Releases gas for <stat Name="Duration" /></p>
-        <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
-        <statline Name="Cooldown" />
-      </leveltext>
+            <p>Releases gas for <stat Name="Duration" /></p>
+            <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
+            <statline Name="Cooldown" />
+          </leveltext>
     </mutation>
-    <mutation Name="Double-muscled" DisplayName="[!mutations.category.Physical.mutation.Double-muscled.DisplayName!]Double-muscled" BearerDescription="[!mutations.category.Physical.mutation.Double-muscled.BearerDescription!]the double-muscled">
+    <mutation Name="Double-muscled" DisplayName="▶Double-muscled" BearerDescription="▶the double-muscled">
       <!-- [!mutations.category.Physical.mutation.Double-muscled.description!] -->
       <description>
-        <p>You are possessed of hulking strength.</p>
-      </description>
+            <p>You are possessed of hulking strength.</p>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Double-muscled.leveltext!] -->
       <leveltext>
-        <p>+<stat Name="Strength" /> Strength</p>
-        <p><stat Name="DazeChance" />% chance to daze your opponent on a successful melee attack for 2-3 rounds</p>
-      </leveltext>
+            <p>+<stat Name="Strength" /> Strength</p>
+            <p><stat Name="DazeChance" />% chance to daze your opponent on a successful melee attack for 2-3 rounds</p>
+          </leveltext>
     </mutation>
-    <mutation Name="Electrical Generation" DisplayName="[!mutations.category.Physical.mutation.Electrical Generation.DisplayName!]Electrical Generation" BearerDescription="[!mutations.category.Physical.mutation.Electrical Generation.BearerDescription!]those who generate electricity">
+    <mutation Name="Electrical Generation" DisplayName="▶Electrical Generation" BearerDescription="▶those who generate electricity">
       <!-- [!mutations.category.Physical.mutation.Electrical Generation.description!] -->
       <description>
-        <p>You accrue electrical charge that you can use and discharge to deal damage.</p>
-      </description>
+            <p>You accrue electrical charge that you can use and discharge to deal damage.</p>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Electrical Generation.leveltext!] -->
       <leveltext>
-        <p>Maximum charge: <stat Name="MaxCharge" /></p>
-        <p>Accrue base <stat Name="BaseChargePerTurn" /> charge per turn</p>
-        <p>Can discharge all held charge for 1d4 damage per <stat Name="DischargeChunk" /> charge</p>
-        <p>Discharge can arc to adjacent targets dealing reduced damage, up to 1 target per <stat Name="DischargeChunk" /> charge</p>
-        <p>EMP causes involuntary discharge (difficulty 18 Willpower save)</p>
-        <switch Name="CanDrinkTransient"><case Value="true"><p>You can drink change from electrical power sources.</p></case><default><p>You can drink charge from energy cells and capacitors.</p></default></switch>
-        <p>You gain <stat Name="DamageAbsorbFactor" /> charge per point of electrical damage taken.</p>
-        <p>You can provide charge to equipped devices that have integrated power systems.</p>
-      </leveltext>
+            <p>Maximum charge: <stat Name="MaxCharge" /></p>
+            <p>Accrue base <stat Name="BaseChargePerTurn" /> charge per turn</p>
+            <p>Can discharge all held charge for 1d4 damage per <stat Name="DischargeChunk" /> charge</p>
+            <p>Discharge can arc to adjacent targets dealing reduced damage, up to 1 target per <stat Name="DischargeChunk" /> charge</p>
+            <p>EMP causes involuntary discharge (difficulty 18 Willpower save)</p>
+            <switch Name="CanDrinkTransient"><case Value="true"><p>You can drink change from electrical power sources.</p></case><default><p>You can drink charge from energy cells and capacitors.</p></default></switch>
+            <p>You gain <stat Name="DamageAbsorbFactor" /> charge per point of electrical damage taken.</p>
+            <p>You can provide charge to equipped devices that have integrated power systems.</p>
+          </leveltext>
     </mutation>
-    <mutation Name="Electromagnetic Pulse" DisplayName="[!mutations.category.Physical.mutation.Electromagnetic Pulse.DisplayName!]Electromagnetic Pulse" BearerDescription="[!mutations.category.Physical.mutation.Electromagnetic Pulse.BearerDescription!]those who emit electromagnetic pulses">
+    <mutation Name="Electromagnetic Pulse" DisplayName="▶Electromagnetic Pulse" BearerDescription="▶those who emit electromagnetic pulses">
       <!-- [!mutations.category.Physical.mutation.Electromagnetic Pulse.description!] -->
       <description>
-        <p>You generate an electromagnetic pulse that disables nearby artifacts and machines.</p>
-      </description>
+            <p>You generate an electromagnetic pulse that disables nearby artifacts and machines.</p>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Electromagnetic Pulse.leveltext!] -->
       <leveltext>
-        <p>Area: <stat Name="Area" /> centered around yourself</p>
-        <statline Name="Duration" />
-        <statline Name="Cooldown" />
-      </leveltext>
+            <p>Area: <stat Name="Area" /> centered around yourself</p>
+            <statline Name="Duration" />
+            <statline Name="Cooldown" />
+          </leveltext>
     </mutation>
-    <mutation Name="Flaming Ray" DisplayName="[!mutations.category.Physical.mutation.Flaming Ray.DisplayName!]Flaming Ray" BearerDescription="[!mutations.category.Physical.mutation.Flaming Ray.BearerDescription!]the flaming-handed">
+    <mutation Name="Flaming Ray" DisplayName="▶Flaming Ray" BearerDescription="▶the flaming-handed">
       <!-- [!mutations.category.Physical.mutation.Flaming Ray.description!] -->
       <description>
-        <p>You emit a ray of flame<switch Name="BodyPartName"><case Value="" /><default> from your <stat Name="BodyPartName" /></default></switch>.</p>
-      </description>
+            <p>You emit a ray of flame<switch Name="BodyPartName"><case Value="" /><default> from your <stat Name="BodyPartName" /></default></switch>.</p>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Flaming Ray.leveltext!] -->
       <leveltext>
-        <p>Emits a <stat Name="Range" />-square ray of flame in the direction of your choice.</p>
-        <statline Name="Damage" />
-        <statline Name="Cooldown" />
-        <p>Melee attacks heat opponents by <stat Name="HeatOnHit" Unit="degree" /></p>
-      </leveltext>
+            <p>Emits a <stat Name="Range" />-square ray of flame in the direction of your choice.</p>
+            <statline Name="Damage" />
+            <statline Name="Cooldown" />
+            <p>Melee attacks heat opponents by <stat Name="HeatOnHit" Unit="degree" /></p>
+          </leveltext>
     </mutation>
-    <mutation Name="Freezing Ray" DisplayName="[!mutations.category.Physical.mutation.Freezing Ray.DisplayName!]Freezing Ray" BearerDescription="[!mutations.category.Physical.mutation.Freezing Ray.BearerDescription!]the frozen-handed">
+    <mutation Name="Freezing Ray" DisplayName="▶Freezing Ray" BearerDescription="▶the frozen-handed">
       <!-- [!mutations.category.Physical.mutation.Freezing Ray.description!] -->
       <description>
-        <p>You emit a ray of frost<switch Name="BodyPartName"><case Value="" /><default> from your <stat Name="BodyPartName" /></default></switch>.</p>
-      </description>
+            <p>You emit a ray of frost<switch Name="BodyPartName"><case Value="" /><default> from your <stat Name="BodyPartName" /></default></switch>.</p>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Freezing Ray.leveltext!] -->
       <leveltext>
-        <p>Emits a <stat Name="Range" />-square ray of frost in the direction of your choice.</p>
-        <statline Name="Damage" />
-        <statline Name="Cooldown" />
-        <p>Melee attacks cool opponents by <stat Name="CoolOnHit" Unit="degree" /></p>
-      </leveltext>
+            <p>Emits a <stat Name="Range" />-square ray of frost in the direction of your choice.</p>
+            <statline Name="Damage" />
+            <statline Name="Cooldown" />
+            <p>Melee attacks cool opponents by <stat Name="CoolOnHit" Unit="degree" /></p>
+          </leveltext>
     </mutation>
-    <mutation Name="Heightened Hearing" DisplayName="[!mutations.category.Physical.mutation.Heightened Hearing.DisplayName!]Heightened Hearing" BearerDescription="[!mutations.category.Physical.mutation.Heightened Hearing.BearerDescription!]those with heightened hearing">
+    <mutation Name="Heightened Hearing" DisplayName="▶Heightened Hearing" BearerDescription="▶those with heightened hearing">
       <!-- [!mutations.category.Physical.mutation.Heightened Hearing.description!] -->
       <description>
-        <p>You are possessed of unnaturally acute hearing.</p>
-      </description>
+            <p>You are possessed of unnaturally acute hearing.</p>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Heightened Hearing.leveltext!] -->
       <leveltext>
-        <p>You detect the presence of creatures within a radius of <stat Name="Radius" />.</p>
-        <p><switch Name="LevelDiff"><case Value="1">{{rules|Increased chance to identify nearby detected creatures}}</case><default>Chance to identify nearby detected creatures</default></switch></p>
-      </leveltext>
+            <p>You detect the presence of creatures within a radius of <stat Name="Radius" />.</p>
+            <p><switch Name="LevelDiff"><case Value="1">{{rules|Increased chance to identify nearby detected creatures}}</case><default>Chance to identify nearby detected creatures</default></switch></p>
+          </leveltext>
     </mutation>
-    <mutation Name="Heightened Quickness" DisplayName="[!mutations.category.Physical.mutation.Heightened Quickness.DisplayName!]Heightened Quickness" BearerDescription="[!mutations.category.Physical.mutation.Heightened Quickness.BearerDescription!]the quick">
+    <mutation Name="Heightened Quickness" DisplayName="▶Heightened Quickness" BearerDescription="▶the quick">
       <!-- [!mutations.category.Physical.mutation.Heightened Quickness.description!] -->
       <description>
-        <p>You are gifted with tremendous speed.</p>
-      </description>
+            <p>You are gifted with tremendous speed.</p>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Heightened Quickness.leveltext!] -->
       <leveltext>
-        <p>+<stat Name="SpeedBonus" /> Quickness</p>
-      </leveltext>
+            <p>+<stat Name="SpeedBonus" /> Quickness</p>
+          </leveltext>
     </mutation>
-    <mutation Name="Horns" DisplayName="[!mutations.category.Physical.mutation.Horns.DisplayName!]Horns" BearerDescription="[!mutations.category.Physical.mutation.Horns.BearerDescription!]the horned">
+    <mutation Name="Horns" DisplayName="▶Horns" BearerDescription="▶the horned">
       <!-- [!mutations.category.Physical.mutation.Horns.description!] -->
       <description>
-        <p><gametext>=horns.A.name.or.plural= =horns.verb:jut= out of your head.</gametext></p>
-      </description>
+            <p><gametext>=horns.A.name.or.plural= =horns.verb:jut= out of your head.</gametext></p>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Horns.leveltext!] -->
       <leveltext>
-        <p>20% chance on melee attack to gore your opponent</p>
-        <statline Name="Damage" DisplayName="Damage increment" />
-        <statline Name="ToHitBonus" DisplayName="To-hit bonus" />
-        <switch Name="LevelMode">
-          <case Value="BleedBonus"><p>{{rules|Increased bleeding save difficulty and intensity}}</p></case>
-          <case Value="LevelUp"><p>{{rules|Increased bleeding save difficulty}}</p></case>
-          <default><p>Goring attacks may cause bleeding</p></default>
-        </switch>
-        <p><gametext>=horns.Name= =horns.verb:are= a short-blade class natural weapon.</gametext></p>
-        <p>+<stat Name="AV" /> AV</p>
-        <p>Cannot wear helmets</p>
-        <p><gametext>+100 reputation with {{w|=faction:Antelopes=}} and {{w|=faction:Goatfolk=}}</gametext></p>
-      </leveltext>
+            <p>20% chance on melee attack to gore your opponent</p>
+            <statline Name="Damage" DisplayName="Damage increment" />
+            <statline Name="ToHitBonus" DisplayName="To-hit bonus" />
+            <switch Name="LevelMode">
+              <case Value="BleedBonus"><p>{{rules|Increased bleeding save difficulty and intensity}}</p></case>
+              <case Value="LevelUp"><p>{{rules|Increased bleeding save difficulty}}</p></case>
+              <default><p>Goring attacks may cause bleeding</p></default>
+            </switch>
+            <p><gametext>=horns.Name= =horns.verb:are= a short-blade class natural weapon.</gametext></p>
+            <p>+<stat Name="AV" /> AV</p>
+            <p>Cannot wear helmets</p>
+            <p><gametext>+100 reputation with {{w|=faction:Antelopes=}} and {{w|=faction:Goatfolk=}}</gametext></p>
+          </leveltext>
     </mutation>
-    <mutation Name="Metamorphosis" DisplayName="[!mutations.category.Physical.mutation.Metamorphosis.DisplayName!]Metamorphosis" BearerDescription="[!mutations.category.Physical.mutation.Metamorphosis.BearerDescription!]shapeshifters">
+    <mutation Name="Metamorphosis" DisplayName="▶Metamorphosis" BearerDescription="▶shapeshifters">
       <!-- [!mutations.category.Physical.mutation.Metamorphosis.description!] -->
       <description>
-        <p>You assume the form of any creature you touch.</p>
-      </description>
+            <p>You assume the form of any creature you touch.</p>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Metamorphosis.leveltext!] -->
       <leveltext>
-        <p>May only assume the form of creatures level <stat Name="MaxLevel" /> or lower.</p>
-        <statline Name="Cooldown" />
-      </leveltext>
+            <p>May only assume the form of creatures level <stat Name="MaxLevel" /> or lower.</p>
+            <statline Name="Cooldown" />
+          </leveltext>
     </mutation>
-    <mutation Name="Multiple Arms" DisplayName="[!mutations.category.Physical.mutation.Multiple Arms.DisplayName!]Multiple Arms" BearerDescription="[!mutations.category.Physical.mutation.Multiple Arms.BearerDescription!]the many-armed">
+    <mutation Name="Multiple Arms" DisplayName="▶Multiple Arms" BearerDescription="▶the many-armed">
       <!-- [!mutations.category.Physical.mutation.Multiple Arms.description!] -->
       <description>
-        <p>You have an extra set of arms.</p>
-      </description>
+            <p>You have an extra set of arms.</p>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Multiple Arms.leveltext!] -->
       <leveltext>
-        <p><stat Name="AttackChance" />% chance for each extra arm to deliver an additional melee attack whenever you make a melee attack</p>
-      </leveltext>
+            <p><stat Name="AttackChance" />% chance for each extra arm to deliver an additional melee attack whenever you make a melee attack</p>
+          </leveltext>
     </mutation>
-    <mutation Name="Multiple Legs" DisplayName="[!mutations.category.Physical.mutation.Multiple Legs.DisplayName!]Multiple Legs" BearerDescription="[!mutations.category.Physical.mutation.Multiple Legs.BearerDescription!]the many-legged">
+    <mutation Name="Multiple Legs" DisplayName="▶Multiple Legs" BearerDescription="▶the many-legged">
       <!-- [!mutations.category.Physical.mutation.Multiple Legs.description!] -->
       <description>
-        <p>You have an extra set of legs.</p>
-      </description>
+            <p>You have an extra set of legs.</p>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Multiple Legs.leveltext!] -->
       <leveltext>
-        <p>+<stat Name="MoveSpeed" /> move speed</p>
-        <p>+<stat Name="CarryCapacity" />% carry capacity</p>
-      </leveltext>
+            <p>+<stat Name="MoveSpeed" /> move speed</p>
+            <p>+<stat Name="CarryCapacity" />% carry capacity</p>
+          </leveltext>
     </mutation>
-    <mutation Name="Night Vision" DisplayName="[!mutations.category.Physical.mutation.Night Vision.DisplayName!]Night Vision" BearerDescription="[!mutations.category.Physical.mutation.Night Vision.BearerDescription!]the darksighted">
+    <mutation Name="Night Vision" DisplayName="▶Night Vision" BearerDescription="▶the darksighted">
       <!-- [!mutations.category.Physical.mutation.Night Vision.description!] -->
       <description>
-        <p>You see in the dark.</p>
-      </description>
+            <p>You see in the dark.</p>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Night Vision.leveltext!] -->
       <leveltext>
-      </leveltext>
+          </leveltext>
     </mutation>
-    <mutation Name="Phasing" DisplayName="[!mutations.category.Physical.mutation.Phasing.DisplayName!]Phasing" BearerDescription="[!mutations.category.Physical.mutation.Phasing.BearerDescription!]those who phase">
+    <mutation Name="Phasing" DisplayName="▶Phasing" BearerDescription="▶those who phase">
       <!-- [!mutations.category.Physical.mutation.Phasing.description!] -->
       <description>
-        <p>You may phase through solid objects for brief periods of time.</p>
-      </description>
+            <p>You may phase through solid objects for brief periods of time.</p>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Phasing.leveltext!] -->
       <leveltext>
-        <statline Name="Duration" />
-        <statline Name="Cooldown" />
-      </leveltext>
+            <statline Name="Duration" />
+            <statline Name="Cooldown" />
+          </leveltext>
     </mutation>
-    <mutation Name="Photosynthetic Skin" DisplayName="[!mutations.category.Physical.mutation.Photosynthetic Skin.DisplayName!]Photosynthetic Skin" BearerDescription="[!mutations.category.Physical.mutation.Photosynthetic Skin.BearerDescription!]the green-skinned">
+    <mutation Name="Photosynthetic Skin" DisplayName="▶Photosynthetic Skin" BearerDescription="▶the green-skinned">
       <!-- [!mutations.category.Physical.mutation.Photosynthetic Skin.description!] -->
       <description>
-        <p>You replenish yourself by absorbing sunlight through your hearty green skin.</p>
-      </description>
+            <p>You replenish yourself by absorbing sunlight through your hearty green skin.</p>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Photosynthetic Skin.leveltext!] -->
       <leveltext>
-        <p>You can bask in the sunlight instead of eating a meal to gain a special metabolizing effect for <stat Name="DurationDay" Unit="day" />: +<stat Name="BonusRegen" /> to natural healing rate and +<stat Name="BonusQuickness" /> Quickness</p>
-        <p>While in the sunlight, you accrue starch and lignin that you can use as ingredients in meals you cook (max <stat Name="StarchServings" Unit="serving" /> of each).</p>
-        <p>+<stat Name="BonusCamoflage" /> DV while occupying the same space as foliage</p>
-        <p>+200 reputation with {{w|roots}}, {{w|trees}}, {{w|vines}}, and {{w|the Consortium of Phyta}}</p>
-      </leveltext>
+            <p>You can bask in the sunlight instead of eating a meal to gain a special metabolizing effect for <stat Name="DurationDay" Unit="day" />: +<stat Name="BonusRegen" /> to natural healing rate and +<stat Name="BonusQuickness" /> Quickness</p>
+            <p>While in the sunlight, you accrue starch and lignin that you can use as ingredients in meals you cook (max <stat Name="StarchServings" Unit="serving" /> of each).</p>
+            <p>+<stat Name="BonusCamoflage" /> DV while occupying the same space as foliage</p>
+            <p>+200 reputation with {{w|roots}}, {{w|trees}}, {{w|vines}}, and {{w|the Consortium of Phyta}}</p>
+          </leveltext>
     </mutation>
-    <mutation Name="Quills" DisplayName="[!mutations.category.Physical.mutation.Quills.DisplayName!]Quills" BearerDescription="[!mutations.category.Physical.mutation.Quills.BearerDescription!]the quilled">
+    <mutation Name="Quills" DisplayName="▶Quills" BearerDescription="▶the quilled">
       <!-- [!mutations.category.Physical.mutation.Quills.description!] -->
       <description>
-        <!-- description will be replaced with the Quill Blueprint VariantDescription if it has one. -->
-        <p>Hundreds of needle-pointed quills cover your body.</p>
-      </description>
+            <!-- description will be replaced with the Quill Blueprint VariantDescription if it has one. -->
+            <p>Hundreds of needle-pointed quills cover your body.</p>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Quills.leveltext!] -->
       <leveltext>
-        <switch Name="LevelMatch">
-          <case Value="true"><p><stat Name="MaxQuills" /> <stat Name="Quills" /></p></case>
-          <default><p>+{{rules|80-120}} <stat Name="Quills" /></p></default>
-        </switch>
-        <p>May expel 10% of your <stat Name="Quills" /> in a burst around yourself (<gametext>=pv=<stat Name="QuillPen" /> =damage=<stat Name="QuillDamage" /></gametext>)</p>
-        <p>Regenerate <stat Name="Quills" /> at the approximate rate of <stat Name="RegenRate" /> per round</p>
-        <p>+<stat Name="AV" /> AV as long as you retain half your <stat Name="Quills" /> (+<stat Name="AVWithPenalty" /> AV otherwise)</p>
-        <p>Creatures attacking you in melee may impale themselves on your <stat Name="Quills" />, breaking roughly 1% of them and reflecting 3% damage per <stat Name="Quill" /> broken.</p>
-        <p>Cannot wear body armor</p>
-        <p>Immune to other creatures' <stat Name="Quills" /></p>
-      </leveltext>
+            <switch Name="LevelMatch">
+              <case Value="true"><p><stat Name="MaxQuills" /> <stat Name="Quills" /></p></case>
+              <default><p>+{{rules|80-120}} <stat Name="Quills" /></p></default>
+            </switch>
+            <p>May expel 10% of your <stat Name="Quills" /> in a burst around yourself (<gametext>=pv=<stat Name="QuillPen" /> =damage=<stat Name="QuillDamage" /></gametext>)</p>
+            <p>Regenerate <stat Name="Quills" /> at the approximate rate of <stat Name="RegenRate" /> per round</p>
+            <p>+<stat Name="AV" /> AV as long as you retain half your <stat Name="Quills" /> (+<stat Name="AVWithPenalty" /> AV otherwise)</p>
+            <p>Creatures attacking you in melee may impale themselves on your <stat Name="Quills" />, breaking roughly 1% of them and reflecting 3% damage per <stat Name="Quill" /> broken.</p>
+            <p>Cannot wear body armor</p>
+            <p>Immune to other creatures' <stat Name="Quills" /></p>
+          </leveltext>
     </mutation>
-    <mutation Name="Regeneration" DisplayName="[!mutations.category.Physical.mutation.Regeneration.DisplayName!]Regeneration" BearerDescription="[!mutations.category.Physical.mutation.Regeneration.BearerDescription!]those who regenerate" />
-    <mutation Name="Sleep Gas Generation" DisplayName="[!mutations.category.Physical.mutation.Sleep Gas Generation.DisplayName!]Sleep Gas Generation" BearerDescription="[!mutations.category.Physical.mutation.Sleep Gas Generation.BearerDescription!]those who expel sleep gas">
+    <mutation Name="Regeneration" DisplayName="▶Regeneration" BearerDescription="▶those who regenerate" />
+    <mutation Name="Sleep Gas Generation" DisplayName="▶Sleep Gas Generation" BearerDescription="▶those who expel sleep gas">
       <!-- [!mutations.category.Physical.mutation.Sleep Gas Generation.description!] -->
       <description>
-        <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
-      </description>
+            <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Sleep Gas Generation.leveltext!] -->
       <leveltext>
-        <p>Releases gas for <stat Name="Duration" /></p>
-        <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
-        <statline Name="Cooldown" />
-      </leveltext>
+            <p>Releases gas for <stat Name="Duration" /></p>
+            <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
+            <statline Name="Cooldown" />
+          </leveltext>
     </mutation>
-    <mutation Name="Slime Glands" DisplayName="[!mutations.category.Physical.mutation.Slime Glands.DisplayName!]Slime Glands" BearerDescription="[!mutations.category.Physical.mutation.Slime Glands.BearerDescription!]slime spitters">
+    <mutation Name="Slime Glands" DisplayName="▶Slime Glands" BearerDescription="▶slime spitters">
       <!-- [!mutations.category.Physical.mutation.Slime Glands.description!] -->
       <description>
-        <p>You produce a viscous slime that you can spit at things.</p>
-        <p></p>
-        <p>Covers an area with slime</p>
-        <statline Name="Range" />
-        <statline Name="Area" />
-        <statline Name="Cooldown" />
-        <p>You can walk over slime without slipping.</p>
-      </description>
+            <p>You produce a viscous slime that you can spit at things.</p>
+            <p></p>
+            <p>Covers an area with slime</p>
+            <statline Name="Range" />
+            <statline Name="Area" />
+            <statline Name="Cooldown" />
+            <p>You can walk over slime without slipping.</p>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Slime Glands.leveltext!] -->
       <leveltext></leveltext>
     </mutation>
-    <mutation Name="Spinnerets" DisplayName="[!mutations.category.Physical.mutation.Spinnerets.DisplayName!]Spinnerets" BearerDescription="[!mutations.category.Physical.mutation.Spinnerets.BearerDescription!]web weavers">
+    <mutation Name="Spinnerets" DisplayName="▶Spinnerets" BearerDescription="▶web weavers">
       <!-- [!mutations.category.Physical.mutation.Spinnerets.description!] -->
       <description>
-        <p>You can spin sticky silk webs.</p>
-      </description>
+            <p>You can spin sticky silk webs.</p>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Spinnerets.leveltext!] -->
       <leveltext>
-        <p>While spinning, you leave webs in your wake as you move.</p>
-        <switch Name="LevelMatch">
-          <case Value="true"></case>
-          <default><p>{{rules|Increased web strength}}</p></default>
-        </switch>
-        <statline Name="SpinDuration" DisplayName="Duration" Unit="move action" />
-        <saveline Name="MoveSave" />
-        <statline Name="Cooldown" />
-        <p>You are immune to getting stuck.</p>
-        <p>+300 reputation with {{w|arachnids}}</p>
-      </leveltext>
+            <p>While spinning, you leave webs in your wake as you move.</p>
+            <switch Name="LevelMatch">
+              <case Value="true"></case>
+              <default><p>{{rules|Increased web strength}}</p></default>
+            </switch>
+            <statline Name="SpinDuration" DisplayName="Duration" Unit="move action" />
+            <saveline Name="MoveSave" />
+            <statline Name="Cooldown" />
+            <p>You are immune to getting stuck.</p>
+            <p>+300 reputation with {{w|arachnids}}</p>
+          </leveltext>
     </mutation>
-    <mutation Name="Stinger (Confusing Venom)" DisplayName="[!mutations.category.Physical.mutation.Stinger (Confusing Venom).DisplayName!]Stinger (Confusing Venom)" BearerDescription="[!mutations.category.Physical.mutation.Stinger (Confusing Venom).BearerDescription!]those with stingers tipped with confusing venom">
+    <mutation Name="Stinger (Confusing Venom)" DisplayName="▶Stinger (Confusing Venom)" BearerDescription="▶those with stingers tipped with confusing venom">
       <!-- [!mutations.category.Physical.mutation.Stinger (Confusing Venom).description!] -->
       <description>
-        <p>You bear a tail with a stinger that delivers <stat Name="VenomType" /> venom to your enemies.</p>
-      </description>
+            <p>You bear a tail with a stinger that delivers <stat Name="VenomType" /> venom to your enemies.</p>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Stinger (Confusing Venom).leveltext!] -->
       <leveltext>
-        <p>20% chance on melee attack to sting your opponent <gametext>(=pv=<stat Name="StingerPen" /> =damage=<stat Name="StingerDamage" /></gametext>)</p>
-        <p>Stinger is a long blade and can only penetrate once.</p>
-        <p>Always sting on charge or lunge.</p>
-        <p>Stinger applies venom on damage (only 20% chance if Stinger is your primary weapon).</p>
-        <p>May use Sting activated ability to strike with your stinger and automatically hit and penetrate.</p>
-        <statline Name="Cooldown" DisplayName="Sting cooldown" />
-        <p>Venom confuses opponents for <stat Name="Duration" /></p>
-        <p>+200 reputation with {{w|arachnids}}</p>
-      </leveltext>
+            <p>20% chance on melee attack to sting your opponent <gametext>(=pv=<stat Name="StingerPen" /> =damage=<stat Name="StingerDamage" /></gametext>)</p>
+            <p>Stinger is a long blade and can only penetrate once.</p>
+            <p>Always sting on charge or lunge.</p>
+            <p>Stinger applies venom on damage (only 20% chance if Stinger is your primary weapon).</p>
+            <p>May use Sting activated ability to strike with your stinger and automatically hit and penetrate.</p>
+            <statline Name="Cooldown" DisplayName="Sting cooldown" />
+            <p>Venom confuses opponents for <stat Name="Duration" /></p>
+            <p>+200 reputation with {{w|arachnids}}</p>
+          </leveltext>
     </mutation>
-    <mutation Name="Stinger (Paralyzing Venom)" DisplayName="[!mutations.category.Physical.mutation.Stinger (Paralyzing Venom).DisplayName!]Stinger (Paralyzing Venom)" BearerDescription="[!mutations.category.Physical.mutation.Stinger (Paralyzing Venom).BearerDescription!]those with stingers tipped with paralyzing venom">
+    <mutation Name="Stinger (Paralyzing Venom)" DisplayName="▶Stinger (Paralyzing Venom)" BearerDescription="▶those with stingers tipped with paralyzing venom">
       <!-- [!mutations.category.Physical.mutation.Stinger (Paralyzing Venom).description!] -->
       <description>
-        <p>You bear a tail with a stinger that delivers <stat Name="VenomType" /> venom to your enemies.</p>
-      </description>
+            <p>You bear a tail with a stinger that delivers <stat Name="VenomType" /> venom to your enemies.</p>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Stinger (Paralyzing Venom).leveltext!] -->
       <leveltext>
-        <p>20% chance on melee attack to sting your opponent <gametext>(=pv=<stat Name="StingerPen" /> =damage=<stat Name="StingerDamage" /></gametext>)</p>
-        <p>Stinger is a long blade and can only penetrate once.</p>
-        <p>Always sting on charge or lunge.</p>
-        <p>Stinger applies venom on damage (only 20% chance if Stinger is your primary weapon).</p>
-        <p>May use Sting activated ability to strike with your stinger and automatically hit and penetrate.</p>
-        <statline Name="Cooldown" DisplayName="Sting cooldown" />
-        <p>Venom paralyzes opponents for <stat Name="Duration" /></p>
-        <p>+200 reputation with {{w|arachnids}}</p>
-      </leveltext>
+            <p>20% chance on melee attack to sting your opponent <gametext>(=pv=<stat Name="StingerPen" /> =damage=<stat Name="StingerDamage" /></gametext>)</p>
+            <p>Stinger is a long blade and can only penetrate once.</p>
+            <p>Always sting on charge or lunge.</p>
+            <p>Stinger applies venom on damage (only 20% chance if Stinger is your primary weapon).</p>
+            <p>May use Sting activated ability to strike with your stinger and automatically hit and penetrate.</p>
+            <statline Name="Cooldown" DisplayName="Sting cooldown" />
+            <p>Venom paralyzes opponents for <stat Name="Duration" /></p>
+            <p>+200 reputation with {{w|arachnids}}</p>
+          </leveltext>
     </mutation>
-    <mutation Name="Stinger (Poisoning Venom)" DisplayName="[!mutations.category.Physical.mutation.Stinger (Poisoning Venom).DisplayName!]Stinger (Poisoning Venom)" BearerDescription="[!mutations.category.Physical.mutation.Stinger (Poisoning Venom).BearerDescription!]those with stingers tipped with poisoning venom">
+    <mutation Name="Stinger (Poisoning Venom)" DisplayName="▶Stinger (Poisoning Venom)" BearerDescription="▶those with stingers tipped with poisoning venom">
       <!-- [!mutations.category.Physical.mutation.Stinger (Poisoning Venom).description!] -->
       <description>
-        <p>You bear a tail with a stinger that delivers <stat Name="VenomType" /> venom to your enemies.</p>
-      </description>
+            <p>You bear a tail with a stinger that delivers <stat Name="VenomType" /> venom to your enemies.</p>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Stinger (Poisoning Venom).leveltext!] -->
       <leveltext>
-        <p>20% chance on melee attack to sting your opponent <gametext>(=pv=<stat Name="StingerPen" /> =damage=<stat Name="StingerDamage" /></gametext>)</p>
-        <p>Stinger is a long blade and can only penetrate once.</p>
-        <p>Always sting on charge or lunge.</p>
-        <p>Stinger applies venom on damage (only 20% chance if Stinger is your primary weapon).</p>
-        <p>May use Sting activated ability to strike with your stinger and automatically hit and penetrate.</p>
-        <statline Name="Cooldown" DisplayName="Sting cooldown" />
-        <p>Venom poisons opponents for <stat Name="Duration" /> (damage increment <stat Name="PoisonDamage" />)</p>
-        <p>+200 reputation with {{w|arachnids}}</p>
-      </leveltext>
+            <p>20% chance on melee attack to sting your opponent <gametext>(=pv=<stat Name="StingerPen" /> =damage=<stat Name="StingerDamage" /></gametext>)</p>
+            <p>Stinger is a long blade and can only penetrate once.</p>
+            <p>Always sting on charge or lunge.</p>
+            <p>Stinger applies venom on damage (only 20% chance if Stinger is your primary weapon).</p>
+            <p>May use Sting activated ability to strike with your stinger and automatically hit and penetrate.</p>
+            <statline Name="Cooldown" DisplayName="Sting cooldown" />
+            <p>Venom poisons opponents for <stat Name="Duration" /> (damage increment <stat Name="PoisonDamage" />)</p>
+            <p>+200 reputation with {{w|arachnids}}</p>
+          </leveltext>
     </mutation>
-    <mutation Name="Thick Fur" DisplayName="[!mutations.category.Physical.mutation.Thick Fur.DisplayName!]Thick Fur" BearerDescription="[!mutations.category.Physical.mutation.Thick Fur.BearerDescription!]the thickly furred">
+    <mutation Name="Thick Fur" DisplayName="▶Thick Fur" BearerDescription="▶the thickly furred">
       <!-- [!mutations.category.Physical.mutation.Thick Fur.description!] -->
       <description>
-        <p>You are covered in a thick coat of fur, which protects you from the elements.</p>
-        <p></p>
-        <p>+5 Heat Resistance</p>
-        <p>+5 Cold Resistance</p>
-        <p>+100 reputation with {{w|apes}}, {{w|baboons}}, {{w|bears}}, and {{w|grazing hedonists}}</p>
-      </description>
+            <p>You are covered in a thick coat of fur, which protects you from the elements.</p>
+            <p></p>
+            <p>+5 Heat Resistance</p>
+            <p>+5 Cold Resistance</p>
+            <p>+100 reputation with {{w|apes}}, {{w|baboons}}, {{w|bears}}, and {{w|grazing hedonists}}</p>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Thick Fur.leveltext!] -->
       <leveltext></leveltext>
     </mutation>
-    <mutation Name="Triple-jointed" DisplayName="[!mutations.category.Physical.mutation.Triple-jointed.DisplayName!]Triple-jointed" BearerDescription="[!mutations.category.Physical.mutation.Triple-jointed.BearerDescription!]the triple-jointed">
+    <mutation Name="Triple-jointed" DisplayName="▶Triple-jointed" BearerDescription="▶the triple-jointed">
       <!-- [!mutations.category.Physical.mutation.Triple-jointed.description!] -->
       <description>
-        <p>Your joints stretch much further than usual.</p>
-      </description>
+            <p>Your joints stretch much further than usual.</p>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Triple-jointed.leveltext!] -->
       <leveltext>
-        <p>+<stat Name="Agility" /> Agility</p>
-        <p><stat Name="Chance" />% chance that Sprint and skills with Agility prerequisites don't go on cooldown after use</p>
-      </leveltext>
+            <p>+<stat Name="Agility" /> Agility</p>
+            <p><stat Name="Chance" />% chance that Sprint and skills with Agility prerequisites don't go on cooldown after use</p>
+          </leveltext>
     </mutation>
-    <mutation Name="Two-headed" DisplayName="[!mutations.category.Physical.mutation.Two-headed.DisplayName!]Two-headed" BearerDescription="[!mutations.category.Physical.mutation.Two-headed.BearerDescription!]the two-headed">
+    <mutation Name="Two-headed" DisplayName="▶Two-headed" BearerDescription="▶the two-headed">
       <!-- [!mutations.category.Physical.mutation.Two-headed.description!] -->
       <description>
-        <p>You have two heads.</p>
-      </description>
+            <p>You have two heads.</p>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Two-headed.leveltext!] -->
       <leveltext>
-        <p>Mental actions have <stat Name="MentalActionDiscount" />% lower action costs</p>
-        <p><stat Name="ShakeOff" />% chance initially and each round to shake off a negative mental status effect</p>
-      </leveltext>
+            <p>Mental actions have <stat Name="MentalActionDiscount" />% lower action costs</p>
+            <p><stat Name="ShakeOff" />% chance initially and each round to shake off a negative mental status effect</p>
+          </leveltext>
     </mutation>
-    <mutation Name="Two-hearted" DisplayName="[!mutations.category.Physical.mutation.Two-hearted.DisplayName!]Two-hearted" BearerDescription="[!mutations.category.Physical.mutation.Two-hearted.BearerDescription!]the two-hearted">
+    <mutation Name="Two-hearted" DisplayName="▶Two-hearted" BearerDescription="▶the two-hearted">
       <!-- [!mutations.category.Physical.mutation.Two-hearted.description!] -->
       <description>
-        <p>You have two hearts.</p>
-      </description>
+            <p>You have two hearts.</p>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Two-hearted.leveltext!] -->
       <leveltext>
-        <p>+<stat Name="Toughness" /> Toughness</p>
-        <p>You can sprint for <stat Name="SprintBonus" />% longer.</p>
-      </leveltext>
+            <p>+<stat Name="Toughness" /> Toughness</p>
+            <p>You can sprint for <stat Name="SprintBonus" />% longer.</p>
+          </leveltext>
     </mutation>
-    <mutation Name="Wings" DisplayName="[!mutations.category.Physical.mutation.Wings.DisplayName!]Wings" BearerDescription="[!mutations.category.Physical.mutation.Wings.BearerDescription!]the winged">
+    <mutation Name="Wings" DisplayName="▶Wings" BearerDescription="▶the winged">
       <!-- [!mutations.category.Physical.mutation.Wings.description!] -->
       <description>
-        <!-- Will be replaced with blueprints VariantDescription if it exists. -->
-        <p>You fly.</p>
-      </description>
+            <!-- Will be replaced with blueprints VariantDescription if it exists. -->
+            <p>You fly.</p>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Wings.leveltext!] -->
       <leveltext>
-        <p>You travel on the world map at <stat Name="WorldMapTravelSpeed" />x speed.</p>
-        <p><stat Name="LostSaveBonus" />% reduced chance of becoming lost</p>
-        <p>While outside, you may fly. You cannot be hit in melee by grounded creatures while flying.</p>
-        <p><stat Name="CrashChance" />% chance of falling clumsily to the ground</p>
-        <p><stat Name="SprintingMoveSpeedBonus" Filters="signed" />% move speed while sprinting</p>
-        <p>You can jump <stat Name="JumpDistanceBonus" Unit="square" /> farther.</p>
-        <p>You can charge <stat Name="ChargeDistanceBonus" Unit="square" /> farther.</p>
-        <p>+300 reputation with {{w|birds}} and {{w|winged mammals}}</p>
-      </leveltext>
+            <p>You travel on the world map at <stat Name="WorldMapTravelSpeed" />x speed.</p>
+            <p><stat Name="LostSaveBonus" />% reduced chance of becoming lost</p>
+            <p>While outside, you may fly. You cannot be hit in melee by grounded creatures while flying.</p>
+            <p><stat Name="CrashChance" />% chance of falling clumsily to the ground</p>
+            <p><stat Name="SprintingMoveSpeedBonus" Filters="signed" />% move speed while sprinting</p>
+            <p>You can jump <stat Name="JumpDistanceBonus" Unit="square" /> farther.</p>
+            <p>You can charge <stat Name="ChargeDistanceBonus" Unit="square" /> farther.</p>
+            <p>+300 reputation with {{w|birds}} and {{w|winged mammals}}</p>
+          </leveltext>
     </mutation>
   </category>
-  <category Name="PhysicalDefects" DisplayName="[!mutations.category.PhysicalDefects.DisplayName!]{{R|Physical Defects}}">
-    <mutation Name="Albino" DisplayName="[!mutations.category.PhysicalDefects.mutation.Albino.DisplayName!]Albino" BearerDescription="[!mutations.category.PhysicalDefects.mutation.Albino.BearerDescription!]albinos">
+  <category Name="PhysicalDefects" DisplayName="▶{{R|Physical Defects}}">
+    <mutation Name="Albino" DisplayName="▶Albino" BearerDescription="▶albinos">
       <!-- [!mutations.category.PhysicalDefects.mutation.Albino.description!] -->
       <description>
-        <p>Your skin, hair, and eyes are absent of pigment.</p>
-        <p></p>
-        <p>You regenerate hit points at one-fifth the usual rate in the daylight.</p>
-      </description>
+            <p>Your skin, hair, and eyes are absent of pigment.</p>
+            <p></p>
+            <p>You regenerate hit points at one-fifth the usual rate in the daylight.</p>
+          </description>
       <!-- [!mutations.category.PhysicalDefects.mutation.Albino.leveltext!] -->
       <leveltext></leveltext>
     </mutation>
-    <mutation Name="Amphibious" DisplayName="[!mutations.category.PhysicalDefects.mutation.Amphibious.DisplayName!]Amphibious" BearerDescription="[!mutations.category.PhysicalDefects.mutation.Amphibious.BearerDescription!]the amphibious">
+    <mutation Name="Amphibious" DisplayName="▶Amphibious" BearerDescription="▶the amphibious">
       <!-- [!mutations.category.PhysicalDefects.mutation.Amphibious.description!] -->
       <description>
-        <p>Your skin must be kept moist with fresh water.</p>
-        <p></p>
-        <p>You pour water on yourself rather than drinking it to quench your thirst.</p>
-        <p>You require about two-thirds more water than usual.</p>
-        <p>+100 reputation with {{w|frogs}}</p>
-      </description>
+            <p>Your skin must be kept moist with fresh water.</p>
+            <p></p>
+            <p>You pour water on yourself rather than drinking it to quench your thirst.</p>
+            <p>You require about two-thirds more water than usual.</p>
+            <p>+100 reputation with {{w|frogs}}</p>
+          </description>
       <!-- [!mutations.category.PhysicalDefects.mutation.Amphibious.leveltext!] -->
       <leveltext></leveltext>
     </mutation>
-    <mutation Name="Brittle Bones" DisplayName="[!mutations.category.PhysicalDefects.mutation.Brittle Bones.DisplayName!]Brittle Bones" BearerDescription="[!mutations.category.PhysicalDefects.mutation.Brittle Bones.BearerDescription!]the brittle-boned">
+    <mutation Name="Brittle Bones" DisplayName="▶Brittle Bones" BearerDescription="▶the brittle-boned">
       <!-- [!mutations.category.PhysicalDefects.mutation.Brittle Bones.description!] -->
       <description>
-        <p>Your bones are brittle.</p>
-        <p></p>
-        <p>You suffer 50% more damage from bludgeoning attacks, falling, and other sources of concussive damage.</p>
-      </description>
+            <p>Your bones are brittle.</p>
+            <p></p>
+            <p>You suffer 50% more damage from bludgeoning attacks, falling, and other sources of concussive damage.</p>
+          </description>
       <!-- [!mutations.category.PhysicalDefects.mutation.Brittle Bones.leveltext!] -->
       <leveltext></leveltext>
     </mutation>
-    <mutation Name="Nerve Poppy" DisplayName="[!mutations.category.PhysicalDefects.mutation.Nerve Poppy.DisplayName!]Nerve Poppy" BearerDescription="[!mutations.category.PhysicalDefects.mutation.Nerve Poppy.BearerDescription!]those who cannot feel pain">
+    <mutation Name="Nerve Poppy" DisplayName="▶Nerve Poppy" BearerDescription="▶those who cannot feel pain">
       <!-- [!mutations.category.PhysicalDefects.mutation.Nerve Poppy.description!] -->
       <description>
-        <p>You lack a developed sense of pain.</p>
-        <p></p>
-        <p>You only know your general state of health and not your precise number of hit points.</p>
-      </description>
+            <p>You lack a developed sense of pain.</p>
+            <p></p>
+            <p>You only know your general state of health and not your precise number of hit points.</p>
+          </description>
       <!-- [!mutations.category.PhysicalDefects.mutation.Nerve Poppy.leveltext!] -->
       <leveltext></leveltext>
     </mutation>
-    <mutation Name="Carnivorous" DisplayName="[!mutations.category.PhysicalDefects.mutation.Carnivorous.DisplayName!]Carnivorous" BearerDescription="[!mutations.category.PhysicalDefects.mutation.Carnivorous.BearerDescription!]the carnivorous">
+    <mutation Name="Carnivorous" DisplayName="▶Carnivorous" BearerDescription="▶the carnivorous">
       <!-- [!mutations.category.PhysicalDefects.mutation.Carnivorous.description!] -->
       <description>
-        <p>You eat meat exclusively.</p>
-        <p></p>
-        <p>You get no satiation from foods that aren't meat.</p>
-        <p>If you eat raw food that isn't meat, there's a 50% chance you become ill for 2 hours.</p>
-        <p>You can't cook with plant or fungus ingredients.</p>
-        <p>You don't get ill when you eat raw meat.</p>
-        <p>You can eat raw meat without being famished.</p>
-      </description>
+            <p>You eat meat exclusively.</p>
+            <p></p>
+            <p>You get no satiation from foods that aren't meat.</p>
+            <p>If you eat raw food that isn't meat, there's a 50% chance you become ill for 2 hours.</p>
+            <p>You can't cook with plant or fungus ingredients.</p>
+            <p>You don't get ill when you eat raw meat.</p>
+            <p>You can eat raw meat without being famished.</p>
+          </description>
       <!-- [!mutations.category.PhysicalDefects.mutation.Carnivorous.leveltext!] -->
       <leveltext></leveltext>
     </mutation>
-    <mutation Name="Cold-Blooded" DisplayName="[!mutations.category.PhysicalDefects.mutation.Cold-Blooded.DisplayName!]Cold-Blooded" BearerDescription="[!mutations.category.PhysicalDefects.mutation.Cold-Blooded.BearerDescription!]the cold-blooded">
+    <mutation Name="Cold-Blooded" DisplayName="▶Cold-Blooded" BearerDescription="▶the cold-blooded">
       <!-- [!mutations.category.PhysicalDefects.mutation.Cold-Blooded.description!] -->
       <description>
-        <p>Your vitality depends on your temperature; at higher temperatures, you are more lively. At lower temperatures, you are more torpid.</p>
-        <p></p>
-        <p>Your base quickness score is reduced by 10.</p>
-        <p>Your quickness increases as your temperature increases and decreases as your temperature decreases.</p>
-        <p>+100 reputation with {{w|unshelled reptiles}}</p>
-      </description>
+            <p>Your vitality depends on your temperature; at higher temperatures, you are more lively. At lower temperatures, you are more torpid.</p>
+            <p></p>
+            <p>Your base quickness score is reduced by 10.</p>
+            <p>Your quickness increases as your temperature increases and decreases as your temperature decreases.</p>
+            <p>+100 reputation with {{w|unshelled reptiles}}</p>
+          </description>
       <!-- [!mutations.category.PhysicalDefects.mutation.Cold-Blooded.leveltext!] -->
       <leveltext></leveltext>
     </mutation>
-    <mutation Name="Electromagnetic Impulse" DisplayName="[!mutations.category.PhysicalDefects.mutation.Electromagnetic Impulse.DisplayName!]Electromagnetic Impulse" BearerDescription="[!mutations.category.PhysicalDefects.mutation.Electromagnetic Impulse.BearerDescription!]those who cannot control their electromagnetic pulses">
+    <mutation Name="Electromagnetic Impulse" DisplayName="▶Electromagnetic Impulse" BearerDescription="▶those who cannot control their electromagnetic pulses">
       <!-- [!mutations.category.PhysicalDefects.mutation.Electromagnetic Impulse.description!] -->
       <description>
-        <p>You involuntarily release electromagnetic pulses, deactivating robots and artifacts around yourself.</p>
-        <p></p>
-        <p>Small chance each round you're in combat that you release an electromagnetic pulse with radius 3, deactivating robots and artifacts (including those you carry) for 11-20 rounds.</p>
-      </description>
+            <p>You involuntarily release electromagnetic pulses, deactivating robots and artifacts around yourself.</p>
+            <p></p>
+            <p>Small chance each round you're in combat that you release an electromagnetic pulse with radius 3, deactivating robots and artifacts (including those you carry) for 11-20 rounds.</p>
+          </description>
       <!-- [!mutations.category.PhysicalDefects.mutation.Electromagnetic Impulse.leveltext!] -->
       <leveltext></leveltext>
     </mutation>
-    <mutation Name="Hooks for Feet" DisplayName="[!mutations.category.PhysicalDefects.mutation.Hooks for Feet.DisplayName!]Hooks for Feet" BearerDescription="[!mutations.category.PhysicalDefects.mutation.Hooks for Feet.BearerDescription!]those with hooks for feet">
+    <mutation Name="Hooks for Feet" DisplayName="▶Hooks for Feet" BearerDescription="▶those with hooks for feet">
       <!-- [!mutations.category.PhysicalDefects.mutation.Hooks for Feet.description!] -->
       <description>
-        <!-- will be replaced by blueprint's VariantDescription property if it exists. -->
-        <p>You have <stat Name="BlueprintName" /> for feet.</p>
-        <p></p>
-        <p>You cannot wear shoes.</p>
-      </description>
+            <!-- will be replaced by blueprint's VariantDescription property if it exists. -->
+            <p>You have <stat Name="BlueprintName" /> for feet.</p>
+            <p></p>
+            <p>You cannot wear shoes.</p>
+          </description>
       <!-- [!mutations.category.PhysicalDefects.mutation.Hooks for Feet.leveltext!] -->
       <leveltext></leveltext>
     </mutation>
-    <mutation Name="Irritable Genome" DisplayName="[!mutations.category.PhysicalDefects.mutation.Irritable Genome.DisplayName!]Irritable Genome" BearerDescription="[!mutations.category.PhysicalDefects.mutation.Irritable Genome.BearerDescription!]those with irritable genomes">
+    <mutation Name="Irritable Genome" DisplayName="▶Irritable Genome" BearerDescription="▶those with irritable genomes">
       <!-- [!mutations.category.PhysicalDefects.mutation.Irritable Genome.description!] -->
       <description>
-        <p>Your genome is irritable and unpredictable.</p>
-        <p></p>
-        <p>Whenever you spend a mutation point, the next mutation point you gain will be spent randomly.</p>
-        <p>Whenever you buy a new mutation, you get a random one instead of a choice of three.</p>
-      </description>
+            <p>Your genome is irritable and unpredictable.</p>
+            <p></p>
+            <p>Whenever you spend a mutation point, the next mutation point you gain will be spent randomly.</p>
+            <p>Whenever you buy a new mutation, you get a random one instead of a choice of three.</p>
+          </description>
       <!-- [!mutations.category.PhysicalDefects.mutation.Irritable Genome.leveltext!] -->
       <leveltext></leveltext>
     </mutation>
-    <mutation Name="Myopic" DisplayName="[!mutations.category.PhysicalDefects.mutation.Myopic.DisplayName!]Myopic" BearerDescription="[!mutations.category.PhysicalDefects.mutation.Myopic.BearerDescription!]the myopic">
+    <mutation Name="Myopic" DisplayName="▶Myopic" BearerDescription="▶the myopic">
       <!-- [!mutations.category.PhysicalDefects.mutation.Myopic.description!] -->
       <description>
-        <p>You are nearsighted.</p>
-        <p></p>
-        <p>You can only see up to a radius of 10.</p>
-      </description>
+            <p>You are nearsighted.</p>
+            <p></p>
+            <p>You can only see up to a radius of 10.</p>
+          </description>
       <!-- [!mutations.category.PhysicalDefects.mutation.Myopic.leveltext!] -->
       <leveltext></leveltext>
     </mutation>
-    <mutation Name="Spontaneous Combustion" DisplayName="[!mutations.category.PhysicalDefects.mutation.Spontaneous Combustion.DisplayName!]Spontaneous Combustion" BearerDescription="[!mutations.category.PhysicalDefects.mutation.Spontaneous Combustion.BearerDescription!]those who spontaneously combust">
+    <mutation Name="Spontaneous Combustion" DisplayName="▶Spontaneous Combustion" BearerDescription="▶those who spontaneously combust">
       <!-- [!mutations.category.PhysicalDefects.mutation.Spontaneous Combustion.description!] -->
       <description>
-        <p>You spontaneously erupt into flames.</p>
-        <p></p>
-        <p>Small chance each round you're in combat that you spontaneously erupt into flames.</p>
-      </description>
+            <p>You spontaneously erupt into flames.</p>
+            <p></p>
+            <p>Small chance each round you're in combat that you spontaneously erupt into flames.</p>
+          </description>
       <!-- [!mutations.category.PhysicalDefects.mutation.Spontaneous Combustion.leveltext!] -->
       <leveltext></leveltext>
     </mutation>
-    <mutation Name="Tonic Allergy" DisplayName="[!mutations.category.PhysicalDefects.mutation.Tonic Allergy.DisplayName!]Tonic Allergy" BearerDescription="[!mutations.category.PhysicalDefects.mutation.Tonic Allergy.BearerDescription!]the allergic">
+    <mutation Name="Tonic Allergy" DisplayName="▶Tonic Allergy" BearerDescription="▶the allergic">
       <!-- [!mutations.category.PhysicalDefects.mutation.Tonic Allergy.description!] -->
       <description>
-        <p>You are allergic to tonics.</p>
-        <p></p>
-        <p>The chance your mutant physiology reacts adversely to a tonic is increased to 33%.</p>
-        <p>If you react adversely this way to a salve or ubernostrum tonic, the adverse reaction effect is chosen randomly from among other tonic effects. You will still heal.</p>
-      </description>
+            <p>You are allergic to tonics.</p>
+            <p></p>
+            <p>The chance your mutant physiology reacts adversely to a tonic is increased to 33%.</p>
+            <p>If you react adversely this way to a salve or ubernostrum tonic, the adverse reaction effect is chosen randomly from among other tonic effects. You will still heal.</p>
+          </description>
       <!-- [!mutations.category.PhysicalDefects.mutation.Tonic Allergy.leveltext!] -->
       <leveltext></leveltext>
     </mutation>
   </category>
-  <category Name="Mental" DisplayName="[!mutations.category.Mental.DisplayName!]{{G|Mental Mutations}}">
-    <mutation Name="Beguiling" DisplayName="[!mutations.category.Mental.mutation.Beguiling.DisplayName!]Beguiling" BearerDescription="[!mutations.category.Mental.mutation.Beguiling.BearerDescription!]beguilers">
+  <category Name="Mental" DisplayName="▶{{G|Mental Mutations}}">
+    <mutation Name="Beguiling" DisplayName="▶Beguiling" BearerDescription="▶beguilers">
       <!-- [!mutations.category.Mental.mutation.Beguiling.description!] -->
       <description>
-        <p>You beguile a nearby creature into serving you loyally.</p>
-      </description>
+            <p>You beguile a nearby creature into serving you loyally.</p>
+          </description>
       <!-- [!mutations.category.Mental.mutation.Beguiling.leveltext!] -->
       <leveltext>
-        <p>Mental attack versus a creature with a mind</p>
-        <p>Success roll: {{rules|mutation rank}} or Ego mod (whichever is higher) + character level + 1d8 VS. Defender MA + character level</p>
-        <statline Name="Range" />
-        <p>Beguiled creature: +<stat Name="BonusHP" /> bonus hit points</p>
-        <statline Name="Cooldown" />
-      </leveltext>
+            <p>Mental attack versus a creature with a mind</p>
+            <p>Success roll: {{rules|mutation rank}} or Ego mod (whichever is higher) + character level + 1d8 VS. Defender MA + character level</p>
+            <statline Name="Range" />
+            <p>Beguiled creature: +<stat Name="BonusHP" /> bonus hit points</p>
+            <statline Name="Cooldown" />
+          </leveltext>
     </mutation>
-    <mutation Name="Burgeoning" DisplayName="[!mutations.category.Mental.mutation.Burgeoning.DisplayName!]Burgeoning" BearerDescription="[!mutations.category.Mental.mutation.Burgeoning.BearerDescription!]psychic gardeners" />
-    <mutation Name="Clairvoyance" DisplayName="[!mutations.category.Mental.mutation.Clairvoyance.DisplayName!]Clairvoyance" BearerDescription="[!mutations.category.Mental.mutation.Clairvoyance.BearerDescription!]the clairvoyant">
+    <mutation Name="Burgeoning" DisplayName="▶Burgeoning" BearerDescription="▶psychic gardeners" />
+    <mutation Name="Clairvoyance" DisplayName="▶Clairvoyance" BearerDescription="▶the clairvoyant">
       <!-- [!mutations.category.Mental.mutation.Clairvoyance.description!] -->
       <description>You briefly gain vision of a nearby area.</description>
       <!-- [!mutations.category.Mental.mutation.Clairvoyance.leveltext!] -->
       <leveltext>
-        <statline Name="VisionRadius" DisplayName="Vision radius" />
-        <statline Name="VisionDuration" DisplayName="Vision duration" Unit="round" />
-        <statline Name="Cooldown" Unit="round" />
-      </leveltext>
+            <statline Name="VisionRadius" DisplayName="Vision radius" />
+            <statline Name="VisionDuration" DisplayName="Vision duration" Unit="round" />
+            <statline Name="Cooldown" Unit="round" />
+          </leveltext>
     </mutation>
-    <mutation Name="Confusion" DisplayName="[!mutations.category.Mental.mutation.Confusion.DisplayName!]Confusion" BearerDescription="[!mutations.category.Mental.mutation.Confusion.BearerDescription!]riddlers" />
-    <mutation Name="Cryokinesis" DisplayName="[!mutations.category.Mental.mutation.Cryokinesis.DisplayName!]Cryokinesis" BearerDescription="[!mutations.category.Mental.mutation.Cryokinesis.BearerDescription!]cryomancers" />
-    <mutation Name="Disintegration" DisplayName="[!mutations.category.Mental.mutation.Disintegration.DisplayName!]Disintegration" BearerDescription="[!mutations.category.Mental.mutation.Disintegration.BearerDescription!]disintegrators" />
-    <mutation Name="Domination" DisplayName="[!mutations.category.Mental.mutation.Domination.DisplayName!]Domination" BearerDescription="[!mutations.category.Mental.mutation.Domination.BearerDescription!]those who dominate the wills of others">
+    <mutation Name="Confusion" DisplayName="▶Confusion" BearerDescription="▶riddlers" />
+    <mutation Name="Cryokinesis" DisplayName="▶Cryokinesis" BearerDescription="▶cryomancers" />
+    <mutation Name="Disintegration" DisplayName="▶Disintegration" BearerDescription="▶disintegrators" />
+    <mutation Name="Domination" DisplayName="▶Domination" BearerDescription="▶those who dominate the wills of others">
       <!-- [!mutations.category.Mental.mutation.Domination.description!] -->
       <description>
-        <p>You garrote an adjacent creature's mind and control its actions while your own body lies dormant.</p>
-      </description>
+            <p>You garrote an adjacent creature's mind and control its actions while your own body lies dormant.</p>
+          </description>
       <!-- [!mutations.category.Mental.mutation.Domination.leveltext!] -->
       <leveltext>
-        <p>Mental attack versus creature with a mind</p>
-        <p>Success roll: {{rules|mutation rank}} or Ego mod (whichever is higher) + character level + 1d8 VS. Defender MA + character level</p>
-        <p>Range: 1</p>
-        <statline Name="Duration" />
-        <statline Name="Cooldown" />
-      </leveltext>
+            <p>Mental attack versus creature with a mind</p>
+            <p>Success roll: {{rules|mutation rank}} or Ego mod (whichever is higher) + character level + 1d8 VS. Defender MA + character level</p>
+            <p>Range: 1</p>
+            <statline Name="Duration" />
+            <statline Name="Cooldown" />
+          </leveltext>
     </mutation>
-    <mutation Name="Ego Projection" DisplayName="[!mutations.category.Mental.mutation.Ego Projection.DisplayName!]Ego Projection" BearerDescription="[!mutations.category.Mental.mutation.Ego Projection.BearerDescription!]those who project their egos onto the physical realm" />
-    <mutation Name="Force Bubble" DisplayName="[!mutations.category.Mental.mutation.Force Bubble.DisplayName!]Force Bubble" BearerDescription="[!mutations.category.Mental.mutation.Force Bubble.BearerDescription!]bubble folk" />
-    <mutation Name="Force Wall" DisplayName="[!mutations.category.Mental.mutation.Force Wall.DisplayName!]Force Wall" BearerDescription="[!mutations.category.Mental.mutation.Force Wall.BearerDescription!]architects of force walls" />
-    <mutation Name="Kindle" DisplayName="[!mutations.category.Mental.mutation.Kindle.DisplayName!]Kindle" BearerDescription="[!mutations.category.Mental.mutation.Kindle.BearerDescription!]kindlers" />
-    <mutation Name="Light Manipulation" DisplayName="[!mutations.category.Mental.mutation.Light Manipulation.DisplayName!]Light Manipulation" BearerDescription="[!mutations.category.Mental.mutation.Light Manipulation.BearerDescription!]manipulators of light" />
-    <mutation Name="Mass Mind" DisplayName="[!mutations.category.Mental.mutation.Mass Mind.DisplayName!]Mass Mind" BearerDescription="[!mutations.category.Mental.mutation.Mass Mind.BearerDescription!]those who tap the Mass Mind" />
-    <mutation Name="Mental Mirror" DisplayName="[!mutations.category.Mental.mutation.Mental Mirror.DisplayName!]Mental Mirror" BearerDescription="[!mutations.category.Mental.mutation.Mental Mirror.BearerDescription!]the mentally reflective" />
-    <mutation Name="Precognition" DisplayName="[!mutations.category.Mental.mutation.Precognition.DisplayName!]Precognition" BearerDescription="[!mutations.category.Mental.mutation.Precognition.BearerDescription!]the prescient" />
-    <mutation Name="Psychometry" DisplayName="[!mutations.category.Mental.mutation.Psychometry.DisplayName!]Psychometry" BearerDescription="[!mutations.category.Mental.mutation.Psychometry.BearerDescription!]the psychometrically sensitive">
+    <mutation Name="Ego Projection" DisplayName="▶Ego Projection" BearerDescription="▶those who project their egos onto the physical realm" />
+    <mutation Name="Force Bubble" DisplayName="▶Force Bubble" BearerDescription="▶bubble folk" />
+    <mutation Name="Force Wall" DisplayName="▶Force Wall" BearerDescription="▶architects of force walls" />
+    <mutation Name="Kindle" DisplayName="▶Kindle" BearerDescription="▶kindlers" />
+    <mutation Name="Light Manipulation" DisplayName="▶Light Manipulation" BearerDescription="▶manipulators of light" />
+    <mutation Name="Mass Mind" DisplayName="▶Mass Mind" BearerDescription="▶those who tap the Mass Mind" />
+    <mutation Name="Mental Mirror" DisplayName="▶Mental Mirror" BearerDescription="▶the mentally reflective" />
+    <mutation Name="Precognition" DisplayName="▶Precognition" BearerDescription="▶the prescient" />
+    <mutation Name="Psychometry" DisplayName="▶Psychometry" BearerDescription="▶the psychometrically sensitive">
       <!-- [!mutations.category.Mental.mutation.Psychometry.description!] -->
       <description>
-        <p>You read the history of artifacts by touching them, learning what they do and how they were made.</p>
-      </description>
+            <p>You read the history of artifacts by touching them, learning what they do and how they were made.</p>
+          </description>
       <!-- [!mutations.category.Mental.mutation.Psychometry.leveltext!] -->
       <leveltext>
-        <p>Unerringly identify artifacts up to complexity tier <stat Name="IdentifyComplexity" />.</p>
-        <p>Learn how to construct identified artifacts up to complexity tier <stat Name="ConstructComplexity" /> (must have the appropriate Tinker skill).</p>
-        <p>You may open security doors and use some secure devices by touching them.</p>
-      </leveltext>
+            <p>Unerringly identify artifacts up to complexity tier <stat Name="IdentifyComplexity" />.</p>
+            <p>Learn how to construct identified artifacts up to complexity tier <stat Name="ConstructComplexity" /> (must have the appropriate Tinker skill).</p>
+            <p>You may open security doors and use some secure devices by touching them.</p>
+          </leveltext>
     </mutation>
-    <mutation Name="Pyrokinesis" DisplayName="[!mutations.category.Mental.mutation.Pyrokinesis.DisplayName!]Pyrokinesis" BearerDescription="[!mutations.category.Mental.mutation.Pyrokinesis.BearerDescription!]pyromancers">
+    <mutation Name="Pyrokinesis" DisplayName="▶Pyrokinesis" BearerDescription="▶pyromancers">
       <!-- [!mutations.category.Mental.mutation.Pyrokinesis.description!] -->
       <description>
-        <p>You heat a nearby area with your mind.</p>
-      </description>
+            <p>You heat a nearby area with your mind.</p>
+          </description>
       <!-- [!mutations.category.Mental.mutation.Pyrokinesis.leveltext!] -->
       <leveltext>
-        <stat Name="Intro" />
-        <statline Name="Range" />
-        <statline Name="Area" />
-        <statline Name="DamageRound1" DisplayName="Round 1 damage" />
-        <statline Name="DamageRound2" DisplayName="Round 2 damage" />
-        <statline Name="DamageRound3" DisplayName="Round 3 damage" />
-        <statline Name="Cooldown" Unit="round" />
-      </leveltext>
+            <stat Name="Intro" />
+            <statline Name="Range" />
+            <statline Name="Area" />
+            <statline Name="DamageRound1" DisplayName="Round 1 damage" />
+            <statline Name="DamageRound2" DisplayName="Round 2 damage" />
+            <statline Name="DamageRound3" DisplayName="Round 3 damage" />
+            <statline Name="Cooldown" Unit="round" />
+          </leveltext>
     </mutation>
-    <mutation Name="Sense Psychic" DisplayName="[!mutations.category.Mental.mutation.Sense Psychic.DisplayName!]Sense Psychic" BearerDescription="[!mutations.category.Mental.mutation.Sense Psychic.BearerDescription!]the psychically sensitive" />
-    <mutation Name="Spacetime Vortex" DisplayName="[!mutations.category.Mental.mutation.Spacetime Vortex.DisplayName!]Spacetime Vortex" BearerDescription="[!mutations.category.Mental.mutation.Spacetime Vortex.BearerDescription!]spacefolders" />
-    <mutation Name="Stunning Force" DisplayName="[!mutations.category.Mental.mutation.Stunning Force.DisplayName!]Stunning Force" BearerDescription="[!mutations.category.Mental.mutation.Stunning Force.BearerDescription!]the telekinetic" />
-    <mutation Name="Sunder Mind" DisplayName="[!mutations.category.Mental.mutation.Sunder Mind.DisplayName!]Sunder Mind" BearerDescription="[!mutations.category.Mental.mutation.Sunder Mind.BearerDescription!]mind sunderers">
+    <mutation Name="Sense Psychic" DisplayName="▶Sense Psychic" BearerDescription="▶the psychically sensitive" />
+    <mutation Name="Spacetime Vortex" DisplayName="▶Spacetime Vortex" BearerDescription="▶spacefolders" />
+    <mutation Name="Stunning Force" DisplayName="▶Stunning Force" BearerDescription="▶the telekinetic" />
+    <mutation Name="Sunder Mind" DisplayName="▶Sunder Mind" BearerDescription="▶mind sunderers">
       <!-- [!mutations.category.Mental.mutation.Sunder Mind.description!] -->
       <description>
-        <p>You sunder the mind of an enemy, leaving them reeling in pain.</p>
-      </description>
+            <p>You sunder the mind of an enemy, leaving them reeling in pain.</p>
+          </description>
       <!-- [!mutations.category.Mental.mutation.Sunder Mind.leveltext!] -->
       <leveltext>
-        <p>For up to 10 rounds, you engage in psychic combat with an opponent, dealing damage each round.</p>
-        <p>Taking any action other than passing the turn will break the connection.</p>
-        <p>Each round you make a mental attack vs mental armor (MA).</p>
-        <statline Name="DamageIncrement" DisplayName="Damage increment" />
-        <p>After the tenth round, you deal bonus damage equal to the total amount of damage you've done so far.</p>
-        <statline Name="Range" />
-        <statline Name="Cooldown" />
-      </leveltext>
+            <p>For up to 10 rounds, you engage in psychic combat with an opponent, dealing damage each round.</p>
+            <p>Taking any action other than passing the turn will break the connection.</p>
+            <p>Each round you make a mental attack vs mental armor (MA).</p>
+            <statline Name="DamageIncrement" DisplayName="Damage increment" />
+            <p>After the tenth round, you deal bonus damage equal to the total amount of damage you've done so far.</p>
+            <statline Name="Range" />
+            <statline Name="Cooldown" />
+          </leveltext>
     </mutation>
-    <mutation Name="Syphon Vim" DisplayName="[!mutations.category.Mental.mutation.Syphon Vim.DisplayName!]Syphon Vim" BearerDescription="[!mutations.category.Mental.mutation.Syphon Vim.BearerDescription!]life leeches" />
-    <mutation Name="Telepathy" DisplayName="[!mutations.category.Mental.mutation.Telepathy.DisplayName!]Telepathy" BearerDescription="[!mutations.category.Mental.mutation.Telepathy.BearerDescription!]the telepathic" />
-    <mutation Name="Teleportation" DisplayName="[!mutations.category.Mental.mutation.Teleportation.DisplayName!]Teleportation" BearerDescription="[!mutations.category.Mental.mutation.Teleportation.BearerDescription!]teleporters" />
-    <mutation Name="Teleport Other" DisplayName="[!mutations.category.Mental.mutation.Teleport Other.DisplayName!]Teleport Other" BearerDescription="[!mutations.category.Mental.mutation.Teleport Other.BearerDescription!]those who teleport others" />
-    <mutation Name="Time Dilation" DisplayName="[!mutations.category.Mental.mutation.Time Dilation.DisplayName!]Time Dilation" BearerDescription="[!mutations.category.Mental.mutation.Time Dilation.BearerDescription!]time dilators" />
-    <mutation Name="Temporal Fugue" DisplayName="[!mutations.category.Mental.mutation.Temporal Fugue.DisplayName!]Temporal Fugue" BearerDescription="[!mutations.category.Mental.mutation.Temporal Fugue.BearerDescription!]temporal fugitives" />
+    <mutation Name="Syphon Vim" DisplayName="▶Syphon Vim" BearerDescription="▶life leeches" />
+    <mutation Name="Telepathy" DisplayName="▶Telepathy" BearerDescription="▶the telepathic">
+      <!-- [!mutations.category.Mental.mutation.Telepathy.description!] -->
+      <description>
+            <p>You may communicate with others through the psychic aether.</p>
+            <p></p>
+            <p>Chat with anyone in vision\nTakes you much less time to issue orders to companions</p>
+          </description>
+      <!-- [!mutations.category.Mental.mutation.Telepathy.leveltext!] -->
+      <leveltext></leveltext>
+    </mutation>
+    <mutation Name="Teleportation" DisplayName="▶Teleportation" BearerDescription="▶teleporters" />
+    <mutation Name="Teleport Other" DisplayName="▶Teleport Other" BearerDescription="▶those who teleport others" />
+    <mutation Name="Time Dilation" DisplayName="▶Time Dilation" BearerDescription="▶time dilators" />
+    <mutation Name="Temporal Fugue" DisplayName="▶Temporal Fugue" BearerDescription="▶temporal fugitives" />
   </category>
-  <category Name="MentalDefects" DisplayName="[!mutations.category.MentalDefects.DisplayName!]{{R|Mental Defects}}">
-    <mutation Name="Amnesia" DisplayName="[!mutations.category.MentalDefects.mutation.Amnesia.DisplayName!]Amnesia" BearerDescription="[!mutations.category.MentalDefects.mutation.Amnesia.BearerDescription!]those who cannot remember" />
-    <mutation Name="Blinking Tic" DisplayName="[!mutations.category.MentalDefects.mutation.Blinking Tic.DisplayName!]Blinking Tic" BearerDescription="[!mutations.category.MentalDefects.mutation.Blinking Tic.BearerDescription!]compulsive teleporters" />
-    <mutation Name="Dystechnia" DisplayName="[!mutations.category.MentalDefects.mutation.Dystechnia.DisplayName!]Dystechnia" BearerDescription="[!mutations.category.MentalDefects.mutation.Dystechnia.BearerDescription!]those who are befuddled by technological complexity" />
-    <mutation Name="Evil Twin" DisplayName="[!mutations.category.MentalDefects.mutation.Evil Twin.DisplayName!]Evil Twin" BearerDescription="[!mutations.category.MentalDefects.mutation.Evil Twin.BearerDescription!]those with dopplegangers" />
-    <mutation Name="Narcolepsy" DisplayName="[!mutations.category.MentalDefects.mutation.Narcolepsy.DisplayName!]Narcolepsy" BearerDescription="[!mutations.category.MentalDefects.mutation.Narcolepsy.BearerDescription!]the narcoleptic" />
-    <mutation Name="Psionic Migraines" DisplayName="[!mutations.category.MentalDefects.mutation.Psionic Migraines.DisplayName!]Psionic Migraines" BearerDescription="[!mutations.category.MentalDefects.mutation.Psionic Migraines.BearerDescription!]those who suffer from psionic migraines" />
-    <mutation Name="Quantum Jitters" DisplayName="[!mutations.category.MentalDefects.mutation.Quantum Jitters.DisplayName!]Quantum Jitters" BearerDescription="[!mutations.category.MentalDefects.mutation.Quantum Jitters.BearerDescription!]those who are quantumly uncertain" />
-    <mutation Name="Socially Repugnant" DisplayName="[!mutations.category.MentalDefects.mutation.Socially Repugnant.DisplayName!]Socially Repugnant" BearerDescription="[!mutations.category.MentalDefects.mutation.Socially Repugnant.BearerDescription!]the socially repugnant" />
+  <category Name="MentalDefects" DisplayName="▶{{R|Mental Defects}}">
+    <mutation Name="Amnesia" DisplayName="▶Amnesia" BearerDescription="▶those who cannot remember" />
+    <mutation Name="Blinking Tic" DisplayName="▶Blinking Tic" BearerDescription="▶compulsive teleporters" />
+    <mutation Name="Dystechnia" DisplayName="▶Dystechnia" BearerDescription="▶those who are befuddled by technological complexity" />
+    <mutation Name="Evil Twin" DisplayName="▶Evil Twin" BearerDescription="▶those with dopplegangers" />
+    <mutation Name="Narcolepsy" DisplayName="▶Narcolepsy" BearerDescription="▶the narcoleptic" />
+    <mutation Name="Psionic Migraines" DisplayName="▶Psionic Migraines" BearerDescription="▶those who suffer from psionic migraines" />
+    <mutation Name="Quantum Jitters" DisplayName="▶Quantum Jitters" BearerDescription="▶those who are quantumly uncertain" />
+    <mutation Name="Socially Repugnant" DisplayName="▶Socially Repugnant" BearerDescription="▶the socially repugnant" />
   </category>
 </mutations>

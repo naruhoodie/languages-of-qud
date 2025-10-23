@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.2
+Caves of Qud - Generated Localizable XML 2.0.212.3
 
 <mutations Hidden="" ExcludeFromPool="">
 
@@ -15,196 +15,196 @@ Caves of Qud - Generated Localizable XML 2.0.212.2
 -->
 <mutations Lang="example" Encoding="utf-8" Hidden="true" ExcludeFromPool="true">
   <category Name="Physical">
-    <mutation Name="Dark Vision" DisplayName="[!mutations.category.Physical.mutation.Dark Vision.DisplayName!]Dark Vision" BearerDescription="[!mutations.category.Physical.mutation.Dark Vision.BearerDescription!]the darksighted">
+    <mutation Name="Dark Vision" DisplayName="▶Dark Vision" BearerDescription="▶the darksighted">
       <!-- [!mutations.category.Physical.mutation.Dark Vision.description!] -->
       <description>
-      </description>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Dark Vision.leveltext!] -->
       <leveltext>
-        <p>You see in the dark.</p>
-      </leveltext>
+            <p>You see in the dark.</p>
+          </leveltext>
     </mutation>
-    <mutation Name="Heightened Smell" DisplayName="[!mutations.category.Physical.mutation.Heightened Smell.DisplayName!]Heightened Smell" BearerDescription="[!mutations.category.Physical.mutation.Heightened Smell.BearerDescription!]those with heightened smell">
+    <mutation Name="Heightened Smell" DisplayName="▶Heightened Smell" BearerDescription="▶those with heightened smell">
       <!-- [!mutations.category.Physical.mutation.Heightened Smell.description!] -->
       <description>
-        <p>You are possessed of exceptionally acute smell.</p>
-      </description>
+            <p>You are possessed of exceptionally acute smell.</p>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Heightened Smell.leveltext!] -->
       <leveltext>
-        <p>You detect the presence of creatures within a distance typically up to <stat Name="Radius" Unit="square" /> depending on terrain</p>
-        <switch Name="LevelMatch">
-          <case Value="yes"><p>Chance to identify nearby detected creatures</p></case>
-          <case Value="no"><p>{{rules|Increased chance to identify nearby detected creatures}}</p></case>
-        </switch>
-      </leveltext>
+            <p>You detect the presence of creatures within a distance typically up to <stat Name="Radius" Unit="square" /> depending on terrain</p>
+            <switch Name="LevelMatch">
+              <case Value="yes"><p>Chance to identify nearby detected creatures</p></case>
+              <case Value="no"><p>{{rules|Increased chance to identify nearby detected creatures}}</p></case>
+            </switch>
+          </leveltext>
     </mutation>
-    <mutation Name="Gills" DisplayName="[!mutations.category.Physical.mutation.Gills.DisplayName!]Gills" BearerDescription="[!mutations.category.Physical.mutation.Gills.BearerDescription!]those with gills" />
-    <mutation Name="Infiltrate" DisplayName="[!mutations.category.Physical.mutation.Infiltrate.DisplayName!]Infiltrate" BearerDescription="[!mutations.category.Physical.mutation.Infiltrate.BearerDescription!]those who infiltrate">
+    <mutation Name="Gills" DisplayName="▶Gills" BearerDescription="▶those with gills" />
+    <mutation Name="Infiltrate" DisplayName="▶Infiltrate" BearerDescription="▶those who infiltrate">
       <!-- [!mutations.category.Physical.mutation.Infiltrate.description!] -->
       <description>
-        <p>You teleport and bring creatures along with you.</p>
-      </description>
+            <p>You teleport and bring creatures along with you.</p>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Infiltrate.leveltext!] -->
       <leveltext>
-        <p>You teleport to a nearby location and bring everyone within radius <stat Name="TeleportRadius" /> along with you.</p>
-        <statline Name="Cooldown" />
-      </leveltext>
+            <p>You teleport to a nearby location and bring everyone within radius <stat Name="TeleportRadius" /> along with you.</p>
+            <statline Name="Cooldown" />
+          </leveltext>
     </mutation>
-    <mutation Name="Heat Absorption" DisplayName="[!mutations.category.Physical.mutation.Heat Absorption.DisplayName!]Heat Absorption" BearerDescription="[!mutations.category.Physical.mutation.Heat Absorption.BearerDescription!]those who absorb heat">
+    <mutation Name="Heat Absorption" DisplayName="▶Heat Absorption" BearerDescription="▶those who absorb heat">
       <!-- [!mutations.category.Physical.mutation.Heat Absorption.description!] -->
       <description>
-        <p>You regenerate by absorbing heat.</p>
-      </description>
+            <p>You regenerate by absorbing heat.</p>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Heat Absorption.leveltext!] -->
       <leveltext>
-        <p>Immune to heat damage</p>
-        <switch Name="HealFactor">
-          <case Value="0"></case>
-          <default><p>Whenever you would have taken heat damage, you heal for <stat Name="HealFactor" />% of that damage instead</p></default>
-        </switch>
-      </leveltext>
+            <p>Immune to heat damage</p>
+            <switch Name="HealFactor">
+              <case Value="0"></case>
+              <default><p>Whenever you would have taken heat damage, you heal for <stat Name="HealFactor" />% of that damage instead</p></default>
+            </switch>
+          </leveltext>
     </mutation>
-    <mutation Name="Wall Climber" DisplayName="[!mutations.category.Physical.mutation.Wall Climber.DisplayName!]Wall Climber" BearerDescription="[!mutations.category.Physical.mutation.Wall Climber.BearerDescription!]wall climbers" />
-    <mutation Name="Spider Webs" DisplayName="[!mutations.category.Physical.mutation.Spider Webs.DisplayName!]Spider Webs" BearerDescription="[!mutations.category.Physical.mutation.Spider Webs.BearerDescription!]web weavers" />
-    <mutation Name="Frost Webs" DisplayName="[!mutations.category.Physical.mutation.Frost Webs.DisplayName!]Frost Webs" BearerDescription="[!mutations.category.Physical.mutation.Frost Webs.BearerDescription!]frost web weavers" />
-    <mutation Name="Acid Slime Glands" DisplayName="[!mutations.category.Physical.mutation.Acid Slime Glands.DisplayName!]Acid Slime Glands" BearerDescription="[!mutations.category.Physical.mutation.Acid Slime Glands.BearerDescription!]acid spitters" />
-    <mutation Name="Sticky Tongue" DisplayName="[!mutations.category.Physical.mutation.Sticky Tongue.DisplayName!]Sticky Tongue" BearerDescription="[!mutations.category.Physical.mutation.Sticky Tongue.BearerDescription!]those with sticky tongues" />
-    <mutation Name="Spore Puff" DisplayName="[!mutations.category.Physical.mutation.Spore Puff.DisplayName!]Spore Puff" BearerDescription="[!mutations.category.Physical.mutation.Spore Puff.BearerDescription!]those who puff spores" />
-    <mutation Name="Magnetic Pulse" DisplayName="[!mutations.category.Physical.mutation.Magnetic Pulse.DisplayName!]Magnetic Pulse" BearerDescription="[!mutations.category.Physical.mutation.Magnetic Pulse.BearerDescription!]those who emit magnetic pulses" />
-    <mutation Name="Urchin Belching" DisplayName="[!mutations.category.Physical.mutation.Urchin Belching.DisplayName!]Urchin Belching" BearerDescription="[!mutations.category.Physical.mutation.Urchin Belching.BearerDescription!]those who belch urchins" />
-    <mutation Name="Waveform" DisplayName="[!mutations.category.Physical.mutation.Waveform.DisplayName!]Waveform" BearerDescription="[!mutations.category.Physical.mutation.Waveform.BearerDescription!]those who dash along a waveform" />
-    <mutation Name="Multiple Horns" DisplayName="[!mutations.category.Physical.mutation.Multiple Horns.DisplayName!]Multiple Horns" BearerDescription="[!mutations.category.Physical.mutation.Multiple Horns.BearerDescription!]those with multiple horns" />
-    <mutation Name="Astral" DisplayName="[!mutations.category.Physical.mutation.Astral.DisplayName!]Astral" BearerDescription="[!mutations.category.Physical.mutation.Astral.BearerDescription!]the astral" />
-    <mutation Name="Decarbonizer" DisplayName="[!mutations.category.Physical.mutation.Decarbonizer.DisplayName!]Decarbonizer" BearerDescription="[!mutations.category.Physical.mutation.Decarbonizer.BearerDescription!]those who extract carbon" />
-    <mutation Name="Lithifying Gaze" DisplayName="[!mutations.category.Physical.mutation.Lithifying Gaze.DisplayName!]Lithifying Gaze" BearerDescription="[!mutations.category.Physical.mutation.Lithifying Gaze.BearerDescription!]those who lithify with their gaze" />
-    <mutation Name="Crungling Gaze" DisplayName="[!mutations.category.Physical.mutation.Crungling Gaze.DisplayName!]Crungling Gaze" BearerDescription="[!mutations.category.Physical.mutation.Crungling Gaze.BearerDescription!]those who provoke dreams with their gaze" />
-    <mutation Name="Liquid Font" DisplayName="[!mutations.category.Physical.mutation.Liquid Font.DisplayName!]Liquid Font" BearerDescription="[!mutations.category.Physical.mutation.Liquid Font.BearerDescription!]those who ooze fluids" />
-    <mutation Name="Irisdual Beam" DisplayName="[!mutations.category.Physical.mutation.Irisdual Beam.DisplayName!]Irisdual Beam" BearerDescription="[!mutations.category.Physical.mutation.Irisdual Beam.BearerDescription!]those who molt beams" />
-    <mutation Name="Bilge Sphincter" DisplayName="[!mutations.category.Physical.mutation.Bilge Sphincter.DisplayName!]Bilge Sphincter" BearerDescription="[!mutations.category.Physical.mutation.Bilge Sphincter.BearerDescription!]the bilge sphinctered" />
-    <mutation Name="Crystallinity" DisplayName="[!mutations.category.Physical.mutation.Crystallinity.DisplayName!]Crystallinity" BearerDescription="[!mutations.category.Physical.mutation.Crystallinity.BearerDescription!]the crystalline" />
-    <mutation Name="Fear Aura" DisplayName="[!mutations.category.Physical.mutation.Fear Aura.DisplayName!]Fear Aura" BearerDescription="[!mutations.category.Physical.mutation.Fear Aura.BearerDescription!]those with frightful airs" />
-    <mutation Name="Burrowing" DisplayName="[!mutations.category.Physical.mutation.Burrowing.DisplayName!]Burrowing" BearerDescription="[!mutations.category.Physical.mutation.Burrowing.BearerDescription!]those who burrow underground" />
-    <mutation Name="Liquid Spitter" DisplayName="[!mutations.category.Physical.mutation.Liquid Spitter.DisplayName!]Liquid Spitter" BearerDescription="[!mutations.category.Physical.mutation.Liquid Spitter.BearerDescription!]liquid spitters" />
-    <mutation Name="Freezing Ultraray" DisplayName="[!mutations.category.Physical.mutation.Freezing Ultraray.DisplayName!]Freezing Ultraray" BearerDescription="[!mutations.category.Physical.mutation.Freezing Ultraray.BearerDescription!]the frozen-handed" />
-    <mutation Name="Defensive Chromatophores" DisplayName="[!mutations.category.Physical.mutation.Defensive Chromatophores.DisplayName!]Defensive Chromatophores" BearerDescription="[!mutations.category.Physical.mutation.Defensive Chromatophores.BearerDescription!]those who scintillate" />
-    <mutation Name="Fire Breath" DisplayName="[!mutations.category.Physical.mutation.Fire Breath.DisplayName!]Fire Breath" BearerDescription="[!mutations.category.Physical.mutation.Fire Breath.BearerDescription!]those who breathe fire" />
-    <mutation Name="Ice Breath" DisplayName="[!mutations.category.Physical.mutation.Ice Breath.DisplayName!]Ice Breath" BearerDescription="[!mutations.category.Physical.mutation.Ice Breath.BearerDescription!]those who breathe ice" />
-    <mutation Name="Normality Breath" DisplayName="[!mutations.category.Physical.mutation.Normality Breath.DisplayName!]Normality Breath" BearerDescription="[!mutations.category.Physical.mutation.Normality Breath.BearerDescription!]those who breathe normality" />
-    <mutation Name="Corrosive Breath" DisplayName="[!mutations.category.Physical.mutation.Corrosive Breath.DisplayName!]Corrosive Breath" BearerDescription="[!mutations.category.Physical.mutation.Corrosive Breath.BearerDescription!]those with corrosive breath" />
-    <mutation Name="Confusing Breath" DisplayName="[!mutations.category.Physical.mutation.Confusing Breath.DisplayName!]Confusing Breath" BearerDescription="[!mutations.category.Physical.mutation.Confusing Breath.BearerDescription!]those with confusing breath" />
-    <mutation Name="Stun Breath" DisplayName="[!mutations.category.Physical.mutation.Stun Breath.DisplayName!]Stun Breath" BearerDescription="[!mutations.category.Physical.mutation.Stun Breath.BearerDescription!]those with stunning breath" />
-    <mutation Name="Poison Breath" DisplayName="[!mutations.category.Physical.mutation.Poison Breath.DisplayName!]Poison Breath" BearerDescription="[!mutations.category.Physical.mutation.Poison Breath.BearerDescription!]those with poisonous breath" />
-    <mutation Name="Sleep Breath" DisplayName="[!mutations.category.Physical.mutation.Sleep Breath.DisplayName!]Sleep Breath" BearerDescription="[!mutations.category.Physical.mutation.Sleep Breath.BearerDescription!]those with lulling breath" />
-    <mutation Name="Shame Breath" DisplayName="[!mutations.category.Physical.mutation.Shame Breath.DisplayName!]Shame Breath" BearerDescription="[!mutations.category.Physical.mutation.Shame Breath.BearerDescription!]those with shaming breath" />
-    <mutation Name="Plasma Emission" DisplayName="[!mutations.category.Physical.mutation.Plasma Emission.DisplayName!]Plasma Emission" BearerDescription="[!mutations.category.Physical.mutation.Plasma Emission.BearerDescription!]those who emit plasma">
+    <mutation Name="Wall Climber" DisplayName="▶Wall Climber" BearerDescription="▶wall climbers" />
+    <mutation Name="Spider Webs" DisplayName="▶Spider Webs" BearerDescription="▶web weavers" />
+    <mutation Name="Frost Webs" DisplayName="▶Frost Webs" BearerDescription="▶frost web weavers" />
+    <mutation Name="Acid Slime Glands" DisplayName="▶Acid Slime Glands" BearerDescription="▶acid spitters" />
+    <mutation Name="Sticky Tongue" DisplayName="▶Sticky Tongue" BearerDescription="▶those with sticky tongues" />
+    <mutation Name="Spore Puff" DisplayName="▶Spore Puff" BearerDescription="▶those who puff spores" />
+    <mutation Name="Magnetic Pulse" DisplayName="▶Magnetic Pulse" BearerDescription="▶those who emit magnetic pulses" />
+    <mutation Name="Urchin Belching" DisplayName="▶Urchin Belching" BearerDescription="▶those who belch urchins" />
+    <mutation Name="Waveform" DisplayName="▶Waveform" BearerDescription="▶those who dash along a waveform" />
+    <mutation Name="Multiple Horns" DisplayName="▶Multiple Horns" BearerDescription="▶those with multiple horns" />
+    <mutation Name="Astral" DisplayName="▶Astral" BearerDescription="▶the astral" />
+    <mutation Name="Decarbonizer" DisplayName="▶Decarbonizer" BearerDescription="▶those who extract carbon" />
+    <mutation Name="Lithifying Gaze" DisplayName="▶Lithifying Gaze" BearerDescription="▶those who lithify with their gaze" />
+    <mutation Name="Crungling Gaze" DisplayName="▶Crungling Gaze" BearerDescription="▶those who provoke dreams with their gaze" />
+    <mutation Name="Liquid Font" DisplayName="▶Liquid Font" BearerDescription="▶those who ooze fluids" />
+    <mutation Name="Irisdual Beam" DisplayName="▶Irisdual Beam" BearerDescription="▶those who molt beams" />
+    <mutation Name="Bilge Sphincter" DisplayName="▶Bilge Sphincter" BearerDescription="▶the bilge sphinctered" />
+    <mutation Name="Crystallinity" DisplayName="▶Crystallinity" BearerDescription="▶the crystalline" />
+    <mutation Name="Fear Aura" DisplayName="▶Fear Aura" BearerDescription="▶those with frightful airs" />
+    <mutation Name="Burrowing" DisplayName="▶Burrowing" BearerDescription="▶those who burrow underground" />
+    <mutation Name="Liquid Spitter" DisplayName="▶Liquid Spitter" BearerDescription="▶liquid spitters" />
+    <mutation Name="Freezing Ultraray" DisplayName="▶Freezing Ultraray" BearerDescription="▶the frozen-handed" />
+    <mutation Name="Defensive Chromatophores" DisplayName="▶Defensive Chromatophores" BearerDescription="▶those who scintillate" />
+    <mutation Name="Fire Breath" DisplayName="▶Fire Breath" BearerDescription="▶those who breathe fire" />
+    <mutation Name="Ice Breath" DisplayName="▶Ice Breath" BearerDescription="▶those who breathe ice" />
+    <mutation Name="Normality Breath" DisplayName="▶Normality Breath" BearerDescription="▶those who breathe normality" />
+    <mutation Name="Corrosive Breath" DisplayName="▶Corrosive Breath" BearerDescription="▶those with corrosive breath" />
+    <mutation Name="Confusing Breath" DisplayName="▶Confusing Breath" BearerDescription="▶those with confusing breath" />
+    <mutation Name="Stun Breath" DisplayName="▶Stun Breath" BearerDescription="▶those with stunning breath" />
+    <mutation Name="Poison Breath" DisplayName="▶Poison Breath" BearerDescription="▶those with poisonous breath" />
+    <mutation Name="Sleep Breath" DisplayName="▶Sleep Breath" BearerDescription="▶those with lulling breath" />
+    <mutation Name="Shame Breath" DisplayName="▶Shame Breath" BearerDescription="▶those with shaming breath" />
+    <mutation Name="Plasma Emission" DisplayName="▶Plasma Emission" BearerDescription="▶those who emit plasma">
       <!-- [!mutations.category.Physical.mutation.Plasma Emission.description!] -->
       <description>
-        <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
-      </description>
+            <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Plasma Emission.leveltext!] -->
       <leveltext>
-        <p>Releases gas for <stat Name="Duration" /></p>
-        <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
-        <statline Name="Cooldown" />
-      </leveltext>
+            <p>Releases gas for <stat Name="Duration" /></p>
+            <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
+            <statline Name="Cooldown" />
+          </leveltext>
     </mutation>
-    <mutation Name="Poison Gas Generation" DisplayName="[!mutations.category.Physical.mutation.Poison Gas Generation.DisplayName!]Poison Gas Generation" BearerDescription="[!mutations.category.Physical.mutation.Poison Gas Generation.BearerDescription!]those who expel poison gas">
+    <mutation Name="Poison Gas Generation" DisplayName="▶Poison Gas Generation" BearerDescription="▶those who expel poison gas">
       <!-- [!mutations.category.Physical.mutation.Poison Gas Generation.description!] -->
       <description>
-        <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
-      </description>
+            <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Poison Gas Generation.leveltext!] -->
       <leveltext>
-        <p>Releases gas for <stat Name="Duration" /></p>
-        <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
-        <statline Name="Cooldown" />
-      </leveltext>
+            <p>Releases gas for <stat Name="Duration" /></p>
+            <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
+            <statline Name="Cooldown" />
+          </leveltext>
     </mutation>
-    <mutation Name="Defoliant Generation" DisplayName="[!mutations.category.Physical.mutation.Defoliant Generation.DisplayName!]Defoliant Generation" BearerDescription="[!mutations.category.Physical.mutation.Defoliant Generation.BearerDescription!]those who expel defoliant">
+    <mutation Name="Defoliant Generation" DisplayName="▶Defoliant Generation" BearerDescription="▶those who expel defoliant">
       <!-- [!mutations.category.Physical.mutation.Defoliant Generation.description!] -->
       <description>
-        <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
-      </description>
+            <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Defoliant Generation.leveltext!] -->
       <leveltext>
-        <p>Releases gas for <stat Name="Duration" /></p>
-        <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
-        <statline Name="Cooldown" />
-      </leveltext>
+            <p>Releases gas for <stat Name="Duration" /></p>
+            <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
+            <statline Name="Cooldown" />
+          </leveltext>
     </mutation>
-    <mutation Name="Fungicide Generation" DisplayName="[!mutations.category.Physical.mutation.Fungicide Generation.DisplayName!]Fungicide Generation" BearerDescription="[!mutations.category.Physical.mutation.Fungicide Generation.BearerDescription!]those who expel fungicide">
+    <mutation Name="Fungicide Generation" DisplayName="▶Fungicide Generation" BearerDescription="▶those who expel fungicide">
       <!-- [!mutations.category.Physical.mutation.Fungicide Generation.description!] -->
       <description>
-        <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
-      </description>
+            <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Fungicide Generation.leveltext!] -->
       <leveltext>
-        <p>Releases gas for <stat Name="Duration" /></p>
-        <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
-        <statline Name="Cooldown" />
-      </leveltext>
+            <p>Releases gas for <stat Name="Duration" /></p>
+            <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
+            <statline Name="Cooldown" />
+          </leveltext>
     </mutation>
-    <mutation Name="Confusion Gas Generation" DisplayName="[!mutations.category.Physical.mutation.Confusion Gas Generation.DisplayName!]Confusion Gas Generation" BearerDescription="[!mutations.category.Physical.mutation.Confusion Gas Generation.BearerDescription!]those who expel confusion gas">
+    <mutation Name="Confusion Gas Generation" DisplayName="▶Confusion Gas Generation" BearerDescription="▶those who expel confusion gas">
       <!-- [!mutations.category.Physical.mutation.Confusion Gas Generation.description!] -->
       <description>
-        <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
-      </description>
+            <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Confusion Gas Generation.leveltext!] -->
       <leveltext>
-        <p>Releases gas for <stat Name="Duration" /></p>
-        <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
-        <statline Name="Cooldown" />
-      </leveltext>
+            <p>Releases gas for <stat Name="Duration" /></p>
+            <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
+            <statline Name="Cooldown" />
+          </leveltext>
     </mutation>
-    <mutation Name="Normality Gas Generation" DisplayName="[!mutations.category.Physical.mutation.Normality Gas Generation.DisplayName!]Normality Gas Generation" BearerDescription="[!mutations.category.Physical.mutation.Normality Gas Generation.BearerDescription!]those who expel normality gas">
+    <mutation Name="Normality Gas Generation" DisplayName="▶Normality Gas Generation" BearerDescription="▶those who expel normality gas">
       <!-- [!mutations.category.Physical.mutation.Normality Gas Generation.description!] -->
       <description>
-        <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
-      </description>
+            <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Normality Gas Generation.leveltext!] -->
       <leveltext>
-        <p>Releases gas for <stat Name="Duration" /></p>
-        <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
-        <statline Name="Cooldown" />
-      </leveltext>
+            <p>Releases gas for <stat Name="Duration" /></p>
+            <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
+            <statline Name="Cooldown" />
+          </leveltext>
     </mutation>
-    <mutation Name="Glitter Dust Generation" DisplayName="[!mutations.category.Physical.mutation.Glitter Dust Generation.DisplayName!]Glitter Dust Generation" BearerDescription="[!mutations.category.Physical.mutation.Glitter Dust Generation.BearerDescription!]those who expel glitter dust">
+    <mutation Name="Glitter Dust Generation" DisplayName="▶Glitter Dust Generation" BearerDescription="▶those who expel glitter dust">
       <!-- [!mutations.category.Physical.mutation.Glitter Dust Generation.description!] -->
       <description>
-        <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
-      </description>
+            <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
+          </description>
       <!-- [!mutations.category.Physical.mutation.Glitter Dust Generation.leveltext!] -->
       <leveltext>
-        <p>Releases gas for <stat Name="Duration" /></p>
-        <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
-        <statline Name="Cooldown" />
-      </leveltext>
+            <p>Releases gas for <stat Name="Duration" /></p>
+            <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
+            <statline Name="Cooldown" />
+          </leveltext>
     </mutation>
   </category>
   <category Name="Mental">
-    <mutation Name="Invisibility" DisplayName="[!mutations.category.Mental.mutation.Invisibility.DisplayName!]Invisibility" BearerDescription="[!mutations.category.Mental.mutation.Invisibility.BearerDescription!]the invisible" />
-    <mutation Name="Interdiction" DisplayName="[!mutations.category.Mental.mutation.Interdiction.DisplayName!]Interdiction" BearerDescription="[!mutations.category.Mental.mutation.Interdiction.BearerDescription!]those who interdict" />
-    <mutation Name="Ley Shifting" DisplayName="[!mutations.category.Mental.mutation.Ley Shifting.DisplayName!]Ley Shifting" BearerDescription="[!mutations.category.Mental.mutation.Ley Shifting.BearerDescription!]those who shift spacetime" />
-    <mutation Name="Quantum Fugue" DisplayName="[!mutations.category.Mental.mutation.Quantum Fugue.DisplayName!]Quantum Fugue" BearerDescription="[!mutations.category.Mental.mutation.Quantum Fugue.BearerDescription!]quantum fugitives" />
-    <mutation Name="Reflect Shame" DisplayName="[!mutations.category.Mental.mutation.Reflect Shame.DisplayName!]Reflect Shame" BearerDescription="[!mutations.category.Mental.mutation.Reflect Shame.BearerDescription!]those who reflect shame">
+    <mutation Name="Invisibility" DisplayName="▶Invisibility" BearerDescription="▶the invisible" />
+    <mutation Name="Interdiction" DisplayName="▶Interdiction" BearerDescription="▶those who interdict" />
+    <mutation Name="Ley Shifting" DisplayName="▶Ley Shifting" BearerDescription="▶those who shift spacetime" />
+    <mutation Name="Quantum Fugue" DisplayName="▶Quantum Fugue" BearerDescription="▶quantum fugitives" />
+    <mutation Name="Reflect Shame" DisplayName="▶Reflect Shame" BearerDescription="▶those who reflect shame">
       <!-- [!mutations.category.Mental.mutation.Reflect Shame.description!] -->
       <description>
-        <p>You reflect the shameful countenance of nearby creatures.</p>
-      </description>
+            <p>You reflect the shameful countenance of nearby creatures.</p>
+          </description>
       <!-- [!mutations.category.Mental.mutation.Reflect Shame.leveltext!] -->
       <leveltext></leveltext>
     </mutation>
-    <mutation Name="Repelling Force" DisplayName="[!mutations.category.Mental.mutation.Repelling Force.DisplayName!]Repelling Force" BearerDescription="[!mutations.category.Mental.mutation.Repelling Force.BearerDescription!]the repelling">
+    <mutation Name="Repelling Force" DisplayName="▶Repelling Force" BearerDescription="▶the repelling">
       <!-- [!mutations.category.Mental.mutation.Repelling Force.description!] -->
       <description>
-        <p>You invoke a repelling force in the surrounding area, throwing enemies back.</p>
-      </description>
+            <p>You invoke a repelling force in the surrounding area, throwing enemies back.</p>
+          </description>
       <!-- [!mutations.category.Mental.mutation.Repelling Force.leveltext!] -->
       <leveltext>
-        <statline Name="Area" />
-        <p><switch Name="LevelDiff"><case Value="0">Creatures are pushed away from center of blast.</case><default>{{rules|Increased push force}}</default></switch></p>
-        <statline Name="Cooldown" />
-      </leveltext>
+            <statline Name="Area" />
+            <p><switch Name="LevelDiff"><case Value="0">Creatures are pushed away from center of blast.</case><default>{{rules|Increased push force}}</default></switch></p>
+            <statline Name="Cooldown" />
+          </leveltext>
     </mutation>
   </category>
 </mutations>

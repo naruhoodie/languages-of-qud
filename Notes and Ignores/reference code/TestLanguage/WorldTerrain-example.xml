@@ -1,0 +1,271 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Caves of Qud - Generated Localizable XML 2.0.212.3
+
+<objects>
+
+  <object Name="Key" Load="">
+
+    <part Name="Key">
+
+    <tag Name="Key">
+
+    <stag Name="Key">
+
+    <property Name="Key">
+
+    <xtagTextFragments>
+
+    <xtagGrammar>
+
+-->
+<objects Lang="example" Encoding="utf-8">
+  <object Name="Terrain" Load="Merge">
+    <xtagGrammar massNoun="▶true" />
+  </object>
+  <object Name="TerrainDesertCanyon" Load="Merge">
+    <part Name="Render" DisplayName="▶desert canyons" />
+    <part Name="Description" Short="▶Long ago the rivers themselves were ravenous, and they feasted on shale and limestone before taking bloated respite in the Great Salt Sea. Now the fissure-wounds have rotted to crimson and salt." />
+  </object>
+  <object Name="TerrainDesertCanyon2" Load="Merge">
+    <part Name="Render" DisplayName="▶desert canyons" />
+    <part Name="Description" Short="▶Long ago the rivers themselves were ravenous, and they feasted on shale and limestone before taking bloated respite in the Great Salt Sea. Now the fissure-wounds have rotted to crimson and salt." />
+  </object>
+  <object Name="TerrainDesertCanyon3" Load="Merge">
+    <part Name="Render" DisplayName="▶desert canyons" />
+    <part Name="Description" Short="▶Long ago the rivers themselves were ravenous, and they feasted on shale and limestone before taking bloated respite in the Great Salt Sea. Now the fissure-wounds have rotted to crimson and salt." />
+  </object>
+  <object Name="TerrainDesertCanyon4" Load="Merge">
+    <part Name="Render" DisplayName="▶desert canyons" />
+    <part Name="Description" Short="▶Long ago the rivers themselves were ravenous, and they feasted on shale and limestone before taking bloated respite in the Great Salt Sea. Now the fissure-wounds have rotted to crimson and salt." />
+  </object>
+  <object Name="TerrainSaltmarsh" Load="Merge">
+    <part Name="Render" DisplayName="▶salt marsh" />
+    <part Name="Description" Short="▶In stagnant pools, luminous lilies compete with the ribbon of stars in the night sky. Under the salt sun, though, they shrink into the shade of brine weed." />
+  </object>
+  <object Name="TerrainSaltmarsh2" Load="Merge">
+    <part Name="Render" DisplayName="▶salt marsh" />
+    <part Name="Description" Short="▶In stagnant pools, luminous lilies compete with the ribbon of stars in the night sky. Under the salt sun, though, they shrink into the shade of brine weed." />
+  </object>
+  <object Name="TerrainWatervine" Load="Merge">
+    <part Name="Render" DisplayName="▶salt marsh" />
+    <part Name="Description" Short="▶In stagnant pools, luminous lilies compete with the ribbon of stars in the night sky. Under the salt sun, though, they shrink into the shade of brine weed." />
+  </object>
+  <object Name="TerrainSaltdunes" Load="Merge">
+    <part Name="Render" DisplayName="▶salt dunes" />
+    <part Name="Description" Short="▶The ivory sea's dunes are like waves frozen in place. There are cracks in the salt from where the earth, blistered by the jeweled sun, contracted and broke. The horizon melts the sky together with the vast plain of Moghra'yi, the Great Salt Desert." />
+  </object>
+  <object Name="TerrainSaltdunes2" Load="Merge">
+    <part Name="Render" DisplayName="▶salt dunes" />
+    <part Name="Description" Short="▶The ivory sea's dunes are like waves frozen in place. There are cracks in the salt from where the earth, blistered by the jeweled sun, contracted and broke. The horizon melts the sky together with the vast plain of Moghra'yi, the Great Salt Desert." />
+  </object>
+  <object Name="TerrainTremblezone" Load="Merge">
+    <part Name="Render" DisplayName="▶salt dunes" />
+    <part Name="Description" Short="▶The ivory sea's dunes are like waves frozen in place. There are cracks in the salt from where the earth, blistered by the jeweled sun, contracted and broke. The horizon melts the sky together with the vast plain of Moghra'yi, the Great Salt Desert." />
+  </object>
+  <object Name="TerrainFlowerfields" Load="Merge">
+    <part Name="Render" DisplayName="▶flower fields" />
+    <part Name="Description" Short="▶Prismatic filament colonizes the cracks between the salted rot. There are meadows here, She says." />
+  </object>
+  <object Name="TerrainJungle" Load="Merge">
+    <part Name="Render" DisplayName="▶jungle" />
+    <part Name="Description" Short="▶Braids of roots and ribbons of fronds dimensionalize the flat loam. Something's home a discarded leaf makes." />
+  </object>
+  <object Name="TerrainDeepJungle" Load="Merge">
+    <part Name="Render" DisplayName="▶deep jungle" />
+    <part Name="Description" Short="▶Thriving florae pack the loam with maze-dense roots, and a high-wreath canopy chokes off the last beams of light." />
+  </object>
+  <object Name="TerrainFungalBase" Load="Merge">
+    <part Name="Render" DisplayName="▶Rainbow Wood" />
+    <part Name="Description" Short="▶Spores dance in eddies across kaleidoscopic fungal bonnets. Rivers of primordial soup, cast in the light of lava, gurgle a quickening melody." />
+    <tag Name="IndefiniteArticle" Value="▶the" />
+    <tag Name="DefiniteArticle" Value="▶the" />
+    <xtagGrammar Proper="▶true" massNoun="▶false" />
+  </object>
+  <object Name="TerrainMoonStair" Load="Merge">
+    <part Name="Render" DisplayName="▶Moon Stair" />
+    <part Name="Description" Short="▶Hex prisms burst out of black marble beds, and their edges decohere as warm static dew. The Stair purrs at low frequency." />
+    <tag Name="IndefiniteArticle" Value="▶the" />
+    <tag Name="DefiniteArticle" Value="▶the" />
+    <xtagGrammar Proper="▶true" massNoun="▶false" />
+  </object>
+  <object Name="TerrainCraters" Load="Merge">
+    <part Name="Render" DisplayName="▶craters" />
+    <part Name="Description" Short="▶" />
+  </object>
+  <object Name="RandomCrater" Load="Merge">
+    <part Name="Render" DisplayName="▶craters" />
+    <part Name="Description" Short="▶" />
+  </object>
+  <object Name="TerrainHills" Load="Merge">
+    <part Name="Render" DisplayName="▶hills" />
+    <part Name="Description" Short="▶Blips in the wave graph of stone over time." />
+  </object>
+  <object Name="TerrainMountains" Load="Merge">
+    <part Name="Render" DisplayName="▶mountains" />
+    <part Name="Description" Short="▶In the wave graph of stone over time, where the world plates once vexed themselves into war, a quiet peace has settled." />
+  </object>
+  <object Name="TerrainBananaGrove" Load="Merge">
+    <part Name="Render" DisplayName="▶banana grove" />
+    <part Name="Description" Short="▶The grove's million laced fingers sway in gentle opulence. Verdant fronds nestle the base of the Spindle from its mountainous nook." />
+    <xtagGrammar massNoun="▶false" />
+  </object>
+  <object Name="TerrainWater" Load="Merge">
+    <part Name="Render" DisplayName="▶water" />
+    <part Name="Description" Short="▶Water" />
+  </object>
+  <object Name="TerrainRiverSvy" Load="Merge">
+    <part Name="Render" DisplayName="▶River Svy" />
+    <xtagGrammar Proper="▶true" massNoun="▶false" />
+    <part Name="Description" Short="▶Svy urges over the salt-capped peaks and spills into the vine-braided loam. Her banks are shaded by the chrome carcasses of giants." />
+    <tag Name="IndefiniteArticle" Value="▶the" />
+    <tag Name="DefiniteArticle" Value="▶the" />
+    <tag Name="AlternateTerrainName" Value="▶RiverSvy" />
+  </object>
+  <object Name="TerrainRiverOpal" Load="Merge">
+    <part Name="Render" DisplayName="▶River Opal" />
+    <xtagGrammar Proper="▶true" massNoun="▶false" />
+    <part Name="Description" Short="▶The Spindle scintillates in watery effigy on her surface. She ferries crushed granite through a mountain pass and into her leafy firth." />
+    <tag Name="IndefiniteArticle" Value="▶the" />
+    <tag Name="DefiniteArticle" Value="▶the" />
+    <tag Name="AlternateTerrainName" Value="▶RiverOpal" />
+  </object>
+  <object Name="TerrainOpalDuskwaters" Load="Merge">
+    <part Name="Render" DisplayName="▶Opal's Duskwaters" />
+    <xtagGrammar Proper="▶true" />
+    <part Name="Description" Short="▶The umbrage of the boughs wrings the warmth from Opal's waters and leave behind a shady pool." />
+    <tag Name="AlternateTerrainName" Value="▶OpalDuskwaters" />
+  </object>
+  <object Name="TerrainRiverYonth" Load="Merge">
+    <part Name="Render" DisplayName="▶River Yonth" />
+    <xtagGrammar Proper="▶true" massNoun="▶false" />
+    <tag Name="IndefiniteArticle" Value="▶the" />
+    <tag Name="DefiniteArticle" Value="▶the" />
+    <part Name="Description" Short="▶Yonth breaks the massif to the strange East and ushers its nameless waters into Qud. Fish-things feed on her basalt chips." />
+    <tag Name="AlternateTerrainName" Value="▶RiverYonth" />
+  </object>
+  <object Name="TerrainMountainStream" Load="Merge">
+    <part Name="Render" DisplayName="▶mountain stream" />
+    <part Name="Description" Short="▶Old alps opened in the ageless past fill with a cool brine." />
+    <xtagGrammar massNoun="▶false" />
+    <tag Name="AlternateTerrainName" Value="▶MountainStream" />
+  </object>
+  <object Name="TerrainLakeHinnom" Load="Merge">
+    <part Name="Render" DisplayName="▶Lake Hinnom" />
+    <part Name="Description" Short="▶Coral fingers poke out from the spongebed and pierce the algal bloom, where white esh flock in the hundreds." />
+    <xtagGrammar Proper="▶true" massNoun="▶false" />
+  </object>
+  <object Name="TerrainPalladiumReef" Load="Merge">
+    <part Name="Render" DisplayName="▶Palladium Reef" />
+    <part Name="Description" Short="▶An arcology of bright polyps arches across the soldered trellis of old, and a rich diversity of life peoples it." />
+    <tag Name="IndefiniteArticle" Value="▶the" />
+    <tag Name="DefiniteArticle" Value="▶the" />
+    <xtagGrammar Proper="▶true" massNoun="▶false" />
+  </object>
+  <object Name="TerrainRuins" Load="Merge">
+    <part Name="Render" DisplayName="▶ruins" />
+    <part Name="Description" Short="▶Here crumble the mysterious Eaters' vine-swathed works, spun on the cyclopean lathe in an ageless past. Chrome steeples and parapets that rise above the clutches of shale hint at the labyrinths beneath them." />
+  </object>
+  <object Name="TerrainBaroqueRuins" Load="Merge">
+    <part Name="Render" DisplayName="▶baroque ruins" />
+    <part Name="Description" Short="▶Rampant greenspread canopies a starburst of the Eaters' richest works. The jungle is torn at the corners, where crysteel balustrades and star orchid lancets peek through." />
+  </object>
+  <object Name="TerrainJoppa" Load="Merge">
+    <part Name="Render" DisplayName="▶Joppa" />
+    <part Name="Description" Short="▶Ants in the viridian chaff, the farmers sap the last drops of pristine moisture out of the salt-spangled earth." />
+    <xtagGrammar Proper="▶true" massNoun="▶false" />
+  </object>
+  <object Name="TerrainJoppaRuins" Load="Merge">
+    <part Name="Render" DisplayName="▶salt marsh" />
+    <part Name="Description" Short="▶In stagnant pools, luminous lilies compete with the ribbon of stars in the night sky. Under the salt sun, though, they shrink into the shade of brine weed." />
+  </object>
+  <object Name="TerrainTheSpindle" Load="Merge">
+    <part Name="Render" DisplayName="▶Spindle" />
+    <part Name="Description" Short="▶Here lies the hallowed ground where the Spindle, a lengthless needle of maya blue, ruptures the tomb-dressed earth and pierces the firmament." />
+    <xtagGrammar Proper="▶true" massNoun="▶false" />
+    <tag Name="IndefiniteArticle" Value="▶the" />
+    <tag Name="DefiniteArticle" Value="▶the" />
+  </object>
+  <object Name="TerrainOmonporch" Load="Merge">
+    <part Name="Render" DisplayName="▶Omonporch" />
+    <part Name="Description" Short="▶Through the umbrage of choking trees fly the hundred archways and buttresses of funerary monuments. They peer over marble arcades that roof the catacombs of the Eaters of earth." />
+    <xtagGrammar Proper="▶true" massNoun="▶false" />
+  </object>
+  <object Name="TerrainKyakukya" Load="Merge">
+    <part Name="Render" DisplayName="▶Kyakukya" />
+    <part Name="Description" Short="▶Here is the jungle village of ape god worshippers and their giant mushroom dwellings." />
+    <xtagGrammar Proper="▶true" massNoun="▶false" />
+  </object>
+  <object Name="TerrainRedRock" Load="Merge">
+    <part Name="Render" DisplayName="▶Red Rock" />
+    <part Name="Description" Short="▶A naturally reddened outcropping of stone juts out of the salted crag." />
+    <xtagGrammar Proper="▶true" massNoun="▶false" />
+  </object>
+  <object Name="TerrainJoppaRedrockChannel" Load="Merge">
+    <part Name="Render" DisplayName="▶salt marsh" />
+    <part Name="Description" Short="▶In stagnant pools, luminous lilies compete with the ribbon of stars in the night sky. Under the salt sun, though, they shrink into the shade of brine weed." />
+  </object>
+  <object Name="TerrainSixDayStilt" Load="Merge">
+    <part Name="Render" DisplayName="▶Six Day Stilt" />
+    <part Name="Description" Short="▶The Six Day Stilt rises from the dunes like a petrified kraken corpse, bearing down upon the vacant flats." />
+    <tag Name="IndefiniteArticle" Value="▶the" />
+    <tag Name="DefiniteArticle" Value="▶the" />
+    <xtagGrammar Proper="▶true" massNoun="▶false" />
+  </object>
+  <object Name="TerrainEynRogel" Load="Merge">
+    <part Name="Render" DisplayName="▶Eyn Rogel" />
+    <part Name="Description" Short="▶Eyn Rogel" />
+    <xtagGrammar Proper="▶true" massNoun="▶false" />
+  </object>
+  <object Name="TerrainGritGate" Load="Merge">
+    <part Name="Render" DisplayName="▶Grit Gate" />
+    <part Name="Description" Short="▶Still erect is the superior half of the colossal gate inscribed with the runes of a hundred indecipherable tongues. Beneath its chrome palings a wide passage opens into the jungle loam." />
+    <xtagGrammar Proper="▶true" massNoun="▶false" />
+  </object>
+  <object Name="TerrainRustWell" Load="Merge">
+    <part Name="Render" DisplayName="▶rust wells" />
+    <part Name="Description" Short="▶Red qudzu vines take as their trellises chrome wells bored into the earth." />
+    <xtagGrammar iArticle="▶the" />
+    <tag Name="AlternateTerrainName" Value="▶RustWell" />
+  </object>
+  <object Name="TerrainGolgotha" Load="Merge">
+    <part Name="Render" DisplayName="▶Golgotha" />
+    <part Name="Description" Short="▶Shrouded in the rotting jungle are the mouths of the rust-caves of Golgotha, chrome's graveyard." />
+    <xtagGrammar Proper="▶true" massNoun="▶false" />
+  </object>
+  <object Name="TerrainBethesdaSusa" Load="Merge">
+    <part Name="Render" DisplayName="▶Bethesda Susa" />
+    <part Name="Description" Short="▶Eons-shifted stone entombs the angleless architecture of Bethsaida's lair." />
+    <xtagGrammar Proper="▶true" massNoun="▶false" />
+  </object>
+  <object Name="TerrainAsphaltMines" Load="Merge">
+    <part Name="Render" DisplayName="▶asphalt mines" />
+    <part Name="Description" Short="▶Rubble encases this abandoned mine where ancient tribes siphoned the black blood for their own inscrutable purposes." />
+    <xtagGrammar iArticle="▶the" />
+  </object>
+  <object Name="TerrainRustedArchway" Load="Merge">
+    <part Name="Render" DisplayName="▶rusted archway" />
+    <part Name="Description" Short="▶An arc of rust paints the sky and circles the path once taken by gargantuans in chrome." />
+    <xtagGrammar massNoun="▶false" />
+  </object>
+  <object Name="TerrainEynRoj" Load="Merge">
+    <part Name="Render" DisplayName="▶Eyn Roj" />
+    <part Name="Description" Short="▶Tucked into a marble glade is the cloven trunk of Chavvah, the Tree of Life. Its fallen leaves lay like a mirrored carpet, and the dream wrens chirr a psychal carol." />
+    <xtagGrammar Proper="▶true" massNoun="▶false" />
+    <tag Name="IndefiniteArticle" Value="▶*delete" />
+    <tag Name="DefiniteArticle" Value="▶*delete" />
+  </object>
+  <object Name="TerrainPalladiumReef 3l" Load="Merge">
+    <part Name="Render" DisplayName="▶Yd Freehold" />
+    <part Name="Description" Short="▶Dyed pipework topology mounted in the spongebed is a lodestar to the lyrical community." />
+    <tag Name="IndefiniteArticle" Value="▶the" />
+    <tag Name="DefiniteArticle" Value="▶the" />
+    <xtagGrammar Proper="▶true" massNoun="▶false" />
+  </object>
+  <object Name="TerrainBrightsheol" Load="Merge">
+    <part Name="Render" DisplayName="▶Brightsheol" />
+  </object>
+  <object Name="TerrainTzimtzlum" Load="Merge">
+    <part Name="Render" DisplayName="▶Tzimtzlum" />
+  </object>
+</objects>

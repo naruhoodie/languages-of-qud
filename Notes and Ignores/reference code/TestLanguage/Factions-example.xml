@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.2
+Caves of Qud - Generated Localizable XML 2.0.212.3
 
 <factions>
 
@@ -20,459 +20,90 @@ Caves of Qud - Generated Localizable XML 2.0.212.2
 
 -->
 <factions Lang="example" Encoding="utf-8">
-  <faction Name="Player" />
-  <faction Name="Inanimate" />
-  <faction Name="Beasts" />
-  <faction Name="Plants" />
-  <faction Name="Humanoids" />
-  <faction Name="GerminatedPlants" />
-  <faction Name="Cherubim" />
-  <faction Name="Prey" DisplayName="[!factions.faction.Prey.DisplayName!]grazing hedonists">
+  <faction Name="Prey" DisplayName="▶grazing hedonists" />
+  <faction Name="Joppa" DisplayName="▶villagers of Joppa" FormatWithArticle="true" />
+  <faction Name="Kyakukya" DisplayName="▶villagers of Kyakukya" FormatWithArticle="true" />
+  <faction Name="Ezra" DisplayName="▶villagers of Ezra" FormatWithArticle="true" />
+  <faction Name="Snapjaws" DisplayName="▶snapjaws" />
+  <faction Name="Baboons" DisplayName="▶baboons" />
+  <faction Name="Apes" DisplayName="▶apes" />
+  <faction Name="Crabs" DisplayName="▶crabs" />
+  <faction Name="Bears" DisplayName="▶bears" />
+  <faction Name="Winged Mammals" DisplayName="▶winged mammals" />
+  <faction Name="Birds" DisplayName="▶birds" />
+  <faction Name="Fish" DisplayName="▶fish">
     <interests>
-      <interest Tags="water,weep" />
-      <interest Tags="wine,weep" />
-      <interest Tags="cider,weep" />
+      <interest Tags="opalduskwaters,riveryonth,riversvy,mountainstream,riveropal" MatchAny="true" Description="▶watery locations" />
     </interests>
   </faction>
-  <faction Name="Playerhater" />
-  <faction Name="Playerneutral" />
-  <faction Name="Hunters" />
-  <faction Name="Mean" />
-  <faction Name="Joppa" DisplayName="[!factions.faction.Joppa.DisplayName!]villagers of Joppa" FormatWithArticle="true">
-    <waterritual />
+  <faction Name="Insects" DisplayName="▶insects" />
+  <faction Name="Swine" DisplayName="▶swine" />
+  <faction Name="Unshelled Reptiles" DisplayName="▶unshelled reptiles" />
+  <faction Name="Cannibals" DisplayName="▶cannibals" />
+  <faction Name="Arachnids" DisplayName="▶arachnids" />
+  <faction Name="Cats" DisplayName="▶cats" />
+  <faction Name="Dogs" DisplayName="▶dogs" />
+  <faction Name="Cragmensch" DisplayName="▶cragmensch" />
+  <faction Name="Mollusks" DisplayName="▶mollusks" />
+  <faction Name="Tortoises" DisplayName="▶tortoises" />
+  <faction Name="Robots" DisplayName="▶robots" />
+  <faction Name="Baetyls" DisplayName="▶baetyls" />
+  <faction Name="Dromad" DisplayName="▶dromad merchants" />
+  <faction Name="Entropic" DisplayName="▶highly entropic beings" />
+  <faction Name="Antelopes" DisplayName="▶antelopes" />
+  <faction Name="Worms" DisplayName="▶worms" />
+  <faction Name="Oozes" DisplayName="▶oozes" />
+  <faction Name="Equines" DisplayName="▶equines" />
+  <faction Name="Newly Sentient Beings" DisplayName="▶newly sentient beings">
+    <interests Blurb="▶ don't know anything" />
+  </faction>
+  <faction Name="Goatfolk" DisplayName="▶goatfolk" />
+  <faction Name="Hermits" DisplayName="▶hermits" />
+  <faction Name="Frogs" DisplayName="▶frogs" />
+  <faction Name="Svardym" DisplayName="▶svardym">
     <interests>
-      <interest Tags="snapjaw,settlement" WillBuy="true" WillSell="false" />
-      <interest Tags="apple,settlement" WillBuy="false" WillSell="true" />
-      <interest Tags="pig,settlement" WillBuy="false" WillSell="true" />
-      <interest Tags="saltmarsh" />
+      <interest Tags="gyreplagues" WillBuy="false" WillSell="true" Description="▶the plagues of the Gyre" />
     </interests>
   </faction>
-  <faction Name="Kyakukya" DisplayName="[!factions.faction.Kyakukya.DisplayName!]villagers of Kyakukya" FormatWithArticle="true">
-    <waterritual />
-    <interests>
-      <interest Tags="jungle" />
-      <interest Tags="robot,lair" WillBuy="false" WillSell="true" />
-    </interests>
-  </faction>
-  <faction Name="Ezra" DisplayName="[!factions.faction.Ezra.DisplayName!]villagers of Ezra" FormatWithArticle="true">
-    <waterritual />
-    <interests>
-      <interest Tags="historic" WillBuy="false" WillSell="true" />
-      <interest Tags="bananagrove" />
-      <interest Tags="sultan" WillBuy="false" WillSell="true" />
-    </interests>
-  </faction>
-  <faction Name="Snapjaws" DisplayName="[!factions.faction.Snapjaws.DisplayName!]snapjaws">
-    <interests>
-      <interest Tags="pig,settlement" WillBuy="true" WillSell="false" />
-      <interest Tags="apple,settlement" WillBuy="true" WillSell="false" />
-      <interest Tags="stopsvalinn" WillBuy="false" WillSell="true" />
-      <interest Tags="snapjaw,settlement" WillBuy="false" WillSell="true" />
-    </interests>
-  </faction>
-  <faction Name="Baboons" DisplayName="[!factions.faction.Baboons.DisplayName!]baboons">
-    <interests>
-      <interest Tags="baboon,lair" />
-      <interest Tags="gossip" />
-    </interests>
-  </faction>
-  <faction Name="Apes" DisplayName="[!factions.faction.Apes.DisplayName!]apes">
-    <waterritual />
-    <interests>
-      <interest Tags="insect,lair" />
-      <interest Tags="ape,lair" />
-      <interest Tags="oboroqoru,lair" WillBuy="false" WillSell="true" />
-    </interests>
-  </faction>
-  <faction Name="Crabs" DisplayName="[!factions.faction.Crabs.DisplayName!]crabs">
-    <waterritual />
-    <interests>
-      <interest Tags="underground" />
-    </interests>
-  </faction>
-  <faction Name="Bears" DisplayName="[!factions.faction.Bears.DisplayName!]bears">
-    <interests>
-      <interest Tags="ichormerchant" />
-      <interest Tags="honey,weep" />
-    </interests>
-  </faction>
-  <faction Name="Winged Mammals" DisplayName="[!factions.faction.Winged Mammals.DisplayName!]winged mammals">
-    <interests>
-      <interest Tags="fish,lair" />
-      <interest Tags="frog,lair" />
-    </interests>
-  </faction>
-  <faction Name="Birds" DisplayName="[!factions.faction.Birds.DisplayName!]birds">
-    <interests>
-      <interest Tags="gossip" />
-    </interests>
-  </faction>
-  <faction Name="Fish" DisplayName="[!factions.faction.Fish.DisplayName!]fish">
-    <waterritual />
-    <interests>
-      <interest Tags="opalduskwaters,riveryonth,riversvy,mountainstream,riveropal" MatchAny="true" Description="[!factions.faction.Fish.interests.interest.opalduskwaters,riveryonth,riversvy,mountainstream,riveropal...true..Description!]watery locations" />
-    </interests>
-  </faction>
-  <faction Name="Insects" DisplayName="[!factions.faction.Insects.DisplayName!]insects">
-    <interests>
-      <interest Tags="flower,lair" />
-      <interest Tags="flowerfields" />
-    </interests>
-  </faction>
-  <faction Name="Swine" DisplayName="[!factions.faction.Swine.DisplayName!]swine">
-    <interests>
-      <interest Tags="pig,settlement" />
-    </interests>
-  </faction>
-  <faction Name="Unshelled Reptiles" DisplayName="[!factions.faction.Unshelled Reptiles.DisplayName!]unshelled reptiles">
-    <interests>
-      <interest Tags="insect,lair" />
-      <interest Tags="lava,weep" />
-    </interests>
-  </faction>
-  <faction Name="Cannibals" DisplayName="[!factions.faction.Cannibals.DisplayName!]cannibals">
-    <waterritual />
-    <interests>
-      <interest Tags="humanoid,settlement" />
-      <interest Tags="humanoid,lair" />
-    </interests>
-  </faction>
-  <faction Name="Arachnids" DisplayName="[!factions.faction.Arachnids.DisplayName!]arachnids">
-    <interests>
-      <interest Tags="insect,lair" />
-      <interest Tags="haberdasher" />
-    </interests>
-    <waterritual />
-  </faction>
-  <faction Name="Cats" DisplayName="[!factions.faction.Cats.DisplayName!]cats">
-    <waterritual />
-    <interests>
-      <interest Tags="settlement" />
-    </interests>
-  </faction>
-  <faction Name="Dogs" DisplayName="[!factions.faction.Dogs.DisplayName!]dogs">
-    <interests>
-      <interest Tags="humanoid,settlement" />
-    </interests>
-  </faction>
-  <faction Name="Cragmensch" DisplayName="[!factions.faction.Cragmensch.DisplayName!]cragmensch">
-    <interests>
-      <interest Tags="mountains" />
-    </interests>
-  </faction>
-  <faction Name="Mollusks" DisplayName="[!factions.faction.Mollusks.DisplayName!]mollusks">
-    <interests>
-      <interest Tags="salt,weep" />
-      <interest Tags="slimy" />
-      <interest Tags="bird,lair" />
-    </interests>
-  </faction>
-  <faction Name="Tortoises" DisplayName="[!factions.faction.Tortoises.DisplayName!]tortoises" />
-  <faction Name="Robots" DisplayName="[!factions.faction.Robots.DisplayName!]robots">
-    <waterritual />
-    <interests>
-      <interest Tags="tech" WillBuy="false" WillSell="true" />
-      <interest Tags="rusty" WillBuy="true" WillSell="false" />
-      <interest Tags="ruins" WillBuy="false" WillSell="true" />
-      <interest Tags="historic" WillBuy="false" WillSell="true" />
-      <interest Tags="sultan" WillBuy="false" WillSell="true" />
-      <interest Tags="sultanTombPropaganda" WillBuy="true" WillSell="false" />
-    </interests>
-  </faction>
-  <faction Name="Baetyls" DisplayName="[!factions.faction.Baetyls.DisplayName!]baetyls">
-    <interests>
-      <interest Tags="sultan" />
-      <interest Tags="sultanTombPropaganda" WillBuy="true" WillSell="false" />
-    </interests>
-  </faction>
-  <faction Name="Dromad" DisplayName="[!factions.faction.Dromad.DisplayName!]dromad merchants">
-    <interests>
-      <interest Tags="humanoid,merchant" WillBuy="true" WillSell="false" />
-      <interest Tags="consortium" WillBuy="true" WillSell="false" />
-      <interest Tags="dromad" WillBuy="false" WillSell="true" />
-      <interest Tags="saltdunes" WillBuy="false" WillSell="true" />
-    </interests>
-  </faction>
-  <faction Name="Entropic" DisplayName="[!factions.faction.Entropic.DisplayName!]highly entropic beings">
-    <waterritual />
-    <interests>
-      <interest Tags="*" />
-    </interests>
-  </faction>
-  <faction Name="Antelopes" DisplayName="[!factions.faction.Antelopes.DisplayName!]antelopes">
-    <interests>
-      <interest Tags="water,weep" />
-      <interest Tags="cat,lair" />
-    </interests>
-  </faction>
-  <faction Name="Worms" DisplayName="[!factions.faction.Worms.DisplayName!]worms">
-    <interests>
-      <interest Tags="underground" />
-    </interests>
-  </faction>
-  <faction Name="Oozes" DisplayName="[!factions.faction.Oozes.DisplayName!]oozes">
-    <waterritual />
-    <interests>
-      <interest Tags="slimy" />
-      <interest Tags="weep" />
-    </interests>
-  </faction>
-  <faction Name="Equines" DisplayName="[!factions.faction.Equines.DisplayName!]equines">
-    <waterritual />
-    <interests>
-      <interest Tags="flowerfields" />
-      <interest Tags="desertcanyons" />
-    </interests>
-  </faction>
-  <faction Name="Newly Sentient Beings" DisplayName="[!factions.faction.Newly Sentient Beings.DisplayName!]newly sentient beings">
-    <waterritual />
-    <interests Blurb="[!factions.faction.Newly Sentient Beings.interests.Blurb!] don't know anything">
-      <interest Tags="*" WillBuy="true" WillSell="false" />
-    </interests>
-  </faction>
-  <faction Name="Goatfolk" DisplayName="[!factions.faction.Goatfolk.DisplayName!]goatfolk">
-    <waterritual />
-    <interests>
-      <interest Tags="jungle" />
-    </interests>
-  </faction>
-  <faction Name="Hermits" DisplayName="[!factions.faction.Hermits.DisplayName!]hermits">
-    <waterritual />
-    <interests>
-      <interest Tags="book" />
-    </interests>
-  </faction>
-  <faction Name="Frogs" DisplayName="[!factions.faction.Frogs.DisplayName!]frogs">
-    <waterritual />
-    <interests>
-      <interest Tags="insect,lair" />
-    </interests>
-  </faction>
-  <faction Name="Svardym" DisplayName="[!factions.faction.Svardym.DisplayName!]svardym">
-    <waterritual />
-    <interests>
-      <interest Tags="insect,lair" WillBuy="true" WillSell="false" />
-      <interest Tags="gyreplagues" WillBuy="false" WillSell="true" Description="[!factions.faction.Svardym.interests.interest.gyreplagues.false.true...Description!]the plagues of the Gyre" />
-    </interests>
-  </faction>
-  <faction Name="Naphtaali" DisplayName="[!factions.faction.Naphtaali.DisplayName!]Naphtaali tribe" FormatWithArticle="true" Plural="false">
-    <interests>
-      <interest Tags="jungle" />
-      <interest Tags="robot,lair" WillBuy="true" WillSell="false" />
-    </interests>
-    <waterritual />
-  </faction>
-  <faction Name="Trolls" DisplayName="[!factions.faction.Trolls.DisplayName!]trolls">
-    <interests>
-      <interest Tags="artifact" />
-    </interests>
-  </faction>
-  <faction Name="Issachari" DisplayName="[!factions.faction.Issachari.DisplayName!]Issachari tribe" FormatWithArticle="true" Plural="false">
-    <waterritual />
-    <interests>
-      <interest Tags="saltdunes" />
-    </interests>
-  </faction>
-  <faction Name="Strangers" DisplayName="[!factions.faction.Strangers.DisplayName!]mysterious strangers">
-    <waterritual />
-    <interests>
-      <interest Tags="*" WillBuy="true" WillSell="false" />
-      <interest Tags="oddity" WillBuy="false" WillSell="true" />
-    </interests>
-  </faction>
-  <faction Name="Solos" />
-  <faction Name="Pariahs" DisplayName="[!factions.faction.Pariahs.DisplayName!]pariahs">
-    <waterritual />
-    <interests>
-      <interest Tags="water,weep" WillBuy="true" WillSell="false" />
-      <interest Tags="recipe" WillBuy="true" WillSell="false" />
-      <interest Tags="tech" WillBuy="true" WillSell="false" />
-      <interest Tags="settlement" WillBuy="false" WillSell="true" />
-      <interest Tags="gossip" WillBuy="false" WillSell="true" />
-    </interests>
-  </faction>
-  <faction Name="Hindren" DisplayName="[!factions.faction.Hindren.DisplayName!]hindren of Bey Lah" FormatWithArticle="true">
-    <waterritual />
-    <interests>
-      <interest Tags="flowerfields" />
-      <interest Tags="kindrish" WillBuy="true" WillSell="false" />
-    </interests>
-  </faction>
-  <faction Name="Mopango" DisplayName="[!factions.faction.Mopango.DisplayName!]mopango" FormatWithArticle="true">
-    <waterritual />
-    <interests>
-      <interest Tags="rusty" WillBuy="true" WillSell="false" />
-      <interest Tags="tech" WillBuy="true" WillSell="true" />
-    </interests>
-  </faction>
-  <faction Name="Girsh" DisplayName="[!factions.faction.Girsh.DisplayName!]Girsh" FormatWithArticle="true">
-    <waterritual />
-    <interests>
-      <interest Tags="moonstair" />
-    </interests>
-  </faction>
-  <faction Name="Barathrumites" DisplayName="[!factions.faction.Barathrumites.DisplayName!]Barathrumites" FormatWithArticle="true">
-    <waterritual />
-    <interests>
-      <interest Tags="tech" />
-      <interest Tags="templar,lair" />
-    </interests>
+  <faction Name="Naphtaali" DisplayName="▶Naphtaali tribe" FormatWithArticle="true" Plural="false" />
+  <faction Name="Trolls" DisplayName="▶trolls" />
+  <faction Name="Issachari" DisplayName="▶Issachari tribe" FormatWithArticle="true" Plural="false" />
+  <faction Name="Strangers" DisplayName="▶mysterious strangers" />
+  <faction Name="Pariahs" DisplayName="▶pariahs" />
+  <faction Name="Hindren" DisplayName="▶hindren of Bey Lah" FormatWithArticle="true" />
+  <faction Name="Mopango" DisplayName="▶mopango" FormatWithArticle="true" />
+  <faction Name="Girsh" DisplayName="▶Girsh" FormatWithArticle="true" />
+  <faction Name="Barathrumites" DisplayName="▶Barathrumites" FormatWithArticle="true">
     <ranks>
-      <rank Name="apprentice" DisplayName="[!factions.faction.Barathrumites.ranks.rank.apprentice.DisplayName!]apprentice" />
-      <rank Name="journeyfriend" DisplayName="[!factions.faction.Barathrumites.ranks.rank.journeyfriend.DisplayName!]journeyfriend" />
-      <rank Name="disciple" DisplayName="[!factions.faction.Barathrumites.ranks.rank.disciple.DisplayName!]disciple" />
-      <rank Name="meyvn" DisplayName="[!factions.faction.Barathrumites.ranks.rank.meyvn.DisplayName!]meyvn" />
+      <rank Name="apprentice" DisplayName="▶apprentice" />
+      <rank Name="journeyfriend" DisplayName="▶journeyfriend" />
+      <rank Name="disciple" DisplayName="▶disciple" />
+      <rank Name="meyvn" DisplayName="▶meyvn" />
     </ranks>
   </faction>
-  <faction Name="Consortium" DisplayName="[!factions.faction.Consortium.DisplayName!]Consortium of Phyta" FormatWithArticle="true" Plural="false">
-    <waterritual />
+  <faction Name="Consortium" DisplayName="▶Consortium of Phyta" FormatWithArticle="true" Plural="false" />
+  <faction Name="Templar" DisplayName="▶Putus Templar" FormatWithArticle="true">
     <interests>
-      <interest Tags="dromad,merchant" WillBuy="true" WillSell="false" />
-      <interest Tags="humanoid,merchant" WillBuy="true" WillSell="false" />
-      <interest Tags="consortium" WillBuy="false" WillSell="true" />
-      <interest Tags="gossip" WillBuy="false" WillSell="true" />
+      <interest Tags="ruins,tech,historic,sultan,cybernetics,rebekah,sultanTombPropaganda" WillBuy="true" WillSell="false" MatchAny="true" Inverse="true" Description="▶the modern world" />
     </interests>
   </faction>
-  <faction Name="Templar" DisplayName="[!factions.faction.Templar.DisplayName!]Putus Templar" FormatWithArticle="true">
-    <waterritual />
-    <interests>
-      <interest Tags="ruins,tech,historic,sultan,cybernetics,rebekah,sultanTombPropaganda" WillBuy="true" WillSell="false" MatchAny="true" Inverse="true" Description="[!factions.faction.Templar.interests.interest.ruins,tech,historic,sultan,cybernetics,rebekah,sultanTombPropaganda.true.false.true.true.Description!]the modern world" />
-      <interest Tags="cybernetics" WillBuy="false" WillSell="true" />
-      <interest Tags="historic" WillBuy="false" WillSell="true" />
-    </interests>
-  </faction>
-  <faction Name="Mechanimists" DisplayName="[!factions.faction.Mechanimists.DisplayName!]Mechanimists" FormatWithArticle="true">
-    <waterritual />
-    <interests>
-      <interest Tags="tech" />
-      <interest Tags="ruins" />
-      <interest Tags="historic" />
-      <interest Tags="gunsmith" />
-      <interest Tags="robot,lair" />
-    </interests>
-  </faction>
-  <faction Name="MechaSub" />
-  <faction Name="Gyre Wights" DisplayName="[!factions.faction.Gyre Wights.DisplayName!]Gyre wights" FormatWithArticle="true">
-    <interests>
-      <interest Tags="girsh" />
-      <interest Tags="nephilim" WillBuy="false" WillSell="true" />
-    </interests>
-  </faction>
-  <faction Name="Mamon" DisplayName="[!factions.faction.Mamon.DisplayName!]Children of Mamon" FormatWithArticle="true">
-    <waterritual />
-    <interests>
-      <interest Tags="goatfolk,settlement" />
-      <interest Tags="jungle" WillBuy="false" WillSell="true" />
-    </interests>
-  </faction>
-  <faction Name="Seekers" DisplayName="[!factions.faction.Seekers.DisplayName!]Seekers of the Sightless Way" FormatWithArticle="true">
-    <waterritual />
-    <interests>
-      <interest Tags="Ptoh" />
-    </interests>
-  </faction>
-  <faction Name="Wardens" DisplayName="[!factions.faction.Wardens.DisplayName!]Fellowship of Wardens" FormatWithArticle="true" Plural="false">
-    <waterritual />
-    <interests>
-      <interest Tags="settlement" />
-    </interests>
-  </faction>
-  <faction Name="Water" DisplayName="[!factions.faction.Water.DisplayName!]water barons">
-    <waterritual />
-    <interests>
-      <interest Tags="settlement" WillBuy="true" WillSell="false" />
-      <interest Tags="water,weep" WillBuy="false" WillSell="true" />
-    </interests>
-  </faction>
-  <faction Name="Flowers" DisplayName="[!factions.faction.Flowers.DisplayName!]flowers">
-    <waterritual />
-    <interests>
-      <interest Tags="flowerfields" />
-    </interests>
-  </faction>
-  <faction Name="Roots" DisplayName="[!factions.faction.Roots.DisplayName!]roots">
-    <waterritual />
-    <interests>
-      <interest Tags="underground" />
-    </interests>
-  </faction>
-  <faction Name="Fungi" DisplayName="[!factions.faction.Fungi.DisplayName!]fungi">
-    <waterritual />
-    <interests>
-      <interest Tags="settlement" WillBuy="true" WillSell="false" />
-      <interest Tags="fungal" WillBuy="false" WillSell="true" />
-    </interests>
-  </faction>
-  <faction Name="Vines" DisplayName="[!factions.faction.Vines.DisplayName!]vines">
-    <waterritual />
-  </faction>
-  <faction Name="Urchins" DisplayName="[!factions.faction.Urchins.DisplayName!]urchins">
-    <interests>
-      <interest Tags="gel,weep" />
-    </interests>
-  </faction>
-  <faction Name="Succulents" DisplayName="[!factions.faction.Succulents.DisplayName!]succulents">
-    <waterritual />
-    <interests>
-      <interest Tags="saltdunes" />
-    </interests>
-  </faction>
-  <faction Name="Trees" DisplayName="[!factions.faction.Trees.DisplayName!]trees">
-    <interests>
-      <interest Tags="sultan" WillBuy="false" WillSell="true" />
-      <interest Tags="sultanTombPropaganda" WillBuy="false" WillSell="false" />
-    </interests>
-  </faction>
-  <faction Name="Merchants" DisplayName="[!factions.faction.Merchants.DisplayName!]Merchants' Guild" FormatWithArticle="true" Plural="false">
-    <waterritual />
-    <interests>
-      <interest Tags="merchant" />
-      <interest Tags="gossip" />
-    </interests>
-  </faction>
-  <faction Name="Farmers" DisplayName="[!factions.faction.Farmers.DisplayName!]Farmers' Guild" FormatWithArticle="true" Plural="false">
-    <interests>
-      <interest Tags="humanoid,settlement" WillBuy="true" WillSell="false" />
-    </interests>
-  </faction>
-  <faction Name="Resheph" DisplayName="[!factions.faction.Resheph.DisplayName!]Cult of the Coiled Lamb" FormatWithArticle="true" Plural="false">
-    <waterritual />
-    <interests>
-      <interest Tags="sultan" WillBuy="false" WillSell="false" />
-      <interest Tags="sultanTombPropaganda" WillBuy="false" WillSell="false" />
-    </interests>
-  </faction>
-  <faction Name="Daughters" DisplayName="[!factions.faction.Daughters.DisplayName!]Daughters of Exile" FormatWithArticle="true" Plural="true">
-    <interests>
-      <interest Tags="sultanTombPropaganda" WillBuy="true" WillSell="false" />
-      <interest Tags="rebekah" WillBuy="false" WillSell="true" />
-    </interests>
-    <waterritual />
-  </faction>
-  <faction Name="YdFreehold" DisplayName="[!factions.faction.YdFreehold.DisplayName!]denizens of the Yd Freehold" FormatWithArticle="true">
-    <waterritual />
-    <interests>
-      <interest Tags="tech" WillBuy="true" WillSell="false" />
-      <interest Tags="oddity" WillBuy="true" WillSell="false" />
-      <interest Tags="settlement" WillBuy="true" WillSell="false" />
-      <interest Tags="historic" WillBuy="true" WillSell="false" />
-      <interest Tags="lakehinnom" WillBuy="false" WillSell="true" />
-      <interest Tags="palladiumreef" WillBuy="false" WillSell="true" />
-      <interest Tags="sultan" WillBuy="false" WillSell="false" />
-    </interests>
-  </faction>
-  <faction Name="Chavvah" DisplayName="[!factions.faction.Chavvah.DisplayName!]Chavvah, the Tree of Life" FormatWithArticle="false" Plural="false">
-    <waterritual />
-    <interests>
-      <interest Tags="oddity" WillBuy="true" WillSell="false" />
-      <interest Tags="Ptoh" WillBuy="true" WillSell="false" />
-      <interest Tags="moonstair" WillBuy="false" WillSell="true" />
-      <interest Tags="sultan" WillBuy="false" WillSell="false" />
-    </interests>
-  </faction>
-  <faction Name="SultanCult1" FormatWithArticle="true" Plural="false" />
-  <faction Name="SultanCult2" FormatWithArticle="true" Plural="false" />
-  <faction Name="SultanCult3" FormatWithArticle="true" Plural="false" />
-  <faction Name="SultanCult4" FormatWithArticle="true" Plural="false" />
-  <faction Name="SultanCult5" FormatWithArticle="true" Plural="false" />
+  <faction Name="Mechanimists" DisplayName="▶Mechanimists" FormatWithArticle="true" />
+  <faction Name="Gyre Wights" DisplayName="▶Gyre wights" FormatWithArticle="true" />
+  <faction Name="Mamon" DisplayName="▶Children of Mamon" FormatWithArticle="true" />
+  <faction Name="Seekers" DisplayName="▶Seekers of the Sightless Way" FormatWithArticle="true" />
+  <faction Name="Wardens" DisplayName="▶Fellowship of Wardens" FormatWithArticle="true" Plural="false" />
+  <faction Name="Water" DisplayName="▶water barons" />
+  <faction Name="Flowers" DisplayName="▶flowers" />
+  <faction Name="Roots" DisplayName="▶roots" />
+  <faction Name="Fungi" DisplayName="▶fungi" />
+  <faction Name="Vines" DisplayName="▶vines" />
+  <faction Name="Urchins" DisplayName="▶urchins" />
+  <faction Name="Succulents" DisplayName="▶succulents" />
+  <faction Name="Trees" DisplayName="▶trees" />
+  <faction Name="Merchants" DisplayName="▶Merchants' Guild" FormatWithArticle="true" Plural="false" />
+  <faction Name="Farmers" DisplayName="▶Farmers' Guild" FormatWithArticle="true" Plural="false" />
+  <faction Name="Resheph" DisplayName="▶Cult of the Coiled Lamb" FormatWithArticle="true" Plural="false" />
+  <faction Name="Daughters" DisplayName="▶Daughters of Exile" FormatWithArticle="true" Plural="true" />
+  <faction Name="YdFreehold" DisplayName="▶denizens of the Yd Freehold" FormatWithArticle="true" />
+  <faction Name="Chavvah" DisplayName="▶Chavvah, the Tree of Life" FormatWithArticle="false" Plural="false" />
 </factions>

@@ -1,0 +1,1300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Caves of Qud - Generated Localizable XML 2.0.212.3
+
+<objects>
+
+  <object Name="Key" Load="">
+
+    <part Name="Key">
+
+    <tag Name="Key">
+
+    <stag Name="Key">
+
+    <property Name="Key">
+
+    <xtagTextFragments>
+
+    <xtagGrammar>
+
+-->
+<objects Lang="example" Encoding="utf-8">
+  <object Name="Ehalcodon" Load="Merge">
+    <part Name="Render" DisplayName="▶{{M|Ehalcodon}}" />
+    <part Name="Description" Short="▶A creature of immensity mounts the upper eyeline and radiates Godlight. Haunches dusted with Spindle glitter support a creature-shape sketched to being by the sentient background radiation of this plane, and wide, banded wings are edged to soar on stellar winds. Finally, irisdual light churning under =pronouns.possessive= tx-glass skin is refracted to the metaspectrum of impossibility and spills out of body in cornu spirals." />
+    <part Name="Honorifics" Ordinary="▶{{M|Starformed}}" />
+    <tag Name="PronounSet" Value="▶qe/qem/qyr" />
+    <part Name="BlowAwayGas" Message="▶=subject.T= =verb:bat= =subject.possessive= banded wings and blows the =gas= away!" />
+    <part Name="TimeCubeProtection" Message="▶=subject.T= =verb:enter= a spacetime cocoon!" />
+  </object>
+  <object Name="Nephal_Starhoof" Load="Merge">
+    <part Name="Render" DisplayName="▶starprint hoof" />
+  </object>
+  <object Name="Prism Girshling" Load="Merge">
+    <part Name="Render" DisplayName="▶prism girshling" />
+  </object>
+  <object Name="Prism Girshling Cresh" Load="Merge">
+    <part Name="Render" DisplayName="▶prism cresh" />
+  </object>
+  <object Name="LightCircleEhalcodon" Load="Merge">
+    <part Name="Render" DisplayName="▶circle of light in the chord of {{ehalcodon|Ehalcodon}}" />
+    <part Name="Description" Short="▶Minarets of starburst ejecta from the proto-universe wheel about a zeropoint and blur in the iridescence of a nondeterministic God." />
+  </object>
+  <object Name="BaseEaterGreatMachineShrine" Load="Merge">
+    <part Name="Render" DisplayName="▶shrine to the Great Machine" />
+    <part Name="Description" Short="▶Marble eaters kneel in priestly concordance with the Great Machine, drawing levers and priming hydrants to steer and be steered by the Computed Will. A dais of crystal diodes gives a dashboard view to the churning of geocultures hundreds of thousands of light years away." />
+  </object>
+  <object Name="Eater Globe" Load="Merge">
+    <part Name="Render" DisplayName="▶globe in suspense" />
+    <part Name="Description" Short="▶In high relief, folds and knots of sandy hued shapes crown the sapphire surface of the spherical model. The juxtaposition of scales, the proportion of sea to land, and the collective wisdom harnessed to devise such a thing make your head spin." />
+  </object>
+  <object Name="BaseSpindleSupport" Load="Merge">
+    <part Name="Render" DisplayName="▶tethering arm" />
+    <part Name="Description" Short="▶Flanged ursteel anchors secure the tapered ribbon of Gjaus to its low earth point." />
+  </object>
+  <object Name="Spindle Ribbon" Load="Merge">
+    <part Name="Render" DisplayName="▶graphene ribbon" />
+    <part Name="Description" Short="▶A bubbled ribbon of carbon motes lathed to the thickness of paper combs against its anchoring mechanisms and disappears skyward to a tapered nothing." />
+  </object>
+  <object Name="Left Spindle Ribbon" Load="Merge">
+    <part Name="Render" DisplayName="▶graphene ribbon" />
+  </object>
+  <object Name="Right Spindle Ribbon" Load="Merge">
+    <part Name="Render" DisplayName="▶graphene ribbon" />
+  </object>
+  <object Name="Spindle Ribbon Top" Load="Merge">
+    <part Name="Render" DisplayName="▶graphene ribbon" />
+    <part Name="Description" Short="▶A bubbled ribbon of carbon motes lathed to the thickness of paper combs against its anchoring mechanisms and disappears skyward to a tapered nothing." />
+  </object>
+  <object Name="Left Spindle Ribbon Top" Load="Merge">
+    <part Name="Render" DisplayName="▶graphene ribbon" />
+  </object>
+  <object Name="Right Spindle Ribbon Top" Load="Merge">
+    <part Name="Render" DisplayName="▶graphene ribbon" />
+  </object>
+  <object Name="TerrainNorthSheva" Load="Merge">
+    <xtagGrammar massNoun="▶false" />
+  </object>
+  <object Name="TerrainCosmos" Load="Merge">
+    <part Name="Render" DisplayName="▶jeweled cosmos" />
+    <part Name="Description" Short="▶The viewing frustum fills with a rainbow mosaic of stellar candles, softened by the isles of dust across their impossible gulfs, and winking in fusil motion. As a single vista, the breadth of it staggers the conscious mind, which races to reduce the innumerable pixels to whole and platonic forms." />
+  </object>
+  <object Name="TerrainWorld" Load="Merge">
+    <part Name="Render" DisplayName="▶blue marble world" />
+    <part Name="Description" Short="▶Great shelves of ice melt and feed the sapphire seas, which lap the drifting honeycombs of basalt and lime. Up here, coastline patterns emerge from millions of flowing contours, each of which might harbor a clade of snails, or trees, or rice farmers." />
+  </object>
+  <object Name="TerrainHalo" Load="Merge">
+    <part Name="Render" DisplayName="▶atmospheric halo" />
+    <part Name="Description" Short="▶An aura of airy fuzz swirls above the marble, peeling together and dissolving apart in unending seasons, searing sea winds cooling to zephyrous breezes, sequencing the life rhythms of a breathing world." />
+  </object>
+  <object Name="TerrainExtrasolarFungi" Load="Merge">
+    <part Name="Render" DisplayName="▶extrasolar fungi" />
+    <part Name="Description" Short="▶Gigantic fruiting bodies in rich, unearthly hues stick to sponge forks and burp spores. They flit curvewise toward the electrostatic of the Spindle tether and rain down as glitter." />
+  </object>
+  <object Name="TerrainSolarRibbon" Load="Merge">
+    <part Name="Render" DisplayName="▶solar ribbon" />
+    <part Name="Description" Short="▶Superellipses of flat, sundrunk conductors tessellate a braided strip that is curved to best catch sunlight and its reflected runoff." />
+  </object>
+  <object Name="TerrainSpindleTether" Load="Merge">
+    <part Name="Render" DisplayName="▶Spindle tether" />
+    <part Name="Description" Short="▶A ribbon of bubbled agate bows northwise and plunges through the well of clouds, blurring with a shelf of slouching landmass below." />
+    <xtagGrammar Proper="▶true" />
+    <tag Name="IndefiniteArticle" Value="▶the" />
+    <tag Name="DefiniteArticle" Value="▶the" />
+  </object>
+  <object Name="TerrainSkyBridge" Load="Merge">
+    <part Name="Render" DisplayName="▶southwise bridge" />
+    <part Name="Description" Short="▶From the shadowed gloam of an understratum tunnel emerges a south-ran bridge across the empyrean, underlit by the sunbeaming oceans below." />
+  </object>
+  <object Name="TerrainSurfaceStratum" Load="Merge">
+    <part Name="Render" DisplayName="▶surface stratum" />
+    <part Name="Description" Short="▶Sheets on sheets of highly fibrous composite material are lathed out to a flat and buildable pleat for high orbit poleis." />
+  </object>
+  <object Name="TerrainSuperStratum" Load="Merge">
+    <part Name="Render" DisplayName="▶superstratum" />
+    <part Name="Description" Short="▶Squared, fibrous composite rises northwise above the Sheva and offers an angled view from the high mesa to the lower shelves." />
+  </object>
+  <object Name="TerrainUnderstratum" Load="Merge">
+    <part Name="Render" DisplayName="▶understratum" />
+    <part Name="Description" Short="▶Beneath the sunning poleis on the surface, unmappable labyrinths of cavernous, hollowed-out fiberstuff seat chiliads of fossilized underculture." />
+  </object>
+  <object Name="TerrainShatteredStratum" Load="Merge">
+    <part Name="Render" DisplayName="▶shattered stratum" />
+    <part Name="Description" Short="▶Megastruts are peeled apart and gilded with ropes of frayed composite, all shattered by the violence of time and frozen in the airless vacuum." />
+  </object>
+  <object Name="TerrainUnderhorn" Load="Merge">
+    <part Name="Render" DisplayName="▶underhorn" />
+    <part Name="Description" Short="▶Hyperconductive silver underlooms the low strata, bat-like, and beams signal to the churning duffs below." />
+  </object>
+  <object Name="TerrainMoverRail" Load="Merge">
+    <part Name="Render" DisplayName="▶mover rail" />
+    <part Name="Description" Short="▶Long lines of superconductive timber transsect the North Sheva and magnetically levitate movers to skybent stops." />
+  </object>
+  <object Name="TerrainMoverStop" Load="Merge">
+    <part Name="Render" DisplayName="▶mover stop" />
+    <part Name="Description" Short="▶The latching diamond achieves magnetic lock with the legs of a mover palaquin and concludes the ritual of going." />
+  </object>
+  <object Name="TerrainMoverStopRuined" Load="Merge">
+    <part Name="Render" DisplayName="▶ruined mover stop" />
+    <part Name="Description" Short="▶Latches are burst open and magnetic charge flows outwise; mover capture is no longer possible." />
+  </object>
+  <object Name="TerrainArrivarium" Load="Merge">
+    <part Name="Render" DisplayName="▶Arrivarium" />
+    <part Name="Description" Short="▶The Sheva-wise length of the Spindle tether is clasped in the locking mechanisms of the arrival chamber. Stabilizing pounders beat their gongs and smooth vibrative aberrations from the Shevas' geolocked orbit." />
+    <xtagGrammar Proper="▶true" />
+    <tag Name="IndefiniteArticle" Value="▶the" />
+    <tag Name="DefiniteArticle" Value="▶the" />
+  </object>
+  <object Name="TerrainEarthGate" Load="Merge">
+    <part Name="Render" DisplayName="▶Earth Gate" />
+    <part Name="Description" Short="▶A shouldered arch and gate reify the flow from terrestrial tree and sand to star perch, and vice versa. In the orchard of passage, at the foot of the gate itself, great slabs of ancestral shale ring the vessels of ceremony." />
+    <xtagGrammar Proper="▶true" />
+    <tag Name="IndefiniteArticle" Value="▶the" />
+    <tag Name="DefiniteArticle" Value="▶the" />
+  </object>
+  <object Name="TerrainEarthGateFlank" Load="Merge">
+    <part Name="Render" DisplayName="▶Earth Gate" />
+    <xtagGrammar Proper="▶true" />
+    <part Name="Description" Short="▶A shouldered arch and gate reify the flow from terrestrial tree and sand to star perch, and vice versa. In the orchard of passage, at the foot of the gate itself, great slabs of ancestral shale ring the vessels of ceremony." />
+    <tag Name="IndefiniteArticle" Value="▶the" />
+    <tag Name="DefiniteArticle" Value="▶the" />
+  </object>
+  <object Name="TerrainTifaret" Load="Merge">
+    <part Name="Render" DisplayName="▶Point of Tifaret" />
+    <part Name="Description" Short="▶The sinnorot intersect at a middle point and, plied by their golden ecliptics in the Blue Shul, heave movers to and from the heart of the North Sheva." />
+    <xtagGrammar Proper="▶true" />
+    <tag Name="IndefiniteArticle" Value="▶the" />
+    <tag Name="DefiniteArticle" Value="▶the" />
+  </object>
+  <object Name="TerrainNorthernArk" Load="Merge">
+    <part Name="Render" DisplayName="▶Northern Ark" />
+    <part Name="Description" Short="▶The beldam district has had its dustcloud fins welded to the superstratum and mazed with labyrinthite to protect the hyperbrain. Inside that electromagnetic cage and quantum temple, the stirrings of the Great Siach spill from its nondeterministic core." />
+    <xtagGrammar Proper="▶true" />
+    <tag Name="IndefiniteArticle" Value="▶the" />
+    <tag Name="DefiniteArticle" Value="▶the" />
+  </object>
+  <object Name="TerrainStarfarersQuay" Load="Merge">
+    <part Name="Render" DisplayName="▶Starfarer's Quay" />
+    <part Name="Description" Short="▶Muqarnas spill down the high dome that once roofed the navel of the thousand starfolk road. Now singing bells sound through the hippodrome with no creaturely answer." />
+  </object>
+  <object Name="TerrainStarOrchidTemple" Load="Merge">
+    <part Name="Render" DisplayName="▶Star Orchid Temple" />
+    <part Name="Description" Short="▶The spire-garden of outworld lime fired in the exhaust of starships looms over the low dacha. O'er tiers of antipodal colonnades, pond lilies creep up bannisters and peek at themselves. This is a place of portals." />
+    <xtagGrammar Proper="▶true" />
+  </object>
+  <object Name="TerrainGreatMachineTemple" Load="Merge">
+    <part Name="Render" DisplayName="▶temple to the Great Machine" />
+    <part Name="Description" Short="▶Slow-turning gears of star-won metal are curtained in sails and flank an abacus of continental measure. The oil burns to light the functional temple, which doubles as synagogue to the 72-Fold Peace and, too, engine of its dictates." />
+    <tag Name="IndefiniteArticle" Value="▶the" />
+    <tag Name="DefiniteArticle" Value="▶the" />
+  </object>
+  <object Name="TerrainDarkMatterMast" Load="Merge">
+    <part Name="Render" DisplayName="▶dark matter mast" />
+    <part Name="Description" Short="▶Tall spars of the light-shunting massy stuff were erected o'er starports across the local cluster; the ley lines were bent and new channels of fluidic culture wrought." />
+  </object>
+  <object Name="TerrainStarshipMoor" Load="Merge">
+    <part Name="Render" DisplayName="▶starship moor" />
+    <part Name="Description" Short="▶Great, void-poking piers are freckled with starship hangars and crosshatched by crumbling marble boulevards. The jeweled cosmos shines through quarter-sphere domes." />
+  </object>
+  <object Name="TerrainObservationLune" Load="Merge">
+    <part Name="Render" DisplayName="▶observation lune" />
+    <part Name="Description" Short="▶A cyclopean drum of divining liquid is yoked to the stratum for peering at the mythopoetic event stream of the bubbled kingdom." />
+    <tag Name="IndefiniteArticle" Value="▶the" />
+    <tag Name="DefiniteArticle" Value="▶the" />
+  </object>
+  <object Name="TerrainObservationLune R" Load="Merge">
+    <part Name="Render" DisplayName="▶observation lune" />
+  </object>
+  <object Name="TerrainQor" Load="Merge">
+    <part Name="Render" DisplayName="▶kingdom of Qor" />
+    <part Name="Description" Short="▶For what purpose did the Eaters rear a fairy tale people and let them think their pennant flew over the whole of a crystal universe? If there was one, it is lost." />
+    <tag Name="IndefiniteArticle" Value="▶the" />
+    <tag Name="DefiniteArticle" Value="▶the" />
+  </object>
+  <object Name="TerrainMotedForest" Load="Merge">
+    <part Name="Render" DisplayName="▶moted forest" />
+    <part Name="Description" Short="▶Motes of stardust rain through the canopy of enchantment and swirl on wind. They refract the bubbled light and slip into unseen colors, pattering trees of damp and softest leaf." />
+    <xtagGrammar massNoun="▶true" />
+  </object>
+  <object Name="TerrainLakeAvalon" Load="Merge">
+    <part Name="Render" DisplayName="▶Lake Avalon" />
+    <part Name="Description" Short="▶The skin of the sacred lake dampens the sorceral songs of the forest and mirrors the Great Moon, its sapphire seas and continents of ash shivering in watery projection." />
+    <xtagGrammar Proper="▶true" />
+  </object>
+  <object Name="TerrainGlassDome" Load="Merge">
+    <part Name="Render" DisplayName="▶glass dome" />
+    <part Name="Description" Short="▶The great capsule (overwall and world-skin) holds the kingdom in truth but not in appearance, inverting the relation of the kingdom and its king." />
+  </object>
+  <object Name="TerrainSeedVault" Load="Merge">
+    <part Name="Render" DisplayName="▶seed vault" />
+    <part Name="Description" Short="▶Muraled cisterns hold the great liquid biobanks that preserve chiliads of terrestrial plant life. The phytonic index so engraved both mirrors and predicts the movements of culture; marshdwellers creep up river to chase fertile soil, and then retreat to canyons when the carnivorous clades thrive." />
+    <xtagGrammar Proper="▶true" />
+    <tag Name="IndefiniteArticle" Value="▶the" />
+    <tag Name="DefiniteArticle" Value="▶the" />
+  </object>
+  <object Name="TerrainConsulate" Load="Merge">
+    <part Name="Render" DisplayName="▶Triangulum Consulate" />
+    <part Name="Description" Short="▶The spiraling triangle finial portrays the flowing asterism that gave the star cluster its prominence. Alpha, Bet, and Dalet emerged from the galactic nucleus and flowered, coursed o'er the same ecliptic tracks of the Great Machine, and sent a minyan of petal-beings to pray/play a future coupling into existence." />
+    <xtagGrammar Proper="▶true" />
+    <tag Name="IndefiniteArticle" Value="▶the" />
+    <tag Name="DefiniteArticle" Value="▶the" />
+  </object>
+  <object Name="TerrainConsulate U" Load="Merge">
+    <part Name="Render" DisplayName="▶Triangulum Consulate" />
+    <part Name="Description" Short="▶The spiraling triangle finial portrays the flowing asterism that gave the star cluster its prominence. Alpha, Bet, and Dalet emerged from the galactic nucleus and flowered, coursed o'er the same ecliptic tracks of the Great Machine, and sent a minyan of petal-beings to pray/play a future coupling into existence." />
+    <xtagGrammar Proper="▶true" />
+    <tag Name="IndefiniteArticle" Value="▶the" />
+    <tag Name="DefiniteArticle" Value="▶the" />
+  </object>
+  <object Name="TerrainJyEgregore L" Load="Merge">
+    <part Name="Render" DisplayName="▶Jy egregore" />
+    <part Name="Description" Short="▶The mysterious thought-form woke from a lost current of local sapiance and squat itself a spongey mangrowth in the ultraviolet baths of the surface. It's long since desiccated, the visceral mass time-viced into something more like paper pulp." />
+    <xtagGrammar Proper="▶true" />
+    <tag Name="IndefiniteArticle" Value="▶the" />
+    <tag Name="DefiniteArticle" Value="▶the" />
+  </object>
+  <object Name="TerrainJyEgregore C" Load="Merge">
+    <part Name="Render" DisplayName="▶Jy egregore" />
+    <part Name="Description" Short="▶The mysterious thought-form woke from a lost current of local sapiance and squat itself a spongey mangrowth in the ultraviolet baths of the surface. It's long since desiccated, the visceral mass time-viced into something more like paper pulp." />
+    <xtagGrammar Proper="▶true" />
+    <tag Name="IndefiniteArticle" Value="▶the" />
+    <tag Name="DefiniteArticle" Value="▶the" />
+  </object>
+  <object Name="TerrainJyEgregore R" Load="Merge">
+    <part Name="Render" DisplayName="▶Jy egregore" />
+    <part Name="Description" Short="▶The mysterious thought-form woke from a lost current of local sapiance and squat itself a spongey mangrowth in the ultraviolet baths of the surface. It's long since desiccated, the visceral mass time-viced into something more like paper pulp." />
+    <xtagGrammar Proper="▶true" />
+    <tag Name="IndefiniteArticle" Value="▶the" />
+    <tag Name="DefiniteArticle" Value="▶the" />
+  </object>
+  <object Name="TerrainDishHorn" Load="Merge">
+    <part Name="Render" DisplayName="▶dish horn" />
+    <part Name="Description" Short="▶The parabolic mitt catches signal from the far breadths of the cosmos and blows it back through the sounding horn." />
+  </object>
+  <object Name="TerrainTerrarium" Load="Merge">
+    <part Name="Render" DisplayName="▶terrarium" />
+    <part Name="Description" Short="▶Terrestrial plants and otherwise thrive in the hothouse bubble, roots kneading through the fibrous strata, leaves peeking sunwise across the void." />
+  </object>
+  <object Name="TerrainShatteredTerrarium" Load="Merge">
+    <part Name="Render" DisplayName="▶shattered terrarium" />
+    <part Name="Description" Short="▶Strange growths and other mutations afflict the exposed plantlife, the shattered vacuum glass admitting unfiltered sun, dust, and spore colonies." />
+  </object>
+  <object Name="TerrainFarmShelf" Load="Merge">
+    <part Name="Render" DisplayName="▶ultraviolet farming shelf" />
+    <part Name="Description" Short="▶Great earth mounds were terraced and planted with crops doctored to voidroot and drink the sun's full spectrum of light." />
+  </object>
+  <object Name="TerrainNorthForum" Load="Merge">
+    <part Name="Render" DisplayName="▶North Forum" />
+    <part Name="Description" Short="▶Triumphal warps and market domes trace the paved superstratum valley, where Eaters of the medina and beldam district engaged their circling rituals." />
+    <xtagGrammar Proper="▶true" />
+    <tag Name="IndefiniteArticle" Value="▶the" />
+    <tag Name="DefiniteArticle" Value="▶the" />
+  </object>
+  <object Name="TerrainSheshDacha" Load="Merge">
+    <part Name="Render" DisplayName="▶shesh dacha" />
+    <part Name="Description" Short="▶The cambered cottages of the shesh qanim sprouted in tufts as star traffic crowded the low medinas and Eaters urged to spend more time topside." />
+  </object>
+  <object Name="TerrainShevaDacha" Load="Merge">
+    <part Name="Render" DisplayName="▶sheva dacha" />
+    <part Name="Description" Short="▶As cottages filled the shesh qanim, late topsiders and margin-filling starfolk established homes on the sheva, southwise of the bubble and hugging the paneled-curtained cliff of the northern continent." />
+  </object>
+  <object Name="TerrainLowMedina" Load="Merge">
+    <part Name="Render" DisplayName="▶low medina" />
+    <part Name="Description" Short="▶The old and circumscribed poleis of the surface stratum were home to the Eater clans and guilds that spilled up Gjaus in the primal eon before the Covenate. Here they hauled their early starfreight and peered at the blue marble they hoisted themselves off of in raw wonder." />
+  </object>
+  <object Name="TerrainHighMedina" Load="Merge">
+    <part Name="Render" DisplayName="▶high medina" />
+    <part Name="Description" Short="▶Before even the early Eaters peopled the low medina, when the ark was being prepped to seed the far skies with the terrestrial genome, the first poleis rose out of the entheopolitics and mythoprosaic controversies of Gjaus's construction. Somehow, they stand still." />
+  </object>
+  <object Name="TerrainBazaarOfSamech" Load="Merge">
+    <part Name="Render" DisplayName="▶bazaar of Samech" />
+    <part Name="Description" Short="▶Here rise the syncretic arcades of the great bazaar in starport's lee. The market jammed the profusions of sixty stars into its tented halls: billion-weave rugs, ox-carted macroprocessors, poisonous perfumes, and cold peaches." />
+    <xtagGrammar Proper="▶true" />
+    <tag Name="IndefiniteArticle" Value="▶the" />
+    <tag Name="DefiniteArticle" Value="▶the" />
+  </object>
+  <object Name="TerrainOutworldVault" Load="Merge">
+    <part Name="Render" DisplayName="▶outworld vault" />
+    <part Name="Description" Short="▶The richest of starfolk gifts were kept in vaults of diamondized zetachrome and piped-in stasis field. The perspective from the mover gives no inkling on whether the ionization of time has weakened these spacetime palisades of the Old Bank." />
+  </object>
+  <object Name="TerrainTelescope" Load="Merge">
+    <part Name="Render" DisplayName="▶scrying horn" />
+    <part Name="Description" Short="▶The horn and its great honeycomb of mirrors farm the moist light from the furthest reaches of this dimension and its neighbors. With it, the Eaters peered at the first moments of universal birth, and then eons that preceded." />
+  </object>
+  <object Name="TerrainForceCore" Load="Merge">
+    <part Name="Render" DisplayName="▶forcecore" />
+    <part Name="Description" Short="▶Machinic cages store raw force sipped from the slipstream and used to reshape local spacetime. Occasionally, amathematical fluctuations allow a pushton to escape and beam a sidewise galaxy right in the core." />
+  </object>
+  <object Name="TerrainForceCore R" Load="Merge">
+    <part Name="Render" DisplayName="▶forcecore" />
+    <part Name="Description" Short="▶Machinic cages store raw force sipped from the slipstream and used to reshape local spacetime. Occasionally, amathematical fluctuations allow a pushton to escape and beam a sidewise galaxy right in the core." />
+  </object>
+  <object Name="OmniForcefield" Load="Merge">
+    <part Name="Render" DisplayName="▶force barrier" />
+    <part Name="Description" Short="▶Potential is polarized into a magenta hex mesh and keyed to every strata in the phasic spectrum. Objects are blocked without exception." />
+  </object>
+  <object Name="Fluent Lock" Load="Merge">
+    <part Name="Render" DisplayName="▶fluent lock" />
+    <part Name="Description" Short="▶A droplet of thixotropic fluid is downpulled to a basin by centripetal force. In synchronization with its spouse-locks, the net effect stabilizes the North Sheva in geostationary orbit and simulates the ambient pressures of 1g." />
+    <part Name="ChargeSink" NameForStatus="▶OrbitalStabilization" />
+  </object>
+  <object Name="Phasic Screw" Load="Merge">
+    <part Name="Render" DisplayName="▶phasic screw" />
+    <part Name="Description" Short="▶Quartziferous panels rotate in sharp helices around a magnetic pole. Their mirrored faces reflect particles out of side dimensions and through the weakened pocket of interspace. A fraction of energy is captured." />
+    <part Name="ChargeSink" NameForStatus="▶HyperdimensionalRotary" />
+  </object>
+  <object Name="BaseEaterMonument" Load="Merge">
+    <part Name="Description" Short="▶" />
+  </object>
+  <object Name="Circumcestral Eater Monument" Load="Merge">
+    <part Name="Render" DisplayName="▶circumcestral monument" />
+    <part Name="Description" Short="▶The shape of the carved megalith electrifies a forgotten squadron of neurons in a crawlway of your mind, launching you into sudden intimacy with the deep past, somewhere on the cusp of first thought. Then an uncertainty obtains as to which direction on the braid of time you are remembering." />
+  </object>
+  <object Name="Eater Mounted Monument" Load="Merge">
+    <part Name="Render" DisplayName="▶sacred truss" />
+    <part Name="Description" Short="▶The holy colophon is held on triangular display and approached for ritual and idolatrous reflection in cycles of primes." />
+  </object>
+  <object Name="ShevaBrazier" Load="Merge">
+    <part Name="Render" DisplayName="▶brazier in suspense" />
+    <part Name="Description" Short="▶Star slag from the early age of the cosmos burns in hues of orchid and indigo." />
+  </object>
+  <object Name="ShevaBrazierGreen" Load="Merge">
+    <part Name="Description" Short="▶Star slag from the early age of the cosmos burns in hues of leaf and malachite." />
+  </object>
+  <object Name="ChevronWall" Load="Merge">
+    <part Name="Render" DisplayName="▶chrome chibur" />
+    <part Name="Description" Short="▶Azzurum was starsailed from an andromedan quarry, tempered with chrome, and carved to the ritual shape of the chiber to buttress the vault of heaven. " />
+  </object>
+  <object Name="BaseShevaHydraulicPipe" Load="Merge">
+    <part Name="Render" DisplayName="▶ornamental pipe" />
+    <part Name="Description" Short="▶Melted sand from thirty sun-worlds was blown to topological improbability and capped with finials of starless gold." />
+  </object>
+  <object Name="Eater Sign 1" Load="Merge">
+    <part Name="Render" DisplayName="▶sign" />
+    <part Name="Description" Short="▶Starfire ikons skip on a board of holographic bronze." />
+  </object>
+  <object Name="Eater Sign 2" Load="Merge">
+    <part Name="Render" DisplayName="▶sign" />
+    <part Name="Description" Short="▶Starfire ikons skip on a board of holographic bronze." />
+  </object>
+  <object Name="Eater Sign 3" Load="Merge">
+    <part Name="Render" DisplayName="▶sign" />
+    <part Name="Description" Short="▶Starfire ikons skip on a board of holographic bronze." />
+  </object>
+  <object Name="StationWall" Load="Merge">
+    <part Name="Render" DisplayName="▶station wall" />
+  </object>
+  <object Name="MotedAir" Load="Merge">
+    <part Name="Render" DisplayName="▶vacuum of space" />
+    <part Name="Description" Short="▶Rainbow photons finish the million-year marathon here at the low-wise pressures of emptiness." />
+    <xtagGrammar iArticle="▶the" />
+  </object>
+  <object Name="VacuumEdgeGlassWall" Load="Merge">
+    <part Name="Render" DisplayName="▶vacuum edge glass" />
+    <part Name="Description" Short="▶Sand was abraded from un-stone at a pressure farm in orbit to a neutron star, crush-fired in starship exhaust, and molded into unbreakable lucent panes. They offer a view of the star-ribboned void while also protecting from it." />
+  </object>
+  <object Name="QuantumReverbLightRail" Load="Merge">
+    <part Name="Render" DisplayName="▶light rail" />
+  </object>
+  <object Name="Fromshunter" Load="Merge">
+    <part Name="Render" DisplayName="▶from shunter" />
+    <part Name="Description" Short="▶A matchlock beam traces the silhouettes of creatures recently impressed on leylines and scrambles the sampling to produce a true random result. Thousands of years and centillions of bits pass through a choke point of the holographic now, and then are evanesced into one." />
+    <tag Name="Mods" Value="▶MissileWeaponMods,FirearmMods,CommonMods,PistolMods,ElectronicsMods,BeamWeaponMods" />
+  </object>
+  <object Name="ProjectileFromShunter" Load="Merge">
+    <part Name="Render" DisplayName="▶{{o|off ray}}" />
+    <part Name="Projectile" PassByVerb="▶discorporate" />
+    <part Name="TreatAsSolid" Message="▶The darkness consumes =subject.t=!" />
+  </object>
+  <object Name="Gimeleth" Load="Merge">
+    <part Name="Render" DisplayName="▶gimeleth" />
+    <part Name="Description" Short="▶A great curved and flanged length of metal replicates the layout of the Witch Court on its three-handed sculptor species's steaming earth. There and under a quincunx moon, rhapsodes of war are locked in ceremonial combat." />
+    <part Name="RulesDescription" Text="▶This weapon has multiple grips that change its weapon type." />
+  </object>
+  <object Name="Eater Vessel 1" Load="Merge">
+    <part Name="Render" DisplayName="▶vessel in suspense" />
+    <part Name="Description" Short="▶Continents of texture over the vessel's surface are artifacts of the alien hand, where the clay was thrown in the hearth of a misty otherworld, before being stripped of its gravitational hair." />
+    <tag Name="Mods" Value="▶ShevaPotteryMods" />
+  </object>
+  <object Name="Eater Vessel 2" Load="Merge">
+    <part Name="Render" DisplayName="▶vessel in suspense" />
+  </object>
+  <object Name="Bending Gjaus" Load="Merge">
+    <part Name="Render" DisplayName="▶bending gjaus" />
+    <part Name="Description" Short="▶A spindle of air-chugging greenculm mounts an unseen topological space and shoots stardrunk chips into its crevices." />
+  </object>
+  <object Name="Moon-and-Sun Shade" Load="Merge">
+    <part Name="Render" DisplayName="▶moon-and-sun shade" />
+    <part Name="Description" Short="▶A crown of bright and dripping star leaves casts mesmerizing shadows across its roots." />
+  </object>
+  <object Name="Earth Gate W" Load="Merge">
+    <part Name="Render" DisplayName="▶Earth Gate" />
+    <part Name="Description" Short="▶Cultured patinae grow in whittled grooves across the doors of star bronze. Inset on joined halves is a gigantic jeweled sphere, with islands of agate on drifting seas of turquoise. The myriad ways of being are depicted on the panel margins in high relief: Eaters lift and lower chains to the star-ribboned sky, swallow stardust, and cartwheel ritual to the vaporous rim of existence." />
+    <xtagGrammar iArticle="▶the" />
+  </object>
+  <object Name="Earth Gate E" Load="Merge">
+    <part Name="Render" DisplayName="▶Earth Gate" />
+    <part Name="Description" Short="▶Cultured patinae grow in whittled grooves across the doors of star bronze. Inset on joined halves is a gigantic jeweled sphere, with islands of agate on drifting seas of turquoise. The myriad ways of being are depicted on the panel margins in high relief: Eaters lift and lower chains to the star-ribboned sky, swallow stardust, and cartwheel ritual to the vaporous rim of existence." />
+    <xtagGrammar iArticle="▶the" />
+  </object>
+  <object Name="Sheva Bell" Load="Merge">
+    <part Name="Render" DisplayName="▶singing bell" />
+    <part Name="Description" Short="▶The sound bow of gleaming star bronze was cast against the perfect mouth of a rotachthon and inset with a zetachrome clapper. When tolled, the sound wave shifts in juxtaposition with the listener's subjective experience, and the rituals of being and going are announced." />
+    <part Name="Interactable" Action="▶chime" />
+  </object>
+  <object Name="Blueshifted Chrome" Load="Merge">
+    <part Name="Render" DisplayName="▶blueshifted chrome" />
+    <part Name="Description" Short="▶Light gleams off carved ornamental cisterns, well-shapes designed to keep liquid fresh and fluidic. The chrome ore they are wrought from was shunted toward an observer's frame and locked in color by a stasis engine." />
+  </object>
+  <object Name="BaseMoverChute" Load="Merge">
+    <part Name="Render" DisplayName="▶force rail" />
+    <part Name="Description" Short="▶A chute of superconductive timber is keyed to rhyme with adjacent leylines and furnish a frictionless glide." />
+  </object>
+  <object Name="BaseEaterFloorClock" Load="Merge">
+    <part Name="Render" DisplayName="▶mover ecliptic" />
+    <part Name="Description" Short="▶Goldleaf digits of a nondeterministic number system are arrayed inside the circumference of an ecliptic mosaic." />
+  </object>
+  <object Name="Rubble Blue" Load="Merge">
+    <part Name="Render" DisplayName="▶rubble" />
+  </object>
+  <object Name="Eater Hookah" Load="Merge">
+    <part Name="Render" DisplayName="▶hookah in suspense" />
+    <part Name="Description" Short="▶A vase of starry rose gold floats above the ground and is buffeted by a bouquet of crystal stems. Taken all together, the pipework-of-art evokes a sunning swan." />
+  </object>
+  <object Name="Mover" Load="Merge">
+    <part Name="Render" DisplayName="▶mover" />
+    <part Name="Description" Short="▶Bursts of coral and treelife from the outer rim of worlds crawl up the palanquin's magnetized legs and toward its golden roof. Chimes ring at the ritual of going, and fruited smoke pours from its portals." />
+  </object>
+  <object Name="Mover Exit" Load="Merge">
+    <part Name="Render" DisplayName="▶exit portal" />
+    <part Name="Description" Short="▶An exit reacquaints the mover with the artifice that is a still world." />
+    <xtagGrammar iArticle="▶" />
+  </object>
+  <object Name="Mover Baetyl" Load="Merge">
+    <part Name="Render" DisplayName="▶pilot baetyl" />
+    <part Name="Description" Short="▶A lens of glass has crusted over the smooth stone where the heat of sacred math burned the air then cooled in Q.E.D. Under that dermis and the meteoritic layer, an electric heart grinds on the starfield of magnets and blinks in geospatial submission." />
+  </object>
+  <object Name="Mover Wall" Load="Merge">
+    <part Name="Render" DisplayName="▶star bronze scales" />
+    <part Name="Description" Short="▶Hotstar bronze cybernetically set on a layer of living mesoderm assumes a pleasing and space-filling tessellation." />
+  </object>
+  <object Name="Mover Chair" Load="Merge">
+    <part Name="Render" DisplayName="▶wide chair" />
+    <part Name="Description" Short="▶A wide wooden sitter offers sufficient room for the cybernetically grown rump or a psychochemically shrunken pair or an ontologically crunched triple." />
+    <tag Name="NamingTag" Value="▶Animated" />
+  </object>
+  <object Name="BaseMoverCouch" Load="Merge">
+    <part Name="Render" DisplayName="▶sofa" />
+    <part Name="Description" Short="▶An arched sofa brings movers together via the blunted tyranny of here and now. The wooden seat, cut from tree-things on a Coven moon world, bears a notch of some form made by every sitter in its hundred chiliad history.&#xA;" />
+  </object>
+  <object Name="Eater Thurible" Load="Merge">
+    <part Name="Render" DisplayName="▶golden thurible" />
+    <part Name="Description" Short="▶Bright sun-iron fused in the collision of neutron stars has been incised with rhombic smoking windows and fit over a crucible of burning seed." />
+  </object>
+  <object Name="Eater Chimes" Load="Merge">
+    <part Name="Render" DisplayName="▶ritual chimes" />
+    <part Name="Description" Short="▶A constellation of bells cast from the local cluster's different lustrous hardrocks gives sonic depth and range to the mover rituals." />
+  </object>
+  <object Name="Rubble Black" Load="Merge">
+    <part Name="Render" DisplayName="▶rubble" />
+  </object>
+  <object Name="Dock Door N" Load="Merge">
+    <part Name="Render" DisplayName="▶bay door" />
+  </object>
+  <object Name="Dock Door S" Load="Merge">
+    <part Name="Render" DisplayName="▶bay door" />
+  </object>
+  <object Name="BaseStarshipPlatform N" Load="Merge">
+    <part Name="Render" DisplayName="▶starship platform" />
+    <part Name="Description" Short="▶Black grates kindled by the light of the jeweled cosmos are stamped in dust with the hoofprint signatures of six hundred worlds." />
+  </object>
+  <object Name="BaseStarshipPlatform S" Load="Merge">
+    <part Name="Render" DisplayName="▶starship platform" />
+  </object>
+  <object Name="HangarWall" Load="Merge">
+    <part Name="Render" DisplayName="▶crysteel bay plates" />
+    <part Name="Description" Short="▶Broad panels of stardyed metal enclose the starship hangar and act as palimpsests to ten hundred alphabets." />
+    <xtagGrammar iArticle="▶some" />
+  </object>
+  <object Name="Eel Grass" Load="Merge">
+    <part Name="Render" DisplayName="▶eel grass" />
+    <part Name="Description" Short="▶Undulant sods finger the air thirstfully and secrete a wax meant to protect themselves from the poison flares of their far-flung dwarf sun." />
+    <xtagGrammar iArticle="▶some" adjunctNoun="▶clump" />
+  </object>
+  <object Name="Wheel of Qv" Load="Merge">
+    <part Name="Render" DisplayName="▶wheel of Qv" />
+    <part Name="Description" Short="▶The vine's spirals squeeze against the pressure of a hidden eigth dimension of space (which only activates outside the density of the strangefluid they're used to being submerged in). When this happens, their cross-spits of solid argon grouse at a frequency that cankers all known earth metals. &#xA;" />
+    <xtagGrammar iArticle="▶some" adjunctNoun="▶clump" />
+  </object>
+  <object Name="StarshipGeometricWall" Load="Merge">
+    <part Name="Render" DisplayName="▶geometric bulkhead" />
+    <part Name="Description" Short="▶Fulcrete, metal, and foam bands protect against the vacuum of space and offer pleasing visual texture to the flat interior, which keeps the heart high on long hauls." />
+    <xtagGrammar massNoun="▶true" />
+  </object>
+  <object Name="StarshipGeometricWallBright Endcap" Load="Merge">
+    <part Name="Render" DisplayName="▶interior" />
+  </object>
+  <object Name="StarshipGeometricWall L Endcap" Load="Merge">
+    <part Name="Render" DisplayName="▶interior" />
+  </object>
+  <object Name="StarshipGeometricWall R Endcap" Load="Merge">
+    <part Name="Render" DisplayName="▶interior" />
+  </object>
+  <object Name="StarshipBed W" Load="Merge">
+    <part Name="Render" DisplayName="▶sleep hollow" />
+    <part Name="Description" Short="▶A wood-carved hollow in the geometric bulkhead is circled with blankets and curtained with patterned textiles. In the long void between stars, gently rocked by the juddering of the hedron engine, shipfolk attain tiers of peaceful sleep unknown to onworlders." />
+  </object>
+  <object Name="StarshipBed E" Load="Merge">
+    <part Name="Render" DisplayName="▶sleep hollow" />
+    <part Name="Description" Short="▶A wood-carved hollow in the geometric bulkhead is circled with blankets and curtained with patterned textiles. In the long void between stars, gently rocked by the juddering of the hedron engine, shipfolk attain tiers of peaceful sleep unknown to onworlders." />
+  </object>
+  <object Name="StarshipBookshelf W" Load="Merge">
+    <part Name="Render" DisplayName="▶built-in bookshelf" />
+    <part Name="Description" Short="▶Planks of oak cut from the trees of a rainy beryl world are nailed into the bulkhead. Floor cushions at its base offer a plush and low view on the rainbow spines of codices, each a portal to a far-flung corner of the universe." />
+  </object>
+  <object Name="StarshipBookshelf E" Load="Merge">
+    <part Name="Render" DisplayName="▶built-in bookshelf" />
+    <part Name="Description" Short="▶Planks of oak cut from the trees of a rainy beryl world are nailed into the bulkhead. Floor cushions at its base offer a plush and low view on the rainbow spines of codices, each a portal to a far-flung corner of the universe." />
+  </object>
+  <object Name="Starship1 Floor Cushion" Load="Merge">
+    <part Name="Description" Short="▶The self-plucked feathers of a mountain moa were stuffed into a velvet cushion thousands of years ago and sold at the bazaar of Samech some time after." />
+  </object>
+  <object Name="Starship1 Wooden Table" Load="Merge">
+    <part Name="Render" DisplayName="▶oaken table" />
+    <part Name="Description" Short="▶Rich, rain-fed oak was hewn and nailed at simple angles. The surface presents a grained canvas for the organization of thought in the quiet reaches of space." />
+  </object>
+  <object Name="Starship1 Wooden Chair" Load="Merge">
+    <part Name="Render" DisplayName="▶oak chair" />
+    <part Name="Description" Short="▶A seat of rich, rainfed oak was crafted by a master chairmaker in a farworld hilltown and angled to provide the ideal blend of starview contemplation and downturned focus." />
+  </object>
+  <object Name="Starship Pilot Console" Load="Merge">
+    <part Name="Render" DisplayName="▶pilot console" />
+    <part Name="Description" Short="▶The glass lune exhibits spiraling arms and the endless sluices that course between them. Pinchers, sliders, whistlers, and dials array the bezel and provide navigation affordances across the manifold." />
+    <part Name="ChargeSink" NameForStatus="▶StarflightControl" />
+  </object>
+  <object Name="Starship Copilot Console" Load="Merge">
+    <part Name="Render" DisplayName="▶copilot console" />
+    <part Name="Description" Short="▶Diagnostics of ship and star belt down the glass lune and into data banks. An array of flips, swipes, and precision spheres flank the dashboard on curved panels and provide query affordances across the manifold." />
+    <part Name="ChargeSink" NameForStatus="▶StarflightMonitoring" />
+  </object>
+  <object Name="Starship1 ExitHatch" Load="Merge">
+    <part Name="Render" DisplayName="▶exit hatch" />
+    <part Name="Description" Short="▶A retractible hex panel is fit on oiled tracks." />
+  </object>
+  <object Name="Starship1 Pilot Seat" Load="Merge">
+    <part Name="Render" DisplayName="▶pilot seat" />
+    <part Name="Description" Short="▶The seat cushions are vinyl-cocooned in the hue of a frozen ocean spilling free from tidal heat. Control dials, sliders, and switches grid the flat-paneled armrest." />
+    <part Name="Chair" NameForStatus="▶ErgonomicSystems" />
+  </object>
+  <object Name="Starship1 Copilot Seat" Load="Merge">
+    <part Name="Render" DisplayName="▶copilot seat" />
+    <part Name="Description" Short="▶The seat cushions are vinyl-cocooned in the hue of a frozen ocean spilling free from tidal heat. Control dials, sliders, and switches grid the flat-paneled armrest." />
+    <part Name="Chair" NameForStatus="▶ErgonomicSystems" />
+  </object>
+  <object Name="Starship1 Passenger Seat" Load="Merge">
+    <part Name="Render" DisplayName="▶passenger seat" />
+    <part Name="Description" Short="▶Seat foam is pressed with weird backprints, painted with a dozen blends of sweat, and balanced on a metal dais." />
+    <part Name="Chair" NameForStatus="▶ErgonomicSystems" />
+  </object>
+  <object Name="Starship1 Tree Sculpture" Load="Merge">
+    <part Name="Render" DisplayName="▶Triangulum tree sculpture" />
+    <part Name="Description" Short="▶A stanchion of bronze or bronze-like is bent into the characteristic spiraling triangle of a neighboring cluster. Gold patina shrouds it in cryptic and poetic patterns." />
+  </object>
+  <object Name="Starship Ornate Potted Plant 2" Load="Merge">
+    <part Name="Description" Short="▶Slink-green plant lobes splay out of the ancient cauldron with chromium incision. They live and breathe like their loam-bound cousins, but their bio-data was spliced with the amaranthine seed." />
+  </object>
+  <object Name="Starship Ornate Potted Plant 3" Load="Merge">
+    <part Name="Description" Short="▶Slink-green plant lobes splay out of the ancient cauldron with chromium incision. They live and breathe like their loam-bound cousins, but their bio-data was spliced with the amaranthine seed." />
+  </object>
+  <object Name="Starship1 Power Core" Load="Merge">
+    <part Name="Render" DisplayName="▶power hedron" />
+    <part Name="Description" Short="▶The magnetic torch smolders inside the hedron with the offgases of high fusion, and the chamber rattles with potential." />
+  </object>
+  <object Name="Starship1 Status Panel" Load="Merge">
+    <part Name="Render" DisplayName="▶status panel" />
+    <part Name="Description" Short="▶Across a field of vacuum glass and chrome diodes blink in hedronic sequence." />
+    <part Name="ChargeSink" NameForStatus="▶HedronStatusDiodes" />
+  </object>
+  <object Name="Starship1 Cargo Crate" Load="Merge">
+    <part Name="Render" DisplayName="▶freight crate" />
+    <part Name="Description" Short="▶Vacuum-safe foamwood beams with the lingering scents of myrrh, star porcelain, and snow-powdered peaches." />
+  </object>
+  <object Name="Starship1 Pilaster" Load="Merge">
+    <part Name="Render" DisplayName="▶pilaster" />
+    <part Name="Description" Short="▶A metal support pillar is nicked with the scars of freight scrapes, hedron shrapnel, plasma shells, and bunk beetle bites." />
+  </object>
+  <object Name="Starship1 Comms" Load="Merge">
+    <part Name="Render" DisplayName="▶communication ribbons" />
+    <part Name="Description" Short="▶A triad of corded wires hang from a swivel, each headed by a six-way speaker. Static in different octaves pours into the soundscape." />
+    <part Name="ChargeSink" NameForStatus="▶VoiceProjection" />
+  </object>
+  <object Name="Star Carousel Wall" Load="Merge">
+    <part Name="Render" DisplayName="▶crysfoil gills" />
+    <part Name="Description" Short="▶Papyraceous crysteel tissue sways in soft waves and aerates the carousel interior. The enclosure gives the impression of being inside an island fish." />
+    <xtagGrammar massNoun="▶true" />
+  </object>
+  <object Name="Star Carousel Infested Wall" Load="Merge">
+    <part Name="Render" DisplayName="▶infested crysfoil gills" />
+    <part Name="Description" Short="▶Sucker disks shooting out the wheel of Qv like moist hands clutch the papery gills of the carousel, and thick slimy water pools beneath them. The parasitic burden has the walls panting and wheezing." />
+  </object>
+  <object Name="Star Carousel Pilot Console" Load="Merge">
+    <part Name="Render" DisplayName="▶pilot console" />
+    <part Name="Description" Short="▶A panel of tone bars at harmonic ratios shine in sculpted blue light. The space hums with the residual input schema of past flights." />
+    <part Name="ChargeSink" NameForStatus="▶SpiralCareening" />
+  </object>
+  <object Name="Star Carousel Pilot Console N" Load="Merge">
+    <part Name="Render" DisplayName="▶pilot console" />
+  </object>
+  <object Name="Star Carousel Pilot Console S" Load="Merge">
+    <part Name="Render" DisplayName="▶pilot console" />
+  </object>
+  <object Name="Star Carousel Passenger Console 1" Load="Merge">
+    <part Name="Render" DisplayName="▶pilot console" />
+    <part Name="Description" Short="▶Audiovisual depictions of the moisture manifold splash over the panel's holographic surface. A small and gentle null melody sounds from the underlight." />
+    <part Name="ChargeSink" NameForStatus="▶ExoticMoistureManifold" />
+  </object>
+  <object Name="Star Carousel Passenger Console 2" Load="Merge">
+    <part Name="Render" DisplayName="▶passenger console" />
+  </object>
+  <object Name="Star Carousel ExitHatch" Load="Merge">
+    <part Name="Render" DisplayName="▶exit hatch" />
+    <part Name="Description" Short="▶A perfect circle of mossbed parts in a sine wave and grants in/out access to opposing darknesses." />
+  </object>
+  <object Name="Star Carousel Pilot Seat" Load="Merge">
+    <part Name="Render" DisplayName="▶pilot seat" />
+    <part Name="Description" Short="▶Spinning lunes at counter heights provide concentrative posture for a variety of body geometries." />
+    <part Name="Chair" NameForStatus="▶ErgonomicSystems" />
+  </object>
+  <object Name="Star Carousel Passenger Seat" Load="Merge">
+    <part Name="Render" DisplayName="▶passenger seat" />
+    <part Name="Description" Short="▶Spinning lunes at counter heights provide concentrative posture for a variety of body geometries." />
+    <part Name="Chair" NameForStatus="▶ErgonomicSystems" />
+  </object>
+  <object Name="Star Carousel Table" Load="Merge">
+    <part Name="Render" DisplayName="▶stratum caryatid" />
+    <part Name="Description" Short="▶A flowing shoulder of outworld lime ends in a flat, object-bearing head. The stone-flute creature depicted grants an eyeless stare." />
+  </object>
+  <object Name="Star Carousel Display Case" Load="Merge">
+    <part Name="Render" DisplayName="▶fractal cabinet" />
+    <part Name="Description" Short="▶Rich, rain-fed oak was hewn to a curiosity cabinet with shelves of all sizes. The vaulted chest is now a hundred-world bazaar." />
+  </object>
+  <object Name="Star Carousel Power Core" Load="Merge">
+    <part Name="Render" DisplayName="▶strangefluid core" />
+    <part Name="Description" Short="▶The piccoloed orb of cosmic heft houses a watergoo of starbrightness. The substanace streams against the glass, sea-like, in one moment and then clonks to the bottom the next. It gives off an air of subatomic malaise." />
+  </object>
+  <object Name="Star Carousel Art Sculpture 1" Load="Merge">
+    <part Name="Render" DisplayName="▶moisture bong" />
+    <part Name="Description" Short="▶A terrarium is colonized by humidifying mosses and algae thriving in the darkling carousel. A single, tipped stem arcs out and offers a smoking puff from the life-rich soup." />
+  </object>
+  <object Name="Star Carousel Art Sculpture 2" Load="Merge">
+    <part Name="Render" DisplayName="▶decorative moss pod" />
+    <part Name="Description" Short="▶Outworld moss clades form ribboned patterns concretizing their unknowable social dynamics. They hang in an orb from a ceiling clutch and in their starfarer landlords spark wonder." />
+  </object>
+  <object Name="Star Carousel Art Sculpture 3" Load="Merge">
+    <part Name="Render" DisplayName="▶warm peeker" />
+    <part Name="Description" Short="▶The carousel respiratory system is embedded in a wider network of biomechanical feelstuffs. Some confluence of its nodes have decided to grow a stemlike twine that supports a pinkish, seeing eye. Diagnostics confirm that looking around calms the ship down." />
+  </object>
+  <object Name="Star Carousel Star Chart L" Load="Merge">
+    <part Name="Render" DisplayName="▶holographic star chart" />
+    <part Name="Description" Short="▶A blinding network of homesuns flicker in parallactic motion. Their systems are joined in the manifold by trade routes, shifting sovereign borders, and the convergence of galactic clusters. Smaller ligatures denote the personal notes of a vast travelogue, turning the whole picture into a hyperdimensional narrative." />
+  </object>
+  <object Name="Star Carousel Star Chart C" Load="Merge">
+    <part Name="Render" DisplayName="▶holographic star chart" />
+  </object>
+  <object Name="Star Carousel Star Chart R" Load="Merge">
+    <part Name="Render" DisplayName="▶holographic star chart" />
+  </object>
+  <object Name="CrysteelBraidWall" Load="Merge">
+    <part Name="Render" DisplayName="▶crysteel braid" />
+    <part Name="Description" Short="▶A special caste of greensmith peopled the lower medinas of crysteel blast furnaces, where they'd siphon the still-soft metaling and braid artisan batches with their own gloved hands. Adaptation to tidal heat meant they could not return to the surface to witness the employment of their creation, but moon-time rituals bestowed them a precognitive sense for what would become of it." />
+  </object>
+  <object Name="HyperconductiveLabyrinthite" Load="Merge">
+    <part Name="Render" DisplayName="▶hyperconductive labyrinthite" />
+    <part Name="Description" Short="▶Sheets of manufactured gold carved to a citylike byzantium channel current with negative resistance. Vast archways of bright tracery buffer the computing core of the Ark, assimilating inbound electrons into the sparkwall and shielding the inner sanctum from electromagnetic disturbance." />
+  </object>
+  <object Name="Red Etz Trellis" Load="Merge">
+    <part Name="Render" DisplayName="▶red etz trellis" />
+    <part Name="Description" Short="▶Outworld wood of searing crimson forms the maze hedge and trellis  to an evergrowths." />
+  </object>
+  <object Name="ReshephWall1" Load="Merge">
+    <part Name="Render" DisplayName="▶vacuum flux processor" />
+    <part Name="Description" Short="▶Chromodynamic flowering over the packed dimensions of multi-spacetime is viewed through a uniprism. The coercion of a petal-pruned viewing angle produces something analogous to a computation." />
+    <part Name="ChargeSink" NameForStatus="▶ChromodynamicFlowering" />
+  </object>
+  <object Name="ReshephWall2" Load="Merge">
+    <part Name="Render" DisplayName="▶memory torus" />
+    <part Name="Description" Short="▶A jellified torus provides the ideal topological surface for the slippage and glomming of tracked information." />
+    <part Name="ChargeSink" NameForStatus="▶PhenomenologicalSorting" />
+  </object>
+  <object Name="ReshephWall3" Load="Merge">
+    <part Name="Render" DisplayName="▶mainframe status panel" />
+    <part Name="Description" Short="▶Across a field of vacuum glass and zetachrome diodes blink in gyres." />
+    <part Name="ChargeSink" NameForStatus="▶QualiaObservation" />
+  </object>
+  <object Name="ReshephWall4" Load="Merge">
+    <part Name="Render" DisplayName="▶mainframe monitor" />
+    <part Name="Description" Short="▶Great epiphenomenal domains are invented, interpreted, and tokenized as language to relay the well-being of the nondeterministic core." />
+    <part Name="ChargeSink" NameForStatus="▶GestaltEpiphenomena" />
+  </object>
+  <object Name="ReshephWall5" Load="Merge">
+    <part Name="Render" DisplayName="▶photon drive" />
+    <part Name="Description" Short="▶Laser heads trace the actuation of spiral galaxies and burn holograms onto platters of dark matter." />
+    <part Name="ChargeSink" NameForStatus="▶BackgroundRadiationPalimpsest" />
+  </object>
+  <object Name="ReshephWall6" Load="Merge">
+    <part Name="Render" DisplayName="▶normality vent" />
+    <part Name="Description" Short="▶Gusts of crystallizing normality are forced out the exhaust vents to keep the computing cores free and phenomenologically pliable." />
+    <part Name="ChargeSink" NameForStatus="▶OrthogonalizedThroughput" />
+  </object>
+  <object Name="ReshephWall7" Load="Merge">
+    <part Name="Render" DisplayName="▶true random sampler" />
+    <part Name="Description" Short="▶If a machine spins up and down a world in sufficient haste, there are qualia begot that can be sampled but cannot be modeled." />
+    <part Name="ChargeSink" NameForStatus="▶WorldGen/WorldDestruct" />
+  </object>
+  <object Name="BaseHologramProjector" Load="Merge">
+    <part Name="Render" DisplayName="▶hologram projector" />
+    <part Name="Description" Short="▶A switch aligns the particle scatter on the far circle and shines an incising light." />
+  </object>
+  <object Name="BaseHologramProjector Barathrum" Load="Merge">
+    <part Name="Render" DisplayName="▶hologram projector" />
+  </object>
+  <object Name="HologramCircle" Load="Merge">
+    <part Name="Render" DisplayName="▶light stage" />
+    <part Name="Description" Short="▶Scattered points arrange to recorded positions and bloom in the theater of light." />
+  </object>
+  <object Name="BaseTriumHologram" Load="Merge">
+    <part Name="Render" DisplayName="▶hologram" />
+  </object>
+  <object Name="Barathrum Hologram" Load="Merge">
+    <part Name="Render" DisplayName="▶hologram of Barathrum" />
+    <part Name="Description" Short="▶The bright countenance and mane of short quills on the young urshiib cut through even a canvas of fraying light. His shoulders are drawn back with fresh purpose, and his eyes pierce the foreground with a laser's precision." />
+  </object>
+  <object Name="Archon Hologram" Load="Merge">
+    <part Name="Render" DisplayName="▶hologram of archon mainframe" />
+    <part Name="Description" Short="▶A depiction coheres of the explosive energy of the universe bottled in a shielded bulb and pistoned into a vast and edged intelligence. From there the great machinic archons of the Eaters fissioned in their oracula and, with baetyls as fingers, lathed the waking world." />
+  </object>
+  <object Name="Rebekah Hologram" Load="Merge">
+    <part Name="Render" DisplayName="▶hologram of Rebekah" />
+    <part Name="Description" Short="▶The gown floweth over small shoulders, and a sidewise veil gives glitching shape to a face tilted at the angle of anonymity. At last and freed from the lace of its cuff, a hand is moted like a sorcerous lamp, and shines in fairness." />
+  </object>
+  <object Name="Resheph Hologram" Load="Merge">
+    <part Name="Render" DisplayName="▶hologram of Resheph, the Above" />
+    <part Name="Description" Short="▶A drape flows off his shoulder with mythoprosaic inevitability, and the digital dyad implies both sanative peace on earth and congruity with the vault of heaven." />
+  </object>
+  <object Name="BaseArkCore" Load="Merge">
+    <part Name="Render" DisplayName="▶nondeterministic core" />
+    <part Name="Description" Short="▶A curtain of blue, magenta, and scarlet hangs over the sacred hold of moon-and-sun shade and hypernova gold (color specifications handed down directly from the machinic being who ensued from the entheos within). Raw amateriality is titrated out the container boundary and canaled in managed doses to processors that crack it in order to do the uncomputable: decide from nothing." />
+    <part Name="ChargeSink" NameForStatus="▶Amateriality" />
+  </object>
+  <object Name="Sheyd" Load="Merge">
+    <part Name="Render" DisplayName="▶sheyd" />
+    <part Name="Description" Short="▶Oily skinstuff whorls in eddies of purgatory gray and hardens to diamond at the claws. The shedim were star-toted off their god moon, bargained in one-hundred-year rituals to the machinic archons, and kept as pets. Once history lengthened down the dark well of the sultanate, they were poached to extinction for the milk of their precious irises." />
+    <tag Name="PetResponse" Value="▶=subject.T= =verb:chirr=." />
+  </object>
+  <object Name="Sheyd_Claw" Load="Merge">
+    <part Name="Render" DisplayName="▶{{K|diamond}} claw" />
+  </object>
+  <object Name="Wood-Carved Bookshelf" Load="Merge">
+    <part Name="Render" DisplayName="▶wood-carved bookshelf" />
+    <part Name="Description" Short="▶Castle-dwelling wood artisans mimic the forest architecture of gnomes and create a hutch for their tales of outer spheres." />
+  </object>
+  <object Name="Wood-Carved Bed" Load="Merge">
+    <part Name="Render" DisplayName="▶wood-carved bed" />
+    <part Name="Description" Short="▶Liedowners at the trailhead of the dreaming dale get lost in the puzzle of marquetry and melt into the seafoam soft." />
+  </object>
+  <object Name="Wood-Carved Chair" Load="Merge">
+    <part Name="Render" DisplayName="▶wood-carved chair" />
+    <part Name="Description" Short="▶Wood artisans spend their whole life in intimate colloquy with a single tree. Upon their later years, when the rhythms of the Great Moon occupy a larger and larger share of their thoughts, they finally master the art of steam and bend heartwood to their wills." />
+  </object>
+  <object Name="Wood-Carved Clothespress" Load="Merge">
+    <part Name="Render" DisplayName="▶wood-carved clothespress" />
+    <part Name="Description" Short="▶No clothespress or cabinet is finished by the sunclock without a secret drawer, where children might keep their fey gifts and find them once more on the night of their death projection." />
+  </object>
+  <object Name="Wood-Carved Table" Load="Merge">
+    <part Name="Render" DisplayName="▶wood-carved table" />
+    <part Name="Description" Short="▶The mindful curvature of the wizarding surface masquerades as the Worldskin for learning minds who wish to trace the arc of sorcery." />
+  </object>
+  <object Name="Moted Lamp" Load="Merge">
+    <part Name="Render" DisplayName="▶moted lamp" />
+    <part Name="Description" Short="▶Fairy moss powders the column and renders it damp with rainbow dew. Inside the shade, fey Magicks course in spheric everness." />
+  </object>
+  <object Name="Qorish Veil" Load="Merge">
+    <part Name="Render" DisplayName="▶Qorish sorceress veil" />
+    <part Name="Description" Short="▶When a song of power roars out the moted forest and slides up Worldskin, the sidewise veil shields the sorceress's ears and eyes." />
+  </object>
+  <object Name="Qorish Gown" Load="Merge">
+    <part Name="Render" DisplayName="▶Qorish sorceress gown" />
+    <part Name="Description" Short="▶Microscopic needlework on the sleeve encodes the entire history of the crystal sphere and Great Moon, at least from the fey perspective. In the well of kingdom and castle, the embroidered texture returns the pressure of a gloved hand locked in dance at the masquerade ball." />
+  </object>
+  <object Name="Star Orchid Limestone" Load="Merge">
+    <part Name="Render" DisplayName="▶star orchid lime" />
+    <part Name="Description" Short="▶Raw astrocalcite fused in starship exhaust retains the bio geometries and colorful hues of shelled life. Eventually it will be pressurized and polished down to its masonry form." />
+    <xtagGrammar massNoun="▶true" />
+  </object>
+  <object Name="Starship Nozzle" Load="Merge">
+    <part Name="Render" DisplayName="▶starship nozzle" />
+    <part Name="Description" Short="▶Metal cribbed from the blackened nozzle of a starship was melted down by the Exhaustiers' Guild and cast to a monumental scaffold. The silhouettes of fried voidfauna are still visible on the burnished veneer." />
+  </object>
+  <object Name="BaseStarOrchidTemplePlaqueEndcap" Load="Merge">
+    <part Name="Render" DisplayName="▶starship nozzle" />
+    <part Name="Description" Short="▶Metal cribbed from the blackened nozzle of a starship was melted down by the Exhaustiers' Guild and cast to a monumental scaffold. The silhouettes of fried voidfauna are still visible on the burnished veneer." />
+  </object>
+  <object Name="BaseStarOrchidTemplePlaque" Load="Merge">
+    <part Name="Render" DisplayName="▶temple dedication plaque" />
+    <part Name="Description" Short="▶" />
+  </object>
+  <object Name="Star Orchid Temple Projector" Load="Merge">
+    <part Name="Render" DisplayName="▶temple projecter" />
+    <part Name="Description" Short="▶Hyperdimensional scum glistens on the projection disc from when it was doused in the soapy film of interspacetime. The disc is silent now, sundered from its transcendental entanglements, its base offering a shadewall for moss to prosper on." />
+  </object>
+  <object Name="BaseStarOrchidTempleGate" Load="Merge">
+    <part Name="Render" DisplayName="▶temple gate" />
+    <part Name="Description" Short="▶The stair, stage, and loop gate are cast in marble relief to their surroundings by hyperdimensional filament. The holograph vista of anotherworld temple is evanesced, and instead local lilies fill the frame." />
+  </object>
+  <object Name="Engine Crabs" Load="Merge">
+    <part Name="Render" DisplayName="▶engine crabs" />
+    <part Name="Description" Short="▶Little decapods of chrome shell traveled the stars as hedron engine parasites, drinking torch runoff and nibbling through conductive line. Now they muse about their retirement garden, having been shot through the nozzle of a decomissioned ship and surfed to the scrapyard." />
+  </object>
+  <object Name="Star Orchid Lily" Load="Merge">
+    <part Name="Render" DisplayName="▶star orchid lily" />
+    <part Name="Description" Short="▶Five verdurous lobes fall off a star-pointed flower the color of burning exhaust. They float in circles, driven by rhizomatic impulse." />
+  </object>
+  <object Name="Nails of Jy" Load="Merge">
+    <part Name="Render" DisplayName="▶nails of Jy" />
+    <part Name="Description" Short="▶Sharp shoots of outworld crimson lust stab the air from their earthwise glove. When a puff of artificial wind fans them out, they sparkle and hiss." />
+  </object>
+  <object Name="Ring of Moss" Load="Merge">
+    <part Name="Render" DisplayName="▶ring of moss" />
+    <part Name="Description" Short="▶Furry shrinewart grows over a ring of dead plant stems and drinks in the temple shade." />
+  </object>
+  <object Name="Spoken Ionic" Load="Merge">
+    <part Name="Render" DisplayName="▶{{zetachrome|Spoken Ionic Within Covalency Heart}}" />
+    <part Name="Description" Short="▶From the camber of the tree's twigs and trunk you infer a stellar arrangement of its homeplace too geometrically complex for natural starbirth. =pronouns.Possessive= ribbons throw the light like glass and dance on the stale air, strange pennants of a civilization shorn of familiarity. Here at the edge of =pronouns.possessive= foreign pond, the visitor being root-sips cool water in confounding performance." />
+  </object>
+  <object Name="Coda Player Statue" Load="Merge">
+    <part Name="Render" DisplayName="▶player statue" />
+  </object>
+  <object Name="Chiliad Village Monument Post" Load="Merge">
+    <part Name="Render" DisplayName="▶stone ankh" />
+    <part Name="Description" Short="▶Tombed shells peep out from under the inverted loop of lime, carved in rumination of parabolic life." />
+  </object>
+  <object Name="Chiliad Village Monument Orb" Load="Merge">
+    <part Name="Render" DisplayName="▶stone columbary" />
+    <part Name="Description" Short="▶A lens of glass has crusted over the smooth stone, and its kinetic fins have been shorn off at the poles." />
+  </object>
+  <object Name="Chiliad Chest" Load="Merge">
+    <part Name="Description" Short="▶Spiral-lathed corner pieces of brass secure the bottomside of an old wooden trunk. In the style of its molluskan artisans, the top is left metalless and bare of insignia." />
+  </object>
+  <object Name="Chiliad Bottle" Load="Merge">
+    <part Name="Description" Short="▶A loop on the pelagic neck was twirled to fit large hands of lime. The vessel smells of wine and myrrh." />
+  </object>
+  <object Name="Chiliad Vase" Load="Merge">
+    <part Name="Description" Short="▶Thumb smushes on the flared handles and neck show where the potter rushed to spin clay and fire the next order. But the edges of practicality are softened by a slow and berry rich glaze." />
+  </object>
+  <object Name="Chiliad Basket" Load="Merge">
+    <part Name="Description" Short="▶Dyed rush and palm fronds were pulled to a westwise weave for storeroom preservation. Its offshoot strands are stained dark apple red." />
+  </object>
+  <object Name="Chiliad Floor Cusion" Load="Merge">
+    <part Name="Description" Short="▶A pillow dome of goat hair stuffing grants the low and sunwise angles of repose." />
+  </object>
+  <object Name="Chiliad Table" Load="Merge">
+    <part Name="Description" Short="▶A great sawed plank of oval-figured wood had been raised on legs and made the feasting board for a whilom king. Then an axe of dispute split it to pieces, and those children were carried off and shaved smooth to supply flatness again." />
+  </object>
+  <object Name="Chiliad Oven" Load="Merge">
+    <part Name="Description" Short="▶Warmth radiates from the crackling fire of the thick clay oven, and with it comes the smell of scrumptious food. Its high awning is painted with the honeys and jams of the new season." />
+  </object>
+  <object Name="Chiliad Torchpost" Load="Merge">
+    <part Name="Description" Short="▶A burning Y of dried wood and cupped iron light the domiciles." />
+  </object>
+  <object Name="Chiliad Unlit Torchpost" Load="Merge">
+    <part Name="Description" Short="▶A burning Y of dried wood and cupped iron light the domiciles." />
+  </object>
+  <object Name="Mechanical Golem" Load="Merge">
+    <part Name="Description" Short="▶Scrap metals from abroad the table of elements are welded together in sculpture of the mythic features: =body.features=. Old soup and spills of =catalyst= stain its rusted torso, and in the smoldering light its pose evokes the presence of a dying =atzmus.creature=. Iron limbs were beaten to the shape of =armament.skill.snippet=, and at center mass hangs the broken sigil of =hamsa.an=." />
+    <part Name="Interactable" Action="▶enter" Message="▶=object.Does:are= much too old and rusted to enter." />
+    <part Name="ChargeSink" NameForStatus="▶PrimeMover" />
+  </object>
+  <object Name="Chiliad Slynth Joppa" Load="Merge">
+    <part Name="Render" DisplayName="▶slynth irrigator" />
+    <part Name="Description" Short="▶=pronouns.Possessive= brim leaf flops down like a beaten hat and shades =pronouns.possessive= glowing eyes from the high salt sun. =pronouns.Subjective= =verb:wield:afterpronoun= a vinereaper with practiced care around =pronouns.possessive= tender and scythable roots." />
+  </object>
+  <object Name="Chiliad Slynth Grit Gate" Load="Merge">
+    <part Name="Render" DisplayName="▶slynth wrenchmonk" />
+    <part Name="Description" Short="▶=pronouns.Possessive= finger stems have grown to tinkering length, and =pronouns.subjective= =verb:tauten:afterpronoun= =pronouns.possessive= roots' grip on the underearth to augment the torque of =pronouns.possessive= wrench turns." />
+  </object>
+  <object Name="Chiliad Slynth Bey Lah" Load="Merge">
+    <part Name="Render" DisplayName="▶slynth scout" />
+    <part Name="Description" Short="▶=pronouns.Subjective= =verb:sniff:afterpronoun= the air and =verb:stamp:afterpronoun= =pronouns.possessive= hindroots in the dry soil. Pungent, ochre-toned petals flit from =pronouns.possessive= crown and meadow =pronouns.possessive= broad haunches." />
+  </object>
+  <object Name="Chiliad Slynth Kyakukya" Load="Merge">
+    <part Name="Render" DisplayName="▶slynth cidermouth" />
+    <part Name="Description" Short="▶A troop of shrooms have taken symbiotic root in =pronouns.possessive= flower crown. =pronouns.Possessive= stems are singed and peppered with spice, and =pronouns.subjective= =verb:stir:afterpronoun= a zesty punch with a wooden ladel." />
+  </object>
+  <object Name="Chiliad Slynth Ezra" Load="Merge">
+    <part Name="Render" DisplayName="▶slynth exile" />
+    <part Name="Description" Short="▶=pronouns.Possessive= verdurous flower crown flows down =pronouns.possessive= shoulders as a sidewise veil, and =pronouns.possessive= finger stems writhe over a glinting cathode." />
+  </object>
+  <object Name="Chiliad Slynth Yd Freehold" Load="Merge">
+    <part Name="Render" DisplayName="▶slynth piper" />
+    <part Name="Description" Short="▶=pronouns.Possessive= finger stems pop and slide o'er a wooden flute, and =pronouns.subjective= =verb:shuffle:afterpronoun= a lateral jig on pleated roots. The petals of =pronouns.possessive= crowning flower shift colors in happy simultaneity." />
+  </object>
+  <object Name="Chiliad Slynth Mechanimists" Load="Merge">
+    <part Name="Render" DisplayName="▶slynth cantor" />
+    <part Name="Description" Short="▶The flowerbeing dons the diodic hood of the Chromaic Church and crackles dry petals together at a hymnal metric. A brooch of polished chrome pinches =pronouns.possessive= foilage at the neck." />
+  </object>
+  <object Name="Chiliad Slynth Mopango" Load="Merge">
+    <part Name="Render" DisplayName="▶slynth friend" />
+    <part Name="Description" Short="▶A soft, glowing light radiates from =pronouns.possessive= verdurous core, and all =pronouns.possessive= leafy parts camber toward it like a miniature sun. Above, =pronouns.possessive= brights eyes glint with quixotic purpose." />
+  </object>
+  <object Name="Chiliad Slynth Chavvah" Load="Merge">
+    <part Name="Render" DisplayName="▶crystal slynth" />
+    <part Name="Description" Short="▶A candescent shard of crystal is sat in the core of =pronouns.possessive= flower crown and glows with sightfulness in place of eyes. All about =pronouns.possessive= verdurous body, the air vibrates with a raspy hum." />
+  </object>
+  <object Name="Chiliad Slynth Village" Load="Merge">
+    <part Name="Render" DisplayName="▶slynth villager" />
+    <part Name="Description" Short="▶=pronouns.Possessive= verdurous overgrowth has knit itself to a triangle apron, and =pronouns.subjective= =verb:camber:afterpronoun= with a strange and civic purpose. A pair of warm eyes impress conviviality." />
+  </object>
+  <object Name="Nacham's Loom" Load="Merge">
+    <part Name="Render" DisplayName="▶Nacham's loom" />
+    <part Name="Description" Short="▶Flatten sheets of metal run off a warp beam in reverse and are stripped to loose wire. The bars of the separating reed bzzzz with psychoconductive force." />
+  </object>
+  <object Name="Kah's Conveyor" Load="Merge">
+    <part Name="Render" DisplayName="▶Kah's conveyor" />
+    <part Name="Description" Short="▶Ribboned cable is threaded through a drive unit in lemniscate shape and loops with perpetual motion." />
+  </object>
+  <object Name="Va'am's Blower" Load="Merge">
+    <part Name="Render" DisplayName="▶Va'am's blower" />
+    <part Name="Description" Short="▶An ocean drum is fit against a drive wheel to force air and electroparticles down a depressurized funnel." />
+  </object>
+  <object Name="Dagasha's Crucifix" Load="Merge">
+    <part Name="Render" DisplayName="▶Dagasha's crucifix" />
+    <part Name="Description" Short="▶A branch trellis of crystalline thorn-hair has been contorted to iconic cross shape. The enterer is forced to become concave." />
+  </object>
+  <object Name="TauNoLongerFigurine" Load="Merge">
+    <part Name="Render" DisplayName="▶{{B|sapphire}} figurine of the Crystal Woe" />
+    <part Name="Description" Short="▶It's a richly faceted likeness of the night terror who shunts the fluid seas to dead lattice, who stalactites into other-dreams to vaporize their dreamers." />
+  </object>
+  <object Name="WanderingTauFigurine" Load="Merge">
+    <part Name="Render" DisplayName="▶{{B|sapphire}} figurine of the Wandering Jewel" />
+    <part Name="Description" Short="▶In every hill hamlet 'neath the clustering horizon, there is a tale spoken of the Jewel Who Came. Much is learned from her or little, but the portraiture of her broad and shining facets remains constant." />
+  </object>
+  <object Name="DeadTauFigurine" Load="Merge">
+    <part Name="Render" DisplayName="▶{{B|sapphire}} figurine of the Dreamshatter" />
+    <part Name="Description" Short="▶A crystal complexity is depicted at the forever moment of shatter. The carving is still and in so being is hyperkinetic, encoding all possibilities in its elisions, and then resolving into none." />
+  </object>
+  <object Name="Godling" Load="Merge">
+    <part Name="Render" DisplayName="▶Girsh godling" />
+    <part Name="Description" Short="▶A creature of wing, hoof, and spine slouches to the weight of years, tongue tra-la'ing a rich and wistful echo, countenance shining in the bright spectrum of affect. An irisdual grease churns under =pronouns.possessive= translucent skin and beams rainbows that squirrel off in three-dimensional strips. The thing waits unbidden." />
+  </object>
+  <object Name="True Godling" Load="Merge">
+    <part Name="Render" DisplayName="▶Girsh godling" />
+    <part Name="Description" Short="▶A creature of wing, hoof, and spine slouches to the weight of years, tongue tra-la'ing a rich and wistful echo, countenance shining in the bright spectrum of affect. An irisdual grease churns under =pronouns.possessive= mosaic skin (fractalized by =pronouns.possessive= multi-threaded lineage) and beams rainbows that squirrel off in seven-dimensional strips. The thing waits unbidden." />
+  </object>
+  <object Name="Fool of the Gyre" Load="Merge">
+    <part Name="Render" DisplayName="▶fool of the Gyre" />
+    <part Name="Description" Short="▶A svelt figure in thousand-year motley prances, and the little tolling bells hanging from =pronouns.possessive= archway cap ding and dong. Waiting for all or none, left alone of =pronouns.possessive= deserted order, =pronouns.subjective= =verb:speak:afterpronoun= with fool's privilege in the undertext of a richer reality." />
+  </object>
+  <object Name="Chiliad Hologram Locket" Load="Merge">
+    <part Name="Render" DisplayName="▶ursine locket" />
+    <part Name="Description" Short="▶A cameo of meteorite sardonyx bears an unknown clan sigil in florid script, serifed with tiny gears and sails." />
+  </object>
+  <object Name="Starshiib Hologram" Load="Merge">
+    <part Name="Render" DisplayName="▶hologram of outworlder" />
+    <part Name="Description" Short="▶Quills shrank to calcite screws mark the creature in a hex grid, and ears of catholic expressiveness whip up and down like quarks. A commodore's gyroscopic coat remains still as the light sculpture periphery ticks with the subtle movements of life." />
+  </object>
+  <object Name="Amaranthine Dust" Load="Merge">
+    <part Name="Render" DisplayName="▶{{r|amaranthine dust}}" />
+    <part Name="Description" Short="▶The darkling crystal was shattered and abraded to dust; a million worlds of self have crumbled." />
+  </object>
+  <object Name="LoveAndFearCompleted" Load="Merge">
+    <part Name="Render" DisplayName="▶{{W|A Tale of Love in Bey Lah}}" />
+    <part Name="Description" Short="▶Several sheets of tattered, age-stained parchment are bound together at the margins by some sort of glue." />
+  </object>
+  <object Name="LoveAndFearUncompleted" Load="Merge">
+    <part Name="Render" DisplayName="▶{{W|A Tale of Fear in Bey Lah}}" />
+    <part Name="Description" Short="▶Several sheets of tattered, age-stained parchment are bound together at the margins by some sort of glue." />
+  </object>
+  <object Name="Chiliad Creature Antelopes" Load="Merge">
+    <part Name="Render" DisplayName="▶=creatureRegionAdjective= kudu" />
+    <part Name="Description" Short="▶Great spiral horns emerge from a proudly-held head." />
+  </object>
+  <object Name="Chiliad Creature Apes" Load="Merge">
+    <part Name="Render" DisplayName="▶=creatureRegionAdjective= ape" />
+    <part Name="Description" Short="▶=pronouns.Subjective= =verb:squat:afterpronoun= low in humble repose, and tufts of colored fur sprout from =pronouns.possessive= cheeks." />
+  </object>
+  <object Name="Chiliad Creature Arachnids" Load="Merge">
+    <part Name="Render" DisplayName="▶=creatureRegionAdjective= scorpion" />
+    <part Name="Description" Short="▶Shiny plating rubs against the dirt floor, and a whetted tailspike curves in perfect geometry." />
+  </object>
+  <object Name="Chiliad Creature Baboons" Load="Merge">
+    <part Name="Render" DisplayName="▶baboon =creatureRegionNoun=" />
+    <part Name="Description" Short="▶Furry ridges catch the long salt wind, and a dextrous tail pounds the ground." />
+  </object>
+  <object Name="Chiliad Creature Baetyls" Load="Merge">
+    <part Name="Render" DisplayName="▶=creatureRegionAdjective= baetyl" />
+    <part Name="Description" Short="▶A moss-bloused crystal sphere squats in practiced observance." />
+    <part Name="PartsGas" NameForStatus="▶ParticulateRepulsion" />
+  </object>
+  <object Name="Chiliad Creature Barathrumites" Load="Merge">
+    <part Name="Render" DisplayName="▶urshiib =creatureRegionNoun=" />
+    <part Name="Description" Short="▶=pronouns.Possessive= shoulders slump and the tips of =pronouns.possessive= quills have begun to darken." />
+  </object>
+  <object Name="Chiliad Creature Bears" Load="Merge">
+    <part Name="Render" DisplayName="▶=creatureRegionAdjective= bear" />
+    <part Name="Description" Short="▶Great furry wings beat at bugs on =pronouns.possessive= ear, and then settle across a broad ursine back." />
+  </object>
+  <object Name="Chiliad Creature Birds" Load="Merge">
+    <part Name="Render" DisplayName="▶=creatureRegionAdjective= moa" />
+    <part Name="Description" Short="▶A neck of considerable length shivers gnats away, and =pronouns.possessive= crunching muzzle snaps at the stragglers." />
+  </object>
+  <object Name="Chiliad Creature Cannibals" Load="Merge">
+    <part Name="Render" DisplayName="▶=creatureRegionAdjective= cannibal" />
+    <part Name="Description" Short="▶The weight of the thick air pushes =pronouns.objective= down onto =pronouns.possessive= stocky dumps." />
+  </object>
+  <object Name="Chiliad Creature Cats" Load="Merge">
+    <part Name="Render" DisplayName="▶=creatureRegionAdjective= cat" />
+    <part Name="Description" Short="▶A metrical purr exits =pronouns.possessive= larynx with ceaseless abidance." />
+  </object>
+  <object Name="Chiliad Creature Chavvah" Load="Merge">
+    <part Name="Render" DisplayName="▶=creatureRegionAdjective= chime" />
+    <part Name="Description" Short="▶A fidgeting crystal breaks the ambient rays of light with =pronouns.possessive= turning and craning." />
+    <xtagTextFragments PoeticFeatures="▶refractive skin, prism fingers, lucent glow" />
+  </object>
+  <object Name="Chiliad Creature Consortium" Load="Merge">
+    <part Name="Render" DisplayName="▶Consortium =creatureRegionNoun=" />
+    <part Name="Description" Short="▶The plant puffs up at the presence of another and basks in the soft light." />
+  </object>
+  <object Name="Chiliad Creature Crabs" Load="Merge">
+    <part Name="Render" DisplayName="▶=creatureRegionAdjective= crab" />
+    <part Name="Description" Short="▶=pronouns.Subjective= =verb:hover:afterpronoun= low to the ground and snips grass in pairs." />
+  </object>
+  <object Name="Chiliad Creature Cragmensch" Load="Merge">
+    <part Name="Render" DisplayName="▶cragmensch =creatureRegionNoun=" />
+    <part Name="Description" Short="▶A shelf of rock has decorated =pronouns.reflexive= with wire, shawls, and beads." />
+  </object>
+  <object Name="Chiliad Creature Daughters" Load="Merge">
+    <part Name="Render" DisplayName="▶=creatureRegionAdjective= daughter" />
+    <part Name="Description" Short="▶Dirt smears =pronouns.possessive= habit and rust powders =pronouns.possessive= wrench." />
+  </object>
+  <object Name="Chiliad Creature Dogs" Load="Merge">
+    <part Name="Render" DisplayName="▶=creatureRegionAdjective= dog" />
+    <part Name="Description" Short="▶Crescent ears perk at a distant howl and =pronouns.subjective= =verb:sniff:afterpronoun= the wind." />
+  </object>
+  <object Name="Chiliad Creature Dromads" Load="Merge">
+    <part Name="Render" DisplayName="▶dromad =creatureRegionNoun=" />
+    <part Name="Description" Short="▶=pronouns.Subjective= =verb:waggle:afterpronoun= =pronouns.possessive= neck to the stiff rhythms of the wind and shrugs =pronouns.possessive= hump forward." />
+  </object>
+  <object Name="Chiliad Creature Equines" Load="Merge">
+    <part Name="Render" DisplayName="▶=creatureRegionAdjective= zebra" />
+    <part Name="Description" Short="▶=pronouns.Possessive= striped flanks draw and then dizzy the eye." />
+  </object>
+  <object Name="Chiliad Creature Farmers" Load="Merge">
+    <part Name="Render" DisplayName="▶=creatureRegionAdjective= farmer" />
+    <part Name="Description" Short="▶=pronouns.Possessive= eyes pierce the packed soil and =pronouns.subjective= =verb:rub:afterpronoun= clay between =pronouns.possessive= fingers." />
+  </object>
+  <object Name="Chiliad Creature Wardens" Load="Merge">
+    <part Name="Render" DisplayName="▶=creatureRegionAdjective= warden" />
+    <part Name="Description" Short="▶Tense arms brace =pronouns.possessive= weapon and =pronouns.subjective= =verb:hold:afterpronoun= your gaze with measured doubt." />
+  </object>
+  <object Name="Chiliad Creature Fish" Load="Merge">
+    <part Name="Render" DisplayName="▶=creatureRegionAdjective= fish" />
+    <part Name="Description" Short="▶Gorgeous soft ray ribbons off =pronouns.possessive= body and a curious eye peers out =pronouns.possessive= flat head." />
+  </object>
+  <object Name="Chiliad Creature Flowers" Load="Merge">
+    <part Name="Render" DisplayName="▶blooming =creatureRegionNoun=" />
+    <part Name="Description" Short="▶Wind-nosy stigma and style reach from the pocket of a gallant bloom." />
+  </object>
+  <object Name="Chiliad Creature Frogs" Load="Merge">
+    <part Name="Render" DisplayName="▶=creatureRegionAdjective= frog" />
+    <part Name="Description" Short="▶A small creature of the rooted mud hops in pride." />
+  </object>
+  <object Name="Chiliad Creature Fungi" Load="Merge">
+    <part Name="Render" DisplayName="▶=creatureRegionAdjective= fungus" />
+    <part Name="Description" Short="▶Bright hyphae lick mud off the ground." />
+  </object>
+  <object Name="Chiliad Creature Girsh" Load="Merge">
+    <part Name="Render" DisplayName="▶=creatureRegionAdjective= Girshling" />
+    <part Name="Description" Short="▶Star orchid saliva pools at the tips of =pronouns.possessive= fangs and drips to the ground." />
+  </object>
+  <object Name="Chiliad Creature Goatfolk" Load="Merge">
+    <part Name="Render" DisplayName="▶goatfolk =creatureRegionNoun=" />
+    <part Name="Description" Short="▶=pronouns.Subjective= =verb:stand:afterpronoun= with a hooved arch and baaaaas proudly at the sky." />
+    <xtagTextFragments PoeticFeatures="▶muscled chest, spiral horns, deep grumble" />
+  </object>
+  <object Name="Chiliad Creature Prey" Load="Merge">
+    <part Name="Render" DisplayName="▶=creatureRegionAdjective= goat" />
+    <part Name="Description" Short="▶A bug-swathed rump of mangy fur sways in peaceful and goatish rhythms." />
+  </object>
+  <object Name="Chiliad Creature Gyre Wights" Load="Merge">
+    <part Name="Render" DisplayName="▶=creatureRegionNoun= of the Gyre" />
+    <part Name="Description" Short="▶A backlength snood flops in metamorphic caprice as the death/life acolyte skips to the threnodies of star and home." />
+  </object>
+  <object Name="Chiliad Creature Hermits" Load="Merge">
+    <part Name="Render" DisplayName="▶=creatureRegionAdjective= hermit" />
+    <part Name="Description" Short="▶A salvaged aquarium bubble of kelp-draped glass keeps the hermit at distance from the waking world." />
+  </object>
+  <object Name="Chiliad Creature Entropic" Load="Merge">
+    <part Name="Render" DisplayName="▶entropic =creatureRegionNoun=" />
+    <part Name="Description" Short="▶Spines made of civilization cartilage have been sculpted to displeasing shapes by the trade winds of outwise dimensions." />
+  </object>
+  <object Name="Chiliad Creature Hindren" Load="Merge">
+    <part Name="Render" DisplayName="▶hindren =creatureRegionNoun=" />
+    <part Name="Description" Short="▶A corsage of curls spill over dwarf horns, and there is less tension about =pronouns.possessive= hind hips than most animals." />
+  </object>
+  <object Name="Chiliad Creature Insects" Load="Merge">
+    <part Name="Render" DisplayName="▶=creatureRegionAdjective= fly" />
+    <part Name="Description" Short="▶A papery pair of chitin mosaics beat the thick air, and a glassy bulb segment chatters behind." />
+  </object>
+  <object Name="Chiliad Creature Issachari" Load="Merge">
+    <part Name="Render" DisplayName="▶Issachari =creatureRegionNoun=" />
+    <part Name="Description" Short="▶Wind presses a fringed thawb and neckdress against a human form. The fabric is embroidered to rhyme with patterns in the salt and star-cut sky." />
+  </object>
+  <object Name="Chiliad Creature Mechanimists" Load="Merge">
+    <part Name="Render" DisplayName="▶Mechanimist =creatureRegionNoun=" />
+    <part Name="Description" Short="▶The creature wears the diodic hood of the Chromaic Church, but =pronouns.possessive= field robes bear none of its ceremonial stiffness." />
+  </object>
+  <object Name="Chiliad Creature Merchants" Load="Merge">
+    <part Name="Render" DisplayName="▶=creatureRegionAdjective= trader" />
+    <part Name="Description" Short="▶A satchel in the thrice-pocketed style of Odrum is sweat-pressed to =pronouns.possessive= back." />
+  </object>
+  <object Name="Chiliad Creature Mollusks" Load="Merge">
+    <part Name="Render" DisplayName="▶=creatureRegionAdjective= clam" />
+    <part Name="Description" Short="▶A hatchet of blubbery tissue spills out of a machine-scraped bivalve shell." />
+  </object>
+  <object Name="Chiliad Creature Mopango" Load="Merge">
+    <part Name="Render" DisplayName="▶mopango =creatureRegionNoun=" />
+    <part Name="Description" Short="▶A soft inner light radiates off =pronouns.possessive= yoked scales and enhalos the ruffled pelerine abouth =pronouns.possessive= neck." />
+  </object>
+  <object Name="Chiliad Creature Strangers" Load="Merge">
+    <part Name="Render" DisplayName="▶mysterious =creatureRegionNoun=" />
+    <part Name="Description" Short="▶=pronouns.Possessive= tassled cape (braided on the banks of a forgotten river) accents a slim posture of heedful calm." />
+  </object>
+  <object Name="Chiliad Creature Naphtaali" Load="Merge">
+    <part Name="Render" DisplayName="▶Naphtaali =creatureRegionNoun=" />
+    <part Name="Description" Short="▶=pronouns.Possessive= moss fur grows thick (and even fruits), and bright cyan eyes peer out the selfsame mask of =pronouns.possessive= minyan." />
+  </object>
+  <object Name="Chiliad Creature Oozes" Load="Merge">
+    <part Name="Render" DisplayName="▶=creatureRegionAdjective= ooze" />
+    <part Name="Description" Short="▶A fluent bubble is kept aloft by viscous current trapped in a membrane of glass." />
+  </object>
+  <object Name="Chiliad Creature Templar" Load="Merge">
+    <part Name="Render" DisplayName="▶Templar =creatureRegionNoun=" />
+    <part Name="Description" Short="▶Mail banged and brushed in a chiliad of coats weighs the knight down with the burden of kinetic years. The faded rhombus sigiling =pronouns.possessive= helm continues with its insistent metaphysic." />
+  </object>
+  <object Name="Chiliad Creature Roots" Load="Merge">
+    <part Name="Render" DisplayName="▶=creatureRegionAdjective= root" />
+    <part Name="Description" Short="▶Inverted spirals of sponge-like tissue taste the surface air for some blossoming, subterranean plant." />
+  </object>
+  <object Name="Chiliad Creature Snapjaws" Load="Merge">
+    <part Name="Render" DisplayName="▶snapjaw =creatureRegionNoun=" />
+    <part Name="Description" Short="▶Stick and spiked pauldron align to the angle of =pronouns.possessive= furry snout, and =pronouns.possessive= ears twitch with an uncanny and familiar joy." />
+  </object>
+  <object Name="Chiliad Creature Robots" Load="Merge">
+    <part Name="Render" DisplayName="▶machine =creatureRegionNoun=" />
+    <part Name="Description" Short="▶Shoulder radars flange and spin to moon time like animated epaulets, and =pronouns.possessive= cask boots trot a machinic gait." />
+  </object>
+  <object Name="Chiliad Creature Succulents" Load="Merge">
+    <part Name="Render" DisplayName="▶=creatureRegionAdjective= cactus" />
+    <part Name="Description" Short="▶Channeled arms waggle and suck moisture from the thick air, while cracks in =pronouns.possessive= clay pot show a hunger for growth." />
+  </object>
+  <object Name="Chiliad Creature Svardym" Load="Merge">
+    <part Name="Render" DisplayName="▶svardym =creatureRegionNoun=" />
+    <part Name="Description" Short="▶Weight of the weary years has sagged the tympana of the frogfolk and binded them to the leaf-wet earth." />
+  </object>
+  <object Name="Chiliad Creature Swine" Load="Merge">
+    <part Name="Render" DisplayName="▶=creatureRegionAdjective= pig" />
+    <part Name="Description" Short="▶Village life has tilted the pig and worn the hair off =pronouns.possessive= ham ass. As well, =pronouns.possessive= forehooves splay in the signature of metal tool use." />
+  </object>
+  <object Name="Chiliad Creature Tortoises" Load="Merge">
+    <part Name="Render" DisplayName="▶=creatureRegionAdjective= tortoise" />
+    <part Name="Description" Short="▶The windy lathe of eons has rasped the plastron down to an old and smooth stone, and left the shelled friend with a sour smile." />
+  </object>
+  <object Name="Chiliad Creature Trees" Load="Merge">
+    <part Name="Render" DisplayName="▶shading =creatureRegionNoun=" />
+    <part Name="Description" Short="▶=pronouns.Subjective= =verb:have:afterpronoun= been trimmed and moistened with doting care, =pronouns.possessive= pot reglazed in the fashion of Yawningmoon." />
+  </object>
+  <object Name="Chiliad Creature Trolls" Load="Merge">
+    <part Name="Render" DisplayName="▶troll =creatureRegionNoun=" />
+    <part Name="Description" Short="▶A crag-being of hardened clay has hair and grass growing between the pressure cracks on =pronouns.possessive= shoulders and back." />
+  </object>
+  <object Name="Chiliad Creature Unshelled Reptiles" Load="Merge">
+    <part Name="Render" DisplayName="▶=creatureRegionAdjective= lizard" />
+    <part Name="Description" Short="▶A slitherkin hunkers low to navigate the dales and rents of the small world." />
+  </object>
+  <object Name="Chiliad Creature Urchins" Load="Merge">
+    <part Name="Render" DisplayName="▶spiny =creatureRegionNoun=" />
+    <part Name="Description" Short="▶Colorful spines are splayed like gear teeth across a doughy and sun-bleached orb." />
+  </object>
+  <object Name="Chiliad Creature Vines" Load="Merge">
+    <part Name="Render" DisplayName="▶=creatureRegionAdjective= vine" />
+    <part Name="Description" Short="▶Two spitting leaf-beaks prune each other's neck and chew the weedmatter into seedpack." />
+  </object>
+  <object Name="Chiliad Creature Water" Load="Merge">
+    <part Name="Render" DisplayName="▶=creatureRegionAdjective= baron" />
+    <part Name="Description" Short="▶The art of sitting is practiced with the nuance of quantum chromodynamics, among the buoyant caste. Here =pronouns.subjective= =verb:perch:afterpronoun= on =pronouns.possessive= palanquin walker and =verb:drink:afterpronoun= in the nubile realm." />
+  </object>
+  <object Name="Chiliad Creature Winged Mammals" Load="Merge">
+    <part Name="Render" DisplayName="▶=creatureRegionAdjective= bat" />
+    <part Name="Description" Short="▶The broad-eye bat flaps a nuisance in the carcass-darkened space." />
+  </object>
+  <object Name="Chiliad Creature Worms" Load="Merge">
+    <part Name="Render" DisplayName="▶=creatureRegionAdjective= worm" />
+    <part Name="Description" Short="▶Rude-meaning time has rolled =pronouns.possessive= annuli to their skinniest form and smushed their segments into one. A rope of dissolving spittle joins =pronouns.possessive= peristomium with the ground." />
+  </object>
+  <object Name="Chiliad Creature Seekers" Load="Merge">
+    <part Name="Render" DisplayName="▶=creatureRegionNoun= of the Sightless Way" />
+    <part Name="Description" Short="▶The sidewise ribbons of late Seeker fashion twirl in the moistening air, and with a gestureless hmmph, =pronouns.subjective= =verb:brush:afterpronoun= the dirt from =pronouns.possessive= cowl." />
+  </object>
+  <object Name="Chiliad Creature Pariahs" Load="Merge">
+    <part Name="Render" DisplayName="▶=creatureRegionNoun= and pariah to =subject.possessive= people" />
+  </object>
+  <object Name="Chiliad Creature Hoof" Load="Merge">
+    <part Name="Render" DisplayName="▶hoof" />
+  </object>
+  <object Name="Chiliad Creature Fangs" Load="Merge">
+    <part Name="Render" DisplayName="▶fangs" />
+  </object>
+  <object Name="Chiliad Creature Pincer" Load="Merge">
+    <part Name="Render" DisplayName="▶claw" />
+  </object>
+  <object Name="Chiliad Creature Claw" Load="Merge">
+    <part Name="Render" DisplayName="▶claw" />
+  </object>
+  <object Name="Chiliad Creature Spade" Load="Merge">
+    <part Name="Render" DisplayName="▶spade" />
+  </object>
+  <object Name="Chiliad Creature Peck" Load="Merge">
+    <part Name="Render" DisplayName="▶peck" />
+  </object>
+  <object Name="Chiliad Creature Prism Point" Load="Merge">
+    <part Name="Render" DisplayName="▶{{Y|prism point}}" />
+  </object>
+  <object Name="Chiliad Creature Pistil" Load="Merge">
+    <part Name="Render" DisplayName="▶pistil" />
+  </object>
+  <object Name="Chiliad Creature Nodule" Load="Merge">
+    <part Name="Render" DisplayName="▶nodule" />
+  </object>
+  <object Name="Chiliad Creature Horns" Load="Merge">
+    <part Name="Render" DisplayName="▶horns" />
+  </object>
+  <object Name="Chiliad Creature Muscular Foot" Load="Merge">
+    <part Name="Render" DisplayName="▶muscular foot" />
+  </object>
+  <object Name="Chiliad Creature Pseudopod" Load="Merge">
+    <part Name="Render" DisplayName="▶pseudopod" />
+  </object>
+  <object Name="Chiliad Creature Strangle" Load="Merge">
+    <part Name="Render" DisplayName="▶stranglehold" />
+  </object>
+  <object Name="Chiliad Creature Spines" Load="Merge">
+    <part Name="Render" DisplayName="▶spines" />
+  </object>
+  <object Name="Chiliad Creature Bark" Load="Merge">
+    <part Name="Render" DisplayName="▶bark" />
+  </object>
+  <object Name="Chiliad Creature Bands" Load="Merge">
+    <part Name="Render" DisplayName="▶crushing bands" />
+  </object>
+</objects>

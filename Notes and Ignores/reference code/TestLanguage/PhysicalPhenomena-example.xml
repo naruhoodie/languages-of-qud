@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Caves of Qud - Generated Localizable XML 2.0.212.3
+
+<objects>
+
+  <object Name="Key" Load="">
+
+    <part Name="Key">
+
+    <tag Name="Key">
+
+    <stag Name="Key">
+
+    <property Name="Key">
+
+    <xtagTextFragments>
+
+    <xtagGrammar>
+
+-->
+<objects Lang="example" Encoding="utf-8">
+  <object Name="PhysicalObject" Load="Merge">
+    <part Name="Description" Short="▶A hideous specimen." />
+  </object>
+  <object Name="Water" Load="Merge">
+    <part Name="Render" DisplayName="▶pool" />
+    <part Name="Description" Short="▶A pool of liquid." />
+  </object>
+  <object Name="Gas" Load="Merge">
+    <xtagGrammar massNoun="▶true" />
+  </object>
+  <object Name="PoisonGas" Load="Merge">
+    <part Name="Render" DisplayName="▶poison gas" />
+    <part Name="Description" Short="▶Plumes of noxious gas stick to the air. They crowd the lungs of wet-blooded creatures who can't extract the displaced oxygen." />
+    <tag Name="GasGenerationName" Value="▶Poison Gas Generation" />
+    <tag Name="LevelEffectDescription" Value="▶poison save difficulty and damage" />
+  </object>
+  <object Name="MiasmaticAsh" Load="Merge">
+    <part Name="Render" DisplayName="▶osseous ash" />
+    <part Name="Description" Short="▶Bone bits are aerosolized into a thick coal fog. Light is lost inside." />
+    <tag Name="GasGenerationName" Value="▶Osseous Ash Generation" />
+    <tag Name="LevelEffectDescription" Value="▶asphyxiation save difficulty and damage" />
+  </object>
+  <object Name="Plasma" Load="Merge">
+    <part Name="Render" DisplayName="▶plasma" />
+    <part Name="Description" Short="▶Ribbons of emerald and neon lace streak through the crackling air and bloom in violent florets." />
+    <tag Name="GasGenerationName" Value="▶Plasma Emission" />
+    <tag Name="LevelEffectDescription" Value="▶damage and duration of plasma adhesion" />
+  </object>
+  <object Name="Steam" Load="Merge">
+    <part Name="Render" DisplayName="▶steam" />
+    <tag Name="GasGenerationName" Value="▶Steam Generation" />
+  </object>
+  <object Name="SteamGas" Load="Merge">
+    <part Name="Render" DisplayName="▶scalding steam" />
+    <part Name="Description" Short="▶Hot aerosol swells as it starts to dissipate into air." />
+    <tag Name="GasGenerationName" Value="▶Steam Gas Generation" />
+  </object>
+  <object Name="CryoGas" Load="Merge">
+    <part Name="Render" DisplayName="▶cryogenic mist" />
+    <part Name="Description" Short="▶Machine-chilled water was depressurized to a freezing fog to hold the processes of life in suspension." />
+    <tag Name="GasGenerationName" Value="▶Cryogenic Mist Generation" />
+  </object>
+  <object Name="StableCryoGas" Load="Merge">
+    <part Name="Render" DisplayName="▶cryogenic mist" />
+    <tag Name="GasGenerationName" Value="▶Stable Cryogenic Mist Generation" />
+  </object>
+  <object Name="AcidGas" Load="Merge">
+    <part Name="Render" DisplayName="▶corrosive gas" />
+    <part Name="Description" Short="▶Even now the nimbus of vaporized acid is condensing, starting to settle on its colonized surfaces, starting to sink through their soft edges." />
+    <tag Name="GasGenerationName" Value="▶Corrosive Gas Generation" />
+    <tag Name="LevelEffectDescription" Value="▶damage" />
+  </object>
+  <object Name="StunGas" Load="Merge">
+    <part Name="Render" DisplayName="▶stun gas" />
+    <part Name="Description" Short="▶The nickel-dew sticks to the air and arrests the transient molecules of migrant-matter." />
+    <tag Name="GasGenerationName" Value="▶Stun Gas Generation" />
+  </object>
+  <object Name="SleepGas" Load="Merge">
+    <part Name="Render" DisplayName="▶sleep gas" />
+    <part Name="Description" Short="▶Miasma settles the lungs of its neighbors and guides them to the dreaming dale. Their bodies repose." />
+    <tag Name="GasGenerationName" Value="▶Sleep Gas Generation" />
+    <tag Name="LevelEffectDescription" Value="▶sleep save difficulty" />
+  </object>
+  <object Name="ConfusionGas" Load="Merge">
+    <part Name="Render" DisplayName="▶confusion gas" />
+    <part Name="Description" Short="▶Cobalt gas seeps into the nose and disarranges the mind." />
+    <tag Name="GasGenerationName" Value="▶Confusion Gas Generation" />
+    <tag Name="LevelEffectDescription" Value="▶confusion save difficulty" />
+  </object>
+  <object Name="Miasma" Load="Merge">
+    <part Name="Render" DisplayName="▶miasma" />
+    <part Name="Description" Short="▶Tongue, nail, and spleen were caked together then lacerated by heat to airy dots of dung." />
+    <tag Name="GasGenerationName" Value="▶Miasma Generation" />
+    <tag Name="LevelEffectDescription" Value="▶disease save difficulty" />
+  </object>
+  <object Name="NormalityGas" Load="Merge">
+    <part Name="Render" DisplayName="▶normality gas" />
+    <part Name="Description" Short="▶Gas molecules arrange along the ley lines of this plane to form an aeriform mesh. Objects on orthogonal trajectories are netted and shunted back toward their planar homes." />
+    <tag Name="GasGenerationName" Value="▶Normality Gas Generation" />
+    <tag Name="LevelEffectDescription" Value="▶astral tethering and damage versus extradimensional beings" />
+  </object>
+  <object Name="DefoliantGas" Load="Merge">
+    <part Name="Render" DisplayName="▶defoliant" />
+    <part Name="Description" Short="▶The synthetic mist called Golden Dawn ascends from its canister to atomize leafage and leave a clear view of the horizon in its wake." />
+    <tag Name="GasGenerationName" Value="▶Defoliant Generation" />
+    <tag Name="LevelEffectDescription" Value="▶damage" />
+  </object>
+  <object Name="FungicideGas" Load="Merge">
+    <part Name="Render" DisplayName="▶fungicide" />
+    <part Name="Description" Short="▶Magenta showers the heterotrophs in a wet film that inhibits their absorption of dead animal and plant-things." />
+    <tag Name="GasGenerationName" Value="▶Fungicide Generation" />
+    <tag Name="LevelEffectDescription" Value="▶damage" />
+  </object>
+  <object Name="GlitterGas" Load="Merge">
+    <part Name="Render" DisplayName="▶glitter dust" />
+    <part Name="Description" Short="▶Minuscule hexagons of crushed glass, insect parts, and polyester film twinkle in the air like the ionized helium of star dust." />
+    <tag Name="GasGenerationName" Value="▶Glitter Dust Generation" />
+  </object>
+  <object Name="FungalSporeGasLuminous" Load="Merge">
+    <part Name="Render" DisplayName="▶fungal spores" />
+    <part Name="Description" Short="▶Brumes of spinning mold-dots make the air look fuzzy." />
+  </object>
+  <object Name="FungalSporeGasPuff" Load="Merge">
+    <part Name="Render" DisplayName="▶fungal spores" />
+    <part Name="Description" Short="▶Brumes of spinning mold-dots make the air look fuzzy." />
+  </object>
+  <object Name="FungalSporeGasWax" Load="Merge">
+    <part Name="Render" DisplayName="▶fungal spores" />
+    <part Name="Description" Short="▶Brumes of spinning mold-dots make the air look fuzzy." />
+  </object>
+  <object Name="FungalSporeGasMumbles" Load="Merge">
+    <part Name="Render" DisplayName="▶fungal spores" />
+    <part Name="Description" Short="▶Brumes of spinning mold-dots make the air look fuzzy." />
+  </object>
+  <object Name="Shimmering Heat" Load="Merge">
+    <part Name="Render" DisplayName="▶shimmering heat" />
+    <part Name="Description" Short="▶Hot air crests over an eddy and flares in the baking light." />
+    <xtagGrammar massNoun="▶true" />
+  </object>
+  <object Name="Frigid Mist" Load="Merge">
+    <part Name="Render" DisplayName="▶freezing mist" />
+    <part Name="Description" Short="▶Air cracks under an eddy and blows supercooled moisture to sparkling dust." />
+  </object>
+  <object Name="Space-Time Anomaly" Load="Merge">
+    <part Name="Render" DisplayName="▶spacetime vortex" />
+    <part Name="Description" Short="▶Shining images of distant places and times project off the faces of a platonic prism-thing, and sound waves are pulled apart to the asymptote. The leylines are knotted here, and the illusion of locality crumples away." />
+  </object>
+  <object Name="Wormhole" Load="Merge">
+    <part Name="Render" DisplayName="▶shimmering sphere" />
+    <part Name="Description" Short="▶Shining images of distant places and times project off the faces of a platonic prism-thing, and sound waves are pulled apart to the asymptote. The leylines are knotted here, and the illusion of locality crumples away." />
+  </object>
+  <object Name="InteriorVoid" Load="Merge">
+    <part Name="Render" DisplayName="▶empty space" />
+    <xtagGrammar massNoun="▶true" />
+  </object>
+  <object Name="Kindleflame" Load="Merge">
+    <part Name="Render" DisplayName="▶kindled flame" />
+    <part Name="Description" Short="▶A burning flame of amber floats below a psychic wick." />
+  </object>
+  <object Name="RealityStabilizationField" Load="Merge">
+    <part Name="Render" DisplayName="▶{{normal|normality field}}" />
+    <part Name="Description" Short="▶Shadowing segments arrange along the ley lines of this plane to form a geometric mesh. Objects on orthogonal trajectories are netted and shunted back toward their planar homes." />
+  </object>
+</objects>

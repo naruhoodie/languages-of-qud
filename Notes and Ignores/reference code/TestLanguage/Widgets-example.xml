@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Caves of Qud - Generated Localizable XML 2.0.212.3
+
+<objects>
+
+  <object Name="Key" Load="">
+
+    <part Name="Key">
+
+    <tag Name="Key">
+
+    <stag Name="Key">
+
+    <property Name="Key">
+
+    <xtagTextFragments>
+
+    <xtagGrammar>
+
+-->
+<objects Lang="example" Encoding="utf-8">
+  <object Name="CoralPolypSpawner" Load="Merge">
+    <part Name="Render" DisplayName="▶coral polyp" />
+  </object>
+  <object Name="CoralAndPalladiumSpawner" Load="Merge">
+    <part Name="Render" DisplayName="▶palladium strut with coral growth" />
+  </object>
+  <object Name="PalladiumStrutSpawner" Load="Merge">
+    <part Name="Render" DisplayName="▶palladium strut" />
+  </object>
+  <object Name="ArspliceHyphaeSpawner" Load="Merge">
+    <part Name="Render" DisplayName="▶arsplice hyphae" />
+  </object>
+  <object Name="PistonPressController" Load="Merge">
+    <part Name="Render" DisplayName="▶machine press" />
+  </object>
+  <object Name="PistonPressElement" Load="Merge">
+    <part Name="Render" DisplayName="▶machine press" />
+    <part Name="Description" Short="▶Light glints off the tiny scratches torn into the vast tube's chrome surface from where metal smashed bone into grated submission." />
+  </object>
+  <object Name="DummyTinkerScreenObject" Load="Merge">
+    <part Name="Render" DisplayName="▶{{C|Known Modifications}}" />
+  </object>
+</objects>
