@@ -5,6 +5,7 @@
 	<??LOCALIZE>: might be a keyword meriting an _S entry; check code
 	<CHOICES@>: localize but has phrases to choose from, may change in number?
 		the character(s) after CHOICES is the delimiter
+	<TECH>: is a technical display string, "CamelCase" style
 	<EMOTE>: localize as an sfx
 	<KEY>: undisplayed id for reference, DO NOT LOCALIZE!
 -->
@@ -30,7 +31,6 @@
 	    <tag Name="DishNames" Value="<LOCALIZE>" />
 	<!-- Items.xml -->
 		<tag Name="TinkerCategory" Value="<??LOCALIZE>" />
-		<tag Name="Mods" Value="<??LOCALIZE>" /><!-- NOTE: are displayed in Tinkering :P -->
 		<part Name="LatchesOn" BehaviorDescription="<LOCALIZE>" />
 		<xtagGrammar Proper="<GRAMMAR>" />
 		<xtagGrammar iArticle="<GRAMMAR><LOCALIZE>" />
@@ -43,12 +43,12 @@
 		<part Name="TakenAccomplishment" Text="<LOCALIZE>" Hagiograph="<LOCALIZE>" Gospel="<LOCALIZE>" />
 		<part Name="CompleteQuestOnTaken" Quest="<KEY>" QuestStep="<KEY>" />
 		<property Name="Story" Value="<??LOCALIZE>" />
-		<part Name="IntPropertyChanger" NameForStatus="<??LOCALIZE>" BehaviorDescription="<LOCALIZE>" />
+		<part Name="IntPropertyChanger" NameForStatus="<TECH,LOCALIZE>" BehaviorDescription="<LOCALIZE>" />
 	<!-- Items.xml - cybernetics -->
 		<part Name="CyberneticsBaseItem" BehaviorDescription="<LOCALIZE>" />
-		<part Name="LifeSaver" LethalMessage="<LOCALIZE>" MaxHitpointsThresholdMessage="<LOCALIZE>" NameForStatus="<??LOCALIZE>" />
-		<part Name="VibroWeapon" NameForStatus="<??LOCALIZE>" />
-		<part Name="Toolbox" NameForStatus="<??LOCALIZE>" />
+		<part Name="LifeSaver" LethalMessage="<LOCALIZE>" MaxHitpointsThresholdMessage="<LOCALIZE>" NameForStatus="<LOCALIZE>" />
+		<part Name="VibroWeapon" NameForStatus="<TECH,LOCALIZE>" />
+		<part Name="Toolbox" NameForStatus="<TECH,LOCALIZE>" />
 		<part Name="RulesDescription" Text="<LOCALIZE>" GenotypeAlt="<LOCALIZE>" />
 	<!-- Items.xml - parts with Verbs! -->
 	    <part Name="Projectile" PassByVerb="<LOCALIZE>" />
@@ -56,6 +56,8 @@
 	    <part Name="BootSequence" VerbOnBootInitialized="<LOCALIZE>" VerbOnBootAborted="<LOCALIZE>" VerbOnBootDone="<LOCALIZE>" />
 	    <part Name="Harvestable" HarvestVerb="<LOCALIZE>" />
 	    <part Name="RefractLight" Verb="<LOCALIZE>" />
+		<part Name="EnergyAmmoLoader" NameForStatus="<TECH,LOCALIZE>" />
+		<part Name="MagazineAmmoLoader" NameForStatus="<TECH,LOCALIZE>" />
 	<!-- Food.xml -->
 		<part Name="Food" Message="<LOCALIZE>" />
 	<!-- Widgets.xml -->
@@ -63,9 +65,10 @@
 	<!-- Furniture.xml -->
 		<tag Name="HeroNameTitleDescriptor" Value="<CHOICES,>" />
 		<tag Name="HeroNameTitleClientele" Value="<CHOICES,>" />
-		<xtagTextFragments Skin="<??LOCALIZE>" PoeticFeatures="<CHOICES,>" />
+		<xtagTextFragments Skin="<LOCALIZE>" PoeticFeatures="<CHOICES,>" />
 		<tag Name="NamingTag" Value="<??LOCALIZE>" />
-		<part Name="Bed" NameForStatus="<??LOCALIZE>" />
+		<part Name="Bed" NameForStatus="<TECH,LOCALIZE>" />
+		<part Name="Chat" Says="<LOCALIZE>" />
 	<!-- Furniture.xml - QuestableVerb & QuestableEvent seem to match -->
 		<tag Name="QuestableVerb" Value="<??LOCALIZE><CHOICES,>" />
 		<tag Name="QuestableEvent" Value="<??LOCALIZE><CHOICES,>" />
@@ -88,7 +91,7 @@
 	<!-- Creatures.xml -->
     <!-- how to localize stat tag ShortName? -->
     <stat Name="<KEY>" ShortName="<?KEY,??LOCALIZE>" />
-		<tag Name="Species" Value="<??LOCALIZE>" />
+		<tag Name="Species" Value="<LOCALIZE>" />
 		<tag Name="PetResponse" Value="<LOCALIZE>" />
 		<tag Name="SimpleConversation" Value="<LOCALIZE><EMOTE><CHOICES~>" />
 		<xtagTextFragments Skin="<LOCALIZE>" PoeticFeatures="<CHOICES,>" YounglingNoise="<EMOTE><CHOICES,>" Activity="<CHOICES,>" VillageActivity="<CHOICES,>" NeedsItemFor="<CHOICES,>" SacredThing="<CHOICES,>" ArableLand="<CHOICES,>" ValuedOre="<CHOICES,>" />
@@ -99,7 +102,7 @@
 		<tag Name="HeroNameTitleMayorSynCap" Value="<GRAMMAR><CHOICES,>" />
 		<tag Name="RandomGender" Value="<GRAMMAR:PronounSetName><CHOICES,>" />
 		<!-- staticFaction is a thruple of faction,feeling,reason -->
-		<tag Name="staticFactionN" Value="<??LOCALIZE>,<??LOCALIZE>,<LOCALIZE>" />
+		<tag Name="staticFaction<N>" Value="<??LOCALIZE>,<??LOCALIZE>,<LOCALIZE>" />
 		<part Name="Honorifics" Primary="<LOCALIZE>" />
 		<tag Name="SharesRecipeText" Value="<LOCALIZE>" />
 	    <part Name="SecretObject" text="<LOCALIZE>" message="<LOCALIZE>" />
