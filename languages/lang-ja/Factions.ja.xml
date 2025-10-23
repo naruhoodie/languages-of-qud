@@ -104,6 +104,9 @@
     FormatWithArticle="false"
     Plural="false"
   >
+    <interests>
+      <interest Tags="opalduskwaters,riveryonth,riversvy,mountainstream,riveropal" MatchAny="true" Description="[届：\TODÖ]水辺の場所" />
+    </interests>
   </faction>
 
   <faction
@@ -289,6 +292,9 @@
     DisplayName="[届：\TODÖ]スヴァルディム族"
     FormatWithArticle="false"
     Plural="false"
+    <interests>
+      <interest Tags="gyreplagues" WillBuy="false" WillSell="true" Description="[届：\TODÖ]the plagues of the Gyre" />
+    </interests>
   >
   </faction>
 
@@ -392,6 +398,9 @@
     FormatWithArticle="false"
     Plural="false"
   >
+    <interests>
+      <interest Tags="ruins,tech,historic,sultan,cybernetics,rebekah,sultanTombPropaganda" WillBuy="true" WillSell="false" MatchAny="true" Inverse="true" Description="the modern world" />
+    </interests>
   </faction>
 
   <faction
