@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.3
+Caves of Qud - Generated Localizable XML 2.0.212.4
 
 <objects>
 
@@ -26,46 +26,12 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="TemporaryProjectile" Load="Merge">
     <part Name="Render" DisplayName="▶projectile" />
   </object>
-  <object Name="BaseMissileWeapon" Load="Merge">
-    <tag Name="Mods" Value="▶MissileWeaponMods,CommonMods" />
-  </object>
-  <object Name="BaseFirearm" Load="Merge">
-    <tag Name="Mods" Value="▶MissileWeaponMods,FirearmMods,CommonMods" />
-  </object>
-  <object Name="BasePistol" Load="Merge">
-    <tag Name="Mods" Value="▶MissileWeaponMods,FirearmMods,CommonMods,PistolMods" />
-  </object>
-  <object Name="BaseMagazinePistol" Load="Merge">
-    <tag Name="Mods" Value="▶MissileWeaponMods,FirearmMods,CommonMods,PistolMods,MagazineMods" />
-  </object>
-  <object Name="BaseRifle" Load="Merge">
-    <tag Name="Mods" Value="▶MissileWeaponMods,FirearmMods,CommonMods,RifleMods" />
-  </object>
-  <object Name="BaseMagazineRifle" Load="Merge">
-    <tag Name="Mods" Value="▶MissileWeaponMods,FirearmMods,CommonMods,RifleMods,MagazineMods" />
-  </object>
-  <object Name="BaseHeavyWeapon" Load="Merge">
-    <tag Name="Mods" Value="▶MissileWeaponMods,FirearmMods,CommonMods,HeavyWeaponMods" />
-  </object>
-  <object Name="BaseMagazineHeavyWeapon" Load="Merge">
-    <tag Name="Mods" Value="▶MissileWeaponMods,FirearmMods,CommonMods,HeavyWeaponMods,MagazineMods" />
-  </object>
-  <object Name="BaseBow" Load="Merge">
-    <tag Name="Mods" Value="▶MissileWeaponMods,FirearmMods,CommonMods,BowMods" />
-  </object>
-  <object Name="BaseShield" Load="Merge">
-    <tag Name="Mods" Value="▶ShieldMods,CommonMods" />
-  </object>
   <object Name="MineShell" Load="Merge">
     <part Name="Render" DisplayName="▶{{c|mine}}" />
     <part Name="Description" Short="▶Anarchy is wound into stasis by time's virtual antipode and packaged into a metal disc. Only the instruction of movement will direct it to unaccrete." />
   </object>
   <object Name="Grenade" Load="Merge">
     <part Name="Render" DisplayName="▶{{c|[Grenade]}}" />
-    <tag Name="Mods" Value="▶GrenadeMods" />
-  </object>
-  <object Name="BaseCudgel" Load="Merge">
-    <tag Name="Mods" Value="▶CudgelMods,WeaponMods,CommonMods" />
   </object>
   <object Name="Club" Load="Merge">
     <part Name="Render" DisplayName="▶club" />
@@ -183,20 +149,14 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Stun Rod" Load="Merge">
     <part Name="Render" DisplayName="▶{{c|stun}} rod" />
     <part Name="Description" Short="▶A long slate rod flares out at the collar to hold capacitors and a concussive corm." />
-    <tag Name="Mods" Value="▶WeaponMods,CommonMods,ElectronicsMods" />
   </object>
   <object Name="Prayer Rod" Load="Merge">
     <part Name="Render" DisplayName="▶{{c|prayer}} rod" />
     <part Name="Description" Short="▶A long slate rod flares out at the collar to hold capacitors and an electrified corm for searing liturgy to memory." />
-    <tag Name="Mods" Value="▶WeaponMods,CommonMods,ElectronicsMods" />
   </object>
   <object Name="Syphon Baton" Load="Merge">
     <part Name="Render" DisplayName="▶{{syphon|syphon}} baton" />
     <part Name="Description" Short="▶Ring magnets form a cylindric mace-head to bash against objects and syphon their electron juice into a battery slotted on the shaft." />
-    <tag Name="Mods" Value="▶WeaponMods,CommonMods,ElectronicsMods" />
-  </object>
-  <object Name="BaseDagger" Load="Merge">
-    <tag Name="Mods" Value="▶BladeMods,WeaponMods,CommonMods" />
   </object>
   <object Name="Dagger" Load="Merge">
     <part Name="Render" DisplayName="▶{{w|bronze}} dagger" />
@@ -267,25 +227,18 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
     <part Name="Render" DisplayName="▶{{c|vibro dagger}}" />
     <part Name="Description" Short="▶A matte blade of ionic plastifer sits on a finger-rest hilt. When charged it blurs in high-width motion and jostles its material obstacles out of the way." />
     <part Name="RulesDescription" Text="▶When charged, this weapon's penetration value is equal to the defender's armor value." />
-    <tag Name="Mods" Value="▶BladeMods,WeaponMods,CommonMods,ElectronicsMods" />
   </object>
   <object Name="Gaslight Dagger" Load="Merge">
     <part Name="Render" DisplayName="▶{{gaslight|gaslight}} kris" />
     <part Name="Description" Short="▶Through a bore in the wood grip draws a crinkled beam of pale light. In motion it heats to steel-melting temperature and whirrs matter away." />
-    <tag Name="Mods" Value="▶WeaponMods,CommonMods,ElectronicsMods" />
   </object>
   <object Name="Gaslight Sword" Load="Merge">
     <part Name="Render" DisplayName="▶{{gaslight|gaslight}} flyssa" />
     <part Name="Description" Short="▶Through a bore in the wood grip draws a long and tapered beam of pale light. In motion it heats to steel-melting temperature and whirrs matter away." />
-    <tag Name="Mods" Value="▶WeaponMods,CommonMods,ElectronicsMods" />
   </object>
   <object Name="Gaslight Chisel" Load="Merge">
     <part Name="Render" DisplayName="▶{{gaslight|gaslight}} chisel" />
     <part Name="Description" Short="▶Through a bore in the wood grip draws a stout beam of pale light. In motion it heats to steel-melting temperature and whirrs matter away." />
-    <tag Name="Mods" Value="▶WeaponMods,CommonMods,ElectronicsMods" />
-  </object>
-  <object Name="BaseAxe" Load="Merge">
-    <tag Name="Mods" Value="▶AxeMods,BladeMods,WeaponMods,CommonMods" />
   </object>
   <object Name="Battle Axe" Load="Merge">
     <part Name="Render" DisplayName="▶{{w|bronze}} battle axe" />
@@ -374,15 +327,10 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Stun Whip" Load="Merge">
     <part Name="Render" DisplayName="▶{{c|stun whip}}" />
     <part Name="Description" Short="▶A thong of banded metal jitters with concussive potential. The plastifer handle is slotted on the heel knot with an battery case." />
-    <tag Name="Mods" Value="▶WeaponMods,CommonMods,ElectronicsMods" />
   </object>
   <object Name="Leather Whip" Load="Merge">
     <part Name="Render" DisplayName="▶{{w|leather}} whip" />
     <part Name="Description" Short="▶Leather was braided through a ring knot to a coiling thong. There are blood stains on the cracker tip." />
-    <tag Name="Mods" Value="▶WeaponMods,CommonMods" />
-  </object>
-  <object Name="BaseLongBlade" Load="Merge">
-    <tag Name="Mods" Value="▶LongBladeMods,BladeMods,WeaponMods,CommonMods" />
   </object>
   <object Name="Long Sword" Load="Merge">
     <part Name="Render" DisplayName="▶{{w|bronze}} long sword" />
@@ -469,7 +417,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
     <part Name="Render" DisplayName="▶{{c|vibro blade}}" />
     <part Name="Description" Short="▶A long, matte blade of ionic plastifer sits on a finger-rest hilt. When charged it blurs in high-width motion and jostles its material obstacles out of the way." />
     <part Name="RulesDescription" Text="▶When charged, this weapon's penetration value is equal to the defender's armor value." />
-    <tag Name="Mods" Value="▶LongBladeMods,BladeMods,WeaponMods,CommonMods,ElectronicsMods" />
   </object>
   <object Name="Shayna" Load="Merge">
     <part Name="Render" DisplayName="▶{{w-w-Y-w-w-w sequence|Shayna}}" />
@@ -502,13 +449,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Fist of the Ape God" Load="Merge">
     <part Name="Render" DisplayName="▶{{r|Fist}} of the {{Y|Ape God}}" />
     <part Name="Description" Short="▶Lifeblood the color of amaranth and dried in moonlight paints the clenched and giant fist of the dead forest Saad. The sight of it unfurls one of Time's right-blown ribbons: this is a relic in all or near-all futures, and the wielder perhaps =pronouns.possessive= fossil-mate and secret sharer." />
-    <tag Name="Mods" Value="▶None" />
   </object>
   <object Name="La Jeunesse" Load="Merge">
     <part Name="Render" DisplayName="▶{{r|La}} {{r-R-R-W-W-w-w sequence|Jeunesse}}" />
     <part Name="Description" Short="▶The hilt was broken and remade, pieced together from iron, jewel, and leather across the prism-scatter of the past and forever becoming something new. The blade bears the scars of techniques forcing it into killing shape time and again." />
     <xtagGrammar Proper="▶true" />
-    <tag Name="Mods" Value="▶None" />
   </object>
   <object Name="BaseLeadSlugProjectile" Load="Merge">
     <part Name="Render" DisplayName="▶lead slug" />
@@ -537,7 +482,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Laser Rifle" Load="Merge">
     <part Name="Render" DisplayName="▶{{C|laser}} rifle" />
     <part Name="Description" Short="▶Telescoped cylinders pinch the mirror point, and under them grows a sylph-like stock of sea-ferried nutwood." />
-    <tag Name="Mods" Value="▶MissileWeaponMods,FirearmMods,CommonMods,RifleMods,ElectronicsMods,BeamWeaponMods" />
   </object>
   <object Name="ProjectileLaserRifle" Load="Merge">
     <part Name="Render" DisplayName="▶{{C|laser beam}}" />
@@ -547,12 +491,10 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Chain Laser" Load="Merge">
     <part Name="Render" DisplayName="▶chain {{C|laser}}" />
     <part Name="Description" Short="▶Three carbon steel barrels fit together into an arc-edged triangle of luminous ritualism. They pinch the mirror point inside." />
-    <tag Name="Mods" Value="▶MissileWeaponMods,FirearmMods,CommonMods,RifleMods,ElectronicsMods,BeamWeaponMods" />
   </object>
   <object Name="Eigenrifle" Load="Merge">
     <part Name="Render" DisplayName="▶eigenrifle" />
     <part Name="Description" Short="▶Perpendicular to the neon azure barrel is a square-plated scope inset with a large ocular lens. The sight through the lens distorts as the gun tilts, but the vector drawn remains unchanged." />
-    <tag Name="Mods" Value="▶MissileWeaponMods,FirearmMods,CommonMods,RifleMods,ElectronicsMods,BeamWeaponMods" />
   </object>
   <object Name="ProjectileEigenrifle" Load="Merge">
     <part Name="Render" DisplayName="▶{{B|dot vector}}" />
@@ -561,7 +503,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Freeze Ray" Load="Merge">
     <part Name="Render" DisplayName="▶{{freezing|freeze}} ray" />
     <part Name="Description" Short="▶Gaseous coolant billows through a chiffon tube, putting dew on the wide and planar barrel chrome. It spills out onto the air from a ice-chipped muzzle." />
-    <tag Name="Mods" Value="▶MissileWeaponMods,FirearmMods,CommonMods,RifleMods,ElectronicsMods,BeamWeaponMods" />
   </object>
   <object Name="ProjectileFreezeRay" Load="Merge">
     <part Name="Render" DisplayName="▶{{C|energy beam}}" />
@@ -570,7 +511,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Hypertractor" Load="Merge">
     <part Name="Render" DisplayName="▶{{hypertractor|hypertractor}}" />
     <part Name="Description" Short="▶A rifled prism refracts and refocuses light to tunnel things toward its wielder. Sophists call it a 'here ray'." />
-    <tag Name="Mods" Value="▶MissileWeaponMods,FirearmMods,CommonMods,RifleMods,ElectronicsMods,BeamWeaponMods" />
   </object>
   <object Name="ProjectileHookRay" Load="Merge">
     <part Name="Render" DisplayName="▶{{R|energy beam}}" />
@@ -580,7 +520,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Light Rail" Load="Merge">
     <part Name="Render" DisplayName="▶{{W|light}} rail" />
     <part Name="Description" Short="▶Artisanally carved wood castles a sextet of parallel conductors and a sliding photon armature. The grain is scorched black on the rifle's stock." />
-    <tag Name="Mods" Value="▶MissileWeaponMods,FirearmMods,CommonMods,RifleMods,ElectronicsMods,BeamWeaponMods" />
   </object>
   <object Name="ProjectileLightrail" Load="Merge">
     <part Name="Render" DisplayName="▶{{W|long photon}}" />
@@ -590,7 +529,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Spaser Rifle" Load="Merge">
     <part Name="Render" DisplayName="▶{{spaser|spaser}} rifle" />
     <part Name="Description" Short="▶Hue-vapored crysteel cocoons the gold/water mechanism that pinches light from wavelength to waveshort.  Plasmon slag bubbles on the crest of the barrel like superheated sludge-life." />
-    <tag Name="Mods" Value="▶MissileWeaponMods,FirearmMods,CommonMods,RifleMods,ElectronicsMods,BeamWeaponMods" />
   </object>
   <object Name="ProjectileSpaserRifle" Load="Merge">
     <part Name="Render" DisplayName="▶{{G|plasmon}}" />
@@ -599,7 +537,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Phase Cannon" Load="Merge">
     <part Name="Render" DisplayName="▶phase cannon" />
     <part Name="Description" Short="▶Astralgals demarcate the phasic slits along the frustum's length. Noise is sucked out of time in expectancy of cross-plane fusion." />
-    <tag Name="Mods" Value="▶MissileWeaponMods,FirearmMods,CommonMods,RifleMods,ElectronicsMods,BeamWeaponMods" />
   </object>
   <object Name="ProjectilePhaseCannon" Load="Merge">
     <part Name="Render" DisplayName="▶{{M|energy bolt}}" />
@@ -621,7 +558,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Electrobow" Load="Merge">
     <part Name="Render" DisplayName="▶{{W|electro}}{{c|bow}}" />
     <part Name="Description" Short="▶Magnets on the string nocks hum and a slender curve of metal hums back. The air crackles as fingers approach the arrow rest." />
-    <tag Name="Mods" Value="▶MissileWeaponMods,FirearmMods,CommonMods,ElectronicsMods,BeamWeaponMods" />
   </object>
   <object Name="ProjectileElectrobow" Load="Merge">
     <part Name="Render" DisplayName="▶{{W|energy bolt}}" />
@@ -757,7 +693,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Normality Gas Pump" Load="Merge">
     <part Name="Render" DisplayName="▶{{normal|normality gas}} pump" />
     <part Name="Description" Short="▶It's a hermetic cask, hose, and nozzle. Inscribed are the words: 'in case of dimensional emergency, spray'." />
-    <tag Name="Mods" Value="▶MissileWeaponMods,FirearmMods,CommonMods,HeavyWeaponMods,ElectronicsMods" />
   </object>
   <object Name="ProjectileNormalityGasStream" Load="Merge">
     <part Name="Render" DisplayName="▶stream of gas" />
@@ -776,7 +711,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
     <part Name="Description" Short="▶Baroque and kite-like volumes of metal are arranged on an axis as a lathe to shave dimensionality off their inner spaces. A giant stock and grip of painted fullerite support their tremendous weight." />
     <part Name="MagazineAmmoLoader" NameForStatus="▶LoadingMechanism" />
     <part Name="EnergyAmmoLoader" NameForStatus="▶LinearAccelerator" />
-    <tag Name="Mods" Value="▶MissileWeaponMods,FirearmMods,CommonMods,HeavyWeaponMods,MagazineMods,ElectronicsMods" />
   </object>
   <object Name="ProjectileLinearCannon" Load="Merge">
     <part Name="Render" DisplayName="▶{{y|1D slug}}" />
@@ -810,7 +744,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Grappling Gun" Load="Merge">
     <part Name="Render" DisplayName="▶grappling gun" />
     <part Name="Description" Short="▶A tension spring shoves a firing pin to bang a barrel of gas and eject a cabled grapnel; then a winch winds it back." />
-    <tag Name="Mods" Value="▶MissileWeaponMods,FirearmMods,CommonMods,PistolMods,ElectronicsMods" />
   </object>
   <object Name="ProjectileGrapplingGun" Load="Merge">
     <part Name="Render" DisplayName="▶grapnel" />
@@ -823,7 +756,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Laser Pistol" Load="Merge">
     <part Name="Render" DisplayName="▶{{C|laser}} pistol" />
     <part Name="Description" Short="▶The pistol is engraved with watervine hemp and encircled in saltstone. On the grip is an image of a nomad and knight in saltstone. The knight is striking down the nomad." />
-    <tag Name="Mods" Value="▶MissileWeaponMods,FirearmMods,CommonMods,PistolMods,ElectronicsMods,BeamWeaponMods" />
   </object>
   <object Name="ProjectileLaserPistol" Load="Merge">
     <part Name="Render" DisplayName="▶{{C|laser beam}}" />
@@ -833,7 +765,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Eigenpistol" Load="Merge">
     <part Name="Render" DisplayName="▶eigenpistol" />
     <part Name="Description" Short="▶Perpendicular to the neon azure barrel is a square-plated scope inset with a large ocular lens. The sight through the lens distorts as the gun tilts, but the vector drawn remains unchanged." />
-    <tag Name="Mods" Value="▶MissileWeaponMods,FirearmMods,CommonMods,ElectronicsMods,BeamWeaponMods,PistolMods" />
   </object>
   <object Name="ProjectileEigenpistol" Load="Merge">
     <part Name="Render" DisplayName="▶{{B|dot vector}}" />
@@ -842,7 +773,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Arc Winder" Load="Merge">
     <part Name="Render" DisplayName="▶arc winder" />
     <part Name="Description" Short="▶A spiral crank closes a chrome-encased circuit and ejects charge through two contact tips. Smoke twirls through their yellow glow." />
-    <tag Name="Mods" Value="▶MissileWeaponMods,FirearmMods,CommonMods,PistolMods,ElectronicsMods,BeamWeaponMods" />
   </object>
   <object Name="ProjectileElectroPistol" Load="Merge">
     <part Name="Render" DisplayName="▶{{W|ion packet}}" />
@@ -851,7 +781,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Nullray Pistol" Load="Merge">
     <part Name="Render" DisplayName="▶{{K|nullray pistol}}" />
     <part Name="Description" Short="▶Starless metal on the barrel imbibes light and routes it to the null place. The grip acrylic is patterned after ley lines." />
-    <tag Name="Mods" Value="▶MissileWeaponMods,FirearmMods,CommonMods,PistolMods,ElectronicsMods,BeamWeaponMods" />
   </object>
   <object Name="ProjectileNullray" Load="Merge">
     <part Name="Render" DisplayName="▶{{K|nothing}}" />
@@ -861,7 +790,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Hand Rail" Load="Merge">
     <part Name="Render" DisplayName="▶{{W|hand}} rail" />
     <part Name="Description" Short="▶Artisanally carved wood castles a sextet of parallel conductors and a sliding photon armature. The grain is scorched black on the pistol's stock." />
-    <tag Name="Mods" Value="▶MissileWeaponMods,FirearmMods,CommonMods,PistolMods,ElectronicsMods,BeamWeaponMods" />
   </object>
   <object Name="ProjectileHandrail" Load="Merge">
     <part Name="Render" DisplayName="▶{{W|long photon}}" />
@@ -871,7 +799,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Di-Thermo Beam" Load="Merge">
     <part Name="Render" DisplayName="▶{{R|di-thermo}} beam" />
     <part Name="Description" Short="▶A coolant pipe and an antifreeze pipe are barrel-locked in symmetric geometry. Thumb flips rotate the mechanism and reverse their orientation." />
-    <tag Name="Mods" Value="▶MissileWeaponMods,FirearmMods,CommonMods,PistolMods,ElectronicsMods,BeamWeaponMods" />
   </object>
   <object Name="ProjectileDiThermoBeamHeat" Load="Merge">
     <part Name="Render" DisplayName="▶{{R|heat beam}}" />
@@ -887,7 +814,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
     <part Name="LiquidProducer" NameForStatus="▶ExsanguinationMicrotubules" />
     <part Name="LiquidFueledPowerPlant" NameForStatus="▶BiodynamicExtractor" />
     <part Name="Description" Short="▶Blood sieved of chunky pieces sloshes around a cannister of tetraxenonoglass. Vacuum pressure sucks air in through the barrel, and slits on the slide stop vent a metronomic belch." />
-    <tag Name="Mods" Value="▶MissileWeaponMods,FirearmMods,CommonMods,PistolMods,ElectronicsMods,BeamWeaponMods" />
   </object>
   <object Name="ProjectileBloodGradientHandVacuumPulse" Load="Merge">
     <part Name="Render" DisplayName="▶{{r|blood plasma vacuum}}" />
@@ -897,7 +823,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Spaser Pistol" Load="Merge">
     <part Name="Render" DisplayName="▶{{spaser|spaser}} pistol" />
     <part Name="Description" Short="▶Hue-vapored crysteel cocoons the gold/water mechanism that pinches light from wavelength to waveshort.  Plasmon slag bubbles on the crest of the barrel like superheated sludge-life." />
-    <tag Name="Mods" Value="▶MissileWeaponMods,FirearmMods,CommonMods,PistolMods,ElectronicsMods,BeamWeaponMods" />
   </object>
   <object Name="ProjectileSpaserPistol" Load="Merge">
     <part Name="Render" DisplayName="▶{{G|plasmon}}" />
@@ -906,7 +831,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Space Inverter" Load="Merge">
     <part Name="Render" DisplayName="▶space inverter" />
     <part Name="Description" Short="▶Behind the muzzle, a glass-bound nimbus of unstable spacetime curls around an astral tether. The trigger mechanism cuts the tether and out-vacuums the anomaly to the free world." />
-    <tag Name="Mods" Value="▶MissileWeaponMods,FirearmMods,CommonMods,PistolMods,ElectronicsMods,BeamWeaponMods" />
   </object>
   <object Name="High-Voltage Arc Winder" Load="Merge">
     <part Name="Render" DisplayName="▶{{W|high-voltage}} arc winder" />
@@ -917,7 +841,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
     <part Name="Description" Short="▶Raw flesh is stretched on a lump that approximates the shape of a handgun. Pressure smushes a throbbing vein against the underskin and blood-pulp is coughed out of two ribbed metal tubes on a metronome tick. At moments out of sequence, an unseen energy is piped along the psychic leys and into the organ-mess, producing a runny bother." />
     <part Name="LiquidAmmoLoader" NameForStatus="▶BiodynamicPsychalProjector" />
     <part Name="LiquidProducer" NameForStatus="▶CirculatoryGraft" />
-    <tag Name="Mods" Value="▶MissileWeaponMods,FirearmMods,CommonMods,PistolMods" />
   </object>
   <object Name="ProjectilePsychalFleshgun" Load="Merge">
     <part Name="Render" DisplayName="▶{{m|psychic throb}}" />
@@ -947,7 +870,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
     <part Name="Render" DisplayName="▶Ruin of House Isner" />
     <part Name="Description" Short="▶The craftsmanship of this pistol worked in brass and chrome is breathtaking: grips of kingswood call the palm to an airless wrap, the hammer is contoured to the thumb by the microinch, and the sight draws the eye down the barrel like the slipping of silk. It's engraved all around with withered ivy, and the muzzle is kissed in blood." />
     <part Name="RulesDescription" Text="▶+1 Ego&#xA;Critical hits scored with this weapon get an extra +4 bonus to penetration rolls.&#xA;When this weapons fires a shot with its last round of ammo, the shot has perfect aim and is guaranteed to score a critical hit." />
-    <tag Name="Mods" Value="▶None" />
     <property Name="Story" Value="▶RuinOfHouseIsner" />
     <part Name="TakenAccomplishment" Text="▶You recovered the masterwork pistol and legendary ode to vengeance, the =this.refname=." Hagiograph="▶The gunslinger-sultan =name= slew each of the seven lords of House Isner with a masterwork revolver and supped over their piled corpses." Gospel="▶Deep in the wilds near =landmark.nearest=, =name= stumbled upon a clan of water barons performing a secret ritual. Because of their treacherous eyes, =name= slew each of the seven lords with a masterwork revolver and supped over their piled corpses." />
     <xtagGrammar Proper="▶true" />
@@ -957,17 +879,14 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Geomagnetic Disc" Load="Merge">
     <part Name="Render" DisplayName="▶geomagnetic disc" />
     <part Name="Description" Short="▶Ions were spun into a euhedral disc on a spinning wheel, and aquamarine was heat-set on the inner ring by deepsea steam." />
-    <tag Name="Mods" Value="▶CommonMods,ElectronicsMods,ThrownWeaponMods" />
   </object>
   <object Name="ThrowingAxe" Load="Merge">
     <part Name="Render" DisplayName="▶throwing axe" />
     <part Name="Description" Short="▶A salt-scratched blade head is fit to a splintered handle with a wood wedge." />
-    <tag Name="Mods" Value="▶CommonMods,ThrownWeaponMods" />
   </object>
   <object Name="CastNet" Load="Merge">
     <part Name="Render" DisplayName="▶cast net" />
     <part Name="Description" Short="▶Flax was mowed from the Bowl of Iris, stripped into fibers, and weaved into a soft grid by the fisherfolk of the Pale Sea." />
-    <tag Name="Mods" Value="▶CommonMods,ThrownWeaponMods" />
   </object>
   <object Name="BaseStone" Load="Merge">
     <part Name="Render" DisplayName="▶stone" />
@@ -1334,9 +1253,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
     <part Name="Projectile" PassByVerb="▶streak" />
     <part Name="TreatAsSolid" Message="▶The darkness consumes =subject.t=!" />
   </object>
-  <object Name="BaseArmor" Load="Merge">
-    <tag Name="Mods" Value="▶BodyMods,CommonMods" />
-  </object>
   <object Name="Black Robes" Load="Merge">
     <part Name="Render" DisplayName="▶black robes" />
     <part Name="Description" Short="▶Wool was dyed in a bath of dreadroot and iron salt, and then woven to warm broad shoulders." />
@@ -1492,7 +1408,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
     <part Name="Render" DisplayName="▶gas tumbler" />
     <part Name="Description" Short="▶Dyed crysteel canisters are fitted to a backrack. Their valves pop out of flux pressurizers, and a splay of hoses allow for several input flows." />
     <part Name="BootSequence" VerbOnBootInitialized="▶whirl" VerbOnBootDone="▶pop" VerbOnBootAborted="▶sputter" />
-    <tag Name="Mods" Value="▶CommonMods,ElectronicsMods" />
   </object>
   <object Name="Flawless Crysteel Shardmail" Load="Merge">
     <part Name="Render" DisplayName="▶{{K|flawless {{crysteel|crysteel}} shardmail}}" />
@@ -1509,9 +1424,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Zetachrome Lune" Load="Merge">
     <part Name="Render" DisplayName="▶{{zetachrome|zetachrome}} lune" />
     <part Name="Description" Short="▶Quark-gluon plasma rapidly cooled and was extinguished on the voidpeaks of the early universe, except where the globules got trapped in 6D kinks of spacetime. There they glided in the slipstream for billions of years until beings discovered them, built machines to extract and cool them, and reheat them in their stellar furnaces." />
-  </object>
-  <object Name="BaseCloak" Load="Merge">
-    <tag Name="Mods" Value="▶CloakMods,CommonMods" />
   </object>
   <object Name="Quilted Shawl" Load="Merge">
     <part Name="Render" DisplayName="▶{{W-w sequence|quilted}} {{C-c sequence|shawl}}" />
@@ -1544,7 +1456,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Mechanical Wings" Load="Merge">
     <part Name="Render" DisplayName="▶mechanical wings" />
     <part Name="Description" Short="▶Force is pushed across bronze spines through an improbable series of flapping motions, whereupon parasols pop open to catch the mercurial wind." />
-    <tag Name="Mods" Value="▶CommonMods,WingsMods" />
   </object>
   <object Name="Nylon Bodypack" Load="Merge">
     <part Name="Render" DisplayName="▶nylon bodypack" />
@@ -1583,7 +1494,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
     <part Name="Description" Short="▶Articulated blades unfold to form an aerial screw that gets blown upward by an air thruster mounted below. On activation, the equipper takes flight." />
     <part Name="BootSequence" VerbOnBootInitialized="▶cough" VerbOnBootDone="▶whir" VerbOnBootAborted="▶sputter" />
     <part Name="MechanicalWings" NameForStatus="▶DriveTrain" />
-    <tag Name="Mods" Value="▶CommonMods,ElectronicsMods" />
   </object>
   <object Name="Helping Hands" Load="Merge">
     <part Name="Render" DisplayName="▶&amp;Rh&amp;Yelping&amp;r &amp;Rh&amp;Yands" />
@@ -1596,7 +1506,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Mercurial Cloak" Load="Merge">
     <part Name="Render" DisplayName="▶{{mercurial|mercurial}} cloak" />
     <part Name="Description" Short="▶Movement puts the birds stitched into the soft pleats of cloth into stuttery animation." />
-    <tag Name="Mods" Value="▶JeweledMods,ElectronicsMods" />
   </object>
   <object Name="Quartzfur Cloak" Load="Merge">
     <part Name="Render" DisplayName="▶{{Y|quartzfur}} cloak" />
@@ -1607,7 +1516,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
     <part Name="BootSequence" VerbOnBootInitialized="▶whine" VerbOnBootDone="▶hum" VerbOnBootAborted="▶thunk" />
     <part Name="EquipStatBoost" NameForStatus="▶ServoAssist" />
     <part Name="Description" Short="▶Slate tubes assemble to scaffold the human form." />
-    <tag Name="Mods" Value="▶CommonMods,ElectronicsMods,ExoskeletonMods" />
   </object>
   <object Name="Rainboweave Cloak" Load="Merge">
     <part Name="Render" DisplayName="▶{{rainbow|rainboweave}} cloak" />
@@ -1624,22 +1532,14 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Palladium Mesh Tabard" Load="Merge">
     <part Name="Render" DisplayName="▶{{palladium mesh|palladium mesh}} tabard" />
     <part Name="Description" Short="▶Electrodes shine on the lattice across the uuflax weave. Sleeves, widened in fashion, display the gold and cyan heraldic circuitry." />
-    <tag Name="Mods" Value="▶CloakMods,CommonMods,ElectronicsMods" />
   </object>
   <object Name="Gigantic Chassis Plate" Load="Merge">
     <part Name="Render" DisplayName="▶{{c|chassis plate}}" />
     <part Name="Description" Short="▶A gargantuan slab of burned and rolled chrome was unjointed from an earth-mover. It shadows its monstrous wielder like a starsail." />
   </object>
-  <object Name="BaseHelmet" Load="Merge">
-    <tag Name="Mods" Value="▶HelmetMods,HeadwearMods,CommonMods" />
-  </object>
-  <object Name="BaseHat" Load="Merge">
-    <tag Name="Mods" Value="▶HeadwearMods,CommonMods" />
-  </object>
   <object Name="Witchwood Wreath" Load="Merge">
     <part Name="Render" DisplayName="▶{{W|witchwood}} wreath" />
     <part Name="Description" Short="▶Twigs from the witching tree are pared and twisted to a garland for hindsun." />
-    <tag Name="Mods" Value="▶None" />
     <part Name="Harvestable" HarvestVerb="▶break down" />
   </object>
   <object Name="Wide-brimmed Hat" Load="Merge">
@@ -1709,7 +1609,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Ganglionic Teleprojector" Load="Merge">
     <part Name="Render" DisplayName="▶ganglionic teleprojector" />
     <part Name="Description" Short="▶A fluted visor is satcheled in strands of tungsten filament. Two antennae coil out the temples in robotic likeness." />
-    <tag Name="Mods" Value="▶HelmetMods,HeadwearMods,CommonMods,ElectronicsMods" />
   </object>
   <object Name="Fullerite Armet" Load="Merge">
     <part Name="Render" DisplayName="▶{{K|fullerite}} armet" />
@@ -1752,16 +1651,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
     <part Name="Render" DisplayName="▶psychodyne helmet" />
     <part Name="Description" Short="▶Tetraxenonoglass blueshifts light hitting the outer shell. On the inner side, electromagnets excite a lining of star mollusk tissue to create the perfect psychic accoustics." />
     <part Name="EquipStatBoost" NameForStatus="▶PsychodyneCircuitry" />
-    <tag Name="Mods" Value="▶HelmetMods,HeadwearMods,CommonMods,ElectronicsMods" />
-  </object>
-  <object Name="BaseMask" Load="Merge">
-    <tag Name="Mods" Value="▶CommonMods,MaskMods" />
-  </object>
-  <object Name="BaseEyewear" Load="Merge">
-    <tag Name="Mods" Value="▶CommonMods,EyewearMods" />
-  </object>
-  <object Name="BaseFaceJewelry" Load="Merge">
-    <tag Name="Mods" Value="▶CommonMods" />
   </object>
   <object Name="Issachari Sun Veil" Load="Merge">
     <part Name="Render" DisplayName="▶{{issachari|Issachari}} {{r-R-W sequence|sun}} veil" />
@@ -1792,12 +1681,10 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
     <part Name="Render" DisplayName="▶{{mirrorshades|mirrorshades}}" />
     <part Name="Description" Short="▶Light flecks break themselves on the silver moat and rush back to their place of origin. The signifier becomes the signified; the simulacrum is realized." />
     <part Name="RefractLight" Verb="▶reflect" />
-    <tag Name="Mods" Value="▶CommonMods,EyewearMods" />
   </object>
   <object Name="Night-vision Goggles" Load="Merge">
     <part Name="Render" DisplayName="▶night-vision goggles" />
     <part Name="Description" Short="▶Focus-ringed binoculars read the tells of infrared light and produce a textured picture of eye-warm greens." />
-    <tag Name="Mods" Value="▶CommonMods,EyewearMods,ElectronicsMods" />
     <xtagGrammar iArticle="▶a pair of" />
   </object>
   <object Name="Vinewood Sap Mask" Load="Merge">
@@ -1829,19 +1716,16 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
     <part Name="Render" DisplayName="▶{{telemetric|telemetric}} {{C|visor}}" />
     <part Name="Description" Short="▶The glass lune is showered in information across the electromagnetic channels." />
     <part Name="IntPropertyChanger" NameForStatus="▶Techscanning" />
-    <tag Name="Mods" Value="▶CommonMods,HeadwearMods,EyewearMods,ElectronicsMods" />
   </object>
   <object Name="VISAGE" Load="Merge">
     <part Name="Render" DisplayName="▶{{visage|VISAGE}}" />
     <part Name="Description" Short="▶Visual Instrument and Sensory Augmentation (G Edition)&#xA;&#xA;Data is painted back and forth between the glass lunes of visor and wristlet. Whereas the outer trim shines gold on F Edition, on this model it fades to grey." />
     <part Name="MultiIntPropertyChanger" NameForStatus="▶ScanSystems" />
-    <tag Name="Mods" Value="▶CommonMods,ElectronicsMods,EyewearMods" />
   </object>
   <object Name="Night-Sight Interpolators" Load="Merge">
     <part Name="Render" DisplayName="▶{{K|night-sight}} interpolators" />
     <part Name="Description" Short="▶Ring-molds on the laminated metal frame collect ambient sensory data and use it to augment the viewing frustum." />
     <part Name="RulesDescription" Text="▶Grants night vision.&#xA;You can see two spaces beyond the first occluding object in your line of sight." />
-    <tag Name="Mods" Value="▶CommonMods,EyewearMods,ElectronicsMods" />
     <xtagGrammar iArticle="▶a pair of" />
   </object>
   <object Name="Dream Rondure" Load="Merge">
@@ -1853,13 +1737,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
     <part Name="Description" Short="▶Geometry swims across the crystal diodes of the mask. Its expression is smiling in the hypnagognic key." />
     <part Name="EquipStatBoost" NameForStatus="▶DazzleCamouflageSystem" />
     <part Name="AddsRep" NameForStatus="▶HypnoticGenerator" />
-    <tag Name="Mods" Value="▶MaskMods,CommonMods,ElectronicsMods" />
-  </object>
-  <object Name="BaseBracelet" Load="Merge">
-    <tag Name="Mods" Value="▶CommonMods" />
-  </object>
-  <object Name="BaseArmlet" Load="Merge">
-    <tag Name="Mods" Value="▶CommonMods" />
   </object>
   <object Name="BaseBeadBracelet" Load="Merge">
     <part Name="Render" DisplayName="▶bracelet" />
@@ -1887,7 +1764,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
     <part Name="Render" DisplayName="▶wrist fan" />
     <part Name="Description" Short="▶Miniature airfoil blades spin on the circular face and blow gentle air." />
     <part Name="PartsGas" NameForStatus="▶RotaryMotor" />
-    <tag Name="Mods" Value="▶CommonMods,ElectronicsMods" />
   </object>
   <object Name="Snakeskin Armlet" Load="Merge">
     <part Name="Render" DisplayName="▶{{snakeskin|snakeskin}} armlet" />
@@ -1896,42 +1772,35 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="LeatherBracer" Load="Merge">
     <part Name="Render" DisplayName="▶leather bracer" />
     <part Name="Description" Short="▶This simple arm brace is crafted from boiled boar leather and tied on with braided lace. The strips of protective hide are designed to redirect glancing blows to the arm and protect poor archers from their own errant bowstrings." />
-    <tag Name="Mods" Value="▶CommonMods,BracerMods" />
   </object>
   <object Name="Bio-Scanning Bracelet" Load="Merge">
     <part Name="Render" DisplayName="▶{{bio|bio-scanning}} bracelet" />
     <part Name="Description" Short="▶It's a shifting minichart of lifesign voltages picked up in the heat and sound signatures of nearby fauna." />
     <part Name="IntPropertyChanger" NameForStatus="▶Bioscanning" />
-    <tag Name="Mods" Value="▶CommonMods,ElectronicsMods" />
   </object>
   <object Name="Structural Scanning Bracelet" Load="Merge">
     <part Name="Render" DisplayName="▶{{structural|structural}} {{Y-y-y-K-K-y-y-Y sequence|scanning}} bracelet" />
     <part Name="Description" Short="▶On the wrist mount, echo-shaped models in three dimensions expose the structural irregularities of simple inanimate objects nearby." />
     <part Name="IntPropertyChanger" NameForStatus="▶StructuralScanning" />
-    <tag Name="Mods" Value="▶CommonMods,ElectronicsMods" />
   </object>
   <object Name="Hologram Bracelet" Load="Merge">
     <part Name="Render" DisplayName="▶{{hologram|hologram}} bracelet" />
     <part Name="Description" Short="▶A bangle clasp features a bright cobalt button.&#xA;&quot;You think this is the real =name=? It is.&quot;" />
-    <tag Name="Mods" Value="▶CommonMods,ElectronicsMods" />
   </object>
   <object Name="Force Bracelet" Load="Merge">
     <part Name="Render" DisplayName="▶force bracelet" />
     <part Name="Description" Short="▶A small hexagonal switch sits across an unadorned wristcuff of chrome." />
-    <tag Name="Mods" Value="▶CommonMods,ElectronicsMods" />
   </object>
   <object Name="Wristcalc" Load="Merge">
     <part Name="Render" DisplayName="▶wrist calc" />
     <part Name="Description" Short="▶Diodes burn their cyan light through an atmosphere of glass curved around a metal link." />
     <part Name="Toolbox" BehaviorDescription="▶When equipped and powered, this item grants a bonus to identifying artifacts as if your Intelligence score were increased by 2." NameForStatus="▶Database" />
     <part Name="ActiveLightSource" NameForStatus="▶Screen" />
-    <tag Name="Mods" Value="▶CommonMods,ElectronicsMods" />
   </object>
   <object Name="Precinct Navigator" Load="Merge">
     <part Name="Render" DisplayName="▶precinct navigator" />
     <part Name="Description" Short="▶Gridlines and a red dot are painted on the glass lune, and simple rectangles depict the once-ordered streets of chromium that've since burst like gnarled roots through space and time." />
     <part Name="NavigationBonus" NameForStatus="▶NavigationSystems" />
-    <tag Name="Mods" Value="▶CommonMods,ElectronicsMods" />
   </object>
   <object Name="Homoelectric Wrist Warmer" Load="Merge">
     <part Name="Render" DisplayName="▶homoelectric wrist warmer" />
@@ -1944,29 +1813,23 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Displacer Bracelet" Load="Merge">
     <part Name="Render" DisplayName="▶{{displacer|displacer}} bracelet" />
     <part Name="Description" Short="▶Hieroglyphs of fluctation are incised on the inner surface of this shiny metal torus." />
-    <tag Name="Mods" Value="▶CommonMods,ElectronicsMods" />
   </object>
   <object Name="Ontological Anchor" Load="Merge">
     <part Name="Render" DisplayName="▶{{K|ontological anchor}}" />
     <part Name="Description" Short="▶Plutonic metal is etched with a two-dimensional projection of the rhombic dodecahedral honeycomb, allowing it to snap onto the ley lines of the local region." />
-    <tag Name="Mods" Value="▶CommonMods,ElectronicsMods" />
   </object>
   <object Name="Tri-Hologram Bracelet" Load="Merge">
     <part Name="Render" DisplayName="▶tri-{{hologram|hologram}} bracelet" />
     <part Name="Description" Short="▶Bars partition the bangle clasp into three bands; a cobalt button summons the rest of the quartet." />
-    <tag Name="Mods" Value="▶CommonMods,ElectronicsMods" />
   </object>
   <object Name="Transkinetic Cuffs" Load="Merge">
     <part Name="Render" DisplayName="▶{{transkinetic|transkinetic}} cuffs" />
     <part Name="Description" Short="▶A dial clicks at right intervals on the metal wrist, and mercurial silver courses through tubework along the plastifer sleeve." />
-    <tag Name="Mods" Value="▶CommonMods,ElectronicsMods" />
   </object>
   <object Name="BaseGlove" Load="Merge">
-    <tag Name="Mods" Value="▶GloveMods,CommonMods" />
     <xtagGrammar adjunctNoun="▶pair" />
   </object>
   <object Name="BaseGauntlet" Load="Merge">
-    <tag Name="Mods" Value="▶GauntletMods,CommonMods" />
     <xtagGrammar adjunctNoun="▶pair" />
   </object>
   <object Name="Boar-skin gloves" Load="Merge">
@@ -2045,10 +1908,8 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
     <part Name="RulesDescription" Text="▶Requires 1 dram of neutron flux to function.&#xA;Very tiny chance each round neutron flux is consumed.&#xA;+10 psychic glimmer" />
     <part Name="ChargeSink" NameForStatus="▶LeyHarmonicCircuitry" />
     <part Name="EquipStatBoost" NameForStatus="▶TemporalSheathing" />
-    <tag Name="Mods" Value="▶CommonMods,ElectronicsMods,GloveMods" />
   </object>
   <object Name="BaseBoot" Load="Merge">
-    <tag Name="Mods" Value="▶BootMods,CommonMods" />
     <xtagGrammar adjunctNoun="▶pair" />
   </object>
   <object Name="Leather Moccasins" Load="Merge">
@@ -2144,7 +2005,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
     <part Name="Render" DisplayName="▶{{K|anti-gravity boots}}" />
     <part Name="Description" Short="▶Ur-metal strips on the soles are magnetized by bosonic coils, producing a continuous ribbon of negative-mass bubbles that repel the wearer upward." />
     <part Name="MechanicalWings" NameForStatus="▶AntiGravitySystem" />
-    <tag Name="Mods" Value="▶BootMods,CommonMods,ElectronicsMods" />
   </object>
   <object Name="Kaleidocera Krakows" Load="Merge">
     <part Name="Render" DisplayName="▶{{kaleidoslug|kaleidocera}} krakows" />
@@ -2186,7 +2046,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Point-Defense Drone" Load="Merge">
     <part Name="Render" DisplayName="▶point-defense drone" />
     <part Name="Description" Short="▶It's a robotic eye lidded by a furcate chassis and embellished with antenna lashes. A minuscule barrel pokes out from its pupil and vibrates. The inner lid is articulated, allowing the drone to scan for incoming projectiles and shoot them down with laser light." />
-    <tag Name="Mods" Value="▶MissileWeaponMods,CommonMods,ElectronicsMods" />
   </object>
   <object Name="ProjectilePointDefenseLaser" Load="Merge">
     <part Name="Render" DisplayName="▶{{B|laser beam}}" />
@@ -2196,7 +2055,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Chiral Rings" Load="Merge">
     <part Name="Render" DisplayName="▶{{chiral|chiral rings}}" />
     <part Name="Description" Short="▶Giant, flattened rings of hypercooled crysteel correlate their wearer to an astronomical body and serve as celestial equator, declination, and meridian. Their edges are filed on a nanon lathe and slice through orbiting debris." />
-    <tag Name="Mods" Value="▶CommonMods,ElectronicsMods" />
     <xtagGrammar adjunctNoun="▶set" />
   </object>
   <object Name="Black Mote" Load="Merge">
@@ -2205,7 +2063,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
     <part Name="EquipStatBoost" NameForStatus="▶LightWarpingSystem" />
     <part Name="CancelRangedAttacks" NameForStatus="▶SpaceWarpingSystem" />
     <part Name="RandomLongRangeTeleportOnDamage" NameForStatus="▶ProximitySensor" />
-    <tag Name="Mods" Value="▶CommonMods,ElectronicsMods" />
   </object>
   <object Name="BaseNephilimLightCircle" Load="Merge">
     <part Name="Render" DisplayName="▶circle of light" />
@@ -2270,10 +2127,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Clay Pot" Load="Merge">
     <part Name="Render" DisplayName="▶clay pot" />
     <part Name="Description" Short="▶An earthen pot of Svy mud fired in a marsh oven captures a few handfuls from the soil sea and contains them in a bubble world." />
-    <tag Name="Mods" Value="▶BootMods,CommonMods" />
-  </object>
-  <object Name="BaseTreadAccessory" Load="Merge">
-    <tag Name="Mods" Value="▶TreadAccessoryMods,CommonMods" />
   </object>
   <object Name="Tread Guard" Load="Merge">
     <part Name="Render" DisplayName="▶tread guard" />
@@ -2283,14 +2136,12 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
     <part Name="Render" DisplayName="▶{{R-r-K-y-Y sequence|Stopsvalinn}}" />
     <part Name="Description" Short="▶A layer cake of wide-age rust grants dimension to the ancient and flat-faced astagon. Its front is painted with the coat of arms of an archaic house -- white runic script on a field of crimson." />
     <part Name="RulesDescription" Text="▶+1 Ego&#xA;You may activate this item to conjure a force field in front of you. Robots will often be unable to advance toward you while the force field is active." />
-    <tag Name="Mods" Value="▶None" />
     <property Name="Story" Value="▶Stopsvalinn" />
     <part Name="TakenAccomplishment" Text="▶You recovered the lost aegis of House Yish, =this.refname=." Hagiograph="▶Recall how =name= wrested the legendary aegis =this.refname= from the paws of a lowly snapjaw and averred descendency from the Saads of Yish!" Gospel="▶At the Battle of =landmark.nearest|title=, =name= fought to subjugate snapjaws. =player.Subjective= wielded a buckler with such =spice:commonPhrases.finesse.!random= that it became forever known as =this.refname=. " />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="Kindrish" Load="Merge">
     <part Name="Render" DisplayName="▶{{g-G-y-Y-Y-y-G-g alternation|Kindrish}}" />
-    <tag Name="Mods" Value="▶None" />
     <part Name="Description" Short="▶Boartooth beads on the ancient charm are worn to nubs by the cartilage of time, but the flexing cable that holds them together is as strong as the day it was woven. Dangling from the bracelet is a figurine of a deer, carved from a mysterious substance that cracks light like crystal but weighs like metal, producing a shaded lifelikeness elsewhere unseen." />
     <part Name="TakenAccomplishment" Text="▶You recovered the ancestral bracelet of the hindren, =this.refname=." Hagiograph="▶Through the exhibition of =player.possessive= extraordinary guile, =name= was able to recover =this.refname=, the ancestral bracelet of the hindren, and was conferred thusly the title of Grand-Doe." Gospel="▶At a tavern deep in the wilds of =terrain.t=, =name= lost =player.possessive= precious bracelet Kindrish to a local thief. =name= murdered the thief =spice:elements.entity@elements[random].murdermethods.!random= and immediately recovered their cherished heirloom." />
     <xtagGrammar Proper="▶true" />
@@ -2335,7 +2186,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Cyclopean Prism" Load="Merge">
     <part Name="Render" DisplayName="▶{{K|amaranthine}} prism" />
     <part Name="Description" Short="▶A starless, triangular prism of black glass holds still." />
-    <tag Name="Mods" Value="▶None" />
     <xtagGrammar Proper="▶true" />
     <tag Name="IndefiniteArticle" Value="▶the" />
     <tag Name="DefiniteArticle" Value="▶the" />
@@ -2345,26 +2195,22 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="TauChime" Load="Merge">
     <part Name="Render" DisplayName="▶still crystal chime" />
     <part Name="Description" Short="▶Sharp points are run through with bright and brilliant amethyst and sapphire. The colors remain but smolder to heather in their dying light. The chime is grave-still." />
-    <tag Name="Mods" Value="▶None" />
   </object>
   <object Name="TauHeadpiece" Load="Merge">
     <part Name="Render" DisplayName="▶{{crystalline|crystalline}} halo" />
     <part Name="Description" Short="▶Byzantine purple smolders at a medium hue on the sharp and linked prisms of the crystal. It hums with new life and ingenuity." />
     <part Name="RulesDescription" Text="▶Grants you Quicken Mind: refresh a random cooldown on use." />
     <part Name="BootSequence" VerbOnBootInitialized="▶vibrate" VerbOnBootDone="▶chime" VerbOnBootAborted="▶still" />
-    <tag Name="Mods" Value="▶None" />
   </object>
   <object Name="TauDagger" Load="Merge">
     <part Name="Render" DisplayName="▶{{crystalline|crystalline}} jile" />
     <part Name="Description" Short="▶Broken crystal narrows to a hateful razor at the shard seams. It cracked at the resonance curvature of anguish, and fell out of its host rock as a shattered promise." />
     <part Name="RulesDescription" Text="▶Attacks MA instead of AV." />
-    <tag Name="Mods" Value="▶None" />
   </object>
   <object Name="Nacham's Ribbon" Load="Merge">
     <part Name="Render" DisplayName="▶{{K-K-K-K-K-c-C-Y sequence|Nacham's}} {{C-c-K-K-K-K sequence|ribbon}}" />
     <part Name="Description" Short="▶A curtain of thrumming cables make a mantle for hunched shoulders. They pitch at neuronal frequencies long dormant." />
     <part Name="Toolbox" BehaviorDescription="▶When powered, this item grants a 40% chance that a tinkered item will have a random item modification. This may include item modifications that aren't normally tinkerable." />
-    <tag Name="Mods" Value="▶None" />
     <property Name="Story" Value="▶NachamsRibbon" />
     <xtagGrammar Proper="▶true" />
   </object>
@@ -2372,14 +2218,12 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
     <part Name="Render" DisplayName="▶{{K-K-K-K-c-C-Y sequence|Va'am's}} {{C-c-K-K sequence|lens}}" />
     <part Name="Description" Short="▶An ocean drum of unknown zircon cleans itself of dust down to the mote by electrostatic cancelling. The center cross affords a wielder's grip." />
     <part Name="ReduceCooldowns" NameForStatus="▶KineticAcceleration" />
-    <tag Name="Mods" Value="▶None" />
     <property Name="Story" Value="▶VaamsLens" />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="Dagasha's Spur" Load="Merge">
     <part Name="Render" DisplayName="▶{{K-K-K-K-c-C-Y-C-c sequence|Dagasha's}} {{K sequence|spur}}" />
     <part Name="Description" Short="▶A thorn crown arranged of crystals at telling psionic angles make a landmark in the psychic sea." />
-    <tag Name="Mods" Value="▶None" />
     <property Name="Story" Value="▶DagashasSpur" />
     <xtagGrammar Proper="▶true" />
   </object>
@@ -2387,7 +2231,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
     <part Name="Render" DisplayName="▶{{K-K-c-C-Y sequence|Kah's}} {{C-c-K-K sequence|loop}}" />
     <part Name="Description" Short="▶A ribbed cable of tangent needle points squeezes the limb and quickens its biomatter beyond expectation." />
     <part Name="IntPropertyChanger" BehaviorDescription="▶Wearer may take any action while sprinting at no additional penalty." NameForStatus="▶?????" />
-    <tag Name="Mods" Value="▶None" />
     <property Name="Story" Value="▶KahsLoop" />
     <xtagGrammar Proper="▶true" />
   </object>
@@ -2395,38 +2238,32 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
     <part Name="Render" DisplayName="▶{{kesil|Kesil}} Face" />
     <part Name="Description" Short="▶Shining jewels are scattered across the contours of a galactic visage, and edges drawn between them sketch the outline of a sashed Fool. Far away at the chrome crest, beads of bright and searing light suggest the shape of a medial ewer, and beyond its spout, a vast and timeful structure. The inside of the mask is ribboned with burnt tracery from where it was molded on a gallium lathe, then dyed with the milked irises of shedim and set to dry in a pool of warm static." />
     <part Name="RulesDescription" Text="▶+1 to all mutation levels&#xA;+6 to cybernetics license tier" />
-    <tag Name="Mods" Value="▶None" />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="The Shemesh Face" Load="Merge">
     <part Name="Render" DisplayName="▶{{shemesh|Shemesh}} Face" />
     <part Name="Description" Short="▶Burning rubies, carnelians, and garnets are arranged as a warm and giving sun. Diminutive rocky orbs pass by in the near space of the visage, and in the far space a prism of freight lengthens into a wider void. The inside of the mask is ribboned with burnt tracery from where it was molded on a gallium lathe, then dyed with the milked irises of shedim and set to dry in a pool of warm static." />
-    <tag Name="Mods" Value="▶None" />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="The Earth Face" Load="Merge">
     <part Name="Render" DisplayName="▶{{earth|Earth}} Face" />
     <part Name="Description" Short="▶On the countenance, ribbons of alabaster cloud circumscribe a lapis sea and forests of jade. At the median of it all, a Spindle pierces the outer rondure and disappears beyond the composition. A second obstructed spire, what must be the Spindle's shadow, soaks up the light thrown off by the southern sky of crystal white. The inside of the mask is ribboned with burnt tracery from where it was molded on a gallium lathe, then dyed with the milked irises of shedim and set to dry in a pool of warm static." />
-    <tag Name="Mods" Value="▶None" />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="The Levant Face" Load="Merge">
     <part Name="Render" DisplayName="▶{{levant|Levant}} Face" />
     <part Name="Description" Short="▶Jasper rocks break on the edges of the mask and hem in a pale sea of milky quartz. The Spindle bisects the wide Face, and symmetry blooms beneath it. The inside of the mask is ribboned with burnt tracery from where it was molded on a gallium lathe, then dyed with the milked irises of shedim and set to dry in a pool of warm static." />
-    <tag Name="Mods" Value="▶None" />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="The Olive Face" Load="Merge">
     <part Name="Render" DisplayName="▶{{olive|Olive}} Face" />
     <part Name="Description" Short="▶A single mount of inlaid basalt and malachite splays open; an image of the Spindle blossoms from its center and dominates the festooned aspect. The inside of the mask is ribboned with burnt tracery from where it was molded on a gallium lathe, then dyed with the milked irises of shedim and set to dry in a pool of warm static." />
-    <tag Name="Mods" Value="▶None" />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="The Nil Face" Load="Merge">
     <part Name="Render" DisplayName="▶{{K|Null}} Face" />
     <part Name="Description" Short="▶A bowed lune is cracked from where it was smashed off the gallium lathe. The shedim had no eyes left to color the dim and final Face, and it lay too long discarded in a pool of warm static. The sultanate is broken." />
     <xtagGrammar Proper="▶true" />
-    <tag Name="Mods" Value="▶None" />
   </object>
   <object Name="Repulsive Device" Load="Merge">
     <part Name="Render" DisplayName="▶{{M|repulsive device}}" />
@@ -2436,7 +2273,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
     <part Name="Render" DisplayName="▶{{otherpearl|Otherpearl}}" />
     <part Name="Description" Short="▶All-color nacre is hardened into an ontologically perfect shape; the mathematics of spheres are mere approximations. Inside, ribboned patterns of aether are frozen in stasis and cohere as a moonlit vista, a scene somehow tethered to the spacetime point whence you observed it. The meaning of this pairing is unknown and unknowable." />
     <part Name="RulesDescription" Text="▶+40 psychic glimmer&#xA;Objects you find are five times more likely to come from other dimensions." />
-    <tag Name="Mods" Value="▶None" />
     <property Name="Story" Value="▶TheRecitation" />
     <part Name="TakenAccomplishment" Text="▶You clutched =this.refname= and dressed yourself in the mirror of realities." Hagiograph="▶O! Our hearts turned to stellar remnants when =name= recited an elegy for the unknown girlchild Eudoxia!" Gospel="▶In the month =month= of =year=, a corrupt administrator was appointed minister of a gleaming city with streets of gold and glass. =spice:pronouns.subject.!random.capitalize= outlawed the practice of composing elegies, and =name= was forced to flee." />
     <xtagGrammar Proper="▶true" />
@@ -2446,147 +2282,94 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Flange from the Great Machine" Load="Merge">
     <part Name="Render" DisplayName="▶flange from the {{great machine|Great Machine}}" />
     <part Name="Description" Short="▶A gigantic whorl lip snapped off the driving wheel of culture, fell out of its star vault's orbit, and, through the eroded methods of time, arrived here. Astroexotic spores lash its metasteel underrim, pilgrims from a hot fungal core biding time between now and some mystifying future point." />
-    <tag Name="Mods" Value="▶None" />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="Sail from the Great Machine" Load="Merge">
     <part Name="Render" DisplayName="▶sail from the {{great machine|Great Machine}}" />
     <part Name="Description" Short="▶A blooming kitesail of extrasolar flax is knitted on battens to catch the poison air of some faraway swamp planetoid and power an ecumenical cycle. Its clews are stitched with syncretic plethora from across the dreaming gamut." />
-    <tag Name="Mods" Value="▶None" />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="Gear from the Great Machine" Load="Merge">
     <part Name="Render" DisplayName="▶gear from the {{great machine|Great Machine}}" />
     <part Name="Description" Short="▶Unshafted from its lanterned machine temple orbiting a star some hundred thousand light years away, the great gear looms in stasis. Dust from a hundred neighbored planet-homes tip its fluted teeth, while its bore is slick with amaranth and incense oil cultured over the lifespan of a gardened civilization." />
-    <tag Name="Mods" Value="▶None" />
     <part Name="RulesDescription" Text="▶Wielded weapons blocked by this shield have a 10% chance to be disarmed." />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="Gauge from the Great Machine" Load="Merge">
     <part Name="Render" DisplayName="▶gauge from the {{great machine|Great Machine}}" />
     <part Name="Description" Short="▶A giant clockface is traced with lemniscates to gauge the entheogenic pressures building in abyssal sun cores. The priest of the machine who took its readings and sung the dial left is indebted to the distant colleague whose klatch invented the whistled language 8000 years later." />
-    <tag Name="Mods" Value="▶None" />
     <part Name="RulesDescription" Text="▶Berate, Intimidate, and Menacing Stare also confuse per Confusion rank 10." />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="RelicTonic" Load="Merge">
     <part Name="Description" Short="▶A tube of tetraxenonoglass glass glitters inside with opaline syrup." />
     <part Name="RulesDescription" Text="▶You gain either a permanent +2 bonus to a random attribute or two mutation points." GenotypeAlt="▶You gain two attribute points." />
-    <tag Name="Mods" Value="▶None" />
   </object>
   <object Name="RelicBook" Load="Merge">
     <part Name="Description" Short="▶Light catches on four opaline corner pieces and a raised medallion set in the center of tessellated uuflax. Wonders are woven across the cyclopean tome." />
-    <tag Name="Mods" Value="▶None" />
   </object>
   <object Name="BaseRelicAxe1" Load="Merge">
     <part Name="Description" Short="▶Ceremonial bell iron is shaped to an axe edge." />
-    <tag Name="Mods" Value="▶None" />
   </object>
   <object Name="BaseRelicAxe2" Load="Merge">
     <part Name="Description" Short="▶Ceremonial slag steel is shaped to an axe edge." />
-    <tag Name="Mods" Value="▶None" />
   </object>
   <object Name="BaseRelicAxe2th" Load="Merge">
     <part Name="Description" Short="▶Ceremonial slag steel is shaped to a broad axe edge." />
-    <tag Name="Mods" Value="▶None" />
   </object>
   <object Name="BaseRelicDagger1" Load="Merge">
     <part Name="Description" Short="▶Ceremonial bell iron is shaped to a short point." />
-    <tag Name="Mods" Value="▶None" />
   </object>
   <object Name="BaseRelicDagger2" Load="Merge">
     <part Name="Description" Short="▶Ceremonial slag steel is shaped to an short point." />
-    <tag Name="Mods" Value="▶None" />
   </object>
   <object Name="BaseRelicLongsword1" Load="Merge">
     <part Name="Description" Short="▶Ceremonial bell iron is shaped to a blade's edge." />
-    <tag Name="Mods" Value="▶None" />
   </object>
   <object Name="BaseRelicLongsword1th" Load="Merge">
     <part Name="Description" Short="▶Ceremonial bell iron is shaped to a wide blade's edge." />
-    <tag Name="Mods" Value="▶None" />
   </object>
   <object Name="BaseRelicLongsword2" Load="Merge">
     <part Name="Description" Short="▶Ceremonial slag steel is shaped to a blade's edge." />
-    <tag Name="Mods" Value="▶None" />
   </object>
   <object Name="BaseRelicLongsword2th" Load="Merge">
     <part Name="Description" Short="▶Ceremonial slag steel is shaped to a wide blade's edge." />
-    <tag Name="Mods" Value="▶None" />
   </object>
   <object Name="BaseRelicCudgel1" Load="Merge">
     <part Name="Description" Short="▶Ceremonial bell iron is shaped to a hexagonal prism." />
-    <tag Name="Mods" Value="▶None" />
   </object>
   <object Name="BaseRelicCudgel1th" Load="Merge">
     <part Name="Description" Short="▶Ceremonial bell iron is shaped to a wide hexagonal prism." />
-    <tag Name="Mods" Value="▶None" />
   </object>
   <object Name="BaseRelicCudgel2" Load="Merge">
     <part Name="Description" Short="▶Ceremonial slag steel is shaped to a hexagonal prism." />
-    <tag Name="Mods" Value="▶None" />
   </object>
   <object Name="BaseRelicCudgel2th" Load="Merge">
     <part Name="Description" Short="▶Ceremonial slag steel is shaped to a wide hexagonal prism." />
-    <tag Name="Mods" Value="▶None" />
   </object>
   <object Name="BaseRelicRifle1" Load="Merge">
     <part Name="Description" Short="▶Ceremonial slag steel is shaped to a smoothbore barrel." />
-    <tag Name="Mods" Value="▶None" />
   </object>
   <object Name="BaseRelicRifle2" Load="Merge">
     <part Name="Description" Short="▶Ceremonial slag steel is shaped to a spiraled barrel." />
-    <tag Name="Mods" Value="▶None" />
   </object>
   <object Name="BaseRelicRifle3A" Load="Merge">
     <part Name="Description" Short="▶Ceremonial slag steel is shaped to a sawed off barrel." />
-    <tag Name="Mods" Value="▶None" />
   </object>
   <object Name="BaseRelicRifle3B" Load="Merge">
     <part Name="Description" Short="▶Ceremonial slag steel is shaped to a barrel and grooved with helical precision." />
-    <tag Name="Mods" Value="▶None" />
   </object>
   <object Name="BaseRelicPistol1" Load="Merge">
     <part Name="Description" Short="▶A ceremonial chrome wheel clicks to moon time, and the grip medallion shines in delphian lineage." />
-    <tag Name="Mods" Value="▶None" />
   </object>
   <object Name="BaseRelicPistol2" Load="Merge">
     <part Name="Description" Short="▶Black acrylic grips are paired off the sides of ceremonial chrome magazine well." />
-    <tag Name="Mods" Value="▶None" />
   </object>
   <object Name="BaseRelicPistol3" Load="Merge">
     <part Name="Description" Short="▶A tin-slender clip hangs off the ceremonial chrome magazine well." />
-    <tag Name="Mods" Value="▶None" />
   </object>
   <object Name="BaseTierArtifact" Load="Merge">
     <part Name="Description" Short="▶Tiny glyphs are inscribed on each exterior face of the handheld box." />
-  </object>
-  <object Name="BaseTierBody" Load="Merge">
-    <tag Name="Mods" Value="▶None" />
-  </object>
-  <object Name="BaseTierHead" Load="Merge">
-    <tag Name="Mods" Value="▶None" />
-  </object>
-  <object Name="BaseTierFace" Load="Merge">
-    <tag Name="Mods" Value="▶None" />
-  </object>
-  <object Name="BaseTierBack" Load="Merge">
-    <tag Name="Mods" Value="▶None" />
-  </object>
-  <object Name="BaseTierHands" Load="Merge">
-    <tag Name="Mods" Value="▶None" />
-  </object>
-  <object Name="BaseTierArm" Load="Merge">
-    <tag Name="Mods" Value="▶None" />
-  </object>
-  <object Name="BaseTierFeet" Load="Merge">
-    <tag Name="Mods" Value="▶None" />
-  </object>
-  <object Name="BaseTierFloating" Load="Merge">
-    <tag Name="Mods" Value="▶None" />
-  </object>
-  <object Name="BaseTierShield" Load="Merge">
-    <tag Name="Mods" Value="▶None" />
   </object>
   <object Name="BaseTierBody1_AV" Load="Merge">
     <part Name="Description" Short="▶Perch fish nursed in the aquarium silos of a vacated sector were netted and skinned into strips. Those strips were tanned with chrome and stitched into this vest." />
@@ -2636,7 +2419,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   </object>
   <object Name="BaseTierFace2" Load="Merge">
     <part Name="Description" Short="▶Masks maintained their sacred status in the lives of the Eaters, even as they lost the capacity to stitch them into their own faces. This one is no different." />
-    <tag Name="Mods" Value="▶None" />
   </object>
   <object Name="BaseTierBack2" Load="Merge">
     <part Name="Description" Short="▶This cloak was knit from strands ur-filament hair robbed from the graves of early Eaters." />
@@ -2764,14 +2546,8 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="BaseTierShield5" Load="Merge">
     <part Name="Description" Short="▶In vast abyssal halls spire-tall machine presses crushed black spheres into diamond killer. Once the lights burned out, magpie troupes cut hunks free with gaslight tools and brought them to the low-strata smitheries. This piece was forged into a aegis." />
   </object>
-  <object Name="BaseTierBody6_AV" Load="Merge">
-    <tag Name="Mods" Value="▶None" />
-  </object>
   <object Name="BaseTierBody6_DV" Load="Merge">
     <part Name="Description" Short="▶The manifold fibers are colorful and have a touching texture like no other fabric. A molecular weft was pulled through shrinking warps on a fractal loom." />
-  </object>
-  <object Name="BaseTierHead6_AV" Load="Merge">
-    <tag Name="Mods" Value="▶None" />
   </object>
   <object Name="BaseTierFace6" Load="Merge">
     <part Name="Description" Short="▶Mellified skin is sutured to colorful uuflax in a psychotomimetic likeness to the Eater idols in the age of *sultan*." />
@@ -2779,26 +2555,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="BaseTierBack6" Load="Merge">
     <part Name="Description" Short="▶An imperishable uuflax sheet was torn from the elephantine spools in the market, thrice-folded, and stitched into a geometrically patterned talma." />
   </object>
-  <object Name="BaseTierHands6_AV" Load="Merge">
-    <tag Name="Mods" Value="▶None" />
-  </object>
   <object Name="BaseTierArm6" Load="Merge">
     <part Name="Description" Short="▶A bright chrome clasp was pried off the glass guts of the polis and etched as jewelry." />
   </object>
-  <object Name="BaseTierFeet6_AV" Load="Merge">
-    <tag Name="Mods" Value="▶None" />
-  </object>
   <object Name="BaseTierFloating6" Load="Merge">
     <part Name="Description" Short="▶A chipped-off chunk of luminous Spindle, magnetized by the fall to earth, orbits its chosen warden." />
-  </object>
-  <object Name="BaseTierShield6" Load="Merge">
-    <tag Name="Mods" Value="▶None" />
-  </object>
-  <object Name="BaseTierBody7_AV" Load="Merge">
-    <tag Name="Mods" Value="▶None" />
-  </object>
-  <object Name="BaseTierHead7_AV" Load="Merge">
-    <tag Name="Mods" Value="▶None" />
   </object>
   <object Name="BaseTierFace7" Load="Merge">
     <part Name="Description" Short="▶Mellified skin is sutured to colorful uuflax in a psychotomimetic likeness to the Eater idols in the age of *sultan*." />
@@ -2806,26 +2567,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="BaseTierBack7" Load="Merge">
     <part Name="Description" Short="▶An imperishable uuflax sheet was torn from the elephantine spools in the market, thrice-folded, and stitched into a geometrically patterned talma." />
   </object>
-  <object Name="BaseTierHands7_AV" Load="Merge">
-    <tag Name="Mods" Value="▶None" />
-  </object>
   <object Name="BaseTierArm7" Load="Merge">
     <part Name="Description" Short="▶Offworld goldleaf spirals on the starpath." />
   </object>
-  <object Name="BaseTierFeet7_AV" Load="Merge">
-    <tag Name="Mods" Value="▶None" />
-  </object>
   <object Name="BaseTierFloating7" Load="Merge">
     <part Name="Description" Short="▶A chipped-off chunk of luminous Spindle, magnetized by the fall to earth, orbits its chosen warden." />
-  </object>
-  <object Name="BaseTierShield7" Load="Merge">
-    <tag Name="Mods" Value="▶None" />
-  </object>
-  <object Name="BaseTierBody8_AV" Load="Merge">
-    <tag Name="Mods" Value="▶None" />
-  </object>
-  <object Name="BaseTierHead8_AV" Load="Merge">
-    <tag Name="Mods" Value="▶None" />
   </object>
   <object Name="BaseTierFace8" Load="Merge">
     <part Name="Description" Short="▶Mellified skin is sutured to colorful uuflax in a psychotomimetic likeness to the Eater idols in the age of *sultan*." />
@@ -2833,20 +2579,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="BaseTierBack8" Load="Merge">
     <part Name="Description" Short="▶An imperishable uuflax sheet was torn from the elephantine spools in the market, tetra-folded, and stitched into a geometrically patterned talma." />
   </object>
-  <object Name="BaseTierHands8_AV" Load="Merge">
-    <tag Name="Mods" Value="▶None" />
-  </object>
   <object Name="BaseTierArm8" Load="Merge">
     <part Name="Description" Short="▶Offworld goldleaf spirals on the starpath." />
   </object>
-  <object Name="BaseTierFeet8_AV" Load="Merge">
-    <tag Name="Mods" Value="▶None" />
-  </object>
   <object Name="BaseTierFloating8" Load="Merge">
     <part Name="Description" Short="▶A chipped-off chunk of luminous Spindle, magnetized by the fall to earth, orbits its chosen warden." />
-  </object>
-  <object Name="BaseTierShield8" Load="Merge">
-    <tag Name="Mods" Value="▶None" />
   </object>
   <object Name="Albino Ape Pelt" Load="Merge">
     <part Name="Render" DisplayName="▶{{Y|albino ape pelt}}" />
@@ -3071,7 +2808,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="CarbideFist" Load="Merge">
     <part Name="Render" DisplayName="▶{{K|carbide fist}}" />
     <part Name="Description" Short="▶Skeletal hand of cobalt blue metal remains suspended in temporary lifelessness." />
-    <tag Name="Mods" Value="▶None" />
   </object>
   <object Name="Pentaceps" Load="Merge">
     <part Name="Description" Short="▶The quartet of knee joint extensors gain the assistance of a synthetic fifth." />
@@ -3258,7 +2994,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="FulleriteFist" Load="Merge">
     <part Name="Render" DisplayName="▶{{K|fullerite fist}}" />
     <part Name="Description" Short="▶Skeletal hand of jet black metal remains suspended in temporary lifelessness." />
-    <tag Name="Mods" Value="▶None" />
   </object>
   <object Name="MotorizedTreads" Load="Merge">
     <part Name="Description" Short="▶Triangular treads swathe the teeth of giant gears that turn to locomote. Their human has escaped the confines of bipedal motion." />
@@ -3306,7 +3041,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
     <part Name="Render" DisplayName="▶{{C|force}} knife" />
     <part Name="Description" Short="▶A length of raw space was kineticized and sharpened to a point." />
     <part Name="VibroWeapon" NameForStatus="▶PlanckEdge" />
-    <tag Name="Mods" Value="▶None" />
   </object>
   <object Name="GraftedMirrorArm" Load="Merge">
     <part Name="Description" Short="▶A plastifer arm forks from the scapula and copies instructions issued from nerve to muscle in its grown twin." />
@@ -3362,7 +3096,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="CrysteelFist" Load="Merge">
     <part Name="Render" DisplayName="▶{{G|crysteel fist}}" />
     <part Name="Description" Short="▶Skeletal hand of dappled emerald metal remains suspended in temporary lifelessness." />
-    <tag Name="Mods" Value="▶None" />
   </object>
   <object Name="HighFidelityMatterRecompositer" Load="Merge">
     <part Name="Description" Short="▶The flux inside this milliscopic cask can fold space on just a large enough scale to shunt a human chassis nearby. Nonlinear circuitry calculates all possible outcomes and discards those that land the host outside the target area." />
@@ -3403,7 +3136,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
     <part Name="Description" Short="▶A tiny wedge of plastic." />
   </object>
   <object Name="Book" Load="Merge">
-    <tag Name="Mods" Value="▶BookMods" />
     <xtagGrammar Proper="▶true" adjunctNoun="▶copy" />
     <part Name="Description" Short="▶Crisp pages of goatskin vellum are bound into a codex." />
   </object>
@@ -3540,9 +3272,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="DataDisk" Load="Merge">
     <part Name="Render" DisplayName="▶data disk" />
     <part Name="Description" Short="▶Beneath the metal shutter, a crystalline disk is grooved with microscopic pits that encode data." />
-  </object>
-  <object Name="Energy Cell" Load="Merge">
-    <tag Name="Mods" Value="▶EnergyCellMods" />
   </object>
   <object Name="Chem Cell" Load="Merge">
     <part Name="Render" DisplayName="▶{{c|chem cell}}" />
@@ -3687,7 +3416,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   </object>
   <object Name="Tonic" Load="Merge">
     <part Name="Description" Short="▶A glass tube and hype needle deliver a tonic directly to the bloodstream." />
-    <tag Name="Mods" Value="▶TonicMods" />
   </object>
   <object Name="LoveTonic" Load="Merge">
     <part Name="Render" DisplayName="▶{{love|love}} injector" />
@@ -3745,12 +3473,10 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Pickaxe" Load="Merge">
     <part Name="Render" DisplayName="▶{{c|pickaxe}}" />
     <part Name="Description" Short="▶Its head is a shard of grinded metal, pointed on one end and flat on the other. Dust is stuck in its hairline nicks and shines across the opalescent spectrum of rock possibility." />
-    <tag Name="Mods" Value="▶AxeMods,BladeMods,WeaponMods,CommonMods" />
   </object>
   <object Name="Nanopneumatic Jackhammer" Load="Merge">
     <part Name="Render" DisplayName="▶nanopneumatic jackhammer" />
     <part Name="Description" Short="▶A pneumatic tube is driven under a ratchet and through a giant drill head. Crenulated air pockets allow for vibrative absorption to create a cascade of pressure, while stabilizing backstraps protect the wielder's contact points from unsafe joggling." />
-    <tag Name="Mods" Value="▶CudgelMods,WeaponMods,CommonMods,ElectronicsMods" />
   </object>
   <object Name="Hoversled" Load="Merge">
     <part Name="Render" DisplayName="▶hoversled" />
@@ -3767,27 +3493,22 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Tattoo Gun" Load="Merge">
     <part Name="Render" DisplayName="▶{{b-B-C-c-y-Y sequence|tattoo}} gun" />
     <part Name="Description" Short="▶Ink is jetted into and under the skin canvas by a needle and rotary motor." />
-    <tag Name="Mods" Value="▶CommonMods,ElectronicsMods" />
   </object>
   <object Name="TemplarPhylactery" Load="Merge">
     <part Name="Render" DisplayName="▶Templar phylactery" />
     <part Name="Description" Short="▶An wood-carved jewel box opens to a photographic plate and light beamer. Slit in the crystal around the edge is a verse chosen from the rhombic torah." />
-    <tag Name="Mods" Value="▶CommonMods,ElectronicsMods" />
   </object>
   <object Name="Neuro Animator" Load="Merge">
     <part Name="Render" DisplayName="▶{{nanoneuro|nano-neuro}} {{Y|animator}}" />
     <part Name="Description" Short="▶Spurred on by their aspiration for a fully autonomous, climate-controlled banana grove, Research and Development at Hegemonic Fruit devised the neuro animator, which knits a nervous system into the inorganic material of inanimate objects. Originally, full sentience was their product diffentiator, but within months cheaper alternates like Spray-a-Brain came to dominate the market." />
-    <tag Name="Mods" Value="▶CommonMods,ElectronicsMods" />
   </object>
   <object Name="Droid Scrambler" Load="Merge">
     <part Name="Render" DisplayName="▶{{Y|droid scrambler}}" />
     <part Name="Description" Short="▶A transmitter discoid beeps out staccato noise to create interference across short-range frequency bands." />
-    <tag Name="Mods" Value="▶CommonMods,ElectronicsMods" />
   </object>
   <object Name="BaseRecoiler" Load="Merge">
     <part Name="Render" DisplayName="▶{{Y|recoiler}}" />
     <part Name="Description" Short="▶A cassette is cut with hexagonal grooves and steeped in the right amount of magnetic charge to spool a spacetime tether (and generate its characteristic hot gum smell). On top, a recessed button snaps the potential and initiates the recoil." />
-    <tag Name="Mods" Value="▶CommonMods,ElectronicsMods" />
   </object>
   <object Name="Joppa Recoiler" Load="Merge">
     <part Name="Render" DisplayName="▶Joppa recoiler" />
@@ -3859,9 +3580,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
     <part Name="Description" Short="▶To ritualize the passage to Brightsheol or another thin place, several ornaments were interred: coin, manikin, locket, and pipe." />
     <xtagGrammar massNoun="▶true" />
   </object>
-  <object Name="BaseNugget" Load="Merge">
-    <tag Name="Mods" Value="▶NuggetMods" />
-  </object>
   <object Name="Copper Nugget" Load="Merge">
     <part Name="Render" DisplayName="▶{{w|copper nugget}}" />
     <part Name="Description" Short="▶A clump of brassy metal was tumbled free of its host rock." />
@@ -3876,7 +3594,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   </object>
   <object Name="Gemstone" Load="Merge">
     <part Name="Render" DisplayName="▶rough gemstone" />
-    <tag Name="Mods" Value="▶GemstoneMods" />
   </object>
   <object Name="Rough Agate" Load="Merge">
     <part Name="Render" DisplayName="▶rough {{K|agate}} gemstone" />
@@ -3995,7 +3712,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="FoldingChair" Load="Merge">
     <part Name="Render" DisplayName="▶{{c|metal folding chair}}" />
     <part Name="Description" Short="▶Tubes of known purpose splay at welded joints and support a plank for sitting." />
-    <tag Name="Mods" Value="▶CommonMods,WeaponMods,CudgelMods" />
   </object>
   <object Name="PlasticTree" Load="Merge">
     <part Name="Description" Short="▶Fronds are splayed out in a waxy imitation of life. It looks hard and greasy up close, but as you back away its edges burn into softness and it performs the tree function." />
@@ -4004,7 +3720,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Small Sphere of Negative Weight" Load="Merge">
     <part Name="Render" DisplayName="▶small sphere of negative weight" />
     <part Name="Description" Short="▶A sphere of some black pyritic metal succumbs to the negative pressures of gravity and tries to fall upward." />
-    <tag Name="Mods" Value="▶CommonMods,ElectronicsMods" />
   </object>
   <object Name="Timecube" Load="Merge">
     <part Name="Render" DisplayName="▶{{K|timecube}}" />
@@ -4043,12 +3758,10 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="StorageTank" Load="Merge">
     <part Name="Render" DisplayName="▶storage tank" />
     <part Name="Description" Short="▶Chrome was molded into a canister and fastened with a brass mounting bracket." />
-    <tag Name="Mods" Value="▶CommonMods" />
   </object>
   <object Name="Gourd" Load="Merge">
     <part Name="Render" DisplayName="▶gourd" />
     <part Name="Description" Short="▶Collagen was molded into a liquid vessel." />
-    <tag Name="Mods" Value="▶CommonMods" />
   </object>
   <object Name="Entropy Cyst" Load="Merge">
     <part Name="Render" DisplayName="▶entropy cyst" />
@@ -4058,7 +3771,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
     <part Name="Render" DisplayName="▶magnetic bottle" />
     <part Name="Description" Short="▶Magnetic glass spike-warps the placid ferrofluids contained within." />
     <part Name="RulesDescription" Text="▶When powered, this container can have neutron flux safely poured into it from any source, and neutron flux may be safely poured from this container into other suitable containers." />
-    <tag Name="Mods" Value="▶CommonMods,ElectronicsMods" />
   </object>
   <object Name="FactionDeed" Load="Merge">
     <part Name="Render" DisplayName="▶Schrodinger page from the {{K|Annals of Qud}}" />

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.3
+Caves of Qud - Generated Localizable XML 2.0.212.4
 
 <objects>
 
@@ -1300,7 +1300,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Poison-tipped Spear" Load="Merge">
     <part Name="Render" DisplayName="▶poison-tipped spear" />
     <part Name="Description" Short="▶Hot germ drip sticks to a rusty iron tip." />
-    <tag Name="Mods" Value="▶CommonMods,ThrownWeaponMods" />
   </object>
   <object Name="Snapjaw Trapper" Load="Merge">
     <part Name="Render" DisplayName="▶snapjaw trapper" />
@@ -1768,7 +1767,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
     <part Name="Render" DisplayName="▶point-defense laser" />
     <part Name="RespondToEvent" NameForStatus="▶TrackingDataProcessor" />
     <part Name="Description" Short="▶It's a robotic half-eye lidded by a furcate chassis and embellished with antenna lashes. A minuscule barrel pokes out from its pupil and vibrates. The inner lid is articulated, allowing the drone to scan for incoming projectiles and shoot them down." />
-    <tag Name="Mods" Value="▶MissileWeaponMods,FirearmMods,CommonMods,PistolMods,ElectronicsMods,BeamWeaponMods" />
   </object>
   <object Name="Bot Mallet" Load="Merge">
     <part Name="Render" DisplayName="▶{{Y|mallet}}" />
@@ -1960,7 +1958,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   </object>
   <object Name="LightLock" Load="Merge">
     <part Name="Render" DisplayName="▶lightlock" />
-    <tag Name="Mods" Value="▶MissileWeaponMods,FirearmMods,CommonMods,RifleMods,ElectronicsMods,BeamWeaponMods" />
   </object>
   <object Name="ProjectileLightLock" Load="Merge">
     <part Name="Render" DisplayName="▶{{W|fat photon}}" />
@@ -2461,7 +2458,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   </object>
   <object Name="Naser Cannon" Load="Merge">
     <part Name="Render" DisplayName="▶naser cannon" />
-    <tag Name="Mods" Value="▶MissileWeaponMods,FirearmMods,CommonMods,ElectronicsMods,BeamWeaponMods" />
   </object>
   <object Name="ProjectileNaserCannon" Load="Merge">
     <part Name="Render" DisplayName="▶{{K|naser beam}}" />
@@ -2592,7 +2588,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   </object>
   <object Name="ShoulderMountedLightCannon" Load="Merge">
     <part Name="Render" DisplayName="▶shoulder-mounted light cannon" />
-    <tag Name="Mods" Value="▶MissileWeaponMods,FirearmMods,CommonMods,RifleMods,ElectronicsMods,BeamWeaponMods" />
   </object>
   <object Name="ProjectileShoulderMountedLightCannon" Load="Merge">
     <part Name="Render" DisplayName="▶{{Y|proton beam}}" />
@@ -2605,9 +2600,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   </object>
   <object Name="GiganticMachineHull" Load="Merge">
     <part Name="Render" DisplayName="▶{{c|machine hull}}" />
-  </object>
-  <object Name="PowerCore" Load="Merge">
-    <tag Name="Mods" Value="▶EnergyCellMods" />
   </object>
   <object Name="MechaPowerCore" Load="Merge">
     <part Name="Render" DisplayName="▶mecha power core" />

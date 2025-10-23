@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.3
+Caves of Qud - Generated Localizable XML 2.0.212.4
 
 <objects>
 
@@ -373,14 +373,17 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Eater Sign 1" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
     <part Name="Description" Short="▶Starfire ikons skip on a board of holographic bronze." />
+    <part Name="Chat" Says="▶Westwise to shard" />
   </object>
   <object Name="Eater Sign 2" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
     <part Name="Description" Short="▶Starfire ikons skip on a board of holographic bronze." />
+    <part Name="Chat" Says="▶Eastwise to movers at the Point of Tifaret" />
   </object>
   <object Name="Eater Sign 3" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
     <part Name="Description" Short="▶Starfire ikons skip on a board of holographic bronze." />
+    <part Name="Chat" Says="▶Eastwise to Quay" />
   </object>
   <object Name="StationWall" Load="Merge">
     <part Name="Render" DisplayName="▶station wall" />
@@ -400,7 +403,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Fromshunter" Load="Merge">
     <part Name="Render" DisplayName="▶from shunter" />
     <part Name="Description" Short="▶A matchlock beam traces the silhouettes of creatures recently impressed on leylines and scrambles the sampling to produce a true random result. Thousands of years and centillions of bits pass through a choke point of the holographic now, and then are evanesced into one." />
-    <tag Name="Mods" Value="▶MissileWeaponMods,FirearmMods,CommonMods,PistolMods,ElectronicsMods,BeamWeaponMods" />
   </object>
   <object Name="ProjectileFromShunter" Load="Merge">
     <part Name="Render" DisplayName="▶{{o|off ray}}" />
@@ -415,7 +417,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Eater Vessel 1" Load="Merge">
     <part Name="Render" DisplayName="▶vessel in suspense" />
     <part Name="Description" Short="▶Continents of texture over the vessel's surface are artifacts of the alien hand, where the clay was thrown in the hearth of a misty otherworld, before being stripped of its gravitational hair." />
-    <tag Name="Mods" Value="▶ShevaPotteryMods" />
   </object>
   <object Name="Eater Vessel 2" Load="Merge">
     <part Name="Render" DisplayName="▶vessel in suspense" />

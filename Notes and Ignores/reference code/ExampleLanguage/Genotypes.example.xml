@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Caves of Qud - Generated Localizable XML 2.0.212.4
+
+<genotypes>
+
+  <genotype Name="Key" DisplayName="DisplayText">
+
+    <stat Name="Key" ChargenDescription="DisplayText">
+
+    <extrainfo>
+
+-->
+<genotypes Lang="example" Encoding="utf-8">
+  <genotype Name="Mutated Human" DisplayName="▶Mutated Human">
+    <stat Name="Strength" ChargenDescription="▶Your {{W|Strength}} score determines how effectively you penetrate your opponents' armor with melee attacks, how much damage your melee attacks do, your ability to resist forced movement, and your carry capacity." />
+    <stat Name="Agility" ChargenDescription="▶Your {{W|Agility}} score determines your accuracy with both melee and ranged weapons and your ability to dodge attacks." />
+    <stat Name="Toughness" ChargenDescription="▶Your {{W|Toughness}} score determines your number of hit points, your natural healing rate, and your ability to resist poison and disease." />
+    <stat Name="Intelligence" ChargenDescription="▶Your {{W|Intelligence}} score determines your number of skill points and your ability to examine artifacts." />
+    <stat Name="Willpower" ChargenDescription="▶Your {{W|Willpower}} score modifies the cooldowns of your activated abilities, determines your ability to resist mental attacks, and modifies your natural healing rate." />
+    <stat Name="Ego" ChargenDescription="▶Your {{W|Ego}} score determines the potency of your mental mutations, your ability to haggle with merchants, and your ability to dominate the wills of other living creatures." />
+  <!--(Strings.appendix)
+string Context="genotype.Mutated Human.extrainfo" ID="Mutations"
+--><!--(Strings.appendix)
+string Context="genotype.Mutated Human.extrainfo" ID="Moderate starting attributes"
+--><!--(Strings.appendix)
+string Context="genotype.Mutated Human.extrainfo" ID="-600 reputation with {{C|the Putus Templar}}"
+--></genotype>
+  <genotype Name="True Kin" DisplayName="▶True Kin">
+    <stat Name="Strength" ChargenDescription="▶Your {{W|Strength}} score determines how effectively you penetrate your opponents' armor with melee attacks, how much damage your melee attacks do, your ability to resist forced movement, and your carry capacity." />
+    <stat Name="Agility" ChargenDescription="▶Your {{W|Agility}} score determines your accuracy with both melee and ranged weapons and your ability to dodge attacks." />
+    <stat Name="Toughness" ChargenDescription="▶Your {{W|Toughness}} score determines your number of hit points, your natural healing rate, and your ability to resist poison and disease." />
+    <stat Name="Intelligence" ChargenDescription="▶Your {{W|Intelligence}} score determines your number of skill points and your ability to examine artifacts." />
+    <stat Name="Willpower" ChargenDescription="▶Your {{W|Willpower}} score modifies the cooldowns of your activated abilities, determines your ability to resist mental attacks, and modifies your natural healing rate." />
+    <stat Name="Ego" ChargenDescription="▶Your {{W|Ego}} score determines the potency of your ability to haggle with merchants, and your ability to dominate the wills of other living creatures." />
+  <!--(Strings.appendix)
+string Context="genotype.True Kin.extrainfo" ID="High starting attributes"
+--><!--(Strings.appendix)
+string Context="genotype.True Kin.extrainfo" ID="Access to cybernetics"
+--><!--(Strings.appendix)
+string Context="genotype.True Kin.extrainfo" ID="{{C|20}} bonus skill points each level"
+--><!--(Strings.appendix)
+string Context="genotype.True Kin.extrainfo" ID="Bonus resistances based on arcology of origin"
+--><!--(Strings.appendix)
+string Context="genotype.True Kin.extrainfo" ID="May rebuke robots"
+--></genotype>
+</genotypes>

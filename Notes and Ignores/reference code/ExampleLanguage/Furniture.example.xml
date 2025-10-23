@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.3
+Caves of Qud - Generated Localizable XML 2.0.212.4
 
 <objects>
 
@@ -322,7 +322,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
     <tag Name="HeroNameTitleDescriptor" Value="▶Aqueous,Generous,Lavish,Nurturing,Plentiful,Water-Bringer" />
     <tag Name="HeroNameTitleClientele" Value="▶crops,farmers,plants,the farm" />
     <tag Name="NamingTag" Value="▶Animated" />
-    <tag Name="Mods" Value="▶CommonMods,ElectronicsMods" />
   </object>
   <object Name="Clockthing_QGirl" Load="Merge">
     <part Name="Render" DisplayName="▶Barathrum clock with {{M|Q Girl}} {{Y|pendulum}}" />
@@ -389,7 +388,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
     <tag Name="HeroNameTitleDescriptor" Value="▶Aqueous,Lavish,Nurturing,Plentiful,Replenisher" />
     <tag Name="HeroNameTitleClientele" Value="▶power grids, pumps" />
     <tag Name="NamingTag" Value="▶Animated" />
-    <tag Name="Mods" Value="▶CommonMods,ElectronicsMods" />
   </object>
   <object Name="Hydraulic Press" Load="Merge">
     <part Name="Render" DisplayName="▶hydraulic press" />
@@ -397,7 +395,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
     <tag Name="HeroNameTitleDescriptor" Value="▶Compressor,Crusher,Flattener,Smasher,Squeezer" />
     <tag Name="HeroNameTitleClientele" Value="▶tinkers,scavengers,wreckers" />
     <tag Name="NamingTag" Value="▶Animated" />
-    <tag Name="Mods" Value="▶CommonMods" />
     <tag Name="QuestableVerb" Value="▶enter" />
   </object>
   <object Name="Force Projector" Load="Merge">
@@ -461,7 +458,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Industrial Fan" Load="Merge">
     <part Name="Render" DisplayName="▶industrial fan" />
     <part Name="Description" Short="▶Cyclopean blades shaped to the airfoil are housed inside a metallic ring nicked with the scars of time. In the distant past, someone directed the course of air at grand scales." />
-    <tag Name="Mods" Value="▶CommonMods,ElectronicsMods" />
   </object>
   <object Name="Glass Printer" Load="Merge">
     <part Name="Render" DisplayName="▶glass printer" />
@@ -477,14 +473,12 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
     <tag Name="HeroNameTitleDescriptor" Value="▶Therapeutic,Healer,Restorer,Miraculous" />
     <tag Name="HeroNameTitleClientele" Value="▶the Tired,the Weary,the Wounded" />
     <tag Name="NamingTag" Value="▶Animated" />
-    <tag Name="Mods" Value="▶CommonMods,ElectronicsMods" />
     <tag Name="QuestableVerb" Value="▶enter" />
   </object>
   <object Name="Psiamp Sarcophagus" Load="Merge">
     <part Name="Render" DisplayName="▶psionic sarcophagus" />
     <part Name="Description" Short="▶It's worked from otherworldly limestone. The stone was quarried from a drift-world spinning about a darkling star whose weak luminescence didn't bleach the voidstuff from the rock's coral. Now it insulates its slumberer from the rays of materiality and conducts them to the psychic aether." />
     <part Name="Enclosing" NameForStatus="▶PsiAmp" />
-    <tag Name="Mods" Value="▶CommonMods,ElectronicsMods" />
     <tag Name="QuestableVerb" Value="▶enter" />
   </object>
   <object Name="Base Ring Gate" Load="Merge">
@@ -519,7 +513,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Catchbasin" Load="Merge">
     <part Name="Render" DisplayName="▶catch basin" />
     <part Name="Description" Short="▶Stoneware catches the tiny bit of moisture surrendered by the bone-dry air." />
-    <tag Name="Mods" Value="▶CommonMods,PotteryMods" />
   </object>
   <object Name="Air Well" Load="Merge">
     <part Name="Render" DisplayName="▶air well" />
@@ -534,7 +527,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
     <tag Name="HeroNameTitleDescriptor" Value="▶Aqueous,Condensatory,Dewy,Hydrator,Irrigator,Wet" />
     <tag Name="HeroNameTitleClientele" Value="▶the Dessicated,the Dry,the Salty,the Thirsty" />
     <tag Name="NamingTag" Value="▶Animated" />
-    <tag Name="Mods" Value="▶CommonMods" />
   </object>
   <object Name="Solar Condenser" Load="Merge">
     <part Name="Render" DisplayName="▶solar condenser" />
@@ -544,7 +536,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
     <tag Name="HeroNameTitleDescriptor" Value="▶Aqueous,Condensatory,Dewy,Hydrator,Irrigator,Wet" />
     <tag Name="HeroNameTitleClientele" Value="▶the Dessicated,the Dry,the Salty,the Thirsty" />
     <tag Name="NamingTag" Value="▶Animated" />
-    <tag Name="Mods" Value="▶CommonMods,ElectronicsMods" />
   </object>
   <object Name="GritGateChromeBeacon" Load="Merge">
     <part Name="Render" DisplayName="▶chromeling signal relay" />
@@ -636,7 +627,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
     <tag Name="HeroNameTitleDescriptor" Value="▶Restful,Soft,Lumpy,Firm,Luxurious,Comfortable,Short-Sheeted,Unsprung" />
     <tag Name="HeroNameTitleClientele" Value="▶the Weary, the Tired" />
     <xtagTextFragments Skin="▶sheets" PoeticFeatures="▶reclining stature,soft surfaces,inviting flatness" />
-    <tag Name="Mods" Value="▶CommonMods" />
     <tag Name="QuestableVerb" Value="▶sleep in" />
   </object>
   <object Name="Bed" Load="Merge">
@@ -660,7 +650,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Hammock" Load="Merge">
     <part Name="Render" DisplayName="▶hammock" />
     <part Name="Description" Short="▶Brinestraw was braided into a rope lattice saddle for slinging between two old oaks and napping. The fibers on the middle-sag are extra frayed from the center-mass strain of a reclining ass." />
-    <tag Name="Mods" Value="▶CommonMods" />
   </object>
   <object Name="Four-Poster Bed" Load="Merge">
     <part Name="Render" DisplayName="▶four-poster bed" />
@@ -690,13 +679,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
     <part Name="Bed" NameForStatus="▶HyperbioticSystems" />
     <tag Name="HeroNameTitleDescriptor" Value="▶Therapeutic,Healer,Restorer,Miraculous" />
     <tag Name="HeroNameTitleClientele" Value="▶the Weary,the Tired,the Wounded" />
-    <tag Name="Mods" Value="▶CommonMods,ElectronicsMods" />
   </object>
   <object Name="BaseChair" Load="Merge">
     <tag Name="HeroNameTitleDescriptor" Value="▶Comfy,Short-Legged,Straight-Backed,Sturdy,Three-Legged" />
     <tag Name="HeroNameTitleClientele" Value="▶Backs,Lumbar,the Tired" />
     <tag Name="NamingTag" Value="▶Animated" />
-    <tag Name="Mods" Value="▶CommonMods" />
     <tag Name="QuestableVerb" Value="▶sit on" />
   </object>
   <object Name="Chair" Load="Merge">
@@ -768,21 +755,18 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
     <part Name="Chair" NameForStatus="▶EnhancedInterrogationSystems" />
     <tag Name="HeroNameTitleDescriptor" Value="▶Agonizer,Atrocious,Bloodletter,Butcher,Cruel,Destroyer,Exsanguinator,Impaler,Piercer" />
     <tag Name="HeroNameTitleClientele" Value="▶Inquisitors,Interrogators,Sadists,the Cruel,the Penitent,Torturers" />
-    <tag Name="Mods" Value="▶CommonMods,ElectronicsMods" />
   </object>
   <object Name="Hyperbiotic Chair" Load="Merge">
     <part Name="Render" DisplayName="▶hyperbiotic chair" />
     <part Name="Description" Short="▶Hidden micro-reactors smash together particles, generate heat, and power the biotic machine apparatus that restores life to the wounded recliner." />
     <part Name="Chair" NameForStatus="▶HyperbioticSystems" />
     <tag Name="HeroNameTitleDescriptor" Value="▶Caretaker,Adjustable,Orthotic,Therapeutic,Healer,Restorer" />
-    <tag Name="Mods" Value="▶CommonMods,ElectronicsMods" />
   </object>
   <object Name="Gravchair" Load="Merge">
     <part Name="Render" DisplayName="▶{{K|grav}} chair" />
     <part Name="Description" Short="▶Plastic smoothed on a heat lathe was kneaded into a design that evokes an Eater's intuition for how a perfect ball warps spacetime around itself." />
     <part Name="Chair" NameForStatus="▶ContragravSystems" />
     <tag Name="HeroNameTitleDescriptor" Value="▶Luxurious,Decadent,Comfy,Lazy,Sybaritic,Soft,Voluptuous,Epicurean,Kinetic" />
-    <tag Name="Mods" Value="▶CommonMods,ElectronicsMods" />
   </object>
   <object Name="Ornate Chair" Load="Merge">
     <part Name="Render" DisplayName="▶ornate chair" />
@@ -973,7 +957,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
     <part Name="Description" Short="▶Sharp points of chrome are the vertices of this ornamental light fixture. Brightness bursts from its edges and ignites the world." />
   </object>
   <object Name="Vessel" Load="Merge">
-    <tag Name="Mods" Value="▶PotteryMods" />
     <tag Name="QuestableVerb" Value="▶drink from" />
   </object>
   <object Name="Vase" Load="Merge">
@@ -1301,13 +1284,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
     <tag Name="HeroNameTitleClientele" Value="▶Inquisitors,Sadists,the Cruel,the Penitent,Torturers" />
     <xtagTextFragments Skin="▶spikes" PoeticFeatures="▶towering stature,menacing spikes,suffocating enclosure" />
     <tag Name="NamingTag" Value="▶Animated" />
-    <tag Name="Mods" Value="▶CommonMods" />
     <tag Name="QuestableVerb" Value="▶enter" />
   </object>
   <object Name="Hookah" Load="Merge">
     <part Name="Render" DisplayName="▶hookah" />
     <part Name="Description" Short="▶Smoking stems bloom from a crystal waterpipe." />
-    <tag Name="Mods" Value="▶CommonMods" />
     <tag Name="QuestableVerb" Value="▶smoke from" />
   </object>
   <object Name="Cage" Load="Merge">
@@ -1439,6 +1420,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="hologram of Shekhinah" Load="Merge">
     <part Name="Render" DisplayName="▶hologram of Shekhinah" />
     <part Name="Description" Short="▶Glorious Shekhinah, Argent Adonis and First Father, poses in luminous mummery. With the stature of the ageless stars, fixed and permanent, He appraises the temple erected in His honor and cocks His head in approval. Befitting the memory of His union with the Kasaphescence, He clothes His manifestation in cerulean shades, forsaking the viridians and russets of the lowly plants and clay earth." />
+    <part Name="Chat" Says="▶[Shekhinah turns toward you, His arms wide.]" />
   </object>
   <object Name="Village Monument" Load="Merge">
     <part Name="Description" Short="▶" />
@@ -1497,236 +1479,311 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   </object>
   <object Name="Sign" Load="Merge">
     <part Name="Description" Short="▶A terracotta board has been painted with ochre and ground iron." />
+    <part Name="Chat" Says="▶[indistinct scribbling.]" />
   </object>
   <object Name="AppleSign1" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Starapples and Cider" />
   </object>
   <object Name="AppleSign2" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Spiced Cider" />
   </object>
   <object Name="AppleSign3" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Apples. Yum." />
   </object>
   <object Name="BookSign1" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Books" />
   </object>
   <object Name="BookSign2" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Wisdom and Knowledge" />
   </object>
   <object Name="BookSign3" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Inkblots" />
   </object>
   <object Name="BottleSign1" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Sweet Honey" />
   </object>
   <object Name="BottleSign2" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Beejuice" />
   </object>
   <object Name="BottleSign3" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Sticky Honey" />
   </object>
   <object Name="BootSign1" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Boots Here!" />
   </object>
   <object Name="BootSign2" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Boot and Shoe" />
   </object>
   <object Name="BootSign3" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Shoemaker" />
   </object>
   <object Name="HatSign1" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Hats and Caps" />
   </object>
   <object Name="HatSign2" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Cover Your Frail Heads" />
   </object>
   <object Name="HatSign3" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Stylish Hats" />
   </object>
   <object Name="GloveSign1" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Gloves and Mittens" />
   </object>
   <object Name="GloveSign2" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Fingercoats" />
   </object>
   <object Name="GloveSign3" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Wear Gloves Now" />
   </object>
   <object Name="CloakSign1" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Cloaks and Capes" />
   </object>
   <object Name="CloakSign2" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Shawls, Mantles, and More" />
   </object>
   <object Name="CloakSign3" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Stylish Cloaks" />
   </object>
   <object Name="ArmorSign1" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Vests and Mail" />
   </object>
   <object Name="ArmorSign2" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶All Sorts of Armor" />
   </object>
   <object Name="ArmorSign3" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Chestpieces" />
   </object>
   <object Name="GunSign1" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Guns and Ammo" />
   </object>
   <object Name="GunSign2" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Pistols, Rifles, and More" />
   </object>
   <object Name="GunSign3" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Guns!" />
   </object>
   <object Name="DiscSign1" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Data Disks" />
   </object>
   <object Name="DiscSign2" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Schematics" />
   </object>
   <object Name="DiscSign3" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Build Your Own Artifacts" />
   </object>
   <object Name="LiquidSign1" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Exotic Liquids" />
   </object>
   <object Name="LiquidSign2" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Exotic Liquids" />
   </object>
   <object Name="LiquidSign3" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Exotic Liquids" />
   </object>
   <object Name="JewelSign1" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Jewels and Jewelry" />
   </object>
   <object Name="JewelSign2" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Bejeweled Wares" />
   </object>
   <object Name="JewelSign3" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Gemstones and Jewelry" />
   </object>
   <object Name="HookahSign1" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Mint Smoke and Wine" />
   </object>
   <object Name="HookahSign2" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Waterpipe and Rest" />
   </object>
   <object Name="HookahSign3" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Smoke Lounge" />
   </object>
   <object Name="GrenadeSign1" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Explosives" />
   </object>
   <object Name="GrenadeSign2" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Boomspheres" />
   </object>
   <object Name="GrenadeSign3" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Grenades and More" />
   </object>
   <object Name="PepperSign1" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Apothecary" />
   </object>
   <object Name="PepperSign2" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Herbs and Tonics" />
   </object>
   <object Name="PepperSign3" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Simples" />
   </object>
   <object Name="FoodSign1" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Foodstuffs" />
   </object>
   <object Name="FoodSign2" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Sweet and Savory" />
   </object>
   <object Name="FoodSign3" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Spicy Foods" />
   </object>
   <object Name="PreserveSign1" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Preserved Foods" />
   </object>
   <object Name="PreserveSign2" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Foods and Spices" />
   </object>
   <object Name="PreserveSign3" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Cooking Preparation" />
   </object>
   <object Name="PigSign" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶[indistinct scribbling.]" />
   </object>
   <object Name="WineSign1" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Wine" />
   </object>
   <object Name="WineSign2" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Grapewitch Brew" />
   </object>
   <object Name="WineSign3" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Winemaker" />
   </object>
   <object Name="ImplantSign1" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Cybernetics" />
   </object>
   <object Name="ImplantSign2" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Chrome Guts" />
   </object>
   <object Name="ImplantSign3" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Organs for Machine and Folk" />
   </object>
   <object Name="ArgyveSign" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Go Away" />
   </object>
   <object Name="JoppaNorthSign" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶To graveyard and shrine" />
   </object>
   <object Name="EzraSign" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶← To Ezra" />
   </object>
   <object Name="TamSign" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Salt Sundries" />
   </object>
   <object Name="YurlSign" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Fine Wares from the Consortium of Phyta" />
   </object>
   <object Name="YlaSign" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Omonporch Gadget Repair" />
   </object>
   <object Name="SixshrewSign" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Consortium Tradepost" />
   </object>
   <object Name="JoppaMillSign" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Common Mill" />
   </object>
   <object Name="YdColumbariumSign" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Columbarium" />
   </object>
   <object Name="YdLivingQuartersSign" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Living Quarters" />
   </object>
   <object Name="YdMedicalSign" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Convalescence" />
   </object>
   <object Name="YdKitchenSign" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Kitchen" />
   </object>
   <object Name="YdLibrarySign" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Library" />
   </object>
   <object Name="YdMarketSign" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Market" />
   </object>
   <object Name="YdWorkshopSign" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Workshop" />
   </object>
   <object Name="YdManyEyesSign" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Many Eyes" />
   </object>
   <object Name="YdSalonSign" Load="Merge">
     <part Name="Render" DisplayName="▶sign" />
+    <part Name="Chat" Says="▶Salon" />
   </object>
   <object Name="CryptPlaqueTutor" Load="Merge">
     <part Name="Render" DisplayName="▶ornately engraved marble door with plaque" />
     <part Name="Description" Short="▶" />
-    <tag Name="Mods" Value="▶PotteryMods" />
   </object>
   <object Name="Tombstone" Load="Merge">
     <part Name="Render" DisplayName="▶tombstone" />
@@ -1738,12 +1795,10 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Empty Urn" Load="Merge">
     <part Name="Render" DisplayName="▶funerary urn" />
     <part Name="Description" Short="▶Geometric shapes of meaning tessellate the ringed rows around the crematory vessel: stars, triquetrae, nonagons, and lunes." />
-    <tag Name="Mods" Value="▶PotteryMods" />
   </object>
   <object Name="Urn" Load="Merge">
     <part Name="Render" DisplayName="▶funerary urn" />
     <part Name="Description" Short="▶" />
-    <tag Name="Mods" Value="▶PotteryMods" />
   </object>
   <object Name="Sarcophagus" Load="Merge">
     <part Name="Render" DisplayName="▶sarcophagus" />

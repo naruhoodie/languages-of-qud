@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Caves of Qud - Generated Localizable XML 2.0.212.4
+
+<subtypes>
+
+  <class ID="Key" ChargenTitle="DisplayText">
+
+    <category Name="Key" DisplayName="DisplayText">
+
+      <subtype Name="Key" DisplayName="DisplayText">
+
+        <extrainfo>
+
+    <subtype Name="Key" DisplayName="DisplayText">
+
+      <extrainfo>
+
+  <category Name="Key" DisplayName="DisplayText">
+
+    <subtype Name="Key" DisplayName="DisplayText">
+
+      <extrainfo>
+
+  <subtype Name="Key" DisplayName="DisplayText">
+
+    <extrainfo>
+
+-->
+<subtypes Lang="example" Encoding="utf-8">
+  <class ID="Castes" ChargenTitle="▶choose caste">
+    <category Name="Ekuemekiyye" DisplayName="▶{{G|The Toxic Arboreta of Ekuemekiyye, the Holy City}}">
+      <subtype Name="Horticulturist" DisplayName="▶Horticulturist" />
+      <subtype Name="Priest of All Suns" DisplayName="▶Priest of All Suns" />
+      <subtype Name="Priest of All Moons" DisplayName="▶Priest of All Moons" />
+      <subtype Name="Syzygyrior" DisplayName="▶Syzygyrior" />
+    </category>
+    <category Name="Ibul" DisplayName="▶{{C|The Ice-Sheathed Arcology of Ibul}}">
+      <subtype Name="Artifex" DisplayName="▶Artifex" />
+      <subtype Name="Consul" DisplayName="▶Consul" />
+      <subtype Name="Praetorian" DisplayName="▶Praetorian" />
+      <subtype Name="Eunuch" DisplayName="▶Eunuch" />
+    </category>
+    <category Name="Yawningmoon" DisplayName="▶{{R|The Crustal Mortars of Yawningmoon}}">
+      <subtype Name="Child of the Hearth" DisplayName="▶Child of the Hearth" />
+      <subtype Name="Child of the Wheel" DisplayName="▶Child of the Wheel" />
+      <subtype Name="Child of the Deep" DisplayName="▶Child of the Deep" />
+      <subtype Name="Fuming God-Child" DisplayName="▶Fuming God-Child" />
+    </category>
+  </class>
+  <class ID="Callings" ChargenTitle="▶choose calling">
+    <subtype Name="Apostle" DisplayName="▶Apostle" />
+    <subtype Name="Arconaut" DisplayName="▶Arconaut">
+      <!--(Strings.appendix)
+string Context="subtype.Arconaut.extrainfo" ID="Starts with random junk and artifacts"
+-->
+    </subtype>
+    <subtype Name="Greybeard" DisplayName="▶Greybeard" />
+    <subtype Name="Gunslinger" DisplayName="▶Gunslinger" />
+    <subtype Name="Marauder" DisplayName="▶Marauder" />
+    <subtype Name="Pilgrim" DisplayName="▶Pilgrim" />
+    <subtype Name="Nomad" DisplayName="▶Nomad">
+      <!--(Strings.appendix)
+string Context="subtype.Nomad.extrainfo" ID="Starts with a {{B|recycling suit}}"
+-->
+    </subtype>
+    <subtype Name="Scholar" DisplayName="▶Scholar" />
+    <subtype Name="Tinker" DisplayName="▶Tinker">
+      <!--(Strings.appendix)
+string Context="subtype.Tinker.extrainfo" ID="Begins with a number of random artifacts and scrap"
+-->
+    </subtype>
+    <subtype Name="Warden" DisplayName="▶Warden" />
+    <subtype Name="Water Merchant" DisplayName="▶Water Merchant">
+      <!--(Strings.appendix)
+string Context="subtype.Water Merchant.extrainfo" ID="Allowed entrance to many settlements for purposes of trade"
+-->
+      <!--(Strings.appendix)
+string Context="subtype.Water Merchant.extrainfo" ID="Starts with trade goods"
+-->
+    </subtype>
+    <subtype Name="Watervine Farmer" DisplayName="▶Watervine Farmer">
+      <!--(Strings.appendix)
+string Context="subtype.Watervine Farmer.extrainfo" ID="Starts with random cooking ingredients"
+-->
+    </subtype>
+  </class>
+</subtypes>

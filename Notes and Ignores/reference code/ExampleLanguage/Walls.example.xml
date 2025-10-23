@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.3
+Caves of Qud - Generated Localizable XML 2.0.212.4
 
 <objects>
 
@@ -26,21 +26,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
     <tag Name="HeroNameTitleClientele" Value="▶Builders,Cowards,Defenders,Roofs,the Assailed,the Stalwart" />
     <xtagTextFragments Skin="▶texture" PoeticFeatures="▶towering nature,gentle stillness,comforting enclosure" />
     <tag Name="NamingTag" Value="▶Animated" />
-  </object>
-  <object Name="BaseWallCircuit" Load="Merge">
-    <tag Name="Mods" Value="▶TechWallMods" />
-  </object>
-  <object Name="BaseWallCyber" Load="Merge">
-    <tag Name="Mods" Value="▶TechWallMods" />
-  </object>
-  <object Name="BaseWallMetal" Load="Merge">
-    <tag Name="Mods" Value="▶TechWallMods" />
-  </object>
-  <object Name="BaseWallTubing" Load="Merge">
-    <tag Name="Mods" Value="▶TechWallMods" />
-  </object>
-  <object Name="BaseWallSecure" Load="Merge">
-    <tag Name="Mods" Value="▶TechWallMods" />
   </object>
   <object Name="BaseMushroomWall" Load="Merge">
     <part Name="Render" DisplayName="▶mushroom flesh" />
@@ -184,7 +169,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Fulcrete" Load="Merge">
     <part Name="Render" DisplayName="▶fulcrete" />
     <part Name="Description" Short="▶Islands of carbon gravel populate an ocean of bitumen and rise from the horizontal plane toward the emptiness of the air-rasp. Time and pressure have laid hair-line trenches along the basin." />
-    <tag Name="Mods" Value="▶TechWallMods" />
     <xtagGrammar massNoun="▶true" />
   </object>
   <object Name="EbonFulcrete" Load="Merge">
@@ -194,7 +178,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="MetalWall" Load="Merge">
     <part Name="Render" DisplayName="▶metal wall" />
     <part Name="Description" Short="▶Sheet metal is locked in diamond pattern and welded to enclose. The surface is scorched and scratched in sections." />
-    <tag Name="Mods" Value="▶TechWallMods" />
   </object>
   <object Name="RustedMetalWall" Load="Merge">
     <part Name="Render" DisplayName="▶rusted metal wall" />
@@ -203,7 +186,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="CrysteelPlatedWall" Load="Merge">
     <part Name="Render" DisplayName="▶crysteel plate shear wall" />
     <part Name="Description" Short="▶Longwise infill plates of burnished crysteel are girdered by fulcrete beams. Life sounds echo through their empty spaces." />
-    <tag Name="Mods" Value="▶TechWallMods" />
   </object>
   <object Name="Foamcrete" Load="Merge">
     <part Name="Render" DisplayName="▶foamcrete" />
@@ -213,13 +195,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   <object Name="Verdigris" Load="Merge">
     <part Name="Render" DisplayName="▶tarnished chrome" />
     <part Name="Description" Short="▶The poison aqua moss brightens the metal form and attracts brass-drunk bugs." />
-    <tag Name="Mods" Value="▶TechWallMods" />
     <xtagGrammar massNoun="▶true" />
   </object>
   <object Name="Concrete" Load="Merge">
     <part Name="Render" DisplayName="▶concrete wall" />
     <part Name="Description" Short="▶Smooth grey stone hides its bonded pebbly innards and cement blood-paste. It's streaked with dirt." />
-    <tag Name="Mods" Value="▶TechWallMods" />
   </object>
   <object Name="PigskinWall" Load="Merge">
     <part Name="Render" DisplayName="▶pigskin wall" />
@@ -653,7 +633,20 @@ Caves of Qud - Generated Localizable XML 2.0.212.3
   </object>
   <object Name="CryochamberPlaque" Load="Merge">
     <part Name="Render" DisplayName="▶chrome plaque" />
+    <part Name="Chat" Says="▶CHAMBER UNOCCUPIED: AWAITING SPECIMEN" />
     <part Name="Description" Short="▶The shining surface of quickchrome swims in shifting refraction patterns. As its light is focused, glyphs begin to appear." />
+  </object>
+  <object Name="CryochamberPlaqueSpider" Load="Merge">
+    <part Name="Chat" Says="▶SPECIMEN: PHASE SPIDER" />
+  </object>
+  <object Name="CryochamberPlaqueRhinox" Load="Merge">
+    <part Name="Chat" Says="▶SPECIMEN: RHINOX" />
+  </object>
+  <object Name="CryochamberPlaqueSkybear" Load="Merge">
+    <part Name="Chat" Says="▶SPECIMEN: SAAD AMUS, THE SKY-BEAR, CHAMPION OF SALUM" />
+  </object>
+  <object Name="CryochamberPlaqueYempris" Load="Merge">
+    <part Name="Chat" Says="▶SPECIMEN: YEMPURIS PHI" />
   </object>
   <object Name="GritGate Mainframe Tape Drive" Load="Merge">
     <part Name="Render" DisplayName="▶vacuum column tape drive" />

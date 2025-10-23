@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Caves of Qud - Generated Localizable XML 2.0.212.4
+
+<skills>
+
+  <skill Name="Key" DisplayName="DisplayText" Description="DisplayText" Snippet="DisplayText">
+
+    <power Name="Key" DisplayName="DisplayText" Description="DisplayText" Snippet="DisplayText">
+
+-->
+<skills Lang="example" Encoding="utf-8">
+  <skill Name="Acrobatics" DisplayName="▶Acrobatics" Description="▶You are skilled at acrobatics." Snippet="▶acrobatics">
+    <power Name="Swift Reflexes" DisplayName="▶Swift Reflexes" Description="▶You gain a +5 bonus to your DV when flinching away from missile attacks." Snippet="▶reacting swiftly" />
+    <power Name="Spry" DisplayName="▶Spry" Description="▶You gain a +2 bonus to your DV." Snippet="▶being spry" />
+    <power Name="Jump" DisplayName="▶Jump" Description="▶You jump into an unoccupied square within range 2. You cannot jump over a square occupied by a creature, unless you have an ability (such as flight) that augments your jump." Snippet="▶jumping" />
+    <power Name="Tumble" DisplayName="▶Tumble" Description="▶You gain a +1 bonus to your DV. Additionally, Juke's cooldown is reduced to 20." Snippet="▶tumbling" />
+  </skill>
+  <skill Name="Axe" DisplayName="▶Axe" Description="▶You are skilled with axes." Snippet="▶the axe">
+    <power Name="Axe Proficiency" DisplayName="▶Axe Proficiency" Description="▶You get +2 to hit with axes." Snippet="▶the axe" />
+    <power Name="Cleave" DisplayName="▶Cleave" Description="▶Whenever you hit an opponent with an axe, there's a 75% chance you cleave their armor, giving them a -1 penalty to their AV. This penalty can stack a number of times up to half your Str modifier, rounded up, +1 on a critical hit." Snippet="▶cleaving" />
+    <power Name="Charging Strike" DisplayName="▶Charging Strike" Description="▶When you charge with an axe and hit, if you cleave their armor, they get an additional -1 penalty to their AV. If you have Dismember, your chance to dismember when charging with an axe is doubled. When you charge with a cudgel and hit, you automatically daze your opponent." Snippet="▶charging and striking" />
+    <power Name="Dismember" DisplayName="▶Dismember" Description="▶Activated; cooldown 30. Axe attack. If you hit and penetrate, you dismember one of their limbs at random and they start bleeding (1-2 damage per turn. toughness save; difficulty 35). Additionally, your axe attacks that penetrate have a percentage chance to dismember: 3% for one-handed axes and 6% for two-handed axes." Snippet="▶dismembering" />
+    <power Name="Hook and Drag" DisplayName="▶Hook and Drag" Description="▶Activated; cooldown 50. You grab an opponent's limb with the heel of your axe. If successful, you pull your opponent with you as you move and make a free attack with your axe. Your opponent gets a chance to resist the move (strength save; difficulty 20 + your Str modifier) and a chance to break free at the start of their turn (same save). Lasts for 9 rounds or until you dismember the opponent." Snippet="▶hooking and dragging" />
+    <power Name="Decapitate" DisplayName="▶Decapitate" Description="▶Heads are added to the list of possible limbs you can dismember. Chopping off the only head of a creature kills them instantly. If the creature has multiple heads, they start bleeding profusely (2-3 damage per turn. toughness save; difficulty 35)." Snippet="▶decapitating" />
+    <power Name="Berserk!" DisplayName="▶Berserk!" Description="▶Activated; cooldown 100.&#xA;You enter a blood frenzy, and for 5 rounds your chance to dismember with axe attacks is 100%. To use Berserk, Dismember must be off cooldown, and using Berserk puts Dismember on cooldown." Snippet="▶going berserk" />
+  </skill>
+  <skill Name="Bow and Rifle" DisplayName="▶Bow and Rifle" Description="▶You are skilled with bows and rifles." Snippet="▶the bow and the rifle">
+    <power Name="Steady Hands" DisplayName="▶Steady Hands" Description="▶For the purpose of determining your accuracy with bows and rifles, your agility is treated as if it were 4 points higher." Snippet="▶the bow and the rifle" />
+    <power Name="Draw a Bead" DisplayName="▶Draw a Bead" Description="▶You spend a turn to draw a bead on a target and mark it. Whenever you fire at a marked target with a bow or rifle, your agility is treated as if it were 2 points higher for the purpose of determining your accuracy. You may only mark one target at a time. Targets get unmarked if you lose vision of them." Snippet="▶drawing a bead" />
+    <power Name="Suppressive Fire" DisplayName="▶Suppressive Fire" Description="▶You fire at a marked target. If your shot penetrates, your target is suppressed and can't move for 3-5 rounds. Then your target is unmarked." Snippet="▶suppressive fire" />
+    <power Name="Flattening Fire" DisplayName="▶Flattening Fire" Description="▶As long as your target is surrounded by 6 or more solid obstacles, Suppressive Fire is upgraded to Flattening Fire. Flattening Fire also knocks your target prone and disarms them." Snippet="▶flattening fire" />
+    <power Name="Wounding Fire" DisplayName="▶Wounding Fire" Description="▶You fire at a marked target. For each penetration on each shot that hits, your target bleeds 1 point of damage per round (save: 20 + max damage of the weapon). Then your target is unmarked." Snippet="▶wounding fire" />
+    <power Name="Disorienting Fire" DisplayName="▶Disorienting Fire" Description="▶As long as your target can't see or hear any faction allies, Wounding Fire is upgraded to Disorienting Fire. Disorienting Fire also reduces your target's DV and MA by 4." Snippet="▶disorienting fire" />
+    <power Name="Sure Fire" DisplayName="▶Sure Fire" Description="▶You fire at a marked target with no accuracy penalty (the accuracy of your weapon still matters). Then your target is unmarked." Snippet="▶sure fire" />
+    <power Name="Beacon Fire" DisplayName="▶Beacon Fire" Description="▶As long as your target is flaming, luminous, or phosphorescent, Sure Fire is upgraded to Beacon Fire. Beacon Fire shots are also treated as critical hits." Snippet="▶beacon fire" />
+    <power Name="Ultra Fire" DisplayName="▶Ultra Fire" Description="▶Cooldown 100. You fire at a marked target. Your shot combines the effects of all the other Fire powers you have." Snippet="▶ultra fire" />
+  </skill>
+  <skill Name="Cooking and Gathering" DisplayName="▶Cooking and Gathering" Description="▶You are skilled at cooking and gathering meal ingredients." Snippet="▶cooking and gathering">
+    <power Name="Meal Preparation" DisplayName="▶Meal Preparation" Description="▶While at a campfire, you can cook from recipes, choose up to two ingredients to cook with, and preserve fresh foods.&#xA;Meals cooked from recipes bestow special status effects. Meals cooked with selected ingredients bestow dynamically-generated status effects.&#xA;Preserved foods are used as meal ingredients." Snippet="▶meal preparation" />
+    <power Name="Harvestry" DisplayName="▶Harvestry" Description="▶You can harvest fresh ingredients and other usable parts from plants." Snippet="▶harvestry" />
+    <power Name="Butchery" DisplayName="▶Butchery" Description="▶You can butcher fresh ingredients and other usable parts from animal corpses." Snippet="▶butchery" />
+    <power Name="Spicer" DisplayName="▶Spicer" Description="▶When you choose ingredients to cook with, you can choose up to three instead of two. Meals cooked with three ingredients bestow more powerful status effects." Snippet="▶spicing" />
+    <power Name="Carbide Chef" DisplayName="▶Carbide Chef" Description="▶Whenever you gain a level, and 5% of the time you explore a new map, you become inspired for two days. While inspired, the next time you cook a meal by choosing ingredients, you get a choice of three dynamically-generated effects to apply. You create a recipe for the chosen effect." Snippet="▶the carbide chef" />
+  </skill>
+  <skill Name="Cudgel" DisplayName="▶Cudgel" Description="▶You are skilled with crushing and bludgeoning weapons." Snippet="▶the cudgel">
+    <power Name="Cudgel Proficiency" DisplayName="▶Cudgel Proficiency" Description="▶You get +2 to hit with cudgels." Snippet="▶the cudgel" />
+    <power Name="Bludgeon" DisplayName="▶Bludgeon" Description="▶Whenever you hit with a cudgel, there's a 50% chance to daze your opponent (-4 int, -4 agi, -10 movespeed) for 3-4 rounds. If you daze a dazed opponent, they're stunned for 1 round instead (cannot take actions and 0 DV)." Snippet="▶bludgeoning" />
+    <power Name="Charging Strike" DisplayName="▶Charging Strike" Description="▶When you charge with a cudgel and hit, you automatically daze your opponent. When you charge with an axe and hit, if you cleave their armor, they get an additional -1 penalty to their AV. If you have Dismember, your chance to dismember when charging with an axe is doubled." Snippet="▶charging and striking" />
+    <power Name="Conk" DisplayName="▶Conk" Description="▶Activated; cooldown 10.&#xA;You make an attack with a cudgel at an adjacent opponent. If you hit, you automatically daze them for 3-4 rounds. Dazing a dazed opponent stuns them. Conking a stunned opponent instead knocks them unconscious for 30-40 rounds (unconscious opponents wake up dazed when they take damage)." Snippet="▶conking" />
+    <power Name="Backswing" DisplayName="▶Backswing" Description="▶Whenever you make a cudgel attack with your primary hand, there's a 25% chance you make an additional free attack with the same hand." Snippet="▶the backswing" />
+    <power Name="Slam" DisplayName="▶Slam" Description="▶Activated; cooldown 50. You make an attack with a cudgel at an adjacent opponent with +1 to your penetration roll. If you hit, you slam your opponent backwards up to 3 spaces, pushing other creatures and breaking through walls if their AVs are less than 5 times your Strength modifier. Opponents who get pushed are stunned for 1 round plus an additional round for each space pushed. Opponents who are pushed through or against walls take extra weapon damage for each wall. Gigantic opponents don't get pushed but are still stunned for 1 round. Destroys a wall or door if its AV is under 5 times your Strength modifier." Snippet="▶slamming" />
+    <power Name="Demolish" DisplayName="▶Demolish" Description="▶Activated; cooldown 100.&#xA;For the next 5 rounds, your chance to daze with cudgel attacks is 100% and Slam has no cooldown. To use Demolish, Slam must be off cooldown, and using Demolish puts Slam on cooldown." Snippet="▶demolishing" />
+  </skill>
+  <skill Name="Customs and Folklore" DisplayName="▶Customs and Folklore" Description="▶You are familiar with the customs and folklore of Qud." Snippet="▶customs and folklore">
+    <power Name="Tactful" DisplayName="▶Tactful" Description="▶Whenever you begin the water ritual with a new creature, you gain 25 bonus reputation. If you purchase this power after you treat with a creature, you gain 25 bonus reputation the next time you treat with them." Snippet="▶being tactful" />
+    <power Name="Trash Divining" DisplayName="▶Trash Divining" Description="▶Whenever you rifle through trash, there's a 5% chance you piece together clues and learn a random secret." Snippet="▶trash divining" />
+  </skill>
+  <skill Name="Single Weapon Fighting" DisplayName="▶Single Weapon Fighting" Description="▶You may choose not to make offhand attacks in exchange for mastery with a single weapon." Snippet="▶single weapon fighting">
+    <power Name="Opportune Attacks" DisplayName="▶Opportune Attacks" Description="▶Whenever you score a critical hit with a melee weapon while single-weapon fighting, the cooldowns of up to two random weapon or shield skills are immediately refreshed." Snippet="▶opportune attacks" />
+    <power Name="Weapon Expertise" DisplayName="▶Weapon Expertise" Description="▶Whenever you make a melee attack while single-weapon fighting, there's a 50% chance you immediately make a second attack for free." Snippet="▶single weapon expertise" />
+    <power Name="Penetrating Strikes" DisplayName="▶Penetrating Strikes" Description="▶While single-weapon fighting, your melee attacks always penetrate one extra time." Snippet="▶penetrating strikes" />
+    <power Name="Weapon Mastery" DisplayName="▶Weapon Mastery" Description="▶Whenever you make a melee attack while single-weapon fighting, immediately make a second attack for free." Snippet="▶single weapon mastery" />
+  </skill>
+  <skill Name="Multiweapon Fighting" DisplayName="▶Multiweapon Fighting" Description="▶You are skilled at multiweapon fighting. Your chance to attack with offhand weapons is increased." Snippet="▶dual wielding">
+    <power Name="Flurry" DisplayName="▶Flurry" Description="▶Activated; cooldown 60. You make an attack with every weapon-wielding limb, including extra limbs granted by mutation or technology." Snippet="▶flurrying" />
+    <power Name="Multiweapon Proficiency" DisplayName="▶Multiweapon Proficiency" Description="▶Your chance to strike with each of your offhand weapons is increased by 20%." Snippet="▶striking with the offhand" />
+    <power Name="Multiweapon Expertise" DisplayName="▶Multiweapon Expertise" Description="▶Your chance to strike with each of your offhand weapons is increased by 35%." Snippet="▶ambidexterity" />
+    <power Name="Multiweapon Mastery" DisplayName="▶Multiweapon Mastery" Description="▶Your chance to strike with each of your offhand weapons is increased by 50%." Snippet="▶multiweapon fighting" />
+  </skill>
+  <skill Name="Endurance" DisplayName="▶Endurance" Description="▶You are skilled at enduring harsh conditions and situations." Snippet="▶endurance">
+    <power Name="Shake It Off" DisplayName="▶Shake It Off" Description="▶Each round you are dazed or stunned, you have a (Toughness-10)% chance to shake off the effect. You also take 25% less damage from poison." Snippet="▶shaking it off" />
+    <power Name="Swimming" DisplayName="▶Swimming" Description="▶Reduces the movement speed penalty when swimming (normally 50 points) by 25 points." Snippet="▶swimming" />
+    <power Name="Poison Tolerance" DisplayName="▶Poison Tolerance" Description="▶You take 25% less damage from poison." Snippet="▶poison tolerance" />
+    <power Name="Weathered" DisplayName="▶Weathered" Description="▶You take 15% less damage from heating and cooling effects. Additionally, the severities of effects that change your temperature are reduced by 15%." Snippet="▶weathering" />
+    <power Name="Juicer" DisplayName="▶Juicer" Description="▶You may ingest one additional tonic without it reacting adversely to the tonic you have already ingested." Snippet="▶juicing" />
+    <power Name="Calloused" DisplayName="▶Calloused" Description="▶Your natural AV improves to 1." Snippet="▶being calloused" />
+    <power Name="Longstrider" DisplayName="▶Longstrider" Description="▶You may sprint for an additional 10 turns." Snippet="▶longstriding" />
+  </skill>
+  <skill Name="Physic" DisplayName="▶Physic" Description="▶You are skilled at physicking." Snippet="▶physic">
+    <power Name="Staunch Wounds" DisplayName="▶Staunch Wounds" Description="▶Bandages you apply are much more effective at stopping bleeding." Snippet="▶staunching wounds" />
+    <power Name="Nostrums" DisplayName="▶Nostrums" Description="▶You can treat bleeding, poison, illness, and disease onset for you and your companions at a campfire." Snippet="▶brewing nostrums" />
+    <power Name="Amputate Limb" DisplayName="▶Amputate Limb" Description="▶You can voluntarily amputate your own limbs and the limbs of infected companions." Snippet="▶amputating limbs" />
+    <power Name="Apothecary" DisplayName="▶Apothecary" Description="▶Healing tonics you apply last an extra round." Snippet="▶administering healing" />
+  </skill>
+  <skill Name="Heavy Weapon" DisplayName="▶Heavy Weapon" Description="▶You are skilled with heavy weapons." Snippet="▶heavy weapons">
+    <power Name="Strapping Shoulders" DisplayName="▶Strapping Shoulders" Description="▶You shoulder your weapons more effectively. Heavy weapons count for half their weight toward your encumbrance." Snippet="▶the strapping shoulder" />
+    <power Name="Tank" DisplayName="▶Tank" Description="▶You suffer no movement penalty while wielding a heavy weapon." Snippet="▶tanking" />
+    <power Name="Sweep" DisplayName="▶Sweep" Description="▶You fire 5 shots with your heavy weapon, sweeping over a 90 degree cone. Your heavy weapon is reloaded before each shot." Snippet="▶sweeping a gun back and forth" />
+  </skill>
+  <skill Name="Long Blade" DisplayName="▶Long Blade" Description="▶You are skilled with long thrusting and slashing blades." Snippet="▶the long blade">
+    <power Name="Long Blade Proficiency" DisplayName="▶Long Blade Proficiency" Description="▶You gain access to two stances.&#xA;Aggressive stance: With a long blade in your primary hand, your long blade and short blade attacks gain +1 to your penetration roll but -2 to hit.&#xA;Defensive stance: While wielding a long blade in your primary hand, you gain +2 DV." Snippet="▶the long blade" />
+    <power Name="Lunge" DisplayName="▶Lunge" Description="▶Activated; cooldown 15.&#xA;Aggressive stance: Lunge through an empty space at an opponent and attack with +2 to your penetration roll. You must move through the empty space.&#xA;Defensive stance: Attack an opponent then lunge backward 2 spaces.&#xA;Dueling stance: Attack an opponent with +1 to your penetration roll. The attack is guaranteed to hit and penetrate at least once." Snippet="▶lunging" />
+    <power Name="Swipe" DisplayName="▶Swipe" Description="▶Activated; cooldown 15.&#xA;Aggressive stance: Make an attack against all adjacent opponents.&#xA;Defensive stance: Push all adjacent creatures back 1 space and attempt to trip opponents (strength/agility save; difficulty 30).&#xA;Dueling stance: Attack an opponent and attempt to disarm them (strength save; difficulty 25 + your Agi modifier). The attack is guaranteed to hit and penetrate at least once." Snippet="▶swiping" />
+    <power Name="Dueling Stance" DisplayName="▶Dueling Stance" Description="▶You gain access to dueling stance. While wielding a long blade in your primary hand, you get +2 to hit with long blades and short blades." Snippet="▶dueling stance" />
+    <power Name="Improved Aggressive Stance" DisplayName="▶Improved Aggressive Stance" Description="▶Your penetration bonus in aggressive stance is increased to +2, but your to-hit penalty is increased to -3." Snippet="▶improved aggressive stance" />
+    <power Name="Improved Defensive Stance" DisplayName="▶Improved Defensive Stance" Description="▶Your DV bonus in defensive stance is increased to +3." Snippet="▶improved defensive stance" />
+    <power Name="Improved Dueling Stance" DisplayName="▶Improved Dueling Stance" Description="▶Your to-hit bonus in dueling stance is increased to +3." Snippet="▶improved dueling stance" />
+    <power Name="En Garde!" DisplayName="▶En Garde!" Description="▶Activated; cooldown 100. For the next 10 rounds, Lunge and Swipe have no cooldown." Snippet="▶yelling 'en garde!'" />
+  </skill>
+  <skill Name="Persuasion" DisplayName="▶Persuasion" Description="▶You are skilled at convincing others." Snippet="▶persuasion">
+    <power Name="Menacing Stare" DisplayName="▶Menacing Stare" Description="▶You stare down a nearby opponent and send them fleeing in terror." Snippet="▶the menacing stare" />
+    <power Name="Intimidate" DisplayName="▶Intimidate" Description="▶Cooldown 50. You try to terrify adjacent, hostile creatures (1d8 + [Ego modifier] penetration roll vs. MA). On success, a frightened creature flees from you for 6d4 rounds." Snippet="▶intimidating" />
+    <power Name="Berate" DisplayName="▶Berate" Description="▶Cooldown 50. You shame a nearby creature for 6d6 rounds, giving it a -4 penalty to DV, to-hit, Ego, Willpower and a -10% penalty to quickness." Snippet="▶berating" />
+    <power Name="Snake Oiler" DisplayName="▶Snake Oiler" Description="▶For purposes of bartering, your ego is treated as though it were 4 points higher." Snippet="▶hustling" />
+    <power Name="Proselytize" DisplayName="▶Proselytize" Description="▶You persuade an intelligent creature to join you." Snippet="▶proselytizing" />
+    <power Name="Inspiring Presence" DisplayName="▶Inspiring Presence" Description="▶Your words embolden your companions." Snippet="▶being inspiring" />
+  </skill>
+  <skill Name="Pistol" DisplayName="▶Pistol" Description="▶You are skilled with pistols of various kinds." Snippet="▶the pistol">
+    <power Name="Steady Hand" DisplayName="▶Steady Hand" Description="▶For purposes of determining your accuracy with pistols, your agility is treated as if it were 4 points higher." Snippet="▶the pistol" />
+    <power Name="Akimbo" DisplayName="▶Akimbo" Description="▶Whenever you make a ranged attack while wielding multiple guns, you fire a shot with each of them." Snippet="▶akimbo" />
+    <power Name="Weak Spotter" DisplayName="▶Weak Spotter" Description="▶You are 5% more likely to score critical hits with pistols (standard chance is 5%)." Snippet="▶spotting weakness" />
+    <power Name="Sling and Run" DisplayName="▶Sling and Run" Description="▶You receive no accuracy penalties for firing pistols while running." Snippet="▶slinging and running" />
+    <power Name="Disarming Shot" DisplayName="▶Disarming Shot" Description="▶You have an agility-based chance to disarm your opponent when you score a hit with a pistol." Snippet="▶disarming with a gun" />
+    <power Name="Dead Shot" DisplayName="▶Dead Shot" Description="▶Critical hits you score with pistols are more deadly." Snippet="▶critical aim" />
+    <power Name="Empty the Clips" DisplayName="▶Empty the Clips" Description="▶Cooldown 200. For 20 rounds, firing a pistol only takes half a round instead of a full round." Snippet="▶emptying the clips" />
+    <power Name="Fastest Gun in the Rust" DisplayName="▶Fastest Gun in the Rust" Description="▶The action cost of firing pistols is reduced by 25%." Snippet="▶the lightning-quick draw" />
+  </skill>
+  <skill Name="Self-discipline" DisplayName="▶Self-discipline" Description="▶You are skilled at maintaining self-discipline." Snippet="▶self-discipline">
+    <power Name="Meditate" DisplayName="▶Meditate" Description="▶While meditating, you regenerate three times as fast, and negative status effects wear out three times as fast. The only action you can take while meditating is Wait. You stop meditating if you take damage in a single round exceeding (Willpower*3)-60. If you rest for 10 or more turns, you automatically begin meditating." Snippet="▶meditation" />
+    <power Name="Fasting Way" DisplayName="▶Fasting Way" Description="▶You hunger and thirst at one-half the normal rate.&#xA;Metabolic effects from meals last twice as long." Snippet="▶fasting" />
+    <power Name="Iron Mind" DisplayName="▶Iron Mind" Description="▶Each round you are confused, you have a (Willpower-10)% chance to shake off the effect." Snippet="▶the iron mind" />
+    <power Name="Lionheart" DisplayName="▶Lionheart" Description="▶Each round you are terrified, you have a (Willpower-10)% chance to shake off the effect." Snippet="▶the lionheart" />
+    <power Name="Conatus" DisplayName="▶Conatus" Description="▶You may sprint for an additional 10 turns." Snippet="▶conatus" />
+    <power Name="Mind over Body" DisplayName="▶Mind over Body" Description="▶You hunger and thirst at one-sixth rate.&#xA;Metabolic effects from meals last six times as long.&#xA;You suffer no penalty for becoming famished." Snippet="▶putting the mind over the body" />
+  </skill>
+  <skill Name="Shield" DisplayName="▶Shield" Description="▶You are skilled at wielding shields." Snippet="▶the shield">
+    <power Name="Block" DisplayName="▶Block" Description="▶As long as you wield a shield, there is a 50% chance you block one melee attack per round. When you block an attack, you add the shield's AV bonus to your AV for that attack. If you equip multiple shields, the one block per round limit is per shield, and you only can attempt to block a given attack once, using your best usable shield." Snippet="▶blocking" />
+    <power Name="Shield Slam" DisplayName="▶Shield Slam" Description="▶Activated; cooldown 40. You attempt to knock an opponent down and deal (Str modifier)d2 + your shield's AV bonus in damage. Your opponent gets a chance to resist (strength save; difficulty 20 + your Str modifier). Whenever you charge an opponent with a shield equipped, you get a free Shield Slam attack against them." Snippet="▶shield slamming" />
+    <power Name="Deft Blocking" DisplayName="▶Deft Blocking" Description="▶Your chance to block with a shield improves to 75%." Snippet="▶blocking deftly" />
+    <power Name="Swift Blocking" DisplayName="▶Swift Blocking" Description="▶You may block an additional attack per round per shield." Snippet="▶blocking swiftly" />
+    <power Name="Staggering Block" DisplayName="▶Staggering Block" Description="▶Whenever you block an opponent's attack, there is a (Strength*2)-35% chance that your opponent is stunned for 1d2 rounds." Snippet="▶staggering blocks" />
+    <power Name="Shield Wall" DisplayName="▶Shield Wall" Description="▶For the next three rounds, you automatically block all incoming melee attacks (may not be used with bucklers)." Snippet="▶forming a wall with your shield" />
+  </skill>
+  <skill Name="Short Blade" DisplayName="▶Short Blade" Description="▶You are skilled with small one-handed knives and blades." Snippet="▶the short blade">
+    <power Name="Short Blade Expertise" DisplayName="▶Short Blade Expertise" Description="▶You get +1 to hit with short blades. Also, the action costs of attacking with a short blade in your primary hand is reduced by 25%." Snippet="▶the short blade" />
+    <power Name="Bloodletter" DisplayName="▶Bloodletter" Description="▶Your short blade attacks that penetrate have a 75% chance to cause your opponent to bleed (0-1 damage per turn. toughness save; difficulty 20 + your Agi modifier). The opponent saves to stop bleeding each round, and the save difficulty decreases by 1 each round. This effect can stack a number of times equal to 1 plus your Agi modifier." Snippet="▶bloodletting" />
+    <power Name="Jab" DisplayName="▶Jab" Description="▶Whenever you make an offhand attack with a short blade, you immediately make another attack with that same weapon. Flurry attacks do not trigger this." Snippet="▶jabbing" />
+    <power Name="Hobble" DisplayName="▶Hobble" Description="▶You make an attack with a short blade in your primary hand, looking for a weak spot in your opponent's armor. If you hit, you penetrate exactly once and hobble them (-50% movespeed for 16-20 rounds)." Snippet="▶hobbling" />
+    <power Name="Pointed Circle" DisplayName="▶Pointed Circle" Description="▶Whenever you juke an opponent while wielding a short blade in your primary hand, you make a free attack. If you have Bloodletter, the attack's chance to cause bleeding is 100%." Snippet="▶the pointed circle" />
+    <power Name="Rejoinder" DisplayName="▶Rejoinder" Description="▶Once per turn, when an opponent misses you with a melee attack, there's a 40% chance you make a free attack with a short blade you're wielding." Snippet="▶rejoindering" />
+    <power Name="Shank" DisplayName="▶Shank" Description="▶Activated; cooldown 10 (primary) or 20 (offhand). You make a melee attack with a short blade in your primary hand (preferred) or offhand. If you hit, the attack gets +2 to penetration rolls for each negative status effect your opponent suffers from." Snippet="▶shanking" />
+  </skill>
+  <skill Name="Tactics" DisplayName="▶Tactics" Description="▶You are aware of basic combat tactics." Snippet="▶tactics">
+    <power Name="Hurdle" DisplayName="▶Hurdle" Description="▶You receive no penalty to your DV while sprinting and can jump without interrupting your sprint." Snippet="▶hurdling" />
+    <power Name="Deft Throwing" DisplayName="▶Deft Throwing" Description="▶Your throw range is increased by 3 and your throw variance is halved when throwing at a target inside your throw range." Snippet="▶throwing" />
+    <power Name="Charge" DisplayName="▶Charge" Description="▶You charge forward two or three squares and perform a melee attack with +1 to your penetration roll." Snippet="▶charging" />
+    <power Name="Kickback" DisplayName="▶Kickback" Description="▶Whenever you fire a missile weapon at a target in melee range, you attempt to kick the target backwards." Snippet="▶kicking back" />
+    <power Name="Juke" DisplayName="▶Juke" Description="▶Activated; cooldown 40. You move one square at no action cost. You may swap squares with a hostile opponent." Snippet="▶juking" />
+  </skill>
+  <skill Name="Tinkering" DisplayName="▶Tinkering" Description="▶You are skilled at examining, building, repairing and modding artifacts." Snippet="▶tinkering">
+    <power Name="Gadget Inspector" DisplayName="▶Gadget Inspector" Description="▶You are much more successful at examining artifacts, and you can deploy wiring." Snippet="▶inspecting gadgets" />
+    <power Name="Disassemble" DisplayName="▶Disassemble" Description="▶You can disassemble scrap and artifacts for bits. You get the most significant bit from the item schematic plus a 50% chance to receive each remaining bit." Snippet="▶disassembling" />
+    <power Name="Reverse Engineer" DisplayName="▶Reverse Engineer" Description="▶Whenever you disassemble an item, you have a 25% chance to learn how to build the item. If the item was modded, you also have a 15% chance per mod to learn the mod." Snippet="▶reverse engineering" />
+    <power Name="Scavenger" DisplayName="▶Scavenger" Description="▶Whenever you step over garbage, you astutely rifle through it and occasionally discover scrap. Additionally, you harvest extra scrap from robots you destroy." Snippet="▶scavenging" />
+    <power Name="Repair" DisplayName="▶Repair" Description="▶You may repair broken items with Bits." Snippet="▶repairing" />
+    <power Name="Deploy Turret" DisplayName="▶Deploy Turret" Description="▶You may deploy missile weapons as static turrets." Snippet="▶deploying turrets" />
+    <power Name="Lay Mine / Set Bomb" DisplayName="▶Lay Mine / Set Bomb" Description="▶You may lay down grenades as mines or set them as bombs." Snippet="▶laying mines and setting bombs" />
+    <power Name="Tinker I" DisplayName="▶Tinker I" Description="▶You may build items from low-tier schematics and you get 1 free schematic. You can also recharge energy cells and capacitors." Snippet="▶tinkering" />
+    <power Name="Tinker II" DisplayName="▶Tinker II" Description="▶You may build items from medium-tier schematics and you get 1 free schematic." Snippet="▶advanced tinkering" />
+    <power Name="Tinker III" DisplayName="▶Tinker III" Description="▶You may build items from high-tier schematics and you get 1 free schematic." Snippet="▶masterful tinkering" />
+  </skill>
+  <skill Name="Wayfaring" DisplayName="▶Wayfaring" Description="▶You are skilled at wilderness survival." Snippet="▶wayfaring">
+    <power Name="Make Camp" DisplayName="▶Make Camp" Description="▶Start a campfire for cooking meals and preserving foods." Snippet="▶making camp" />
+    <power Name="Mind's Compass" DisplayName="▶Mind's Compass" Description="▶Doubles the chance of regaining your bearings when you are lost.&#xA;Reduces chance of getting lost by about 15%.&#xA;You travel on the world map twice as quickly." Snippet="▶the mind's compass" />
+    <power Name="Wilderness Lore: Flower Fields" DisplayName="▶Wilderness Lore: Flower Fields" Description="▶Doubles the chance of interesting encounters while traveling through the flower fields on the world map.&#xA;Reduces the chance of getting lost in the flower fields from base 12% to 1%.&#xA;On the world map, you travel through the flower fields twice as quickly." Snippet="▶navigating the flower fields" />
+    <power Name="Wilderness Lore: Marshes" DisplayName="▶Wilderness Lore: Marshes" Description="▶Doubles the chance of interesting encounters while traveling through the salt marshes and watervine fields on the world map.&#xA;Reduces the chance of getting lost in the salt marshes and watervine fields from base 12% to 1%.&#xA;On the world map, you travel through the salt marshes and watervine fields twice as quickly." Snippet="▶navigating the marshes" />
+    <power Name="Wilderness Lore: Hills and Mountains" DisplayName="▶Wilderness Lore: Hills and Mountains" Description="▶Doubles the chance of interesting encounters while traveling through the hills and mountains on the world map.&#xA;Reduces the chance of getting lost in the hills and mountains from base 12% to 1%.&#xA;On the world map, you travel through the hills and mountains twice as quickly." Snippet="▶navigating the hills and mountains" />
+    <power Name="Wilderness Lore: Canyons" DisplayName="▶Wilderness Lore: Canyons" Description="▶Doubles the chance of interesting encounters while traveling through the desert canyons on the world map.&#xA;Reduces the chance of getting lost in the desert canyons from base 12% to 1%.&#xA;On the world map, you travel through the desert canyons twice as quickly." Snippet="▶navigating the desert canyons" />
+    <power Name="Wilderness Lore: Salt Dunes" DisplayName="▶Wilderness Lore: Salt Dunes" Description="▶Doubles the chance of interesting encounters while traveling through the salt dunes on the world map.&#xA;Reduces the chance of getting lost in the salt dunes from base 10% to 1%.&#xA;On the world map, you travel through the salt dunes twice as quickly." Snippet="▶navigating the salt desert" />
+    <power Name="Wilderness Lore: Jungles" DisplayName="▶Wilderness Lore: Jungles" Description="▶Doubles the chance of interesting encounters while traveling through the jungles on the world map.&#xA;Reduces the chance of getting lost in the jungles from base 12% to 1%.&#xA;On the world map, you travel through the jungles twice as quickly." Snippet="▶navigating the jungles" />
+    <power Name="Wilderness Lore: Rivers and Lakes" DisplayName="▶Wilderness Lore: Rivers and Lakes" Description="▶Doubles the chance of interesting encounters while traveling across rivers and lakes on the world map.&#xA;Reduces the chance of getting lost in rivers and lakes from base 12% to 1%.&#xA;On the world map, you travel across rivers and lakes twice as quickly." Snippet="▶navigating the rivers and lakes" />
+    <power Name="Wilderness Lore: Ruins" DisplayName="▶Wilderness Lore: Ruins" Description="▶Doubles the chance of interesting encounters while traveling through chrome ruins on the world map.&#xA;Reduces the chance of getting lost in ruins from base 12% to 1%.&#xA;On the world map, you travel through ruins twice as quickly." Snippet="▶navigating ruins" />
+  </skill>
+  <skill Name="Nonlinearity" DisplayName="▶Nonlinearity" Description="▶You extend." Snippet="▶nonlinearity">
+    <power Name="Tomorrowful" DisplayName="▶Tomorrowful" Description="▶Your precognitive visions last twice as long." Snippet="▶experiencing tomorrow today" />
+  </skill>
+</skills>
