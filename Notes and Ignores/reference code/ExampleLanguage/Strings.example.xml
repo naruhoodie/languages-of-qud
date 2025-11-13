@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud code extracted string table. 2.0.212.4
+Caves of Qud code extracted string table. 2.0.212.6
 
 Comments should be deleted when copied to a new translation table, but are provided to
 help find the usage of the string in the base source code.
@@ -362,6 +362,8 @@ Assets/XRL Application/Game Core/EmbarkBuilder/EmbarkBuilderModuleWindowBase.cs:
   <string ID="select">▶select</string>
   <!--Code references _S(): Assets/Game/UI/View Prefabs/MainMenu/MainMenu.cs:441-->
   <string ID="quit">▶quit</string>
+  <!--Code references _T(): Assets/Game/UI/View Prefabs/StatusScreens/Character/CharacterStatusScreen.cs:362-->
+  <string Context="CharacterStatusScreen Statistic HelpText BaseValue" ID="Your base =statName= is =statValue=.">▶Your base =statName= is =statValue=.</string>
   <!--Code references _S(): Assets/Game/UI/View Prefabs/StatusScreens/Quests/QuestsLine.cs:145-->
   <string Context="Quest UI No Active Quests Title" ID="You have no active quests.">▶You have no active quests.</string>
   <!--Code references _S(): Assets/Game/UI/View Prefabs/StatusScreens/Quests/QuestsLine.cs:168-->
@@ -1382,11 +1384,11 @@ Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudCyberneticsModuleWindow.cs
   <string ID="Adding player to world...">▶Adding player to world...</string>
   <!--Code references _S(): Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudGameBootModule.cs:349-->
   <string ID="Starting game!">▶Starting game!</string>
-  <!--Code references _S(): Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudGamemodeModule.cs:24-->
+  <!--Code references _S(): Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudGamemodeModule.cs:25-->
   <string ID="No game mode selected.">▶No game mode selected.</string>
-  <!--Code references _S(): Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudGamemodeModule.cs:134-->
+  <!--Code references _S(): Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudGamemodeModule.cs:135-->
   <string ID="Start a new game with one button.">▶Start a new game with one button.</string>
-  <!--Code references _S(): Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudGamemodeModule.cs:139-->
+  <!--Code references _S(): Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudGamemodeModule.cs:140-->
   <string ID="Quickstart">▶Quickstart</string>
   <!--Code references _S(): Assets/XRL Application/Game Core/EmbarkBuilder/Qud/QudGamemodeModuleWindow.cs:46-->
   <string ID="Choose Game Mode">▶Choose Game Mode</string>
@@ -1557,6 +1559,28 @@ Assets/XRL Application/World/Game Objects/Capabilities/AutoAct.cs:371
   <string Context="direction.short" ID="here">▶here</string>
   <!--Code references _S(): Assets/XRL Application/Game Core/Rules/Directions.cs:236-->
   <string Context="direction.short" ID="somewhere">▶somewhere</string>
+  <!--Code references _S(): Assets/XRL Application/Game Core/Rules/Strings.cs:166-->
+  <string Context="Strings Bad Wound" ID="{{r|Badly Wounded}}">▶{{r|Badly Wounded}}</string>
+  <!--Code references _S(): Assets/XRL Application/Game Core/Rules/Strings.cs:171-->
+  <string Context="Strings Wounded" ID="{{R|Wounded}}">▶{{R|Wounded}}</string>
+  <!--Code references _S(): Assets/XRL Application/Game Core/Rules/Strings.cs:176-->
+  <string Context="Strings Injured" ID="{{W|Injured}}">▶{{W|Injured}}</string>
+  <!--Code references _S(): Assets/XRL Application/Game Core/Rules/Strings.cs:181-->
+  <string Context="Strings Fine" ID="{{G|Fine}}">▶{{G|Fine}}</string>
+  <!--Code references _S(): Assets/XRL Application/Game Core/Rules/Strings.cs:185-->
+  <string Context="Strings Perfect" ID="{{Y|Perfect}}">▶{{Y|Perfect}}</string>
+  <!--Code references _S(): Assets/XRL Application/Game Core/Rules/Strings.cs:192-->
+  <string Context="Strings NonOrganic Badly Damaged" ID="{{r|Badly Damaged}}">▶{{r|Badly Damaged}}</string>
+  <!--Code references _S(): Assets/XRL Application/Game Core/Rules/Strings.cs:197-->
+  <string Context="Strings NonOrganic Damaged" ID="{{R|Damaged}}">▶{{R|Damaged}}</string>
+  <!--Code references _S(): Assets/XRL Application/Game Core/Rules/Strings.cs:202-->
+  <string Context="Strings NonOrganic Lightly" ID="{{W|Lightly Damaged}}">▶{{W|Lightly Damaged}}</string>
+  <!--Code references _S(): Assets/XRL Application/Game Core/Rules/Strings.cs:207-->
+  <string Context="Strings NonOrganic Fine" ID="{{G|Fine}}">▶{{G|Fine}}</string>
+  <!--Code references _S(): Assets/XRL Application/Game Core/Rules/Strings.cs:211-->
+  <string Context="Strings NonOrganic Perfect" ID="{{Y|Perfect}}">▶{{Y|Perfect}}</string>
+  <!--Code references _S(): Assets/XRL Application/Game Core/Rules/Strings.cs:217-->
+  <string Context="Strings NonOrganic Nohitpoints" ID="Undamaged">▶Undamaged</string>
   <!--Code references _T(): Assets/XRL Application/Game Core/Systems/PsychicHunterSystem.cs:153-->
   <string Context="PsychicHunterSystem Hunter Naming Position" ID="Ptoh's =spice:seekers.title.!random=">▶Ptoh's =spice:seekers.title.!random=</string>
   <!--Code references _S(): Assets/XRL Application/Game Core/Systems/PsychicHunterSystem.cs:188-->
@@ -1583,27 +1607,27 @@ Assets/XRL Application/World/Game Objects/Capabilities/AutoAct.cs:371
   <string Context="PsychicHunterSystem Extradimensional Cult Naming Title" ID="esper from the =cultName=" OrderAdjust="-5">▶esper from the =cultName=</string>
   <!--Code references _T(): Assets/XRL Application/Game Core/Systems/PsychicHunterSystem.cs:750-->
   <string Context="PsychicHunterSystem Sense Presence Message" ID="=subject.Does:sense= =number.pluralize:a psychic presence:psychic presences= foreign to this place and time.">▶=subject.Does:sense= =number.pluralize:a psychic presence:psychic presences= foreign to this place and time.</string>
-  <!--Code references _S(): Assets/XRL Application/Game Core/Systems/PsychicHunterSystem.cs:814-->
+  <!--Code references _S(): Assets/XRL Application/Game Core/Systems/PsychicHunterSystem.cs:815-->
   <string Context="PsychicHunterSystem GlimmerDescription (fragment)" ID="Your psychic glimmer represents how noticeable you are in the vast psychic aether. As your mental mutations increase in level, so does your psychic glimmer and the frequency, strength, and number of those who desire to absorb your mind.">▶Your psychic glimmer represents how noticeable you are in the vast psychic aether. As your mental mutations increase in level, so does your psychic glimmer and the frequency, strength, and number of those who desire to absorb your mind.</string>
-  <!--Code references _S(): Assets/XRL Application/Game Core/Systems/PsychicHunterSystem.cs:817-->
-  <string Context="PsychicHunterSystem GlimmerDescription (fragment)" ID="Currently, you are being watched and pursued by ospreys, Ptoh's servants and birds of psychic prey who pluck larval espers from their egg sacs.">▶Currently, you are being watched and pursued by ospreys, Ptoh's servants and birds of psychic prey who pluck larval espers from their egg sacs.</string>
   <!--Code references _S(): Assets/XRL Application/Game Core/Systems/PsychicHunterSystem.cs:818-->
-  <string Context="PsychicHunterSystem GlimmerDescription (fragment)" ID="Currently, you are being watched and pursued by harriers, Ptoh's servants and birds of psychic prey who pluck fledgling espers from the shallows.">▶Currently, you are being watched and pursued by harriers, Ptoh's servants and birds of psychic prey who pluck fledgling espers from the shallows.</string>
+  <string Context="PsychicHunterSystem GlimmerDescription (fragment)" ID="Currently, you are being watched and pursued by ospreys, Ptoh's servants and birds of psychic prey who pluck larval espers from their egg sacs.">▶Currently, you are being watched and pursued by ospreys, Ptoh's servants and birds of psychic prey who pluck larval espers from their egg sacs.</string>
   <!--Code references _S(): Assets/XRL Application/Game Core/Systems/PsychicHunterSystem.cs:819-->
-  <string Context="PsychicHunterSystem GlimmerDescription (fragment)" ID="Currently, you are being watched and pursued by owls, Ptoh's servants and birds of psychic prey who snatch espers from the nighted weald.">▶Currently, you are being watched and pursued by owls, Ptoh's servants and birds of psychic prey who snatch espers from the nighted weald.</string>
+  <string Context="PsychicHunterSystem GlimmerDescription (fragment)" ID="Currently, you are being watched and pursued by harriers, Ptoh's servants and birds of psychic prey who pluck fledgling espers from the shallows.">▶Currently, you are being watched and pursued by harriers, Ptoh's servants and birds of psychic prey who pluck fledgling espers from the shallows.</string>
   <!--Code references _S(): Assets/XRL Application/Game Core/Systems/PsychicHunterSystem.cs:820-->
-  <string Context="PsychicHunterSystem GlimmerDescription (fragment)" ID="Currently, you are being watched and pursued by condors, Ptoh's servants and birds of psychic prey who snatch thriving espers from the vast wood.">▶Currently, you are being watched and pursued by condors, Ptoh's servants and birds of psychic prey who snatch thriving espers from the vast wood.</string>
+  <string Context="PsychicHunterSystem GlimmerDescription (fragment)" ID="Currently, you are being watched and pursued by owls, Ptoh's servants and birds of psychic prey who snatch espers from the nighted weald.">▶Currently, you are being watched and pursued by owls, Ptoh's servants and birds of psychic prey who snatch espers from the nighted weald.</string>
   <!--Code references _S(): Assets/XRL Application/Game Core/Systems/PsychicHunterSystem.cs:821-->
-  <string Context="PsychicHunterSystem GlimmerDescription (fragment)" ID="Currently, you are being watched and pursued by strixes, Ptoh's servants and birds of psychic prey who drink the blood of mature espers.">▶Currently, you are being watched and pursued by strixes, Ptoh's servants and birds of psychic prey who drink the blood of mature espers.</string>
+  <string Context="PsychicHunterSystem GlimmerDescription (fragment)" ID="Currently, you are being watched and pursued by condors, Ptoh's servants and birds of psychic prey who snatch thriving espers from the vast wood.">▶Currently, you are being watched and pursued by condors, Ptoh's servants and birds of psychic prey who snatch thriving espers from the vast wood.</string>
   <!--Code references _S(): Assets/XRL Application/Game Core/Systems/PsychicHunterSystem.cs:822-->
-  <string Context="PsychicHunterSystem GlimmerDescription (fragment)" ID="Currently, you are being watched and pursued by eagles, Ptoh's servants and birds of psychic prey who seize powerful espers from their roosts.">▶Currently, you are being watched and pursued by eagles, Ptoh's servants and birds of psychic prey who seize powerful espers from their roosts.</string>
+  <string Context="PsychicHunterSystem GlimmerDescription (fragment)" ID="Currently, you are being watched and pursued by strixes, Ptoh's servants and birds of psychic prey who drink the blood of mature espers.">▶Currently, you are being watched and pursued by strixes, Ptoh's servants and birds of psychic prey who drink the blood of mature espers.</string>
   <!--Code references _S(): Assets/XRL Application/Game Core/Systems/PsychicHunterSystem.cs:823-->
+  <string Context="PsychicHunterSystem GlimmerDescription (fragment)" ID="Currently, you are being watched and pursued by eagles, Ptoh's servants and birds of psychic prey who seize powerful espers from their roosts.">▶Currently, you are being watched and pursued by eagles, Ptoh's servants and birds of psychic prey who seize powerful espers from their roosts.</string>
+  <!--Code references _S(): Assets/XRL Application/Game Core/Systems/PsychicHunterSystem.cs:824-->
   <string Context="PsychicHunterSystem GlimmerDescription (fragment)" ID="Currently, you are being watched and pursued by rukhs, Ptoh's most powerful servants and birds of psychic prey who seize masterful espers from their belfries.">▶Currently, you are being watched and pursued by rukhs, Ptoh's most powerful servants and birds of psychic prey who seize masterful espers from their belfries.</string>
-  <!--Code references _S(): Assets/XRL Application/Game Core/Systems/PsychicHunterSystem.cs:826-->
+  <!--Code references _S(): Assets/XRL Application/Game Core/Systems/PsychicHunterSystem.cs:827-->
   <string Context="PsychicHunterSystem GlimmerDescription (fragment)" ID="You are also visible to psychic beings from other dimensions.">▶You are also visible to psychic beings from other dimensions.</string>
-  <!--Code references _T(): Assets/XRL Application/Game Core/Systems/PsychicHunterSystem.cs:828-->
+  <!--Code references _T(): Assets/XRL Application/Game Core/Systems/PsychicHunterSystem.cs:829-->
   <string Context="PsychicHunterSystem GlimmerDescription" ID="=fragments.join:&#xA;&#xA;=" Value="▶=fragments.join:&#xA;&#xA;=" />
-  <!--Code references _S(): Assets/XRL Application/Game Core/Systems/PsychicHunterSystem.cs:869-->
+  <!--Code references _S(): Assets/XRL Application/Game Core/Systems/PsychicHunterSystem.cs:870-->
   <string Context="PsychicHunterSystem Reality Stabilzation Failure" ID="Some dimensional interlopers attempt to enter this region of spacetime, but the ambient normality field keeps them at bay.">▶Some dimensional interlopers attempt to enter this region of spacetime, but the ambient normality field keeps them at bay.</string>
   <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Character Creation/XRL.GenotypeFactory.cs:158-->
   <string Context="Genotype Chargen Info" ID="=glyph:ChargenBullet= =extraInfo=">▶=glyph:ChargenBullet= =extraInfo=</string>
@@ -1627,6 +1651,115 @@ Assets/XRL Application/World/Game Objects/Capabilities/AutoAct.cs:371
   <string Context="Chargen Subtype Stat Maximum Info" ID="=glyph:ChargenBullet= maximum =max= =stat.statDisplayName=">▶=glyph:ChargenBullet= maximum =max= =stat.statDisplayName=</string>
   <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Character Creation/XRL.SubtypeFactory.cs:315-->
   <string Context="Chargen Subtype Stat Bonus Info" ID="=glyph:ChargenBullet= =bonus.signed= =stat.statDisplayName=">▶=glyph:ChargenBullet= =bonus.signed= =stat.statDisplayName=</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:352-->
+  <string Context="XRLUITradeUI Trade Sides Drams" ID=" {{C|=total1:0.###=}} drams &lt;-&gt; {{C|=total2:0.###=}} drams ── {{W|$=freeDrams=}} " Value="▶ {{C|=total1:0.###=}} drams &lt;-&gt; {{C|=total2:0.###=}} drams ── {{W|$=freeDrams=}} " />
+  <!--Code references _S(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:366-->
+  <string Context="XRLUITradeUI Trade" ID="trade">▶trade</string>
+  <!--Code references _S(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:366-->
+  <string Context="XRLUITradeUI Transfer" ID="transfer">▶transfer</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:392-->
+  <string Context="XRLUITradeUI No Inventory" ID="=trader.T= cannot carry things">▶=trader.T= cannot carry things</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:400-->
+  <string Context="XRLUITradeUI Engaged" ID="=trader.T= =trader.is= engaged in melee combat and =trader.is= too busy to trade with you.">▶=trader.T= =trader.is= engaged in melee combat and =trader.is= too busy to trade with you.</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:408-->
+  <string Context="XRLUITradeUI IsAflame" ID="=trader.T= =trader.is= on fire and =trader.is= too busy to trade with you.">▶=trader.T= =trader.is= on fire and =trader.is= too busy to trade with you.</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:423-->
+  <string Context="XRLUITradeUI WillNot Until Pay None" ID="=trader.T= will not trade with you until you pay =trader.them= the {{C|=owed=}} =owed.pluralize:dram= of {{B|fresh water}} you owe =trader.them=.">▶=trader.T= will not trade with you until you pay =trader.them= the {{C|=owed=}} =owed.pluralize:dram= of {{B|fresh water}} you owe =trader.them=.</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:434-->
+  <string Context="XRLUITradeUI WillNot Until Pay Some" ID="=trader.T= will not trade with you until you pay =trader.them= the {{C|=owed=}} =owed.pluralize:dram= of {{B|fresh water}} you owe =trader.them=. Do you want to give =trader.them= your {{C|=avail=}} =avail.pluralize:dram= now?">▶=trader.T= will not trade with you until you pay =trader.them= the {{C|=owed=}} =owed.pluralize:dram= of {{B|fresh water}} you owe =trader.them=. Do you want to give =trader.them= your {{C|=avail=}} =avail.pluralize:dram= now?</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:449-->
+  <string Context="XRLUITradeUI WillNot Until Pay All" ID="=trader.T= will not trade with you until you pay =trader.them= the {{C|=owed=}} =owed.pluralize:dram= of {{B|fresh water}} you owe =trader.them=. Do you want to give it to =trader.them= now?">▶=trader.T= will not trade with you until you pay =trader.them= the {{C|=owed=}} =owed.pluralize:dram= of {{B|fresh water}} you owe =trader.them=. Do you want to give it to =trader.them= now?</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:529-->
+  <string Context="XRLUITradeUI AddRemove" ID="[{{W|=commandKey:CmdTradeAdd=}}/{{W|=commandKey:CmdTradeRemove=}} Add/Remove]">▶[{{W|=commandKey:CmdTradeAdd=}}/{{W|=commandKey:CmdTradeRemove=}} Add/Remove]</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:534-->
+  <string Context="XRLUITradeUI Offer" ID="[{{W|=commandKey:CmdTradeOffer=}} Offer]">▶[{{W|=commandKey:CmdTradeOffer=}} Offer]</string>
+  <!--Code references _S():
+Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:587
+Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:597
+-->
+  <string Context="XRLUITradeUI Owned" ID=" {{G|[owned by you]}}" Value="▶ {{G|[owned by you]}}" />
+  <!--Code references _S(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:687-->
+  <string Context="XRLUITradeUI Inventory" ID="[ {{W|Your inventory}} ]">▶[ {{W|Your inventory}} ]</string>
+  <!--Code references _S(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:707-->
+  <string Context="XRLUITradeUI Owned By Someone" ID="{{R|[ owned by someone else ]}}">▶{{R|[ owned by someone else ]}}</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:754-->
+  <string Context="XRLUITradeUI Exit" ID="[{{W|=commandKey:Cancel=}} Exit]">▶[{{W|=commandKey:Cancel=}} Exit]</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:784-->
+  <string Context="XRLUITradeUI Transfer" ID="[{{W|=commandKey:CmdTradeOffer=}} Transfer]">▶[{{W|=commandKey:CmdTradeOffer=}} Transfer]</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:790-->
+  <string Context="XRLUITradeUI Actions" ID="[{{W|=commandKey:CmdVendorActions=}} Actions]">▶[{{W|=commandKey:CmdVendorActions=}} Actions]</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:800-->
+  <string Context="XRLUITradeUI Left Drams Value" ID=" {{C|=total:0.###=}} drams " Value="▶ {{C|=total:0.###=}} drams " />
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:808-->
+  <string Context="Console Trade UI Total" ID=" {{C|=total:0.###=}} drams" Value="▶ {{C|=total:0.###=}} drams" />
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:810-->
+  <string Context="Console Trade UI Free Drams" ID=" {{W|$=freeDrams=}} " Value="▶ {{W|$=freeDrams=}} " />
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:875-->
+  <string Context="XRLUITradeUI Lbs" ID=" {{=color=|=effectiveWeight=/=maxWeight= lbs.}} " Value="▶ {{=color=|=effectiveWeight=/=maxWeight= lbs.}} " />
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:974-->
+  <string Context="XRLUITradeUI Cant Repair" ID="=trader.T= =trader.verb:do= not have the skill to repair items.">▶=trader.T= =trader.verb:do= not have the skill to repair items.</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:1079-->
+  <string Context="XRLUITradeUI Cant Recharge" ID="=trader.T= =trader.verb:do= not have the skill to recharge items.">▶=trader.T= =trader.verb:do= not have the skill to recharge items.</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:1287-->
+  <string Context="XRLUITradeUI TryRemove" ID="Trade could not be completed, =subject.the.name:withoutTitles|strip= couldn't drop object: =object.name=">▶Trade could not be completed, =subject.the.name:withoutTitles|strip= couldn't drop object: =object.name=</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:1406-->
+  <string Context="XRLUITradeUI Dystechnia" ID="You can't understand =trader.t|'s= explanation.">▶You can't understand =trader.t|'s= explanation.</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:1413-->
+  <string Context="XRLUITradeUI TraderCantIdentify" ID="This item is too complex for =trader.t= to identify.">▶This item is too complex for =trader.t= to identify.</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:1424-->
+  <string Context="XRLUITradeUI TooPoorToIdentify" ID="You do not have the required {{C|=cost=}} =cost.pluralize:dram= to identify this item.">▶You do not have the required {{C|=cost=}} =cost.pluralize:dram= to identify this item.</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:1434-->
+  <string Context="XRLUITradeUI TooPoorToIdentify" ID="You may identify this for =cost= =cost.pluralize:dram= of fresh water.">▶You may identify this for =cost= =cost.pluralize:dram= of fresh water.</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:1442-->
+  <string Context="XRLUITradeUI TraderIdentify" ID="=trader.does:identify= =object.the.name= as =object.a.name:asIfKnown=.">▶=trader.does:identify= =object.the.name= as =object.a.name:asIfKnown=.</string>
+  <!--Code references _S(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:1455-->
+  <string Context="XRLUITradeUI Already" ID="You already understand this item.">▶You already understand this item.</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:1460-->
+  <string Context="XRLUITradeUI Cant Identify" ID="=trader.T= =trader.verb:don't= have the skill to identify artifacts.">▶=trader.T= =trader.verb:don't= have the skill to identify artifacts.</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:1489-->
+  <string Context="XRLUITradeUI RepairTooComplex" ID="=multiple.if:These items are:This item is= too complex for =trader.t= to repair.">▶=multiple.if:These items are:This item is= too complex for =trader.t= to repair.</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:1501-->
+  <string Context="XRLUITradeUI TooPoorToRepair" ID="You need {{C|=cost=}} =cost.pluralize:dram= of fresh water to repair =multiple.if:those:that=.">▶You need {{C|=cost=}} =cost.pluralize:dram= of fresh water to repair =multiple.if:those:that=.</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:1512-->
+  <string Context="XRLUITradeUI RepairCost" ID="You may repair =multiple.if:those:this= for {{C|=cost=}} =cost.pluralize:dram= of fresh water.">▶You may repair =multiple.if:those:this= for {{C|=cost=}} =cost.pluralize:dram= of fresh water.</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:1536-->
+  <string Context="XRLUITradeUI NotBroken" ID="=multiple.if:Those items aren't:That item isn't= broken!">▶=multiple.if:Those items aren't:That item isn't= broken!</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:1554-->
+  <string Context="XRLUITradeUI Pony Up" ID="You pony up =difference= =difference.pluralize:dram= of fresh water to even up the trade">▶You pony up =difference= =difference.pluralize:dram= of fresh water to even up the trade</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:1563-->
+  <string Context="XRLUITradeUI Have To Pony Up" ID="You'll have to pony up =difference= =difference.pluralize:dram= of fresh water to even up the trade. Agreed?">▶You'll have to pony up =difference= =difference.pluralize:dram= of fresh water to even up the trade. Agreed?</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:1579-->
+  <string Context="XRLUITradeUI Pony Up Owe" ID="You pony up =available= =avail.pluralize:dram= of fresh water, and now owe =trader.the.name= =owe= =owe.pluralize:dram=.">▶You pony up =available= =avail.pluralize:dram= of fresh water, and now owe =trader.the.name= =owe= =owe.pluralize:dram=.</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:1590-->
+  <string Context="XRLUITradeUI Owe" ID="You now owe =trader.t= =owe= =owe.pluralize:dram= of fresh water.">▶You now owe =trader.t= =owe= =owe.pluralize:dram= of fresh water.</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:1601-->
+  <string Context="XRLUITradeUI Too Poor To Pony Up" ID="You don't have =difference= =difference.pluralize:dram= of fresh water to even up the trade!">▶You don't have =difference= =difference.pluralize:dram= of fresh water to even up the trade!</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:1618-->
+  <string Context="XRLUITradeUI Trader Pony Up" ID="=trader.t.name|capitalize= =trader.verb:pony= up =give= =give.pluralize:dram= of fresh water to even up the trade.=">▶=trader.t.name|capitalize= =trader.verb:pony= up =give= =give.pluralize:dram= of fresh water to even up the trade.=</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:1630-->
+  <string Context="XRLUITradeUI Trader Pony Up Agreed" ID="=trader.T= will have to pony up =give= =give.pluralize:dram= of fresh water to even up the trade. Agreed?">▶=trader.T= will have to pony up =give= =give.pluralize:dram= of fresh water to even up the trade. Agreed?</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:1645-->
+  <string Context="XRLUITradeUI Trader Force" ID="=trader.T= =trader.verb:don't= have =give= =give.pluralize:dram= of fresh water to even up the trade!">▶=trader.T= =trader.verb:don't= have =give= =give.pluralize:dram= of fresh water to even up the trade!</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:1657-->
+  <string Context="XRLUITradeUI PoorTrader" ID="=trader.T= =trader.verb:don't= have =give= =give.pluralize:dram= of fresh water to even up the trade! Do you want to complete the trade anyway?">▶=trader.T= =trader.verb:don't= have =give= =give.pluralize:dram= of fresh water to even up the trade! Do you want to complete the trade anyway?</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:1707-->
+  <string Context="XRLUITradeUI TooMuchWater Force" ID="You don't have enough water containers to carry that many drams! You can store =storable= =storable.pluralize:dram=.">▶You don't have enough water containers to carry that many drams! You can store =storable= =storable.pluralize:dram=.</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:1718-->
+  <string Context="XRLUITradeUI TooMuchWater NoForce" ID="You don't have enough water containers to carry that many drams! Do you want to complete the trade for the =storable= =storable.pluralize:dram= you can store?">▶You don't have enough water containers to carry that many drams! Do you want to complete the trade for the =storable= =storable.pluralize:dram= you can store?</string>
+  <!--Code references _S(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:1876-->
+  <string Context="XRLUITradeUI Complete" ID="Trade complete!">▶Trade complete!</string>
+  <!--Code references _S(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:1880-->
+  <string Context="XRLUITradeUI Nothing" ID="Nothing to trade.">▶Nothing to trade.</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:1928-->
+  <string Context="XRLUITradeUI TooPoor For Recharge" ID="You need {{C|=cost.cardinal=}} =cost.pluralize:dram= of fresh water to charge =object.isplural:one of :==object.indicativeDistal=.">▶You need {{C|=cost.cardinal=}} =cost.pluralize:dram= of fresh water to charge =object.isplural:one of :==object.indicativeDistal=.</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:1940-->
+  <string Context="XRLUITradeUI Recharge Cost" ID="You may recharge =object.isplural:one of :==object.indicativeDistal= for {{C|=cost.cardinal=}} =cost.pluralize:dram= of fresh water.">▶You may recharge =object.isplural:one of :==object.indicativeDistal= for {{C|=cost.cardinal=}} =cost.pluralize:dram= of fresh water.</string>
+  <!--Code references _S(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:1970-->
+  <string Context="XRLUITradeUI Cant Be Charged" ID="That item has no cell or rechargeable capacitor in it.">▶That item has no cell or rechargeable capacitor in it.</string>
+  <!--Code references _S(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:1975-->
+  <string Context="XRLUITradeUI Wrong Recharge" ID="That item cannot be recharged this way.">▶That item cannot be recharged this way.</string>
+  <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Conversation/XRL.UI.TradeUI.cs:1980-->
+  <string Context="XRLUITradeUI Fully Charged" ID="=object.T= =object.verb:are= fully charged!">▶=object.T= =object.verb:are= fully charged!</string>
   <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Quests/XRL.UI.Quests.cs:36-->
   <string Context="Quest UI Step Failed" ID="=glyph:Cross= {{black|=step.optional.if:Optional|colonAfter|spaceAfter==step.name=}}">▶=glyph:Cross= {{black|=step.optional.if:Optional|colonAfter|spaceAfter==step.name=}}</string>
   <!--Code references _T(): Assets/XRL Application/Game Core/UI Elements/Quests/XRL.UI.Quests.cs:40-->
@@ -2334,10 +2467,47 @@ Assets/XRL Application/World/Game Objects/Anatomy/BodyPart.cs:1968
   <string Context="AutoAct interrupt 'because' (clause)" ID="=blocker.does:are= in the way">▶=blocker.does:are= in the way</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Capabilities/AutoAct.cs:675-->
   <string Context="AutoAct interrupt 'because' clause" ID="you tried to move but stayed in the same place">▶you tried to move but stayed in the same place</string>
+  <!--Code references _S():
+Assets/XRL Application/World/Game Objects/Capabilities/DifficultyEvaluation.cs:93
+Assets/XRL Application/World/Game Objects/Capabilities/DifficultyEvaluation.cs:139
+Assets/XRL Application/World/Game Objects/Capabilities/DifficultyEvaluation.cs:175
+-->
+  <string Context="DifficultyEvaluation Impossible" ID="Impossible">▶Impossible</string>
+  <!--Code references _S():
+Assets/XRL Application/World/Game Objects/Capabilities/DifficultyEvaluation.cs:98
+Assets/XRL Application/World/Game Objects/Capabilities/DifficultyEvaluation.cs:145
+Assets/XRL Application/World/Game Objects/Capabilities/DifficultyEvaluation.cs:176
+-->
+  <string Context="DifficultyEvaluation Very Tough" ID="Very Tough">▶Very Tough</string>
+  <!--Code references _S():
+Assets/XRL Application/World/Game Objects/Capabilities/DifficultyEvaluation.cs:103
+Assets/XRL Application/World/Game Objects/Capabilities/DifficultyEvaluation.cs:151
+Assets/XRL Application/World/Game Objects/Capabilities/DifficultyEvaluation.cs:177
+-->
+  <string Context="DifficultyEvaluation Tough" ID="Tough">▶Tough</string>
+  <!--Code references _S():
+Assets/XRL Application/World/Game Objects/Capabilities/DifficultyEvaluation.cs:108
+Assets/XRL Application/World/Game Objects/Capabilities/DifficultyEvaluation.cs:157
+Assets/XRL Application/World/Game Objects/Capabilities/DifficultyEvaluation.cs:178
+-->
+  <string Context="DifficultyEvaluation Average" ID="Average">▶Average</string>
+  <!--Code references _S():
+Assets/XRL Application/World/Game Objects/Capabilities/DifficultyEvaluation.cs:113
+Assets/XRL Application/World/Game Objects/Capabilities/DifficultyEvaluation.cs:163
+Assets/XRL Application/World/Game Objects/Capabilities/DifficultyEvaluation.cs:179
+-->
+  <string Context="DifficultyEvaluation Easy" ID="Easy">▶Easy</string>
+  <!--Code references _S():
+Assets/XRL Application/World/Game Objects/Capabilities/DifficultyEvaluation.cs:115
+Assets/XRL Application/World/Game Objects/Capabilities/DifficultyEvaluation.cs:168
+-->
+  <string Context="DifficultyEvaluation Trivial" ID="Trivial">▶Trivial</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Capabilities/Firefighting.cs:148-->
   <string ID="=subject.Does:beat= at the flames with =subject.its= =hands.name=!">▶=subject.Does:beat= at the flames with =subject.its= =hands.name=!</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Capabilities/Firefighting.cs:158-->
   <string ID="=subject.Does:beat= at the flames on =object.the.name:withoutTitles= with =subject.its= =hands.name=!">▶=subject.Does:beat= at the flames on =object.the.name:withoutTitles= with =subject.its= =hands.name=!</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Capabilities/Messaging.cs:196-->
+  <string Context="Generic nothing error popup message" ID="Nothing happens.">▶Nothing happens.</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Capabilities/SavingThrows.cs:28-->
   <string Context="Saving Throw Vs Axe" ID="Axe skills">▶Axe skills</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Capabilities/SavingThrows.cs:29-->
@@ -2440,6 +2610,8 @@ Assets/XRL Application/World/Game Objects/Anatomy/BodyPart.cs:1968
   <string Context="Saving Throw Description: Highlight Number" ID="{{rules|=bonus.signed=}} to saves vs =type.saveBonusTypeDescription=">▶{{rules|=bonus.signed=}} to saves vs =type.saveBonusTypeDescription=</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Capabilities/SavingThrows.cs:325-->
   <string Context="Saving Throw Description: Highlight Number" ID="=bonus.signed= to saves vs =type.saveBonusTypeDescription=">▶=bonus.signed= to saves vs =type.saveBonusTypeDescription=</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Conversations/ConversationLoader.cs:23-->
+  <string ID="Loading Conversations.xml">▶Loading Conversations.xml</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Effects/ContainedAcidEating.cs:19-->
   <string Context="ContainedAcidEating Display Name" ID="{{Y|sizzling}}">▶{{Y|sizzling}}</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Effects/ContainedAcidEating.cs:84-->
@@ -2573,12 +2745,68 @@ Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:117
   <string Context="RandomAltarBaetyl Journal Entry" ID="A &quot;SATED&quot; baetyl">▶A "SATED" baetyl</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:1237-->
   <string Context="RandomAltarBaetyl Journal Entry" ID="A baetyl demanding &quot;=demand=&quot; and promising &quot;=reward=&quot;.">▶A baetyl demanding "=demand=" and promising "=reward=".</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Body/Body.cs:2330-->
+  <string Context="Body Use Of Loss" ID="You have lost the use of your =part.ordinalName=.">▶You have lost the use of your =part.ordinalName=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Body/Body.cs:2352-->
+  <string Context="Body Use Of Recover" ID="You have recovered the use of your =part.ordinalName=.">▶You have recovered the use of your =part.ordinalName=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Body/Body.cs:2671-->
+  <string Context="Body Bleeding Description" ID="Dried =bleedLiquid= crusts on the severed =part.name= of =parent.a.name|strip=.">▶Dried =bleedLiquid= crusts on the severed =part.name= of =parent.a.name|strip=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Body/Body.cs:2769-->
+  <string Context="Body Limb Dismember Message" ID="Your =limb.ordinalName= =limb.ifPlural:are:is= dismembered!">▶Your =limb.ordinalName= =limb.ifPlural:are:is= dismembered!</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Body/Body.cs:2776-->
+  <string Context="Body Limb Dismember Mural" ID="While fighting a battle to protect the practice of =spice.elements.$element.practices.!random=, =name= valorously had =player.possessive= =limb.ordinalName= dismembered.">▶While fighting a battle to protect the practice of =spice.elements.$element.practices.!random=, =name= valorously had =player.possessive= =limb.ordinalName= dismembered.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Body/Body.cs:2791-->
+  <string Context="Body Limb Dismember Message" ID="Your =limb.ordinalName= =limb.ifPlural:are:is= dismembered.">▶Your =limb.ordinalName= =limb.ifPlural:are:is= dismembered.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Body/Body.cs:2861-->
+  <string Context="Body Generate Part" ID="You regenerate your =part.ordinalName=!">▶You regenerate your =part.ordinalName=!</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Body/Body.cs:2870-->
+  <string Context="Body Regenerate Limb" ID="=subject.Does:regenerate= =subject.possessive= =part.ordinalName=!">▶=subject.Does:regenerate= =subject.possessive= =part.ordinalName=!</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Body/Body.cs:2950-->
+  <string Context="Body MissingPart One With Parent" ID="=parent.possessive= =part.name=">▶=parent.possessive= =part.name=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Body/Body.cs:2956-->
+  <string Context="Body MissingPart One Without Parent" ID="=part.ifPlural:a set of :==part.a.name=">▶=part.ifPlural:a set of :==part.a.name=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Body/Body.cs:2963-->
+  <string Context="Body MissingPart More Than One" ID="=num.cardinal==part.IfPlural: sets of:= =part.name.forcePlural=">▶=num.cardinal==part.IfPlural: sets of:= =part.name.forcePlural=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Body/Body.cs:3010-->
+  <string Context="Body Missing Limb Description" ID="=parent.itis= missing =mainSummary.andList=, and so =parent.does:do= not have the use of =abstractSummary.orList=.">▶=parent.itis= missing =mainSummary.andList=, and so =parent.does:do= not have the use of =abstractSummary.orList=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Body/Body.cs:3028-->
+  <string Context="Body Missing Limb Description Short" ID="=parent.Itis= missing =mainSummary.andList=.">▶=parent.Itis= missing =mainSummary.andList=.</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Books/MerchantRevealer.cs:72-->
   <string Context="MerchantRevealer read advertisement inventory action" ID="read">▶read</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Books/MerchantRevealer.cs:136-->
   <string Context="MerchantRevealer DisplayName" ID="advertisement for =mapnote.text|initLower=">▶advertisement for =mapnote.text|initLower=</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Books/MerchantRevealer.cs:141-->
   <string Context="MerchantRevealer bookText" ID="=spice:advertisements.merchants.!random=">▶=spice:advertisements.merchants.!random=</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Conversations/World.Parts.ConversationScript.cs:237-->
+  <string Context="World Parts Conversation, Can't Start" ID="You are in no shape to start a conversation.">▶You are in no shape to start a conversation.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Conversations/World.Parts.ConversationScript.cs:245-->
+  <string Context="World Parts Conversation, Confused" ID="You can't seem to make out what =object.the.name:withoutTitles= =object.is= saying.">▶You can't seem to make out what =object.the.name:withoutTitles= =object.is= saying.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Conversations/World.Parts.ConversationScript.cs:263-->
+  <string Context="World Parts Conversation, Charged" ID="=object.the.name:withoutTitles= =object.is= utterly unresponsive.">▶=object.the.name:withoutTitles= =object.is= utterly unresponsive.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Conversations/World.Parts.ConversationScript.cs:273-->
+  <string Context="World Parts Conversation, Frozen" ID="You hear a muffled grunting coming from inside the block of ice.">▶You hear a muffled grunting coming from inside the block of ice.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Conversations/World.Parts.ConversationScript.cs:281-->
+  <string Context="World Parts Conversation, Hostile" ID="=object.the.name:withoutTitles= =object.verb:refuse= to speak to you.">▶=object.the.name:withoutTitles= =object.verb:refuse= to speak to you.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Conversations/World.Parts.ConversationScript.cs:291-->
+  <string Context="World Parts Conversation, IsEngagedInMelee" ID="=object.Does:are= engaged in hand-to-hand combat and =object.is= too busy to have a conversation with you.">▶=object.Does:are= engaged in hand-to-hand combat and =object.is= too busy to have a conversation with you.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Conversations/World.Parts.ConversationScript.cs:301-->
+  <string Context="World Parts Conversation, IsAflame" ID="=object.Does:are= on fire and =object.is= too busy to have a conversation with you.">▶=object.Does:are= on fire and =object.is= too busy to have a conversation with you.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Conversations/World.Parts.ConversationScript.cs:318-->
+  <string Context="World Parts Conversation, CantStartConversation" ID="You cannot seem to engage =object.the.name:withoutTitles= in conversation.">▶You cannot seem to engage =object.the.name:withoutTitles= in conversation.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Conversations/World.Parts.ConversationScript.cs:364-->
+  <string Context="World Parts Conversation, Mental Cant" ID="You can sense nothing from =object.the.name:withoutTitles=.">▶You can sense nothing from =object.the.name:withoutTitles=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Conversations/World.Parts.ConversationScript.cs:382-->
+  <string Context="World Parts Conversation, Mental Hostile" ID="You sense only hostility from =object.the.name:withoutTitles=.">▶You sense only hostility from =object.the.name:withoutTitles=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Conversations/World.Parts.ConversationScript.cs:399-->
+  <string Context="World Parts Conversation, Mental Cant Contact" ID="You cannot seem to make contact with =object.the.name:withoutTitles=">▶You cannot seem to make contact with =object.the.name:withoutTitles=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Conversations/World.Parts.ConversationScript.cs:509-->
+  <string Context="World Parts Conversation, Nothing To Say" ID="=object.Does:have= nothing to say">▶=object.Does:have= nothing to say</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Conversations/World.Parts.ConversationScript.cs:600-->
+  <string Context="World Parts Conversation, Pronoun GiveAndGet" ID="you and =object.the.name:withoutTitles= exchange pronouns; =subject.its= =subject.pronouns=">▶you and =object.the.name:withoutTitles= exchange pronouns; =subject.its= =subject.pronouns=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Conversations/World.Parts.ConversationScript.cs:607-->
+  <string Context="World Parts Conversation, Pronoun Give" ID="=object.the.name:withoutTitles= =object.verb:give= =object.its= pronouns, which are =object.pronouns=">▶=object.the.name:withoutTitles= =object.verb:give= =object.its= pronouns, which are =object.pronouns=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Conversations/World.Parts.ConversationScript.cs:614-->
+  <string Context="World Parts Conversation, Pronoun Get" ID="you give =object.the.name:withoutTitles= your=isNew.if: new : =pronouns">▶you give =object.the.name:withoutTitles= your=isNew.if: new : =pronouns</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Creature/ActivatedAbilities.cs:37-->
   <string Context="activated ability classes" ID="Cybernetics">▶Cybernetics</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Creature/ActivatedAbilities.cs:38-->
@@ -2671,12 +2899,38 @@ Assets/XRL Application/World/Game Objects/Parts/Baetyls/RandomAltarBaetyl.cs:117
   <string Context="LevelGainDetailed" ID="=subject.Does:have= gained a level! =subject.It= =subject.is= now level {{C|=level=}}!">▶=subject.Does:have= gained a level! =subject.It= =subject.is= now level {{C|=level=}}!</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Creature/Leveler.cs:325-->
   <string Context="LevelGain" ID="=subject.Does:gain= a level!">▶=subject.Does:gain= a level!</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Creature/Swarmer.cs:33-->
+  <string Context="Swarmer Alpha Desc" ID="Swarm Alpha: As long as this creature is adjacent to =subject.its= target =subject.it= =subject.verb:grant:afterpronoun= =bonus= to the swarm bonuses of each other swarmer who is adjacent to =subject.its= target.">▶Swarm Alpha: As long as this creature is adjacent to =subject.its= target =subject.it= =subject.verb:grant:afterpronoun= =bonus= to the swarm bonuses of each other swarmer who is adjacent to =subject.its= target.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Creature/Swarmer.cs:41-->
+  <string ID="Swarmer: This creature receives +1 to hit in melee and +1 to penetration rolls for each other hostile swarmer beyond the first who is in another square adjacent to =subject.its= target. (currently =bonus.signed=)">▶Swarmer: This creature receives +1 to hit in melee and +1 to penetration rolls for each other hostile swarmer beyond the first who is in another square adjacent to =subject.its= target. (currently =bonus.signed=)</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Cybernetics/CyberneticsElectromagneticSensor.cs:86-->
   <string Context="hostile perception verb" ID="detect">▶detect</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Cybernetics/CyberneticsSocialCoprocessor.cs:21-->
   <string Context="CyberneticsSocialCoprocessor Tech-Scanning Status Name" ID="SocialCoprocessor">▶SocialCoprocessor</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Cybernetics/CyberneticsSocialCoprocessor.cs:57-->
   <string Context="CyberneticsSocialCoprocessor GetCyberneticsBehaviorDescriptionEvent Description" ID="Whenever you perform the water ritual with a new creature, you gain an extra =repBonus= reputation. If you install this implant after you treat with a creature for the first time, you gain =repBonus= reputation the next time you treat with them.&#xA;Reputation costs in the water ritual are reduced by =ritualCostReduction=%.&#xA;You may Proselytize =proselytizeLimitBonus.things:additional creature=.&#xA;Compute power on the local lattice increases this implant's effectiveness." Value="▶Whenever you perform the water ritual with a new creature, you gain an extra =repBonus= reputation. If you install this implant after you treat with a creature for the first time, you gain =repBonus= reputation the next time you treat with them.&#xA;Reputation costs in the water ritual are reduced by =ritualCostReduction=%.&#xA;You may Proselytize =proselytizeLimitBonus.things:additional creature=.&#xA;Compute power on the local lattice increases this implant's effectiveness." />
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Description/Description.cs:22-->
+  <string Context="Description Default Text" ID="A really ugly specimen.">▶A really ugly specimen.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Description/Description.cs:135-->
+  <string Context="Description Weight Text" ID="&#xA;{{K|Weight: =weight= lbs.}}" Value="▶&#xA;{{K|Weight: =weight= lbs.}}" />
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Description/Description.cs:224-->
+  <string Context="Description Gender" ID="&#xA;&#xA;Gender: " Value="▶&#xA;&#xA;Gender: " />
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Description/Description.cs:233-->
+  <string Context="Description Features" ID="&#xA;&#xA;Physical features: " Value="▶&#xA;&#xA;Physical features: " />
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Description/Description.cs:252-->
+  <string Context="Description Equipped" ID="&#xA;Equipped: " Value="▶&#xA;Equipped: " />
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Description/Description.cs:314-->
+  <string Context="Description Feeling Friend" ID="{{G|Friendly}}">▶{{G|Friendly}}</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Description/Description.cs:320-->
+  <string Context="Description Feeling Hostile" ID="{{R|Hostile}}">▶{{R|Hostile}}</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Description/Description.cs:325-->
+  <string Context="Description Feeling Neutral" ID="Neutral">▶Neutral</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Description/Description.cs:357-->
+  <string Context="Description Look Command" ID="look">▶look</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Description/Description.cs:366-->
+  <string Context="Description Recall Command" ID="recall story">▶recall story</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Description/Description.cs:435-->
+  <string Context="Description Recall Menu" ID="[press {{W|space}}]=hasRecallStory.if: or recall {{W|s}}tory]:=">▶[press {{W|space}}]=hasRecallStory.if: or recall {{W|s}}tory]:=</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Encounters/OpeningStory.cs:90-->
   <string Context="OpeningStory Accomplishment" ID="On the =day= of =month=, you arrived at =villageName=.">▶On the =day= of =month=, you arrived at =villageName=.</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Encounters/OpeningStory.cs:94-->
@@ -2768,6 +3022,14 @@ Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:1010
   <string Context="RecomingPlaque Text" ID="&quot;Unwrap thyself of thy grave clothes, and go.&quot;">▶"Unwrap thyself of thy grave clothes, and go."</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Furniture/RecomingPlaque.cs:89-->
   <string Context="RecomingPlaque Inscribed" ID="=text|recomingPlaque=">▶=text|recomingPlaque=</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Furniture/SultanShrine.cs:315-->
+  <string Context="SultanShrine Description" ID="The shrine depicts a significant event from the life of the ancient sultan =sultanName=">▶The shrine depicts a significant event from the life of the ancient sultan =sultanName=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Furniture/SultanShrine.cs:374-->
+  <string Context="SultanShrine Known By Joppa" ID=" {{K|-known by =faction.formattedName=}}" Value="▶ {{K|-known by =faction.formattedName=}}" />
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Furniture/SultanShrine.cs:468-->
+  <string Context="SultanShrine Relic Discovery Mural" ID="=spice:commonPhrases.intrepid.!random|capitalize= =name= recovered =relic=, a historic relic once thought lost to the sands of time.">▶=spice:commonPhrases.intrepid.!random|capitalize= =name= recovered =relic=, a historic relic once thought lost to the sands of time.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Furniture/SultanShrine.cs:477-->
+  <string Context="SultanShrine Relic Discovery Gospel" ID="In an excavation at a site of deep history near =location=, =name= recovered =relic=, the historic relic once thought lost to the sands of time.">▶In an excavation at a site of deep history near =location=, =name= recovered =relic=, the historic relic once thought lost to the sands of time.</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Furniture/TeleportGate.cs:91-->
   <string Context="TeleportGate DisplayName Base" ID="secant" OrderAdjust="-5">▶secant</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Furniture/TeleportGate.cs:97-->
@@ -2816,8 +3078,49 @@ Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:1010
   <string Context="Tombstone Engraving" ID="=part1=&#xA;&#xA;=part2=&#xA;&#xA;=part3=" Value="▶=part1=&#xA;&#xA;=part2=&#xA;&#xA;=part3=" />
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Furniture/Tombstone.cs:269-->
   <string Context="Tombstone Box" ID="=engraving|tombstone=">▶=engraving|tombstone=</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Inventory.cs:1639-->
-  <string ID="=subject.Does:take= =object.the.name= from =container.the.name= =subject.direction#container=.">▶=subject.Does:take= =object.the.name= from =container.the.name= =subject.direction#container=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Inventory.cs:290-->
+  <string Context="Inventory AutoAct" ID="=object.T= can't be picked up.">▶=object.T= can't be picked up.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Inventory.cs:1399-->
+  <string Context="Inventory Nothing To Interact" ID="There's nothing you can interact with.">▶There's nothing you can interact with.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Inventory.cs:1406-->
+  <string Context="Inventory Nothing To Take" ID="There's nothing to take.">▶There's nothing to take.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Inventory.cs:1500-->
+  <string Context="Inventory Equip" ID="=subject.Does:equip= =object.indefiniteForOthers#subject=.">▶=subject.Does:equip= =object.indefiniteForOthers#subject=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Inventory.cs:1617-->
+  <string Context="Inventory Container Not Owned Confirm Popup" ID="That is not owned by you. Are you sure you want to take it?">▶That is not owned by you. Are you sure you want to take it?</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Inventory.cs:1656-->
+  <string Context="Inventory take from container" ID="=subject.Does:take= =object.the.name= from =container.the.name= =subject.direction#container=.">▶=subject.Does:take= =object.the.name= from =container.the.name= =subject.direction#container=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Inventory.cs:1667-->
+  <string Context="Inventory take from direction" ID="=subject.Does:take= =object.the.name= =direction.indicativeDirection=.">▶=subject.Does:take= =object.the.name= =direction.indicativeDirection=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Inventory.cs:1677-->
+  <string Context="Inventory take" ID="=subject.Does:take= =object.the.name=.">▶=subject.Does:take= =object.the.name=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Inventory.cs:1715-->
+  <string Context="Inventory drop" ID="=subject.Does:drop= =object.the.name=.">▶=subject.Does:drop= =object.the.name=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Inventory.cs:1791-->
+  <string Context="Inventory Equip Fail Stuck" ID="You cannot equip items while stuck!">▶You cannot equip items while stuck!</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Inventory.cs:1856-->
+  <string Context="Inventory Not Owned Confirm Popup" ID="That is not owned by you. Are you sure you want to take it?">▶That is not owned by you. Are you sure you want to take it?</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Inventory.cs:1894-->
+  <string Context="Inventory Equip Fail" ID="You cannot equip =object.the.name=.">▶You cannot equip =object.the.name=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Inventory.cs:1917-->
+  <string Context="Inventory Cannot Equip On Part" ID="You cannot equip =object.the.name= on your =part.ordinalName=.">▶You cannot equip =object.the.name= on your =part.ordinalName=.</string>
+  <!--Code references _T():
+Assets/XRL Application/World/Game Objects/Parts/Inventory.cs:2153
+Assets/XRL Application/World/Game Objects/Parts/Inventory.cs:2434
+-->
+  <string Context="Inventory CommandEquipObject Error" ID="Error dropping object, removing to graveyard zone! (Inventory.cs:CommandEquipObject)">▶Error dropping object, removing to graveyard zone! (Inventory.cs:CommandEquipObject)</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Inventory.cs:2163-->
+  <string Context="Inventory CommandEquipObject Error" ID="=subject.T=] Error dropping object, removing to graveyard zone! (Inventory.cs:CommandEquipObject)">▶=subject.T=] Error dropping object, removing to graveyard zone! (Inventory.cs:CommandEquipObject)</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Inventory.cs:2263-->
+  <string Context="Inventory Remove Fail Stuck" ID="You cannot remove items while stuck!">▶You cannot remove items while stuck!</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Inventory.cs:2277-->
+  <string Context="Inventory Remove Fail Frozen" ID="You are frozen solid!">▶You are frozen solid!</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Inventory.cs:2464-->
+  <string ID="You cannot budge =object.the.name:withoutTitles=.">▶You cannot budge =object.the.name:withoutTitles=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Inventory.cs:2482-->
+  <string Context="Inventory Unowned Container Confirm" ID="You don't own =container.the.name:indicativeProximal=. Are you sure you want to take =object.the.name=?">▶You don't own =container.the.name:indicativeProximal=. Are you sure you want to take =object.the.name=?</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Inventory.cs:2726-->
+  <string Context="Inventory Drop Count" ID="How many do you want to drop?">▶How many do you want to drop?</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Item Properties/FactionDeed.cs:38-->
   <string Context="FactionDeed Description Tag" ID="[=faction.name= chapter]" OrderAdjust="-60">▶[=faction.name= chapter]</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Item Properties/FactionDeed.cs:50-->
@@ -2838,22 +3141,24 @@ Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:1010
   <string Context="FactionDeed Popup Message" ID="You add the following entry into the {{K|Annals of Qud}}.&#xA;&#xA;&quot;On the =date.day= of =date.month=, {{Y|=subject.basename=}} became =positive.if:admired:despised= by =faction.formattedName= for =reason=.&quot;" Value="▶You add the following entry into the {{K|Annals of Qud}}.&#xA;&#xA;&quot;On the =date.day= of =date.month=, {{Y|=subject.basename=}} became =positive.if:admired:despised= by =faction.formattedName= for =reason=.&quot;" />
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Item Properties/Graffitied.cs:69-->
   <string Context="Graffiti Text" ID="=markovShort:18|obfuscate=">▶=markovShort:18|obfuscate=</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/BaseMutation.cs:104-->
+  <string Context="BaseMutation DefectMarker" ID="({{r|D}})">▶({{r|D}})</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Defect/BrittleBones.cs:39-->
   <string Context="Brittle Bones trigger message log" ID="You feel your bones fracture.">▶You feel your bones fracture.</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Defect/ElectromagneticImpulse.cs:57-->
-  <string Context="ElectromagneticImpluse triggered message log" ID="You surge with energy!">▶You surge with energy!</string>
+  <string Context="ElectromagneticImpulse triggered message log" ID="You surge with energy!">▶You surge with energy!</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Defect/HooksForFeet.cs:47-->
   <string Context="HooksForFeet BlueprintName description variable" ID="=blueprint.name=">▶=blueprint.name=</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Defect/IrritableGenome.cs:67-->
   <string Context="IrritableGenome acts up" ID="=subject.Poss:irritable genome= acts up. =spentPointsReport.join: =">▶=subject.Poss:irritable genome= acts up. =spentPointsReport.join: =</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Defect/SpontaneousCombustion.cs:35-->
-  <string Context="SpontaneousCombusion triggered message log" ID="=subject.Does:erupt= into flames!">▶=subject.Does:erupt= into flames!</string>
+  <string Context="SpontaneousCombustion triggered message log" ID="=subject.Does:erupt= into flames!">▶=subject.Does:erupt= into flames!</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Beguiling.cs:135-->
-  <string Context="Beguile Pick Direction Title" ID="[Select a direction to beguile a creature]">▶[Select a direction to beguile a creature]</string>
+  <string Context="Beguiling Pick Direction Title" ID="[Select a direction to beguile a creature]">▶[Select a direction to beguile a creature]</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Beguiling.cs:142-->
   <string ID="There are no valid targets in that square.">▶There are no valid targets in that square.</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Beguiling.cs:145-->
-  <string Context="Beguile Pick Creature" ID="Who would you like to beguile?">▶Who would you like to beguile?</string>
+  <string Context="Beguiling Pick Creature" ID="Who would you like to beguile?">▶Who would you like to beguile?</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Beguiling.cs:167-->
   <string Context="Beguiling Fail Self-Target" ID="You can't beguile =player.itself=!">▶You can't beguile =player.itself=!</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Beguiling.cs:176-->
@@ -2862,12 +3167,46 @@ Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:1010
   <string Context="Beguiling failure already beguiled" ID="You have already beguiled =object.the.name=.">▶You have already beguiled =object.the.name=.</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Beguiling.cs:207-->
   <string Context="Beguiling confirm already beguiled" ID="=object.Does:are|strip= already your follower. Do you want to beguile =object.them= anyway?">▶=object.Does:are|strip= already your follower. Do you want to beguile =object.them= anyway?</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Beguiling.cs:230-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Beguiling.cs:232-->
   <string Context="Beguiling failure lost contest" ID="You fail to outshine the current object of =object.the.name's= affection.">▶You fail to outshine the current object of =object.the.name's= affection.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Beguiling.cs:268-->
-  <string Context="Beguile failure" ID="Your coquetry infuriates =object.the.name=.">▶Your coquetry infuriates =object.the.name=.</string>
-  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Beguiling.cs:348-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Beguiling.cs:272-->
+  <string Context="Beguiling failure" ID="Your coquetry infuriates =object.the.name=.">▶Your coquetry infuriates =object.the.name=.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Beguiling.cs:352-->
   <string Context="Beguiling Active Ability Name" ID="Beguile Creature">▶Beguile Creature</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Burgeoning.cs:203-->
+  <string Context="Burgeoning Target Picker Title" ID="Burgeoning">▶Burgeoning</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Burgeoning.cs:220-->
+  <string Context="Burgeoning summon message log" ID="=subject.Does:impel= plants to burgeon from the ground!">▶=subject.Does:impel= plants to burgeon from the ground!</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Burgeoning.cs:252-->
+  <string Context="Burgeoning activated ability name" ID="Burgeoning">▶Burgeoning</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Clairvoyance.cs:144-->
+  <string Context="Clairvoyance target picker title" ID="Clairvoyance">▶Clairvoyance</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Clairvoyance.cs:163-->
+  <string Context="Clairvoyance activated message log" ID="=subject.Does:peer= into another space.">▶=subject.Does:peer= into another space.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Clairvoyance.cs:200-->
+  <string Context="Clairvoyance VisionRadius stat, whole map" ID="whole map">▶whole map</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Clairvoyance.cs:217-->
+  <string Context="Clairvoyance activated ability name" ID="Clairvoyance">▶Clairvoyance</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Confusion.cs:78-->
+  <string Context="Confusion TargetPicker Label" ID="Confusion">▶Confusion</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Confusion.cs:187-->
+  <string Context="Confusion Unaffected MessageLog" ID="Your attack does not affect =object.the.name=.">▶Your attack does not affect =object.the.name=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Confusion.cs:199-->
+  <string Context="Confusion Resist MessageLog" ID="=subject.Does:resist= being confused.">▶=subject.Does:resist= being confused.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Confusion.cs:255-->
+  <string Context="Confusion ActivatedAbility Name" ID="Confusion">▶Confusion</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Cryokinesis.cs:222-->
+  <string Context="Cryokinesis TargetPicker Label" ID="Chill">▶Chill</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Cryokinesis.cs:253-->
+  <string Context="Cryokinesis ActivatedAbility Name" ID="Chill">▶Chill</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Disintegration.cs:81-->
+  <string Context="Disintegration Activate MessageLog" ID="The air vibrates destructively around =subject.a.name=!">▶The air vibrates destructively around =subject.a.name=!</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Disintegration.cs:120-->
+  <string Context="Disintegration Area Stat" ID="7x7 around self">▶7x7 around self</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Disintegration.cs:214-->
+  <string Context="Disintegrate Take Damage Message (TODO)" ID="from %t disintegration!">▶from %t disintegration!</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Disintegration.cs:235-->
+  <string Context="Disintegration ActivatedAbility Name" ID="Disintegration">▶Disintegration</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Domination.cs:163-->
   <string Context="Dominate Ability Name" ID="Dominate Creature">▶Dominate Creature</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Domination.cs:219-->
@@ -2876,24 +3215,49 @@ Assets/XRL Application/World/Game Objects/Parts/Furniture/Door.cs:1010
   <string Context="Domination stranded" ID="{{r|Your mind is stranded here.}}">▶{{r|Your mind is stranded here.}}</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Domination.cs:235-->
   <string Context="Domination stranded journal entry" ID="Your mind was stranded inside =subject.a==subject.refname|strip=.">▶Your mind was stranded inside =subject.a==subject.refname|strip=.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Domination.cs:359-->
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Domination.cs:300-->
+  <string Context="Domination Target Picker Label" ID="Dominate">▶Dominate</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Domination.cs:363-->
   <string Context="Dominate Dominate" ID="=subject.Does:take= control of =object.a.name=!">▶=subject.Does:take= control of =object.a.name=!</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Domination.cs:371-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Domination.cs:375-->
   <string Context="Dominate Fail Immune" ID="Something prevents you from dominating =object.the.name=.">▶Something prevents you from dominating =object.the.name=.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Domination.cs:382-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Domination.cs:386-->
   <string Context="Dominate Fail" ID="=subject.Does:resist= =object.name's= domination!">▶=subject.Does:resist= =object.name's= domination!</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Domination.cs:402-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Domination.cs:406-->
   <string Context="Dominate Failure" ID="There seems to be no mind in =object.the.name= to dominate.">▶There seems to be no mind in =object.the.name= to dominate.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Domination.cs:410-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Domination.cs:414-->
   <string Context="Dominate Failure" ID="You can't dominate =object.itself=!">▶You can't dominate =object.itself=!</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Domination.cs:418-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Domination.cs:422-->
   <string Context="Dominate Failure" ID="You can't dominate someone you are already dominating.">▶You can't dominate someone you are already dominating.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Domination.cs:426-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Domination.cs:430-->
   <string Context="Dominate Failure" ID="You can't do that.">▶You can't do that.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Domination.cs:434-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Domination.cs:438-->
   <string Context="Dominate Failure" ID="=object.Does:do= not have a consciousness you can make psychic contact with.">▶=object.Does:do= not have a consciousness you can make psychic contact with.</string>
-  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Domination.cs:449-->
-  <string Context="Dominate Failure" ID="Nothing happens.">▶Nothing happens.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/ForceBubble.cs:130-->
+  <string Context="ForceBubble Off Player MessageLog" ID="The {{B|force bubble}} snaps off.">▶The {{B|force bubble}} snaps off.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/ForceBubble.cs:140-->
+  <string Context="ForceBubble Off MessageLog" ID="The {{B|force bubble}} around =subject.the.name= snaps off.">▶The {{B|force bubble}} around =subject.the.name= snaps off.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/ForceBubble.cs:250-->
+  <string Context="ForceBubble On MessageLog" ID="A {{B|force bubble}} pops into being around =subject.the.name=.">▶A {{B|force bubble}} pops into being around =subject.the.name=.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/ForceBubble.cs:554-->
+  <string Context="ForceBubble ActivatedAbility Name" ID="Force Bubble">▶Force Bubble</string>
+  <!--Code references _T():
+Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/ForceWall.cs:122
+Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/FlamingRay.cs:119
+Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/FreezingRay.cs:90
+Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/SlimeGlands.cs:67
+-->
+  <string ID="You cannot do that on the world map.">▶You cannot do that on the world map.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/ForceWall.cs:218-->
+  <string Context="ForceWall On MessageLog" ID="=subject.Does:conjure= a {{B|wall of force}}!">▶=subject.Does:conjure= a {{B|wall of force}}!</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/ForceWall.cs:266-->
+  <string Context="ForceWall ActivatedAbility Name" ID="Force Wall">▶Force Wall</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Kindle.cs:66-->
+  <string Context="Kindle TargetPicker Label" ID="Kindle">▶Kindle</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Kindle.cs:82-->
+  <string Context="Kindle On MessageLog" ID="=subject.A.name= appears =player.direction#subject=.">▶=subject.A.name= appears =player.direction#subject=.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Kindle.cs:116-->
+  <string Context="Kindle ActivatedAbility Name" ID="Kindle">▶Kindle</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Psychometry.cs:58-->
   <string Context="Psychometry Failure Examine" ID="Do you want to continue despite being unable to use Psychometry?">▶Do you want to continue despite being unable to use Psychometry?</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Psychometry.cs:77-->
@@ -2989,6 +3353,8 @@ Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Psychometry.cs:
   <string Context="Infiltrate targeting" ID="=subject.Does:focus= =subject.its= sensor somewhere else.">▶=subject.Does:focus= =subject.its= sensor somewhere else.</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Monster/Infiltrate.cs:320-->
   <string Context="Infiltrate Activated Ablity Name" ID="Infiltrate">▶Infiltrate</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/MutationEntry.cs:186-->
+  <string Context="Mutation with Defect Display" ID="=mutationName= ({{r|D}})">▶=mutationName= ({{r|D}})</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/AdrenalControl.cs:178-->
   <string ID="Your adrenaline subsides.">▶Your adrenaline subsides.</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/AdrenalControl.cs:190-->
@@ -2997,13 +3363,13 @@ Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Psychometry.cs:
   <string ID="Release Adrenaline">▶Release Adrenaline</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/AdrenalControl.cs:243-->
   <string ID="{{R|adrenaline flowing}}">▶{{R|adrenaline flowing}}</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/BurrowingClaws.cs:117-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/BurrowingClaws.cs:118-->
   <string ID="You can't excavate with hostiles nearby.">▶You can't excavate with hostiles nearby.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/BurrowingClaws.cs:153-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/BurrowingClaws.cs:154-->
   <string ID="=subject.Does:dig= a passage down.">▶=subject.Does:dig= a passage down.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/BurrowingClaws.cs:165-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/BurrowingClaws.cs:166-->
   <string ID="You can't excavate the sky!">▶You can't excavate the sky!</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/BurrowingClaws.cs:178-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/BurrowingClaws.cs:179-->
   <string ID="=subject.Does:dig= a passage up.">▶=subject.Does:dig= a passage up.</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/Carapace.cs:183-->
   <string ID="carapace">▶carapace</string>
@@ -3030,12 +3396,6 @@ Assets/XRL Application/World/Game Objects/Parts/Mutations/Mental/Psychometry.cs:
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/ElectromagneticPulse.cs:186-->
   <string Context="EMP Ability Name" ID="Emit Pulse">▶Emit Pulse</string>
   <!--Code references _T():
-Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/FlamingRay.cs:119
-Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/FreezingRay.cs:90
-Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/SlimeGlands.cs:67
--->
-  <string ID="You cannot do that on the world map.">▶You cannot do that on the world map.</string>
-  <!--Code references _T():
 Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/FlamingRay.cs:128
 Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/FreezingRay.cs:97
 -->
@@ -3049,23 +3409,23 @@ Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/FreezingRay.c
   <string Context="FlamingRay Chargen Variant" ID="=mutation.name= (=bodyPartType=)">▶=mutation.name= (=bodyPartType=)</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/FlamingRay.cs:248-->
   <string Context="Flaming Ray Targeting Screen Title" ID="Flaming Ray">▶Flaming Ray</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/FlamingRay.cs:291-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/FlamingRay.cs:293-->
   <string Context="FlamingRay emit" ID="=subject.Does:emit= a flaming ray from =subject.its= =part.ordinalName=!">▶=subject.Does:emit= a flaming ray from =subject.its= =part.ordinalName=!</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/FlamingRay.cs:298-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/FlamingRay.cs:300-->
   <string Context="FlamingRay emit no part" ID="=subject.Does:emit= a flaming ray!">▶=subject.Does:emit= a flaming ray!</string>
-  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/FlamingRay.cs:347-->
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/FlamingRay.cs:349-->
   <string Context="Flaming Ray Ability Name" ID="Flaming Ray">▶Flaming Ray</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/FlamingRay.cs:388-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/FlamingRay.cs:390-->
   <string Context="Flaming Ray Missing Limb Message" ID="Missing =part.name=">▶Missing =part.name=</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/FreezingRay.cs:49-->
   <string Context="FreezingRay Chargen Variant" ID="=mutation.name= (=bodyPartType=)">▶=mutation.name= (=bodyPartType=)</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/FreezingRay.cs:318-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/FreezingRay.cs:320-->
   <string Context="FreezingRay emit" ID="=subject.Does:emit= a freezing ray from =subject.its= =part.ordinalName=!">▶=subject.Does:emit= a freezing ray from =subject.its= =part.ordinalName=!</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/FreezingRay.cs:325-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/FreezingRay.cs:327-->
   <string Context="FreezingRay emit no part" ID="=subject.Does:emit= a freezing ray!">▶=subject.Does:emit= a freezing ray!</string>
-  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/FreezingRay.cs:380-->
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/FreezingRay.cs:382-->
   <string Context="Freezing Ray Ability Name" ID="Freezing Ray">▶Freezing Ray</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/FreezingRay.cs:412-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/FreezingRay.cs:414-->
   <string Context="Freezing Ray Missing Limb Message" ID="Missing =part.name=">▶Missing =part.name=</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/GasGeneration.cs:32-->
   <string Context="mutation sleep gas ability name" ID="Release Sleep Gas">▶Release Sleep Gas</string>
@@ -3151,11 +3511,9 @@ Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/FreezingRay.c
   <string Context="Quills TakeDamage Message Fragment" ID="from %t =quillsName=!">▶from %t =quillsName=!</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/SlimeGlands.cs:74-->
   <string Context="SlimeGlands Targeting Title" ID="Spit Slime">▶Spit Slime</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/SlimeGlands.cs:82-->
-  <string Context="SlimeGlands Target Pick Error" ID="That is out of range! (=range.things:square=)">▶That is out of range! (=range.things:square=)</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/SlimeGlands.cs:102-->
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/SlimeGlands.cs:99-->
   <string Context="Slime Glands spit" ID="=subject.Does:spit= a pool of slime!">▶=subject.Does:spit= a pool of slime!</string>
-  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/SlimeGlands.cs:211-->
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/SlimeGlands.cs:208-->
   <string Context="SlimeGlands Ability Name" ID="Spit Slime">▶Spit Slime</string>
   <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Mutations/Physical/Spinnerets.cs:225-->
   <string Context="Spinnerets Activated Ability Name" ID="Spin Webs">▶Spin Webs</string>
@@ -3222,8 +3580,92 @@ Assets/XRL Application/World/Game Objects/Parts/Physics.cs:888
   <string Context="Physics AccelerateInternal my damage message" ID="from =subject.a.name= colliding with =object.them=.">▶from =subject.a.name= colliding with =object.them=.</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:1021-->
   <string Context="Physics AccelerateInternal my damage message w/ pens" ID="=pens.pens= from =subject.a.name= colliding with =object.them=.">▶=pens.pens= from =subject.a.name= colliding with =object.them=.</string>
-  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:4701-->
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:2378-->
+  <string Context="shock damage message (TODO)" ID="from %t electrical discharge!">▶from %t electrical discharge!</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:2515-->
+  <string Context="Physics PassingBy" ID="You pass by =passed.andList=.">▶You pass by =passed.andList=.</string>
+  <!--Code references _T(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:4707-->
   <string ID="=subject.An= =subject.verb#ArriveVerb= =subject.direction=.">▶=subject.An= =subject.verb#ArriveVerb= =subject.direction=.</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:5238-->
+  <string Context="Physics (Inventory) Category" ID="Ammo">▶Ammo</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:5239-->
+  <string Context="Physics (Inventory) Category" ID="Applicators">▶Applicators</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:5240-->
+  <string Context="Physics (Inventory) Category" ID="Armor">▶Armor</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:5241-->
+  <string Context="Physics (Inventory) Category" ID="Artifacts">▶Artifacts</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:5242-->
+  <string Context="Physics (Inventory) Category" ID="Books">▶Books</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:5243-->
+  <string Context="Physics (Inventory) Category" ID="Clothes">▶Clothes</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:5244-->
+  <string Context="Physics (Inventory) Category" ID="Corpses">▶Corpses</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:5245-->
+  <string Context="Physics (Inventory) Category" ID="Creatures">▶Creatures</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:5246-->
+  <string Context="Physics (Inventory) Category" ID="Crystal">▶Crystal</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:5247-->
+  <string Context="Physics (Inventory) Category" ID="Cybernetic Implants">▶Cybernetic Implants</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:5248-->
+  <string Context="Physics (Inventory) Category" ID="Data Disks">▶Data Disks</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:5249-->
+  <string Context="Physics (Inventory) Category" ID="Energy Cells">▶Energy Cells</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:5250-->
+  <string Context="Physics (Inventory) Category" ID="Food">▶Food</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:5251-->
+  <string Context="Physics (Inventory) Category" ID="Fungal Infection">▶Fungal Infection</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:5252-->
+  <string Context="Physics (Inventory) Category" ID="Fungus">▶Fungus</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:5253-->
+  <string Context="Physics (Inventory) Category" ID="Grenades">▶Grenades</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:5254-->
+  <string Context="Physics (Inventory) Category" ID="Invertebrates">▶Invertebrates</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:5255-->
+  <string Context="Physics (Inventory) Category" ID="Light Sources">▶Light Sources</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:5256-->
+  <string Context="Physics (Inventory) Category" ID="Liquids">▶Liquids</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:5257-->
+  <string Context="Physics (Inventory) Category" ID="Meds">▶Meds</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:5258-->
+  <string Context="Physics (Inventory) Category" ID="Melee Weapons">▶Melee Weapons</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:5259-->
+  <string Context="Physics (Inventory) Category" ID="Miscellaneous">▶Miscellaneous</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:5260-->
+  <string Context="Physics (Inventory) Category" ID="Missile Weapons">▶Missile Weapons</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:5261-->
+  <string Context="Physics (Inventory) Category" ID="Natural Armor">▶Natural Armor</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:5262-->
+  <string Context="Physics (Inventory) Category" ID="Natural Missile Weapon">▶Natural Missile Weapon</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:5263-->
+  <string Context="Physics (Inventory) Category" ID="Natural Weapons">▶Natural Weapons</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:5264-->
+  <string Context="Physics (Inventory) Category" ID="Nest">▶Nest</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:5265-->
+  <string Context="Physics (Inventory) Category" ID="Plants">▶Plants</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:5266-->
+  <string Context="Physics (Inventory) Category" ID="Projectiles">▶Projectiles</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:5267-->
+  <string Context="Physics (Inventory) Category" ID="Quest Items">▶Quest Items</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:5268-->
+  <string Context="Physics (Inventory) Category" ID="Scrap">▶Scrap</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:5269-->
+  <string Context="Physics (Inventory) Category" ID="Shields">▶Shields</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:5270-->
+  <string Context="Physics (Inventory) Category" ID="Terrain">▶Terrain</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:5271-->
+  <string Context="Physics (Inventory) Category" ID="Thrown Weapons">▶Thrown Weapons</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:5272-->
+  <string Context="Physics (Inventory) Category" ID="Tonics">▶Tonics</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:5273-->
+  <string Context="Physics (Inventory) Category" ID="Tools">▶Tools</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:5274-->
+  <string Context="Physics (Inventory) Category" ID="Trade Goods">▶Trade Goods</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:5275-->
+  <string Context="Physics (Inventory) Category" ID="Trinkets">▶Trinkets</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:5276-->
+  <string Context="Physics (Inventory) Category" ID="Unknown">▶Unknown</string>
+  <!--Code references _S(): Assets/XRL Application/World/Game Objects/Parts/Physics.cs:5277-->
+  <string Context="Physics (Inventory) Category" ID="Water Containers">▶Water Containers</string>
   <!--Code references _S():
 Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:94
 Assets/XRL Application/World/Game Objects/Parts/Skills and Powers/Cooking/Campfire.cs:99
@@ -3698,7 +4140,9 @@ Assets/XRL Application/World/Game Objects/Tinkering/Disassembly.cs:116
   <string Context="Disassembly Message, nothing gained" ID="=itemsMessage=">▶=itemsMessage=</string>
   <!--Code references _T(): Assets/XRL Application/World/Game Objects/Tinkering/Disassembly.cs:620-->
   <string Context="Disassembly Item Stack (fragment)" ID="=item= x=done=">▶=item= x=done=</string>
-  <!--Code references _T(): Assets/XRL Application/World/IComponent.cs:1367-->
+  <!--Code references _T(): Assets/XRL Application/World/IComponent.cs:1195-->
+  <string Context="Generic out of range error popup message" ID="That is out of range! (=range.things:square=)">▶That is out of range! (=range.things:square=)</string>
+  <!--Code references _T(): Assets/XRL Application/World/IComponent.cs:1378-->
   <string Context="TargetSelfConfirm" ID="Are you sure you want to target =subject.itself=?">▶Are you sure you want to target =subject.itself=?</string>
   <!--Code references _S():
 Assets/XRL Application/World/Settlements/World.Settlements.cs:59
@@ -3731,9 +4175,33 @@ Assets/XRL Application/World/Text/Delegates.cs:206
   <string Context="keybind" ID="{{W|Alt}}">▶{{W|Alt}}</string>
   <!--Code references _S(): Assets/XRL Application/World/Text/Delegates.cs:258-->
   <string ID="an uncharted dimension">▶an uncharted dimension</string>
+  <!--Code references _S(): Assets/XRL Application/World/Text/Delegates/Delegates.Bool.cs:58-->
+  <string Context="checkbox (checked)" ID="{{y|[{{G|■}}]}}">▶{{y|[{{G|■}}]}}</string>
+  <!--Code references _S(): Assets/XRL Application/World/Text/Delegates/Delegates.Bool.cs:59-->
+  <string Context="checkbox (unchecked)" ID="{{y|[ ]}}">▶{{y|[ ]}}</string>
+  <!--Code references _S(): Assets/XRL Application/World/Text/Delegates/Delegates.GameObject.cs:212-->
+  <string Context="default fragment PoeticFeatures" ID="shiny teeth,coarse hair,sunken eyes">▶shiny teeth,coarse hair,sunken eyes</string>
+  <!--Code references _S(): Assets/XRL Application/World/Text/Delegates/Delegates.GameObject.cs:213-->
+  <string Context="default fragment Activity" ID="roaming around idly">▶roaming around idly</string>
+  <!--Code references _S(): Assets/XRL Application/World/Text/Delegates/Delegates.GameObject.cs:214-->
+  <string Context="default fragment VillageActivity" ID="sleeping in our homes">▶sleeping in our homes</string>
+  <!--Code references _S(): Assets/XRL Application/World/Text/Delegates/Delegates.GameObject.cs:215-->
+  <string Context="default fragment SacredThing" ID="the act of procreating">▶the act of procreating</string>
+  <!--Code references _S(): Assets/XRL Application/World/Text/Delegates/Delegates.GameObject.cs:216-->
+  <string Context="default fragment ArableLand" ID="arable land">▶arable land</string>
+  <!--Code references _S(): Assets/XRL Application/World/Text/Delegates/Delegates.GameObject.cs:217-->
+  <string Context="default fragment ValuedOre" ID="precious metals">▶precious metals</string>
   <!--Code references _S(): Assets/XRL Application/World/Text/Delegates/Delegates.GameObjectBlueprint.cs:45-->
   <string Context="Default LairName" ID="lair">▶lair</string>
-  <!--Code references _T(): Assets/XRL Application/World/Text/Delegates/Delegates.Numbers.cs:74-->
+  <!--Code references _S(): Assets/XRL Application/World/Text/Delegates/Delegates.Lists.cs:107-->
+  <string Context="Text Replacer listDirectionsTo separate givers (last, and previous had direction)" ID=", or " Value="▶, or " />
+  <!--Code references _S(): Assets/XRL Application/World/Text/Delegates/Delegates.Lists.cs:111-->
+  <string Context="Text Replacer listDirectionsTo separate giver (last, and previous had no direction)" ID=" or " Value="▶ or " />
+  <!--Code references _S(): Assets/XRL Application/World/Text/Delegates/Delegates.Lists.cs:116-->
+  <string Context="Text Replacer listDirectionsTo separate giver (not last)" ID=", " Value="▶, " />
+  <!--Code references _T(): Assets/XRL Application/World/Text/Delegates/Delegates.Lists.cs:128-->
+  <string Context="Text Replacer listDirectionsTo append direction" ID=", =sameDirection.if:also ::==direction=">▶, =sameDirection.if:also ::==direction=</string>
+  <!--Code references _T(): Assets/XRL Application/World/Text/Delegates/Delegates.Numbers.cs:87-->
   <string Context="damage penetrations" ID="(x=number.toString=)">▶(x=number.toString=)</string>
   <!--Code references _S(): Assets/XRL Application/World/Zones/Builders/Villages/Village.cs:129-->
   <string Context="Village Warden friend reason" ID="defending their village">▶defending their village</string>
@@ -3984,6 +4452,10 @@ Assets/XRL Application/World/Zones/WorldBuilders/JoppaWorldBuilder.cs:2284
   <string Context="RingGateBuilder TeleportGateName" ID="=prefixRoot==root= =orderWord= gate">▶=prefixRoot==root= =orderWord= gate</string>
   <!--Code references _T(): Assets/XRL Application/World/Zones/WorldBuilders/RingGateBuilder.cs:516-->
   <string Context="RingGateBuilder TeleportGateNameRoot" ID="=prefixRoot==root=">▶=prefixRoot==root=</string>
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldFactory.cs:781-->
+  <string Context="WorldCreation Rivers" ID="Generating rivers...">▶Generating rivers...</string>
+  <!--Code references _S(): Assets/XRL Application/World/Zones/WorldFactory.cs:782-->
+  <string Context="WorldCreation Canyons" ID="Generating canyons...">▶Generating canyons...</string>
   <!--Code references _S(): Assets/XRL Application/World/Zones/ZoneManager.cs:844-->
   <string Context="ZoneManager Thawing Zone UI status message" ID="Thawing zone...">▶Thawing zone...</string>
   <!--Code references _S(): Assets/XRL Application/World/Zones/ZoneManager.cs:988-->

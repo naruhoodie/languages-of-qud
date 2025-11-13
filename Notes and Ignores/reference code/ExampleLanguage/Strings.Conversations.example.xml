@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
 
-Caves of Qud - Generated Localizable XML 2.0.212.4
+Caves of Qud - Generated Localizable XML 2.0.212.6
 
 Conversations strings export.
 
@@ -2497,14 +2497,14 @@ After a moment or an eon, you awaken knowing =mutation.name=.
   <string Context="Conversation BaseConversation.AskForWork.Text4" ID="Is there work around here?">
 ▶Is there work around here?
   </string>
-  <string Context="Conversation BaseConversation.DirectToWork.Text" ID="Speak to =questgivers=.">
-▶Speak to =questgivers=.
+  <string Context="Conversation BaseConversation.DirectToWork.Text" ID="Speak to =subject.listDirectionsTo#questGivers=.">
+▶Speak to =subject.listDirectionsTo#questGivers=.
   </string>
-  <string Context="Conversation BaseConversation.DirectToWork.Text2" ID="Talk to =questgivers=.">
-▶Talk to =questgivers=.
+  <string Context="Conversation BaseConversation.DirectToWork.Text2" ID="Talk to =subject.listDirectionsTo#questGivers=.">
+▶Talk to =subject.listDirectionsTo#questGivers=.
   </string>
-  <string Context="Conversation BaseConversation.DirectToWork.Text3" ID="Find =questgivers=.">
-▶Find =questgivers=.
+  <string Context="Conversation BaseConversation.DirectToWork.Text3" ID="Find =subject.listDirectionsTo#questGivers=.">
+▶Find =subject.listDirectionsTo#questGivers=.
   </string>
   <string Context="Conversation BaseConversation.DirectToWork.MoreToAsk.Text" ID="Thank you. I have more to ask.">
 ▶Thank you. I have more to ask.

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.4
+Caves of Qud - Generated Localizable XML 2.0.212.6
 
 <books>
 
@@ -11,15 +11,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.4
 -->
 <books Lang="example" Encoding="utf-8">
   <!--♪ 
-      "Skybear" is written in (sort-of) MIDDLE ENGLISH, Canterbury Tales-style (~1400).
-      The spelling is odd and some words are archaic, but an English native speaker
-      can make some sense of it by reading it out loud.
-      NOTE: This style is not SHAKESPEAREAN ENGLISH (~1600)!
-      That's older Modern English and gets used for other books in this file,
-      this needs to feel somewhat older and even harder to read but not "impossible".
-      I suggest you find a good reference literature to use for Shakespeare-style,
-      and for Middle English, use the style of a known piece of literature
-      of around 600-1000 years old. There's other text in this style besides this book.
+    written in "Middle English", the style of The Canterbury Tales by Chaucer
   -->
   <book ID="Skybear" Title="▶{{W|Song of the Sky-Bear}}">
     <page>▶
@@ -211,6 +203,7 @@ But Qo-Caco condensates are delicious.</page>
     <page>▶Share your life in simple peace.</page>
   </book>
   <book ID="Quotes" Title="▶Quotes">
+    <!--♪ each page is a possible quote to show during World Generation, chosen at random -->
     <page>▶
 "Strap this around your temples. Stop yammering, you will be fine.
 What could possibly go wrong?"

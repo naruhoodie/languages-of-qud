@@ -1,0 +1,258 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Caves of Qud - Generated Localizable XML 2.0.212.6
+
+<embarkmodules>
+
+  <module Class="Key">
+
+-->
+<embarkmodules Lang="example" Encoding="utf-8">
+  <module Class="XRL.CharacterBuilds.Qud.QudGamemodeModule">
+    <window ID="Chargen/Modes">
+      <title>▶:choose game mode:</title>
+      <name>▶Game Modes</name>
+    </window>
+    <modes>
+      <mode ID="Tutorial" Title="▶Tutorial">
+        <description>▶
+          Learn the basics of Caves of Qud.
+              </description>
+      </mode>
+      <mode ID="Classic" Title="▶Classic">
+        <description>▶
+          Permadeath: lose your character when you die.
+              </description>
+      </mode>
+      <mode ID="Roleplay" Title="▶Roleplay">
+        <description>▶
+          Checkpointing at settlements.
+              </description>
+      </mode>
+      <mode ID="Wander" Title="▶Wander">
+        <description>▶
+          {{c|∙}} Most creatures begin neutral to you.
+          {{c|∙}} No XP for killing.
+          {{c|∙}} More XP for discoveries and performing the water ritual.
+          {{c|∙}} Checkpointing at settlements.
+              </description>
+      </mode>
+      <mode ID="Daily" Title="▶Daily">
+        <description>▶
+          {{c|∙}} One chance with a fixed character and world seed.
+          {{c|∙}} Currently in day {{W|{day_of_year}}} of {{W|{year}}}.
+              </description>
+      </mode>
+    </modes>
+  </module>
+  <module Class="XRL.CharacterBuilds.Qud.QudChartypeModule">
+    <window ID="Chargen/CharType">
+      <name>▶CharTypes</name>
+      <title>▶:choose character type:</title>
+    </window>
+    <types>
+      <type ID="Pregen" Title="▶Presets">
+        <description>▶
+          Pick from several preset characters. Once you get comfortable, you can customize them.
+               </description>
+      </type>
+      <type ID="New" Title="▶New">
+        <description>▶
+          Create a new character.
+              </description>
+      </type>
+      <type ID="Random" Title="▶Random">
+        <description>▶
+          Roll a random character.
+              </description>
+      </type>
+      <type ID="Library" Title="▶Library">
+        <description>▶
+          Choose a character from your build library.
+              </description>
+      </type>
+      <type ID="Last" Title="▶Last">
+        <description>▶
+          Replay the last character you played.
+              </description>
+      </type>
+    </types>
+  </module>
+  <module Class="XRL.CharacterBuilds.Qud.QudBuildLibraryModule">
+    <window ID="Chargen/BuildLibrary">
+      <name>▶Build Library</name>
+      <title>▶:build library:</title>
+    </window>
+  </module>
+  <module Class="XRL.CharacterBuilds.Qud.QudGenotypeModule">
+    <window ID="Chargen/ChooseGenotypes">
+      <name>▶Genotypes</name>
+      <title>▶:choose genotype:</title>
+    </window>
+  </module>
+  <module Class="XRL.CharacterBuilds.Qud.QudPregenModule">
+    <window ID="Chargen/Pregens">
+      <name>▶Pregens</name>
+      <title>▶:choose preset:</title>
+    </window>
+    <pregens>
+      <pregen ID="Praetorian Prime" Name="▶Praetorian Prime">
+        <description>▶
+&amp;c∙&amp;y Charge-based melee fighter
+&amp;c∙&amp;y Starts with night vision
+&amp;c∙&amp;y {{W|Most survivable}} starting build
+              </description>
+      </pregen>
+      <pregen ID="First Gardener" Name="▶First Gardener">
+        <description>▶
+&amp;c∙&amp;y Hybrid melee and ranged fighter
+&amp;c∙&amp;y Starts with cooking and gathering
+&amp;c∙&amp;y {{W|Highly survivable}} starting build
+              </description>
+      </pregen>
+      <pregen ID="First Child of the Hearth" Name="▶First Child of the Hearth">
+        <description>▶
+&amp;c∙&amp;y Melee fighter and extreme bruiser
+&amp;c∙&amp;y Starts with carbide hand bones
+&amp;c∙&amp;y {{W|Highly survivable}} starting build
+              </description>
+      </pregen>
+      <pregen ID="Marsh Taur" Name="▶Marsh Taur">
+        <description>▶
+&amp;c∙&amp;y Charge-based melee fighter
+&amp;c∙&amp;y Ability to freeze enemies
+&amp;c∙&amp;y Highly maneuverable
+&amp;c∙&amp;y {{W|Most survivable}} starting build
+              </description>
+      </pregen>
+      <pregen ID="Dream Tortoise" Name="▶Dream Tortoise">
+        <description>▶
+&amp;c∙&amp;y Melee fighter
+&amp;c∙&amp;y Highly-armored
+&amp;c∙&amp;y Emits sleep gas to disable enemies
+&amp;c∙&amp;y {{W|Highly survivable}} starting build
+              </description>
+      </pregen>
+      <pregen ID="Gunwing" Name="▶Gunwing">
+        <description>▶
+&amp;c∙&amp;y Primarily ranged fighter
+&amp;c∙&amp;y Quick and maneuverable
+&amp;c∙&amp;y Flies
+&amp;c∙&amp;y {{W|Highly survivable}} starting build
+              </description>
+      </pregen>
+      <pregen ID="Star-Eye Esper" Name="▶Star-Eye Esper">
+        <description>▶
+&amp;c∙&amp;y Mental-based ranged fighter
+&amp;c∙&amp;y Effective crowd control and map vision
+&amp;c∙&amp;y {{W|Medium survivable}} starting build
+              </description>
+      </pregen>
+      <pregen ID="Firefrond" Name="▶Firefrond">
+        <description>▶
+&amp;c∙&amp;y Hybrid melee fighter and mental caster
+&amp;c∙&amp;y Ability to set enemies on fire
+&amp;c∙&amp;y Causes harvestable plants to grow nearby
+&amp;c∙&amp;y {{W|Challenging}} starting build
+              </description>
+      </pregen>
+      <pregen ID="bzzzt" Name="▶bzzzt">
+        <description>▶
+&amp;c∙&amp;y Hybrid melee fighter and electrical attacker
+&amp;c∙&amp;y Burrower and trap-setter
+&amp;c∙&amp;y Starts with night vision
+&amp;c∙&amp;y {{W|Challenging}} starting build
+              </description>
+      </pregen>
+    </pregens>
+  </module>
+  <module Class="XRL.CharacterBuilds.Qud.QudSubtypeModule">
+    <window ID="Chargen/ChooseSubtypes">
+      <name>▶Subtypes</name>
+      <title>▶:choose subtype:</title>
+    </window>
+    <window ID="Chargen/ChooseSubtypesCategory">
+      <name>▶Subtypes with Category</name>
+      <title>▶:choose subtype:</title>
+    </window>
+  </module>
+  <module Class="XRL.CharacterBuilds.Qud.QudMutationsModule">
+    <window ID="Chargen/Mutations">
+      <name>▶Mutations</name>
+      <title>▶:choose mutations:</title>
+    </window>
+  </module>
+  <module Class="XRL.CharacterBuilds.Qud.QudAttributesModule">
+    <window ID="Chargen/PickAttributes">
+      <title>▶:choose attributes:</title>
+      <name>▶Attributes</name>
+    </window>
+  </module>
+  <module Class="XRL.CharacterBuilds.Qud.QudCyberneticsModule">
+    <window ID="Chargen/Cybernetic">
+      <name>▶Cybernetics</name>
+      <title>▶:choose cybernetic implant:</title>
+    </window>
+  </module>
+  <module Class="XRL.CharacterBuilds.Qud.QudBuildSummaryModule">
+    <window ID="Chargen/BuildSummary">
+      <name>▶Summary</name>
+      <title>▶:build summary:</title>
+    </window>
+  </module>
+  <module Class="XRL.CharacterBuilds.Qud.QudCustomizeCharacterModule">
+    <window ID="Chargen/Customize">
+      <name>▶Customize</name>
+      <title>▶:customize character:</title>
+    </window>
+  </module>
+  <module Class="XRL.CharacterBuilds.Qud.QudChooseStartingLocationModule">
+    <window ID="Chargen/ChooseStartingLocation">
+      <name>▶Starting Location</name>
+      <title>▶:choose starting location:</title>
+    </window>
+    <locations>
+      <location ID="Joppa" Name="▶{{Y|Joppa}}">
+        <description>▶
+          Recommended for new players.
+              </description>
+      </location>
+      <location ID="SaltMarshVillage" Name="▶{{G|salt marsh}}&#xA;village">
+        <description>▶
+          {{c|∙}} Random village in the salt marshes.
+          {{c|∙}} Village teaches Harvestry.
+          {{c|∙}} +50 reputation with insects and fish.
+          {{c|∙}} Start with a pair of {{g|crocc{{G|a}}sins}}.
+              </description>
+      </location>
+      <location ID="SaltDuneVillage" Name="▶{{Y|salt dunes}}&#xA;village">
+        <description>▶
+          {{c|∙}} Random village in the salt dunes.
+          {{c|∙}} Village teaches Fasting Way.
+          {{c|∙}} +100 reputation with reptiles.
+          {{c|∙}} Start with an {{Y|Issach{{r|a}}ri}} banner.
+              </description>
+      </location>
+      <location ID="DesertCanyonsVillage" Name="▶{{W|desert canyon}}&#xA;village">
+        <description>▶
+          {{c|∙}} Random village in the desert canyons.
+          {{c|∙}} Village teaches Wayfaring.
+          {{c|∙}} +50 reputation with equines, tortoises, and vines.
+              </description>
+      </location>
+      <location ID="HillsVillage" Name="▶{{Y|hill}}&#xA;village">
+        <description>▶
+          {{c|∙}} Random village in the hills.
+          {{c|∙}} Village teaches Butchering.
+          {{c|∙}} +100 reputation with hermits.
+          {{c|∙}} Start with a {{r|blood-stained}} neck-ring
+              </description>
+      </location>
+      <location ID="JoppaTutorial" Name="▶a sunken caravanserai">
+        <description>▶
+          You arrive at the outskirts of Qud.
+              </description>
+      </location>
+    </locations>
+  </module>
+</embarkmodules>

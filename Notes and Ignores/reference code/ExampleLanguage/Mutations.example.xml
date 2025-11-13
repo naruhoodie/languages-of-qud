@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.4
+Caves of Qud - Generated Localizable XML 2.0.212.6
 
 <mutations Hidden="" ExcludeFromPool="">
 
@@ -499,7 +499,21 @@ Caves of Qud - Generated Localizable XML 2.0.212.4
             <statline Name="Cooldown" />
           </leveltext>
     </mutation>
-    <mutation Name="Burgeoning" DisplayName="▶Burgeoning" BearerDescription="▶psychic gardeners" />
+    <mutation Name="Burgeoning" DisplayName="▶Burgeoning" BearerDescription="▶psychic gardeners">
+      <description>▶
+            <p>You cause plants to spontaneously grow in a nearby area, hindering your enemies.</p>
+          </description>
+      <leveltext>▶
+            <statline Name="Range" />
+            <p>Area: <stat Name="Area" /> + growth into adjacent tiles</p>
+            <statline Name="Cooldown" />
+            <switch Name="LevelMatch">
+              <case Value="true"></case>
+              <default><p>More powerful plants summoned</p></default>
+            </switch>
+            <p>+200 reputation with {{w|the Consortium of Phyta}}</p>
+          </leveltext>
+    </mutation>
     <mutation Name="Clairvoyance" DisplayName="▶Clairvoyance" BearerDescription="▶the clairvoyant">
       <description>▶You briefly gain vision of a nearby area.</description>
       <leveltext>▶
@@ -508,9 +522,42 @@ Caves of Qud - Generated Localizable XML 2.0.212.4
             <statline Name="Cooldown" Unit="round" />
           </leveltext>
     </mutation>
-    <mutation Name="Confusion" DisplayName="▶Confusion" BearerDescription="▶riddlers" />
-    <mutation Name="Cryokinesis" DisplayName="▶Cryokinesis" BearerDescription="▶cryomancers" />
-    <mutation Name="Disintegration" DisplayName="▶Disintegration" BearerDescription="▶disintegrators" />
+    <mutation Name="Confusion" DisplayName="▶Confusion" BearerDescription="▶riddlers">
+      <description>▶You confuse nearby enemies.</description>
+      <leveltext>▶
+            <p>Affected creatures act semi-randomly and receive a -<stat Name="Penalty" /> penalty to their mental abilities.</p>
+            <statline Name="ConeAngle" DisplayName="Cone angle" Unit="degree" />
+            <statline Name="ConeLength" DisplayName="Cone length" />
+            <statline Name="Duration" />
+            <statline Name="Cooldown" />
+          </leveltext>
+    </mutation>
+    <mutation Name="Cryokinesis" DisplayName="▶Cryokinesis" BearerDescription="▶cryomancers">
+      <description>▶You chill a nearby area with your mind.</description>
+      <leveltext>▶
+            <switch Name="LevelMatch">
+              <case Value="true"><p>Chills affected area over <stat Name="Duration" />, dealing damage and freezing things</p></case>
+              <case Value="raise"><p>{{rules|Increased chill temperature intensity}}</p></case>
+              <default><p>{{rules|Decreased chill temperature intensity}}</p></default>
+            </switch>
+            <statline Name="Range" />
+            <statline Name="Area" />
+            <statline Name="DamageRound1" DisplayName="Round 1 damage" />
+            <statline Name="DamageRound2" DisplayName="Round 2 damage" />
+            <statline Name="DamageRound3" DisplayName="Round 3 damage" />
+            <statline Name="Cooldown" />
+          </leveltext>
+    </mutation>
+    <mutation Name="Disintegration" DisplayName="▶Disintegration" BearerDescription="▶disintegrators">
+      <description>▶You disintegrate nearby matter.</description>
+      <leveltext>▶
+            <statline Name="Area" />
+            <statline Name="DamageNonStructural" DisplayName="Damage to non-structural objects" />
+            <statline Name="DamageStructural" DisplayName="Damage to structural objects" />
+            <p>You are exhausted for 3 rounds after using this power.</p>
+            <statline Name="Cooldown" />
+          </leveltext>
+    </mutation>
     <mutation Name="Domination" DisplayName="▶Domination" BearerDescription="▶those who dominate the wills of others">
       <description>▶
             <p>You garrote an adjacent creature's mind and control its actions while your own body lies dormant.</p>
@@ -523,10 +570,40 @@ Caves of Qud - Generated Localizable XML 2.0.212.4
             <statline Name="Cooldown" />
           </leveltext>
     </mutation>
-    <mutation Name="Ego Projection" DisplayName="▶Ego Projection" BearerDescription="▶those who project their egos onto the physical realm" />
-    <mutation Name="Force Bubble" DisplayName="▶Force Bubble" BearerDescription="▶bubble folk" />
-    <mutation Name="Force Wall" DisplayName="▶Force Wall" BearerDescription="▶architects of force walls" />
-    <mutation Name="Kindle" DisplayName="▶Kindle" BearerDescription="▶kindlers" />
+    <mutation Name="Ego Projection" DisplayName="▶Ego Projection" BearerDescription="▶those who project their egos onto the physical realm">
+      <description>▶Through sheer force of will, you perform uncanny physical feats.</description>
+      <leveltext>▶
+            <p>Augments one physical attribute by an amount equal to twice your Ego bonus</p>
+            <statline Name="Duration" />
+            <statline Name="Cooldown" />
+          </leveltext>
+    </mutation>
+    <mutation Name="Force Bubble" DisplayName="▶Force Bubble" BearerDescription="▶bubble folk">
+      <description>▶You generate a forcefield around yourself.</description>
+      <leveltext>▶
+            <p>Creates a 3x3 forcefield centered on yourself</p>
+            <statline Name="Duration" />
+            <statline Name="Cooldown" />
+            <p>You may fire missile weapons through the forcefield.</p>
+          </leveltext>
+    </mutation>
+    <mutation Name="Force Wall" DisplayName="▶Force Wall" BearerDescription="▶architects of force walls">
+      <description>▶You generate a wall of force that protects you from your enemies.</description>
+      <leveltext>▶
+            <p>Creates 9 contiguous squares of immobile forcefield.</p>
+            <statline Name="Duration" />
+            <statline Name="Cooldown" />
+            <p>You may fire missile weapons through the forcefield.</p>
+          </leveltext>
+    </mutation>
+    <mutation Name="Kindle" DisplayName="▶Kindle" BearerDescription="▶kindlers">
+      <description>▶
+            <p>You ignite a small fire with your mind.</p>
+            <p></p>
+            <statline Name="Range" />
+            <statline Name="Cooldown" />
+          </description>
+    </mutation>
     <mutation Name="Light Manipulation" DisplayName="▶Light Manipulation" BearerDescription="▶manipulators of light" />
     <mutation Name="Mass Mind" DisplayName="▶Mass Mind" BearerDescription="▶those who tap the Mass Mind" />
     <mutation Name="Mental Mirror" DisplayName="▶Mental Mirror" BearerDescription="▶the mentally reflective" />
