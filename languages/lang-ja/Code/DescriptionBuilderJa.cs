@@ -3,7 +3,7 @@ using System;
 using XRL.World;
 using static XRL.Language.Strings;
 
-namespace XRL.Language
+namespace LanguagesOfQudJapanese
 {
     /// <summary>
     /// used for building a complete DisplayName

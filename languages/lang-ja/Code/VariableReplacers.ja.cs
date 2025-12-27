@@ -7,7 +7,7 @@ using XRL.Language;
 
 // TODO: split out replacers into sub-files by argument and/or processing type
 // e.g. VariableReplacers.List.cs, VariableReplacers.String.cs, VariableReplacers.Number.cs
-namespace LanguagesOfQud
+namespace LanguagesOfQudJapanese
 {
     [HasVariableReplacer(Lang = "ja")]
     public static class VariableReplacers
@@ -334,22 +334,9 @@ namespace LanguagesOfQud
         [VariableExample("マイナス二十一", -21)]
         [VariableExample("一千三百三十七", 1337)]
         [VariableExample("三万七千五百六十四", 37564)]
-        public static string Cardinal(VariableContext Context, int Number)
-        {
-            return TranslatorJapanese.Cardinal(Number);
-        }
-        /// <summary>
-        /// 基数(kisuu, "cardinal number") - equivalent of "Cardinal" replacer 
-        /// </summary>
-        [VariableReplacer("基数", "cardinal", Override = true)]
-        [VariableExample("零", 0)]
-        [VariableExample("二十一", 21)]
-        [VariableExample("マイナス二十一", -21)]
-        [VariableExample("一千三百三十七", 1337)]
-        [VariableExample("三万七千五百六十四", 37564)]
         public static void Cardinal(VariableContext Context, long Number)
         {
-            Context.Value.Append(TranslatorJapanese.Cardinal(Number));
+            Context.Value.Append(Translator.Cardinal(Number));
         }
 
         /// <summary>

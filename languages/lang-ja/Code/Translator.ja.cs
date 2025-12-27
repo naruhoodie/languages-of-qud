@@ -4,8 +4,9 @@ using XRL.World;
 using XRL.World.Text;
 using System.Collections.Generic;
 using ConsoleLib.Console;
+using XRL.Language;
 
-namespace XRL.Language
+namespace LanguagesOfQudJapanese
 {
     [LanguageProvider("ja")]
     public class TranslatorJapanese : TranslatorBase
@@ -15,13 +16,13 @@ namespace XRL.Language
         private const char LOW_SURROGATE_START = '\udc00';
         private const char LOW_SURROGATE_END = '\udfff';
 
-        private char[] DontBreakAfter = {
+        private readonly char[] DontBreakAfter = {
             // Don't break after color control codes.
             '&', '^',
             // or simple quotes
             '\'', '"'
         };
-        private char[] DontBreakBefore = {
+        private readonly char[] DontBreakBefore = {
             // small kana and other modifiers
             'ァ', 'ィ', 'ゥ', 'ェ', 'ォ', 'ッ', 'ャ', 'ュ', 'ョ', 'ヮ', 'ヵ', 'ヶ', 'ぁ', 'ぃ', 'ぅ', 'ぇ', 'ぉ', 'っ', 'ゃ', 'ゅ', 'ょ', 'ゎ', 'ゕ', 'ゖ', 'ㇰ', 'ㇱ', 'ㇲ', 'ㇳ', 'ㇴ', 'ㇵ', 'ㇶ', 'ㇷ', 'ㇸ', 'ㇹ', 'ㇺ', 'ㇻ', 'ㇼ', 'ㇽ', 'ㇾ', 'ㇿ', '々', '〻', 'ヽ', 'ヾ', 'ー', '゛', '゜', 'ゝ', 'ゞ',
             // hyphens
@@ -77,10 +78,12 @@ namespace XRL.Language
             return new DescriptionBuilderJa { Cutoff = int.MaxValue, BaseOnly = BaseOnly };
         }
 
-        /**
-         * support method for Cardinal() and Ordinal()
-         */
-        private static void ProcessMagnitude(ref long num, ref int magnitude, TextBuilder SB, string place)
+        /// <summary>
+        /// support method for Cardinal() and Ordinal()
+        /// processes the current "bundle" of digits in a number
+        /// like 五百六十四'億'七千三百一'万'
+        /// </summary>
+        protected override void ProcessMagnitude(ref long num, ref int magnitude, TextBuilder SB, string place)
         {
             if (magnitude > 4)
             {
@@ -99,10 +102,11 @@ namespace XRL.Language
             magnitude--;
         }
 
-        /**
-         * support method for Cardinal() and Ordinal()
-         */
-        private static bool ProcessMagnitudes(ref long num, ref int magnitude, TextBuilder SB, string suffix = null)
+        /// <summary>
+        /// support method for Cardinal()
+        /// processes the number starting from the highest digit
+        /// </summary>
+        protected override bool ProcessMagnitudes(ref long num, ref int magnitude, TextBuilder SB, string suffix = null)
         {
             switch (magnitude)
             {
@@ -213,15 +217,11 @@ namespace XRL.Language
             return false;
         }
 
-        public static string Cardinal(int num)
-        {
-            if (num == 0)
-            {
-                return "零";
-            }
-            return Cardinal((long)num);
-        }
-        public static string Cardinal(long num)
+        /// <summary>
+        /// converts the number into a longform string,
+        /// e.g. 24 -> "二十四"
+        /// </summary>
+        public override string Cardinal(long num)
         {
             if (num == 0)
             {
