@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.7
+Caves of Qud - Generated Localizable XML 2.0.212.8
 
 <Statistics>
 
@@ -17,78 +17,109 @@ Caves of Qud - Generated Localizable XML 2.0.212.7
 -->
 <statistics Lang="example" Encoding="utf-8">
   <statistic Name="Strength">
+    <displayName>▶strength</displayName>
+    <displayTitle>▶Strength</displayTitle>
     <shortName>▶STR</shortName>
+    <shortTitle>▶Str</shortTitle>
     <helpText>▶Your {{W|Strength}} determines how much melee damage you do (by improving your armor penetration), your ability to resist forced movement, and your carry capacity.</helpText>
   </statistic>
   <statistic Name="Agility">
+    <displayName>▶agility</displayName>
+    <displayTitle>▶Agility</displayTitle>
     <shortName>▶AGI</shortName>
+    <shortTitle>▶Agi</shortTitle>
     <helpText>▶Your {{W|Agility}} determines your accuracy with both melee and ranged weapons and your chance to dodge attacks.</helpText>
   </statistic>
   <statistic Name="Toughness">
+    <displayName>▶toughness</displayName>
+    <displayTitle>▶Toughness</displayTitle>
     <shortName>▶TOU</shortName>
+    <shortTitle>▶Tou</shortTitle>
     <helpText>▶Your {{W|Toughness}} determines your number of hit points, your hit point regeneration rate, and your ability to resist poison and disease.</helpText>
   </statistic>
   <statistic Name="Intelligence">
+    <displayName>▶intelligence</displayName>
+    <displayTitle>▶Intelligence</displayTitle>
     <shortName>▶INT</shortName>
+    <shortTitle>▶Int</shortTitle>
     <helpText>▶Your {{W|Intelligence}} determines your number of skill points and your ability to examine artifacts.</helpText>
   </statistic>
   <statistic Name="Willpower">
+    <displayName>▶willpower</displayName>
+    <displayTitle>▶Willpower</displayTitle>
     <shortName>▶WIL</shortName>
+    <shortTitle>▶Wil</shortTitle>
     <helpText>▶Your {{W|Willpower}} modifies the cooldowns of your activated abilities, determines your ability to resist mental attacks, and modifies your hit point regeneration rate.</helpText>
   </statistic>
   <statistic Name="Ego">
+    <displayName>▶ego</displayName>
+    <displayTitle>▶Ego</displayTitle>
     <shortName>▶EGO</shortName>
+    <shortTitle>▶Ego</shortTitle>
     <helpText>▶Your {{W|Ego}} determines the potency of your mental mutations, your ability to haggle with merchants, and your ability to dominate the wills of other living creatures.</helpText>
   </statistic>
   <statistic Name="AV">
+    <shortName>▶AV</shortName>
+    <shortTitle>▶AV</shortTitle>
     <helpText>▶Your {{W|Armor Value (AV)}} measures how well protected you are against physical attacks that hit you. The higher your score, the fewer times an opponent's attack will penetrate your armor and do damage to you.</helpText>
   </statistic>
   <statistic Name="DV">
+    <shortName>▶DV</shortName>
+    <shortTitle>▶DV</shortTitle>
     <helpText>▶Your {{W|Dodge Value (DV)}} measures how likely you are to be hit by physical attacks. The higher your score, the less likely an opponent's attack will hit you. Your DV is modified by your Agility modifier.</helpText>
   </statistic>
   <statistic Name="MA">
-    <helpText>▶Your {{W|mental armor (MA)}} measures how well protected you are against mental attacks. The higher your score, the less likely an opponent's mental attack will penetrate your defenses and harm you. Your MA is modified by your Willpower modifier.</helpText>
+    <shortName>▶MA</shortName>
+    <shortTitle>▶MA</shortTitle>
+    <helpText>▶Your {{W|Mental Armor (MA)}} measures how well protected you are against mental attacks. The higher your score, the less likely an opponent's mental attack will penetrate your defenses and harm you. Your MA is modified by your Willpower modifier.</helpText>
   </statistic>
   <statistic Name="Speed">
     <displayName>▶quickness</displayName>
     <displayTitle>▶Quickness</displayTitle>
     <shortName>▶QN</shortName>
+    <shortTitle>▶QN</shortTitle>
     <helpText>▶Your {{W|Quickness}} measures the speed you perform every action you take.</helpText>
   </statistic>
   <statistic Name="MoveSpeed">
     <displayName>▶move speed</displayName>
     <displayTitle>▶Move Speed</displayTitle>
     <shortName>▶MS</shortName>
+    <shortTitle>▶MS</shortTitle>
     <helpText>▶Your {{W|Move Speed}} measures how fast you walk or fly.</helpText>
   </statistic>
   <statistic Name="Temperature">
     <displayName>▶temperature</displayName>
     <displayTitle>▶Temperature</displayTitle>
     <shortName>▶T</shortName>
+    <shortTitle>▶T</shortTitle>
     <helpText>▶Your {{W|Temperature}} measures how hot or cold you are. Being too cold can reduce your Quickness and prevent you from taking physical actions. Being too hot can set you aflame and cause damage every round.</helpText>
   </statistic>
   <statistic Name="AcidResistance">
     <displayName>▶acid resistance</displayName>
     <displayTitle>▶Acid Resistance</displayTitle>
     <shortName>▶AR</shortName>
+    <shortTitle>▶AR</shortTitle>
     <helpText>▶Your {{W|Acid Resist}} determines how much acid damage you ablate. At 100, you are immune to acid damage.</helpText>
   </statistic>
   <statistic Name="ColdResistance">
     <displayName>▶cold resistance</displayName>
     <displayTitle>▶Cold Resistance</displayTitle>
     <shortName>▶CR</shortName>
+    <shortTitle>▶CR</shortTitle>
     <helpText>▶Your {{W|Cold Resist}} determines how much cold damage you ablate and how insulated you are from effects that reduce your temperature. At 100, you are immune to cold damage and your temperature cannot be reduced.</helpText>
   </statistic>
   <statistic Name="ElectricResistance">
     <displayName>▶electric resistance</displayName>
     <displayTitle>▶Electric Resistance</displayTitle>
     <shortName>▶ER</shortName>
+    <shortTitle>▶ER</shortTitle>
     <helpText>▶Your {{W|Electrical Resist}} determines how much electrical damage you ablate and how resistive you are to electric current. At 100, you are immune to electrical damage and you do not conduct electricity.</helpText>
   </statistic>
   <statistic Name="HeatResistance">
     <displayName>▶heat resistance</displayName>
     <displayTitle>▶Heat Resistance</displayTitle>
     <shortName>▶HR</shortName>
+    <shortTitle>▶HR</shortTitle>
     <helpText>▶Your {{W|Heat Resist}} determines how much heat damage you ablate and how insulated you are from effects that increase your temperature. At 100, you are immune to heat damage and your temperature cannot be increased.</helpText>
   </statistic>
   <statistic Name="Hitpoints">
@@ -98,40 +129,56 @@ Caves of Qud - Generated Localizable XML 2.0.212.7
     <displayTitleSingular>▶Hit Point</displayTitleSingular>
     <narrationName>▶life</narrationName>
     <shortName>▶HP</shortName>
+    <shortTitle>▶HP</shortTitle>
   </statistic>
   <statistic Name="AP">
     <displayName>▶attribute points</displayName>
     <displayTitle>▶Attribute Points</displayTitle>
     <displayNameSingular>▶attribute point</displayNameSingular>
     <displayTitleSingular>▶Attribute Point</displayTitleSingular>
+    <shortName>▶AP</shortName>
+    <shortTitle>▶AP</shortTitle>
   </statistic>
   <statistic Name="MP">
     <displayName>▶mutation points</displayName>
     <displayTitle>▶Mutation Points</displayTitle>
     <displayNameSingular>▶mutation point</displayNameSingular>
     <displayTitleSingular>▶Mutation Point</displayTitleSingular>
+    <shortName>▶MP</shortName>
+    <shortTitle>▶MP</shortTitle>
   </statistic>
   <statistic Name="SP">
     <displayName>▶skill points</displayName>
     <displayTitle>▶Skill Points</displayTitle>
     <displayNameSingular>▶skill point</displayNameSingular>
     <displayTitleSingular>▶Skill Point</displayTitleSingular>
+    <shortName>▶SP</shortName>
+    <shortTitle>▶SP</shortTitle>
   </statistic>
   <statistic Name="XP">
     <displayName>▶experience points</displayName>
     <displayTitle>▶Experience Points</displayTitle>
     <displayNameSingular>▶experience point</displayNameSingular>
     <displayTitleSingular>▶Experience Point</displayTitleSingular>
+    <shortName>▶XP</shortName>
+    <shortTitle>▶XP</shortTitle>
   </statistic>
   <statistic Name="XPValue">
     <displayName>▶experience value</displayName>
     <displayTitle>▶Experience Value</displayTitle>
     <shortName>▶XV</shortName>
+    <shortTitle>▶XV</shortTitle>
   </statistic>
   <statistic Name="Level">
+    <displayName>▶level</displayName>
+    <displayTitle>▶Level</displayTitle>
     <shortName>▶LV</shortName>
+    <shortTitle>▶Lv</shortTitle>
   </statistic>
   <statistic Name="Energy">
+    <displayName>▶energy</displayName>
+    <displayTitle>▶Energy</displayTitle>
     <shortName>▶EN</shortName>
+    <shortTitle>▶EN</shortTitle>
   </statistic>
 </statistics>

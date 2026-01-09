@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Caves of Qud - Generated Localizable XML 2.0.212.8
+
+<options>
+
+  <option ID="Key" DisplayText="DisplayText" ConsoleDisplayText="DisplayText" SwitchDisplayText="DisplayText" Category="DisplayText" SearchKeywords="DisplayText" Values="DisplayText">
+  Values: SPECIAL NOTE! The values are a comma separated list of choices,
+  Values:You can specify an override for display using Value|Display
+  Values:
+  Values:For example if the original values are "Left,Right" you could use
+  Values:"Left|Sol,Right|Sağ"
+
+    <helptext>
+
+-->
+<options Lang="example" Encoding="utf-8">
+  <option ID="OptionMasterVolume" DisplayText="▶Main volume" Category="▶Sound" />
+  <option ID="OptionSound" DisplayText="▶Sound effects" Category="▶Sound" />
+  <option ID="OptionSoundVolume" DisplayText="▶Sound effects volume" Category="▶Sound" />
+  <option ID="OptionMusic" DisplayText="▶Music" Category="▶Sound" />
+  <option ID="OptionMusicVolume" DisplayText="▶Music volume" Category="▶Sound" />
+  <option ID="OptionAmbient" DisplayText="▶Ambient sounds" Category="▶Sound" />
+  <option ID="OptionAmbientVolume" DisplayText="▶Ambient volume" Category="▶Sound" />
+  <option ID="OptionUseInterfaceSounds" DisplayText="▶Interface sounds" Category="▶Sound" />
+  <option ID="OptionInterfaceVolume" DisplayText="▶Interface volume" Category="▶Sound" />
+  <option ID="OptionUseCombatSounds" DisplayText="▶Combat sounds" Category="▶Sound" />
+  <option ID="OptionCombatVolume" DisplayText="▶Combat volume" Category="▶Sound" />
+  <option ID="OptionPlayFireSounds" DisplayText="▶Fire crackling sounds" Category="▶Sound" />
+  <option ID="OptionDisplayBrightness" DisplayText="▶Brightness" Category="▶Display" />
+  <option ID="OptionDisplayContrast" DisplayText="▶Contrast" Category="▶Display" />
+  <option ID="OptionDisplayFullscreen" DisplayText="▶Fullscreen" Category="▶Display" />
+  <option ID="OptionDisplayResolution" DisplayText="▶Fullscreen resolution" Category="▶Display" Values="*Resolution|▶*Resolution" />
+  <option ID="OptionDisplayFramerate" DisplayText="▶Frame rate" Category="▶Display" Values="10|▶10,20|▶20,30|▶30,40|▶40,50|▶50,60|▶60,120|▶120,Unlimited|▶Unlimited,VSync|▶VSync" />
+  <option ID="OptionUseTiles" DisplayText="▶Enable tile graphics" Category="▶Display" />
+  <option ID="OptionDisplayVignette" DisplayText="▶Display vignette effect" Category="▶Display" />
+  <option ID="OptionDisplayScanlines" DisplayText="▶Display scanlines" Category="▶Display" />
+  <option ID="OptionUseOverlayCombatEffects" DisplayText="▶Display combat animations" Category="▶Display" />
+  <option ID="OptionUseOverlayDamageText" DisplayText="▶Display floating damage numbers" Category="▶Display" />
+  <option ID="OptionUseParticleVFX" DisplayText="▶Display modern visual effects" Category="▶Display" />
+  <option ID="OptionUseTextParticleVFX" DisplayText="▶Display ASCII visual effects" Category="▶Display" />
+  <option ID="OptionDisableFloorTextures" DisplayText="▶Disable floor textures" Category="▶Display" />
+  <option ID="OptionDisableBloodsplatter" DisplayText="▶Disable blood splatters" Category="▶Display" />
+  <option ID="OptionDisableSmoke" DisplayText="▶Disable smoke effects" Category="▶Display" />
+  <option ID="OptionDisableImposters" DisplayText="▶Disable modern, tile-based graphical effects" Category="▶Display" />
+  <option ID="OptionMainMenuBackground" DisplayText="▶Main menu background art" Category="▶Display" Values="Modern|▶Modern,Classic|▶Classic" />
+  <option ID="OptionImposterChars" DisplayText="▶Imposter text tiles" Category="▶Display" />
+  <option ID="OptionsKeybindings" DisplayText="▶Control Mapping" Category="▶Controls" SearchKeywords="▶Control bindings" />
+  <option ID="OptionKeyRepeatDelay" DisplayText="▶Key repeat delay" Category="▶Controls" />
+  <option ID="OptionKeyRepeatRate" DisplayText="▶Key repeat rate" Category="▶Controls" />
+  <option ID="OptionMouseInput" DisplayText="▶Allow mouse input" Category="▶Controls" />
+  <option ID="OptionMouseMovement" DisplayText="▶Allow mouse movement" Category="▶Controls" />
+  <option ID="OptionMouseScrollWheel" DisplayText="▶Allow scroll wheel to zoom" Category="▶Controls" />
+  <option ID="OptionCapInputBuffer" DisplayText="▶Limit the input buffer to two commands" Category="▶Controls" />
+  <option ID="OptionDisableFullscreenColorEffects" DisplayText="▶Disable fullscreen color effects (for color blindness)" Category="▶Accessibility" />
+  <option ID="OptionAlphanumericBits" DisplayText="▶Display bits with alphanumerics instead of dots (for color blindness)" Category="▶Accessibility" />
+  <option ID="OptionDisableTextAnimationEffects" DisplayText="▶Disable most tile-based flashing effects" Category="▶Accessibility" />
+  <option ID="OptionDisableTextWarpEffects" DisplayText="▶Disable tile-based screen-warping effects" Category="▶Accessibility" />
+  <option ID="OptionDisableFullscreenWarpEffects" DisplayText="▶Disable fullscreen screen-warping effects" Category="▶Accessibility" />
+  <option ID="OptionModernUI" DisplayText="▶Enable modern UI" Category="▶UI" />
+  <option ID="OptionPrereleaseStageScale" DisplayText="▶UI scale" Category="▶UI" Values="auto|▶auto,auto x1.25|▶auto x1.25,auto x1.5|▶auto x1.5,.5|▶.5,.75|▶.75,1.0|▶1.0,1.25|▶1.25,1.5|▶1.5,2|▶2" />
+  <option ID="OptionModernCharacterSheet" DisplayText="▶Enable modern UI character sheet" Category="▶UI" />
+  <option ID="OptionCharacterSheetAdditionalScale" DisplayText="▶Character sheet scale percentage" Category="▶UI" />
+  <option ID="OptionPlayScale" DisplayText="▶Play area scale" Category="▶UI" SearchKeywords="▶Fit Cover Pixel Perfect" Values="Fit|▶Fit,Cover|▶Cover,Pixel Perfect|▶Pixel Perfect">
+    <helptext>▶
+        Controls how the play area will scale in the area not used by the UI.
+
+        {{W|Fit}}: Fits the whole play area on screen. May necessitate letterboxing.
+        {{W|Cover}}: Ensures the play area covers the screen. Minimizes letterboxing.
+        {{W|Pixel Perfect}}: Sizes the play area to an integer multiple of the pixel art. Maximizes sharpness.
+      </helptext>
+  </option>
+  <option ID="OptionTileScale" DisplayText="▶Pixel perfect tile graphic scale" Category="▶UI" Values="1|▶1,2|▶2,3|▶3,4|▶4,5|▶5,6|▶6,7|▶7,8|▶8" />
+  <option ID="OptionAbilityBarMode" DisplayText="▶Ability bar mode" Category="▶UI" Values="Full|▶Full,Compact|▶Compact" />
+  <option ID="OptionOverlayMinimap" DisplayText="▶Show minimap" Category="▶UI" />
+  <option ID="OptionOverlayNearbyObjects" DisplayText="▶Show nearby objects list" Category="▶UI" />
+  <option ID="OptionOverlayNearbyObjectsLocal" DisplayText="▶Nearby objects list: show only current cell's contents" Category="▶UI" />
+  <option ID="OptionOverlayNearbyObjectsPools" DisplayText="▶Nearby objects list: show liquid pools" Category="▶UI" />
+  <option ID="OptionOverlayNearbyObjectsPlants" DisplayText="▶Nearby objects list: show plants" Category="▶UI" />
+  <option ID="OptionOverlayNearbyObjectsTakeable" DisplayText="▶Nearby objects list: show only show takeable objects" Category="▶UI" />
+  <option ID="OptionMessageLineLogScale" DisplayText="▶Message log font size (pt)" Category="▶UI" />
+  <option ID="OptionDockMovable" DisplayText="▶Dock message log &amp;&amp; minimap" Category="▶UI" Values="Unset|▶Unset,Right|▶Right,Left|▶Left,Flip|▶Flip" />
+  <option ID="OptionDockOpacity" DisplayText="▶Dock background opacity" Category="▶UI" />
+  <option ID="OptionMouseCursor" DisplayText="▶Mouse cursor appearance" Category="▶UI" Values="System|▶System,Default|▶Default,Alternate|▶Alternate" />
+  <option ID="OptionMouseAutoHideCursorEnabled" DisplayText="▶Automatically hide mouse cursor when inactive" Category="▶UI" />
+  <option ID="OptionControllerFont" DisplayText="▶Gamepad button appearance" Category="▶UI" Values="Auto|▶Auto,KBM|▶KBM,XBox|▶XBox,PS|▶PS,XBox Filled|▶XBox Filled,PS Filled|▶PS Filled" />
+  <option ID="OptionFloatingKeyboard" DisplayText="▶Display overlay keyboard for input on supported devices" Category="▶UI" />
+  <option ID="OptionZoomSensitivity" DisplayText="▶Zoom sensitivity" Category="▶UI" />
+  <option ID="OptionTooltipDelay" DisplayText="▶Tooltip delay (ms)" Category="▶UI" />
+  <option ID="Option@HPColor" DisplayText="▶Color your character's glyph based on health status" Category="▶UI" />
+  <option ID="Option@AlwaysHPColor" DisplayText="▶Ignore all effects that recolor your character's glyph other than health status" Category="▶UI" />
+  <option ID="Option@MutationColor" DisplayText="▶Allow mutations to recolor your character's glyph" Category="▶UI" />
+  <option ID="OptionDisplayMousableZoneTransitionBorder" DisplayText="▶Display mouse-clickable zone transition arrows" Category="▶UI" />
+  <option ID="OptionShiftHidesSidebar" DisplayText="▶Pressing shift hides the sidebar" Category="▶UI" />
+  <option ID="OptionAllowFramelessZoomOut" DisplayText="▶When zoomed out to max zoom, remove the UI frame from the main gameplay screen" Category="▶UI" />
+  <option ID="OptionHighlightStairs" DisplayText="▶Always highlight stairs" Category="▶UI" />
+  <option ID="OptionLogTurnSeparator" DisplayText="▶Add a line separator at the end of each round during combat" Category="▶UI" />
+  <option ID="OptionIndentBodyParts" DisplayText="▶Indent body parts by attachment on the Equipment screen" Category="▶UI" />
+  <option ID="OptionShowDetailedWeaponStats" DisplayText="▶Display detailed weapon penetration and damage in weapon names" Category="▶UI" />
+  <option ID="OptionTakeallCorpses" DisplayText="▶Take corpses when using the 'take all' command" Category="▶UI" />
+  <option ID="OptionDropAll" DisplayText="▶Enable a 'drop all' interaction on items in your inventory" Category="▶UI" />
+  <option ID="OptionNavigateInventoryAndEquipmentWithPagination" DisplayText="▶Navigate inventory and equipment panes with left/right pagination instead of movement binds" Category="▶UI" />
+  <option ID="OptionPressingRightInInventoryEquips" DisplayText="▶Equip/unequip highlighted item when pressing right or left, respectively, on the Equipment screen" Category="▶UI" />
+  <option ID="OptionExpandHighlightedInventoryAndEquipmentPane" DisplayText="▶Expand the equipment or inventory pane when focused" Category="▶UI" />
+  <option ID="OptionStatusScreenSize" DisplayText="▶Character sheet size" Category="▶UI" Values="Standard|▶Standard,Full Height|▶Full Height,Full|▶Full" />
+  <option ID="OptionTutorialComplete" DisplayText="▶Move tutorial to the end of the game mode list" Category="▶UI" />
+  <option ID="OptionShowCollectionBadges" DisplayText="▶Show collector's seals on the main menu" Category="▶UI" />
+  <option ID="OptionShowSidebarAbilities" DisplayText="▶Display ability icons on the sidebar" Category="▶Legacy UI" />
+  <option ID="OptionShowCurrentCellPopup" DisplayText="▶Display contents of current cell in a popup" Category="▶Legacy UI" />
+  <option ID="OptionShowMonsterHPHearts" DisplayText="▶Color hit hearts per the target's remaining HP" Category="▶Legacy UI" />
+  <option ID="OptionShowNumberOfItems" DisplayText="▶Show number of items in each inventory category" Category="▶Legacy UI" />
+  <option ID="OptionLocationIntseadOfName" DisplayText="▶Display location instead of name on the sidebar" Category="▶Legacy UI" />
+  <option ID="OptionMapDirectionsToKeypad" DisplayText="▶Always map directions to numpad" Category="▶Legacy UI" />
+  <option ID="OptionMapShiftDirectionToPage" DisplayText="▶Map Shift+directions to menu pagination binds (doesn't work for numpad bindings)" Category="▶Legacy UI" />
+  <option ID="OptionPushAZHotkeys" DisplayText="▶Always pass A-Z hotkeys through to the legacy UI" Category="▶Legacy UI" />
+  <option ID="OptionAutoSip" DisplayText="▶Automatically drink fresh water when thirsty" Category="▶Automation" />
+  <option ID="OptionAutoSipLevel" DisplayText="▶Thirst threshold for automatic drinking" Category="▶Automation" Values="Dehydrated|▶Dehydrated,Parched|▶Parched,Thirsty|▶Thirsty,Quenched|▶Quenched,Tumescent|▶Tumescent" />
+  <option ID="OptionAutoTorch" DisplayText="▶Automatically douse and light torches" Category="▶Automation" />
+  <option ID="OptionAutoDisassembleScrap" DisplayText="▶Automatically disassemble scrap" Category="▶Automation" />
+  <option ID="OptionAutoexploreIgnoreEasyEnemies" DisplayText="▶Difficulty threshold for ignoring hostile creatures" Category="▶Automation" Values="None|▶None,Easy|▶Easy,Average|▶Average,Tough|▶Tough,Very Tough|▶Very Tough,Impossible|▶Impossible" />
+  <option ID="OptionAutoexploreIgnoreDistantEnemies" DisplayText="▶Range threshold for ignoring hostile creatures" Category="▶Automation" Values="None|▶None,1|▶1,2|▶2,3|▶3,5|▶5,7|▶7,10|▶10,15|▶15,20|▶20,30|▶30,40|▶40" />
+  <option ID="OptionAutoexploreAttackIgnoredAdjacentEnemies" DisplayText="▶Attack ignored hostiles that you move adjacent to during autoexplore" Category="▶Automation" />
+  <option ID="OptionInterruptHeldMovement" DisplayText="▶Interrupt held movement when hostiles are nearby" Category="▶Automation" />
+  <option ID="OptionInterruptHeldMovementOnZoneTransition" DisplayText="▶Interrupt held movement when entering an unexplored zone" Category="▶Automation" />
+  <option ID="OptionUseTextAutowalkThreatIndicator" DisplayText="▶Use text autoact interrupt indicator instead of flashing red box" Category="▶Automation" />
+  <option ID="OptionAutoexploreChests" DisplayText="▶Search containers while autoexploring" Category="▶Automation" />
+  <option ID="OptionDigOnMove" DisplayText="▶Automatically dig through walls by moving into them when wielding a digging implement" Category="▶Automation" />
+  <option ID="OptionAutosaveInterval" DisplayText="▶Automatically save when moving to a different zone" Category="▶Automation" Values="|▶None,1|▶1,2|▶2,3|▶3,5|▶5,7|▶7,10|▶10,15|▶15,20|▶20,30|▶30,40|▶40" />
+  <option ID="OptionAutoexploreRate" DisplayText="▶Maximum automove cells/sec and autoattack actions/sec" Category="▶Automation" SearchKeywords="▶autoact autoexplore framerate" Values="1|▶1,2|▶2,3|▶3,5|▶5,7|▶7,10|▶10,15|▶15,20|▶20,30|▶30,60|▶60,|▶∞" />
+  <option ID="OptionAutogetAmmo" DisplayText="▶Autoget ammo" Category="▶Autoget" />
+  <option ID="OptionAutogetPrimitiveAmmo" DisplayText="▶Autoget primitive ammo" Category="▶Autoget" />
+  <option ID="OptionAutogetNuggets" DisplayText="▶Autoget copper, silver, and gold nuggets" Category="▶Autoget" />
+  <option ID="OptionAutogetTradeGoods" DisplayText="▶Autoget trade goods" Category="▶Autoget" />
+  <option ID="OptionAutogetFood" DisplayText="▶Autoget food" Category="▶Autoget" />
+  <option ID="OptionAutogetFreshWater" DisplayText="▶Autoget fresh water" Category="▶Autoget" />
+  <option ID="OptionAutogetDroppedLiquid" DisplayText="▶Autoget liquids from containers you've dropped" Category="▶Autoget" />
+  <option ID="OptionAutogetSpecialItems" DisplayText="▶Autoget special items" Category="▶Autoget" />
+  <option ID="OptionAutogetArtifacts" DisplayText="▶Autoget artifacts" Category="▶Autoget" />
+  <option ID="OptionAutogetScrap" DisplayText="▶Autoget scrap" Category="▶Autoget" />
+  <option ID="OptionAutogetBooks" DisplayText="▶Autoget books" Category="▶Autoget" />
+  <option ID="OptionAutogetZeroWeight" DisplayText="▶Autoget weightless items" Category="▶Autoget" />
+  <option ID="OptionAutogetIfHostiles" DisplayText="▶Autoget if hostiles are nearby" Category="▶Autoget" />
+  <option ID="OptionAutogetFromNearby" DisplayText="▶Autoget from adjacent cells" Category="▶Autoget" />
+  <option ID="OptionAskForWorldmap" DisplayText="▶Prompt before moving to the world map" Category="▶Prompts" />
+  <option ID="OptionAskAutostair" DisplayText="▶Prompt before autowalking to stairs" Category="▶Prompts" />
+  <option ID="OptionConfirmSwimming" DisplayText="▶Prompt before swimming" Category="▶Prompts" />
+  <option ID="OptionConfirmDangerousLiquid" DisplayText="▶Prompt before drinking and moving into certain dangerous liquids" Category="▶Prompts" />
+  <option ID="OptionAskForOneItem" DisplayText="▶Prompt list of items when getting from the ground, even if there's only one" Category="▶Prompts" />
+  <option ID="OptionDisplayHPWarning" DisplayText="▶Threshold for low hitpoint warning" Category="▶Prompts" Values="20%|▶20%,40%|▶40%,60%|▶60%,80%|▶80%,100%|▶100%,No Warning|▶No Warning" />
+  <option ID="OptionDismemberAsPopup" DisplayText="▶Show popups when you dismember or decapitate someone" Category="▶Prompts" />
+  <option ID="OptionAbilityCooldownWarningAsMessage" DisplayText="▶Show ability-on-cooldown prompts as message log entries instead of popups" Category="▶Prompts" />
+  <option ID="OptionShowScavengeItemAsMessage" DisplayText="▶Show scavenged items as message log entries instead of popups" Category="▶Prompts" />
+  <option ID="OptionPopupJournalNote" DisplayText="▶Display popups when noting information in your journal" Category="▶Prompts" />
+  <option ID="OptionDisplayLedLevelUp" DisplayText="▶Display verbose level up messages for companions" Category="▶Prompts" />
+  <option ID="OptionDefaultDeathToViewFinalMessages" DisplayText="▶Default the selection on death prompts in Roleplay mode to 'View final messages' instead of 'Reload checkpoint'" Category="▶Prompts" />
+  <option ID="OptionEnableMods" DisplayText="▶Enable mods" Category="▶Mods" />
+  <option ID="OptionAllowCSMods" DisplayText="▶Allow scripting mods (scripting mods may contain malicious code!)" Category="▶Mods" />
+  <option ID="OptionOutputModAssembly" DisplayText="▶Write compiled mod assemblies to disk" Category="▶Mods" />
+  <option ID="OptionHarmonyDebug" DisplayText="▶Enable Harmony debug output" Category="▶Mods" />
+  <option ID="OptionCheckMemory" DisplayText="▶Check memory usage and show a warning when it's high" Category="▶Performance" />
+  <option ID="OptionCacheEarly" DisplayText="▶Flush zones to cache early (for low memory environments)" Category="▶Performance" />
+  <option ID="OptionCollectEarly" DisplayText="▶Garbage collect after each zone flush (for low memory environments)" Category="▶Performance" />
+  <option ID="OptionDisableFloorTextureObjects" DisplayText="▶Do not generate floor texture objects" Category="▶Performance" />
+  <option ID="OptionThrottleAnimation" DisplayText="▶Throttle animations (for low CPU environments)" Category="▶Performance" />
+  <option ID="OptionShowAdvancedOptions" DisplayText="▶Show advanced options" Category="▶App Settings" />
+  <option ID="OptionMusicBackground" DisplayText="▶Keep Caves of Qud active in background" Category="▶App Settings" />
+  <option ID="OptionSessionBackups" DisplayText="▶Number of rolling backup saves" Category="▶App Settings" Values="None|▶None,1|▶1,2|▶2,3|▶3,5|▶5,7|▶7,10|▶10,15|▶15,20|▶20,30|▶30,40|▶40">
+    <helptext>▶
+      When you load a save from the main menu rolling backups of loaded saves will be maintained in your data folder (&lt;...&gt;/CavesOfQud/Local/Session) up to this number.
+      </helptext>
+  </option>
+  <option ID="OptionAnalytics" DisplayText="▶Send anonymous gameplay statistics" Category="▶App Settings" />
+  <option ID="OptionDisableSteamInputWarning" DisplayText="▶Disable input warning" Category="▶App Settings" />
+  <option ID="OptionDisablePermadeath" DisplayText="▶Don't delete Classic mode saved games on death" Category="▶Debug" />
+  <option ID="OptionAllowSaveLoad" DisplayText="▶Enable save and load" Category="▶Debug" />
+  <option ID="OptionAllowReallydie" DisplayText="▶Get prompted to confirm deaths" Category="▶Debug" />
+  <option ID="OptionEnablePrereleaseContent" DisplayText="▶Enable unfinished and unsupported content" Category="▶Debug" />
+  <option ID="OptionDisableDefectLimit" DisplayText="▶Allow creatures to have multiple defects " Category="▶Debug" />
+  <option ID="OptionEnableColorTextInput" DisplayText="▶Enable color menu for text input" Category="▶Debug" />
+  <option ID="OptionDisableAchievements" DisplayText="▶Disable achievements" Category="▶Debug" />
+  <option ID="OptionShowQuickstart" DisplayText="▶Show quickstart option during character creation" Category="▶Debug" />
+  <option ID="OptionDisablePlayerbrain" DisplayText="▶Disable brain hijacking on player-controlled characters" Category="▶Debug" />
+  <option ID="OptionDisableZoneCaching2" DisplayText="▶Disable zone caching" Category="▶Debug" />
+  <option ID="OptionDisableTryLimit" DisplayText="▶Disable limit on zone build tries" Category="▶Debug" />
+  <option ID="OptionEnableWishRegionNames" DisplayText="▶Pregenerate zone names for wish support" Category="▶Debug" />
+  <option ID="OptionGivesRepShowsCurrentRep" DisplayText="▶Show reputation with a creature's factions when looking at them" Category="▶Debug" />
+  <option ID="OptionDebugShowConversationNode" DisplayText="▶Show XML conversation and node names during conversation" Category="▶Debug" />
+  <option ID="OptionDebugShowFullZoneDuringBuild" DisplayText="▶Show the full zone ID during zone creation" Category="▶Debug" />
+  <option ID="OptionDebugDamagePenetrations" DisplayText="▶Show damage penetration debug text" Category="▶Debug" />
+  <option ID="OptionDebugSavingThrows" DisplayText="▶Show saving throw debug text" Category="▶Debug" />
+  <option ID="OptionDebugGetLostChance" DisplayText="▶Show lost chance debug text" Category="▶Debug" />
+  <option ID="OptionDebugStatShift" DisplayText="▶Show debug text for stat shifts" Category="▶Debug" />
+  <option ID="OptionDebugEncounterChance" DisplayText="▶Show encounter chance debug chance" Category="▶Debug" />
+  <option ID="OptionDebugTravelSpeed" DisplayText="▶Show travel speed debug text" Category="▶Debug" />
+  <option ID="OptionDebugInternals" DisplayText="▶Show debug info on objects" Category="▶Debug" />
+  <option ID="OptionDebugAttitude" DisplayText="▶Show attitude info on objects" Category="▶Debug" />
+  <option ID="OptionShowOverlandEncounters" DisplayText="▶Indicate special encounters on the worldmap" Category="▶Debug" />
+  <option ID="OptionShowOverlandRegions" DisplayText="▶Indicate biomes on the worldmap" Category="▶Debug" />
+  <option ID="OptionDrawPopulationHintMaps" DisplayText="▶Draw population placement hint maps when building zones" Category="▶Debug" />
+  <option ID="OptionDrawInfluenceMaps" DisplayText="▶Draw population placement regions when building zones" Category="▶Debug" />
+  <option ID="OptionDrawPathfinder" DisplayText="▶Draw creature pathfinding " Category="▶Debug" />
+  <option ID="OptionDrawPathfinderHalt" DisplayText="▶Wait for keypress when drawing pathfinding" Category="▶Debug" />
+  <option ID="OptionDrawNavigationWeightMaps" DisplayText="▶Draw navigation weight maps on each step" Category="▶Debug" />
+  <option ID="OptionDrawCASystems" DisplayText="▶Draw cellular automata when used in map generation" Category="▶Debug" />
+  <option ID="OptionShowReachable" DisplayText="▶Draw reachability maps on zone generation" Category="▶Debug" />
+  <option ID="OptionDrawZoneSemantics" DisplayText="▶Draw semantic tag info when building zones" Category="▶Debug" />
+  <option ID="OptionDrawFloodVis" DisplayText="▶Draw visibility flood fill" Category="▶Debug" />
+  <option ID="OptionDrawFloodAud" DisplayText="▶Draw audibility flood fill" Category="▶Debug" />
+  <option ID="OptionDrawFloodOlf" DisplayText="▶Draw olfaction flood fill" Category="▶Debug" />
+  <option ID="OptionDrawArcs" DisplayText="▶Draw electrical arc history for last few rounds" Category="▶Debug" />
+  <option ID="OptionWriteSoundsToLog" DisplayText="▶Write played sound file names to message log" Category="▶Debug" />
+  <option ID="OptionDisableSoundPreload" DisplayText="▶Disable preloading of sounds" Category="▶Debug" />
+  <option ID="OptionInventoryConsistencyCheck" DisplayText="▶Perform inventory consistency checks" Category="▶Debug" />
+  <option ID="OptionShowErrorPopups" DisplayText="▶Show error popups" Category="▶Debug" />
+  <option ID="OptionDisableBindConflictChecking" DisplayText="▶Disable conflict checking when rebinding controls" Category="▶Debug" />
+  <option ID="OptionBugDeckKeyboardShift" DisplayText="▶Enable workaround for Steam Deck shift key bug" Category="▶Debug" />
+  <option ID="OptionDebugTranslations" DisplayText="▶Show Debug (Translation) options" Category="▶Debug">
+    <helptext>▶A group of debug options for strings &amp; translations.</helptext>
+  </option>
+  <option ID="OptionStripUIColorText" DisplayText="▶Strip color formatting from UI text" Category="▶Debug (Translation)">
+    <helptext>▶Removes color formatting from all UI strings.</helptext>
+  </option>
+  <option ID="OptionDebugStringTable" DisplayText="▶Render string table ID instead of translated text" Category="▶Debug (Translation)">
+    <helptext>▶Renders additional S: T: hints on translated strings instead of translation</helptext>
+  </option>
+  <option ID="OptionDebugStringTableMisses" DisplayText="▶Log string table lookup misses as errors to Player.log" Category="▶Debug (Translation)" />
+  <option ID="OptionDebugStringTableLoadingChecks" DisplayText="▶Enable extra strings xml loading checks" Category="▶Debug (Translation)">
+    <helptext>▶Log warnings when loading strings XML if string is not present in current Strings-example.xml</helptext>
+  </option>
+</options>
