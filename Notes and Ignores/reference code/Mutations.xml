@@ -508,7 +508,21 @@
         <statline Name="Cooldown" />
       </leveltext>
     </mutation>
-    <mutation Name="Burgeoning" Cost="3" MaxSelected="1" Class="Burgeoning" Exclusions="" BearerDescription="psychic gardeners" BiomeAdjective="burgeoning" Tile="Mutations/burgeoning.bmp" />
+    <mutation Name="Burgeoning" Cost="3" MaxSelected="1" Class="Burgeoning" Exclusions="" BearerDescription="psychic gardeners" BiomeAdjective="burgeoning" Tile="Mutations/burgeoning.bmp">
+      <description>
+        <p>You cause plants to spontaneously grow in a nearby area, hindering your enemies.</p>
+      </description>
+      <leveltext>
+        <statline Name="Range" />
+        <p>Area: <stat Name="Area" /> + growth into adjacent tiles</p>
+        <statline Name="Cooldown" />
+        <switch Name="LevelMatch">
+          <case Value="true"></case>
+          <default><p>More powerful plants summoned</p></default>
+        </switch>
+        <p>+200 reputation with {{w|the Consortium of Phyta}}</p>
+      </leveltext>
+    </mutation>
     <mutation Name="Clairvoyance" Cost="2" MaxSelected="1" Class="Clairvoyance" Exclusions="" BearerDescription="the clairvoyant" BiomeEpithet="panopticon" Tile="Mutations/clairvoyance.bmp">
       <description>You briefly gain vision of a nearby area.</description>
       <leveltext>
@@ -517,9 +531,42 @@
         <statline Name="Cooldown" Unit="round" />
       </leveltext>
     </mutation>
-    <mutation Name="Confusion" Cost="4" MaxSelected="1" Class="Confusion" Exclusions="" BearerDescription="riddlers" BiomeEpithet="psychic maze" Tile="Mutations/confusion.bmp" />
-    <mutation Name="Cryokinesis" Cost="4" MaxSelected="1" Class="Cryokinesis" Exclusions="" BearerDescription="cryomancers" BiomeEpithet="frost meadow" Tile="Mutations/cryokinesis.bmp" />
-    <mutation Name="Disintegration" Cost="3" MaxSelected="1" Class="Disintegration" Exclusions="" BearerDescription="disintegrators" BiomeAdjective="rapidly resonating" Tile="Mutations/disintergration.bmp" />
+    <mutation Name="Confusion" Cost="4" MaxSelected="1" Class="Confusion" Exclusions="" BearerDescription="riddlers" BiomeEpithet="psychic maze" Tile="Mutations/confusion.bmp">
+      <description>You confuse nearby enemies.</description>
+      <leveltext>
+        <p>Affected creatures act semi-randomly and receive a -<stat Name="Penalty" /> penalty to their mental abilities.</p>
+        <statline Name="ConeAngle" DisplayName="Cone angle" Unit="degree" />
+        <statline Name="ConeLength" DisplayName="Cone length" />
+        <statline Name="Duration" />
+        <statline Name="Cooldown" />
+      </leveltext>
+    </mutation>
+    <mutation Name="Cryokinesis" Cost="4" MaxSelected="1" Class="Cryokinesis" Exclusions="" BearerDescription="cryomancers" BiomeEpithet="frost meadow" Tile="Mutations/cryokinesis.bmp">
+      <description>You chill a nearby area with your mind.</description>
+      <leveltext>
+        <switch Name="LevelMatch">
+          <case Value="true"><p>Chills affected area over <stat Name="Duration" />, dealing damage and freezing things</p></case>
+          <case Value="raise"><p>{{rules|Increased chill temperature intensity}}</p></case>
+          <default><p>{{rules|Decreased chill temperature intensity}}</p></default>
+        </switch>
+        <statline Name="Range" />
+        <statline Name="Area" />
+        <statline Name="DamageRound1" DisplayName="Round 1 damage" />
+        <statline Name="DamageRound2" DisplayName="Round 2 damage" />
+        <statline Name="DamageRound3" DisplayName="Round 3 damage" />
+        <statline Name="Cooldown" />
+      </leveltext>
+    </mutation>
+    <mutation Name="Disintegration" Cost="3" MaxSelected="1" Class="Disintegration" Exclusions="" BearerDescription="disintegrators" BiomeAdjective="rapidly resonating" Tile="Mutations/disintergration.bmp">
+      <description>You disintegrate nearby matter.</description>
+      <leveltext>
+        <statline Name="Area" />
+        <statline Name="DamageNonStructural" DisplayName="Damage to non-structural objects" />
+        <statline Name="DamageStructural" DisplayName="Damage to structural objects" />
+        <p>You are exhausted for 3 rounds after using this power.</p>
+        <statline Name="Cooldown" />
+      </leveltext>
+    </mutation>
     <mutation Name="Domination" Cost="5" MaxSelected="1" Class="Domination" Exclusions="" BearerDescription="those who dominate the wills of others" BiomeEpithet="theater of wills" Tile="Mutations/domination.bmp">
       <description>
         <p>You garrote an adjacent creature's mind and control its actions while your own body lies dormant.</p>
@@ -532,10 +579,41 @@
         <statline Name="Cooldown" />
       </leveltext>
     </mutation>
-    <mutation Name="Ego Projection" Cost="4" MaxSelected="1" Class="WillForce" Exclusions="" BearerDescription="those who project their egos onto the physical realm" BiomeAdjective="psychically refractive" Tile="Mutations/ego_projection.bmp" />
-    <mutation Name="Force Bubble" Cost="4" MaxSelected="1" Class="ForceBubble" Exclusions="" BearerDescription="bubble folk" BiomeAdjective="bubbly"  Tile="Mutations/force_bubble.bmp" />
-    <mutation Name="Force Wall" Cost="3" MaxSelected="1" Class="ForceWall" Exclusions="" BearerDescription="architects of force walls" BiomeEpithet="force bastion" Tile="Mutations/force_wall.bmp" />
-    <mutation Name="Kindle" Cost="1" MaxSelected="1" Class="Kindle" Exclusions="" BearerDescription="kindlers" BiomeAdjective="kindling" Tile="Mutations/kindle.bmp" />
+    <mutation Name="Ego Projection" Cost="4" MaxSelected="1" Class="WillForce" Exclusions="" BearerDescription="those who project their egos onto the physical realm" BiomeAdjective="psychically refractive" Tile="Mutations/ego_projection.bmp">
+      <description>Through sheer force of will, you perform uncanny physical feats.</description>
+      <leveltext>
+        <p>Augments one physical attribute by an amount equal to twice your Ego bonus</p>
+        <statline Name="Duration" />
+        <statline Name="Cooldown" />
+      </leveltext>
+    </mutation>
+    <mutation Name="Force Bubble" Cost="4" MaxSelected="1" Class="ForceBubble" Exclusions="" BearerDescription="bubble folk" BiomeAdjective="bubbly"  Tile="Mutations/force_bubble.bmp">
+      <description>You generate a forcefield around yourself.</description>
+      <leveltext>
+        <p>Creates a 3x3 forcefield centered on yourself</p>
+        <statline Name="Duration" />
+        <statline Name="Cooldown" />
+        <p>You may fire missile weapons through the forcefield.</p>
+      </leveltext>
+    </mutation>
+    <mutation Name="Force Wall" Cost="3" MaxSelected="1" Class="ForceWall" Exclusions="" BearerDescription="architects of force walls" BiomeEpithet="force bastion" Tile="Mutations/force_wall.bmp">
+      <description>You generate a wall of force that protects you from your enemies.</description>
+      <leveltext>
+        <p>Creates 9 contiguous squares of immobile forcefield.</p>
+        <statline Name="Duration" />
+        <statline Name="Cooldown" />
+        <p>You may fire missile weapons through the forcefield.</p>
+      </leveltext>
+    </mutation>
+    <mutation Name="Kindle" Cost="1" MaxSelected="1" Class="Kindle" Exclusions="" BearerDescription="kindlers" BiomeAdjective="kindling" Tile="Mutations/kindle.bmp">
+      <description>
+        <p>You ignite a small fire with your mind.</p>
+        <p></p>
+        <statline Name="Range" />
+        <statline Name="Cooldown" />
+      </description>
+      <leveltext></leveltext>
+    </mutation>
     <mutation Name="Light Manipulation" Cost="4" MaxSelected="1" Class="LightManipulation" Exclusions="" BearerDescription="manipulators of light" BiomeAdjective="illuminated" Tile="Mutations/light_manipulation.bmp" />
     <mutation Name="Mass Mind" Cost="4" MaxSelected="1" Class="MassMind" Exclusions="" BearerDescription="those who tap the Mass Mind" BiomeEpithet="mindmoot" Tile="Mutations/mass_mind.bmp" />
     <mutation Name="Mental Mirror" Cost="2" MaxSelected="1" Class="MentalMirror" Exclusions="" BearerDescription="the mentally reflective" BiomeEpithet="mirrorsteppe" Tile="Mutations/mental_mirror.bmp" />
@@ -582,7 +660,14 @@
       </leveltext>
     </mutation>
     <mutation Name="Syphon Vim" Cost="3" MaxSelected="1" Class="LifeDrain" Exclusions="" BearerDescription="life leeches" BiomeEpithet="slaughterfield" Tile="Mutations/syphon_vim.bmp" />
-    <mutation Name="Telepathy" Cost="1" MaxSelected="1" Class="Telepathy" Exclusions="" BearerDescription="the telepathic" BiomeAdjective="telepathic" Tile="Mutations/telepathy.bmp" />
+    <mutation Name="Telepathy" Cost="1" MaxSelected="1" Class="Telepathy" Exclusions="" BearerDescription="the telepathic" BiomeAdjective="telepathic" Tile="Mutations/telepathy.bmp">
+      <description>
+        <p>You may communicate with others through the psychic aether.</p>
+        <p></p>
+        <p>Chat with anyone in vision\nTakes you much less time to issue orders to companions</p>
+      </description>
+      <leveltext></leveltext>
+    </mutation>
     <mutation Name="Teleportation" Cost="5" MaxSelected="1" Class="Teleportation" Exclusions="" BearerDescription="teleporters" BiomeEpithet="spacetime karst" Tile="Mutations/teleportation.bmp" />
     <mutation Name="Teleport Other" Cost="2" MaxSelected="1" Class="TeleportOther" Exclusions="" BearerDescription="those who teleport others" BiomeEpithet="hermitage" Tile="Mutations/teleport_other.bmp" />
     <mutation Name="Time Dilation" Cost="4" MaxSelected="1" Class="TimeDilation" Exclusions="" BearerDescription="time dilators" BiomeEpithet="time prism" Tile="Mutations/time_dilation.bmp" />

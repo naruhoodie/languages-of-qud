@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<pronounsets EnableSelection="false" EnableGeneration="false" EnableConversationalExchange="false" GenerateGeneric="0" ReplicateGenders="true">
+<pronounsets EnableSelection="false" EnableGeneration="false" EnableConversationalExchange="false" GenerateGeneric="0" ReplicateGenders="true" Encoding="utf-8">
 
   <pronounset
     Name="player"
@@ -8,7 +8,6 @@
     PossessiveAdjective="your"
     SubstantivePossessive="yours"
     Reflexive="yourself"
-    Abstract="true"
   />
 
   <pronounset
@@ -19,10 +18,10 @@
     SubstantivePossessive="yours"
     Reflexive="yourselves"
     Plural="true"
-    Abstract="true"
   />
 
   <pronounset
+    Name="sie/hir/hir/hirs/hirself/human/child/friend/child/sib/progenitor"
     Subjective="sie"
     Objective="hir"
     PossessiveAdjective="hir"
@@ -31,6 +30,7 @@
   />
 
   <pronounset
+    Name="xe/xem/xyr/xyrs/xemself/human/child/friend/child/sib/progenitor"
     Subjective="xe"
     Objective="xem"
     PossessiveAdjective="xyr"
@@ -39,6 +39,7 @@
   />
 
   <pronounset
+    Name="ze/zir/zir/zirs/zirself/human/child/friend/child/sib/progenitor"
     Subjective="ze"
     Objective="zir"
     PossessiveAdjective="zir"

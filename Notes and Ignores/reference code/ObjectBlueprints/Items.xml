@@ -7009,7 +7009,7 @@ You may activate this item to conjure a force field in front of you. Robots will
     <part Name="Stopsvaalinn" />
     <part Name="Examiner" Complexity="1" Understanding="0" />
     <part Name="TakenAchievement" AchievementID="ACH_FIND_STOPSVALINN" />
-    <part Name="TakenAccomplishment" Text="You recovered the lost aegis of House Yish, =this.refname=." Hagiograph="Recall how =name= wrested the legendary aegis =this.refname= from the paws of a lowly snapjaw and averred descendency from the Saads of Yish!" HagiographCategory="FindsObject" HagiographWeight="High" Gospel="At the Battle of =landmark.nearest|title=, =name= fought to subjugate snapjaws. =player.Subjective= wielded a buckler with such &lt;spice.commonPhrases.finesse.!random&gt; that it became forever known as =this.refname=. " />
+    <part Name="TakenAccomplishment" Text="You recovered the lost aegis of House Yish, =this.refname=." Hagiograph="Recall how =name= wrested the legendary aegis =this.refname= from the paws of a lowly snapjaw and averred descendency from the Saads of Yish!" HagiographCategory="FindsObject" HagiographWeight="High" Gospel="At the Battle of =landmark.nearest|title=, =name= fought to subjugate snapjaws. =player.Subjective= wielded a buckler with such =spice:commonPhrases.finesse.!random= that it became forever known as =this.refname=. " />
 	  <tag Name="BlockSound" Value="Sounds/Melee/multiUseBlock/sfx_shield_stopsvaalinn_block" />
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
     <xtagGrammar Proper="true" />
@@ -7025,7 +7025,7 @@ You may activate this item to conjure a force field in front of you. Robots will
     <tag Name="Mods" Value="None" />
     <part Name="Description" Short="Boartooth beads on the ancient charm are worn to nubs by the cartilage of time, but the flexing cable that holds them together is as strong as the day it was woven. Dangling from the bracelet is a figurine of a deer, carved from a mysterious substance that cracks light like crystal but weighs like metal, producing a shaded lifelikeness elsewhere unseen." />
     <part Name="KindrishProperties" />
-    <part Name="TakenAccomplishment" Text="You recovered the ancestral bracelet of the hindren, =this.refname=." Hagiograph="Through the exhibition of =player.possessive= extraordinary guile, =name= was able to recover =this.refname=, the ancestral bracelet of the hindren, and was conferred thusly the title of Grand-Doe." HagiographCategory="FindsObject" HagiographWeight="High" Gospel="At a tavern deep in the wilds of =terrain.t=, =name= lost =player.possessive= precious bracelet Kindrish to a local thief. =name= murdered the thief &lt;spice.elements.entity@elements[random].murdermethods.!random&gt; and immediately recovered their cherished heirloom." />
+    <part Name="TakenAccomplishment" Text="You recovered the ancestral bracelet of the hindren, =this.refname=." Hagiograph="Through the exhibition of =player.possessive= extraordinary guile, =name= was able to recover =this.refname=, the ancestral bracelet of the hindren, and was conferred thusly the title of Grand-Doe." HagiographCategory="FindsObject" HagiographWeight="High" Gospel="At a tavern deep in the wilds of =terrain.t=, =name= lost =player.possessive= precious bracelet Kindrish to a local thief. =name= murdered the thief =spice:elements.entity@elements[random].murdermethods.!random= and immediately recovered their cherished heirloom." />
     <part Name="TakenAchievement" AchievementID="ACH_RECOVER_KINDRISH" />
     <part Name="TakenWXU" WXU="1"></part>
     <part Name="ItemElements" Elements="jewels::4" />
@@ -7080,7 +7080,7 @@ You may activate this item to conjure a force field in front of you. Robots will
     <xtagGrammar Proper="true" />
     <tag Name="IndefiniteArticle" Value="the" />
     <tag Name="DefiniteArticle" Value="the" />
-    <part Name="TakenAccomplishment" Text="The Sky-Bear flies anew! From the clutches of the frozen past, you recovered =this.refname=." Hagiograph="The hot, wet breath of the underearth defossilized the Sky-Bear and apprised us of this truth: =name= is Saad Amus, Saad Amus is =name=." HagiographCategory="FindsObject" HagiographWeight="High" Gospel="Throughout all of =month=, =name= &lt;spice.commonPhrases.ravaged.!random&gt; the province of Bethesda Susa on =player.possessive= jetpack, &lt;spice.elements.entity@elements[random].ravaging.!random&gt; of =mostHatedFaction.t= and =secondMostHatedFaction.t=. =player.Subjective= became known as the Bethesda &lt;spice.commonPhrases.scourge.!random.capitalize&gt;." />
+    <part Name="TakenAccomplishment" Text="The Sky-Bear flies anew! From the clutches of the frozen past, you recovered =this.refname=." Hagiograph="The hot, wet breath of the underearth defossilized the Sky-Bear and apprised us of this truth: =name= is Saad Amus, Saad Amus is =name=." HagiographCategory="FindsObject" HagiographWeight="High" Gospel="Throughout all of =month=, =name= =spice:commonPhrases.ravaged.!random= the province of Bethesda Susa on =player.possessive= jetpack, =spice:elements.entity@elements[random].ravaging.!random= of =mostHatedFaction.t= and =secondMostHatedFaction.t=. =player.Subjective= became known as the Bethesda =spice:commonPhrases.scourge.!random.capitalize=." />
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
 		<stag Name="Travel" />
   </object>
@@ -7431,7 +7431,7 @@ You may activate this item to conjure a force field in front of you. Robots will
 		<tag Name="EquipmentFrameColors" Value="oMOm" />
     <part Name="AddsRep" Faction="Entropic" Value="300" />
     <part Name="ItemElements" Elements="jewels::7;;chance::9" />
-    <part Name="TakenAccomplishment" Text="You clutched =this.refname= and dressed yourself in the mirror of realities." Hagiograph="O! Our hearts turned to stellar remnants when =name= recited an elegy for the unknown girlchild Eudoxia!" HagiographCategory="CreatesSomething" HagiographWeight="VeryHigh" Gospel="In the month =month= of =year=, a corrupt administrator was appointed minister of a gleaming city with streets of gold and glass. &lt;spice.pronouns.subject.!random.capitalize&gt; outlawed the practice of composing elegies, and =name= was forced to flee." />
+    <part Name="TakenAccomplishment" Text="You clutched =this.refname= and dressed yourself in the mirror of realities." Hagiograph="O! Our hearts turned to stellar remnants when =name= recited an elegy for the unknown girlchild Eudoxia!" HagiographCategory="CreatesSomething" HagiographWeight="VeryHigh" Gospel="In the month =month= of =year=, a corrupt administrator was appointed minister of a gleaming city with streets of gold and glass. =spice:pronouns.subject.!random.capitalize= outlawed the practice of composing elegies, and =name= was forced to flee." />
     <part Name="EquippedAchievement" AchievementID="ACH_WEAR_OTHERPEARL" />
 	  <tag Name="EquipSound" Value="sfx_equip_material_generic_gemstone" />
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
@@ -8664,7 +8664,7 @@ You may activate this item to conjure a force field in front of you. Robots will
   <object Name="GenericFace" Inherits="GenericLimb">
     <tag Name="AggregatedIngredient" Value="Face" />
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
-    <part Name="EatenAccomplishment" Text="You ate =this.an=." Hagiograph="Woe to the vanquished! =name= feasted on =this.an= by the light of the Beetle Moon." HagiographCategory="CommitsFolly" HagiographWeight="Low" Gospel="On =day= of =month=, at a tavern near =landmark.nearest=, =name= met with a group of kippers and, divinely inspired by &lt;spice.elements.entity@elements[random].practices.!random&gt;, cooked and feasted on =this.refname=." />
+    <part Name="EatenAccomplishment" Text="You ate =this.an=." Hagiograph="Woe to the vanquished! =name= feasted on =this.an= by the light of the Beetle Moon." HagiographCategory="CommitsFolly" HagiographWeight="Low" Gospel="On =day= of =month=, at a tavern near =landmark.nearest=, =name= met with a group of kippers and, divinely inspired by =spice:elements.entity@elements[random].practices.!random=, cooked and feasted on =this.refname=." />
   </object>
   <object Name="GenericHead" Inherits="GenericLimb">
     <tag Name="AggregatedIngredient" Value="Head" />
@@ -8685,7 +8685,7 @@ You may activate this item to conjure a force field in front of you. Robots will
   <object Name="PlantFace" Inherits="PlantLimb">
     <tag Name="AggregatedIngredient" Value="Face" />
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
-    <part Name="EatenAccomplishment" Text="You ate =this.an=." Hagiograph="Woe to the vanquished! =name= feasted on =this.an= by the light of the Beetle Moon." HagiographCategory="CommitsFolly" HagiographWeight="Low" Gospel="On =day= of =month=, at a tavern near =landmark.nearest=, =name= met with a group of kippers and, divinely inspired by &lt;spice.elements.entity@elements[random].practices.!random&gt;, cooked and feasted on =this.refname=." />
+    <part Name="EatenAccomplishment" Text="You ate =this.an=." Hagiograph="Woe to the vanquished! =name= feasted on =this.an= by the light of the Beetle Moon." HagiographCategory="CommitsFolly" HagiographWeight="Low" Gospel="On =day= of =month=, at a tavern near =landmark.nearest=, =name= met with a group of kippers and, divinely inspired by =spice:elements.entity@elements[random].practices.!random=, cooked and feasted on =this.refname=." />
   </object>
   <object Name="PlantHead" Inherits="PlantLimb">
     <tag Name="AggregatedIngredient" Value="Head" />
@@ -8705,7 +8705,7 @@ You may activate this item to conjure a force field in front of you. Robots will
   <object Name="FungusFace" Inherits="FungusLimb">
     <tag Name="AggregatedIngredient" Value="Face" />
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
-    <part Name="EatenAccomplishment" Text="You ate =this.an=." Hagiograph="Woe to the vanquished! =name= feasted on =this.an= by the light of the Beetle Moon." HagiographCategory="CommitsFolly" HagiographWeight="Low" Gospel="On =day= of =month=, at a tavern near =landmark.nearest=, =name= met with a group of kippers and, divinely inspired by &lt;spice.elements.entity@elements[random].practices.!random&gt;, cooked and feasted on =this.refname=." />
+    <part Name="EatenAccomplishment" Text="You ate =this.an=." Hagiograph="Woe to the vanquished! =name= feasted on =this.an= by the light of the Beetle Moon." HagiographCategory="CommitsFolly" HagiographWeight="Low" Gospel="On =day= of =month=, at a tavern near =landmark.nearest=, =name= met with a group of kippers and, divinely inspired by =spice:elements.entity@elements[random].practices.!random=, cooked and feasted on =this.refname=." />
   </object>
   <object Name="FungusHead" Inherits="FungusLimb">
     <tag Name="AggregatedIngredient" Value="Head" />
@@ -11445,7 +11445,11 @@ These effects stack if multiple rubbergums are ingested." />
     <part Name="Description" Short="A chalky white cap of rice lattice sucks the salt from liquid volumes. The letter 'H' is etched on its face." />
     <part Name="Commerce" Value="25" />
     <part Name="Applicator" />
-    <part Name="DesalinationPellet" />
+    <part Name="DesalinationPellet"
+      Message="=subject.T= =verb:fizzle= for several seconds."
+      DestroyMessage="=subject.T= =verb:fizzle= for several seconds, then =verb:evaporate=."
+      ConvertMessage="=object.T= =object.verb:react= strangely with =subject.t= and =object.verb:convert= =pronouns.objective= to =volume.drams.of.liquid|strip=."
+    />
     <tag Name="Gift" Value="*noinherit" />
     <tag Name="Tier" Value="2" />
     <tag Name="Breakable" Value="*delete"/>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.6
+Caves of Qud - Generated Localizable XML 2.0.212.7
 
 <objects>
 
@@ -1355,7 +1355,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.6
   </object>
   <object Name="SultanShrine" Load="Merge">
     <part Name="Render" DisplayName="▶shrine" />
-    <part Name="Description" Short="▶" />
+    <part Name="Description" Short="" />
     <tag Name="QuestableVerb" Value="▶pray at,desecrate" />
   </object>
   <object Name="JoppaSultanShrine" Load="Merge">
@@ -1423,7 +1423,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.6
     <part Name="Chat" Says="▶[Shekhinah turns toward you, His arms wide.]" />
   </object>
   <object Name="Village Monument" Load="Merge">
-    <part Name="Description" Short="▶" />
+    <part Name="Description" Short="" />
   </object>
   <object Name="Village Monument Obelisk" Load="Merge">
     <part Name="Render" DisplayName="▶stone obelisk" />
@@ -1783,11 +1783,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.6
   </object>
   <object Name="CryptPlaqueTutor" Load="Merge">
     <part Name="Render" DisplayName="▶ornately engraved marble door with plaque" />
-    <part Name="Description" Short="▶" />
+    <part Name="Description" Short="" />
   </object>
   <object Name="Tombstone" Load="Merge">
     <part Name="Render" DisplayName="▶tombstone" />
-    <part Name="Description" Short="▶" />
+    <part Name="Description" Short="" />
   </object>
   <object Name="ReshephsCrypt" Load="Merge">
     <part Name="Render" DisplayName="▶crypt" />
@@ -1798,7 +1798,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.6
   </object>
   <object Name="Urn" Load="Merge">
     <part Name="Render" DisplayName="▶funerary urn" />
-    <part Name="Description" Short="▶" />
+    <part Name="Description" Short="" />
   </object>
   <object Name="Sarcophagus" Load="Merge">
     <part Name="Render" DisplayName="▶sarcophagus" />
@@ -1854,7 +1854,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.6
   <object Name="VehicleGolemExit" Load="Merge">
     <part Name="Render" DisplayName="▶exit hatch" />
     <part Name="Description" Short="▶A pair of retractible chrome panels are fit on oiled tracks." />
-    <xtagGrammar iArticle="▶" />
+    <xtagGrammar iArticle="" />
   </object>
   <object Name="VehicleGolemSeat" Load="Merge">
     <part Name="Render" DisplayName="▶pilot seat" />

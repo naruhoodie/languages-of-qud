@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.6
+Caves of Qud - Generated Localizable XML 2.0.212.7
 
 <objects>
 
@@ -21,7 +21,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.6
 -->
 <objects Lang="example" Encoding="utf-8">
   <object Name="Preservable" Load="Merge">
-    <part Name="Description" Short="▶" />
+    <part Name="Description" Short="" />
     <xtagGrammar iArticle="▶some" adjunctNoun="▶portion" massNoun="▶true" />
   </object>
   <object Name="Raw Meat" Load="Merge">
@@ -372,7 +372,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.6
   <object Name="Salthopper Chip" Load="Merge">
     <part Name="Render" DisplayName="▶salthopper chip" />
     <part Name="Description" Short="▶Chitin was shaved from the exoskeletal flank of a caught salthopper and dry-beaten to a snappy crisp." />
-    <xtagGrammar iArticle="▶a" adjunctNoun="▶" />
+    <xtagGrammar iArticle="▶a" adjunctNoun="" />
   </object>
   <object Name="Phase Silk" Load="Merge">
     <part Name="Render" DisplayName="▶{{Y|phase silk}}" />
@@ -435,7 +435,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.6
   <object Name="Crusty Loaf" Load="Merge">
     <part Name="Render" DisplayName="▶crusty loaf" />
     <part Name="Description" Short="▶Every autumn, many gulch dwellers hike to the Stiltgrounds to purchase the Fall wine. They return to their homes, steep wheat bran in the wine, and leaven dough in their clay ovens. A few are luckier; fungus grove dwellers need only step outside to harvest yeast, and friends to fungi need only shake their yeast-ridden appendages." />
-    <xtagGrammar iArticle="▶" adjunctNoun="▶" massNoun="▶false" />
+    <xtagGrammar iArticle="" adjunctNoun="" massNoun="▶false" />
   </object>
   <object Name="Ekuemekiyyen Greens" Load="Merge">
     <part Name="Render" DisplayName="▶{{g|Ekuemekiyyen greens}}" />
@@ -575,11 +575,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.6
   </object>
   <object Name="Starch" Load="Merge">
     <part Name="Render" DisplayName="▶{{Y|starch}}" />
-    <part Name="Description" Short="▶" />
+    <part Name="Description" Short="" />
   </object>
   <object Name="Lignin" Load="Merge">
     <part Name="Render" DisplayName="▶{{G|lignin}}" />
-    <part Name="Description" Short="▶" />
+    <part Name="Description" Short="" />
   </object>
   <object Name="Congealed Shade Oil" Load="Merge">
     <part Name="Render" DisplayName="▶congealed {{shade|shade oil}}" />

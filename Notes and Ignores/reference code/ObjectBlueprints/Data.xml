@@ -1042,4 +1042,9 @@
     <part Name="Examiner" Complexity="-1" />
   </object>
 
+  <object Name="Test_WineWaterskin" Inherits="WineWaterskin">
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <part Name="LiquidVolume" StartVolume="37" />
+  </object>
+
 </objects>

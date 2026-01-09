@@ -1122,10 +1122,10 @@
       </templates>
       <templatevars>
         <templatevar Name="rings">
-          <!-- this value shouldn't be used, but lets just pick a number in case it is-->
+          <!--♪ this value shouldn't be used, but lets just pick a number in case it is-->
           <value Name="7-ringed" />
         </templatevar>
-        <!-- Update Strings.xml "Baboon Hero Naming.xml Context" -->
+        <!--♪ Update Strings.xml "Baboon Hero Naming.xml Context" -->
         <templatevar Name="position">
           <value Name="Philanderer" />
           <value Name="Riddler" />
@@ -1246,7 +1246,7 @@
         <template Name="the =adjective= =creatureTypeCap= =position=" />
       </templates>
       <templatevars>
-        <!-- Make sure to update Strings.xml "Eyeless King Crab Naming.xml Context" strings -->
+        <!--♪ Make sure to update Strings.xml "Eyeless King Crab Naming.xml Context" strings -->
         <templatevar Name="adjective">
           <value Name="echoing" />
           <value Name="frenetic" />
@@ -1314,7 +1314,7 @@
         <template Name="=epithet=" />
       </templates>
       <templatevars>
-        <!-- Be sure to update the Strings.xml Goatfolk Hero Naming.xml Context entries -->
+        <!--♪ Be sure to update the Strings.xml Goatfolk Hero Naming.xml Context entries -->
         <templatevar Name="epithet">
           <value Name="Stargazer" />
           <value Name="Heartbiter" />
@@ -1331,11 +1331,11 @@
         <scope Name="Main" Type="Title" Special="Hero" Faction="Goatfolk" Priority="200" Combine="false" />
       </scopes>
       <templates>
-        <!-- Be sure to update the Strings.xml Goatfolk Hero Naming.xml Context entries -->
+        <!--♪ Be sure to update the Strings.xml Goatfolk Hero Naming.xml Context entries -->
         <template Name="the Goatfolk Shaman of Clan =clan=" />
       </templates>
       <templatevars>
-        <!-- Be sure to update the Strings.xml Goatfolk Hero Naming.xml Context entries -->
+        <!--♪ Be sure to update the Strings.xml Goatfolk Hero Naming.xml Context entries -->
         <templatevar Name="clan">
           <value Name="Hotur" />
           <value Name="Ibex" />
@@ -1750,7 +1750,7 @@
         <template Name="the =adjective= Snapjaw =occupation=" />
       </templates>
       <templatevars>
-        <!-- Make sure to update Strings.xml "Snapjaw Hero Naming.xml Context" strings -->
+        <!--♪ Make sure to update Strings.xml "Snapjaw Hero Naming.xml Context" strings -->
         <templatevar Name="adjective">
           <value Name="calloused" />
           <value Name="fearsome" />
@@ -1979,7 +1979,7 @@
         <template Name="the =adjective= Troll =occupation=" />
       </templates>
       <templatevars>
-        <!-- Make sure to update Strings.xml "Troll Hero Naming.xml Context" -->
+        <!--♪ Make sure to update Strings.xml "Troll Hero Naming.xml Context" -->
         <templatevar Name="adjective">
           <value Name="twisted" />
           <value Name="everlasting" />

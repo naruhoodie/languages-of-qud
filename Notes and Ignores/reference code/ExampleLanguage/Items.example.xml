@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.6
+Caves of Qud - Generated Localizable XML 2.0.212.7
 
 <objects>
 
@@ -3109,7 +3109,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.6
   </object>
   <object Name="BaseCathedra" Load="Merge">
     <part Name="Render" DisplayName="▶{{Y|cathedra}}" />
-    <part Name="Description" Short="▶" />
+    <part Name="Description" Short="" />
   </object>
   <object Name="CathedraSapphire" Load="Merge">
     <part Name="Render" DisplayName="▶{{Y|cathedra with sapphire tracery}}" />
@@ -3148,7 +3148,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.6
   <object Name="BloodstainedSheaf" Load="Merge">
     <part Name="Render" DisplayName="▶{{W|sheaf of bloodstained goatskin parchment}}" />
     <part Name="Description" Short="▶Sheets of flayed and stretched goatskin are bound together with sap and scrawled on with kid blood." />
-    <xtagGrammar Proper="▶false" adjunctNoun="▶" />
+    <xtagGrammar Proper="▶false" adjunctNoun="" />
     <xtagGrammar Proper="▶false" />
   </object>
   <object Name="Corpus" Load="Merge">
@@ -3157,13 +3157,13 @@ Caves of Qud - Generated Localizable XML 2.0.212.6
   <object Name="TornGraphPaper" Load="Merge">
     <part Name="Render" DisplayName="▶{{W|torn sheet of graph paper}}" />
     <part Name="Description" Short="▶A sheet of loose leaf is divided by coordinate lines in cyan. It seems to have been torn from a binder." />
-    <xtagGrammar Proper="▶false" adjunctNoun="▶" />
+    <xtagGrammar Proper="▶false" adjunctNoun="" />
     <xtagGrammar Proper="▶false" />
   </object>
   <object Name="Sonnet" Load="Merge">
     <part Name="Render" DisplayName="▶{{Y|crumpled sheet of paper}}" />
     <part Name="Description" Short="▶Paper made of brinestalk pulp is covered in a shaky ink scrawl. It looks like it's been crumpled and uncrumpled many times." />
-    <xtagGrammar Proper="▶false" adjunctNoun="▶" />
+    <xtagGrammar Proper="▶false" adjunctNoun="" />
   </object>
   <object Name="HeirloomsCatalog" Load="Merge">
     <part Name="Render" DisplayName="▶{{W|Heirlooms of Qud}}" />
@@ -3171,12 +3171,12 @@ Caves of Qud - Generated Localizable XML 2.0.212.6
   <object Name="Sheaf1" Load="Merge">
     <part Name="Render" DisplayName="▶{{W|sheaf of tattered parchment}}" />
     <part Name="Description" Short="▶Several sheets of tattered, age-stained parchment are bound together at the margins by some sort of glue." />
-    <xtagGrammar Proper="▶false" adjunctNoun="▶" />
+    <xtagGrammar Proper="▶false" adjunctNoun="" />
   </object>
   <object Name="Scroll Bound by Kelp" Load="Merge">
     <part Name="Render" DisplayName="▶{{W|scroll bound by a strand of kelp}}" />
     <part Name="Description" Short="▶Several sheets of tattered, age-stained parchment are bound together by a strand of kelp from a distant reef." />
-    <xtagGrammar Proper="▶false" adjunctNoun="▶" />
+    <xtagGrammar Proper="▶false" adjunctNoun="" />
   </object>
   <object Name="Lives1" Load="Merge">
     <part Name="Render" DisplayName="▶{{W|Frivolous Lives, Vol. I}}" />
@@ -3554,6 +3554,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.6
   <object Name="Desalination Pellet" Load="Merge">
     <part Name="Render" DisplayName="▶desalination pellet" />
     <part Name="Description" Short="▶A chalky white cap of rice lattice sucks the salt from liquid volumes. The letter 'H' is etched on its face." />
+    <part Name="DesalinationPellet" Message="▶=subject.T= =verb:fizzle= for several seconds." DestroyMessage="▶=subject.T= =verb:fizzle= for several seconds, then =verb:evaporate=." ConvertMessage="▶=object.T= =object.verb:react= strangely with =subject.t= and =object.verb:convert= =pronouns.objective= to =volume.drams.of.liquid|strip=." />
   </object>
   <object Name="Metamorphic Polygel" Load="Merge">
     <part Name="Render" DisplayName="▶{{metamorphic|metamorphic polygel}}" />

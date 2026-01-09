@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.6
+Caves of Qud - Generated Localizable XML 2.0.212.7
 
 <subtypes>
 
-  <class ID="Key" ChargenTitle="DisplayText">
+  <class ID="Key" ChargenTitle="DisplayText" SingularTitle="DisplayText">
 
     <category Name="Key" DisplayName="DisplayText">
 
@@ -28,7 +28,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.6
 
 -->
 <subtypes Lang="example" Encoding="utf-8">
-  <class ID="Castes" ChargenTitle="▶choose caste">
+  <class ID="Castes" ChargenTitle="▶choose caste" SingularTitle="▶caste">
     <category Name="Ekuemekiyye" DisplayName="▶{{G|The Toxic Arboreta of Ekuemekiyye, the Holy City}}">
       <subtype Name="Horticulturist" DisplayName="▶Horticulturist" />
       <subtype Name="Priest of All Suns" DisplayName="▶Priest of All Suns" />
@@ -48,7 +48,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.6
       <subtype Name="Fuming God-Child" DisplayName="▶Fuming God-Child" />
     </category>
   </class>
-  <class ID="Callings" ChargenTitle="▶choose calling">
+  <class ID="Callings" ChargenTitle="▶choose calling" SingularTitle="▶calling">
     <subtype Name="Apostle" DisplayName="▶Apostle" />
     <subtype Name="Arconaut" DisplayName="▶Arconaut">
       <!--(Strings.appendix)

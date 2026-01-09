@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.6
+Caves of Qud - Generated Localizable XML 2.0.212.7
 
 <objects>
 
@@ -418,17 +418,17 @@ Caves of Qud - Generated Localizable XML 2.0.212.6
     <part Name="Render" DisplayName="▶slimy shaft" />
     <part Name="StairsDown" PullMessage="▶You fall down the slimy shaft!" />
     <part Name="Description" Short="▶Machinic tones are made soft against the slime-wet walls of a darkling shaft. A void is beneath." />
-    <xtagGrammar iArticle="▶" />
+    <xtagGrammar iArticle="" />
   </object>
   <object Name="OpenShaft" Load="Merge">
     <part Name="Render" DisplayName="▶deep shaft" />
     <part Name="Description" Short="▶Darkness floods up from the empty space." />
-    <xtagGrammar iArticle="▶" />
+    <xtagGrammar iArticle="" />
   </object>
   <object Name="OpenShaft2" Load="Merge">
     <part Name="Render" DisplayName="▶deep shaft" />
     <part Name="Description" Short="▶Darkness floods up from the empty space." />
-    <xtagGrammar iArticle="▶" />
+    <xtagGrammar iArticle="" />
   </object>
   <object Name="Air" Load="Merge">
     <part Name="Render" DisplayName="▶open air" />
@@ -452,9 +452,9 @@ Caves of Qud - Generated Localizable XML 2.0.212.6
   </object>
   <object Name="ReefOpenShaft" Load="Merge">
     <part Name="Render" DisplayName="▶coral pit" />
-    <part Name="StairsDown" PullMessage="▶" />
+    <part Name="StairsDown" PullMessage="" />
     <part Name="Description" Short="▶Darkness floods up the polyp-strewn fringes of an open pit." />
-    <xtagGrammar iArticle="▶" />
+    <xtagGrammar iArticle="" />
   </object>
   <object Name="PondDown" Load="Merge">
     <part Name="Render" DisplayName="▶small crack" />

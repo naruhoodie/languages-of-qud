@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<factions>
+  <!-- Base Merge -->
+  <faction Name="Entropic">
+    <property Name="EndVisibility" Value="true" />
+  </faction>
+  <faction Name="Newly Sentient Beings">
+    <property Name="EndVisibility" Value="true" />
+  </faction>
+  <faction Name="Robots">
+    <property Name="EndVisibility" Value="true" />
+  </faction>
+  <faction Name="Oozes">
+    <property Name="EndVisibility" Value="true" />
+    <intproperty Name="EndReputationMin" Value="-300" />
+    <intproperty Name="EndReputationMax" Value="300" />
+  </faction>
+  <faction Name="Cragmensch">
+    <property Name="EndVisibility" Value="Conceal" />
+  </faction>
+  <faction Name="Issachari">
+    <property Name="EndVisibility" Value="Conceal" />
+  </faction>
+  <faction Name="Mechanimists">
+    <property Name="EndVisibility" Value="Conceal" />
+    <intproperty Name="EndReputationMin" Value="-300" />
+    <intproperty Name="EndReputationMax" Value="300" />
+  </faction>
+  <faction Name="Mopango">
+    <property Name="EndVisibility" Value="Conceal" />
+  </faction>
+  <faction Name="Naphtaali">
+    <property Name="EndVisibility" Value="Conceal" />
+  </faction>
+  <faction Name="Svardym">
+    <property Name="EndVisibility" Value="Conceal" />
+  </faction>
+  <faction Name="Snapjaws">
+    <property Name="EndVisibility" Value="Conceal" />
+  </faction>
+  <faction Name="Water">
+    <property Name="EndVisibility" Value="Conceal" />
+  </faction>
+  <faction Name="Goatfolk">
+    <property Name="EndVisibility" Value="Conceal" />
+  </faction>
+  <faction Name="Resheph">
+    <property Name="EndVisibility" Value="false" />
+  </faction>
+  <faction Name="Mamon">
+    <property Name="EndVisibility" Value="false" />
+  </faction>
+  <faction Name="Templar">
+    <property Name="EndVisibility" Value="false" />
+  </faction>
+  <!-- Chiliad Accede -->
+  <faction
+      Name="Sludges"
+      DisplayName="sludges"
+      Visible="false"
+      Old="false"
+      PositiveSound="Sounds/Reputation/sfx_reputation_ooze_positive"
+      NegativeSound="Sounds/Reputation/sfx_reputation_ooze_negative"
+      HistoricalSignificance="1"
+      EmblemTile="creatures/sw_sludge.bmp"
+      EmblemTileColor="w"
+      EmblemDetailColor="W"
+  >
+    <interests>
+      <interest Tags="slimy" />
+      <interest Tags="weep" />
+    </interests>
+    <property Name="EndVisibility" Value="Ruined" />
+    <intproperty Name="EndReputationMin" Value="-300" />
+    <intproperty Name="EndReputationMax" Value="300" />
+  </faction>
+  <faction
+      Name="Soups"
+      DisplayName="soups"
+      Visible="false"
+      Old="false"
+      PositiveSound="Sounds/Reputation/sfx_reputation_ooze_positive"
+      NegativeSound="Sounds/Reputation/sfx_reputation_ooze_negative"
+      HistoricalSignificance="1"
+      EmblemTile="creatures/chiliad-soup.png"
+      EmblemTileColor="C"
+      EmblemDetailColor="y"
+  >
+    <interests>
+      <interest Tags="slimy" />
+      <interest Tags="weep" />
+      <interest Tags="soups" Description="soups" />
+      <interest Tags="stews" Description="stews" />
+      <interest Tags="messes" Description="messes of all kinds" />
+    </interests>
+    <property Name="EndVisibility" Value="Ruined" />
+    <intproperty Name="EndReputationMin" Value="-300" />
+    <intproperty Name="EndReputationMax" Value="300" />
+  </faction>
+  <faction
+      Name="Gelatinous Polyhedra"
+      DisplayName="gelatinous polyhedra"
+      Visible="false"
+      Old="false"
+      PositiveSound="Sounds/Reputation/sfx_reputation_ooze_positive"
+      NegativeSound="Sounds/Reputation/sfx_reputation_ooze_negative"
+      HistoricalSignificance="1"
+      EmblemTile="creatures/sw_wedge.bmp"
+      EmblemTileColor="c"
+      EmblemDetailColor="C"
+  >
+    <interests>
+      <interest Tags="slimy" />
+      <interest Tags="weep" />
+      <interest Tags="shapes" WillBuy="true" WillSell="false" Description="theoretical shapes and volumes" />
+    </interests>
+    <property Name="EndVisibility" Value="Ruined" />
+    <intproperty Name="EndReputationMin" Value="-300" />
+    <intproperty Name="EndReputationMax" Value="300" />
+  </faction>
+  <faction
+      Name="Jellies"
+      DisplayName="jellies"
+      Visible="false"
+      Old="false"
+      PositiveSound="Sounds/Reputation/sfx_reputation_ooze_positive"
+      NegativeSound="Sounds/Reputation/sfx_reputation_ooze_negative"
+      HistoricalSignificance="1"
+      EmblemTile="creatures/sw_jelly.bmp"
+      EmblemTileColor="Y"
+      EmblemDetailColor="g"
+  >
+    <interests>
+      <interest Tags="slimy" />
+      <interest Tags="weep" />
+      <interest Tags="gelatin" WillBuy="false" WillSell="true" Description="meals made of gelatin" />
+    </interests>
+    <property Name="EndVisibility" Value="Ruined" />
+    <intproperty Name="EndReputationMin" Value="-300" />
+    <intproperty Name="EndReputationMax" Value="300" />
+  </faction>
+  <faction
+      Name="Slimes"
+      DisplayName="slimes"
+      Visible="false"
+      Old="false"
+      PositiveSound="Sounds/Reputation/sfx_reputation_ooze_positive"
+      NegativeSound="Sounds/Reputation/sfx_reputation_ooze_negative"
+      HistoricalSignificance="1"
+      EmblemTile="creatures/chiliad-slime.png"
+      EmblemTileColor="B"
+      EmblemDetailColor="b"
+  >
+    <interests>
+      <interest Tags="slimy" />
+      <interest Tags="weep" />
+    </interests>
+    <property Name="EndVisibility" Value="Ruined" />
+    <intproperty Name="EndReputationMin" Value="-300" />
+    <intproperty Name="EndReputationMax" Value="300" />
+  </faction>
+  <faction
+      Name="Amoeba"
+      DisplayName="amoeba"
+      Visible="false"
+      Old="false"
+      PositiveSound="Sounds/Reputation/sfx_reputation_ooze_positive"
+      NegativeSound="Sounds/Reputation/sfx_reputation_ooze_negative"
+      HistoricalSignificance="1"
+      EmblemTile="creatures/sw_amoeba.bmp"
+      EmblemTileColor="g"
+      EmblemDetailColor="w"
+  >
+    <interests>
+      <interest Tags="slimy" />
+      <interest Tags="weep" />
+      <interest Tags="adhesion" WillBuy="true" WillSell="false" Description="cell adhesion" />
+    </interests>
+    <property Name="EndVisibility" Value="Ruined" />
+    <intproperty Name="EndReputation" Value="500" />
+  </faction>
+  <faction
+      Name="Algae"
+      DisplayName="algae"
+      Visible="false"
+      Old="false"
+      PositiveSound="Sounds/Reputation/sfx_reputation_vines_positive"
+      NegativeSound="Sounds/Reputation/sfx_reputation_vines_negative"
+      HistoricalSignificance="1"
+      EmblemTile="creatures/chiliad-alga.png"
+      EmblemTileColor="g"
+      EmblemDetailColor="G"
+  >
+    <interests>      
+      <interest Tags="lakesrivers" Description="the locations of lakes and rivers" />
+    </interests>
+    <property Name="EndVisibility" Value="Ruined" />
+    <intproperty Name="EndReputationMin" Value="-600" />
+    <intproperty Name="EndReputationMax" Value="0" />
+  </faction>
+  <faction
+      Name="Cocci"
+      DisplayName="cocci"
+      Visible="false"
+      Old="false"
+      PositiveSound="Sounds/Reputation/sfx_reputation_fungi_positive"
+      NegativeSound="Sounds/Reputation/sfx_reputation_fungi_negative"
+      HistoricalSignificance="1"
+      EmblemTile="creatures/chiliad-coccus.png"
+      EmblemTileColor="B"
+      EmblemDetailColor="m"
+  >
+    <interests>
+      <interest Tags="moistproteinrich" Description="the locations of moist, protein-rich environments" />
+      <interest Tags="skinnasal" Description="skin and nasal cavities" />
+    </interests>
+    <property Name="EndVisibility" Value="Ruined" />
+    <intproperty Name="EndReputationMin" Value="-600" />
+    <intproperty Name="EndReputationMax" Value="0" />
+  </faction>
+  <faction
+      Name="Bacilli"
+      DisplayName="bacilli"
+      Visible="false"
+      Old="false"
+      PositiveSound="Sounds/Reputation/sfx_reputation_fungi_positive"
+      NegativeSound="Sounds/Reputation/sfx_reputation_fungi_negative"
+      HistoricalSignificance="1"
+      EmblemTile="creatures/chiliad-bacillus.png"
+      EmblemTileColor="r"
+      EmblemDetailColor="C"
+  >
+    <interests>
+      <interest Tags="moistproteinrich" Description="the locations of moist, protein-rich environments" />
+      <interest Tags="sporedispersal" Description="spore dispersal" />
+    </interests>
+    <property Name="EndVisibility" Value="Ruined" />
+    <intproperty Name="EndReputationMin" Value="-600" />
+    <intproperty Name="EndReputationMax" Value="0" />
+  </faction>
+  <faction
+      Name="Spirilla"
+      DisplayName="spirilla"
+      Visible="false"
+      Old="false"
+      PositiveSound="Sounds/Reputation/sfx_reputation_fungi_positive"
+      NegativeSound="Sounds/Reputation/sfx_reputation_fungi_negative"
+      HistoricalSignificance="1"
+      EmblemTile="creatures/chiliad-spirillum.png"
+      EmblemTileColor="G"
+      EmblemDetailColor="g"
+  >
+    <interests>
+      <interest Tags="moistproteinrich" Description="the locations of moist, protein-rich environments" />
+      <interest Tags="spirals" Description="spirals" />
+    </interests>
+    <property Name="EndVisibility" Value="Ruined" />
+    <intproperty Name="EndReputationMin" Value="-600" />
+    <intproperty Name="EndReputationMax" Value="0" />
+  </faction>
+  <faction
+      Name="Vibrios"
+      DisplayName="vibrios"
+      Visible="false"
+      Old="false"
+      PositiveSound="Sounds/Reputation/sfx_reputation_fungi_positive"
+      NegativeSound="Sounds/Reputation/sfx_reputation_fungi_negative"
+      HistoricalSignificance="1"
+      EmblemTile="creatures/chiliad-vibrio.png"
+      EmblemTileColor="C"
+      EmblemDetailColor="W"
+  >
+    <interests>
+      <interest Tags="moistproteinrich" Description="the locations of moist, protein-rich environments" />
+      <interest Tags="coves" WillBuy="true" WillSell="false" Description="the locations of coves and estuaries" />
+    </interests>
+    <property Name="EndVisibility" Value="Ruined" />
+    <intproperty Name="EndReputationMin" Value="-600" />
+    <intproperty Name="EndReputationMax" Value="0" />
+  </faction>
+  <faction
+      Name="Spirochaetes"
+      DisplayName="spirochaetes"
+      Visible="false"
+      Old="false"
+      PositiveSound="Sounds/Reputation/sfx_reputation_fungi_positive"
+      NegativeSound="Sounds/Reputation/sfx_reputation_fungi_negative"
+      HistoricalSignificance="1"
+      EmblemTile="creatures/chiliad-spirochete.png"
+      EmblemTileColor="y"
+      EmblemDetailColor="Y"
+  >
+    <interests>
+      <interest Tags="moistproteinrich" Description="the locations of moist, protein-rich environments" />
+      <interest Tags="spirals" Description="spirals" />
+    </interests>
+    <property Name="EndVisibility" Value="Ruined" />
+    <intproperty Name="EndReputationMin" Value="-600" />
+    <intproperty Name="EndReputationMax" Value="0" />
+  </faction>
+  <faction
+      Name="Methanogens"
+      DisplayName="methanogens"
+      Visible="false"
+      Old="false"
+      PositiveSound="Sounds/Reputation/sfx_reputation_fungi_positive"
+      NegativeSound="Sounds/Reputation/sfx_reputation_fungi_negative"
+      HistoricalSignificance="1"
+      EmblemTile="creatures/chiliad-methanogen.png"
+      EmblemTileColor="G"
+      EmblemDetailColor="g"
+  >
+    <interests>      
+      <interest Tags="honey,weep" WillBuy="true" WillSell="false" />
+      <interest Tags="methane" WillBuy="false" WillSell="true" Description="the locations of methane bogs" />
+    </interests>
+    <property Name="EndVisibility" Value="Ruined" />
+    <intproperty Name="EndReputationMin" Value="-600" />
+    <intproperty Name="EndReputationMax" Value="0" />
+  </faction>
+  <faction
+      Name="Thermoacidophiles"
+      DisplayName="thermoacidophiles"
+      Visible="false"
+      Old="false"
+      PositiveSound="Sounds/Reputation/sfx_reputation_fungi_positive"
+      NegativeSound="Sounds/Reputation/sfx_reputation_fungi_negative"
+      HistoricalSignificance="1"
+      EmblemTile="creatures/chiliad-thermoacidophile.png"
+      EmblemTileColor="W"
+      EmblemDetailColor="r"
+  >
+    <interests>
+      <interest Tags="lava,weep" />
+      <interest Tags="acid,weep" />
+    </interests>
+    <property Name="EndVisibility" Value="Ruined" />
+    <intproperty Name="EndReputationMin" Value="-600" />
+    <intproperty Name="EndReputationMax" Value="0" />
+  </faction>
+  <faction
+      Name="Halophiles"
+      DisplayName="halophiles"
+      Visible="false"
+      Old="false"
+      PositiveSound="Sounds/Reputation/sfx_reputation_fungi_positive"
+      NegativeSound="Sounds/Reputation/sfx_reputation_fungi_negative"
+      HistoricalSignificance="1"
+      EmblemTile="creatures/chiliad-halophile.png"
+      EmblemTileColor="m"
+      EmblemDetailColor="Y"
+  >
+    <interests>
+      <interest Tags="salt,weep" />      
+    </interests>
+    <property Name="EndVisibility" Value="Ruined" />
+    <intproperty Name="EndReputationMin" Value="-600" />
+    <intproperty Name="EndReputationMax" Value="0" />
+  </faction>
+  <faction
+      Name="Molds"
+      DisplayName="molds"
+      Visible="false"
+      Old="false"
+      PositiveSound="Sounds/Reputation/sfx_reputation_fungi_positive"
+      NegativeSound="Sounds/Reputation/sfx_reputation_fungi_negative"
+      HistoricalSignificance="1"
+      EmblemTile="creatures/chiliad-mold.png"
+      EmblemTileColor="g"
+      EmblemDetailColor="Y"
+  >
+    <interests>
+      <interest Tags="dead" WillBuy="true" WillSell="false" Description="the locations of dead things" />
+      <interest Tags="network" Description="network topology" />
+    </interests>
+    <property Name="EndVisibility" Value="Ruined" />
+    <intproperty Name="EndReputationMin" Value="-200" />
+    <intproperty Name="EndReputationMax" Value="200" />
+  </faction>
+  <faction
+      Name="Mushrooms"
+      DisplayName="mushrooms"
+      Visible="false"
+      Old="false"
+      PositiveSound="Sounds/Reputation/sfx_reputation_fungi_positive"
+      NegativeSound="Sounds/Reputation/sfx_reputation_fungi_negative"
+      HistoricalSignificance="1"
+      EmblemTile="creatures/chiliad-mushroom.png"
+      EmblemTileColor="Y"
+      EmblemDetailColor="r"
+  >
+    <interests>
+      <interest Tags="dead" WillBuy="true" WillSell="false" Description="the locations of dead things" />
+      <interest Tags="dead" WillBuy="true" WillSell="false" Description="the locations of hatters" />
+    </interests>
+    <property Name="EndVisibility" Value="Ruined" />
+    <intproperty Name="EndReputationMin" Value="-200" />
+    <intproperty Name="EndReputationMax" Value="200" />
+  </faction>
+  <faction
+      Name="Rusts"
+      DisplayName="rusts"
+      Visible="false"
+      Old="false"
+      PositiveSound="Sounds/Reputation/sfx_reputation_fungi_positive"
+      NegativeSound="Sounds/Reputation/sfx_reputation_fungi_negative"
+      HistoricalSignificance="1"
+      EmblemTile="creatures/chiliad-rust.png"
+      EmblemTileColor="R"
+      EmblemDetailColor="r"
+  >
+    <interests>
+      <interest Tags="dead" WillBuy="true" WillSell="false" Description="the locations of dead things" />
+      <interest Tags="robot,lair" />      
+    </interests>
+    <property Name="EndVisibility" Value="Ruined" />
+    <intproperty Name="EndReputationMin" Value="-200" />
+    <intproperty Name="EndReputationMax" Value="200" />
+  </faction>
+  <faction
+      Name="Smuts"
+      DisplayName="smuts"
+      Visible="false"
+      Old="false"
+      PositiveSound="Sounds/Reputation/sfx_reputation_fungi_positive"
+      NegativeSound="Sounds/Reputation/sfx_reputation_fungi_negative"
+      HistoricalSignificance="1"
+      EmblemTile="creatures/chiliad-smut.png"
+      EmblemTileColor="y"
+      EmblemDetailColor="K"
+  >
+    <interests>
+      <interest Tags="dead" WillBuy="true" WillSell="false" Description="the locations of dead things" />
+      <interest Tags="plantlairs" Description="the locations of plant lairs" />
+    </interests>
+    <property Name="EndVisibility" Value="Ruined" />
+    <intproperty Name="EndReputationMin" Value="-200" />
+    <intproperty Name="EndReputationMax" Value="200" />
+  </faction>
+  <faction
+      Name="Mildews"
+      DisplayName="mildews"
+      Visible="false"
+      Old="false"
+      PositiveSound="Sounds/Reputation/sfx_reputation_fungi_positive"
+      NegativeSound="Sounds/Reputation/sfx_reputation_fungi_negative"
+      HistoricalSignificance="1"
+      EmblemTile="creatures/chiliad-mildew.png"
+      EmblemTileColor="b"
+      EmblemDetailColor="C"
+  >
+    <interests>
+      <interest Tags="dead" WillBuy="true" WillSell="false" Description="the locations of dead things" />
+      <interest Tags="moldelders" Description="the locations of mold mentors" />
+    </interests>
+    <property Name="EndVisibility" Value="Ruined" />
+    <intproperty Name="EndReputationMin" Value="-200" />
+    <intproperty Name="EndReputationMax" Value="200" />
+  </faction>
+  <faction
+      Name="Yeasts"
+      DisplayName="yeasts"
+      Visible="false"
+      Old="false"
+      PositiveSound="Sounds/Reputation/sfx_reputation_fungi_positive"
+      NegativeSound="Sounds/Reputation/sfx_reputation_fungi_negative"
+      HistoricalSignificance="1"
+      EmblemTile="creatures/chiliad-yeast.png"
+      EmblemTileColor="W"
+      EmblemDetailColor="g"
+  >
+    <interests>
+      <interest Tags="dead" WillBuy="true" WillSell="false" Description="the locations of dead things" />
+      <interest Tags="beerbreadwine" WillBuy="false" WillSell="true" Description="beer, bread, and wine" />
+    </interests>
+    <property Name="EndVisibility" Value="Ruined" />
+    <intproperty Name="EndReputationMin" Value="-200" />
+    <intproperty Name="EndReputationMax" Value="200" />
+  </faction>
+  <faction
+      Name="Crystal"
+      DisplayName="splayed crystal-things that glint"
+      Visible="false"
+      Old="false"
+      PositiveSound="Sounds/Reputation/sfx_reputation_chavvah_positive"
+      NegativeSound="Sounds/Reputation/sfx_reputation_chavvah_negative"
+      HistoricalSignificance="1"
+      EmblemTile="creatures/chiliad-crystalthing.png"
+      EmblemTileColor="b"
+      EmblemDetailColor="M"
+  >
+    <interests>      
+      <interest Tags="thingsunknown" Description="things others cannot possibly know" />
+    </interests>
+    <property Name="EndVisibility" Value="Ruined" />
+    <intproperty Name="EndReputation" Value="0" />
+  </faction>
+  <!-- Chiliad General -->
+  <faction
+      Name="Snailfolk"
+      DisplayName="snailfolk"
+      InitialPlayerReputation="-300"
+      Visible="false"
+      Old="false"
+      PositiveSound="Sounds/Reputation/sfx_reputation_mollusks_positive"
+      NegativeSound="Sounds/Reputation/sfx_reputation_mollusks_negative"
+      HistoricalSignificance="1"
+      EmblemTile="creatures/chiliad-snailfolk.png"
+      EmblemTileColor="w"
+      EmblemDetailColor="W"
+  >
+    <interests>
+      <interest Tags="soups" Description="soups" />
+      <interest Tags="stews" Description="stews" />
+      <interest Tags="teas" Description="teas" />
+    </interests>
+    <property Name="EndVisibility" Value="General" />
+    <intproperty Name="EndReputation" Value="-300" />
+  </faction>
+  <faction
+      Name="Walking Ibes"
+      DisplayName="walking ibes"
+      Visible="false"
+      Old="false"
+      InitialPlayerReputation="-300"
+      PositiveSound="Sounds/Reputation/sfx_reputation_birds_positive"
+      NegativeSound="Sounds/Reputation/sfx_reputation_birds_negative"
+      HistoricalSignificance="1"
+      EmblemTile="creatures/chiliad-walking-ibes.png"
+      EmblemTileColor="Y"
+      EmblemDetailColor="r"
+  >
+    <interests>
+      <interest Tags="fish,lair" WillBuy="true" WillSell="false" />
+      <interest Tags="talltrees" WillBuy="true" WillSell="false" Description="the locations of tall trees" />
+      <interest Tags="music" WillBuy="false" WillSell="true" Description="musical performances" />
+    </interests>
+    <partreputation About="Wings" Value="300" />
+    <property Name="EndVisibility" Value="General" />
+    <intproperty Name="EndReputation" Value="-300" />
+  </faction>
+  <faction
+      Name="Elephantines"
+      DisplayName="elephantines"
+      InitialPlayerReputation="-300"
+      Visible="false"
+      Old="false"
+      PositiveSound="Sounds/Reputation/sfx_reputation_bear_positive"
+      NegativeSound="Sounds/Reputation/sfx_reputation_bear_negative"
+      HistoricalSignificance="1"
+      EmblemTile="creatures/chiliad-elephantine.png"
+      EmblemTileColor="y"
+      EmblemDetailColor="W"
+  >
+    <interests>
+      <interest Tags="water,weep" />
+      <interest Tags="tech" />
+    </interests>
+    <property Name="EndVisibility" Value="General" />
+    <intproperty Name="EndReputation" Value="-300" />
+  </faction>
+  <faction
+      Name="Yanshufim"
+      DisplayName="yanshufim"
+      FormatWithArticle="true"
+      Visible="false"
+      Old="false"
+      InitialPlayerReputation="-300"
+      PositiveSound="Sounds/Reputation/sfx_reputation_birds_positive"
+      NegativeSound="Sounds/Reputation/sfx_reputation_birds_negative"
+      HistoricalSignificance="1"
+      EmblemTile="creatures/chiliad-yanshufim.png"
+      EmblemTileColor="w"
+      EmblemDetailColor="Y"
+  >
+    <interests>
+      <interest Tags="winged mammal,lair" WillBuy="true" WillSell="false" />
+      <interest Tags="astral" WillBuy="true" WillSell="false" Description="locations of astral weakness" />
+    </interests>
+    <partreputation About="Wings" Value="300" />
+    <property Name="EndVisibility" Value="General" />
+    <intproperty Name="EndReputation" Value="-300" />
+  </faction>
+  <faction
+      Name="Foxen"
+      DisplayName="foxen"
+      Visible="false"
+      Old="false"
+      InitialPlayerReputation="-300"
+      PositiveSound="Sounds/Reputation/sfx_reputation_dogs_positive"
+      NegativeSound="Sounds/Reputation/sfx_reputation_dogs_negative"
+      HistoricalSignificance="1"
+      EmblemTile="creatures/chiliad-foxen.png"
+      EmblemTileColor="r"
+      EmblemDetailColor="Y"
+  >
+    <interests>
+      <interest Tags="games" Description="games of chance" />
+      <interest Tags="rivers" Description="the location of rivers" />
+    </interests>
+    <property Name="EndVisibility" Value="General" />
+    <intproperty Name="EndReputation" Value="-300" />
+  </faction>
+  <faction
+      Name="Batfolk"
+      DisplayName="batfolk"
+      Visible="false"
+      Old="false"
+      InitialPlayerReputation="-300"
+      PositiveSound="Sounds/Reputation/sfx_reputation_wingedMammals_positive"
+      NegativeSound="Sounds/Reputation/sfx_reputation_wingedMammals_negative"
+      HistoricalSignificance="1"
+      EmblemTile="creatures/chiliad-batfolk.png"
+      EmblemTileColor="K"
+      EmblemDetailColor="w"
+  >
+    <interests>
+      <interest Tags="caves" Description="caves" />
+      <interest Tags="vaultedroofs" WillBuy="true" WillSell="false" Description="the locations of vaulted roofs" />
+    </interests>
+    <partreputation About="Wings" Value="300" />
+    <property Name="EndVisibility" Value="General" />
+    <intproperty Name="EndReputation" Value="-300" />
+  </faction>
+  <faction
+      Name="Nephilim"
+      Visible="false"
+      Old="false"
+      PositiveSound="Sounds/Reputation/sfx_reputation_girsh_positive"
+      NegativeSound="Sounds/Reputation/sfx_reputation_girsh_negative"
+      EmblemTile="Creatures/chiliad-godling.png"
+      EmblemTileColor="m"
+      EmblemDetailColor="M">
+    <interests>
+      <interest Tags="becoming" Description="becoming creatures of sense and purpose" />
+      <interest Tags="managingCult" Description="the management of worshippers" />
+    </interests>    
+  </faction>
+  <faction
+      Name="PlayerCult"
+      Visible="false"
+      Old="false"
+      Plural="false"
+      FormatWithArticle="true"
+      PositiveSound="Sounds/Reputation/sfx_reputation_sultanCult_positive"
+      NegativeSound="Sounds/Reputation/sfx_reputation_sultanCult_negative"
+      HistoricalSignificance="1"
+      EmblemTile="creatures/sw_amoeba.bmp"
+      EmblemTileColor="g"
+      EmblemDetailColor="w"
+  >
+    <property Name="EndVisibility" Value="General" />
+    <intproperty Name="EndReputation" Value="0" />
+  </faction>
+  <!-- Chiliad Specific -->
+  <faction
+      Name="Knight Liminal"
+      DisplayName="Knights Liminal"
+      FormatWithArticle="true"
+      Visible="false"
+      Old="false"
+      PositiveSound="Sounds/Reputation/sfx_reputation_putusTemplar_positive"
+      NegativeSound="Sounds/Reputation/sfx_reputation_putusTemplar_negative"
+      HistoricalSignificance="1"
+      EmblemTile="creatures/chiliad-knight-liminal.png"
+      EmblemTileColor="Y"
+      EmblemDetailColor="m"
+  >
+    <interests>
+      <interest Tags="limen" Description="the Limen" />
+      <interest Tags="settlement" />
+      <interest Tags="tech" />          
+    </interests>
+    <property Name="EndVisibility" Value="Covenant" />
+    <intproperty Name="EndReputation" Value="-300" />
+  </faction>
+  <faction
+      Name="Quetzal Council"
+      DisplayName="Quetzal Council"
+      FormatWithArticle="true"
+      Visible="false"
+      Old="false"
+      PositiveSound="Sounds/Reputation/sfx_reputation_pariahs_positive"
+      NegativeSound="Sounds/Reputation/sfx_reputation_pariahs_negative"
+      HistoricalSignificance="1"
+      EmblemTile="creatures/chiliad-quetzal-council.png"
+      EmblemTileColor="y"
+      EmblemDetailColor="M"
+  >
+    <interests>
+      <interest Tags="settlement" />
+      <interest Tags="self-sovereignty" Description="self-sovereignty" />
+      <interest Tags="plaguemitigation" Description="the mitigation of plagues" />
+    </interests>
+    <property Name="EndVisibility" Value="Return" />
+    <intproperty Name="EndReputation" Value="-300" />
+  </faction>
+  <faction
+      Name="Chiliad Mamon"
+      DisplayName="Grandchildren of Mamon"
+      Old="false"
+      Visible="false"
+      FormatWithArticle="true"
+      PositiveSound="Sounds/Reputation/sfx_reputation_childrenMamon_positive"
+      NegativeSound="Sounds/Reputation/sfx_reputation_childrenMamon_negative"
+      EmblemTile="Creatures/sw_goatfolk_shaman.bmp"
+      EmblemTileColor="K"
+      EmblemDetailColor="w"
+      
+  >
+    <feeling About="*" Value="-50" />
+    <feeling About="Seekers" Value="100" />
+    <waterritual Liquid="blood" />
+    <interests>
+      <interest Tags="generationaltrauma" Description="the trauma of generational scars" />      
+    </interests>
+  </faction>
+</factions>

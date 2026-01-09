@@ -28,15 +28,43 @@
         <weirdSet Base="y" Set="yÿ" />
         <weirdSet Base="Y" Set="Y¥" />
     </weirdSets>
+    <obfuscator Charset="♣︎☼▬▲▼▓█▄▌▐▀°■" />
     <crypticMachineCharset Set="│┤╡╢╖╕╣║╗╝╜╛┐└┴┬├─┼╞╟╚╔╩╦╠═╬╧╨╤╥╙╘╒╓╫╪┘┌" WordLengthMin="3" WordLengthMax="10" SentenceLengthMin="3" SentenceLengthMax="40" />
     <glyphs>
-        <glyph Name="AV" Glyph="♦" Color="b" />
-        <glyph Name="DV" Glyph="○" Color="K" />
-        <glyph Name="PV" Glyph="→" Color="c" />
+        <glyph Name="AV" Glyph="♦" Color="b" /> <!-- was (char)4, \u0004 -->
+        <glyph Name="DV" Glyph="○" Color="K" /> <!-- was (char)9, \u0009 -->
+        <glyph Name="PV" Glyph="→" Color="c" /> <!-- was (char)26, \u001a -->
         <glyph Name="Damage" Glyph="♥" Color="r" />
-        <glyph Name="Check" Glyph="&#x221A;" Color="g"></glyph>
-        <glyph Name="Bullet" Glyph="&#x2219;" Color="y"></glyph>
+        <glyph Name="Favorite" Glyph="♥" Color="R" />
+        <glyph Name="ListItem" Glyph="·" Color="c" /> <!-- was (char)250, \u00fa -->
+        <glyph Name="Check" Glyph="✓" Color="g"></glyph> <!-- was (char)251, \u00fb -->
         <glyph Name="Cross" Glyph="X" Color="r"></glyph>
+        <glyph Name="Bullet" Glyph="&#x2219;" Color="y"></glyph> <!-- was (char)007, \u0007 -->
+        <glyph Name="ChargenBullet" Glyph="∙" Color="c" /> <!-- was (char)249, \u00f9" -->
+        <glyph Name="Up" Glyph="↑" Color="y"/> <!-- was (char)24, \u0018 -->
+        <glyph Name="Down" Glyph="↓" Color="y"/> <!-- was (char)25, \u0019 -->
+        <glyph Name="UpDown" Glyph="↕" Color="y"/> <!-- was (char)18, \u0012 -->
+        <glyph Name="UpDownLine" Glyph="↨" Color="y"/> <!-- was (char)23, \u0017 -->
+        <glyph Name="Right" Glyph="→" Color="y"/> <!-- was (char)26, \u001a -->
+        <glyph Name="Left" Glyph="←" Color="y"/> <!-- was (char)27, \u001b -->
+        <glyph Name="LeftRight" Glyph="↔" Color="y"/> <!-- was (char)29, \u001d -->
+        <glyph Name="Alpha" Glyph="α" Color="y"/> <!-- was (char)224, \u00e0 -->
+        <glyph Name="Eszett" Glyph="ß" Color="y"/> <!-- was (char)225, \u00e1 -->
+        <glyph Name="Tau" Glyph="τ" Color="y"/> <!-- was (char)231, \u00e7 -->
+        <glyph Name="Gamma" Glyph="Γ" Color="y"/> <!-- was (char)226, \u00e2 -->
+        <glyph Name="DeltaLower" Glyph="δ" Color="y"/> <!-- was (char)235, \u00eb -->
+        <glyph Name="SigmaLower" Glyph="σ" Color="y"/> <!-- was (char)229, \u00e5 -->
+        <glyph Name="SigmaUpper" Glyph="Σ" Color="y"/> <!-- was (char)228, \u00e4 -->
+        <glyph Name="Mu" Glyph="µ" Color="y"/> <!-- was (char)230, \u00e6 -->
+        <glyph Name="Theta" Glyph="Θ" Color="y"/> <!-- was (char)233, \u00e9 -->
+        <glyph Name="Omega" Glyph="Ω" Color="c" /> <!-- was (char)234, \u00ea -->
+        <glyph Name="PhiLower" Glyph="Φ" Color="c" /> <!-- was (char)232, \u00e8 -->
+        <glyph Name="PhiUpper" Glyph="φ" Color="c" /> <!-- was (char)237, \u00ed -->
+        <glyph Name="Vibro" Glyph="≈" Color="W" /> <!-- was (char)247, \u00f7 -->
+        <glyph Name="Infinite" Glyph="∞" Color="K" /> <!-- was (char)236, \u00dc-->
+        <glyph Name="Solar" Glyph="☼" Color="W" /> <!-- was (char)15, \u000f -->
+        <glyph Name="Credits" Glyph="¢" Color="C" /> <!-- was (char)155, \u009b -->
+        <glyph Name="Degree" Glyph="°" Color="y" /> <!-- was (char)248, \u00f8 -->
     </glyphs>
     <wordlists>
         <article Word="a" />

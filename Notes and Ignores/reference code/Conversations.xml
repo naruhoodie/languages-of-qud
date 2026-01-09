@@ -12374,9 +12374,9 @@
 			<text>Is there work around here?</text>
 		</choice>
 		<node ID="DirectToWork">
-			<text>Speak to =questgivers=.</text>
-			<text>Talk to =questgivers=.</text>
-			<text>Find =questgivers=.</text>
+			<text>Speak to =subject.listDirectionsTo#questGivers=.</text>
+			<text>Talk to =subject.listDirectionsTo#questGivers=.</text>
+			<text>Find =subject.listDirectionsTo#questGivers=.</text>
 			<choice ID="MoreToAsk" Target="Start">Thank you. I have more to ask.</choice>
 			<choice ID="Goodbye" Target="End">Live and drink.</choice>
 			<part Name="QuestSignpost" />
