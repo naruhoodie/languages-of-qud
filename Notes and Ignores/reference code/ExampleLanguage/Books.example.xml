@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.8
+Caves of Qud - Generated Localizable XML 2.0.212.9
 
 <books>
 
@@ -10,9 +10,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.8
 
 -->
 <books Lang="example" Encoding="utf-8">
-  <!--♪ 
-    written in "Middle English", the style of The Canterbury Tales by Chaucer
-  -->
   <book ID="Skybear" Title="▶{{W|Song of the Sky-Bear}}">
     <page>▶
 Whilom, when Salum was the lond of Qud,
@@ -1335,6 +1332,9 @@ And so he sat through the high summer, and the next season of the scyth, and the
 
 But Aphir did not believe her lost -- on sacred nights he would gaze over the Spindle, mantled in a thousand lights, and upon the field of burning stars. And he knew his jewel was among them, for she belonged not of his world, but of theirs.</page>
   </book>
+<!--♪ This book isn't used in game, it's generated from a set of strings "EskhindSonnetBook"
+      the text here is used for markov generation
+      you can wish `TestSonnet` to generate a fresh sonnet -->
   <book ID="Sonnet" Title="▶{{W|a crumpled sheet of paper}}">
     <page>▶
 When all four limbs of mine do long to run

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.8
+Caves of Qud - Generated Localizable XML 2.0.212.9
 
 <objects>
 
@@ -870,7 +870,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.8
     <part Name="Render" DisplayName="▶Ruin of House Isner" />
     <part Name="Description" Short="▶The craftsmanship of this pistol worked in brass and chrome is breathtaking: grips of kingswood call the palm to an airless wrap, the hammer is contoured to the thumb by the microinch, and the sight draws the eye down the barrel like the slipping of silk. It's engraved all around with withered ivy, and the muzzle is kissed in blood." />
     <part Name="RulesDescription" Text="▶+1 Ego&#xA;Critical hits scored with this weapon get an extra +4 bonus to penetration rolls.&#xA;When this weapons fires a shot with its last round of ammo, the shot has perfect aim and is guaranteed to score a critical hit." />
-    <property Name="Story" Value="▶RuinOfHouseIsner" />
     <part Name="TakenAccomplishment" Text="▶You recovered the masterwork pistol and legendary ode to vengeance, the =this.refname=." Hagiograph="▶The gunslinger-sultan =name= slew each of the seven lords of House Isner with a masterwork revolver and supped over their piled corpses." Gospel="▶Deep in the wilds near =landmark.nearest=, =name= stumbled upon a clan of water barons performing a secret ritual. Because of their treacherous eyes, =name= slew each of the seven lords with a masterwork revolver and supped over their piled corpses." />
     <xtagGrammar Proper="▶true" />
     <tag Name="IndefiniteArticle" Value="▶the" />
@@ -2136,7 +2135,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.8
     <part Name="Render" DisplayName="▶{{R-r-K-y-Y sequence|Stopsvalinn}}" />
     <part Name="Description" Short="▶A layer cake of wide-age rust grants dimension to the ancient and flat-faced astagon. Its front is painted with the coat of arms of an archaic house -- white runic script on a field of crimson." />
     <part Name="RulesDescription" Text="▶+1 Ego&#xA;You may activate this item to conjure a force field in front of you. Robots will often be unable to advance toward you while the force field is active." />
-    <property Name="Story" Value="▶Stopsvalinn" />
     <part Name="TakenAccomplishment" Text="▶You recovered the lost aegis of House Yish, =this.refname=." Hagiograph="▶Recall how =name= wrested the legendary aegis =this.refname= from the paws of a lowly snapjaw and averred descendency from the Saads of Yish!" Gospel="▶At the Battle of =landmark.nearest|title=, =name= fought to subjugate snapjaws. =player.Subjective= wielded a buckler with such =spice:commonPhrases.finesse.!random= that it became forever known as =this.refname=. " />
     <xtagGrammar Proper="▶true" />
   </object>
@@ -2159,7 +2157,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.8
     <part Name="Render" DisplayName="▶{{R-r-w-W-Y-y sequence|Flume-Flier}} of the {{b-B-C-c sequence|Sky-Bear}}" />
     <part Name="Description" Short="▶Two turrets of sun-conducting chrome cap cylinders of burning gas, which straddle a metal trellis of spades girding some sort of guild mark. A 6-helix of fume, signature of the star engine this flier is wrought through, twirls toward the sky." />
     <part Name="RulesDescription" Text="▶You may activate this item to start dashing.&#xA; While dashing, whenever you move in a direction, you dash up to 20 spaces toward the nearest enemy or obstacle and perform an attack.&#xA; For every three spaces you dash, you get +2 to hit and +2 to penetration rolls." />
-    <property Name="Story" Value="▶Skybear" />
     <xtagGrammar Proper="▶true" />
     <tag Name="IndefiniteArticle" Value="▶the" />
     <tag Name="DefiniteArticle" Value="▶the" />
@@ -2189,7 +2186,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.8
     <xtagGrammar Proper="▶true" />
     <tag Name="IndefiniteArticle" Value="▶the" />
     <tag Name="DefiniteArticle" Value="▶the" />
-    <property Name="Story" Value="▶AmaranthinePrism" />
     <part Name="TakenAccomplishment" Text="▶You clutched the black glass of the =this.refname= in your hands." Hagiograph="▶Amaranthine =name=! Cower before the god-sultan who is wrought of =player.possessive= own dreamstuff, who bears the black glass!" Gospel="▶While wandering in the jungle near Kyakukya, =name= dreamed =player.subjective= orbited a darkling star and in its vast accretion disk piled the building blocks of self. From then on, =name= kept a starless, triangular prism on =player.possessive= person." />
   </object>
   <object Name="TauChime" Load="Merge">
@@ -2211,27 +2207,23 @@ Caves of Qud - Generated Localizable XML 2.0.212.8
     <part Name="Render" DisplayName="▶{{K-K-K-K-K-c-C-Y sequence|Nacham's}} {{C-c-K-K-K-K sequence|ribbon}}" />
     <part Name="Description" Short="▶A curtain of thrumming cables make a mantle for hunched shoulders. They pitch at neuronal frequencies long dormant." />
     <part Name="Toolbox" BehaviorDescription="▶When powered, this item grants a 40% chance that a tinkered item will have a random item modification. This may include item modifications that aren't normally tinkerable." />
-    <property Name="Story" Value="▶NachamsRibbon" />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="Vaam's Lens" Load="Merge">
     <part Name="Render" DisplayName="▶{{K-K-K-K-c-C-Y sequence|Va'am's}} {{C-c-K-K sequence|lens}}" />
     <part Name="Description" Short="▶An ocean drum of unknown zircon cleans itself of dust down to the mote by electrostatic cancelling. The center cross affords a wielder's grip." />
     <part Name="ReduceCooldowns" NameForStatus="▶KineticAcceleration" />
-    <property Name="Story" Value="▶VaamsLens" />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="Dagasha's Spur" Load="Merge">
     <part Name="Render" DisplayName="▶{{K-K-K-K-c-C-Y-C-c sequence|Dagasha's}} {{K sequence|spur}}" />
     <part Name="Description" Short="▶A thorn crown arranged of crystals at telling psionic angles make a landmark in the psychic sea." />
-    <property Name="Story" Value="▶DagashasSpur" />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="Kah's Loop" Load="Merge">
     <part Name="Render" DisplayName="▶{{K-K-c-C-Y sequence|Kah's}} {{C-c-K-K sequence|loop}}" />
     <part Name="Description" Short="▶A ribbed cable of tangent needle points squeezes the limb and quickens its biomatter beyond expectation." />
     <part Name="IntPropertyChanger" BehaviorDescription="▶Wearer may take any action while sprinting at no additional penalty." NameForStatus="▶?????" />
-    <property Name="Story" Value="▶KahsLoop" />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="The Kesil Face" Load="Merge">
@@ -2273,7 +2265,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.8
     <part Name="Render" DisplayName="▶{{otherpearl|Otherpearl}}" />
     <part Name="Description" Short="▶All-color nacre is hardened into an ontologically perfect shape; the mathematics of spheres are mere approximations. Inside, ribboned patterns of aether are frozen in stasis and cohere as a moonlit vista, a scene somehow tethered to the spacetime point whence you observed it. The meaning of this pairing is unknown and unknowable." />
     <part Name="RulesDescription" Text="▶+40 psychic glimmer&#xA;Objects you find are five times more likely to come from other dimensions." />
-    <property Name="Story" Value="▶TheRecitation" />
     <part Name="TakenAccomplishment" Text="▶You clutched =this.refname= and dressed yourself in the mirror of realities." Hagiograph="▶O! Our hearts turned to stellar remnants when =name= recited an elegy for the unknown girlchild Eudoxia!" Gospel="▶In the month =month= of =year=, a corrupt administrator was appointed minister of a gleaming city with streets of gold and glass. =spice:pronouns.subject.!random.capitalize= outlawed the practice of composing elegies, and =name= was forced to flee." />
     <xtagGrammar Proper="▶true" />
     <tag Name="IndefiniteArticle" Value="▶the" />

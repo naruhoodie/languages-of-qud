@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Caves of Qud - Generated Localizable XML 2.0.212.9
+
+<Liquids>
+
+  <Liquid Name="Key">
+  CirculatoryLossTerm: DisplayText(Can appear as an attribute or a node)
+  CirculatoryLossNoun: DisplayText(Can appear as an attribute or a node)
+  DisplayName: DisplayText(Can appear as an attribute or a node)
+  Adjective: DisplayText(Can appear as an attribute or a node)
+  WaterRitualName: DisplayText(Can appear as an attribute or a node)
+  SmearedAdjective: DisplayText(Can appear as an attribute or a node)
+  SmearedName: DisplayText(Can appear as an attribute or a node)
+  StainedName: DisplayText(Can appear as an attribute or a node)
+
+    <FreezeObjects>
+
+      <FreezeObject Name="Key">
+      Verb: DisplayText(Can appear as an attribute or a node)
+
+-->
+<liquids Lang="example" Encoding="utf-8">
+  <liquid Name="Acid">
+    <displayName>▶{{G|acid}}</displayName>
+    <adjective>▶{{G|acidic}}</adjective>
+    <waterRitualName>▶acid</waterRitualName>
+    <smearedAdjective>▶{{G|acidic}}</smearedAdjective>
+    <smearedName>▶{{G|acid-covered}}</smearedName>
+    <stainedName>▶{{G|acid}}</stainedName>
+  </liquid>
+  <liquid Name="Asphalt">
+    <displayName>▶{{K|asphalt}}</displayName>
+    <adjective>▶{{K|tarry}}</adjective>
+    <waterRitualName>▶tar</waterRitualName>
+    <smearedAdjective>▶{{K|tarry}}</smearedAdjective>
+    <smearedName>▶{{K|tarred}}</smearedName>
+    <stainedName>▶{{K|tar}}</stainedName>
+  </liquid>
+  <liquid Name="Algae">
+    <displayName>▶{{g|algae}}</displayName>
+    <adjective>▶{{g|algal}}</adjective>
+    <waterRitualName>▶algae</waterRitualName>
+    <smearedAdjective>▶{{g|algal}}</smearedAdjective>
+    <smearedName>▶{{g|algae-covered}}</smearedName>
+    <stainedName>▶{{g|algae}}</stainedName>
+  </liquid>
+  <liquid Name="Blood">
+    <circulatoryLossTerm>▶bleeding</circulatoryLossTerm>
+    <circulatoryLossNoun>▶bleed</circulatoryLossNoun>
+    <smearedAdjective>▶{{r|bloody}}</smearedAdjective>
+    <smearedName>▶{{r|bloody}}</smearedName>
+    <stainedName>▶{{r|blood}}</stainedName>
+    <displayName>▶{{r|blood}}</displayName>
+    <waterRitualName>▶blood</waterRitualName>
+    <adjective>▶{{r|bloody}}</adjective>
+  </liquid>
+  <liquid Name="BrainBrine">
+    <displayName>▶{{brainbrine|brain brine}}</displayName>
+    <adjective>▶{{nervous|nervous}}</adjective>
+    <waterRitualName>▶brain brine</waterRitualName>
+    <smearedAdjective>▶{{nervous|nervous}}</smearedAdjective>
+    <smearedName>▶{{nervous|nervous}}</smearedName>
+    <stainedName>▶{{brainbrine|brain-brine}}</stainedName>
+  </liquid>
+  <liquid Name="Lava">
+    <displayName>▶{{lava|lava}}</displayName>
+    <adjective>▶{{lava|magmatic}}</adjective>
+    <waterRitualName>▶lava</waterRitualName>
+    <smearedAdjective>▶{{lava|magmatic}}</smearedAdjective>
+    <smearedName>▶{{lava|lava-covered}}</smearedName>
+    <stainedName>▶{{lava|lava}}</stainedName>
+  </liquid>
+  <liquid Name="Water">
+    <displayName>▶{{B|water}}</displayName>
+    <adjective>▶{{Y|dilute}}</adjective>
+    <waterRitualName>▶water</waterRitualName>
+    <smearedAdjective>▶{{B|wet}}</smearedAdjective>
+    <smearedName>▶{{B|wet}}</smearedName>
+    <stainedName>▶{{B|water}}</stainedName>
+  </liquid>
+</liquids>
