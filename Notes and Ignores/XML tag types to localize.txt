@@ -91,12 +91,12 @@
 		<part Name="Interactable" Action="<??LOCALIZE>" Message="<LOCALIZE>" />
 	<!-- Creatures.xml -->
     <!-- how to localize stat tag ShortName? -->
-    <stat Name="<KEY>" ShortName="<?KEY,??LOCALIZE>" />
+    	<stat Name="<KEY>" ShortName="<?KEY,??LOCALIZE>" />
 		<tag Name="Species" Value="<LOCALIZE>" />
 		<tag Name="PetResponse" Value="<LOCALIZE>" />
 		<tag Name="SimpleConversation" Value="<LOCALIZE><EMOTE><CHOICES~>" />
 		<xtagTextFragments Skin="<LOCALIZE>" PoeticFeatures="<CHOICES,>" YounglingNoise="<EMOTE><CHOICES,>" Activity="<CHOICES,>" VillageActivity="<CHOICES,>" NeedsItemFor="<CHOICES,>" SacredThing="<CHOICES,>" ArableLand="<CHOICES,>" ValuedOre="<CHOICES,>" />
-    <stag Name="HardMaterial" Value="<LOCALIZE>" />
+    	<stag Name="HardMaterial" Value="<LOCALIZE>" />
 		<tag Name="HeroNameTitleWiseDescriptor" Value="<CHOICES,>" />
 		<!-- HeroNameTitleMayorSyn & HeroNameTitleMayorSynCap go together -->
 		<tag Name="HeroNameTitleMayorSyn" Value="<CHOICES,>" />
@@ -111,6 +111,7 @@
 	</object>
 </objects>
 
+<!-- Mutations.xml -->
 <mutations>
     <mutation Name="<KEY>" DisplayName="<LOCALIZE>" BearerDescription="<LOCALIZE>" BiomeEpithet="<LOCALIZE>" BiomeAdjective="<LOCALIZE>">
 		<description><LOCALIZE>
@@ -125,6 +126,7 @@
 	</mutation>
 </mutations>
 
+<!-- EmbarkModules.xml -->
 <embarkmodules>
 
   <!-- a general module with a simple window -->
@@ -257,3 +259,12 @@
   </rewards>
 </sparkingbaetyls>
 
+<!-- Worlds.xml -->
+<worlds>
+  <world Name="<KEY>" DisplayName="<LOCALIZE>">
+    <cell Name="<KEY>">
+	  <zone Level="<KEY>" x="<KEY>" y="<KEY>" Name="<LOCALIZE>" NameContext="<LOCALIZE>">
+	  </zone>
+    </cell>
+  </world>
+</worlds>
