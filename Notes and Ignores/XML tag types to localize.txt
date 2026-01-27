@@ -46,6 +46,7 @@
 		<part Name="TakenAccomplishment" Text="<LOCALIZE>" Hagiograph="<LOCALIZE>" Gospel="<LOCALIZE,SPICE>" />
 		<part Name="CompleteQuestOnTaken" Quest="<KEY:quest>" QuestStep="<KEY:quest.step>" />
 		<property Name="Story" Value="<KEY:book>" />
+	    <part Name="Book" ID="<KEY:book>" />
 		<part Name="IntPropertyChanger" NameForStatus="<TECH,LOCALIZE>" BehaviorDescription="<LOCALIZE>" />
 	<!-- Items.xml - cybernetics -->
 		<part Name="CyberneticsBaseItem" BehaviorDescription="<LOCALIZE>" />
