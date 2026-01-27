@@ -21,6 +21,9 @@ xml finding &c-style color tags in localizable example text:
 ="▶[^"]*&amp;[a-zA-Z][^"]*" 
 >▶[^<]*&amp;[a-zA-Z][^<]*</
 
+finding {{c|text}}-style color tags that have spaces in the color:
+\{\{[^ |]* [^ |]*\|
+
 cs finding _S and _T:
 _(S|T)\(
 

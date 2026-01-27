@@ -8,6 +8,7 @@
 	<TECH>: is a technical display string, "CamelCase" style
 	<EMOTE>: localize as an sfx
 	<KEY>: undisplayed id for reference, DO NOT LOCALIZE!
+	<STRINGIFY>: handle via a Strings.?.example.xml file entry
 -->
 
 <objects>
@@ -15,8 +16,9 @@
 	<!-- RootObjects.xml -->
     <!-- NOTE: don't localize part Render for anything with tag BaseObject -->
 		<part Name="Render" DisplayName="<LOCALIZE>" /> 
-	    <tag Name="Gender" Value="<GRAMMAR:PronounSetName>" />
-	    <xtagGrammar massNoun="<GRAMMAR>" />
+		<!-- Gender likely needs to change and should be checked! -->
+	    <tag Name="Gender" Value="<GRAMMAR:PronounSetName><LOCALIZE>" />
+	    <xtagGrammar massNoun="<GRAMMAR:true/false><LOCALIZE>" />
 	<!-- PhysicalPhenomena.xml -->
 		<part Name="Description" Short="<LOCALIZE>" />
 	    <part Name="LiquidVolume" NamePreposition="<LOCALIZE>" />
@@ -33,17 +35,17 @@
 	<!-- Items.xml -->
 		<tag Name="TinkerCategory" Value="<??LOCALIZE>" />
 		<part Name="LatchesOn" BehaviorDescription="<LOCALIZE>" />
-		<xtagGrammar Proper="<GRAMMAR>" />
+		<xtagGrammar Proper="<GRAMMAR:true/false>" />
 		<xtagGrammar iArticle="<GRAMMAR><LOCALIZE>" />
-		<xtagGrammar adjunctNounPost="<GRAMMAR>" />
+		<xtagGrammar adjunctNounPost="<GRAMMAR><LOCALIZE>" />
 		<part Name="RulesDescription" Text="<LOCALIZE>" />
 		<tag Name="IndefiniteArticle" Value="<GRAMMAR><LOCALIZE>" />
 		<tag Name="DefiniteArticle" Value="<GRAMMAR><LOCALIZE>" />
 		<part Name="Toolbox" BehaviorDescription="<LOCALIZE>" />
 	<!-- Items.xml - particular quest items -->
-		<part Name="TakenAccomplishment" Text="<LOCALIZE>" Hagiograph="<LOCALIZE>" Gospel="<LOCALIZE>" />
-		<part Name="CompleteQuestOnTaken" Quest="<KEY>" QuestStep="<KEY>" />
-		<property Name="Story" Value="<KEY>" />
+		<part Name="TakenAccomplishment" Text="<LOCALIZE>" Hagiograph="<LOCALIZE>" Gospel="<LOCALIZE,SPICE>" />
+		<part Name="CompleteQuestOnTaken" Quest="<KEY:quest>" QuestStep="<KEY:quest.step>" />
+		<property Name="Story" Value="<KEY:book>" />
 		<part Name="IntPropertyChanger" NameForStatus="<TECH,LOCALIZE>" BehaviorDescription="<LOCALIZE>" />
 	<!-- Items.xml - cybernetics -->
 		<part Name="CyberneticsBaseItem" BehaviorDescription="<LOCALIZE>" />
@@ -62,20 +64,20 @@
 	<!-- Food.xml -->
 		<part Name="Food" Message="<LOCALIZE>" />
 	<!-- Widgets.xml -->
-		<part Name="QuestStepFinisher" Quest="<??LOCALIZE>" Step="<??LOCALIZE>" />
+		<part Name="QuestStepFinisher" Quest="<KEY:quest>" Step="<KEY:quest.step>" />
 	<!-- Furniture.xml -->
 		<tag Name="HeroNameTitleDescriptor" Value="<CHOICES,>" />
 		<tag Name="HeroNameTitleClientele" Value="<CHOICES,>" />
 		<xtagTextFragments Skin="<LOCALIZE>" PoeticFeatures="<CHOICES,>" />
-		<tag Name="NamingTag" Value="<??LOCALIZE>" />
+		<tag Name="NamingTag" Value="<KEY:Naming.xml>" />
 		<part Name="Bed" NameForStatus="<TECH,LOCALIZE>" />
 		<part Name="Chat" Says="<LOCALIZE>" />
-	<!-- Furniture.xml - QuestableVerb & QuestableEvent seem to match -->
-		<tag Name="QuestableVerb" Value="<??LOCALIZE><CHOICES,>" />
-		<tag Name="QuestableEvent" Value="<??LOCALIZE><CHOICES,>" />
+	<!-- Furniture.xml - QuestableVerb & QuestableEvent are related -->
+		<tag Name="QuestableVerb" Value="<CHOICES,>" />
+		<tag Name="QuestableEvent" Value="<KEY><CHOICES,>" />
 	<!-- WorldTerrain.xml -->
 		<tag Name="OverlandBlockMessage" Value="<LOCALIZE>" />
-		<tag Name="AlternateTerrainName" Value="<??LOCALIZE>" />
+		<tag Name="AlternateTerrainName" Value="<KEY:SPICE>" />
 	<!-- ZoneTerrain.xml -->
 		<stag Name="Plank" Value="<LOCALIZE>" />
 		<stag Name="Fiber" Value="<LOCALIZE>" />
@@ -84,10 +86,11 @@
 	<!-- HiddenObjects.xml -->
 		<part Name="Honorifics" Ordinary="<LOCALIZE>" />
 		<!-- PronounSet: they/them/their (up to 11 total), '/' delimited -->
-		<tag Name="PronounSet" Value="<GRAMMAR:PronounSet>" />
+		<tag Name="PronounSet" Value="<GRAMMAR:PronounSet><LOCALIZE>" />
 		<part Name="BlowAwayGas" Message="<LOCALIZE>" />
 		<part Name="TimeCubeProtection" Message="<LOCALIZE>" />
 		<part Name="TreatAsSolid" Message="<LOCALIZE>" />    
+		<!-- Action is for an InventoryActionEvent; key or localize? -->
 		<part Name="Interactable" Action="<??LOCALIZE>" Message="<LOCALIZE>" />
 	<!-- Creatures.xml -->
     <!-- how to localize stat tag ShortName? -->
@@ -132,8 +135,8 @@
   <!-- a general module with a simple window -->
   <module Class="<KEY>">
 	<!-- NOTE: not showing window in more complex examples -->
-    <window ID="<?KEY>">
-      <name><??LOCALIZE></name> <!-- where is this used? -->
+    <window ID="<KEY>">
+      <name><LOCALIZE></name> <!-- where is this used? -->
       <title><LOCALIZE></title>
     </window>
   </module>
@@ -165,9 +168,8 @@
 
     <pregens>      
       <pregen ID="<KEY>" Name="<LOCALIZE>">
-		<!-- NOTE!! pregen ID is usually missing in XML; 
-				either copy Name to ID first in XML,
-				or else use _S for Name in Qud code
+		<!-- NOTE!! pregen ID is usually missing in XML, 
+				so copy Name to ID
 		--> 
         <description>
           <LOCALIZE>
@@ -193,27 +195,23 @@
 <genotypes>
   <genotype Name="<KEY>" DisplayName="<LOCALIZE>" BodyObject="<??LOCALIZE>">
     <stat Name="<KEY>" ChargenDescription="<LOCALIZE>"/>
-	<!-- <removeextrainfo> must match <extrainfo> from en being replaced -->
-    <removeextrainfo><MATCH></removeextrainfo>
-    <extrainfo><LOCALIZE></extrainfo>
+    <extrainfo><STRINGIFY:Strings.appendix></extrainfo>
   </genotype>
 </genotypes>
 
 <!-- Subtypes.xml -->
 <subtypes>
-
   <class ID="<KEY>" ChargenTitle="<LOCALIZE>">
     <category Name="<KEY>" DisplayName="<LOCALIZE>">
       <subtype Name="<KEY>" DisplayName="<LOCALIZE>">
-	    <!-- <removeextrainfo> must match <extrainfo> from en being replaced -->
-        <removeextrainfo><MATCH></removeextrainfo>
-        <extrainfo><LOCALIZE></extrainfo>
+        <extrainfo><STRINGIFY:Strings.appendix></extrainfo>
       </subtype>
     </category>
+  </class>
+</subtypes>
 
 <!-- Skills.xml -->
 <skills>
-  <!-- TODO: DisplayName isn't supported yet! -->
   <skill Name="<KEY>" DisplayName="<LOCALIZE>" Description="<LOCALIZE>" Snippet="<LOCALIZE>">
     <power Name="<KEY>" DisplayName="<LOCALIZE>" Snippet="<LOCALIZE>" Description="<LOCALIZE>"></power>
   </skill>
@@ -223,7 +221,7 @@
 <factions>
   <!-- Note: doesn't need to be localized when Visible="false" -->
   <!-- FormatWithArticle & Plural are grammar-related, some lang may decide on usage -->
-  <faction Name="<KEY>" DisplayName="<LOCALIZE>" FormatWithArticle="<GRAMMAR>" Plural="<GRAMMAR>">
+  <faction Name="<KEY>" DisplayName="<LOCALIZE>" FormatWithArticle="<GRAMMAR><LOCALIZE>" Plural="<GRAMMAR><LOCALIZE>">
     <!-- Note: RecipeText isn't processed when no Recipe -->
     <waterritual RecipeText="<LOCALIZE>" />
     <interests>
@@ -231,7 +229,6 @@
       <interest Tags="<KEY,>" MatchAny="<KEY>" Description="<LOCALIZE>" />
     </interests>
     <ranks>
-      <!-- TODO: DisplayName isn't supported yet! -->
       <rank Name="<KEY>" DisplayName="<LOCALIZE>" />
     </ranks>
   </faction>
@@ -268,3 +265,17 @@
     </cell>
   </world>
 </worlds>
+
+<!-- Statistics.xml -->
+<statistics>
+  <statistic Name="<KEY>">
+    <displayName><LOCALIZE></displayName>
+    <displayTitle><LOCALIZE></displayTitle>
+    <displayNameSingular><LOCALIZE></displayNameSingular>
+    <displayTitleSingular><LOCALIZE></displayTitleSingular>
+    <narrationName><LOCALIZE></narrationName>
+    <shortName><LOCALIZE></shortName>
+    <shortTitle><LOCALIZE></shortTitle>
+    <helpText><LOCALIZE></helpText>
+  </statistic>
+
