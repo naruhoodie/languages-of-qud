@@ -64,6 +64,8 @@
 		<part Name="MagazineAmmoLoader" NameForStatus="<TECH,LOCALIZE>" />
 	<!-- Food.xml -->
 		<part Name="Food" Message="<LOCALIZE>" />
+		<tag Name="ServingType" Value="<LOCALIZE>" />
+		<tag Name="ServingName" Value="<LOCALIZE>" />
 	<!-- Widgets.xml -->
 		<part Name="QuestStepFinisher" Quest="<KEY:quest>" Step="<KEY:quest.step>" />
 	<!-- Furniture.xml -->

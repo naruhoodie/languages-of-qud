@@ -12,14 +12,15 @@ removing <!--Code references lines:
 ^\s+<!--Code references[^>]+-->\s*$\n	
 removing lines with spice variables (if desired):
 ^\s+<.*=spice.*$\n	
+finding elements without Context:
+  <string ID=
 
 regex for splitting string ID="" into Context="" ID="" (Strings-example.xml):
 (?!Context="[^"]*") (ID=")([^&{":=]+):([^"]+")	 Context="$2" $1$3
 
 
 xml finding &c-style color tags in localizable example text:
-="▶[^"]*&amp;[a-zA-Z][^"]*" 
->▶[^<]*&amp;[a-zA-Z][^<]*</
+(="[^"]*&amp;[a-zA-Z][^^&"][^"]+"|>[^<]*&amp;[a-zA-Z][^^&<][^<]+</)
 
 finding {{c|text}}-style color tags that have spaces in the color:
 \{\{[^ |]* [^ |]*\|
