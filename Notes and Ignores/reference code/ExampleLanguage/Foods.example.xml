@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.9
+Caves of Qud - Generated Localizable XML 2.0.212.11
 
 <objects>
 
@@ -590,7 +590,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.9
     <part Name="Description" Short="▶Blaze was extracted from its injector, thickened in the acrid air, and bottled for culinary use." />
   </object>
   <object Name="Congealed Salve" Load="Merge">
-    <part Name="Render" DisplayName="▶congealed &amp;Ysalve" />
+    <part Name="Render" DisplayName="▶congealed {{Y|salve}}" />
     <part Name="Description" Short="▶Salve was extracted from its injector, thickened in the acrid air, and bottled for culinary use." />
   </object>
   <object Name="Soul Curd" Load="Merge">
@@ -600,6 +600,8 @@ Caves of Qud - Generated Localizable XML 2.0.212.9
   <object Name="Drop of Nectar" Load="Merge">
     <part Name="Render" DisplayName="▶drop of {{nectar|nectar}}" />
     <part Name="Description" Short="▶Eaters' nectar was extracted from its injector, thickened in the acrid air, and bottled for culinary use." />
+    <tag Name="ServingType" Value="▶drop" />
+    <tag Name="ServingName" Value="▶{{nectar|nectar}}" />
   </object>
   <object Name="Congealed Hulk Honey" Load="Merge">
     <part Name="Render" DisplayName="▶congealed {{G|hulk}} {{w|honey}}" />

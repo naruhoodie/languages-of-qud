@@ -1965,9 +1965,9 @@
     </node>
     <node ID="Signal">
       <text>
-        The signal is a repeat transmission being broadcast from an unknown source.=V0tinkeraddendum= One of our tinkers, &amp;mQ Girl&amp;y, discovered it while rigging a long wave detector. Unfortunately, it's encrypted, and we do not have the means here to decrypt it. You may be of some help in this matter, however.
+        The signal is a repeat transmission being broadcast from an unknown source.=V0tinkeraddendum= One of our tinkers, {{m|Q Girl}}, discovered it while rigging a long wave detector. Unfortunately, it's encrypted, and we do not have the means here to decrypt it. You may be of some help in this matter, however.
 
-        We've long known the location of a fully functioning &amp;Wbaetyl&amp;y within the bowels of the great hall &amp;CBethesda Susa&amp;y. The Mechanimists have consecrated the site around it and built a temple there. Q Girl claims to have developed a means to decrypt the signal, but she needs the computing power of the baetyl. If you can infiltrate the Mechanimist compound, you may be able to engage the baetyl and decode the signal.
+        We've long known the location of a fully functioning {{W|baetyl}} within the bowels of the great hall {{C|Bethesda Susa}}. The Mechanimists have consecrated the site around it and built a temple there. Q Girl claims to have developed a means to decrypt the signal, but she needs the computing power of the baetyl. If you can infiltrate the Mechanimist compound, you may be able to engage the baetyl and decode the signal.
       </text>
       <choice GotoID="Baetyl?">What is a baetyl?</choice>
     </node>
@@ -1984,7 +1984,7 @@
     </node>
     <node ID="Bethesda1">
       <text>
-        Good, =factionaddress:Barathrumites=. Speak to &amp;mQ Girl&amp;y in the workshop. She'll encode her instructions for the baetyl onto a copy of the disk.
+        Good, =factionaddress:Barathrumites=. Speak to {{m|Q Girl}} in the workshop. She'll encode her instructions for the baetyl onto a copy of the disk.
 
         There's one more thing. The baetyl is located beneath the ancient cryobarrios of the Eaters. Time has worked to erode the mechanisms that contain their cryogenic mist. That freezing vapor billows out of the chambers freely now, cooling the entire cavern. You will want to procure warm clothing to protect =player.reflexive=.
 
@@ -2039,7 +2039,7 @@
 
     <node ID="Overripe">
       <text>
-        Barathrum needs you for an undertaking of great importance. You must journey to &amp;COmonporch&amp;y far to the north. There the Spindle stretches from earth to sky. Unfortunately, a troublesome merchant from the Consortium of Phyta has relocated there and declared xerself Earl of Omonporch. We need you to broker a deal so that we may lease control of the Spindle. Failing that, you'll need to dispose of the self-appointed Earl.
+        Barathrum needs you for an undertaking of great importance. You must journey to {{C|Omonporch}} far to the north. There the Spindle stretches from earth to sky. Unfortunately, a troublesome merchant from the Consortium of Phyta has relocated there and declared xerself Earl of Omonporch. We need you to broker a deal so that we may lease control of the Spindle. Failing that, you'll need to dispose of the self-appointed Earl.
 
         Be careful on your approach to Omonporch, =factionaddress:Barathrumites=. So far east into the reaches of Qud, the Putus Templar lie in wait.
       </text>
@@ -2761,7 +2761,7 @@
 			<text>
 				I intend to ascend the Spindle and answer the call, =factionaddress:Barathrumites=.
 
-				My protege &amp;mQ Girl&amp;y has designed a climber for the ascent. We intended to construct it piecewise at the enclave and the site itself, but the engineering feat exceeds even our capacity. With time, I am confident we could accomplish it, but the Putus Templar rob us of our patience. We need to act now, and so as loath as I am to admit it, we need Pax Klanq.
+				My protege {{m|Q Girl}} has designed a climber for the ascent. We intended to construct it piecewise at the enclave and the site itself, but the engineering feat exceeds even our capacity. With time, I am confident we could accomplish it, but the Putus Templar rob us of our patience. We need to act now, and so as loath as I am to admit it, we need Pax Klanq.
 			</text>
 			<choice GotoID="PaxKlanq">Who is Pax Klanq?</choice>
 		</node>
@@ -4533,7 +4533,7 @@
   <conversation ID="Gritgate Intercom" Inherits="">
     <node ID="Start" IfNotHaveQuest="More Than a Willing Spirit">
       <text>
-        &amp;B[&amp;CVoice transmitting through panel&amp;B]&amp;y
+        {{B|[{{C|Voice transmitting through panel}}]}}
 
         Be gone, wayfarer. This is no place for you.
       </text>
@@ -9731,7 +9731,7 @@
 
   <conversation ID="GenericTradeOption">
     <node ID="Start">
-      <choice GotoID="*trade">Let's trade. &amp;g[begin trade]</choice>
+      <choice GotoID="*trade">Let's trade. {{g|[begin trade]}}</choice>
     </node>
   </conversation>
 

@@ -108,7 +108,7 @@
     <xtagTextFragments Skin="skin" PoeticFeatures="shiny teeth,hispid skin,spheric hooves" YounglingNoise="*whine*" Activity="roaming around idly,scrounging for food,napping under the high salt sun" VillageActivity="sleeping in our homes,eating our food" GuestActivity="breaking bread" NeedsItemFor="for my own collection,to slake my greed,because of its trade value" SacredThing="the act of procreating,shade from the salt sun,naps,abundant food" ArableLand="grazeland" ValuedOre="shade and vittle" />
     <tag Name="Class" Value="grazer" />
     <tag Name="Culture" Value="Animal" />
-    <tag Name="SimpleConversation" Value="&amp;w*soft growling*&amp;y" />
+    <tag Name="SimpleConversation" Value="{{emote|*soft growling*}}" />
     <tag Name="PetResponse" Value="=subject.T= =verb:growl= softly." />
   </object>
   <object Name="BaseGrazingAnimal" Inherits="BaseAnimal">
@@ -127,7 +127,7 @@
     <tag Name="HeroStrBoost" Value="2" />
     <tag Name="BaseObject" Value="*noinherit" />
     <part Name="ConversationScript" ConversationID="Antelopes" />
-    <tag Name="SimpleConversation" Value="&amp;w*idly grazes*&amp;y" />
+    <tag Name="SimpleConversation" Value="{{emote|*idly grazes*}}" />
   </object>
 	<object Name="BaseBat" Inherits="BaseAnimal">
 		<part Name="Brain" Factions="Winged Mammals-100" />
@@ -281,7 +281,7 @@
     <tag Name="HeroNameTitleMayorSynCap" Value="King,Mayor,Elder" />
     <xtagTextFragments Skin="chitin" PoeticFeatures="ageless shelf of shell,titanic claws,stilted eyes" YounglingNoise="*click*,*croak*" Activity="scuttling without purpose" VillageActivity="reinforcing the walls of our homes" SacredThing="the art of pinching" />
     <stag Name="HardMaterial" Value="chitin" />
-    <tag Name="SimpleConversation" Value="&amp;w*raucous croaking*&amp;y" />
+    <tag Name="SimpleConversation" Value="{{emote|*raucous croaking*}}" />
     <tag Name="PetResponse" Value="=subject.T= =verb:croak=." />    
     <tag Name="PrimaryLimbType" Value="Hand" />
     <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_crab" />
@@ -330,7 +330,7 @@
 		<tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_creature_animal_fish_vo_attack"/>
 		<tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_animal_fish_vo_die" />
 		<tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_animal_fish_vo_hurt"/>
-    <tag Name="SimpleConversation" Value="&amp;w*stares at you unblinking*&amp;y" />
+    <tag Name="SimpleConversation" Value="{{emote|*stares at you unblinking*}}" />
     <part Name="SpawnWithLiquid" />
     <tag Name="PetResponse" Value="=subject.T= =verb:gurgle=." />    
     <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_fish" />
@@ -357,7 +357,7 @@
     <stag Name="HardMaterial" Value="chitin" />
     <tag Name="Class" Value="insect" />
     <tag Name="Culture" Value="Insect" />
-    <tag Name="SimpleConversation" Value="&amp;w*sharp clicking*&amp;y~&amp;w*soft buzzing*&amp;y" />
+    <tag Name="SimpleConversation" Value="{{emote|*sharp clicking*}}~{{emote|*soft buzzing*}}" />
     <tag Name="PetResponse" Value="=subject.T= =verb:buzz=." />
     <tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_insect_generic_vo_die" />
     <tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_insect_generic_vo_hurt"/>
@@ -402,7 +402,7 @@
     <tag Name="Class" Value="ooze" />
     <tag Name="Species" Value="ooze" />
     <tag Name="Culture" Value="Ooze" />
-    <tag Name="SimpleConversation" Value="&amp;w*exudes loudly*&amp;y~&amp;w*soft gushing*&amp;y" />
+    <tag Name="SimpleConversation" Value="{{emote|*exudes loudly*}}~{{emote|*soft gushing*}}" />
     <tag Name="PetResponse" Value="=subject.T= =verb:spurt=." />
     <tag Name="PrimaryLimbType" Value="Hand" />
     <tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_ooze_generic_vo_die" />
@@ -538,7 +538,7 @@
     <stag Name="HardMaterial" Value="chitin" />
     <tag Name="Class" Value="spider" />
     <tag Name="Culture" Value="Arachnid" />
-    <tag Name="SimpleConversation" Value="&amp;w*idly weaving*&amp;y" />    
+    <tag Name="SimpleConversation" Value="{{emote|*idly weaving*}}" />
     <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_spider" />
 		<tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_insect_generic_vo_die" />
 		<tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_insect_generic_vo_hurt"/>
@@ -586,10 +586,10 @@
     <tag Name="HeroNameTitleMayorSynCap" Value="Sage,Mayor,Elder" />
     <xtagTextFragments Skin="keratin" PoeticFeatures="stony stillness,ageless bearing,lidded eyes" YounglingNoise="*croak*" Activity="plodding along,inside shells,napping in the shade" VillageActivity="sleeping inside its shell" NeedsItemFor="for my own collection,to slake my greed,because of its trade value,to hide in my shell" SacredThing="the sanctum of a hollow place,the carapace,vegetables,peace and quiet,the home" ArableLand="quiet meadows,shady nooks" ValuedOre="peace and quiet" />
     <stag Name="HardMaterial" Value="shell" />
-    <tag Name="Class" Value="tortoise" />		
+    <tag Name="Class" Value="tortoise" />
     <tag Name="Species" Value="tortoise" />
     <tag Name="Culture" Value="Tortoise" />
-    <tag Name="SimpleConversation" Value="&amp;w*sniffles and sneezes*&amp;y" />
+    <tag Name="SimpleConversation" Value="{{emote|*sniffles and sneezes*}}" />
     <tag Name="PetResponse" Value="=subject.T= =verb:croak=." />
     <mutation Name="Carapace" Level="5" />
     <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_tortoise" />
@@ -660,7 +660,7 @@
     <xtagTextFragments Skin="annuli" PoeticFeatures="undulation,geometric simplicity,ageless bearing" YounglingNoise="*slither*" Activity="tunneling through the earth" VillageActivity="bathing in our stews, making worm stews of our stews" SacredThing="having neither arms nor legs" />
     <stag Name="HardMaterial" Value="cocoon" />
     <tag Name="Culture" Value="Worm" />
-    <tag Name="SimpleConversation" Value="&amp;w*idly undulating*&amp;y" />
+    <tag Name="SimpleConversation" Value="{{emote|*idly undulating*}}" />
     <tag Name="PetResponse" Value="=subject.T= =verb:slither=." />
     <tag Name="PrimaryLimbType" Value="Body" />
     <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_worm" />
@@ -732,7 +732,7 @@
     <tag Name="NonMutant" />
     <tag Name="Class" Value="humanoid robot" />
     <tag Name="Culture" Value="Robot" />
-    <tag Name="SimpleConversation" Value="&amp;w*beep boop*&amp;y~&amp;w*boop beep*&amp;y~&amp;w*beep boop beep*&amp;y~&amp;w*boop beep boop*&amp;y" />
+    <tag Name="SimpleConversation" Value="{{emote|*beep boop*}}~{{emote|*boop beep*}}~{{emote|*beep boop beep*}}~{{emote|*boop beep boop*}}" />
     <tag Name="PrimaryLimbType" Value="Hand" />
     <tag Name="AmbientIdleSound" Value="Sounds/Creatures/VO/sfx_robot_generic_vo_idle"/>
     <tag Name="PunchSound" Value="Sounds/Creatures/VO/sfx_robot_generic_vo_attack"/>
@@ -820,7 +820,7 @@
     <tag Name="HeroNameTitleMayorSyn" Value="king,queen,mayor,elder" />
     <tag Name="HeroNameTitleMayorSynCap" Value="King,Queen,Mayor,Elder" />
     <xtagTextFragments Skin="fur" PoeticFeatures="vast shoulders,gentle countenance,musing eyes" YounglingNoise="*hoot*" Activity="bludgeoning things to death" VillageActivity="sitting in a ruminative pose" SacredThing="berries and twigs"></xtagTextFragments>
-    <tag Name="SimpleConversation" Value="&amp;w*pounds chest*&amp;y" />
+    <tag Name="SimpleConversation" Value="{{emote|*pounds chest*}}" />
     <tag Name="PetResponse" Value="=subject.T= =verb:gibber=." />
     <tag Name="PrimaryLimbType" Value="Hand" />
     <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_ape" />
@@ -1793,7 +1793,7 @@ The infant child is unaware
     <inventoryobject Blueprint="Cat Bite" Number="1" />
     <part Name="Description" Short="=pronouns.Subjective= =verb:are:afterpronoun= a small kitty and the glassy fibers of =pronouns.possessive= coat bend the light of faraway stars into strange loops.
 
-&amp;mphosphorescent&amp;y" />
+{{m|phosphorescent}}" />
     <part Name="LightSource" Lit="true" Radius="4" />
     <tag Name="Role" Value="Minion" />
     <tag Name="SleepOnBed" />
@@ -4100,8 +4100,8 @@ The infant child is unaware
     <part Name="Description" Short="=pronouns.Possessive= hairbrushed skin is shrunk around =pronouns.possessive= strapping withers, flanks, and thighs. A rich platinum coat is spread smooth across a tranquil body, and then erupts at the hooves in wild tufts. Across a long muzzle, mane tassels curtain =pronouns.possessive= eyes." />
     <skill Name="Cudgel" />
     <tag Name="Role" Value="Brute" />
-    <tag Name="Class" Value="equine" />    
-    <tag Name="SimpleConversation" Value="&amp;w*soft nickering*&amp;y" />
+    <tag Name="Class" Value="equine" />
+    <tag Name="SimpleConversation" Value="{{emote|*soft nickering*}}" />
     <tag Name="DynamicObjectsTable:DesertCanyon_Creatures" />
     <tag Name="DynamicObjectsTable:Flowerfields_Creatures" />
   </object>
@@ -9142,7 +9142,7 @@ Drifts on the cultural seas have swept a particular fable to your attention. Lon
 		<tag Name="Class" Value="equine" />
 		<tag Name="Role" Value="Brute" />
 		<tag Name="Species" Value="horse" />
-		<tag Name="SimpleConversation" Value="&amp;w*soft nickering*&amp;y" />
+		<tag Name="SimpleConversation" Value="{{emote|*soft nickering*}}" />
 		<tag Name="DynamicObjectsTable:MoonStair_Creatures" />
 	</object>
 	<object Name="Unimax_Kick" Inherits="NaturalWeapon">
@@ -12952,7 +12952,7 @@ Drifts on the cultural seas have swept a particular fable to your attention. Lon
     <part Name="Brain" Wanders="True" Calm="True" Factions="Joppa-100" />
     <part Name="Description" Short="One star-ribboned night, a ray cat crossed the marshy loam and wandered into Joppa. The watervine farmers, wakened by the joyful cries of a small girl, gathered around to revel at the favorable omen and extol the generosity of the Beetle Moon. Since then, Ctesiphus =verb:have= spent =pronouns.possessive= days curled under the shade of brinestalk huts and sauntering over dirt paths. So long as =pronouns.subjective==verb:'re:afterpronoun= approached with care, =pronouns.subjective= =verb:welcome:afterpronoun= the hands of friends and strangers alike.
 
-&amp;mphosphorescent&amp;y" />
+{{m|phosphorescent}}" />
     <part Name="Raycat" />
     <part Name="Pettable" PettableIfPositiveFeeling="True" UseFactionForFeelingFloor="Joppa" />
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
@@ -13115,7 +13115,7 @@ Drifts on the cultural seas have swept a particular fable to your attention. Lon
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
     <tag Name="Merchant" />
     <removepart Name="MentalShield" />
-    <part Name="SecretObjectTalk" id="$glowpadmerchant" text="An &amp;Coddly-hued&amp;y glowpad" message="You now know the location of an &amp;Coddly-hued &amp;Yglowpad merchant." adjectives="consortium,merchant" category="Merchants" achieve="ACH_FIND_GLOWPAD" />
+    <part Name="SecretObjectTalk" id="$glowpadmerchant" text="An {{C|oddly-hued}} glowpad" message="You now know the location of an {{C|oddly-hued}} glowpad merchant." adjectives="consortium,merchant" category="Merchants" achieve="ACH_FIND_GLOWPAD" />
   </object>
 
   <!-- Six Day Stilt -->

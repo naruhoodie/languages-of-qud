@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<liquids>
+<liquids Encoding="utf-8">
   <liquid Name="Acid">
     <slug>acid</slug>
     <class>LiquidAcid</class>
@@ -181,7 +181,7 @@
       <secondaryColorText>&amp;r</secondaryColorText>
       <paintAtlas>Liquids/Splotchy/</paintAtlas>
     </part>
-    <part Name="RenderSecondToAlgae" Priority="1">
+    <part Name="RenderSecondToAlgae" Priority="10">
       <colorText>&amp;r^C</colorText>
       <colorDetail>C</colorDetail>
     </part>
@@ -230,6 +230,319 @@
       <blipsRenderColorTexts>&amp;g^W</blipsRenderColorTexts>
       <blipsRenderColorTiles>&amp;g</blipsRenderColorTiles>
       <blipsRenderColorDetails>W</blipsRenderColorDetails>
+    </part>
+  </liquid>
+  <liquid Name="Cider">
+    <slug>cider</slug>
+    <class>LiquidCider</class>
+    <colors>wr</colors>
+    <flameTemperature>500</flameTemperature>
+    <vaporTemperature>800</vaporTemperature>
+    <combustibility>5</combustibility>
+    <thermalConductivity>40</thermalConductivity>
+    <evaporativity>5</evaporativity>
+    <displayName>{{cider|cider}}</displayName>
+    <adjective>{{cider|spiced}}</adjective>
+    <waterRitualName>cider</waterRitualName>
+    <smearedAdjective>{{cider|fragrant}}</smearedAdjective>
+    <smearedName>{{cider|fragrant}}</smearedName>
+    <stainedName>{{cider|cider}}</stainedName>
+    <preparedCookingIngredient>quicknessMinor</preparedCookingIngredient>
+    <part Name="SnackOnDrink">
+      <dehydrationFactor>0</dehydrationFactor>
+    </part>
+    <part Name="DrankWine">
+      <message>It is spicy and delicious.</message>
+    </part>
+    <valuePerDram>3.8</valuePerDram>
+    <part Name="Render">
+      <baseColorBackground>^w</baseColorBackground>
+      <baseColorText>&amp;w^r</baseColorText>
+      <baseColorTile>&amp;w</baseColorTile>
+      <baseColorDetail>r</baseColorDetail>
+      <secondaryColorText>&amp;w</secondaryColorText>
+    </part>
+    <part Name="RenderBlips">
+      <frozenRenderString>~</frozenRenderString>
+      <frozenRenderColors>&amp;r^w,&amp;r,w</frozenRenderColors>
+      <rareRenderString>☼</rareRenderString>
+      <rareRenderColors>&amp;r^w,&amp;r,w</rareRenderColors>
+      <blipsRenderStrings>≈,~,○,~</blipsRenderStrings>
+      <blipsRenderColorTexts>&amp;w^r</blipsRenderColorTexts>
+      <blipsRenderColorTiles>&amp;w</blipsRenderColorTiles>
+      <blipsRenderColorDetails>r</blipsRenderColorDetails>
+    </part>
+    <part Name="RenderSmearColorBlips">
+      <color>&amp;w</color>
+    </part>
+  </liquid>
+  <liquid Name="CloningDraught">
+    <slug>cloning</slug>
+    <class>LiquidCloning</class>
+    <colors>YM</colors>
+    <fluidity>10</fluidity>
+    <evaporativity>100</evaporativity>
+    <part Name="Glows" />
+    <valuePerDram>1250</valuePerDram>
+    <displayName>{{cloning|cloning draught}}</displayName>
+    <adjective>{{cloning|homogenized}}</adjective>
+    <smearedAdjective>{{cloning|homogenized}}</smearedAdjective>
+    <smearedName>{{cloning|homogenized}}</smearedName>
+    <stainedName>{{cloning|cloning-draught}}</stainedName>
+    <preparedCookingIngredient>cloningMinor</preparedCookingIngredient>
+    <waterRitualName>draught</waterRitualName>
+    <stainElement Name="might" />
+    <stainElement Name="time" />
+    <part Name="CloningBehaviors" />
+    <part Name="Render">
+      <baseColorBackground>^M</baseColorBackground>
+      <baseColorText>&amp;M^Y</baseColorText>
+      <baseColorTile>&amp;M</baseColorTile>
+      <baseColorDetail>Y</baseColorDetail>
+      <secondaryColorText>&amp;Y</secondaryColorText>
+      <paintAtlas>Liquids/Paisley/</paintAtlas>
+    </part>
+    <part Name="RenderBlips">
+      <frozenRenderString>~</frozenRenderString>
+      <frozenRenderColors>&amp;M^Y,&amp;M,Y</frozenRenderColors>
+      <rareRenderString>☼</rareRenderString>
+      <rareRenderColors>&amp;M^Y,&amp;M,Y</rareRenderColors>
+      <blipsRenderStrings>≈,~,○,~</blipsRenderStrings>
+      <blipsRenderColorTexts>&amp;M^Y</blipsRenderColorTexts>
+      <blipsRenderColorTiles>&amp;M</blipsRenderColorTiles>
+      <blipsRenderColorDetails>Y</blipsRenderColorDetails>
+    </part>
+  </liquid>
+  <liquid Name="Convalessence">
+    <slug>convalessence</slug>
+    <class>LiquidConvalessence</class>
+    <colors>CY</colors>
+    <temperature>5</temperature>
+    <combustibility>5</combustibility>
+    <pureElectricalConductivity>10</pureElectricalConductivity>
+    <mixedElectricalConductivity>10</mixedElectricalConductivity>
+    <thermalConductivity>80</thermalConductivity>
+    <fluidity>20</fluidity>
+    <evaporativity>15</evaporativity>
+    <cleansing>5</cleansing>
+    <displayName>{{C|convalessence}}</displayName>
+    <adjective>{{C|luminous}}</adjective>
+    <waterRitualName>convalessence</waterRitualName>
+    <smearedAdjective>{{C|luminous}}</smearedAdjective>
+    <smearedName>{{C|luminous}}</smearedName>
+    <stainedName>{{C|convalessence}}</stainedName>
+    <preparedCookingIngredient>coldMinor,regenLowtierMinor</preparedCookingIngredient>
+    <stainElement Name="ice" />
+    <part Name="Glows" BrighterWithVolume="true" LightLevel="1" />
+    <part Name="HealingLocation" />
+    <freezeObject Name="CryoGas" Threshold="1" Verb="sublimate" />
+    <part Name="MessageOnDrink" Message="It's effervescent!" />
+    <part Name="RenderSmearColorBlips" Color="&amp;C" />
+    <part Name="Render">
+      <baseColorBackground>^C</baseColorBackground>
+      <baseColorText>&amp;Y^C</baseColorText>
+      <baseColorTile>&amp;Y</baseColorTile>
+      <baseColorDetail>C</baseColorDetail>
+      <secondaryColorText>&amp;C</secondaryColorText>
+    </part>
+    <part Name="RenderBlips">
+      <frozenRenderString>~</frozenRenderString>
+      <frozenRenderColors>&amp;C^Y,&amp;C,Y</frozenRenderColors>
+      <rareRenderString>☼</rareRenderString>
+      <rareRenderColors>&amp;C^Y,&amp;C,Y</rareRenderColors>
+      <blipsRenderStrings>≈,~, ,~</blipsRenderStrings>
+      <blipsRenderColorTexts>&amp;Y^C</blipsRenderColorTexts>
+      <blipsRenderColorTiles>&amp;Y</blipsRenderColorTiles>
+      <blipsRenderColorDetails>C</blipsRenderColorDetails>
+    </part>
+  </liquid>
+  <liquid Name="Gel">
+    <slug>gel</slug>
+    <class>LiquidGel</class>
+    <pureElectricalConductivity>100</pureElectricalConductivity>
+    <mixedElectricalConductivity>100</mixedElectricalConductivity>
+    <thermalConductivity>70</thermalConductivity>
+    <fluidity>5</fluidity>
+    <evaporativity>1</evaporativity>
+    <cleansing>1</cleansing>
+    <slipperyWhenWet>true</slipperyWhenWet>
+    <slipperyWhenFrozen>true</slipperyWhenFrozen>
+    <slipperySaveTargetBase>5</slipperySaveTargetBase>
+    <slipperySaveTargetScale>0.3</slipperySaveTargetScale>
+    <slipperySaveVs>Gel Slip Move</slipperySaveVs>
+    <slipperyMessage>{{Y|=subject.Does:slip= on the gel!}}</slipperyMessage>
+    <slipperyParticle>&amp;Y→</slipperyParticle>
+    <colors>Yy</colors>
+    <displayName>{{Y|gel}}</displayName>
+    <adjective>{{Y|unctuous}}</adjective>
+    <waterRitualName>gel</waterRitualName>
+    <part Name="MessageOnDrink" Message="It's very greasy." />
+    <smearedAdjective>{{Y|unctuous}}</smearedAdjective>
+    <smearedName>{{Y|unctuous}}</smearedName>
+    <stainedName>{{Y|gel}}</stainedName>
+    <valuePerDram>0.5</valuePerDram>
+    <part Name="RenderSmearColorBlips" Color="&amp;Y" />
+    <part Name="Render">
+      <baseColorBackground>^Y</baseColorBackground>
+      <baseColorText>&amp;y^Y</baseColorText>
+      <baseColorTile>&amp;y</baseColorTile>
+      <baseColorDetail>Y</baseColorDetail>
+      <secondaryColorText>&amp;Y</secondaryColorText>
+    </part>
+    <part Name="RenderBlips">
+      <frozenRenderString>~</frozenRenderString>
+      <frozenRenderColors>&amp;y^C,&amp;y,C</frozenRenderColors>
+      <rareRenderString>~</rareRenderString>
+      <rareRenderColors>&amp;y^C,&amp;y,C</rareRenderColors>
+      <blipsRenderStrings>≈,~, ,~</blipsRenderStrings>
+      <blipsRenderColorTexts>&amp;y^Y</blipsRenderColorTexts>
+      <blipsRenderColorTiles>&amp;y</blipsRenderColorTiles>
+      <blipsRenderColorDetails>Y</blipsRenderColorDetails>
+    </part>
+  </liquid>
+  <liquid Name="GreenGoo">
+    <slug>goo</slug>
+    <class>LiquidGoo</class>
+    <colors>GY</colors>
+    <flameTemperature>400</flameTemperature>
+    <vaporTemperature>110</vaporTemperature>
+    <vaporObject>PoisonGas</vaporObject>
+    <combustibility>20</combustibility>
+    <thermalConductivity>40</thermalConductivity>
+    <fluidity>10</fluidity>
+    <evaporativity>1</evaporativity>
+    <staining>1</staining>
+    <circulatoryLossNoun>ooze</circulatoryLossNoun>
+    <circulatoryLossTerm>oozing</circulatoryLossTerm>
+    <displayName>{{G|green goo}}</displayName>
+    <adjective>{{G|gooey}}</adjective>
+    <waterRitualName>goo</waterRitualName>
+    <smearedAdjective>{{G|gooey}}</smearedAdjective>
+    <smearedName>{{G|gooey}}</smearedName>
+    <stainedName>{{G|goo}}</stainedName>
+    <preparedCookingIngredient>selfPoison</preparedCookingIngredient>
+    <part Name="MessageOnDrink" Message="It's awful!" />
+    <part Name="PoisonOnDrink" Message="You feel poison course through your veins!" />
+    <part Name="PoisonOnGoingProne" />
+    <part Name="RenderSmearColorBlips" Color="&amp;G" />
+    <part Name="FilthNavigation" />
+    <part Name="Render">
+      <baseColorBackground>^G</baseColorBackground>
+      <baseColorText>&amp;Y^G</baseColorText>
+      <baseColorTile>&amp;Y</baseColorTile>
+      <baseColorDetail>G</baseColorDetail>
+      <secondaryColorText>&amp;G</secondaryColorText>
+      <paintAtlas>Liquids/Splotchy/</paintAtlas>
+    </part>
+    <part Name="RenderBlips">
+      <frozenRenderString>☼</frozenRenderString>
+      <frozenRenderColors>&amp;Y^G,&amp;Y,G</frozenRenderColors>
+      <rareRenderString>☼</rareRenderString>
+      <rareRenderColors>&amp;Y^G,&amp;Y,G</rareRenderColors>
+      <blipsRenderStrings>≈,~,○,~</blipsRenderStrings>
+      <blipsRenderColorTexts>&amp;Y^G</blipsRenderColorTexts>
+      <blipsRenderColorTiles>&amp;Y</blipsRenderColorTiles>
+      <blipsRenderColorDetails>G</blipsRenderColorDetails>
+    </part>
+  </liquid>
+  <liquid Name="Honey">
+    <slug>honey</slug>
+    <class>LiquidHoney</class>
+    <colors>wW</colors>
+    <flameTemperature>300</flameTemperature>
+    <vaporTemperature>1300</vaporTemperature>
+    <combustibility>60</combustibility>
+    <adsorbence>25</adsorbence>
+    <pureElectricalConductivity>40</pureElectricalConductivity>
+    <mixedElectricalConductivity>40</mixedElectricalConductivity>
+    <thermalConductivity>40</thermalConductivity>
+    <fluidity>10</fluidity>
+    <evaporativity>1</evaporativity>
+    <weight>0.5</weight>
+    <interruptAutowalk>true</interruptAutowalk>
+    <stickyWhenWet>true</stickyWhenWet>
+    <stickySaveTargetBase>1</stickySaveTargetBase>
+    <stickySaveTargetScale>0.1</stickySaveTargetScale>
+    <stickyDuration>12</stickyDuration>
+    <stickySaveVs>Honey Stuck Restraint</stickySaveVs>
+    <displayName>{{w|honey}}</displayName>
+    <adjective>{{w|honeyed}}</adjective>
+    <waterRitualName>honey</waterRitualName>
+    <smearedAdjective>{{w|sticky}}</smearedAdjective>
+    <smearedName>{{w|sticky}}</smearedName>
+    <stainedName>{{w|honey}}</stainedName>
+    <preparedCookingIngredient>medicinalMinor</preparedCookingIngredient>
+    <valuePerDram>2</valuePerDram>
+    <part Name="SnackOnDrink">
+      <dehydrationFactor>0</dehydrationFactor>
+      <message>Delicious!</message>
+    </part>
+    <part Name="Render">
+      <baseColorBackground>^w</baseColorBackground>
+      <baseColorText>&amp;w^W</baseColorText>
+      <baseColorTile>&amp;w</baseColorTile>
+      <baseColorDetail>W</baseColorDetail>
+      <secondaryColorText>&amp;w</secondaryColorText>
+      <paintAtlas>Liquids/Gunk/</paintAtlas>
+    </part>
+    <part Name="RenderBlips">
+      <frozenRenderString>~</frozenRenderString>
+      <frozenRenderColors>&amp;W^w,&amp;W,w</frozenRenderColors>
+      <rareRenderString>☼</rareRenderString>
+      <rareRenderColors>&amp;W^w,&amp;W,w</rareRenderColors>
+      <blipsRenderStrings>≈,~,○,~</blipsRenderStrings>
+      <blipsRenderColorTexts>&amp;W^w</blipsRenderColorTexts>
+      <blipsRenderColorTiles>&amp;W</blipsRenderColorTiles>
+      <blipsRenderColorDetails>w</blipsRenderColorDetails>
+    </part>
+    <part Name="RenderSmearColorBlips" Color="&amp;w" />
+  </liquid>
+  <liquid Name="Ink">
+    <slug>ink</slug>
+    <class>LiquidInk</class>
+    <colors>Ky</colors>
+    <flameTemperature>350</flameTemperature>
+    <vaporTemperature>1350</vaporTemperature>
+    <combustibility>30</combustibility>
+    <pureElectricalConductivity>40</pureElectricalConductivity>
+    <mixedElectricalConductivity>40</mixedElectricalConductivity>
+    <thermalConductivity>40</thermalConductivity>
+    <fluidity>10</fluidity>
+    <evaporativity>1</evaporativity>
+    <staining>3</staining>
+    <slipperyWhenWet>true</slipperyWhenWet>
+    <slipperyWhenFrozen>true</slipperyWhenFrozen>
+    <slipperySaveTargetBase>5</slipperySaveTargetBase>
+    <slipperySaveTargetScale>0.3</slipperySaveTargetScale>
+    <slipperySaveVs>Ink Slip Move</slipperySaveVs>
+    <slipperyMessage>{{K|=subject.Does:slip= on the ink!}}</slipperyMessage>
+    <slipperyParticle>&amp;K→</slipperyParticle>
+    <displayName>{{K|ink}}</displayName>
+    <adjective>{{K|inky}}</adjective>
+    <waterRitualName>ink</waterRitualName>
+    <smearedAdjective>{{K|inky}}</smearedAdjective>
+    <smearedName>{{K|inky}}</smearedName>
+    <stainedName>{{K|ink}}</stainedName>
+    <valuePerDram>1.5</valuePerDram>
+    <stainElement Name="scholarship" />
+    <part Name="MessageOnDrink" Message="It's very inky." />
+    <part Name="RenderSmearColorBlips" Color="&amp;K" />
+    <part Name="Render">
+      <baseColorBackground>^k</baseColorBackground>
+      <baseColorText>&amp;y^k</baseColorText>
+      <baseColorTile>&amp;y</baseColorTile>
+      <baseColorDetail>k</baseColorDetail>
+      <secondaryColorText>&amp;k</secondaryColorText>
+    </part>
+    <part Name="RenderBlips">
+      <frozenRenderString>~</frozenRenderString>
+      <frozenRenderColors>&amp;y^k,&amp;y,k</frozenRenderColors>
+      <rareRenderString>~</rareRenderString>
+      <rareRenderColors>&amp;y^k,&amp;y,k</rareRenderColors>
+      <blipsRenderStrings>≈,~, ,~</blipsRenderStrings>
+      <blipsRenderColorTexts>&amp;y^k</blipsRenderColorTexts>
+      <blipsRenderColorTiles>&amp;y</blipsRenderColorTiles>
+      <blipsRenderColorDetails>k</blipsRenderColorDetails>
     </part>
   </liquid>
   <liquid Name="Lava">
@@ -304,6 +617,433 @@
     </part>
     <part Name="LavaNavigation" />
   </liquid>
+  <liquid Name="NeutronFlux">
+    <slug>neutronflux</slug>
+    <class>LiquidNeutronFlux</class>
+    <vaporTemperature>10000</vaporTemperature>
+    <freezeTemperature>-100</freezeTemperature>
+    <brittleTemperature>-250</brittleTemperature>
+    <pureElectricalConductivity>0</pureElectricalConductivity>
+    <mixedElectricalConductivity>0</mixedElectricalConductivity>
+    <thermalConductivity>0</thermalConductivity>
+    <fluidity>100</fluidity>
+    <evaporativity>100</evaporativity>
+    <cleansing>100</cleansing>
+    <weight>2.5</weight>
+    <interruptAutowalk>true</interruptAutowalk>
+    <considerDangerousToContact>true</considerDangerousToContact>
+    <considerDangerousToDrink>true</considerDangerousToDrink>
+    <part Name="Glows" />
+    <circulatoryLossNoun>fluxation</circulatoryLossNoun>
+    <circulatoryLossTerm>fluxing</circulatoryLossTerm>
+    <colors>yY</colors>
+    <displayName>{{neutronic|neutron}} {{Y|flux}}</displayName>
+    <adjective>{{neutronic|neutronic}}</adjective>
+    <waterRitualName>flux</waterRitualName>
+    <smearedAdjective>{{neutronic|neutronic}}</smearedAdjective>
+    <smearedName>{{neutronic|neutral}}</smearedName>
+    <stainedName>{{neutronic|flux}}</stainedName>
+    <valuePerDram>1000</valuePerDram>
+    <preparedCookingIngredient>density</preparedCookingIngredient>
+    <part Name="Render">
+      <baseColorBackground>^Y</baseColorBackground>
+      <baseColorText>&amp;Y^y</baseColorText>
+      <baseColorTile>&amp;Y</baseColorTile>
+      <baseColorDetail>y</baseColorDetail>
+      <secondaryColorText>&amp;Y</secondaryColorText>
+      <paintAtlas>Liquids/Paisley/</paintAtlas>
+    </part>
+    <part Name="RenderBlips">
+      <frozenRenderString>~</frozenRenderString>
+      <frozenRenderColors>&amp;Y^y,&amp;Y,y</frozenRenderColors>
+      <rareRenderString>☼</rareRenderString>
+      <rareRenderColors>&amp;Y^y,&amp;Y,y</rareRenderColors>
+      <blipsRenderStrings>≈,~,○,~</blipsRenderStrings>
+      <blipsRenderColorTexts>&amp;Y^y</blipsRenderColorTexts>
+      <blipsRenderColorTiles>&amp;Y</blipsRenderColorTiles>
+      <blipsRenderColorDetails>y</blipsRenderColorDetails>
+    </part>
+    <stainElement Name="stars" />
+    <part Name="Navigation" Weight="99" />
+    <part Name="NeutronExplosive" />
+  </liquid>
+  <liquid Name="Oil">
+    <slug>oil</slug>
+    <class>LiquidOil</class>
+    <colors>KY</colors>
+    <flameTemperature>250</flameTemperature>
+    <vaporTemperature>2000</vaporTemperature>
+    <combustibility>90</combustibility>
+    <pureElectricalConductivity>0</pureElectricalConductivity>
+    <mixedElectricalConductivity>0</mixedElectricalConductivity>
+    <thermalConductivity>40</thermalConductivity>
+    <fluidity>25</fluidity>
+    <staining>1</staining>
+    <cleansing>1</cleansing>
+    <slipperyWhenWet>true</slipperyWhenWet>
+    <slipperyWhenFrozen>true</slipperyWhenFrozen>
+    <slipperySaveTargetBase>5</slipperySaveTargetBase>
+    <slipperySaveTargetScale>0.3</slipperySaveTargetScale>
+    <slipperySaveVs>Oil Slip Move</slipperySaveVs>
+    <slipperyMessage>{{C|=subject.Does:slip= on the oil!}}</slipperyMessage>
+    <slipperyParticle>&amp;C→</slipperyParticle>
+    <displayName>{{K|oil}}</displayName>
+    <adjective>{{K|oily}}</adjective>
+    <waterRitualName>oil</waterRitualName>
+    <smearedAdjective>{{K|oily}}</smearedAdjective>
+    <smearedName>{{K|oily}}</smearedName>
+    <stainedName>{{K|oil}}</stainedName>
+    <valuePerDram>3</valuePerDram>
+    <part Name="MessageOnDrink" Message="{{K|Disgusting!}}" />
+    <part Name="Render">
+      <baseColorBackground>^K</baseColorBackground>
+      <baseColorText>&amp;Y^k</baseColorText>
+      <baseColorTile>&amp;Y</baseColorTile>
+      <baseColorDetail>k</baseColorDetail>
+      <secondaryColorText>&amp;k</secondaryColorText>
+      <paintAtlas>Liquids/Splotchy/</paintAtlas>
+    </part>
+    <part Name="RenderBlips">
+      <frozenRenderString>~</frozenRenderString>
+      <frozenRenderColors>&amp;y^k,&amp;y,k</frozenRenderColors>
+      <rareRenderString>☼</rareRenderString>
+      <rareRenderColors>&amp;y^k,&amp;y,k</rareRenderColors>
+      <blipsRenderStrings>≈,~,○,~</blipsRenderStrings>
+      <blipsRenderColorTexts>&amp;y^k</blipsRenderColorTexts>
+      <blipsRenderColorTiles>&amp;y</blipsRenderColorTiles>
+      <blipsRenderColorDetails>k</blipsRenderColorDetails>
+    </part>
+    <part Name="RenderSmearColorBlips" Color="&amp;K" />
+    <part Name="FilthNavigation" />
+  </liquid>
+  <liquid Name="Ooze">
+    <slug>ooze</slug>
+    <class>LiquidOoze</class>
+    <colors>Ky</colors>
+    <flameTemperature>500</flameTemperature>
+    <vaporTemperature>150</vaporTemperature>
+    <vaporObject>Miasma</vaporObject>
+    <combustibility>15</combustibility>
+    <thermalConductivity>30</thermalConductivity>
+    <fluidity>10</fluidity>
+    <evaporativity>1</evaporativity>
+    <staining>1</staining>
+    <circulatoryLossTerm>oozing</circulatoryLossTerm>
+    <circulatoryLossNoun>ooze</circulatoryLossNoun>
+    <displayName>{{K|black ooze}}</displayName>
+    <adjective>{{K|oozing}}</adjective>
+    <waterRitualName>ooze</waterRitualName>
+    <smearedAdjective>{{K|oozing}}</smearedAdjective>
+    <smearedName>{{K|oozing}}</smearedName>
+    <stainedName>{{K|ooze}}</stainedName>
+    <preparedCookingIngredient>selfGlotrot</preparedCookingIngredient>
+    <part Name="MessageOnDrink" Message="It's repulsive!" Priority="10" />
+    <part Name="DiseaseOnDrink" Message="You feel sick!" />
+    <part Name="DiseaseOnGoingProne" Message="Putrid ooze splashes into your mouth. You gag at the awful taste." />
+    <part Name="RenderSmearColorBlips" Color="&amp;K" />
+    <part Name="Render">
+      <baseColorBackground>^k</baseColorBackground>
+      <baseColorText>&amp;y^k</baseColorText>
+      <baseColorTile>&amp;y</baseColorTile>
+      <baseColorDetail>k</baseColorDetail>
+      <secondaryColorText>&amp;k</secondaryColorText>
+    </part>
+    <part Name="RenderBlips">
+      <frozenRenderString>~</frozenRenderString>
+      <frozenRenderColors>&amp;y^k,&amp;y,k</frozenRenderColors>
+      <blipsRenderStrings>≈,~,≈,~</blipsRenderStrings>
+      <blipsRenderColorTexts>&amp;Y^k</blipsRenderColorTexts>
+      <blipsRenderColorTiles>&amp;Y</blipsRenderColorTiles>
+      <blipsRenderColorDetails>k</blipsRenderColorDetails>
+    </part>
+  </liquid>
+  <liquid Name="PrimordialSoup">
+    <slug>proteangunk</slug>
+    <class>LiquidProteanGunk</class>
+    <colors>cC</colors>
+    <vaporTemperature>2000</vaporTemperature>
+    <combustibility>40</combustibility>
+    <thermalConductivity>40</thermalConductivity>
+    <fluidity>25</fluidity>
+    <evaporativity>1</evaporativity>
+    <displayName>{{c|primordial soup}}</displayName>
+    <adjective>{{c|soupy}}</adjective>
+    <waterRitualName>soup</waterRitualName>
+    <smearedAdjective>{{c|soupy}}</smearedAdjective>
+    <smearedName>{{c|soupy}}</smearedName>
+    <stainedName>{{c|soup}}</stainedName>
+    <valuePerDram>4</valuePerDram>
+    <stainElement Name="chance" />
+    <part Name="RenderSmearColorBlips" Color="&amp;c" />
+    <part Name="Render">
+      <baseColorBackground>^c</baseColorBackground>
+      <baseColorText>&amp;c^C</baseColorText>
+      <baseColorTile>&amp;c</baseColorTile>
+      <baseColorDetail>C</baseColorDetail>
+      <secondaryColorText>&amp;c</secondaryColorText>
+      <paintAtlas>Liquids/Gunk/</paintAtlas>
+    </part>
+    <part Name="RenderBlips">
+      <frozenRenderString>~</frozenRenderString>
+      <frozenRenderColors>&amp;c^C,&amp;c,C</frozenRenderColors>
+      <rareRenderString>☼</rareRenderString>
+      <rareRenderColors>&amp;c^C,&amp;c,C</rareRenderColors>
+      <blipsRenderStrings>≈,~,○,~</blipsRenderStrings>
+      <blipsRenderColorTexts>&amp;c^C</blipsRenderColorTexts>
+      <blipsRenderColorTiles>&amp;c</blipsRenderColorTiles>
+      <blipsRenderColorDetails>C</blipsRenderColorDetails>
+    </part>
+    <part Name="HydrateOnDrink" Message="You feel the soup slosh around your stomach." />
+    <part Name="SoupSludgeSpawner" />
+  </liquid>
+  <liquid Name="Putrescence">
+    <slug>putrid</slug>
+    <class>LiquidPutrescence</class>
+    <colors>Kgw</colors>
+    <flameTemperature>600</flameTemperature>
+    <vaporTemperature>1600</vaporTemperature>
+    <combustibility>5</combustibility>
+    <thermalConductivity>25</thermalConductivity>
+    <fluidity>15</fluidity>
+    <evaporativity>1</evaporativity>
+    <staining>2</staining>
+    <displayName>{{putrid|putrescence}}</displayName>
+    <adjective>{{putrid|putrid}}</adjective>
+    <waterRitualName>putrescence</waterRitualName>
+    <smearedAdjective>{{putrid|putrid}}</smearedAdjective>
+    <smearedName>{{putrid|putrid}}</smearedName>
+    <stainedName>{{putrid|putrescence}}</stainedName>
+    <part Name="VomitOnDrink" Message="It's disgusting!" />
+    <part Name="RenderSmearColorBlips" Color="&amp;K" />
+    <part Name="Render">
+      <baseColorBackground>^K</baseColorBackground>
+      <baseColorText>&amp;g^K</baseColorText>
+      <baseColorTile>&amp;g</baseColorTile>
+      <baseColorDetail>K</baseColorDetail>
+      <secondaryColorText>&amp;K</secondaryColorText>
+      <paintAtlas>Liquids/Splotchy/</paintAtlas>
+    </part>
+    <part Name="RenderBlips">
+      <frozenRenderString>~</frozenRenderString>
+      <frozenRenderColors>&amp;G^K,&amp;G,K</frozenRenderColors>
+      <blipsRenderStrings>≈,~, ,~</blipsRenderStrings>
+    </part>
+    <part Name="FilthNavigation" SmartWeight="0" />
+  </liquid>
+  <liquid Name="Salt">
+    <slug>salt</slug>
+    <class>LiquidSalt</class>
+    <colors>yY</colors>
+    <vaporTemperature>200</vaporTemperature>
+    <pureElectricalConductivity>0</pureElectricalConductivity>
+    <mixedElectricalConductivity>100</mixedElectricalConductivity>
+    <thermalConductivity>20</thermalConductivity>
+    <fluidity>35</fluidity>
+    <staining>1</staining>
+    <stainOnlyWhenPure>true</stainOnlyWhenPure>
+    <cleansing>1</cleansing>
+    <freezeObject Name="Halite" Threshold="500" Verb="solidify" />
+    <displayName>{{Y|salt}}</displayName>
+    <adjective>{{Y|salty}}</adjective>
+    <part Name="AltAdjectiveWhenPurityBelow" Purity="400" Alt="{{w|brackish}}" />
+    <waterRitualName>salt</waterRitualName>
+    <smearedAdjective>{{Y|salty}}</smearedAdjective>
+    <part Name="AltSmearedAdjectiveWhenLessThan" OtherSlugs="water" />
+    <smearedName>{{Y|salt-encrusted}}</smearedName>
+    <stainedName>{{Y|salt}}</stainedName>
+    <preparedCookingIngredient>tastyMinor</preparedCookingIngredient>
+    <stainElement Name="salt" />
+    <part Name="Render">
+      <baseColorBackground>^Y</baseColorBackground>
+      <wadingRenderChar>▒</wadingRenderChar>
+      <baseColorText>&amp;Y^y</baseColorText>
+      <baseColorTile>&amp;Y</baseColorTile>
+      <baseColorDetail>y</baseColorDetail>
+      <paintAtlas>Liquids/Speckle/</paintAtlas>
+    </part>
+    <part Name="SaltOnDrink" Message="Blech, it's salty!" />
+  </liquid>
+  <liquid Name="Sap">
+    <slug>sap</slug>
+    <class>LiquidSap</class>
+    <colors>WY</colors>
+    <flameTemperature>250</flameTemperature>
+    <vaporTemperature>1250</vaporTemperature>
+    <combustibility>70</combustibility>
+    <adsorbence>25</adsorbence>
+    <thermalConductivity>40</thermalConductivity>
+    <fluidity>3</fluidity>
+    <evaporativity>1</evaporativity>
+    <staining>2</staining>
+    <weight>0.5</weight>
+    <interruptAutowalk>true</interruptAutowalk>
+    <stickyWhenWet>true</stickyWhenWet>
+    <stickySaveTargetBase>1</stickySaveTargetBase>
+    <stickySaveTargetScale>0.1</stickySaveTargetScale>
+    <stickyDuration>12</stickyDuration>
+    <stickySaveVs>Sap Stuck Restraint</stickySaveVs>
+    <displayName>{{W|sap}}</displayName>
+    <adjective>{{W|sugary}}</adjective>
+    <waterRitualName>sap</waterRitualName>
+    <smearedAdjective>{{W|sappy}}</smearedAdjective>
+    <smearedName>{{W|sappy}}</smearedName>
+    <stainedName>{{W|sap}}</stainedName>
+    <valuePerDram>2</valuePerDram>
+    <part Name="Render">
+      <baseColorBackground>^W</baseColorBackground>
+      <baseColorText>&amp;W^Y</baseColorText>
+      <baseColorTile>&amp;W</baseColorTile>
+      <baseColorDetail>Y</baseColorDetail>
+      <secondaryColorText>&amp;W</secondaryColorText>
+    </part>
+    <part Name="RenderBlips">
+      <frozenRenderString>~</frozenRenderString>
+      <frozenRenderColors>&amp;W^Y,&amp;W,Y</frozenRenderColors>
+      <rareRenderString>☼</rareRenderString>
+      <rareRenderColors>&amp;W^Y,&amp;W,Y</rareRenderColors>
+      <blipsRenderStrings>≈,~,○,~</blipsRenderStrings>
+      <blipsRenderColorTexts>&amp;W^Y</blipsRenderColorTexts>
+      <blipsRenderColorTiles>&amp;W</blipsRenderColorTiles>
+      <blipsRenderColorDetails>Y</blipsRenderColorDetails>
+    </part>
+    <part Name="RenderSmearColorBlips" Color="&amp;W" />
+    <part Name="SnackOnDrink" DehydrationFactor="0" Message="It's sweet to the taste." />
+  </liquid>
+  <liquid Name="Slime">
+    <slug>slime</slug>
+    <class>LiquidSlime</class>
+    <colors>gw</colors>
+    <flameTemperature>550</flameTemperature>
+    <vaporTemperature>1550</vaporTemperature>
+    <combustibility>8</combustibility>
+    <thermalConductivity>35</thermalConductivity>
+    <fluidity>10</fluidity>
+    <evaporativity>1</evaporativity>
+    <staining>1</staining>
+    <conversionProduct>gel</conversionProduct>
+    <slipperyWhenFrozen>true</slipperyWhenFrozen>
+    <slipperyWhenWet>true</slipperyWhenWet>
+    <slipperySaveTargetBase>5</slipperySaveTargetBase>
+    <slipperySaveTargetScale>0.3</slipperySaveTargetScale>
+    <slipperySaveVs>Slime Slip Move</slipperySaveVs>
+    <slipperyMessage>{{slimy|=subject.Does:slip= on the slime!}}</slipperyMessage>
+    <slipperyParticle>&amp;g→</slipperyParticle>
+    <circulatoryLossNoun>ooze</circulatoryLossNoun>
+    <circulatoryLossTerm>oozing</circulatoryLossTerm>
+    <displayName>{{slimy|slime}}</displayName>
+    <adjective>{{slimy|slimy}}</adjective>
+    <smearedAdjective>{{slimy|slimy}}</smearedAdjective>
+    <smearedName>{{slimy|slimy}}</smearedName>
+    <stainedName>{{g|slime}}</stainedName>
+    <preparedCookingIngredient>slimeSpitting</preparedCookingIngredient>
+    <valuePerDram>0.1</valuePerDram>
+    <part Name="RenderSmearColorBlips" Color="&amp;g" />
+    <part Name="Render">
+      <baseColorBackground>^g</baseColorBackground>
+      <baseColorText>&amp;w^g</baseColorText>
+      <baseColorTile>&amp;g</baseColorTile>
+      <baseColorDetail>g</baseColorDetail>
+      <secondaryColorText>&amp;g</secondaryColorText>
+      <paintAtlas>Liquids/Splotchy/</paintAtlas>
+    </part>
+    <part Name="RenderBlips">
+      <frozenRenderString>~</frozenRenderString>
+      <frozenRenderColors>&amp;g^w,&amp;g,w</frozenRenderColors>
+      <rareRenderString>~</rareRenderString>
+      <rareRenderColors>&amp;g^w,&amp;g,w</rareRenderColors>
+      <blipsRenderStrings>≈,~, ,~</blipsRenderStrings>
+      <blipsRenderColorTexts>&amp;w^g,&amp;g^w,&amp;w^g,&amp;w^g</blipsRenderColorTexts>
+      <blipsRenderColorTiles>&amp;w,&amp;g,&amp;w,&amp;w</blipsRenderColorTiles>
+      <blipsRenderColorDetails>g,w,g,g</blipsRenderColorDetails>
+    </part>
+    <part Name="ConfuseOnDrink" Message="It's disgustingly slimy!" />
+  </liquid>
+  <liquid Name="Sludge">
+    <slug>sludge</slug>
+    <class>LiquidSludge</class>
+    <flameTemperature>575</flameTemperature>
+    <vaporTemperature>1575</vaporTemperature>
+    <combustibility>7</combustibility>
+    <thermalConductivity>30</thermalConductivity>
+    <fluidity>10</fluidity>
+    <evaporativity>1</evaporativity>
+    <staining>1</staining>
+    <circulatoryLossNoun>ooze</circulatoryLossNoun>
+    <circulatoryLossTerm>oozing</circulatoryLossTerm>
+    <displayName>{{w|brown sludge}}</displayName>
+    <adjective>{{w|sludgy}}</adjective>
+    <waterRitualName>sludge</waterRitualName>
+    <smearedAdjective>{{w|sludgy}}</smearedAdjective>
+    <smearedName>{{w|sludgy}}</smearedName>
+    <stainedName>{{w|sludge}}</stainedName>
+    <preparedCookingIngredient>selfPoison</preparedCookingIngredient>
+    <part Name="MessageOnDrink" Priority="10" Message="It's horrifying!" />
+    <part Name="PoisonOnDrink" Message="You feel sick!" />
+    <part Name="RustOnGoingProne" />
+    <part Name="RenderSmearColorBlips" Color="&amp;w" />
+    <part Name="Render">
+      <baseColorBackground>^w</baseColorBackground>
+      <baseColorText>&amp;Y^w</baseColorText>
+      <baseColorTile>&amp;Y</baseColorTile>
+      <baseColorDetail>w</baseColorDetail>
+      <secondaryColorText>&amp;w</secondaryColorText>
+      <paintAtlas>Liquids/Splotchy/</paintAtlas>
+    </part>
+    <part Name="RenderBlips">
+      <frozenRenderString>~</frozenRenderString>
+      <frozenRenderColors>&amp;Y^w,&amp;Y,w</frozenRenderColors>
+      <rareRenderString>~</rareRenderString>
+      <rareRenderColors>&amp;Y^w,&amp;Y,w</rareRenderColors>
+      <blipsRenderStrings>≈,~,≈,~</blipsRenderStrings>
+      <blipsRenderColorTexts>&amp;Y^w</blipsRenderColorTexts>
+      <blipsRenderColorTiles>&amp;Y</blipsRenderColorTiles>
+      <blipsRenderColorDetails>w</blipsRenderColorDetails>
+    </part>
+    <part Name="FilthNavigation" />
+  </liquid>
+  <liquid Name="Sunslag">
+    <slug>sunslag</slug>
+    <class>LiquidSunSlag</class>
+    <colors>YWR</colors>
+    <vaporTemperature>2000</vaporTemperature>
+    <vaporObject>Steam</vaporObject>
+    <combustibility>30</combustibility>
+    <pureElectricalConductivity>100</pureElectricalConductivity>
+    <mixedElectricalConductivity>100</mixedElectricalConductivity>
+    <thermalConductivity>40</thermalConductivity>
+    <fluidity>10</fluidity>
+    <evaporativity>1</evaporativity>
+    <staining>3</staining>
+    <conversionProduct>lava</conversionProduct>
+    <displayName>{{sunslag|sunslag}}</displayName>
+    <adjective>{{radiant|radiant}}</adjective>
+    <waterRitualName>sunslag</waterRitualName>
+    <smearedAdjective>{{radiant|radiant}}</smearedAdjective>
+    <smearedName>{{radiant|radiant}}</smearedName>
+    <stainedName>{{sunslag|sunslag}}</stainedName>
+    <stainElement Name="stars" />
+    <valuePerDram>1000</valuePerDram>
+    <part Name="RenderSmearColorBlips" Color="&amp;Y" />
+    <part Name="Render">
+      <baseColorBackground>^W</baseColorBackground>
+      <baseColorText>&amp;Y^W</baseColorText>
+      <baseColorTile>&amp;Y</baseColorTile>
+      <baseColorDetail>W</baseColorDetail>
+      <secondaryColorText>&amp;W</secondaryColorText>
+      <paintAtlas>Liquids/Paisley/</paintAtlas>
+    </part>
+    <part Name="RenderBlips">
+      <frozenRenderString>~</frozenRenderString>
+      <frozenRenderColors>&amp;Y^W,&amp;Y,W</frozenRenderColors>
+      <rareRenderString>~</rareRenderString>
+      <rareRenderColors>&amp;Y^W,&amp;Y,W</rareRenderColors>
+      <blipsRenderStrings>≈,~, ,~</blipsRenderStrings>
+      <blipsRenderColorTexts>&amp;Y^W</blipsRenderColorTexts>
+      <blipsRenderColorTiles>&amp;Y</blipsRenderColorTiles>
+      <blipsRenderColorDetails>W</blipsRenderColorDetails>
+    </part>
+    <part Name="SunSlagOnDrink" />
+  </liquid>
   <liquid Name="Water">
     <slug>water</slug>
     <class>LiquidWater</class>
@@ -329,10 +1069,10 @@
     <adjective>{{Y|dilute}}</adjective>
     <waterRitualName>water</waterRitualName>
     <smearedAdjective>{{B|wet}}</smearedAdjective>
-    <part Name="AltSmearedAdjectiveWhenLessThan" Priority="1">
+    <part Name="AltSmearedAdjectiveWhenLessThan" Priority="10">
       <otherSlugs>salt,blood</otherSlugs>
     </part>
-    <part Name="AltSmearedAdjectiveWhenSecondaryTo" Priority="1">
+    <part Name="AltSmearedAdjectiveWhenSecondaryTo" Priority="10">
       <alt>{{B|wet}}</alt>
       <otherSlugs>oil,lava,wax</otherSlugs>
     </part>
@@ -363,6 +1103,98 @@
       <blipsRenderColorTexts>&amp;b^B,&amp;Y^B,&amp;b^B,&amp;y^B</blipsRenderColorTexts>
       <blipsRenderColorTiles>&amp;b,&amp;Y&amp;b&amp;y</blipsRenderColorTiles>
       <blipsRenderColorDetails>B</blipsRenderColorDetails>
+    </part>
+  </liquid>
+  <liquid Name="Wax">
+    <slug>wax</slug>
+    <class>LiquidWax</class>
+    <colors>Yy</colors>
+    <flameTemperature>300</flameTemperature>
+    <vaporTemperature>2000</vaporTemperature>
+    <temperature>100</temperature>
+    <combustibility>65</combustibility>
+    <adsorbence>25</adsorbence>
+    <pureElectricalConductivity>0</pureElectricalConductivity>
+    <mixedElectricalConductivity>0</mixedElectricalConductivity>
+    <thermalConductivity>40</thermalConductivity>
+    <fluidity>7</fluidity>
+    <cleansing>3</cleansing>
+    <weight>0.5</weight>
+    <interruptAutowalk>true</interruptAutowalk>
+    <freezeObject Name="Wax Nodule" Threshold="1" Verb="congeal" />
+    <freezeObject Name="Wax Block" Threshold="500" Verb="solidify" />
+    <stickyWhenWet>true</stickyWhenWet>
+    <stickySaveTargetBase>1</stickySaveTargetBase>
+    <stickySaveTargetScale>0.1</stickySaveTargetScale>
+    <stickyDuration>12</stickyDuration>
+    <stickySaveVs>Wax Stuck Restraint</stickySaveVs>
+    <displayName>{{Y|molten wax}}</displayName>
+    <adjective>{{Y|waxen}}</adjective>
+    <waterRitualName>wax</waterRitualName>
+    <smearedAdjective>{{Y|waxy}}</smearedAdjective>
+    <smearedName>{{Y|waxy}}</smearedName>
+    <stainedName>{{Y|wax}}</stainedName>
+    <valuePerDram>0</valuePerDram>
+    <part Name="TemperatureChangeOnDrink" Temperature="100" Message="It's hot and disgusting." />
+    <part Name="RenderSmearColorBlips" Color="&amp;y" />
+    <part Name="Render">
+      <baseColorBackground>^y</baseColorBackground>
+      <baseColorText>&amp;y^Y</baseColorText>
+      <baseColorTile>&amp;y</baseColorTile>
+      <baseColorDetail>Y</baseColorDetail>
+      <secondaryColorText>&amp;y</secondaryColorText>
+      <paintAtlas>Liquids/Splotchy/</paintAtlas>
+    </part>
+    <part Name="RenderBlips">
+      <frozenRenderString>~</frozenRenderString>
+      <frozenRenderColors>&amp;Y^y,&amp;Y,y</frozenRenderColors>
+      <rareRenderString>☼</rareRenderString>
+      <rareRenderColors>&amp;Y^y,&amp;Y,y</rareRenderColors>
+      <blipsRenderStrings>≈,~,○,~</blipsRenderStrings>
+      <blipsRenderColorTexts>&amp;Y^y</blipsRenderColorTexts>
+      <blipsRenderColorTiles>&amp;Y</blipsRenderColorTiles>
+      <blipsRenderColorDetails>y</blipsRenderColorDetails>
+    </part>
+  </liquid>
+  <liquid Name="Wine">
+    <slug>wine</slug>
+    <class>LiquidWine</class>
+    <colors>mr</colors>
+    <flameTemperature>620</flameTemperature>
+    <vaporTemperature>1620</vaporTemperature>
+    <combustibility>15</combustibility>
+    <thermalConductivity>45</thermalConductivity>
+    <fluidity>30</fluidity>
+    <evaporativity>3</evaporativity>
+    <staining>2</staining>
+    <cleansing>1</cleansing>
+    <displayName>{{m|wine}}</displayName>
+    <adjective>{{m|lush}}</adjective>
+    <waterRitualName>wine</waterRitualName>
+    <smearedAdjective>{{m|lush}}</smearedAdjective>
+    <smearedName>{{m|lush}}</smearedName>
+    <stainedName>{{m|wine}}</stainedName>
+    <valuePerDram>4</valuePerDram>
+    <part Name="HydrateOnDrink" Message="You flush with the warming draught!" />
+    <part Name="DrankWine" />
+    <part Name="RenderSmearColorBlips" Color="&amp;m" />
+    <part Name="Render">
+      <baseColorBackground>^m</baseColorBackground>
+      <baseColorText>&amp;m^r</baseColorText>
+      <baseColorTile>&amp;m</baseColorTile>
+      <baseColorDetail>r</baseColorDetail>
+      <secondaryColorText>&amp;m</secondaryColorText>
+      <paintAtlas>Liquids/Splotchy/</paintAtlas>
+    </part>
+    <part Name="RenderBlips">
+      <frozenRenderString>~</frozenRenderString>
+      <frozenRenderColors>&amp;M^b,&amp;M,b</frozenRenderColors>
+      <rareRenderString>☼</rareRenderString>
+      <rareRenderColors>&amp;r^m,&amp;r,m</rareRenderColors>
+      <blipsRenderStrings>≈,~,○,~</blipsRenderStrings>
+      <blipsRenderColorTexts>&amp;m^r</blipsRenderColorTexts>
+      <blipsRenderColorTiles>&amp;m</blipsRenderColorTiles>
+      <blipsRenderColorDetails>r</blipsRenderColorDetails>
     </part>
   </liquid>
 </liquids>

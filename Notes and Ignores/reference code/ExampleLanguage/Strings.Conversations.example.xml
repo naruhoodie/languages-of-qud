@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
 
-Caves of Qud - Generated Localizable XML 2.0.212.9
+Caves of Qud - Generated Localizable XML 2.0.212.11
 
 Conversations strings export.
 
@@ -691,10 +691,10 @@ Dare I say, is the injunction at an end? It's too early to tell, but alas, there
   <string Context="Conversation Barathrum.Spindle.QuestionsChoice.Text" ID="I have more to ask, Barathrum.">
 ▶I have more to ask, Barathrum.
   </string>
-  <string Context="Conversation Barathrum.WhatNow.Text" ID="I intend to ascend the Spindle and answer the call, =factionaddress:Barathrumites=.&#xA;&#xA;My protege &amp;mQ Girl&amp;y has designed a climber for the ascent. We intended to construct it piecewise at the enclave and the site itself, but the engineering feat exceeds even our capacity. With time, I am confident we could accomplish it, but the Putus Templar rob us of our patience. We need to act now, and so as loath as I am to admit it, we need Pax Klanq.">
+  <string Context="Conversation Barathrum.WhatNow.Text" ID="I intend to ascend the Spindle and answer the call, =factionaddress:Barathrumites=.&#xA;&#xA;My protege {{m|Q Girl}} has designed a climber for the ascent. We intended to construct it piecewise at the enclave and the site itself, but the engineering feat exceeds even our capacity. With time, I am confident we could accomplish it, but the Putus Templar rob us of our patience. We need to act now, and so as loath as I am to admit it, we need Pax Klanq.">
 ▶I intend to ascend the Spindle and answer the call, =factionaddress:Barathrumites=.
 
-My protege &amp;mQ Girl&amp;y has designed a climber for the ascent. We intended to construct it piecewise at the enclave and the site itself, but the engineering feat exceeds even our capacity. With time, I am confident we could accomplish it, but the Putus Templar rob us of our patience. We need to act now, and so as loath as I am to admit it, we need Pax Klanq.
+My protege {{m|Q Girl}} has designed a climber for the ascent. We intended to construct it piecewise at the enclave and the site itself, but the engineering feat exceeds even our capacity. With time, I am confident we could accomplish it, but the Putus Templar rob us of our patience. We need to act now, and so as loath as I am to admit it, we need Pax Klanq.
   </string>
   <string Context="Conversation Barathrum.WhatNow.PaxKlanqChoice.Text" ID="Who is Pax Klanq?">
 ▶Who is Pax Klanq?
@@ -4095,10 +4095,10 @@ Prove your worth and bring us a waydroid, and we will have more to speak of.
   <string Context="Conversation Otho.Start5.EndChoice.Text" ID="No.">
 ▶No.
   </string>
-  <string Context="Conversation Otho.Signal.Text" ID="The signal is a repeat transmission being broadcast from an unknown source.=V0tinkeraddendum= One of our tinkers, &amp;mQ Girl&amp;y, discovered it while rigging a long wave detector. Unfortunately, it's encrypted, and we do not have the means here to decrypt it. You may be of some help in this matter, however.&#xA;&#xA;We've long known the location of a fully functioning &amp;Wbaetyl&amp;y within the bowels of the great hall &amp;CBethesda Susa&amp;y. The Mechanimists have consecrated the site around it and built a temple there. Q Girl claims to have developed a means to decrypt the signal, but she needs the computing power of the baetyl. If you can infiltrate the Mechanimist compound, you may be able to engage the baetyl and decode the signal.">
-▶The signal is a repeat transmission being broadcast from an unknown source.=V0tinkeraddendum= One of our tinkers, &amp;mQ Girl&amp;y, discovered it while rigging a long wave detector. Unfortunately, it's encrypted, and we do not have the means here to decrypt it. You may be of some help in this matter, however.
+  <string Context="Conversation Otho.Signal.Text" ID="The signal is a repeat transmission being broadcast from an unknown source.=V0tinkeraddendum= One of our tinkers, {{m|Q Girl}}, discovered it while rigging a long wave detector. Unfortunately, it's encrypted, and we do not have the means here to decrypt it. You may be of some help in this matter, however.&#xA;&#xA;We've long known the location of a fully functioning {{W|baetyl}} within the bowels of the great hall {{C|Bethesda Susa}}. The Mechanimists have consecrated the site around it and built a temple there. Q Girl claims to have developed a means to decrypt the signal, but she needs the computing power of the baetyl. If you can infiltrate the Mechanimist compound, you may be able to engage the baetyl and decode the signal.">
+▶The signal is a repeat transmission being broadcast from an unknown source.=V0tinkeraddendum= One of our tinkers, {{m|Q Girl}}, discovered it while rigging a long wave detector. Unfortunately, it's encrypted, and we do not have the means here to decrypt it. You may be of some help in this matter, however.
 
-We've long known the location of a fully functioning &amp;Wbaetyl&amp;y within the bowels of the great hall &amp;CBethesda Susa&amp;y. The Mechanimists have consecrated the site around it and built a temple there. Q Girl claims to have developed a means to decrypt the signal, but she needs the computing power of the baetyl. If you can infiltrate the Mechanimist compound, you may be able to engage the baetyl and decode the signal.
+We've long known the location of a fully functioning {{W|baetyl}} within the bowels of the great hall {{C|Bethesda Susa}}. The Mechanimists have consecrated the site around it and built a temple there. Q Girl claims to have developed a means to decrypt the signal, but she needs the computing power of the baetyl. If you can infiltrate the Mechanimist compound, you may be able to engage the baetyl and decode the signal.
   </string>
   <string Context="Conversation Otho.Signal.Baetyl?Choice.Text" ID="What is a baetyl?">
 ▶What is a baetyl?
@@ -4116,8 +4116,8 @@ Do you believe you can accomplish this task?
   <string Context="Conversation Otho.Baetyl?.EndChoice.Text" ID="I must think on this task.">
 ▶I must think on this task.
   </string>
-  <string Context="Conversation Otho.Bethesda1.Text" ID="Good, =factionaddress:Barathrumites=. Speak to &amp;mQ Girl&amp;y in the workshop. She'll encode her instructions for the baetyl onto a copy of the disk.&#xA;&#xA;There's one more thing. The baetyl is located beneath the ancient cryobarrios of the Eaters. Time has worked to erode the mechanisms that contain their cryogenic mist. That freezing vapor billows out of the chambers freely now, cooling the entire cavern. You will want to procure warm clothing to protect =player.reflexive=.&#xA;&#xA;The spoils of the Mechanimists are yours to keep. Remember, =factionaddress:Barathrumites=, Barathrum will look kindly upon your service.">
-▶Good, =factionaddress:Barathrumites=. Speak to &amp;mQ Girl&amp;y in the workshop. She'll encode her instructions for the baetyl onto a copy of the disk.
+  <string Context="Conversation Otho.Bethesda1.Text" ID="Good, =factionaddress:Barathrumites=. Speak to {{m|Q Girl}} in the workshop. She'll encode her instructions for the baetyl onto a copy of the disk.&#xA;&#xA;There's one more thing. The baetyl is located beneath the ancient cryobarrios of the Eaters. Time has worked to erode the mechanisms that contain their cryogenic mist. That freezing vapor billows out of the chambers freely now, cooling the entire cavern. You will want to procure warm clothing to protect =player.reflexive=.&#xA;&#xA;The spoils of the Mechanimists are yours to keep. Remember, =factionaddress:Barathrumites=, Barathrum will look kindly upon your service.">
+▶Good, =factionaddress:Barathrumites=. Speak to {{m|Q Girl}} in the workshop. She'll encode her instructions for the baetyl onto a copy of the disk.
 
 There's one more thing. The baetyl is located beneath the ancient cryobarrios of the Eaters. Time has worked to erode the mechanisms that contain their cryogenic mist. That freezing vapor billows out of the chambers freely now, cooling the entire cavern. You will want to procure warm clothing to protect =player.reflexive=.
 
@@ -4162,8 +4162,8 @@ The spoils of the Mechanimists are yours to keep. Remember, =factionaddress:Bara
   <string Context="Conversation Otho.Start9.OverripeChoice.Text" ID="Yes.">
 ▶Yes.
   </string>
-  <string Context="Conversation Otho.Overripe.Text" ID="Barathrum needs you for an undertaking of great importance. You must journey to &amp;COmonporch&amp;y far to the north. There the Spindle stretches from earth to sky. Unfortunately, a troublesome merchant from the Consortium of Phyta has relocated there and declared xerself Earl of Omonporch. We need you to broker a deal so that we may lease control of the Spindle. Failing that, you'll need to dispose of the self-appointed Earl.&#xA;&#xA;Be careful on your approach to Omonporch, =factionaddress:Barathrumites=. So far east into the reaches of Qud, the Putus Templar lie in wait.">
-▶Barathrum needs you for an undertaking of great importance. You must journey to &amp;COmonporch&amp;y far to the north. There the Spindle stretches from earth to sky. Unfortunately, a troublesome merchant from the Consortium of Phyta has relocated there and declared xerself Earl of Omonporch. We need you to broker a deal so that we may lease control of the Spindle. Failing that, you'll need to dispose of the self-appointed Earl.
+  <string Context="Conversation Otho.Overripe.Text" ID="Barathrum needs you for an undertaking of great importance. You must journey to {{C|Omonporch}} far to the north. There the Spindle stretches from earth to sky. Unfortunately, a troublesome merchant from the Consortium of Phyta has relocated there and declared xerself Earl of Omonporch. We need you to broker a deal so that we may lease control of the Spindle. Failing that, you'll need to dispose of the self-appointed Earl.&#xA;&#xA;Be careful on your approach to Omonporch, =factionaddress:Barathrumites=. So far east into the reaches of Qud, the Putus Templar lie in wait.">
+▶Barathrum needs you for an undertaking of great importance. You must journey to {{C|Omonporch}} far to the north. There the Spindle stretches from earth to sky. Unfortunately, a troublesome merchant from the Consortium of Phyta has relocated there and declared xerself Earl of Omonporch. We need you to broker a deal so that we may lease control of the Spindle. Failing that, you'll need to dispose of the self-appointed Earl.
 
 Be careful on your approach to Omonporch, =factionaddress:Barathrumites=. So far east into the reaches of Qud, the Putus Templar lie in wait.
   </string>
@@ -6364,8 +6364,8 @@ Iseppa is napping so you peek into her room and rearrange her papers. Then you w
   <string Context="Conversation Neek.GritGate2.EndChoice.Text" ID="Live and drink, Neek.">
 ▶Live and drink, Neek.
   </string>
-  <string Context="Conversation Gritgate Intercom.Start.Text" ID="&amp;B[&amp;CVoice transmitting through panel&amp;B]&amp;y&#xA;&#xA;Be gone, wayfarer. This is no place for you.">
-▶&amp;B[&amp;CVoice transmitting through panel&amp;B]&amp;y
+  <string Context="Conversation Gritgate Intercom.Start.Text" ID="{{B|[{{C|Voice transmitting through panel}}]}}&#xA;&#xA;Be gone, wayfarer. This is no place for you.">
+▶{{B|[{{C|Voice transmitting through panel}}]}}
 
 Be gone, wayfarer. This is no place for you.
   </string>
@@ -11211,8 +11211,8 @@ Ask Agyra.
   <string Context="Conversation Lebah.LebahPoke.Text" ID="{{emote|*you receive no reply*}}">
 ▶{{emote|*you receive no reply*}}
   </string>
-  <string Context="Conversation GenericTradeOption.Start.*tradeChoice.Text" ID="Let's trade. &amp;g[begin trade]">
-▶Let's trade. &amp;g[begin trade]
+  <string Context="Conversation GenericTradeOption.Start.*tradeChoice.Text" ID="Let's trade. {{g|[begin trade]}}">
+▶Let's trade. {{g|[begin trade]}}
   </string>
   <string Context="Conversation GenericAskNameOption.Start.*asknameChoice.Text" ID="What is your name?~What is your name, =pronouns.formalAddressTerm=?~What may I call you, =pronouns.formalAddressTerm=?~What are you called, =pronouns.formalAddressTerm=?~I am =name=, =pronouns.formalAddressTerm=. What is your name?~I am =name=, =pronouns.formalAddressTerm=. What may I call you?">
 ▶What is your name?~What is your name, =pronouns.formalAddressTerm=?~What may I call you, =pronouns.formalAddressTerm=?~What are you called, =pronouns.formalAddressTerm=?~I am =name=, =pronouns.formalAddressTerm=. What is your name?~I am =name=, =pronouns.formalAddressTerm=. What may I call you?

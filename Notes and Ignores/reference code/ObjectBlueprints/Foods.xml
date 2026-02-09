@@ -1173,7 +1173,7 @@ Your {{Y|Ego}} is reduced by {{C|1}}" />
 		<stag Name="Heat" />
   </object>
   <object Name="Congealed Salve" Inherits="Preservable">
-    <part Name="Render" DisplayName="congealed &amp;Ysalve" RenderString="%" ColorString="&amp;y" TileColor="&amp;y" DetailColor="Y" RenderLayer="5" Tile="Items/sw_sparktick_plasma.bmp" />
+    <part Name="Render" DisplayName="congealed {{Y|salve}}" RenderString="%" ColorString="&amp;y" TileColor="&amp;y" DetailColor="Y" RenderLayer="5" Tile="Items/sw_sparktick_plasma.bmp" />
     <part Name="Commerce" Value="4" />
     <part Name="Description" Short="Salve was extracted from its injector, thickened in the acrid air, and bottled for culinary use." />
     <part Name="PreparedCookingIngredient" type="regenLowtier" charges="1" />
@@ -1192,7 +1192,7 @@ Your {{Y|Ego}} is reduced by {{C|1}}" />
     <part Name="Description" Short="Eaters' nectar was extracted from its injector, thickened in the acrid air, and bottled for culinary use." />
     <part Name="PreparedCookingIngredient" type="attributes" charges="1" />
     <tag Name="ServingType" Value="drop" />
-    <tag Name="ServingName" Value="&amp;Wn&amp;we&amp;gc&amp;Gt&amp;Wa&amp;wr" />
+    <tag Name="ServingName" Value="{{nectar|nectar}}" />
   </object>
   <object Name="Congealed Hulk Honey" Inherits="Preservable">
     <part Name="Render" DisplayName="congealed {{G|hulk}} {{w|honey}}" RenderString="%" ColorString="&amp;G" TileColor="&amp;y" DetailColor="G" RenderLayer="5" Tile="Items/sw_sparktick_plasma.bmp" />

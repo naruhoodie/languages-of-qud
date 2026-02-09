@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.9
+Caves of Qud - Generated Localizable XML 2.0.212.11
 
 <objects>
 
@@ -28,11 +28,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.9
   </object>
   <object Name="BaseAnimal" Load="Merge">
     <xtagTextFragments Skin="▶skin" PoeticFeatures="▶shiny teeth,hispid skin,spheric hooves" YounglingNoise="▶*whine*" Activity="▶roaming around idly,scrounging for food,napping under the high salt sun" VillageActivity="▶sleeping in our homes,eating our food" GuestActivity="▶breaking bread" NeedsItemFor="▶for my own collection,to slake my greed,because of its trade value" SacredThing="▶the act of procreating,shade from the salt sun,naps,abundant food" ArableLand="▶grazeland" ValuedOre="▶shade and vittle" />
-    <tag Name="SimpleConversation" Value="▶&amp;w*soft growling*&amp;y" />
+    <tag Name="SimpleConversation" Value="▶{{emote|*soft growling*}}" />
     <tag Name="PetResponse" Value="▶=subject.T= =verb:growl= softly." />
   </object>
   <object Name="BaseAntelope" Load="Merge">
-    <tag Name="SimpleConversation" Value="▶&amp;w*idly grazes*&amp;y" />
+    <tag Name="SimpleConversation" Value="▶{{emote|*idly grazes*}}" />
   </object>
   <object Name="BaseBat" Load="Merge">
     <tag Name="SimpleConversation" Value="▶{{emote|*idly flaps wings*}}" />
@@ -73,7 +73,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.9
     <tag Name="HeroNameTitleMayorSynCap" Value="▶King,Mayor,Elder" />
     <xtagTextFragments Skin="▶chitin" PoeticFeatures="▶ageless shelf of shell,titanic claws,stilted eyes" YounglingNoise="▶*click*,*croak*" Activity="▶scuttling without purpose" VillageActivity="▶reinforcing the walls of our homes" SacredThing="▶the art of pinching" />
     <stag Name="HardMaterial" Value="▶chitin" />
-    <tag Name="SimpleConversation" Value="▶&amp;w*raucous croaking*&amp;y" />
+    <tag Name="SimpleConversation" Value="▶{{emote|*raucous croaking*}}" />
     <tag Name="PetResponse" Value="▶=subject.T= =verb:croak=." />
   </object>
   <object Name="BaseDog" Load="Merge">
@@ -85,7 +85,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.9
     <tag Name="HeroNameTitleMayorSynCap" Value="▶Fish God,Fish Mayor,Elder-Fish" />
     <xtagTextFragments Skin="▶scales" PoeticFeatures="▶contoured fins,iridescence,slim dimensionality" YounglingNoise="▶*blub*" Activity="▶swimming in circles,nibbling algae,laying eggs,nestling in brineweed" VillageActivity="▶nestling in our brineweed,laying its eggs" NeedsItemFor="▶for my own collection,to slake my greed,because of its trade value,to hide in the water" SacredThing="▶the necessity of water,water,burrowing,the fin" ArableLand="▶pools of water,rivers,lakes" ValuedOre="▶sunken treasure" />
     <stag Name="HardMaterial" Value="▶scale" />
-    <tag Name="SimpleConversation" Value="▶&amp;w*stares at you unblinking*&amp;y" />
+    <tag Name="SimpleConversation" Value="▶{{emote|*stares at you unblinking*}}" />
     <tag Name="PetResponse" Value="▶=subject.T= =verb:gurgle=." />
   </object>
   <object Name="BaseInsect" Load="Merge">
@@ -94,7 +94,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.9
     <tag Name="HeroNameTitleMayorSynCap" Value="▶Queen,Mayor,Elder" />
     <xtagTextFragments Skin="▶chitin" PoeticFeatures="▶diaphanous wings,airy spiracles,photofractal eyes" YounglingNoise="▶*bzzz*" Activity="▶droning for the hive,burrowing into the earth,rummaging through dung" VillageActivity="▶fastidiously nesting,multiplying in droves,laying eggs and clicking" NeedsItemFor="▶for my own collection,to slake my greed,because of its trade value,to nest more effectively,for my hive" SacredThing="▶chirping by the light of the Beetle Moon,xenophagy,hexapoda,larvae,chitin,the protection of an exoskeleton" ArableLand="▶nesting grounds,hiving grounds" ValuedOre="▶pollen" />
     <stag Name="HardMaterial" Value="▶chitin" />
-    <tag Name="SimpleConversation" Value="▶&amp;w*sharp clicking*&amp;y~&amp;w*soft buzzing*&amp;y" />
+    <tag Name="SimpleConversation" Value="▶{{emote|*sharp clicking*}}~{{emote|*soft buzzing*}}" />
     <tag Name="PetResponse" Value="▶=subject.T= =verb:buzz=." />
   </object>
   <object Name="BaseOoze" Load="Merge">
@@ -103,7 +103,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.9
     <tag Name="HeroNameTitleMayorSynCap" Value="▶Philosopher,Mayor,Elder,Theorist,Sophist" />
     <xtagTextFragments Skin="▶membrane" PoeticFeatures="▶flawless geometry,translucence,peaceful squish" YounglingNoise="▶*squish*,*spurt*" Activity="▶resorbing matter,undulating,liquifying and congealing" VillageActivity="▶jiggling rhythmically,undulating,liquifying and congealing" NeedsItemFor="▶for my own collection,to slake my greed,because of its trade value,for resorbing purposes,so I can engulf it,to absorb it" SacredThing="▶platonic solids,ooze,gelatin,fluid dynamics,the membrane" ArableLand="▶pools of liquid,free matter,gelatin" ValuedOre="▶matter,life" />
     <stag Name="HardMaterial" Value="▶membrane" />
-    <tag Name="SimpleConversation" Value="▶&amp;w*exudes loudly*&amp;y~&amp;w*soft gushing*&amp;y" />
+    <tag Name="SimpleConversation" Value="▶{{emote|*exudes loudly*}}~{{emote|*soft gushing*}}" />
     <tag Name="PetResponse" Value="▶=subject.T= =verb:spurt=." />
   </object>
   <object Name="BaseReptile" Load="Merge">
@@ -130,7 +130,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.9
     <tag Name="HeroNameTitleMayorSynCap" Value="▶Weaver,Mayor,Elder" />
     <xtagTextFragments Skin="▶chitin" PoeticFeatures="▶eightfold gams,hundred lenses,ageless bearing" YounglingNoise="▶*click*" Activity="▶waiting for errant insects" VillageActivity="▶weaving webs in our homes" SacredThing="▶graph theory" />
     <stag Name="HardMaterial" Value="▶chitin" />
-    <tag Name="SimpleConversation" Value="▶&amp;w*idly weaving*&amp;y" />
+    <tag Name="SimpleConversation" Value="▶{{emote|*idly weaving*}}" />
   </object>
   <object Name="BaseStar" Load="Merge">
     <tag Name="HeroNameTitleWiseDescriptor" Value="▶Wise,Sage,Wary,Erudite,Great,Giant,Long,Girthy,Thick" />
@@ -147,7 +147,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.9
     <tag Name="HeroNameTitleMayorSynCap" Value="▶Sage,Mayor,Elder" />
     <xtagTextFragments Skin="▶keratin" PoeticFeatures="▶stony stillness,ageless bearing,lidded eyes" YounglingNoise="▶*croak*" Activity="▶plodding along,inside shells,napping in the shade" VillageActivity="▶sleeping inside its shell" NeedsItemFor="▶for my own collection,to slake my greed,because of its trade value,to hide in my shell" SacredThing="▶the sanctum of a hollow place,the carapace,vegetables,peace and quiet,the home" ArableLand="▶quiet meadows,shady nooks" ValuedOre="▶peace and quiet" />
     <stag Name="HardMaterial" Value="▶shell" />
-    <tag Name="SimpleConversation" Value="▶&amp;w*sniffles and sneezes*&amp;y" />
+    <tag Name="SimpleConversation" Value="▶{{emote|*sniffles and sneezes*}}" />
     <tag Name="PetResponse" Value="▶=subject.T= =verb:croak=." />
   </object>
   <object Name="BaseUrchin" Load="Merge">
@@ -165,7 +165,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.9
     <tag Name="HeroNameTitleMayorSynCap" Value="▶Worm God,Worm Mayor,Elder Worm" />
     <xtagTextFragments Skin="▶annuli" PoeticFeatures="▶undulation,geometric simplicity,ageless bearing" YounglingNoise="▶*slither*" Activity="▶tunneling through the earth" VillageActivity="▶bathing in our stews, making worm stews of our stews" SacredThing="▶having neither arms nor legs" />
     <stag Name="HardMaterial" Value="▶cocoon" />
-    <tag Name="SimpleConversation" Value="▶&amp;w*idly undulating*&amp;y" />
+    <tag Name="SimpleConversation" Value="▶{{emote|*idly undulating*}}" />
     <tag Name="PetResponse" Value="▶=subject.T= =verb:slither=." />
   </object>
   <object Name="Robot" Load="Merge">
@@ -178,7 +178,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.9
     <tag Name="HeroNameTitleMayorSynCap" Value="▶Seer,Administrator,Oracle,Mayor,Elder" />
     <xtagTextFragments Skin="▶chassis" PoeticFeatures="▶chromium sheen,winking diodes,air vents" YounglingNoise="▶*beep*,*boop*" Activity="▶recompositing meaning from centuries of bit flips" VillageActivity="▶emitting a monotone pulse" SacredThing="▶machine life" />
     <stag Name="HardMaterial" Value="▶casing" />
-    <tag Name="SimpleConversation" Value="▶&amp;w*beep boop*&amp;y~&amp;w*boop beep*&amp;y~&amp;w*beep boop beep*&amp;y~&amp;w*boop beep boop*&amp;y" />
+    <tag Name="SimpleConversation" Value="▶{{emote|*beep boop*}}~{{emote|*boop beep*}}~{{emote|*beep boop beep*}}~{{emote|*boop beep boop*}}" />
   </object>
   <object Name="BaseMiner" Load="Merge">
     <part Name="Render" DisplayName="▶miner" />
@@ -197,7 +197,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.9
     <tag Name="HeroNameTitleMayorSyn" Value="▶king,queen,mayor,elder" />
     <tag Name="HeroNameTitleMayorSynCap" Value="▶King,Queen,Mayor,Elder" />
     <xtagTextFragments Skin="▶fur" PoeticFeatures="▶vast shoulders,gentle countenance,musing eyes" YounglingNoise="▶*hoot*" Activity="▶bludgeoning things to death" VillageActivity="▶sitting in a ruminative pose" SacredThing="▶berries and twigs" />
-    <tag Name="SimpleConversation" Value="▶&amp;w*pounds chest*&amp;y" />
+    <tag Name="SimpleConversation" Value="▶{{emote|*pounds chest*}}" />
     <tag Name="PetResponse" Value="▶=subject.T= =verb:gibber=." />
   </object>
   <object Name="BaseBaboon" Load="Merge">
@@ -390,7 +390,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.9
   </object>
   <object Name="Ray Cat" Load="Merge">
     <part Name="Render" DisplayName="▶ray cat" />
-    <part Name="Description" Short="▶=pronouns.Subjective= =verb:are:afterpronoun= a small kitty and the glassy fibers of =pronouns.possessive= coat bend the light of faraway stars into strange loops.&#xA;&#xA;&amp;mphosphorescent&amp;y" />
+    <part Name="Description" Short="▶=pronouns.Subjective= =verb:are:afterpronoun= a small kitty and the glassy fibers of =pronouns.possessive= coat bend the light of faraway stars into strange loops.&#xA;&#xA;{{m|phosphorescent}}" />
   </object>
   <object Name="Cat Claw" Load="Merge">
     <part Name="Render" DisplayName="▶claw" />
@@ -1081,7 +1081,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.9
   <object Name="Equimax" Load="Merge">
     <part Name="Render" DisplayName="▶equimax" />
     <part Name="Description" Short="▶=pronouns.Possessive= hairbrushed skin is shrunk around =pronouns.possessive= strapping withers, flanks, and thighs. A rich platinum coat is spread smooth across a tranquil body, and then erupts at the hooves in wild tufts. Across a long muzzle, mane tassels curtain =pronouns.possessive= eyes." />
-    <tag Name="SimpleConversation" Value="▶&amp;w*soft nickering*&amp;y" />
+    <tag Name="SimpleConversation" Value="▶{{emote|*soft nickering*}}" />
   </object>
   <object Name="Equimax_Kick" Load="Merge">
     <part Name="Render" DisplayName="▶kick" />
@@ -2547,7 +2547,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.9
     <part Name="Render" DisplayName="▶unimax" />
     <part Name="Description" Short="▶Horse hair carpets =pronouns.possessive= beautiful brawn like white rain on the Pale Sea, and then it's battered by streamers of magenta mane. That and =pronouns.possessive= tail are pennants of a Lost and Never kingdom. Ofer the head a dream is promised: bone races itself to a nothing-point and is sheathed by Time's breath in the keratin of glitter." />
     <tag Name="IndefiniteArticle" Value="▶a" />
-    <tag Name="SimpleConversation" Value="▶&amp;w*soft nickering*&amp;y" />
+    <tag Name="SimpleConversation" Value="▶{{emote|*soft nickering*}}" />
   </object>
   <object Name="Unimax_Kick" Load="Merge">
     <part Name="Render" DisplayName="▶kick" />
@@ -3749,7 +3749,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.9
   </object>
   <object Name="Ctesiphus" Load="Merge">
     <part Name="Render" DisplayName="▶Ctesiphus" />
-    <part Name="Description" Short="▶One star-ribboned night, a ray cat crossed the marshy loam and wandered into Joppa. The watervine farmers, wakened by the joyful cries of a small girl, gathered around to revel at the favorable omen and extol the generosity of the Beetle Moon. Since then, Ctesiphus =verb:have= spent =pronouns.possessive= days curled under the shade of brinestalk huts and sauntering over dirt paths. So long as =pronouns.subjective==verb:'re:afterpronoun= approached with care, =pronouns.subjective= =verb:welcome:afterpronoun= the hands of friends and strangers alike.&#xA;&#xA;&amp;mphosphorescent&amp;y" />
+    <part Name="Description" Short="▶One star-ribboned night, a ray cat crossed the marshy loam and wandered into Joppa. The watervine farmers, wakened by the joyful cries of a small girl, gathered around to revel at the favorable omen and extol the generosity of the Beetle Moon. Since then, Ctesiphus =verb:have= spent =pronouns.possessive= days curled under the shade of brinestalk huts and sauntering over dirt paths. So long as =pronouns.subjective==verb:'re:afterpronoun= approached with care, =pronouns.subjective= =verb:welcome:afterpronoun= the hands of friends and strangers alike.&#xA;&#xA;{{m|phosphorescent}}" />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="Tam" Load="Merge">
@@ -3789,7 +3789,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.9
   <object Name="OasisGlowpad" Load="Merge">
     <part Name="Render" DisplayName="▶oddly-hued glowpad" />
     <part Name="Description" Short="▶A leaf disc gleams through luminous veins, flashing neon in advertisement. Arrayed across =pronouns.possessive= damp pad is a trove of wares." />
-    <part Name="SecretObjectTalk" text="▶An &amp;Coddly-hued&amp;y glowpad" message="▶You now know the location of an &amp;Coddly-hued &amp;Yglowpad merchant." />
+    <part Name="SecretObjectTalk" text="▶An {{C|oddly-hued}} glowpad" message="▶You now know the location of an {{C|oddly-hued}} glowpad merchant." />
   </object>
   <object Name="High Priest Eschelstadt" Load="Merge">
     <part Name="Render" DisplayName="▶Eschelstadt II" />

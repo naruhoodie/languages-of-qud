@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.9
+Caves of Qud - Generated Localizable XML 2.0.212.11
 
 <objects>
 
@@ -1056,15 +1056,15 @@ Caves of Qud - Generated Localizable XML 2.0.212.9
   </object>
   <object Name="SunderGrenade1" Load="Merge">
     <part Name="Render" DisplayName="▶{{resonance|resonance}} grenade mk I" />
-    <part Name="Description" Short="▶A cast iron bulb is clamped by a lever with a pull ring. It purrs with a distinctive crackle.&#xA;&#xA;          &amp;C2d100+20 damage to structural objects.&#xA;          &amp;C2d10+4 damage to non-structural objects." />
+    <part Name="Description" Short="▶A cast iron bulb is clamped by a lever with a pull ring. It purrs with a distinctive crackle.&#xA;&#xA;          {{C|2d100+20 damage to structural objects.}}&#xA;          {{C|2d10+4 damage to non-structural objects.}}" />
   </object>
   <object Name="SunderGrenade2" Load="Merge">
     <part Name="Render" DisplayName="▶{{resonance|resonance}} grenade mk II" />
-    <part Name="Description" Short="▶A metal shoal of waffled hexagons is clamped by a chrome lever. It purrs with a distinctive crackle.&#xA;&#xA;          &amp;C4d100+20 damage to structural objects.&#xA;          &amp;C4d10+8 damage to non-structural objects." />
+    <part Name="Description" Short="▶A metal shoal of waffled hexagons is clamped by a chrome lever. It purrs with a distinctive crackle.&#xA;&#xA;          {{C|4d100+20 damage to structural objects.}}&#xA;          {{C|4d10+8 damage to non-structural objects.}}" />
   </object>
   <object Name="SunderGrenade3" Load="Merge">
     <part Name="Render" DisplayName="▶{{resonance|resonance}} grenade mk III" />
-    <part Name="Description" Short="▶A thick metal jacket encases the explosive and is clamped to a quick-release lever. It purrs with a distinctive crackle.&#xA;&#xA;          &amp;C6d100+20 damage to structural objects.&#xA;          &amp;C6d10+12 damage to non-structural objects." />
+    <part Name="Description" Short="▶A thick metal jacket encases the explosive and is clamped to a quick-release lever. It purrs with a distinctive crackle.&#xA;&#xA;          {{C|6d100+20 damage to structural objects.}}&#xA;          {{C|6d10+12 damage to non-structural objects.}}" />
   </object>
   <object Name="PlasmaGrenade1" Load="Merge">
     <part Name="Render" DisplayName="▶{{plasma|plasma}} grenade mk I" />
@@ -1495,7 +1495,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.9
     <part Name="MechanicalWings" NameForStatus="▶DriveTrain" />
   </object>
   <object Name="Helping Hands" Load="Merge">
-    <part Name="Render" DisplayName="▶&amp;Rh&amp;Yelping&amp;r &amp;Rh&amp;Yands" />
+    <part Name="Render" DisplayName="▶{{Y|{{R|h}}elping {{R|h}}ands}}" />
     <part Name="Description" Short="▶Gloved prosthetic hands attach to the ends of articulating rods. The control mechanism is housed in a false spine box." />
   </object>
   <object Name="Banner of the Holy Rhombus" Load="Merge">
@@ -2381,7 +2381,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.9
     <part Name="Description" Short="▶An imperishable uuflax sheet was torn from the elephantine spools in the market and stitched into a talma." />
   </object>
   <object Name="BaseTierHands1_AV" Load="Merge">
-    <part Name="Description" Short="▶Perch fish leather was worn by fishworkers in the earlier sultanate, but by the time of *sultan* it was prized by gentlefolk. This pair is exquisitely crafted." />
+    <part Name="Description" Short="▶Perch fish leather was worn by fishworkers in the earlier sultanate, but by the time of =spice.entity:name= it was prized by gentlefolk. This pair is exquisitely crafted." />
   </object>
   <object Name="BaseTierArm1" Load="Merge">
     <part Name="Description" Short="▶While the steeple fires raged below, brave arconauts sank into the glowing depths to retrieve valuables. When their corpses were found, the sand in their pockets had been blown into glass beads. Sometime after, those beads were strung into a bracelet." />
@@ -2400,13 +2400,13 @@ Caves of Qud - Generated Localizable XML 2.0.212.9
     <part Name="Description" Short="▶Chrome flakes fell like dander from broken belfries into the trash sea. They were scooped up by orefishers and traded up the silk chain. This shirt is fashioned from the flakes twisted into rings." />
   </object>
   <object Name="BaseTierBody2_DV" Load="Merge">
-    <part Name="Description" Short="▶Early period Eaters modded their genes to grow ur-filament hair. Later, once that technology was lost, graverobbers sheared it from their cadaverous scalps. In the time of *sultan*, it was called finery. This vest was knit from the stuff." />
+    <part Name="Description" Short="▶Early period Eaters modded their genes to grow ur-filament hair. Later, once that technology was lost, graverobbers sheared it from their cadaverous scalps. In the time of =spice.entity:name=, it was called finery. This vest was knit from the stuff." />
   </object>
   <object Name="BaseTierHead2_AV" Load="Merge">
-    <part Name="Description" Short="▶Early Eaters had enlarged their skulls for cosmetic reasons. By the time of *sultan*, the high minaret dwellers took to wearing them as helms. This one is exquisitely decorated." />
+    <part Name="Description" Short="▶Early Eaters had enlarged their skulls for cosmetic reasons. By the time of =spice.entity:name=, the high minaret dwellers took to wearing them as helms. This one is exquisitely decorated." />
   </object>
   <object Name="BaseTierHead2_DV" Load="Merge">
-    <part Name="Description" Short="▶Early period Eaters modded their genes to grow ur-filament hair. Later, once that technology was lost, graverobbers sheared it from their cadaverous scalps. In the time of *sultan*, it was called finery. This hat was knit from the stuff." />
+    <part Name="Description" Short="▶Early period Eaters modded their genes to grow ur-filament hair. Later, once that technology was lost, graverobbers sheared it from their cadaverous scalps. In the time of =spice.entity:name=, it was called finery. This hat was knit from the stuff." />
   </object>
   <object Name="BaseTierFace2" Load="Merge">
     <part Name="Description" Short="▶Masks maintained their sacred status in the lives of the Eaters, even as they lost the capacity to stitch them into their own faces. This one is no different." />
@@ -2415,7 +2415,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.9
     <part Name="Description" Short="▶This cloak was knit from strands ur-filament hair robbed from the graves of early Eaters." />
   </object>
   <object Name="BaseTierHands2_AV" Load="Merge">
-    <part Name="Description" Short="▶Perch fish leather was worn by fishworkers in the earlier sultanate, but by the time of *sultan* it was prized by gentlefolk. This pair is exquisitely crafted." />
+    <part Name="Description" Short="▶Perch fish leather was worn by fishworkers in the earlier sultanate, but by the time of =spice.entity:name= it was prized by gentlefolk. This pair is exquisitely crafted." />
   </object>
   <object Name="BaseTierArm2" Load="Merge">
     <part Name="Description" Short="▶While the steeple fires raged below, brave arconauts sank into the glowing depths to retrieve valuables. When their corpses were found, the sand in their pockets had been blown into glass beads. Sometime after, those beads were strung into a bracelet." />
@@ -2430,13 +2430,13 @@ Caves of Qud - Generated Localizable XML 2.0.212.9
     <part Name="Description" Short="▶Far from the soaring aegides of earlier periods, this concave ward was merely bent and polished on a municipal lathe." />
   </object>
   <object Name="BaseTierBody3_AV" Load="Merge">
-    <part Name="Description" Short="▶When they were active, the crysteel blast furnaces belched slag into a belt of hills that cinctured the old arcology. In the age of *sultan*, the slag was mined and moulded into a glass replica of a crysteel hauberk." />
+    <part Name="Description" Short="▶When they were active, the crysteel blast furnaces belched slag into a belt of hills that cinctured the old arcology. In the age of =spice.entity:name=, the slag was mined and moulded into a glass replica of a crysteel hauberk." />
   </object>
   <object Name="BaseTierBody3_DV" Load="Merge">
     <part Name="Description" Short="▶Rubber insulation that diamond-tiled the high pneumatic ducts was cut free at midnight and ferried to a coven of tailors, who then stitched a bodice." />
   </object>
   <object Name="BaseTierHead3_AV" Load="Merge">
-    <part Name="Description" Short="▶When they were active, the crysteel blast furnaces belched slag into a belt of hills that cinctured the old arcology. In the age of *sultan*, the slag was mined and moulded into a glass replica of an crysteel miter." />
+    <part Name="Description" Short="▶When they were active, the crysteel blast furnaces belched slag into a belt of hills that cinctured the old arcology. In the age of =spice.entity:name=, the slag was mined and moulded into a glass replica of an crysteel miter." />
   </object>
   <object Name="BaseTierHead3_DV" Load="Merge">
     <part Name="Description" Short="▶Rubber insulation that diamond-tiled the high pneumatic ducts was cut free at midnight and ferried to a coven of tailors, who then stitched a tam." />
@@ -2448,7 +2448,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.9
     <part Name="Description" Short="▶An imperishable uuflax sheet was torn from the elephantine spools in the market and stitched into a geometrically patterned talma." />
   </object>
   <object Name="BaseTierHands3_AV" Load="Merge">
-    <part Name="Description" Short="▶When they were active, the crysteel blast furnaces belched slag into a belt of hills that cinctured the old arcology. In the age of *sultan*, the slag was mined and moulded into a glass replica of a pair of crysteel gauntlets." />
+    <part Name="Description" Short="▶When they were active, the crysteel blast furnaces belched slag into a belt of hills that cinctured the old arcology. In the age of =spice.entity:name=, the slag was mined and moulded into a glass replica of a pair of crysteel gauntlets." />
   </object>
   <object Name="BaseTierHands3_DV" Load="Merge">
     <part Name="Description" Short="▶Rubber insulation that diamond-tiled the high pneumatic ducts was cut free at midnight and ferried to a coven of tailors, who then stitched a pair of mittens." />
@@ -2457,7 +2457,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.9
     <part Name="Description" Short="▶A glossy foil clasp was pried off the glass guts of the polis and etched as jewelry." />
   </object>
   <object Name="BaseTierFeet3_AV" Load="Merge">
-    <part Name="Description" Short="▶When they were active, the crysteel blast furnaces belched slag into a belt of hills that cinctured the old arcology. In the age of *sultan*, the slag was mined and moulded into a glass replica pair of crysteel sollerets." />
+    <part Name="Description" Short="▶When they were active, the crysteel blast furnaces belched slag into a belt of hills that cinctured the old arcology. In the age of =spice.entity:name=, the slag was mined and moulded into a glass replica pair of crysteel sollerets." />
   </object>
   <object Name="BaseTierFeet3_DV" Load="Merge">
     <part Name="Description" Short="▶Rubber insulation that diamond-tiled the high pneumatic ducts was cut free at midnight and ferried to a coven of tailors, who then stitched a pair of pantofles." />
@@ -2466,16 +2466,16 @@ Caves of Qud - Generated Localizable XML 2.0.212.9
     <part Name="Description" Short="▶A chipped-off chunk of luminous Spindle, magnetized by the fall to earth, orbits its chosen warden." />
   </object>
   <object Name="BaseTierShield3" Load="Merge">
-    <part Name="Description" Short="▶When they were active, the crysteel blast furnaces belched slag into a belt of hills that cinctured the old arcology. In the age of *sultan*, the slag was mined and moulded into a steel replica of the soaring aegides." />
+    <part Name="Description" Short="▶When they were active, the crysteel blast furnaces belched slag into a belt of hills that cinctured the old arcology. In the age of =spice.entity:name=, the slag was mined and moulded into a steel replica of the soaring aegides." />
   </object>
   <object Name="BaseTierBody4_AV" Load="Merge">
-    <part Name="Description" Short="▶When they were active, the crysteel blast furnaces belched slag into a belt of hills that cinctured the old arcology. In the age of *sultan*, the slag was mined and moulded into a glass replica of a crysteel hauberk, then reinforced with stonegut." />
+    <part Name="Description" Short="▶When they were active, the crysteel blast furnaces belched slag into a belt of hills that cinctured the old arcology. In the age of =spice.entity:name=, the slag was mined and moulded into a glass replica of a crysteel hauberk, then reinforced with stonegut." />
   </object>
   <object Name="BaseTierBody4_DV" Load="Merge">
     <part Name="Description" Short="▶Dead sponge was heaped into hexagonal prisms at Maqqom and ferried through canals to vault-shadowed kurna. There it was washed clean and spongeworked into a blouse." />
   </object>
   <object Name="BaseTierHead4_AV" Load="Merge">
-    <part Name="Description" Short="▶When they were active, the crysteel blast furnaces belched slag into a belt of hills that cinctured the old arcology. In the age of *sultan*, the slag was mined and moulded into a glass replica of an crysteel miter, then reinforced with stonegut." />
+    <part Name="Description" Short="▶When they were active, the crysteel blast furnaces belched slag into a belt of hills that cinctured the old arcology. In the age of =spice.entity:name=, the slag was mined and moulded into a glass replica of an crysteel miter, then reinforced with stonegut." />
   </object>
   <object Name="BaseTierHead4_DV" Load="Merge">
     <part Name="Description" Short="▶Dead sponge was heaped into hexagonal prisms at Maqqom and ferried through canals to vault-shadowed kurna. There it was washed clean and spongeworked into a bonnet." />
@@ -2487,7 +2487,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.9
     <part Name="Description" Short="▶An imperishable uuflax sheet was torn from the elephantine spools in the market, twice-folded, and stitched into a geometrically patterned talma." />
   </object>
   <object Name="BaseTierHands4_AV" Load="Merge">
-    <part Name="Description" Short="▶When they were active, the crysteel blast furnaces belched slag into a belt of hills that cinctured the old arcology. In the age of *sultan*, the slag was mined and moulded into a glass replica of an crysteel miter, then reinforced with stonegut." />
+    <part Name="Description" Short="▶When they were active, the crysteel blast furnaces belched slag into a belt of hills that cinctured the old arcology. In the age of =spice.entity:name=, the slag was mined and moulded into a glass replica of an crysteel miter, then reinforced with stonegut." />
   </object>
   <object Name="BaseTierHands4_DV" Load="Merge">
     <part Name="Description" Short="▶Dead sponge was heaped into hexagonal prisms at Maqqom and ferried through canals to vault-shadowed kurna. There it was washed clean and spongeworked into a pair of gloves." />
@@ -2496,7 +2496,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.9
     <part Name="Description" Short="▶A glossy foil clasp was pried off the glass guts of the polis and etched as jewelry." />
   </object>
   <object Name="BaseTierFeet4_AV" Load="Merge">
-    <part Name="Description" Short="▶When they were active, the crysteel blast furnaces belched slag into a belt of hills that cinctured the old arcology. In the age of *sultan*, the slag was mined and moulded into a glass replica pair of crysteel sollerets, then reinforced with stonegut." />
+    <part Name="Description" Short="▶When they were active, the crysteel blast furnaces belched slag into a belt of hills that cinctured the old arcology. In the age of =spice.entity:name=, the slag was mined and moulded into a glass replica pair of crysteel sollerets, then reinforced with stonegut." />
   </object>
   <object Name="BaseTierFeet4_DV" Load="Merge">
     <part Name="Description" Short="▶Dead sponge was heaped into hexagonal prisms at Maqqom and ferried through canals to vault-shadowed kurna. There it was washed clean and spongeworked into a pair of slipshoes." />
@@ -2505,7 +2505,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.9
     <part Name="Description" Short="▶A chipped-off chunk of luminous Spindle, magnetized by the fall to earth, orbits its chosen warden." />
   </object>
   <object Name="BaseTierShield4" Load="Merge">
-    <part Name="Description" Short="▶When they were active, the crysteel blast furnaces belched slag into a belt of hills that cinctured the old arcology. In the age of *sultan*, the slag was mined and moulded into a steel replica of the soaring aegides, then reinforced with stonegut." />
+    <part Name="Description" Short="▶When they were active, the crysteel blast furnaces belched slag into a belt of hills that cinctured the old arcology. In the age of =spice.entity:name=, the slag was mined and moulded into a steel replica of the soaring aegides, then reinforced with stonegut." />
   </object>
   <object Name="BaseTierBody5_AV" Load="Merge">
     <part Name="Description" Short="▶In vast abyssal halls spire-tall machine presses crushed black spheres into diamond killer. Once the lights burned out, magpie troupes cut hunks free with gaslight tools and brought them to the low-strata smitheries. This piece was forged into a cuirass." />
@@ -2541,7 +2541,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.9
     <part Name="Description" Short="▶The manifold fibers are colorful and have a touching texture like no other fabric. A molecular weft was pulled through shrinking warps on a fractal loom." />
   </object>
   <object Name="BaseTierFace6" Load="Merge">
-    <part Name="Description" Short="▶Mellified skin is sutured to colorful uuflax in a psychotomimetic likeness to the Eater idols in the age of *sultan*." />
+    <part Name="Description" Short="▶Mellified skin is sutured to colorful uuflax in a psychotomimetic likeness to the Eater idols in the age of =spice.entity:name=." />
   </object>
   <object Name="BaseTierBack6" Load="Merge">
     <part Name="Description" Short="▶An imperishable uuflax sheet was torn from the elephantine spools in the market, thrice-folded, and stitched into a geometrically patterned talma." />
@@ -2553,7 +2553,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.9
     <part Name="Description" Short="▶A chipped-off chunk of luminous Spindle, magnetized by the fall to earth, orbits its chosen warden." />
   </object>
   <object Name="BaseTierFace7" Load="Merge">
-    <part Name="Description" Short="▶Mellified skin is sutured to colorful uuflax in a psychotomimetic likeness to the Eater idols in the age of *sultan*." />
+    <part Name="Description" Short="▶Mellified skin is sutured to colorful uuflax in a psychotomimetic likeness to the Eater idols in the age of =spice.entity:name=." />
   </object>
   <object Name="BaseTierBack7" Load="Merge">
     <part Name="Description" Short="▶An imperishable uuflax sheet was torn from the elephantine spools in the market, thrice-folded, and stitched into a geometrically patterned talma." />
@@ -2565,7 +2565,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.9
     <part Name="Description" Short="▶A chipped-off chunk of luminous Spindle, magnetized by the fall to earth, orbits its chosen warden." />
   </object>
   <object Name="BaseTierFace8" Load="Merge">
-    <part Name="Description" Short="▶Mellified skin is sutured to colorful uuflax in a psychotomimetic likeness to the Eater idols in the age of *sultan*." />
+    <part Name="Description" Short="▶Mellified skin is sutured to colorful uuflax in a psychotomimetic likeness to the Eater idols in the age of =spice.entity:name=." />
   </object>
   <object Name="BaseTierBack8" Load="Merge">
     <part Name="Description" Short="▶An imperishable uuflax sheet was torn from the elephantine spools in the market, tetra-folded, and stitched into a geometrically patterned talma." />
