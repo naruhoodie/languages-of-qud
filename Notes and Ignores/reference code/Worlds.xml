@@ -621,7 +621,7 @@
 
 
     <cell Name="Hills" Inherits="DefaultJoppaCell" ApplyTo="TerrainHills">
-      <zone Level="5-9" x="0-2" y="0-2" Name="sky above hills" IndefiniteArticle="the" AmbientBed="Sounds/Ambiences/amb_bed_hills">>
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above hills" IndefiniteArticle="the" AmbientBed="Sounds/Ambiences/amb_bed_hills">
         <builder Class="Sky"></builder>
       </zone>
       <zone Level="10" x="0-2" y="0-2" Name="hills" HasWeather="true" WindSpeed="0-80" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000" AmbientBed="Sounds/Ambiences/amb_bed_hills">
@@ -826,7 +826,7 @@
       </zone>
     </cell>
 
-    <cell Name="Joppa" Inherits="WatervineCell" ApplyTo="TerrainJoppaRuins" Mutable="false">
+    <cell Name="JoppaRuins" Inherits="WatervineCell" ApplyTo="TerrainJoppaRuins" Mutable="false">
 
       <zone Level="5-9" x="0-2" y="0-2" Name="sky above Joppa" IndefiniteArticle="the">
         <builder Class="Sky"></builder>
@@ -1056,7 +1056,7 @@
 
       <!-- Golgotha -->
 
-    <cell Name="Golgotha" Inherits="Jungle" ApplyTo="TerrainGolgotha" Mutable="false" DisableForcedConnections="Yes">
+    <cell Name="Golgotha" Inherits="Jungle" ApplyTo="TerrainGolgotha" Mutable="false">
       <zone Level="5-9" x="0-2" y="0-2" Name="sky above Golgotha" IndefiniteArticle="the">
         <builder Class="Sky"></builder>
       </zone>
@@ -1672,7 +1672,7 @@
         <builder Class="FlagInside"></builder>
       </zone>
 
-      <zone Level="8" x="1" y="1" Name="Spindle Channel" IndefiniteArticle="the" DisableForcedConnetions="Yes">
+      <zone Level="8" x="1" y="1" Name="Spindle Channel" IndefiniteArticle="the" DisableForcedConnections="Yes">
         <map FileName="SpindleChannel.rpm"></map>
         <builder Class="FlagInside"></builder>
       </zone>
@@ -1683,7 +1683,7 @@
         <music Track="Music/Among The Tombs of Eaters" />
         <builder Class="FlagInside"></builder>
       </zone>
-      <zone Level="7" x="1" y="1" Name="Spindle Channel" IndefiniteArticle="the" DisableForcedConnetions="Yes">
+      <zone Level="7" x="1" y="1" Name="Spindle Channel" IndefiniteArticle="the" DisableForcedConnections="Yes">
         <map FileName="SpindleChannel.rpm"></map>
         <builder Class="FlagInside"></builder>
       </zone>
@@ -2256,12 +2256,12 @@
       </zone>
     </cell>
 
-    <cell Name="BaroqueRuinsCell" Inherits="DefaultJoppaCell" ApplyTo="TerrainBaroqueRuins" HasWeather="true" WindSpeed="0-60" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000">
-      <zone Level="5-9" x="0-2" y="0-2" Name="sky above some baroque ruins" IndefiniteArticle="the" AmbientBed="Sounds/Ambiences/amb_bed_baroqueRuins">
+    <cell Name="BaroqueRuinsCell" Inherits="DefaultJoppaCell" ApplyTo="TerrainBaroqueRuins">
+      <zone Level="5-9" x="0-2" y="0-2" Name="sky above some baroque ruins" IndefiniteArticle="the" AmbientBed="Sounds/Ambiences/amb_bed_baroqueRuins" HasWeather="true" WindSpeed="0-60" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000">
         <builder Class="Sky"></builder>
       </zone>
 
-      <zone Level="10" x="0-2" y="0-2" Name="baroque ruins" AmbientBed="Sounds/Ambiences/amb_bed_baroqueRuins">
+      <zone Level="10" x="0-2" y="0-2" Name="baroque ruins" AmbientBed="Sounds/Ambiences/amb_bed_baroqueRuins" HasWeather="true" WindSpeed="0-60" WindDirections="N,NW,NW,W,W,SW,S,SE" WindDuration="50-3000">
         <builder Class="Ruins"></builder>
         <builder Class="StairsDown"></builder>
         <postbuilder Class="ZoneTemplate:BaroqueSurfaceRuins"></postbuilder>
@@ -2463,7 +2463,7 @@
         <music Track="Music/A New World" />
       </zone>     
     </cell>
-    <cell Name="QuayCell" Inherits="DefaultNorthShevaCell" ApplyTo="TerrainSurfaceStratumNorthwiseMoors">
+    <cell Name="QuayCellSurface" Inherits="DefaultNorthShevaCell" ApplyTo="TerrainSurfaceStratumNorthwiseMoors">
       <zone Level="10" x="0" y="2" Name="Northwise moors" NameContext="Starfarer's Quay" IncludeStratumInZoneDisplay="false" DisableForcedConnections="Yes">
         <map FileName="NorthSheva/StarfarersQuayHigh.rpm"/>
         <music Track="Music/A New World" />
