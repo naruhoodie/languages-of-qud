@@ -75,6 +75,7 @@
 		<tag Name="NamingTag" Value="<KEY:Naming.xml>" />
 		<part Name="Bed" NameForStatus="<TECH,LOCALIZE>" />
 		<part Name="Chat" Says="<LOCALIZE>" />
+		<part Name="ItemConvertor" Verb="<LOCALIZE>" Preposition="<LOCALIZE>" NameForStatus="<TECH,LOCALIZE>" />
 	<!-- Furniture.xml - QuestableVerb & QuestableEvent are related -->
 		<tag Name="QuestableVerb" Value="<CHOICES,>" />
 		<tag Name="QuestableEvent" Value="<KEY><CHOICES,>" />
