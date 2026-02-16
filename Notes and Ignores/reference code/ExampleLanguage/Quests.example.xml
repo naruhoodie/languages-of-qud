@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.12
+Caves of Qud - Generated Localizable XML 2.0.212.13
 
 <quests>
 
@@ -13,6 +13,8 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
 
       <text>
       : Extra descriptive text
+
+    <property Name="Key">
 
 -->
 <quests Lang="example" Encoding="utf-8">
@@ -308,6 +310,23 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
     </step>
   </quest>
   <quest ID="Reclamation" Name="▶Reclamation">
+    <property Name="MessageLeaving">▶
+      Leaving the battlefield may give the Templar time to regroup and result in more Barathrumite casualties. Proceed?
+      </property>
+    <property Name="MessageArrival">▶
+      {{m|ULLLLLLLLLLLLQ!}}
+      
+      The aching world-moan of the Nephilim resounds, and your body throbs in the electric air!
+      
+      It has arrived, {{R|=direction=}}.
+      </property>
+    <property Name="MessageArrivalSuper">▶
+      {{m|QQQYQQQYQQQYQQQYQQQ!}}
+
+      Starburst ejecta rains down in burning ribbons, and your body is nearly negated into nothing by the unutterable moans of the early universe!
+
+      =name= descends, {{R|=direction=}}.
+      </property>
     <step ID="Warleader1" Name="▶Defeat =name=">
       <text>▶Remove the threat of the Templar warleader from the perimeter of Omonporch.</text>
     </step>

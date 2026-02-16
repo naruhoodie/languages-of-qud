@@ -2323,7 +2323,7 @@ The infant child is unaware
     <part Name="Brain" Factions="Hermits-100" />
   </object>
   <object Name="Seed-Spitting Vine" Inherits="Plant Turret">
-		<part Name="Description" Short="Jade green tendrils curl inward and hug =pronouns.possessive= center in tension. =pronouns.Possessive= leaves vibrate to low-volume crunches as =pronouns.subjective= =verb:compact:afterpronoun= seed matter for spitting. " />
+		<part Name="Description" Short="Jade green tendrils curl inward and hug =pronouns.possessive= center in tension. =pronouns.Possessive= leaves vibrate to low-volume crunches as =pronouns.subjective= =verb:compact:afterpronoun= seed matter for spitting." />
 		<part Name="Body" Anatomy="Vine" />		
     <part Name="Brain" PointBlankRange="true" />
     <part Name="Render" DisplayName="{{g|seed-spitting vine}}" RenderString="225" Tile="Creatures/sw_seed_spitting_vine.bmp" ColorString="&amp;G" DetailColor="g" />
@@ -3224,7 +3224,7 @@ The infant child is unaware
     <stat Name="Level" Value="10" />
     <stat Name="AV" Value="4" />
     <stat Name="Hitpoints" Value="24" />
-    <part Name="Description" Short="A cyclinder with a sensor array floats in magnetic suspension and emits a choppy hum. One long, articulated arm dangles beneath it, and sparks fly from its electric corm." />
+    <part Name="Description" Short="A cylinder with a sensor array floats in magnetic suspension and emits a choppy hum. One long, articulated arm dangles beneath it, and sparks fly from its electric corm." />
     <inventoryobject Blueprint="Waydroid_Shockrod" Number="2" />
     <inventoryobject Chance="10" Blueprint="Chem Cell" />
     <inventoryobject Chance="5" Blueprint="Stun Rod" />
@@ -3863,7 +3863,7 @@ The infant child is unaware
     <stat Name="Level" Value="12" />
     <stat Name="Hitpoints" Value="17" />
     <part Name="Brain" Hostile="false" Factions="Girsh-100,Insects-99" />
-    <part Name="Description" Short="=pronouns.Subjective= =verb:are:afterpronoun= a writhing and pallid maggot, and pustules of noxious gas quilt =pronouns.possessive= bloated abdomen. " />
+    <part Name="Description" Short="=pronouns.Subjective= =verb:are:afterpronoun= a writhing and pallid maggot, and pustules of noxious gas quilt =pronouns.possessive= bloated abdomen." />
     <inventoryobject Blueprint="YithMaggotBite" Number="1" />
     <stat Name="AcidResistance" Value="100" />
     <tag Name="Species" Value="fly" />
@@ -7526,7 +7526,7 @@ The infant child is unaware
     <tag Name="BaseObject" Value="*noinherit" />
   </object>
   <object Name="Slynth Wanderer" Inherits="BaseSlynth">
-    <part Name="Description" Short="From a distance, =pronouns.subjective= could be mistaken for a human wearing a wide-brimmed, lanterned hat, but =pronouns.subjective= =verb:are:afterpronoun= no human and =pronouns.possessive= hat is no vestment. =pronouns.Subjective= =verb:carry:afterpronoun= =pronouns.possessive= weapons and gear in flexible green digits, the broad leaf atop =pronouns.possessive= head scored and weathered, the shining flower atop =pronouns.possessive= crown glowing bright. =pronouns.Subjective= =verb:dress:afterpronoun= as a wanderer and =verb:speak:afterpronoun= as if new to the practice. " />
+    <part Name="Description" Short="From a distance, =pronouns.subjective= could be mistaken for a human wearing a wide-brimmed, lanterned hat, but =pronouns.subjective= =verb:are:afterpronoun= no human and =pronouns.possessive= hat is no vestment. =pronouns.Subjective= =verb:carry:afterpronoun= =pronouns.possessive= weapons and gear in flexible green digits, the broad leaf atop =pronouns.possessive= head scored and weathered, the shining flower atop =pronouns.possessive= crown glowing bright. =pronouns.Subjective= =verb:dress:afterpronoun= as a wanderer and =verb:speak:afterpronoun= as if new to the practice." />
     <stat Name="Level" Value="30" />
     <tag Name="InventoryPopulationTable" Value="SlynthWandererGear" />
     <part Name="ConversationScript" ConversationID="SlynthWanderer" />
@@ -13281,7 +13281,7 @@ Drifts on the cultural seas have swept a particular fable to your attention. Lon
   <!-- Grit Gate -->
   <object Name="Shem -1" Inherits="Chromeling">
     <part Name="Render" DisplayName="{{c|Shem -1}}" Tile="Creatures/sw_chromeling_special.bmp" RenderString="1" ColorString="&amp;c" DetailColor="m" />
-    <part Name="Description" Short="Shem has augmented =pronouns.possessive= body beyond the chromeling's basic form by welding on a dissymmetric ruffled coat of scrap metal. It's too big and grandiose for =pronouns.possessive= little figure, but Shem shuffles about confidently, as if =pronouns.subjective= expect to grow into it. " />
+    <part Name="Description" Short="Shem has augmented =pronouns.possessive= body beyond the chromeling's basic form by welding on a dissymmetric ruffled coat of scrap metal. It's too big and grandiose for =pronouns.possessive= little figure, but Shem shuffles about confidently, as if =pronouns.subjective= expect to grow into it." />
     <part Name="ConversationScript" ConversationID="Shem" />
     <part Name="Interesting" />
     <part Name="FactionRank" Ranks="Barathrumites::apprentice" />
@@ -13698,7 +13698,7 @@ In Barathrum's name, =pronouns.subjective==verb:'ve:afterpronoun= conferred onto
     <part Name="ConversationScript" ConversationID="Euclid" />
     <part Name="Brain" Wanders="true" Hostile="false" Mobile="true" Factions="Barathrumites-100" />
     <stat Name="Level" Value="16" />
-    <part Name="Description" Short="The climbing vine curls tight about a witchwood stake. A noggin of knotted tendrils bounces to and fro, keeping time with the movement of nearby creatures and objects. =pronouns.Possessive= ears perk at the sound of langauge, and =pronouns.subjective= =verb:flick:afterpronoun= leaves against =pronouns.possessive= stake to mimic phrases =pronouns.subjective= heard uttered centuries ago." />
+    <part Name="Description" Short="The climbing vine curls tight about a witchwood stake. A noggin of knotted tendrils bounces to and fro, keeping time with the movement of nearby creatures and objects. =pronouns.Possessive= ears perk at the sound of language, and =pronouns.subjective= =verb:flick:afterpronoun= leaves against =pronouns.possessive= stake to mimic phrases =pronouns.subjective= heard uttered centuries ago." />
     <part Name="Render" Tile="Creatures/sw_yurl.bmp" TileColor="&amp;G" DetailColor="W" ColorString="&amp;G" RenderString="234" DisplayName="Euclid" />
     <part Name="Interesting" />
     <inventoryobject Blueprint="Clay Pot" />

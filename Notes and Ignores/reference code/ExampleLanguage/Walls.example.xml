@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.12
+Caves of Qud - Generated Localizable XML 2.0.212.13
 
 <objects>
 
@@ -8,7 +8,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
 
     <part Name="Key">
 
-    <tag Name="Key">
+    <tag Name="Key" Value="DisplayText">
 
     <stag Name="Key">
 
@@ -299,7 +299,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
   </object>
   <object Name="HolographicShaleWall" Load="Merge">
     <part Name="Render" DisplayName="▶holographic shale" />
-    <part Name="Description" Short="▶Glinting light is sculpted in parallax to the illusion of a shale wall: clay and quartz were dried and smashed into the red rock that's been quarried by hillfolk for thousands after thousands of years. " />
+    <part Name="Description" Short="▶Glinting light is sculpted in parallax to the illusion of a shale wall: clay and quartz were dried and smashed into the red rock that's been quarried by hillfolk for thousands after thousands of years." />
     <xtagGrammar massNoun="▶true" />
   </object>
   <object Name="HoloMarble" Load="Merge">

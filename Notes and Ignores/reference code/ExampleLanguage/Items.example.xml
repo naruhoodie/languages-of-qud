@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.12
+Caves of Qud - Generated Localizable XML 2.0.212.13
 
 <objects>
 
@@ -8,7 +8,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
 
     <part Name="Key">
 
-    <tag Name="Key">
+    <tag Name="Key" Value="DisplayText">
 
     <stag Name="Key">
 
@@ -536,7 +536,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
   </object>
   <object Name="Phase Cannon" Load="Merge">
     <part Name="Render" DisplayName="▶phase cannon" />
-    <part Name="Description" Short="▶Astralgals demarcate the phasic slits along the frustum's length. Noise is sucked out of time in expectancy of cross-plane fusion." />
+    <part Name="Description" Short="▶Astragals demarcate the phasic slits along the frustum's length. Noise is sucked out of time in expectancy of cross-plane fusion." />
   </object>
   <object Name="ProjectilePhaseCannon" Load="Merge">
     <part Name="Render" DisplayName="▶{{M|energy bolt}}" />
@@ -719,7 +719,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
   <object Name="Blast Cannon" Load="Merge">
     <part Name="Render" DisplayName="▶{{R|blast}} cannon" />
     <part Name="EquipCharge" NameForStatus="▶PowerUplink" />
-    <part Name="Description" Short="▶Sleek spiral barrels of matrixed metal cradle an enormous cyclinder of ionic gas. On fire the mixture is hyperpressurized into shot and sent to explode at sight's end." />
+    <part Name="Description" Short="▶Sleek spiral barrels of matrixed metal cradle an enormous cylinder of ionic gas. On fire the mixture is hyperpressurized into shot and sent to explode at sight's end." />
   </object>
   <object Name="ProjectileBlastCannon" Load="Merge">
     <part Name="Render" DisplayName="▶{{R|pressurized energy}}" />
@@ -1307,7 +1307,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
   </object>
   <object Name="Studded Leather Armor" Load="Merge">
     <part Name="Render" DisplayName="▶studded leather armor" />
-    <part Name="Description" Short="▶Ancient and inscrutable pegs of chrome fished from the trash sea stud thick wedges of boiled goat leather. " />
+    <part Name="Description" Short="▶Ancient and inscrutable pegs of chrome fished from the trash sea stud thick wedges of boiled goat leather." />
     <xtagGrammar iArticle="▶some" />
   </object>
   <object Name="Pocketed Vest" Load="Merge">
@@ -2135,7 +2135,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
     <part Name="Render" DisplayName="▶{{R-r-K-y-Y sequence|Stopsvalinn}}" />
     <part Name="Description" Short="▶A layer cake of wide-age rust grants dimension to the ancient and flat-faced astagon. Its front is painted with the coat of arms of an archaic house -- white runic script on a field of crimson." />
     <part Name="RulesDescription" Text="▶+1 Ego&#xA;You may activate this item to conjure a force field in front of you. Robots will often be unable to advance toward you while the force field is active." />
-    <part Name="TakenAccomplishment" Text="▶You recovered the lost aegis of House Yish, =this.refname=." Hagiograph="▶Recall how =name= wrested the legendary aegis =this.refname= from the paws of a lowly snapjaw and averred descendency from the Saads of Yish!" Gospel="▶At the Battle of =landmark.nearest|title=, =name= fought to subjugate snapjaws. =player.Subjective= wielded a buckler with such =spice:commonPhrases.finesse.!random= that it became forever known as =this.refname=. " />
+    <part Name="TakenAccomplishment" Text="▶You recovered the lost aegis of House Yish, =this.refname=." Hagiograph="▶Recall how =name= wrested the legendary aegis =this.refname= from the paws of a lowly snapjaw and averred descendency from the Saads of Yish!" Gospel="▶At the Battle of =landmark.nearest|title=, =name= fought to subjugate snapjaws. =player.Subjective= wielded a buckler with such =spice:commonPhrases.finesse.!random= that it became forever known as =this.refname=." />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="Kindrish" Load="Merge">
@@ -2746,7 +2746,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
     <part Name="CyberneticsBaseItem" BehaviorDescription="▶+200 move speed while swimming" />
   </object>
   <object Name="SkinGlitter1" Load="Merge">
-    <part Name="Description" Short="▶A fractal lattice of dermal applique conducts the inner glow to the outer world. " />
+    <part Name="Description" Short="▶A fractal lattice of dermal applique conducts the inner glow to the outer world." />
     <part Name="Render" DisplayName="▶{{Y|skin glitter}}" />
     <part Name="CyberneticsBaseItem" BehaviorDescription="▶+8% chance to refract light-based attacks" />
     <xtagGrammar massNoun="▶true" />
@@ -2851,7 +2851,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
     <part Name="CyberneticsBaseItem" BehaviorDescription="▶You cannot be forced to move by physical means." />
   </object>
   <object Name="SkinGlitter2" Load="Merge">
-    <part Name="Description" Short="▶A fractal lattice of dermal applique conducts the inner glow to the outer world. " />
+    <part Name="Description" Short="▶A fractal lattice of dermal applique conducts the inner glow to the outer world." />
     <part Name="Render" DisplayName="▶{{Y|skin glitter}}" />
     <part Name="CyberneticsBaseItem" BehaviorDescription="▶+16% chance to refract light-based attacks" />
     <xtagGrammar massNoun="▶true" />
@@ -3647,40 +3647,40 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
     <part Name="Description" Short="▶It hurled through the void impacted in a black rock and slammed, shining and free, on our world. All its rough edges have been polished to shine." />
   </object>
   <object Name="Random Figurine" Load="Merge">
-    <part Name="Description" Short="▶This figurine worked from *material* intricately depicts *creature.an*:&#xA;&#xA;" />
+    <part Name="Description" Short="▶This figurine worked from =material= intricately depicts =creature.a.name|strip=:&#xA;&#xA;=creature.description.short=" />
   </object>
   <object Name="Random Copper Figurine" Load="Merge">
-    <part Name="Render" DisplayName="▶{{w|copper}} {{|*creature*}} figurine" />
+    <part Name="Render" DisplayName="▶{{w|copper}} {{|=creature.name|strip=}} figurine" />
   </object>
   <object Name="Rhinox figure" Load="Merge">
-    <part Name="Render" DisplayName="▶{{w|copper}} {{|*creature*}} figurine" />
+    <part Name="Render" DisplayName="▶{{w|copper}} {{|=creature.name|strip=}} figurine" />
   </object>
   <object Name="Random Silver Figurine" Load="Merge">
-    <part Name="Render" DisplayName="▶{{silvery|silver}} {{|*creature*}} figurine" />
+    <part Name="Render" DisplayName="▶{{silvery|silver}} {{|=creature.name|strip=}} figurine" />
   </object>
   <object Name="Random Gold Figurine" Load="Merge">
-    <part Name="Render" DisplayName="▶{{W|gold}} {{|*creature*}} figurine" />
+    <part Name="Render" DisplayName="▶{{W|gold}} {{|=creature.name|strip=}} figurine" />
   </object>
   <object Name="Random Agate Figurine" Load="Merge">
-    <part Name="Render" DisplayName="▶{{K|agate}} {{|*creature*}} figurine" />
+    <part Name="Render" DisplayName="▶{{K|agate}} {{|=creature.name|strip=}} figurine" />
   </object>
   <object Name="Random Topaz Figurine" Load="Merge">
-    <part Name="Render" DisplayName="▶{{W|topaz}} {{|*creature*}} figurine" />
+    <part Name="Render" DisplayName="▶{{W|topaz}} {{|=creature.name|strip=}} figurine" />
   </object>
   <object Name="Random Jasper Figurine" Load="Merge">
-    <part Name="Render" DisplayName="▶{{R|jasper}} {{|*creature*}} figurine" />
+    <part Name="Render" DisplayName="▶{{R|jasper}} {{|=creature.name|strip=}} figurine" />
   </object>
   <object Name="Random Amethyst Figurine" Load="Merge">
-    <part Name="Render" DisplayName="▶{{M|amethyst}} {{|*creature*}} figurine" />
+    <part Name="Render" DisplayName="▶{{M|amethyst}} {{|=creature.name|strip=}} figurine" />
   </object>
   <object Name="Random Sapphire Figurine" Load="Merge">
-    <part Name="Render" DisplayName="▶{{B|sapphire}} {{|*creature*}} figurine" />
+    <part Name="Render" DisplayName="▶{{B|sapphire}} {{|=creature.name|strip=}} figurine" />
   </object>
   <object Name="Random Emerald Figurine" Load="Merge">
-    <part Name="Render" DisplayName="▶{{G|emerald}} {{|*creature*}} figurine" />
+    <part Name="Render" DisplayName="▶{{G|emerald}} {{|=creature.name|strip=}} figurine" />
   </object>
   <object Name="Random Peridot Figurine" Load="Merge">
-    <part Name="Render" DisplayName="▶{{peridot|peridot}} *creature* figurine" />
+    <part Name="Render" DisplayName="▶{{peridot|peridot}} =creature.name|strip= figurine" />
   </object>
   <object Name="Trinket" Load="Merge">
     <part Name="Render" DisplayName="▶{{c|trinket}}" />

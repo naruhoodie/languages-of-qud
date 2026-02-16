@@ -1875,7 +1875,7 @@
     <part Name="Commerce" Value="2000" />
     <part Name="EnergyAmmoLoader" ChargeUse="7500" ProjectileObject="ProjectilePhaseCannon" />
     <part Name="EnergyCellSocket" SlotType="EnergyCell" ChanceSlotted="100" />
-    <part Name="Description" Short="Astralgals demarcate the phasic slits along the frustum's length. Noise is sucked out of time in expectancy of cross-plane fusion." />
+    <part Name="Description" Short="Astragals demarcate the phasic slits along the frustum's length. Noise is sucked out of time in expectancy of cross-plane fusion." />
     <part Name="Examiner" Complexity="8" />
     <part Name="ItemElements" Elements="might::3" />
     <part Name="TinkerItem" Bits="0008" CanDisassemble="true" CanBuild="true" />
@@ -2386,7 +2386,7 @@ This weapon increases the damage bonus of its ammo by 1." />
     <part Name="EnergyCellSocket" SlotType="EnergyCell" ChanceSlotted="100" SlottedType="Antimatter Cell" ChanceDestroyCellOnForcedUnequip="85" />
     <part Name="EquipCharge" ChargeRate="80" EquipperProperty="BlastCannonRecharge" NameForStatus="PowerUplink" />
     <part Name="IntegralRecharger" />
-    <part Name="Description" Short="Sleek spiral barrels of matrixed metal cradle an enormous cyclinder of ionic gas. On fire the mixture is hyperpressurized into shot and sent to explode at sight's end." />
+    <part Name="Description" Short="Sleek spiral barrels of matrixed metal cradle an enormous cylinder of ionic gas. On fire the mixture is hyperpressurized into shot and sent to explode at sight's end." />
     <part Name="Examiner" Unknown="UnknownStrangeTubes" Alternate="UnknownStrangeTubes" Complexity="7" />
     <part Name="TinkerItem" Bits="0357" CanDisassemble="true" CanBuild="false" />
     <part Name="Metal" />
@@ -4241,7 +4241,7 @@ When this weapons fires a shot with its last round of ammo, the shot has perfect
     <part Name="Armor" AV="3" DV="-2" WornOn="Body" />
     <part Name="Render" DisplayName="studded leather armor" RenderString="]" Tile="Items/sw_leather_armor.bmp" ColorString="&amp;w" DetailColor="y" />
     <part Name="Commerce" Value="5" />
-    <part Name="Description" Short="Ancient and inscrutable pegs of chrome fished from the trash sea stud thick wedges of boiled goat leather. " />
+    <part Name="Description" Short="Ancient and inscrutable pegs of chrome fished from the trash sea stud thick wedges of boiled goat leather." />
     <part Name="Physics" Weight="20" Organic="true" />
     <part Name="Metal" />
 	  <tag Name="EquipSound" Value="sfx_equip_armor_leather" />
@@ -7009,7 +7009,7 @@ You may activate this item to conjure a force field in front of you. Robots will
     <part Name="Stopsvaalinn" />
     <part Name="Examiner" Complexity="1" Understanding="0" />
     <part Name="TakenAchievement" AchievementID="ACH_FIND_STOPSVALINN" />
-    <part Name="TakenAccomplishment" Text="You recovered the lost aegis of House Yish, =this.refname=." Hagiograph="Recall how =name= wrested the legendary aegis =this.refname= from the paws of a lowly snapjaw and averred descendency from the Saads of Yish!" HagiographCategory="FindsObject" HagiographWeight="High" Gospel="At the Battle of =landmark.nearest|title=, =name= fought to subjugate snapjaws. =player.Subjective= wielded a buckler with such =spice:commonPhrases.finesse.!random= that it became forever known as =this.refname=. " />
+    <part Name="TakenAccomplishment" Text="You recovered the lost aegis of House Yish, =this.refname=." Hagiograph="Recall how =name= wrested the legendary aegis =this.refname= from the paws of a lowly snapjaw and averred descendency from the Saads of Yish!" HagiographCategory="FindsObject" HagiographWeight="High" Gospel="At the Battle of =landmark.nearest|title=, =name= fought to subjugate snapjaws. =player.Subjective= wielded a buckler with such =spice:commonPhrases.finesse.!random= that it became forever known as =this.refname=." />
 	  <tag Name="BlockSound" Value="Sounds/Melee/multiUseBlock/sfx_shield_stopsvaalinn_block" />
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
     <xtagGrammar Proper="true" />
@@ -9080,7 +9080,7 @@ These effects do not stack with the bonuses of a compass bracelet." />
 
   <object Name="SkinGlitter1" Inherits="BaseCyberneticsEquipment_1point">
     <part Name="Physics" Weight="0" />
-    <part Name="Description" Short="A fractal lattice of dermal applique conducts the inner glow to the outer world. " />
+    <part Name="Description" Short="A fractal lattice of dermal applique conducts the inner glow to the outer world." />
     <part Name="Render" DisplayName="{{Y|skin glitter}}" Tile="Items/sw_skin_glitter.bmp" TileColor="&amp;m" DetailColor="C" />
     <part Name="CyberneticsBaseItem" Slots="Face,Arm,Head,Hands,Feet" Cost="1" BehaviorDescription="+8% chance to refract light-based attacks" />
     <part Name="CyberneticsRefractLight" Chance="8" />
@@ -9291,7 +9291,7 @@ Once per night, you can Prowl, gaining +6 agility and +10 movespeed for 100 roun
 
   <object Name="SkinGlitter2" Inherits="BaseCyberneticsEquipment_2point">
     <part Name="Physics" Weight="0" />
-    <part Name="Description" Short="A fractal lattice of dermal applique conducts the inner glow to the outer world. " />
+    <part Name="Description" Short="A fractal lattice of dermal applique conducts the inner glow to the outer world." />
     <part Name="Render" DisplayName="{{Y|skin glitter}}" Tile="Items/sw_skin_glitter.bmp" TileColor="&amp;m" DetailColor="C" />
     <part Name="CyberneticsBaseItem" Slots="Back,Body" Cost="2" BehaviorDescription="+16% chance to refract light-based attacks" />
     <part Name="CyberneticsRefractLight" Chance="16" />
@@ -11719,9 +11719,9 @@ These effects stack if multiple rubbergums are ingested." />
   <object Name="Random Figurine" Inherits="Item">
     <part Name="Render" DisplayName="[figurine]" Tile="Items/figurine.png" DetailColor="y" RenderString="*" ColorString="&amp;w" RenderLayer="5" />
     <part Name="Commerce" Value="10" />
-    <part Name="Description" Short="This figurine worked from *material* intricately depicts *creature.an*:
+    <part Name="Description" Short="This figurine worked from =material= intricately depicts =creature.a.name|strip=:
 
-" />
+=creature.description.short=" />
     <part Name="Physics" Category="Trade Goods" />
 	  <tag Name="EquipSound" Value="sfx_equip_material_generic_gemstone" />
     <tag Name="Tier" Value="1" />
@@ -11731,67 +11731,67 @@ These effects stack if multiple rubbergums are ingested." />
     <part Name="ItemElements" Elements="jewels::3" />
   </object>
   <object Name="Random Copper Figurine" Inherits="Random Figurine">
-    <part Name="Render" DisplayName="{{w|copper}} {{|*creature*}} figurine" DetailColor="y" RenderString="*" ColorString="&amp;w" RenderLayer="5" />
+    <part Name="Render" DisplayName="{{w|copper}} {{|=creature.name|strip=}} figurine" DetailColor="y" RenderString="*" ColorString="&amp;w" RenderLayer="5" />
     <part Name="Commerce" Value="60" />
     <part Name="RandomFigurine" Material="copper" />
     <tag Name="Tier" Value="1" />
   </object>
   <object Name="Rhinox figure" Inherits="Random Figurine">
-    <part Name="Render" DisplayName="{{w|copper}} {{|*creature*}} figurine" DetailColor="y" RenderString="*" ColorString="&amp;w" RenderLayer="5" />
+    <part Name="Render" DisplayName="{{w|copper}} {{|=creature.name|strip=}} figurine" DetailColor="y" RenderString="*" ColorString="&amp;w" RenderLayer="5" />
     <part Name="Commerce" Value="60" />
     <part Name="RandomFigurine" Material="copper" Creature="Rhinox" />
     <tag Name="Tier" Value="1" />
   </object>
   <object Name="Random Silver Figurine" Inherits="Random Figurine">
-    <part Name="Render" DisplayName="{{silvery|silver}} {{|*creature*}} figurine" DetailColor="y" RenderString="*" ColorString="&amp;Y" RenderLayer="5" />
+    <part Name="Render" DisplayName="{{silvery|silver}} {{|=creature.name|strip=}} figurine" DetailColor="y" RenderString="*" ColorString="&amp;Y" RenderLayer="5" />
     <part Name="Commerce" Value="100" />
     <part Name="RandomFigurine" Material="silver" />
     <tag Name="Tier" Value="2" />
   </object>
   <object Name="Random Gold Figurine" Inherits="Random Figurine">
-    <part Name="Render" DisplayName="{{W|gold}} {{|*creature*}} figurine" DetailColor="y" RenderString="*" ColorString="&amp;W" RenderLayer="5" />
+    <part Name="Render" DisplayName="{{W|gold}} {{|=creature.name|strip=}} figurine" DetailColor="y" RenderString="*" ColorString="&amp;W" RenderLayer="5" />
     <part Name="Commerce" Value="200" />
     <part Name="RandomFigurine" Material="gold" />
     <tag Name="Tier" Value="4" />
   </object>
   <object Name="Random Agate Figurine" Inherits="Random Figurine">
-    <part Name="Render" DisplayName="{{K|agate}} {{|*creature*}} figurine" DetailColor="y" RenderString="*" ColorString="&amp;K" RenderLayer="5" />
+    <part Name="Render" DisplayName="{{K|agate}} {{|=creature.name|strip=}} figurine" DetailColor="y" RenderString="*" ColorString="&amp;K" RenderLayer="5" />
     <part Name="Commerce" Value="100" />
     <part Name="RandomFigurine" Material="agate" />
     <tag Name="Tier" Value="2" />
   </object>
   <object Name="Random Topaz Figurine" Inherits="Random Figurine">
-    <part Name="Render" DisplayName="{{W|topaz}} {{|*creature*}} figurine" DetailColor="y" RenderString="*" ColorString="&amp;W" RenderLayer="5" />
+    <part Name="Render" DisplayName="{{W|topaz}} {{|=creature.name|strip=}} figurine" DetailColor="y" RenderString="*" ColorString="&amp;W" RenderLayer="5" />
     <part Name="Commerce" Value="150" />
     <part Name="RandomFigurine" Material="topaz" />
     <tag Name="Tier" Value="3" />
   </object>
   <object Name="Random Jasper Figurine" Inherits="Random Figurine">
-    <part Name="Render" DisplayName="{{R|jasper}} {{|*creature*}} figurine" DetailColor="y" RenderString="*" ColorString="&amp;R" RenderLayer="5" />
+    <part Name="Render" DisplayName="{{R|jasper}} {{|=creature.name|strip=}} figurine" DetailColor="y" RenderString="*" ColorString="&amp;R" RenderLayer="5" />
     <part Name="Commerce" Value="200" />
     <part Name="RandomFigurine" Material="jasper" />
     <tag Name="Tier" Value="4" />
   </object>
   <object Name="Random Amethyst Figurine" Inherits="Random Figurine">
-    <part Name="Render" DisplayName="{{M|amethyst}} {{|*creature*}} figurine" DetailColor="y" RenderString="*" ColorString="&amp;M" RenderLayer="5" />
+    <part Name="Render" DisplayName="{{M|amethyst}} {{|=creature.name|strip=}} figurine" DetailColor="y" RenderString="*" ColorString="&amp;M" RenderLayer="5" />
     <part Name="Commerce" Value="250" />
     <part Name="RandomFigurine" Material="amethyst" />
     <tag Name="Tier" Value="5" />
   </object>
   <object Name="Random Sapphire Figurine" Inherits="Random Figurine">
-    <part Name="Render" DisplayName="{{B|sapphire}} {{|*creature*}} figurine" DetailColor="y" RenderString="*" ColorString="&amp;B" RenderLayer="5" />
+    <part Name="Render" DisplayName="{{B|sapphire}} {{|=creature.name|strip=}} figurine" DetailColor="y" RenderString="*" ColorString="&amp;B" RenderLayer="5" />
     <part Name="Commerce" Value="300" />
     <part Name="RandomFigurine" Material="sapphire" />
     <tag Name="Tier" Value="6" />
   </object>
   <object Name="Random Emerald Figurine" Inherits="Random Figurine">
-    <part Name="Render" DisplayName="{{G|emerald}} {{|*creature*}} figurine" DetailColor="y" RenderString="*" ColorString="&amp;G" RenderLayer="5" />
+    <part Name="Render" DisplayName="{{G|emerald}} {{|=creature.name|strip=}} figurine" DetailColor="y" RenderString="*" ColorString="&amp;G" RenderLayer="5" />
     <part Name="Commerce" Value="350" />
     <part Name="RandomFigurine" Material="emerald" />
     <tag Name="Tier" Value="7" />
   </object>
   <object Name="Random Peridot Figurine" Inherits="Random Figurine">
-    <part Name="Render" DisplayName="{{peridot|peridot}} *creature* figurine" DetailColor="W" RenderString="*" ColorString="&amp;G" RenderLayer="5" />
+    <part Name="Render" DisplayName="{{peridot|peridot}} =creature.name|strip= figurine" DetailColor="W" RenderString="*" ColorString="&amp;G" RenderLayer="5" />
     <part Name="Commerce" Value="350" />
     <part Name="RandomFigurine" Material="peridot" />
     <tag Name="Tier" Value="7" />

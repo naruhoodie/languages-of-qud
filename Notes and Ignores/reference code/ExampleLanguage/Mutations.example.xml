@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.12
+Caves of Qud - Generated Localizable XML 2.0.212.13
 
 <mutations Hidden="" ExcludeFromPool="">
 
@@ -21,17 +21,20 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
             <br />
             <p>Whenever you manifest a new mutation, one of your choices will also cause you to grow a new limb at random.</p>
           </description>
+      <leveltext></leveltext>
     </mutation>
     <mutation Name="Esper" DisplayName="▶Esper">
       <description>▶
             <p>You only manifest mental mutations, and all of your mutation choices when manifesting a new mutation are mental.</p>
           </description>
+      <leveltext></leveltext>
     </mutation>
     <mutation Name="Unstable Genome" DisplayName="▶Unstable Genome">
       <description>▶
             <p>You gain one extra mutation each time you buy this, but the mutations don't manifest right away.</p>
             <p>Whenever you gain a level, there's a 33% chance that your genome destabilizes and you get to choose from 3 random mutations.</p>
           </description>
+      <leveltext></leveltext>
     </mutation>
   </category>
   <category Name="Physical" DisplayName="▶{{G|Physical Mutations}}">
@@ -53,6 +56,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
             <p>You occasionally peck at your opponents.</p>
             <p><gametext>+200 reputation with {{w|=faction:Birds=}}</gametext></p>
           </description>
+      <leveltext></leveltext>
     </mutation>
     <mutation Name="Burrowing Claws" DisplayName="▶Burrowing Claws" BearerDescription="▶burrowers">
       <description>▶
@@ -213,6 +217,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
       <description>▶
             <p>You see in the dark.</p>
           </description>
+      <leveltext></leveltext>
     </mutation>
     <mutation Name="Phasing" DisplayName="▶Phasing" BearerDescription="▶those who phase">
       <description>▶
@@ -273,6 +278,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
             <statline Name="Cooldown" />
             <p>You can walk over slime without slipping.</p>
           </description>
+      <leveltext></leveltext>
     </mutation>
     <mutation Name="Spinnerets" DisplayName="▶Spinnerets" BearerDescription="▶web weavers">
       <description>▶
@@ -344,6 +350,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
             <p>+5 Cold Resistance</p>
             <p>+100 reputation with {{w|apes}}, {{w|baboons}}, {{w|bears}}, and {{w|grazing hedonists}}</p>
           </description>
+      <leveltext></leveltext>
     </mutation>
     <mutation Name="Triple-jointed" DisplayName="▶Triple-jointed" BearerDescription="▶the triple-jointed">
       <description>▶
@@ -396,6 +403,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
             <p></p>
             <p>You regenerate hit points at one-fifth the usual rate in the daylight.</p>
           </description>
+      <leveltext></leveltext>
     </mutation>
     <mutation Name="Amphibious" DisplayName="▶Amphibious" BearerDescription="▶the amphibious">
       <description>▶
@@ -405,6 +413,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
             <p>You require about two-thirds more water than usual.</p>
             <p>+100 reputation with {{w|frogs}}</p>
           </description>
+      <leveltext></leveltext>
     </mutation>
     <mutation Name="Brittle Bones" DisplayName="▶Brittle Bones" BearerDescription="▶the brittle-boned">
       <description>▶
@@ -412,6 +421,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
             <p></p>
             <p>You suffer 50% more damage from bludgeoning attacks, falling, and other sources of concussive damage.</p>
           </description>
+      <leveltext></leveltext>
     </mutation>
     <mutation Name="Nerve Poppy" DisplayName="▶Nerve Poppy" BearerDescription="▶those who cannot feel pain">
       <description>▶
@@ -419,6 +429,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
             <p></p>
             <p>You only know your general state of health and not your precise number of hit points.</p>
           </description>
+      <leveltext></leveltext>
     </mutation>
     <mutation Name="Carnivorous" DisplayName="▶Carnivorous" BearerDescription="▶the carnivorous">
       <description>▶
@@ -430,6 +441,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
             <p>You don't get ill when you eat raw meat.</p>
             <p>You can eat raw meat without being famished.</p>
           </description>
+      <leveltext></leveltext>
     </mutation>
     <mutation Name="Cold-Blooded" DisplayName="▶Cold-Blooded" BearerDescription="▶the cold-blooded">
       <description>▶
@@ -439,6 +451,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
             <p>Your quickness increases as your temperature increases and decreases as your temperature decreases.</p>
             <p>+100 reputation with {{w|unshelled reptiles}}</p>
           </description>
+      <leveltext></leveltext>
     </mutation>
     <mutation Name="Electromagnetic Impulse" DisplayName="▶Electromagnetic Impulse" BearerDescription="▶those who cannot control their electromagnetic pulses">
       <description>▶
@@ -446,6 +459,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
             <p></p>
             <p>Small chance each round you're in combat that you release an electromagnetic pulse with radius 3, deactivating robots and artifacts (including those you carry) for 11-20 rounds.</p>
           </description>
+      <leveltext></leveltext>
     </mutation>
     <mutation Name="Hooks for Feet" DisplayName="▶Hooks for Feet" BearerDescription="▶those with hooks for feet">
       <description>▶
@@ -454,6 +468,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
             <p></p>
             <p>You cannot wear shoes.</p>
           </description>
+      <leveltext></leveltext>
     </mutation>
     <mutation Name="Irritable Genome" DisplayName="▶Irritable Genome" BearerDescription="▶those with irritable genomes">
       <description>▶
@@ -462,6 +477,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
             <p>Whenever you spend a mutation point, the next mutation point you gain will be spent randomly.</p>
             <p>Whenever you buy a new mutation, you get a random one instead of a choice of three.</p>
           </description>
+      <leveltext></leveltext>
     </mutation>
     <mutation Name="Myopic" DisplayName="▶Myopic" BearerDescription="▶the myopic">
       <description>▶
@@ -469,6 +485,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
             <p></p>
             <p>You can only see up to a radius of 10.</p>
           </description>
+      <leveltext></leveltext>
     </mutation>
     <mutation Name="Spontaneous Combustion" DisplayName="▶Spontaneous Combustion" BearerDescription="▶those who spontaneously combust">
       <description>▶
@@ -476,6 +493,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
             <p></p>
             <p>Small chance each round you're in combat that you spontaneously erupt into flames.</p>
           </description>
+      <leveltext></leveltext>
     </mutation>
     <mutation Name="Tonic Allergy" DisplayName="▶Tonic Allergy" BearerDescription="▶the allergic">
       <description>▶
@@ -484,6 +502,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
             <p>The chance your mutant physiology reacts adversely to a tonic is increased to 33%.</p>
             <p>If you react adversely this way to a salve or ubernostrum tonic, the adverse reaction effect is chosen randomly from among other tonic effects. You will still heal.</p>
           </description>
+      <leveltext></leveltext>
     </mutation>
   </category>
   <category Name="Mental" DisplayName="▶{{G|Mental Mutations}}">
@@ -603,6 +622,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
             <statline Name="Range" />
             <statline Name="Cooldown" />
           </description>
+      <leveltext></leveltext>
     </mutation>
     <mutation Name="Light Manipulation" DisplayName="▶Light Manipulation" BearerDescription="▶manipulators of light" />
     <mutation Name="Mass Mind" DisplayName="▶Mass Mind" BearerDescription="▶those who tap the Mass Mind" />
@@ -656,6 +676,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
             <p></p>
             <p>Chat with anyone in vision\nTakes you much less time to issue orders to companions</p>
           </description>
+      <leveltext></leveltext>
     </mutation>
     <mutation Name="Teleportation" DisplayName="▶Teleportation" BearerDescription="▶teleporters" />
     <mutation Name="Teleport Other" DisplayName="▶Teleport Other" BearerDescription="▶those who teleport others" />

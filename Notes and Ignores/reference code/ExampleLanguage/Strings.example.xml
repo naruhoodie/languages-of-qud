@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud code extracted string table. 2.0.212.12
+Caves of Qud code extracted string table. 2.0.212.13
 
 Comments should be deleted when copied to a new translation table, but are provided to
 help find the usage of the string in the base source code.
@@ -670,7 +670,6 @@ alone if no match found.
   <string Context="Core Popup World Seed Copy Message" ID="World seed copied to your clipboard.">▶World seed copied to your clipboard.</string>
   <string Context="Core Saved Notify" ID="Game saved!">▶Game saved!</string>
   <string Context="Move To Edge Popup" ID="Move to which edge? (=glyph:Up==glyph:Down==glyph:Right==glyph:Left=)">▶Move to which edge? (=glyph:Up==glyph:Down==glyph:Right==glyph:Left=)</string>
-  <string ID="You cannot do that on the world map.">▶You cannot do that on the world map.</string>
   <string Context="Core Abandon Confirm" ID="If you quit without saving, you will lose all your unsaved progress. Are you sure you want to QUIT and LOSE YOUR PROGRESS?&#xA;&#xA;Type 'ABANDON' to confirm." Value="▶If you quit without saving, you will lose all your unsaved progress. Are you sure you want to QUIT and LOSE YOUR PROGRESS?&#xA;&#xA;Type 'ABANDON' to confirm." />
   <string Context="Core DeathReason Abandoned Hope" ID="You abandoned all hope.">▶You abandoned all hope.</string>
   <string Context="Core Abandon Mural" ID="On the =day= of =month=, you abandoned all hope.">▶On the =day= of =month=, you abandoned all hope.</string>
@@ -707,91 +706,99 @@ alone if no match found.
   <string Context="Core SavedGame Index" ID="Indexing saved games...">▶Indexing saved games...</string>
   <string Context="Core No SavedGame" ID="You have no existing saved games.">▶You have no existing saved games.</string>
   <string Context="Delete Save" ID="Are you sure you want to delete this saved game?">▶Are you sure you want to delete this saved game?</string>
-  <string ID="{{r|Error!}}">▶{{r|Error!}}</string>
-  <string ID="=warnings=&#xA;&#xA;Continue anyway?" Value="▶=warnings=&#xA;&#xA;Continue anyway?" />
-  <string ID="{{W|Warning!}}">▶{{W|Warning!}}</string>
-  <string ID="navigate">▶navigate</string>
-  <string ID="select">▶select</string>
-  <string ID="Randomize Selection">▶Randomize Selection</string>
-  <string ID="Reset Selection">▶Reset Selection</string>
-  <string ID="Back">▶Back</string>
-  <string ID="Next">▶Next</string>
-  <string ID="You have unspent attribute points.">▶You have unspent attribute points.</string>
-  <string ID="You have spent too many attribute points!">▶You have spent too many attribute points!</string>
-  <string ID="=stat=: =value=">▶=stat=: =value=</string>
-  <string ID="Attributes">▶Attributes</string>
-  <string ID="Points Remaining: =ap=">▶Points Remaining: =ap=</string>
-  <string ID="{{W|character creation}}">▶{{W|character creation}}</string>
-  <string ID="=bonus.signed= from =source=">▶=bonus.signed= from =source=</string>
-  <string ID="Add a new build code">▶Add a new build code</string>
-  <string ID="Paste build code:">▶Paste build code:</string>
-  <string ID="That code appears to be invalid.">▶That code appears to be invalid.</string>
-  <string ID="That code is already in your library. It's named =buildname=.">▶That code is already in your library. It's named =buildname=.</string>
-  <string ID="Name this build:">▶Name this build:</string>
-  <string ID="Manage Build: =buildname=">▶Manage Build: =buildname=</string>
-  <string ID="Delete Build">▶Delete Build</string>
-  <string ID="Rename Build">▶Rename Build</string>
-  <string Context="build library menu" ID="Options">▶Options</string>
-  <string ID="Build Library">▶Build Library</string>
-  <string ID="Summary">▶Summary</string>
-  <string ID="Re-Randomize Selections">▶Re-Randomize Selections</string>
-  <string ID="Export Code to Clipboard">▶Export Code to Clipboard</string>
-  <string ID="Save Build To Library">▶Save Build To Library</string>
-  <string ID="Build code copied to clipboard.">▶Build code copied to clipboard.</string>
-  <string ID="Select Character Option">▶Select Character Option</string>
-  <string ID="Select Starting Location">▶Select Starting Location</string>
-  <string ID="nonspecific">▶nonspecific</string>
-  <string ID="&lt;from gender&gt;">▶&lt;from gender&gt;</string>
-  <string ID="Name: " Value="▶Name: " />
-  <string ID="&lt;random&gt;">▶&lt;random&gt;</string>
-  <string ID="Gender: " Value="▶Gender: " />
-  <string ID="Pronoun Set: " Value="▶Pronoun Set: " />
-  <string ID="Pet: " Value="▶Pet: " />
-  <string ID="&lt;none&gt;">▶&lt;none&gt;</string>
-  <string ID="Enter name:">▶Enter name:</string>
-  <string ID="&lt;create new&gt;">▶&lt;create new&gt;</string>
-  <string ID="Choose Gender">▶Choose Gender</string>
-  <string ID="Select Base Gender">▶Select Base Gender</string>
-  <string ID="Choose Pronoun Set">▶Choose Pronoun Set</string>
-  <string ID="Select Base Set">▶Select Base Set</string>
-  <string ID="Choose Pet">▶Choose Pet</string>
-  <string ID="Customize">▶Customize</string>
-  <string ID="{{C|-2 License Tier&#xA;+1 Toughness}}" Value="▶{{C|-2 License Tier&#xA;+1 Toughness}}" />
-  <string ID="Invalid choice selected">▶Invalid choice selected</string>
-  <string ID="Cybernetics">▶Cybernetics</string>
-  <string ID="It's you.">▶It's you.</string>
-  <string ID="Initializing protocols...">▶Initializing protocols...</string>
-  <string ID="Hardening math...">▶Hardening math...</string>
-  <string ID="Planting world seeds...">▶Planting world seeds...</string>
-  <string ID="Generating topography...">▶Generating topography...</string>
-  <string ID="Resolving faction relationships...">▶Resolving faction relationships...</string>
-  <string ID="Adding player to world...">▶Adding player to world...</string>
-  <string ID="Starting game!">▶Starting game!</string>
-  <string ID="No game mode selected.">▶No game mode selected.</string>
-  <string ID="Start a new game with one button.">▶Start a new game with one button.</string>
-  <string ID="Quickstart">▶Quickstart</string>
-  <string ID="Choose Game Mode">▶Choose Game Mode</string>
-  <string ID="[Debug] Quickstart">▶[Debug] Quickstart</string>
-  <string ID="{{important|=genotype=}} genotype">▶{{important|=genotype=}} genotype</string>
-  <string ID="Choose Genotype">▶Choose Genotype</string>
-  <string ID="You have unspent mutation points.">▶You have unspent mutation points.</string>
-  <string ID="You have spent too many mutation points.">▶You have spent too many mutation points.</string>
-  <string ID="=mutation= x=count=">▶=mutation= x=count=</string>
-  <string ID="none">▶none</string>
-  <string Context="Character Creation - Mutation screen title" ID="Mutations">▶Mutations</string>
-  <string Context="mutation variant available" ID="=displayName= [{{W|V}}]">▶=displayName= [{{W|V}}]</string>
-  <string ID="[=numberselected=]">▶[=numberselected=]</string>
-  <string ID="=checkbox=[=nodecost=]">▶=checkbox=[=nodecost=]</string>
-  <string ID="Points Remaining: =mp=">▶Points Remaining: =mp=</string>
-  <string ID="Choose Variant">▶Choose Variant</string>
-  <string ID="Choose variant">▶Choose variant</string>
-  <string ID="Pregens">▶Pregens</string>
-  <string ID="You embark for the caves of Qud.">▶You embark for the caves of Qud.</string>
-  <string ID="{{important|=subtype=}} =singularname=">▶{{important|=subtype=}} =singularname=</string>
-  <string ID="choose subtype">▶choose subtype</string>
-  <string ID="subtype">▶subtype</string>
-  <string ID=":=subtypetitle=:">▶:=subtypetitle=:</string>
+  <string Context="Chargen EmbarkBuilder Error Popup Title" ID="{{r|Error!}}">▶{{r|Error!}}</string>
+  <string Context="Chargen EmbarkBuilder Warnings Popup Message" ID="=warnings=&#xA;&#xA;Continue anyway?" Value="▶=warnings=&#xA;&#xA;Continue anyway?" />
+  <string Context="Chargen EmbarkBuilder Warnings Popup Title" ID="{{W|Warning!}}">▶{{W|Warning!}}</string>
+  <string Context="Chargen EmbarkBuilder MenuOption Randomize" ID="Randomize Selection">▶Randomize Selection</string>
+  <string Context="Chargen EmbarkBuilder MenuOption Reset" ID="Reset Selection">▶Reset Selection</string>
+  <string Context="Chargen EmbarkBuilder BigHeader" ID="{{W|character creation}}">▶{{W|character creation}}</string>
+  <string Context="Chargen EmbarkBuilder MenuOption Back" ID="Back">▶Back</string>
+  <string Context="Chargen EmbarkBuilder MenuOption Next" ID="Next">▶Next</string>
+  <string Context="Chargen Attributes DataWarning Unspent" ID="You have unspent attribute points.">▶You have unspent attribute points.</string>
+  <string Context="Chargen Attributes DataError Overspent" ID="You have spent too many attribute points!">▶You have spent too many attribute points!</string>
+  <string Context="Chargen Attributes SummaryBlockData Statline" ID="=stat.title=: =value=">▶=stat.title=: =value=</string>
+  <string Context="Chargen Attributes SummaryBlockData Title" ID="Attributes">▶Attributes</string>
+  <string Context="Chargen Attributes Points Remaining" ID="Points Remaining: =ap=">▶Points Remaining: =ap=</string>
+  <string Context="Chargen Attributes Breadcrumb" ID="Attributes">▶Attributes</string>
+  <string Context="Chargen Attributes Stat Bonus Line" ID="=bonus.signed= from =source=">▶=bonus.signed= from =source=</string>
+  <string Context="Chargen BuildLibrary Title add new" ID="Add a new build code">▶Add a new build code</string>
+  <string Context="Chargen BuildLibrary Popup paste build code" ID="Paste build code:">▶Paste build code:</string>
+  <string Context="Chargen BuildLibrary Popup invalid code" ID="That code appears to be invalid.">▶That code appears to be invalid.</string>
+  <string Context="Chargen BuildLibrary Popup code exists" ID="That code is already in your library. It's named =buildname=.">▶That code is already in your library. It's named =buildname=.</string>
+  <string Context="Chargen BuildLibrary Popup name build" ID="Name this build:">▶Name this build:</string>
+  <string Context="Chargen BuildLibrary Build Popup manage build" ID="Manage Build: =buildname=">▶Manage Build: =buildname=</string>
+  <string Context="Chargen BuildLibrary Build Option delete" ID="Delete Build">▶Delete Build</string>
+  <string Context="Chargen BuildLibrary Build Option rename" ID="Rename Build">▶Rename Build</string>
+  <string Context="Chargen BuildLibrary Popup Rename" ID="Name this build:">▶Name this build:</string>
+  <string Context="Chargen BuildLibrary MenuOption Options" ID="Options">▶Options</string>
+  <string Context="Chargen BuildLibrary Breadcrumb" ID="Build Library">▶Build Library</string>
+  <string Context="Chargen BuildSummary Breadcrumb" ID="Summary">▶Summary</string>
+  <string Context="Chargen BuildSummary MenuOption Re-Randomize" ID="Re-Randomize Selections">▶Re-Randomize Selections</string>
+  <string Context="Chargen BuildSummary MenuOption Export Code" ID="Export Code to Clipboard">▶Export Code to Clipboard</string>
+  <string Context="Chargen BuildSummary MenuOption Save Build" ID="Save Build To Library">▶Save Build To Library</string>
+  <string Context="Chargen BuildSummary Popup build copied" ID="Build code copied to clipboard.">▶Build code copied to clipboard.</string>
+  <string Context="Chargen Chartype Breadcrumb" ID="Select Character Option">▶Select Character Option</string>
+  <string Context="Chargen ChooseStartingLocation Breadcrumb" ID="Select Starting Location">▶Select Starting Location</string>
+  <string Context="Chargen CustomizeCharacter Option Gender nonspecific" ID="nonspecific">▶nonspecific</string>
+  <string Context="Chargen CustomizeCharacter Option PronounSet from gender" ID="&lt;from gender&gt;">▶&lt;from gender&gt;</string>
+  <string Context="Chargen CustomizeCharacter Option random" ID="&lt;random&gt;">▶&lt;random&gt;</string>
+  <string Context="Chargen CustomizeCharacter Option none" ID="&lt;none&gt;">▶&lt;none&gt;</string>
+  <string Context="Chargen CustomizeCharacter Option create new" ID="&lt;create new&gt;">▶&lt;create new&gt;</string>
+  <string Context="Chargen CustomizeCharacter PrefixMenuOption Name" ID="Name: " Value="▶Name: " />
+  <string Context="Chargen CustomizeCharacter PrefixMenuOption Gender" ID="Gender: " Value="▶Gender: " />
+  <string Context="Chargen CustomizeCharacter PrefixMenuOption PronounSet" ID="Pronoun Set: " Value="▶Pronoun Set: " />
+  <string Context="Chargen CustomizeCharacter PrefixMenuOption Pet" ID="Pet: " Value="▶Pet: " />
+  <string Context="Chargen CustomizeCharacter Popup Name" ID="Enter name:">▶Enter name:</string>
+  <string Context="Chargen CustomizeCharacter Gender Popup" ID="Choose Gender">▶Choose Gender</string>
+  <string Context="Chargen CustomizeCharacter Gender Popup Base" ID="Select Base Gender">▶Select Base Gender</string>
+  <string Context="Chargen CustomizeCharacter PronounSet Popup" ID="Choose Pronoun Set">▶Choose Pronoun Set</string>
+  <string Context="Chargen CustomizeCharacter PronounSet Popup Base" ID="Select Base Set">▶Select Base Set</string>
+  <string Context="Chargen CustomizeCharacter Pet Popup" ID="Choose Pet">▶Choose Pet</string>
+  <string Context="Chargen CustomizeCharacter Breadcrumb" ID="Customize">▶Customize</string>
+  <string Context="Chargen Cybernetics Description" ID="=blueprint.displayName= (=slot=)">▶=blueprint.displayName= (=slot=)</string>
+  <string Context="Chargen Cybernetics Long Description Default" ID="{{C|-2 License Tier&#xA;+1 Toughness}}" Value="▶{{C|-2 License Tier&#xA;+1 Toughness}}" />
+  <string Context="Chargen Cybernetics Long Description" ID="=blueprint.description.short=&#xA;&#xA;{{rules|=blueprint.part:CyberneticsBaseItem:BehaviorDescription=}}" Value="▶=blueprint.description.short=&#xA;&#xA;{{rules|=blueprint.part:CyberneticsBaseItem:BehaviorDescription=}}" />
+  <string Context="Chargen Cybernetics DataError Invalid" ID="Invalid choice selected">▶Invalid choice selected</string>
+  <string Context="Chargen Cybernetics SummaryBlockData Title" ID="Cybernetics">▶Cybernetics</string>
+  <string Context="Chargen Cybernetics Menu Title" ID="Cybernetics">▶Cybernetics</string>
+  <string Context="Chargen Cybernetics PrefixMenuOption checkbox" ID="=selected.checkbox.basic=">▶=selected.checkbox.basic=</string>
+  <string Context="Chargen Cybernetics Breadcrumb" ID="Cybernetics">▶Cybernetics</string>
+  <string Context="Chargen GameBoot Player Short Description" ID="It's you.">▶It's you.</string>
+  <string Context="Chargen GameBoot Progress" ID="Initializing protocols...">▶Initializing protocols...</string>
+  <string Context="Chargen GameBoot Progress" ID="Hardening math...">▶Hardening math...</string>
+  <string Context="Chargen GameBoot Progress" ID="Planting world seeds...">▶Planting world seeds...</string>
+  <string Context="Chargen GameBoot Progress" ID="Generating topography...">▶Generating topography...</string>
+  <string Context="Chargen GameBoot Progress" ID="Resolving faction relationships...">▶Resolving faction relationships...</string>
+  <string Context="Chargen GameBoot Progress" ID="Adding player to world...">▶Adding player to world...</string>
+  <string Context="Chargen GameBoot Progress" ID="Starting game!">▶Starting game!</string>
+  <string Context="Chargen Gamemode DataError Unselected" ID="No game mode selected.">▶No game mode selected.</string>
+  <string Context="Chargen Gamemode Quickstart Description" ID="Start a new game with one button.">▶Start a new game with one button.</string>
+  <string Context="Chargen Gamemode Quickstart Title" ID="Quickstart">▶Quickstart</string>
+  <string Context="Chargen Gamemode Breadcrumb" ID="Choose Game Mode">▶Choose Game Mode</string>
+  <string Context="Chargen Gamemode MenuOption Quickstart" ID="[Debug] Quickstart">▶[Debug] Quickstart</string>
+  <string Context="Chargen Genotype Stat Bonus Source Description" ID="{{important|=genotype=}} genotype">▶{{important|=genotype=}} genotype</string>
+  <string Context="Chargen Genotype Breadcrumb" ID="Choose Genotype">▶Choose Genotype</string>
+  <string Context="Chargen Mutations DataWarning Unspent" ID="You have unspent mutation points.">▶You have unspent mutation points.</string>
+  <string Context="Chargen Mutations DataError Overspent" ID="You have spent too many mutation points.">▶You have spent too many mutation points.</string>
+  <string Context="Chargen Mutations SummaryBlockData Row" ID="=mutation==count.x.multiple|spaceBefore=">▶=mutation==count.x.multiple|spaceBefore=</string>
+  <string Context="Chargen Mutations SummaryBlockData empty" ID="none">▶none</string>
+  <string Context="Chargen Mutations Display Title" ID="Mutations">▶Mutations</string>
+  <string Context="Chargen Mutations Format variant available" ID="=displayName= [{{W|V}}]">▶=displayName= [{{W|V}}]</string>
+  <string Context="Chargen Mutations Prefix Checkbox (max 1)" ID="=selected.checkbox.basic=">▶=selected.checkbox.basic=</string>
+  <string Context="Chargen Mutations Prefix Numberbox" ID="=selected.numberbox=">▶=selected.numberbox=</string>
+  <string Context="Chargen Mutations Prefix Finalizer" ID="=box==nodecost.numberbox.color=">▶=box==nodecost.numberbox.color=</string>
+  <string Context="Chargen Mutations Points Remaining" ID="Points Remaining: =mp=">▶Points Remaining: =mp=</string>
+  <string Context="Chargen Mutations MenuOption Variant" ID="Choose Variant">▶Choose Variant</string>
+  <string Context="Chargen Mutations Variant Popup Title" ID="Choose variant">▶Choose variant</string>
+  <string Context="Chargen Pregen Breadcrumb" ID="Pregens">▶Pregens</string>
+  <string Context="Chargen Boot Popup" ID="You embark for the caves of Qud.">▶You embark for the caves of Qud.</string>
+  <string Context="Chargen Subtype Stat Bonus Source Description" ID="{{important|=subtype=}} =singularname=">▶{{important|=subtype=}} =singularname=</string>
+  <string Context="Chargen Subtype SingularTitle Default" ID="subtype">▶subtype</string>
+  <string Context="Chargen Subtype Title Default" ID="choose subtype">▶choose subtype</string>
+  <string Context="Chargen Subtype Title" ID=":=subtypetitle=:">▶:=subtypetitle=:</string>
   <string Context="Chargen Subtype Breadcrumb" ID="=subtypeSingularTitle|capitalize=">▶=subtypeSingularTitle|capitalize=</string>
+  <string Context="Chargen Attribute Selection Modifier Text" ID="[=modifier=]">▶[=modifier=]</string>
+  <string Context="Chargen Attribute Selection Title" ID="[=apToRaise=pts]">▶[=apToRaise=pts]</string>
   <string Context="Naming Expand Property Spice" ID="=spice#query|title=">▶=spice#query|title=</string>
   <string Context="OngoingAction/autoActDescription (verb gerund)" ID="acting">▶acting</string>
   <string Context="direction.expanded" ID="north">▶north</string>
@@ -958,7 +965,7 @@ alone if no match found.
   <string Context="Quest UI Step Finished" ID="=glyph:Check= {{white|=step.optional.if:Optional|colonAfter|spaceAfter==step.name=}}">▶=glyph:Check= {{white|=step.optional.if:Optional|colonAfter|spaceAfter==step.name=}}</string>
   <string Context="Quest UI Step Open" ID="=glyph:Bullet= {{white|=step.optional.if:Optional|colonAfter|spaceAfter==step.name=}}">▶=glyph:Bullet= {{white|=step.optional.if:Optional|colonAfter|spaceAfter==step.name=}}</string>
   <string Context="Quest UI Quest Bonus Reward Line" ID="Bonus reward for completing this quest by level &amp;C=level=&amp;y.">▶Bonus reward for completing this quest by level &amp;C=level=&amp;y.</string>
-  <string ID=" =commandKeyConsole:Cancel= to exit " Value="▶ =commandKeyConsole:Cancel= to exit " />
+  <string Context="Quest UI Quest Cancel Line" ID=" =commandKeyConsole:Cancel= to exit " Value="▶ =commandKeyConsole:Cancel= to exit " />
   <string Context="Skill UI Has Power Has SP" ID="{{W|=skill.name=}} [{{C|=skill.cost=}}sp]">▶{{W|=skill.name=}} [{{C|=skill.cost=}}sp]</string>
   <string Context="Skill UI Has Power Lacks SP" ID="{{W|=skill.name=}} [{{R|=skill.cost=}}sp]">▶{{W|=skill.name=}} [{{R|=skill.cost=}}sp]</string>
   <string Context="Skill UI Lacks Power Has SP" ID="{{w|=skill.name=}} [{{C|=skill.cost=}}sp]">▶{{w|=skill.name=}} [{{C|=skill.cost=}}sp]</string>
@@ -999,7 +1006,7 @@ alone if no match found.
   <string Context="BaseScreen GetScreenName" ID="Journal">▶Journal</string>
   <string Context="BaseScreen GetScreenName" ID="Tinkering">▶Tinkering</string>
   <string Context="BaseScreen GetScreenName" ID="Character">▶Character</string>
-  <string ID="&lt; =commandKeyShort:Page Left= =prevPage= | =nextPage= =commandKeyShort:Page Right= &gt;">▶&lt; =commandKeyShort:Page Left= =prevPage= | =nextPage= =commandKeyShort:Page Right= &gt;</string>
+  <string Context="BaseScreen Next-Prev Page Bar" ID="&lt; =commandKeyShort:Page Left= =prevPage= | =nextPage= =commandKeyShort:Page Right= &gt;">▶&lt; =commandKeyShort:Page Left= =prevPage= | =nextPage= =commandKeyShort:Page Right= &gt;</string>
   <string Context="JournalMapNote Category" ID="Baetyls">▶Baetyls</string>
   <string Context="JournalMapNote Category" ID="General">▶General</string>
   <string Context="JournalMapNote Category" ID="Merchants">▶Merchants</string>
@@ -1324,6 +1331,7 @@ alone if no match found.
   <string Context="Firefighting On Self" ID="=subject.Does:beat= at the flames with =subject.its= =hands.name=!">▶=subject.Does:beat= at the flames with =subject.its= =hands.name=!</string>
   <string Context="Firefighting On Other" ID="=subject.Does:beat= at the flames on =object.the.name:withoutTitles= with =subject.its= =hands.name=!">▶=subject.Does:beat= at the flames on =object.the.name:withoutTitles= with =subject.its= =hands.name=!</string>
   <string Context="Generic nothing error popup message" ID="Nothing happens.">▶Nothing happens.</string>
+  <string Context="Statistic Modification" ID="=subject.It= =subject.ternaryVerb#positive:gain:lose:afterpronoun= {{rules|=value=}} =stat.name=!">▶=subject.It= =subject.ternaryVerb#positive:gain:lose:afterpronoun= {{rules|=value=}} =stat.name=!</string>
   <string Context="Saving Throw Vs Axe" ID="Axe skills">▶Axe skills</string>
   <string Context="Saving Throw Vs Beam" ID="energy beams">▶energy beams</string>
   <string Context="Saving Throw Vs Blade" ID="bladed weapons">▶bladed weapons</string>
@@ -1419,6 +1427,7 @@ alone if no match found.
   <string Context="Stop Running" ID="=subject.Does:stop= =message=.">▶=subject.Does:stop= =message=.</string>
   <string Context="CellTeleport default arriveVerb" ID="appear">▶appear</string>
   <string Context="CellTeleport default LeaveVerb" ID="disappear">▶disappear</string>
+  <string Context="GameObject Fail Popup Frozen" ID="You are frozen solid!">▶You are frozen solid!</string>
   <string Context="GameObject DisplayName Unknown" ID="&lt;unknown&gt;">▶&lt;unknown&gt;</string>
   <string Context="RandomlySpendPoints spentPointsReport fragment" ID="=subject.Poss:base rank= in =mutation.name= increases to =mutation.baseLevel|rules=">▶=subject.Poss:base rank= in =mutation.name= increases to =mutation.baseLevel|rules=</string>
   <string Context="spotmessage.defaultVerb" ID="see">▶see</string>
@@ -1435,6 +1444,7 @@ alone if no match found.
   <string Context="ConfirmMoveInto LiquidPool Up or Down" ID="There =pool.is= =pool.a.name= that way. Do you want to go =direction.toward= and start swimming?">▶There =pool.is= =pool.a.name= that way. Do you want to go =direction.toward= and start swimming?</string>
   <string Context="ConfirmMoveInto LiquidPool" ID="There =pool.is= a dangerous-looking =pool.short= that way. Move =direction.expandedDirection= again to enter =pool.them= and start swimming.">▶There =pool.is= a dangerous-looking =pool.short= that way. Move =direction.expandedDirection= again to enter =pool.them= and start swimming.</string>
   <string Context="ConfirmMoveInto LiquidPool" ID="There =pool.is= =pool.a.name= that way. Move =direction.expandedDirection= again to enter =pool.them= and start swimming.">▶There =pool.is= =pool.a.name= that way. Move =direction.expandedDirection= again to enter =pool.them= and start swimming.</string>
+  <string Context="Describe Unequip Message" ID="=items.AndList:definiteArticles:asPossessed= =items.pluralize:was:were= unequipped.">▶=items.AndList:definiteArticles:asPossessed= =items.pluralize:was:were= unequipped.</string>
   <string Context="Customize pronouns popup 'what'" ID="pronoun set">▶pronoun set</string>
   <string Context="RandomAltarBaetyl Mod Demand Prefix Name" ID="=number.cardinal= =mod.name= =number.pluralize:item=">▶=number.cardinal= =mod.name= =number.pluralize:item=</string>
   <string Context="RandomAltarBaetyl Mod Demand Suffix Name" ID="=number.cardinal= =number.pluralize:item= =mod.name=">▶=number.cardinal= =number.pluralize:item= =mod.name=</string>
@@ -1591,6 +1601,7 @@ alone if no match found.
   <string Context="activated ability classes" ID="Tinkering">▶Tinkering</string>
   <string Context="activated ability classes" ID="Tonics">▶Tonics</string>
   <string Context="activated ability classes" ID="Vehicle">▶Vehicle</string>
+  <string Context="ActivatedAbilities Popup Text CannotDoOnWorldMap" ID="You cannot do that on the world map.">▶You cannot do that on the world map.</string>
   <string Context="Combat Player Miss Message (terse)" ID="You miss!">▶You miss!</string>
   <string Context="Combat Player Miss Message (with weapon)" ID="{{r|You miss with =subject.possessive#weapon=!}} [=hitResult= vs =dv=]">▶{{r|You miss with =subject.possessive#weapon=!}} [=hitResult= vs =dv=]</string>
   <string Context="Combat Player Miss Message (no weapon)" ID="{{r|You miss!}} [=hitResult= vs =dv=]">▶{{r|You miss!}} [=hitResult= vs =dv=]</string>
@@ -1603,6 +1614,7 @@ alone if no match found.
   <string Context="Joppa Zealot Yells" ID="The beauty! My stomach is in stirs.">▶The beauty! My stomach is in stirs.</string>
   <string Context="Joppa Zealot Yells" ID="Is it a dybbuk that possesses the robot? It should be sacred and still.">▶Is it a dybbuk that possesses the robot? It should be sacred and still.</string>
   <string Context="Joppa Zealot Yell" ID="=subject.Does:yell=, {{W|'=message='}}">▶=subject.Does:yell=, {{W|'=message='}}</string>
+  <string Context="Slumberling sleepy" ID="=subject.Does:lapse= back into hibernation">▶=subject.Does:lapse= back into hibernation</string>
   <string Context="XP Gain Message" ID="You gain =amount|color:C= XP!">▶You gain =amount|color:C= XP!</string>
   <string Context="GivesRep Water-sib Description Postfix" ID="You are water-bonded with =object.objective=.">▶You are water-bonded with =object.objective=.</string>
   <string Context="GivesRep Death Curse (fragment, appends PlayerReputation Modify Fragments)" ID="You violated the covenant of the water ritual and killed your bonded kith. You are cursed.&#xA;&#xA;" Value="▶You violated the covenant of the water ritual and killed your bonded kith. You are cursed.&#xA;&#xA;" />
@@ -1758,6 +1770,16 @@ alone if no match found.
   <string Context="Hookah Action" ID="smoke">▶smoke</string>
   <string Context="Hookah Fail NoWater" ID="=object.Does:need= water in =subject.them=.">▶=object.Does:need= water in =subject.them=.</string>
   <string Context="Hookah Puffs" ID="=subject.Does:take= a puff on =object.the.name=.">▶=subject.Does:take= a puff on =object.the.name=.</string>
+  <string Context="RandomFigurine Material DisplayName" ID="copper">▶copper</string>
+  <string Context="RandomFigurine Material DisplayName" ID="silver">▶silver</string>
+  <string Context="RandomFigurine Material DisplayName" ID="gold">▶gold</string>
+  <string Context="RandomFigurine Material DisplayName" ID="agate">▶agate</string>
+  <string Context="RandomFigurine Material DisplayName" ID="topaz">▶topaz</string>
+  <string Context="RandomFigurine Material DisplayName" ID="jasper">▶jasper</string>
+  <string Context="RandomFigurine Material DisplayName" ID="amethyst">▶amethyst</string>
+  <string Context="RandomFigurine Material DisplayName" ID="sapphire">▶sapphire</string>
+  <string Context="RandomFigurine Material DisplayName" ID="emerald">▶emerald</string>
+  <string Context="RandomFigurine Material DisplayName" ID="peridot">▶peridot</string>
   <string Context="Torch Burnout MessageLog" ID="Your torch burns out!">▶Your torch burns out!</string>
   <string Context="Torch Action" ID="extinguish">▶extinguish</string>
   <string Context="Torch Action" ID="light">▶light</string>
@@ -1861,11 +1883,11 @@ alone if no match found.
   <string Context="Liquid Volume - pour menu title" ID="Where do you want to pour =object.the.name=?">▶Where do you want to pour =object.the.name=?</string>
   <string Context="Liquid Volume - pour menu option" ID="Pour it into another container.">▶Pour it into another container.</string>
   <string Context="Liquid Volume - pour menu option" ID="Pour it nearby.">▶Pour it nearby.</string>
-  <string Context="Liquid Volume - pour menu option" ID="Pour it on =object.itself=.">▶Pour it on =object.itself=.</string>
+  <string Context="Liquid Volume - pour menu option (on yourself)" ID="Pour it on =subject.itself=.">▶Pour it on =subject.itself=.</string>
   <string Context="Liquid Volume - Pour target destination picker title" ID="Pour">▶Pour</string>
-  <string Context="Liquid Volume - pour on self message" ID="=amount.Things:dram= of =volume.liquid.name= pours out all over you!">▶=amount.Things:dram= of =volume.liquid.name= pours out all over you!</string>
-  <string Context="Liquid Volume - poured out over" ID="=amount.Things:dram= of =volume.liquid.name= pours out all over =subject.the.name=!">▶=amount.Things:dram= of =volume.liquid.name= pours out all over =subject.the.name=!</string>
-  <string Context="Liquid Volume - poured out message" ID="=subject.Does:pour= =amount.Things:dram= of =volume.liquid.name= out">▶=subject.Does:pour= =amount.Things:dram= of =volume.liquid.name= out</string>
+  <string Context="Liquid Volume - pour on self message" ID="=amount.things:dram= of =volume.liquid.name= pours out all over you!">▶=amount.things:dram= of =volume.liquid.name= pours out all over you!</string>
+  <string Context="Liquid Volume - poured out over" ID="=amount.things:dram= of =volume.liquid.name= pours out all over =subject.the.name=!">▶=amount.things:dram= of =volume.liquid.name= pours out all over =subject.the.name=!</string>
+  <string Context="Liquid Volume - poured out message" ID="=subject.Does:pour= =amount.things:dram= of =volume.liquid.name= out">▶=subject.Does:pour= =amount.things:dram= of =volume.liquid.name= out</string>
   <string Context="Liquid Volume - pour but empty error" ID="There's nothing in =object.the.name= to pour.">▶There's nothing in =object.the.name= to pour.</string>
   <string Context="Liquid Volume - Warn fill unowned" ID="=subject.IndicativeDistal= =subject.is= not owned by you. Are you sure you want to take from =subject.them=?">▶=subject.IndicativeDistal= =subject.is= not owned by you. Are you sure you want to take from =subject.them=?</string>
   <string Context="Liquid Volume - no containers to fill" ID="You have no containers to fill.">▶You have no containers to fill.</string>
@@ -2008,8 +2030,8 @@ alone if no match found.
   <string ID="=squareSize=x=squareSize=">▶=squareSize=x=squareSize=</string>
   <string ID="=subject.Does:emit= an electromagnetic pulse.">▶=subject.Does:emit= an electromagnetic pulse.</string>
   <string Context="EMP Ability Name" ID="Emit Pulse">▶Emit Pulse</string>
-  <string ID="Your =part.ordinalName= =part.is= too damaged to do that!">▶Your =part.ordinalName= =part.is= too damaged to do that!</string>
-  <string ID="Your =bodyPartType|lower= is too damaged to do that!">▶Your =bodyPartType|lower= is too damaged to do that!</string>
+  <string Context="Mutation Use Fail BodyPart Too Damaged" ID="Your =part.ordinalName= =part.is= too damaged to do that!">▶Your =part.ordinalName= =part.is= too damaged to do that!</string>
+  <string Context="Mutation Use Fail BodyPart Too Damaged (null)" ID="Your =bodyPartType|lower= is too damaged to do that!">▶Your =bodyPartType|lower= is too damaged to do that!</string>
   <string Context="FlamingRay Chargen Variant" ID="=mutation.name= (=bodyPartType=)">▶=mutation.name= (=bodyPartType=)</string>
   <string Context="Flaming Ray Targeting Screen Title" ID="Flaming Ray">▶Flaming Ray</string>
   <string Context="FlamingRay emit" ID="=subject.Does:emit= a flaming ray from =subject.its= =part.ordinalName=!">▶=subject.Does:emit= a flaming ray from =subject.its= =part.ordinalName=!</string>
@@ -2083,7 +2105,6 @@ alone if no match found.
   <string Context="Wings Failure (EMPed robot wings)" ID="=subject.Poss#wingsBlueprint|strip= will not move!">▶=subject.Poss#wingsBlueprint|strip= will not move!</string>
   <string Context="Wings body part description default" ID="Worn around Wings">▶Worn around Wings</string>
   <string ID="=subject.Does:are= shamed by =subject.possessive= reflection!">▶=subject.Does:are= shamed by =subject.possessive= reflection!</string>
-  <string ID="You cannot use =mutation.name= on the world map.">▶You cannot use =mutation.name= on the world map.</string>
   <string ID="=subject.Does:flip= polarity.">▶=subject.Does:flip= polarity.</string>
   <string Context="ErosTeleportaion FailMessage" ID="You can only teleport to a place you have seen before!">▶You can only teleport to a place you have seen before!</string>
   <string Context="ErosTeleportation FailMessage" ID="You may only teleport into an empty square!">▶You may only teleport into an empty square!</string>
@@ -2158,6 +2179,9 @@ alone if no match found.
   <string Context="Physics (Inventory) Category" ID="Trinkets">▶Trinkets</string>
   <string Context="Physics (Inventory) Category" ID="Unknown">▶Unknown</string>
   <string Context="Physics (Inventory) Category" ID="Water Containers">▶Water Containers</string>
+  <string Context="Temporary - Disappearing combat log message" ID="=subject.Does:disappear==subject.to.the.direction|spaceBefore=.">▶=subject.Does:disappear==subject.to.the.direction|spaceBefore=.</string>
+  <string Context="Temporary - Death Reason" ID="Faded from existence.">▶Faded from existence.</string>
+  <string Context="Temporary - Stabilized" ID="=subject.Does:flicker= and =subject.possessive= worldline through spacetime snaps back to its canonical path. =subject.The.name= =subject.verb:vanish=.">▶=subject.Does:flicker= and =subject.possessive= worldline through spacetime snaps back to its canonical path. =subject.The.name= =subject.verb:vanish=.</string>
   <string Context="Dismember Chop With Weapon" ID="=attacker.Possessive#weapon= =weapon.verb:chop= off =defender.possessive#limb=!">▶=attacker.Possessive#weapon= =weapon.verb:chop= off =defender.possessive#limb=!</string>
   <string Context="Dismember Chop Without Weapon" ID="=attacker.Does:chop= off =defender.possessive#limb=!">▶=attacker.Does:chop= off =defender.possessive#limb=!</string>
   <string Context="Dismember ParticleText" ID="*dismembered!*">▶*dismembered!*</string>
@@ -2205,7 +2229,7 @@ alone if no match found.
   <string Context="Campfire CookFromIngredients remaining, selected &lt; max" ID="&#xA;{{y|[up to =n= remaining]}}" Value="▶&#xA;{{y|[up to =n= remaining]}}" />
   <string Context="Campfire CookFromIngredients remaining, selected = max" ID="&#xA;{{y|[0 remaining]}}" Value="▶&#xA;{{y|[0 remaining]}}" />
   <string Context="Campfire CookFromIngredients - select ingredients cook action" ID="{{W|Cook with the {{=color=|=n=}} selected ingredients.}}=remaining=">▶{{W|Cook with the {{=color=|=n=}} selected ingredients.}}=remaining=</string>
-  <string Context="Campfire CookFromIngredients ingredient selector menu" ID="=selected.checkbox=  =name= {{{{K|x=count=}}}}">▶=selected.checkbox=  =name= {{{{K|x=count=}}}}</string>
+  <string Context="Campfire CookFromIngredients ingredient selector menu" ID="=selected.checkbox.color=  =name= {{{{K|x=count=}}}}">▶=selected.checkbox.color=  =name= {{{{K|x=count=}}}}</string>
   <string Context="Campfire CookFromIngredients ingredient selector menu title" ID="Choose ingredients to cook with.">▶Choose ingredients to cook with.</string>
   <string Context="Campfire CookFromIngredients Inspired Picker Title" ID="You let inspiration guide you toward a mouthwatering dish.">▶You let inspiration guide you toward a mouthwatering dish.</string>
   <string Context="Campfire CookFromIngredients Inspired Recipe" ID="You create a new recipe for {{|=recipe.name=}}!">▶You create a new recipe for {{|=recipe.name=}}!</string>
@@ -2328,7 +2352,6 @@ alone if no match found.
   <string Context="Rebuke Robot failure" ID="Your argument does not compute.">▶Your argument does not compute.</string>
   <string Context="Rebuke Robot neutralize" ID="=subject.Does:wander= away disinterestedly">▶=subject.Does:wander= away disinterestedly</string>
   <string Context="Camp Fail Hostiles" ID="You can't cook with hostiles nearby.">▶You can't cook with hostiles nearby.</string>
-  <string Context="Camp Fail WorldMap" ID="You can't cook on the world map.">▶You can't cook on the world map.</string>
   <string Context="Camp Fail Already Here" ID="There =campfire.is= already =campfire.a.name= here.">▶There =campfire.is= already =campfire.a.name= here.</string>
   <string Context="Campfire Cannot Already Question" ID="There =campfire.is= already =campfire.a.name= =subject.direction#campfire=. Do you want to go to =campfire.them=?">▶There =campfire.is= already =campfire.a.name= =subject.direction#campfire=. Do you want to go to =campfire.them=?</string>
   <string Context="Campfire Cannot Other Zone" ID="You can only build a campfire in the same zone you are in.">▶You can only build a campfire in the same zone you are in.</string>
@@ -2432,8 +2455,10 @@ alone if no match found.
   <string Context="keybind" ID="unknown key">▶unknown key</string>
   <string Context="keybind" ID="{{W|Alt}}">▶{{W|Alt}}</string>
   <string Context="Dimension unset" ID="an uncharted dimension">▶an uncharted dimension</string>
-  <string Context="checkbox (checked)" ID="{{y|[{{G|■}}]}}">▶{{y|[{{G|■}}]}}</string>
-  <string Context="checkbox (unchecked)" ID="{{y|[ ]}}">▶{{y|[ ]}}</string>
+  <string Context="checkbox basic (checked)" ID="[■]">▶[■]</string>
+  <string Context="checkbox basic (unchecked)" ID="[ ]">▶[ ]</string>
+  <string Context="checkbox with color (checked)" ID="{{y|[{{G|■}}]}}">▶{{y|[{{G|■}}]}}</string>
+  <string Context="checkbox with color (unchecked)" ID="{{y|[ ]}}">▶{{y|[ ]}}</string>
   <string Context="line expander (expanded)" ID="[-]">▶[-]</string>
   <string Context="line expander (collapsed)" ID="[+]">▶[+]</string>
   <string Context="Calendar Year noera" ID="=year=">▶=year=</string>
@@ -2459,6 +2484,9 @@ alone if no match found.
   <string Context="ProperAndList replacer - join proper and regular names" ID=" and " Value="▶ and " />
   <string Context="ProperAndList replacer - regular names" ID="=owner.its= =regularNames.andList=">▶=owner.its= =regularNames.andList=</string>
   <string Context="damage penetrations" ID="(x=number.toString=)">▶(x=number.toString=)</string>
+  <string Context="numberbox (zero/empty)" ID="[ ]">▶[ ]</string>
+  <string Context="numberbox (value)" ID="[=num=]">▶[=num=]</string>
+  <string Context="numberbox color" ID="[=num|color#shade=]">▶[=num|color#shade=]</string>
   <string Context="Village Warden friend reason" ID="defending their village">▶defending their village</string>
   <string Context="Village Warden Conversation dialog" ID="=spice:villages.warden.introDialog.!random=">▶=spice:villages.warden.introDialog.!random=</string>
   <string Context="Village Warden Conversation response" ID="Live and drink.">▶Live and drink.</string>

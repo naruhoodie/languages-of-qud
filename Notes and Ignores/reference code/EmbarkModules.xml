@@ -54,7 +54,7 @@
 				<icon Tile="Items/sw_clockthing.bmp" Foreground="w" Detail="W"></icon>
 				<description>
 					{{c|&#x2219;}} One chance with a fixed character and world seed.
-					{{c|&#x2219;}} Currently in day {{W|{day_of_year}}} of {{W|{year}}}.
+					{{c|&#x2219;}} Currently in day {{W|=now.dayOfYear=}} of {{W|=now.year=}}.
 				</description>
 				<stringgamestate Name="GameMode" Value="Daily"></stringgamestate>
 			</mode>

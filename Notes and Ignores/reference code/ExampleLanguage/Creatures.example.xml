@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.12
+Caves of Qud - Generated Localizable XML 2.0.212.13
 
 <objects>
 
@@ -8,7 +8,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
 
     <part Name="Key">
 
-    <tag Name="Key">
+    <tag Name="Key" Value="DisplayText">
 
     <stag Name="Key">
 
@@ -544,7 +544,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
     <part Name="Description" Short="▶The patchwork of burnt metal and rust-flaked rivets make a gradient of newflesh across the hermit's body. =pronouns.Possessive= hair is knotted into a rat's nest and held high by a barrette of broken glass. =pronouns.Subjective= =verb:scream:afterpronoun= in a tongue of =pronouns.possessive= own invention." />
   </object>
   <object Name="Seed-Spitting Vine" Load="Merge">
-    <part Name="Description" Short="▶Jade green tendrils curl inward and hug =pronouns.possessive= center in tension. =pronouns.Possessive= leaves vibrate to low-volume crunches as =pronouns.subjective= =verb:compact:afterpronoun= seed matter for spitting. " />
+    <part Name="Description" Short="▶Jade green tendrils curl inward and hug =pronouns.possessive= center in tension. =pronouns.Possessive= leaves vibrate to low-volume crunches as =pronouns.subjective= =verb:compact:afterpronoun= seed matter for spitting." />
     <part Name="Render" DisplayName="▶{{g|seed-spitting vine}}" />
   </object>
   <object Name="Seed Slingshot" Load="Merge">
@@ -786,7 +786,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
   </object>
   <object Name="Waydroid" Load="Merge">
     <part Name="Render" DisplayName="▶{{c|waydroid}}" />
-    <part Name="Description" Short="▶A cyclinder with a sensor array floats in magnetic suspension and emits a choppy hum. One long, articulated arm dangles beneath it, and sparks fly from its electric corm." />
+    <part Name="Description" Short="▶A cylinder with a sensor array floats in magnetic suspension and emits a choppy hum. One long, articulated arm dangles beneath it, and sparks fly from its electric corm." />
   </object>
   <object Name="Waydroid_Shockrod" Load="Merge">
     <part Name="Render" DisplayName="▶shockrod" />
@@ -1014,7 +1014,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
   </object>
   <object Name="Agolmaggot" Load="Merge">
     <part Name="Render" DisplayName="▶agolmaggot" />
-    <part Name="Description" Short="▶=pronouns.Subjective= =verb:are:afterpronoun= a writhing and pallid maggot, and pustules of noxious gas quilt =pronouns.possessive= bloated abdomen. " />
+    <part Name="Description" Short="▶=pronouns.Subjective= =verb:are:afterpronoun= a writhing and pallid maggot, and pustules of noxious gas quilt =pronouns.possessive= bloated abdomen." />
   </object>
   <object Name="YithMaggotBite" Load="Merge">
     <part Name="Render" DisplayName="▶{{G|acidic mandibles}}" />
@@ -2091,7 +2091,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
     <part Name="Description" Short="▶=pronouns.Subjective= =verb:peer:afterpronoun= out from under the broad brim-leaf that drapes atop =pronouns.possessive= head like a hat, and the blossom crowning the verdant cap casts a flushed glow about =pronouns.objective=. Lilypads have never before walked, but =pronouns.possessive= roots gather with each step lifted, flattening wide again when placed." />
   </object>
   <object Name="Slynth Wanderer" Load="Merge">
-    <part Name="Description" Short="▶From a distance, =pronouns.subjective= could be mistaken for a human wearing a wide-brimmed, lanterned hat, but =pronouns.subjective= =verb:are:afterpronoun= no human and =pronouns.possessive= hat is no vestment. =pronouns.Subjective= =verb:carry:afterpronoun= =pronouns.possessive= weapons and gear in flexible green digits, the broad leaf atop =pronouns.possessive= head scored and weathered, the shining flower atop =pronouns.possessive= crown glowing bright. =pronouns.Subjective= =verb:dress:afterpronoun= as a wanderer and =verb:speak:afterpronoun= as if new to the practice. " />
+    <part Name="Description" Short="▶From a distance, =pronouns.subjective= could be mistaken for a human wearing a wide-brimmed, lanterned hat, but =pronouns.subjective= =verb:are:afterpronoun= no human and =pronouns.possessive= hat is no vestment. =pronouns.Subjective= =verb:carry:afterpronoun= =pronouns.possessive= weapons and gear in flexible green digits, the broad leaf atop =pronouns.possessive= head scored and weathered, the shining flower atop =pronouns.possessive= crown glowing bright. =pronouns.Subjective= =verb:dress:afterpronoun= as a wanderer and =verb:speak:afterpronoun= as if new to the practice." />
   </object>
   <object Name="Strip Fly" Load="Merge">
     <part Name="Render" DisplayName="▶strip fly" />
@@ -3783,7 +3783,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
     <part Name="Render" DisplayName="▶Yrame" />
     <part Name="Honorifics" Primary="▶Warden" />
     <part Name="Description" Short="▶Big Yrame shifts =pronouns.possessive= weight between hind and forelegs. =pronouns.Subjective= =verb:shake:afterpronoun= a storm of rust dander from the tines of =pronouns.possessive= great horns, and =pronouns.subjective= =verb:blow:afterpronoun= a halo of freezing air from =pronouns.possessive= rime-veined hands." />
-    <tag Name="staticFaction1" Value="▶Joppa,friend,defending their village" />
+    <tag Name="staticFaction1" Value="Joppa,friend,▶defending their village" />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="OasisGlowpad" Load="Merge">
@@ -3819,32 +3819,32 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
   </object>
   <object Name="Shem -1" Load="Merge">
     <part Name="Render" DisplayName="▶{{c|Shem -1}}" />
-    <part Name="Description" Short="▶Shem has augmented =pronouns.possessive= body beyond the chromeling's basic form by welding on a dissymmetric ruffled coat of scrap metal. It's too big and grandiose for =pronouns.possessive= little figure, but Shem shuffles about confidently, as if =pronouns.subjective= expect to grow into it. " />
+    <part Name="Description" Short="▶Shem has augmented =pronouns.possessive= body beyond the chromeling's basic form by welding on a dissymmetric ruffled coat of scrap metal. It's too big and grandiose for =pronouns.possessive= little figure, but Shem shuffles about confidently, as if =pronouns.subjective= expect to grow into it." />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="Otho" Load="Merge">
     <part Name="Render" DisplayName="▶Otho" />
     <part Name="Description" Short="▶=pronouns.Subjective= =verb:stand:afterpronoun= with tremendous import and stillness, as if upon some hidden but vital vertex of the enclave.&#xA;&#xA;In Barathrum's name, =pronouns.subjective==verb:'ve:afterpronoun= conferred onto =pronouns.reflexive= the tonsure of stewardship and shorn the hair from =pronouns.possessive= scalp. =pronouns.Possessive= snout narrows in proportion to the tight corridors around =pronouns.objective=. =pronouns.Possessive= robe is impeccably clean. Waydroids beep and whir at =pronouns.objective= obediently as they scuffle past." />
-    <tag Name="staticFaction3" Value="▶,dislike,refusing them entrance to Grit Gate" />
-    <tag Name="staticFaction2" Value="▶,dislike,refusing them entrance to Grit Gate" />
-    <tag Name="staticFaction1" Value="▶,dislike,refusing them entrance to Grit Gate" />
+    <tag Name="staticFaction3" Value=",dislike,▶refusing them entrance to Grit Gate" />
+    <tag Name="staticFaction2" Value=",dislike,▶refusing them entrance to Grit Gate" />
+    <tag Name="staticFaction1" Value=",dislike,▶refusing them entrance to Grit Gate" />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="Q Girl" Load="Merge">
     <part Name="Render" DisplayName="▶Q Girl" />
     <part Name="Description" Short="▶=pronouns.Subjective==verb:'re:afterpronoun= an opal in the monochrome.&#xA;&#xA;=pronouns.Possessive= hair is a quasar of red ochre and indigo in the blanched light of the workshop. =pronouns.Possessive= cartilage is pierced by polyhedral rings that spin in antinomy to the cave's simple geometry. Beneath the quills =pronouns.possessive= skin is decorated in furcate lines, fantastic elaborations on the patterns of discarded circuitboards. =pronouns.Subjective==verb:'re:afterpronoun= surrounded by apparatuses of =pronouns.possessive= own creation. Through the harmony of those machines, =pronouns.subjective= =verb:cut= a swath through the entropic brine that sizzles around =pronouns.objective= in a loudening chorus." />
-    <tag Name="staticFaction3" Value="▶,friend,developing a quantum mechanical model" />
-    <tag Name="staticFaction2" Value="▶,dislike,=pronouns.possessive= queer appearance" />
-    <tag Name="staticFaction1" Value="▶,hate,questioning the legitimacy of their hierarchies" />
+    <tag Name="staticFaction3" Value=",friend,▶developing a quantum mechanical model" />
+    <tag Name="staticFaction2" Value=",dislike,▶=pronouns.possessive= queer appearance" />
+    <tag Name="staticFaction1" Value=",hate,▶questioning the legitimacy of their hierarchies" />
     <tag Name="PronounSet" Value="▶she/her" />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="Barathrum" Load="Merge">
     <part Name="Render" DisplayName="▶Barathrum" />
     <part Name="Description" Short="▶The absurd greebling of age has caused an extra patch of quills to grow where every one quillroot had been, so the hunching back of the eldest arch bear is now meadowed in white needles of every direction and length. =pronouns.Subjective= =verb:seem:afterpronoun= a world in one; a spine crumpled by a chiliad of years still holds a posture of thereness and knowing. Interred beneath scarps of wrinkled skin, =pronouns.possessive= eyes smolder to the horizon like dying suns." />
-    <tag Name="staticFaction1" Value="▶,friend,inventing the Barathrum clock" />
-    <tag Name="staticFaction2" Value="▶,friend,inventing the astrolabe" />
-    <tag Name="staticFaction3" Value="▶Templar,hate,serving as a counterexample to the tenets of their orthodoxy" />
+    <tag Name="staticFaction1" Value=",friend,▶inventing the Barathrum clock" />
+    <tag Name="staticFaction2" Value=",friend,▶inventing the astrolabe" />
+    <tag Name="staticFaction3" Value="Templar,hate,▶serving as a counterexample to the tenets of their orthodoxy" />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="Rodanis Y" Load="Merge">
@@ -3905,7 +3905,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
     <part Name="Render" DisplayName="▶Urshiib Merchant" />
   </object>
   <object Name="Euclid" Load="Merge">
-    <part Name="Description" Short="▶The climbing vine curls tight about a witchwood stake. A noggin of knotted tendrils bounces to and fro, keeping time with the movement of nearby creatures and objects. =pronouns.Possessive= ears perk at the sound of langauge, and =pronouns.subjective= =verb:flick:afterpronoun= leaves against =pronouns.possessive= stake to mimic phrases =pronouns.subjective= heard uttered centuries ago." />
+    <part Name="Description" Short="▶The climbing vine curls tight about a witchwood stake. A noggin of knotted tendrils bounces to and fro, keeping time with the movement of nearby creatures and objects. =pronouns.Possessive= ears perk at the sound of language, and =pronouns.subjective= =verb:flick:afterpronoun= leaves against =pronouns.possessive= stake to mimic phrases =pronouns.subjective= heard uttered centuries ago." />
     <part Name="Render" DisplayName="▶Euclid" />
     <xtagGrammar Proper="▶true" />
   </object>
@@ -3964,8 +3964,8 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
     <part Name="Description" Short="▶Beneath a mane of coarse hair, Warden Indrix's lips move without issuing forth any sound, perhaps in the formation of a litany invoked in the name of the vengeful god =pronouns.subjective= =verb:serve:afterpronoun=. The coarse hair grows in an uninterrupted mass down =pronouns.possessive= torso, that of a human but broader and more taut with muscle than any man's, disappearing only behind the sash of =pronouns.possessive= kilt. But for Mayor Nuntu and the warden =pronouns.reflexive=, no one knows the circumstances of Indrix's estrangement from =pronouns.possessive= kin, for no one dares mention it lest they draw the warden's ire. One of =pronouns.possessive= great curling horns has been cleanly cloven from =pronouns.possessive= head, however. That same horn along with several others hang from a belt slung low about Indrix's hips, giving =pronouns.objective= the distinction of being the only warrior to bear =pronouns.possessive= own appendage as a trophy." />
     <part Name="Render" DisplayName="▶Indrix" />
     <part Name="Honorifics" Primary="▶Warden" />
-    <tag Name="staticFaction2" Value="▶Goatfolk,hate,some reason =pronouns.subjective= won't share" />
-    <tag Name="staticFaction1" Value="▶Kyakukya,friend,defending their village" />
+    <tag Name="staticFaction2" Value="Goatfolk,hate,▶some reason =pronouns.subjective= won't share" />
+    <tag Name="staticFaction1" Value="Kyakukya,friend,▶defending their village" />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="Crowsong" Load="Merge">
@@ -4056,7 +4056,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
     <part Name="Render" DisplayName="▶1-FF" />
     <part Name="Honorifics" Primary="▶Warden" />
     <part Name="Description" Short="▶Stuck to =pronouns.possessive= rind of mirrored chrome sequins are two separate ecologies: the crispy deadgrowths of the inner Tomb and the verdurous molt of grove life. As the years spin by and the colossus adjusts to the sun-drenched outer world, the latter consumes the former." />
-    <tag Name="staticFaction1" Value="▶Ezra,friend,defending their village" />
+    <tag Name="staticFaction1" Value="Ezra,friend,▶defending their village" />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="Sixshrew" Load="Merge">
@@ -4204,8 +4204,8 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
     <part Name="Render" DisplayName="▶Une" />
     <part Name="Honorifics" Primary="▶Warden" />
     <part Name="Description" Short="▶Draped in a heavy coat of scrap, wearing a beastly mask, and wielding a hand-cranked wheel-fiddle, =pronouns.subjective= =verb:look:afterpronoun= more the part of a pageantry player than a village's defender. Up close, however, you glimpse the hilt of =pronouns.possessive= brand, the butt of =pronouns.possessive= gun, and the burnished black aegis of unmarked fullerite that =pronouns.subjective= =verb:employ:afterpronoun=. Eyes of burnished azzurum peek through the sockets of =pronouns.possessive= beaked mask, suggesting the very threat =pronouns.possessive= costume was meant to annul." />
-    <tag Name="staticFaction2" Value="▶Templar,hate,kinslaying and treason" />
-    <tag Name="staticFaction1" Value="▶YdFreehold,friend,defending the Freehold" />
+    <tag Name="staticFaction2" Value="Templar,hate,▶kinslaying and treason" />
+    <tag Name="staticFaction1" Value="YdFreehold,friend,▶defending the Freehold" />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="Many Eyes" Load="Merge">
@@ -4279,9 +4279,9 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
   <object Name="0lam" Load="Merge">
     <part Name="Render" DisplayName="▶0lam" />
     <part Name="Description" Short="▶Bump, scars, and ridges crisscross the monstrous waveform shell from where the boundaries of dimensions ground against the interstitial space. A soft organ-thing lies inside, lit by the glimmers of Old Light flashing off the all-color nacre. Grooves across the shell mantle billow with the dust of ontoxanthellae, cross-dimensional symbiotes. Arrayed aside them are articles of other places, a pan-dimensional inventory stocked by an entropic broker." />
-    <tag Name="staticFaction3" Value="▶,," />
-    <tag Name="staticFaction2" Value="▶,," />
-    <tag Name="staticFaction1" Value="▶,," />
+    <tag Name="staticFaction3" Value=",,▶" />
+    <tag Name="staticFaction2" Value=",,▶" />
+    <tag Name="staticFaction1" Value=",,▶" />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="AgateSeveranceStar" Load="Merge">

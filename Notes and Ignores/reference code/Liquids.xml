@@ -1197,4 +1197,80 @@
       <blipsRenderColorDetails>r</blipsRenderColorDetails>
     </part>
   </liquid>
+  <liquid Name="WarmStatic">
+    <class>LiquidWarmStatic</class>
+    <colors>YyK</colors>
+    <flameTemperature>620</flameTemperature>
+    <vaporTemperature>2000</vaporTemperature>
+    <vaporObject>GlitterGas</vaporObject>
+    <combustibility>30</combustibility>
+    <pureElectricalConductivity>100</pureElectricalConductivity>
+    <mixedElectricalConductivity>100</mixedElectricalConductivity>
+    <thermalConductivity>40</thermalConductivity>
+    <fluidity>10</fluidity>
+    <evaporativity>1</evaporativity>
+    <staining>3</staining>
+    <interruptAutowalk>true</interruptAutowalk>
+    <displayName>{{Y|warm static}}</displayName>
+    <adjective>{{Y|entropic}}</adjective>
+    <waterRitualName>warm static</waterRitualName>
+    <smearedAdjective>{{Y|entropic}}</smearedAdjective>
+    <smearedName>{{Y|entropic}}</smearedName>
+    <stainedName>{{Y|warm static}}</stainedName>
+    <valuePerDram>50</valuePerDram>
+    <pureLiquidValueMultiplier>20</pureLiquidValueMultiplier>
+    <stainElement Name="chance">5</stainElement>
+    <conversionProducts>
+      <product Name="acid">1</product>
+      <product Name="algae">1</product>
+      <product Name="blood">1</product>
+      <product Name="brainbrine">1</product>
+      <product Name="cider">1</product>
+      <product Name="cloning">1</product>
+      <product Name="convalessence">1</product>
+      <product Name="gel">1</product>
+      <product Name="goo">1</product>
+      <product Name="honey">1</product>
+      <product Name="ink">1</product>
+      <product Name="lava">1</product>
+      <product Name="neutronflux">1</product>
+      <product Name="oil">1</product>
+      <product Name="ooze">1</product>
+      <product Name="proteangunk">1</product>
+      <product Name="putrid">1</product>
+      <product Name="salt">5</product>
+      <product Name="sap">1</product>
+      <product Name="slime">1</product>
+      <product Name="sludge">1</product>
+      <product Name="sunslag">1</product>
+      <product Name="asphalt">1</product>
+      <product Name="water">1</product>
+      <product Name="wax">1</product>
+      <product Name="wine">1</product>
+    </conversionProducts>
+    <parts>
+      <part Name="FixedNavigation" Weight="95" />
+      <part Name="Glows">
+        <secondary>true</secondary>
+        <brighterWithVolume>true</brighterWithVolume>
+      </part>
+      <part Name="WarmStaticRender" />
+      <part Name="GlitchOnDrink" />
+      <part Name="GlitchOnMixed" />
+      <part Name="GlitchOnSmear" />
+      <part Name="GlitchOnPour">
+        <messageObject>=subject.T= =verb:glitch= into =object.an=.</messageObject>
+        <messageZone>The space around you starts to glitch.</messageZone>
+        <accomplishmentObject>You poured the raw entropy of the universe onto things and caused them to glitch into other things.</accomplishmentObject>
+        <accomplishmentZone>You poured the raw entropy of the universe on the ground and caused the space around you to glitch.</accomplishmentZone>
+      </part>
+      <part Name="Render">
+        <baseColorBackground>^Y</baseColorBackground>
+        <baseColorText>&amp;y^Y</baseColorText>
+        <baseColorTile>&amp;y</baseColorTile>
+        <baseColorDetail>Y</baseColorDetail>
+        <secondaryColorText>&amp;y</secondaryColorText>
+      </part>
+    </parts>
+  </liquid>
 </liquids>

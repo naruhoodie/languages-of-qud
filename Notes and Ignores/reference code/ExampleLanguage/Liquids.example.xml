@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.12
+Caves of Qud - Generated Localizable XML 2.0.212.13
 
 -->
 <liquids Lang="example" Encoding="utf-8">
@@ -351,5 +351,21 @@ Caves of Qud - Generated Localizable XML 2.0.212.12
     <smearedName>▶{{m|lush}}</smearedName>
     <stainedName>▶{{m|wine}}</stainedName>
     <part Name="HydrateOnDrink" Message="▶You flush with the warming draught!" />
+  </liquid>
+  <liquid Name="WarmStatic">
+    <circulatoryLossTerm>▶leaking</circulatoryLossTerm>
+    <circulatoryLossNoun>▶leak</circulatoryLossNoun>
+    <displayName>▶{{Y|warm static}}</displayName>
+    <adjective>▶{{Y|entropic}}</adjective>
+    <waterRitualName>▶warm static</waterRitualName>
+    <smearedAdjective>▶{{Y|entropic}}</smearedAdjective>
+    <smearedName>▶{{Y|entropic}}</smearedName>
+    <stainedName>▶{{Y|warm static}}</stainedName>
+    <part Name="GlitchOnPour">
+      <messageObject>▶=subject.T= =verb:glitch= into =object.an=.</messageObject>
+      <messageZone>▶The space around you starts to glitch.</messageZone>
+      <accomplishmentObject>▶You poured the raw entropy of the universe onto things and caused them to glitch into other things.</accomplishmentObject>
+      <accomplishmentZone>▶You poured the raw entropy of the universe on the ground and caused the space around you to glitch.</accomplishmentZone>
+    </part>
   </liquid>
 </liquids>
