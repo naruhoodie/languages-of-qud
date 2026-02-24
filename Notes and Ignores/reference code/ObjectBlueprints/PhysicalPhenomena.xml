@@ -743,7 +743,7 @@
   <object Name="RealityStabilizationField" Inherits="Object">
     <part Name="Render" DisplayName="{{normal|normality field}}" RenderLayer="-1" RenderString=" " Tile="Terrain/sw_normality_field.bmp" ColorString="&amp;k" Occluding="false" RenderIfDark="false" />
     <part Name="AnimatedMaterialRealityStabilizationField" />
-    <part Name="UnityPrefabImposter" PrefabID="Prefabs/Particles/NormalityField" />
+    <part Name="PrefabImposter" Prefab="Prefabs/Particles/NormalityField" />
     <part Name="Physics" Weight="100000" FlameTemperature="99999" VaporTemperature="99999" FreezeTemperature="-99999" BrittleTemperature="-99999" Takeable="false" Solid="false" />
     <part Name="NoDamage" />
     <part Name="RealityStabilization" Strength="100" WorksOnSelf="true" WorksOnCellContents="true" SelfVisibility="0" IsTechScannable="false" />

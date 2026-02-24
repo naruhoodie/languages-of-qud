@@ -440,7 +440,7 @@
 	  <tag Name="EquipSound" Value="Sounds/Equip/sfx_equip_weapon_bludgeon_metal_light" />
   </object>
   <object Name="Cudgel4" Inherits="BaseCudgel">
-    <part Name="Render" DisplayName="{{B|carbide}} folding hammer" Tile="Items/sw_cudgel_2.bmp" ColorString="&amp;B" />
+    <part Name="Render" DisplayName="{{B|carbide}}-folding hammer" Tile="Items/sw_cudgel_2.bmp" ColorString="&amp;B" />
     <part Name="MeleeWeapon" MaxStrengthBonus="5" BaseDamage="2d4" Skill="Cudgel" Stat="Strength" />
     <part Name="Commerce" Value="80" />
     <part Name="Description" Short="The hammer shaft is capped by a head of bright and azure metal. Darker stripes across its face and throat note where it struck and beat softer carbide down." />
@@ -450,7 +450,7 @@
     <part Name="Physics" Weight="5" />    
   </object>
   <object Name="Cudgel4th" Inherits="BaseCudgel">
-    <part Name="Render" DisplayName="two-handed {{B|carbide}} folding hammer" Tile="Items/sw_cudgel_3.bmp" ColorString="&amp;B" />
+    <part Name="Render" DisplayName="two-handed {{B|carbide}}-folding hammer" Tile="Items/sw_cudgel_3.bmp" ColorString="&amp;B" />
     <part Name="MeleeWeapon" PenBonus="1" MaxStrengthBonus="5" BaseDamage="2d6" Skill="Cudgel" Stat="Strength" />
     <part Name="Commerce" Value="80" />
     <part Name="Description" Short="The hammer pole is capped by a twin-head of bright and azure metal. Darker stripes across its faces and throats note where it struck and beat softer carbide down." />
@@ -4212,6 +4212,7 @@ When this weapons fires a shot with its last round of ammo, the shot has perfect
     <part Name="Description" Short="Billets of shaved dogwood contour to the breasts, waist, and thigh. The husk is beetle-eaten." />
     <part Name="Physics" Weight="10" Organic="true" />
     <part Name="Springy" Factor="0.5" />
+    <xtagGrammar iArticle="some" />
 	  <tag Name="EquipSound" Value="sfx_equip_armor_planty" />
     <tag Name="Tier" Value="1" />
   </object>
@@ -4402,7 +4403,7 @@ When this weapons fires a shot with its last round of ammo, the shot has perfect
     <part Name="Armor" AV="3" DV="-3" Elec="8" Cold="8" Heat="8" Acid="8" WornOn="Body" />
     <part Name="Render" DisplayName="{{plastifer|plastifer}} {{G|chem}} vest" ColorString="&amp;G" TileColor="&amp;y" DetailColor="G" Tile="Items/sw_vest.bmp" />
     <part Name="Commerce" Value="750" />
-    <part Name="Description" Short="A cuirass of gas-caught foam stiffens instantaneously when pressure is applied. Its karst surface is arrayed with tube sleeves and dusted with the colofur abrasions of chiliads and the chemical reactions they produce; the material has careened past the outer rings of its expected lifetime and into the unknowing void." />
+    <part Name="Description" Short="A cuirass of gas-caught foam stiffens instantaneously when pressure is applied. Its karst surface is arrayed with tube sleeves and dusted with the colorful abrasions of chiliads and the chemical reactions they produce; the material has careened past the outer rings of its expected lifetime and into the unknowing void." />
     <part Name="Physics" Weight="20" />
     <part Name="Springy" Factor="0.8" />
     <part Name="ReduceEnergyCosts" ChargeUse="0" IncludeTypes="Medication" PercentageReduction="100" ScopeDescription="the energy cost to apply an injector" NameForStatus="StentSystem" />
@@ -5672,7 +5673,7 @@ You can see two spaces beyond the first occluding object in your line of sight."
 		<part Name="Armor" AV="0" DV="1" />
 		<part Name="Render" DisplayName="dazzle cheek" RenderString="]" Tile="Items/sw_dazzle_cheek.bmp" ColorString="&amp;m" TileColor="&amp;Y" DetailColor="m" />
 		<part Name="Commerce" Value="999" />
-		<part Name="Description" Short="Geometry swims across the crystal diodes of the mask. Its expression is smiling in the hypnagognic key." />
+		<part Name="Description" Short="Geometry swims across the crystal diodes of the mask. Its expression is smiling in the hypnagogic key." />
 		<part Name="Physics" Weight="1" />
 		<part Name="ZeroPointEnergyCollector" ChargeRate="10" World="JoppaWorld,OrbWorld" />
 		<part Name="Circuitry" />
@@ -7157,6 +7158,7 @@ You may activate this item to conjure a force field in front of you. Robots will
 		<part Name="MutationOnEquip" ClassName="Telepathy" Describe="false" />
 		<part Name="QuickenMind" Cooldown="100" IsBootSensitive="true" />
 		<part Name="Commerce" Value="555" />
+    <stat Name="Hitpoints" Value="500" />
 		<part Name="ConversationScript" ConversationID="TauChime" />
 		<part Name="CompleteQuestOnTaken" Quest="If, Then, Else" QuestStep="Gather Tau's Chime" />
 		<part Name="Interesting" Radius="1" />
@@ -7174,6 +7176,7 @@ You may activate this item to conjure a force field in front of you. Robots will
 		<part Name="Armor" AV="2" DV="0" Ego="1" WornOn="Head" />
 		<part Name="Physics" Weight="5" />
 		<part Name="Commerce" Value="1666" />
+    <stat Name="Hitpoints" Value="500" />
 		<part Name="MutationOnEquip" ClassName="Telepathy" />
     <part Name="ItemElements" Elements="jewels::3;;glass::3" />
 		<part Name="QuickenMind" Cooldown="50" AbilityAmount="1" IsBootSensitive="true" />
@@ -7189,6 +7192,7 @@ You may activate this item to conjure a force field in front of you. Robots will
 		<part Name="Description" Short="Broken crystal narrows to a hateful razor at the shard seams. It cracked at the resonance curvature of anguish, and fell out of its host rock as a shattered promise." />
 		<part Name="Physics" Weight="3" />
 		<part Name="Commerce" Value="1666" />
+    <stat Name="Hitpoints" Value="250" />
     <part Name="ItemElements" Elements="jewels::3;;glass::3" />
 		<part Name="RulesDescription" Text="Attacks MA instead of AV." />
 		<part Name="MeleeWeapon" Stat="Ego" MaxStrengthBonus="9" BaseDamage="1d12+2" />
@@ -7989,7 +7993,7 @@ You may activate this item to conjure a force field in front of you. Robots will
   <!-- Relic head, Tier 3 -->
   <object Name="BaseTierHead3_AV" Inherits="BaseTierHead">
     <part Name="Render" ColorString="&amp;Y" Tile="Items/sw_metal_helmet.bmp" DetailColor="y" />
-    <part Name="Description" Short="When they were active, the crysteel blast furnaces belched slag into a belt of hills that cinctured the old arcology. In the age of =spice.entity:name=, the slag was mined and moulded into a glass replica of an crysteel miter." />
+    <part Name="Description" Short="When they were active, the crysteel blast furnaces belched slag into a belt of hills that cinctured the old arcology. In the age of =spice.entity:name=, the slag was mined and moulded into a glass replica of a crysteel miter." />
     <part Name="Armor" AV="2" DV="-3" WornOn="Head" />
     <part Name="Physics" Weight="12" />
     <part Name="Metal" />
@@ -8105,7 +8109,7 @@ You may activate this item to conjure a force field in front of you. Robots will
   <!-- Relic head, Tier 4 -->
   <object Name="BaseTierHead4_AV" Inherits="BaseTierHead">
     <part Name="Render" ColorString="&amp;y" Tile="Items/sw_metal_helmet.bmp" DetailColor="y" />
-    <part Name="Description" Short="When they were active, the crysteel blast furnaces belched slag into a belt of hills that cinctured the old arcology. In the age of =spice.entity:name=, the slag was mined and moulded into a glass replica of an crysteel miter, then reinforced with stonegut." />
+    <part Name="Description" Short="When they were active, the crysteel blast furnaces belched slag into a belt of hills that cinctured the old arcology. In the age of =spice.entity:name=, the slag was mined and moulded into a glass replica of a crysteel miter, then reinforced with stonegut." />
     <part Name="Armor" AV="2" DV="-3" WornOn="Head" />
     <part Name="Physics" Weight="12" />
     <part Name="Metal" />
@@ -8140,7 +8144,7 @@ You may activate this item to conjure a force field in front of you. Robots will
   <!-- Relic hands, Tier 4 -->
   <object Name="BaseTierHands4_AV" Inherits="BaseTierHands">
     <part Name="Render" ColorString="&amp;y" DetailColor="y" Tile="Items/sw_metal_gloves.bmp" />
-    <part Name="Description" Short="When they were active, the crysteel blast furnaces belched slag into a belt of hills that cinctured the old arcology. In the age of =spice.entity:name=, the slag was mined and moulded into a glass replica of an crysteel miter, then reinforced with stonegut." />
+    <part Name="Description" Short="When they were active, the crysteel blast furnaces belched slag into a belt of hills that cinctured the old arcology. In the age of =spice.entity:name=, the slag was mined and moulded into a glass replica of a crysteel miter, then reinforced with stonegut." />
     <part Name="Armor" AV="3" DV="-5" WornOn="Hands" />
     <part Name="Physics" Weight="18" />
     <part Name="Metal" />
@@ -8504,7 +8508,7 @@ You may activate this item to conjure a force field in front of you. Robots will
 
   <object Name="Albino Ape Pelt" Inherits="Item">
     <part Name="Render" DisplayName="{{Y|albino ape pelt}}" Tile="Items/sw_ape_pelt.bmp" ColorString="&amp;Y" DetailColor="y" RenderString="*" RenderLayer="5" />
-    <part Name="Description" Short="A snow white trapazoid of fine ape fur, prized for its beauty and warmth." />
+    <part Name="Description" Short="A snow white trapezoid of fine ape fur, prized for its beauty and warmth." />
     <part Name="Physics" Weight="10" Category="Trade Goods" />
     <part Name="Commerce" Value="100" />
     <tag Name="Tier" Value="2" />

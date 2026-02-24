@@ -2721,7 +2721,7 @@ The infant child is unaware
   </object>
   <object Name="Chute Crab" Inherits="BaseCrab">
     <part Name="Render" DisplayName="chute crab" Tile="creatures/sw_chutecrab.bmp" RenderString="c" ColorString="&amp;y" />
-    <part Name="Corpse" CorpseChance="0" CorpseBlueprint="Chute Crab Corpse" />
+    <part Name="Corpse" CorpseChance="0" />
     <stat Name="AV" Value="1" />
     <stat Name="Level" Value="7" />
     <stat Name="XPValue" sValue="0" Value="0" />
@@ -5819,7 +5819,7 @@ The infant child is unaware
   </object>
   <object Name="Agolzvuv" Inherits="BaseInsect">
     <part Name="Render" DisplayName="agolzvuv" RenderString="I" ColorString="&amp;m" Tile="Creatures/sw_agolzvuv.bmp" DetailColor="y" />
-    <part Name="Corpse" CorpseChance="0" CorpseBlueprint="Agolzvuv Corpse" />
+    <part Name="Corpse" CorpseChance="0" />
     <stat Name="AV" Value="6" />
     <stat Name="Level" Value="22" />
     <stat Name="Hitpoints" Value="95" />
@@ -6183,7 +6183,7 @@ The infant child is unaware
   </object>  
   <object Name="Mimic" Inherits="BaseReptile">
     <part Name="Render" Tile="Creatures/sw_mimic.bmp" DisplayName="mimic" ColorString="&amp;w" RenderString="254" />
-		<part Name="Description" Short="A starshape of sheer and gummy tentacle shivers at the zero point. When =pronouns.possessive= =verb:sense:afterpronoun= something nearby, electric current charges a scale of mirror photons to replicate the image." />
+		<part Name="Description" Short="A starshape of sheer and gummy tentacle shivers at the zero point. When =pronouns.subjective= =verb:sense:afterpronoun= something nearby, electric current charges a scale of mirror photons to replicate the image." />
     <part Name="Corpse" CorpseChance="20" CorpseBlueprint="Mimic Corpse" />
     <part Name="Brain" Factions="Unshelled Reptiles-100" Hostile="True" Wanders="false" MinKillRadius="1" MaxKillRadius="1" />
     <stat Name="Hitpoints" Value="75" />
@@ -8964,7 +8964,7 @@ Drifts on the cultural seas have swept a particular fable to your attention. Lon
 		<tag Name="BleedLiquid" Value="lava-1000" />
 		<tag Name="BleedColor" Value="&amp;R" />
 		<tag Name="BleedPrefix" Value="{{R|magmatic}}" />
-    <part Name="UnityPrefabImposter" PrefabID="Prefabs/Particles/MagmaCrabFlames" />
+    <part Name="PrefabImposter" Prefab="Prefabs/Particles/MagmaCrabFlames" />
 		<tag Name="Gigantic" />
   </object>
   <object Name="Great Magma Crab Claw" Inherits="NaturalWeapon">
@@ -12411,9 +12411,9 @@ Drifts on the cultural seas have swept a particular fable to your attention. Lon
     <tag Name="LairCategory" Value="Merchants" />
     <tag Name="LairDepth" Value="2" />
     <tag Name="LairName" Value="workshop" />
-    <tag Name="LairNameContext" Value="the workshop of %o" />
+    <tag Name="LairNameContext" Value="the workshop of =subject.refname:long:withTitles:LairName|strip=" />
     <tag Name="LairPulldownMessage" Value="You discover a secluded workshop. Do you want to investigate?" />
-    <tag Name="LairDiscoveredMessage" Value="You discover the workshop of %o." />
+    <tag Name="LairDiscoveredMessage" Value="You discover the workshop of =subject.refname:long:withTitles:LairName|strip=." />
     <tag Name="HeroHasGuards" Value="2-4" />		
     <tag Name="HeroAddMakersMark" />
     <tag Name="HeroLevelMultiplier" Value="1" />
@@ -12470,9 +12470,9 @@ Drifts on the cultural seas have swept a particular fable to your attention. Lon
     <tag Name="StaticLikeReason" Value="illuminating their manuscripts" />
     <tag Name="StaticHateReason" Value="refusing to illuminate their manuscripts" />
     <tag Name="LairName" Value="scriptorium" />
-    <tag Name="LairNameContext" Value="the scriptorium of %o" />
+    <tag Name="LairNameContext" Value="the scriptorium of =subject.refname:long:withTitles:LairName|strip=" />
     <tag Name="LairPulldownMessage" Value="You discover a secluded scriptorium. Do you want to investigate?" />
-    <tag Name="LairDiscoveredMessage" Value="You discover the scriptorium of %o." />
+    <tag Name="LairDiscoveredMessage" Value="You discover the scriptorium of =subject.refname:long:withTitles:LairName|strip=." />
     <part Name="HasGuards" NumberOfGuards="2" />
   </object>
   <object Name="Beekeeper" Inherits="BaseMerchant">
@@ -12594,9 +12594,9 @@ Drifts on the cultural seas have swept a particular fable to your attention. Lon
     <tag Name="StaticLikeReason" Value="cooking them a splendid meal" />
     <tag Name="StaticHateReason" Value="refusing to cook for them" />
     <tag Name="LairName" Value="kitchen" />
-    <tag Name="LairNameContext" Value="the kitchen of %o" />
+    <tag Name="LairNameContext" Value="the kitchen of =subject.refname:long:withTitles:LairName|strip=" />
     <tag Name="LairPulldownMessage" Value="You discover a secluded domicile. Sweet and savory wafts of air bellow from inside. Do you want to investigate?" />
-    <tag Name="LairDiscoveredMessage" Value="You discover the kitchen of %o." />
+    <tag Name="LairDiscoveredMessage" Value="You discover the kitchen of =subject.refname:long:withTitles:LairName|strip=." />
     <tag Name="Role" Value="Brute" />
   </object>
   <object Name="StiltChef" Inherits="Chef">
@@ -12688,9 +12688,9 @@ Drifts on the cultural seas have swept a particular fable to your attention. Lon
     <part Name="ItemElements" Elements="salt::1" />
     <tag Name="LairAdjectives" Value="ichormerchant" />
     <tag Name="LairName" Value="distillery" />
-    <tag Name="LairNameContext" Value="the distillery of %o" />
+    <tag Name="LairNameContext" Value="the distillery of =subject.refname:long:withTitles:LairName|strip=" />
     <tag Name="LairPulldownMessage" Value="You discover a secluded distillery. Do you want to investigate?" />
-    <tag Name="LairDiscoveredMessage" Value="You discover the distillery of %o." />
+    <tag Name="LairDiscoveredMessage" Value="You discover the distillery of =subject.refname:long:withTitles:LairName|strip=." />
     <tag Name="StaticLikeReason" Value="distilling a rare liquid" />
     <tag Name="StaticHateReason" Value="refusing to distill a rare liquid" />
 		<part Name="HasGuards" NumberOfGuards="2" />
@@ -12765,9 +12765,9 @@ Drifts on the cultural seas have swept a particular fable to your attention. Lon
     <part Name="ItemElements" Elements="circuitry::1" />
     <tag Name="LairAdjectives" Value="gutsmonger" />
     <tag Name="LairName" Value="organ market" />
-    <tag Name="LairNameContext" Value="the organ market of %o" />
+    <tag Name="LairNameContext" Value="the organ market of =subject.refname:long:withTitles:LairName|strip=" />
     <tag Name="LairPulldownMessage" Value="You discover a secluded organ market. Do you want to investigate?" />
-    <tag Name="LairDiscoveredMessage" Value="You discover the organ market of %o." />
+    <tag Name="LairDiscoveredMessage" Value="You discover the organ market of =subject.refname:long:withTitles:LairName|strip=." />
     <tag Name="StaticLikeReason" Value="stocking a rare implant" />
     <tag Name="StaticHateReason" Value="refusing to sell a rare implant" />
 		<part Name="HasGuards" NumberOfGuards="2" />
@@ -13980,7 +13980,7 @@ In Barathrum's name, =pronouns.subjective==verb:'ve:afterpronoun= conferred onto
     <stat Name="Willpower" sValue="22" />
     <stat Name="Ego" sValue="22" />
     <stat Name="Hitpoints" sValue="150" />
-    <part Name="Description" Short="A toga wraps =pronouns.possessive= hulking, bright-fur frame, and a broad brim shades =pronouns.possessive= wise and wideset eyes. A sedentary life has sapped some of his ape strength: burly shoulders slouch their weight onto a walking stick, a belly swells the linen around =pronouns.possessive= waist, and plump, sloping cheeks rim a warm and welcoming grin." />
+    <part Name="Description" Short="A toga wraps =pronouns.possessive= hulking, bright-fur frame, and a broad brim shades =pronouns.possessive= wise and wideset eyes. A sedentary life has sapped some of =pronouns.possessive= ape strength: burly shoulders slouch their weight onto a walking stick, a belly swells the linen around =pronouns.possessive= waist, and plump, sloping cheeks rim a warm and welcoming grin." />
     <part Name="Render" DisplayName="Nuntu" ColorString="&amp;Y" DetailColor="r" Tile="creatures/sw_nuntu.bmp" />
     <part Name="Honorifics" Primary="Mayor" />
     <mutation Name="HeightenedHearing" Level="1" />

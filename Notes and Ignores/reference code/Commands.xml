@@ -240,11 +240,11 @@
     <keyboardBind Key="space"/>
     <keyboardBind Key="enter"/>
     <keyboardBind Key="numpadenter"/>
-    <gamepadBind Button="buttonSouth" />
+    <gamepadBind Button="buttonSouth" ButtonSwitch="buttonEast" />
   </command>
   <command ID="Cancel" DisplayText="Cancel" Category="Menus" Layer="UINav" InputModuleBind="cancel" Required="true" SkipUpgrade="true" CanShareBindsWith="CmdSystemMenu">
     <keyboardBind Key="escape"/>
-    <gamepadBind Button="buttonEast" />
+    <gamepadBind Button="buttonEast" ButtonSwitch="buttonSouth" />
   </command>
   <!--
   <command ID="UI:Click" DisplayText="UI:Click" Category="InternalUI" Layer="UINav" InputModuleBind="leftClick" Bindable="false" Display="hidden">
@@ -414,7 +414,7 @@
   <!-- Adventuring -->
   <command ID="CmdUse" DisplayText="Use" Category="Adventuring" Layer="Adventure">
     <keyboardBind Key="space"/>
-    <gamepadBind Button="buttonSouth"/>
+    <gamepadBind Button="buttonSouth" ButtonSwitch="buttonEast"/>
   </command>
   <command ID="CmdTalk" DisplayText="Talk" Category="Adventuring" Layer="Adventure" Auto="Down">
     <keyboardBind Key="c"/>
@@ -440,7 +440,7 @@
   <command ID="CmdGetFrom" DisplayText="Interact nearby" Category="Adventuring" Layer="Adventure">
     <keyboardBind Modifier="ctrl" Key="space"/>
     <keyboardBind Modifier="ctrl" Key="g"/>
-    <gamepadBind Alt="true" Button="buttonSouth"/>
+    <gamepadBind Alt="true" Button="buttonSouth" ButtonSwitch="buttonEast"/>
   </command>
   <command ID="CmdOpen" DisplayText="Open" Category="Adventuring" Layer="Adventure" Auto="Down">
     <keyboardBind Key="o"/>
@@ -457,7 +457,7 @@
     <keyboardBind Modifier="ctrl" Key="r"/>
     <gamepadBind Alt="true" Button="rightStickPress"/>
   </command>
-  <command ID="CmdThrow" DisplayText="Throw" Category="Adventuring" Layer="Adventure" Auto="Down">
+  <command ID="CmdThrow" DisplayText="Throw" Category="Adventuring" Layer="AdventureTargeting" Auto="Down">
     <keyboardBind Key="t"/>
     <gamepadBind Alt="true" Button="rightShoulder"/>
   </command>
@@ -479,14 +479,14 @@
   </command>
   <command ID="CmdWaitN" DisplayText="Wait a number of turns" Category="Adventuring" Layer="Adventure" Auto="Down"></command>
   <command ID="CmdWaitUntilHealed" DisplayText="Rest until healed" Category="Adventuring" Layer="Adventure" Auto="Down">
-    <gamepadBind Button="buttonEast"/>
+    <gamepadBind Button="buttonEast" ButtonSwitch="buttonSouth"/>
     <keyboardBind Key="backquote"/>
   </command>
   <command ID="CmdWaitUntilPartyHealed" DisplayText="Rest until party is healed" Category="Adventuring" Layer="Adventure" Auto="Down">
   </command>
   <command ID="CmdWaitUntilMorning" DisplayText="Rest until morning" Category="Adventuring" Layer="Adventure" Auto="Down"></command>
   <command ID="CmdWaitMenu" DisplayText="Bring up wait menu" Category="Adventuring" Layer="Adventure" Auto="Down">
-    <gamepadBind Alt="true" Button="buttonEast"/>
+    <gamepadBind Alt="true" Button="buttonEast" ButtonSwitch="buttonSouth"/>
     <keyboardBind Modifier="ctrl" Key="backquote"/>
   </command>
   <command ID="CmdMoveMenu" DisplayText="Bring up move menu" Category="Adventuring" Layer="Adventure" Auto="Down">
@@ -523,7 +523,7 @@
   </command>
   <command ID="Navigate Vertical" DisplayText="Move north / south (navigate menus up / down in Legacy UI)" Category="Adventuring" Layer="AdventureNav"></command>
   <command ID="Navigate Horizontal" DisplayText="Move west / east (navigate menus left / right in Legacy UI)" Category="Adventuring" Layer="AdventureNav"></command>
-  
+
   <command ID="CmdMoveFarNW" DisplayText="Move to northwestern corner" Category="Advanced Adventuring" Layer="AdventureNav" Auto="Down">
     <keyboardBind Modifier="alt" Key="numpad7"/>
     <keyboardBind Modifier="alt,shift" Key="upArrow"/>
@@ -559,7 +559,7 @@
   <command ID="CmdMoveCenter" DisplayText="Move to center" Category="Advanced Adventuring" Layer="AdventureNav" Auto="Down">
     <keyboardBind Modifier="alt" Key="numpad5"/>
   </command>
-  
+
 
   <!-- Targeting -->
   <command ID="CmdMissileWeaponMenu" DisplayText="Open missile weapon menu" Category="Targeting" Layer="Targeting" Auto="DownPass" CanShareBindsWith="V Positive,V Negative">
@@ -754,7 +754,7 @@
     <keyboardBind Key="numpadEnter"/>
     <keyboardBind Modifier="ctrl" Key="space"/>
     <gamepadBind Button="rightTrigger"/>
-    <gamepadBind Button="buttonSouth"/>
+    <gamepadBind Button="buttonSouth" ButtonSwitch="buttonEast"/>
   </command>
   <command ID="CmdTradeToggleAll" DisplayText="Add / remove whole inventory" Category="Trade" Layer="Trade" Auto="DownPass">
     <keyboardBind Key="tab"/>
@@ -765,7 +765,7 @@
   </command>
   <command ID="CmdVendorActions" DisplayText="Interact with item" Category="Trade" Layer="Trade" Auto="DownPass">
     <keyboardBind Key="space"/>
-    <gamepadBind Alt="true" Button="buttonSouth"/>
+    <gamepadBind Alt="true" Button="buttonSouth" ButtonSwitch="buttonEast"/>
   </command>
   <command ID="CmdVendorLook" DisplayText="Look at item" Category="Trade" Layer="Trade" Auto="DownPass">
     <keyboardBind Key="l"/>
@@ -799,6 +799,7 @@
   </command>
   <command ID="CmdChargenMutationVariant" DisplayText="Choose a mutation variant" Category="Character Creation" Layer="Chargen">
     <keyboardBind Key="v"/>
+    <gamepadBind Alt="true" Button="buttonSouth"/>
   </command>
   <command ID="CmdDebugQuickstart" DisplayText="Quickstart (requires debug option enabled)" Category="Character Creation" Layer="Chargen"></command>
   

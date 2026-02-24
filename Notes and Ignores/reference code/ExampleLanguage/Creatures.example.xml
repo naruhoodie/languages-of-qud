@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.13
+Caves of Qud - Generated Localizable XML 2.0.212.14
 
 <objects>
 
@@ -22,7 +22,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.13
 <objects Lang="example" Encoding="utf-8">
   <object Name="Creature" Load="Merge">
     <tag Name="PetResponse" Value="▶=subject.T= =verb:stare= at =object.t= blankly." />
-    <tag Name="SimpleConversation" Value="▶Moon and Sun. Wisdom and will.~May the earth yield for us this season.~Peace, =player.formalAddressTerm=." />
+    <tag Name="SimpleConversation" Value="▶Moon and Sun. Wisdom and will.~▶May the earth yield for us this season.~▶Peace, =player.formalAddressTerm=." />
     <xtagTextFragments Skin="▶skin" PoeticFeatures="▶shiny teeth,coarse hair,sunken eyes" YounglingNoise="▶*heh*" Activity="▶roaming around idly" VillageActivity="▶sleeping in our homes" NeedsItemFor="▶for my own collection,to slake my greed,because of its trade value" SacredThing="▶the act of procreating" ArableLand="▶arable land" ValuedOre="▶precious metals" />
     <stag Name="HardMaterial" Value="▶bone" />
   </object>
@@ -94,7 +94,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.13
     <tag Name="HeroNameTitleMayorSynCap" Value="▶Queen,Mayor,Elder" />
     <xtagTextFragments Skin="▶chitin" PoeticFeatures="▶diaphanous wings,airy spiracles,photofractal eyes" YounglingNoise="▶*bzzz*" Activity="▶droning for the hive,burrowing into the earth,rummaging through dung" VillageActivity="▶fastidiously nesting,multiplying in droves,laying eggs and clicking" NeedsItemFor="▶for my own collection,to slake my greed,because of its trade value,to nest more effectively,for my hive" SacredThing="▶chirping by the light of the Beetle Moon,xenophagy,hexapoda,larvae,chitin,the protection of an exoskeleton" ArableLand="▶nesting grounds,hiving grounds" ValuedOre="▶pollen" />
     <stag Name="HardMaterial" Value="▶chitin" />
-    <tag Name="SimpleConversation" Value="▶{{emote|*sharp clicking*}}~{{emote|*soft buzzing*}}" />
+    <tag Name="SimpleConversation" Value="▶{{emote|*sharp clicking*}}~▶{{emote|*soft buzzing*}}" />
     <tag Name="PetResponse" Value="▶=subject.T= =verb:buzz=." />
   </object>
   <object Name="BaseOoze" Load="Merge">
@@ -103,7 +103,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.13
     <tag Name="HeroNameTitleMayorSynCap" Value="▶Philosopher,Mayor,Elder,Theorist,Sophist" />
     <xtagTextFragments Skin="▶membrane" PoeticFeatures="▶flawless geometry,translucence,peaceful squish" YounglingNoise="▶*squish*,*spurt*" Activity="▶resorbing matter,undulating,liquifying and congealing" VillageActivity="▶jiggling rhythmically,undulating,liquifying and congealing" NeedsItemFor="▶for my own collection,to slake my greed,because of its trade value,for resorbing purposes,so I can engulf it,to absorb it" SacredThing="▶platonic solids,ooze,gelatin,fluid dynamics,the membrane" ArableLand="▶pools of liquid,free matter,gelatin" ValuedOre="▶matter,life" />
     <stag Name="HardMaterial" Value="▶membrane" />
-    <tag Name="SimpleConversation" Value="▶{{emote|*exudes loudly*}}~{{emote|*soft gushing*}}" />
+    <tag Name="SimpleConversation" Value="▶{{emote|*exudes loudly*}}~▶{{emote|*soft gushing*}}" />
     <tag Name="PetResponse" Value="▶=subject.T= =verb:spurt=." />
   </object>
   <object Name="BaseReptile" Load="Merge">
@@ -178,7 +178,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.13
     <tag Name="HeroNameTitleMayorSynCap" Value="▶Seer,Administrator,Oracle,Mayor,Elder" />
     <xtagTextFragments Skin="▶chassis" PoeticFeatures="▶chromium sheen,winking diodes,air vents" YounglingNoise="▶*beep*,*boop*" Activity="▶recompositing meaning from centuries of bit flips" VillageActivity="▶emitting a monotone pulse" SacredThing="▶machine life" />
     <stag Name="HardMaterial" Value="▶casing" />
-    <tag Name="SimpleConversation" Value="▶{{emote|*beep boop*}}~{{emote|*boop beep*}}~{{emote|*beep boop beep*}}~{{emote|*boop beep boop*}}" />
+    <tag Name="SimpleConversation" Value="▶{{emote|*beep boop*}}~▶{{emote|*boop beep*}}~▶{{emote|*beep boop beep*}}~▶{{emote|*boop beep boop*}}" />
   </object>
   <object Name="BaseMiner" Load="Merge">
     <part Name="Render" DisplayName="▶miner" />
@@ -190,7 +190,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.13
   </object>
   <object Name="BaseHumanoid" Load="Merge">
     <xtagTextFragments Skin="▶skin" PoeticFeatures="▶tall forehead,outstretched legs,eyes full of wonder" Activity="▶going about the tedious work of speaking to peers,hunting and gathering,wandering the salt dunes" VillageActivity="▶sleeping in our bedrolls and sitting in our chairs,lounging around,reading books,peeling and eating musa" NeedsItemFor="▶for my own collection,to slake my greed,because of its trade value,to inspire my art,to inspire my poetry,to be my muse,to help with farm work,for the games we play under the Beetle Moon" SacredThing="▶the act of procreating,philosophy,alcohol,grains of the earth,stone fruit,artistry,poetry,warm meals,bread and wine,pottery,painting" ArableLand="▶arable land,livestock,the bounty of the earth" ValuedOre="▶precious metals,artifacts,chrome,jasper,cybernetics,the nectar of the Eaters" />
-    <tag Name="SimpleConversation" Value="▶Moon and Sun. Wisdom and will.~May the earth yield for us this season.~Peace, =player.formalAddressTerm=." />
+    <tag Name="SimpleConversation" Value="▶Moon and Sun. Wisdom and will.~▶May the earth yield for us this season.~▶Peace, =player.formalAddressTerm=." />
   </object>
   <object Name="BaseApe" Load="Merge">
     <tag Name="HeroNameTitleWiseDescriptor" Value="▶Ruminative,Wise,Sensible,Shrewd,Great,Spirited,Judicious" />
@@ -1741,7 +1741,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.13
   </object>
   <object Name="Mimic" Load="Merge">
     <part Name="Render" DisplayName="▶mimic" />
-    <part Name="Description" Short="▶A starshape of sheer and gummy tentacle shivers at the zero point. When =pronouns.possessive= =verb:sense:afterpronoun= something nearby, electric current charges a scale of mirror photons to replicate the image." />
+    <part Name="Description" Short="▶A starshape of sheer and gummy tentacle shivers at the zero point. When =pronouns.subjective= =verb:sense:afterpronoun= something nearby, electric current charges a scale of mirror photons to replicate the image." />
   </object>
   <object Name="Mimic Corpse" Load="Merge">
     <part Name="Render" DisplayName="▶mimic corpse" />
@@ -3244,6 +3244,8 @@ Caves of Qud - Generated Localizable XML 2.0.212.13
   <object Name="BaseNephal" Load="Merge">
     <part Name="Render" DisplayName="▶nephal" />
     <part Name="Honorifics" Ordinary="▶Girsh" />
+    <tag Name="StaticLikeReason" Value="▶some reason no one remembers" />
+    <tag Name="StaticHateReason" Value="▶eating one of their young" />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="Nephal_Weapon" Load="Merge">
@@ -3623,6 +3625,12 @@ Caves of Qud - Generated Localizable XML 2.0.212.13
   <object Name="HumanTinker1" Load="Merge">
     <part Name="Render" DisplayName="▶human tinker" />
   </object>
+  <object Name="BaseMerchant" Load="Merge">
+    <tag Name="LairName" Value="▶workshop" />
+    <tag Name="LairNameContext" Value="▶the workshop of =subject.refname:long:withTitles:LairName|strip=" />
+    <tag Name="LairPulldownMessage" Value="▶You discover a secluded workshop. Do you want to investigate?" />
+    <tag Name="LairDiscoveredMessage" Value="▶You discover the workshop of =subject.refname:long:withTitles:LairName|strip=." />
+  </object>
   <object Name="AppleMerchant" Load="Merge">
     <part Name="Render" DisplayName="▶apple farmer" />
     <part Name="Description" Short="▶=pronouns.IndicativeProximal= brawny, mustachioed =pronouns.personTerm= =verb:wear:afterpronoun= a white apron stained with the juice of starapples. =pronouns.Possessive= sable hair mats against the browned skin of =pronouns.possessive= forehead. From =pronouns.possessive= left forearm hangs a wet rag, with which =pronouns.subjective= =verb:scrub:afterpronoun= the dirt from =pronouns.possessive= hands every few moments." />
@@ -3634,6 +3642,12 @@ Caves of Qud - Generated Localizable XML 2.0.212.13
   <object Name="Scribe" Load="Merge">
     <part Name="Render" DisplayName="▶scribe" />
     <part Name="Description" Short="▶=pronouns.Possessive= spectacles are fogged and =pronouns.possessive= hands are stained with ink." />
+    <tag Name="StaticLikeReason" Value="▶illuminating their manuscripts" />
+    <tag Name="StaticHateReason" Value="▶refusing to illuminate their manuscripts" />
+    <tag Name="LairName" Value="▶scriptorium" />
+    <tag Name="LairNameContext" Value="▶the scriptorium of =subject.refname:long:withTitles:LairName|strip=" />
+    <tag Name="LairPulldownMessage" Value="▶You discover a secluded scriptorium. Do you want to investigate?" />
+    <tag Name="LairDiscoveredMessage" Value="▶You discover the scriptorium of =subject.refname:long:withTitles:LairName|strip=." />
   </object>
   <object Name="Beekeeper" Load="Merge">
     <part Name="Render" DisplayName="▶beekeeper" />
@@ -3654,30 +3668,48 @@ Caves of Qud - Generated Localizable XML 2.0.212.13
   <object Name="Shoemaker" Load="Merge">
     <part Name="Render" DisplayName="▶shoemaker" />
     <part Name="Description" Short="▶Sweat-stained sleeves bellow through a leather apron. =pronouns.Subjective= =verb:turn:afterpronoun= an awl around =pronouns.possessive= fingers." />
+    <tag Name="StaticLikeReason" Value="▶crafting them artisan shoes" />
+    <tag Name="StaticHateReason" Value="▶refusing to craft them artisan shoes" />
   </object>
   <object Name="Hatter" Load="Merge">
     <part Name="Render" DisplayName="▶hatter" />
     <part Name="Description" Short="▶=pronouns.Subjective==verb:'ve:afterpronoun= woven a leather chin strap between =pronouns.possessive= fingers. Pelts of a dozen animals hang from =pronouns.possessive= shoulder." />
+    <tag Name="StaticLikeReason" Value="▶crafting them artisan hats" />
+    <tag Name="StaticHateReason" Value="▶refusing to craft them artisan hats" />
   </object>
   <object Name="Glover" Load="Merge">
     <part Name="Render" DisplayName="▶glover" />
     <part Name="Description" Short="▶Glove tranks are fastened to the back of =pronouns.possessive= hands with loose thread. =pronouns.Subjective= =verb:bite:afterpronoun= a needle for safekeeping." />
+    <tag Name="StaticLikeReason" Value="▶crafting them artisan gloves" />
+    <tag Name="StaticHateReason" Value="▶refusing to craft them artisan gloves" />
   </object>
   <object Name="Chef" Load="Merge">
     <part Name="Render" DisplayName="▶chef" />
     <part Name="Description" Short="▶Pastes and jams of various colors smear =pronouns.possessive= apron like a painter's palette. Flour dusts =pronouns.possessive= broad, dough-kneading knuckles." />
+    <tag Name="StaticLikeReason" Value="▶cooking them a splendid meal" />
+    <tag Name="StaticHateReason" Value="▶refusing to cook for them" />
+    <tag Name="LairName" Value="▶kitchen" />
+    <tag Name="LairNameContext" Value="▶the kitchen of =subject.refname:long:withTitles:LairName|strip=" />
+    <tag Name="LairPulldownMessage" Value="▶You discover a secluded domicile. Sweet and savory wafts of air bellow from inside. Do you want to investigate?" />
+    <tag Name="LairDiscoveredMessage" Value="▶You discover the kitchen of =subject.refname:long:withTitles:LairName|strip=." />
   </object>
   <object Name="Haberdasher" Load="Merge">
     <part Name="Render" DisplayName="▶haberdasher" />
     <part Name="Description" Short="▶Wire, twine, and thread tangle from spools strapped to =pronouns.possessive= vest. =pronouns.Subjective= =verb:sport:afterpronoun= a ruffled cloak of unknown fashion." />
+    <tag Name="StaticLikeReason" Value="▶crafting them artisan cloaks" />
+    <tag Name="StaticHateReason" Value="▶refusing to craft them artisan cloaks" />
   </object>
   <object Name="Armorer" Load="Merge">
     <part Name="Render" DisplayName="▶armorer" />
     <part Name="Description" Short="▶Tongs clip between =pronouns.possessive= soot-seared apron and the barrel of =pronouns.possessive= chest. =pronouns.Subjective= =verb:clasp:afterpronoun= a swivel knife and hammer for working leather and metal." />
+    <tag Name="StaticLikeReason" Value="▶crafting them artisan armor" />
+    <tag Name="StaticHateReason" Value="▶refusing to craft them artisan armor" />
   </object>
   <object Name="Gunsmith" Load="Merge">
     <part Name="Render" DisplayName="▶gunsmith" />
     <part Name="Description" Short="▶A crushed hat brim mantles =pronouns.possessive= eyes and a leather holster rides =pronouns.possessive= shoulder. =pronouns.Subjective= =verb:roll:afterpronoun= a lead slug over =pronouns.possessive= leathery knuckles." />
+    <tag Name="StaticLikeReason" Value="▶crafting them an artisan gun" />
+    <tag Name="StaticHateReason" Value="▶refusing to craft them an artisan gun" />
   </object>
   <object Name="Grenadier" Load="Merge">
     <part Name="Render" DisplayName="▶grenadier" />
@@ -3686,6 +3718,12 @@ Caves of Qud - Generated Localizable XML 2.0.212.13
   <object Name="IchorMerchant" Load="Merge">
     <part Name="Render" DisplayName="▶ichor merchant" />
     <part Name="Description" Short="▶=pronouns.Possessive= apron is damp with the sap of a thousand trees. =pronouns.Possessive= lips are painted in watercolor. =pronouns.Subjective= =verb:wring:afterpronoun= ichor from =pronouns.possessive= hair." />
+    <tag Name="LairName" Value="▶distillery" />
+    <tag Name="LairNameContext" Value="▶the distillery of =subject.refname:long:withTitles:LairName|strip=" />
+    <tag Name="LairPulldownMessage" Value="▶You discover a secluded distillery. Do you want to investigate?" />
+    <tag Name="LairDiscoveredMessage" Value="▶You discover the distillery of =subject.refname:long:withTitles:LairName|strip=." />
+    <tag Name="StaticLikeReason" Value="▶distilling a rare liquid" />
+    <tag Name="StaticHateReason" Value="▶refusing to distill a rare liquid" />
   </object>
   <object Name="Jeweler" Load="Merge">
     <part Name="Render" DisplayName="▶jeweler" />
@@ -3694,6 +3732,8 @@ Caves of Qud - Generated Localizable XML 2.0.212.13
   <object Name="Gemcutter" Load="Merge">
     <part Name="Render" DisplayName="▶gemcutter" />
     <part Name="Description" Short="▶Scars on =pronouns.possessive= hands indicate where the grinding wheel gluttonously sheared through stone and feasted on chips of flesh." />
+    <tag Name="StaticLikeReason" Value="▶depicting them favorably in figurine form" />
+    <tag Name="StaticHateReason" Value="▶depicting them unfavorably in figurine form" />
   </object>
   <object Name="DiskMerchant" Load="Merge">
     <part Name="Render" DisplayName="▶schematics drafter" />
@@ -3702,6 +3742,12 @@ Caves of Qud - Generated Localizable XML 2.0.212.13
   <object Name="Gutsmonger" Load="Merge">
     <part Name="Render" DisplayName="▶gutsmonger" />
     <part Name="Description" Short="▶Orbed goggles smeared with blood impart an insectoid aspect to =pronouns.possessive= face. =pronouns.Possessive= apron is stained with a rainbow of pinks, tans, and nickel -- the palette of machine and folk guts -- and spare wire shoots from =pronouns.possessive= sleeves like cuffs." />
+    <tag Name="LairName" Value="▶organ market" />
+    <tag Name="LairNameContext" Value="▶the organ market of =subject.refname:long:withTitles:LairName|strip=" />
+    <tag Name="LairPulldownMessage" Value="▶You discover a secluded organ market. Do you want to investigate?" />
+    <tag Name="LairDiscoveredMessage" Value="▶You discover the organ market of =subject.refname:long:withTitles:LairName|strip=." />
+    <tag Name="StaticLikeReason" Value="▶stocking a rare implant" />
+    <tag Name="StaticHateReason" Value="▶refusing to sell a rare implant" />
   </object>
   <object Name="CrabFarmer" Load="Merge">
     <part Name="Render" DisplayName="▶crab farmer" />
@@ -3955,7 +4001,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.13
     <part Name="Description" Short="▶A slight and trim faundren narrows =pronouns.possessive= Spindle-blue eyes. Like the other younglings, =pronouns.possessive= face is bright with burning curiosity. Unlike theirs, though, =pronouns.possessive= is tempered by poise and honed to a dagger's point by a startlingly precocious discipline." />
   </object>
   <object Name="Mayor Nuntu" Load="Merge">
-    <part Name="Description" Short="▶A toga wraps =pronouns.possessive= hulking, bright-fur frame, and a broad brim shades =pronouns.possessive= wise and wideset eyes. A sedentary life has sapped some of his ape strength: burly shoulders slouch their weight onto a walking stick, a belly swells the linen around =pronouns.possessive= waist, and plump, sloping cheeks rim a warm and welcoming grin." />
+    <part Name="Description" Short="▶A toga wraps =pronouns.possessive= hulking, bright-fur frame, and a broad brim shades =pronouns.possessive= wise and wideset eyes. A sedentary life has sapped some of =pronouns.possessive= ape strength: burly shoulders slouch their weight onto a walking stick, a belly swells the linen around =pronouns.possessive= waist, and plump, sloping cheeks rim a warm and welcoming grin." />
     <part Name="Render" DisplayName="▶Nuntu" />
     <part Name="Honorifics" Primary="▶Mayor" />
     <xtagGrammar Proper="▶true" />

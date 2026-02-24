@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.13
+Caves of Qud - Generated Localizable XML 2.0.212.14
 
 <objects>
 
@@ -98,11 +98,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.13
     <part Name="Description" Short="▶The long shaft widens to a rigid and symmetric polygon of azure metal. Nicks and scores tally on its two heads." />
   </object>
   <object Name="Cudgel4" Load="Merge">
-    <part Name="Render" DisplayName="▶{{B|carbide}} folding hammer" />
+    <part Name="Render" DisplayName="▶{{B|carbide}}-folding hammer" />
     <part Name="Description" Short="▶The hammer shaft is capped by a head of bright and azure metal. Darker stripes across its face and throat note where it struck and beat softer carbide down." />
   </object>
   <object Name="Cudgel4th" Load="Merge">
-    <part Name="Render" DisplayName="▶two-handed {{B|carbide}} folding hammer" />
+    <part Name="Render" DisplayName="▶two-handed {{B|carbide}}-folding hammer" />
     <part Name="Description" Short="▶The hammer pole is capped by a twin-head of bright and azure metal. Darker stripes across its faces and throats note where it struck and beat softer carbide down." />
   </object>
   <object Name="Cudgel5" Load="Merge">
@@ -1295,6 +1295,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.13
   <object Name="Bark Armor" Load="Merge">
     <part Name="Render" DisplayName="▶bark armor" />
     <part Name="Description" Short="▶Billets of shaved dogwood contour to the breasts, waist, and thigh. The husk is beetle-eaten." />
+    <xtagGrammar iArticle="▶some" />
   </object>
   <object Name="Leather Armor" Load="Merge">
     <part Name="Render" DisplayName="▶leather armor" />
@@ -1372,7 +1373,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.13
   </object>
   <object Name="Plastifer Chem Vest" Load="Merge">
     <part Name="Render" DisplayName="▶{{plastifer|plastifer}} {{G|chem}} vest" />
-    <part Name="Description" Short="▶A cuirass of gas-caught foam stiffens instantaneously when pressure is applied. Its karst surface is arrayed with tube sleeves and dusted with the colofur abrasions of chiliads and the chemical reactions they produce; the material has careened past the outer rings of its expected lifetime and into the unknowing void." />
+    <part Name="Description" Short="▶A cuirass of gas-caught foam stiffens instantaneously when pressure is applied. Its karst surface is arrayed with tube sleeves and dusted with the colorful abrasions of chiliads and the chemical reactions they produce; the material has careened past the outer rings of its expected lifetime and into the unknowing void." />
     <part Name="ReduceEnergyCosts" NameForStatus="▶StentSystem" />
   </object>
   <object Name="Recycling Suit" Load="Merge">
@@ -1733,7 +1734,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.13
   </object>
   <object Name="Dazzle Cheek" Load="Merge">
     <part Name="Render" DisplayName="▶dazzle cheek" />
-    <part Name="Description" Short="▶Geometry swims across the crystal diodes of the mask. Its expression is smiling in the hypnagognic key." />
+    <part Name="Description" Short="▶Geometry swims across the crystal diodes of the mask. Its expression is smiling in the hypnagogic key." />
     <part Name="EquipStatBoost" NameForStatus="▶DazzleCamouflageSystem" />
     <part Name="AddsRep" NameForStatus="▶HypnoticGenerator" />
   </object>
@@ -2436,7 +2437,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.13
     <part Name="Description" Short="▶Rubber insulation that diamond-tiled the high pneumatic ducts was cut free at midnight and ferried to a coven of tailors, who then stitched a bodice." />
   </object>
   <object Name="BaseTierHead3_AV" Load="Merge">
-    <part Name="Description" Short="▶When they were active, the crysteel blast furnaces belched slag into a belt of hills that cinctured the old arcology. In the age of =spice.entity:name=, the slag was mined and moulded into a glass replica of an crysteel miter." />
+    <part Name="Description" Short="▶When they were active, the crysteel blast furnaces belched slag into a belt of hills that cinctured the old arcology. In the age of =spice.entity:name=, the slag was mined and moulded into a glass replica of a crysteel miter." />
   </object>
   <object Name="BaseTierHead3_DV" Load="Merge">
     <part Name="Description" Short="▶Rubber insulation that diamond-tiled the high pneumatic ducts was cut free at midnight and ferried to a coven of tailors, who then stitched a tam." />
@@ -2475,7 +2476,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.13
     <part Name="Description" Short="▶Dead sponge was heaped into hexagonal prisms at Maqqom and ferried through canals to vault-shadowed kurna. There it was washed clean and spongeworked into a blouse." />
   </object>
   <object Name="BaseTierHead4_AV" Load="Merge">
-    <part Name="Description" Short="▶When they were active, the crysteel blast furnaces belched slag into a belt of hills that cinctured the old arcology. In the age of =spice.entity:name=, the slag was mined and moulded into a glass replica of an crysteel miter, then reinforced with stonegut." />
+    <part Name="Description" Short="▶When they were active, the crysteel blast furnaces belched slag into a belt of hills that cinctured the old arcology. In the age of =spice.entity:name=, the slag was mined and moulded into a glass replica of a crysteel miter, then reinforced with stonegut." />
   </object>
   <object Name="BaseTierHead4_DV" Load="Merge">
     <part Name="Description" Short="▶Dead sponge was heaped into hexagonal prisms at Maqqom and ferried through canals to vault-shadowed kurna. There it was washed clean and spongeworked into a bonnet." />
@@ -2487,7 +2488,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.13
     <part Name="Description" Short="▶An imperishable uuflax sheet was torn from the elephantine spools in the market, twice-folded, and stitched into a geometrically patterned talma." />
   </object>
   <object Name="BaseTierHands4_AV" Load="Merge">
-    <part Name="Description" Short="▶When they were active, the crysteel blast furnaces belched slag into a belt of hills that cinctured the old arcology. In the age of =spice.entity:name=, the slag was mined and moulded into a glass replica of an crysteel miter, then reinforced with stonegut." />
+    <part Name="Description" Short="▶When they were active, the crysteel blast furnaces belched slag into a belt of hills that cinctured the old arcology. In the age of =spice.entity:name=, the slag was mined and moulded into a glass replica of a crysteel miter, then reinforced with stonegut." />
   </object>
   <object Name="BaseTierHands4_DV" Load="Merge">
     <part Name="Description" Short="▶Dead sponge was heaped into hexagonal prisms at Maqqom and ferried through canals to vault-shadowed kurna. There it was washed clean and spongeworked into a pair of gloves." />
@@ -2578,7 +2579,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.13
   </object>
   <object Name="Albino Ape Pelt" Load="Merge">
     <part Name="Render" DisplayName="▶{{Y|albino ape pelt}}" />
-    <part Name="Description" Short="▶A snow white trapazoid of fine ape fur, prized for its beauty and warmth." />
+    <part Name="Description" Short="▶A snow white trapezoid of fine ape fur, prized for its beauty and warmth." />
   </object>
   <object Name="Ogre Ape Pelt" Load="Merge">
     <part Name="Render" DisplayName="▶{{W|ogre ape pelt}}" />
@@ -3856,6 +3857,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.13
   <object Name="Wire Strand" Load="Merge">
     <part Name="Render" DisplayName="▶{{r|wire strand}}" />
     <part Name="Description" Short="▶A cord extruded from metal ore conducts current when laid together." />
+    <part Name="DeployableInfrastructure" DeployNoun="▶wiring" />
   </object>
   <object Name="Garbage" Load="Merge">
     <part Name="Render" DisplayName="▶trash" />

@@ -27,6 +27,12 @@ finding {{c|text}}-style color tags that have spaces in the color:
 
 cs finding _S and _T:
 _(S|T)\(
+finding _S and _T without Context:
+_(S|T)\([ ]*"[^"]+",
+_(S|T)\([ ]*"[^"]+"[ ]*\)
+
+cs finding ReplaceBuilder .AddObject calls
+\.Add(Object)\(.+,[ ]*(Alias:[ ]*|)"[^"]+"\)
 
 cs code cleanup:
 \s+$			

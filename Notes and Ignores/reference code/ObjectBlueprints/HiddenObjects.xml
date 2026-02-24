@@ -121,7 +121,7 @@
     <part Name="AscensionCable" />
     <tag Name="ForceSmartUse" />
     <tag Name="ExcludeFromDynamicEncounters" />
-    <part Name="UnityPrefabImposter" PrefabID="Prefabs/Particles/SpindleRibbon" />    
+    <part Name="PrefabImposter" Prefab="Prefabs/Particles/SpindleRibbon" />    
   </object>
   <object Name="Left Spindle Ribbon" Inherits="BaseSpindleSupport">
     <part Name="Render" Tile="Furniture/left-spindle-ribbon.png" ColorString="&amp;C" DetailColor="c" DisplayName="graphene ribbon" />
@@ -148,7 +148,7 @@
     <part Name="AscensionCable" />
     <tag Name="ForceSmartUse" />
     <tag Name="ExcludeFromDynamicEncounters" />
-    <part Name="UnityPrefabImposter" PrefabID="Prefabs/Particles/SpindleRibbonDown" />
+    <part Name="PrefabImposter" Prefab="Prefabs/Particles/SpindleRibbonDown" />
   </object>
   <object Name="Left Spindle Ribbon Top" Inherits="BaseSpindleSupport">
     <part Name="Render" Tile="Furniture/left-spindle-ribbon-top.png" ColorString="&amp;C" DetailColor="c" DisplayName="graphene ribbon" />
@@ -569,14 +569,14 @@
     <part Name="Description" Short="Star slag from the early age of the cosmos burns in hues of orchid and indigo." />
     <stat Name="Hitpoints" Value="500" />    
     <part Name="AnimatedMaterialMagentaFire" />
-    <part Name="UnityPrefabImposter" PrefabID="Prefabs/Particles/PurpleBrazierFlames" />
+    <part Name="PrefabImposter" Prefab="Prefabs/Particles/PurpleBrazierFlames" />
     <part Name="LightSource" Lit="true" Radius="10" />
     <part Name="SoundRender" Sound="sfx_torch_flame_lp"/>
     <tag Name="ExcludeFromDynamicEncounters" />
   </object>
   <object Name="ShevaBrazierGreen" Inherits="ShevaBrazier">
     <part Name="Description" Short="Star slag from the early age of the cosmos burns in hues of leaf and malachite." />
-    <part Name="UnityPrefabImposter" PrefabID="Prefabs/Particles/GreenBrazierFlames" />
+    <part Name="PrefabImposter" Prefab="Prefabs/Particles/GreenBrazierFlames" />
     <part Name="AnimatedMaterialGreenFire" />
   </object>  
   <object Name="ChevronWall" Inherits="BaseWallMetal">
@@ -710,7 +710,7 @@
     <part Name="MotedAir" />
     <xtagGrammar iArticle="the" />
     <part Name="BackdropWhenVisible" BackdropBleedthrough="true" />
-    <part Name="UnityPrefabImposter" PrefabID="Prefabs/Particles/MotedAir" />
+    <part Name="PrefabImposter" Prefab="Prefabs/Particles/MotedAir" />
     <tag Name="NoTeleport" Value="You cannot teleport into the vacuum of space." />
     <removepart Name="ChasmMaterial" />
   </object>
@@ -1056,7 +1056,7 @@
     <part Name="Description" Short="Black grates kindled by the light of the jeweled cosmos are stamped in dust with the hoofprint signatures of six hundred worlds." />
     <part Name="NoDamage" />
     <tag Name="OverlayColor" Value="&amp;M^k" />
-    <tag Name="ImportantOverlayObject" />
+    <part Name="ImportantOverlayObject" />
     <tag Name="EnterSound" Value="sfx_endgame_spacedock_platform_move" />
     <tag Name="ExitSound" Value="sfx_endgame_spacedock_platform_move" />
     <tag Name="ExcludeFromDynamicEncounters" />
@@ -1872,7 +1872,7 @@
     <part Name="Render" Tile="Walls2/star-orchid-monument-9.png" />
   </object>
   <object Name="Star Orchid Temple Projector" Inherits="MountedFurniture">
-    <part Name="Render" DisplayName="temple projecter" Tile="Furniture/orchid-projector.png" ColorString="&amp;o" TileColor="&amp;y" DetailColor="O" />
+    <part Name="Render" DisplayName="temple projector" Tile="Furniture/orchid-projector.png" ColorString="&amp;o" TileColor="&amp;y" DetailColor="O" />
     <part Name="Description" Short="Hyperdimensional scum glistens on the projection disc from when it was doused in the soapy film of interspacetime. The disc is silent now, sundered from its transcendental entanglements, its base offering a shadewall for moss to prosper on." />
     <stat Name="AV" Value="40" />
     <stat Name="Hitpoints" Value="6000" />
@@ -2059,7 +2059,7 @@
   </object>
   <object Name="Chiliad Torchpost" Inherits="Torchpost">
     <part Name="Render" Tile="Furniture/chiliad-torchpost.png" />
-    <part Name="UnityPrefabImposter" PrefabID="Prefabs/Particles/TorchpostFlames" Y="2"/>
+    <part Name="PrefabImposter" Prefab="Prefabs/Particles/TorchpostFlames" Y="2"/>
     <part Name="Description" Short="A burning Y of dried wood and cupped iron light the domiciles." />
     <stag Name="Chiliad" />
     <tag Name="ExcludeFromDynamicEncounters" />

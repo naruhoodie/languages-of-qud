@@ -4040,7 +4040,7 @@
     <part Name="LightSource" Lit="true" Radius="6" />
     <part Name="Description" Short="Burnished bronze is burned to light-in-ceremony by hot coal." />
     <part Name="Metal" />
-    <part Name="UnityPrefabImposter" PrefabID="Prefabs/Particles/BrazierFlames" />
+    <part Name="PrefabImposter" Prefab="Prefabs/Particles/BrazierFlames" />
     <stag Name="LightSource" />
     <stag Name="Furniture" />
     <stag Name="Luxury" />
@@ -4054,7 +4054,7 @@
     <part Name="LightSource" Lit="true" Radius="6" />
 		<part Name="Description" Short="Burnished bronze is burned to light-in-ceremony by hot coal." />
     <part Name="Metal" />
-    <part Name="UnityPrefabImposter" PrefabID="Prefabs/Particles/TallBrazierFlames" />
+    <part Name="PrefabImposter" Prefab="Prefabs/Particles/TallBrazierFlames" />
     <tag Name="Tier" Value="0" />
     <part Name="SoundRender" Sound="sfx_torch_flame_lp"/>
     <stag Name="LightSource" />
@@ -4079,7 +4079,7 @@
     <part Name="LightSource" Lit="true" Radius="6" />
 		<part Name="Description" Short="A brightly burning handfire hangs across wood and iron." />
     <part Name="Metal" />
-    <part Name="UnityPrefabImposter" PrefabID="Prefabs/Particles/TorchpostFlames" />
+    <part Name="PrefabImposter" Prefab="Prefabs/Particles/TorchpostFlames" />
     <intproperty Name="NavigationWeight" Value="10" />
     <stag Name="LightSource" />	  
   </object>	
@@ -4468,7 +4468,7 @@
     <part Name="Physics" Weight="30" Takeable="false" FlameTemperature="10000" Organic="true" />
     <part Name="AnimatedMaterialFire" />
     <part Name="LightSource" Lit="true" Radius="3" />    
-    <part Name="UnityPrefabImposter" PrefabID="Prefabs/Particles/CampfireFlames" />
+    <part Name="PrefabImposter" Prefab="Prefabs/Particles/CampfireFlames" />
     <part Name="Campfire" ExtinguishBlueprint="Campfire Remains" />
     <intproperty Name="ThermalInsulation" Value="500" />
     <intproperty Name="NavigationWeight" Value="10" />
@@ -4483,7 +4483,7 @@
   </object>
   <object Name="BlueCampfire" Inherits="Campfire">
     <part Name="Render" ColorString="&amp;B" DetailColor="b" />
-    <part Name="UnityPrefabImposter" PrefabID="Prefabs/Particles/CampfireBlueFlames" />
+    <part Name="PrefabImposter" Prefab="Prefabs/Particles/CampfireBlueFlames" />
     <part Name="Campfire" ExtinguishBlueprint="BlueCampfireRemains" />
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
   </object>
@@ -5255,7 +5255,7 @@ The frame forms half a heart; the Eaters' favorite remains." />
     <tag Name="VaporObject" Value="LavaPuddle" />
     <tag Name="BaseObject" Value="*noinherit" />
     <tag Name="ForceSmartUse" />
-    <part Name="UnityPrefabImposter" PrefabID="Prefabs/Imposters/StatueBase" />
+    <part Name="PrefabImposter" Prefab="Prefabs/Imposters/StatueBase" />
     <part Name="SmartuseTwiddles" />
     <tag Name="Furniture" Value="1" />
     <tag Name="Diggable" />
@@ -5267,7 +5267,7 @@ The frame forms half a heart; the Eaters' favorite remains." />
     <stat Name="Hitpoints" Value="6000" />
     <tag Name="ForceSmartUse" />
     <part Name="SmartuseTwiddles" />
-    <part Name="UnityPrefabImposter" PrefabID="Prefabs/Imposters/StatueBase" />
+    <part Name="PrefabImposter" Prefab="Prefabs/Imposters/StatueBase" />
     <part Name="Description" Short="This statue worked from *material* intricately depicts *creature.a**creature*:
 " />
     <tag Name="NoSparkingQuest" />

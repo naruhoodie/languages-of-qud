@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.13
+Caves of Qud - Generated Localizable XML 2.0.212.14
 
 <options>
 
@@ -47,7 +47,9 @@ Caves of Qud - Generated Localizable XML 2.0.212.13
   <option ID="OptionImposterChars" DisplayText="▶Imposter text tiles" Category="▶Display" />
   <option ID="OptionsKeybindings" DisplayText="▶Control Mapping" Category="▶Controls" SearchKeywords="▶Control bindings" />
   <option ID="OptionKeyRepeatDelay" DisplayText="▶Key repeat delay" Category="▶Controls" />
+  <option ID="OptionKeyRepeatDelay" DisplayText="▶Button repeat delay" Category="▶Controls" />
   <option ID="OptionKeyRepeatRate" DisplayText="▶Key repeat rate" Category="▶Controls" />
+  <option ID="OptionKeyRepeatRate" DisplayText="▶Button repeat rate" Category="▶Controls" />
   <option ID="OptionMouseInput" DisplayText="▶Allow mouse input" Category="▶Controls" />
   <option ID="OptionMouseMovement" DisplayText="▶Allow mouse movement" Category="▶Controls" />
   <option ID="OptionMouseScrollWheel" DisplayText="▶Allow scroll wheel to zoom" Category="▶Controls" />
@@ -55,6 +57,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.13
   <option ID="OptionDisableFullscreenColorEffects" DisplayText="▶Disable fullscreen color effects (for color blindness)" Category="▶Accessibility" />
   <option ID="OptionAlphanumericBits" DisplayText="▶Display bits with alphanumerics instead of dots (for color blindness)" Category="▶Accessibility" />
   <option ID="OptionDisableTextAnimationEffects" DisplayText="▶Disable most tile-based flashing effects" Category="▶Accessibility" />
+  <option ID="OptionDisableAllIdleTileAnimations" DisplayText="▶Disable all idle tile-based animations" Category="▶Accessibility" />
   <option ID="OptionDisableTextWarpEffects" DisplayText="▶Disable tile-based screen-warping effects" Category="▶Accessibility" />
   <option ID="OptionDisableFullscreenWarpEffects" DisplayText="▶Disable fullscreen screen-warping effects" Category="▶Accessibility" />
   <option ID="OptionModernUI" DisplayText="▶Enable modern UI" Category="▶UI" />
@@ -83,7 +86,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.13
   <option ID="OptionDockOpacity" DisplayText="▶Dock background opacity" Category="▶UI" />
   <option ID="OptionMouseCursor" DisplayText="▶Mouse cursor appearance" Category="▶UI" Values="System|▶System,Default|▶Default,Alternate|▶Alternate" />
   <option ID="OptionMouseAutoHideCursorEnabled" DisplayText="▶Automatically hide mouse cursor when inactive" Category="▶UI" />
-  <option ID="OptionControllerFont" DisplayText="▶Gamepad button appearance" Category="▶UI" Values="Auto|▶Auto,KBM|▶KBM,XBox|▶XBox,PS|▶PS,XBox Filled|▶XBox Filled,PS Filled|▶PS Filled" />
+  <option ID="OptionControllerFont" DisplayText="▶Gamepad button appearance" Category="▶UI" Values="Auto|▶Auto,KBM|▶KBM,XBox|▶XBox,PS|▶PS,XBox Filled|▶XBox Filled,PS Filled|▶PS Filled,Switch|▶Switch" />
   <option ID="OptionFloatingKeyboard" DisplayText="▶Display overlay keyboard for input on supported devices" Category="▶UI" />
   <option ID="OptionZoomSensitivity" DisplayText="▶Zoom sensitivity" Category="▶UI" />
   <option ID="OptionTooltipDelay" DisplayText="▶Tooltip delay (ms)" Category="▶UI" />
@@ -162,6 +165,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.13
   <option ID="OptionCollectEarly" DisplayText="▶Garbage collect after each zone flush (for low memory environments)" Category="▶Performance" />
   <option ID="OptionDisableFloorTextureObjects" DisplayText="▶Do not generate floor texture objects" Category="▶Performance" />
   <option ID="OptionThrottleAnimation" DisplayText="▶Throttle animations (for low CPU environments)" Category="▶Performance" />
+  <option ID="OptionDrawStepImmediately" DisplayText="▶Render a frame immediately after moving (for low CPU environments)" Category="▶Performance" />
   <option ID="OptionShowAdvancedOptions" DisplayText="▶Show advanced options" Category="▶App Settings" />
   <option ID="OptionMusicBackground" DisplayText="▶Keep Caves of Qud active in background" Category="▶App Settings" />
   <option ID="OptionSessionBackups" DisplayText="▶Number of rolling backup saves" Category="▶App Settings" Values="None|▶None,1|▶1,2|▶2,3|▶3,5|▶5,7|▶7,10|▶10,15|▶15,20|▶20,30|▶30,40|▶40">
@@ -175,6 +179,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.13
   <option ID="OptionAllowSaveLoad" DisplayText="▶Enable save and load" Category="▶Debug" />
   <option ID="OptionAllowReallydie" DisplayText="▶Get prompted to confirm deaths" Category="▶Debug" />
   <option ID="OptionEnablePrereleaseContent" DisplayText="▶Enable unfinished and unsupported content" Category="▶Debug" />
+  <option ID="OptionEnableSeed" DisplayText="▶Enable world seeds (experimental)" Category="▶Debug" />
   <option ID="OptionDisableDefectLimit" DisplayText="▶Allow creatures to have multiple defects " Category="▶Debug" />
   <option ID="OptionEnableColorTextInput" DisplayText="▶Enable color menu for text input" Category="▶Debug" />
   <option ID="OptionDisableAchievements" DisplayText="▶Disable achievements" Category="▶Debug" />

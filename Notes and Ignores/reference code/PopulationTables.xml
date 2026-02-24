@@ -16530,6 +16530,32 @@
     </group>
   </population>
 
+  <population Name="SultanShrines_StatueTiles" Style="pickone">
+    <group Name="Common" Style="pickone" Weight="8">
+      <object Blueprint="Terrain/sw_sultanstatue_1.png" />
+      <object Blueprint="Terrain/sw_sultanstatue_2.png" />
+      <object Blueprint="Terrain/sw_sultanstatue_3.png" />
+      <object Blueprint="Terrain/sw_sultanstatue_4.png" />
+      <object Blueprint="Terrain/sw_sultanstatue_5.png" />
+      <object Blueprint="Terrain/sw_sultanstatue_6.png" />
+      <object Blueprint="Terrain/sw_sultanstatue_7.png" />
+      <object Blueprint="Terrain/sw_sultanstatue_8.png" />
+      <object Blueprint="Terrain/sw_sultanstatue_9.png" />
+      <object Blueprint="Terrain/sw_sultanstatue_10.png" />
+      <object Blueprint="Terrain/sw_sultanstatue_11.png" />
+    </group>
+    <group Name="Rare" Style="pickone">
+      <object Blueprint="Terrain/sw_sultanstatue_rare_1.png" />
+      <object Blueprint="Terrain/sw_sultanstatue_rare_2.png" />
+      <object Blueprint="Terrain/sw_sultanstatue_rare_3.png" />
+      <object Blueprint="Terrain/sw_sultanstatue_rare_4.png" />
+      <object Blueprint="Terrain/sw_sultanstatue_rare_5.png" />
+      <object Blueprint="Terrain/sw_sultanstatue_rare_6.png" />
+      <object Blueprint="Terrain/sw_sultanstatue_rare_7.png" />
+      <object Blueprint="Terrain/sw_sultanstatue_rare_8.png" />
+    </group>
+  </population>
+
   <!--Segmented Walls-->
   <!--Forcefields-->
   <population Name="Forcefields_and_Fulcrete">

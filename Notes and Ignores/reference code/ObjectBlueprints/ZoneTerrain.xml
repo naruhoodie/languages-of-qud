@@ -815,7 +815,7 @@
 		<part Name="Physics" Weight="1000" />
 		<stat Name="Hitpoints" Value="2000" />
 		<part Name="ConversationScript" ConversationID="ChavvahFrontChime" />
-		<part Name="UnityPrefabImposter" PrefabID="Prefabs/Particles/TreeGlow" />
+		<part Name="PrefabImposter" Prefab="Prefabs/Particles/TreeGlow" />
     <part Name="Interesting" Radius="1" Key="Chavvah Chime" />
     <tag Name="ExcludeFromDynamicEncounters" />
 	</object>
@@ -825,7 +825,7 @@
 		<part Name="Physics" Weight="1000" />
 		<stat Name="Hitpoints" Value="2000" />
 		<part Name="ConversationScript" ConversationID="ChavvahFrontChime" />
-		<part Name="UnityPrefabImposter" PrefabID="Prefabs/Particles/TreeGlow" />
+		<part Name="PrefabImposter" Prefab="Prefabs/Particles/TreeGlow" />
     <part Name="Interesting" Radius="1" Key="Chavvah Chime" />
     <tag Name="ExcludeFromDynamicEncounters" />
 	</object>	
@@ -873,7 +873,7 @@
 		<part Name="GameUnique" State="TauElse" />
 		<tag Name="PaintWith" Value="ChavvahRoots" />
 		<tag Name="ExcludeFromDynamicEncounters" />
-		<part Name="UnityPrefabImposter" PrefabID="Prefabs/Particles/TreeGlow" />
+		<part Name="PrefabImposter" Prefab="Prefabs/Particles/TreeGlow" />
     <part Name="Interesting" Radius="1" />
 	</object>
 
@@ -918,7 +918,7 @@
   </object>
   <object Name="ClamGrass" Inherits="Floor">
     <part Name="Render" DisplayName="[Ground]" RenderString="." RenderLayer="0" ColorString="&amp;O" RenderIfDark="true" DetailColor="" Tile="Terrain/sw_grass2.bmp" />
-    <part Name="UnityPrefabImposter" PrefabID="Prefabs/Particles/ClamGlow" />
+    <part Name="PrefabImposter" Prefab="Prefabs/Particles/ClamGlow" />
   </object>
   <object Name="ArenaFloor" Inherits="Floor">
     <part Name="Render" DisplayName="[Ground]" RenderString="." RenderLayer="0" RenderIfDark="true" Tile="terrain/sw_arena_floor.bmp" />
@@ -1074,7 +1074,7 @@
   </object>
   <object Name="HighSaltDune" Inherits="Floor">
     <part Name="Render" DisplayName="salt dune" RenderString="177" ColorString="&amp;Y" DetailColor="y" RenderLayer="0" />
-    <part Name="UnityPrefabImposter" PrefabID="Prefabs/Particles/DesertWinds" />
+    <part Name="PrefabImposter" Prefab="Prefabs/Particles/DesertWinds" />
   </object>
   <object Name="HighSaltDuneWhite" Inherits="HighSaltDune">
     <part Name="Render" ColorString="&amp;y" DetailColor="Y" />
@@ -1260,7 +1260,7 @@
   <object Name="Stairs" Inherits="InorganicObject">
     <part Name="Render" Visible="true" DisplayName="stairs" RenderString="&lt;" Occluding="false" RenderLayer="7" RenderIfDark="true" />
     <tag Name="OverlayColor" Value="&amp;M^k" />
-    <tag Name="ImportantOverlayObject" />
+    <part Name="ImportantOverlayObject" />
     <part Name="Physics" Solid="false" Takeable="false" Weight="999999" FlameTemperature="999999" VaporTemperature="999999" />
     <stat Name="Hitpoints" Value="9999" />
     <part Name="MentalShield" />

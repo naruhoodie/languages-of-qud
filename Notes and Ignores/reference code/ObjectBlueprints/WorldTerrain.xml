@@ -118,7 +118,7 @@
     <part Name="AnimatedMaterialSaltDunes" />
     <part Name="Description" Short="The ivory sea's dunes are like waves frozen in place. There are cracks in the salt from where the earth, blistered by the jeweled sun, contracted and broke. The horizon melts the sky together with the vast plain of Moghra'yi, the Great Salt Desert." />
     <tag Name="Gender" Value="plural" />
-    <part Name="UnityPrefabImposter" PrefabID="Prefabs/Particles/DesertWinds" />
+    <part Name="PrefabImposter" Prefab="Prefabs/Particles/DesertWinds" />
   </object>
   <object Name="TerrainFlowerfields" Inherits="Terrain">
     <part Name="Render" DisplayName="flower fields" RenderString="'" ColorString="&amp;C^k" DetailColor="g" Tile="Terrain/tile_flowers2.bmp" />

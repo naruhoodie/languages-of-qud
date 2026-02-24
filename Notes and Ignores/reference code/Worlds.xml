@@ -1154,7 +1154,7 @@
       <zone Level="14" x="1" y="1" Name="" NameContext="a rusted archway">
         <builder Class="Spire"></builder>
         <postbuilder Class="PlaceWedgeBuilder2"></postbuilder>
-        <builder Class="InsertPresetFromPopulation" Population="DualCyberStations"></builder>
+        <builder Class="InsertPresetFromPopulation" Population="DualCyberStations" Important="true"></builder>
         <builder Class="StairsUp" x="13-57" y="5-19"></builder>
         <postbuilder Class="ZoneTemplate:Bottom Rusted Archway"></postbuilder>
         <postbuilder Class="ZoneTemplate:RingGateElectrical" AfterTerrain="true"></postbuilder>        

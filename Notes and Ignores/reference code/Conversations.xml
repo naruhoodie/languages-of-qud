@@ -6,14 +6,14 @@
     <choice ID="WaterRitualChoice" IfSpeakerHavePart="GivesRep" IfAllowEscape="true" Target="WaterRitual" Ordinal="980">
       <text>Your thirst is mine, my water is yours.</text>
       <text IfHavePart="SociallyRepugnant" Priority="1">
-        Swap spittle?~
-        Let's get to it.~
-        {{emote|licks lips}}~
-        My thirst is mine, your water is yours.~
-        Thirst. Water. Drink.~
-        Slurp time.~
-        ????~
-        My water is thirst, your water is yours.
+        <text>Swap spittle?</text>
+        <text>Let's get to it.</text>
+        <text>{{emote|licks lips}}</text>
+        <text>My thirst is mine, your water is yours.</text>
+        <text>Thirst. Water. Drink.</text>
+        <text>Slurp time.</text>
+        <text>????</text>
+        <text>My water is thirst, your water is yours.</text>
       </text>
       <part Name="WaterRitualBegin" />
     </choice>
@@ -409,16 +409,20 @@
 	<!-- Elder Irudad -->
 	<conversation ID="Irudad" Inherits="BaseSlynthMayor">
 		<node ID="Start" IfFinishedQuest="What's Eating the Watervine?" Inherits="Welcome">
-			<text>
-				-mm. Mmm? =player.FormalAddressTerm=.~
-				{{emote|*Elder Irudad smiles.*}}~
-				{{emote|*Elder Irudad smiles.*}}
+      <text>
+        <text>-mm. Mmm? =player.FormalAddressTerm=.</text>
+        <text>{{emote|*Elder Irudad smiles.*}}</text>
+        <text>
+          {{emote|*Elder Irudad smiles.*}}
 
-				Come in- come sit 'neath the cool shade, 'cross a pillow there.~
-				{{emote|*Elder Irudad smiles.*}}
+          Come in- come sit 'neath the cool shade, 'cross a pillow there.
+        </text>
+        <text>
+          {{emote|*Elder Irudad smiles.*}}
 
-				Live and drink, =name=. Come, sit with me.
-			</text>
+          Live and drink, =name=. Come, sit with me.
+        </text>
+      </text>
 		</node>
 		<start ID="Welcome">
 			<text>
@@ -601,11 +605,11 @@
 		</start>
 		<start ID="Welcome">
 			<text IfFinishedQuest="What's Eating the Watervine?">
-				Live and drink, =name=.~
-				Taste what on the wind today, =name=?~
-				Moon and sun, =name=.~
-				I can taste lime, =name=. And mayhaps gallium?~
-				Aye, the pest-vanquisher! Live and drink, =name=.
+				<text>Live and drink, =name=.</text>
+				<text>Taste what on the wind today, =name=?</text>
+				<text>Moon and sun, =name=.</text>
+				<text>I can taste lime, =name=. And mayhaps gallium?</text>
+				<text>Aye, the pest-vanquisher! Live and drink, =name=.</text>
 			</text>
 			<text IfNotHaveQuest="What's Eating the Watervine?">
 				A waterhand? Aye. Live and drink, traveller.
@@ -748,14 +752,14 @@
   <conversation ID="WardenYrame">
     <node ID="Start">
       <text>
-        Welcome a-Joppa, friend. Stay peacelike, and we stay friends, hyeh? You make trouble, it’s my work a-split you open like a croc.~
-        Elder’s over my right shoulder, chemist a-left. I ask you pick one or turn around. I en’t here for chat.~
-        Live and drink, yonderling.~
-        {{emote|*Yrame grunts.*}}~
-        {{emote|*Yrame nods.*}}~
-        What follows, then?~
-        Got an eyeful, heh?~
-        Well. They en't ended you yet.
+        <text>Welcome a-Joppa, friend. Stay peacelike, and we stay friends, hyeh? You make trouble, it’s my work a-split you open like a croc.</text>
+        <text>Elder’s over my right shoulder, chemist a-left. I ask you pick one or turn around. I en’t here for chat.</text>
+        <text>Live and drink, yonderling.</text>
+        <text>{{emote|*Yrame grunts.*}}</text>
+        <text>{{emote|*Yrame nods.*}}</text>
+        <text>What follows, then?</text>
+        <text>Got an eyeful, heh?</text>
+        <text>Well. They en't ended you yet.</text>
       </text>
       <choice GotoID="Rustwells" IfHaveActiveQuest="Weirdwire Conduit... Eureka!">I must search the Rustwells.</choice>
       <choice GotoID="Red Rock" IfHaveActiveQuest="What's Eating the Watervine?">Mehmet has bade me travel to Red Rock.</choice>
@@ -789,11 +793,11 @@
   <conversation ID="Nima Ruda">
     <node ID="Start">
       <text>
-        Ahh, there is a new face. I am Nima Ruda, town apothecary. If your feet point to Qud, you’ll need some of my wares before you go.~
-        Live and drink, wayfarer.~
-        Time and rest are the surest way to dress a wound, but my wares can help if you’re in a hurry.~
-        The Fates watch you, =player.formalAddressTerm=.~
-        Don’t let your nostrums run dry on the road. I have what you need.
+        <text>Ahh, there is a new face. I am Nima Ruda, town apothecary. If your feet point to Qud, you’ll need some of my wares before you go.</text>
+        <text>Live and drink, wayfarer.</text>
+        <text>Time and rest are the surest way to dress a wound, but my wares can help if you’re in a hurry.</text>
+        <text>The Fates watch you, =player.formalAddressTerm=.</text>
+        <text>Don’t let your nostrums run dry on the road. I have what you need.</text>
       </text>
       <choice GotoID="Wares">What wares do you offer?</choice>
       <choice GotoID="Story">Where are you from?</choice>
@@ -822,13 +826,13 @@
   <conversation ID="StarappleFarmer">
     <node ID="Start">
       <text>
-        Live and drink, traveler. Moist starapples for the road?~
-        Mind the trees, =player.formalAddressTerm=. They ain't yours.~
-        Now you keep your eyes off my young, =player.formalAddressTerm=.~
-        Can't go wrong with starapples, =player.formalAddressTerm=. Good for what ails ya.~
-        You know how to make starapple jam? If not, you can buy it from me.~
-        Spread starapple on yer matz! It's proof against thirst and harm alike.~
-        See my whiskers? Starapples. They'll boost your virility threefold.
+        <text>Live and drink, traveler. Moist starapples for the road?</text>
+        <text>Mind the trees, =player.formalAddressTerm=. They ain't yours.</text>
+        <text>Now you keep your eyes off my young, =player.formalAddressTerm=.</text>
+        <text>Can't go wrong with starapples, =player.formalAddressTerm=. Good for what ails ya.</text>
+        <text>You know how to make starapple jam? If not, you can buy it from me.</text>
+        <text>Spread starapple on yer matz! It's proof against thirst and harm alike.</text>
+        <text>See my whiskers? Starapples. They'll boost your virility threefold.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -836,16 +840,16 @@
   <conversation ID="PigFarmer">
     <node ID="Start">
       <text>
-        Live and drink, traveler. Are you hungry?~
-        Git ta pig mud. Mud?~
-        Yeh?~
-        Mind the pig leavins, =player.formalAddressTerm=.~
-        Now don't you go breaking my fence.~
-        You best not hurt my critters.~
-        I en't filthy. I'm muddy. Big difference.~
-        It's get meat here or risk a slugsnout ball in the gut. Your choice, =player.formalAddressTerm=.~
-        Good clean meat! Well. Clean as it gets.~
-        Moon and sun, =player.formalAddressTerm=.
+        <text>Live and drink, traveler. Are you hungry?</text>
+        <text>Git ta pig mud. Mud?</text>
+        <text>Yeh?</text>
+        <text>Mind the pig leavins, =player.formalAddressTerm=.</text>
+        <text>Now don't you go breaking my fence.</text>
+        <text>You best not hurt my critters.</text>
+        <text>I en't filthy. I'm muddy. Big difference.</text>
+        <text>It's get meat here or risk a slugsnout ball in the gut. Your choice, =player.formalAddressTerm=.</text>
+        <text>Good clean meat! Well. Clean as it gets.</text>
+        <text>Moon and sun, =player.formalAddressTerm=.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -854,14 +858,14 @@
   <conversation ID="CrabFarmer">
     <node ID="Start">
       <text>
-        Now don't you fret. My crabs are docile as dogs.~
-        Get close if you like, they don't pinch.~
-        You ever run into one of these in the wild? The lengths some folks will go for a crab leg!~
-        I hand-reared each one of these critters. They've had a life of luxury.~
-        Stressed crab means tough crab meat. Buy domesticated meat.~
-        Ain't they precious? Cute little buggers.~
-        My crabs are as gentle as can be. Delicious, too.~
-        They say we'll all be crabs, eventually.
+        <text>Now don't you fret. My crabs are docile as dogs.</text>
+        <text>Get close if you like, they don't pinch.</text>
+        <text>You ever run into one of these in the wild? The lengths some folks will go for a crab leg!</text>
+        <text>I hand-reared each one of these critters. They've had a life of luxury.</text>
+        <text>Stressed crab means tough crab meat. Buy domesticated meat.</text>
+        <text>Ain't they precious? Cute little buggers.</text>
+        <text>My crabs are as gentle as can be. Delicious, too.</text>
+        <text>They say we'll all be crabs, eventually.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -870,15 +874,15 @@
   <conversation ID="LeechFarmer">
     <node ID="Start">
       <text>
-        Need something?~
-        Hm.~
-        Sorry bout the smell.~
-        Watch for blood puddles.~
-        No lie, I love my job.~
-        Leeches. Blood. If that's what you want, I got what you want.~
-        I feed these critters what blood the ranchers have to spare.~
-        Sorry. Lost focus a bit. What do you need?~
-        Blood tastes all right, but I can't fathom living on it.
+        <text>Need something?</text>
+        <text>Hm.</text>
+        <text>Sorry bout the smell.</text>
+        <text>Watch for blood puddles.</text>
+        <text>No lie, I love my job.</text>
+        <text>Leeches. Blood. If that's what you want, I got what you want.</text>
+        <text>I feed these critters what blood the ranchers have to spare.</text>
+        <text>Sorry. Lost focus a bit. What do you need?</text>
+        <text>Blood tastes all right, but I can't fathom living on it.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -887,14 +891,14 @@
   <conversation ID="CatHerder">
     <node ID="Start">
       <text>
-        By the Eaters, I'm exhausted. May I help you?~
-        Please don't open the gate.~
-        I beg you. Do not release the cats.~
-        I'll buy your shiniest things, if you'll sell them.~
-        I'm a cat herder. My parents were cat herders. Their parents were cat herders, and their parents. I don't understand why we do what we do but it is all I know.~
-        I've a glimmer of light for sale if you need one, wanderer.~
-        The cats are not for sale.~
-        I'm like to faint from this heat.
+        <text>By the Eaters, I'm exhausted. May I help you?</text>
+        <text>Please don't open the gate.</text>
+        <text>I beg you. Do not release the cats.</text>
+        <text>I'll buy your shiniest things, if you'll sell them.</text>
+        <text>I'm a cat herder. My parents were cat herders. Their parents were cat herders, and their parents. I don't understand why we do what we do but it is all I know.</text>
+        <text>I've a glimmer of light for sale if you need one, wanderer.</text>
+        <text>The cats are not for sale.</text>
+        <text>I'm like to faint from this heat.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -903,15 +907,15 @@
   <conversation ID="AmoebaFarmer">
     <node ID="Start">
       <text>
-        Mind your footing! Ha ha ha!~
-        Takes a simple person to tend a simple creature. I don't mind it.~
-        Bless this mess and bless you, =player.formalAddressTerm=.~
-        What can I do for you? Need slime?~
-        Have you ever taken a swig of slime? It's not half bad!~
-        I keep my amoebas happy! Or, you know, whatever they got in place of happy.~
-        See how their skin glisters in the salt sun? Lovely.~
-        Now don't you dare pop my amoeba.~
-        I think I got all the puddles, but watch for slime all the same.
+        <text>Mind your footing! Ha ha ha!</text>
+        <text>Takes a simple person to tend a simple creature. I don't mind it.</text>
+        <text>Bless this mess and bless you, =player.formalAddressTerm=.</text>
+        <text>What can I do for you? Need slime?</text>
+        <text>Have you ever taken a swig of slime? It's not half bad!</text>
+        <text>I keep my amoebas happy! Or, you know, whatever they got in place of happy.</text>
+        <text>See how their skin glisters in the salt sun? Lovely.</text>
+        <text>Now don't you dare pop my amoeba.</text>
+        <text>I think I got all the puddles, but watch for slime all the same.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -920,14 +924,14 @@
   <conversation ID="SnailFarmer">
     <node ID="Start">
       <text>
-        Step in. Take shelter from the salt.~
-        What mazes and mandalas could be crafted by human hands that hope to surpass what nature wrought eons before our creation?~
-        How sublime, the striations of the snail shell. And such a lovely word, striation.~
-        I think often upon the gyre, from Resheph's gospels. Why do you imagine it is so named?~
-        Even in the imperfections of a spiral shell we see the perfection of nature.~
-        My snails aren't so suited to this climate. Some days I spend more water keeping them properly slimy than I make in sales.~
-        Snails find the spiral of another shell familiar and comforting. Should you wear one, they will look upon you favorably.~
-        There is kinship from mollusk to mollusk. What secrets do they know that we do not?
+        <text>Step in. Take shelter from the salt.</text>
+        <text>What mazes and mandalas could be crafted by human hands that hope to surpass what nature wrought eons before our creation?</text>
+        <text>How sublime, the striations of the snail shell. And such a lovely word, striation.</text>
+        <text>I think often upon the gyre, from Resheph's gospels. Why do you imagine it is so named?</text>
+        <text>Even in the imperfections of a spiral shell we see the perfection of nature.</text>
+        <text>My snails aren't so suited to this climate. Some days I spend more water keeping them properly slimy than I make in sales.</text>
+        <text>Snails find the spiral of another shell familiar and comforting. Should you wear one, they will look upon you favorably.</text>
+        <text>There is kinship from mollusk to mollusk. What secrets do they know that we do not?</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -936,14 +940,14 @@
   <conversation ID="GoatHerder">
     <node ID="Start">
       <text>
-        What d'ya want.~
-        Goat meat keeps good. Buy some afore you head back to the salt.~
-        What, you need a menu? I got goat meat and goat jerky.~
-        I hate my goats and they hate me, but we both hate every other body more.~
-        Absolutely miserable weather. Whatcha want?~
-        Meat for sale.~
-        Goats ain't fun to travel with, but they're good protection.~
-        I didn't ask for this life, but here we are. Wanna buy something?
+        <text>What d'ya want.</text>
+        <text>Goat meat keeps good. Buy some afore you head back to the salt.</text>
+        <text>What, you need a menu? I got goat meat and goat jerky.</text>
+        <text>I hate my goats and they hate me, but we both hate every other body more.</text>
+        <text>Absolutely miserable weather. Whatcha want?</text>
+        <text>Meat for sale.</text>
+        <text>Goats ain't fun to travel with, but they're good protection.</text>
+        <text>I didn't ask for this life, but here we are. Wanna buy something?</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -952,13 +956,13 @@
   <conversation ID="BeetleFarmer">
     <node ID="Start">
       <text>
-        Some say beetle jerky is too sour. I say, learn to cook!~
-        Look at their chitin! See the sheen? Means they're healthy.~
-        Beetles are fine companions, but don't leave your backpack and your pet beetlebum in the same room.~
-        Nothing wrong with beetle meat. Come, try it.~
-        Beetle jerky holds its own. You learn to appreciate the aftertaste.~
-        Meat, fresh and preserved alike, all at reasonable prices.~
-        Come to see my beasts? All hale and well-fed, I assure you.
+        <text>Some say beetle jerky is too sour. I say, learn to cook!</text>
+        <text>Look at their chitin! See the sheen? Means they're healthy.</text>
+        <text>Beetles are fine companions, but don't leave your backpack and your pet beetlebum in the same room.</text>
+        <text>Nothing wrong with beetle meat. Come, try it.</text>
+        <text>Beetle jerky holds its own. You learn to appreciate the aftertaste.</text>
+        <text>Meat, fresh and preserved alike, all at reasonable prices.</text>
+        <text>Come to see my beasts? All hale and well-fed, I assure you.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -969,25 +973,25 @@
   <conversation ID="SapientBear">
     <node ID="Start">
       <text>
-        Live and eat honey.~
-        Oh, look. It is a not-bear. Greetings, not-bear.~
-        Live and drink, little friend.~
-        I would enjoy some honey.~
-        {{emote|*grunting*}}~
-        {{emote|*snuffle*}}~
-        {{emote|*whuffling*}}~
-        {{emote|*heavy sigh*}}~
-        {{emote|*sigh*}}~
-        Oh my, what a cute not-bear. Greetings, cute not-bear.~
-        Oh.~
-        Hmm.~
-        Hmm. Oh! Greetings.~
-        Yes?~
-        Excuse me.~
-        Oh. Live and drink, not-bear.~
-        I cannot decide which I like best: berries, meat, or honey? I simply cannot decide.~
-        Glowfish are not the tastiest food, but they are the prettiest.~
-        I once traveled over a mountain, believing I would see something that I had not seen before once past the summit. I was disappointed to find that the other side of the mountain bore a striking resemblance to the one I'd just left. What is the purpose of mountains?
+        <text>Live and eat honey.</text>
+        <text>Oh, look. It is a not-bear. Greetings, not-bear.</text>
+        <text>Live and drink, little friend.</text>
+        <text>I would enjoy some honey.</text>
+        <text>{{emote|*grunting*}}</text>
+        <text>{{emote|*snuffle*}}</text>
+        <text>{{emote|*whuffling*}}</text>
+        <text>{{emote|*heavy sigh*}}</text>
+        <text>{{emote|*sigh*}}</text>
+        <text>Oh my, what a cute not-bear. Greetings, cute not-bear.</text>
+        <text>Oh.</text>
+        <text>Hmm.</text>
+        <text>Hmm. Oh! Greetings.</text>
+        <text>Yes?</text>
+        <text>Excuse me.</text>
+        <text>Oh. Live and drink, not-bear.</text>
+        <text>I cannot decide which I like best: berries, meat, or honey? I simply cannot decide.</text>
+        <text>Glowfish are not the tastiest food, but they are the prettiest.</text>
+        <text>I once traveled over a mountain, believing I would see something that I had not seen before once past the summit. I was disappointed to find that the other side of the mountain bore a striking resemblance to the one I'd just left. What is the purpose of mountains?</text>
       </text>
       <choice GotoID="End">Live and eat honey, bear friend.</choice>
     </node>
@@ -998,13 +1002,13 @@
   <conversation ID="Cannibal">
     <node ID="Start">
       <text>
-        Mmm.~
-        Prey.~
-        Nnnngggh.~
-        I'm hungry.~
-        Live and... be eaten.~
-        {{emote|*licks lips*}}~
-        Meat.
+        <text>Mmm.</text>
+        <text>Prey.</text>
+        <text>Nnnngggh.</text>
+        <text>I'm hungry.</text>
+        <text>Live and... be eaten.</text>
+        <text>{{emote|*licks lips*}}</text>
+        <text>Meat.</text>
       </text>
       <choice GotoID="End">Keep your distance, friend.</choice>
     </node>
@@ -1015,23 +1019,23 @@
   <conversation ID="Arconaut">
     <node ID="Start">
       <text>
-        {{emote|*nods mutely*}}~
-        Shh. Listen.~
-        Live and drink.~
-        I am peaceful.~
-        Any dangers?~
-        {{emote|*ignores you*}}~
-        Let's not linger together.~
-        May the Eaters gift you.~
-        Scrap for goods?~
-        I might be willing to trade.~
-        {{emote|*shakes =pronouns.possessive= head*}}~
-        {{emote|*puts a finger to =pronouns.possessive= lips*}}~
-        I'm armed. Don't try anything.~
-        {{emote|*tenses as you approach*}}~
-        Found anything good?~
-        Finders keepers.~
-        Lot of good stuff down here. Lots of bad stuff too.
+        <text>{{emote|*nods mutely*}}</text>
+        <text>Shh. Listen.</text>
+        <text>Live and drink.</text>
+        <text>I am peaceful.</text>
+        <text>Any dangers?</text>
+        <text>{{emote|*ignores you*}}</text>
+        <text>Let's not linger together.</text>
+        <text>May the Eaters gift you.</text>
+        <text>Scrap for goods?</text>
+        <text>I might be willing to trade.</text>
+        <text>{{emote|*shakes =pronouns.possessive= head*}}</text>
+        <text>{{emote|*puts a finger to =pronouns.possessive= lips*}}</text>
+        <text>I'm armed. Don't try anything.</text>
+        <text>{{emote|*tenses as you approach*}}</text>
+        <text>Found anything good?</text>
+        <text>Finders keepers.</text>
+        <text>Lot of good stuff down here. Lots of bad stuff too.</text>
       </text>
       <choice GotoID="End">Live and drink, wayfarer.</choice>
     </node>
@@ -1042,41 +1046,41 @@
   <conversation ID="Snapjaw">
     <node ID="Start">
       <text>
-        ehehehehehe.~
-        EHEHEHEHEHEHEHE!~
-        ehe. ehehe. ehehehehehehe!~
-        you food?~
-        give food?~
-        bite you?~
-        gn. grn. hrf. hn. hf.~
-        nyeh heheheheheh.~
-        what!~
-        eheh. heh. what. eheheh. what!~
-        eeeheeheeheeheeheehee.~
-        livendrinkenlivendrinkenlivendrink ehehehehe.~
-        livendrink.~
-        libndink.~
-        liffen drick.~
-        libm drin. ehehehe. lipum dronk! ahahahahah!~
-        live and drink, ehehe.~
-        gnaa! live and drink!~
-        gehehe.~
-        ek ekekekekeke!~
-        {{emote|*drools silently, staring*}}~
-        eeeeheeheeheeheehee...~
-        uhuhuhuuu...~
-        rrrrrr...~
-        huff.~
-        ehehe! ehehehe! AHAHAHAH!~
-        ehh, what for you talk me?~
-        eheh.~
-        hah!~
-        gahaha!~
-        ahahahaa!~
-        dohohohohoho.~
-        oooh hohohohoho.~
-        geh heh heh heh heh.~
-        ahahahahahahahahahahaha!
+        <text>ehehehehehe.</text>
+        <text>EHEHEHEHEHEHEHE!</text>
+        <text>ehe. ehehe. ehehehehehehe!</text>
+        <text>you food?</text>
+        <text>give food?</text>
+        <text>bite you?</text>
+        <text>gn. grn. hrf. hn. hf.</text>
+        <text>nyeh heheheheheh.</text>
+        <text>what!</text>
+        <text>eheh. heh. what. eheheh. what!</text>
+        <text>eeeheeheeheeheeheehee.</text>
+        <text>livendrinkenlivendrinkenlivendrink ehehehehe.</text>
+        <text>livendrink.</text>
+        <text>libndink.</text>
+        <text>liffen drick.</text>
+        <text>libm drin. ehehehe. lipum dronk! ahahahahah!</text>
+        <text>live and drink, ehehe.</text>
+        <text>gnaa! live and drink!</text>
+        <text>gehehe.</text>
+        <text>ek ekekekekeke!</text>
+        <text>{{emote|*drools silently, staring*}}</text>
+        <text>eeeeheeheeheeheehee...</text>
+        <text>uhuhuhuuu...</text>
+        <text>rrrrrr...</text>
+        <text>huff.</text>
+        <text>ehehe! ehehehe! AHAHAHAH!</text>
+        <text>ehh, what for you talk me?</text>
+        <text>eheh.</text>
+        <text>hah!</text>
+        <text>gahaha!</text>
+        <text>ahahahaa!</text>
+        <text>dohohohohoho.</text>
+        <text>oooh hohohohoho.</text>
+        <text>geh heh heh heh heh.</text>
+        <text>ahahahahahahahahahahaha!</text>
       </text>
       <choice GotoID="End">...live and drink.</choice>
     </node>
@@ -1085,16 +1089,16 @@
   <conversation ID="Issachari">
     <node ID="Start">
       <text>
-        By the sun, you're ugly.~
-        Pick a direction and walk in it.~
-        What do you want, lack-salt?~
-        Got nothing to say to a lack-salt.~
-        Keep your eyes moving, lack-salt.~
-        Hey lack-salt. How much water you got? No, don't ever answer that question.~
-        Be respectful of the red-and-white and we will get along.~
-        Keep your mouth covered, or the brine air will cure your lungs to jerky.~
-        Stay warm, lack-salt.~
-        Stay dry, lack-salt.
+        <text>By the sun, you're ugly.</text>
+        <text>Pick a direction and walk in it.</text>
+        <text>What do you want, lack-salt?</text>
+        <text>Got nothing to say to a lack-salt.</text>
+        <text>Keep your eyes moving, lack-salt.</text>
+        <text>Hey lack-salt. How much water you got? No, don't ever answer that question.</text>
+        <text>Be respectful of the red-and-white and we will get along.</text>
+        <text>Keep your mouth covered, or the brine air will cure your lungs to jerky.</text>
+        <text>Stay warm, lack-salt.</text>
+        <text>Stay dry, lack-salt.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -1110,10 +1114,10 @@
   <conversation ID="MechanimistPilgrim">
     <node ID="Start">
       <text>
-        Glory to Shekhinah.~
-        Humble before my Fathers, I walk.~
-        Live and drink, traveler. Show mercy to a weary pilgrim.~
-        Praise be upon Nisroch, who shelters us stiltseekers.
+        <text>Glory to Shekhinah.</text>
+        <text>Humble before my Fathers, I walk.</text>
+        <text>Live and drink, traveler. Show mercy to a weary pilgrim.</text>
+        <text>Praise be upon Nisroch, who shelters us stiltseekers.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -1122,22 +1126,22 @@
   <conversation ID="GenericMerchant">
     <node ID="Start">
       <text>
-        Live and drink, traveler.~
-        Live and drink, wayfarer.~
-        Come. Browse my wares, =player.formalAddressTerm=!~
-        I see my wares catch your eye, =player.formalAddressTerm=. They can be yours.~
-        Live and drink, =player.formalAddressTerm=.~
-        I have what you need, =player.formalAddressTerm=.~
-        Ah, =player.formalAddressTerm=, thank the Eaters that you have found Qud's only honest shopkeep.~
-        On my honor, =player.formalAddressTerm=, my goods are of only the highest quality and I offer a fair trade.~
-        Welcome, traveler.~
-        Welcome, =player.formalAddressTerm=. How may I serve you today?~
-        Do your waterskins grow heavy, =player.formalAddressTerm=?~
-        =player.FormalAddressTerm=, I beseech you. Enter.~
-        Buy something, will you?~
-        May you find shade and vittle, =player.formalAddressTerm=.~
-        Be quick about it.~
-        By the Eaters, have you ever seen so much treasure?
+        <text>Live and drink, traveler.</text>
+        <text>Live and drink, wayfarer.</text>
+        <text>Come. Browse my wares, =player.formalAddressTerm=!</text>
+        <text>I see my wares catch your eye, =player.formalAddressTerm=. They can be yours.</text>
+        <text>Live and drink, =player.formalAddressTerm=.</text>
+        <text>I have what you need, =player.formalAddressTerm=.</text>
+        <text>Ah, =player.formalAddressTerm=, thank the Eaters that you have found Qud's only honest shopkeep.</text>
+        <text>On my honor, =player.formalAddressTerm=, my goods are of only the highest quality and I offer a fair trade.</text>
+        <text>Welcome, traveler.</text>
+        <text>Welcome, =player.formalAddressTerm=. How may I serve you today?</text>
+        <text>Do your waterskins grow heavy, =player.formalAddressTerm=?</text>
+        <text>=player.FormalAddressTerm=, I beseech you. Enter.</text>
+        <text>Buy something, will you?</text>
+        <text>May you find shade and vittle, =player.formalAddressTerm=.</text>
+        <text>Be quick about it.</text>
+        <text>By the Eaters, have you ever seen so much treasure?</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -1283,13 +1287,13 @@
   <conversation ID="bookbinder">
     <node ID="Start">
       <text>
-        Don't breathe in too deep, =player.formalAddressTerm=, I've set some glue to dry.~
-        Live and drink, but please do it elsewhere. I fear spills.~
-        Greetings, =player.formalAddressTerm=. Feel free to examine my books closely.~
-        Please inspect only the quality of the letters. I am not a librarian.~
-        These books can weather the salt and jungle alike.~
-        I assure you, the smell fades once the glue is dry.~
-        I've books for trade, if you're interested.
+        <text>Don't breathe in too deep, =player.formalAddressTerm=, I've set some glue to dry.</text>
+        <text>Live and drink, but please do it elsewhere. I fear spills.</text>
+        <text>Greetings, =player.formalAddressTerm=. Feel free to examine my books closely.</text>
+        <text>Please inspect only the quality of the letters. I am not a librarian.</text>
+        <text>These books can weather the salt and jungle alike.</text>
+        <text>I assure you, the smell fades once the glue is dry.</text>
+        <text>I've books for trade, if you're interested.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -1299,13 +1303,13 @@
   <conversation ID="scribe">
     <node ID="Start">
       <text>
-        Everything I sell is the product of many hours of toil.~
-        Come closer, so I can see your face.~
-        Ink runs in my very veins, =player.formalAddressTerm=.~
-        If you're looking to read, I have what you need.~
-        Please be gentle with the parchment.~
-        Do be quick, =player.formalAddressTerm=, as I've much work to do.~
-        Live and drink, reader.
+        <text>Everything I sell is the product of many hours of toil.</text>
+        <text>Come closer, so I can see your face.</text>
+        <text>Ink runs in my very veins, =player.formalAddressTerm=.</text>
+        <text>If you're looking to read, I have what you need.</text>
+        <text>Please be gentle with the parchment.</text>
+        <text>Do be quick, =player.formalAddressTerm=, as I've much work to do.</text>
+        <text>Live and drink, reader.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -1315,15 +1319,15 @@
   <conversation ID="beekeeper">
     <node ID="Start">
       <text>
-        Come here. No, closer. Don't mind the bees, they rarely sting.~
-        Don't be afraid to approach. The bees rarely sting.~
-        Care for some beejuice?~
-        Drink a dram of honey every morning, Slog itself couldn't make you sick.~
-        You know, bees communicate by dancing. Got a whole language.~
-        Without bees, all life in Qud would eventually die.~
-        Bees are smarter than you think. They got that hive mind, see.~
-        I eat honey matz every morning and I ain't been sick in decades.~
-        We'd all be dead without bees, you know.
+        <text>Come here. No, closer. Don't mind the bees, they rarely sting.</text>
+        <text>Don't be afraid to approach. The bees rarely sting.</text>
+        <text>Care for some beejuice?</text>
+        <text>Drink a dram of honey every morning, Slog itself couldn't make you sick.</text>
+        <text>You know, bees communicate by dancing. Got a whole language.</text>
+        <text>Without bees, all life in Qud would eventually die.</text>
+        <text>Bees are smarter than you think. They got that hive mind, see.</text>
+        <text>I eat honey matz every morning and I ain't been sick in decades.</text>
+        <text>We'd all be dead without bees, you know.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -1333,17 +1337,17 @@
   <conversation ID="tinker">
     <node ID="Start">
       <text>
-        Use your gadgets hard, don't you? I can fix them.~
-        I can repair, recharge, and identify whatever you have! Within reason.~
-        If you've got anything you can't make heads or tails of it, give it here.~
-        You've got to respect a machine. Machines bite harder than any croc.~
-        You a maker?~
-        Take out what you've busted and I'll jury-rig it for a fair price.~
-        Need scrap?~
-        You get used to the nicks and burns, after years working with spark and solder.~
-        They say some folks can talk to machines. I say we all can, if we listen right.~
-        My fees for battery charging depend how empty the battery is when you bring it to me.~
-        Absolutely no refunds or returns on scrap.
+        <text>Use your gadgets hard, don't you? I can fix them.</text>
+        <text>I can repair, recharge, and identify whatever you have! Within reason.</text>
+        <text>If you've got anything you can't make heads or tails of it, give it here.</text>
+        <text>You've got to respect a machine. Machines bite harder than any croc.</text>
+        <text>You a maker?</text>
+        <text>Take out what you've busted and I'll jury-rig it for a fair price.</text>
+        <text>Need scrap?</text>
+        <text>You get used to the nicks and burns, after years working with spark and solder.</text>
+        <text>They say some folks can talk to machines. I say we all can, if we listen right.</text>
+        <text>My fees for battery charging depend how empty the battery is when you bring it to me.</text>
+        <text>Absolutely no refunds or returns on scrap.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -1353,16 +1357,16 @@
   <conversation ID="schematics drafter">
     <node ID="Start">
       <text>
-        I would prefer not to interrupt this task long.~
-        How my joints ache! Buy something to justify my pain.~
-        Unfinished schematics are obviously not for sale. Everything else is.~
-        Disturb the trash if you must, but do not touch any of my papers.~
-        Are you a tinker? Surely I have something you wish to build.~
-        If you've the wits to build, I've got something you want.~
-        I have lost much to my dedication. Help me gain anew, =player.formalAddressTerm=.~
-        So help me, Argent Fathers, if someone has changed the order of my papers...~
-        Please, =player.formalAddressTerm=, buy a schematic. I'm sure it will be of use to you.~
-        Even if you can't make a thing now, you could gain the insight later.
+        <text>I would prefer not to interrupt this task long.</text>
+        <text>How my joints ache! Buy something to justify my pain.</text>
+        <text>Unfinished schematics are obviously not for sale. Everything else is.</text>
+        <text>Disturb the trash if you must, but do not touch any of my papers.</text>
+        <text>Are you a tinker? Surely I have something you wish to build.</text>
+        <text>If you've the wits to build, I've got something you want.</text>
+        <text>I have lost much to my dedication. Help me gain anew, =player.formalAddressTerm=.</text>
+        <text>So help me, Argent Fathers, if someone has changed the order of my papers...</text>
+        <text>Please, =player.formalAddressTerm=, buy a schematic. I'm sure it will be of use to you.</text>
+        <text>Even if you can't make a thing now, you could gain the insight later.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -1373,19 +1377,19 @@
   <conversation ID="apothecary">
     <node ID="Start">
       <text>
-				I've the cure for what ails you.~
-				You don't look so good. You need more yuckwheat and honey in your diet.~
-				In the market for a tonic, =player.formalAddressTerm=? Spend water now or blood later, your choice.~
-				Prickly-boons and yuckwheat for trade.~
-				Cook your meals with yuckwheat if you feel sick. Catch a disease early enough and you can kill it.~
-				If you came for the humble pie, you had best not have led any mind-hunters here.~
-				"Ease the pain, addle the brain." Be careful when you chew witchwood bark.~
-				Don't eat the hoarshrooms too fast, now.~
-				Have you got enough tonics?~
-				Got a fungal infection? You'll want one of my spray bottles to apply the cure.~
-				Got a fungal infection? You'll want one of my spray bottles to apply the cure.~
-				Get your hands on the Corpus Choliys for disease and fungus cures.~
-				Get your hands on the Corpus Choliys for disease and fungus cures.
+				<text>I've the cure for what ails you.</text>
+				<text>You don't look so good. You need more yuckwheat and honey in your diet.</text>
+				<text>In the market for a tonic, =player.formalAddressTerm=? Spend water now or blood later, your choice.</text>
+				<text>Prickly-boons and yuckwheat for trade.</text>
+				<text>Cook your meals with yuckwheat if you feel sick. Catch a disease early enough and you can kill it.</text>
+				<text>If you came for the humble pie, you had best not have led any mind-hunters here.</text>
+				<text>"Ease the pain, addle the brain." Be careful when you chew witchwood bark.</text>
+				<text>Don't eat the hoarshrooms too fast, now.</text>
+				<text>Have you got enough tonics?</text>
+				<text>Got a fungal infection? You'll want one of my spray bottles to apply the cure.</text>
+				<text>Got a fungal infection? You'll want one of my spray bottles to apply the cure.</text>
+				<text>Get your hands on the Corpus Choliys for disease and fungus cures.</text>
+				<text>Get your hands on the Corpus Choliys for disease and fungus cures.</text>
 			</text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -1395,14 +1399,14 @@
   <conversation ID="herbalist">
     <node ID="Start">
       <text>
-        I've the cure for what ails you.~
-        You don't look so good. You need more yuckwheat and honey in your diet.~
-        Cook your meals with yuckwheat if you feel sick. Catch a disease early enough and you can kill it.~
-        "Ease the pain, addle the brain." Be careful when you chew witchwood bark.~
-        Best not leave town without some bark and bandages, wayfarer.~
-        Live and drink. Keeping well, I hope?~
-        How are you feeling today, =player.formalAddressTerm=?~
-        Moon and sun, =player.formalAddressTerm=. Keeping healthy?
+        <text>I've the cure for what ails you.</text>
+        <text>You don't look so good. You need more yuckwheat and honey in your diet.</text>
+        <text>Cook your meals with yuckwheat if you feel sick. Catch a disease early enough and you can kill it.</text>
+        <text>"Ease the pain, addle the brain." Be careful when you chew witchwood bark.</text>
+        <text>Best not leave town without some bark and bandages, wayfarer.</text>
+        <text>Live and drink. Keeping well, I hope?</text>
+        <text>How are you feeling today, =player.formalAddressTerm=?</text>
+        <text>Moon and sun, =player.formalAddressTerm=. Keeping healthy?</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -1412,15 +1416,15 @@
   <conversation ID="chef">
     <node ID="Start">
       <text>
-        I tell you, =player.formalAddressTerm=, my recipes come from years of experience. There's none the like.~
-        Finest food for parasangs! Finest food in Qud! Recipes and samples!~
-        I will share my food-secrets with you, =player.formalAddressTerm=, if you're willing to make it worth my while.~
-        Do you cook, =player.formalAddressTerm=? So long as you aren't the type to throw whatever local debris you find in the pot, I have wares for you.~
-        Not a word of lie, I studied under a chef who studied under Agate Severance Star herself. That's why my recipes are the best.~
-        Try my recipe. You'll believe =player.reflexive= to be judging the Carbide Chefs in the Kitchen Heptagon itself.~
-        Cookbooks are best named from the heart. Those who ridicule the name of a cookbook have lost their sense of wonder.~
-        Live and eat, =player.formalAddressTerm=.~
-        Live and drink, =player.formalAddressTerm=.
+        <text>I tell you, =player.formalAddressTerm=, my recipes come from years of experience. There's none the like.</text>
+        <text>Finest food for parasangs! Finest food in Qud! Recipes and samples!</text>
+        <text>I will share my food-secrets with you, =player.formalAddressTerm=, if you're willing to make it worth my while.</text>
+        <text>Do you cook, =player.formalAddressTerm=? So long as you aren't the type to throw whatever local debris you find in the pot, I have wares for you.</text>
+        <text>Not a word of lie, I studied under a chef who studied under Agate Severance Star herself. That's why my recipes are the best.</text>
+        <text>Try my recipe. You'll believe =player.reflexive= to be judging the Carbide Chefs in the Kitchen Heptagon itself.</text>
+        <text>Cookbooks are best named from the heart. Those who ridicule the name of a cookbook have lost their sense of wonder.</text>
+        <text>Live and eat, =player.formalAddressTerm=.</text>
+        <text>Live and drink, =player.formalAddressTerm=.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -1430,15 +1434,15 @@
   <conversation ID="kipper">
     <node ID="Start">
       <text>
-        Smell a bit strong? That's how you know it's good.~
-        You can preserve almost anything. Al... most.~
-        Preserved ingredients cook better, safer.~
-        Everything I sell is safe to eat as it is.~
-        Welcome, =player.formalAddressTerm=. Need vittle?~
-        Crave a bit of salt, =player.formalAddressTerm=, or a load of salt?~
-        Nothing sadder than a cookfire and nothing to cook over it.~
-        Are you a chef, =player.formalAddressTerm=? My vittles are of the highest quality.~
-        Nourishment for the road, =player.formalAddressTerm=?
+        <text>Smell a bit strong? That's how you know it's good.</text>
+        <text>You can preserve almost anything. Al... most.</text>
+        <text>Preserved ingredients cook better, safer.</text>
+        <text>Everything I sell is safe to eat as it is.</text>
+        <text>Welcome, =player.formalAddressTerm=. Need vittle?</text>
+        <text>Crave a bit of salt, =player.formalAddressTerm=, or a load of salt?</text>
+        <text>Nothing sadder than a cookfire and nothing to cook over it.</text>
+        <text>Are you a chef, =player.formalAddressTerm=? My vittles are of the highest quality.</text>
+        <text>Nourishment for the road, =player.formalAddressTerm=?</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -1448,14 +1452,14 @@
   <conversation ID="vintner">
     <node ID="Start">
       <text>
-        Greetings, =player.formalAddressTerm=.~
-        Live and drink deeply, =player.formalAddressTerm=.~
-        Ah, =player.formalAddressTerm=, please come in.~
-        My wares are sweet and strong, =player.formalAddressTerm=. Care to try them?~
-        Tell me, =player.formalAddressTerm=, is there any sight more sad than a hookah tent without wine?~
-        Wine, cheese, bread. =player.FormalAddressTerm=, tell me, is there anything else you truly need?~
-        The kipper and I both know that the finest ingredient is time.~
-        Greetings, =player.formalAddressTerm=. Try some rose wine? One rose is fair, but as you may know from hanging around the Stiltgrounds, five is death.
+        <text>Greetings, =player.formalAddressTerm=.</text>
+        <text>Live and drink deeply, =player.formalAddressTerm=.</text>
+        <text>Ah, =player.formalAddressTerm=, please come in.</text>
+        <text>My wares are sweet and strong, =player.formalAddressTerm=. Care to try them?</text>
+        <text>Tell me, =player.formalAddressTerm=, is there any sight more sad than a hookah tent without wine?</text>
+        <text>Wine, cheese, bread. =player.FormalAddressTerm=, tell me, is there anything else you truly need?</text>
+        <text>The kipper and I both know that the finest ingredient is time.</text>
+        <text>Greetings, =player.formalAddressTerm=. Try some rose wine? One rose is fair, but as you may know from hanging around the Stiltgrounds, five is death.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -1465,15 +1469,15 @@
   <conversation ID="ichormerchant">
     <node ID="Start">
       <text>
-        Liquids...~
-        Aren't they beautiful, =player.formalAddressTerm=? The bottles, the phials, the light shining through them.~
-        Live and drink, but not everything. Some things you don't drink.~
-        Is there any state of form so fine as a liquid?~
-        Pouring, decanting, collecting, mixing. I adore my calling.~
-        If it flows, I desire it. You should too, =player.formalAddressTerm=.~
-        Do you ever stop and think about fluids? Are they not divine?~
-        Someday I will plumb the depths of Bethesda Susa, that I may meet the Alchemist.~
-        Live and drink, and collect, and combine...
+        <text>Liquids...</text>
+        <text>Aren't they beautiful, =player.formalAddressTerm=? The bottles, the phials, the light shining through them.</text>
+        <text>Live and drink, but not everything. Some things you don't drink.</text>
+        <text>Is there any state of form so fine as a liquid?</text>
+        <text>Pouring, decanting, collecting, mixing. I adore my calling.</text>
+        <text>If it flows, I desire it. You should too, =player.formalAddressTerm=.</text>
+        <text>Do you ever stop and think about fluids? Are they not divine?</text>
+        <text>Someday I will plumb the depths of Bethesda Susa, that I may meet the Alchemist.</text>
+        <text>Live and drink, and collect, and combine...</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -1483,35 +1487,35 @@
   <conversation ID="gutsmonger">
     <node ID="Start" IfTrueKin="true">
       <text>
-        Hold, aristocrat! I have wares to claim your interest.~
-        My implants are acquired peaceably, I assure you.~
-        How becoming you look, Aristocrat! But you could be more becoming.~
-        Tire of your legs? Arms? Hands? See what I have that fits you.~
-        Luxury internal adornments for the discerning Aristocrat.~
-        No additional sterilisation required, of course.~
-        Quality implants for sale at reasonable prices!~
-        You strike me as an Aristocrat who knows the value of artisanal organs.~
-        I recommend everything I carry. Not all at once, of course.~
-        Hope you'll "becoming" back, ha ha.~
-        Live and drink, Aristocrat.
+        <text>Hold, aristocrat! I have wares to claim your interest.</text>
+        <text>My implants are acquired peaceably, I assure you.</text>
+        <text>How becoming you look, Aristocrat! But you could be more becoming.</text>
+        <text>Tire of your legs? Arms? Hands? See what I have that fits you.</text>
+        <text>Luxury internal adornments for the discerning Aristocrat.</text>
+        <text>No additional sterilisation required, of course.</text>
+        <text>Quality implants for sale at reasonable prices!</text>
+        <text>You strike me as an Aristocrat who knows the value of artisanal organs.</text>
+        <text>I recommend everything I carry. Not all at once, of course.</text>
+        <text>Hope you'll "becoming" back, ha ha.</text>
+        <text>Live and drink, Aristocrat.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
 
     <node ID="Start">
       <text>
-        Kill anyone valuable?~
-        You look dangerous. Ever go hunting for parts?~
-        Got guts?~
-        Can you imagine sticking one of these things inside you? Disgusting.~
-        I've plenty water if you've got implants to sell.~
-        Always check becoming nook shelves for parts.~
-        Y'ain't peeled open any Sons or Daughters, have you?~
-        Less I know about where my stock comes from, the better.~
-        I'll still take parts you ain't washed off, it's fine.~
-        If you can butcher a boar, you can do the same to a man. Just ain't meat you're looking for.~
-        My best customers don't ask questions. My best stock asked too many.~
-        Live and drink.
+        <text>Kill anyone valuable?</text>
+        <text>You look dangerous. Ever go hunting for parts?</text>
+        <text>Got guts?</text>
+        <text>Can you imagine sticking one of these things inside you? Disgusting.</text>
+        <text>I've plenty water if you've got implants to sell.</text>
+        <text>Always check becoming nook shelves for parts.</text>
+        <text>Y'ain't peeled open any Sons or Daughters, have you?</text>
+        <text>Less I know about where my stock comes from, the better.</text>
+        <text>I'll still take parts you ain't washed off, it's fine.</text>
+        <text>If you can butcher a boar, you can do the same to a man. Just ain't meat you're looking for.</text>
+        <text>My best customers don't ask questions. My best stock asked too many.</text>
+        <text>Live and drink.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -1521,13 +1525,13 @@
   <conversation ID="hatter">
     <node ID="Start">
       <text>
-        Need something to complete your ensemble, =player.formalAddressTerm=?~
-        With a good hat, =player.formalAddressTerm=, you'll last longer in the salt sun.~
-        Peruse my wares, =player.formalAddressTerm=. Adorn your head or heads.~
-        Greetings, =player.formalAddressTerm=. Care for a new topper?~
-        You need a new hat, =player.formalAddressTerm=. Or a helmet, if that's the life you lead.~
-        If you're passing through baboon country, you'll want to protect your head, =player.formalAddressTerm=.~
-        Live and drink, =player.formalAddressTerm=.
+        <text>Need something to complete your ensemble, =player.formalAddressTerm=?</text>
+        <text>With a good hat, =player.formalAddressTerm=, you'll last longer in the salt sun.</text>
+        <text>Peruse my wares, =player.formalAddressTerm=. Adorn your head or heads.</text>
+        <text>Greetings, =player.formalAddressTerm=. Care for a new topper?</text>
+        <text>You need a new hat, =player.formalAddressTerm=. Or a helmet, if that's the life you lead.</text>
+        <text>If you're passing through baboon country, you'll want to protect your head, =player.formalAddressTerm=.</text>
+        <text>Live and drink, =player.formalAddressTerm=.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -1537,15 +1541,15 @@
   <conversation ID="shoemaker">
     <node ID="Start">
       <text>
-        Hello, hello, =player.formalAddressTerm=, let's get your weary feet covered.~
-        Come in, =player.formalAddressTerm=, and let me 'shoe' you around, ha ha!~
-        Boots! Shoes! Slippers! Sabatons! How would you prefer to cover your feet, =player.formalAddressTerm=?~
-        Even as high-quality as my products are, =player.formalAddressTerm=, I don't suggest you go walking in the fracti to test them out.~
-        Anything you need to ask 'a boot', =player.FormalAddressTerm=? Just a little cobbler's joke, there.~
-        Hot sands out there, =player.formalAddressTerm=. Is your footwear protecting you?~
-        Hello, =player.formalAddressTerm=! Care to be shod?~
-        Walk a few parasangs in my shoes, =player.formalAddressTerm=, and you'll wonder how you ever did otherwise.~
-        Live and drink, =player.formalAddressTerm=.
+        <text>Hello, hello, =player.formalAddressTerm=, let's get your weary feet covered.</text>
+        <text>Come in, =player.formalAddressTerm=, and let me 'shoe' you around, ha ha!</text>
+        <text>Boots! Shoes! Slippers! Sabatons! How would you prefer to cover your feet, =player.formalAddressTerm=?</text>
+        <text>Even as high-quality as my products are, =player.formalAddressTerm=, I don't suggest you go walking in the fracti to test them out.</text>
+        <text>Anything you need to ask 'a boot', =player.FormalAddressTerm=? Just a little cobbler's joke, there.</text>
+        <text>Hot sands out there, =player.formalAddressTerm=. Is your footwear protecting you?</text>
+        <text>Hello, =player.formalAddressTerm=! Care to be shod?</text>
+        <text>Walk a few parasangs in my shoes, =player.formalAddressTerm=, and you'll wonder how you ever did otherwise.</text>
+        <text>Live and drink, =player.formalAddressTerm=.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -1555,14 +1559,14 @@
   <conversation ID="haberdasher">
     <node ID="Start">
       <text>
-        Please, =player.formalAddressTerm=, do come in. Take your time browsing my wares.~
-        Welcome, =player.formalAddressTerm=, to the sole bastion of class in this wretched place.~
-        Please knock the sand from your feet, =player.formalAddressTerm=. It gets everywhere.~
-        Ah, =player.formalAddressTerm=, I can certainly help you.~
-        How may I clothe you, =player.formalAddressTerm=?~
-        Now, =player.formalAddressTerm=, I know you must have an eye for fashion, if you're here.~
-        Oh dear. Who dressed you, =player.formalAddressTerm=? Let me help you, please.~
-        Live and drink, =player.formalAddressTerm=.
+        <text>Please, =player.formalAddressTerm=, do come in. Take your time browsing my wares.</text>
+        <text>Welcome, =player.formalAddressTerm=, to the sole bastion of class in this wretched place.</text>
+        <text>Please knock the sand from your feet, =player.formalAddressTerm=. It gets everywhere.</text>
+        <text>Ah, =player.formalAddressTerm=, I can certainly help you.</text>
+        <text>How may I clothe you, =player.formalAddressTerm=?</text>
+        <text>Now, =player.formalAddressTerm=, I know you must have an eye for fashion, if you're here.</text>
+        <text>Oh dear. Who dressed you, =player.formalAddressTerm=? Let me help you, please.</text>
+        <text>Live and drink, =player.formalAddressTerm=.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -1572,16 +1576,16 @@
   <conversation ID="armorer">
     <node ID="Start">
       <text>
-        {{emote|*silent nod*}}~
-        Careful. It's hot.~
-        =player.FormalAddressTerm=. Need protection?~
-        Be quick about it, eh?~
-        Greetings.~
-        Mm?~
-        I've got my eye on you.~
-        Leather, ring, and plate, to keep you alive.~
-        Don't get near the hearth.~
-        =player.FormalAddressTerm=. Live and drink.
+        <text>{{emote|*silent nod*}}</text>
+        <text>Careful. It's hot.</text>
+        <text>=player.FormalAddressTerm=. Need protection?</text>
+        <text>Be quick about it, eh?</text>
+        <text>Greetings.</text>
+        <text>Mm?</text>
+        <text>I've got my eye on you.</text>
+        <text>Leather, ring, and plate, to keep you alive.</text>
+        <text>Don't get near the hearth.</text>
+        <text>=player.FormalAddressTerm=. Live and drink.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -1591,14 +1595,14 @@
   <conversation ID="glover">
     <node ID="Start">
       <text>
-        Hand-coats for sale! Spare your digits the indignity of early removal!~
-        Best protect your hands, =player.formalAddressTerm=. You don't know how much you need them until a madpole takes one.~
-        Light gloves, heavy gloves, gauntlets. Don't let your hands go bare, =player.formalAddressTerm=.~
-        One size fits all, =player.formalAddressTerm=. If I sell it to you, it fits.~
-        How do I get my gloves so supple? I'll never tell.~
-        Moving on soon, =player.formalAddressTerm=? My gloves and gauntlets need no maintenance, so finely are they crafted.~
-        Live and eat, =player.formalAddressTerm=.~
-        Live and drink, =player.formalAddressTerm=.
+        <text>Hand-coats for sale! Spare your digits the indignity of early removal!</text>
+        <text>Best protect your hands, =player.formalAddressTerm=. You don't know how much you need them until a madpole takes one.</text>
+        <text>Light gloves, heavy gloves, gauntlets. Don't let your hands go bare, =player.formalAddressTerm=.</text>
+        <text>One size fits all, =player.formalAddressTerm=. If I sell it to you, it fits.</text>
+        <text>How do I get my gloves so supple? I'll never tell.</text>
+        <text>Moving on soon, =player.formalAddressTerm=? My gloves and gauntlets need no maintenance, so finely are they crafted.</text>
+        <text>Live and eat, =player.formalAddressTerm=.</text>
+        <text>Live and drink, =player.formalAddressTerm=.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -1608,16 +1612,16 @@
   <conversation ID="gunsmith">
     <node ID="Start">
       <text>
-        You can't go wrong with my slugspitters, =player.formalAddressTerm=.~
-        Guns, guns, guns! Don't they just make you smile?~
-        =player.FormalAddressTerm=, I tell you: there is no defense like a good, and distant, offense.~
-        Ahh, I love the smell of cordite. You know, that sulfury smell? Accelerants make a fine perfume, if you ask me.~
-        You know, =player.formalAddressTerm=, I once had an traveler from Yawningmoon tell me my shop smelled of home. Now I want to visit! Hah!~
-        May you find adequate cover and more loot than you can carry, =player.formalAddressTerm=.~
-        I used to be a wayfarer like you, =player.formalAddressTerm=, but old wounds slow you down. Cherish the time while you have it.~
-        I wish I could allow you to test my wares in the shop, =player.formalAddressTerm=, but walk a parasang in any direction and you'll find a target.~
-        Might not want to touch anything on the workbenches, =player.formalAddressTerm=.~
-        Live, drink, and shoot, =player.formalAddressTerm=, in whichever order you like.
+        <text>You can't go wrong with my slugspitters, =player.formalAddressTerm=.</text>
+        <text>Guns, guns, guns! Don't they just make you smile?</text>
+        <text>=player.FormalAddressTerm=, I tell you: there is no defense like a good, and distant, offense.</text>
+        <text>Ahh, I love the smell of cordite. You know, that sulfury smell? Accelerants make a fine perfume, if you ask me.</text>
+        <text>You know, =player.formalAddressTerm=, I once had an traveler from Yawningmoon tell me my shop smelled of home. Now I want to visit! Hah!</text>
+        <text>May you find adequate cover and more loot than you can carry, =player.formalAddressTerm=.</text>
+        <text>I used to be a wayfarer like you, =player.formalAddressTerm=, but old wounds slow you down. Cherish the time while you have it.</text>
+        <text>I wish I could allow you to test my wares in the shop, =player.formalAddressTerm=, but walk a parasang in any direction and you'll find a target.</text>
+        <text>Might not want to touch anything on the workbenches, =player.formalAddressTerm=.</text>
+        <text>Live, drink, and shoot, =player.formalAddressTerm=, in whichever order you like.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -1627,17 +1631,17 @@
   <conversation ID="grenadier">
     <node ID="Start">
       <text>
-        Need something blown up, =player.formalAddressTerm=?~
-        Grenades do no good sitting in a pack. Don't forget to use them.~
-        =player.FormalAddressTerm=, there is little you can't solve with a well-thrown grenade... as long as you don't stand too close.~
-        Defoliant and fungicide are perfectly safe, but you may wish to avoid breathing too deeply all the same.~
-        Can I serve you something explosive, =player.formalAddressTerm=?~
-        You'll be back, =player.formalAddressTerm=, provided you don't blow =player.reflexive= up.~
-        Greetings, =player.formalAddressTerm=. Be careful with my wares as you peruse them.~
-        How is your throwing arm, =player.formalAddressTerm=? Barring that, do you feel lucky?~
-        It's a dangerous job, =player.formalAddressTerm=, but well worth it.~
-        The vintners say that 'one rose is fair, but five is death'. I can sell you blossoms that mean death no matter the number.~
-        Live and drink, =player.formalAddressTerm=.
+        <text>Need something blown up, =player.formalAddressTerm=?</text>
+        <text>Grenades do no good sitting in a pack. Don't forget to use them.</text>
+        <text>=player.FormalAddressTerm=, there is little you can't solve with a well-thrown grenade... as long as you don't stand too close.</text>
+        <text>Defoliant and fungicide are perfectly safe, but you may wish to avoid breathing too deeply all the same.</text>
+        <text>Can I serve you something explosive, =player.formalAddressTerm=?</text>
+        <text>You'll be back, =player.formalAddressTerm=, provided you don't blow =player.reflexive= up.</text>
+        <text>Greetings, =player.formalAddressTerm=. Be careful with my wares as you peruse them.</text>
+        <text>How is your throwing arm, =player.formalAddressTerm=? Barring that, do you feel lucky?</text>
+        <text>It's a dangerous job, =player.formalAddressTerm=, but well worth it.</text>
+        <text>The vintners say that 'one rose is fair, but five is death'. I can sell you blossoms that mean death no matter the number.</text>
+        <text>Live and drink, =player.formalAddressTerm=.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -1648,15 +1652,15 @@
   <conversation ID="gemcutter">
     <node ID="Start">
       <text>
-        There's a shape in every stone waiting to be brought out.~
-        If you bend the light just so, it frays into brilliance.~
-        I can wait years for the inspiration to craft another figurine. I have before.~
-        What manner of jewel are our eyes, to skew light into thought?~
-        Enter, =player.formalAddressTerm=, and behold my jewels and figurines.~
-        Uncrafted jewels and metals buy and sell for the same cost, but my art's price tag is up to me.~
-        Every statuette is a tribute, of a kind, but not every tribute is received well.~
-        Wouldn't these make a fine conversation piece for a water ritual?~
-        Beautiful baubles and gleaming gemstones over here!
+        <text>There's a shape in every stone waiting to be brought out.</text>
+        <text>If you bend the light just so, it frays into brilliance.</text>
+        <text>I can wait years for the inspiration to craft another figurine. I have before.</text>
+        <text>What manner of jewel are our eyes, to skew light into thought?</text>
+        <text>Enter, =player.formalAddressTerm=, and behold my jewels and figurines.</text>
+        <text>Uncrafted jewels and metals buy and sell for the same cost, but my art's price tag is up to me.</text>
+        <text>Every statuette is a tribute, of a kind, but not every tribute is received well.</text>
+        <text>Wouldn't these make a fine conversation piece for a water ritual?</text>
+        <text>Beautiful baubles and gleaming gemstones over here!</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -1666,14 +1670,14 @@
   <conversation ID="jeweler">
     <node ID="Start">
       <text>
-        A well-polished and well-picked gem, no matter how rough, is as beautiful a work of art as any figurine.~
-        Lean in close to see the detail. No, don't touch.~
-        Within my gemstones there burns a brighter fire than in some hearts.~
-        Water-wealth means nothing if you cannot carry it. Need jewels?~
-        Friend, I have precious metals and jewels to adorn or trade.~
-        Raw metals and gems buy and sell for a fixed water-cost.~
-        Come, wanderer, change some of that heavy water for a pocketful of riches.~
-        Water Barons don't adorn themselves with water, after all.
+        <text>A well-polished and well-picked gem, no matter how rough, is as beautiful a work of art as any figurine.</text>
+        <text>Lean in close to see the detail. No, don't touch.</text>
+        <text>Within my gemstones there burns a brighter fire than in some hearts.</text>
+        <text>Water-wealth means nothing if you cannot carry it. Need jewels?</text>
+        <text>Friend, I have precious metals and jewels to adorn or trade.</text>
+        <text>Raw metals and gems buy and sell for a fixed water-cost.</text>
+        <text>Come, wanderer, change some of that heavy water for a pocketful of riches.</text>
+        <text>Water Barons don't adorn themselves with water, after all.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -3257,13 +3261,13 @@
 
     <node ID="Project">
       <text>
-        I am contemplating the distinction between animal and rock. Why are they different? How much like a rock must an animal be when it ceases to be an animal?~
-        I am considering the window of consciousness through which each of us views the universe. What happens to it when we die?~
-        I am taking inventory of my faculties, and looking for any that I might not previously have considered.~
-        I am considering the thought as a discrete object. I wish to determine whether I am able to think a single thought only, and to determine how to distinguish it from another thought in the same vein.~
-        I am considering the determination of goodness and badness in a thing, and how it is determined. The interaction between data and subjective evaluation, and the values that guide us that we cannot put to words.~
-        I am contemplating the Spindle's place in Qud, its position as a conceptual focal point. How much of what we know of the Spindle is the craft of those before us, carried forward?~
-        I am considering narrative inheritances. The stories we were told when our minds were more putty-like, the follies that shaped who we are, that shape the whole of Qud.
+        <text>I am contemplating the distinction between animal and rock. Why are they different? How much like a rock must an animal be when it ceases to be an animal?</text>
+        <text>I am considering the window of consciousness through which each of us views the universe. What happens to it when we die?</text>
+        <text>I am taking inventory of my faculties, and looking for any that I might not previously have considered.</text>
+        <text>I am considering the thought as a discrete object. I wish to determine whether I am able to think a single thought only, and to determine how to distinguish it from another thought in the same vein.</text>
+        <text>I am considering the determination of goodness and badness in a thing, and how it is determined. The interaction between data and subjective evaluation, and the values that guide us that we cannot put to words.</text>
+        <text>I am contemplating the Spindle's place in Qud, its position as a conceptual focal point. How much of what we know of the Spindle is the craft of those before us, carried forward?</text>
+        <text>I am considering narrative inheritances. The stories we were told when our minds were more putty-like, the follies that shaped who we are, that shape the whole of Qud.</text>
       </text>
       <choice GotoID="Project2">Oh. It looks like you are sorting screws and fasteners.</choice>
       <choice GotoID="Project3">Have you come to any conclusions?</choice>
@@ -4088,18 +4092,18 @@
     </node>
     <node ID="Start">
       <text>
-        Approach. Be easy. You are my herefriend, my nowfriend.~
-        Would you like to read me a story?~
-        I know of so many other ways to be.~
-        Where does it end?~
-        I live, but do I drink?~
-        Would you like to eat vapor?~
-        Quetzal, I say.~
-        {{emote|*Shem nods.*}}~
-        The gaseous butterfly flits out of the dense worm.~
-        I am sharp. I am handy.~
-        {{emote|*Shem yawns.*}} I am yawning.~
-        'Immaculate Chrome' is my favorite.
+        <text>Approach. Be easy. You are my herefriend, my nowfriend.</text>
+        <text>Would you like to read me a story?</text>
+        <text>I know of so many other ways to be.</text>
+        <text>Where does it end?</text>
+        <text>I live, but do I drink?</text>
+        <text>Would you like to eat vapor?</text>
+        <text>Quetzal, I say.</text>
+        <text>{{emote|*Shem nods.*}}</text>
+        <text>The gaseous butterfly flits out of the dense worm.</text>
+        <text>I am sharp. I am handy.</text>
+        <text>{{emote|*Shem yawns.*}} I am yawning.</text>
+        <text>'Immaculate Chrome' is my favorite.</text>
       </text>
       <choice ID="ShemSafe" GotoID="YouAreSafe" IfFinishedQuest="A Call to Arms">I'm glad you are safe, Shem.</choice>
       <choice ID="ShemPax" GotoID="Klanq" IfFinishedQuestStep="Tomb of the Eaters~Disable the Spindle's Magnetic Field">What do you think of Klanq's visit?</choice>
@@ -4836,9 +4840,9 @@
   <conversation ID="OmonporchBarathrumites">
     <node ID="Start">
       <text>
-        Live and drink.~
-        What is it?~
-        Live and drink, =player.formalAddressTerm=.
+        <text>Live and drink.</text>
+        <text>What is it?</text>
+        <text>Live and drink, =player.formalAddressTerm=.</text>
       </text>
       <choice GotoID="Spindle">Why did you come to Omonporch?</choice>
       <choice GotoID="End">Live and drink.</choice>
@@ -5699,42 +5703,31 @@
   <conversation ID="PhinaeHoshaiah">
     <node ID="Start">
       <text>
-        Kneel before the Rock, =player.offspringTerm=.~
-        As the flaming sun warms the empty void, so the Rock warms us.~
-        Be here, and be granted.
+        <text>Kneel before the Rock, =player.offspringTerm=.</text>
+        <text>As the flaming sun warms the empty void, so the Rock warms us.</text>
+        <text>Be here, and be granted.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
   </conversation>
-
-<!-- 
-    <conversation ID="Woodsprog">
-    <node ID="Start">
-      <text>        
-        Hayumph! Hayumph!~
-        Beeeeeeee pshah!
-      </text>
-      <choice GotoID="End">Live and drink.</choice>
-    </node>
-  </conversation> -->
 
     <!-- New Woodsprogs and Naphtaali! -->
 
  <conversation ID="Woodsprog">
     <node ID="Start">
       <text>
-        A-ye?~
-        Tallfolk.~
-        You wandering? Be nimble.~
-        Branches part for you.~
-        Be nimble, broadfinger.~
-        Need aught?~
-        Hm hm hm.~
-        Oeh?~
-        Trees shield you.~
-        Sower's eye pass over you.~
-        Forage fruitfully.~
-        Danger, a-ye?
+        <text>A-ye?</text>
+        <text>Tallfolk.</text>
+        <text>You wandering? Be nimble.</text>
+        <text>Branches part for you.</text>
+        <text>Be nimble, broadfinger.</text>
+        <text>Need aught?</text>
+        <text>Hm hm hm.</text>
+        <text>Oeh?</text>
+        <text>Trees shield you.</text>
+        <text>Sower's eye pass over you.</text>
+        <text>Forage fruitfully.</text>
+        <text>Danger, a-ye?</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -5742,17 +5735,17 @@
  <conversation ID="Naphtaali">
     <node ID="Start">
       <text>
-        Be nimble.~
-        Be sodder-handed.~
-        Where is your minyan?~
-        Bow to the Godhed.~
-        No goatfolk?~
-        A-ye.~
-        Sower's eye pass over you.~
-        Find Chrome, lonelyfolk.~
-        Ah, lonelyfolk.~
-        Blessed be the Godhed, Whom we planish and uplift.~
-        Trees shield you.
+        <text>Be nimble.</text>
+        <text>Be sodder-handed.</text>
+        <text>Where is your minyan?</text>
+        <text>Bow to the Godhed.</text>
+        <text>No goatfolk?</text>
+        <text>A-ye.</text>
+        <text>Sower's eye pass over you.</text>
+        <text>Find Chrome, lonelyfolk.</text>
+        <text>Ah, lonelyfolk.</text>
+        <text>Blessed be the Godhed, Whom we planish and uplift.</text>
+        <text>Trees shield you.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -5790,9 +5783,9 @@
   <conversation ID="Humanoids">
     <node ID="Start">
       <text>
-        Live and drink.~
-        What is it?~
-        Live and drink, =player.formalAddressTerm=.
+        <text>Live and drink.</text>
+        <text>What is it?</text>
+        <text>Live and drink, =player.formalAddressTerm=.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -5803,18 +5796,18 @@
   <conversation ID="JoppaFarmer">
     <node ID="Start">
       <text>
-        Moon and sun.~
-        Hyeh?~
-        How a'yeh.~
-        All well?~
-        Marshes be generous.~
-        Live and drink, waterhand.~
-        Don't want trouble.~
-        Watervine coming in good, see? Fat wafers.~
-        Need watervine?~
-        You harvest it, you keep it.~
-        Good crop this year.~
-        Goin' out? Mind the crocs.
+        <text>Moon and sun.</text>
+        <text>Hyeh?</text>
+        <text>How a'yeh.</text>
+        <text>All well?</text>
+        <text>Marshes be generous.</text>
+        <text>Live and drink, waterhand.</text>
+        <text>Don't want trouble.</text>
+        <text>Watervine coming in good, see? Fat wafers.</text>
+        <text>Need watervine?</text>
+        <text>You harvest it, you keep it.</text>
+        <text>Good crop this year.</text>
+        <text>Goin' out? Mind the crocs.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -5823,10 +5816,10 @@
   <conversation ID="WatervineFarmers">
     <node ID="Start">
       <text>
-        Live and drink, wayfarer.~
-        Live and drink, =player.formalAddressTerm=.~
-        Moon and Sun; wisdom and will.~
-        May the earth yield for us this season.
+        <text>Live and drink, wayfarer.</text>
+        <text>Live and drink, =player.formalAddressTerm=.</text>
+        <text>Moon and Sun; wisdom and will.</text>
+        <text>May the earth yield for us this season.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -5846,10 +5839,10 @@
   <conversation ID="Robots">
     <node ID="Start">
       <text>
-        {{emote|*beep boop*}}~
-        {{emote|*boop beep*}}~
-        {{emote|*beep boop beep*}}~
-        {{emote|*boop beep boop*}}
+        <text>{{emote|*beep boop*}}</text>
+        <text>{{emote|*boop beep*}}</text>
+        <text>{{emote|*beep boop beep*}}</text>
+        <text>{{emote|*boop beep boop*}}</text>
       </text>
       <choice GotoID="End">Live and... remain ever rustless.</choice>
     </node>
@@ -5859,8 +5852,8 @@
   <conversation ID="Insects">
     <node ID="Start">
       <text>
-        {{emote|*sharp clicking*}}~
-        {{emote|*soft buzzing*}}
+        <text>{{emote|*sharp clicking*}}</text>
+        <text>{{emote|*soft buzzing*}}</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -5888,8 +5881,8 @@
   <conversation ID="Oozes">
     <node ID="Start">
       <text>
-        {{emote|*exudes loudly*}}~
-        {{emote|*soft gushing*}}
+        <text>{{emote|*exudes loudly*}}</text>
+        <text>{{emote|*soft gushing*}}</text>
       </text>
       <choice GotoID="End">Live and exude.</choice>
     </node>
@@ -6007,10 +6000,10 @@
   <conversation ID="SapientPlants">
     <node ID="Start">
       <text>
-        Live and drink.~
-        What is it?~
-        Live and drink, heterotroph.~
-        Live and drink, =player.formalAddressTerm=.
+        <text>Live and drink.</text>
+        <text>What is it?</text>
+        <text>Live and drink, heterotroph.</text>
+        <text>Live and drink, =player.formalAddressTerm=.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -6030,10 +6023,10 @@
   <conversation ID="SapientFungi">
     <node ID="Start">
       <text>
-        Live and drink.~
-        What is it?~
-        Live and drink, metazoon.~
-        Live and drink, =player.formalAddressTerm=.
+        <text>Live and drink.</text>
+        <text>What is it?</text>
+        <text>Live and drink, metazoon.</text>
+        <text>Live and drink, =player.formalAddressTerm=.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -6052,15 +6045,15 @@
   <conversation ID="Goats">
     <node ID="Start">
       <text>
-        {{emote|*baa*}}~
-        {{emote|*baaa*}}~
-        {{emote|*baaaa*}}~
-        {{emote|*baaaaa*}}~
-        {{emote|*baaaaaa*}}~
-        {{emote|*baaaaaaa*}}~
-        {{emote|*baaaaaaaa*}}~
-        {{emote|*bleat*}}~
-        {{emote|*flthpppppp*}}~
+        <text>{{emote|*baa*}}</text>
+        <text>{{emote|*baaa*}}</text>
+        <text>{{emote|*baaaa*}}</text>
+        <text>{{emote|*baaaaa*}}</text>
+        <text>{{emote|*baaaaaa*}}</text>
+        <text>{{emote|*baaaaaaa*}}</text>
+        <text>{{emote|*baaaaaaaa*}}</text>
+        <text>{{emote|*bleat*}}</text>
+        <text>{{emote|*flthpppppp*}}</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -6069,15 +6062,15 @@
   <conversation ID="Goatfolk">
     <node ID="Start">
       <text>
-        Graah! Live and drink.~
-        {{emote|*bleat*}}~
-        Graaah! What is it?~
-        Graaaah!~
-        Live and drink.~
-        Grh.~
-        Graaah! Well met!~
-        Hunt well, grrrah.~
-        May you gorge upon the flesh of beasts by starlight.
+        <text>Graah! Live and drink.</text>
+        <text>{{emote|*bleat*}}</text>
+        <text>Graaah! What is it?</text>
+        <text>Graaaah!</text>
+        <text>Live and drink.</text>
+        <text>Grh.</text>
+        <text>Graaah! Well met!</text>
+        <text>Hunt well, grrrah.</text>
+        <text>May you gorge upon the flesh of beasts by starlight.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -6087,8 +6080,8 @@
   <conversation ID="NewlySentientBeings">
     <node ID="Start">
       <text>
-        What am I?~
-        What is &quot;live&quot;? What is &quot;drink&quot;?
+        <text>What am I?</text>
+        <text>What is "live"? What is "drink"?</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -8482,14 +8475,14 @@
   <conversation ID="HindrenPariah">
     <node ID="Start">
       <text>
-        Live and drink.~
-        Live and drink, wanderer.~
-        Live and drink, kendren.~
-        Take your time. The journey will wait for you.~
-        Please don't ask me where Bey Lah is. I will not tell you.~
-        I dream of returning to Bey Lah sometimes, but I know that's not my fate.~
-        Moon and sun, traveler.~
-        Moon and sun, wisdom and will.
+        <text>Live and drink.</text>
+        <text>Live and drink, wanderer.</text>
+        <text>Live and drink, kendren.</text>
+        <text>Take your time. The journey will wait for you.</text>
+        <text>Please don't ask me where Bey Lah is. I will not tell you.</text>
+        <text>I dream of returning to Bey Lah sometimes, but I know that's not my fate.</text>
+        <text>Moon and sun, traveler.</text>
+        <text>Moon and sun, wisdom and will.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -8521,43 +8514,43 @@
 
     <node ID="Start" IfHaveState="HindrenVillageDoomed">
       <text>
-        I've a bad feeling about all this.~
-        The threat is not over. Mark my words.~
-        We're not safe yet. I can feel it.~
-        This resolution is not to my liking...
+        <text>I've a bad feeling about all this.</text>
+        <text>The threat is not over. Mark my words.</text>
+        <text>We're not safe yet. I can feel it.</text>
+        <text>This resolution is not to my liking...</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
 
     <node ID="Start" IfHaveState="HindrenVillageProspers">
       <text>
-        I remain wary, but there is no question that Bey Lah thrives, even with open borders.~
-        Live and drink.~
-        Live and drink, kendren.~
-        Oh, it is you. Stay safe.
+        <text>I remain wary, but there is no question that Bey Lah thrives, even with open borders.</text>
+        <text>Live and drink.</text>
+        <text>Live and drink, kendren.</text>
+        <text>Oh, it is you. Stay safe.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
 
     <node ID="Start" IfHindriarch="Esk">
       <text>
-        I am uncomfortable with change, but it is a skill to train like any other.~
-        Live and drink.~
-        Live and drink, kendren.~
-        I hope Hindriarch Esk can keep us safe.
+        <text>I am uncomfortable with change, but it is a skill to train like any other.</text>
+        <text>Live and drink.</text>
+        <text>Live and drink, kendren.</text>
+        <text>I hope Hindriarch Esk can keep us safe.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
 
     <node ID="Start">
       <text>
-        Live and drink, kendren.~
-        I will do my best to be civil with you, kendren, but we hindren are bred into wariness.~
-        Cause no trouble here, kendren.~
-        Be kind, kendren. We are watching you.~
-        Why do you remain here? Please, finish your business.~
-        It feels strange to allow you to cross our borders unimpeded, but Grand-Doe wills it.~
-        No good can come of allowing kendren into Bey Lah...
+        <text>Live and drink, kendren.</text>
+        <text>I will do my best to be civil with you, kendren, but we hindren are bred into wariness.</text>
+        <text>Cause no trouble here, kendren.</text>
+        <text>Be kind, kendren. We are watching you.</text>
+        <text>Why do you remain here? Please, finish your business.</text>
+        <text>It feels strange to allow you to cross our borders unimpeded, but Grand-Doe wills it.</text>
+        <text>No good can come of allowing kendren into Bey Lah...</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -8566,30 +8559,30 @@
   <conversation ID="HindrenVillager" Inherits="IQuestKithAndKin">
     <node ID="Start" IfHaveState="HindrenVillageDoomed">
       <text>
-        What now? Nothing like this has ever happened before.~
-        It's difficult to return to normal life after such an upheaval.~
-        Forgive me, kendren, but the sight of you makes my hands quake.~
-        Oh? Is it really over? I'm afraid.
+        <text>What now? Nothing like this has ever happened before.</text>
+        <text>It's difficult to return to normal life after such an upheaval.</text>
+        <text>Forgive me, kendren, but the sight of you makes my hands quake.</text>
+        <text>Oh? Is it really over? I'm afraid.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
 
     <node ID="Start" IfHaveState="HindrenVillageProspers">
       <text>
-        How Bey Lah prospers! We should have opened the village years ago.~
-        Live and drink.~
-        Live and drink, kendren.~
-        Oh, it is you. Thank you for helping the village.
+        <text>How Bey Lah prospers! We should have opened the village years ago.</text>
+        <text>Live and drink.</text>
+        <text>Live and drink, kendren.</text>
+        <text>Oh, it is you. Thank you for helping the village.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
 
     <node ID="Start" IfHindriarch="Esk">
       <text>
-        I will admit, Hindriarch Esk leads well.~
-        Can we really trust such a young Hindriarch?~
-        I am both afraid and hopeful for our future. But perhaps this is what we need.~
-        Oh, it is you. Thank you for helping the village.
+        <text>I will admit, Hindriarch Esk leads well.</text>
+        <text>Can we really trust such a young Hindriarch?</text>
+        <text>I am both afraid and hopeful for our future. But perhaps this is what we need.</text>
+        <text>Oh, it is you. Thank you for helping the village.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -8597,20 +8590,20 @@
 
     <node ID="Start">
       <text>
-        Ah, l-live and drink.~
-        Live and drink...~
-        Live... live and drink, kendren.~
-        Um.~
-        Please go away.~
-        W-w-w-w-what are ... what are you...~
-        Moon and sun, kendren.~
-        Live and drink. Will you be staying long?~
-        Forgiveness begged, kendren. I have work to do.~
-        Live and drink, kendren. I am very busy.~
-        You're... kendren...~
-        Please don't hurt me.~
-        Ah... uhm. I... you, ah.~
-        {{emote|*the hindren stares at you, wide-eyed*}}
+        <text>Ah, l-live and drink.</text>
+        <text>Live and drink...</text>
+        <text>Live... live and drink, kendren.</text>
+        <text>Um.</text>
+        <text>Please go away.</text>
+        <text>W-w-w-w-what are ... what are you...</text>
+        <text>Moon and sun, kendren.</text>
+        <text>Live and drink. Will you be staying long?</text>
+        <text>Forgiveness begged, kendren. I have work to do.</text>
+        <text>Live and drink, kendren. I am very busy.</text>
+        <text>You're... kendren...</text>
+        <text>Please don't hurt me.</text>
+        <text>Ah... uhm. I... you, ah.</text>
+        <text>{{emote|*the hindren stares at you, wide-eyed*}}</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -8619,37 +8612,37 @@
   <conversation ID="FaundrenVillager" Inherits="IQuestKithAndKin">
     <node ID="Start">
       <text>
-        Kendren! Kendren! Tell us a story of the world outside when Grand-Doe is not listening!~
-        Um. Live and drink, kendren.~
-        Is it true that all kendren kill one another for sport?~
-        Is it true that you kendren eat your dead?~
-        Is it true that there are bears covered in quills to the east?~
-        Is it true that bears live to be a thousand years old?~
-        Is it true that boars can shoot fire?~
-        Is it true that kendren can't fall in love?~
-        Is it true that kendren elders grow eyes upon their hands?~
-        Is it true that kendren pay for goods with crayons rather than water?~
-        Is it true that kendren worship rocks?~
-        Is it true that kendren spend hours looking at slabs of wood?~
-        Is it true that nine out of ten kendren cannot speak or understand language?~
-        Is it true that instead of dying, kendren are frozen in tubes?~
-        Is it true that kendren children are thrown out of the nest right after being born?~
-        Is it true that all kendren say 'quetzal' when they are happy?~
-        Is it true that kendren chefs can fry water?~
-        Is it true that kendren all live far underground?~
-        Is it true that kendren live in great bubbles?~
-        Is it true that kendren sleep in a snarcomfagus?~
-        Is there really a King of the Moon, kendren?~
-        I heard from my friend who heard it from their yma that the Grand-Doe says that hindren who leave Bey Lah grow an extra pair of arms. And the Grand-Doe says it so you know it's true.~
-        Is it true that when kendren eat mah lah soup, they explode?!~
-        Is it true that... um, oh. I forgot.~
-        Is it true that kendren don't have to ask permission to do the water ritual?~
-        Is it true that you don't have a Grand-Doe?~
-        How do kendren stay safe when you don't have a Grand-Doe to protect you?~
-        Um, kendren, does the yempuris phi really exist? Is it really coming to get us?~
-        Do you have glotrot? Do you have ironshank? Do you have funglefection? Have you ever had them? Is it gross? Can I see?~
-        Is it true that kendren sometimes die of cooking too hard?~
-        Kendren! Kendren! Take me with you! I want to see the Sixty Stilts!
+        <text>Kendren! Kendren! Tell us a story of the world outside when Grand-Doe is not listening!</text>
+        <text>Um. Live and drink, kendren.</text>
+        <text>Is it true that all kendren kill one another for sport?</text>
+        <text>Is it true that you kendren eat your dead?</text>
+        <text>Is it true that there are bears covered in quills to the east?</text>
+        <text>Is it true that bears live to be a thousand years old?</text>
+        <text>Is it true that boars can shoot fire?</text>
+        <text>Is it true that kendren can't fall in love?</text>
+        <text>Is it true that kendren elders grow eyes upon their hands?</text>
+        <text>Is it true that kendren pay for goods with crayons rather than water?</text>
+        <text>Is it true that kendren worship rocks?</text>
+        <text>Is it true that kendren spend hours looking at slabs of wood?</text>
+        <text>Is it true that nine out of ten kendren cannot speak or understand language?</text>
+        <text>Is it true that instead of dying, kendren are frozen in tubes?</text>
+        <text>Is it true that kendren children are thrown out of the nest right after being born?</text>
+        <text>Is it true that all kendren say 'quetzal' when they are happy?</text>
+        <text>Is it true that kendren chefs can fry water?</text>
+        <text>Is it true that kendren all live far underground?</text>
+        <text>Is it true that kendren live in great bubbles?</text>
+        <text>Is it true that kendren sleep in a snarcomfagus?</text>
+        <text>Is there really a King of the Moon, kendren?</text>
+        <text>I heard from my friend who heard it from their yma that the Grand-Doe says that hindren who leave Bey Lah grow an extra pair of arms. And the Grand-Doe says it so you know it's true.</text>
+        <text>Is it true that when kendren eat mah lah soup, they explode?!</text>
+        <text>Is it true that... um, oh. I forgot.</text>
+        <text>Is it true that kendren don't have to ask permission to do the water ritual?</text>
+        <text>Is it true that you don't have a Grand-Doe?</text>
+        <text>How do kendren stay safe when you don't have a Grand-Doe to protect you?</text>
+        <text>Um, kendren, does the yempuris phi really exist? Is it really coming to get us?</text>
+        <text>Do you have glotrot? Do you have ironshank? Do you have funglefection? Have you ever had them? Is it gross? Can I see?</text>
+        <text>Is it true that kendren sometimes die of cooking too hard?</text>
+        <text>Kendren! Kendren! Take me with you! I want to see the Sixty Stilts!</text>
       </text>
       <choice GotoID="End">I am busy. Live and drink, little one.</choice>
     </node>
@@ -8685,10 +8678,10 @@
   <conversation ID="TemplarDomesticant">
     <node ID="Start">
       <text>
-        Did I do well, Newfather?~
-        Newfather! Look!~
-        Are you proud, Newfather?~
-        Newfather!
+        <text>Did I do well, Newfather?</text>
+        <text>Newfather! Look!</text>
+        <text>Are you proud, Newfather?</text>
+        <text>Newfather!</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -9150,15 +9143,15 @@
   <conversation ID="BananaRancher">
     <node ID="Start">
       <text>
-        Eat and thrive, =player.formalAddressTerm=.~
-        Is life not sweet? Could it be sweeter?~
-        May our lives be as sweet as my harvest, =player.formalAddressTerm=.~
-        Will you sing and work with me, =player.formalAddressTerm=?~
-        Hey, oh-way, it's a long way down, from the reaches of the Spindle to the humble ground...~
-        Hey, oh-way, banana tree, count the bunches, one-two-three...~
-        Hey, oh-way, how I spend my days, working in the ruins of the ancient place...~
-        Hey, oh-way, live wild and free, fear not the dacca or the quick adiyys...~
-        Eat bananas every day to keep your mind quick, but don't eat too many or you might get sick!
+        <text>Eat and thrive, =player.formalAddressTerm=.</text>
+        <text>Is life not sweet? Could it be sweeter?</text>
+        <text>May our lives be as sweet as my harvest, =player.formalAddressTerm=.</text>
+        <text>Will you sing and work with me, =player.formalAddressTerm=?</text>
+        <text>Hey, oh-way, it's a long way down, from the reaches of the Spindle to the humble ground...</text>
+        <text>Hey, oh-way, banana tree, count the bunches, one-two-three...</text>
+        <text>Hey, oh-way, how I spend my days, working in the ruins of the ancient place...</text>
+        <text>Hey, oh-way, live wild and free, fear not the dacca or the quick adiyys...</text>
+        <text>Eat bananas every day to keep your mind quick, but don't eat too many or you might get sick!</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -9169,17 +9162,17 @@
   <conversation ID="MopangoStranger">
     <node ID="Start">
       <text>
-        Oh. Hm?~
-        An =ifplayerplural:ye are:thou'rt= ready.~
-        An =ifplayerplural:ye will:thou wilt=.~
-        Peace, =player.formalAddressTerm=.~
-        By Her Light.~
-        Her Light shine on you.~
-        =ifplayerplural:Have ye:Hast thou= business with me?~
-        Humble before Her we walk.~
-        =ifplayerplural:Will ye:Wilt thou=, =player.formalAddressTerm=?~
-        May Her Light guide =ifplayerplural:your:thy= steps, =player.formalAddressTerm=.~
-        Live and drink by Her Light.
+        <text>Oh. Hm?</text>
+        <text>An =ifplayerplural:ye are:thou'rt= ready.</text>
+        <text>An =ifplayerplural:ye will:thou wilt=.</text>
+        <text>Peace, =player.formalAddressTerm=.</text>
+        <text>By Her Light.</text>
+        <text>Her Light shine on you.</text>
+        <text>=ifplayerplural:Have ye:Hast thou= business with me?</text>
+        <text>Humble before Her we walk.</text>
+        <text>=ifplayerplural:Will ye:Wilt thou=, =player.formalAddressTerm=?</text>
+        <text>May Her Light guide =ifplayerplural:your:thy= steps, =player.formalAddressTerm=.</text>
+        <text>Live and drink by Her Light.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -9737,17 +9730,27 @@
 
   <conversation ID="GenericAskNameOption">
     <node ID="Start">
-      <choice GotoID="*askname">What is your name?~What is your name, =pronouns.formalAddressTerm=?~What may I call you, =pronouns.formalAddressTerm=?~What are you called, =pronouns.formalAddressTerm=?~I am =name=, =pronouns.formalAddressTerm=. What is your name?~I am =name=, =pronouns.formalAddressTerm=. What may I call you?
+      <choice GotoID="*askname">
+        <text>What is your name?</text>
+        <text>What is your name, =pronouns.formalAddressTerm=?</text>
+        <text>What may I call you, =pronouns.formalAddressTerm=?</text>
+        <text>What are you called, =pronouns.formalAddressTerm=?</text>
+        <text>I am =name=, =pronouns.formalAddressTerm=. What is your name?</text>
+        <text>I am =name=, =pronouns.formalAddressTerm=. What may I call you?</text>
       </choice>
     </node>
     <node ID="TellName">
       <text>
-        You may call me =subject.refname=.~
-        My name is =subject.refname=.~
-        I am called =subject.refname=.~
-        They call me =subject.refname=.
+        <text>You may call me =subject.refname=.</text>
+        <text>My name is =subject.refname=.</text>
+        <text>I am called =subject.refname=.</text>
+        <text>They call me =subject.refname=.</text>
       </text>
-      <choice GotoID="Start">Thank you, =pronouns.formalAddressTerm=.~My thanks, =pronouns.formalAddressTerm=.~Pleased to meet you, =pronouns.formalAddressTerm=.</choice>
+      <choice GotoID="Start">
+        <text>Thank you, =pronouns.formalAddressTerm=.</text>
+        <text>My thanks, =pronouns.formalAddressTerm=.</text>
+        <text>Pleased to meet you, =pronouns.formalAddressTerm=.</text>
+      </choice>
     </node>
   </conversation>
 
@@ -12233,28 +12236,28 @@
   <conversation ID="SlynthSettler">
     <node ID="Start" IfNotHaveState="LandingPadsSlynthSettled">
       <text>
-        Is okay?~
-        Ahh... nervous ... excited.~
-        Happy do not fight here.~
-        Ah ha ha... nervous!~
-        Stay here?~
-        =player.FormalAddressTerm= stay also?~
-        Strange new.~
-        Live and drink.
+        <text>Is okay?</text>
+        <text>Ahh... nervous ... excited.</text>
+        <text>Happy do not fight here.</text>
+        <text>Ah ha ha... nervous!</text>
+        <text>Stay here?</text>
+        <text>=player.FormalAddressTerm= stay also?</text>
+        <text>Strange new.</text>
+        <text>Live and drink.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
     <node ID="Start" IfHaveState="LandingPadsSlynthSettled">
       <text>
-        This is home.~
-        Welcome here.~
-        Good meeting.~
-        Ah... good.~
-        We chose our new home well.~
-        Happy here.~
-        Ha ha ha! Joyful!~
-        Ah =player.formalAddressTerm= visit, good.~
-        Live and drink.
+        <text>This is home.</text>
+        <text>Welcome here.</text>
+        <text>Good meeting.</text>
+        <text>Ah... good.</text>
+        <text>We chose our new home well.</text>
+        <text>Happy here.</text>
+        <text>Ha ha ha! Joyful!</text>
+        <text>Ah =player.formalAddressTerm= visit, good.</text>
+        <text>Live and drink.</text>
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -12263,17 +12266,17 @@
   <conversation ID="SlynthWanderer">
     <node ID="Start">
       <text>
-        Care you to trade?~
-        I aggress not.~
-        You peaceful, =player.formalAddressTerm=?~
-        Wish trade?~
-        Good scavenge?~
-        Ah! You seem wanderer. How fare?~
-        Live and grow, =player.formalAddressTerm=.~
-        =player.FormalAddressTerm=, I greet in peace.~
-        Live and drink.~
-        Ah?~
-        Greet, =player.formalAddressTerm=.
+        <text>Care you to trade?</text>
+        <text>I aggress not.</text>
+        <text>You peaceful, =player.formalAddressTerm=?</text>
+        <text>Wish trade?</text>
+        <text>Good scavenge?</text>
+        <text>Ah! You seem wanderer. How fare?</text>
+        <text>Live and grow, =player.formalAddressTerm=.</text>
+        <text>=player.FormalAddressTerm=, I greet in peace.</text>
+        <text>Live and drink.</text>
+        <text>Ah?</text>
+        <text>Greet, =player.formalAddressTerm=.</text>
       </text>
       <choice GotoID="Who" IfNotFinishedQuest="Landing Pads" IfNotHaveQuest="Landing Pads">Who are you?</choice>
       <choice GotoID="End">Live and drink.</choice>
@@ -13901,17 +13904,17 @@
 	<conversation ID="GyreWightAgolgot">
 		<node ID="Start">
 			<text>
-				O! O! A new life obtains? You musn't shudder at old Death!~
-				When an eremite consults the teraphim and sees the eyes of Death, only the fools frets! There is Change but no Ending.~
-				A plague is what burns the core out and lets the berries grow.~
-				O Nephilim! Come for our star bath??~
-				I want salt in my mouth, dead eyes in radiating darkness, and a frog for a friend.~
-				O Life, O Change! Embrace us, entangle us...~
-				I can lick the flanges free of their pipe milk and hear my tongue fizzle in foam!~
-				Girsh Agolgot! Red dusts in my nails and burning hot bubbles swell in my glands! Now I point to the future.~
-				The world stews and titrates.
-				O, the thrill of coursing Change within. Each pump of the heart drives it deeper. Each breath a breath of new life.~
-				Roil with me, and bubble over. Let us exceed ourselves!
+				<text>O! O! A new life obtains? You musn't shudder at old Death!</text>
+				<text>When an eremite consults the teraphim and sees the eyes of Death, only the fools frets! There is Change but no Ending.</text>
+				<text>A plague is what burns the core out and lets the berries grow.</text>
+				<text>O Nephilim! Come for our star bath??</text>
+				<text>I want salt in my mouth, dead eyes in radiating darkness, and a frog for a friend.</text>
+				<text>O Life, O Change! Embrace us, entangle us...</text>
+				<text>I can lick the flanges free of their pipe milk and hear my tongue fizzle in foam!</text>
+				<text>Girsh Agolgot! Red dusts in my nails and burning hot bubbles swell in my glands! Now I point to the future.</text>
+				<text>The world stews and titrates</text>
+				<text>O, the thrill of coursing Change within. Each pump of the heart drives it deeper. Each breath a breath of new life.</text>
+				<text>Roil with me, and bubble over. Let us exceed ourselves!</text>
 			</text>
 			<choice GotoID="End">Live and drink.</choice>
 		</node>
@@ -13919,16 +13922,16 @@
 	<conversation ID="GyreWightBethsaida">
 		<node ID="Start">
 			<text>
-				O! O! A new life obtains? You musn't shudder at old Death!~
-				When an eremite consults the teraphim and sees the eyes of Death, only the fools frets! There is Change but no Ending.~
-				A plague is what burns the core out and lets the berries grow.~
-				O Nephilim! Come for our star bath??~
-				I want salt in my mouth, dead eyes in radiating darkness, and a frog for a friend.~
-				O Life, O Change! Embrace us, entangle us...~
-				Do you wish for a gleaming bath, and fractal veins that pump the continuity of life?~
-				You've a twin across the boundary of the future, where new life blooms in rot. Are you with them?~
-				Would you kill your double? Would you let it kill you?~
-				It is to witness the scalpel parting tissue. The beauty of division and resection.
+				<text>O! O! A new life obtains? You musn't shudder at old Death!</text>
+				<text>When an eremite consults the teraphim and sees the eyes of Death, only the fools frets! There is Change but no Ending.</text>
+				<text>A plague is what burns the core out and lets the berries grow.</text>
+				<text>O Nephilim! Come for our star bath??</text>
+				<text>I want salt in my mouth, dead eyes in radiating darkness, and a frog for a friend.</text>
+				<text>O Life, O Change! Embrace us, entangle us...</text>
+				<text>Do you wish for a gleaming bath, and fractal veins that pump the continuity of life?</text>
+				<text>You've a twin across the boundary of the future, where new life blooms in rot. Are you with them?</text>
+				<text>Would you kill your double? Would you let it kill you?</text>
+				<text>It is to witness the scalpel parting tissue. The beauty of division and resection.</text>
 			</text>
 			<choice GotoID="End">Live and drink.</choice>
 		</node>
@@ -13936,15 +13939,15 @@
 	<conversation ID="GyreWightShug'ruith">
 		<node ID="Start">
 			<text>
-				O! O! A new life obtains? You musn't shudder at old Death!~
-				When an eremite consults the teraphim and sees the eyes of Death, only the fools frets! There is Change but no Ending.~
-				A plague is what burns the core out and lets the berries grow.~
-				O Nephilim! Come for our star bath??~
-				I want salt in my mouth, dead eyes in radiating darkness, and a frog for a friend.~
-				O Life, O Change! Embrace us, entangle us...~
-				Bore ribbons in the chrome like wild ants and see a cross-section of human and shell!~
-				I dream of a crawl nook on a nether stratum where I out-sweat the burning Gyre, and then peek an eye across a new horizon.~
-				Thirteen years in the ground. Seventeen years in the ground. A thousand years in the ground!
+				<text>O! O! A new life obtains? You musn't shudder at old Death!</text>
+				<text>When an eremite consults the teraphim and sees the eyes of Death, only the fools frets! There is Change but no Ending.</text>
+				<text>A plague is what burns the core out and lets the berries grow.</text>
+				<text>O Nephilim! Come for our star bath??</text>
+				<text>I want salt in my mouth, dead eyes in radiating darkness, and a frog for a friend.</text>
+				<text>O Life, O Change! Embrace us, entangle us...</text>
+				<text>Bore ribbons in the chrome like wild ants and see a cross-section of human and shell!</text>
+				<text>I dream of a crawl nook on a nether stratum where I out-sweat the burning Gyre, and then peek an eye across a new horizon.</text>
+				<text>Thirteen years in the ground. Seventeen years in the ground. A thousand years in the ground!</text>
 			</text>
 			<choice GotoID="End">Live and drink.</choice>
 		</node>
@@ -13952,16 +13955,16 @@
 	<conversation ID="GyreWightRermadon">
 		<node ID="Start">
 			<text>
-				O! O! A new life obtains? You musn't shudder at old Death!~
-				When an eremite consults the teraphim and sees the eyes of Death, only the fools frets! There is Change but no Ending.~
-				A plague is what burns the core out and lets the berries grow.~
-				O Nephilim! Come for our star bath??~
-				I want salt in my mouth, dead eyes in radiating darkness, and a frog for a friend.~
-				O Life, O Change! Embrace us, entangle us...~
-				The Fishhead will catalyze the electric lake, and sure we as fossils will brick the ground but what a dais it will be!~
-				The electric sizzle of life! Prickling and crisping skin, red and raw and beautiful beneath.~
-				Eaten by the air. Death by life. O Rermadon!~
-				Live mites in the burning gas will appear green to the Future.
+				<text>O! O! A new life obtains? You musn't shudder at old Death!</text>
+				<text>When an eremite consults the teraphim and sees the eyes of Death, only the fools frets! There is Change but no Ending.</text>
+				<text>A plague is what burns the core out and lets the berries grow.</text>
+				<text>O Nephilim! Come for our star bath??</text>
+				<text>I want salt in my mouth, dead eyes in radiating darkness, and a frog for a friend.</text>
+				<text>O Life, O Change! Embrace us, entangle us...</text>
+				<text>The Fishhead will catalyze the electric lake, and sure we as fossils will brick the ground but what a dais it will be!</text>
+				<text>The electric sizzle of life! Prickling and crisping skin, red and raw and beautiful beneath.</text>
+				<text>Eaten by the air. Death by life. O Rermadon!</text>
+				<text>Live mites in the burning gas will appear green to the Future.</text>
 			</text>
 			<choice GotoID="End">Live and drink.</choice>
 		</node>
@@ -13969,16 +13972,16 @@
 	<conversation ID="GyreWightQas">
 		<node ID="Start">
 			<text>
-				O! O! A new life obtains? You musn't shudder at old Death!~
-				When an eremite consults the teraphim and sees the eyes of Death, only the fools frets! There is Change but no Ending.~
-				A plague is what burns the core out and lets the berries grow.~
-				O Nephilim! Come for our star bath??~
-				I want salt in my mouth, dead eyes in radiating darkness, and a frog for a friend.~
-				O Life, O Change! Embrace us, entangle us...~
-				The bell sounds wheel at right angles and shock the wet meat off our perfect bones! I was made to be bones.~
-				The moon is their marriage light! And then a whole world for the Girsh daughters of nephilim!~
-				Reach out and touch the heart. Our bonds transcend distance!~
-				Push out the walls of the new world, Qas, to be its center!
+				<text>O! O! A new life obtains? You musn't shudder at old Death!</text>
+				<text>When an eremite consults the teraphim and sees the eyes of Death, only the fools frets! There is Change but no Ending.</text>
+				<text>A plague is what burns the core out and lets the berries grow.</text>
+				<text>O Nephilim! Come for our star bath??</text>
+				<text>I want salt in my mouth, dead eyes in radiating darkness, and a frog for a friend.</text>
+				<text>O Life, O Change! Embrace us, entangle us...</text>
+				<text>The bell sounds wheel at right angles and shock the wet meat off our perfect bones! I was made to be bones.</text>
+				<text>The moon is their marriage light! And then a whole world for the Girsh daughters of nephilim!</text>
+				<text>Reach out and touch the heart. Our bonds transcend distance!</text>
+				<text>Push out the walls of the new world, Qas, to be its center!</text>
 			</text>
 			<choice GotoID="End">Live and drink.</choice>
 		</node>
@@ -13986,16 +13989,16 @@
 	<conversation ID="GyreWightQon">
 		<node ID="Start">
 			<text>
-				O! O! A new life obtains? You musn't shudder at old Death!~
-				When an eremite consults the teraphim and sees the eyes of Death, only the fools frets! There is Change but no Ending.~
-				A plague is what burns the core out and lets the berries grow.~
-				O Nephilim! Come for our star bath??~
-				I want salt in my mouth, dead eyes in radiating darkness, and a frog for a friend.~
-				O Life, O Change! Embrace us, entangle us...~
-				Primrose and witchwood will boil the boundaries of sense into death-pleasure!~
-				The Grounded Mind cannot soar. The Mind Aloft is limitless.~
-				Be open. Receive the Greatest Dreams. Hear the Girsh Sing.~
-				You can be it. We can all be it! Behold Nephilim!
+				<text>O! O! A new life obtains? You musn't shudder at old Death!</text>
+				<text>When an eremite consults the teraphim and sees the eyes of Death, only the fools frets! There is Change but no Ending.</text>
+				<text>A plague is what burns the core out and lets the berries grow.</text>
+				<text>O Nephilim! Come for our star bath??</text>
+				<text>I want salt in my mouth, dead eyes in radiating darkness, and a frog for a friend.</text>
+				<text>O Life, O Change! Embrace us, entangle us...</text>
+				<text>Primrose and witchwood will boil the boundaries of sense into death-pleasure!</text>
+				<text>The Grounded Mind cannot soar. The Mind Aloft is limitless.</text>
+				<text>Be open. Receive the Greatest Dreams. Hear the Girsh Sing.</text>
+				<text>You can be it. We can all be it! Behold Nephilim!</text>
 			</text>
 			<choice GotoID="End">Live and drink.</choice>
 		</node>

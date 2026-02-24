@@ -804,9 +804,8 @@
 		<part Name="AfterBrightsheolCourtSpawner" />
 	</object>
   <object Name="GritGatePowerDisplay" Inherits="Widget">
-    <part Name="UnityPrefabImposter" PrefabID="Prefabs/Imposters/gritgate_power" VisibleOnly="false"/>
+    <part Name="PrefabImposterFinal" Prefab="Prefabs/Imposters/gritgate_power" />
     <part Name="GritGatePowerDisplay" />
-    <tag Name="AlwaysPaint" />
   </object>
   <object Name="MemorialPlacement" Inherits="Widget">
     <part Name="MemorialPlacement" />
@@ -872,14 +871,12 @@
     <part Name="MemorialPlacement" FillOrder="20" />
   </object>
   <object Name="AlarmCircle" Inherits="Widget">
-    <part Name="UnityPrefabImposter" PrefabID="Prefabs/Imposters/alert_circle" VisibleOnly="false"/>
+    <part Name="PrefabImposterFinal" Prefab="Prefabs/Imposters/alert_circle" />
     <part Name="AlarmCircle" Radius="6" />
-    <tag Name="AlwaysPaint" />
   </object>
   <object Name="AlarmCircleSmall" Inherits="Widget">
-    <part Name="UnityPrefabImposter" PrefabID="Prefabs/Imposters/alert_circle_small" VisibleOnly="false"/>
+    <part Name="PrefabImposterFinal" Prefab="Prefabs/Imposters/alert_circle_small" />
     <part Name="AlarmCircle" Radius="3" />
-    <tag Name="AlwaysPaint" />
   </object>
   <object Name="Finish_DecodingTheSignal_TravelToBethesdaSusa" Inherits="Widget">
     <part Name="QuestStepFinisher" Trigger="Created" Quest="Decoding the Signal" Step="Locate the Mechanimist Compound at Bethesda Susa" />
