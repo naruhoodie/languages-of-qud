@@ -115,6 +115,9 @@
 		<tag Name="SharesRecipeText" Value="<LOCALIZE>" />
 	    <part Name="SecretObject" text="<LOCALIZE>" message="<LOCALIZE>" />
 	    <part Name="SecretObjectTalk" text="<LOCALIZE>" message="<LOCALIZE>" />
+	    <part Name="Preacher" Prefix="<LOCALIZE>" Postfix="<LOCALIZE>" Frozen="<LOCALIZE>" />
+	    <part Name="CannotBeInfluenced" Messages="(*ability*|default)::<LOCALIZE>;;" />
+
 	</object>
 </objects>
 

@@ -34,6 +34,9 @@ _(S|T)\([ ]*"[^"]+"[ ]*\)
 cs finding ReplaceBuilder .AddObject calls
 \.Add(Object)\(.+,[ ]*(Alias:[ ]*|)"[^"]+"\)
 
+cs finding replacers ".An" and ".an" in template strings (edit for others)
+=[a-zA-Z]+\.[Aa]n[=|:]
+
 cs code cleanup:
 \s+$			
 [ \t]+(\r|\n)$	$1
