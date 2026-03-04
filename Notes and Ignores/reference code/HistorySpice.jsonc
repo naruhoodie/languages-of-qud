@@ -631,7 +631,7 @@
       "rogue": [ "rogue", "nefarious", "bandit", "trickster", "criminal" ],
       "in": [ "through", "around", "in" ],
       "itWasDiscovered": [ "it was discovered", "the people learned", "the people of Qud learned" ],
-      "sultanClone": [ "a clone of =spice.entity:name=", "a simulacrum of =spice.entity:name=", "=var= twin" ],
+      "sultanClone": [ "a clone of =spice.entity:name=", "a simulacrum of =spice.entity:name=", "=spice.entity:name|'s= twin" ],
       "ghost": [ "ghost", "shade", "spectre", "devil", "wraith" ],
       "calmly": [ "calmly", "gently", "quietly" ],
       "someone": [ "someone", "somebody", "a mysterious person", "a child", "a woman", "a man", "a baby", "someone", "someone", "somebody", "someone", "somebody", "a mysterious person", "a child", "a woman", "a man", "someone", "someone", "somebody" ],
@@ -782,7 +782,7 @@
       "venerated": [ "lifted up on chairs", "thrown into the air joyfully", "venerated as idols", "treated to a delightful feast" ],
       "disparaged": [ "thrown off a cliff", "humiliated at a banquet", "launched into orbit", "trapped in =spice:elements.!random.nounsPlural.!random=" ],
       "stamped_VAR": [ "=spice:commonPhrases.stamped.!random= with tiny images of =var=", "=spice:commonPhrases.stamped.!random= with fanciful depictions of =var=", "=spice:commonPhrases.stamped.!random= with beautiful =var=" ],
-      "backToLife": [ "=spice.entity:name= had faked =spice.entity:possessivePronoun= death =^:fakedDeath.!random=", "=spice:commonPhrases.sultanClone.!random= had been the one who died", "=var= life had secretly been saved =^:lifeSaveReasons.!random=" ],
+      "backToLife": [ "=spice.entity:name= had faked =spice.entity:possessivePronoun= death =^:fakedDeath.!random=", "=spice:commonPhrases.sultanClone.!random= had been the one who died", "=spice.entity:name|'s= life had secretly been saved =^:lifeSaveReasons.!random=" ],
       "fakedDeath": [ "by forcing a peasant to impersonate =spice.entity:objectPronoun=", "by switching places with =spice.entity:possessivePronoun= twin", "with the clever use of a lifelike hologram" ],
       "lifeSaveReasons": [ "with cybernetic surgery", "with astral projection", "by a pact with highly entropic beings" ],
       "inYear": [ "in", "early in", "late in", "sometime in" ],
@@ -1066,14 +1066,14 @@
       "furnitureDeath": [ "crushed under =furnitureName-an=", "trapped inside =furnitureName-an=", "got =their= =bodyPartName= stuck =spice:instancesOf.furnitureStuckPreposition.!random= =furnitureName-an=" ],
       "martyrDeath": [ "=spice:instancesOf.murdered.!random= for =spice:commonPhrases.honoring.!random= =sacredThing=", "=spice:instancesOf.murdered.!random= for =sacredThing=", "=spice:instancesOf.groupMurdered_By.!random= for =spice:commonPhrases.honoring.!random= =sacredThing=", "=spice:instancesOf.groupMurdered_By.!random= for =sacredThing=" ],
       "generallyMurdered": [
-        "Stabbed to death by =dude.a.name|strip=",
-        "Shanked by =dude.a.name|strip=",
-        "Gunned down by =dude.a.name|strip=",
-        "Poisoned by =dude.a.name|strip=",
-        "Pushed off a cliff by =dude.a.name|strip=",
-        "Tricked into jumping into a pool of lava by =dude.a.name|strip=",
-        "Drowned in a lake by =dude.a.name|strip=",
-        "Thrown into a pool of acid by =dude.a.name|strip="
+        "Stabbed to death by =dude.a.name:withTitles|strip=",
+        "Shanked by =dude.a.name:withTitles|strip=",
+        "Gunned down by =dude.a.name:withTitles|strip=",
+        "Poisoned by =dude.a.name:withTitles|strip=",
+        "Pushed off a cliff by =dude.a.name:withTitles|strip=",
+        "Tricked into jumping into a pool of lava by =dude.a.name:withTitles|strip=",
+        "Drowned in a lake by =dude.a.name:withTitles|strip=",
+        "Thrown into a pool of acid by =dude.a.name:withTitles|strip="
       ],
       "itemDeath1": [
         "Killed in a duel over =item.a.name|strip=",
@@ -1164,8 +1164,8 @@
         "[x3]Drank from a poisoned =liquid.name:asIfKnown:includeAdjunctNoun|strip="
       ],
       "apeDeath": [
-        "Made too many mocking sounds at =ape.a.name|strip=",
-        "[x3]Made too many mocking sounds at =ape.a.name:asIfKnown|strip="
+        "Made too many mocking sounds at =ape.a.name:withTitles|strip=",
+        "[x3]Made too many mocking sounds at =ape.a.name:withTitles:asIfKnown|strip="
       ],
       "naturalDeath": [
         "Died of old age",
@@ -1351,7 +1351,7 @@
           "changedWays": [ "changed our =spice:commonPhrases.ways.!random=" ],
           "composedRituals": [ "=spice:commonPhrases.composed.!random= new =spice:commonPhrases.rituals.!random=" ],
           "lostOur": [
-            "=villager.the.basename:withoutTitles|strip= lost our =item.name=",
+            "=villager.the.basename|strip= lost our =item.name=",
             "our =item.name= =item.verb:were= stolen from us",
             "=spice:instancesOf.fate.!random= has separated us from our =item.name="
           ],
@@ -1449,11 +1449,11 @@
       "InteractWithAnObject": {
         "holyitem": {
           "intro": [ "=spice:commonPhrases.adventurer.!random=, =spice:instancesOf.haveYouHeardOf.!random= =item.the.name|strip= at =deliveryTarget|strip=" ],
-          "itIsHoly": [ "=item.it= is a =spice:commonPhrases.sacred.!random= =spice:commonPhrases.shrine.!random= to us" ],
-          "itIsDespicable": [ "=item.it= is a =spice:commonPhrases.despicable.!random= =spice:commonPhrases.horror.!random= to =sacredThing= and everything else we =spice:instancesOf.holdDear.!random=" ],
-          "willInteract": [ "often we make pilgrimages to =verb= =item.it= and contemplate =sacredThing=" ],
+          "itIsHoly": [ "=item.they= =item.is= a =spice:commonPhrases.sacred.!random= =spice:commonPhrases.shrine.!random= to us" ],
+          "itIsDespicable": [ "=item.they= =item.is= a =spice:commonPhrases.despicable.!random= =spice:commonPhrases.horror.!random= to =sacredThing= and everything else we =spice:instancesOf.holdDear.!random=" ],
+          "willInteract": [ "often we make pilgrimages to =verb= =item.them= and contemplate =sacredThing=" ],
           "honorUs": [ "it would honor us =spice:instancesOf.ifYouWouldDoTheSame.!random=", "it would be a =spice:commonPhrases.blessing.!random= =spice:instancesOf.ifYouWouldDoTheSame.!random=" ],
-          "honorUsDesecrate": [ "it would honor us =spice:commonPhrases.greatly.!random= if you =verb= =item.it=", "it would be a =spice:commonPhrases.blessing.!random= if you =verb= =item.it=" ],
+          "honorUsDesecrate": [ "it would honor us =spice:commonPhrases.greatly.!random= if you =verb= =item.them=", "it would be a =spice:commonPhrases.blessing.!random= if you =verb= =item.them=" ],
           "willYou": [ "=spice:instancesOf.willYou.!random=" ],
           "rewardYou": [ "we will =spice:instancesOf.reward.!random= your =spice:commonPhrases.services.!random=" ]
         },
@@ -2224,8 +2224,8 @@
           "the =spice:itemTypes.$itemType.!random= of the =spice:elements.$element.adjectives.!random= =spice:nouns.!random=",
           "the =spice:itemTypes.$itemType.!random= of the =spice:adjectives.!random= =spice:elements.$element.@professions.!random=",
           "=person.name's= =spice:elements.$element.adjectives.!random= =spice:itemTypes.$itemType.!random=",
-          "=creature.a.name's:withoutTitles|strip= =spice:elements.$element.adjectives.!random= =spice:itemTypes.$itemType.!random=",
-          "=creature.a.name's:withoutTitles|strip= =spice:itemTypes.$itemType.!random=",
+          "=creature.a.name's|strip= =spice:elements.$element.adjectives.!random= =spice:itemTypes.$itemType.!random=",
+          "=creature.a.name's|strip= =spice:itemTypes.$itemType.!random=",
           "=spice:nouns.!random=-=spice:nouns.!random=",
           "=spice:adjectives.!random= =spice:nouns.!random="
         ]

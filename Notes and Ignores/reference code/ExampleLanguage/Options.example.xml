@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.14
+Caves of Qud - Generated Localizable XML 2.0.212.15
 
 <options>
 
@@ -46,10 +46,8 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
   <option ID="OptionMainMenuBackground" DisplayText="▶Main menu background art" Category="▶Display" Values="Modern|▶Modern,Classic|▶Classic" />
   <option ID="OptionImposterChars" DisplayText="▶Imposter text tiles" Category="▶Display" />
   <option ID="OptionsKeybindings" DisplayText="▶Control Mapping" Category="▶Controls" SearchKeywords="▶Control bindings" />
-  <option ID="OptionKeyRepeatDelay" DisplayText="▶Key repeat delay" Category="▶Controls" />
-  <option ID="OptionKeyRepeatDelay" DisplayText="▶Button repeat delay" Category="▶Controls" />
-  <option ID="OptionKeyRepeatRate" DisplayText="▶Key repeat rate" Category="▶Controls" />
-  <option ID="OptionKeyRepeatRate" DisplayText="▶Button repeat rate" Category="▶Controls" />
+  <option ID="OptionKeyRepeatDelay" DisplayText="▶Key repeat delay" ConsoleDisplayText="▶Button repeat delay" Category="▶Controls" />
+  <option ID="OptionKeyRepeatRate" DisplayText="▶Key repeat rate" ConsoleDisplayText="▶Button repeat rate" Category="▶Controls" />
   <option ID="OptionMouseInput" DisplayText="▶Allow mouse input" Category="▶Controls" />
   <option ID="OptionMouseMovement" DisplayText="▶Allow mouse movement" Category="▶Controls" />
   <option ID="OptionMouseScrollWheel" DisplayText="▶Allow scroll wheel to zoom" Category="▶Controls" />
@@ -178,8 +176,8 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
   <option ID="OptionDisablePermadeath" DisplayText="▶Don't delete Classic mode saved games on death" Category="▶Debug" />
   <option ID="OptionAllowSaveLoad" DisplayText="▶Enable save and load" Category="▶Debug" />
   <option ID="OptionAllowReallydie" DisplayText="▶Get prompted to confirm deaths" Category="▶Debug" />
-  <option ID="OptionEnablePrereleaseContent" DisplayText="▶Enable unfinished and unsupported content" Category="▶Debug" />
   <option ID="OptionEnableSeed" DisplayText="▶Enable world seeds (experimental)" Category="▶Debug" />
+  <option ID="OptionEnablePrereleaseContent" DisplayText="▶Enable unfinished and unsupported content" Category="▶Debug" />
   <option ID="OptionDisableDefectLimit" DisplayText="▶Allow creatures to have multiple defects " Category="▶Debug" />
   <option ID="OptionEnableColorTextInput" DisplayText="▶Enable color menu for text input" Category="▶Debug" />
   <option ID="OptionDisableAchievements" DisplayText="▶Disable achievements" Category="▶Debug" />

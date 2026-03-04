@@ -1,6 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?>
-<help Encoding="utf-8">
-	<topic name="Quickstart">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Caves of Qud - Generated Localizable XML 2.0.212.15
+
+<help>
+
+  <topic name="Key" DisplayName="DisplayText">
+
+-->
+<help Lang="example" Encoding="utf-8">
+  <topic name="Quickstart" DisplayName="▶Quickstart">▶
 These are nine things you should do when you start your game.
 After that, use the rest of this Help as a reference manual.
 
@@ -55,8 +63,8 @@ Simply walk offscreen, or go to the world map with ~CmdMoveU.
 
 To perform a basic attack, just walk into a hostile creature.
 Or you can use an attack ability.
-</topic>	
-  <topic name="Attributes">
+</topic>
+  <topic name="Attributes" DisplayName="▶Attributes">▶
 [[{{C|Strength}}]]
 Your strength score determines how much melee damage you do (by improving 
 your armor penetration), your ability to resist forced movement, and your
@@ -141,7 +149,7 @@ heat resist score is 0. At 100, you are immune to heat damage and your
 temperature cannot be increased.
 
 </topic>
-  <topic name="Skills">
+  <topic name="Skills" DisplayName="▶Skills">▶
 Your skills represent the abilities you have learned in your
 life. Each skill tree has several skills associated with it. You begin with
 several skills determined by your caste or calling. You may purchase other
@@ -157,7 +165,7 @@ you.
 Skills often grant you activated abilities. Once you purchase a skill, you
 may access your new activated ability from the Manage Abilities menu ('~CmdAbilities').
 </topic>
-  <topic name="Mutations and Defects">
+  <topic name="Mutations and Defects" DisplayName="▶Mutations and Defects">▶
 Mutations are special biological powers gifted to the denizens of Qud --
 true kin from the outer arcologies do not possess mutations. There are two
 types of mutations: physical and mental. Each mutation has a mutation score
@@ -187,7 +195,7 @@ access your new activated ability from the Manage Abilities menu ('~CmdAbilities
 Defects are mutations with primarily negative effects. Certain mutants
 begin with a single defect. There is no score associated with defects.
 </topic>
-  <topic name="Artifacts">
+  <topic name="Artifacts" DisplayName="▶Artifacts">▶
 Artifacts are items so technologically complex that few of Qud's denizens
 understand them. An unidentified artifact will appear to you as a
 "Weird Artifact". You may examine an artifact to try to identify it. If you
@@ -198,7 +206,7 @@ you attempt to identify something and fail, however, there is a small
 chance you will break it. Your chance of successfully identifying an
 artifact is based on your intelligence score.
 </topic>
-  <topic name="Tonics">
+  <topic name="Tonics" DisplayName="▶Tonics">▶
 Tonics are chemical concoctions that enhance your mental and physical stats
 in a variety of ways. They are artifacts, and so you must successfully
 identify them to understand what they do. Ingesting one tonic while under
@@ -215,7 +223,7 @@ an undesired effect.
 Tonics may be concocted with the Tinker skill. In addition to bits,
 concocting a tonic often requires a natural ingredient.
 </topic>
-  <topic name="Weapons and Armor">
+  <topic name="Weapons and Armor" DisplayName="▶Weapons and Armor">▶
 [[{{C|Weapons}}]]
 Every weapon has a penetration value and a damage value
 (for example, {{C|→}}4, {{R|♥}}1d4). The penetration value of melee weapons is related
@@ -231,7 +239,7 @@ Most pieces of armor have an armor value and a dodge value
 Pieces of armor may modify other statistics; 'l'ook at a piece of armor to
 fully determine what it does.
 </topic>
-  <topic name="Combat">
+  <topic name="Combat" DisplayName="▶Combat">▶
 [[{{C|Melee Combat}}]]
 Melee combat is combat between two adjacent opponents with standard melee
 weapons such as swords, daggers, axes, and clubs. To attack a hostile
@@ -294,7 +302,7 @@ If you are engaged in melee combat with more than one hostile opponent,
 there is a 50% chance that each missile attack you make goes wild (veers
 45 degrees to the left or right).
 </topic>
-  <topic name="Saving Throws">
+  <topic name="Saving Throws" DisplayName="▶Saving Throws">▶
 Certain effects or abilities require creatures to make saving throws or face 
 consequences. Saving throws each have an attribute and difficulty associated 
 with them. To pass a saving throw, a base 1d20 is rolled and then your 
@@ -303,8 +311,7 @@ difficulty, you pass. Otherwise you fail. Some saving throws against
 creature abilities add the creature's attribute modifier to the difficulty 
 as well.
 </topic>
-
-  <topic name="Action Costs">
+  <topic name="Action Costs" DisplayName="▶Action Costs">▶
 The amount of time it takes to do something is assessed in terms of an
 action cost. Most tasks have an action cost of 1000. Your Quickness
 increases the rate at which you recover this cost, enabling you to act
@@ -313,7 +320,7 @@ more often than slower creatures.
 Some skills, mutations, and equipment enable you to take specific actions
 at reduced or zero action cost.
 </topic>
-<topic name="Credits">
+  <topic name="Credits" DisplayName="▶Credits">▶
 
                                  [[{{C|Created by}}
                       Brian Bucklew and Jason Grinblat
@@ -507,7 +514,7 @@ at reduced or zero action cost.
 
   ]]
 </topic>
-<topic name="Open Source Licenses">
+  <topic name="Open Source Licenses" DisplayName="▶Open Source Licenses">▶
 [[{{c|License for Harmony (https://github.com/pardeike/Harmony)}}
   {{W|MIT License}}
 

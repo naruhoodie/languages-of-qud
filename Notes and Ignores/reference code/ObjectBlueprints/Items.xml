@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<objects>
+<objects Encoding="utf-8">
 
   <!--    
     1 Base objects
@@ -11723,7 +11723,7 @@ These effects stack if multiple rubbergums are ingested." />
   <object Name="Random Figurine" Inherits="Item">
     <part Name="Render" DisplayName="[figurine]" Tile="Items/figurine.png" DetailColor="y" RenderString="*" ColorString="&amp;w" RenderLayer="5" />
     <part Name="Commerce" Value="10" />
-    <part Name="Description" Short="This figurine worked from =material= intricately depicts =creature.a.name|strip=:
+    <part Name="Description" Short="This figurine worked from =material= intricately depicts =creature.a.name:withTitles|strip=:
 
 =creature.description.short=" />
     <part Name="Physics" Category="Trade Goods" />

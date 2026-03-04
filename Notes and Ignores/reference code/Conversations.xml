@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<conversations>
+<conversations Encoding="utf-8">
   <!-- Inherited by all conversations by default, unless another base or empty string is specified in Inherits="" -->
   <conversation ID="BaseConversation" Inherits="">
     <!-- Conversation level choices are distributed to all start nodes by default -->
@@ -6653,7 +6653,7 @@
     </node>
 
     <node ID="KithAndKinExclusion">
-      <text Priority="1">I'm afraid that well is poisoned due to your false accusation: =thief.name= isn't the culprit.</text>
+      <text Priority="1">I'm afraid that well is poisoned due to your false accusation: =thief.name|strip= isn't the culprit.</text>
       <text ID="Clue_BloodyPatchOfFur" Thief="Kendren">Hmm. But the only fur there was from a hindren's pelt, and kendren warriors fight to the death. With no corpse and no other fur, it seems unlikely that a hindren fought an outsider.</text>
       <text ID="Clue_SawATrader" Thief="Kendren">I'm afraid that makes no sense. Why would an outsider invite a trader to our village, when they could simply meet one outside of Bey Lah?</text>
       <text ID="Clue_SoreThroats" Thief="Kendren">But weren't the rumors of sore throats in the village? That wouldn't have anything to do with kendren.</text>
@@ -6680,12 +6680,12 @@
 
     <node ID="KithAndKinAccusation">
       <text>
-        Oh. Yes, this does indicate that some kind of =motive.influence= transpired, and =thief.name= was trying to hide it.
+        Oh. Yes, this does indicate that some kind of =motive.influence= transpired, and =thief.name|strip= was trying to hide it.
 
         So what you're saying is....
       </text>
       <part Name="KithAndKinAccusation" Register="All" />
-      <choice GotoID="KithAndKinFinale">That's right. By concealing =all.influence=, it was =thief.name= who stole Kindrish!</choice>
+      <choice GotoID="KithAndKinFinale">That's right. By concealing =all.influence=, it was =thief.name|strip= who stole Kindrish!</choice>
       <choice GotoID="End">I'm still not completely certain. Let me ponder it more.</choice>
     </node>
 
@@ -12119,6 +12119,8 @@
       </text>
 			<text IfSlynthChosen="Chavvah">
 				After some discussion and deliberation, we have come to consensus: the slynth shall become a part of Chavvah, the living city. There are no words for the breadth of futures before us, and we would not know them if they were. Perhaps we will learn to chime.
+
+        Our emigration party departs for the moon stair in the morning.
 			</text>
       <text Priority="-1">
         After some discussion and deliberation, we have come to consensus: the slynth shall become citizens of =village.name=. We shall learn the practice of =village.activity=, hold =village.sacred= dear and spurn =village.profane=.

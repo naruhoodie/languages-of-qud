@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.14
+Caves of Qud - Generated Localizable XML 2.0.212.15
 
-<objects>
+<objects ExcludeFromCorpusGeneration="Key">
 
   <object Name="Key" Load="">
 
@@ -19,7 +19,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
     <xtagGrammar>
 
 -->
-<objects Lang="example" Encoding="utf-8">
+<objects Lang="example" Encoding="utf-8" ExcludeFromCorpusGeneration="true">
   <object Name="Ehalcodon" Load="Merge">
     <part Name="Render" DisplayName="▶{{M|Ehalcodon}}" />
     <part Name="Description" Short="▶A creature of immensity mounts the upper eyeline and radiates Godlight. Haunches dusted with Spindle glitter support a creature-shape sketched to being by the sentient background radiation of this plane, and wide, banded wings are edged to soar on stellar winds. Finally, irisdual light churning under =pronouns.possessive= tx-glass skin is refracted to the metaspectrum of impossibility and spills out of body in cornu spirals." />
@@ -483,7 +483,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
   <object Name="Mover Chair" Load="Merge">
     <part Name="Render" DisplayName="▶wide chair" />
     <part Name="Description" Short="▶A wide wooden sitter offers sufficient room for the cybernetically grown rump or a psychochemically shrunken pair or an ontologically crunched triple." />
-    <tag Name="NamingTag" Value="▶Animated" />
   </object>
   <object Name="BaseMoverCouch" Load="Merge">
     <part Name="Render" DisplayName="▶sofa" />

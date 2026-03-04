@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<commands>
+<commands Encoding="utf-8">
 
   <!-- Adventure is the category used by the game when walking around. -->
   <navcategory ID="Adventure">
@@ -202,11 +202,11 @@
   </command>
   <command ID="CmdAttackU" DisplayText="Force attack up" Category="Basic Move / Attack" Layer="Adventure">
     <keyboardBind Modifier="ctrl" Key="numpadMinus"/>
-    <keyboardBind Modifier="ctrl,shift" Key="period"/>
+    <keyboardBind Modifier="ctrl,shift" Key="comma"/>
   </command>
   <command ID="CmdAttackD" DisplayText="Force attack down" Category="Basic Move / Attack" Layer="Adventure">
     <keyboardBind Modifier="ctrl" Key="numpadPlus"/>
-    <keyboardBind Modifier="ctrl,shift" Key="comma"/>
+    <keyboardBind Modifier="ctrl,shift" Key="period"/>
   </command>
   <command ID="CmdAttackDirection" DisplayText="Force attack in a direction" Category="Basic Move / Attack" Layer="Adventure" Auto="Down">
     <keyboardBind Key="backslash"/>
@@ -396,7 +396,7 @@
   </command>
 
   <!-- Only one "button" can be used as a modifier in gamepad binds. -->
-  <command ID="GamepadAlt" DisplayText="Gamepad Alt" Category="Menus" Layer="Adventure">
+  <command ID="GamepadAlt" DisplayText="Gamepad Alt" ConsoleDisplayText="Modifier Button" Category="Menus" Layer="Adventure">
     <gamepadBind Button="leftTrigger"/>
   </command>
 
@@ -821,7 +821,7 @@
 
   
   <!-- System -->
-  <command ID="CmdQuit" DisplayText="Quit" Category="System" Layer="System">
+  <command ID="CmdQuit" RequiresCapability="IsDesktop" DisplayText="Quit" Category="System" Layer="System">
     <keyboardBind Modifier="ctrl" Key="q"/>
   </command>
   <command ID="CmdLoad" DisplayText="Load game" Category="System" Layer="System">
@@ -868,7 +868,7 @@
   
   <!-- Debug -->
   <command ID="CmdShowReachability" DisplayText="Show reachability map" Category="Debug" Layer="Adventure" Auto="DownPass"></command>
-  <command ID="CmdShowFPS" DisplayText="Show FPS" Category="Debug" Layer="Adventure" Auto="DownPass"></command>
+  <command ID="CmdShowFPS" RequiresCapability="IsDesktop" DisplayText="Show FPS" Category="Debug" Layer="Adventure" Auto="DownPass"></command>
   <command ID="CmdToggleAnimation" DisplayText="Toggle animation" Category="Debug" Layer="Adventure" Auto="DownPass"></command>
   <command ID="CmdShowBrainlog" DisplayText="Show brainlog" Category="Debug" Layer="Adventure" Auto="DownPass"></command>
   <command ID="CmdWish" DisplayText="Wish" Category="Debug" Layer="Adventure" Auto="DownPass">

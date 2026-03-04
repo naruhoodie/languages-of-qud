@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.14
+Caves of Qud - Generated Localizable XML 2.0.212.15
 
 <templates>
 
@@ -25,5 +25,14 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
   <template ID="Effect.Phasing.Details">▶
         <p>"Can't physically interact with creatures and objects unless they're also phased.</p>
         <p>Can pass through solids.</p>
+    </template>
+  <template ID="Effect.Lovesick.Details">▶
+        <p>-6 Intelligence</p>
+        <p>-6 Willpower</p>
+        <p>-5 Move Speed</p>
+    </template>
+  <template ID="Effect.WakingDream.Details">▶
+        <p>Gain a level as this creature to wake pleasantly.</p>
+        <p>Die or abandon character to wake fitfully.</p>
     </template>
 </templates>

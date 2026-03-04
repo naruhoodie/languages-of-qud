@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.14
+Caves of Qud - Generated Localizable XML 2.0.212.15
 
-<objects>
+<objects ExcludeFromCorpusGeneration="Key">
 
   <object Name="Key" Load="">
 
@@ -114,7 +114,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
     <part Name="Description" Short="▶The slate is touched with years of handprints and a ring of rust flakes off the top of the hinges. The door continues, though, its stubborn assertion of 'in' and 'out'." />
     <tag Name="HeroNameTitleDescriptor" Value="▶Ajar,Closed,Locked,Once-Knocked,Open,Thrice-Knocked,Twice-Knocked,Unknockable,Unknocked,Unlocked" />
     <xtagTextFragments Skin="▶panel" PoeticFeatures="▶charming moulding,oiled hinges,inviting knob" />
-    <tag Name="NamingTag" Value="▶Animated" />
     <tag Name="QuestableVerb" Value="▶open,close" />
   </object>
   <object Name="Windowed Door" Load="Merge">
@@ -274,14 +273,12 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
     <part Name="Circuitry" NameForStatus="▶Gearbox" />
     <tag Name="HeroNameTitleDescriptor" Value="▶Cyclic,Generous,Rotated,Vaned" />
     <tag Name="HeroNameTitleClientele" Value="▶millers" />
-    <tag Name="NamingTag" Value="▶Animated" />
   </object>
   <object Name="Millstone" Load="Merge">
     <part Name="Render" DisplayName="▶millstone" />
     <part Name="Description" Short="▶Circles of limestone, porous and oyster-gray with the shells of old things, are arranged in vertical slabs and turned against each other to grind fibrous grains into flours." />
     <tag Name="HeroNameTitleDescriptor" Value="▶Miller,Grinder,Provider" />
     <tag Name="HeroNameTitleClientele" Value="▶Chefs,Cooks,Grains,the Hungry" />
-    <tag Name="NamingTag" Value="▶Animated" />
   </object>
   <object Name="Wooden Water Wheel" Load="Merge">
     <part Name="Render" DisplayName="▶{{w|wooden}} water wheel" />
@@ -289,7 +286,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
     <part Name="Circuitry" NameForStatus="▶Gearbox" />
     <tag Name="HeroNameTitleDescriptor" Value="▶Cyclic,Generous,Hydrological,Lavish,Profligate,Replenisher,Rotator" />
     <tag Name="HeroNameTitleClientele" Value="▶Clockwork,Engineers,Millers" />
-    <tag Name="NamingTag" Value="▶Animated" />
   </object>
   <object Name="Powered Orrery" Load="Merge">
     <part Name="Render" DisplayName="▶powered armillary sphere" />
@@ -305,14 +301,12 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
     <part Name="Description" Short="▶A cased rotor is fed charge through a handcrank and supplemented by solar heat. Its scratched metal surfaces vibrate at ground frequency." />
     <tag Name="HeroNameTitleDescriptor" Value="▶Generous,Lavish,Microstar,Plentiful,Potent,Profligate,Replenisher" />
     <tag Name="HeroNameTitleClientele" Value="▶Appliances,Energy Cells,Power Grids,the Depleted,the Jacked,the Power-Hungry,Tinkers" />
-    <tag Name="NamingTag" Value="▶Animated" />
   </object>
   <object Name="Induction Charging Station" Load="Merge">
     <part Name="Render" DisplayName="▶induction charging station" />
     <part Name="Description" Short="▶Induction coils are rooted under a cork pad, where electric juice is transferred to battery cells." />
     <tag Name="HeroNameTitleDescriptor" Value="▶Gaussian,Inductant,Potent,Replenisher,Restorer" />
     <tag Name="HeroNameTitleClientele" Value="▶Energy Cells,the Depleted,the Laser-Brained,the Power-Hungry,Tinkers" />
-    <tag Name="NamingTag" Value="▶Animated" />
   </object>
   <object Name="Hydraulic Irrigator" Load="Merge">
     <part Name="Render" DisplayName="▶{{B|hydraulic}} irrigator" />
@@ -321,7 +315,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
     <part Name="ChargeSink" NameForStatus="▶ServoMotors" />
     <tag Name="HeroNameTitleDescriptor" Value="▶Aqueous,Generous,Lavish,Nurturing,Plentiful,Water-Bringer" />
     <tag Name="HeroNameTitleClientele" Value="▶crops,farmers,plants,the farm" />
-    <tag Name="NamingTag" Value="▶Animated" />
   </object>
   <object Name="Clockthing_QGirl" Load="Merge">
     <part Name="Render" DisplayName="▶Barathrum clock with {{M|Q Girl}} {{Y|pendulum}}" />
@@ -358,7 +351,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
     <part Name="ChargeSink" NameForStatus="▶KineticLossManager" />
     <tag Name="HeroNameTitleDescriptor" Value="▶Basker,Phototropic,Photovoltaic,Plentiful,Replenisher" />
     <tag Name="HeroNameTitleClientele" Value="▶appliances,batteries,power grids,the depleted,the jacked,tinkers" />
-    <tag Name="NamingTag" Value="▶Animated" />
   </object>
   <object Name="Solar Pumping Station" Load="Merge">
     <part Name="Render" DisplayName="▶{{W|solar}} {{c|pumping station}}" />
@@ -366,35 +358,30 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
     <part Name="ChargeSink" NameForStatus="▶HydraulicLossManager" />
     <tag Name="HeroNameTitleDescriptor" Value="▶Lymphatic,Flowing,Replenisher,Basker,Phototropic,Photovoltaic,Plentiful" />
     <tag Name="HeroNameTitleClientele" Value="▶hydraulics,flow,fluid,tinkers" />
-    <tag Name="NamingTag" Value="▶Animated" />
   </object>
   <object Name="Food Processor" Load="Merge">
     <part Name="Render" DisplayName="▶food processor" />
     <part Name="Description" Short="▶Wired metal squares a cabinet of drawers and burners for toasting, pickling, and freeze-drying." />
     <tag Name="HeroNameTitleDescriptor" Value="▶Butcher,Pickler,Preserver" />
     <tag Name="HeroNameTitleClientele" Value="▶chefs,the hungry" />
-    <tag Name="NamingTag" Value="▶Animated" />
   </object>
   <object Name="Universal Charging Station" Load="Merge">
     <part Name="Render" DisplayName="▶universal charging station" />
     <part Name="Description" Short="▶Shelves, pads, slates, and cradles are worked from metal like a chrome honeycomb. Electrical power gets concentrated into battery-juice and served into its docked cells." />
     <tag Name="HeroNameTitleDescriptor" Value="▶Catholic,Potent,Replenisher,Restorer" />
     <tag Name="HeroNameTitleClientele" Value="▶Energy Cells,the Depleted,the Laser-Brained,the Power-Hungry,Tinkers" />
-    <tag Name="NamingTag" Value="▶Animated" />
   </object>
   <object Name="Hydraulic Turbine" Load="Merge">
     <part Name="Render" DisplayName="▶{{B|hydraulic}} turbine" />
     <part Name="Description" Short="▶Perfect-cut chrome rotors are stacked along a generator shaft, and wide fin blades catch the fluid push and spin electric yarn." />
     <tag Name="HeroNameTitleDescriptor" Value="▶Aqueous,Lavish,Nurturing,Plentiful,Replenisher" />
     <tag Name="HeroNameTitleClientele" Value="▶power grids, pumps" />
-    <tag Name="NamingTag" Value="▶Animated" />
   </object>
   <object Name="Hydraulic Press" Load="Merge">
     <part Name="Render" DisplayName="▶hydraulic press" />
     <part Name="Description" Short="▶Down a traverse beam of plate shear metal thrusts a hydraulic piston. Its flat bottom is scratched into grooves by bits of trash." />
     <tag Name="HeroNameTitleDescriptor" Value="▶Compressor,Crusher,Flattener,Smasher,Squeezer" />
     <tag Name="HeroNameTitleClientele" Value="▶tinkers,scavengers,wreckers" />
-    <tag Name="NamingTag" Value="▶Animated" />
     <tag Name="QuestableVerb" Value="▶enter" />
   </object>
   <object Name="Force Projector" Load="Merge">
@@ -439,21 +426,18 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
     <part Name="Description" Short="▶Metal was braided into electromagnetic scaffolding, and through it the modulator molds the clay of the baseband and divulges the shape of the new signal." />
     <tag Name="HeroNameTitleDescriptor" Value="▶All-Supportive,Generous,Lavish,Plentiful,Potent,Profligate,Radio-Frequency,Replenisher,Transmissive,Wireless" />
     <tag Name="HeroNameTitleClientele" Value="▶Appliances,the Coiled,the Depleted,the Power-Hungry,the Receptive,Tinkers" />
-    <tag Name="NamingTag" Value="▶Animated" />
   </object>
   <object Name="Fusion Power Station" Load="Merge">
     <part Name="Render" DisplayName="▶{{C|fusion}} power station" />
     <part Name="Description" Short="▶Bits of tiny matter are smashed together behind the lune of a chrome cylinder, and the heat is used to pump electricity downgrid." />
     <tag Name="HeroNameTitleDescriptor" Value="▶All-Supportive,Fireheart,Generous,Lavish,Microstar,Plentiful,Potent,Profligate,Replenisher" />
     <tag Name="HeroNameTitleClientele" Value="▶Appliances,Energy Cells,Power Grids,the Depleted,the Jacked,the Power-Hungry,Tinkers" />
-    <tag Name="NamingTag" Value="▶Animated" />
   </object>
   <object Name="Fusion Pumping Station" Load="Merge">
     <part Name="Render" DisplayName="▶{{C|fusion}} pumping station" />
     <part Name="Description" Short="▶Bits of tiny matter are smashed together behind the lune of a glass cylinder, and the heat is used to pump water into pipes for dispersal." />
     <tag Name="HeroNameTitleDescriptor" Value="▶Lymphatic,Flowing,Replenisher,Microstar,Fuser" />
     <tag Name="HeroNameTitleClientele" Value="▶hydraulics,flow,fluid,tinkers" />
-    <tag Name="NamingTag" Value="▶Animated" />
   </object>
   <object Name="Industrial Fan" Load="Merge">
     <part Name="Render" DisplayName="▶industrial fan" />
@@ -472,7 +456,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
     <part Name="TemperatureAdjuster" NameForStatus="▶TemperatureControl" />
     <tag Name="HeroNameTitleDescriptor" Value="▶Therapeutic,Healer,Restorer,Miraculous" />
     <tag Name="HeroNameTitleClientele" Value="▶the Tired,the Weary,the Wounded" />
-    <tag Name="NamingTag" Value="▶Animated" />
     <tag Name="QuestableVerb" Value="▶enter" />
   </object>
   <object Name="Psiamp Sarcophagus" Load="Merge">
@@ -519,14 +502,12 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
     <part Name="Description" Short="▶Stone was carved and shaped into a rough dome with square, even-spaced windows to let air flow. The small difference in temperature inside the dome causes dew to condense from air and accumulate in a catch basin below." />
     <tag Name="HeroNameTitleDescriptor" Value="▶Aqueous,Condensatory,Dewy,Hydrator,Irrigator,Wet" />
     <tag Name="HeroNameTitleClientele" Value="▶the Dessicated,the Dry,the Salty,the Thirsty" />
-    <tag Name="NamingTag" Value="▶Animated" />
   </object>
   <object Name="Solar Still" Load="Merge">
     <part Name="Render" DisplayName="▶solar still" />
     <part Name="Description" Short="▶Heat from the salt sun evaporates brackish water. When the water condenses again, it's separated into its pure and impure elements: salt gloms on the still, while freshwater collects in the basin." />
     <tag Name="HeroNameTitleDescriptor" Value="▶Aqueous,Condensatory,Dewy,Hydrator,Irrigator,Wet" />
     <tag Name="HeroNameTitleClientele" Value="▶the Dessicated,the Dry,the Salty,the Thirsty" />
-    <tag Name="NamingTag" Value="▶Animated" />
   </object>
   <object Name="Solar Condenser" Load="Merge">
     <part Name="Render" DisplayName="▶solar condenser" />
@@ -535,7 +516,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
     <part Name="LiquidProducer" NameForStatus="▶CollectionSystem" />
     <tag Name="HeroNameTitleDescriptor" Value="▶Aqueous,Condensatory,Dewy,Hydrator,Irrigator,Wet" />
     <tag Name="HeroNameTitleClientele" Value="▶the Dessicated,the Dry,the Salty,the Thirsty" />
-    <tag Name="NamingTag" Value="▶Animated" />
   </object>
   <object Name="GritGateChromeBeacon" Load="Merge">
     <part Name="Render" DisplayName="▶chromeling signal relay" />
@@ -547,7 +527,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
     <part Name="Description" Short="▶A coffin of steel, brass, and cathode tube conceals an array of precision instruments used to suck organ-matter from the dead and deliver it back to kith and kin." />
     <tag Name="HeroNameTitleDescriptor" Value="▶Biocyclic,Crimson,Cubist,Ecological,Sanguine" />
     <tag Name="HeroNameTitleClientele" Value="▶Arcologies,Protein,Recyclers,Sustainability,the Hungry,the True" />
-    <tag Name="NamingTag" Value="▶Animated" />
   </object>
   <object Name="FactoryArm" Load="Merge">
     <part Name="Render" DisplayName="▶rotating machine arm" />
@@ -590,6 +569,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
   <object Name="Reshaping Nook" Load="Merge">
     <part Name="Render" DisplayName="▶reshaping nook" />
     <part Name="Description" Short="▶The characteristic glass arch marks the enclosure as a becoming nook gutted and wire-stripped for a new purpose. A claw extends for soldering and shaping, and in the underdrum, a wheel spins wet clay fresh and ready for sunslag fermentation." />
+    <property Name="VehicleTerm" Value="▶golem" />
   </object>
   <object Name="Reshaping Pad" Load="Merge">
     <part Name="Render" DisplayName="▶reshaping pad" />
@@ -683,7 +663,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
   <object Name="BaseChair" Load="Merge">
     <tag Name="HeroNameTitleDescriptor" Value="▶Comfy,Short-Legged,Straight-Backed,Sturdy,Three-Legged" />
     <tag Name="HeroNameTitleClientele" Value="▶Backs,Lumbar,the Tired" />
-    <tag Name="NamingTag" Value="▶Animated" />
     <tag Name="QuestableVerb" Value="▶sit on" />
   </object>
   <object Name="Chair" Load="Merge">
@@ -772,7 +751,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
     <part Name="Render" DisplayName="▶ornate chair" />
     <part Name="Description" Short="▶Plumpness in the cushion is gauged to the seated thinker, lancet arches press into the playful back, and claw-and-ball feet suggest a hidden life within the piece itself. This is a chair laden with meaning." />
     <tag Name="HeroNameTitleDescriptor" Value="▶Comfy,Decadent,Epicurean,Lazy,Luxurious,Reclined,Soft,Sybaritic,Voluptuous" />
-    <tag Name="NamingTag" Value="▶Animated" />
   </object>
   <object Name="Ornate Bench" Load="Merge">
     <part Name="Render" DisplayName="▶ornate bench" />
@@ -782,7 +760,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
     <part Name="Render" DisplayName="▶scrapasan chair" />
     <part Name="Description" Short="▶This bowl-shaped basket of scrounged textiles and padding yawns with the promise of a humble, comfortable embrace followed by a laborious escape." />
     <tag Name="HeroNameTitleDescriptor" Value="▶Comfy,Easygoing,Humble,Idiosyncratic,Lopsided,Lumpy,Patchwork,Plush,Weird" />
-    <tag Name="NamingTag" Value="▶Animated" />
   </object>
   <object Name="Starmchair" Load="Merge">
     <part Name="Render" DisplayName="▶starmchair" />
@@ -1053,34 +1030,42 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
   </object>
   <object Name="JoppaOven" Load="Merge">
     <part Name="Render" DisplayName="▶clay oven" />
+    <tag Name="PresetMealMessage" Value="▶Eat fresh apple matz." />
     <part Name="Description" Short="▶Warmth radiates from the crackling fire of the thick clay oven, and with it comes the smell of hot starapple jam and toasted matz." />
   </object>
   <object Name="KyakukyaOven" Load="Merge">
     <part Name="Render" DisplayName="▶mud oven" />
+    <tag Name="PresetMealMessage" Value="▶Drink mulled mushroom cider." />
     <part Name="Description" Short="▶Warmth radiates from the crackling fire of the round mud oven, and with it comes the smell of mulled cider and brined mushrooms." />
   </object>
   <object Name="EzraOven" Load="Merge">
     <part Name="Render" DisplayName="▶clay oven" />
+    <tag Name="PresetMealMessage" Value="▶Eat goat in sweet leaf." />
     <part Name="Description" Short="▶Warmth radiates from the crackling fire of the round clay oven, and with it comes the smell of steamed goat and sweet bananas." />
   </object>
   <object Name="YdFreeholdOven" Load="Merge">
     <part Name="Render" DisplayName="▶clay oven" />
+    <tag Name="PresetMealMessage" Value="▶Eat some Tongue and Cheek." />
     <part Name="Description" Short="▶Warmth radiates from the crackling fire of the round clay oven, and with it comes the smell of fermented tongue and congealed love." />
   </object>
   <object Name="MopangoOven" Load="Merge">
     <part Name="Render" DisplayName="▶bone oven" />
+    <tag Name="PresetMealMessage" Value="▶Eat bone babka." />
     <part Name="Description" Short="▶Warmth radiates from the crackling fire of the round bone oven, and with it comes the smell of leavened pastry, sweet bananas, and warm skulk." />
   </object>
   <object Name="StiltOven" Load="Merge">
     <part Name="Render" DisplayName="▶stone oven" />
+    <tag Name="PresetMealMessage" Value="▶Eat some Hot and Spiny." />
     <part Name="Description" Short="▶Warmth radiates from the crackling fire of the bright stone oven, and with it comes the smell of hot spine fruit jam and roasted tail." />
   </object>
   <object Name="BeyLahOven" Load="Merge">
     <part Name="Render" DisplayName="▶clay oven" />
+    <tag Name="PresetMealMessage" Value="▶Eat mah lah soup." />
     <part Name="Description" Short="▶Warmth radiates from the crackling fire of the thick clay oven, and with it comes the smell of lah broth and steamed matz." />
   </object>
   <object Name="GritGateOven" Load="Merge">
     <part Name="Render" DisplayName="▶electric oven" />
+    <tag Name="PresetMealMessage" Value="▶Eat the Porridge." />
     <part Name="Description" Short="▶Warmth radiates from the crackling fire of the dark electric oven, and with it comes the smell of bitter yuckwheat and boiled plasma." />
   </object>
   <object Name="ChavvahOven" Load="Merge">
@@ -1093,7 +1078,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
     <tag Name="HeroNameTitleDescriptor" Value="▶Flat,Knobby,Level,L-Shaped,Sturdy,Three-Legged,Wobbly" />
     <tag Name="HeroNameTitleClientele" Value="▶Decorators,the Relaxed" />
     <xtagTextFragments Skin="▶glaze" PoeticFeatures="▶flat surfaces,artfulness,gentle stillness" />
-    <tag Name="NamingTag" Value="▶Animated" />
     <tag Name="QuestableVerb" Value="▶put something on" />
   </object>
   <object Name="Metal Table" Load="Merge">
@@ -1120,7 +1104,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
     <part Name="Render" DisplayName="▶low mensa" />
     <part Name="Description" Short="▶It's scratched on top where a pestle splintered the wood." />
     <tag Name="HeroNameTitleDescriptor" Value="▶Flat,Knobby,Level,L-Shaped,Sturdy,Three-Legged,Wobbly" />
-    <tag Name="NamingTag" Value="▶Animated" />
     <tag Name="QuestableVerb" Value="▶put something on" />
   </object>
   <object Name="Octagonal Table" Load="Merge">
@@ -1128,7 +1111,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
     <part Name="Description" Short="▶Decorated with painted mandalas and shaped by the geometric hand, the table honors symmetry and numerology." />
     <tag Name="HeroNameTitleDescriptor" Value="▶Eightfold,Flat,Knobby,Level,L-Shaped,Sturdy,Three-Legged,Wobbly" />
     <tag Name="HeroNameTitleClientele" Value="▶Decorators,the Relaxed" />
-    <tag Name="NamingTag" Value="▶Animated" />
     <tag Name="QuestableVerb" Value="▶put something on" />
   </object>
   <object Name="Dresser" Load="Merge">
@@ -1136,7 +1118,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
     <part Name="Description" Short="▶Wood was precisely cut into drawers and set on brass rails to house clothes." />
     <tag Name="HeroNameTitleDescriptor" Value="▶Flat,Knobby,Level,L-Shaped,Sturdy,Three-Legged,Wobbly" />
     <tag Name="HeroNameTitleClientele" Value="▶Clothing,Dandies,the Fashionable" />
-    <tag Name="NamingTag" Value="▶Animated" />
     <tag Name="QuestableVerb" Value="▶put something in" />
   </object>
   <object Name="Book Table" Load="Merge">
@@ -1144,7 +1125,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
     <part Name="Description" Short="▶Dwellers in the earth-clefts fashion tables in the style of puzzle boxes. Their drawers house the stenographic imagination." />
     <tag Name="HeroNameTitleDescriptor" Value="▶Flat,Knobby,Level,L-Shaped,Sturdy,Three-Legged,Wobbly" />
     <tag Name="HeroNameTitleClientele" Value="▶Decorators,Readers,the Relaxed" />
-    <tag Name="NamingTag" Value="▶Animated" />
     <tag Name="QuestableVerb" Value="▶put something on" />
   </object>
   <object Name="Ornate Table" Load="Merge">
@@ -1220,7 +1200,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
     <part Name="Description" Short="▶Sheared slate stone is powdered with the cloudy remnants of externalized thought and held aloft by the monster." />
     <tag Name="HeroNameTitleDescriptor" Value="▶Wise,Sophist,Erasable,Dusty" />
     <tag Name="HeroNameTitleClientele" Value="▶Sophists,Tinkers,Scholars,Pupils" />
-    <tag Name="NamingTag" Value="▶Animated" />
   </object>
   <object Name="Display Breadboard" Load="Merge">
     <part Name="Render" DisplayName="▶display breadboard" />
@@ -1235,7 +1214,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
     <part Name="Description" Short="▶The biped form emerges out of a cocoon of wood and fiberglass." />
     <tag Name="HeroNameTitleDescriptor" Value="▶Well-Formed,Beautiful,Fair,Still,Uncanny,Lifelike" />
     <tag Name="HeroNameTitleClientele" Value="▶Sculptors,Haberdashers,Clothiers,Armorers" />
-    <tag Name="NamingTag" Value="▶Animated" />
   </object>
   <object Name="HamilcrabMannequin" Load="Merge">
     <part Name="Render" DisplayName="▶gigantic mannequin" />
@@ -1283,7 +1261,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
     <tag Name="HeroNameTitleDescriptor" Value="▶Agonizer,Bloodletter,Butcher,Cruel,Exsanguinator,Impaler,Piercer,Torturer" />
     <tag Name="HeroNameTitleClientele" Value="▶Inquisitors,Sadists,the Cruel,the Penitent,Torturers" />
     <xtagTextFragments Skin="▶spikes" PoeticFeatures="▶towering stature,menacing spikes,suffocating enclosure" />
-    <tag Name="NamingTag" Value="▶Animated" />
     <tag Name="QuestableVerb" Value="▶enter" />
   </object>
   <object Name="Hookah" Load="Merge">
@@ -1324,34 +1301,42 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
   <object Name="Oboroqoru Statue" Load="Merge">
     <part Name="Render" DisplayName="▶statue of Oboroqoru" />
     <part Name="Description" Short="▶This stone idol of Oboroqoru stands twenty spans tall. Its nameless sculptor chose to depict the ape god sitting cross-legged with each of his three pairs of gargantuan arms grasping each other. The idol is swathed in vines, its caretakers ceding to nature save where the herbage has threatened to obscure Oboroqoru's gentle countenance. Wreaths of flowers of every hue the forest begets -- azure, chartreuse, indigo, carnelian -- litter the base of the shrine, insignificant offerings to what appears to be a callous god." />
+    <tag Name="WorshippedAs" Value="▶Oboroqoru" />
   </object>
   <object Name="Keresh Statue" Load="Merge">
     <part Name="Render" DisplayName="▶statue of a deer" />
     <part Name="Description" Short="▶Abandoned in a tucked-away hut on Bey Lah's outskirts, this enormous statue of hornsfel languishes under a layer of withered vegetation. It depicts a majestic deer with one hoof raised from the ground, its humanlike eyes judging its surroundings and finding them wanting. The metal plaque on the base of the statue hasn't fared well over the centuries, and the only glyphs you can make out are 'K', 'R', 'S', and 'H'." />
+    <tag Name="WorshippedAs" Value="▶Keresh" />
   </object>
   <object Name="statue of mason" Load="Merge">
     <part Name="Render" DisplayName="▶statue of Nisroch" />
     <part Name="Description" Short="▶Nisroch the star mason is depicted here straddling the earth with his mighty legs. He dons his favorite sash, whose folds are exquisitely worked in gold." />
+    <tag Name="WorshippedAs" Value="▶Nisroch" />
   </object>
   <object Name="statue of knight" Load="Merge">
     <part Name="Render" DisplayName="▶statue of Bel" />
     <part Name="Description" Short="▶The statue of Bel wears its tremendous weight in polished marble. He wields his epochal aegis, storied for obstructing a swirling gas cloud in the starry dawn." />
+    <tag Name="WorshippedAs" Value="▶Bel" />
   </object>
   <object Name="statue of Shekhinah" Load="Merge">
     <part Name="Render" DisplayName="▶statue of Shekhinah" />
     <part Name="Description" Short="▶Here Shekhinah has been sculpted into permanence with magnificent cerulean marble. His body is chiseled to blessed perfection. His golden diadem crowns him Father among Fathers." />
+    <tag Name="WorshippedAs" Value="▶Shekhinah" />
   </object>
   <object Name="statue of wizard" Load="Merge">
     <part Name="Render" DisplayName="▶statue of Dagon" />
     <part Name="Description" Short="▶Dagon the orator domineers the west apse with his brazen pose. His golden coronet shines splendidly in the fire's shine." />
+    <tag Name="WorshippedAs" Value="▶Dagon" />
   </object>
   <object Name="statue of athlete" Load="Merge">
     <part Name="Render" DisplayName="▶statue of Carthax" />
     <part Name="Description" Short="▶Carthax the athlete is depicted here mid-stride. His glistening silver hair is tied behind his head, in astral tradition, as he vaults through the firmament." />
+    <tag Name="WorshippedAs" Value="▶Carthax" />
   </object>
   <object Name="statue of scholar" Load="Merge">
     <part Name="Render" DisplayName="▶statue of Resheph" />
     <part Name="Description" Short="▶Resheph, who's called 'the Above', lifts an enigmatic finger to heal the wounds of the sick." />
+    <tag Name="WorshippedAs" Value="▶Resheph" />
   </object>
   <object Name="SultanShrine" Load="Merge">
     <part Name="Render" DisplayName="▶shrine" />
@@ -1386,32 +1371,39 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
   <object Name="AgolgotShrine" Load="Merge">
     <part Name="Render" DisplayName="▶shrine to Girsh Agolgot" />
     <part Name="Description" Short="▶A monstrous head slumps in old stone, etched cysts sprouting from the central chine to evoke the spread of disease from its halfgod source. Generations of moss skirt the beast's warted legs." />
+    <tag Name="WorshippedAs" Value="▶Agolgot" />
   </object>
   <object Name="BethsaidaShrine" Load="Merge">
     <part Name="Render" DisplayName="▶shrine to Girsh Bethsaida" />
     <part Name="Description" Short="▶Slumping shoulders edge the valley of a cracked stone back, and two pairs of mated arms join at their hundred-knuckles in the stonecarver's depiction of the halfgod's quickening. Generations of moss skirt the beast's varicose legs." />
+    <tag Name="WorshippedAs" Value="▶Bethsaida" />
   </object>
   <object Name="RermadonShrine" Load="Merge">
     <part Name="Render" DisplayName="▶shrine to Girsh Rermadon" />
     <part Name="Description" Short="▶A spiny monstrous fish sits in a pool of stonecarved water. Underneath is the finned tail that poets have beating a foamy brine out the pipes at Maqqom to form the Hinnom lake. Generations of moss skirt its underfin." />
+    <tag Name="WorshippedAs" Value="▶Rermadon" />
   </object>
   <object Name="ShugruithShrine" Load="Merge">
     <part Name="Render" DisplayName="▶shrine to Shug'ruith the Burrower" />
     <part Name="Description" Short="▶Chiseled spines wreathe the sinuous worldeater, who dug the earthly caves that were peopled by late-stage troglodytes. The hundred-nine eyes of legend peer across time, and generations of moss skirt the beast's banded undergirth." />
+    <tag Name="WorshippedAs" Value="▶Shug'ruith" />
   </object>
   <object Name="QasShrine" Load="Merge">
     <part Name="Render" DisplayName="▶shrine to Girsh Qas" />
     <part Name="Description" Short="▶The halfgod kneels on hinds worked wide in old stone. Tiled polygons spill off the statue's base to evoke Qas's rightening of space, time, mountain, and village. Generations of moss skirt the beast's treecutter hooves." />
+    <tag Name="WorshippedAs" Value="▶Qas" />
   </object>
   <object Name="QonShrine" Load="Merge">
     <part Name="Render" DisplayName="▶shrine to Girsh Qon" />
     <part Name="Description" Short="▶A godswan sits in stone grace with its gigantic kite train furled to a dizzying gyre. She wears a blank and unreadable expression, to evoke the carver's sense of her as uncertainty's incubus. Generations of moss skirt the beast's down feathers." />
+    <tag Name="WorshippedAs" Value="▶Qon" />
   </object>
   <object Name="RuinedNephilimShrime" Load="Merge">
     <part Name="Render" DisplayName="▶ruined shrine" />
   </object>
   <object Name="JoppaReshephShrine" Load="Merge">
     <part Name="Render" DisplayName="▶shrine to Resheph" />
+    <tag Name="WorshippedAs" Value="▶Resheph" />
   </object>
   <object Name="Eater Hologram" Load="Merge">
     <part Name="Render" DisplayName="▶hologram of Eater" />
@@ -1421,6 +1413,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
     <part Name="Render" DisplayName="▶hologram of Shekhinah" />
     <part Name="Description" Short="▶Glorious Shekhinah, Argent Adonis and First Father, poses in luminous mummery. With the stature of the ageless stars, fixed and permanent, He appraises the temple erected in His honor and cocks His head in approval. Befitting the memory of His union with the Kasaphescence, He clothes His manifestation in cerulean shades, forsaking the viridians and russets of the lowly plants and clay earth." />
     <part Name="Chat" Says="▶[Shekhinah turns toward you, His arms wide.]" />
+    <tag Name="WorshippedAs" Value="▶Shekhinah" />
   </object>
   <object Name="Village Monument" Load="Merge">
     <part Name="Description" Short="" />

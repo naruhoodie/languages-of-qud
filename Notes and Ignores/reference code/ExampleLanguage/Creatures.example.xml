@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.14
+Caves of Qud - Generated Localizable XML 2.0.212.15
 
-<objects>
+<objects ExcludeFromCorpusGeneration="Key">
 
   <object Name="Key" Load="">
 
@@ -318,7 +318,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
   </object>
   <object Name="AppleFarmer" Load="Merge">
     <part Name="Render" DisplayName="▶apple farmer" />
-    <part Name="Description" Short="▶=pronouns.IndicativeProximal= brawny, mustachioed =pronouns.personTerm= =verb:wear:afterpronoun= a white apron stained with the juice of starapples. =pronouns.Possessive= sable hair mats against the browned skin of =pronouns.possessive= forehead. From =pronouns.possessive= left forearm hangs a wet rag, with which =pronouns.subjective= =verb:scrub:afterpronoun= the dirt from =pronouns.possessive= hands every few moments." />
+    <part Name="Description" Short="▶=pronouns.This= brawny, mustachioed =pronouns.personTerm= =verb:wear:afterpronoun= a white apron stained with the juice of starapples. =pronouns.Possessive= sable hair mats against the browned skin of =pronouns.possessive= forehead. From =pronouns.possessive= left forearm hangs a wet rag, with which =pronouns.subjective= =verb:scrub:afterpronoun= the dirt from =pronouns.possessive= hands every few moments." />
   </object>
   <object Name="AppleFarmerDaughter" Load="Merge">
     <part Name="Render" DisplayName="▶apple farmer's daughter" />
@@ -992,7 +992,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
   <object Name="Unplanished Godhed" Load="Merge">
     <part Name="Render" DisplayName="▶unplanished godhed" />
     <part Name="Description" Short="▶A greebled egg of metal and circuited glass was fished from the chromefall to be welded on and serve as spiritual center mass for a minyan of woodsprogs. =pronouns.Possessive= sensory pane remains unplanished, and so =pronouns.subjective= have yet to show the growth rings of communal meaning." />
-    <tag Name="NamingTag" Value="▶Godhed" />
   </object>
   <object Name="Planished Godhed" Load="Merge">
     <part Name="Render" DisplayName="▶planished godhed" />
@@ -1142,7 +1141,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
   <object Name="Gyre Wight of Agolgot" Load="Merge">
     <part Name="Render" DisplayName="▶gyre wight of Agolgot" />
     <part Name="Description" Short="▶A figure is marked by star orchid robes as a votary of the Gyre and reveler in the metamorphic numen. Nails filth-black flash from out =pronouns.possessive= sleeve in a gesture-poem to say that plague is but transmutation, death is the ladder to life, and the existence of children proves the prelacy of raw growth. A rank and acrid smell clings to =pronouns.objective=." />
-    <tag Name="NamingTag" Value="▶AgolgotGyreWight" />
   </object>
   <object Name="Herding Dog" Load="Merge">
     <part Name="Render" DisplayName="▶herding dog" />
@@ -1365,7 +1363,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
   <object Name="Dervish of the Sightless Way" Load="Merge">
     <part Name="Render" DisplayName="▶dervish of the Sightless Way" />
     <part Name="Description" Short="▶Fat was shorn from =pronouns.possessive= spindle-limbs on the psychic lathe. The irises of =pronouns.possessive= eyes are patterned on shapes that cannot be drawn in the geometries of the natural world. =pronouns.Possessive= weapon is immaterial but inseparable; it was spun from the same thoughtstuff as =pronouns.possessive= ego." />
-    <tag Name="NamingTag" Value="▶Dervish" />
   </object>
   <object Name="Drowsing Urchin" Load="Merge">
     <part Name="Render" DisplayName="▶drowsing urchin" />
@@ -1411,12 +1408,10 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
   <object Name="Gyre Wight of Bethsaida" Load="Merge">
     <part Name="Render" DisplayName="▶gyre wight of Bethsaida" />
     <part Name="Description" Short="▶A figure is marked by star orchid robes as a votary of the Gyre and reveler in the metamorphic numen. Nails filth-black flash from out =pronouns.possessive= sleeve in a gesture-poem to say that plague is but transmutation, death is the ladder to life, and the existence of children proves the prelacy of raw growth. Cool and luminous moisture clings to =pronouns.objective=." />
-    <tag Name="NamingTag" Value="▶BethsaidaGyreWight" />
   </object>
   <object Name="Gyre Wight of Shug'ruith" Load="Merge">
     <part Name="Render" DisplayName="▶gyre wight of Shug'ruith" />
     <part Name="Description" Short="▶A figure is marked by star orchid robes as a votary of the Gyre and reveler in the metamorphic numen. Nails filth-black flash from out =pronouns.possessive= sleeve in a gesture-poem to say that plague is but transmutation, death is the ladder to life, and the existence of children proves the prelacy of raw growth. =pronouns.Subjective= =verb:are:afterpronoun= peppered with shale dust." />
-    <tag Name="NamingTag" Value="▶Shug'ruithGyreWight" />
   </object>
   <object Name="Holographic Ivory" Load="Merge">
     <part Name="Render" DisplayName="▶{{Y|holographic ivory}}" />
@@ -1871,15 +1866,19 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
   </object>
   <object Name="Mechanimist Preacher 1" Load="Merge">
     <part Name="Render" DisplayName="▶Mechanimist preacher" />
+    <part Name="Preacher" Prefix="▶The preacher says, {{W|'" Frozen="▶The preacher mumbles inaudibly, encased in ice." />
   </object>
   <object Name="Mechanimist Preacher 2" Load="Merge">
     <part Name="Render" DisplayName="▶Mechanimist preacher" />
+    <part Name="Preacher" Prefix="▶The preacher says, {{W|'" Frozen="▶The preacher mumbles inaudibly, encased in ice." />
   </object>
   <object Name="Mechanimist Preacher 3" Load="Merge">
     <part Name="Render" DisplayName="▶Mechanimist preacher" />
+    <part Name="Preacher" Prefix="▶The preacher says, {{W|'" Frozen="▶The preacher mumbles inaudibly, encased in ice." />
   </object>
   <object Name="Mechanimist Preacher 4" Load="Merge">
     <part Name="Render" DisplayName="▶Mechanimist preacher" />
+    <part Name="Preacher" Prefix="▶The preacher says, {{W|'" Frozen="▶The preacher mumbles inaudibly, encased in ice." />
   </object>
   <object Name="Mechanimist Temple Paladin" Load="Merge">
     <part Name="Render" DisplayName="▶Mechanimist paladin" />
@@ -1903,9 +1902,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
     <part Name="Render" DisplayName="▶Knight Commander of the Holy Temple" />
     <part Name="Description" Short="▶Oiled and brushed mail hang across =pronouns.possessive= crooked spine and salient jaw. The color too was sucked out of =pronouns.possessive= irises by =pronouns.possessive= tangled lineage, and =pronouns.possessive= wet rosy lips catch the light and toss it back across a sharp sneer. =pronouns.Possessive= chest is exploded upward in emulation of =pronouns.possessive= advanced peerage." />
   </object>
-  <object Name="Uplifted Knight Commander" Load="Merge">
-    <tag Name="NamingTag" Value="▶KnightCommander" />
-  </object>
   <object Name="Knight Templar" Load="Merge">
     <part Name="Render" DisplayName="▶Knight Templar" />
     <part Name="Description" Short="▶Oiled and brushed mail hang across =pronouns.possessive= crooked spine and salient jaw. The color too was sucked out of =pronouns.possessive= irises by =pronouns.possessive= tangled lineage, and =pronouns.possessive= wet rosy lips catch the light and toss it back across a sharp sneer. =pronouns.Subjective==verb:'re:afterpronoun= puffed up in emulation of =pronouns.possessive= peerage and the symbol of =pronouns.possessive= sword." />
@@ -1921,22 +1917,18 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
   <object Name="Wraith-Knight Templar" Load="Merge">
     <part Name="Render" DisplayName="▶Wraith-Knight Templar of the Binary Honorum" />
     <part Name="Description" Short="▶Oiled and brushed mail hang across =pronouns.possessive= crooked spine and salient jaw. The color too was sucked out of =pronouns.possessive= irises by =pronouns.possessive= tangled lineage, and =pronouns.possessive= wet rosy lips catch the light and toss it back across a sharp sneer. =pronouns.Subjective==verb:'re:afterpronoun= puffed up in emulation of =pronouns.possessive= peerage and the symbol of =pronouns.possessive= sword." />
-    <tag Name="NamingTag" Value="▶WraithKnight" />
   </object>
   <object Name="Gyre Wight of Rermadon" Load="Merge">
     <part Name="Render" DisplayName="▶gyre wight of Rermadon" />
     <part Name="Description" Short="▶A figure is marked by star orchid robes as a votary of the Gyre and reveler in the metamorphic numen. Nails filth-black flash from out =pronouns.possessive= sleeve in a gesture-poem to say that plague is but transmutation, death is the ladder to life, and the existence of children proves the prelacy of raw growth. =pronouns.Subjective= =verb:smell:afterpronoun= of burning fish guts." />
-    <tag Name="NamingTag" Value="▶RermadonGyreWight" />
   </object>
   <object Name="Gyre Wight of Qas" Load="Merge">
     <part Name="Render" DisplayName="▶gyre wight of Qas" />
     <part Name="Description" Short="▶A figure is marked by star orchid robes as a votary of the Gyre and reveler in the metamorphic numen. Nails filth-black flash from out =pronouns.possessive= sleeve in a gesture-poem to say that plague is but transmutation, death is the ladder to life, and the existence of children proves the prelacy of raw growth. =pronouns.Subjective= =verb:bear:afterpronoun= skin ink in the shape of hexagons." />
-    <tag Name="NamingTag" Value="▶QasGyreWight" />
   </object>
   <object Name="Gyre Wight of Qon" Load="Merge">
     <part Name="Render" DisplayName="▶gyre wight of Qon" />
     <part Name="Description" Short="▶A figure is marked by star orchid robes as a votary of the Gyre and reveler in the metamorphic numen. Nails filth-black flash from out =pronouns.possessive= sleeve in a gesture-poem to say that plague is but transmutation, death is the ladder to life, and the existence of children proves the prelacy of raw growth. The rhythm of =pronouns.possessive= steps contain no pattern." />
-    <tag Name="NamingTag" Value="▶QonGyreWight" />
   </object>
   <object Name="Bone Worm" Load="Merge">
     <part Name="Render" DisplayName="▶bone worm" />
@@ -2022,7 +2014,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
   <object Name="High Dervish of the Sightless Way" Load="Merge">
     <part Name="Render" DisplayName="▶high dervish of the Sightless Way" />
     <part Name="Description" Short="▶Fat was shorn from =pronouns.possessive= Spindle-limbs on the psychic lathe. The irises of =pronouns.possessive= eyes are patterned on shapes that cannot be drawn in the geometries of the natural world, and =pronouns.subjective= =verb:wear:afterpronoun= a blindfold to guard their secrets and mark =pronouns.possessive= ken. =pronouns.Possessive= weapon is immaterial but inseparable; it was spun from the same thoughtstuff as =pronouns.possessive= ego." />
-    <tag Name="NamingTag" Value="▶Dervish" />
   </object>
   <object Name="Holographic Beth" Load="Merge">
     <part Name="Render" DisplayName="▶holographic beth" />
@@ -2406,7 +2397,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
   <object Name="Arch Dervish of the Sightless Way" Load="Merge">
     <part Name="Render" DisplayName="▶arch dervish of the Sightless Way" />
     <part Name="Description" Short="▶Fat was shorn from =pronouns.possessive= spindle-limbs on the psychic lathe. The irises of =pronouns.possessive= eyes are patterned on shapes that cannot be drawn in the geometries of the natural world, and =pronouns.subjective= =verb:wear:afterpronoun= a blindfold to guard their secrets. =pronouns.Possessive= weapon is immaterial but inseparable; it was spun from the same thoughtstuff as =pronouns.possessive= ego. Around =pronouns.possessive= neck =pronouns.subjective= =verb:wear:afterpronoun= the ornamental ruff; =pronouns.possessive= mastery of combat has given =pronouns.objective= access to a sight older than sight." />
-    <tag Name="NamingTag" Value="▶Dervish" />
   </object>
   <object Name="Astral Tabby" Load="Merge">
     <part Name="Render" DisplayName="▶astral tabby" />
@@ -2480,7 +2470,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
   <object Name="Grand Newfather" Load="Merge">
     <part Name="Render" DisplayName="▶grand newfather" />
     <part Name="Description" Short="▶Grand white lips hang from =pronouns.possessive= hooded and overly jawed face in the asymmetry of disappointment. =pronouns.Possessive= brow crunches the softness out of =pronouns.possessive= old, color-sucked eyes. =pronouns.Subjective= looks at =pronouns.possessive= grand newchildren with a mixture of sharp fondness and disgust. To =pronouns.objective=, they are small puppets; their limbs must be curled around their joints with loving precision, or they are splayed open by their own wills, useless and broken." />
-    <tag Name="NamingTag" Value="▶GrandNewfather" />
   </object>
   <object Name="Gyre Wight Apotheote" Load="Merge">
     <part Name="Render" DisplayName="▶gyre wight apotheote" />
@@ -2569,7 +2558,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
   </object>
   <object Name="VehicleTemplarMech" Load="Merge">
     <part Name="RulesDescription" Text="▶This creature doesn't heal naturally and must be repaired." />
-    <tag Name="NamingTag" Value="▶TemplarMecha" />
   </object>
   <object Name="Mech_Kick" Load="Merge">
     <part Name="Render" DisplayName="▶kick" />
@@ -3633,7 +3621,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
   </object>
   <object Name="AppleMerchant" Load="Merge">
     <part Name="Render" DisplayName="▶apple farmer" />
-    <part Name="Description" Short="▶=pronouns.IndicativeProximal= brawny, mustachioed =pronouns.personTerm= =verb:wear:afterpronoun= a white apron stained with the juice of starapples. =pronouns.Possessive= sable hair mats against the browned skin of =pronouns.possessive= forehead. From =pronouns.possessive= left forearm hangs a wet rag, with which =pronouns.subjective= =verb:scrub:afterpronoun= the dirt from =pronouns.possessive= hands every few moments." />
+    <part Name="Description" Short="▶=pronouns.This= brawny, mustachioed =pronouns.personTerm= =verb:wear:afterpronoun= a white apron stained with the juice of starapples. =pronouns.Possessive= sable hair mats against the browned skin of =pronouns.possessive= forehead. From =pronouns.possessive= left forearm hangs a wet rag, with which =pronouns.subjective= =verb:scrub:afterpronoun= the dirt from =pronouns.possessive= hands every few moments." />
   </object>
   <object Name="Bookbinder" Load="Merge">
     <part Name="Render" DisplayName="▶bookbinder" />
@@ -3840,6 +3828,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
   <object Name="High Priest Eschelstadt" Load="Merge">
     <part Name="Render" DisplayName="▶Eschelstadt II" />
     <part Name="Description" Short="▶The Onias is robed in flowing machinic regalia. He is the voice of Shekhinah, and so he wields the charm of words to give depth cues on the shape of the Kasaphescence, and repeats the story of the Fathers who transited Her from the ideal to the material. As crownhead of the white dune see, he leads the high priests in tracing the circuit diagrams of the second Canticles, and moderates their hermeneutic divisions." />
+    <part Name="Preacher" Prefix="▶The preacher says, {{W|'" Frozen="▶Eschelstadt II, High Priest of the Stilt mumbles inaudibly, encased in ice." />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="Warden Esthers" Load="Merge">
@@ -4325,9 +4314,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
   <object Name="0lam" Load="Merge">
     <part Name="Render" DisplayName="▶0lam" />
     <part Name="Description" Short="▶Bump, scars, and ridges crisscross the monstrous waveform shell from where the boundaries of dimensions ground against the interstitial space. A soft organ-thing lies inside, lit by the glimmers of Old Light flashing off the all-color nacre. Grooves across the shell mantle billow with the dust of ontoxanthellae, cross-dimensional symbiotes. Arrayed aside them are articles of other places, a pan-dimensional inventory stocked by an entropic broker." />
-    <tag Name="staticFaction3" Value=",,▶" />
-    <tag Name="staticFaction2" Value=",,▶" />
-    <tag Name="staticFaction1" Value=",,▶" />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="AgateSeveranceStar" Load="Merge">

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.14
+Caves of Qud - Generated Localizable XML 2.0.212.15
 
 -->
 <liquids Lang="example" Encoding="utf-8">
@@ -216,7 +216,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
     <smearedName>▶{{c|soupy}}</smearedName>
     <stainedName>▶{{c|soup}}</stainedName>
     <part Name="SoupSludgeSpawner">
-      <spawnMessage>▶The reacting liquids congeal into =object.a.name=.</spawnMessage>
+      <spawnMessage>▶The reacting liquids congeal into =object.a.name:withTitles=.</spawnMessage>
       <stopMessage>▶The liquids stop reacting.</stopMessage>
       <startMessage>▶The primordial soup =subject.to.the.direction= starts reacting with the =liquid.name=.</startMessage>
     </part>

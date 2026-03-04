@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.14
+Caves of Qud - Generated Localizable XML 2.0.212.15
 
-<objects>
+<objects ExcludeFromCorpusGeneration="Key">
 
   <object Name="Key" Load="">
 
@@ -120,7 +120,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
     <part Name="Description" Short="▶Svy urges over the salt-capped peaks and spills into the vine-braided loam. Her banks are shaded by the chrome carcasses of giants." />
     <tag Name="IndefiniteArticle" Value="▶the" />
     <tag Name="DefiniteArticle" Value="▶the" />
-    <tag Name="AlternateTerrainName" Value="▶RiverSvy" />
   </object>
   <object Name="TerrainRiverOpal" Load="Merge">
     <part Name="Render" DisplayName="▶River Opal" />
@@ -128,13 +127,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
     <part Name="Description" Short="▶The Spindle scintillates in watery effigy on her surface. She ferries crushed granite through a mountain pass and into her leafy firth." />
     <tag Name="IndefiniteArticle" Value="▶the" />
     <tag Name="DefiniteArticle" Value="▶the" />
-    <tag Name="AlternateTerrainName" Value="▶RiverOpal" />
   </object>
   <object Name="TerrainOpalDuskwaters" Load="Merge">
     <part Name="Render" DisplayName="▶Opal's Duskwaters" />
     <xtagGrammar Proper="▶true" />
     <part Name="Description" Short="▶The umbrage of the boughs wrings the warmth from Opal's waters and leave behind a shady pool." />
-    <tag Name="AlternateTerrainName" Value="▶OpalDuskwaters" />
   </object>
   <object Name="TerrainRiverYonth" Load="Merge">
     <part Name="Render" DisplayName="▶River Yonth" />
@@ -142,13 +139,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
     <tag Name="IndefiniteArticle" Value="▶the" />
     <tag Name="DefiniteArticle" Value="▶the" />
     <part Name="Description" Short="▶Yonth breaks the massif to the strange East and ushers its nameless waters into Qud. Fish-things feed on her basalt chips." />
-    <tag Name="AlternateTerrainName" Value="▶RiverYonth" />
   </object>
   <object Name="TerrainMountainStream" Load="Merge">
     <part Name="Render" DisplayName="▶mountain stream" />
     <part Name="Description" Short="▶Old alps opened in the ageless past fill with a cool brine." />
     <xtagGrammar massNoun="▶false" />
-    <tag Name="AlternateTerrainName" Value="▶MountainStream" />
   </object>
   <object Name="TerrainLakeHinnom" Load="Merge">
     <part Name="Render" DisplayName="▶Lake Hinnom" />
@@ -226,7 +221,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
     <part Name="Render" DisplayName="▶rust wells" />
     <part Name="Description" Short="▶Red qudzu vines take as their trellises chrome wells bored into the earth." />
     <xtagGrammar iArticle="▶the" />
-    <tag Name="AlternateTerrainName" Value="▶RustWell" />
   </object>
   <object Name="TerrainGolgotha" Load="Merge">
     <part Name="Render" DisplayName="▶Golgotha" />

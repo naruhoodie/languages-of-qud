@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<conversations LoadPriority="1000" ExcludeFromCorpusGeneration="true">
+<conversations LoadPriority="1000" ExcludeFromCorpusGeneration="true" Encoding="utf-8">
 
   <!--Barathrum-->
   <conversation ID="Barathrum">
@@ -840,7 +840,7 @@
 
         BUT TOGETHER, WE SHALL SEEK.
       </text>
-      <choice Target="End" SetBooleanState="GemaraSophiaSharedMe,true">>
+      <choice Target="End" SetBooleanState="GemaraSophiaSharedMe,true">
         <text>Then I assent. The covenant is drawn.</text>
         <part Name="EndGame" Type="Covenant" Grade="Super" />
       </choice>

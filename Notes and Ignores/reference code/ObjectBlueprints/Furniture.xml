@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<objects>
+<objects Encoding="utf-8">
 
   <!--    
     1 Base objects
@@ -2696,7 +2696,7 @@
     <part Name="Render" DisplayName="norm core" RenderString="176" ColorString="&amp;K" DetailColor="y" Occluding="true" Tile="Items/sw_diamond_thing.bmp" />
     <stat Name="AV" Value="20" />
     <stat Name="Hitpoints" Value="2000" />
-    <part Name="Description" Short="Diamond manifolds pressurize quartz into its &#234; form, crystallizing spacetime along the ley lines in the local region. Drops of normality condensate on the flue refract light into an inner dimension." />
+    <part Name="Description" Short="Diamond manifolds pressurize quartz into its Ω form, crystallizing spacetime along the ley lines in the local region. Drops of normality condensate on the flue refract light into an inner dimension." />
     <part Name="FusionReactor" ChargeRate="1000" CatastrophicDisable="true" />
     <part Name="Flywheel" Charge="10000" MaxCharge="10000" ChargeRate="800" ChargeDisplayStyle="" AltChargeDisplayStyle="kinetic" />
     <part Name="DeploymentMaintainer" Blueprint="RealityStabilizationField" Radius="1" BlockedBySolid="false" BlockedByNonEmpty="false" ActiveMaintenance="true" LinkRealityStabilization="true" NeedsOtherActivePartOperational="RealityStabilization" NameForStatus="FieldProjector" />
@@ -5675,25 +5675,25 @@ The frame forms half a heart; the Eaters' favorite remains." />
   </object>
 	<object Name="Kyakukya Monument 1" Inherits="Village Monument Birdhouse">
 		<part Name="Render" ColorString="&amp;M" TileColor="&amp;W" />
-		<part Name="RulesDescription" Text="This object is a monument to a scene from the history of {{M|Kyakukya}}.&#10;&#10;Under the Beetle Moon, folks settled here to gather goods of passage for Ape Saad Oboroqoru, and so Kyakukya was founded.&#10;" />
+		<part Name="RulesDescription" Text="This object is a monument to a scene from the history of {{M|Kyakukya}}.&#xA;&#xA;Under the Beetle Moon, folks settled here to gather goods of passage for Ape Saad Oboroqoru, and so Kyakukya was founded.&#xA;" />
 		<part Name="RevealVillageHistoryOnLook" HistoryId="KyakukyaSecret1" />
 		<part Name="Interesting" />
 	</object>
 	<object Name="Kyakukya Monument 2" Inherits="Village Monument Birdhouse">
 		<part Name="Render" ColorString="&amp;M" TileColor="&amp;W" />
-		<part Name="RulesDescription" Text="This object is a monument to a scene from the history of {{M|Kyakukya}}.&#10;&#10;In 979, Nuntu, the legendary albino ape, grew tired of bludgeoning things to death and journeyed to a root-strangled place on the River Svy. There he came upon Kyakukya and its inhabitants. The villagers of Kyakukya asked Nuntu to employ his magisterial skills and lead the village.&#10;" />
+		<part Name="RulesDescription" Text="This object is a monument to a scene from the history of {{M|Kyakukya}}.&#xA;&#xA;In 979, Nuntu, the legendary albino ape, grew tired of bludgeoning things to death and journeyed to a root-strangled place on the River Svy. There he came upon Kyakukya and its inhabitants. The villagers of Kyakukya asked Nuntu to employ his magisterial skills and lead the village.&#xA;" />
 		<part Name="RevealVillageHistoryOnLook" HistoryId="KyakukyaSecret2" />
 		<part Name="Interesting" />
 	</object>
 	<object Name="Yd Village Monument 1" Inherits="Village Monument Diptych">
     <part Name="Render" ColorString="&amp;M" TileColor="&amp;W" />
-    <part Name="RulesDescription" Text="This object is a monument to a scene from the history of the {{M|Yd Freehold}}.&#10;&#10;Centuries after the height of the Gyre, the svardym Goek, Mak, and Geeub met the galgal Many Eyes while languishing inside of a reef sponge. Together they founded the Yd Freehold to live out the rest of their lives.&#10;" />
+    <part Name="RulesDescription" Text="This object is a monument to a scene from the history of the {{M|Yd Freehold}}.&#xA;&#xA;Centuries after the height of the Gyre, the svardym Goek, Mak, and Geeub met the galgal Many Eyes while languishing inside of a reef sponge. Together they founded the Yd Freehold to live out the rest of their lives.&#xA;" />
     <part Name="RevealVillageHistoryOnLook" HistoryId="YdFreeholdSecret1" />
 		<part Name="Interesting" />
   </object>
   <object Name="Yd Village Monument 2" Inherits="Village Monument Diptych">
     <part Name="Render" ColorString="&amp;M" TileColor="&amp;W" />
-    <part Name="RulesDescription" Text="This object is a monument to a scene from the history of the {{M|Yd Freehold}}.&#10;&#10;In 901, the villagers of the Yd Freehold and its founders abolished all forms of hierarchy from their settlement. The two pillars of civic life in the Freehold thus became anarchy and authenticity.&#10;" />
+    <part Name="RulesDescription" Text="This object is a monument to a scene from the history of the {{M|Yd Freehold}}.&#xA;&#xA;In 901, the villagers of the Yd Freehold and its founders abolished all forms of hierarchy from their settlement. The two pillars of civic life in the Freehold thus became anarchy and authenticity.&#xA;" />
     <part Name="RevealVillageHistoryOnLook" HistoryId="YdFreeholdSecret2" />
 		<part Name="Interesting" />
   </object>
@@ -5965,7 +5965,7 @@ The frame forms half a heart; the Eaters' favorite remains." />
   </object>
   <object Name="EzraSign" Inherits="Sign">
     <part Name="Render" DisplayName="sign" Tile="Items/sw_sign_west.bmp" Occluding="false" />
-    <part Name="Chat" Says="&#27; To Ezra" ShowInShortDescription="true" />
+    <part Name="Chat" Says="← To Ezra" ShowInShortDescription="true" />
   </object>
   <object Name="TamSign" Inherits="Sign">
     <part Name="Render" DisplayName="sign" Tile="Items/sw_sign_goods.bmp" Occluding="false" />
@@ -6141,18 +6141,18 @@ The frame forms half a heart; the Eaters' favorite remains." />
 		<stag Name="Historical" />
   </object>
   <object Name="SultanSarcophagusW" Inherits="Sarcophagus">
-    <part Name="Render" DisplayName="imperial sarcophagus" RenderString="&#194;" Tile="Items/sw_sultan_sarcophagus_closed_w.bmp" ColorString="&amp;C" TileColor="&amp;K" DetailColor="C" />
+    <part Name="Render" DisplayName="imperial sarcophagus" RenderString="┬" Tile="Items/sw_sultan_sarcophagus_closed_w.bmp" ColorString="&amp;C" TileColor="&amp;K" DetailColor="C" />
     <part Name="Description" Short="Cirrus clouds of neon stir inside a glass lune and beam light through the prefigured likeness of the sultan. A bleary shape thus hovers supine above the starless and gigantic black rock divan. The artist may have intended this to evoke a lightning storm over a dark plain or a lily on the pitch of a river: something to represent the bright and gaseous mind roaming over the inert body." />
-    <part Name="Enclosing" SizeInsensitive="true" OpenRenderString="&#209;" ClosedRenderString="&#194;" OpenTile="Items/sw_sultan_sarcophagus_open_w.bmp" ClosedTile="Items/sw_sultan_sarcophagus_closed_w.bmp" OpenColor="&amp;K" ClosedColor="&amp;C" />
+    <part Name="Enclosing" SizeInsensitive="true" OpenRenderString="╤" ClosedRenderString="┬" OpenTile="Items/sw_sultan_sarcophagus_open_w.bmp" ClosedTile="Items/sw_sultan_sarcophagus_closed_w.bmp" OpenColor="&amp;K" ClosedColor="&amp;C" />
     <part Name="DoubleEnclosing" Direction="E" />
     <part Name="Physics" Weight="2000" />
     <part Name="NoDamage" />
     <tag Name="ExcludeFromDynamicEncounters" />
   </object>
   <object Name="SultanSarcophagusE" Inherits="Sarcophagus">
-    <part Name="Render" DisplayName="imperial sarcophagus" RenderString="&#194;" Tile="Items/sw_sultan_sarcophagus_closed_e.bmp" ColorString="&amp;C" TileColor="&amp;K" DetailColor="C" />
+    <part Name="Render" DisplayName="imperial sarcophagus" RenderString="┬" Tile="Items/sw_sultan_sarcophagus_closed_e.bmp" ColorString="&amp;C" TileColor="&amp;K" DetailColor="C" />
     <part Name="Description" Short="Cirrus clouds of neon stir inside a glass lune and beam light through the prefigured likeness of the sultan. A bleary shape thus hovers supine above the starless and gigantic black rock divan. The artist may have intended this to evoke a lightning storm over a dark plain or a lily on the pitch of a river: something to represent the bright and gaseous mind roaming over the inert body." />
-    <part Name="Enclosing" OpenRenderString="&#209;" ClosedRenderString="&#194;" OpenTile="Items/sw_sultan_sarcophagus_open_e.bmp" ClosedTile="Items/sw_sultan_sarcophagus_closed_e.bmp" OpenColor="&amp;K" ClosedColor="&amp;C"/>
+    <part Name="Enclosing" OpenRenderString="╤" ClosedRenderString="┬" OpenTile="Items/sw_sultan_sarcophagus_open_e.bmp" ClosedTile="Items/sw_sultan_sarcophagus_closed_e.bmp" OpenColor="&amp;K" ClosedColor="&amp;C"/>
     <part Name="DoubleEnclosing" Direction="W" />
     <part Name="Physics" Weight="2000" />
     <part Name="NoDamage" />

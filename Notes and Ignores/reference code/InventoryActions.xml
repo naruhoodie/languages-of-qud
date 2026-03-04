@@ -1,0 +1,1045 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Inventory Action definitions - if no <command> specified, will default to be the same as the name
+-->
+<inventoryactions Encoding="utf-8">
+    <inventoryaction Name="InterfaceWithGritGateMainframe">
+        <display>interface</display>
+        <key>i</key>
+        <default>100</default>
+    </inventoryaction>
+    <inventoryaction Name="InterfaceWithBecomingNook">
+        <display>interface</display>
+        <key>i</key>
+        <default>100</default>
+    </inventoryaction>
+    <inventoryaction Name="InterfaceWithTerminal">
+        <display>interface</display>
+        <key>i</key>
+        <default>100</default>
+    </inventoryaction>
+    <inventoryaction Name="WakeSleeper">
+        <display>wake</display>
+        <key>w</key>
+        <default>100</default>
+        <worksTelekinetically>true</worksTelekinetically>
+    </inventoryaction>
+    <!-- proselytized -->
+    <inventoryaction Name="DismissProselyte">
+        <display>dismiss</display>
+        <key>d</key>
+        <worksAtDistance>true</worksAtDistance>
+    </inventoryaction>
+    <!-- rebuked -->
+    <inventoryaction Name="DismissServitor">
+        <display>dismiss</display>
+        <key>d</key>
+        <worksAtDistance>true</worksAtDistance>
+    </inventoryaction>
+    <inventoryaction Name="CompanionStopFlying">
+        <display>direct to stop flying</display>
+        <key>_</key>
+        <worksAtDistance>true</worksAtDistance>
+    </inventoryaction>
+    <!-- E.AddXmlAction( isRead ? "Read" : "ReadUnread" )-->
+    <inventoryaction Name="Read">
+        <display>read</display>
+        <key>r</key>
+        <default>15</default>
+    </inventoryaction>
+    <inventoryaction Name="ReadUnread">
+        <command>Read</command>
+        <display>read</display>
+        <key>r</key>
+        <default>100</default>
+    </inventoryaction>
+    <inventoryaction Name="CancelLifeDrain">
+        <display>cancel life drain</display>
+        <key>c</key>
+        <worksAtDistance>true</worksAtDistance>
+    </inventoryaction>
+    <inventoryaction Name="CompanionAttackTarget">
+        <key>a</key>
+        <display>direct to attack target</display>
+        <preferToHighlight>attack</preferToHighlight>
+        <fireOnActor>true</fireOnActor>
+        <worksAtDistance>true</worksAtDistance>
+    </inventoryaction>
+    <inventoryaction Name="CompanionToggleEngagementAgressive">
+        <command>CompanionToggleEngagement</command>
+        <display>direct to engage aggressively</display>
+        <preferToHighlight>engage</preferToHighlight>
+        <key>e</key>
+        <fireOnActor>true</fireOnActor>
+        <worksAtDistance>true</worksAtDistance>
+    </inventoryaction>
+    <inventoryaction Name="CompanionToggleEngagementDefensive">
+        <command>CompanionToggleEngagement</command>
+        <display>direct to engage defensively</display>
+        <preferToHighlight>engage</preferToHighlight>
+        <key>e</key>
+        <fireOnActor>true</fireOnActor>
+        <worksAtDistance>true</worksAtDistance>
+    </inventoryaction>
+    <inventoryaction Name="CompanionCome">
+        <display>direct to come along</display>
+        <preferToHighlight>come</preferToHighlight>
+        <key>c</key>
+        <fireOnActor>true</fireOnActor>
+        <worksAtDistance>true</worksAtDistance>
+    </inventoryaction>
+    <inventoryaction Name="CompanionGiveItems">
+        <display>give items</display>
+        <key>g</key>
+        <fireOnActor>true</fireOnActor>
+    </inventoryaction>
+    <inventoryaction Name="CompanionMoveTo">
+        <display>direct to move</display>
+        <key>m</key>
+        <fireOnActor>true</fireOnActor>
+        <worksAtDistance>true</worksAtDistance>
+    </inventoryaction>
+    <inventoryaction Name="CompanionChangeFollowDistance">
+        <display>direct to change follow distance</display>
+        <key>f</key>
+        <fireOnActor>true</fireOnActor>
+        <worksAtDistance>true</worksAtDistance>
+    </inventoryaction>
+    <inventoryaction Name="CompanionStay">
+        <display>direct to stay there</display>
+        <key>s</key>
+        <fireOnActor>true</fireOnActor>
+        <worksAtDistance>true</worksAtDistance>
+    </inventoryaction>
+    <inventoryaction Name="CompanionAbilityUse">
+        <display>direct ability use</display>
+        <key>u</key>
+        <fireOnActor>true</fireOnActor>
+        <worksAtDistance>true</worksAtDistance>
+    </inventoryaction>
+    <inventoryaction Name="CompanionRename">
+        <display>rename</display>
+        <key>r</key>
+        <fireOnActor>true</fireOnActor>
+        <worksAtDistance>true</worksAtDistance>
+    </inventoryaction>
+    <inventoryaction Name="Untarget">
+        <display>untarget</display>
+        <key>t</key>
+        <fireOnActor>true</fireOnActor>
+        <worksAtDistance>true</worksAtDistance>
+    </inventoryaction>
+    <inventoryaction Name="Target">
+        <display>target</display>
+        <key>t</key>
+        <fireOnActor>true</fireOnActor>
+        <worksAtDistance>true</worksAtDistance>
+    </inventoryaction>
+    <inventoryaction Name="ShowEffects">
+        <display>show effects</display>
+        <key>w</key>
+        <fireOnActor>true</fireOnActor>
+        <worksAtDistance>true</worksAtDistance>
+    </inventoryaction>
+    <inventoryaction Name="Apply">
+        <display>apply</display>
+        <key>a</key>
+        <default>0</default>
+    </inventoryaction>
+    <inventoryaction Name="ApplyTo">
+        <command>ApplyTo</command>
+        <display>apply to</display>
+        <key>A</key>
+        <default>-2</default>
+    </inventoryaction>
+    <inventoryaction Name="ApplyEat">
+        <command>Apply</command>
+        <display>eat</display>
+        <key>e</key>
+        <default>0</default>
+    </inventoryaction>
+    <inventoryaction Name="ApplyToEat">
+        <command>ApplyTo</command>
+        <display>feed to</display>
+        <key>f</key>
+        <default>-2</default>
+    </inventoryaction>
+    <inventoryaction Name="ApplyImportant">
+        <command>Apply</command>
+        <display>apply</display>
+        <key>a</key>
+        <default>-1</default><!-- less desired to use an important one -->
+    </inventoryaction>
+    <inventoryaction Name="ApplyDefault">
+        <command>Apply</command>
+        <display>apply</display>
+        <key>a</key>
+        <default>100</default>
+    </inventoryaction>
+    <inventoryaction Name="DebugShowAttitude">
+        <display>show attitude {{K|[debug]}}</display>
+        <key>A</key>
+        <default>-1</default>
+        <priority>500</priority>
+        <worksAtDistance>true</worksAtDistance>
+    </inventoryaction>
+    <inventoryaction Name="DebugEnableThinkOutLoud">
+        <command>DebugToggleThinkOutLoud</command>
+        <display>enable think out loud {{K|[debug]}}</display>
+        <key>/</key>
+        <default>-1</default>
+        <priority>500</priority>
+        <worksAtDistance>true</worksAtDistance>
+    </inventoryaction>
+    <inventoryaction Name="DebugDisableThinkOutLoud">
+        <command>DebugToggleThinkOutLoud</command>
+        <display>disable think out loud {{K|[debug]}}</display>
+        <key>/</key>
+        <default>-1</default>
+        <priority>500</priority>
+        <worksAtDistance>true</worksAtDistance>
+    </inventoryaction>
+    <inventoryaction Name="Chat">
+        <display>chat</display>
+        <key>h</key>
+        <default>10</default>
+        <worksTelepathically>true</worksTelepathically>
+    </inventoryaction>
+    <inventoryaction Name="Destroy">
+        <display>{{R|destroy}}</display>
+        <key>d</key>
+        <default>1000</default>
+    </inventoryaction>
+    <inventoryaction Name="ResupplyForCloning">
+        <display>resupply [1 dram of cloning draught]</display>
+        <key>r</key>
+        <default>-1</default>
+    </inventoryaction>
+    <inventoryaction Name="CmdCustomAbilityAdd">
+        <command>CmdCustomAbility</command>
+        <display>add custom ability</display>
+        <key>u</key>
+        <fireOnActor>true</fireOnActor>
+    </inventoryaction>
+    <inventoryaction Name="CmdCustomAbilityEdit">
+        <command>CmdCustomAbility</command>
+        <display>add custom ability</display>
+        <key>u</key>
+        <fireOnActor>true</fireOnActor>
+    </inventoryaction>
+    <inventoryaction Name="BeStoodUp">
+        <display>stand up</display>
+        <key>s</key>
+        <default>100</default>
+        <worksTelekinetically>true</worksTelekinetically>
+    </inventoryaction>
+    <inventoryaction Name="Pet">
+        <display>pet</display>
+        <key>p</key>
+        <default>5</default>
+    </inventoryaction>
+    <inventoryaction Name="Supply">
+        <display>supply</display>
+        <key>s</key>
+    </inventoryaction>
+    <inventoryaction Name="Butcher">
+        <display>butcher</display>
+        <key>b</key>
+        <default>20</default>
+    </inventoryaction>
+    <inventoryaction Name="LoadTonics">
+        <display>load tonics</display>
+        <key>o</key>
+    </inventoryaction>
+    <inventoryaction Name="EjectTonics">
+        <display>eject tonics</display>
+        <key>j</key>
+    </inventoryaction>
+    <inventoryaction Name="LoadTonic">
+        <display>load into medassist module</display>
+        <key>m</key>
+    </inventoryaction>
+    <inventoryaction Name="ImprintRecoiler">
+        <display>imprint</display>
+        <key>i</key>
+        <default>100</default>
+    </inventoryaction>
+    <inventoryaction Name="ActivateRecoilerTeleporter">
+        <display>activate</display>
+        <key>a</key>
+        <default>100</default>
+    </inventoryaction>
+    <inventoryaction Name="Look">
+        <display>look</display>
+        <key>l</key>
+        <worksAtDistance>true</worksAtDistance>
+    </inventoryaction>
+    <inventoryaction Name="ReadStory">
+        <display>recall story</display>
+        <key>s</key>
+        <worksAtDistance>true</worksAtDistance>
+    </inventoryaction>
+    <inventoryaction Name="EnterInterior">
+        <display>enter</display>
+        <key>e</key>
+        <default>15</default>
+    </inventoryaction>
+    <inventoryaction Name="ExitInterior">
+        <display>exit</display>
+        <key>e</key>
+        <default>15</default>
+    </inventoryaction>
+    <inventoryaction Name="Examine">
+        <display>examine</display>
+        <key>x</key>
+    </inventoryaction>
+    <inventoryaction Name="Eat">
+        <display>eat</display>
+        <key>a</key>
+        <default>20</default>
+    </inventoryaction>
+    <inventoryaction Name="EatSus">
+        <command>Eat</command>
+        <display>eat</display>
+        <key>a</key>
+        <default>0</default>
+    </inventoryaction>
+    <inventoryaction Name="Ascend">
+        <display>ascend</display>
+        <key>a</key>
+    </inventoryaction>
+    <inventoryaction Name="AscendCable">
+        <display>ascend</display>
+        <key>a</key>
+    </inventoryaction>
+    <inventoryaction Name="Descend">
+        <display>descend</display>
+        <key>a</key>
+    </inventoryaction>
+    <inventoryaction Name="DescendCable">
+        <display>descend</display>
+        <key>a</key>
+    </inventoryaction>
+    <inventoryaction Name="SleepOnBed">
+        <display>sleep</display>
+        <key>s</key>
+        <default>10</default>
+    </inventoryaction>
+    <inventoryaction Name="StandUpFromChair">
+        <display>stand</display>
+        <key>s</key>
+        <default>5</default>
+    </inventoryaction>
+    <inventoryaction Name="SitOnChair">
+        <display>sit</display>
+        <key>s</key>
+        <default>5</default>
+    </inventoryaction>
+    <inventoryaction Name="Close">
+        <display>close</display>
+        <key>c</key>
+        <default>10</default>
+        <worksTelekinetically>true</worksTelekinetically>
+    </inventoryaction>
+    <inventoryaction Name="Open">
+        <display>open</display>
+        <key>o</key>
+        <default>10</default>
+        <worksTelekinetically>true</worksTelekinetically>
+    </inventoryaction>
+    <inventoryaction Name="OpenCasual">
+        <command>Open</command>
+        <display>open</display>
+        <key>o</key>
+    </inventoryaction>
+    <inventoryaction Name="ExitEnclosing">
+        <display>exit</display>
+        <key>e</key>
+        <default>15</default>
+    </inventoryaction>
+    <inventoryaction Name="EnterEnclosing">
+        <display>enter</display>
+        <key>e</key>
+        <default>15</default>
+    </inventoryaction>
+    <inventoryaction Name="ActivateForceProjector">
+        <display>activate</display>
+        <key>a</key>
+        <default>100</default>
+    </inventoryaction>
+    <inventoryaction Name="DeactivateForceProjector">
+        <display>deactivate</display>
+        <key>a</key>
+        <default>50</default>
+    </inventoryaction>
+    <inventoryaction Name="Pray">
+        <display>pray</display>
+        <key>y</key>
+        <default>-10</default>
+    </inventoryaction>
+    <inventoryaction Name="Desecrate">
+        <display>desecrate</display>
+        <key>D</key>
+        <default>-10</default>
+    </inventoryaction>
+    <inventoryaction Name="Detonate">
+        <display>detonate</display>
+        <key>n</key>
+        <worksTelekinetically>true</worksTelekinetically>
+    </inventoryaction>
+    <inventoryaction Name="ActivateAjiConch">
+        <display>blow</display>
+        <key>b</key>
+        <default>20</default>
+    </inventoryaction>
+    <inventoryaction Name="ActivateAnimateObject">
+        <display>activate</display>
+        <key>a</key>
+    </inventoryaction>
+    <inventoryaction Name="Defibrillate">
+        <!-- not in the base game -->
+        <display>activate</display>
+        <key>a</key>
+    </inventoryaction>
+    <inventoryaction Name="RaiseBanner">
+        <display>raise</display>
+        <key>r</key>
+        <default>10</default>
+    </inventoryaction>
+    <inventoryaction Name="BubbleLevel">
+        <display>flip</display>
+        <key>f</key>
+        <default>10</default>
+    </inventoryaction>
+    <inventoryaction Name="LightCampfire">
+        <display>light</display>
+        <key>i</key>
+        <default>10</default>
+    </inventoryaction>
+    <inventoryaction Name="DrawWithCrayons">
+        <display>draw</display>
+        <key>w</key>
+        <priority>10</priority>
+    </inventoryaction>
+    <inventoryaction Name="BuildFromDataDisk">
+        <display>build</display>
+        <key>b</key>
+        <default>200</default><!-- set to 0 if not in inventory -->
+    </inventoryaction>
+    <inventoryaction Name="LearnFromDataDisk">
+        <display>learn</display>
+        <key>l</key>
+        <default>300</default><!-- set to 0 if already known -->
+    </inventoryaction>
+    <inventoryaction Name="DeactivateHologramBracelet">
+        <display>deactivate</display>
+        <key>a</key>
+        <default>10</default>
+    </inventoryaction>
+    <inventoryaction Name="ActivateHologramBracelet">
+        <display>activate</display>
+        <key>a</key>
+        <default>10</default>
+    </inventoryaction>
+    <inventoryaction Name="DeployInfrastructure">
+        <display>deploy=deployNoun|spaceBefore=</display>
+        <key>y</key>
+    </inventoryaction>
+    <inventoryaction Name="FlipBeam">
+        <display>flip</display>
+        <key>f</key>
+        <default>5</default>
+    </inventoryaction>
+    <inventoryaction Name="Engrave">
+        <display>engrave</display>
+        <key>e</key>
+        <worksTelekinetically>true</worksTelekinetically>
+    </inventoryaction>
+    <inventoryaction Name="ActivateFactionDeed">
+        <display>entagle text</display>
+        <key>n</key>
+        <default>15</default>
+    </inventoryaction>
+    <inventoryaction Name="ToggleForceEmitterDeactivate">
+        <command>ToggleForceEmitter</command>
+        <display>deactivate</display>
+        <key>a</key>
+        <default>10</default>
+    </inventoryaction>
+    <inventoryaction Name="ToggleForceEmitterActivate">
+        <command>ToggleForceEmitter</command>
+        <display>activate</display>
+        <key>a</key>
+        <default>10</default>
+    </inventoryaction>
+    <inventoryaction Name="RifleThroughGarbage">
+        <display>rifle</display>
+        <key>r</key>
+        <default>100</default>
+        <worksTelekinetically>true</worksTelekinetically>
+    </inventoryaction>
+    <inventoryaction Name="ActivateGenocideCurio">
+        <display>activate</display>
+        <key>a</key>
+    </inventoryaction>
+    <inventoryaction Name="BlowGrandfatherHorn">
+        <display>blow</display>
+        <key>b</key>
+    </inventoryaction>
+    <inventoryaction Name="Harvest">
+        <display>harvest</display>
+        <key>h</key>
+        <default>15</default>
+    </inventoryaction>
+    <inventoryaction Name="SmokeHookah">
+        <display>smoke</display>
+        <key>s</key>
+        <default>10</default>
+    </inventoryaction>
+    <inventoryaction Name="ActivateMechanicalWings">
+        <display>activate</display>
+        <key>a</key>
+    </inventoryaction>
+    <inventoryaction Name="ActivatePassiveFactionDeed">
+        <display>activate</display>
+        <key>a</key>
+    </inventoryaction>
+    <inventoryaction Name="DeactivateTemplarPhylactery">
+        <display>deactivate</display>
+        <key>a</key>
+    </inventoryaction>
+    <inventoryaction Name="ActivateTemplarPhylactery">
+        <display>activate</display>
+        <key>a</key>
+    </inventoryaction>
+    <inventoryaction Name="ActivatePortableWall">
+        <display>activate</display>
+        <key>a</key>
+        <default>10</default>
+    </inventoryaction>
+    <inventoryaction Name="ActivateSpiralBorer">
+        <display>activate</display>
+        <key>a</key>
+        <default>10</default>
+    </inventoryaction>
+    <inventoryaction Name="ActivateSkyshroud">
+        <display>activate</display>
+        <key>a</key>
+        <default>10</default>
+    </inventoryaction>
+    <inventoryaction Name="ActivateSummoningCurio">
+        <display>activate</display>
+        <key>a</key>
+        <default>10</default>
+    </inventoryaction>
+    <inventoryaction Name="ActivateTeleprojector">
+        <display>activate</display>
+        <key>a</key>
+        <default>10</default>
+        <fireOnActor>true</fireOnActor>
+        <asMinEvent>false</asMinEvent>
+    </inventoryaction>
+    <inventoryaction Name="Disassemble">
+        <display>disassemble</display>
+        <key>m</key>
+    </inventoryaction>
+    <inventoryaction Name="DisassembleAll">
+        <display>disassemble all</display>
+        <key>M</key>
+        <default>-1</default>
+        <priority>-1</priority>
+    </inventoryaction>
+    <inventoryaction Name="Repair">
+        <display>repair</display>
+        <key>r</key>
+        <default>25</default>
+    </inventoryaction>
+    <inventoryaction Name="RepairOnActor">
+        <command>Repair</command>
+        <display>repair</display>
+        <key>R</key>
+        <default>25</default>
+        <fireOnActor>true</fireOnActor>
+    </inventoryaction>
+    <inventoryaction Name="PressIron">
+        <display>press</display>
+        <key>p</key>
+        <default>10</default>
+    </inventoryaction>
+    <inventoryaction Name="DeactivateStopsvalinn">
+        <command>ActivateStopsvalinn</command><!-- it's a toggle -->
+        <display>deactivate</display>
+        <key>a</key>
+    </inventoryaction>
+    <inventoryaction Name="ActivateStopsvalinn">
+        <display>activate</display>
+        <key>a</key>
+    </inventoryaction>
+    <inventoryaction Name="Tattoo">
+        <display>tattoo</display>
+        <key>t</key>
+        <worksTelekinetically>true</worksTelekinetically>
+    </inventoryaction>
+    <inventoryaction Name="ActivateTeleporter">
+        <display>activate</display>
+        <key>a</key>
+        <default>100</default>
+    </inventoryaction>
+    <inventoryaction Name="ActivateTeleporterPair">
+        <display>activate</display>
+        <key>a</key>
+        <default>100</default>
+    </inventoryaction>
+    <inventoryaction Name="ActivateTeleporterPairCooldown">
+        <command>ActivateTeleporterPair</command>
+        <display>activate [{{C|=turns=}} turn cooldown]</display>
+        <key>a</key>
+    </inventoryaction>
+    <inventoryaction Name="ConfigureTemperatureController">
+        <display>set target temperature</display>
+        <key>s</key>
+        <default>1</default>
+    </inventoryaction>
+    <inventoryaction Name="DeactivateTemplarPhylactery">
+        <display>deactivate</display>
+        <key>a</key>
+    </inventoryaction>
+    <inventoryaction Name="ActivateTemplarPhylactery">
+        <display>activate</display>
+        <key>a</key>
+    </inventoryaction>
+    <inventoryaction Name="SmokeThurible">
+        <display>incense</display>
+        <key>i</key>
+        <default>10</default>
+    </inventoryaction>
+    <inventoryaction Name="ActivateTimeCube">
+        <display>activate</display>
+        <key>a</key>
+        <worksTelekinetically>true</worksTelekinetically>
+    </inventoryaction>
+    <inventoryaction Name="TorchLight">
+        <display>light</display>
+        <key>i</key>
+        <worksTelekinetically>true</worksTelekinetically>
+    </inventoryaction>
+    <inventoryaction Name="TorchExtinguish">
+        <display>extinguish</display>
+        <key>x</key>
+        <worksTelekinetically>true</worksTelekinetically>
+    </inventoryaction>
+    <inventoryaction Name="FillSlotted">
+        <command>FillFrom</command>
+        <display>fill =subject.basename|strip=</display>
+        <key>f</key>
+        <default>50</default>
+    </inventoryaction>
+    <inventoryaction Name="Unseal">
+        <display>unseal</display>
+        <key>u</key>
+        <worksTelekinetically>true</worksTelekinetically>
+    </inventoryaction>
+    <inventoryaction Name="Seal">
+        <display>seal</display>
+        <key>s</key>
+        <worksTelekinetically>true</worksTelekinetically>
+    </inventoryaction>
+    <inventoryaction Name="FillFrom">
+        <display>fill</display>
+        <key>f</key>
+    </inventoryaction>
+    <inventoryaction Name="Drain">
+        <display>drain</display>
+        <key>r</key>
+        <default>-1</default>
+    </inventoryaction>
+    <inventoryaction Name="Drink">
+        <display>drink</display>
+        <key>k</key>
+    </inventoryaction>
+    <inventoryaction Name="Pour">
+        <display>pour</display>
+        <key>p</key>
+        <default>0</default><!-- set in code -->
+    </inventoryaction>
+    <inventoryaction Name="AutoCollectLiquidOn">
+        <command>AutoCollectLiquid</command>
+        <display>auto-collect liquid</display>
+        <key>a</key>
+        <default>-1</default>
+    </inventoryaction>
+    <inventoryaction Name="AutoCollectLiquidOff">
+        <command>AutoCollectLiquid</command>
+        <display>stop auto-collect liquid</display>
+        <key>a</key>
+        <default>-1</default>
+    </inventoryaction>
+    <inventoryaction Name="CollectLiquid">
+        <display>collect liquid</display>
+        <key>c</key>
+        <default>0</default><!-- set in code -->
+    </inventoryaction>
+    <inventoryaction Name="CleanWithLiquid">
+        <display>clean all your items [1 dram]</display>
+        <key>n</key>
+        <default>20</default>
+    </inventoryaction>
+    <inventoryaction Name="CommandChangeGrip">
+        <display>change grip</display>
+        <key>c</key>
+    </inventoryaction>
+    <inventoryaction Name="LoadMagazineAmmo">
+        <display>load</display>
+        <key>o</key>
+    </inventoryaction>
+    <inventoryaction Name="UnloadMagazineAmmo">
+        <display>unload</display>
+        <key>u</key>
+    </inventoryaction>
+    <inventoryaction Name="Psychometry">
+        <display>read history with Psychometry</display>
+        <key>i</key>
+        <fireOnActor>true</fireOnActor>
+    </inventoryaction>
+    <inventoryaction Name="DrinkCharge">
+        <display>drink charge</display>
+        <key>k</key>
+        <default>-1</default>
+        <fireOnActor>true</fireOnActor>
+    </inventoryaction>
+    <inventoryaction Name="Unequip">
+        <display>remove</display>
+        <key>r</key>
+        <default>10</default>
+        <fireOnActor>true</fireOnActor>
+    </inventoryaction>
+    <inventoryaction Name="CommandTakeObject">
+        <display>get</display>
+        <key>g</key>
+        <default>30</default>
+        <fireOnActor>true</fireOnActor>
+        <asMinEvent>false</asMinEvent>
+    </inventoryaction>
+    <inventoryaction Name="CommandDropObject">
+        <display>drop</display>
+        <key>d</key>
+        <fireOnActor>true</fireOnActor>
+    </inventoryaction>
+    <inventoryaction Name="CommandDropAllObject">
+        <display>drop all</display>
+        <key>D</key>
+        <fireOnActor>true</fireOnActor>
+    </inventoryaction>
+    <inventoryaction Name="CommandAutoEquipObject">
+        <display>equip (auto)</display>
+        <key>e</key>
+        <fireOnActor>true</fireOnActor>
+        <asMinEvent>false</asMinEvent>
+    </inventoryaction>
+    <inventoryaction Name="CommandEquipObject">
+        <display>equip (manual)</display>
+        <key>E</key>
+        <fireOnActor>true</fireOnActor>
+        <asMinEvent>false</asMinEvent>
+    </inventoryaction>
+    <inventoryaction Name="FightFire">
+        <display>fight fire</display>
+        <key>f</key>
+        <default>40</default>
+    </inventoryaction>
+    <inventoryaction Name="Attack">
+        <display>attack</display>
+        <key>k</key>
+        <default>-10</default>
+    </inventoryaction>
+    <inventoryaction Name="Mod">
+        <display>mod with tinkering</display>
+        <preferToHighlight>tinkering</preferToHighlight>
+        <key>t</key>
+        <returnToModernUI>true</returnToModernUI>
+    </inventoryaction>
+    <inventoryaction Name="AddNotes">
+        <display>add notes</display>
+        <key>n</key>
+    </inventoryaction>
+    <inventoryaction Name="MarkUnimportant">
+        <display>mark unimportant</display>
+        <key>i</key>
+        <default>-1</default>
+    </inventoryaction>
+    <inventoryaction Name="MarkImportant">
+        <display>mark important</display>
+        <key>i</key>
+        <default>-1</default>
+    </inventoryaction>
+    <inventoryaction Name="RemoveNotes">
+        <display>remove notes</display>
+        <key>n</key>
+        <worksAtDistance>true</worksAtDistance>
+    </inventoryaction>
+    <inventoryaction Name="CleanItem">
+        <display>clean</display>
+        <key>a</key>
+        <default>-1</default>
+        <priority>10</priority>
+    </inventoryaction>
+    <inventoryaction Name="ShowInternals">
+        <display>show internals {{K|[debug]}}</display>
+        <key>W</key>
+        <default>-1</default>
+        <worksAtDistance>true</worksAtDistance>
+    </inventoryaction>
+    <inventoryaction Name="RechargeCapacitor">
+        <display>recharge</display>
+        <key>R</key>
+    </inventoryaction>
+    <inventoryaction Name="RechargeEnergyCell">
+        <display>recharge</display>
+        <key>R</key>
+    </inventoryaction>
+    <inventoryaction Name="RechargeEnergyCellSlotted">
+        <display>recharge =subject.basename|strip=</display>
+        <key>R</key>
+    </inventoryaction>
+    <inventoryaction Name="RechargeEnergyCellSlotted">
+        <display>recharge =subject.basename|strip=</display>
+        <key>R</key>
+    </inventoryaction>
+    <inventoryaction Name="ReplaceSocketCell">
+        <display>replace cell</display>
+        <preferToHighlight>cell</preferToHighlight>
+        <key>c</key>
+    </inventoryaction>
+    <inventoryaction Name="ReplaceSocketCellEmpty">
+        <command>ReplaceSocketCell</command>
+        <display>install cell</display>
+        <preferToHighlight>cell</preferToHighlight>
+        <key>c</key>
+        <default>15</default>
+    </inventoryaction>
+    <inventoryaction Name="PowerSwitchOff">
+        <display>deactivate</display>
+        <key>a</key>
+    </inventoryaction>
+    <inventoryaction Name="PowerSwitchOn">
+        <display>activate</display>
+        <key>a</key>
+    </inventoryaction>
+    <inventoryaction Name="RemotePowerSwitchOff">
+        <display>deactivate</display>
+        <key>a</key>
+    </inventoryaction>
+    <inventoryaction Name="RemotePowerSwitchOn">
+        <display>activate</display>
+        <key>a</key>
+    </inventoryaction>
+    <inventoryaction Name="WindUp">
+        <display>wind</display>
+        <key>w</key>
+        <worksTelekinetically>true</worksTelekinetically>
+    </inventoryaction>
+    <inventoryaction Name="Cook">
+        <display>cook</display>
+        <key>c</key>
+        <default>10</default>
+    </inventoryaction>
+    <inventoryaction Name="ExtinguishCampfire">
+        <display>extinguish</display>
+        <key>x</key>
+        <worksTelekinetically>true</worksTelekinetically>
+    </inventoryaction>
+    <inventoryaction Name="CookWhipUp">
+        <display>Whip up a meal.</display>
+        <key>m</key>
+        <default>10</default>
+        <priority>90</priority>
+    </inventoryaction>
+    <inventoryaction Name="CookChooseIngredients">
+        <display>Choose ingredients to cook with.</display>
+        <key>i</key>
+        <priority>80</priority>
+    </inventoryaction>
+    <inventoryaction Name="CookFromRecipe">
+        <display>Cook from a recipe.</display>
+        <key>r</key>
+        <priority>70</priority>
+    </inventoryaction>
+    <inventoryaction Name="CookPreserve">
+        <display>Preserve your fresh foods.</display>
+        <key>f</key>
+        <priority>60</priority>
+    </inventoryaction>
+    <inventoryaction Name="CookPreserveExotic">
+        <display>Preserve your exotic foods.</display>
+        <key>x</key>
+        <priority>60</priority>
+    </inventoryaction>
+    <inventoryaction Name="CookStopBleeding">
+        <display>Stop bleeding.</display>
+        <key>b</key>
+        <priority>40</priority>
+    </inventoryaction>
+    <inventoryaction Name="CookTreatPoison">
+        <display>Treat poison.</display>
+        <key>p</key>
+        <priority>30</priority>
+    </inventoryaction>
+    <inventoryaction Name="CookTreatIllness">
+        <display>Treat illness.</display>
+        <key>l</key>
+        <priority>30</priority>
+    </inventoryaction>
+    <inventoryaction Name="CookTreatDiseaseOnset">
+        <display>Treat disease onset.</display>
+        <key>d</key>
+        <priority>10</priority>
+    </inventoryaction>
+    <inventoryaction Name="ToggleScrapOff">
+        <command>ToggleScrap</command>
+        <display>stop treating these as scrap</display>
+        <preferToHighlight>scrap</preferToHighlight>
+        <key>S</key>
+        <worksAtDistance>true</worksAtDistance>
+        <fireOnActor>true</fireOnActor>
+    </inventoryaction>
+    <inventoryaction Name="ToggleScrapOn">
+        <command>ToggleScrap</command>
+        <display>treat these as scrap</display>
+        <preferToHighlight>scrap</preferToHighlight>
+        <key>S</key>
+        <worksAtDistance>true</worksAtDistance>
+        <fireOnActor>true</fireOnActor>
+    </inventoryaction>
+    <inventoryaction Name="DisarmMine">
+        <display>disarm</display>
+        <key>d</key>
+        <default>100</default>
+        <worksTelekinetically>true</worksTelekinetically>
+    </inventoryaction>
+    <inventoryaction Name="ArmMine">
+        <display>arm</display>
+        <key>a</key>
+        <worksTelekinetically>true</worksTelekinetically>
+    </inventoryaction>
+    <inventoryaction Name="LayMineBomb">
+        <command>LayMine</command>
+        <display>set</display>
+        <key>s</key>
+        <default>100</default>
+        <worksTelekinetically>true</worksTelekinetically>
+    </inventoryaction>
+    <inventoryaction Name="LayMine">
+        <display>lay</display>
+        <key>L</key>
+        <default>100</default>
+        <worksTelekinetically>true</worksTelekinetically>
+    </inventoryaction>
+    <inventoryaction Name="PluckPolyp">
+        <display>pluck</display>
+        <key>p</key>
+        <default>50</default>
+    </inventoryaction>
+    <inventoryaction Name="Sacrifice">
+        <display>sacrifice</display>
+        <key>s</key>
+        <default>100</default>
+    </inventoryaction>
+    <inventoryaction Name="FlipSwitch">
+        <display>flip</display>
+        <key>f</key>
+        <default>100</default>
+    </inventoryaction>
+    <inventoryaction Name="VehicleControl">
+        <display>control</display>
+        <key>c</key>
+    </inventoryaction>
+    <inventoryaction Name="ReleaseVehicle">
+        <display>exit</display>
+        <key>x</key>
+    </inventoryaction>
+    <inventoryaction Name="RecallVehicle">
+        <display>recall =vehicleTerm=</display>
+        <key>c</key>
+    </inventoryaction>
+    <inventoryaction Name="RepairVehicle">
+        <display>repair =vehicleTerm=</display>
+        <key>r</key>
+    </inventoryaction>
+    <inventoryaction Name="ActivateGolemMound">
+        <display>interface</display>
+        <key>i</key>
+    </inventoryaction>
+    <inventoryaction Name="CompanionEnterVehicle">
+        <display>direct follower to enter</display>
+        <key>f</key>
+        <default>1000</default>
+        <worksAtDistance>true</worksAtDistance>
+    </inventoryaction>
+    <inventoryaction Name="CommandSingleSeatEject">
+        <display>eject</display>
+        <key>j</key>
+    </inventoryaction>
+    <inventoryaction Name="StarshipLaunch">
+        <display>launch</display>
+        <key>c</key>
+    </inventoryaction>
+    <!-- telekinetic stuff isn't base game -->
+    <inventoryaction Name="TelekineticPull">
+        <display>telekinetically pull toward you</display>
+        <key>p</key>
+        <fireOnActor>true</fireOnActor>
+        <worksTelekinetically>true</worksTelekinetically>
+        <default>-1</default>
+    </inventoryaction>
+    <inventoryaction Name="TelekineticPullOne">
+        <display>telekinetically pull one toward you</display>
+        <key>P</key>
+        <fireOnActor>true</fireOnActor>
+        <worksTelekinetically>true</worksTelekinetically>
+        <default>-1</default>
+    </inventoryaction>
+    <inventoryaction Name="TelekineticPullAndTake">
+        <display>telekinetically pull towards you and take</display>
+        <preferToHighlight>take</preferToHighlight>
+        <key>t</key>
+        <fireOnActor>true</fireOnActor>
+        <worksTelekinetically>true</worksTelekinetically>
+        <default>-1</default>
+    </inventoryaction>
+    <inventoryaction Name="TelekineticPullAndTakeOne">
+        <display>telekinetically pull one towards you and take</display>
+        <preferToHighlight>take</preferToHighlight>
+        <key>T</key>
+        <fireOnActor>true</fireOnActor>
+        <worksTelekinetically>true</worksTelekinetically>
+        <default>-1</default>
+    </inventoryaction>
+    <inventoryaction Name="TelekineticHurl">
+        <display>telekinetically hurl</display>
+        <key>h</key>
+        <fireOnActor>true</fireOnActor>
+        <worksTelekinetically>true</worksTelekinetically>
+        <default>-1</default>
+    </inventoryaction>
+    <inventoryaction Name="TelekineticHurlOne">
+        <display>telekinetically hurl one</display>
+        <key>H</key>
+        <fireOnActor>true</fireOnActor>
+        <worksTelekinetically>true</worksTelekinetically>
+        <default>-1</default>
+    </inventoryaction>
+    <inventoryaction Name="TelekineticMove">
+        <display>telekinetically move</display>
+        <key>m</key>
+        <fireOnActor>true</fireOnActor>
+        <worksTelekinetically>true</worksTelekinetically>
+        <default>-1</default>
+    </inventoryaction>
+    <inventoryaction Name="TelekineticMoveOne">
+        <display>telekinetically move one</display>
+        <key>M</key>
+        <fireOnActor>true</fireOnActor>
+        <worksTelekinetically>true</worksTelekinetically>
+        <default>-1</default>
+    </inventoryaction>
+</inventoryactions>

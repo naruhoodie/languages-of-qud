@@ -21,7 +21,11 @@
     <smearedName>{{G|acid-covered}}</smearedName>
     <stainedName>{{G|acid}}</stainedName>
     <preparedCookingIngredient>acidMinor</preparedCookingIngredient>
-
+    <tag Name="FungalCureIngredient" />
+    <soupSludgeProperties>
+      <pseudopod>Acidic Pseudopod</pseudopod>
+      <stat Name="AcidResistance">100</stat>
+    </soupSludgeProperties>
     <part Name="AcidNavigation" />
     <part Name="AcidEating">
       <damageMessage>from {{G|acid}}!</damageMessage>
@@ -80,6 +84,12 @@
     <smearedName>{{K|tarred}}</smearedName>
     <stainedName>{{K|tar}}</stainedName>
     <preparedCookingIngredient>stabilityMinor</preparedCookingIngredient>
+    <soupSludgeProperties>
+      <pseudopod>Tarry Pseudopod</pseudopod>
+    </soupSludgeProperties>
+    <tag Name="FungalCureIngredient" />
+    <tag Name="GlotrotCureIngredient" />
+    <tag Name="IronshankCureIngredient" />
     <part Name="MessageOnDrink">
       <message>{{K|It burns!}}</message>
     </part>
@@ -133,6 +143,9 @@
     <smearedName>{{g|algae-covered}}</smearedName>
     <stainedName>{{g|algae}}</stainedName>
     <preparedCookingIngredient>plantMinor</preparedCookingIngredient>
+    <soupSludgeProperties>
+      <pseudopod>Algal Pseudopod</pseudopod>
+    </soupSludgeProperties>
     <part Name="Render">
       <baseColorText>&amp;g^C</baseColorText>
       <baseColorTile>&amp;g</baseColorTile>
@@ -172,6 +185,13 @@
     <waterRitualName>blood</waterRitualName>
     <adjective>{{r|bloody}}</adjective>
     <stainElement Name="might" />
+    <soupSludgeProperties>
+      <pseudopod>Bloody Pseudopod</pseudopod>
+    </soupSludgeProperties>
+    <tag Name="FungalCureIngredient" />
+    <tag Name="GlotrotCureIngredient" />
+    <tag Name="IronshankCureIngredient" />
+    <tag Name="Desecrates" />
     <part Name="MessageOnDrink" Message="It has a metallic taste." />
     <part Name="Render">
       <baseColorText>&amp;r^k</baseColorText>
@@ -209,6 +229,9 @@
     <stainedName>{{brainbrine|brain-brine}}</stainedName>
     <stainElement Name="scholarship" />
     <valuePerDram>1233</valuePerDram>
+    <soupSludgeProperties>
+      <pseudopod>Nervous Pseudopod</pseudopod>
+    </soupSludgeProperties>
     <part Name="BrainBrineOnDrink" />
     <part Name="Render">
       <baseColorText>&amp;g^W</baseColorText>
@@ -248,6 +271,14 @@
     <smearedName>{{cider|fragrant}}</smearedName>
     <stainedName>{{cider|cider}}</stainedName>
     <preparedCookingIngredient>quicknessMinor</preparedCookingIngredient>
+    <soupSludgeProperties>
+      <pseudopod>Spiced Pseudopod</pseudopod>
+    </soupSludgeProperties>
+    <tag Name="FungalCureIngredient" />
+    <tag Name="GlotrotCureIngredient" />
+    <tag Name="GlotrotCureBaseIngredient" />
+    <tag Name="MonochromeCureIngredient" />
+    <tag Name="PlantBased" />
     <part Name="SnackOnDrink">
       <dehydrationFactor>0</dehydrationFactor>
     </part>
@@ -293,6 +324,10 @@
     <waterRitualName>draught</waterRitualName>
     <stainElement Name="might" />
     <stainElement Name="time" />
+    <soupSludgeProperties> <!-- the "ReactWith" filter used to never allow this, but it did define properties to give when reacting with draught -->
+      <pseudopod>Homogenized Pseudopod</pseudopod>
+      <part Name="CloneOnHit" />
+    </soupSludgeProperties>
     <part Name="CloningBehaviors" />
     <part Name="Render">
       <baseColorBackground>^M</baseColorBackground>
@@ -333,6 +368,13 @@
     <stainedName>{{C|convalessence}}</stainedName>
     <preparedCookingIngredient>coldMinor,regenLowtierMinor</preparedCookingIngredient>
     <stainElement Name="ice" />
+    <soupSludgeProperties>
+      <pseudopod>Luminous Pseudopod2</pseudopod>
+      <stat Name="ColdResistance" Value="100" />
+      <part Name="LightSource" Radius="6" />
+    </soupSludgeProperties>
+    <tag Name="FungalCureIngredient" />
+    <tag Name="HealingPool" />
     <part Name="Glows" BrighterWithVolume="true" LightLevel="1" />
     <part Name="HealingLocation" />
     <freezeObject Name="CryoGas" Threshold="1" Verb="sublimate" />
@@ -376,6 +418,10 @@
     <displayName>{{Y|gel}}</displayName>
     <adjective>{{Y|unctuous}}</adjective>
     <waterRitualName>gel</waterRitualName>
+    <soupSludgeProperties>
+      <pseudopod>Unctuous Pseudopod</pseudopod>
+      <part Name="DisarmOnHit" Chance="100" />
+    </soupSludgeProperties>
     <part Name="MessageOnDrink" Message="It's very greasy." />
     <smearedAdjective>{{Y|unctuous}}</smearedAdjective>
     <smearedName>{{Y|unctuous}}</smearedName>
@@ -421,6 +467,10 @@
     <smearedName>{{G|gooey}}</smearedName>
     <stainedName>{{G|goo}}</stainedName>
     <preparedCookingIngredient>selfPoison</preparedCookingIngredient>
+    <soupSludgeProperties>
+      <pseudopod>Gooey Pseudopod2</pseudopod>
+    </soupSludgeProperties>
+    <tag Name="Waste" />
     <part Name="MessageOnDrink" Message="It's awful!" />
     <part Name="PoisonOnDrink" Message="You feel poison course through your veins!" />
     <part Name="PoisonOnGoingProne" />
@@ -473,6 +523,13 @@
     <stainedName>{{w|honey}}</stainedName>
     <preparedCookingIngredient>medicinalMinor</preparedCookingIngredient>
     <valuePerDram>2</valuePerDram>
+    <soupSludgeProperties>
+      <pseudopod>Honeyed Pseudopod</pseudopod>
+    </soupSludgeProperties>
+    <tag Name="FungalCureIngredient" />
+    <tag Name="GlotrotCureIngredient" />
+    <tag Name="GlotrotCureBaseIngredient" />
+    <tag Name="IronshankCureIngredient" />
     <part Name="SnackOnDrink">
       <dehydrationFactor>0</dehydrationFactor>
       <message>Delicious!</message>
@@ -525,6 +582,11 @@
     <stainedName>{{K|ink}}</stainedName>
     <valuePerDram>1.5</valuePerDram>
     <stainElement Name="scholarship" />
+    <soupSludgeProperties>
+      <pseudopod>Inky Pseudopod</pseudopod>
+      <part Name="DisarmOnHit" Chance="100" />
+    </soupSludgeProperties>
+    <tag Name="MonochromeCureIngredient" />
     <part Name="MessageOnDrink" Message="It's very inky." />
     <part Name="RenderSmearColorBlips" Color="&amp;K" />
     <part Name="Render">
@@ -574,6 +636,12 @@
 
     <colors>RrW</colors>
     <stainElement Name="might" />
+    <soupSludgeProperties>
+      <pseudopod>Magmatic Pseudopod</pseudopod>
+      <part Name="LavaSludge" />
+      <part Name="Physics" Temperature="1000" />
+      <stat Name="HeatResistance" Value="100" />
+    </soupSludgeProperties>
 
     <part Name="AchievementOnDrink">
       <achievement>DRINK_LAVA</achievement>
@@ -645,6 +713,9 @@
     <stainedName>{{neutronic|flux}}</stainedName>
     <valuePerDram>1000</valuePerDram>
     <preparedCookingIngredient>density</preparedCookingIngredient>
+    <soupSludgeProperties>
+      <pseudopod>Neutronic Pseudopod</pseudopod>
+    </soupSludgeProperties>
     <part Name="Render">
       <baseColorBackground>^Y</baseColorBackground>
       <baseColorText>&amp;Y^y</baseColorText>
@@ -694,6 +765,13 @@
     <smearedName>{{K|oily}}</smearedName>
     <stainedName>{{K|oil}}</stainedName>
     <valuePerDram>3</valuePerDram>
+    <soupSludgeProperties>
+      <pseudopod>Oily Pseudopod</pseudopod>
+      <part Name="DisarmOnHit" Chance="100" />
+    </soupSludgeProperties>
+    <tag Name="FungalCureIngredient" />
+    <tag Name="GlotrotCureIngredient" />
+    <tag Name="IronshankCureIngredient" />
     <part Name="MessageOnDrink" Message="{{K|Disgusting!}}" />
     <part Name="Render">
       <baseColorBackground>^K</baseColorBackground>
@@ -737,6 +815,10 @@
     <smearedName>{{K|oozing}}</smearedName>
     <stainedName>{{K|ooze}}</stainedName>
     <preparedCookingIngredient>selfGlotrot</preparedCookingIngredient>
+    <soupSludgeProperties>
+      <pseudopod>Oozing Pseudopod2</pseudopod>
+    </soupSludgeProperties>
+    <tag Name="Waste" />
     <part Name="MessageOnDrink" Message="It's repulsive!" Priority="10" />
     <part Name="DiseaseOnDrink" Message="You feel sick!" />
     <part Name="DiseaseOnGoingProne" Message="Putrid ooze splashes into your mouth. You gag at the awful taste." />
@@ -774,6 +856,7 @@
     <stainedName>{{c|soup}}</stainedName>
     <valuePerDram>4</valuePerDram>
     <stainElement Name="chance" />
+    <tag Name="FungalCureIngredient" />
     <part Name="RenderSmearColorBlips" Color="&amp;c" />
     <part Name="Render">
       <baseColorBackground>^c</baseColorBackground>
@@ -813,6 +896,11 @@
     <smearedAdjective>{{putrid|putrid}}</smearedAdjective>
     <smearedName>{{putrid|putrid}}</smearedName>
     <stainedName>{{putrid|putrescence}}</stainedName>
+    <soupSludgeProperties>
+      <pseudopod>Putrid Pseudopod</pseudopod>
+    </soupSludgeProperties>
+    <tag Name="FungalCureIngredient" />
+    <tag Name="Desecrates" />
     <part Name="VomitOnDrink" Message="It's disgusting!" />
     <part Name="RenderSmearColorBlips" Color="&amp;K" />
     <part Name="Render">
@@ -845,6 +933,11 @@
     <freezeObject Name="Halite" Threshold="500" Verb="solidify" />
     <displayName>{{Y|salt}}</displayName>
     <adjective>{{Y|salty}}</adjective>
+    <soupSludgeProperties>
+      <pseudopod>Salty Pseudopod</pseudopod>
+    </soupSludgeProperties>
+    <tag Name="GlotrotCureIngredient" />
+    <tag Name="MonochromeCureIngredient" />
     <part Name="AltAdjectiveWhenPurityBelow" Purity="400" Alt="{{w|brackish}}" />
     <waterRitualName>salt</waterRitualName>
     <smearedAdjective>{{Y|salty}}</smearedAdjective>
@@ -889,6 +982,14 @@
     <smearedName>{{W|sappy}}</smearedName>
     <stainedName>{{W|sap}}</stainedName>
     <valuePerDram>2</valuePerDram>
+    <soupSludgeProperties>
+      <pseudopod>Sugary Pseudopod</pseudopod>
+    </soupSludgeProperties>
+    <tag Name="FungalCureIngredient" />
+    <tag Name="GlotrotCureIngredient" />
+    <tag Name="GlotrotCureBaseIngredient" />
+    <tag Name="IronshankCureIngredient" />
+    <tag Name="PlantBased" />
     <part Name="Render">
       <baseColorBackground>^W</baseColorBackground>
       <baseColorText>&amp;W^Y</baseColorText>
@@ -937,6 +1038,11 @@
     <stainedName>{{g|slime}}</stainedName>
     <preparedCookingIngredient>slimeSpitting</preparedCookingIngredient>
     <valuePerDram>0.1</valuePerDram>
+    <soupSludgeProperties>
+      <pseudopod>Slimy Pseudopod</pseudopod>
+      <part Name="DisarmOnHit" Chance="100" />
+    </soupSludgeProperties>
+    <tag Name="FungalCureIngredient" />
     <part Name="RenderSmearColorBlips" Color="&amp;g" />
     <part Name="Render">
       <baseColorBackground>^g</baseColorBackground>
@@ -977,6 +1083,10 @@
     <smearedName>{{w|sludgy}}</smearedName>
     <stainedName>{{w|sludge}}</stainedName>
     <preparedCookingIngredient>selfPoison</preparedCookingIngredient>
+    <soupSludgeProperties>
+      <pseudopod>Sludgy Pseudopod2</pseudopod>
+    </soupSludgeProperties>
+    <tag Name="Waste" />
     <part Name="MessageOnDrink" Priority="10" Message="It's horrifying!" />
     <part Name="PoisonOnDrink" Message="You feel sick!" />
     <part Name="RustOnGoingProne" />
@@ -1023,6 +1133,11 @@
     <stainedName>{{sunslag|sunslag}}</stainedName>
     <stainElement Name="stars" />
     <valuePerDram>1000</valuePerDram>
+    <soupSludgeProperties>
+      <pseudopod>Radiant Pseudopod</pseudopod>
+      <stat Name="Speed" Value="30" /> <!-- 20 more than the base 10-->
+      <part Name="LightSource" Radius="6" />
+    </soupSludgeProperties>
     <part Name="RenderSmearColorBlips" Color="&amp;Y" />
     <part Name="Render">
       <baseColorBackground>^W</baseColorBackground>
@@ -1063,6 +1178,10 @@
     <slipperyMessage>{{C|=subject.Does:slip= on the ice!}}</slipperyMessage>
     <slipperyParticle>&amp;C→</slipperyParticle>
     <displayName>{{B|water}}</displayName>
+    <soupSludgeProperties>
+      <pseudopod>Watery Pseudopod</pseudopod>
+    </soupSludgeProperties>
+    <tag Name="GlotrotCureBaseIngredient" />
     <part Name="AltNameWhenPure">
       <alt>{{B|fresh water}}</alt>
     </part>
@@ -1135,6 +1254,9 @@
     <smearedName>{{Y|waxy}}</smearedName>
     <stainedName>{{Y|wax}}</stainedName>
     <valuePerDram>0</valuePerDram>
+    <soupSludgeProperties>
+      <pseudopod>Waxen Pseudopod</pseudopod>
+    </soupSludgeProperties>
     <part Name="TemperatureChangeOnDrink" Temperature="100" Message="It's hot and disgusting." />
     <part Name="RenderSmearColorBlips" Color="&amp;y" />
     <part Name="Render">
@@ -1175,6 +1297,13 @@
     <smearedName>{{m|lush}}</smearedName>
     <stainedName>{{m|wine}}</stainedName>
     <valuePerDram>4</valuePerDram>
+    <soupSludgeProperties>
+      <pseudopod>Lush Pseudopod</pseudopod>
+    </soupSludgeProperties>
+    <tag Name="FungalCureIngredient" />
+    <tag Name="GlotrotCureIngredient" />
+    <tag Name="GlotrotCureBaseIngredient" />
+    <tag Name="IronshankCureIngredient" />
     <part Name="HydrateOnDrink" Message="You flush with the warming draught!" />
     <part Name="DrankWine" />
     <part Name="RenderSmearColorBlips" Color="&amp;m" />
@@ -1248,6 +1377,9 @@
       <product Name="wax">1</product>
       <product Name="wine">1</product>
     </conversionProducts>
+    <soupSludgeProperties>
+      <pseudopod>Entropic Pseudopod</pseudopod>
+    </soupSludgeProperties>
     <parts>
       <part Name="FixedNavigation" Weight="95" />
       <part Name="Glows">

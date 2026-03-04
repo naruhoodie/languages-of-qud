@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<objects>
+<objects Encoding="utf-8">
 
   <!--    
     1 Unidentified item name templates
@@ -225,6 +225,7 @@
   <object Name="IngredientMapping" Inherits="DataBucket" />
 
   <object Name="ProceduralCookingIngredient_artifacts" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="artifacts" />
     <tag Name="Units" Value="CookingDomainArtifact_UnitPsychometry" />
     <tag Name="Triggers" Value="CookingDomainArtifact_OnIdentify" />
     <tag Name="Actions" Value="CookingDomainArtifact_IdentifyAllInZone_ProceduralCookingTriggeredAction" />
@@ -234,6 +235,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_thirst" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="thirst" />
     <tag Name="Units" Value="ProceduralCookingEffectUnit_LessThirst" />
     <tag Name="Triggers" Value="OnDrinkWaterProceduralCookingTrigger" />
     <tag Name="Actions" Value="NoThirst_ProceduralCookingTriggeredAction" />
@@ -243,6 +245,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_secrets" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="secrets" />
     <tag Name="Description" Value="secret-based" />
     <tag Name="Units" Value="CookingDomainSecrets_RevealSecrets" />
     <tag Name="RandomWeight" Value="10" />
@@ -250,6 +253,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_darkness" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="darkness" />
     <tag Name="Units" Value="CookingDomainDarkness_UnitDV" />
     <tag Name="Description" Value="darkness-based" />
     <tag Name="RandomWeight" Value="10" />
@@ -257,6 +261,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_armor" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="armor" />
     <tag Name="Units" Value="CookingDomainArmor_UnitAV" />
     <tag Name="Triggers" Value="CookingDomainArmor_OnPenetration" />
     <tag Name="Actions" Value="CookingDomainArmor_LargeAVBuff_ProceduralCookingTriggeredAction" />
@@ -266,6 +271,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_plantMinor" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="plantMinor" />
     <tag Name="Units" Value="CookingDomainPlant_UnitPlantReputationLowTier,CookingDomainPlant_UnitBurgeoningLowTier" />
     <tag Name="Description" Value="simple plant-based" />
     <tag Name="RandomWeight" Value="10" />
@@ -273,6 +279,7 @@
   </object>
   
   <object Name="ProceduralCookingIngredient_plantHighTier" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="plantHighTier" />
     <tag Name="Units" Value="CookingDomainPlant_UnitPlantReputationHighTier,CookingDomainPlant_UnitBurgeoningHighTier" />
     <tag Name="Triggers" Value="CookingDomainPlant_OnDamageByPlant" />
     <tag Name="Actions" Value="CookingDomainPlant_BurgeoningHighTier_ProceduralCookingTriggeredAction" />
@@ -282,6 +289,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_electric" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="electric" />
     <tag Name="Units" Value="CookingDomainElectric_ElectricalGenerationUnit,CookingDomainElectric_EMPUnit,CookingDomainElectric_ResistUnit" />
     <tag Name="Triggers" Value="CookingDomainElectric_OnDealingElectricDamage" />
     <tag Name="Actions" Value="CookingDomainElectric_EMP_ProceduralCookingTriggeredAction,CookingDomainElectric_Discharge_ProceduralCookingTriggeredAction,CookingDomainElectric_SmallElectricResist_ProceduralCookingTriggeredAction,CookingDomainElectric_LargeElectricResist_ProceduralCookingTriggeredAction" />
@@ -291,6 +299,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_cold" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="cold" />
     <tag Name="Units" Value="CookingDomainCold_UnitFreezingHands,CookingDomainCold_UnitCryokinesis,CookingDomainCold_UnitBreatheIce,CookingDomainCold_UnitResist" />
     <tag Name="Triggers" Value="CookingDomainCold_OnSlowedByCold,CookingDomainCold_OnDealingColdDamage" />
     <tag Name="Actions" Value="CookingDomainCold_FreezingHandsCharge_ProceduralCookingTriggeredAction,CookingDomainCold_CryokinesisCharge_ProceduralCookingTriggeredAction,CookingDomainCold_ColdResist_ProceduralCookingTriggeredAction,CookingDomainCold_LargeColdResist_ProceduralCookingTriggeredAction" />
@@ -300,6 +309,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_heat" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="heat" />
     <tag Name="Units" Value="CookingDomainHeat_UnitFlamingHands,CookingDomainHeat_UnitPyrokinesis,CookingDomainHeat_UnitBreatheFire,CookingDomainHeat_UnitResist" />
     <tag Name="Triggers" Value="CookingDomainHeat_OnEnflamed,CookingDomainHeat_OnDealingHeatDamage" />
     <tag Name="Actions" Value="CookingDomainHeat_FlamingHandsCharge_ProceduralCookingTriggeredAction,CookingDomainHeat_PyrokinesisCharge_ProceduralCookingTriggeredAction,CookingDomainHeat_HeatResist_ProceduralCookingTriggeredAction,CookingDomainHeat_LargeHeatResist_ProceduralCookingTriggeredAction" />
@@ -309,6 +319,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_love" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="love" />
     <tag Name="Units" Value="CookingDomainLove_UnitEgo,CookingDomainLove_UnitBeguiling" />
     <tag Name="Triggers" Value="CookingDomainLove_OnGainFollower" />
     <tag Name="Actions" Value="CookingDomainLove_BeguilingCharge_ProceduralCookingTriggeredAction" />
@@ -318,6 +329,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_teleport" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="teleport" />
     <tag Name="Units" Value="CookingDomainTeleport_UnitBlink,CookingDomainTeleport_UnitTeleportOther" />
     <tag Name="Triggers" Value="CookingDomainTeleport_OnTeleport" />
     <tag Name="Actions" Value="CookingDomainTeleport_Teleport_ProceduralCookingTriggeredAction,CookingDomainTeleport_MassTeleportOther_ProceduralCookingTriggeredAction" />
@@ -327,6 +339,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_regenLowtier" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="regenLowtier" />
     <tag Name="Units" Value="CookingDomainRegenLowtier_BleedResistUnit,CookingDomainRegenLowtier_RegenerationUnit" />
     <tag Name="Triggers" Value="CookingDomainRegenLowtier_OnDamaged,CookingDomainRegenLowtier_OnSalve" />
     <tag Name="Actions" Value="CookingDomainLowtierRegen_HealToFull_ProceduralCookingTriggeredAction,CookingDomainLowtierRegen_StopBleeding_ProceduralCookingTriggeredAction,CookingDomainLowtierRegen_RemoveDebuff_ProceduralCookingTriggeredAction" />
@@ -336,6 +349,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_regenHightier" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="regenHightier" />
     <tag Name="Units" Value="CookingDomainRegenHightier_RegenerationUnit" />
     <tag Name="Triggers" Value="CookingDomainRegenHightier_OnDamaged,CookingDomainRegenLowtier_OnSalve" />
     <tag Name="Actions" Value="CookingDomainHightierRegen_Heal40to50_ProceduralCookingTriggeredAction,CookingDomainHightierRegen_RemoveDebuff_ProceduralCookingTriggeredAction" />
@@ -345,6 +359,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_medicinal" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="medicinal" />
     <tag Name="Units" Value="CookingDomainMedicinal_IllResistUnit,CookingDomainMedicinal_DiseaseResistUnit" />
     <tag Name="Triggers" Value="CookingDomainMedicinal_OnEatYuckwheat,CookingDomainMedicinal_OnDrinkHoney" />
     <tag Name="Actions" Value="CookingDomainMedicinal_RemoveIll_ProceduralCookingTriggeredAction,CookingDomainMedicinal_RemoveDiseaseOnset_ProceduralCookingTriggeredAction,CookingDomainMedicinal_DiseaseImmunity_ProceduralCookingTriggeredAction" />
@@ -354,6 +369,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_acid" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="acid" />
     <tag Name="Units" Value="CookingDomainAcid_UnitResist,CookingDomainAcid_UnitCorrosiveGas,CookingDomainAcid_UnitBreatheCorrosiveGas" />
     <tag Name="Description" Value="acid-based" />
     <tag Name="RandomWeight" Value="10" />
@@ -361,6 +377,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_fungus" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="fungus" />
     <tag Name="Units" Value="CookingDomainFungus_FungusReputationUnit,CookingDomainFungus_FungusResistUnit" />
     <tag Name="Triggers" Value="CookingDomainFungus_OnItchy,CookingDomainFungus_OnEatFungus" />
     <tag Name="Actions" Value="CookingDomainFungus_SporeImmunity_ProceduralCookingTriggeredAction" />
@@ -370,6 +387,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_phase" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="phase" />
     <tag Name="Units" Value="CookingDomainPhase_UnitPhasing,CookingDomainPhase_UnitPhaseOnDamage,CookingDomainPhase_UnitDoublePhaseDuration" />
     <tag Name="Triggers" Value="CookingDomainPhase_OnPhaseIn,CookingDomainPhase_OnPhaseOut" />
     <tag Name="Actions" Value="CookingDomainPhase_Phase_ProceduralCookingTriggeredAction,CookingDomainPhase_NoPhase_ProceduralCookingTriggeredAction" />
@@ -379,6 +397,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_HP" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="HP" />
     <tag Name="Units" Value="CookingDomainHP_UnitHP" />
     <tag Name="Triggers" Value="CookingDomainHP_OnDamaged,CookingDomainHP_OnLowHealth" />
     <tag Name="Actions" Value="CookingDomainHP_HealToFull_ProceduralCookingTriggeredAction,CookingDomainHP_IncreaseHP_ProceduralCookingTriggeredAction" />
@@ -388,6 +407,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_reflectHighTier" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="reflectHighTier" />
     <tag Name="Units" Value="CookingDomainReflect_UnitReflectDamageHighTier" />
     <tag Name="Triggers" Value="CookingDomainReflect_OnReflectedDamageHighTier,CookingDomainReflect_OnDamagedHighTier" />
     <tag Name="Actions" Value="CookingDomainReflect_Reflect100HighTier_ProceduralCookingTriggeredAction" />
@@ -397,6 +417,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_reflect" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="reflect" />
     <tag Name="Units" Value="CookingDomainReflect_UnitQuills,CookingDomainReflect_UnitReflectDamage" />
     <tag Name="Triggers" Value="CookingDomainReflect_OnReflectedDamage,CookingDomainReflect_OnDamaged" />
     <tag Name="Actions" Value="CookingDomainReflect_QuillBurst_ProceduralCookingTriggeredAction,CookingDomainReflect_Reflect100_ProceduralCookingTriggeredAction" />
@@ -406,6 +427,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_willpower" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="willpower" />
     <tag Name="Units" Value="CookingDomainWillpower_UnitWillpower" />
     <tag Name="Description" Value="simple Willpower-based" />
     <tag Name="RandomWeight" Value="10" />
@@ -413,6 +435,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_strength" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="strength" />
     <tag Name="Units" Value="CookingDomainStrength_UnitStrength,CookingDomainFear_UnitIntimidate" />
     <tag Name="Triggers" Value="CookingDomainHP_OnDamagedMidTier,CookingDomainHP_OnLowHealthMidTier" />
     <tag Name="Actions" Value="CookingDomainStrength_LargeStrengthBuff_ProceduralCookingTriggeredAction,CookingDomainStrength_DismemberOrSlam_ProceduralCookingTriggeredAction" />
@@ -422,6 +445,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_burrowing" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="burrowing" />
     <tag Name="Units" Value="CookingDomainBurrowing_UnitBurrowingClaws" />
     <tag Name="Description" Value="burrowing-based" />
     <tag Name="RandomWeight" Value="10" />
@@ -429,6 +453,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_agility" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="agility" />
     <tag Name="Units" Value="CookingDomainAgility_UnitAgility" />
     <tag Name="Triggers" Value="CookingDomainAgility_OnPerformCriticalHit" />
     <tag Name="Actions" Value="CookingDomainAgility_LargeAgilityBuff_ProceduralCookingTriggeredAction,CookingDomainAgility_Shank_ProceduralCookingTriggeredAction" />
@@ -438,6 +463,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_fear" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="fear" />
     <tag Name="Units" Value="CookingDomainFear_UnitBonusMA,CookingDomainFear_UnitIntimidate" />
     <tag Name="Actions" Value="CookingDomainFear_Intimidate_ProceduralCookingTriggeredAction,CookingDomainFear_FearImmunity_ProceduralCookingTriggeredAction" />
     <tag Name="Triggers" Value="CookingDomainFear_OnFeared,CookingDomainFear_OnEatLah" />
@@ -447,12 +473,14 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_fireBreath" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="fireBreath" />
     <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheFire5" />
     <tag Name="Description" Value="fire-breathing" />
     <tag Name="RandomWeight" Value="2" />
 		<tag Name="RandomHighTierWeight" Value="0" />
   </object>
   <object Name="ProceduralCookingIngredient_elderFireBreath" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="elderFireBreath" />
     <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheFire10" />
     <tag Name="Description" Value="powerful fire-breathing" />
     <tag Name="RandomWeight" Value="1" />
@@ -460,12 +488,14 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_iceBreath" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="iceBreath" />
     <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheIce5" />
     <tag Name="Description" Value="ice-breathing" />
     <tag Name="RandomWeight" Value="2" />
 		<tag Name="RandomHighTierWeight" Value="0" />
   </object>
   <object Name="ProceduralCookingIngredient_elderIceBreath" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="elderIceBreath" />
     <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheIce10" />
     <tag Name="Description" Value="powerful ice-breathing" />
     <tag Name="RandomWeight" Value="1" />
@@ -473,12 +503,14 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_corrosiveGasBreath" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="corrosiveGasBreath" />
     <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheCorrosiveGas5" />
     <tag Name="Description" Value="corrosive gas-breathing" />
     <tag Name="RandomWeight" Value="2" />
 		<tag Name="RandomHighTierWeight" Value="0" />
   </object>
   <object Name="ProceduralCookingIngredient_elderCorrosiveGasBreath" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="elderCorrosiveGasBreath" />
     <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheCorrosiveGas10" />
     <tag Name="Description" Value="powerful corrosive gas-breathing" />
     <tag Name="RandomWeight" Value="1" />
@@ -486,12 +518,14 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_sleepGasBreath" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="sleepGasBreath" />
     <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheSleepGas5" />
     <tag Name="Description" Value="sleep gas-breathing" />
     <tag Name="RandomWeight" Value="2" />
 		<tag Name="RandomHighTierWeight" Value="0" />
   </object>
   <object Name="ProceduralCookingIngredient_elderSleepGasBreath" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="elderSleepGasBreath" />
     <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheSleepGas10" />
     <tag Name="Description" Value="powerful sleep gas-breathing" />
     <tag Name="RandomWeight" Value="1" />
@@ -499,12 +533,14 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_normalityGasBreath" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="normalityGasBreath" />
     <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheNormalityGas5" />
     <tag Name="Description" Value="normality gas-breathing" />
     <tag Name="RandomWeight" Value="2" />
 		<tag Name="RandomHighTierWeight" Value="0" />
   </object>
   <object Name="ProceduralCookingIngredient_elderNormalityGasBreath" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="elderNormalityGasBreath" />
     <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheNormalityGas10" />
     <tag Name="Description" Value="powerful normality gas-breathing" />
     <tag Name="RandomWeight" Value="1" />
@@ -512,12 +548,14 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_poisonGasBreath" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="poisonGasBreath" />
     <tag Name="Units" Value="CookingDomainBreathers_UnitBreathePoisonGas5" />
     <tag Name="Description" Value="poison gas-breathing" />
     <tag Name="RandomWeight" Value="2" />
 		<tag Name="RandomHighTierWeight" Value="0" />
   </object>
   <object Name="ProceduralCookingIngredient_elderPoisonGasBreath" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="elderPoisonGasBreath" />
     <tag Name="Units" Value="CookingDomainBreathers_UnitBreathePoisonGas10" />
     <tag Name="Description" Value="powerful poison gas-breathing" />
     <tag Name="RandomWeight" Value="1" />
@@ -525,12 +563,14 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_stunGasBreath" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="stunGasBreath" />
     <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheStunGas5" />
     <tag Name="Description" Value="stun gas-breathing" />
     <tag Name="RandomWeight" Value="2" />
 		<tag Name="RandomHighTierWeight" Value="0" />
   </object>
   <object Name="ProceduralCookingIngredient_elderStunGasBreath" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="elderStunGasBreath" />
     <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheStunGas10" />
     <tag Name="Description" Value="powerful stun gas-breathing" />
     <tag Name="RandomWeight" Value="1" />
@@ -538,12 +578,14 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_confusionGasBreath" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="confusionGasBreath" />
     <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheConfusionGas5" />
     <tag Name="Description" Value="confusion gas-breathing" />
     <tag Name="RandomWeight" Value="2" />
 		<tag Name="RandomHighTierWeight" Value="0" />
   </object>
   <object Name="ProceduralCookingIngredient_elderConfusionGasBreath" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="elderConfusionGasBreath" />
     <tag Name="Units" Value="CookingDomainBreathers_UnitBreatheConfusionGas10" />
     <tag Name="Description" Value="powerful confusion gas-breathing" />
     <tag Name="RandomWeight" Value="1" />
@@ -551,6 +593,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_starch" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="starch" />
     <tag Name="Units" Value="CookingDomainPhotosyntheticSkin_UnitQuickness" />
     <tag Name="Description" Value="special Quickness-based" />
     <tag Name="RandomWeight" Value="4" />
@@ -558,6 +601,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_lignin" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="lignin" />
     <tag Name="Units" Value="CookingDomainPhotosyntheticSkin_RegenerationUnit" />
     <tag Name="Description" Value="special regeneration-based" />
     <tag Name="RandomWeight" Value="4" />
@@ -565,6 +609,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_quicknessMinor" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="quicknessMinor" />
     <tag Name="Units" Value="CookingDomainQuickness_UnitQuickness" />
     <tag Name="Description" Value="simple Quickness-based" />
     <tag Name="RandomWeight" Value="0" />
@@ -572,6 +617,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_density" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="density" />
     <tag Name="Units" Value="CookingDomainDensity_UnitPermanentAV" />
     <tag Name="Description" Value="volatile density-based" />
     <tag Name="RandomWeight" Value="0" />
@@ -579,6 +625,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_dissociation" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="dissociation" />
     <tag Name="Units" Value="CookingDomainDissociation_UnitOtherBodyBonus" />
     <tag Name="Description" Value="dissociation-based" />
     <tag Name="RandomWeight" Value="0" />
@@ -586,6 +633,7 @@
   </object>
   
   <object Name="ProceduralCookingIngredient_attributes" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="attributes" />
     <tag Name="Units" Value="CookingDomainAttributes_UnitPermanentAllStats_25Percent" />
     <tag Name="Description" Value="uncertain attribute-based" />
     <tag Name="RandomWeight" Value="5" />
@@ -593,6 +641,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_slimeSpitting" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="slimeSpitting" />
     <tag Name="Units" Value="CookingDomainLiquidSpitting_UnitSlimeGlands" />
     <tag Name="Description" Value="slime-spitting" />
     <tag Name="RandomWeight" Value="10" />
@@ -600,6 +649,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_regenLowtierMinor" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="regenLowtierMinor" />
     <tag Name="Units" Value="CookingDomainRegenLowtier_BleedResistUnit,CookingDomainRegenLowtier_RegenerationUnit" />
     <tag Name="Description" Value="simple regeneration and healing-based" />
     <tag Name="RandomWeight" Value="0" />
@@ -607,6 +657,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_coldMinor" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="coldMinor" />
     <tag Name="Units" Value="CookingDomainCold_UnitFreezingHands,CookingDomainCold_UnitBreatheIce,CookingDomainCold_UnitCryokinesis,CookingDomainCold_UnitResist" />
     <tag Name="Description" Value="simple cold-based" />
     <tag Name="RandomWeight" Value="0" />
@@ -614,6 +665,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_heatMinor" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="heatMinor" />
     <tag Name="Units" Value="CookingDomainHeat_UnitFlamingHands,CookingDomainHeat_UnitBreatheFire,CookingDomainHeat_UnitPyrokinesis,CookingDomainHeat_UnitResist" />
     <tag Name="Description" Value="simple heat and fire-based" />
     <tag Name="RandomWeight" Value="0" />
@@ -621,6 +673,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_medicinalMinor" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="medicinalMinor" />
     <tag Name="Units" Value="CookingDomainMedicinal_IllResistUnit,CookingDomainMedicinal_DiseaseResistUnit" />
     <tag Name="Description" Value="simple disease prevention-based" />
     <tag Name="RandomWeight" Value="0" />
@@ -628,6 +681,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_acidMinor" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="acidMinor" />
     <tag Name="Units" Value="CookingDomainAcid_UnitResist,CookingDomainAcid_UnitCorrosiveGas,CookingDomainAcid_UnitBreatheCorrosiveGas" />
     <tag Name="Description" Value="simple acid-based" />
     <tag Name="RandomWeight" Value="0" />
@@ -635,6 +689,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_tastyMinor" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="tastyMinor" />
     <tag Name="Units" Value="CookingDomainTaste_UnitDoNothing" />
     <tag Name="Description" Value="simple taste-based" />
     <tag Name="RandomWeight" Value="0" />
@@ -642,6 +697,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_cloningMinor" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="cloningMinor" />
     <tag Name="Units" Value="CookingDomainCloning_UnitMultipleClones" />
     <tag Name="Description" Value="simple cloning" />
     <tag Name="RandomWeight" Value="0" />
@@ -649,6 +705,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_stabilityMinor" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="stabilityMinor" />
     <tag Name="Units" Value="CookingDomainStability_MoveResistUnit" />
     <tag Name="Description" Value="simple stability-based" />
     <tag Name="RandomWeight" Value="0" />
@@ -656,6 +713,7 @@
 	</object>
 
   <object Name="ProceduralCookingIngredient_selfPoison" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="selfPoison" />
     <tag Name="Units" Value="CookingDomainSelfHarm_UnitSelfPoison" />
     <tag Name="Description" Value="self-poisoning" />
     <tag Name="RandomWeight" Value="2" />
@@ -663,6 +721,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_selfGlotrot" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="selfGlotrot" />
     <tag Name="Units" Value="CookingDomainSelfHarm_UnitSelfGlotrot" />
     <tag Name="Description" Value="self-diseasing" />
     <tag Name="RandomWeight" Value="1" />
@@ -670,6 +729,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_rubberLowTier" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="rubberLowTier" />
     <tag Name="Units" Value="CookingDomainRubber_ExtraJump,CookingDomainElectric_ResistUnit,CookingDomainRubber_ReducedFallDamage" />
     <tag Name="Triggers" Value="CookingDomainRubber_OnProne,CookingDomainRubber_OnJump" />
     <tag Name="Actions" Value="CookingDomainRubber_JumpTwice_ProceduralCookingTriggeredAction" />
@@ -679,6 +739,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_rubberHighTier" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="rubberHighTier" />
     <tag Name="Units" Value="CookingDomainElectric_ExtraResistUnit,CookingDomainRubber_Extra2Jumps,CookingDomainRubber_ExtraReducedFallDamage" />
     <tag Name="Triggers" Value="CookingDomainRubber_OnProne,CookingDomainRubber_OnJump" />
     <tag Name="Actions" Value="CookingDomainRubber_JumpThrice_ProceduralCookingTriggeredAction" />
@@ -688,6 +749,7 @@
   </object>
 
   <object Name="ProceduralCookingIngredient_tongue" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="tongue" />
     <tag Name="Units" Value="CookingDomainTongue_UnitStickyTongue" />
     <tag Name="Triggers" Value="CookingDomainTongue_OnStuck" />
     <tag Name="Actions" Value="CookingDomainTongue_ThreeTongues_ProceduralCookingTriggeredAction" />
@@ -704,6 +766,7 @@
 	</object>
 
   <object Name="ProceduralCookingIngredient_random" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="random" />
     <tag Name="Description" Value="random" />
     <tag Name="RandomWeight" Value="0" />
   </object>
@@ -714,6 +777,7 @@
 	</object>
 
   <object Name="ProceduralCookingIngredient_ego" Inherits="IngredientMapping">
+    <tag Name="CookingDomain" Value="ego" />
     <tag Name="Units" Value="CookingDomainEgo_UnitEgoProjection" />
     <tag Name="Description" Value="ego-based" />
     <tag Name="RandomWeight" Value="0" />

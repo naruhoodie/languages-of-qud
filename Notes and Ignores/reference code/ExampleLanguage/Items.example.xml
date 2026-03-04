@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.14
+Caves of Qud - Generated Localizable XML 2.0.212.15
 
-<objects>
+<objects ExcludeFromCorpusGeneration="Key">
 
   <object Name="Key" Load="">
 
@@ -3648,7 +3648,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
     <part Name="Description" Short="▶It hurled through the void impacted in a black rock and slammed, shining and free, on our world. All its rough edges have been polished to shine." />
   </object>
   <object Name="Random Figurine" Load="Merge">
-    <part Name="Description" Short="▶This figurine worked from =material= intricately depicts =creature.a.name|strip=:&#xA;&#xA;=creature.description.short=" />
+    <part Name="Description" Short="▶This figurine worked from =material= intricately depicts =creature.a.name:withTitles|strip=:&#xA;&#xA;=creature.description.short=" />
   </object>
   <object Name="Random Copper Figurine" Load="Merge">
     <part Name="Render" DisplayName="▶{{w|copper}} {{|=creature.name|strip=}} figurine" />

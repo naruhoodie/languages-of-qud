@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.14
+Caves of Qud - Generated Localizable XML 2.0.212.15
 
-<objects>
+<objects ExcludeFromCorpusGeneration="Key">
 
   <object Name="Key" Load="">
 
@@ -25,7 +25,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
     <tag Name="HeroNameTitleDescriptor" Value="▶Cracked,Crackless,Once-Cracked,Painted,Still-Standing,Studded,Sturdy,Twice-Cracked,Unpainted,Unstudded" />
     <tag Name="HeroNameTitleClientele" Value="▶Builders,Cowards,Defenders,Roofs,the Assailed,the Stalwart" />
     <xtagTextFragments Skin="▶texture" PoeticFeatures="▶towering nature,gentle stillness,comforting enclosure" />
-    <tag Name="NamingTag" Value="▶Animated" />
   </object>
   <object Name="BaseMushroomWall" Load="Merge">
     <part Name="Render" DisplayName="▶mushroom flesh" />
@@ -531,7 +530,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.14
   <object Name="BaseMuralWall" Load="Merge">
     <part Name="Description" Short="▶sultan_wall" />
     <tag Name="HeroNameTitleDescriptor" Value="▶Sturdy,Studded,Unstudded,Crackless,Cracked,Once-Cracked,Twice-Cracked,Still-Standing,Painted,Unpainted" />
-    <tag Name="NamingTag" Value="▶Animated" />
   </object>
   <object Name="BaseMuralLeftend" Load="Merge">
     <part Name="Render" DisplayName="▶mural endcap" />

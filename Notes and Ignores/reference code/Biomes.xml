@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<biomes Encoding="utf-8">
+    <biome Name="Fungal">
+        <class>FungalBiome</class>
+        <levelMapper>
+            <class>LinearOctiveLayers</class>
+            <seedString>FungalNoise</seedString>
+            <cutoff>0.72</cutoff>
+        </levelMapper>
+        <defaultVariant>
+            <property Name="AmbientBed" Value="Sounds/Ambiences/amb_biome_mushroom" />
+        </defaultVariant>
+        <variant Name="Weak">
+            <noun>fungus patch</noun>
+            <property Name="ZoneBuilder" Value="FungalBiome1" />
+        </variant>
+        <variant Name="Medium">
+            <noun>fungus grove</noun>
+            <property Name="ZoneBuilder" Value="FungalBiome2" />
+        </variant>
+        <variant Name="Strong">
+            <noun>fungus forest</noun>
+            <property Name="ZoneBuilder" Value="FungalBiome3" />
+        </variant>
+    </biome>
+    <biome Name="Slimy">
+        <class>SlimyBiome</class>
+        <levelMapper>
+            <class>LinearOctiveLayers</class>
+            <seedString>SlimyNoise</seedString>
+            <cutoff>0.66</cutoff>
+        </levelMapper>
+        <variant Name="Weak">
+            <noun>slime patch</noun>
+            <adjective>slimy</adjective>
+        </variant>
+        <variant Name="Medium">
+            <noun>slime field</noun>
+            <adjective>slime-drenched</adjective>
+        </variant>
+        <variant Name="Strong">
+            <noun>slime bog</noun>
+        </variant>
+    </biome>
+    <biome Name="Tarry">
+        <class>TarryBiome</class>
+        <levelMapper>
+            <class>LinearOctiveLayers</class>
+            <seedString>TarryNoise</seedString>
+            <cutoff>0.66</cutoff>
+        </levelMapper>
+        <variant Name="Weak">
+            <noun>tar patch</noun>
+            <adjective>tarry</adjective>
+        </variant>
+        <variant Name="Medium">
+            <noun>tar pools</noun>
+        </variant>
+        <variant Name="Strong">
+            <noun>flaming tar pits</noun>
+        </variant>
+    </biome>
+    <biome Name="Rusty">
+        <class>RustyBiome</class>
+        <levelMapper>
+            <class>LinearOctiveLayers</class>
+            <seedString>RustyNoise</seedString>
+            <cutoff>0.66</cutoff>
+        </levelMapper>
+        <variant Name="Weak">
+            <noun>rust patch</noun>
+            <adjective>rusty</adjective>
+        </variant>
+        <variant Name="Medium">
+            <noun>rust field</noun>
+            <adjective>rust-shrouded</adjective>
+        </variant>
+        <variant Name="Strong">
+            <noun>rust bog</noun>
+        </variant>
+    </biome>
+    <biome Name="Psychic">
+        <class>PsychicBiome</class>
+        <levelMapper Class="PsychicLevelMapper" />
+    </biome>
+</biomes>

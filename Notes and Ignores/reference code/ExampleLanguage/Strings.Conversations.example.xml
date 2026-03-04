@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
 
-Caves of Qud - Generated Localizable XML 2.0.212.14
+Caves of Qud - Generated Localizable XML 2.0.212.15
 
 Conversations strings export.
 
@@ -1080,10 +1080,7 @@ I SHALL IMPART MY BOUNTY OF KNOWLEDGE, AND INSTRUCT THEE IN THE HERMENEUTICS OF 
 
 BUT TOGETHER, WE SHALL SEEK.
   </string>
-  <string Context="Conversation Resheph.EndCovenantMeGemaraAccess3Resigned.EndChoice.Text" ID="&gt;">
-▶&gt;
-  </string>
-  <string Context="Conversation Resheph.EndCovenantMeGemaraAccess3Resigned.EndChoice.Text2" ID="Then I assent. The covenant is drawn.">
+  <string Context="Conversation Resheph.EndCovenantMeGemaraAccess3Resigned.EndChoice.Text" ID="Then I assent. The covenant is drawn.">
 ▶Then I assent. The covenant is drawn.
   </string>
   <string Context="Conversation Resheph.EndCovenantMeGemaraAccess3Resigned.GyreChoice.Text" ID="I must think on this further.">
@@ -9088,8 +9085,8 @@ Perhaps I should have accepted Angohind's lessons after all.
   <string Context="Conversation Neelahind.KithAndKinMotive.EndChoice.Text" ID="I'm still not completely certain. Let me ponder it more.">
 ▶I'm still not completely certain. Let me ponder it more.
   </string>
-  <string Context="Conversation Neelahind.KithAndKinExclusion" ID="I'm afraid that well is poisoned due to your false accusation: =thief.name= isn't the culprit.">
-▶I'm afraid that well is poisoned due to your false accusation: =thief.name= isn't the culprit.
+  <string Context="Conversation Neelahind.KithAndKinExclusion" ID="I'm afraid that well is poisoned due to your false accusation: =thief.name|strip= isn't the culprit.">
+▶I'm afraid that well is poisoned due to your false accusation: =thief.name|strip= isn't the culprit.
   </string>
   <string Context="Conversation Neelahind.KithAndKinExclusion.Clue_BloodyPatchOfFur" ID="Hmm. But the only fur there was from a hindren's pelt, and kendren warriors fight to the death. With no corpse and no other fur, it seems unlikely that a hindren fought an outsider.">
 ▶Hmm. But the only fur there was from a hindren's pelt, and kendren warriors fight to the death. With no corpse and no other fur, it seems unlikely that a hindren fought an outsider.
@@ -9154,13 +9151,13 @@ Perhaps I should have accepted Angohind's lessons after all.
   <string Context="Conversation Neelahind.KithAndKinExclusion.EndChoice.Text" ID="Ah.">
 ▶Ah.
   </string>
-  <string Context="Conversation Neelahind.KithAndKinAccusation.Text" ID="Oh. Yes, this does indicate that some kind of =motive.influence= transpired, and =thief.name= was trying to hide it.&#xA;&#xA;So what you're saying is....">
-▶Oh. Yes, this does indicate that some kind of =motive.influence= transpired, and =thief.name= was trying to hide it.
+  <string Context="Conversation Neelahind.KithAndKinAccusation.Text" ID="Oh. Yes, this does indicate that some kind of =motive.influence= transpired, and =thief.name|strip= was trying to hide it.&#xA;&#xA;So what you're saying is....">
+▶Oh. Yes, this does indicate that some kind of =motive.influence= transpired, and =thief.name|strip= was trying to hide it.
 
 So what you're saying is....
   </string>
-  <string Context="Conversation Neelahind.KithAndKinAccusation.KithAndKinFinaleChoice.Text" ID="That's right. By concealing =all.influence=, it was =thief.name= who stole Kindrish!">
-▶That's right. By concealing =all.influence=, it was =thief.name= who stole Kindrish!
+  <string Context="Conversation Neelahind.KithAndKinAccusation.KithAndKinFinaleChoice.Text" ID="That's right. By concealing =all.influence=, it was =thief.name|strip= who stole Kindrish!">
+▶That's right. By concealing =all.influence=, it was =thief.name|strip= who stole Kindrish!
   </string>
   <string Context="Conversation Neelahind.KithAndKinAccusation.EndChoice.Text" ID="I'm still not completely certain. Let me ponder it more.">
 ▶I'm still not completely certain. Let me ponder it more.
@@ -14203,8 +14200,10 @@ Our emigration party departs for the Freehold in the morning.
 
 Our emigration party departs for the flower fields in the morning.
   </string>
-  <string Context="Conversation Thah.SlynthDecision.10" ID="After some discussion and deliberation, we have come to consensus: the slynth shall become a part of Chavvah, the living city. There are no words for the breadth of futures before us, and we would not know them if they were. Perhaps we will learn to chime.">
+  <string Context="Conversation Thah.SlynthDecision.10" ID="After some discussion and deliberation, we have come to consensus: the slynth shall become a part of Chavvah, the living city. There are no words for the breadth of futures before us, and we would not know them if they were. Perhaps we will learn to chime.&#xA;&#xA;Our emigration party departs for the moon stair in the morning.">
 ▶After some discussion and deliberation, we have come to consensus: the slynth shall become a part of Chavvah, the living city. There are no words for the breadth of futures before us, and we would not know them if they were. Perhaps we will learn to chime.
+
+Our emigration party departs for the moon stair in the morning.
   </string>
   <string Context="Conversation Thah.SlynthDecision.11" ID="After some discussion and deliberation, we have come to consensus: the slynth shall become citizens of =village.name=. We shall learn the practice of =village.activity=, hold =village.sacred= dear and spurn =village.profane=.&#xA;&#xA;Our emigration party departs for =village.name= in the morning.">
 ▶After some discussion and deliberation, we have come to consensus: the slynth shall become citizens of =village.name=. We shall learn the practice of =village.activity=, hold =village.sacred= dear and spurn =village.profane=.
