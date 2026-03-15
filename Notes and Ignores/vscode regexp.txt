@@ -27,8 +27,9 @@ finding {{c|text}}-style color tags that have spaces in the color:
 
 cs finding _S and _T:
 _(S|T)\(
-finding _S and _T without Context:
+finding _S and _T with Context:
 _(S|T)\([ ]*"[^"]+",
+finding _S and _T without Context:
 _(S|T)\([ ]*"[^"]+"[ ]*\)
 
 cs finding ReplaceBuilder .AddObject calls
@@ -36,6 +37,12 @@ cs finding ReplaceBuilder .AddObject calls
 
 cs finding replacers ".An" and ".an" in template strings (edit for others)
 =[a-zA-Z]+\.[Aa]n[=|:]
+
+xml finding files that don't start with <? (e.g. <?xml ... ?> )
+^(?<!\n)[s]*<[^?]
+
+cs finding ParticleText calls that need FromCP437
+((?<=ParticleText)\([^\n]+)(\(char\).+\)\)(?!\)\.FromCP437)),	$1($2).FromCP437(),
 
 cs code cleanup:
 \s+$			
