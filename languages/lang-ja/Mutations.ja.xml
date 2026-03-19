@@ -1,315 +1,315 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <mutations Lang="ja" LoadPriority="1000" Encoding="utf-8">
-  <category Name="Morphotypes" DisplayName="[届：\TODÖ]{{W|Morphotypes}}" ExcludeFromPool="true">
-    <mutation Name="Chimera" DisplayName="[届：\TODÖ]Chimera">
+  <category Name="Morphotypes" DisplayName="▶{{W|Morphotypes}}" ExcludeFromPool="true">
+    <mutation Name="Chimera" DisplayName="▶Chimera">
       <description>
-        <p>[届：\TODÖ]You only manifest physical mutations, and all of your mutation choices when manifesting a new mutation are physical.</p>
+        <p>▶You only manifest physical mutations, and all of your mutation choices when manifesting a new mutation are physical.</p>
         <br />
-        <p>[届：\TODÖ]Whenever you manifest a new mutation, one of your choices will also cause you to grow a new limb at random.</p>
+        <p>▶Whenever you manifest a new mutation, one of your choices will also cause you to grow a new limb at random.</p>
       </description>
       <leveltext></leveltext>
     </mutation>
-    <mutation Name="Esper" DisplayName="[届：\TODÖ]Esper">
+    <mutation Name="Esper" DisplayName="▶Esper">
       <description>
-        <p>[届：\TODÖ]You only manifest mental mutations, and all of your mutation choices when manifesting a new mutation are mental.</p>
+        <p>▶You only manifest mental mutations, and all of your mutation choices when manifesting a new mutation are mental.</p>
       </description>
       <leveltext></leveltext>
     </mutation>
-    <mutation Name="Unstable Genome" DisplayName="[届：\TODÖ]Unstable Genome">
+    <mutation Name="Unstable Genome" DisplayName="▶Unstable Genome">
       <description>
-        <p>[届：\TODÖ]You gain one extra mutation each time you buy this, but the mutations don't manifest right away.</p>
-        <p>[届：\TODÖ]Whenever you gain a level, there's a 33% chance that your genome destabilizes and you get to choose from 3 random mutations.</p>
+        <p>▶You gain one extra mutation each time you buy this, but the mutations don't manifest right away.</p>
+        <p>▶Whenever you gain a level, there's a 33% chance that your genome destabilizes and you get to choose from 3 random mutations.</p>
       </description>
       <leveltext></leveltext>
     </mutation>
   </category>
 
-  <category Name="Physical" DisplayName="[届：\TODÖ]{{G|Physical Mutations}}">
-    <mutation Name="Adrenal Control" DisplayName="[届：\TODÖ]Adrenal Control" BearerDescription="[届：\TODÖ]those with control over their adrenal glands">
+  <category Name="Physical" DisplayName="▶{{G|Physical Mutations}}">
+    <mutation Name="Adrenal Control" DisplayName="▶Adrenal Control" BearerDescription="▶those with control over their adrenal glands">
       <description>
-        <p>[届：\TODÖ]You regulate your body's release of adrenaline.</p>
+        <p>▶You regulate your body's release of adrenaline.</p>
       </description>
       <leveltext>
-        <p>[届：\TODÖ]You can increase your body's adrenaline flow for <stat Name="Duration" />.</p>
-        <p>[届：\TODÖ]While it's flowing, you gain +<stat Name="QuicknessBonus" /> quickness and other physical mutations gain +<stat Name="MutationBonus" Unit="ランク" />.</p>         
+        <p>▶You can increase your body's adrenaline flow for <stat Name="Duration" />.</p>
+        <p>▶While it's flowing, you gain +<stat Name="QuicknessBonus" /> quickness and other physical mutations gain +<stat Name="MutationBonus" Unit="ランク" />.</p>         
         <statline Name="Cooldown" DisplayName="冷却期間" Unit="[周\ラウンド]" />
       </leveltext>
     </mutation>
-    <mutation Name="Beak" DisplayName="[届：\TODÖ]Beak" BearerDescription="[届：\TODÖ]those with beaks">
+    <mutation Name="Beak" DisplayName="▶Beak" BearerDescription="▶those with beaks">
       <description>
-        <p>[届：\TODÖ]Your face bears a sightly <stat Name="BeakName" />.</p>
+        <p>▶Your face bears a sightly <stat Name="BeakName" />.</p>
         <br />
-        <p>[届：\TODÖ]+1 Ego</p>
-        <p>[届：\TODÖ]You occasionally peck at your opponents.</p>
-        <p>[届：\TODÖ]+200 reputation with {{w|<vartext>=faction:Birds=</vartext>}}</p>
+        <p>▶+1 Ego</p>
+        <p>▶You occasionally peck at your opponents.</p>
+        <p>▶+200 reputation with {{w|<vartext>=faction:Birds=</vartext>}}</p>
       </description>
       <leveltext></leveltext>
     </mutation>
-    <mutation Name="Burrowing Claws" DisplayName="[届：\TODÖ]Burrowing Claws" BearerDescription="[届：\TODÖ]burrowers">
+    <mutation Name="Burrowing Claws" DisplayName="▶Burrowing Claws" BearerDescription="▶burrowers">
       <description>
         <!-- code will prefix this with "Burrowing Claws Claw" blueprints VariantDescription -->
-        <p>[届：\TODÖ]You bear spade-like claws that can burrow through the earth.</p>
+        <p>▶You bear spade-like claws that can burrow through the earth.</p>
       </description>
       <leveltext>
-        <p>[届：\TODÖ]<vartext>=weapon.Name=</vartext> penetration vs. walls: <stat Name="WallPenetration" /></p>
-        <p>[届：\TODÖ]<vartext>=weapon.Name|pluralize=</vartext> destroy walls after <stat Name="WallHits" Unit="[届：\TODÖ]penetrating hit" />.</p>
-        <switch Name="PrereleaseContent"><case Value="true"><p>[届：\TODÖ]Can dig passages up or down when outside of combat</p></case></switch>
-        <p>[届：\TODÖ]<vartext>=weapon.Name|pluralize= are also a =weaponClass.name= class natural weapon that deal <stat Name="Damage" /> base damage to non-walls.</vartext></p>
+        <p>▶<vartext>=weapon.Name=</vartext> penetration vs. walls: <stat Name="WallPenetration" /></p>
+        <p>▶<vartext>=weapon.Name|pluralize=</vartext> destroy walls after <stat Name="WallHits" Unit="▶penetrating hit" />.</p>
+        <switch Name="PrereleaseContent"><case Value="true"><p>▶Can dig passages up or down when outside of combat</p></case></switch>
+        <p>▶<vartext>=weapon.Name|pluralize= are also a =weaponClass.name= class natural weapon that deal <stat Name="Damage" /> base damage to non-walls.</vartext></p>
       </leveltext>
     </mutation>
-    <mutation Name="Carapace" DisplayName="[届：\TODÖ]Carapace" BearerDescription="[届：\TODÖ]the carapaced">
+    <mutation Name="Carapace" DisplayName="▶Carapace" BearerDescription="▶the carapaced">
       <description>
         <!-- code will prefix this with blueprints VariantDescription -->
-        <p>[届：\TODÖ]You are protected by a durable carapace.</p>
+        <p>▶You are protected by a durable carapace.</p>
       </description>
       <leveltext>
         <p><stat Name="AV" Filters="signed" />ＡＶ</p>
         <p><stat Name="DV" Filters="signed" />ＤＶ</p>
         <p><stat Name="HeatResist" Filters="signed" />耐熱性</p>
         <p><stat Name="ColdResist" Filters="signed" />耐寒性</p>
-        <switch Name="AddsRep"><case Value="" /><default><p>[届：\TODÖ]<stat Name="AddsRep" /></p></default></switch>
-        <p>[届：\TODÖ]You may tighten your <stat Name="CarapaceName" /> to receive double the AV bonus at a -2 DV penalty as long as you remain still.</p>
-        <p>[届：\TODÖ]Cannot wear body armor.</p>
+        <switch Name="AddsRep"><case Value="" /><default><p>▶<stat Name="AddsRep" /></p></default></switch>
+        <p>▶You may tighten your <stat Name="CarapaceName" /> to receive double the AV bonus at a -2 DV penalty as long as you remain still.</p>
+        <p>▶Cannot wear body armor.</p>
       </leveltext>
     </mutation>
-    <mutation Name="Corrosive Gas Generation" DisplayName="[届：\TODÖ]Corrosive Gas Generation" BearerDescription="[届：\TODÖ]those who expel corrosive gas">
+    <mutation Name="Corrosive Gas Generation" DisplayName="▶Corrosive Gas Generation" BearerDescription="▶those who expel corrosive gas">
       <description>
-        <p>[届：\TODÖ]You release a burst of <stat Name="GasName" /> around yourself.</p>
+        <p>▶You release a burst of <stat Name="GasName" /> around yourself.</p>
       </description>
       <leveltext>
-        <p>[届：\TODÖ]Releases gas for <stat Name="Duration" Unit="[周\ラウンド]" /></p>
+        <p>▶Releases gas for <stat Name="Duration" Unit="[周\ラウンド]" /></p>
         <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
         <statline Name="Cooldown" DisplayName="冷却期間" Unit="[周\ラウンド]" />
       </leveltext>
     </mutation>
-    <mutation Name="Double-muscled" DisplayName="[届：\TODÖ]Double-muscled" BearerDescription="[届：\TODÖ]the double-muscled">
+    <mutation Name="Double-muscled" DisplayName="▶Double-muscled" BearerDescription="▶the double-muscled">
       <description>
-        <p>[届：\TODÖ]You are possessed of hulking strength.</p>
+        <p>▶You are possessed of hulking strength.</p>
       </description>
       <leveltext>
         <p>+<stat Name="Strength" />筋力</p>
-        <p>[届：\TODÖ]<stat Name="DazeChance" />% chance to daze your opponent on a successful melee attack for 2-3 rounds</p>
+        <p>▶<stat Name="DazeChance" />% chance to daze your opponent on a successful melee attack for 2-3 rounds</p>
       </leveltext>
     </mutation>
-    <mutation Name="Electrical Generation" DisplayName="[届：\TODÖ]Electrical Generation" BearerDescription="[届：\TODÖ]those who generate electricity">
+    <mutation Name="Electrical Generation" DisplayName="▶Electrical Generation" BearerDescription="▶those who generate electricity">
       <description>
-        <p>[届：\TODÖ]You accrue electrical charge that you can use and discharge to deal damage.</p>
+        <p>▶You accrue electrical charge that you can use and discharge to deal damage.</p>
       </description>
       <leveltext>
-        <p>[届：\TODÖ]Maximum charge: <stat Name="MaxCharge" /></p>
-        <p>[届：\TODÖ]Accrue base <stat Name="BaseChargePerTurn" /> charge per turn</p>
-        <p>[届：\TODÖ]Can discharge all held charge for 1d4 damage per <stat Name="DischargeChunk" /> charge</p>
-        <p>[届：\TODÖ]Discharge can arc to adjacent targets dealing reduced damage, up to 1 target per <stat Name="DischargeChunk" /> charge</p>
-        <p>[届：\TODÖ]EMP causes involuntary discharge (difficulty 18 Willpower save)</p>
-        <switch Name="CanDrinkTransient"><case Value="true"><p>[届：\TODÖ]You can drink change from electrical power sources.</p></case><default><p>[届：\TODÖ]You can drink charge from energy cells and capacitors.</p></default></switch>
-        <p>[届：\TODÖ]You gain <stat Name="DamageAbsorbFactor" /> charge per point of electrical damage taken.</p>
-        <p>[届：\TODÖ]You can provide charge to equipped devices that have integrated power systems.</p>
+        <p>▶Maximum charge: <stat Name="MaxCharge" /></p>
+        <p>▶Accrue base <stat Name="BaseChargePerTurn" /> charge per turn</p>
+        <p>▶Can discharge all held charge for 1d4 damage per <stat Name="DischargeChunk" /> charge</p>
+        <p>▶Discharge can arc to adjacent targets dealing reduced damage, up to 1 target per <stat Name="DischargeChunk" /> charge</p>
+        <p>▶EMP causes involuntary discharge (difficulty 18 Willpower save)</p>
+        <switch Name="CanDrinkTransient"><case Value="true"><p>▶You can drink change from electrical power sources.</p></case><default><p>▶You can drink charge from energy cells and capacitors.</p></default></switch>
+        <p>▶You gain <stat Name="DamageAbsorbFactor" /> charge per point of electrical damage taken.</p>
+        <p>▶You can provide charge to equipped devices that have integrated power systems.</p>
       </leveltext>
     </mutation>
-    <mutation Name="Electromagnetic Pulse" DisplayName="[届：\TODÖ]Electromagnetic Pulse" BearerDescription="[届：\TODÖ]those who emit electromagnetic pulses">
+    <mutation Name="Electromagnetic Pulse" DisplayName="▶Electromagnetic Pulse" BearerDescription="▶those who emit electromagnetic pulses">
       <description>
-        <p>[届：\TODÖ]You generate an electromagnetic pulse that disables nearby artifacts and machines.</p>
+        <p>▶You generate an electromagnetic pulse that disables nearby artifacts and machines.</p>
       </description>
       <leveltext>
-        <p>[届：\TODÖ]面積: <stat Name="Area" /> centered around yourself</p>
+        <p>▶面積: <stat Name="Area" /> centered around yourself</p>
         <statline Name="Duration" DisplayName="期間" Unit="[周\ラウンド]" />
         <statline Name="Cooldown" DisplayName="冷却期間" Unit="[周\ラウンド]" />
       </leveltext>
     </mutation>
-    <mutation Name="Flaming Ray" DisplayName="[届：\TODÖ]Flaming Ray" BearerDescription="[届：\TODÖ]the flaming-handed">
+    <mutation Name="Flaming Ray" DisplayName="▶Flaming Ray" BearerDescription="▶the flaming-handed">
       <description>
-        <p>[届：\TODÖ]You emit a ray of flame<switch Name="BodyPartName"><case Value="" /><default> from your <stat Name="BodyPartName" /></default></switch>.</p>
+        <p>▶You emit a ray of flame<switch Name="BodyPartName"><case Value="" /><default> from your <stat Name="BodyPartName" /></default></switch>.</p>
       </description>
       <leveltext>
-        <p>[届：\TODÖ]Emits a <stat Name="Range" />-square ray of flame in the direction of your choice.</p>
+        <p>▶Emits a <stat Name="Range" />-square ray of flame in the direction of your choice.</p>
         <statline Name="Damage" DisplayName="ダメージ" />
         <statline Name="Cooldown" DisplayName="冷却期間" Unit="[周\ラウンド]" />
-        <p>[届：\TODÖ]Melee attacks heat opponents by <stat Name="HeatOnHit" Unit="度" /></p>
+        <p>▶Melee attacks heat opponents by <stat Name="HeatOnHit" Unit="度" /></p>
       </leveltext>
     </mutation>
-    <mutation Name="Freezing Ray" DisplayName="[届：\TODÖ]Freezing Ray" BearerDescription="[届：\TODÖ]the frozen-handed">
+    <mutation Name="Freezing Ray" DisplayName="▶Freezing Ray" BearerDescription="▶the frozen-handed">
       <description>
-        <p>[届：\TODÖ]You emit a ray of frost<switch Name="BodyPartName"><case Value="" /><default> from your <stat Name="BodyPartName" /></default></switch>.</p>
+        <p>▶You emit a ray of frost<switch Name="BodyPartName"><case Value="" /><default> from your <stat Name="BodyPartName" /></default></switch>.</p>
       </description>
       <leveltext>
-        <p>[届：\TODÖ]Emits a <stat Name="Range" />-square ray of frost in the direction of your choice.</p>
+        <p>▶Emits a <stat Name="Range" />-square ray of frost in the direction of your choice.</p>
         <statline Name="Damage" DisplayName="ダメージ" />
         <statline Name="Cooldown" DisplayName="冷却期間" Unit="[周\ラウンド]" />
-        <p>[届：\TODÖ]Melee attacks cool opponents by <stat Name="CoolOnHit" Unit="度" /></p>
+        <p>▶Melee attacks cool opponents by <stat Name="CoolOnHit" Unit="度" /></p>
       </leveltext>
     </mutation>
-    <mutation Name="Heightened Hearing" DisplayName="[届：\TODÖ]Heightened Hearing" BearerDescription="[届：\TODÖ]those with heightened hearing">
+    <mutation Name="Heightened Hearing" DisplayName="▶Heightened Hearing" BearerDescription="▶those with heightened hearing">
       <description>
-        <p>[届：\TODÖ]You are possessed of unnaturally acute hearing.</p>
+        <p>▶You are possessed of unnaturally acute hearing.</p>
       </description>
       <leveltext>
-        <p>[届：\TODÖ]You detect the presence of creatures within a radius of <stat Name="Radius" />.</p>
-        <p><switch Name="LevelDiff"><case Value="1">[届：\TODÖ]{{rules|Increased chance to identify nearby detected creatures}}</case><default>[届：\TODÖ]Chance to identify nearby detected creatures</default></switch></p>
+        <p>▶You detect the presence of creatures within a radius of <stat Name="Radius" />.</p>
+        <p><switch Name="LevelDiff"><case Value="1">▶{{rules|Increased chance to identify nearby detected creatures}}</case><default>▶Chance to identify nearby detected creatures</default></switch></p>
       </leveltext>
     </mutation>
-    <mutation Name="Heightened Quickness" DisplayName="[届：\TODÖ]Heightened Quickness" BearerDescription="[届：\TODÖ]the quick">
+    <mutation Name="Heightened Quickness" DisplayName="▶Heightened Quickness" BearerDescription="▶the quick">
       <description>
-        <p>[届：\TODÖ]You are gifted with tremendous speed.</p>
+        <p>▶You are gifted with tremendous speed.</p>
       </description>
       <leveltext>
-        <p>[届：\TODÖ]+<stat Name="SpeedBonus" /> Quickness</p>
+        <p>▶+<stat Name="SpeedBonus" /> Quickness</p>
       </leveltext>
     </mutation>
-    <mutation Name="Horns" DisplayName="[届：\TODÖ]Horns" BearerDescription="[届：\TODÖ]the horned">
+    <mutation Name="Horns" DisplayName="▶Horns" BearerDescription="▶the horned">
       <description>
-        <p>[届：\TODÖ]<vartext>=horns.A.name.or.plural= =horns.verb:jut= out of your head.</vartext></p>
+        <p>▶<vartext>=horns.A.name.or.plural= =horns.verb:jut= out of your head.</vartext></p>
       </description>
       <leveltext>
-        <p>[届：\TODÖ]20% chance on melee attack to gore your opponent</p>
-        <statline Name="Damage" DisplayName="[届：\TODÖ]Damage increment" />
-        <statline Name="ToHitBonus" DisplayName="[届：\TODÖ]To-hit bonus" />
+        <p>▶20% chance on melee attack to gore your opponent</p>
+        <statline Name="Damage" DisplayName="▶Damage increment" />
+        <statline Name="ToHitBonus" DisplayName="▶To-hit bonus" />
         <switch Name="LevelMode">
-          <case Value="BleedBonus"><p>[届：\TODÖ]{{rules|Increased bleeding save difficulty and intensity}}</p></case>
-          <case Value="LevelUp"><p>[届：\TODÖ]{{rules|Increased bleeding save difficulty}}</p></case>
-          <default><p>[届：\TODÖ]Goring attacks may cause bleeding</p></default>
+          <case Value="BleedBonus"><p>▶{{rules|Increased bleeding save difficulty and intensity}}</p></case>
+          <case Value="LevelUp"><p>▶{{rules|Increased bleeding save difficulty}}</p></case>
+          <default><p>▶Goring attacks may cause bleeding</p></default>
         </switch>
-        <p>[届：\TODÖ]<vartext>=horns.Name= =horns.verb:are= a short-blade class natural weapon.</vartext></p>
-        <p>[届：\TODÖ]+<stat Name="AV" /> AV</p>
-        <p>[届：\TODÖ]Cannot wear helmets</p>
-        <p>[届：\TODÖ]+100 reputation with {{w|antelopes}} and {{w|goatfolk}}</p>
+        <p>▶<vartext>=horns.Name= =horns.verb:are= a short-blade class natural weapon.</vartext></p>
+        <p>▶+<stat Name="AV" /> AV</p>
+        <p>▶Cannot wear helmets</p>
+        <p>▶+100 reputation with {{w|antelopes}} and {{w|goatfolk}}</p>
       </leveltext>
     </mutation>
-    <mutation Name="Multiple Arms" DisplayName="[届：\TODÖ]Multiple Arms" BearerDescription="[届：\TODÖ]the many-armed" />
-    <mutation Name="Multiple Legs" DisplayName="[届：\TODÖ]Multiple Legs" BearerDescription="[届：\TODÖ]the many-legged" />
-    <mutation Name="Night Vision" DisplayName="[届：\TODÖ]Night Vision" BearerDescription="[届：\TODÖ]the darksighted" />
-    <mutation Name="Phasing" DisplayName="[届：\TODÖ]Phasing" BearerDescription="[届：\TODÖ]those who phase" />
-    <mutation Name="Photosynthetic Skin" DisplayName="[届：\TODÖ]Photosynthetic Skin" BearerDescription="[届：\TODÖ]the green-skinned" />
-    <mutation Name="Quills" DisplayName="[届：\TODÖ]Quills" Exclusions="Carapace" BearerDescription="[届：\TODÖ]the quilled" />
-    <mutation Name="Regeneration" DisplayName="[届：\TODÖ]Regeneration" BearerDescription="[届：\TODÖ]those who regenerate" />
-    <mutation Name="Sleep Gas Generation" DisplayName="[届：\TODÖ]Sleep Gas Generation" BearerDescription="[届：\TODÖ]those who expel sleep gas">
+    <mutation Name="Multiple Arms" DisplayName="▶Multiple Arms" BearerDescription="▶the many-armed" />
+    <mutation Name="Multiple Legs" DisplayName="▶Multiple Legs" BearerDescription="▶the many-legged" />
+    <mutation Name="Night Vision" DisplayName="▶Night Vision" BearerDescription="▶the darksighted" />
+    <mutation Name="Phasing" DisplayName="▶Phasing" BearerDescription="▶those who phase" />
+    <mutation Name="Photosynthetic Skin" DisplayName="▶Photosynthetic Skin" BearerDescription="▶the green-skinned" />
+    <mutation Name="Quills" DisplayName="▶Quills" Exclusions="Carapace" BearerDescription="▶the quilled" />
+    <mutation Name="Regeneration" DisplayName="▶Regeneration" BearerDescription="▶those who regenerate" />
+    <mutation Name="Sleep Gas Generation" DisplayName="▶Sleep Gas Generation" BearerDescription="▶those who expel sleep gas">
       <description>
-        <p>[届：\TODÖ]You release a burst of <stat Name="GasName" /> around yourself.</p>
+        <p>▶You release a burst of <stat Name="GasName" /> around yourself.</p>
       </description>
       <leveltext>
-        <p>[届：\TODÖ]Releases gas for <stat Name="Duration" Unit="[周\ラウンド]" /></p>
+        <p>▶Releases gas for <stat Name="Duration" Unit="[周\ラウンド]" /></p>
         <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
         <statline Name="Cooldown" DisplayName="冷却期間" Unit="[周\ラウンド]" />
       </leveltext>
     </mutation>
-    <mutation Name="Slime Glands" DisplayName="[届：\TODÖ]Slime Glands" BearerDescription="[届：\TODÖ]slime spitters">
+    <mutation Name="Slime Glands" DisplayName="▶Slime Glands" BearerDescription="▶slime spitters">
       <description>
-        <p>[届：\TODÖ]You produce a viscous slime that you can spit at things.</p>
+        <p>▶You produce a viscous slime that you can spit at things.</p>
         <p></p>
-        <p>[届：\TODÖ]Covers an area with slime</p>
+        <p>▶Covers an area with slime</p>
         <statline Name="Range" DisplayName="射程" />
         <statline Name="Area" DisplayName="面積" />
         <statline Name="Cooldown" DisplayName="冷却期間" Unit="[周\ラウンド]" />
-        <p>[届：\TODÖ]You can walk over slime without slipping.</p>
+        <p>▶You can walk over slime without slipping.</p>
       </description>
       <leveltext />
     </mutation>
-    <mutation Name="Spinnerets" DisplayName="[届：\TODÖ]Spinnerets" BearerDescription="[届：\TODÖ]web weavers" />
-    <mutation Name="Stinger (Confusing Venom)" DisplayName="[届：\TODÖ]Stinger (Confusing Venom)" BearerDescription="[届：\TODÖ]those with stingers tipped with confusing venom" />
-    <mutation Name="Stinger (Paralyzing Venom)" DisplayName="[届：\TODÖ]Stinger (Paralyzing Venom)" BearerDescription="[届：\TODÖ]those with stingers tipped with paralyzing venom" />
-    <mutation Name="Stinger (Poisoning Venom)" DisplayName="[届：\TODÖ]Stinger (Poisoning Venom)" BearerDescription="[届：\TODÖ]those with stingers tipped with poisoning venom" />
-    <mutation Name="Thick Fur" DisplayName="[届：\TODÖ]Thick Fur" BearerDescription="[届：\TODÖ]the thickly furred" />
-    <mutation Name="Triple-jointed" DisplayName="[届：\TODÖ]Triple-jointed" BearerDescription="[届：\TODÖ]the triple-jointed" />
-    <mutation Name="Two-headed" DisplayName="[届：\TODÖ]Two-headed" BearerDescription="[届：\TODÖ]the two-headed" />
-    <mutation Name="Two-hearted" DisplayName="[届：\TODÖ]Two-hearted" BearerDescription="[届：\TODÖ]the two-hearted" />
-    <mutation Name="Wings" DisplayName="[届：\TODÖ]Wings" BearerDescription="[届：\TODÖ]the winged" />
+    <mutation Name="Spinnerets" DisplayName="▶Spinnerets" BearerDescription="▶web weavers" />
+    <mutation Name="Stinger (Confusing Venom)" DisplayName="▶Stinger (Confusing Venom)" BearerDescription="▶those with stingers tipped with confusing venom" />
+    <mutation Name="Stinger (Paralyzing Venom)" DisplayName="▶Stinger (Paralyzing Venom)" BearerDescription="▶those with stingers tipped with paralyzing venom" />
+    <mutation Name="Stinger (Poisoning Venom)" DisplayName="▶Stinger (Poisoning Venom)" BearerDescription="▶those with stingers tipped with poisoning venom" />
+    <mutation Name="Thick Fur" DisplayName="▶Thick Fur" BearerDescription="▶the thickly furred" />
+    <mutation Name="Triple-jointed" DisplayName="▶Triple-jointed" BearerDescription="▶the triple-jointed" />
+    <mutation Name="Two-headed" DisplayName="▶Two-headed" BearerDescription="▶the two-headed" />
+    <mutation Name="Two-hearted" DisplayName="▶Two-hearted" BearerDescription="▶the two-hearted" />
+    <mutation Name="Wings" DisplayName="▶Wings" BearerDescription="▶the winged" />
   </category>
 
-  <category Name="PhysicalDefects" DisplayName="[届：\TODÖ]{{R|Physical Defects}}">
-    <mutation Name="Albino" DisplayName="[届：\TODÖ]Albino" BearerDescription="[届：\TODÖ]albinos" />
-    <mutation Name="Amphibious" DisplayName="[届：\TODÖ]Amphibious" BearerDescription="[届：\TODÖ]the amphibious" />
-    <mutation Name="Brittle Bones" DisplayName="[届：\TODÖ]Brittle Bones" BearerDescription="[届：\TODÖ]the brittle-boned" />
-    <mutation Name="Nerve Poppy" DisplayName="[届：\TODÖ]Nerve Poppy" BearerDescription="[届：\TODÖ]those who cannot feel pain" />
-    <mutation Name="Carnivorous" DisplayName="[届：\TODÖ]Carnivorous" BearerDescription="[届：\TODÖ]the carnivorous" />
-    <mutation Name="Cold-Blooded" DisplayName="[届：\TODÖ]Cold-Blooded" BearerDescription="[届：\TODÖ]the cold-blooded" />
-    <mutation Name="Electromagnetic Impulse" DisplayName="[届：\TODÖ]Electromagnetic Impulse" BearerDescription="[届：\TODÖ]those who cannot control their electromagnetic pulses" />
-    <mutation Name="Hooks for Feet" DisplayName="[届：\TODÖ]Hooks for Feet" BearerDescription="[届：\TODÖ]those with hooks for feet" />
-    <mutation Name="Irritable Genome" DisplayName="[届：\TODÖ]Irritable Genome" BearerDescription="[届：\TODÖ]those with irritable genomes" />
-    <mutation Name="Myopic" DisplayName="[届：\TODÖ]Myopic" BearerDescription="[届：\TODÖ]the myopic" />
-    <mutation Name="Spontaneous Combustion" DisplayName="[届：\TODÖ]Spontaneous Combustion" BearerDescription="[届：\TODÖ]those who spontaneously combust" />
-    <mutation Name="Tonic Allergy" DisplayName="[届：\TODÖ]Tonic Allergy" BearerDescription="[届：\TODÖ]the allergic" />
+  <category Name="PhysicalDefects" DisplayName="▶{{R|Physical Defects}}">
+    <mutation Name="Albino" DisplayName="▶Albino" BearerDescription="▶albinos" />
+    <mutation Name="Amphibious" DisplayName="▶Amphibious" BearerDescription="▶the amphibious" />
+    <mutation Name="Brittle Bones" DisplayName="▶Brittle Bones" BearerDescription="▶the brittle-boned" />
+    <mutation Name="Nerve Poppy" DisplayName="▶Nerve Poppy" BearerDescription="▶those who cannot feel pain" />
+    <mutation Name="Carnivorous" DisplayName="▶Carnivorous" BearerDescription="▶the carnivorous" />
+    <mutation Name="Cold-Blooded" DisplayName="▶Cold-Blooded" BearerDescription="▶the cold-blooded" />
+    <mutation Name="Electromagnetic Impulse" DisplayName="▶Electromagnetic Impulse" BearerDescription="▶those who cannot control their electromagnetic pulses" />
+    <mutation Name="Hooks for Feet" DisplayName="▶Hooks for Feet" BearerDescription="▶those with hooks for feet" />
+    <mutation Name="Irritable Genome" DisplayName="▶Irritable Genome" BearerDescription="▶those with irritable genomes" />
+    <mutation Name="Myopic" DisplayName="▶Myopic" BearerDescription="▶the myopic" />
+    <mutation Name="Spontaneous Combustion" DisplayName="▶Spontaneous Combustion" BearerDescription="▶those who spontaneously combust" />
+    <mutation Name="Tonic Allergy" DisplayName="▶Tonic Allergy" BearerDescription="▶the allergic" />
   </category>
 
-  <category Name="Mental" DisplayName="[届：\TODÖ]{{G|Mental Mutations}}">
-    <mutation Name="Beguiling" DisplayName="[届：\TODÖ]Beguiling" Cost="5" MaxSelected="1" Exclusions="" BearerDescription="[届：\TODÖ]beguilers" BiomeEpithet="[届：\TODÖ]encomium" Tile="Mutations/beguiling.bmp" />
-    <mutation Name="Burgeoning" DisplayName="[届：\TODÖ]Burgeoning" Cost="3" MaxSelected="1" Exclusions="" BearerDescription="[届：\TODÖ]psychic gardeners" BiomeAdjective="[届：\TODÖ]burgeoning" Tile="Mutations/burgeoning.bmp" />
-    <mutation Name="Clairvoyance" DisplayName="[届：\TODÖ]Clairvoyance" Cost="2" MaxSelected="1" Exclusions="" BearerDescription="[届：\TODÖ]the clairvoyant" BiomeEpithet="[届：\TODÖ]panopticon" Tile="Mutations/clairvoyance.bmp">
-      <description>[届：\TODÖ]You briefly gain vision of a nearby area.</description>
-      <leveltext>[届：\TODÖ]
-        <statline Name="VisionRadius" DisplayName="[届：\TODÖ]Vision radius"/>
-        <statline Name="VisionDuration" DisplayName="[届：\TODÖ]Vision duration" Unit="round" />
+  <category Name="Mental" DisplayName="▶{{G|Mental Mutations}}">
+    <mutation Name="Beguiling" DisplayName="▶Beguiling" Cost="5" MaxSelected="1" Exclusions="" BearerDescription="▶beguilers" BiomeEpithet="▶encomium" Tile="Mutations/beguiling.bmp" />
+    <mutation Name="Burgeoning" DisplayName="▶Burgeoning" Cost="3" MaxSelected="1" Exclusions="" BearerDescription="▶psychic gardeners" BiomeAdjective="▶burgeoning" Tile="Mutations/burgeoning.bmp" />
+    <mutation Name="Clairvoyance" DisplayName="▶Clairvoyance" Cost="2" MaxSelected="1" Exclusions="" BearerDescription="▶the clairvoyant" BiomeEpithet="▶panopticon" Tile="Mutations/clairvoyance.bmp">
+      <description>▶You briefly gain vision of a nearby area.</description>
+      <leveltext>▶
+        <statline Name="VisionRadius" DisplayName="▶Vision radius"/>
+        <statline Name="VisionDuration" DisplayName="▶Vision duration" Unit="round" />
         <statline Name="Cooldown" DisplayName="冷却期間" Unit="[周\ラウンド]" />
       </leveltext>
     </mutation>
-    <mutation Name="Confusion" DisplayName="[届：\TODÖ]Confusion" BearerDescription="[届：\TODÖ]riddlers" BiomeEpithet="[届：\TODÖ]psychic maze" />
-    <mutation Name="Cryokinesis" DisplayName="[届：\TODÖ]Cryokinesis" BearerDescription="[届：\TODÖ]cryomancers" BiomeEpithet="[届：\TODÖ]frost meadow" />
-    <mutation Name="Disintegration" DisplayName="[届：\TODÖ]Disintegration" BearerDescription="[届：\TODÖ]disintegrators" BiomeAdjective="[届：\TODÖ]rapidly resonating" />
-    <mutation Name="Domination" DisplayName="[届：\TODÖ]Domination" BearerDescription="[届：\TODÖ]those who dominate the wills of others" BiomeEpithet="[届：\TODÖ]theater of wills" />
-    <mutation Name="Ego Projection" DisplayName="[届：\TODÖ]Ego Projection" BearerDescription="[届：\TODÖ]those who project their egos onto the physical realm" BiomeAdjective="[届：\TODÖ]psychically refractive" />
-    <mutation Name="Force Bubble" DisplayName="[届：\TODÖ]Force Bubble" BearerDescription="[届：\TODÖ]bubble folk" BiomeAdjective="[届：\TODÖ]bubbly"  />
-    <mutation Name="Force Wall" DisplayName="[届：\TODÖ]Force Wall" BearerDescription="[届：\TODÖ]architects of force walls" BiomeEpithet="[届：\TODÖ]force bastion" />
-    <mutation Name="Kindle" DisplayName="[届：\TODÖ]Kindle" BearerDescription="[届：\TODÖ]kindlers" BiomeAdjective="[届：\TODÖ]kindling" />
-    <mutation Name="Light Manipulation" DisplayName="[届：\TODÖ]Light Manipulation" BearerDescription="[届：\TODÖ]manipulators of light" BiomeAdjective="[届：\TODÖ]illuminated" />
-    <mutation Name="Mass Mind" DisplayName="[届：\TODÖ]Mass Mind" BearerDescription="[届：\TODÖ]those who tap the Mass Mind" BiomeEpithet="[届：\TODÖ]mindmoot" />
-    <mutation Name="Mental Mirror" DisplayName="[届：\TODÖ]Mental Mirror" BearerDescription="[届：\TODÖ]the mentally reflective" BiomeEpithet="[届：\TODÖ]mirrorsteppe" />
-    <mutation Name="Precognition" DisplayName="[届：\TODÖ]Precognition" BearerDescription="[届：\TODÖ]the prescient" BiomeEpithet="[届：\TODÖ]future site" />
-    <mutation Name="Psychometry" DisplayName="[届：\TODÖ]Psychometry" BearerDescription="[届：\TODÖ]the psychometrically sensitive" BiomeAdjective="[届：\TODÖ]retrocognate">
+    <mutation Name="Confusion" DisplayName="▶Confusion" BearerDescription="▶riddlers" BiomeEpithet="▶psychic maze" />
+    <mutation Name="Cryokinesis" DisplayName="▶Cryokinesis" BearerDescription="▶cryomancers" BiomeEpithet="▶frost meadow" />
+    <mutation Name="Disintegration" DisplayName="▶Disintegration" BearerDescription="▶disintegrators" BiomeAdjective="▶rapidly resonating" />
+    <mutation Name="Domination" DisplayName="▶Domination" BearerDescription="▶those who dominate the wills of others" BiomeEpithet="▶theater of wills" />
+    <mutation Name="Ego Projection" DisplayName="▶Ego Projection" BearerDescription="▶those who project their egos onto the physical realm" BiomeAdjective="▶psychically refractive" />
+    <mutation Name="Force Bubble" DisplayName="▶Force Bubble" BearerDescription="▶bubble folk" BiomeAdjective="▶bubbly"  />
+    <mutation Name="Force Wall" DisplayName="▶Force Wall" BearerDescription="▶architects of force walls" BiomeEpithet="▶force bastion" />
+    <mutation Name="Kindle" DisplayName="▶Kindle" BearerDescription="▶kindlers" BiomeAdjective="▶kindling" />
+    <mutation Name="Light Manipulation" DisplayName="▶Light Manipulation" BearerDescription="▶manipulators of light" BiomeAdjective="▶illuminated" />
+    <mutation Name="Mass Mind" DisplayName="▶Mass Mind" BearerDescription="▶those who tap the Mass Mind" BiomeEpithet="▶mindmoot" />
+    <mutation Name="Mental Mirror" DisplayName="▶Mental Mirror" BearerDescription="▶the mentally reflective" BiomeEpithet="▶mirrorsteppe" />
+    <mutation Name="Precognition" DisplayName="▶Precognition" BearerDescription="▶the prescient" BiomeEpithet="▶future site" />
+    <mutation Name="Psychometry" DisplayName="▶Psychometry" BearerDescription="▶the psychometrically sensitive" BiomeAdjective="▶retrocognate">
       <description>
-        <p>[届：\TODÖ]You read the history of artifacts by touching them, learning what they do and how they were made.</p>
+        <p>▶You read the history of artifacts by touching them, learning what they do and how they were made.</p>
       </description>
       <leveltext>
-        <p>[届：\TODÖ]Unerringly identify artifacts up to complexity tier <stat Name="IdentifyComplexity" />.</p>
-        <p>[届：\TODÖ]Learn how to construct identified artifacts up to complexity tier <stat Name="ConstructComplexity" /> (must have the appropriate Tinker skill).</p>
-        <p>[届：\TODÖ]You may open security doors and use some secure devices by touching them.</p>
+        <p>▶Unerringly identify artifacts up to complexity tier <stat Name="IdentifyComplexity" />.</p>
+        <p>▶Learn how to construct identified artifacts up to complexity tier <stat Name="ConstructComplexity" /> (must have the appropriate Tinker skill).</p>
+        <p>▶You may open security doors and use some secure devices by touching them.</p>
       </leveltext>
     </mutation>
-    <mutation Name="Pyrokinesis" DisplayName="[届：\TODÖ]Pyrokinesis" BearerDescription="[届：\TODÖ]pyromancers" BiomeEpithet="[届：\TODÖ]flame meadow">
+    <mutation Name="Pyrokinesis" DisplayName="▶Pyrokinesis" BearerDescription="▶pyromancers" BiomeEpithet="▶flame meadow">
       <description>
-        <p>[届：\TODÖ]You heat a nearby area with your mind.</p>
+        <p>▶You heat a nearby area with your mind.</p>
       </description>
       <leveltext>
         <stat Name="Intro" />
         <statline Name="Range" DisplayName="射程" />
         <statline Name="Area" DisplayName="面積" />
-        <statline Name="DamageRound1" DisplayName="[届：\TODÖ]Round 1 damage" />
-        <statline Name="DamageRound2" DisplayName="[届：\TODÖ]Round 2 damage" />
-        <statline Name="DamageRound3" DisplayName="[届：\TODÖ]Round 3 damage" />
+        <statline Name="DamageRound1" DisplayName="▶Round 1 damage" />
+        <statline Name="DamageRound2" DisplayName="▶Round 2 damage" />
+        <statline Name="DamageRound3" DisplayName="▶Round 3 damage" />
         <statline Name="Cooldown" DisplayName="冷却期間" Unit="[周\ラウンド]" />
       </leveltext>
     </mutation>
-    <mutation Name="Sense Psychic" DisplayName="[届：\TODÖ]Sense Psychic" BearerDescription="[届：\TODÖ]the psychically sensitive" BiomeAdjective="[届：\TODÖ]naked" />
-    <mutation Name="Spacetime Vortex" DisplayName="[届：\TODÖ]Spacetime Vortex" BearerDescription="[届：\TODÖ]spacefolders" BiomeAdjective="[届：\TODÖ]warped" />
-    <mutation Name="Stunning Force" DisplayName="[届：\TODÖ]Stunning Force" BearerDescription="[届：\TODÖ]the telekinetic" BiomeAdjective="[届：\TODÖ]telekinetic" />
-    <mutation Name="Sunder Mind" DisplayName="[届：\TODÖ]Sunder Mind" BearerDescription="[届：\TODÖ]mind sunderers" BiomeEpithet="[届：\TODÖ]psychic graveyard">
+    <mutation Name="Sense Psychic" DisplayName="▶Sense Psychic" BearerDescription="▶the psychically sensitive" BiomeAdjective="▶naked" />
+    <mutation Name="Spacetime Vortex" DisplayName="▶Spacetime Vortex" BearerDescription="▶spacefolders" BiomeAdjective="▶warped" />
+    <mutation Name="Stunning Force" DisplayName="▶Stunning Force" BearerDescription="▶the telekinetic" BiomeAdjective="▶telekinetic" />
+    <mutation Name="Sunder Mind" DisplayName="▶Sunder Mind" BearerDescription="▶mind sunderers" BiomeEpithet="▶psychic graveyard">
       <description>
-        <p>[届：\TODÖ]You sunder the mind of an enemy, leaving them reeling in pain.</p>
+        <p>▶You sunder the mind of an enemy, leaving them reeling in pain.</p>
       </description>
       <leveltext>
-        <p>[届：\TODÖ]For up to 10 rounds, you engage in psychic combat with an opponent, dealing damage each round.</p>
-        <p>[届：\TODÖ]Taking any action other than passing the turn will break the connection.</p>
-        <p>[届：\TODÖ]Each round you make a mental attack vs mental armor (MA).</p>
-        <statline Name="DamageIncrement" DisplayName="[届：\TODÖ]Damage increment" />
-        <p>[届：\TODÖ]After the tenth round, you deal bonus damage equal to the total amount of damage you've done so far.</p>
+        <p>▶For up to 10 rounds, you engage in psychic combat with an opponent, dealing damage each round.</p>
+        <p>▶Taking any action other than passing the turn will break the connection.</p>
+        <p>▶Each round you make a mental attack vs mental armor (MA).</p>
+        <statline Name="DamageIncrement" DisplayName="▶Damage increment" />
+        <p>▶After the tenth round, you deal bonus damage equal to the total amount of damage you've done so far.</p>
         <statline Name="Range" DisplayName="射程" />
         <statline Name="Cooldown" DisplayName="冷却期間" Unit="[周\ラウンド]" />
       </leveltext>
     </mutation>
-    <mutation Name="Syphon Vim" DisplayName="[届：\TODÖ]Syphon Vim" BearerDescription="[届：\TODÖ]life leeches" BiomeEpithet="[届：\TODÖ]slaughterfield" />
-    <mutation Name="Telepathy" DisplayName="[届：\TODÖ]Telepathy" BearerDescription="[届：\TODÖ]the telepathic" BiomeAdjective="[届：\TODÖ]telepathic" />
-    <mutation Name="Teleportation" DisplayName="[届：\TODÖ]Teleportation" BearerDescription="[届：\TODÖ]teleporters" BiomeEpithet="[届：\TODÖ]spacetime karst" />
-    <mutation Name="Teleport Other" DisplayName="[届：\TODÖ]Teleport Other" BearerDescription="[届：\TODÖ]those who teleport others" BiomeEpithet="[届：\TODÖ]hermitage" />
-    <mutation Name="Time Dilation" DisplayName="[届：\TODÖ]Time Dilation" BearerDescription="[届：\TODÖ]time dilators" BiomeEpithet="[届：\TODÖ]time prism" />
-    <mutation Name="Temporal Fugue" DisplayName="[届：\TODÖ]Temporal Fugue" BearerDescription="[届：\TODÖ]temporal fugitives" BiomeEpithet="[届：\TODÖ]spacetime hub" />
+    <mutation Name="Syphon Vim" DisplayName="▶Syphon Vim" BearerDescription="▶life leeches" BiomeEpithet="▶slaughterfield" />
+    <mutation Name="Telepathy" DisplayName="▶Telepathy" BearerDescription="▶the telepathic" BiomeAdjective="▶telepathic" />
+    <mutation Name="Teleportation" DisplayName="▶Teleportation" BearerDescription="▶teleporters" BiomeEpithet="▶spacetime karst" />
+    <mutation Name="Teleport Other" DisplayName="▶Teleport Other" BearerDescription="▶those who teleport others" BiomeEpithet="▶hermitage" />
+    <mutation Name="Time Dilation" DisplayName="▶Time Dilation" BearerDescription="▶time dilators" BiomeEpithet="▶time prism" />
+    <mutation Name="Temporal Fugue" DisplayName="▶Temporal Fugue" BearerDescription="▶temporal fugitives" BiomeEpithet="▶spacetime hub" />
   </category>
 
-  <category Name="MentalDefects" DisplayName="[届：\TODÖ]{{R|Mental Defects}}">
-    <mutation Name="Amnesia" DisplayName="[届：\TODÖ]Amnesia" BearerDescription="[届：\TODÖ]those who cannot remember" BiomeAdjective="[届：\TODÖ]pastless" />
-    <mutation Name="Blinking Tic" DisplayName="[届：\TODÖ]Blinking Tic" BearerDescription="[届：\TODÖ]compulsive teleporters" BiomeAdjective="[届：\TODÖ]blinking" />
-    <mutation Name="Dystechnia" DisplayName="[届：\TODÖ]Dystechnia" BearerDescription="[届：\TODÖ]those who are befuddled by technological complexity" BiomeAdjective="[届：\TODÖ]regressive" />
-    <mutation Name="Evil Twin" DisplayName="[届：\TODÖ]Evil Twin" BearerDescription="[届：\TODÖ]those with dopplegangers" BiomeEpithet="[届：\TODÖ]selfmoot" />
-    <mutation Name="Narcolepsy" DisplayName="[届：\TODÖ]Narcolepsy" BearerDescription="[届：\TODÖ]the narcoleptic" BiomeAdjective="[届：\TODÖ]drowsy" />
-    <mutation Name="Psionic Migraines" DisplayName="[届：\TODÖ]Psionic Migraines" BearerDescription="[届：\TODÖ]those who suffer from psionic migraines" BiomeAdjective="[届：\TODÖ]blaring" />
-    <mutation Name="Quantum Jitters" DisplayName="[届：\TODÖ]Quantum Jitters" BearerDescription="[届：\TODÖ]those who are quantumly uncertain" BiomeAdjective="[届：\TODÖ]jittery" />
-    <mutation Name="Socially Repugnant" DisplayName="[届：\TODÖ]Socially Repugnant" BearerDescription="[届：\TODÖ]the socially repugnant" BiomeEpithet="[届：\TODÖ]wretchmoot" />
+  <category Name="MentalDefects" DisplayName="▶{{R|Mental Defects}}">
+    <mutation Name="Amnesia" DisplayName="▶Amnesia" BearerDescription="▶those who cannot remember" BiomeAdjective="▶pastless" />
+    <mutation Name="Blinking Tic" DisplayName="▶Blinking Tic" BearerDescription="▶compulsive teleporters" BiomeAdjective="▶blinking" />
+    <mutation Name="Dystechnia" DisplayName="▶Dystechnia" BearerDescription="▶those who are befuddled by technological complexity" BiomeAdjective="▶regressive" />
+    <mutation Name="Evil Twin" DisplayName="▶Evil Twin" BearerDescription="▶those with dopplegangers" BiomeEpithet="▶selfmoot" />
+    <mutation Name="Narcolepsy" DisplayName="▶Narcolepsy" BearerDescription="▶the narcoleptic" BiomeAdjective="▶drowsy" />
+    <mutation Name="Psionic Migraines" DisplayName="▶Psionic Migraines" BearerDescription="▶those who suffer from psionic migraines" BiomeAdjective="▶blaring" />
+    <mutation Name="Quantum Jitters" DisplayName="▶Quantum Jitters" BearerDescription="▶those who are quantumly uncertain" BiomeAdjective="▶jittery" />
+    <mutation Name="Socially Repugnant" DisplayName="▶Socially Repugnant" BearerDescription="▶the socially repugnant" BiomeEpithet="▶wretchmoot" />
   </category>
 </mutations>
 

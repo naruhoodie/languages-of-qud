@@ -5,7 +5,7 @@
   <namestyles HyphenSeparator="＝" NameSeparator="・">
 
     <namestyle Name="Qudish" Format="AsIs">
-    <!-- name syllables from Arabic & Biblical Hebrew  -->
+    <!-- Anglicized? name syllables from Arabic & Biblical Hebrew  -->
       <prefixes Amount="1" Load="Replace">
         <prefix Name="ファ" /><!-- Original="fa" -->
         <prefix Name="ハ" /><!-- Original="ha" -->
@@ -224,7 +224,7 @@
 
     <namestyle Name="Qudish Moon Stair Site" Base="Qudish Site">
       <templates Load="Replace">
-        <template Name="[届：\TODÖ]Moon Stair =name=" />
+        <template Name="▶Moon Stair =name=" />
       </templates>
     </namestyle>
 
@@ -236,7 +236,7 @@
 
     <namestyle Name="Qudish Palladium Reef Site" Base="Qudish Site">
       <templates Load="Replace">
-        <template Name="[届：\TODÖ]Palladium Reef =name=" />
+        <template Name="▶Palladium Reef =name=" />
       </templates>
     </namestyle>
 
@@ -260,7 +260,7 @@
 
     <namestyle Name="Qudish Spindle Site" Base="Qudish Site">
       <templates Load="Replace">
-        <template Name="[届：\TODÖ]Spindle =name=" />
+        <template Name="▶Spindle =name=" />
       </templates>
     </namestyle>
 
