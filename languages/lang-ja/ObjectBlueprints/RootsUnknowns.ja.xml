@@ -3,181 +3,211 @@
 
 	<!-- root objects -->
 	<object Name="Object" Load="Merge">
-		<!-- only used for quantities of 1 to 9 -->
-		<tag Name="LimitedCounter" Value="1つ" />
-		<tag Name="Counter" Value="1個" />
+		<!-- LimitedCounter is only used for quantities of 1 to 9 -->
+		<xtagJAGrammar LimitedCounter="つ" Counter="個" />
 	</object>
 
 	<!-- Unknown names -->
 	<object Name="BaseUnknown" Load="Merge">
 		<part Name="Render" DisplayName="奇妙な人工物" /><!-- "weird artifact" -->
 		<part Name="Description" Short="ほこりが不可解な装置を粉々にする。" /><!-- "Dust powders the puzzling device." -->
-		<tag Name="BaseObject" />
+		<xtagJAGrammar Counter="個" />
 	</object>
 	<object Name="UnknownGigantic" Load="Merge">
-		<part Name="Description" Short="[届：\TODÖ]Dust powders the gigantic device." />
-		<part Name="SizeAdjective" Adjective="[届：\TODÖ]gigantic" />
+		<part Name="Description" Short="▶Dust powders the gigantic device." />
+		<part Name="SizeAdjective" Adjective="▶gigantic" />
+		<xtagJAGrammar Counter="台" />
 	</object>
 	<object Name="UnknownOddTrinket" Load="Merge">
-		<part Name="Render" DisplayName="[届：\TODÖ]odd trinket" />
-		<part Name="Description" Short="[届：\TODÖ]Light gleams off the edging of a small curio." />
+		<part Name="Render" DisplayName="変な安ピカ物" />
+		<part Name="Description" Short="▶Light gleams off the edging of a small curio." />
+		<xtagJAGrammar Counter="個" />
 	</object>
 	<object Name="UnknownStrangeTubes" Load="Merge">
 		<part Name="Render" DisplayName="奇妙な筒" /><!-- "strange tubes" -->
-		<part Name="Description" Short="[届：\TODÖ]Tubes of unknown purpose splay at welded joints." />
+		<part Name="Description" Short="▶Tubes of unknown purpose splay at welded joints." />
+		<!-- 束 (bundle) or 品 (item)? -->
+		<xtagJAGrammar CollectiveCounter="束" />
 	</object>
 	<object Name="UnknownStrangeFurniture" Load="Merge">
-		<part Name="Render" DisplayName="[届：\TODÖ]strange furniture" />
-		<part Name="Description" Short="[届：\TODÖ]A sitting object of vacant intent catches dust and offlight." />
+		<part Name="Render" DisplayName="奇妙な家具" />
+		<part Name="Description" Short="▶A sitting object of vacant intent catches dust and offlight." />
+		<xtagJAGrammar Counter="台" />
 	</object>
 	<object Name="UnknownBizarreContraption" Load="Merge">
-		<part Name="Render" DisplayName="[届：\TODÖ]bizarre contraption" />
-		<part Name="Description" Short="[届：\TODÖ]Knobs and rivets crisscross the inscrutable machine." />
+		<part Name="Render" DisplayName="奇妙な絡繰り" />
+		<part Name="Description" Short="▶Knobs and rivets crisscross the inscrutable machine." />
+		<xtagJAGrammar Counter="台" />
 	</object>
 	<object Name="UnknownMed" Load="Merge">
-		<part Name="Render" DisplayName="[届：\TODÖ]tube" />
-		<part Name="Description" Short="[届：\TODÖ]A strange substance fills a channel of glass." />
-		<part Name="SizeAdjective" Adjective="[届：\TODÖ]small" />
-		<tag Name="Counter" Value="1筒" />
+		<part Name="Render" DisplayName="筒" />
+		<part Name="Description" Short="▶A strange substance fills a channel of glass." />
+		<part Name="SizeAdjective" Adjective="▶small" />
+		<xtagJAGrammar Counter="筒" />
 	</object>
 	<object Name="UnknownStrangeMeat" Load="Merge">
-		<part Name="Render" DisplayName="[届：\TODÖ]strange piece of meat" />
-		<part Name="Description" Short="[届：\TODÖ]An unknown organ bleats with the desperation of life." />
+		<part Name="Render" DisplayName="変な肉片" />
+		<part Name="Description" Short="▶An unknown organ bleats with the desperation of life." />
+		<xtagJAGrammar Counter="塊" />
 	</object>
 	<object Name="UnknownStrangePlant" Load="Merge">
-		<part Name="Render" DisplayName="[届：\TODÖ]strange plant" />
-		<part Name="Description" Short="[届：\TODÖ]An unfamiliar tendril of green in leaf-sheath circles itself." />
+		<part Name="Render" DisplayName="変な植物" />
+		<part Name="Description" Short="▶An unfamiliar tendril of green in leaf-sheath circles itself." />
+		<xtagJAGrammar Counter="株" />
 	</object>
 
 	<!-- Partially known names -->
 	<object Name="UnknownPistol" Load="Merge">
-		<part Name="Render" DisplayName="[届：\TODÖ]pistol" />
-		<part Name="Description" Short="[届：\TODÖ]Blemishes cross the short barrel of an unidentified gun." />
+		<part Name="Render" DisplayName="ピストル" />
+		<part Name="Description" Short="▶Blemishes cross the short barrel of an unidentified gun." />
+		<xtagJAGrammar Counter="丁" />
 	</object>
 	<object Name="UnknownRifle" Load="Merge">
-		<part Name="Render" DisplayName="[届：\TODÖ]rifle" />
-		<part Name="Description" Short="[届：\TODÖ]Blemishes cross the long barrel of an unidentified gun." />
+		<part Name="Render" DisplayName="ライフル銃" />
+		<part Name="Description" Short="▶Blemishes cross the long barrel of an unidentified gun." />
+		<xtagJAGrammar Counter="挺" />
 	</object>
 	<object Name="UnknownCannon" Load="Merge">
-		<part Name="Render" DisplayName="[届：\TODÖ]cannon" />
-		<part Name="Description" Short="[届：\TODÖ]Smokescar blackens the iron sight and stretches down the big gun's main channel." />
+		<part Name="Render" DisplayName="大砲" />
+		<part Name="Description" Short="▶Smokescar blackens the iron sight and stretches down the big gun's main channel." />
+		<xtagJAGrammar Counter="門" />
 	</object>
 	<object Name="UnknownBow" Load="Merge">
-		<part Name="Render" DisplayName="[届：\TODÖ]bow" />
-		<part Name="Description" Short="[届：\TODÖ]Stretch wire connects the nocks of an unidentified bow." />
+		<part Name="Render" DisplayName="弓" />
+		<part Name="Description" Short="▶Stretch wire connects the nocks of an unidentified bow." />
+		<xtagJAGrammar Counter="張" />
 	</object>
 	<object Name="UnknownGrenade" Load="Merge">
-		<part Name="Render" DisplayName="[届：\TODÖ]grenade" />
-		<part Name="Description" Short="[届：\TODÖ]A cannister of blast is sheathed in undeciphered metal." />
+		<part Name="Render" DisplayName="手榴弾" />
+		<part Name="Description" Short="▶A cannister of blast is sheathed in undeciphered metal." />
+		<xtagJAGrammar Counter="個" />
 	</object>
 	<object Name="UnknownClub" Load="Merge">
-		<part Name="Render" DisplayName="[届：\TODÖ]club" />
-		<part Name="Description" Short="[届：\TODÖ]A hunk of fused material makes a beating stick." />
+		<part Name="Render" DisplayName="棍棒" />
+		<part Name="Description" Short="▶A hunk of fused material makes a beating stick." />
+		<xtagJAGrammar Counter="本" />
 	</object>
 	<object Name="UnknownKnife" Load="Merge">
-		<part Name="Render" DisplayName="[届：\TODÖ]knife" />
-		<part Name="Description" Short="[届：\TODÖ]A sharp edge tops a strange hilt." />
+		<part Name="Render" DisplayName="小刀" />
+		<part Name="Description" Short="▶A sharp edge tops a strange hilt." />
+		<xtagJAGrammar Counter="口" />
 	</object>
 	<object Name="UnknownSword" Load="Merge">
-		<part Name="Render" DisplayName="[届：\TODÖ]sword" />
-		<part Name="Description" Short="[届：\TODÖ]A blade of considerable length runs through a strange hilt." />
+		<part Name="Render" DisplayName="剣" />
+		<part Name="Description" Short="▶A blade of considerable length runs through a strange hilt." />
+		<xtagJAGrammar Counter="口" />
 	</object>
 	<object Name="UnknownAxe" Load="Merge">
-		<part Name="Render" DisplayName="[届：\TODÖ]axe" />
-		<part Name="Description" Short="[届：\TODÖ]A bladed edge hangs over a finger-smudged haft." />
+		<part Name="Render" DisplayName="斧" />
+		<part Name="Description" Short="▶A bladed edge hangs over a finger-smudged haft." />
+		<xtagJAGrammar Counter="挺" />
 	</object>
 	<object Name="UnknownShield" Load="Merge">
-		<part Name="Render" DisplayName="[届：\TODÖ]shield" />
-		<part Name="Description" Short="[届：\TODÖ]A curved screen of bang-hard surface material is wielded by a welded grip." />
+		<part Name="Render" DisplayName="▶shield" />
+		<part Name="Description" Short="▶A curved screen of bang-hard surface material is wielded by a welded grip." />
+		<xtagJAGrammar Counter="帖" />
 	</object>
 	<object Name="UnknownArmor" Load="Merge">
-		<part Name="Render" DisplayName="[届：\TODÖ]armor" />
-		<part Name="Description" Short="[届：\TODÖ]A shaped cuirass of unknown origin protects the good portion of a body." />
+		<part Name="Render" DisplayName="▶armor" />
+		<part Name="Description" Short="▶A shaped cuirass of unknown origin protects the good portion of a body." />
+		<!-- this counter is archaic -->
+		<xtagJAGrammar Counter="領" />
 	</object>
 	<object Name="UnknownHelmet" Load="Merge">
-		<part Name="Render" DisplayName="[届：\TODÖ]helmet" />
-		<part Name="Description" Short="[届：\TODÖ]A head topper was fashioned for unknown purpose." />
+		<part Name="Render" DisplayName="▶helmet" />
+		<part Name="Description" Short="▶A head topper was fashioned for unknown purpose." />
+		<!-- this counter is archaic -->
+		<xtagJAGrammar Name="Counter" Value="刎" />
 	</object>
 	<object Name="UnknownMask" Load="Merge">
-		<part Name="Render" DisplayName="[届：\TODÖ]mask" />
-		<part Name="Description" Short="[届：\TODÖ]A false face was shaped to fashion and stitched with unknown intent." />
+		<part Name="Render" DisplayName="▶mask" />
+		<part Name="Description" Short="▶A false face was shaped to fashion and stitched with unknown intent." />
+		<xtagJAGrammar Counter="面" />
 	</object>
 	<object Name="UnknownGoggles" Load="Merge">
 		<part Name="Render" DisplayName="眼鏡" /><!-- "goggles" -->
-		<part Name="Description" Short="[届：\TODÖ]Rounded seers are held by a strap." />
+		<part Name="Description" Short="▶Rounded seers are held by a strap." />
 		<xtagGrammar adjunctNoun="" />
+		<xtagJAGrammar Counter="面" />
 	</object>
 	<object Name="UnknownGloves" Load="Merge">
 		<part Name="Render" DisplayName="手袋" /><!-- "gloves" -->
 		<part Name="Description" Short="奇妙なミトンはほとんどの手首と指に適する。" /><!-- "Strange mitts will fit most wrists and fingers." -->
-		<tag Name="CollectiveCounter" Value="1組" />
-		<xtagGrammar adjunctNoun="1組" />
+		<xtagJAGrammar CollectiveCounter="組" />
+		<xtagGrammar adjunctNoun="組" />
 	</object>
 	<object Name="UnknownJewelry" Load="Merge">
-		<part Name="Render" DisplayName="[届：\TODÖ]jewelry" />
-		<part Name="Description" Short="[届：\TODÖ]A rounded torc gleams for unintended eyes." />
+		<part Name="Render" DisplayName="▶jewelry" />
+		<part Name="Description" Short="▶A rounded torc gleams for unintended eyes." />
+		<xtagJAGrammar Counter="点" />
 	</object>
 	<object Name="UnknownCloak" Load="Merge">
-		<part Name="Render" DisplayName="[届：\TODÖ]cloak" />
-		<part Name="Description" Short="[届：\TODÖ]Fabric of some type was sutured to an unknown end." />
+		<part Name="Render" DisplayName="▶cloak" />
+		<part Name="Description" Short="▶Fabric of some type was sutured to an unknown end." />
+		<xtagJAGrammar Counter="着" />
 	</object>
 	<object Name="UnknownBackpack" Load="Merge">
-		<part Name="Render" DisplayName="[届：\TODÖ]backpack" />
-		<part Name="Description" Short="[届：\TODÖ]A strapped sack was sewn for carrying something." />
+		<part Name="Render" DisplayName="▶backpack" />
+		<part Name="Description" Short="▶A strapped sack was sewn for carrying something." />
+		<xtagJAGrammar Counter="袋" />
 	</object>
 	<object Name="UnknownBoots" Load="Merge">
 		<part Name="Render" DisplayName="靴" /><!-- "boots" -->
 		<part Name="Description" Short="長年の使用による傷が履物の表面を十字になる。" /><!-- "Blemishes of long use cross the surface of the footwear." -->
-		<tag Name="CollectiveCounter" Value="1足" />
-		<xtagGrammar adjunctNoun="1足" />
+		<xtagJAGrammar CollectiveCounter="足" />
+		<xtagGrammar adjunctNoun="足" />
 	</object>
 	<object Name="UnknownBottle" Load="Merge">
-		<part Name="Render" DisplayName="[届：\TODÖ]bottle" />
-		<part Name="Description" Short="[届：\TODÖ]It's a vessel of well and unusual make." />
+		<part Name="Render" DisplayName="▶bottle" />
+		<part Name="Description" Short="▶It's a vessel of well and unusual make." />
+		<xtagJAGrammar Counter="本" />
 	</object>
 	<object Name="UnknownDataDisk" Load="Merge">
-		<part Name="Render" DisplayName="[届：\TODÖ]data disk" />
-		<part Name="Description" Short="[届：\TODÖ]Bits sleep until animated inside their rectangle coffin." />
+		<part Name="Render" DisplayName="▶data disk" />
+		<part Name="Description" Short="▶Bits sleep until animated inside their rectangle coffin." />
+		<xtagJAGrammar Counter="枚" />
 	</object>
 	<object Name="UnknownTool" Load="Merge">
-		<part Name="Render" DisplayName="[届：\TODÖ]tool" />
-		<part Name="Description" Short="[届：\TODÖ]The array of strange parts are summed together as a kind of tool." />
+		<part Name="Render" DisplayName="▶tool" />
+		<part Name="Description" Short="▶The array of strange parts are summed together as a kind of tool." />
+		<xtagJAGrammar Counter="丁" />
 	</object>
 
   <!-- tonics -->
 	<object Name="UnknownEmptyMed" Load="Merge">
-		<part Name="Render" DisplayName="[届：\TODÖ]tube" />
+		<part Name="Render" DisplayName="▶tube" />
 		<part Name="Description" Short="空の空気がガラスのパイプに圧力をかける。" /><!-- "Empty air pressurizes a channel of glass." -->
+		<xtagJAGrammar Counter="本" />
 	</object>
 	<object Name="UnknownSmallMilkyTube" Load="Merge">
-		<part Name="Render" DisplayName="[届：\TODÖ]{{Y|milky}} tube" />
+		<part Name="Render" DisplayName="▶{{Y|milky}} tube" />
 	</object>
 	<object Name="UnknownSmallSmokeyTube" Load="Merge">
-		<part Name="Render" DisplayName="[届：\TODÖ]{{K|smokey}} tube" />
+		<part Name="Render" DisplayName="▶{{K|smokey}} tube" />
 	</object>
 	<object Name="UnknownSmallRoseyTube" Load="Merge">
-		<part Name="Render" DisplayName="[届：\TODÖ]{{R|rosey}} tube" />
+		<part Name="Render" DisplayName="▶{{R|rosey}} tube" />
 	</object>
 	<object Name="UnknownSmallTurquoiseTube" Load="Merge">
-		<part Name="Render" DisplayName="[届：\TODÖ]{{C|turquoise}} tube" />
+		<part Name="Render" DisplayName="▶{{C|turquoise}} tube" />
 	</object>
 	<object Name="UnknownSmallCobaltTube" Load="Merge">
-		<part Name="Render" DisplayName="[届：\TODÖ]{{b|cobalt}} tube" />
+		<part Name="Render" DisplayName="▶{{b|cobalt}} tube" />
 	</object>
 	<object Name="UnknownSmallMossyTube" Load="Merge">
-		<part Name="Render" DisplayName="[届：\TODÖ]{{g|mossy}} tube" />
+		<part Name="Render" DisplayName="▶{{g|mossy}} tube" />
 	</object>
 	<object Name="UnknownSmallGoldFleckedTube" Load="Merge">
-		<part Name="Render" DisplayName="[届：\TODÖ]{{W|gold-flecked}} tube" />
+		<part Name="Render" DisplayName="▶{{W|gold-flecked}} tube" />
 	</object>
 	<object Name="UnknownSmallMuddyTube" Load="Merge">
-		<part Name="Render" DisplayName="[届：\TODÖ]{{w|muddy}} tube" />
+		<part Name="Render" DisplayName="▶{{w|muddy}} tube" />
 	</object>
 	<object Name="UnknownSmallVioletTube" Load="Merge">
-		<part Name="Render" DisplayName="[届：\TODÖ]{{m|violet}} tube" />
+		<part Name="Render" DisplayName="▶{{m|violet}} tube" />
 	</object>
 	<object Name="UnknownSmallPlatinumTube" Load="Merge">
-		<part Name="Render" DisplayName="[届：\TODÖ]{{y|platinum}} tube" />
+		<part Name="Render" DisplayName="▶{{y|platinum}} tube" />
 	</object>
 
 </objects>
