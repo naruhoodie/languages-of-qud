@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.15
+Caves of Qud - Generated Localizable XML 2.0.212.16
 
 <mutations Hidden="" ExcludeFromPool="">
 
   <category Name="Key" DisplayName="DisplayText">
 
-    <mutation Name="Key" DisplayName="DisplayText" BearerDescription="DisplayText">
+    <mutation Name="Key" DisplayName="DisplayText" BearerDescription="DisplayText" BiomeAdjective="DisplayText" BiomeEpithet="DisplayText">
 
       <description>
 
@@ -28,8 +28,8 @@ Caves of Qud - Generated Localizable XML 2.0.212.15
       <leveltext>▶
             <p>You detect the presence of creatures within a distance typically up to <stat Name="Radius" Unit="square" /> depending on terrain</p>
             <switch Name="LevelMatch">
-              <case Value="yes"><p>Chance to identify nearby detected creatures</p></case>
-              <case Value="no"><p>{{rules|Increased chance to identify nearby detected creatures}}</p></case>
+              <case Value="true"><p>Chance to identify nearby detected creatures</p></case>
+              <default><p>{{rules|Increased chance to identify nearby detected creatures}}</p></default>
             </switch>
           </leveltext>
     </mutation>
@@ -175,7 +175,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.15
           </description>
       <leveltext>▶
             <statline Name="Area" />
-            <p><switch Name="LevelDiff"><case Value="0">Creatures are pushed away from center of blast.</case><default>{{rules|Increased push force}}</default></switch></p>
+            <p><switch Name="LevelMatch"><case Value="true">Creatures are pushed away from center of blast.</case><default>{{rules|Increased push force}}</default></switch></p>
             <statline Name="Cooldown" />
           </leveltext>
     </mutation>

@@ -65,7 +65,7 @@
         <fireOnActor>true</fireOnActor>
         <worksAtDistance>true</worksAtDistance>
     </inventoryaction>
-    <inventoryaction Name="CompanionToggleEngagementAgressive">
+    <inventoryaction Name="CompanionToggleEngagementAggressive">
         <command>CompanionToggleEngagement</command>
         <display>direct to engage aggressively</display>
         <preferToHighlight>engage</preferToHighlight>
@@ -456,7 +456,7 @@
         <worksTelekinetically>true</worksTelekinetically>
     </inventoryaction>
     <inventoryaction Name="ActivateFactionDeed">
-        <display>entagle text</display>
+        <display>entangle text</display>
         <key>n</key>
         <default>15</default>
     </inventoryaction>

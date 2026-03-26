@@ -31,7 +31,7 @@
       </description>
       <leveltext>
         <p>You can increase your body's adrenaline flow for <stat Name="Duration" />.</p>
-        <p>While it's flowing, you gain +<stat Name="QuicknessBonus" /> quickness and other physical mutations gain +<stat Name="MutationBonus" Unit="rank" />.</p>         
+        <p>While it's flowing, you gain +<stat Name="QuicknessBonus" /> quickness and other physical mutations gain +<stat Name="MutationBonus" Unit="rank" />.</p>
         <statline Name="Cooldown" />
       </leveltext>
     </mutation>
@@ -144,7 +144,7 @@
       </description>
       <leveltext>
         <p>You detect the presence of creatures within a radius of <stat Name="Radius" />.</p>
-        <p><switch Name="LevelDiff"><case Value="1">{{rules|Increased chance to identify nearby detected creatures}}</case><default>Chance to identify nearby detected creatures</default></switch></p>
+        <p><switch Name="LevelMatch"><case Value="true">Chance to identify nearby detected creatures</case><default>{{rules|Increased chance to identify nearby detected creatures}}</default></switch></p>
       </leveltext>
     </mutation>
     <mutation Name="Heightened Quickness" Cost="3" MaxSelected="1" Class="HeightenedSpeed" Exclusions="" BearerDescription="the quick" Tile="Mutations/heightened_quickness.bmp">
@@ -245,7 +245,24 @@
         <p>Immune to other creatures' <stat Name="Quills" /></p>
       </leveltext>
     </mutation>
-    <mutation Name="Regeneration" Cost="4" MaxSelected="1" Class="Regeneration" Exclusions="" BearerDescription="those who regenerate" Tile="Mutations/regeneration.bmp" />
+    <mutation Name="Regeneration" Cost="4" MaxSelected="1" Class="Regeneration" Exclusions="" BearerDescription="those who regenerate" Tile="Mutations/regeneration.bmp">
+      <description>
+        <p>Your wounds heal very quickly.</p>
+      </description>
+      <leveltext>
+        <p>Your full natural healing rate applies in combat.</p>
+        <p>+<stat Name="RegenBonus" />% faster natural healing rate</p>
+        <p><stat Name="RegenChance" />% chance to regrow a missing limb each round</p>
+        <switch Name="NoDecapitate">
+          <case Value="false" />
+          <default><p>{{rules|You cannot be decapitated.}}</p></default>
+        </switch>
+        <switch Name="LevelBelow5">
+          <case Value="true"><p><stat Name="DebuffChance" />% chance to remove a {{rules|minor physical debuff}} at random each round</p></case>
+          <default><p><stat Name="DebuffChance" />% chance to remove a {{rules|physical debuff}} at random each round</p></default>
+        </switch>
+      </leveltext>
+    </mutation>
     <mutation Name="Sleep Gas Generation" Cost="3" MaxSelected="1" Class="SleepGasGeneration" BearerDescription="those who expel sleep gas" Tile="Mutations/gas_generation.bmp">
       <description>
         <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
@@ -518,7 +535,7 @@
         <statline Name="Cooldown" />
         <switch Name="LevelMatch">
           <case Value="true"></case>
-          <default><p>More powerful plants summoned</p></default>
+          <default><p>{{rules|More powerful plants summoned}}</p></default>
         </switch>
         <p>+200 reputation with {{w|the Consortium of Phyta}}</p>
       </leveltext>
@@ -614,10 +631,52 @@
       </description>
       <leveltext></leveltext>
     </mutation>
-    <mutation Name="Light Manipulation" Cost="4" MaxSelected="1" Class="LightManipulation" Exclusions="" BearerDescription="manipulators of light" BiomeAdjective="illuminated" Tile="Mutations/light_manipulation.bmp" />
-    <mutation Name="Mass Mind" Cost="4" MaxSelected="1" Class="MassMind" Exclusions="" BearerDescription="those who tap the Mass Mind" BiomeEpithet="mindmoot" Tile="Mutations/mass_mind.bmp" />
-    <mutation Name="Mental Mirror" Cost="2" MaxSelected="1" Class="MentalMirror" Exclusions="" BearerDescription="the mentally reflective" BiomeEpithet="mirrorsteppe" Tile="Mutations/mental_mirror.bmp" />
-    <mutation Name="Precognition" Cost="4" MaxSelected="1" Class="Precognition" Exclusions="" BearerDescription="the prescient" BiomeEpithet="future site" Tile="Mutations/precognition.bmp" />
+    <mutation Name="Light Manipulation" Cost="4" MaxSelected="1" Class="LightManipulation" Exclusions="" BearerDescription="manipulators of light" BiomeAdjective="illuminated" Tile="Mutations/light_manipulation.bmp">
+      <description>
+        <p>You manipulate light to your advantage.</p>
+      </description>
+      <leveltext>
+        <p>You produce ambient light within a radius of <stat Name="Radius" />.</p>
+        <p>You may focus the light into a laser beam, temporarily reducing the radius of your ambient light by 1.</p>
+        <statline Name="LaserDamageInc" DisplayName="Laser damage increment" />
+        <statline Name="LaserPen" DisplayName="Laser penetration" />
+        <p>Ambient light recharges at a rate of 1 unit every <stat Name="AmbientRegrowthDuration" Unit="round" /> until it reaches its maximum value.</p>
+        <p><stat Name="ReflectChance" />% chance to reflect light-based damage</p>
+    </leveltext>
+    </mutation>
+    <mutation Name="Mass Mind" Cost="4" MaxSelected="1" Class="MassMind" Exclusions="" BearerDescription="those who tap the Mass Mind" BiomeEpithet="mindmoot" Tile="Mutations/mass_mind.bmp">
+      <description>
+        <p>You tap into the aggregate mind and steal power from other espers.</p>
+      </description>
+      <leveltext>
+        <p>Refreshes all mental mutations</p>
+        <statline Name="CooldownNoWillpower" Unit="round" />
+        <p>Cooldown is not affected by Willpower.</p>
+        <p>Each use attracts slightly more attention from psychic interlopers.</p>
+        <p><switch Name="LevelMatch"><case Value="true">Small chance each round for another esper to steal your powers</case><default>{{rules|Decreased chance for another esper to steal your powers}}</default></switch></p>
+        <p>-200 reputation with {{w|the Seekers of the Sightless Way}}</p>
+      </leveltext>
+    </mutation>
+    <mutation Name="Mental Mirror" Cost="2" MaxSelected="1" Class="MentalMirror" Exclusions="" BearerDescription="the mentally reflective" BiomeEpithet="mirrorsteppe" Tile="Mutations/mental_mirror.bmp">
+      <description>
+        <p>You reflect mental attacks back at your attackers.</p>
+      </description>
+      <leveltext>
+        <p>When you suffer a mental attack while Mental Mirror is off cooldown, you gain +<stat Name="BonusMA" /> mental armor (MA).</p>
+        <p>If the attack then fails to penetrate your MA, it's reflected back at your attacker.</p>
+        <statline Name="Cooldown" />
+      </leveltext>
+    </mutation>
+    <mutation Name="Precognition" Cost="4" MaxSelected="1" Class="Precognition" Exclusions="" BearerDescription="the prescient" BiomeEpithet="future site" Tile="Mutations/precognition.bmp">
+      <description>
+        <p>You peer into your near future.</p>
+      </description>
+      <leveltext>
+        <p>You may activate this power and then later revert to the point in time when you activated it.</p>
+        <p>Duration between use and reversion: <stat Name="Duration" /></p>
+        <statline Name="Cooldown" />
+      </leveltext>
+    </mutation>
     <mutation Name="Psychometry" Cost="3" MaxSelected="1" Class="Psychometry" Exclusions="Dystechnia" BearerDescription="the psychometrically sensitive" BiomeAdjective="retrocognate" Tile="Mutations/psychometry.bmp">
       <description>
         <p>You read the history of artifacts by touching them, learning what they do and how they were made.</p>
@@ -633,18 +692,58 @@
         <p>You heat a nearby area with your mind.</p>
       </description>
       <leveltext>
-        <stat Name="Intro" />
+        <switch Name="LevelMatch">
+          <case Value="true"><p>Toasts affected area over 3 rounds</p></case>
+          <case Value="raise"><p>{{rules|Increased toast temperature intensity}}</p></case>
+          <default><p>{{rules|Decreased toast temperature intensity}}</p></default>
+        </switch>
         <statline Name="Range" />
         <statline Name="Area" />
         <statline Name="DamageRound1" DisplayName="Round 1 damage" />
         <statline Name="DamageRound2" DisplayName="Round 2 damage" />
         <statline Name="DamageRound3" DisplayName="Round 3 damage" />
-        <statline Name="Cooldown" Unit="round" />
+        <statline Name="Cooldown" />
       </leveltext>
     </mutation>
-    <mutation Name="Sense Psychic" Cost="1" MaxSelected="1" Class="SensePsychic" Exclusions="" BearerDescription="the psychically sensitive" BiomeAdjective="naked" Tile="Mutations/sense_psychic.bmp" />
-    <mutation Name="Spacetime Vortex" Cost="3" MaxSelected="1" Class="SpacetimeVortex" Exclusions="" BearerDescription="spacefolders" BiomeAdjective="warped" Tile="Mutations/spacetime_vortex.bmp" />
-    <mutation Name="Stunning Force" Cost="3" MaxSelected="1" Class="StunningForce" Exclusions="" BearerDescription="the telekinetic" BiomeAdjective="telekinetic" Tile="Mutations/stunning_force.bmp" />
+    <mutation Name="Sense Psychic" Cost="1" MaxSelected="1" Class="SensePsychic" Exclusions="" BearerDescription="the psychically sensitive" BiomeAdjective="naked" Tile="Mutations/sense_psychic.bmp">
+      <description>
+        <p>You can sense other mental mutants through the psychic aether.</p>
+        <p></p>
+        <p>You detect the presence of psychic enemies within a radius of <stat Name="Radius" />.</p>
+        <p>There's a chance you identify detected enemies.</p>
+      </description>
+      <leveltext></leveltext>
+    </mutation>
+    <mutation Name="Spacetime Vortex" Cost="3" MaxSelected="1" Class="SpacetimeVortex" Exclusions="" BearerDescription="spacefolders" BiomeAdjective="warped" Tile="Mutations/spacetime_vortex.bmp">
+      <description>
+        <p>You sunder spacetime, sending things nearby careening through a tear in the cosmic fabric.</p>
+      </description>
+      <leveltext>
+        <p>Summons a vortex that swallows everything in its path.</p>
+        <switch Name="BonusDuration">
+          <case Value="0"></case>
+          <default><statline Name="BonusDuration" DisplayName="Bonus duration" Unit="round" /></default>
+        </switch>
+        <statline Name="Cooldown" />
+        <p>You may enter the vortex to teleport to a random location in Qud.</p>
+        <p>+200 reputation with {{w|highly entropic beings}}</p>
+      </leveltext>
+    </mutation>
+    <mutation Name="Stunning Force" Cost="3" MaxSelected="1" Class="StunningForce" Exclusions="" BearerDescription="the telekinetic" BiomeAdjective="telekinetic" Tile="Mutations/stunning_force.bmp">
+      <description>
+        <p>You invoke a concussive force in a nearby area, throwing enemies back and stunning them.</p>
+      </description>
+      <leveltext>
+        <statline Name="Range" />
+        <statline Name="Area" />
+        <switch Name="LevelMatch">
+          <case Value="true"><p>Creatures are pushed away from center of blast, stunned, and dealt crushing damage in up to 3 increments.</p></case>
+          <default><p>{{rules|Increased stun save difficulty}}</p></default>
+        </switch>
+        <statline Name="DamageIncrement" DisplayName="Damage increment" />
+        <statline Name="Cooldown" />
+      </leveltext>
+    </mutation>
     <mutation Name="Sunder Mind" Cost="4" MaxSelected="1" Class="SunderMind" Exclusions="" BearerDescription="mind sunderers" BiomeEpithet="psychic graveyard" Tile="Mutations/sunder_mind.bmp">
       <description>
         <p>You sunder the mind of an enemy, leaving them reeling in pain.</p>
@@ -659,19 +758,68 @@
         <statline Name="Cooldown" />
       </leveltext>
     </mutation>
-    <mutation Name="Syphon Vim" Cost="3" MaxSelected="1" Class="LifeDrain" Exclusions="" BearerDescription="life leeches" BiomeEpithet="slaughterfield" Tile="Mutations/syphon_vim.bmp" />
+    <mutation Name="Syphon Vim" Cost="3" MaxSelected="1" Class="LifeDrain" Exclusions="" BearerDescription="life leeches" BiomeEpithet="slaughterfield" Tile="Mutations/syphon_vim.bmp">
+      <description>
+        <p>You bond with a nearby organic creature and leech its life force.</p>
+      </description>
+      <leveltext>
+        <p>Mental attack versus an organic creature</p>
+        <p>Drains <stat Name="HP" Unit="hit point" /> per round</p>
+        <p>Target gets a mental save to resist damage each round</p>
+        <statline Name="Duration" />
+        <statline Name="Cooldown" />
+      </leveltext>
+    </mutation>
     <mutation Name="Telepathy" Cost="1" MaxSelected="1" Class="Telepathy" Exclusions="" BearerDescription="the telepathic" BiomeAdjective="telepathic" Tile="Mutations/telepathy.bmp">
       <description>
         <p>You may communicate with others through the psychic aether.</p>
         <p></p>
-        <p>Chat with anyone in vision\nTakes you much less time to issue orders to companions</p>
+        <p>Chat with anyone in vision</p>
+        <p>Takes you much less time to issue orders to companions</p>
       </description>
       <leveltext></leveltext>
     </mutation>
-    <mutation Name="Teleportation" Cost="5" MaxSelected="1" Class="Teleportation" Exclusions="" BearerDescription="teleporters" BiomeEpithet="spacetime karst" Tile="Mutations/teleportation.bmp" />
-    <mutation Name="Teleport Other" Cost="2" MaxSelected="1" Class="TeleportOther" Exclusions="" BearerDescription="those who teleport others" BiomeEpithet="hermitage" Tile="Mutations/teleport_other.bmp" />
-    <mutation Name="Time Dilation" Cost="4" MaxSelected="1" Class="TimeDilation" Exclusions="" BearerDescription="time dilators" BiomeEpithet="time prism" Tile="Mutations/time_dilation.bmp" />
-    <mutation Name="Temporal Fugue" Cost="5" MaxSelected="1" Class="TemporalFugue" Exclusions="" BearerDescription="temporal fugitives" BiomeEpithet="spacetime hub" Tile="Mutations/temporal_fugue.bmp" />
+    <mutation Name="Teleportation" Cost="5" MaxSelected="1" Class="Teleportation" Exclusions="" BearerDescription="teleporters" BiomeEpithet="spacetime karst" Tile="Mutations/teleportation.bmp">
+      <description>
+        <p>You teleport to a nearby location.</p>
+      </description>
+      <leveltext>
+        <p>Teleport to a random location within a designated area.</p>
+        <statline Name="UncertaintyRadius" DisplayName="Uncertainty radius" />
+        <statline Name="Cooldown" />
+      </leveltext>
+    </mutation>
+    <mutation Name="Teleport Other" Cost="2" MaxSelected="1" Class="TeleportOther" Exclusions="" BearerDescription="those who teleport others" BiomeEpithet="hermitage" Tile="Mutations/teleport_other.bmp">
+      <description>
+        <p>You teleport an adjacent creature to a random nearby location.</p>
+      </description>
+      <leveltext>
+        <statline Name="Cooldown" />
+      </leveltext>
+    </mutation>
+    <mutation Name="Time Dilation" Cost="4" MaxSelected="1" Class="TimeDilation" Exclusions="" BearerDescription="time dilators" BiomeEpithet="time prism" Tile="Mutations/time_dilation.bmp">
+      <description>
+        <p>You distort time around your person in order to slow down your enemies.</p>
+      </description>
+      <leveltext>
+        <p>Creatures within <stat Name="Range" /> tiles are slowed according to how close they are to you.</p>
+        <p>Distance 1: creatures receive a <stat Name="QuicknessPenalty1" />% Quickness penalty</p>
+        <p>Distance 4: creatures receive a <stat Name="QuicknessPenalty4" />% Quickness penalty</p>
+        <p>Distance 7: creatures receive a <stat Name="QuicknessPenalty7" />% Quickness penalty</p>
+        <statline Name="Duration" />
+        <statline Name="Cooldown" />
+      </leveltext>
+    </mutation>
+    <mutation Name="Temporal Fugue" Cost="5" MaxSelected="1" Class="TemporalFugue" Exclusions="" BearerDescription="temporal fugitives" BiomeEpithet="spacetime hub" Tile="Mutations/temporal_fugue.bmp">
+      <description>
+        <p>You quickly pass back and forth through time creating multiple copies of yourself.</p>
+      </description>
+      <leveltext>
+        <statline Name="Duration" />
+        <statline Name="Copies" />
+        <statline Name="Cooldown" />
+      </leveltext>
+    </mutation>
   </category>
 
   <category Name="MentalDefects" DisplayName="{{R|Mental Defects}}" Foreground="b" Detail="M" Defect="true">

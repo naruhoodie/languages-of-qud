@@ -236,7 +236,7 @@
     <part Name="Springy" Factor="1.2" />
     <tag Name="Class" Value="clam" />
     <tag Name="Species" Value="clam" />
-    <tag Name="Gender" Value="neuter" />
+    <tag Name="Gender" Value="neuterperson" />
     <part Name="ConversationScript" ConversationID="Clams" />
     <tag Name="HeroNameTitleWiseDescriptor" Value="Inviting,Tempting,Open,Wide-Open,Hospitable,Seductive" />
     <tag Name="HeroNameTitleMayorSyn" Value="clam god,clam mayor,elder clam" />
@@ -274,7 +274,7 @@
 		<tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_creature_animal_crab_vo_die" />
 		<tag Name="TakeDamageSound" Value="Sounds/Creatures/VO/sfx_creature_animal_crab_vo_hurt"/>
     <tag Name="BaseObject" Value="*noinherit" />
-    <tag Name="Gender" Value="neuter" />
+    <tag Name="Gender" Value="neuterperson" />
     <part Name="ConversationScript" ConversationID="Crabs" />
     <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Great,Sage,Judicious,Giant,Dense,Thick,Ornately-Shelled" />
     <tag Name="HeroNameTitleMayorSyn" Value="king,mayor,elder" />
@@ -317,7 +317,7 @@
     <part Name="Aquatic" />
     <skill Name="Endurance_Swimming" />
     <tag Name="BaseObject" Value="*noinherit" />
-    <tag Name="Gender" Value="neuter" />
+    <tag Name="Gender" Value="neuterperson" />
     <part Name="ConversationScript" ConversationID="Fish" />
     <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Sage,Old,Great,Giant,Ornately-Finned,Fleet,Many-Finned" />
     <tag Name="HeroNameTitleMayorSyn" Value="fish god,fish mayor,elder-fish" />
@@ -348,7 +348,7 @@
     <part Name="Brain" Factions="Insects-100" />
     <part Name="Springy" Factor="0.1" />
     <tag Name="BaseObject" Value="*noinherit" />
-    <tag Name="Gender" Value="neuter" />
+    <tag Name="Gender" Value="neuterperson" />
     <part Name="ConversationScript" ConversationID="Insects" />
     <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Great,Vibrant,Motley,Limber,Giant,Pupated" />
     <tag Name="HeroNameTitleMayorSyn" Value="queen,mayor,elder" />
@@ -393,7 +393,7 @@
 		<tag Name="SeveredLimbColorString" Value="&amp;g" />
 		<tag Name="SeveredLimbTileColor" Value="&amp;G" />
 		<tag Name="SeveredLimbDetailColor" Value="g" />
-    <tag Name="Gender" Value="neuter" />
+    <tag Name="Gender" Value="neuterperson" />
     <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Great,Sage,Judicious,Giant,Sophic,Erudite,Cubic,Regular,Spherical,Platonic,Symmetric,Triangular" />
     <tag Name="HeroNameTitleMayorSyn" Value="philosopher,mayor,elder,theorist,sophist" />
     <tag Name="HeroNameTitleMayorSynCap" Value="Philosopher,Mayor,Elder,Theorist,Sophist" />
@@ -529,7 +529,7 @@
     <tag Name="HeroHPBoost" Value="2" />
     <tag Name="HeroAgiBoost" Value="2" />
     <tag Name="BaseObject" Value="*noinherit" />
-    <tag Name="Gender" Value="neuter" />
+    <tag Name="Gender" Value="neuterperson" />
     <part Name="ConversationScript" ConversationID="Spiders" />
     <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Shrewd,Wary,Erudite,Great,Giant,Many-Legged" />
     <tag Name="HeroNameTitleMayorSyn" Value="weaver,mayor,elder" />
@@ -559,7 +559,7 @@
     <part Name="Render" Tile="creatures/sw_star_kraken.bmp" />
     <part Name="NoKnockdown" />
     <part Name="Springy" Factor="0.6" />		
-    <tag Name="Gender" Value="neuter" />
+    <tag Name="Gender" Value="neuterperson" />
     <part Name="ConversationScript" ConversationID="Star" />
     <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Sage,Wary,Erudite,Great,Giant,Long,Girthy,Thick" />
     <tag Name="HeroNameTitleMayorSyn" Value="star god,star mayor,elder star" />
@@ -618,7 +618,7 @@
     <tag Name="Class" Value="urchin" />		
     <tag Name="Species" Value="urchin" />
     <tag Name="BaseObject" Value="*noinherit" />
-    <tag Name="Gender" Value="neuter" />
+    <tag Name="Gender" Value="neuterperson" />
     <tag Name="Culture" Value="Urchin" />
     <part Name="ConversationScript" ConversationID="Worms" />
     <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Sage,Wary,Erudite,Great,Giant,Broad,Bulbous" />
@@ -652,7 +652,7 @@
     <tag Name="Class" Value="worm" />
     <tag Name="Species" Value="worm" />
     <tag Name="BaseObject" Value="*noinherit" />
-    <tag Name="Gender" Value="neuter" />
+    <tag Name="Gender" Value="neuterperson" />
     <part Name="ConversationScript" ConversationID="Worms" />
     <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Sage,Wary,Erudite,Great,Giant,Long,Girthy,Thick" />
     <tag Name="HeroNameTitleMayorSyn" Value="worm god,worm mayor,elder worm" />
@@ -759,7 +759,7 @@
     <stat Name="Level" Value="15" />
     <tag Name="Role" Value="Summoner" />
     <tag Name="BaseObject" Value="*noinherit" />
-    <tag Name="Gender" Value="neuter" />
+    <tag Name="Gender" Value="neuterperson" />
   </object>
   
   <!-- Base humanoids -->
@@ -1074,7 +1074,7 @@
     <tag Name="Culture" Value="Plant" />
     <tag Name="SimpleConversation" Value="{{emote|*The plant gives no indication of understanding*.}}" />
     <tag Name="PetResponse" Value="=subject.T= =verb:sway= gently." />
-    <tag Name="Gender" Value="neuter" />
+    <tag Name="Gender" Value="neuterperson" />
     <tag Name="LairAmbientBed" Value="Sounds/Ambiences/amb_creature_plant" />
   </object>
   <object Name="BaseAloe" Inherits="BasePlant">
@@ -3435,7 +3435,7 @@ The infant child is unaware
 		<part Name="Render" DisplayName="conjoined girshlings" DetailColor="W" />
 		<part Name="Description" Short="Star orchid saliva pools at the tips of =pronouns.possessive= conjoined fangs and drips onto pallid leg-things. =pronouns.Subjective= =verb:shudder:afterpronoun= in the capture of some pristine ecstasy lost to space and time, and =pronouns.subjective= =verb:let:afterpronoun= out a proud and piercing whine." />
 		<part Name="SplitOnDeath" Blueprint="Girshling" Amount="2" Message="=subject.T= =verb:split= in two!" />
-		<tag Name="Gender" Value="plural" />
+		<tag Name="Gender" Value="collective" />
 		<tag Name="DynamicObjectsTable:Mountains_Creatures" />
 	</object>
 	<object Name="Conjoined Girshling Cresh" Inherits="BaseGirshCresh">
@@ -6198,7 +6198,7 @@ The infant child is unaware
     <part Name="MimicProperties" />
     <mutation Name="Regeneration" Level="5" />
     <tag Name="Role" Value="Lurker" />
-    <tag Name="Gender" Value="neuter" />
+    <tag Name="Gender" Value="neuterperson" />
     <tag Name="Species" Value="*" />
   </object>
   <object Name="Mimic_Bite" Inherits="Bite">
@@ -6343,7 +6343,7 @@ The infant child is unaware
     <mutation Name="MagneticPulse" Level="15" />
     <stat Name="Hitpoints" Value="200" />
     <stat Name="AV" Value="9" />
-    <tag Name="Gender" Value="neuter" />
+    <tag Name="Gender" Value="neuterperson" />
     <tag Name="Species" Value="turret" />
     <tag Name="ExcludeFromVillagePopulations" />
     <tag Name="NoLibrarian" />
@@ -8181,7 +8181,7 @@ Drifts on the cultural seas have swept a particular fable to your attention. Lon
     <tag Name="Role" Value="Brute" />
     <tag Name="Species" Value="lamprey" />
     <inventoryobject Blueprint="MemoryEater_Bite" Number="1" />
-    <tag Name="Gender" Value="neuter" />
+    <tag Name="Gender" Value="neuterperson" />
     <tag Name="DynamicObjectsTable:BaroqueRuins_Creatures" />
   </object>
   <object Name="MemoryEater_Bite" Inherits="Bite">
@@ -8777,7 +8777,7 @@ Drifts on the cultural seas have swept a particular fable to your attention. Lon
     <tag Name="Role" Value="Artillery" />
     <mutation Name="Decarbonizer" />
 		<tag Name="SeveredHeadBlueprint" Value="RobotHead8" />
-    <tag Name="Gender" Value="neuter" />
+    <tag Name="Gender" Value="neuterperson" />
   </object>
 	<object Name="ProjectileDecarbonizer" Inherits="TemporaryProjectile">
     <part Name="Render" DisplayName="{{C|molecular cannon beam}}" ColorString="&amp;R" />
@@ -8814,7 +8814,7 @@ Drifts on the cultural seas have swept a particular fable to your attention. Lon
     <part Name="Body" Anatomy="WheelRobot" />
     <part Name="Render" DisplayName="galgal" RenderString="8" ColorString="&amp;m" TileColor="&amp;c" Tile="Creatures/sw_galgal_1.bmp" DetailColor="R" />
     <part Name="Description" Short="A troika of monstrous, gleaming wheels orbit a center sphere of xenon clouds and gallium lightning. The spokes are laminated crysteel bled of their emerald imperfections, and the rims are milky epithelium -- a single iris stretched to the topology of a torus -- and checkered on the underside with pupils. =pronouns.Possessive= movement traces the carpentry of worlds." />
-    <tag Name="Gender" Value="neuter" />
+    <tag Name="Gender" Value="neuterperson" />
     <stat Name="Level" Value="40" />
     <stat Name="Speed" Value="175" />
     <stat Name="AV" Value="15" />
@@ -9223,7 +9223,7 @@ Drifts on the cultural seas have swept a particular fable to your attention. Lon
 		<part Name="EnergyCellChargeLevel" ChargeMinimum="1000" VeryLow="low power:Nearly drained of core power."  />
 		<part Name="IntegralAnatomy" MortalOnly="true" />
 		<removepart Name="MaintenanceSystems" />
-		<tag Name="Gender" Value="neuter" />
+		<tag Name="Gender" Value="neuterperson" />
 		<tag Name="Mecha" />
 		<tag Name="AssociatedFactions" Value="Templar" />
 		<tag Name="NamingTag" Value="TemplarMecha" />
@@ -9594,7 +9594,7 @@ Drifts on the cultural seas have swept a particular fable to your attention. Lon
     <tag Name="customMissileOrder" Value="missile,abilities" />
     <tag Name="customMeleeOrder" Value="missile,abilities" />
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
-    <tag Name="Gender" Value="neuter" />
+    <tag Name="Gender" Value="neuterperson" />
     <tag Name="Species" Value="turret" />
     <part Name="SoundOnCreate" Sounds="Sounds/Robot/sfx_turret_deploy" Volume="1"></part>
     <part Name="SoundOnDestroy" Sounds="Sounds/Robot/sfx_turret_destroy" Volume="1"></part>
@@ -11473,7 +11473,7 @@ Drifts on the cultural seas have swept a particular fable to your attention. Lon
 		<tag Name="Worshippable" />
 		<tag Name="WorshipPower" Value="44" />
 		<inventoryobject Blueprint="Nephal_CordedTail" Number="1" />
-		<tag Name="Gender" Value="neuter" />
+		<tag Name="Gender" Value="neuterperson" />
 	</object>
 	<object Name="Nephal_CordedTail" Inherits="NaturalWeapon">
 		<part Name="Render" DisplayName="corded tail" Tile="Creatures/natural-weapon-tail.bmp" ColorString="&amp;m" />
@@ -13704,7 +13704,7 @@ In Barathrum's name, =pronouns.subjective==verb:'ve:afterpronoun= conferred onto
     <inventoryobject Blueprint="Clay Pot" />
     <skill Name="Persuasion_Berate" />
     <tag Name="Role" Value="NPC" />
-    <tag Name="Gender" Value="neuter" />
+    <tag Name="Gender" Value="neuterperson" />
     <xtagGrammar Proper="true"></xtagGrammar>
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
   </object>
@@ -14773,7 +14773,7 @@ At the edges of your field of vision, more tentacles writhe over tools, books, c
     <stat Name="Willpower" sValue="30" />
     <stat Name="Ego" sValue="30" />
     <tag Name="BaseObject" Value="*noinherit" />
-    <tag Name="RandomGender" Value="neuter" />
+    <tag Name="RandomGender" Value="neuterperson" />
     <intproperty Name="HasMarkOfDeath" Value="1" />
     <tag Name="Species" Value="oddity" />
 		<stag Name="Contemporary" Value="*delete" />
@@ -15259,7 +15259,7 @@ This one is jeweled in the eroded scrap of the Tomb." />
 		<xtagWaterRitual NoJoin="true" SellSkill="false" SellCookingRecipe="false" numSecrets="1" />
 		<part Name="Interesting" Radius="1" />
 		<xtagGrammar Proper="true" />
-		<tag Name="Gender" Value="neuter" />
+		<tag Name="Gender" Value="neuterperson" />
 		<tag Name="ExcludeFromDynamicEncounters" />
 	</object>
 	<object Name="Dreamer" Inherits="Crystal Chime">
@@ -15271,7 +15271,7 @@ This one is jeweled in the eroded scrap of the Tomb." />
 		<xtagWaterRitual NoJoin="true" SellCookingRecipe="false" numSecrets="1" />
 		<part Name="Interesting" Radius="1" />
 		<xtagGrammar Proper="true" />
-		<tag Name="Gender" Value="neuter" />
+		<tag Name="Gender" Value="neuterperson" />
 		<tag Name="ExcludeFromDynamicEncounters" />
 	</object>
 	<object Name="Thicksalt" Inherits="Crystal Chime">

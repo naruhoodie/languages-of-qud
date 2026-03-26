@@ -752,8 +752,8 @@
   <conversation ID="WardenYrame">
     <node ID="Start">
       <text>
-        <text>Welcome a-Joppa, friend. Stay peacelike, and we stay friends, hyeh? You make trouble, it’s my work a-split you open like a croc.</text>
-        <text>Elder’s over my right shoulder, chemist a-left. I ask you pick one or turn around. I en’t here for chat.</text>
+        <text>Welcome a-Joppa, friend. Stay peacelike, and we stay friends, hyeh? You make trouble, it's my work a-split you open like a croc.</text>
+        <text>Elder's over my right shoulder, chemist a-left. I ask you pick one or turn around. I en't here for chat.</text>
         <text>Live and drink, yonderling.</text>
         <text>{{emote|*Yrame grunts.*}}</text>
         <text>{{emote|*Yrame nods.*}}</text>
@@ -793,11 +793,11 @@
   <conversation ID="Nima Ruda">
     <node ID="Start">
       <text>
-        <text>Ahh, there is a new face. I am Nima Ruda, town apothecary. If your feet point to Qud, you’ll need some of my wares before you go.</text>
+        <text>Ahh, there is a new face. I am Nima Ruda, town apothecary. If your feet point to Qud, you'll need some of my wares before you go.</text>
         <text>Live and drink, wayfarer.</text>
-        <text>Time and rest are the surest way to dress a wound, but my wares can help if you’re in a hurry.</text>
+        <text>Time and rest are the surest way to dress a wound, but my wares can help if you're in a hurry.</text>
         <text>The Fates watch you, =player.formalAddressTerm=.</text>
-        <text>Don’t let your nostrums run dry on the road. I have what you need.</text>
+        <text>Don't let your nostrums run dry on the road. I have what you need.</text>
       </text>
       <choice GotoID="Wares">What wares do you offer?</choice>
       <choice GotoID="Story">Where are you from?</choice>
@@ -811,7 +811,7 @@
 
     <node ID="Story" Inherits="Start">
       <text>
-        I grew up right here in Joppa, daughter of the Elder and all. Spent some years delving, but gave it up after a few near escapes and nearly deadly wounds. I’m better suited to herbalism anyway, and my father worries less.
+        I grew up right here in Joppa, daughter of the Elder and all. Spent some years delving, but gave it up after a few near escapes and nearly deadly wounds. I'm better suited to herbalism anyway, and my father worries less.
       </text>
       <choice GotoID="Leadership">Will you inherit leadership of Joppa from your father?</choice>
     </node>
@@ -6091,7 +6091,7 @@
   <conversation ID="Crystals">
     <node ID="Start">
       <text>
-        {{emote||The crystal chimes in bright tones.}}
+        {{emote|*The crystal chimes in bright tones.*}}
       </text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -8306,7 +8306,10 @@
       <text>
         Professor Cones taught me everything about finding evidence!
 
-        Though evidence you found upon the ground may yet be sound, If it will be sufficient is a toss-up. Examine all your suspects and their homes and all around, And find a witness who may dish the gossip.
+        Though evidence you found upon the ground may yet be sound,
+        If it will be sufficient is a toss-up.
+        Examine all your suspects and their homes and all around,
+        And find a witness who may dish the gossip.
 
         You can find evidence by looking at things on the ground, but you can also look at your suspects to see if there's anything off about them. You can also ask around to see if anyone has seen or heard anything strange, and different witnesses may have different things to report.
       </text>
@@ -8320,7 +8323,14 @@
       <text>
         Evidence is any sign of something gone amiss. The Great Plant Detective gave some good examples in Act II of the tragedy of Gimlet:
 
-        So! Sweep the full estate for signs of {{W|trade}}, their shady night-time dealings to expose Now look for signs of {{W|craft}}, see what was made For to conceal a treasure hidden close. But darker still, if {{W|illness}} signs we find A desperate contagion may yet lurk And darkest yet, more {{W|violence}} may reply To those who stumble 'pon their grisly work.
+        So! Sweep the full estate for signs of {{W|trade}},
+        their shady night-time dealings to expose
+        Now look for signs of {{W|craft}}, see what was made
+        For to conceal a treasure hidden close.
+        But darker still, if {{W|illness}} signs we find
+        A desperate contagion may yet lurk
+        And darkest yet, more {{W|violence}} may reply
+        To those who stumble 'pon their grisly work.
       </text>
       <choice GotoID="Finding evidence">How do I find evidence?</choice>
       <choice GotoID="Defining evidence">What makes something evidence?</choice>
@@ -8357,7 +8367,10 @@
       <text>
         As Professor Cones said:
 
-        We know the reach of law, however long, Is not the finest judge of right and wrong. Choose not what evidence thou wilt present Ere its consequence is evident.
+        We know the reach of law, however long,
+        Is not the finest judge of right and wrong.
+        Choose not what evidence thou wilt present
+        Ere its consequence is evident.
 
         In short, you must use your judgment and intuition, kendren.
       </text>
@@ -8396,7 +8409,13 @@
 
         Hemlock Cones once said:
 
-        As like begets like in daily life so too in mystery. Should I paint pictures full of strife thus violence comes to be. If I in craft or trade should deal then deals shall deal by troth But if I pestilence reveal-
+        As like begets like in daily life
+        so too in mystery.
+        Should I paint pictures full of strife
+        thus violence comes to be.
+        If I in craft or trade should deal
+        then deals shall deal by troth
+        But if I pestilence reveal-
         no honey be enough.
       </text>
       <choice GotoID="Questions">I see. I have further questions.</choice>
@@ -10457,7 +10476,11 @@
   <conversation ID="Shomer">
     <node ID="Start">
       <text>
-        Saad, welcom. Saad, from thyn heres shaken the wet and olde lif. Saad, in-to a smal vessel pouren hit. Saad, to thyn sash attachen the vessel. Saad, crossen nou thrugh the heigh gate and in-to Brightsheol.
+        Saad, welcom.
+        Saad, from thyn heres shaken the wet and olde lif.
+        Saad, in-to a smal vessel pouren hit.
+        Saad, to thyn sash attachen the vessel.
+        Saad, crossen nou thrugh the heigh gate and in-to Brightsheol.
       </text>
       <choice ID="ChoiceDream" GotoID="Dream" IfHaveSecret="QudSalum">Where is Brightsheol in relation to Qud... to Salum?</choice>
       <choice ID="ChoiceDead" GotoID="Dead">Am I dead?</choice>
@@ -10478,7 +10501,9 @@
     </node>
     <node ID="Place">
       <text>
-        Saad, stonden thu at the heigh gate to Brightsheol. Saad, thyn heres been wet with olde lif. Saad, shaken thyn hed and cross in-to neue lif.
+        Saad, stonden thu at the heigh gate to Brightsheol.
+        Saad, thyn heres been wet with olde lif.
+        Saad, shaken thyn hed and cross in-to neue lif.
       </text>
       <choice UseID="ChoiceDream" />
       <choice GotoID="Resheph">Is Resheph here?</choice>
@@ -10499,7 +10524,9 @@
     </node>
     <node ID="Dream">
       <text>
-        Alofte of Gjaus a cite twinklen. And ther the Seraph dremen. And Brightsheol is the drem.
+        Alofte of Gjaus a cite twinklen.
+        And ther the Seraph dremen.
+        And Brightsheol is the drem.
       </text>
       <choice GotoID="Dead" RevealObservation="BrightsheolDream">Am I dead?</choice>
       <choice GotoID="Place" RevealObservation="BrightsheolDream">What is this place?</choice>
@@ -10568,7 +10595,9 @@
       <text>
         {{emote|*The clothes shrouding Rainwater Shomer's form are still for many moments.*}}
 
-        Saad, the Seraph sprecen. Saad, thu asken, and the shomrim assenten. Saad, wiltou return to Salum or crossen in-to Brightsheol?
+        Saad, the Seraph sprecen.
+        Saad, thu asken, and the shomrim assenten.
+        Saad, wiltou return to Salum or crossen in-to Brightsheol?
       </text>
       <choice GotoID="Return">If it can be done, return me to Qud. I wish to ascend the Spindle myself.</choice>
       <choice GotoID="Cross">... I've shaken the wet life from my hair. Now I shall cross into Brightsheol.</choice>
@@ -12939,9 +12968,9 @@
 		</node>
 
 		<node ID="Upset" Inherits="Welcome">
-			{{emote|*Tzedech chimes, buzzing with agitation*}}
+			<text>{{emote|*Tzedech chimes, buzzing with agitation*}}
 
-			<text>Twofirm roils in me with the enormity. Can it contain so much gone and unremunerated? Tau, Tikva, and more to come. Consumed, we, and paralyzed.</text>
+				Twofirm roils in me with the enormity. Can it contain so much gone and unremunerated? Tau, Tikva, and more to come. Consumed, we, and paralyzed.</text>
 		</node>
 
 		<node ID="Gyredream" Inherits="Welcome">

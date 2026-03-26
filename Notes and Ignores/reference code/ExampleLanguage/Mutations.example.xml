@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.15
+Caves of Qud - Generated Localizable XML 2.0.212.16
 
 <mutations Hidden="" ExcludeFromPool="">
 
   <category Name="Key" DisplayName="DisplayText">
 
-    <mutation Name="Key" DisplayName="DisplayText" BearerDescription="DisplayText">
+    <mutation Name="Key" DisplayName="DisplayText" BearerDescription="DisplayText" BiomeAdjective="DisplayText" BiomeEpithet="DisplayText">
 
       <description>
 
@@ -44,7 +44,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.15
           </description>
       <leveltext>▶
             <p>You can increase your body's adrenaline flow for <stat Name="Duration" />.</p>
-            <p>While it's flowing, you gain +<stat Name="QuicknessBonus" /> quickness and other physical mutations gain +<stat Name="MutationBonus" Unit="rank" />.</p>         
+            <p>While it's flowing, you gain +<stat Name="QuicknessBonus" /> quickness and other physical mutations gain +<stat Name="MutationBonus" Unit="rank" />.</p>
             <statline Name="Cooldown" />
           </leveltext>
     </mutation>
@@ -157,7 +157,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.15
           </description>
       <leveltext>▶
             <p>You detect the presence of creatures within a radius of <stat Name="Radius" />.</p>
-            <p><switch Name="LevelDiff"><case Value="1">{{rules|Increased chance to identify nearby detected creatures}}</case><default>Chance to identify nearby detected creatures</default></switch></p>
+            <p><switch Name="LevelMatch"><case Value="true">Chance to identify nearby detected creatures</case><default>{{rules|Increased chance to identify nearby detected creatures}}</default></switch></p>
           </leveltext>
     </mutation>
     <mutation Name="Heightened Quickness" DisplayName="▶Heightened Quickness" BearerDescription="▶the quick">
@@ -257,7 +257,24 @@ Caves of Qud - Generated Localizable XML 2.0.212.15
             <p>Immune to other creatures' <stat Name="Quills" /></p>
           </leveltext>
     </mutation>
-    <mutation Name="Regeneration" DisplayName="▶Regeneration" BearerDescription="▶those who regenerate" />
+    <mutation Name="Regeneration" DisplayName="▶Regeneration" BearerDescription="▶those who regenerate">
+      <description>▶
+            <p>Your wounds heal very quickly.</p>
+          </description>
+      <leveltext>▶
+            <p>Your full natural healing rate applies in combat.</p>
+            <p>+<stat Name="RegenBonus" />% faster natural healing rate</p>
+            <p><stat Name="RegenChance" />% chance to regrow a missing limb each round</p>
+            <switch Name="NoDecapitate">
+              <case Value="false" />
+              <default><p>{{rules|You cannot be decapitated.}}</p></default>
+            </switch>
+            <switch Name="LevelBelow5">
+              <case Value="true"><p><stat Name="DebuffChance" />% chance to remove a {{rules|minor physical debuff}} at random each round</p></case>
+              <default><p><stat Name="DebuffChance" />% chance to remove a {{rules|physical debuff}} at random each round</p></default>
+            </switch>
+          </leveltext>
+    </mutation>
     <mutation Name="Sleep Gas Generation" DisplayName="▶Sleep Gas Generation" BearerDescription="▶those who expel sleep gas">
       <description>▶
             <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
@@ -506,7 +523,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.15
     </mutation>
   </category>
   <category Name="Mental" DisplayName="▶{{G|Mental Mutations}}">
-    <mutation Name="Beguiling" DisplayName="▶Beguiling" BearerDescription="▶beguilers">
+    <mutation Name="Beguiling" DisplayName="▶Beguiling" BearerDescription="▶beguilers" BiomeEpithet="▶encomium">
       <description>▶
             <p>You beguile a nearby creature into serving you loyally.</p>
           </description>
@@ -518,7 +535,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.15
             <statline Name="Cooldown" />
           </leveltext>
     </mutation>
-    <mutation Name="Burgeoning" DisplayName="▶Burgeoning" BearerDescription="▶psychic gardeners">
+    <mutation Name="Burgeoning" DisplayName="▶Burgeoning" BearerDescription="▶psychic gardeners" BiomeAdjective="▶burgeoning">
       <description>▶
             <p>You cause plants to spontaneously grow in a nearby area, hindering your enemies.</p>
           </description>
@@ -528,12 +545,12 @@ Caves of Qud - Generated Localizable XML 2.0.212.15
             <statline Name="Cooldown" />
             <switch Name="LevelMatch">
               <case Value="true"></case>
-              <default><p>More powerful plants summoned</p></default>
+              <default><p>{{rules|More powerful plants summoned}}</p></default>
             </switch>
             <p>+200 reputation with {{w|the Consortium of Phyta}}</p>
           </leveltext>
     </mutation>
-    <mutation Name="Clairvoyance" DisplayName="▶Clairvoyance" BearerDescription="▶the clairvoyant">
+    <mutation Name="Clairvoyance" DisplayName="▶Clairvoyance" BearerDescription="▶the clairvoyant" BiomeEpithet="▶panopticon">
       <description>▶You briefly gain vision of a nearby area.</description>
       <leveltext>▶
             <statline Name="VisionRadius" DisplayName="Vision radius" />
@@ -541,7 +558,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.15
             <statline Name="Cooldown" Unit="round" />
           </leveltext>
     </mutation>
-    <mutation Name="Confusion" DisplayName="▶Confusion" BearerDescription="▶riddlers">
+    <mutation Name="Confusion" DisplayName="▶Confusion" BearerDescription="▶riddlers" BiomeEpithet="▶psychic maze">
       <description>▶You confuse nearby enemies.</description>
       <leveltext>▶
             <p>Affected creatures act semi-randomly and receive a -<stat Name="Penalty" /> penalty to their mental abilities.</p>
@@ -551,7 +568,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.15
             <statline Name="Cooldown" />
           </leveltext>
     </mutation>
-    <mutation Name="Cryokinesis" DisplayName="▶Cryokinesis" BearerDescription="▶cryomancers">
+    <mutation Name="Cryokinesis" DisplayName="▶Cryokinesis" BearerDescription="▶cryomancers" BiomeEpithet="▶frost meadow">
       <description>▶You chill a nearby area with your mind.</description>
       <leveltext>▶
             <switch Name="LevelMatch">
@@ -567,7 +584,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.15
             <statline Name="Cooldown" />
           </leveltext>
     </mutation>
-    <mutation Name="Disintegration" DisplayName="▶Disintegration" BearerDescription="▶disintegrators">
+    <mutation Name="Disintegration" DisplayName="▶Disintegration" BearerDescription="▶disintegrators" BiomeAdjective="▶rapidly resonating">
       <description>▶You disintegrate nearby matter.</description>
       <leveltext>▶
             <statline Name="Area" />
@@ -577,7 +594,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.15
             <statline Name="Cooldown" />
           </leveltext>
     </mutation>
-    <mutation Name="Domination" DisplayName="▶Domination" BearerDescription="▶those who dominate the wills of others">
+    <mutation Name="Domination" DisplayName="▶Domination" BearerDescription="▶those who dominate the wills of others" BiomeEpithet="▶theater of wills">
       <description>▶
             <p>You garrote an adjacent creature's mind and control its actions while your own body lies dormant.</p>
           </description>
@@ -589,7 +606,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.15
             <statline Name="Cooldown" />
           </leveltext>
     </mutation>
-    <mutation Name="Ego Projection" DisplayName="▶Ego Projection" BearerDescription="▶those who project their egos onto the physical realm">
+    <mutation Name="Ego Projection" DisplayName="▶Ego Projection" BearerDescription="▶those who project their egos onto the physical realm" BiomeAdjective="▶psychically refractive">
       <description>▶Through sheer force of will, you perform uncanny physical feats.</description>
       <leveltext>▶
             <p>Augments one physical attribute by an amount equal to twice your Ego bonus</p>
@@ -597,7 +614,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.15
             <statline Name="Cooldown" />
           </leveltext>
     </mutation>
-    <mutation Name="Force Bubble" DisplayName="▶Force Bubble" BearerDescription="▶bubble folk">
+    <mutation Name="Force Bubble" DisplayName="▶Force Bubble" BearerDescription="▶bubble folk" BiomeAdjective="▶bubbly">
       <description>▶You generate a forcefield around yourself.</description>
       <leveltext>▶
             <p>Creates a 3x3 forcefield centered on yourself</p>
@@ -606,7 +623,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.15
             <p>You may fire missile weapons through the forcefield.</p>
           </leveltext>
     </mutation>
-    <mutation Name="Force Wall" DisplayName="▶Force Wall" BearerDescription="▶architects of force walls">
+    <mutation Name="Force Wall" DisplayName="▶Force Wall" BearerDescription="▶architects of force walls" BiomeEpithet="▶force bastion">
       <description>▶You generate a wall of force that protects you from your enemies.</description>
       <leveltext>▶
             <p>Creates 9 contiguous squares of immobile forcefield.</p>
@@ -615,7 +632,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.15
             <p>You may fire missile weapons through the forcefield.</p>
           </leveltext>
     </mutation>
-    <mutation Name="Kindle" DisplayName="▶Kindle" BearerDescription="▶kindlers">
+    <mutation Name="Kindle" DisplayName="▶Kindle" BearerDescription="▶kindlers" BiomeAdjective="▶kindling">
       <description>▶
             <p>You ignite a small fire with your mind.</p>
             <p></p>
@@ -624,11 +641,53 @@ Caves of Qud - Generated Localizable XML 2.0.212.15
           </description>
       <leveltext></leveltext>
     </mutation>
-    <mutation Name="Light Manipulation" DisplayName="▶Light Manipulation" BearerDescription="▶manipulators of light" />
-    <mutation Name="Mass Mind" DisplayName="▶Mass Mind" BearerDescription="▶those who tap the Mass Mind" />
-    <mutation Name="Mental Mirror" DisplayName="▶Mental Mirror" BearerDescription="▶the mentally reflective" />
-    <mutation Name="Precognition" DisplayName="▶Precognition" BearerDescription="▶the prescient" />
-    <mutation Name="Psychometry" DisplayName="▶Psychometry" BearerDescription="▶the psychometrically sensitive">
+    <mutation Name="Light Manipulation" DisplayName="▶Light Manipulation" BearerDescription="▶manipulators of light" BiomeAdjective="▶illuminated">
+      <description>▶
+            <p>You manipulate light to your advantage.</p>
+          </description>
+      <leveltext>▶
+            <p>You produce ambient light within a radius of <stat Name="Radius" />.</p>
+            <p>You may focus the light into a laser beam, temporarily reducing the radius of your ambient light by 1.</p>
+            <statline Name="LaserDamageInc" DisplayName="Laser damage increment" />
+            <statline Name="LaserPen" DisplayName="Laser penetration" />
+            <p>Ambient light recharges at a rate of 1 unit every <stat Name="AmbientRegrowthDuration" Unit="round" /> until it reaches its maximum value.</p>
+            <p><stat Name="ReflectChance" />% chance to reflect light-based damage</p>
+        </leveltext>
+    </mutation>
+    <mutation Name="Mass Mind" DisplayName="▶Mass Mind" BearerDescription="▶those who tap the Mass Mind" BiomeEpithet="▶mindmoot">
+      <description>▶
+            <p>You tap into the aggregate mind and steal power from other espers.</p>
+          </description>
+      <leveltext>▶
+            <p>Refreshes all mental mutations</p>
+            <statline Name="CooldownNoWillpower" Unit="round" />
+            <p>Cooldown is not affected by Willpower.</p>
+            <p>Each use attracts slightly more attention from psychic interlopers.</p>
+            <p><switch Name="LevelMatch"><case Value="true">Small chance each round for another esper to steal your powers</case><default>{{rules|Decreased chance for another esper to steal your powers}}</default></switch></p>
+            <p>-200 reputation with {{w|the Seekers of the Sightless Way}}</p>
+          </leveltext>
+    </mutation>
+    <mutation Name="Mental Mirror" DisplayName="▶Mental Mirror" BearerDescription="▶the mentally reflective" BiomeEpithet="▶mirrorsteppe">
+      <description>▶
+            <p>You reflect mental attacks back at your attackers.</p>
+          </description>
+      <leveltext>▶
+            <p>When you suffer a mental attack while Mental Mirror is off cooldown, you gain +<stat Name="BonusMA" /> mental armor (MA).</p>
+            <p>If the attack then fails to penetrate your MA, it's reflected back at your attacker.</p>
+            <statline Name="Cooldown" />
+          </leveltext>
+    </mutation>
+    <mutation Name="Precognition" DisplayName="▶Precognition" BearerDescription="▶the prescient" BiomeEpithet="▶future site">
+      <description>▶
+            <p>You peer into your near future.</p>
+          </description>
+      <leveltext>▶
+            <p>You may activate this power and then later revert to the point in time when you activated it.</p>
+            <p>Duration between use and reversion: <stat Name="Duration" /></p>
+            <statline Name="Cooldown" />
+          </leveltext>
+    </mutation>
+    <mutation Name="Psychometry" DisplayName="▶Psychometry" BearerDescription="▶the psychometrically sensitive" BiomeAdjective="▶retrocognate">
       <description>▶
             <p>You read the history of artifacts by touching them, learning what they do and how they were made.</p>
           </description>
@@ -638,24 +697,64 @@ Caves of Qud - Generated Localizable XML 2.0.212.15
             <p>You may open security doors and use some secure devices by touching them.</p>
           </leveltext>
     </mutation>
-    <mutation Name="Pyrokinesis" DisplayName="▶Pyrokinesis" BearerDescription="▶pyromancers">
+    <mutation Name="Pyrokinesis" DisplayName="▶Pyrokinesis" BearerDescription="▶pyromancers" BiomeEpithet="▶flame meadow">
       <description>▶
             <p>You heat a nearby area with your mind.</p>
           </description>
       <leveltext>▶
-            <stat Name="Intro" />
+            <switch Name="LevelMatch">
+              <case Value="true"><p>Toasts affected area over 3 rounds</p></case>
+              <case Value="raise"><p>{{rules|Increased toast temperature intensity}}</p></case>
+              <default><p>{{rules|Decreased toast temperature intensity}}</p></default>
+            </switch>
             <statline Name="Range" />
             <statline Name="Area" />
             <statline Name="DamageRound1" DisplayName="Round 1 damage" />
             <statline Name="DamageRound2" DisplayName="Round 2 damage" />
             <statline Name="DamageRound3" DisplayName="Round 3 damage" />
-            <statline Name="Cooldown" Unit="round" />
+            <statline Name="Cooldown" />
           </leveltext>
     </mutation>
-    <mutation Name="Sense Psychic" DisplayName="▶Sense Psychic" BearerDescription="▶the psychically sensitive" />
-    <mutation Name="Spacetime Vortex" DisplayName="▶Spacetime Vortex" BearerDescription="▶spacefolders" />
-    <mutation Name="Stunning Force" DisplayName="▶Stunning Force" BearerDescription="▶the telekinetic" />
-    <mutation Name="Sunder Mind" DisplayName="▶Sunder Mind" BearerDescription="▶mind sunderers">
+    <mutation Name="Sense Psychic" DisplayName="▶Sense Psychic" BearerDescription="▶the psychically sensitive" BiomeAdjective="▶naked">
+      <description>▶
+            <p>You can sense other mental mutants through the psychic aether.</p>
+            <p></p>
+            <p>You detect the presence of psychic enemies within a radius of <stat Name="Radius" />.</p>
+            <p>There's a chance you identify detected enemies.</p>
+          </description>
+      <leveltext></leveltext>
+    </mutation>
+    <mutation Name="Spacetime Vortex" DisplayName="▶Spacetime Vortex" BearerDescription="▶spacefolders" BiomeAdjective="▶warped">
+      <description>▶
+            <p>You sunder spacetime, sending things nearby careening through a tear in the cosmic fabric.</p>
+          </description>
+      <leveltext>▶
+            <p>Summons a vortex that swallows everything in its path.</p>
+            <switch Name="BonusDuration">
+              <case Value="0"></case>
+              <default><statline Name="BonusDuration" DisplayName="Bonus duration" Unit="round" /></default>
+            </switch>
+            <statline Name="Cooldown" />
+            <p>You may enter the vortex to teleport to a random location in Qud.</p>
+            <p>+200 reputation with {{w|highly entropic beings}}</p>
+          </leveltext>
+    </mutation>
+    <mutation Name="Stunning Force" DisplayName="▶Stunning Force" BearerDescription="▶the telekinetic" BiomeAdjective="▶telekinetic">
+      <description>▶
+            <p>You invoke a concussive force in a nearby area, throwing enemies back and stunning them.</p>
+          </description>
+      <leveltext>▶
+            <statline Name="Range" />
+            <statline Name="Area" />
+            <switch Name="LevelMatch">
+              <case Value="true"><p>Creatures are pushed away from center of blast, stunned, and dealt crushing damage in up to 3 increments.</p></case>
+              <default><p>{{rules|Increased stun save difficulty}}</p></default>
+            </switch>
+            <statline Name="DamageIncrement" DisplayName="Damage increment" />
+            <statline Name="Cooldown" />
+          </leveltext>
+    </mutation>
+    <mutation Name="Sunder Mind" DisplayName="▶Sunder Mind" BearerDescription="▶mind sunderers" BiomeEpithet="▶psychic graveyard">
       <description>▶
             <p>You sunder the mind of an enemy, leaving them reeling in pain.</p>
           </description>
@@ -669,28 +768,77 @@ Caves of Qud - Generated Localizable XML 2.0.212.15
             <statline Name="Cooldown" />
           </leveltext>
     </mutation>
-    <mutation Name="Syphon Vim" DisplayName="▶Syphon Vim" BearerDescription="▶life leeches" />
-    <mutation Name="Telepathy" DisplayName="▶Telepathy" BearerDescription="▶the telepathic">
+    <mutation Name="Syphon Vim" DisplayName="▶Syphon Vim" BearerDescription="▶life leeches" BiomeEpithet="▶slaughterfield">
+      <description>▶
+            <p>You bond with a nearby organic creature and leech its life force.</p>
+          </description>
+      <leveltext>▶
+            <p>Mental attack versus an organic creature</p>
+            <p>Drains <stat Name="HP" Unit="hit point" /> per round</p>
+            <p>Target gets a mental save to resist damage each round</p>
+            <statline Name="Duration" />
+            <statline Name="Cooldown" />
+          </leveltext>
+    </mutation>
+    <mutation Name="Telepathy" DisplayName="▶Telepathy" BearerDescription="▶the telepathic" BiomeAdjective="▶telepathic">
       <description>▶
             <p>You may communicate with others through the psychic aether.</p>
             <p></p>
-            <p>Chat with anyone in vision\nTakes you much less time to issue orders to companions</p>
+            <p>Chat with anyone in vision</p>
+            <p>Takes you much less time to issue orders to companions</p>
           </description>
       <leveltext></leveltext>
     </mutation>
-    <mutation Name="Teleportation" DisplayName="▶Teleportation" BearerDescription="▶teleporters" />
-    <mutation Name="Teleport Other" DisplayName="▶Teleport Other" BearerDescription="▶those who teleport others" />
-    <mutation Name="Time Dilation" DisplayName="▶Time Dilation" BearerDescription="▶time dilators" />
-    <mutation Name="Temporal Fugue" DisplayName="▶Temporal Fugue" BearerDescription="▶temporal fugitives" />
+    <mutation Name="Teleportation" DisplayName="▶Teleportation" BearerDescription="▶teleporters" BiomeEpithet="▶spacetime karst">
+      <description>▶
+            <p>You teleport to a nearby location.</p>
+          </description>
+      <leveltext>▶
+            <p>Teleport to a random location within a designated area.</p>
+            <statline Name="UncertaintyRadius" DisplayName="Uncertainty radius" />
+            <statline Name="Cooldown" />
+          </leveltext>
+    </mutation>
+    <mutation Name="Teleport Other" DisplayName="▶Teleport Other" BearerDescription="▶those who teleport others" BiomeEpithet="▶hermitage">
+      <description>▶
+            <p>You teleport an adjacent creature to a random nearby location.</p>
+          </description>
+      <leveltext>▶
+            <statline Name="Cooldown" />
+          </leveltext>
+    </mutation>
+    <mutation Name="Time Dilation" DisplayName="▶Time Dilation" BearerDescription="▶time dilators" BiomeEpithet="▶time prism">
+      <description>▶
+            <p>You distort time around your person in order to slow down your enemies.</p>
+          </description>
+      <leveltext>▶
+            <p>Creatures within <stat Name="Range" /> tiles are slowed according to how close they are to you.</p>
+            <p>Distance 1: creatures receive a <stat Name="QuicknessPenalty1" />% Quickness penalty</p>
+            <p>Distance 4: creatures receive a <stat Name="QuicknessPenalty4" />% Quickness penalty</p>
+            <p>Distance 7: creatures receive a <stat Name="QuicknessPenalty7" />% Quickness penalty</p>
+            <statline Name="Duration" />
+            <statline Name="Cooldown" />
+          </leveltext>
+    </mutation>
+    <mutation Name="Temporal Fugue" DisplayName="▶Temporal Fugue" BearerDescription="▶temporal fugitives" BiomeEpithet="▶spacetime hub">
+      <description>▶
+            <p>You quickly pass back and forth through time creating multiple copies of yourself.</p>
+          </description>
+      <leveltext>▶
+            <statline Name="Duration" />
+            <statline Name="Copies" />
+            <statline Name="Cooldown" />
+          </leveltext>
+    </mutation>
   </category>
   <category Name="MentalDefects" DisplayName="▶{{R|Mental Defects}}">
-    <mutation Name="Amnesia" DisplayName="▶Amnesia" BearerDescription="▶those who cannot remember" />
-    <mutation Name="Blinking Tic" DisplayName="▶Blinking Tic" BearerDescription="▶compulsive teleporters" />
-    <mutation Name="Dystechnia" DisplayName="▶Dystechnia" BearerDescription="▶those who are befuddled by technological complexity" />
-    <mutation Name="Evil Twin" DisplayName="▶Evil Twin" BearerDescription="▶those with dopplegangers" />
-    <mutation Name="Narcolepsy" DisplayName="▶Narcolepsy" BearerDescription="▶the narcoleptic" />
-    <mutation Name="Psionic Migraines" DisplayName="▶Psionic Migraines" BearerDescription="▶those who suffer from psionic migraines" />
-    <mutation Name="Quantum Jitters" DisplayName="▶Quantum Jitters" BearerDescription="▶those who are quantumly uncertain" />
-    <mutation Name="Socially Repugnant" DisplayName="▶Socially Repugnant" BearerDescription="▶the socially repugnant" />
+    <mutation Name="Amnesia" DisplayName="▶Amnesia" BearerDescription="▶those who cannot remember" BiomeAdjective="▶pastless" />
+    <mutation Name="Blinking Tic" DisplayName="▶Blinking Tic" BearerDescription="▶compulsive teleporters" BiomeAdjective="▶blinking" />
+    <mutation Name="Dystechnia" DisplayName="▶Dystechnia" BearerDescription="▶those who are befuddled by technological complexity" BiomeAdjective="▶regressive" />
+    <mutation Name="Evil Twin" DisplayName="▶Evil Twin" BearerDescription="▶those with dopplegangers" BiomeEpithet="▶selfmoot" />
+    <mutation Name="Narcolepsy" DisplayName="▶Narcolepsy" BearerDescription="▶the narcoleptic" BiomeAdjective="▶drowsy" />
+    <mutation Name="Psionic Migraines" DisplayName="▶Psionic Migraines" BearerDescription="▶those who suffer from psionic migraines" BiomeAdjective="▶blaring" />
+    <mutation Name="Quantum Jitters" DisplayName="▶Quantum Jitters" BearerDescription="▶those who are quantumly uncertain" BiomeAdjective="▶jittery" />
+    <mutation Name="Socially Repugnant" DisplayName="▶Socially Repugnant" BearerDescription="▶the socially repugnant" BiomeEpithet="▶wretchmoot" />
   </category>
 </mutations>
