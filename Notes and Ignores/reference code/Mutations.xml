@@ -78,7 +78,11 @@
       </description>
       <leveltext>
         <p>Releases gas for <stat Name="Duration" /></p>
-        <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
+        <switch Name="LevelMatch">
+          <case Value="raise"><p>{{rules|Increased <stat Name="LevelEffectDescription" />}}</p></case>
+          <case Value="lower"><p>{{rules|Decreased <stat Name="LevelEffectDescription" />}}</p></case>
+          <default></default>
+        </switch>
         <statline Name="Cooldown" />
       </leveltext>
     </mutation>
@@ -269,7 +273,11 @@
       </description>
       <leveltext>
         <p>Releases gas for <stat Name="Duration" /></p>
-        <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
+        <switch Name="LevelMatch">
+          <case Value="raise"><p>{{rules|Increased <stat Name="LevelEffectDescription" />}}</p></case>
+          <case Value="lower"><p>{{rules|Decreased <stat Name="LevelEffectDescription" />}}</p></case>
+          <default></default>
+        </switch>
         <statline Name="Cooldown" />
       </leveltext>
     </mutation>
@@ -823,14 +831,73 @@
   </category>
 
   <category Name="MentalDefects" DisplayName="{{R|Mental Defects}}" Foreground="b" Detail="M" Defect="true">
-    <mutation Name="Amnesia" Cost="-2" MaxSelected="1" Class="Amnesia" Exclusions="" BearerDescription="those who cannot remember" BiomeAdjective="pastless" Tile="Mutations/amnesia.bmp" />
-    <mutation Name="Blinking Tic" Cost="-3" MaxSelected="1" Class="BlinkingTic" Exclusions="" BearerDescription="compulsive teleporters" BiomeAdjective="blinking" Tile="Mutations/blinking_tic.bmp" />
-    <mutation Name="Dystechnia" Cost="-2" MaxSelected="1" Class="Dystechnia" Exclusions="Psychometry" BearerDescription="those who are befuddled by technological complexity" BiomeAdjective="regressive" Tile="Mutations/dystechnia.bmp" />
-    <mutation Name="Evil Twin" Cost="-3" MaxSelected="1" Class="EvilTwin" Exclusions="" BearerDescription="those with dopplegangers" BiomeEpithet="selfmoot" Tile="Mutations/evil_twin.bmp" />
-    <mutation Name="Narcolepsy" Cost="-3" MaxSelected="1" Class="Narcolepsy" Exclusions="" BearerDescription="the narcoleptic" BiomeAdjective="drowsy" Tile="Mutations/narcolepsy.bmp" />
-    <mutation Name="Psionic Migraines" Cost="-4" MaxSelected="1" Class="PsionicMigraines" Exclusions="Horns" BearerDescription="those who suffer from psionic migraines" BiomeAdjective="blaring" Tile="Mutations/psionic_migraines.bmp" />
-    <mutation Name="Quantum Jitters" Cost="-4" MaxSelected="1" Class="QuantumJitters" Exclusions="" BearerDescription="those who are quantumly uncertain" BiomeAdjective="jittery" Tile="Mutations/quantum_jitters.bmp" />
-    <mutation Name="Socially Repugnant" Cost="-2" MaxSelected="1" Class="SociallyRepugnant" Exclusions="" BearerDescription="the socially repugnant" BiomeEpithet="wretchmoot" Tile="Mutations/socially_repugnant.bmp" />
+    <mutation Name="Amnesia" Cost="-2" MaxSelected="1" Class="Amnesia" Exclusions="" BearerDescription="those who cannot remember" BiomeAdjective="pastless" Tile="Mutations/amnesia.bmp">
+      <description>
+        <p>You forget things and places.</p>
+        <p></p>
+        <p>Whenever you learn a new secret, there's a small chance you forget a secret.</p>
+        <p>Whenever you return to a map you previously visited, there's a small chance you forget the layout.</p>
+      </description>
+      <leveltext></leveltext>
+    </mutation>
+    <mutation Name="Blinking Tic" Cost="-3" MaxSelected="1" Class="BlinkingTic" Exclusions="" BearerDescription="compulsive teleporters" BiomeAdjective="blinking" Tile="Mutations/blinking_tic.bmp">
+      <description>
+        <p>You teleport about uncontrollably.</p>
+        <p></p>
+        <p>Small chance each round you're in combat that you randomly teleport to a nearby location.</p>
+      </description>
+      <leveltext></leveltext>
+    </mutation>
+    <mutation Name="Dystechnia" Cost="-2" MaxSelected="1" Class="Dystechnia" Exclusions="Psychometry" BearerDescription="those who are befuddled by technological complexity" BiomeAdjective="regressive" Tile="Mutations/dystechnia.bmp">
+      <description>
+        <p>You are befuddled by technological complexity.</p>
+        <p></p>
+        <p>You're much worse at examining artifacts.</p>
+        <p>You can't have artifacts identified for you because you don't understand their explanations.</p>
+        <p>When you fail severely during artifact examination, the artifact explodes.</p>
+      </description>
+      <leveltext></leveltext>
+    </mutation>
+    <mutation Name="Evil Twin" Cost="-3" MaxSelected="1" Class="EvilTwin" Exclusions="" BearerDescription="those with dopplegangers" BiomeEpithet="selfmoot" Tile="Mutations/evil_twin.bmp">
+      <description>
+        <p>Acting on some inscrutable impulse, a parallel version of yourself travels through space and time to destroy you.</p>
+        <p></p>
+        <p>Each time you embark on a new location, there's a small chance your evil twin has tracked you there and attempts to kill you.</p>
+      </description>
+      <leveltext></leveltext>
+    </mutation>
+    <mutation Name="Narcolepsy" Cost="-3" MaxSelected="1" Class="Narcolepsy" Exclusions="" BearerDescription="the narcoleptic" BiomeAdjective="drowsy" Tile="Mutations/narcolepsy.bmp">
+      <description>
+        <p>You fall asleep involuntarily from time to time.</p>
+        <p></p>
+        <p>Small chance each round you're in combat that you fall asleep for 20-29 rounds.</p>
+      </description>
+      <leveltext></leveltext>
+    </mutation>
+    <mutation Name="Psionic Migraines" Cost="-4" MaxSelected="1" Class="PsionicMigraines" Exclusions="Horns" BearerDescription="those who suffer from psionic migraines" BiomeAdjective="blaring" Tile="Mutations/psionic_migraines.bmp">
+      <description>
+        <p>You suffer from powerful psionic migraines that render your head extremely sensitive.</p>
+        <p></p>
+        <p>You can't wear hats or helmets.</p>
+      </description>
+      <leveltext></leveltext>
+    </mutation>
+    <mutation Name="Quantum Jitters" Cost="-4" MaxSelected="1" Class="QuantumJitters" Exclusions="" BearerDescription="those who are quantumly uncertain" BiomeAdjective="jittery" Tile="Mutations/quantum_jitters.bmp">
+      <description>
+        <p>Your willful acts sometimes dent spacetime.</p>
+        <p></p>
+        <p>Whenever you use an activated ability, there's a small chance your focus slips and you dent spacetime in the local region, causing 1-2 spacetime vortices to appear. This chance increases the longer you go without using an activated ability.</p>
+      </description>
+      <leveltext></leveltext>
+    </mutation>
+    <mutation Name="Socially Repugnant" Cost="-2" MaxSelected="1" Class="SociallyRepugnant" Exclusions="" BearerDescription="the socially repugnant" BiomeEpithet="wretchmoot" Tile="Mutations/socially_repugnant.bmp">
+      <description>
+        <p>Others find it difficult to tolerate you in social settings.</p>
+        <p></p>
+        <p>-50 reputation with every faction</p>
+      </description>
+      <leveltext></leveltext>
+    </mutation>
   </category>
 </mutations>
 

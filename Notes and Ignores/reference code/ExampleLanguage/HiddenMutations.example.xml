@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.16
+Caves of Qud - Generated Localizable XML 2.0.212.17
 
 <mutations Hidden="" ExcludeFromPool="">
 
@@ -93,7 +93,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.16
           </description>
       <leveltext>▶
             <p>Releases gas for <stat Name="Duration" /></p>
-            <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
+            <switch Name="LevelMatch">
+              <case Value="raise"><p>{{rules|Increased <stat Name="LevelEffectDescription" />}}</p></case>
+              <case Value="lower"><p>{{rules|Decreased <stat Name="LevelEffectDescription" />}}</p></case>
+              <default></default>
+            </switch>
             <statline Name="Cooldown" />
           </leveltext>
     </mutation>
@@ -103,7 +107,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.16
           </description>
       <leveltext>▶
             <p>Releases gas for <stat Name="Duration" /></p>
-            <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
+            <switch Name="LevelMatch">
+              <case Value="raise"><p>{{rules|Increased <stat Name="LevelEffectDescription" />}}</p></case>
+              <case Value="lower"><p>{{rules|Decreased <stat Name="LevelEffectDescription" />}}</p></case>
+              <default></default>
+            </switch>
             <statline Name="Cooldown" />
           </leveltext>
     </mutation>
@@ -113,7 +121,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.16
           </description>
       <leveltext>▶
             <p>Releases gas for <stat Name="Duration" /></p>
-            <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
+            <switch Name="LevelMatch">
+              <case Value="raise"><p>{{rules|Increased <stat Name="LevelEffectDescription" />}}</p></case>
+              <case Value="lower"><p>{{rules|Decreased <stat Name="LevelEffectDescription" />}}</p></case>
+              <default></default>
+            </switch>
             <statline Name="Cooldown" />
           </leveltext>
     </mutation>
@@ -123,7 +135,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.16
           </description>
       <leveltext>▶
             <p>Releases gas for <stat Name="Duration" /></p>
-            <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
+            <switch Name="LevelMatch">
+              <case Value="raise"><p>{{rules|Increased <stat Name="LevelEffectDescription" />}}</p></case>
+              <case Value="lower"><p>{{rules|Decreased <stat Name="LevelEffectDescription" />}}</p></case>
+              <default></default>
+            </switch>
             <statline Name="Cooldown" />
           </leveltext>
     </mutation>
@@ -133,7 +149,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.16
           </description>
       <leveltext>▶
             <p>Releases gas for <stat Name="Duration" /></p>
-            <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
+            <switch Name="LevelMatch">
+              <case Value="raise"><p>{{rules|Increased <stat Name="LevelEffectDescription" />}}</p></case>
+              <case Value="lower"><p>{{rules|Decreased <stat Name="LevelEffectDescription" />}}</p></case>
+              <default></default>
+            </switch>
             <statline Name="Cooldown" />
           </leveltext>
     </mutation>
@@ -143,7 +163,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.16
           </description>
       <leveltext>▶
             <p>Releases gas for <stat Name="Duration" /></p>
-            <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
+            <switch Name="LevelMatch">
+              <case Value="raise"><p>{{rules|Increased <stat Name="LevelEffectDescription" />}}</p></case>
+              <case Value="lower"><p>{{rules|Decreased <stat Name="LevelEffectDescription" />}}</p></case>
+              <default></default>
+            </switch>
             <statline Name="Cooldown" />
           </leveltext>
     </mutation>
@@ -153,7 +177,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.16
           </description>
       <leveltext>▶
             <p>Releases gas for <stat Name="Duration" /></p>
-            <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
+            <switch Name="LevelMatch">
+              <case Value="raise"><p>{{rules|Increased <stat Name="LevelEffectDescription" />}}</p></case>
+              <case Value="lower"><p>{{rules|Decreased <stat Name="LevelEffectDescription" />}}</p></case>
+              <default></default>
+            </switch>
             <statline Name="Cooldown" />
           </leveltext>
     </mutation>

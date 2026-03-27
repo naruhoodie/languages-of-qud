@@ -84,7 +84,11 @@
       </description>
       <leveltext>
         <p>Releases gas for <stat Name="Duration" /></p>
-        <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
+        <switch Name="LevelMatch">
+          <case Value="raise"><p>{{rules|Increased <stat Name="LevelEffectDescription" />}}</p></case>
+          <case Value="lower"><p>{{rules|Decreased <stat Name="LevelEffectDescription" />}}</p></case>
+          <default></default>
+        </switch>
         <statline Name="Cooldown" />
       </leveltext>
     </mutation>
@@ -94,7 +98,11 @@
       </description>
       <leveltext>
         <p>Releases gas for <stat Name="Duration" /></p>
-        <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
+        <switch Name="LevelMatch">
+          <case Value="raise"><p>{{rules|Increased <stat Name="LevelEffectDescription" />}}</p></case>
+          <case Value="lower"><p>{{rules|Decreased <stat Name="LevelEffectDescription" />}}</p></case>
+          <default></default>
+        </switch>
         <statline Name="Cooldown" />
       </leveltext>
     </mutation>
@@ -104,7 +112,11 @@
       </description>
       <leveltext>
         <p>Releases gas for <stat Name="Duration" /></p>
-        <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
+        <switch Name="LevelMatch">
+          <case Value="raise"><p>{{rules|Increased <stat Name="LevelEffectDescription" />}}</p></case>
+          <case Value="lower"><p>{{rules|Decreased <stat Name="LevelEffectDescription" />}}</p></case>
+          <default></default>
+        </switch>
         <statline Name="Cooldown" />
       </leveltext>
     </mutation>
@@ -114,7 +126,11 @@
       </description>
       <leveltext>
         <p>Releases gas for <stat Name="Duration" /></p>
-        <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
+        <switch Name="LevelMatch">
+          <case Value="raise"><p>{{rules|Increased <stat Name="LevelEffectDescription" />}}</p></case>
+          <case Value="lower"><p>{{rules|Decreased <stat Name="LevelEffectDescription" />}}</p></case>
+          <default></default>
+        </switch>
         <statline Name="Cooldown" />
       </leveltext>
     </mutation>
@@ -124,7 +140,11 @@
       </description>
       <leveltext>
         <p>Releases gas for <stat Name="Duration" /></p>
-        <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
+        <switch Name="LevelMatch">
+          <case Value="raise"><p>{{rules|Increased <stat Name="LevelEffectDescription" />}}</p></case>
+          <case Value="lower"><p>{{rules|Decreased <stat Name="LevelEffectDescription" />}}</p></case>
+          <default></default>
+        </switch>
         <statline Name="Cooldown" />
       </leveltext>
     </mutation>
@@ -134,7 +154,11 @@
       </description>
       <leveltext>
         <p>Releases gas for <stat Name="Duration" /></p>
-        <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
+        <switch Name="LevelMatch">
+          <case Value="raise"><p>{{rules|Increased <stat Name="LevelEffectDescription" />}}</p></case>
+          <case Value="lower"><p>{{rules|Decreased <stat Name="LevelEffectDescription" />}}</p></case>
+          <default></default>
+        </switch>
         <statline Name="Cooldown" />
       </leveltext>
     </mutation>
@@ -144,7 +168,11 @@
       </description>
       <leveltext>
         <p>Releases gas for <stat Name="Duration" /></p>
-        <switch Name="ExtraDescription"><case Value="" /><default><p><stat Name="ExtraDescription" /></p></default></switch>
+        <switch Name="LevelMatch">
+          <case Value="raise"><p>{{rules|Increased <stat Name="LevelEffectDescription" />}}</p></case>
+          <case Value="lower"><p>{{rules|Decreased <stat Name="LevelEffectDescription" />}}</p></case>
+          <default></default>
+        </switch>
         <statline Name="Cooldown" />
       </leveltext>
     </mutation>

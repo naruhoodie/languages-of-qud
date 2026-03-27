@@ -239,5 +239,8 @@
   <option ID="OptionDebugStringTableLoadingChecks" Requires="OptionDebugTranslations==Yes" DisplayText="Enable extra strings xml loading checks" Default="No" Category="Debug (Translation)" Type="Checkbox">
     <helptext>Log warnings when loading strings XML if string is not present in current Strings-example.xml</helptext>
   </option>
+  <option ID="OptionDebugExampleLanguage" Requires="OptionDebugTranslations==Yes" DisplayText="Enable example language selection" Default="No" Category="Debug (Translation)" Type="Checkbox" Restart="true">
+    <helptext>Enables selecting the Examples language files from the language picker.</helptext>
+  </option>
   <!-- <option ID="OptionDebugGameTextTemplate" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Debug game text templates to template_log.txt" Default="No" Category="Debug" Type="Checkbox" /> -->
 </options>

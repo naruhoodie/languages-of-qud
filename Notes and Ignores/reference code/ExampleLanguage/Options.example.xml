@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.16
+Caves of Qud - Generated Localizable XML 2.0.212.17
 
 <options>
 
@@ -229,5 +229,8 @@ Caves of Qud - Generated Localizable XML 2.0.212.16
   <option ID="OptionDebugStringTableMisses" DisplayText="▶Log string table lookup misses as errors to Player.log" Category="▶Debug (Translation)" />
   <option ID="OptionDebugStringTableLoadingChecks" DisplayText="▶Enable extra strings xml loading checks" Category="▶Debug (Translation)">
     <helptext>▶Log warnings when loading strings XML if string is not present in current Strings-example.xml</helptext>
+  </option>
+  <option ID="OptionDebugExampleLanguage" DisplayText="▶Enable example language selection" Category="▶Debug (Translation)">
+    <helptext>▶Enables selecting the Examples language files from the language picker.</helptext>
   </option>
 </options>
