@@ -29,7 +29,7 @@
   <option ID="OptionDisableBloodsplatter" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Disable blood splatters" Category="Display" Type="Checkbox" Default="No"></option>
   <option ID="OptionDisableSmoke" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Disable smoke effects" Category="Display" Type="Checkbox" Default="No"></option>
   <option ID="OptionDisableImposters" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Disable modern, tile-based graphical effects" Category="Display" Type="Checkbox" Default="No"></option>
-  <option ID="OptionMainMenuBackground" RequiresCapability="Desktop" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Main menu background art" Category="Display" Type="Combo" Values="Modern,Classic" Default="Modern"></option>
+  <option ID="OptionMainMenuBackground" RequiresCapability="IsDesktop" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Main menu background art" Category="Display" Type="Combo" Values="Modern,Classic" Default="Modern"></option>
   <option ID="OptionImposterChars" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Imposter text tiles" Category="Display" Type="Checkbox" Default="No"></option>
 
   
@@ -50,7 +50,7 @@
   <option ID="OptionDisableFullscreenWarpEffects" DisplayText="Disable fullscreen screen-warping effects" Category="Accessibility" Type="Checkbox" Default="No"></option>
 
 
-  <option ID="OptionModernUI" RequiresCapability="Desktop" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Enable modern UI" Category="UI" Type="Checkbox" Default="Yes"></option>
+  <option ID="OptionModernUI" RequiresCapability="IsDesktop" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Enable modern UI" Category="UI" Type="Checkbox" Default="Yes"></option>
   <option ID="OptionPrereleaseStageScale" Requires="OptionModernUI==Yes" DisplayText="UI scale" Category="UI" Type="Combo" Values="auto,auto x1.25,auto x1.5,.5,.75,1.0,1.25,1.5,2" Default="auto"></option>
   <option ID="OptionModernCharacterSheet" Requires="OptionModernUI==Yes,OptionShowAdvancedOptions==Yes" DisplayText="Enable modern UI character sheet"  Category="UI" Type="Checkbox" Default="Yes"></option>
   <option ID="OptionCharacterSheetAdditionalScale" Requires="OptionModernUI==Yes,OptionModernCharacterSheet==Yes,OptionShowAdvancedOptions==Yes" DisplayText="Character sheet scale percentage" Category="UI" Type="Slider" Min="-50" Max="50" Increment="1" Default="0"></option>

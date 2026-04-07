@@ -4212,7 +4212,7 @@ When this weapons fires a shot with its last round of ammo, the shot has perfect
     <part Name="Description" Short="Billets of shaved dogwood contour to the breasts, waist, and thigh. The husk is beetle-eaten." />
     <part Name="Physics" Weight="10" Organic="true" />
     <part Name="Springy" Factor="0.5" />
-    <xtagGrammar iArticle="some" />
+    <xtagGrammar adjunctNoun="suit" massNoun="true" />
 	  <tag Name="EquipSound" Value="sfx_equip_armor_planty" />
     <tag Name="Tier" Value="1" />
   </object>
@@ -4222,7 +4222,7 @@ When this weapons fires a shot with its last round of ammo, the shot has perfect
     <part Name="Commerce" Value="5" />
     <part Name="Description" Short="Boiled goat leather was cut to a cuirass and fit with straps and iron buckles. It smells of beeswax." />
     <part Name="Physics" Weight="15" Organic="true" />
-    <xtagGrammar iArticle="some" />
+    <xtagGrammar adjunctNoun="suit" massNoun="true" />
 	  <tag Name="EquipSound" Value="sfx_equip_armor_leather" />
     <tag Name="Tier" Value="1" />    
   </object>
@@ -4246,7 +4246,7 @@ When this weapons fires a shot with its last round of ammo, the shot has perfect
     <part Name="Physics" Weight="20" Organic="true" />
     <part Name="Metal" />
 	  <tag Name="EquipSound" Value="sfx_equip_armor_leather" />
-    <xtagGrammar iArticle="some" />
+    <xtagGrammar adjunctNoun="suit" massNoun="true" />
     <tag Name="Tier" Value="1" />
 		<stag Name="Contemporary" />
   </object>
@@ -4292,6 +4292,7 @@ When this weapons fires a shot with its last round of ammo, the shot has perfect
     <part Name="Physics" Weight="15" Organic="true" />
     <part Name="Springy" Factor="0.5" />
     <part Name="Metal" />
+    <xtagGrammar adjunctNoun="set" massNoun="true" />
 	  <tag Name="EquipSound" Value="sfx_equip_armor_leather" />
     <tag Name="Tier" Value="2" />
   </object>
@@ -4303,6 +4304,7 @@ When this weapons fires a shot with its last round of ammo, the shot has perfect
     <part Name="Physics" Weight="35" />
     <part Name="Springy" Factor="0.5" />
     <part Name="Metal" />
+    <xtagGrammar adjunctNoun="set" massNoun="true" />
     <tag Name="Tier" Value="2" />
   </object>
 
@@ -4315,6 +4317,7 @@ When this weapons fires a shot with its last round of ammo, the shot has perfect
     <part Name="Physics" Weight="60" />
     <part Name="Springy" Factor="0.1" />
     <part Name="Metal" />
+    <xtagGrammar adjunctNoun="suit" massNoun="true" />
 	  <tag Name="EquipSound" Value="sfx_equip_armor_metal_light" />
     <tag Name="Tier" Value="3" />
   </object>
@@ -4358,7 +4361,8 @@ When this weapons fires a shot with its last round of ammo, the shot has perfect
     <part Name="Description" Short="Nicked folding metal of dull azure is shaped to the pectorial lunes and stitched to an undergarment of padded goat leather." />
     <part Name="Physics" Weight="45" />
     <part Name="Metal" />
-	  <tag Name="EquipSound" Value="sfx_equip_armor_metal_light" />
+    <xtagGrammar adjunctNoun="suit" massNoun="true" />
+    <tag Name="EquipSound" Value="sfx_equip_armor_metal_light" />
     <tag Name="Tier" Value="4" />
   </object>
   <object Name="Slate Mantle" Inherits="BaseArmor">
@@ -4446,6 +4450,7 @@ When this weapons fires a shot with its last round of ammo, the shot has perfect
     <part Name="Commerce" Value="345" />
     <part Name="Description" Short="Hyperdense metal in meteor black was superheated and banged to the shoulder and chest shapes." />
     <part Name="Physics" Weight="160" />
+    <xtagGrammar adjunctNoun="suit" massNoun="true" />
 	  <tag Name="EquipSound" Value="sfx_equip_armor_metal_heavy" />
     <tag Name="Tier" Value="5" />
   </object>
@@ -4455,6 +4460,7 @@ When this weapons fires a shot with its last round of ammo, the shot has perfect
     <part Name="Commerce" Value="320" />
     <part Name="Description" Short="Flakes shaved off a big wedge of the gravid metal have been heat-fused to some kind of animal leather." />
     <part Name="Physics" Weight="90" />
+    <xtagGrammar adjunctNoun="suit" massNoun="true" />
 	  <tag Name="EquipSound" Value="sfx_equip_armor_metal_heavy" />
     <tag Name="Tier" Value="5" />
   </object>
@@ -4468,6 +4474,7 @@ When this weapons fires a shot with its last round of ammo, the shot has perfect
     <part Name="Springy" Factor="0.5" />
     <part Name="Commerce" Value="1200" />
     <part Name="Crysteel" />
+    <xtagGrammar adjunctNoun="suit" massNoun="true" />
 	  <tag Name="EquipSound" Value="sfx_equip_armor_glass" />
     <tag Name="Tier" Value="6" />
   </object>
@@ -4527,6 +4534,7 @@ When this weapons fires a shot with its last round of ammo, the shot has perfect
     <part Name="Springy" Factor="0.5" />
     <part Name="Commerce" Value="1900" />
     <part Name="Crysteel" />
+    <xtagGrammar adjunctNoun="suit" massNoun="true" />
 	  <tag Name="EquipSound" Value="sfx_equip_armor_glass" />
     <tag Name="Flawless" />
     <tag Name="Tier" Value="7" />
@@ -5512,7 +5520,7 @@ When this weapons fires a shot with its last round of ammo, the shot has perfect
     <tag Name="Tier" Value="3" />
     <part Name="TinkerItem" Bits="0003" CanDisassemble="true" CanBuild="true" />
     <tag Name="Gender" Value="plural" />
-    <xtagGrammar iArticle="a pair of" />
+    <xtagGrammar adjunctNoun="pair" />
   </object>
   <object Name="Vinewood Sap Mask" Inherits="BaseMask">
     <part Name="Armor" AV="0" DV="0" WornOn="Face" />
@@ -5651,7 +5659,7 @@ You can see two spaces beyond the first occluding object in your line of sight."
     <tag Name="Tier" Value="7" />
     <part Name="TinkerItem" Bits="0007" CanDisassemble="true" CanBuild="true" />
     <tag Name="Gender" Value="plural" />
-    <xtagGrammar iArticle="a pair of" />
+    <xtagGrammar adjunctNoun="pair" />
   </object>
 
 	<!-- Face, Tier 8 -->
@@ -7026,7 +7034,7 @@ You may activate this item to conjure a force field in front of you. Robots will
     <tag Name="Mods" Value="None" />
     <part Name="Description" Short="Boartooth beads on the ancient charm are worn to nubs by the cartilage of time, but the flexing cable that holds them together is as strong as the day it was woven. Dangling from the bracelet is a figurine of a deer, carved from a mysterious substance that cracks light like crystal but weighs like metal, producing a shaded lifelikeness elsewhere unseen." />
     <part Name="KindrishProperties" />
-    <part Name="TakenAccomplishment" Text="You recovered the ancestral bracelet of the hindren, =this.refname=." Hagiograph="Through the exhibition of =player.possessive= extraordinary guile, =name= was able to recover =this.refname=, the ancestral bracelet of the hindren, and was conferred thusly the title of Grand-Doe." HagiographCategory="FindsObject" HagiographWeight="High" Gospel="At a tavern deep in the wilds of =terrain.t=, =name= lost =player.possessive= precious bracelet Kindrish to a local thief. =name= murdered the thief =spice:elements.entity@elements[random].murdermethods.!random= and immediately recovered their cherished heirloom." />
+    <part Name="TakenAccomplishment" Text="You recovered the ancestral bracelet of the hindren, =this.refname=." Hagiograph="Through the exhibition of =player.possessive= extraordinary guile, =name= was able to recover =this.refname=, the ancestral bracelet of the hindren, and was conferred thusly the title of Grand-Doe." HagiographCategory="FindsObject" HagiographWeight="High" Gospel="At a tavern deep in the wilds of =terrain.t=, =name= lost =player.possessive= precious bracelet Kindrish to a local thief. =name= murdered the thief =spice:elements.entity@elements[random].murdermethods.!random= and immediately recovered =player.possessive= cherished heirloom." />
     <part Name="TakenAchievement" AchievementID="ACH_RECOVER_KINDRISH" />
     <part Name="TakenWXU" WXU="1"></part>
     <part Name="ItemElements" Elements="jewels::4" />

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.17
+Caves of Qud - Generated Localizable XML 2.0.212.18
 
 <objects ExcludeFromCorpusGeneration="Key">
 
@@ -1295,12 +1295,12 @@ Caves of Qud - Generated Localizable XML 2.0.212.17
   <object Name="Bark Armor" Load="Merge">
     <part Name="Render" DisplayName="▶bark armor" />
     <part Name="Description" Short="▶Billets of shaved dogwood contour to the breasts, waist, and thigh. The husk is beetle-eaten." />
-    <xtagGrammar iArticle="▶some" />
+    <xtagGrammar adjunctNoun="▶suit" massNoun="▶true" />
   </object>
   <object Name="Leather Armor" Load="Merge">
     <part Name="Render" DisplayName="▶leather armor" />
     <part Name="Description" Short="▶Boiled goat leather was cut to a cuirass and fit with straps and iron buckles. It smells of beeswax." />
-    <xtagGrammar iArticle="▶some" />
+    <xtagGrammar adjunctNoun="▶suit" massNoun="▶true" />
   </object>
   <object Name="Vine-Weave Tunic" Load="Merge">
     <part Name="Render" DisplayName="▶{{y-g-g-y-y sequence|vine-weave}} tunic" />
@@ -1309,7 +1309,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.17
   <object Name="Studded Leather Armor" Load="Merge">
     <part Name="Render" DisplayName="▶studded leather armor" />
     <part Name="Description" Short="▶Ancient and inscrutable pegs of chrome fished from the trash sea stud thick wedges of boiled goat leather." />
-    <xtagGrammar iArticle="▶some" />
+    <xtagGrammar adjunctNoun="▶suit" massNoun="▶true" />
   </object>
   <object Name="Pocketed Vest" Load="Merge">
     <part Name="Render" DisplayName="▶pocketed vest" />
@@ -1330,14 +1330,17 @@ Caves of Qud - Generated Localizable XML 2.0.212.17
   <object Name="Ring Mail" Load="Merge">
     <part Name="Render" DisplayName="▶ring mail" />
     <part Name="Description" Short="▶A leather shirt is mantled with sewn-in loops of steel." />
+    <xtagGrammar adjunctNoun="▶set" massNoun="▶true" />
   </object>
   <object Name="Chain Mail" Load="Merge">
     <part Name="Render" DisplayName="▶chain mail" />
     <part Name="Description" Short="▶A shiny mesh of linked loops that were sourced from the steel heart of the trash sea." />
+    <xtagGrammar adjunctNoun="▶set" massNoun="▶true" />
   </object>
   <object Name="Steel Plate Mail" Load="Merge">
     <part Name="Render" DisplayName="▶{{Y|steel plate mail}}" />
     <part Name="Description" Short="▶Cane-beat steel is shaped to the pectorial lunes and stitched to an undergarment of padded goat leather." />
+    <xtagGrammar adjunctNoun="▶suit" massNoun="▶true" />
   </object>
   <object Name="Puma Chitin Vest" Load="Merge">
     <part Name="Render" DisplayName="▶{{leopard|puma chitin}} vest" />
@@ -1354,6 +1357,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.17
   <object Name="Carbide Plate Armor" Load="Merge">
     <part Name="Render" DisplayName="▶{{b|carbide}} plate armor" />
     <part Name="Description" Short="▶Nicked folding metal of dull azure is shaped to the pectorial lunes and stitched to an undergarment of padded goat leather." />
+    <xtagGrammar adjunctNoun="▶suit" massNoun="▶true" />
   </object>
   <object Name="Slate Mantle" Load="Merge">
     <part Name="Render" DisplayName="▶slate mantle" />
@@ -1387,14 +1391,17 @@ Caves of Qud - Generated Localizable XML 2.0.212.17
   <object Name="Fullerite Plate Mail" Load="Merge">
     <part Name="Render" DisplayName="▶{{K|fullerite}} plate mail" />
     <part Name="Description" Short="▶Hyperdense metal in meteor black was superheated and banged to the shoulder and chest shapes." />
+    <xtagGrammar adjunctNoun="▶suit" massNoun="▶true" />
   </object>
   <object Name="Fullerite Flake Armor" Load="Merge">
     <part Name="Render" DisplayName="▶{{K|fullerite}} flake armor" />
     <part Name="Description" Short="▶Flakes shaved off a big wedge of the gravid metal have been heat-fused to some kind of animal leather." />
+    <xtagGrammar adjunctNoun="▶suit" massNoun="▶true" />
   </object>
   <object Name="Crysteel Shardmail" Load="Merge">
     <part Name="Render" DisplayName="▶{{K|{{crysteel|crysteel}} shardmail}}" />
     <part Name="Description" Short="▶Blast furnaces sucked the tidal energy out of the planet, heated carbon to solar temperatures, and poured it into hexagonal molds. The emerald tongs used to retrieve the casts atomized and vented vanadium -- the green glint -- into the manifold, imperfecting the metal and conferring its characteristic hue." />
+    <xtagGrammar adjunctNoun="▶suit" massNoun="▶true" />
   </object>
   <object Name="Nanoweave Vest" Load="Merge">
     <part Name="Render" DisplayName="▶nanoweave vest" />
@@ -1412,6 +1419,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.17
   <object Name="Flawless Crysteel Shardmail" Load="Merge">
     <part Name="Render" DisplayName="▶{{K|flawless {{crysteel|crysteel}} shardmail}}" />
     <part Name="Description" Short="▶Blast furnaces sucked the tidal energy out of the planet, heated carbon to solar temperatures, and poured it into hexagonal molds. The emerald tongs used to retrieve the casts atomized and vented vanadium -- the green glint -- into the manifold, imperfecting the metal and conferring its characteristic hue. Casts mottled with dust particles were culled and fed to lithovores, leaving only the perfect hexagonal prisms." />
+    <xtagGrammar adjunctNoun="▶suit" massNoun="▶true" />
   </object>
   <object Name="High-Energy Thermo Cask" Load="Merge">
     <part Name="Render" DisplayName="▶high-energy {{thermo|thermo}} cask" />
@@ -1685,7 +1693,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.17
   <object Name="Night-vision Goggles" Load="Merge">
     <part Name="Render" DisplayName="▶night-vision goggles" />
     <part Name="Description" Short="▶Focus-ringed binoculars read the tells of infrared light and produce a textured picture of eye-warm greens." />
-    <xtagGrammar iArticle="▶a pair of" />
+    <xtagGrammar adjunctNoun="▶pair" />
   </object>
   <object Name="Vinewood Sap Mask" Load="Merge">
     <part Name="Render" DisplayName="▶vinewood sap mask" />
@@ -1726,7 +1734,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.17
     <part Name="Render" DisplayName="▶{{K|night-sight}} interpolators" />
     <part Name="Description" Short="▶Ring-molds on the laminated metal frame collect ambient sensory data and use it to augment the viewing frustum." />
     <part Name="RulesDescription" Text="▶Grants night vision.&#xA;You can see two spaces beyond the first occluding object in your line of sight." />
-    <xtagGrammar iArticle="▶a pair of" />
+    <xtagGrammar adjunctNoun="▶pair" />
   </object>
   <object Name="Dream Rondure" Load="Merge">
     <part Name="Render" DisplayName="▶{{dreamy|dream rondure}}" />
@@ -2142,7 +2150,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.17
   <object Name="Kindrish" Load="Merge">
     <part Name="Render" DisplayName="▶{{g-G-y-Y-Y-y-G-g alternation|Kindrish}}" />
     <part Name="Description" Short="▶Boartooth beads on the ancient charm are worn to nubs by the cartilage of time, but the flexing cable that holds them together is as strong as the day it was woven. Dangling from the bracelet is a figurine of a deer, carved from a mysterious substance that cracks light like crystal but weighs like metal, producing a shaded lifelikeness elsewhere unseen." />
-    <part Name="TakenAccomplishment" Text="▶You recovered the ancestral bracelet of the hindren, =this.refname=." Hagiograph="▶Through the exhibition of =player.possessive= extraordinary guile, =name= was able to recover =this.refname=, the ancestral bracelet of the hindren, and was conferred thusly the title of Grand-Doe." Gospel="▶At a tavern deep in the wilds of =terrain.t=, =name= lost =player.possessive= precious bracelet Kindrish to a local thief. =name= murdered the thief =spice:elements.entity@elements[random].murdermethods.!random= and immediately recovered their cherished heirloom." />
+    <part Name="TakenAccomplishment" Text="▶You recovered the ancestral bracelet of the hindren, =this.refname=." Hagiograph="▶Through the exhibition of =player.possessive= extraordinary guile, =name= was able to recover =this.refname=, the ancestral bracelet of the hindren, and was conferred thusly the title of Grand-Doe." Gospel="▶At a tavern deep in the wilds of =terrain.t=, =name= lost =player.possessive= precious bracelet Kindrish to a local thief. =name= murdered the thief =spice:elements.entity@elements[random].murdermethods.!random= and immediately recovered =player.possessive= cherished heirloom." />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="BarathrumiteSafetyBand" Load="Merge">
