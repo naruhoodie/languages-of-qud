@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud code extracted string table. 2.0.212.18
+Caves of Qud code extracted string table. 2.0.212.19
 
 Comments should be deleted when copied to a new translation table, but are provided to
 help find the usage of the string in the base source code.
@@ -241,8 +241,7 @@ alone if no match found.
   <string Context="Character Status Screen Tab Name (Long)" ID="Tinkering">▶Tinkering</string>
   <string Context="TradeWindow left column item" ID="=item.long=">▶=item.long=</string>
   <string Context="TradeWindow right column weight" ID="[{{K|=weight= lbs.}}]">▶[{{K|=weight= lbs.}}]</string>
-  <string Context="TradeWindow right column currency" ID="[{{W|=value:0.00=}}]">▶[{{W|=value:0.00=}}]</string>
-  <string Context="TradeWindow right column value" ID="[=value:0.00=]">▶[=value:0.00=]</string>
+  <string Context="TradeWindow right column value" ID="[=value:0.00|tradeColor#item=]">▶[=value:0.00|tradeColor#item=]</string>
   <string Context="Chargen Worldgen Title" ID="{{W|Creating World}}">▶{{W|Creating World}}</string>
   <string Context="Ability Bar effects line" ID="{{W|ACTIVE EFFECTS:}} =effects.commaList=">▶{{W|ACTIVE EFFECTS:}} =effects.commaList=</string>
   <string Context="Ability Bar target details" ID="{{C|{{{{B|TARGET:}} =target.name=}}">▶{{C|{{{{B|TARGET:}} =target.name=}}</string>
@@ -1538,6 +1537,7 @@ alone if no match found.
   <string Context="spotmessage" ID="=subject.Does#verb= =object.an:withTitles= =subject.generalDirection#object= and stop =autoActDescription=.">▶=subject.Does#verb= =object.an:withTitles= =subject.generalDirection#object= and stop =autoActDescription=.</string>
   <string Context="spotmessage" ID="=subject.Does#verb= =object.an:withTitles:notvisible= =subject.generalDirection#object=, so you refrain from =autoActDescription=.">▶=subject.Does#verb= =object.an:withTitles:notvisible= =subject.generalDirection#object=, so you refrain from =autoActDescription=.</string>
   <string Context="spotmessage" ID="=subject.Does#verb= =object.an:withTitles:notvisible= =subject.generalDirection#object= and stop =autoActDescription=.">▶=subject.Does#verb= =object.an:withTitles:notvisible= =subject.generalDirection#object= and stop =autoActDescription=.</string>
+  <string Context="GameObject adjunct noun default" ID="set">▶set</string>
   <string Context="Tutorial Death" ID="Oh, you died. That's okay. It's a very common occurance in the world of Qud.&#xA;&#xA;Because the tutorial drops you off in Classic mode with permadeath, your character is wiped when you die.&#xA;&#xA;The good news is: you get to make a whole new character! Now with a little more knowledge than you had before." Value="▶Oh, you died. That's okay. It's a very common occurance in the world of Qud.&#xA;&#xA;Because the tutorial drops you off in Classic mode with permadeath, your character is wiped when you die.&#xA;&#xA;The good news is: you get to make a whole new character! Now with a little more knowledge than you had before." />
   <string Context="Tutorial Death" ID="Next time, if you want a more forgiving mode of play, try Roleplay, which lets you checkpoint at settlements.&#xA;&#xA;Or try Wander mode, where most creatures are neutral to you and you gain experience via discovery instead of killing.&#xA;&#xA;Or keep playing Classic if the challenge appeals to you and you'd like to explore a breadth of character types." Value="▶Next time, if you want a more forgiving mode of play, try Roleplay, which lets you checkpoint at settlements.&#xA;&#xA;Or try Wander mode, where most creatures are neutral to you and you gain experience via discovery instead of killing.&#xA;&#xA;Or keep playing Classic if the challenge appeals to you and you'd like to explore a breadth of character types." />
   <string Context="Tutorial Death" ID="Whatever you choose next, feel free to return to the tutorial if you need a refresher.&#xA;&#xA;Live and drink, friend!" Value="▶Whatever you choose next, feel free to return to the tutorial if you need a refresher.&#xA;&#xA;Live and drink, friend!" />
