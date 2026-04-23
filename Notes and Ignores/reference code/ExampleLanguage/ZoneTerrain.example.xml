@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.19
+Caves of Qud - Generated Localizable XML 2.0.212.20
 
 <objects ExcludeFromCorpusGeneration="Key">
 
@@ -404,7 +404,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
   </object>
   <object Name="Stairs" Load="Merge">
     <part Name="Render" DisplayName="▶stairs" />
-    <xtagGrammar iArticle="▶some" />
+    <xtagGrammar massNoun="▶true" />
   </object>
   <object Name="StairsUp" Load="Merge">
     <part Name="Render" DisplayName="▶stairs up" />
@@ -418,33 +418,23 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
     <part Name="Render" DisplayName="▶slimy shaft" />
     <part Name="StairsDown" PullMessage="▶You fall down the slimy shaft!" />
     <part Name="Description" Short="▶Machinic tones are made soft against the slime-wet walls of a darkling shaft. A void is beneath." />
-    <xtagGrammar iArticle="" />
   </object>
   <object Name="OpenShaft" Load="Merge">
     <part Name="Render" DisplayName="▶deep shaft" />
     <part Name="Description" Short="▶Darkness floods up from the empty space." />
-    <xtagGrammar iArticle="" />
-  </object>
-  <object Name="OpenShaft2" Load="Merge">
-    <part Name="Render" DisplayName="▶deep shaft" />
-    <part Name="Description" Short="▶Darkness floods up from the empty space." />
-    <xtagGrammar iArticle="" />
+    <xtagGrammar massNoun="▶false" />
   </object>
   <object Name="Air" Load="Merge">
     <part Name="Render" DisplayName="▶open air" />
     <part Name="StairsDown" PullMessage="▶You fall down!" JumpPrompt="▶It looks like an awfully long fall. Are you sure you want to jump?" />
     <part Name="Description" Short="▶Space is emptied of solid impediments." />
-    <xtagGrammar iArticle="▶some" />
+    <xtagGrammar massNoun="▶true" />
   </object>
   <object Name="Pit" Load="Merge">
     <part Name="Render" DisplayName="▶open air" />
     <part Name="StairsDown" PullMessage="▶You scramble down a craggy ledge." JumpPrompt="▶It looks like an awfully long fall. Are you sure you want to jump?" />
     <part Name="Description" Short="▶Space is emptied of solid impediments." />
-    <xtagGrammar iArticle="▶some" />
-  </object>
-  <object Name="TombShaft" Load="Merge">
-    <part Name="Render" DisplayName="▶deep shaft" />
-    <part Name="Description" Short="▶Darkness floods up from the empty space." />
+    <xtagGrammar massNoun="▶true" />
   </object>
   <object Name="ElevatorShaft" Load="Merge">
     <part Name="Render" DisplayName="▶elevator shaft" />
@@ -454,7 +444,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
     <part Name="Render" DisplayName="▶coral pit" />
     <part Name="StairsDown" PullMessage="" />
     <part Name="Description" Short="▶Darkness floods up the polyp-strewn fringes of an open pit." />
-    <xtagGrammar iArticle="" />
   </object>
   <object Name="PondDown" Load="Merge">
     <part Name="Render" DisplayName="▶small crack" />

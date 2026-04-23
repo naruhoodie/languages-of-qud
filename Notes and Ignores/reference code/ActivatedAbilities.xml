@@ -45,7 +45,10 @@
   </ability>
   <ability Command="ActivateFabricateFromSelf">
 		<description>
-			<p>You <stat Name="FabricateVerb" /> <stat Name="An" /><stat Name="FabricateBlueprint" /> from <stat Name="FabricateSource" />.</p>
+      <switch Name="BatchSize">
+        <case Value="1"><p><gametext>You =fabricateVerb= =sample.a.name:single:asIfKnown= from =fabricateSource=.</gametext></p></case>
+        <default><p><gametext>You =fabricateVerb= =sample.name:single:asIfKnown|pluralize= from =fabricateSource=.</gametext></p></default>
+      </switch>
       <br/>
 			<statline Name="BatchSize" DisplayName="Batch size" />
 			<statline Name="HitpointsPer" DisplayName="Hitpoints per batch" />

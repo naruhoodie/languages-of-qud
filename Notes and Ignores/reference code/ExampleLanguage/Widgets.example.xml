@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.19
+Caves of Qud - Generated Localizable XML 2.0.212.20
 
 <objects ExcludeFromCorpusGeneration="Key">
 
@@ -20,6 +20,21 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
 
 -->
 <objects Lang="example" Encoding="utf-8">
+  <object Name="LandmarkJoppaIrudadHut" Load="Merge">
+    <part Name="ZoneLandmarkBox" DisplayName="▶hut" Preposition="▶in" />
+  </object>
+  <object Name="LandmarkJoppaArgyveWorkshop" Load="Merge">
+    <part Name="ZoneLandmarkBox" DisplayName="▶workshop" Preposition="▶in" />
+  </object>
+  <object Name="LandmarkJoppaTamTent" Load="Merge">
+    <part Name="ZoneLandmarkBox" DisplayName="▶tent" Preposition="▶in" />
+  </object>
+  <object Name="LandmarkJoppaWatervine" Load="Merge">
+    <part Name="ZoneLandmarkGroup" DisplayName="▶watervine patch" Preposition="▶by" />
+  </object>
+  <object Name="LandmarkJoppaMill" Load="Merge">
+    <part Name="ZoneLandmarkBox" DisplayName="▶village mill" Preposition="▶by" />
+  </object>
   <object Name="CoralPolypSpawner" Load="Merge">
     <part Name="Render" DisplayName="▶coral polyp" />
   </object>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.19
+Caves of Qud - Generated Localizable XML 2.0.212.20
 
 <objects ExcludeFromCorpusGeneration="Key">
 
@@ -143,6 +143,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
   <object Name="Frigid Mist" Load="Merge">
     <part Name="Render" DisplayName="▶freezing mist" />
     <part Name="Description" Short="▶Air cracks under an eddy and blows supercooled moisture to sparkling dust." />
+    <xtagGrammar massNoun="▶true" />
   </object>
   <object Name="Space-Time Anomaly" Load="Merge">
     <part Name="Render" DisplayName="▶spacetime vortex" />

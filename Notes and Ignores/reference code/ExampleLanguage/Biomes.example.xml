@@ -1,11 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.19
+Caves of Qud - Generated Localizable XML 2.0.212.20
 
 -->
 <biomes Lang="example" Encoding="utf-8">
   <biome Name="Fungal">
-    <defaultVariant Name="None" />
     <variant Name="Weak">
       <noun>▶fungus patch</noun>
     </variant>
@@ -17,7 +16,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
     </variant>
   </biome>
   <biome Name="Slimy">
-    <defaultVariant Name="None" />
     <variant Name="Weak">
       <noun>▶slime patch</noun>
       <adjective>▶slimy</adjective>
@@ -31,7 +29,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
     </variant>
   </biome>
   <biome Name="Tarry">
-    <defaultVariant Name="None" />
     <variant Name="Weak">
       <noun>▶tar patch</noun>
       <adjective>▶tarry</adjective>
@@ -44,7 +41,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
     </variant>
   </biome>
   <biome Name="Rusty">
-    <defaultVariant Name="None" />
     <variant Name="Weak">
       <noun>▶rust patch</noun>
       <adjective>▶rusty</adjective>
@@ -56,8 +52,5 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
     <variant Name="Strong">
       <noun>▶rust bog</noun>
     </variant>
-  </biome>
-  <biome Name="Psychic">
-    <defaultVariant Name="None" />
   </biome>
 </biomes>

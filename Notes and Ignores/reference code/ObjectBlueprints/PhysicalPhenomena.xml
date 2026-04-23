@@ -632,7 +632,7 @@
 		<stag Name="Heat" />
     <part Name="SoundRender" Sound="Sounds/Abilities/sfx_ability_pyrokinesis_passive" Volume="0.5"></part>
     <part Name="SoundOnCreate" Sounds="Sounds/Abilities/sfx_ability_pyrokinesis_active" Volume="1"></part>
-      <xtagGrammar massNoun="true" />
+    <xtagGrammar massNoun="true" />
 	</object>
 	<object Name="Frigid Mist" Inherits="InertObject">
 		<part Name="NoDamage" />
@@ -643,6 +643,7 @@
 		<tag Name="ExcludeFromDynamicEncounters" />
 		<tag Name="NoSparkingQuest" />
 		<stag Name="Cold" />
+    <xtagGrammar massNoun="true" />
 	</object>
   
   <!-- End gases -->

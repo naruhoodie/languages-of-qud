@@ -21,6 +21,22 @@
     <smearedName>{{G|acid-covered}}</smearedName>
     <stainedName>{{G|acid}}</stainedName>
     <preparedCookingIngredient>acidMinor</preparedCookingIngredient>
+    <render>
+      <baseColor>&amp;G^g</baseColor>
+      <secondaryColorText>&amp;G</secondaryColorText>
+      <paint>
+        <atlas>Liquids/Splotchy/</atlas>
+      </paint>
+      <frozen>
+        <renderString>~</renderString>
+        <color>&amp;G^g</color>
+      </frozen>
+      <blips>
+        <color>&amp;G^g</color>
+        <renderString>≈,~,○,~</renderString>
+        <rareRenderString>☼</rareRenderString>
+      </blips>
+    </render>
     <tag Name="FungalCureIngredient" />
     <soupSludgeProperties>
       <pseudopod>Acidic Pseudopod</pseudopod>
@@ -37,24 +53,6 @@
       <damageRoll>=purity=d10</damageRoll>
       <attributes>Acid</attributes>
       <message>from {{G|drinking acid}}!</message>
-    </part>
-    <part Name="Render">
-      <baseColorText>&amp;G^g</baseColorText>
-      <baseColorTile>&amp;G</baseColorTile>
-      <baseColorDetail>g</baseColorDetail>
-      <baseColorBackground>^g</baseColorBackground>
-      <secondaryColorText>&amp;G</secondaryColorText>
-      <paintAtlas>Liquids/Splotchy/</paintAtlas>
-    </part>
-    <part Name="RenderBlips">
-      <frozenRenderString>~</frozenRenderString>
-      <frozenRenderColors>&amp;G^g,&amp;G,g</frozenRenderColors>
-      <rareRenderString>☼</rareRenderString>
-      <frozenRenderColors>&amp;G^g,&amp;G,g</frozenRenderColors>
-      <blipsRenderStrings>≈,~,○,~</blipsRenderStrings>
-      <blipsRenderColorTexts>&amp;G^g</blipsRenderColorTexts>
-      <blipsRenderColorTiles>&amp;G</blipsRenderColorTiles>
-      <blipsRenderColorDetails>g</blipsRenderColorDetails>
     </part>
   </liquid>
   <liquid Name="Asphalt">
@@ -90,6 +88,25 @@
     <tag Name="FungalCureIngredient" />
     <tag Name="GlotrotCureIngredient" />
     <tag Name="IronshankCureIngredient" />
+    <render>
+      <baseColor>&amp;k^K</baseColor>
+      <secondaryColorText>&amp;K</secondaryColorText>
+      <paint>
+        <atlas>Liquids/Speckle/</atlas>
+      </paint>
+      <frozen>
+        <renderString>~</renderString>
+        <color>&amp;k^K</color>
+      </frozen>
+      <blips>
+        <color>&amp;k^K</color>
+        <renderString>≈,~,○,~</renderString>
+        <rareRenderString>☼</rareRenderString>
+      </blips>
+      <smear>
+        <color>&amp;K</color>
+      </smear>
+    </render>
     <part Name="MessageOnDrink">
       <message>{{K|It burns!}}</message>
     </part>
@@ -99,27 +116,6 @@
     <part Name="DamageOnDrink">
       <damageRoll>=purity=d6</damageRoll>
       <message>from {{K|drinking asphalt}}!</message>
-    </part>
-    <part Name="Render">
-      <baseColorText>&amp;k^K</baseColorText>
-      <baseColorTile>&amp;k</baseColorTile>
-      <baseColorDetail>K</baseColorDetail>
-      <baseColorBackground>^K</baseColorBackground>
-      <secondaryColorText>&amp;K</secondaryColorText>
-      <paintAtlas>Liquids/Speckle/</paintAtlas>
-    </part>
-    <part Name="RenderBlips">
-      <frozenRenderString>~</frozenRenderString>
-      <frozenRenderColors>&amp;k^K,&amp;k,K</frozenRenderColors>
-      <rareRenderString>☼</rareRenderString>
-      <rareRenderColors>&amp;k^K,&amp;k,K</rareRenderColors>
-      <blipsRenderStrings>≈,~,○,~</blipsRenderStrings>
-      <blipsRenderColorTexts>&amp;k^K</blipsRenderColorTexts>
-      <blipsRenderColorTiles>&amp;k</blipsRenderColorTiles>
-      <blipsRenderColorDetails>K</blipsRenderColorDetails>
-    </part>
-    <part Name="RenderSmearColorBlips">
-      <color>&amp;K</color>
     </part>
   </liquid>
   <liquid Name="Algae">
@@ -146,20 +142,19 @@
     <soupSludgeProperties>
       <pseudopod>Algal Pseudopod</pseudopod>
     </soupSludgeProperties>
-    <part Name="Render">
-      <baseColorText>&amp;g^C</baseColorText>
-      <baseColorTile>&amp;g</baseColorTile>
-      <baseColorDetail>C</baseColorDetail>
-      <baseColorBackground>^g</baseColorBackground>
-      <wadingRenderChar>▒</wadingRenderChar>
+    <render>
+      <part Name="RenderSecondToWater">
+        <colorText>&amp;g^C</colorText>
+        <colorTile>&amp;g</colorTile>
+        <colorDetail>C</colorDetail>
+      </part>
+      <baseColor>&amp;g^C</baseColor>
       <secondaryColorBackground>^C</secondaryColorBackground>
-      <paintAtlas>Liquids/Paisley/</paintAtlas>
-    </part>
-    <part Name="RenderSecondToWater">
-      <colorText>&amp;g^C</colorText>
-      <colorTile>&amp;g</colorTile>
-      <colorDetail>C</colorDetail>        
-    </part>
+      <wadingRenderChar>▒</wadingRenderChar>
+      <paint>
+        <atlas>Liquids/Paisley/</atlas>
+      </paint>
+    </render>
     <part Name="SnackOnDrink">
       <message>The brine stings your mouth and fills your breath with lake air.</message>
     </part>
@@ -193,21 +188,17 @@
     <tag Name="IronshankCureIngredient" />
     <tag Name="Desecrates" />
     <part Name="MessageOnDrink" Message="It has a metallic taste." />
-    <part Name="Render">
-      <baseColorText>&amp;r^k</baseColorText>
-      <baseColorTile>&amp;r</baseColorTile>
-      <baseColorDetail>k</baseColorDetail>
-      <baseColorBackground>^r</baseColorBackground>
+    <render>
+      <part Name="RenderSecondToAlgae">
+        <colorText>&amp;r^C</colorText>
+        <colorDetail>C</colorDetail>
+      </part>
+      <baseColor>&amp;r^k</baseColor>
       <secondaryColorText>&amp;r</secondaryColorText>
-      <paintAtlas>Liquids/Splotchy/</paintAtlas>
-    </part>
-    <part Name="RenderSecondToAlgae" Priority="10">
-      <colorText>&amp;r^C</colorText>
-      <colorDetail>C</colorDetail>
-    </part>
-    <part Name="RenderSmear">
-      <color>&amp;r</color>
-    </part>
+      <smear>
+        <color>&amp;r</color>
+      </smear>
+    </render>
   </liquid>
   <liquid Name="BrainBrine">
     <slug>brainbrine</slug>
@@ -232,28 +223,27 @@
     <soupSludgeProperties>
       <pseudopod>Nervous Pseudopod</pseudopod>
     </soupSludgeProperties>
-    <part Name="BrainBrineOnDrink" />
-    <part Name="Render">
-      <baseColorText>&amp;g^W</baseColorText>
-      <baseColorTile>&amp;g</baseColorTile>
-      <baseColorDetail>W</baseColorDetail>
-      <baseColorBackground>^W</baseColorBackground>
+    <render>
+      <baseColor>&amp;g^W</baseColor>
       <secondaryColorText>&amp;W</secondaryColorText>
-      <paintAtlas>Liquids/Dot/</paintAtlas>
-    </part>
-    <part Name="RenderSmearColorBlips">
-      <color>&amp;W</color>
-    </part>
-    <part Name="RenderBlips">
-      <frozenRenderString>~</frozenRenderString>
-      <frozenRenderColors>&amp;g^W,&amp;g,W</frozenRenderColors>
-      <rareRenderString>~</rareRenderString>
-      <rareRenderColors>&amp;g^W,&amp;g,W</rareRenderColors>
-      <blipsRenderStrings>≈,~,○,~</blipsRenderStrings>
-      <blipsRenderColorTexts>&amp;g^W</blipsRenderColorTexts>
-      <blipsRenderColorTiles>&amp;g</blipsRenderColorTiles>
-      <blipsRenderColorDetails>W</blipsRenderColorDetails>
-    </part>
+      <paint>
+        <atlas>Liquids/Dot/</atlas>
+      </paint>
+      <frozen>
+        <renderString>~</renderString>
+        <color>&amp;g^W</color>
+      </frozen>
+      <blips>
+        <renderString>≈,~,○,~</renderString>
+        <color>&amp;g^W</color>
+        <rareRenderString>~</rareRenderString>
+        <rareColor>&amp;g^W</rareColor>
+      </blips>
+      <smear>
+        <color>&amp;W</color>
+      </smear>
+    </render>
+    <part Name="BrainBrineOnDrink" />
   </liquid>
   <liquid Name="Cider">
     <slug>cider</slug>
@@ -286,26 +276,23 @@
       <message>It is spicy and delicious.</message>
     </part>
     <valuePerDram>3.8</valuePerDram>
-    <part Name="Render">
-      <baseColorBackground>^w</baseColorBackground>
-      <baseColorText>&amp;w^r</baseColorText>
-      <baseColorTile>&amp;w</baseColorTile>
-      <baseColorDetail>r</baseColorDetail>
+    <render>
+      <baseColor>&amp;w^r</baseColor>
       <secondaryColorText>&amp;w</secondaryColorText>
-    </part>
-    <part Name="RenderBlips">
-      <frozenRenderString>~</frozenRenderString>
-      <frozenRenderColors>&amp;r^w,&amp;r,w</frozenRenderColors>
-      <rareRenderString>☼</rareRenderString>
-      <rareRenderColors>&amp;r^w,&amp;r,w</rareRenderColors>
-      <blipsRenderStrings>≈,~,○,~</blipsRenderStrings>
-      <blipsRenderColorTexts>&amp;w^r</blipsRenderColorTexts>
-      <blipsRenderColorTiles>&amp;w</blipsRenderColorTiles>
-      <blipsRenderColorDetails>r</blipsRenderColorDetails>
-    </part>
-    <part Name="RenderSmearColorBlips">
-      <color>&amp;w</color>
-    </part>
+      <frozen>
+        <renderString>~</renderString>
+        <color>&amp;g^W</color>
+      </frozen>
+      <blips>
+        <renderString>≈,~,○,~</renderString>
+        <color>&amp;w^r</color>
+        <rareRenderString>☼</rareRenderString>
+        <rareColor>&amp;r^w</rareColor>
+      </blips>
+      <smear>
+        <color>&amp;w</color>
+      </smear>
+    </render>
   </liquid>
   <liquid Name="CloningDraught">
     <slug>cloning</slug>
@@ -313,7 +300,6 @@
     <colors>YM</colors>
     <fluidity>10</fluidity>
     <evaporativity>100</evaporativity>
-    <part Name="Glows" />
     <valuePerDram>1250</valuePerDram>
     <displayName>{{cloning|cloning draught}}</displayName>
     <adjective>{{cloning|homogenized}}</adjective>
@@ -328,25 +314,25 @@
       <pseudopod>Homogenized Pseudopod</pseudopod>
       <part Name="CloneOnHit" />
     </soupSludgeProperties>
-    <part Name="CloningBehaviors" />
-    <part Name="Render">
-      <baseColorBackground>^M</baseColorBackground>
-      <baseColorText>&amp;M^Y</baseColorText>
-      <baseColorTile>&amp;M</baseColorTile>
-      <baseColorDetail>Y</baseColorDetail>
+    <render>
+      <part Name="Glows" />
+      <baseColor>&amp;M^Y</baseColor>
       <secondaryColorText>&amp;Y</secondaryColorText>
-      <paintAtlas>Liquids/Paisley/</paintAtlas>
-    </part>
-    <part Name="RenderBlips">
-      <frozenRenderString>~</frozenRenderString>
-      <frozenRenderColors>&amp;M^Y,&amp;M,Y</frozenRenderColors>
-      <rareRenderString>☼</rareRenderString>
-      <rareRenderColors>&amp;M^Y,&amp;M,Y</rareRenderColors>
-      <blipsRenderStrings>≈,~,○,~</blipsRenderStrings>
-      <blipsRenderColorTexts>&amp;M^Y</blipsRenderColorTexts>
-      <blipsRenderColorTiles>&amp;M</blipsRenderColorTiles>
-      <blipsRenderColorDetails>Y</blipsRenderColorDetails>
-    </part>
+      <paint>
+        <atlas>Liquids/Paisley/</atlas>
+      </paint>
+      <frozen>
+        <renderString>~</renderString>
+        <color>&amp;M^Y</color>
+      </frozen>
+      <blips>
+        <renderString>≈,~,○,~</renderString>
+        <color>&amp;M^Y</color>
+        <rareRenderString>☼</rareRenderString>
+        <rareColor>&amp;M^Y</rareColor>
+      </blips>
+    </render>
+    <part Name="CloningBehaviors" />
   </liquid>
   <liquid Name="Convalessence">
     <slug>convalessence</slug>
@@ -373,30 +359,29 @@
       <stat Name="ColdResistance" Value="100" />
       <part Name="LightSource" Radius="6" />
     </soupSludgeProperties>
+    <render>
+      <part Name="Glows" BrighterWithVolume="true" LightLevel="1" />
+      <baseColor>&amp;Y^C</baseColor>
+      <secondaryColorText>&amp;C</secondaryColorText>
+      <frozen>
+        <renderString>~</renderString>
+        <color>&amp;C^Y</color>
+      </frozen>
+      <blips>
+        <renderString>≈,~, ,~</renderString>
+        <color>&amp;Y^C</color>
+        <rareRenderString>☼</rareRenderString>
+        <rareColor>&amp;C^Y</rareColor>
+      </blips>
+      <smear>
+        <color>&amp;C</color>
+      </smear>
+    </render>
     <tag Name="FungalCureIngredient" />
     <tag Name="HealingPool" />
-    <part Name="Glows" BrighterWithVolume="true" LightLevel="1" />
     <part Name="HealingLocation" />
     <freezeObject Name="CryoGas" Threshold="1" Verb="sublimate" />
     <part Name="MessageOnDrink" Message="It's effervescent!" />
-    <part Name="RenderSmearColorBlips" Color="&amp;C" />
-    <part Name="Render">
-      <baseColorBackground>^C</baseColorBackground>
-      <baseColorText>&amp;Y^C</baseColorText>
-      <baseColorTile>&amp;Y</baseColorTile>
-      <baseColorDetail>C</baseColorDetail>
-      <secondaryColorText>&amp;C</secondaryColorText>
-    </part>
-    <part Name="RenderBlips">
-      <frozenRenderString>~</frozenRenderString>
-      <frozenRenderColors>&amp;C^Y,&amp;C,Y</frozenRenderColors>
-      <rareRenderString>☼</rareRenderString>
-      <rareRenderColors>&amp;C^Y,&amp;C,Y</rareRenderColors>
-      <blipsRenderStrings>≈,~, ,~</blipsRenderStrings>
-      <blipsRenderColorTexts>&amp;Y^C</blipsRenderColorTexts>
-      <blipsRenderColorTiles>&amp;Y</blipsRenderColorTiles>
-      <blipsRenderColorDetails>C</blipsRenderColorDetails>
-    </part>
   </liquid>
   <liquid Name="Gel">
     <slug>gel</slug>
@@ -427,24 +412,23 @@
     <smearedName>{{Y|unctuous}}</smearedName>
     <stainedName>{{Y|gel}}</stainedName>
     <valuePerDram>0.5</valuePerDram>
-    <part Name="RenderSmearColorBlips" Color="&amp;Y" />
-    <part Name="Render">
-      <baseColorBackground>^Y</baseColorBackground>
-      <baseColorText>&amp;y^Y</baseColorText>
-      <baseColorTile>&amp;y</baseColorTile>
-      <baseColorDetail>Y</baseColorDetail>
+    <render>
+      <baseColor>&amp;y^Y</baseColor>
       <secondaryColorText>&amp;Y</secondaryColorText>
-    </part>
-    <part Name="RenderBlips">
-      <frozenRenderString>~</frozenRenderString>
-      <frozenRenderColors>&amp;y^C,&amp;y,C</frozenRenderColors>
-      <rareRenderString>~</rareRenderString>
-      <rareRenderColors>&amp;y^C,&amp;y,C</rareRenderColors>
-      <blipsRenderStrings>≈,~, ,~</blipsRenderStrings>
-      <blipsRenderColorTexts>&amp;y^Y</blipsRenderColorTexts>
-      <blipsRenderColorTiles>&amp;y</blipsRenderColorTiles>
-      <blipsRenderColorDetails>Y</blipsRenderColorDetails>
-    </part>
+      <frozen>
+        <renderString>~</renderString>
+        <color>&amp;y^C</color>
+      </frozen>
+      <blips>
+        <renderString>≈,~, ,~</renderString>
+        <color>&amp;y^Y</color>
+        <rareRenderString>☼</rareRenderString>
+        <rareColor>&amp;y^C</rareColor>
+      </blips>
+      <smear>
+        <color>&amp;Y</color>
+      </smear>
+    </render>
   </liquid>
   <liquid Name="GreenGoo">
     <slug>goo</slug>
@@ -470,30 +454,31 @@
     <soupSludgeProperties>
       <pseudopod>Gooey Pseudopod2</pseudopod>
     </soupSludgeProperties>
+    <render>
+      <baseColor>&amp;Y^G</baseColor>
+      <secondaryColorText>&amp;G</secondaryColorText>
+      <paint>
+        <atlas>Liquids/Splotchy/</atlas>
+      </paint>
+      <frozen>
+        <renderString>☼</renderString>
+        <color>&amp;y^C</color>
+      </frozen>
+      <blips>
+        <renderString>≈,~,○,~</renderString>
+        <color>&amp;Y^G</color>
+        <rareRenderString>☼</rareRenderString>
+        <rareColor>&amp;Y^G</rareColor>
+      </blips>
+      <smear>
+        <color>&amp;G</color>
+      </smear>
+    </render>
     <tag Name="Waste" />
     <part Name="MessageOnDrink" Message="It's awful!" />
     <part Name="PoisonOnDrink" Message="You feel poison course through your veins!" />
     <part Name="PoisonOnGoingProne" />
-    <part Name="RenderSmearColorBlips" Color="&amp;G" />
     <part Name="FilthNavigation" />
-    <part Name="Render">
-      <baseColorBackground>^G</baseColorBackground>
-      <baseColorText>&amp;Y^G</baseColorText>
-      <baseColorTile>&amp;Y</baseColorTile>
-      <baseColorDetail>G</baseColorDetail>
-      <secondaryColorText>&amp;G</secondaryColorText>
-      <paintAtlas>Liquids/Splotchy/</paintAtlas>
-    </part>
-    <part Name="RenderBlips">
-      <frozenRenderString>☼</frozenRenderString>
-      <frozenRenderColors>&amp;Y^G,&amp;Y,G</frozenRenderColors>
-      <rareRenderString>☼</rareRenderString>
-      <rareRenderColors>&amp;Y^G,&amp;Y,G</rareRenderColors>
-      <blipsRenderStrings>≈,~,○,~</blipsRenderStrings>
-      <blipsRenderColorTexts>&amp;Y^G</blipsRenderColorTexts>
-      <blipsRenderColorTiles>&amp;Y</blipsRenderColorTiles>
-      <blipsRenderColorDetails>G</blipsRenderColorDetails>
-    </part>
   </liquid>
   <liquid Name="Honey">
     <slug>honey</slug>
@@ -526,6 +511,26 @@
     <soupSludgeProperties>
       <pseudopod>Honeyed Pseudopod</pseudopod>
     </soupSludgeProperties>
+    <render>
+      <baseColor>&amp;w^W</baseColor>
+      <secondaryColorText>&amp;w</secondaryColorText>
+      <paint>
+        <atlas>Liquids/Gunk/</atlas>
+      </paint>
+      <frozen>
+        <renderString>~</renderString>
+        <color>&amp;W^w</color>
+      </frozen>
+      <blips>
+        <renderString>≈,~,○,~</renderString>
+        <color>&amp;W^w</color>
+        <rareRenderString>☼</rareRenderString>
+        <rareColor>&amp;W^w</rareColor>
+      </blips>
+      <smear>
+        <color>&amp;w</color>
+      </smear>
+    </render>
     <tag Name="FungalCureIngredient" />
     <tag Name="GlotrotCureIngredient" />
     <tag Name="GlotrotCureBaseIngredient" />
@@ -534,25 +539,6 @@
       <dehydrationFactor>0</dehydrationFactor>
       <message>Delicious!</message>
     </part>
-    <part Name="Render">
-      <baseColorBackground>^w</baseColorBackground>
-      <baseColorText>&amp;w^W</baseColorText>
-      <baseColorTile>&amp;w</baseColorTile>
-      <baseColorDetail>W</baseColorDetail>
-      <secondaryColorText>&amp;w</secondaryColorText>
-      <paintAtlas>Liquids/Gunk/</paintAtlas>
-    </part>
-    <part Name="RenderBlips">
-      <frozenRenderString>~</frozenRenderString>
-      <frozenRenderColors>&amp;W^w,&amp;W,w</frozenRenderColors>
-      <rareRenderString>☼</rareRenderString>
-      <rareRenderColors>&amp;W^w,&amp;W,w</rareRenderColors>
-      <blipsRenderStrings>≈,~,○,~</blipsRenderStrings>
-      <blipsRenderColorTexts>&amp;W^w</blipsRenderColorTexts>
-      <blipsRenderColorTiles>&amp;W</blipsRenderColorTiles>
-      <blipsRenderColorDetails>w</blipsRenderColorDetails>
-    </part>
-    <part Name="RenderSmearColorBlips" Color="&amp;w" />
   </liquid>
   <liquid Name="Ink">
     <slug>ink</slug>
@@ -586,26 +572,25 @@
       <pseudopod>Inky Pseudopod</pseudopod>
       <part Name="DisarmOnHit" Chance="100" />
     </soupSludgeProperties>
+    <render>
+      <baseColor>&amp;y^k</baseColor>
+      <secondaryColorText>&amp;k</secondaryColorText>
+      <frozen>
+        <renderString>~</renderString>
+        <color>&amp;y^k</color>
+      </frozen>
+      <blips>
+        <renderString>≈,~, ,~</renderString>
+        <color>&amp;y^k</color>
+        <rareRenderString>☼</rareRenderString>
+        <rareColor>&amp;y^k</rareColor>
+      </blips>
+      <smear>
+        <color>&amp;K</color>
+      </smear>
+    </render>
     <tag Name="MonochromeCureIngredient" />
     <part Name="MessageOnDrink" Message="It's very inky." />
-    <part Name="RenderSmearColorBlips" Color="&amp;K" />
-    <part Name="Render">
-      <baseColorBackground>^k</baseColorBackground>
-      <baseColorText>&amp;y^k</baseColorText>
-      <baseColorTile>&amp;y</baseColorTile>
-      <baseColorDetail>k</baseColorDetail>
-      <secondaryColorText>&amp;k</secondaryColorText>
-    </part>
-    <part Name="RenderBlips">
-      <frozenRenderString>~</frozenRenderString>
-      <frozenRenderColors>&amp;y^k,&amp;y,k</frozenRenderColors>
-      <rareRenderString>~</rareRenderString>
-      <rareRenderColors>&amp;y^k,&amp;y,k</rareRenderColors>
-      <blipsRenderStrings>≈,~, ,~</blipsRenderStrings>
-      <blipsRenderColorTexts>&amp;y^k</blipsRenderColorTexts>
-      <blipsRenderColorTiles>&amp;y</blipsRenderColorTiles>
-      <blipsRenderColorDetails>k</blipsRenderColorDetails>
-    </part>
   </liquid>
   <liquid Name="Lava">
     <slug>lava</slug>
@@ -642,6 +627,24 @@
       <part Name="Physics" Temperature="1000" />
       <stat Name="HeatResistance" Value="100" />
     </soupSludgeProperties>
+    <render>
+      <part Name="Glows" />
+      <baseColor>&amp;W^R</baseColor>
+      <secondaryColorText>&amp;r</secondaryColorText>
+      <paint>
+        <atlas>Liquids/Splotchy/</atlas>
+      </paint>
+      <frozen>
+        <renderString>~</renderString>
+        <color>&amp;W^R</color>
+      </frozen>
+      <blips>
+        <renderString>≈,~,○,~</renderString>
+        <color>&amp;W^R,&amp;W^r,&amp;W^R,&amp;W^R</color>
+        <rareRenderString>☼</rareRenderString>
+        <rareColor>&amp;W^R</rareColor>
+      </blips>
+    </render>
 
     <part Name="AchievementOnDrink">
       <achievement>DRINK_LAVA</achievement>
@@ -664,25 +667,6 @@
     </part>
     <part Name="UnsafeTemperature" />
     <part Name="NoVapor" />
-    <part Name="Glows" />
-    <part Name="Render">
-      <baseColorText>&amp;W^R</baseColorText>
-      <baseColorTile>&amp;W</baseColorTile>
-      <baseColorDetail>R</baseColorDetail>
-      <baseColorBackground>^R</baseColorBackground>
-      <secondaryColorText>&amp;r</secondaryColorText>
-      <paintAtlas>Liquids/Splotchy/</paintAtlas>
-    </part>
-    <part Name="RenderBlips">
-      <frozenRenderString>~</frozenRenderString>
-      <frozenRenderColors>&amp;W^R,&amp;W,R</frozenRenderColors>
-      <rareRenderString>☼</rareRenderString>
-      <rareRenderColors>&amp;W^R,&amp;W,R</rareRenderColors>
-      <blipsRenderStrings>≈,~,○,~</blipsRenderStrings>
-      <blipsRenderColorTexts>&amp;W^R,&amp;W^r,&amp;W^R,&amp;W^R</blipsRenderColorTexts>
-      <blipsRenderColorTiles>&amp;W</blipsRenderColorTiles>
-      <blipsRenderColorDetails>R,r,R,R</blipsRenderColorDetails>
-    </part>
     <part Name="LavaNavigation" />
   </liquid>
   <liquid Name="NeutronFlux">
@@ -701,7 +685,6 @@
     <interruptAutowalk>true</interruptAutowalk>
     <considerDangerousToContact>true</considerDangerousToContact>
     <considerDangerousToDrink>true</considerDangerousToDrink>
-    <part Name="Glows" />
     <circulatoryLossNoun>fluxation</circulatoryLossNoun>
     <circulatoryLossTerm>fluxing</circulatoryLossTerm>
     <colors>yY</colors>
@@ -716,24 +699,24 @@
     <soupSludgeProperties>
       <pseudopod>Neutronic Pseudopod</pseudopod>
     </soupSludgeProperties>
-    <part Name="Render">
-      <baseColorBackground>^Y</baseColorBackground>
-      <baseColorText>&amp;Y^y</baseColorText>
-      <baseColorTile>&amp;Y</baseColorTile>
-      <baseColorDetail>y</baseColorDetail>
+    <render>
+      <part Name="Glows" />
+      <baseColor>&amp;Y^y</baseColor>
       <secondaryColorText>&amp;Y</secondaryColorText>
-      <paintAtlas>Liquids/Paisley/</paintAtlas>
-    </part>
-    <part Name="RenderBlips">
-      <frozenRenderString>~</frozenRenderString>
-      <frozenRenderColors>&amp;Y^y,&amp;Y,y</frozenRenderColors>
-      <rareRenderString>☼</rareRenderString>
-      <rareRenderColors>&amp;Y^y,&amp;Y,y</rareRenderColors>
-      <blipsRenderStrings>≈,~,○,~</blipsRenderStrings>
-      <blipsRenderColorTexts>&amp;Y^y</blipsRenderColorTexts>
-      <blipsRenderColorTiles>&amp;Y</blipsRenderColorTiles>
-      <blipsRenderColorDetails>y</blipsRenderColorDetails>
-    </part>
+      <paint>
+        <atlas>Liquids/Paisley/</atlas>
+      </paint>
+      <frozen>
+        <renderString>~</renderString>
+        <color>&amp;Y^y</color>
+      </frozen>
+      <blips>
+        <renderString>≈,~,○,~</renderString>
+        <color>&amp;Y^y</color>
+        <rareRenderString>☼</rareRenderString>
+        <rareColor>&amp;Y^y</rareColor>
+      </blips>
+    </render>
     <stainElement Name="stars" />
     <part Name="Navigation" Weight="99" />
     <part Name="NeutronExplosive" />
@@ -769,29 +752,27 @@
       <pseudopod>Oily Pseudopod</pseudopod>
       <part Name="DisarmOnHit" Chance="100" />
     </soupSludgeProperties>
+    <render>
+      <baseColor>&amp;Y^k</baseColor>
+      <secondaryColorText>&amp;k</secondaryColorText>
+      <frozen>
+        <renderString>~</renderString>
+        <color>&amp;Y^k</color>
+      </frozen>
+      <blips>
+        <renderString>≈,~,○,~</renderString>
+        <color>&amp;Y^k</color>
+        <rareRenderString>☼</rareRenderString>
+        <rareColor>&amp;Y^k</rareColor>
+      </blips>
+      <smear>
+        <color>&amp;K</color>
+      </smear>
+    </render>
     <tag Name="FungalCureIngredient" />
     <tag Name="GlotrotCureIngredient" />
     <tag Name="IronshankCureIngredient" />
     <part Name="MessageOnDrink" Message="{{K|Disgusting!}}" />
-    <part Name="Render">
-      <baseColorBackground>^K</baseColorBackground>
-      <baseColorText>&amp;Y^k</baseColorText>
-      <baseColorTile>&amp;Y</baseColorTile>
-      <baseColorDetail>k</baseColorDetail>
-      <secondaryColorText>&amp;k</secondaryColorText>
-      <paintAtlas>Liquids/Splotchy/</paintAtlas>
-    </part>
-    <part Name="RenderBlips">
-      <frozenRenderString>~</frozenRenderString>
-      <frozenRenderColors>&amp;y^k,&amp;y,k</frozenRenderColors>
-      <rareRenderString>☼</rareRenderString>
-      <rareRenderColors>&amp;y^k,&amp;y,k</rareRenderColors>
-      <blipsRenderStrings>≈,~,○,~</blipsRenderStrings>
-      <blipsRenderColorTexts>&amp;y^k</blipsRenderColorTexts>
-      <blipsRenderColorTiles>&amp;y</blipsRenderColorTiles>
-      <blipsRenderColorDetails>k</blipsRenderColorDetails>
-    </part>
-    <part Name="RenderSmearColorBlips" Color="&amp;K" />
     <part Name="FilthNavigation" />
   </liquid>
   <liquid Name="Ooze">
@@ -818,26 +799,28 @@
     <soupSludgeProperties>
       <pseudopod>Oozing Pseudopod2</pseudopod>
     </soupSludgeProperties>
+    <render>
+      <baseColor>&amp;y^k</baseColor>
+      <secondaryColorText>&amp;k</secondaryColorText>
+      <paint>
+        <atlas>Liquids/Splotchy/</atlas>
+      </paint>
+      <frozen>
+        <renderString>~</renderString>
+        <color>&amp;y^k</color>
+      </frozen>
+      <blips>
+        <renderString>≈,~,≈,~</renderString>
+        <color>&amp;y^k</color>
+      </blips>
+      <smear>
+        <color>&amp;K</color>
+      </smear>
+    </render>
     <tag Name="Waste" />
     <part Name="MessageOnDrink" Message="It's repulsive!" Priority="10" />
     <part Name="DiseaseOnDrink" Message="You feel sick!" />
     <part Name="DiseaseOnGoingProne" Message="Putrid ooze splashes into your mouth. You gag at the awful taste." />
-    <part Name="RenderSmearColorBlips" Color="&amp;K" />
-    <part Name="Render">
-      <baseColorBackground>^k</baseColorBackground>
-      <baseColorText>&amp;y^k</baseColorText>
-      <baseColorTile>&amp;y</baseColorTile>
-      <baseColorDetail>k</baseColorDetail>
-      <secondaryColorText>&amp;k</secondaryColorText>
-    </part>
-    <part Name="RenderBlips">
-      <frozenRenderString>~</frozenRenderString>
-      <frozenRenderColors>&amp;y^k,&amp;y,k</frozenRenderColors>
-      <blipsRenderStrings>≈,~,≈,~</blipsRenderStrings>
-      <blipsRenderColorTexts>&amp;Y^k</blipsRenderColorTexts>
-      <blipsRenderColorTiles>&amp;Y</blipsRenderColorTiles>
-      <blipsRenderColorDetails>k</blipsRenderColorDetails>
-    </part>
   </liquid>
   <liquid Name="PrimordialSoup">
     <slug>proteangunk</slug>
@@ -856,26 +839,27 @@
     <stainedName>{{c|soup}}</stainedName>
     <valuePerDram>4</valuePerDram>
     <stainElement Name="chance" />
-    <tag Name="FungalCureIngredient" />
-    <part Name="RenderSmearColorBlips" Color="&amp;c" />
-    <part Name="Render">
-      <baseColorBackground>^c</baseColorBackground>
-      <baseColorText>&amp;c^C</baseColorText>
-      <baseColorTile>&amp;c</baseColorTile>
-      <baseColorDetail>C</baseColorDetail>
+    <render>
+      <baseColor>&amp;c^C</baseColor>
       <secondaryColorText>&amp;c</secondaryColorText>
-      <paintAtlas>Liquids/Gunk/</paintAtlas>
-    </part>
-    <part Name="RenderBlips">
-      <frozenRenderString>~</frozenRenderString>
-      <frozenRenderColors>&amp;c^C,&amp;c,C</frozenRenderColors>
-      <rareRenderString>☼</rareRenderString>
-      <rareRenderColors>&amp;c^C,&amp;c,C</rareRenderColors>
-      <blipsRenderStrings>≈,~,○,~</blipsRenderStrings>
-      <blipsRenderColorTexts>&amp;c^C</blipsRenderColorTexts>
-      <blipsRenderColorTiles>&amp;c</blipsRenderColorTiles>
-      <blipsRenderColorDetails>C</blipsRenderColorDetails>
-    </part>
+      <paint>
+        <atlas>Liquids/Gunk/</atlas>
+      </paint>
+      <frozen>
+        <renderString>~</renderString>
+        <color>&amp;c^C</color>
+      </frozen>
+      <blips>
+        <renderString>≈,~,○,~</renderString>
+        <color>&amp;c^C</color>
+        <rareColor>&amp;c^C</rareColor>
+        <rareRenderString>☼</rareRenderString>
+      </blips>
+      <smear>
+        <color>&amp;c</color>
+      </smear>
+    </render>
+    <tag Name="FungalCureIngredient" />
     <part Name="HydrateOnDrink" Message="You feel the soup slosh around your stomach." />
     <part Name="SoupSludgeSpawner" />
   </liquid>
@@ -899,23 +883,26 @@
     <soupSludgeProperties>
       <pseudopod>Putrid Pseudopod</pseudopod>
     </soupSludgeProperties>
+    <render>
+      <baseColor>&amp;g^K</baseColor>
+      <secondaryColorText>&amp;K</secondaryColorText>
+      <paint>
+        <atlas>Liquids/Splotchy/</atlas>
+      </paint>
+      <frozen>
+        <renderString>~</renderString>
+        <color>&amp;G^K</color>
+      </frozen>
+      <blips>
+        <renderString>≈,~, ,~</renderString>
+      </blips>
+      <smear>
+        <color>&amp;K</color>
+      </smear>
+    </render>
     <tag Name="FungalCureIngredient" />
     <tag Name="Desecrates" />
     <part Name="VomitOnDrink" Message="It's disgusting!" />
-    <part Name="RenderSmearColorBlips" Color="&amp;K" />
-    <part Name="Render">
-      <baseColorBackground>^K</baseColorBackground>
-      <baseColorText>&amp;g^K</baseColorText>
-      <baseColorTile>&amp;g</baseColorTile>
-      <baseColorDetail>K</baseColorDetail>
-      <secondaryColorText>&amp;K</secondaryColorText>
-      <paintAtlas>Liquids/Splotchy/</paintAtlas>
-    </part>
-    <part Name="RenderBlips">
-      <frozenRenderString>~</frozenRenderString>
-      <frozenRenderColors>&amp;G^K,&amp;G,K</frozenRenderColors>
-      <blipsRenderStrings>≈,~, ,~</blipsRenderStrings>
-    </part>
     <part Name="FilthNavigation" SmartWeight="0" />
   </liquid>
   <liquid Name="Salt">
@@ -936,6 +923,13 @@
     <soupSludgeProperties>
       <pseudopod>Salty Pseudopod</pseudopod>
     </soupSludgeProperties>
+    <render>
+      <baseColor>&amp;Y^y</baseColor>
+      <wadingRenderChar>▒</wadingRenderChar>
+      <paint>
+        <atlas>Liquids/Speckle/</atlas>
+      </paint>
+    </render>
     <tag Name="GlotrotCureIngredient" />
     <tag Name="MonochromeCureIngredient" />
     <part Name="AltAdjectiveWhenPurityBelow" Purity="400" Alt="{{w|brackish}}" />
@@ -946,14 +940,6 @@
     <stainedName>{{Y|salt}}</stainedName>
     <preparedCookingIngredient>tastyMinor</preparedCookingIngredient>
     <stainElement Name="salt" />
-    <part Name="Render">
-      <baseColorBackground>^Y</baseColorBackground>
-      <wadingRenderChar>▒</wadingRenderChar>
-      <baseColorText>&amp;Y^y</baseColorText>
-      <baseColorTile>&amp;Y</baseColorTile>
-      <baseColorDetail>y</baseColorDetail>
-      <paintAtlas>Liquids/Speckle/</paintAtlas>
-    </part>
     <part Name="SaltOnDrink" Message="Blech, it's salty!" />
   </liquid>
   <liquid Name="Sap">
@@ -985,29 +971,31 @@
     <soupSludgeProperties>
       <pseudopod>Sugary Pseudopod</pseudopod>
     </soupSludgeProperties>
+    <render>
+      <baseColor>&amp;W^Y</baseColor>
+      <secondaryColorText>&amp;W</secondaryColorText>
+      <paint>
+        <atlas>Liquids/Splotchy/</atlas>
+      </paint>
+      <frozen>
+        <renderString>~</renderString>
+        <color>&amp;W^Y</color>
+      </frozen>
+      <blips>
+        <renderString>≈,~,○,~</renderString>
+        <color>&amp;W^Y</color>
+        <rareColor>&amp;W^Y</rareColor>
+        <rareRenderString>☼</rareRenderString>
+      </blips>
+      <smear>
+        <color>&amp;W</color>
+      </smear>
+    </render>
     <tag Name="FungalCureIngredient" />
     <tag Name="GlotrotCureIngredient" />
     <tag Name="GlotrotCureBaseIngredient" />
     <tag Name="IronshankCureIngredient" />
     <tag Name="PlantBased" />
-    <part Name="Render">
-      <baseColorBackground>^W</baseColorBackground>
-      <baseColorText>&amp;W^Y</baseColorText>
-      <baseColorTile>&amp;W</baseColorTile>
-      <baseColorDetail>Y</baseColorDetail>
-      <secondaryColorText>&amp;W</secondaryColorText>
-    </part>
-    <part Name="RenderBlips">
-      <frozenRenderString>~</frozenRenderString>
-      <frozenRenderColors>&amp;W^Y,&amp;W,Y</frozenRenderColors>
-      <rareRenderString>☼</rareRenderString>
-      <rareRenderColors>&amp;W^Y,&amp;W,Y</rareRenderColors>
-      <blipsRenderStrings>≈,~,○,~</blipsRenderStrings>
-      <blipsRenderColorTexts>&amp;W^Y</blipsRenderColorTexts>
-      <blipsRenderColorTiles>&amp;W</blipsRenderColorTiles>
-      <blipsRenderColorDetails>Y</blipsRenderColorDetails>
-    </part>
-    <part Name="RenderSmearColorBlips" Color="&amp;W" />
     <part Name="SnackOnDrink" DehydrationFactor="0" Message="It's sweet to the taste." />
   </liquid>
   <liquid Name="Slime">
@@ -1042,26 +1030,27 @@
       <pseudopod>Slimy Pseudopod</pseudopod>
       <part Name="DisarmOnHit" Chance="100" />
     </soupSludgeProperties>
-    <tag Name="FungalCureIngredient" />
-    <part Name="RenderSmearColorBlips" Color="&amp;g" />
-    <part Name="Render">
-      <baseColorBackground>^g</baseColorBackground>
-      <baseColorText>&amp;w^g</baseColorText>
-      <baseColorTile>&amp;g</baseColorTile>
-      <baseColorDetail>g</baseColorDetail>
+    <render>
+      <baseColor>&amp;w^g</baseColor>
       <secondaryColorText>&amp;g</secondaryColorText>
-      <paintAtlas>Liquids/Splotchy/</paintAtlas>
-    </part>
-    <part Name="RenderBlips">
-      <frozenRenderString>~</frozenRenderString>
-      <frozenRenderColors>&amp;g^w,&amp;g,w</frozenRenderColors>
-      <rareRenderString>~</rareRenderString>
-      <rareRenderColors>&amp;g^w,&amp;g,w</rareRenderColors>
-      <blipsRenderStrings>≈,~, ,~</blipsRenderStrings>
-      <blipsRenderColorTexts>&amp;w^g,&amp;g^w,&amp;w^g,&amp;w^g</blipsRenderColorTexts>
-      <blipsRenderColorTiles>&amp;w,&amp;g,&amp;w,&amp;w</blipsRenderColorTiles>
-      <blipsRenderColorDetails>g,w,g,g</blipsRenderColorDetails>
-    </part>
+      <paint>
+        <atlas>Liquids/Splotchy/</atlas>
+      </paint>
+      <frozen>
+        <renderString>~</renderString>
+        <color>&amp;g^w</color>
+      </frozen>
+      <blips>
+        <renderString>≈,~, ,~</renderString>
+        <color>&amp;w^g,&amp;g^w,&amp;w^g,&amp;w^g</color>
+        <rareColor>&amp;g^w</rareColor>
+        <rareRenderString>~</rareRenderString>
+      </blips>
+      <smear>
+        <color>&amp;g</color>
+      </smear>
+    </render>
+    <tag Name="FungalCureIngredient" />
     <part Name="ConfuseOnDrink" Message="It's disgustingly slimy!" />
   </liquid>
   <liquid Name="Sludge">
@@ -1086,29 +1075,30 @@
     <soupSludgeProperties>
       <pseudopod>Sludgy Pseudopod2</pseudopod>
     </soupSludgeProperties>
+    <render>
+      <baseColor>&amp;Y^w</baseColor>
+      <secondaryColorText>&amp;w</secondaryColorText>
+      <paint>
+        <atlas>Liquids/Splotchy/</atlas>
+      </paint>
+      <frozen>
+        <renderString>~</renderString>
+        <color>&amp;Y^w</color>
+      </frozen>
+      <blips>
+        <renderString>≈,~,≈,~</renderString>
+        <color>&amp;Y^w</color>
+        <rareColor>&amp;Y^w</rareColor>
+        <rareRenderString>~</rareRenderString>
+      </blips>
+      <smear>
+        <color>&amp;w</color>
+      </smear>
+    </render>
     <tag Name="Waste" />
     <part Name="MessageOnDrink" Priority="10" Message="It's horrifying!" />
     <part Name="PoisonOnDrink" Message="You feel sick!" />
     <part Name="RustOnGoingProne" />
-    <part Name="RenderSmearColorBlips" Color="&amp;w" />
-    <part Name="Render">
-      <baseColorBackground>^w</baseColorBackground>
-      <baseColorText>&amp;Y^w</baseColorText>
-      <baseColorTile>&amp;Y</baseColorTile>
-      <baseColorDetail>w</baseColorDetail>
-      <secondaryColorText>&amp;w</secondaryColorText>
-      <paintAtlas>Liquids/Splotchy/</paintAtlas>
-    </part>
-    <part Name="RenderBlips">
-      <frozenRenderString>~</frozenRenderString>
-      <frozenRenderColors>&amp;Y^w,&amp;Y,w</frozenRenderColors>
-      <rareRenderString>~</rareRenderString>
-      <rareRenderColors>&amp;Y^w,&amp;Y,w</rareRenderColors>
-      <blipsRenderStrings>≈,~,≈,~</blipsRenderStrings>
-      <blipsRenderColorTexts>&amp;Y^w</blipsRenderColorTexts>
-      <blipsRenderColorTiles>&amp;Y</blipsRenderColorTiles>
-      <blipsRenderColorDetails>w</blipsRenderColorDetails>
-    </part>
     <part Name="FilthNavigation" />
   </liquid>
   <liquid Name="Sunslag">
@@ -1138,25 +1128,26 @@
       <stat Name="Speed" Value="30" /> <!-- 20 more than the base 10-->
       <part Name="LightSource" Radius="6" />
     </soupSludgeProperties>
-    <part Name="RenderSmearColorBlips" Color="&amp;Y" />
-    <part Name="Render">
-      <baseColorBackground>^W</baseColorBackground>
-      <baseColorText>&amp;Y^W</baseColorText>
-      <baseColorTile>&amp;Y</baseColorTile>
-      <baseColorDetail>W</baseColorDetail>
+    <render>
+      <baseColor>&amp;Y^W</baseColor>
       <secondaryColorText>&amp;W</secondaryColorText>
-      <paintAtlas>Liquids/Paisley/</paintAtlas>
-    </part>
-    <part Name="RenderBlips">
-      <frozenRenderString>~</frozenRenderString>
-      <frozenRenderColors>&amp;Y^W,&amp;Y,W</frozenRenderColors>
-      <rareRenderString>~</rareRenderString>
-      <rareRenderColors>&amp;Y^W,&amp;Y,W</rareRenderColors>
-      <blipsRenderStrings>≈,~, ,~</blipsRenderStrings>
-      <blipsRenderColorTexts>&amp;Y^W</blipsRenderColorTexts>
-      <blipsRenderColorTiles>&amp;Y</blipsRenderColorTiles>
-      <blipsRenderColorDetails>W</blipsRenderColorDetails>
-    </part>
+      <paint>
+        <atlas>Liquids/Paisley/</atlas>
+      </paint>
+      <frozen>
+        <renderString>~</renderString>
+        <color>&amp;Y^W</color>
+      </frozen>
+      <blips>
+        <renderString>≈,~, ,~</renderString>
+        <color>&amp;Y^W</color>
+        <rareColor>&amp;Y^W</rareColor>
+        <rareRenderString>~</rareRenderString>
+      </blips>
+      <smear>
+        <color>&amp;Y</color>
+      </smear>
+    </render>
     <part Name="SunSlagOnDrink" />
   </liquid>
   <liquid Name="Water">
@@ -1178,6 +1169,21 @@
     <slipperyMessage>{{C|=subject.Does:slip= on the ice!}}</slipperyMessage>
     <slipperyParticle>&amp;C→</slipperyParticle>
     <displayName>{{B|water}}</displayName>
+    <render>
+      <baseColor>&amp;b^B</baseColor>
+      <baseColorBackground>^b</baseColorBackground>
+      <secondaryColorText>&amp;b</secondaryColorText>
+      <frozen>
+        <renderString>~</renderString>
+        <color>&amp;c^C</color>
+      </frozen>
+      <blips>
+        <renderString>≈,~,○,~</renderString>
+        <color>&amp;b^B,&amp;Y^B,&amp;b^B,&amp;y^B</color>
+        <rareRenderString>≈</rareRenderString>
+        <rareColor>&amp;Y^B</rareColor>
+      </blips>
+    </render>
     <soupSludgeProperties>
       <pseudopod>Watery Pseudopod</pseudopod>
     </soupSludgeProperties>
@@ -1205,23 +1211,6 @@
     <part Name="WaterHydration">
       <amphibiousMessage>=subject.Does:pour= the water on =subject.itself=!</amphibiousMessage>
       <freshMessage>Ahh, refreshing!</freshMessage>
-    </part>
-    <part Name="Render">
-      <baseColorText>&amp;b^B</baseColorText>
-      <baseColorTile>&amp;b</baseColorTile>
-      <baseColorDetail>B</baseColorDetail>
-      <baseColorBackground>^b</baseColorBackground>
-      <secondaryColorText>&amp;b</secondaryColorText>
-    </part>
-    <part Name="RenderBlips">
-      <frozenRenderString>~</frozenRenderString>
-      <frozenRenderColors>&amp;c^C,&amp;c,C</frozenRenderColors>
-      <rareRenderString>≈</rareRenderString>
-      <rareRenderColors>&amp;Y^B,&amp;Y,B</rareRenderColors>
-      <blipsRenderStrings>≈,~,○,~</blipsRenderStrings>
-      <blipsRenderColorTexts>&amp;b^B,&amp;Y^B,&amp;b^B,&amp;y^B</blipsRenderColorTexts>
-      <blipsRenderColorTiles>&amp;b,&amp;Y&amp;b&amp;y</blipsRenderColorTiles>
-      <blipsRenderColorDetails>B</blipsRenderColorDetails>
     </part>
   </liquid>
   <liquid Name="Wax">
@@ -1257,26 +1246,27 @@
     <soupSludgeProperties>
       <pseudopod>Waxen Pseudopod</pseudopod>
     </soupSludgeProperties>
-    <part Name="TemperatureChangeOnDrink" Temperature="100" Message="It's hot and disgusting." />
-    <part Name="RenderSmearColorBlips" Color="&amp;y" />
-    <part Name="Render">
-      <baseColorBackground>^y</baseColorBackground>
-      <baseColorText>&amp;y^Y</baseColorText>
-      <baseColorTile>&amp;y</baseColorTile>
-      <baseColorDetail>Y</baseColorDetail>
+    <render>
+      <baseColor>&amp;y^Y</baseColor>
       <secondaryColorText>&amp;y</secondaryColorText>
-      <paintAtlas>Liquids/Splotchy/</paintAtlas>
-    </part>
-    <part Name="RenderBlips">
-      <frozenRenderString>~</frozenRenderString>
-      <frozenRenderColors>&amp;Y^y,&amp;Y,y</frozenRenderColors>
-      <rareRenderString>☼</rareRenderString>
-      <rareRenderColors>&amp;Y^y,&amp;Y,y</rareRenderColors>
-      <blipsRenderStrings>≈,~,○,~</blipsRenderStrings>
-      <blipsRenderColorTexts>&amp;Y^y</blipsRenderColorTexts>
-      <blipsRenderColorTiles>&amp;Y</blipsRenderColorTiles>
-      <blipsRenderColorDetails>y</blipsRenderColorDetails>
-    </part>
+      <paint>
+        <atlas>Liquids/Splotchy/</atlas>
+      </paint>
+      <frozen>
+        <renderString>~</renderString>
+        <color>&amp;Y^y</color>
+      </frozen>
+      <blips>
+        <renderString>≈,~,○,~</renderString>
+        <color>&amp;Y^y</color>
+        <rareColor>&amp;Y^y</rareColor>
+        <rareRenderString>☼</rareRenderString>
+      </blips>
+      <smear>
+        <color>&amp;y</color>
+      </smear>
+    </render>
+    <part Name="TemperatureChangeOnDrink" Temperature="100" Message="It's hot and disgusting." />
   </liquid>
   <liquid Name="Wine">
     <slug>wine</slug>
@@ -1300,31 +1290,32 @@
     <soupSludgeProperties>
       <pseudopod>Lush Pseudopod</pseudopod>
     </soupSludgeProperties>
+    <render>
+      <baseColor>&amp;m^r</baseColor>
+      <secondaryColorText>&amp;m</secondaryColorText>
+      <paint>
+        <atlas>Liquids/Splotchy/</atlas>
+      </paint>
+      <frozen>
+        <renderString>~</renderString>
+        <color>&amp;M^b</color>
+      </frozen>
+      <blips>
+        <renderString>≈,~,○,~</renderString>
+        <color>&amp;m^r</color>
+        <rareColor>&amp;r^m</rareColor>
+        <rareRenderString>☼</rareRenderString>
+      </blips>
+      <smear>
+        <color>&amp;m</color>
+      </smear>
+    </render>
     <tag Name="FungalCureIngredient" />
     <tag Name="GlotrotCureIngredient" />
     <tag Name="GlotrotCureBaseIngredient" />
     <tag Name="IronshankCureIngredient" />
     <part Name="HydrateOnDrink" Message="You flush with the warming draught!" />
     <part Name="DrankWine" />
-    <part Name="RenderSmearColorBlips" Color="&amp;m" />
-    <part Name="Render">
-      <baseColorBackground>^m</baseColorBackground>
-      <baseColorText>&amp;m^r</baseColorText>
-      <baseColorTile>&amp;m</baseColorTile>
-      <baseColorDetail>r</baseColorDetail>
-      <secondaryColorText>&amp;m</secondaryColorText>
-      <paintAtlas>Liquids/Splotchy/</paintAtlas>
-    </part>
-    <part Name="RenderBlips">
-      <frozenRenderString>~</frozenRenderString>
-      <frozenRenderColors>&amp;M^b,&amp;M,b</frozenRenderColors>
-      <rareRenderString>☼</rareRenderString>
-      <rareRenderColors>&amp;r^m,&amp;r,m</rareRenderColors>
-      <blipsRenderStrings>≈,~,○,~</blipsRenderStrings>
-      <blipsRenderColorTexts>&amp;m^r</blipsRenderColorTexts>
-      <blipsRenderColorTiles>&amp;m</blipsRenderColorTiles>
-      <blipsRenderColorDetails>r</blipsRenderColorDetails>
-    </part>
   </liquid>
   <liquid Name="WarmStatic">
     <class>LiquidWarmStatic</class>
@@ -1349,6 +1340,16 @@
     <valuePerDram>50</valuePerDram>
     <pureLiquidValueMultiplier>20</pureLiquidValueMultiplier>
     <stainElement Name="chance">5</stainElement>
+    <render>
+      <part>WarmStaticRender</part>
+      <baseColor>&amp;y^Y</baseColor>
+      <secondaryColorText>&amp;y</secondaryColorText>
+      <frozen>
+        <renderString>~</renderString>
+        <color>&amp;y^Y</color>
+      </frozen>
+      <blips Color="&amp;Y^Y" />
+    </render>
     <conversionProducts>
       <product Name="acid">1</product>
       <product Name="algae">1</product>
@@ -1382,11 +1383,6 @@
     </soupSludgeProperties>
     <parts>
       <part Name="FixedNavigation" Weight="95" />
-      <part Name="Glows">
-        <secondary>true</secondary>
-        <brighterWithVolume>true</brighterWithVolume>
-      </part>
-      <part Name="WarmStaticRender" />
       <part Name="GlitchOnDrink" />
       <part Name="GlitchOnMixed" />
       <part Name="GlitchOnSmear" />
@@ -1395,13 +1391,6 @@
         <messageZone>The space around you starts to glitch.</messageZone>
         <accomplishmentObject>You poured the raw entropy of the universe onto things and caused them to glitch into other things.</accomplishmentObject>
         <accomplishmentZone>You poured the raw entropy of the universe on the ground and caused the space around you to glitch.</accomplishmentZone>
-      </part>
-      <part Name="Render">
-        <baseColorBackground>^Y</baseColorBackground>
-        <baseColorText>&amp;y^Y</baseColorText>
-        <baseColorTile>&amp;y</baseColorTile>
-        <baseColorDetail>Y</baseColorDetail>
-        <secondaryColorText>&amp;y</secondaryColorText>
       </part>
     </parts>
   </liquid>

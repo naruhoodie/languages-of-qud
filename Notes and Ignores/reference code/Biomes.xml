@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <biomes Encoding="utf-8">
     <biome Name="Fungal">
-        <class>FungalBiome</class>
+        <module>FungalBiome</module>
         <levelMapper>
             <class>LinearOctiveLayers</class>
             <seedString>FungalNoise</seedString>
@@ -24,7 +24,7 @@
         </variant>
     </biome>
     <biome Name="Slimy">
-        <class>SlimyBiome</class>
+        <module>SlimyBiome</module>
         <levelMapper>
             <class>LinearOctiveLayers</class>
             <seedString>SlimyNoise</seedString>
@@ -43,7 +43,7 @@
         </variant>
     </biome>
     <biome Name="Tarry">
-        <class>TarryBiome</class>
+        <module>TarryBiome</module>
         <levelMapper>
             <class>LinearOctiveLayers</class>
             <seedString>TarryNoise</seedString>
@@ -61,7 +61,7 @@
         </variant>
     </biome>
     <biome Name="Rusty">
-        <class>RustyBiome</class>
+        <module>RustyBiome</module>
         <levelMapper>
             <class>LinearOctiveLayers</class>
             <seedString>RustyNoise</seedString>
@@ -80,7 +80,7 @@
         </variant>
     </biome>
     <biome Name="Psychic">
-        <class>PsychicBiome</class>
+        <module>PsychicBiome</module>
         <levelMapper Class="PsychicLevelMapper" />
     </biome>
 </biomes>

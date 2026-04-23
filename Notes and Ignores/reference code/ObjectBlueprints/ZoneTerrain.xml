@@ -1268,7 +1268,7 @@
     <tag Name="NoSparkingQuest" />
     <tag Name="ExcavatoryTerrainFeature" />
     <tag Name="Gender" Value="plural" />
-    <xtagGrammar iArticle="some" />
+    <xtagGrammar massNoun="true" />
     <tag Name="SpawnBlocker" />
     <tag Name="Stairs" />
     <tag Name="BaseObject" Value="*noinherit" />
@@ -1304,17 +1304,11 @@
     <part Name="Interesting" Key="BarathrumsStudy" Explanation="locked" Order="3000" />
     <tag Name="ExcludeFromDynamicEncounters" />
   </object>
-  <object Name="SlimyShaft" Inherits="StairsDown">
-    <part Name="Physics" IsReal="false" />
+  <object Name="SlimyShaft" Inherits="OpenShaft">
     <part Name="Render" DisplayName="slimy shaft" ColorString="&amp;G" DetailColor="g" RenderString="008" TileColor="&amp;G" Tile="Tiles/OpenPit.png" />
     <part Name="StairsDown" Connected="false" PullDown="true" PullMessage="You fall down the slimy shaft!" />
-    <part Name="StairHighlight" bEnabled="false" />
     <part Name="Description" Short="Machinic tones are made soft against the slime-wet walls of a darkling shaft. A void is beneath." />
-    <removepart Name="Interesting" />
-    <tag Name="NoAutowalk" />
-    <tag Name="Gender" Value="neuter" />
     <tag Name="ExcludeFromDynamicEncounters" />
-    <xtagGrammar iArticle="" />
   </object>
   <object Name="OpenShaft" Inherits="StairsDown">
     <part Name="Physics" IsReal="false" />
@@ -1325,50 +1319,32 @@
     <removepart Name="Interesting" />
     <tag Name="NoAutowalk" />
     <tag Name="Gender" Value="neuter" />
-    <xtagGrammar iArticle="" />
+    <xtagGrammar massNoun="false" />
   </object>
-  <object Name="OpenShaft2" Inherits="StairsDown">
-    <part Name="Physics" IsReal="false" />
-    <part Name="Render" DisplayName="deep shaft" ColorString="&amp;K" RenderString="008" Tile="Tiles/OpenPit.png" TileColor="&amp;y" DetailColor="K" />
+  <object Name="OpenShaft2" Inherits="OpenShaft">
     <part Name="StairsDown" Connected="false" PullDown="true" Levels="2"/>
-    <part Name="StairHighlight" bEnabled="false" />
-    <part Name="Description" Short="Darkness floods up from the empty space." />
-    <removepart Name="Interesting" />
-    <tag Name="NoAutowalk" />
-    <tag Name="Gender" Value="neuter" />
-    <xtagGrammar iArticle="" />
   </object>
-  <object Name="Air" Inherits="StairsDown">
-    <part Name="Physics" IsReal="false" />
+  <object Name="Air" Inherits="OpenShaft">
     <part Name="Render" DisplayName="open air" ColorString="&amp;g^k" RenderString=" " />
     <part Name="StairsDown" Connected="false" PullDown="true" ConnectLanding="false" PullMessage="You fall down!" GenericFall="true" JumpPrompt="It looks like an awfully long fall. Are you sure you want to jump?"/>
-    <part Name="StairHighlight" bEnabled="false" />
     <tag Name="OverlayColor" Value="&amp;k^k" />
     <part Name="Description" Short="Space is emptied of solid impediments." />
     <part Name="ChasmMaterial" />
-    <removepart Name="Interesting" />
-    <tag Name="NoAutowalk" />
-    <tag Name="Gender" Value="neuter" />
 		<tag Name="FallPreposition" Value="through" />
 		<tag Name="FallUseDefiniteArticle" Value="true" />
-    <xtagGrammar iArticle="some" />
+    <xtagGrammar massNoun="true" />
   </object>
   <object Name="LazyAir" Inherits="Air">
     <part Name="ChasmMaterial" Lazy="true"/>
   </object>
-  <object Name="Pit" Inherits="StairsDown">
-    <part Name="Physics" IsReal="false" />
+  <object Name="Pit" Inherits="OpenShaft">
     <part Name="Render" DetailColor="k" DisplayName="open air" ColorString="&amp;w^k" RenderString=" " TileColor="&amp;w^k"/>
     <part Name="StairsDown" Connected="false" PullDown="true" PullMessage="You scramble down a craggy ledge." GenericFall="true" JumpPrompt="It looks like an awfully long fall. Are you sure you want to jump?"/>
-    <removepart Name="StairHighlight" />
     <tag Name="OverlayColor" Value="&amp;k^k" />
     <part Name="Description" Short="Space is emptied of solid impediments." />
     <part Name="PitMaterial"/>
-    <removepart Name="Interesting" />
-    <tag Name="NoAutowalk" />
-    <xtagGrammar iArticle="some" />
+    <xtagGrammar massNoun="true" />
 		<tag Name="Pit" />
-		<tag Name="Gender" Value="neuter" />
     <tag Name="PaintedWallExtension" Value=".png" />
     <tag Name="PaintedWallAtlas" Value="Assets_Content_Textures_Walls_" />
   </object>
@@ -1383,36 +1359,21 @@
 		<part Name="Render" ColorString="&amp;c^k" TileColor="&amp;c^k" />
 		<tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
 	</object>
-  <object Name="TombShaft" Inherits="StairsDown">
-    <part Name="Physics" IsReal="false" />
-    <part Name="Render" DisplayName="deep shaft" ColorString="&amp;K" RenderString="008" Tile="Tiles/OpenPit.png" TileColor="&amp;y" DetailColor="K" />
-    <part Name="StairsDown" Connected="false" PullDown="true" />
-    <part Name="StairHighlight" bEnabled="false" />
-    <part Name="Description" Short="Darkness floods up from the empty space." />
-    <tag Name="Gender" Value="neuter" />
-    <tag Name="NoAutowalk" />
+  <object Name="TombShaft" Inherits="OpenShaft">
+    <part Name="Interesting" />
     <tag Name="ExcludeFromDynamicEncounters" />
   </object>
-  <object Name="ElevatorShaft" Inherits="StairsDown">
-    <part Name="Physics" IsReal="false" />
+  <object Name="ElevatorShaft" Inherits="OpenShaft">
     <part Name="Render" DisplayName="elevator shaft" ColorString="&amp;K" RenderString="008" Tile="Tiles/OpenPit.png" TileColor="&amp;y" DetailColor="K" />
     <part Name="StairsDown" Connected="false" PullDown="true" Levels="1"/>
-    <part Name="StairHighlight" bEnabled="false" />
     <part Name="Description" Short="A freightless tether slings down a dark and vast channel." />
-    <tag Name="Gender" Value="neuter" />
-    <tag Name="NoAutowalk" />
+    <part Name="Interesting" />
     <tag Name="ExcludeFromDynamicEncounters" />
   </object>
-  <object Name="ReefOpenShaft" Inherits="StairsDown">
-    <part Name="Physics" IsReal="false" />
+  <object Name="ReefOpenShaft" Inherits="OpenShaft">
     <part Name="Render" DisplayName="coral pit" ColorString="&amp;B" TileColor="&amp;C" DetailColor="r" RenderString="008" Tile="Terrain/sw_openpit_2.bmp" />
     <part Name="StairsDown" Connected="false" PullDown="true" PullMessage="" />
-    <part Name="StairHighlight" bEnabled="false" />
     <part Name="Description" Short="Darkness floods up the polyp-strewn fringes of an open pit." />
-    <removepart Name="Interesting" />
-    <tag Name="NoAutowalk" />
-    <tag Name="Gender" Value="neuter" />
-    <xtagGrammar iArticle="" />
     <tag Name="ExcludeFromDynamicEncounters" />
   </object>
   <object Name="PondDown" Inherits="InorganicObject">

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.19
+Caves of Qud - Generated Localizable XML 2.0.212.20
 
 <objects ExcludeFromCorpusGeneration="Key">
 
@@ -1356,6 +1356,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
   </object>
   <object Name="Cragmensch Boulderer" Load="Merge">
     <part Name="Render" DisplayName="▶cragmensch boulderer" />
+    <part Name="FabricateFromSelf" FabricateVerb="▶excavate" />
   </object>
   <object Name="Cragmensch Luminary" Load="Merge">
     <part Name="Render" DisplayName="▶cragmensch luminary" />
@@ -1488,7 +1489,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
   <object Name="Traipsing Mortar" Load="Merge">
     <part Name="Render" DisplayName="▶{{c|traipsing mortar}}" />
     <part Name="Description" Short="▶A mortar tube enameled with fire blister bounces on a gyroscopic mount between a pair of chrome-hooved kickers." />
-    <part Name="FabricateFromSelf" NameForStatus="▶MunitionsFab" />
+    <part Name="FabricateFromSelf" FabricateAlternateSource="▶debris and scraps" NameForStatus="▶MunitionsFab" />
   </object>
   <object Name="TraipsingMortar_LaunchAssembly" Load="Merge">
     <part Name="Render" DisplayName="▶launch assembly" />
@@ -2237,6 +2238,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
   </object>
   <object Name="Glittermensch Boulderer" Load="Merge">
     <part Name="Render" DisplayName="▶glittermensch boulderer" />
+    <part Name="FabricateFromSelf" FabricateVerb="▶excavate" />
   </object>
   <object Name="Glittermensch Luminary" Load="Merge">
     <part Name="Render" DisplayName="▶glittermensch luminary" />

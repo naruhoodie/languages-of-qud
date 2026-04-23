@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.19
+Caves of Qud - Generated Localizable XML 2.0.212.20
 
 <mutations Hidden="" ExcludeFromPool="">
 
@@ -44,8 +44,8 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
           </description>
       <leveltext>▶
             <p>You can increase your body's adrenaline flow for <stat Name="Duration" />.</p>
-            <p>While it's flowing, you gain +<stat Name="QuicknessBonus" /> quickness and other physical mutations gain +<stat Name="MutationBonus" Unit="rank" />.</p>
-            <statline Name="Cooldown" />
+            <p>While it's flowing, you gain +<stat Name="QuicknessBonus" /> quickness and other physical mutations gain +<stat Name="MutationBonus" Unit="▶rank" />.</p>
+            <statline Name="Cooldown" DisplayName="▶Cooldown" />
           </leveltext>
     </mutation>
     <mutation Name="Beak" DisplayName="▶Beak" BearerDescription="▶those with beaks">
@@ -65,7 +65,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
           </description>
       <leveltext>▶
             <p><gametext>=weapon.Name=</gametext> penetration vs. walls: <stat Name="WallPenetration" /></p>
-            <p><gametext>=weapon.Name|pluralize=</gametext> destroy walls after <stat Name="WallHits" Unit="penetrating hit" />.</p>
+            <p><gametext>=weapon.Name|pluralize=</gametext> destroy walls after <stat Name="WallHits" Unit="▶penetrating hit" />.</p>
             <switch Name="PrereleaseContent"><case Value="true"><p>Can dig passages up or down when outside of combat</p></case></switch>
             <p><gametext>=weapon.Name|pluralize= are also a =weaponClass.name= class natural weapon that deal <stat Name="Damage" /> base damage to non-walls.</gametext></p>
           </leveltext>
@@ -96,7 +96,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
               <case Value="lower"><p>{{rules|Decreased <stat Name="LevelEffectDescription" />}}</p></case>
               <default></default>
             </switch>
-            <statline Name="Cooldown" />
+            <statline Name="Cooldown" DisplayName="▶Cooldown" />
           </leveltext>
     </mutation>
     <mutation Name="Double-muscled" DisplayName="▶Double-muscled" BearerDescription="▶the double-muscled">
@@ -129,8 +129,8 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
           </description>
       <leveltext>▶
             <p>Area: <stat Name="Area" /> centered around yourself</p>
-            <statline Name="Duration" />
-            <statline Name="Cooldown" />
+            <statline Name="Duration" DisplayName="▶Duration" />
+            <statline Name="Cooldown" DisplayName="▶Cooldown" />
           </leveltext>
     </mutation>
     <mutation Name="Flaming Ray" DisplayName="▶Flaming Ray" BearerDescription="▶the flaming-handed">
@@ -139,9 +139,9 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
           </description>
       <leveltext>▶
             <p>Emits a <stat Name="Range" />-square ray of flame in the direction of your choice.</p>
-            <statline Name="Damage" />
-            <statline Name="Cooldown" />
-            <p>Melee attacks heat opponents by <stat Name="HeatOnHit" Unit="degree" /></p>
+            <statline Name="Damage" DisplayName="▶Damage" />
+            <statline Name="Cooldown" DisplayName="▶Cooldown" />
+            <p>Melee attacks heat opponents by <stat Name="HeatOnHit" Unit="▶degree" /></p>
           </leveltext>
     </mutation>
     <mutation Name="Freezing Ray" DisplayName="▶Freezing Ray" BearerDescription="▶the frozen-handed">
@@ -150,9 +150,9 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
           </description>
       <leveltext>▶
             <p>Emits a <stat Name="Range" />-square ray of frost in the direction of your choice.</p>
-            <statline Name="Damage" />
-            <statline Name="Cooldown" />
-            <p>Melee attacks cool opponents by <stat Name="CoolOnHit" Unit="degree" /></p>
+            <statline Name="Damage" DisplayName="▶Damage" />
+            <statline Name="Cooldown" DisplayName="▶Cooldown" />
+            <p>Melee attacks cool opponents by <stat Name="CoolOnHit" Unit="▶degree" /></p>
           </leveltext>
     </mutation>
     <mutation Name="Heightened Hearing" DisplayName="▶Heightened Hearing" BearerDescription="▶those with heightened hearing">
@@ -178,8 +178,8 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
           </description>
       <leveltext>▶
             <p>20% chance on melee attack to gore your opponent</p>
-            <statline Name="Damage" DisplayName="Damage increment" />
-            <statline Name="ToHitBonus" DisplayName="To-hit bonus" />
+            <statline Name="Damage" DisplayName="▶Damage increment" />
+            <statline Name="ToHitBonus" DisplayName="▶To-hit bonus" />
             <switch Name="LevelMode">
               <case Value="BleedBonus"><p>{{rules|Increased bleeding save difficulty and intensity}}</p></case>
               <case Value="LevelUp"><p>{{rules|Increased bleeding save difficulty}}</p></case>
@@ -197,7 +197,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
           </description>
       <leveltext>▶
             <p>May only assume the form of creatures level <stat Name="MaxLevel" /> or lower.</p>
-            <statline Name="Cooldown" />
+            <statline Name="Cooldown" DisplayName="▶Cooldown" />
           </leveltext>
     </mutation>
     <mutation Name="Multiple Arms" DisplayName="▶Multiple Arms" BearerDescription="▶the many-armed">
@@ -228,8 +228,8 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
             <p>You may phase through solid objects for brief periods of time.</p>
           </description>
       <leveltext>▶
-            <statline Name="Duration" />
-            <statline Name="Cooldown" />
+            <statline Name="Duration" DisplayName="▶Duration" />
+            <statline Name="Cooldown" DisplayName="▶Cooldown" />
           </leveltext>
     </mutation>
     <mutation Name="Photosynthetic Skin" DisplayName="▶Photosynthetic Skin" BearerDescription="▶the green-skinned">
@@ -237,8 +237,8 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
             <p>You replenish yourself by absorbing sunlight through your hearty green skin.</p>
           </description>
       <leveltext>▶
-            <p>You can bask in the sunlight instead of eating a meal to gain a special metabolizing effect for <stat Name="DurationDay" Unit="day" />: +<stat Name="BonusRegen" /> to natural healing rate and +<stat Name="BonusQuickness" /> Quickness</p>
-            <p>While in the sunlight, you accrue starch and lignin that you can use as ingredients in meals you cook (max <stat Name="StarchServings" Unit="serving" /> of each).</p>
+            <p>You can bask in the sunlight instead of eating a meal to gain a special metabolizing effect for <stat Name="DurationDay" Unit="▶day" />: +<stat Name="BonusRegen" /> to natural healing rate and +<stat Name="BonusQuickness" /> Quickness</p>
+            <p>While in the sunlight, you accrue starch and lignin that you can use as ingredients in meals you cook (max <stat Name="StarchServings" Unit="▶serving" /> of each).</p>
             <p>+<stat Name="BonusCamoflage" /> DV while occupying the same space as foliage</p>
             <p>+200 reputation with {{w|roots}}, {{w|trees}}, {{w|vines}}, and {{w|the Consortium of Phyta}}</p>
           </leveltext>
@@ -290,7 +290,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
               <case Value="lower"><p>{{rules|Decreased <stat Name="LevelEffectDescription" />}}</p></case>
               <default></default>
             </switch>
-            <statline Name="Cooldown" />
+            <statline Name="Cooldown" DisplayName="▶Cooldown" />
           </leveltext>
     </mutation>
     <mutation Name="Slime Glands" DisplayName="▶Slime Glands" BearerDescription="▶slime spitters">
@@ -298,9 +298,9 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
             <p>You produce a viscous slime that you can spit at things.</p>
             <p></p>
             <p>Covers an area with slime</p>
-            <statline Name="Range" />
-            <statline Name="Area" />
-            <statline Name="Cooldown" />
+            <statline Name="Range" DisplayName="▶Range" />
+            <statline Name="Area" DisplayName="▶Area" />
+            <statline Name="Cooldown" DisplayName="▶Cooldown" />
             <p>You can walk over slime without slipping.</p>
           </description>
       <leveltext></leveltext>
@@ -315,9 +315,9 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
               <case Value="true"></case>
               <default><p>{{rules|Increased web strength}}</p></default>
             </switch>
-            <statline Name="SpinDuration" DisplayName="Duration" Unit="move action" />
+            <statline Name="SpinDuration" DisplayName="▶Duration" Unit="▶move action" />
             <saveline Name="MoveSave" />
-            <statline Name="Cooldown" />
+            <statline Name="Cooldown" DisplayName="▶Cooldown" />
             <p>You are immune to getting stuck.</p>
             <p>+300 reputation with {{w|arachnids}}</p>
           </leveltext>
@@ -332,7 +332,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
             <p>Always sting on charge or lunge.</p>
             <p>Stinger applies venom on damage (only 20% chance if Stinger is your primary weapon).</p>
             <p>May use Sting activated ability to strike with your stinger and automatically hit and penetrate.</p>
-            <statline Name="Cooldown" DisplayName="Sting cooldown" />
+            <statline Name="Cooldown" DisplayName="▶Sting cooldown" />
             <p>Venom confuses opponents for <stat Name="Duration" /></p>
             <p>+200 reputation with {{w|arachnids}}</p>
           </leveltext>
@@ -347,7 +347,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
             <p>Always sting on charge or lunge.</p>
             <p>Stinger applies venom on damage (only 20% chance if Stinger is your primary weapon).</p>
             <p>May use Sting activated ability to strike with your stinger and automatically hit and penetrate.</p>
-            <statline Name="Cooldown" DisplayName="Sting cooldown" />
+            <statline Name="Cooldown" DisplayName="▶Sting cooldown" />
             <p>Venom paralyzes opponents for <stat Name="Duration" /></p>
             <p>+200 reputation with {{w|arachnids}}</p>
           </leveltext>
@@ -362,7 +362,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
             <p>Always sting on charge or lunge.</p>
             <p>Stinger applies venom on damage (only 20% chance if Stinger is your primary weapon).</p>
             <p>May use Sting activated ability to strike with your stinger and automatically hit and penetrate.</p>
-            <statline Name="Cooldown" DisplayName="Sting cooldown" />
+            <statline Name="Cooldown" DisplayName="▶Sting cooldown" />
             <p>Venom poisons opponents for <stat Name="Duration" /> (damage increment <stat Name="PoisonDamage" />)</p>
             <p>+200 reputation with {{w|arachnids}}</p>
           </leveltext>
@@ -415,8 +415,8 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
             <p>While outside, you may fly. You cannot be hit in melee by grounded creatures while flying.</p>
             <p><stat Name="CrashChance" />% chance of falling clumsily to the ground</p>
             <p><stat Name="SprintingMoveSpeedBonus" Filters="signed" />% move speed while sprinting</p>
-            <p>You can jump <stat Name="JumpDistanceBonus" Unit="square" /> farther.</p>
-            <p>You can charge <stat Name="ChargeDistanceBonus" Unit="square" /> farther.</p>
+            <p>You can jump <stat Name="JumpDistanceBonus" Unit="▶square" /> farther.</p>
+            <p>You can charge <stat Name="ChargeDistanceBonus" Unit="▶square" /> farther.</p>
             <p>+300 reputation with {{w|birds}} and {{w|winged mammals}}</p>
           </leveltext>
     </mutation>
@@ -538,9 +538,9 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
       <leveltext>▶
             <p>Mental attack versus a creature with a mind</p>
             <p>Success roll: {{rules|mutation rank}} or Ego mod (whichever is higher) + character level + 1d8 VS. Defender MA + character level</p>
-            <statline Name="Range" />
+            <statline Name="Range" DisplayName="▶Range" />
             <p>Beguiled creature: +<stat Name="BonusHP" /> bonus hit points</p>
-            <statline Name="Cooldown" />
+            <statline Name="Cooldown" DisplayName="▶Cooldown" />
           </leveltext>
     </mutation>
     <mutation Name="Burgeoning" DisplayName="▶Burgeoning" BearerDescription="▶psychic gardeners" BiomeAdjective="▶burgeoning">
@@ -548,9 +548,9 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
             <p>You cause plants to spontaneously grow in a nearby area, hindering your enemies.</p>
           </description>
       <leveltext>▶
-            <statline Name="Range" />
+            <statline Name="Range" DisplayName="▶Range" />
             <p>Area: <stat Name="Area" /> + growth into adjacent tiles</p>
-            <statline Name="Cooldown" />
+            <statline Name="Cooldown" DisplayName="▶Cooldown" />
             <switch Name="LevelMatch">
               <case Value="true"></case>
               <default><p>{{rules|More powerful plants summoned}}</p></default>
@@ -561,19 +561,19 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
     <mutation Name="Clairvoyance" DisplayName="▶Clairvoyance" BearerDescription="▶the clairvoyant" BiomeEpithet="▶panopticon">
       <description>▶You briefly gain vision of a nearby area.</description>
       <leveltext>▶
-            <statline Name="VisionRadius" DisplayName="Vision radius" />
-            <statline Name="VisionDuration" DisplayName="Vision duration" Unit="round" />
-            <statline Name="Cooldown" Unit="round" />
+            <statline Name="VisionRadius" DisplayName="▶Vision radius" />
+            <statline Name="VisionDuration" DisplayName="▶Vision duration" Unit="▶round" />
+            <statline Name="Cooldown" Unit="▶round" DisplayName="▶Cooldown" />
           </leveltext>
     </mutation>
     <mutation Name="Confusion" DisplayName="▶Confusion" BearerDescription="▶riddlers" BiomeEpithet="▶psychic maze">
       <description>▶You confuse nearby enemies.</description>
       <leveltext>▶
             <p>Affected creatures act semi-randomly and receive a -<stat Name="Penalty" /> penalty to their mental abilities.</p>
-            <statline Name="ConeAngle" DisplayName="Cone angle" Unit="degree" />
-            <statline Name="ConeLength" DisplayName="Cone length" />
-            <statline Name="Duration" />
-            <statline Name="Cooldown" />
+            <statline Name="ConeAngle" DisplayName="▶Cone angle" Unit="▶degree" />
+            <statline Name="ConeLength" DisplayName="▶Cone length" />
+            <statline Name="Duration" DisplayName="▶Duration" />
+            <statline Name="Cooldown" DisplayName="▶Cooldown" />
           </leveltext>
     </mutation>
     <mutation Name="Cryokinesis" DisplayName="▶Cryokinesis" BearerDescription="▶cryomancers" BiomeEpithet="▶frost meadow">
@@ -584,22 +584,22 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
               <case Value="raise"><p>{{rules|Increased chill temperature intensity}}</p></case>
               <default><p>{{rules|Decreased chill temperature intensity}}</p></default>
             </switch>
-            <statline Name="Range" />
-            <statline Name="Area" />
-            <statline Name="DamageRound1" DisplayName="Round 1 damage" />
-            <statline Name="DamageRound2" DisplayName="Round 2 damage" />
-            <statline Name="DamageRound3" DisplayName="Round 3 damage" />
-            <statline Name="Cooldown" />
+            <statline Name="Range" DisplayName="▶Range" />
+            <statline Name="Area" DisplayName="▶Area" />
+            <statline Name="DamageRound1" DisplayName="▶Round 1 damage" />
+            <statline Name="DamageRound2" DisplayName="▶Round 2 damage" />
+            <statline Name="DamageRound3" DisplayName="▶Round 3 damage" />
+            <statline Name="Cooldown" DisplayName="▶Cooldown" />
           </leveltext>
     </mutation>
     <mutation Name="Disintegration" DisplayName="▶Disintegration" BearerDescription="▶disintegrators" BiomeAdjective="▶rapidly resonating">
       <description>▶You disintegrate nearby matter.</description>
       <leveltext>▶
-            <statline Name="Area" />
-            <statline Name="DamageNonStructural" DisplayName="Damage to non-structural objects" />
-            <statline Name="DamageStructural" DisplayName="Damage to structural objects" />
+            <statline Name="Area" DisplayName="▶Area" />
+            <statline Name="DamageNonStructural" DisplayName="▶Damage to non-structural objects" />
+            <statline Name="DamageStructural" DisplayName="▶Damage to structural objects" />
             <p>You are exhausted for 3 rounds after using this power.</p>
-            <statline Name="Cooldown" />
+            <statline Name="Cooldown" DisplayName="▶Cooldown" />
           </leveltext>
     </mutation>
     <mutation Name="Domination" DisplayName="▶Domination" BearerDescription="▶those who dominate the wills of others" BiomeEpithet="▶theater of wills">
@@ -610,24 +610,24 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
             <p>Mental attack versus creature with a mind</p>
             <p>Success roll: {{rules|mutation rank}} or Ego mod (whichever is higher) + character level + 1d8 VS. Defender MA + character level</p>
             <p>Range: 1</p>
-            <statline Name="Duration" />
-            <statline Name="Cooldown" />
+            <statline Name="Duration" DisplayName="▶Duration" />
+            <statline Name="Cooldown" DisplayName="▶Cooldown" />
           </leveltext>
     </mutation>
     <mutation Name="Ego Projection" DisplayName="▶Ego Projection" BearerDescription="▶those who project their egos onto the physical realm" BiomeAdjective="▶psychically refractive">
       <description>▶Through sheer force of will, you perform uncanny physical feats.</description>
       <leveltext>▶
             <p>Augments one physical attribute by an amount equal to twice your Ego bonus</p>
-            <statline Name="Duration" />
-            <statline Name="Cooldown" />
+            <statline Name="Duration" DisplayName="▶Duration" />
+            <statline Name="Cooldown" DisplayName="▶Cooldown" />
           </leveltext>
     </mutation>
     <mutation Name="Force Bubble" DisplayName="▶Force Bubble" BearerDescription="▶bubble folk" BiomeAdjective="▶bubbly">
       <description>▶You generate a forcefield around yourself.</description>
       <leveltext>▶
             <p>Creates a 3x3 forcefield centered on yourself</p>
-            <statline Name="Duration" />
-            <statline Name="Cooldown" />
+            <statline Name="Duration" DisplayName="▶Duration" />
+            <statline Name="Cooldown" DisplayName="▶Cooldown" />
             <p>You may fire missile weapons through the forcefield.</p>
           </leveltext>
     </mutation>
@@ -635,8 +635,8 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
       <description>▶You generate a wall of force that protects you from your enemies.</description>
       <leveltext>▶
             <p>Creates 9 contiguous squares of immobile forcefield.</p>
-            <statline Name="Duration" />
-            <statline Name="Cooldown" />
+            <statline Name="Duration" DisplayName="▶Duration" />
+            <statline Name="Cooldown" DisplayName="▶Cooldown" />
             <p>You may fire missile weapons through the forcefield.</p>
           </leveltext>
     </mutation>
@@ -644,8 +644,8 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
       <description>▶
             <p>You ignite a small fire with your mind.</p>
             <p></p>
-            <statline Name="Range" />
-            <statline Name="Cooldown" />
+            <statline Name="Range" DisplayName="▶Range" />
+            <statline Name="Cooldown" DisplayName="▶Cooldown" />
           </description>
       <leveltext></leveltext>
     </mutation>
@@ -656,9 +656,9 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
       <leveltext>▶
             <p>You produce ambient light within a radius of <stat Name="Radius" />.</p>
             <p>You may focus the light into a laser beam, temporarily reducing the radius of your ambient light by 1.</p>
-            <statline Name="LaserDamageInc" DisplayName="Laser damage increment" />
-            <statline Name="LaserPen" DisplayName="Laser penetration" />
-            <p>Ambient light recharges at a rate of 1 unit every <stat Name="AmbientRegrowthDuration" Unit="round" /> until it reaches its maximum value.</p>
+            <statline Name="LaserDamageInc" DisplayName="▶Laser damage increment" />
+            <statline Name="LaserPen" DisplayName="▶Laser penetration" />
+            <p>Ambient light recharges at a rate of 1 unit every <stat Name="AmbientRegrowthDuration" Unit="▶round" /> until it reaches its maximum value.</p>
             <p><stat Name="ReflectChance" />% chance to reflect light-based damage</p>
         </leveltext>
     </mutation>
@@ -668,7 +668,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
           </description>
       <leveltext>▶
             <p>Refreshes all mental mutations</p>
-            <statline Name="CooldownNoWillpower" Unit="round" />
+            <statline Name="CooldownNoWillpower" Unit="▶round" DisplayName="▶CooldownNoWillpower" />
             <p>Cooldown is not affected by Willpower.</p>
             <p>Each use attracts slightly more attention from psychic interlopers.</p>
             <p><switch Name="LevelMatch"><case Value="true">Small chance each round for another esper to steal your powers</case><default>{{rules|Decreased chance for another esper to steal your powers}}</default></switch></p>
@@ -682,7 +682,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
       <leveltext>▶
             <p>When you suffer a mental attack while Mental Mirror is off cooldown, you gain +<stat Name="BonusMA" /> mental armor (MA).</p>
             <p>If the attack then fails to penetrate your MA, it's reflected back at your attacker.</p>
-            <statline Name="Cooldown" />
+            <statline Name="Cooldown" DisplayName="▶Cooldown" />
           </leveltext>
     </mutation>
     <mutation Name="Precognition" DisplayName="▶Precognition" BearerDescription="▶the prescient" BiomeEpithet="▶future site">
@@ -692,7 +692,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
       <leveltext>▶
             <p>You may activate this power and then later revert to the point in time when you activated it.</p>
             <p>Duration between use and reversion: <stat Name="Duration" /></p>
-            <statline Name="Cooldown" />
+            <statline Name="Cooldown" DisplayName="▶Cooldown" />
           </leveltext>
     </mutation>
     <mutation Name="Psychometry" DisplayName="▶Psychometry" BearerDescription="▶the psychometrically sensitive" BiomeAdjective="▶retrocognate">
@@ -715,12 +715,12 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
               <case Value="raise"><p>{{rules|Increased toast temperature intensity}}</p></case>
               <default><p>{{rules|Decreased toast temperature intensity}}</p></default>
             </switch>
-            <statline Name="Range" />
-            <statline Name="Area" />
-            <statline Name="DamageRound1" DisplayName="Round 1 damage" />
-            <statline Name="DamageRound2" DisplayName="Round 2 damage" />
-            <statline Name="DamageRound3" DisplayName="Round 3 damage" />
-            <statline Name="Cooldown" />
+            <statline Name="Range" DisplayName="▶Range" />
+            <statline Name="Area" DisplayName="▶Area" />
+            <statline Name="DamageRound1" DisplayName="▶Round 1 damage" />
+            <statline Name="DamageRound2" DisplayName="▶Round 2 damage" />
+            <statline Name="DamageRound3" DisplayName="▶Round 3 damage" />
+            <statline Name="Cooldown" DisplayName="▶Cooldown" />
           </leveltext>
     </mutation>
     <mutation Name="Sense Psychic" DisplayName="▶Sense Psychic" BearerDescription="▶the psychically sensitive" BiomeAdjective="▶naked">
@@ -740,9 +740,9 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
             <p>Summons a vortex that swallows everything in its path.</p>
             <switch Name="BonusDuration">
               <case Value="0"></case>
-              <default><statline Name="BonusDuration" DisplayName="Bonus duration" Unit="round" /></default>
+              <default><statline Name="BonusDuration" DisplayName="▶Bonus duration" Unit="▶round" /></default>
             </switch>
-            <statline Name="Cooldown" />
+            <statline Name="Cooldown" DisplayName="▶Cooldown" />
             <p>You may enter the vortex to teleport to a random location in Qud.</p>
             <p>+200 reputation with {{w|highly entropic beings}}</p>
           </leveltext>
@@ -752,14 +752,14 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
             <p>You invoke a concussive force in a nearby area, throwing enemies back and stunning them.</p>
           </description>
       <leveltext>▶
-            <statline Name="Range" />
-            <statline Name="Area" />
+            <statline Name="Range" DisplayName="▶Range" />
+            <statline Name="Area" DisplayName="▶Area" />
             <switch Name="LevelMatch">
               <case Value="true"><p>Creatures are pushed away from center of blast, stunned, and dealt crushing damage in up to 3 increments.</p></case>
               <default><p>{{rules|Increased stun save difficulty}}</p></default>
             </switch>
-            <statline Name="DamageIncrement" DisplayName="Damage increment" />
-            <statline Name="Cooldown" />
+            <statline Name="DamageIncrement" DisplayName="▶Damage increment" />
+            <statline Name="Cooldown" DisplayName="▶Cooldown" />
           </leveltext>
     </mutation>
     <mutation Name="Sunder Mind" DisplayName="▶Sunder Mind" BearerDescription="▶mind sunderers" BiomeEpithet="▶psychic graveyard">
@@ -770,10 +770,10 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
             <p>For up to 10 rounds, you engage in psychic combat with an opponent, dealing damage each round.</p>
             <p>Taking any action other than passing the turn will break the connection.</p>
             <p>Each round you make a mental attack vs mental armor (MA).</p>
-            <statline Name="DamageIncrement" DisplayName="Damage increment" />
+            <statline Name="DamageIncrement" DisplayName="▶Damage increment" />
             <p>After the tenth round, you deal bonus damage equal to the total amount of damage you've done so far.</p>
-            <statline Name="Range" />
-            <statline Name="Cooldown" />
+            <statline Name="Range" DisplayName="▶Range" />
+            <statline Name="Cooldown" DisplayName="▶Cooldown" />
           </leveltext>
     </mutation>
     <mutation Name="Syphon Vim" DisplayName="▶Syphon Vim" BearerDescription="▶life leeches" BiomeEpithet="▶slaughterfield">
@@ -782,10 +782,10 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
           </description>
       <leveltext>▶
             <p>Mental attack versus an organic creature</p>
-            <p>Drains <stat Name="HP" Unit="hit point" /> per round</p>
+            <p>Drains <stat Name="HP" Unit="▶hit point" /> per round</p>
             <p>Target gets a mental save to resist damage each round</p>
-            <statline Name="Duration" />
-            <statline Name="Cooldown" />
+            <statline Name="Duration" DisplayName="▶Duration" />
+            <statline Name="Cooldown" DisplayName="▶Cooldown" />
           </leveltext>
     </mutation>
     <mutation Name="Telepathy" DisplayName="▶Telepathy" BearerDescription="▶the telepathic" BiomeAdjective="▶telepathic">
@@ -803,8 +803,8 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
           </description>
       <leveltext>▶
             <p>Teleport to a random location within a designated area.</p>
-            <statline Name="UncertaintyRadius" DisplayName="Uncertainty radius" />
-            <statline Name="Cooldown" />
+            <statline Name="UncertaintyRadius" DisplayName="▶Uncertainty radius" />
+            <statline Name="Cooldown" DisplayName="▶Cooldown" />
           </leveltext>
     </mutation>
     <mutation Name="Teleport Other" DisplayName="▶Teleport Other" BearerDescription="▶those who teleport others" BiomeEpithet="▶hermitage">
@@ -812,7 +812,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
             <p>You teleport an adjacent creature to a random nearby location.</p>
           </description>
       <leveltext>▶
-            <statline Name="Cooldown" />
+            <statline Name="Cooldown" DisplayName="▶Cooldown" />
           </leveltext>
     </mutation>
     <mutation Name="Time Dilation" DisplayName="▶Time Dilation" BearerDescription="▶time dilators" BiomeEpithet="▶time prism">
@@ -824,8 +824,8 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
             <p>Distance 1: creatures receive a <stat Name="QuicknessPenalty1" />% Quickness penalty</p>
             <p>Distance 4: creatures receive a <stat Name="QuicknessPenalty4" />% Quickness penalty</p>
             <p>Distance 7: creatures receive a <stat Name="QuicknessPenalty7" />% Quickness penalty</p>
-            <statline Name="Duration" />
-            <statline Name="Cooldown" />
+            <statline Name="Duration" DisplayName="▶Duration" />
+            <statline Name="Cooldown" DisplayName="▶Cooldown" />
           </leveltext>
     </mutation>
     <mutation Name="Temporal Fugue" DisplayName="▶Temporal Fugue" BearerDescription="▶temporal fugitives" BiomeEpithet="▶spacetime hub">
@@ -833,9 +833,9 @@ Caves of Qud - Generated Localizable XML 2.0.212.19
             <p>You quickly pass back and forth through time creating multiple copies of yourself.</p>
           </description>
       <leveltext>▶
-            <statline Name="Duration" />
-            <statline Name="Copies" />
-            <statline Name="Cooldown" />
+            <statline Name="Duration" DisplayName="▶Duration" />
+            <statline Name="Copies" DisplayName="▶Copies" />
+            <statline Name="Cooldown" DisplayName="▶Cooldown" />
           </leveltext>
     </mutation>
   </category>

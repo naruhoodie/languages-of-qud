@@ -27,4 +27,10 @@
         <p>Gain a level as this creature to wake pleasantly.</p>
         <p>Die or abandon character to wake fitfully.</p>
     </template>
+    <template ID="Effect.Disguised.Details">
+        <switch Name="Appearance">
+          <case Value="Yes"><p>Has the appearance of <stat Name="Appearance"/>.</p></case>
+          <default><p>Has the appearance of another creature.</p></default>
+        </switch>
+    </template>
 </templates>
