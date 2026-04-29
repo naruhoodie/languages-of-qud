@@ -4,12 +4,64 @@
         <p>+<stat Name="QuicknessBonus" /> Quickness</p>
         <p>+<stat Name="MutationBonus" Unit="rank" /> to physical mutations</p>
     </template>
+    <template ID="Effect.AnemoneEffect.Details">
+        <switch Name="DamageBonus">
+            <case Value="0" />
+            <default><p>Additional <stat Name="DamageBonus" /> bleeding damage per turn.</p></default>
+        </switch>
+        <saveline Name="BleedingSave" HideValue="0" />
+    </template>
+    <template ID="Effect.AshPoison.Details">
+        <p><stat Name="Damage" /> damage per turn.</p>
+    </template>
+    <template ID="Effect.Asleep.Details">
+        <switch Name="UsesSleepMode">
+            <case Value="Yes"><p>In power conservation mode.</p></case>
+            <default><p>Unconscious.</p></default>
+        </switch>
+        <p>-12 DV.</p>
+        <p>Attackers receive +4 to penetration rolls.</p>
+        <switch Name="UsesSleepMode">
+            <case Value="Yes"><p>Will return to normal operations dazed if damage is taken.</p></case>
+            <default><p>Will wake up dazed if damage is taken.</p></default>
+        </switch>
+    </template>
+    <template ID="Effect.AxonsDeflated.Details">
+        <p><stat Name="QuicknessPenalty" Filters="signed" /> Quickness</p>
+    </template>
+    <template ID="Effect.AxonsInflated.Details">
+        <p><stat Name="QuicknessBonus" Filters="signed" /> Quickness</p>
+        <p>Will become sluggish soon.</p>
+    </template>
+    <!-- todo:jason -->
+    <template ID="Effect.BasiliskPoison.Details">
+        <p>-1d6 Move Speed per turn for 14-18 turns.</p>
+        <p>[total:<stat Name="MovementDebuff" Filters="signed" /> Move Speed]</p>
+    </template>
+    <template ID="Effect.Beguiled.Details">
+        <p>Charmed by another creature into following them.</p>
+        <switch Name="HitpointBonus">
+            <case Value="0" />
+            <default><p><stat Name="HitpointBonus" Filters="signed" /> hit points.</p></default>
+        </switch>
+    </template>
+    <template ID="Effect.Berserk.Details">
+        <p>100% chance to dismember with axes.</p>
+    </template>
+    <template ID="Effect.Disguised.Details">
+        <switch Name="Appearance">
+          <case Value="Yes"><p>Has the appearance of <stat Name="Appearance"/>.</p></case>
+          <default><p>Has the appearance of another creature.</p></default>
+        </switch>
+    </template>
+    <template ID="Effect.Lovesick.Details">
+        <p>-6 Intelligence</p>
+        <p>-6 Willpower</p>
+        <p>-5 Move Speed</p>
+    </template>
     <template ID="Effect.MemberOfPsychicBattle.Details">
         <p>Locked in psychic battle with a foe. (<stat Name="Turns" Unit="turn" /> remaining)</p>
         <switch Name="BloodyNose"><case Value="Yes"><p>Has a bloody nose.</p></case></switch>
-    </template>
-    <template ID="Effect.Rebuked.Details">
-        <p>Rebuked into obedience by another creature.</p>
     </template>
     <template ID="Effect.Metamorphed.Details">
         <p>Assuming another creature's form.</p>
@@ -18,19 +70,11 @@
         <p>"Can't physically interact with creatures and objects unless they're also phased.</p>
         <p>Can pass through solids.</p>
     </template>
-    <template ID="Effect.Lovesick.Details">
-        <p>-6 Intelligence</p>
-        <p>-6 Willpower</p>
-        <p>-5 Move Speed</p>
+    <template ID="Effect.Rebuked.Details">
+        <p>Rebuked into obedience by another creature.</p>
     </template>
     <template ID="Effect.WakingDream.Details">
         <p>Gain a level as this creature to wake pleasantly.</p>
         <p>Die or abandon character to wake fitfully.</p>
-    </template>
-    <template ID="Effect.Disguised.Details">
-        <switch Name="Appearance">
-          <case Value="Yes"><p>Has the appearance of <stat Name="Appearance"/>.</p></case>
-          <default><p>Has the appearance of another creature.</p></default>
-        </switch>
     </template>
 </templates>

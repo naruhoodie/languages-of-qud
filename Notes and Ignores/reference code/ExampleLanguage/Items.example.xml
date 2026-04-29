@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.20
+Caves of Qud - Generated Localizable XML 2.0.212.21
 
 <objects ExcludeFromCorpusGeneration="Key">
 
@@ -444,6 +444,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.20
   <object Name="Difucila" Load="Merge">
     <part Name="Render" DisplayName="▶etched cleaver" />
     <part Name="Description" Short="▶Beautiful ribbons of leaf are etched along the edges of the broad and oiled blade. The pine handle is carved with its name: Difucila." />
+    <part Name="MakersMark" CrafterName="▶Sparafucile" />
     <xtagGrammar Proper="▶false" />
   </object>
   <object Name="Fist of the Ape God" Load="Merge">
@@ -470,6 +471,12 @@ Caves of Qud - Generated Localizable XML 2.0.212.20
   <object Name="Carbine" Load="Merge">
     <part Name="Render" DisplayName="▶carbine" />
     <part Name="Description" Short="▶Carbon steel gleams on its sawed muzzle. A dented butt stock cuts at right angle to the shoulder." />
+  </object>
+  <object Name="MasterworkCarbine" Load="Merge">
+    <part Name="MakersMark" CrafterName="▶Sparafucile" />
+  </object>
+  <object Name="MasterworkChainPistol" Load="Merge">
+    <part Name="MakersMark" CrafterName="▶Sparafucile" />
   </object>
   <object Name="Sniper Rifle" Load="Merge">
     <part Name="Render" DisplayName="▶sniper rifle" />
