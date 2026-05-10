@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.21
+Caves of Qud - Generated Localizable XML 2.0.212.22
 
 <mutations Hidden="" ExcludeFromPool="">
 
@@ -537,7 +537,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.21
           </description>
       <leveltext>▶
             <p>Mental attack versus a creature with a mind</p>
-            <p>Success roll: {{rules|mutation rank}} or Ego mod (whichever is higher) + character level + 1d8 VS. Defender MA + character level</p>
+            <p>Success roll: {{rules|mutation rank}} or Ego mod (whichever is higher) + character level + 1d8 vs. Defender MA + character level</p>
             <statline Name="Range" DisplayName="▶Range" />
             <p>Beguiled creature: +<stat Name="BonusHP" /> bonus hit points</p>
             <statline Name="Cooldown" DisplayName="▶Cooldown" />
@@ -608,7 +608,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.21
           </description>
       <leveltext>▶
             <p>Mental attack versus creature with a mind</p>
-            <p>Success roll: {{rules|mutation rank}} or Ego mod (whichever is higher) + character level + 1d8 VS. Defender MA + character level</p>
+            <p>Success roll: {{rules|mutation rank}} or Ego mod (whichever is higher) + character level + 1d8 vs. Defender MA + character level</p>
             <p>Range: 1</p>
             <statline Name="Duration" DisplayName="▶Duration" />
             <statline Name="Cooldown" DisplayName="▶Cooldown" />
@@ -769,7 +769,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.21
       <leveltext>▶
             <p>For up to 10 rounds, you engage in psychic combat with an opponent, dealing damage each round.</p>
             <p>Taking any action other than passing the turn will break the connection.</p>
-            <p>Each round you make a mental attack vs mental armor (MA).</p>
+            <p>Each round you make a mental attack vs. mental armor (MA).</p>
             <statline Name="DamageIncrement" DisplayName="▶Damage increment" />
             <p>After the tenth round, you deal bonus damage equal to the total amount of damage you've done so far.</p>
             <statline Name="Range" DisplayName="▶Range" />

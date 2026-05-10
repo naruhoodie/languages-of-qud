@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.21
+Caves of Qud - Generated Localizable XML 2.0.212.22
 
 <templates>
 
@@ -26,13 +26,13 @@ Caves of Qud - Generated Localizable XML 2.0.212.21
     </template>
   <template ID="Effect.Asleep.Details">▶
         <switch Name="UsesSleepMode">
-            <case Value="Yes"><p>In power conservation mode.</p></case>
+            <case Value="true"><p>In power conservation mode.</p></case>
             <default><p>Unconscious.</p></default>
         </switch>
         <p>-12 DV.</p>
         <p>Attackers receive +4 to penetration rolls.</p>
         <switch Name="UsesSleepMode">
-            <case Value="Yes"><p>Will return to normal operations dazed if damage is taken.</p></case>
+            <case Value="true"><p>Will return to normal operations dazed if damage is taken.</p></case>
             <default><p>Will wake up dazed if damage is taken.</p></default>
         </switch>
     </template>
@@ -57,10 +57,43 @@ Caves of Qud - Generated Localizable XML 2.0.212.21
   <template ID="Effect.Berserk.Details">▶
         <p>100% chance to dismember with axes.</p>
     </template>
+  <template ID="Effect.Blaze_Tonic.Details">▶
+        <p>+100 Heat Resistance</p>
+        <p>Can't be frozen.</p>
+        <p>+25% heat damage dealt.</p>
+        <p>-50 Cold Resistance</p>
+        <switch Name="IsTrueKin">
+            <case Value="true"><p>+20 Quickness</p></case>
+            <default><p>+10 Quickness</p></default>
+        </switch>
+        <p>Temperature can't be increased by external heat sources.</p>
+        <p>Must move around to avoid combusting and losing the effects of this tonic.</p>
+    </template>
+  <template ID="Effect.Blind.Details">▶
+        <p>Can't see.</p>
+    </template>
+  <template ID="Effect.BlinkingTicSickness.Details">▶
+        <p>There is a small chance each round you're in combat that you randomly teleport to a nearby location.</p>
+    </template>
+  <template ID="Effect.BoostStatistic.Details">▶
+        <p><stat Name="Bonus" Filters="signed" /> <gametext>=stat.title=</gametext></p>
+    </template>
+  <template ID="Effect.BoostedImmunity.Details">▶
+        <saveline Name="DiseaseOnsetSave" Type="Disease Onset" />
+    </template>
+  <template ID="Effect.Broken.Details">▶
+        <p>Can't be equipped or used.</p>
+    </template>
+  <template ID="Effect.Budding.Details">▶
+        <p>Will spawn a clone soon.</p>
+    </template>
+  <template ID="Effect.Burrowed.Details">▶
+        <p>Traveling underground.</p>
+    </template>
   <template ID="Effect.Disguised.Details">▶
         <switch Name="Appearance">
-          <case Value="Yes"><p>Has the appearance of <stat Name="Appearance" />.</p></case>
-          <default><p>Has the appearance of another creature.</p></default>
+          <case Value=""><p>Has the appearance of another creature.</p></case>
+          <default><p>Has the appearance of <stat Name="Appearance" />.</p></default>
         </switch>
     </template>
   <template ID="Effect.Lovesick.Details">▶
@@ -70,7 +103,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.21
     </template>
   <template ID="Effect.MemberOfPsychicBattle.Details">▶
         <p>Locked in psychic battle with a foe. (<stat Name="Turns" Unit="▶turn" /> remaining)</p>
-        <switch Name="BloodyNose"><case Value="Yes"><p>Has a bloody nose.</p></case></switch>
+        <switch Name="BloodyNose"><case Value="true"><p>Has a bloody nose.</p></case></switch>
     </template>
   <template ID="Effect.Metamorphed.Details">▶
         <p>Assuming another creature's form.</p>

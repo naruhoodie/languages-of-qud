@@ -5329,7 +5329,6 @@
 
 		<node ID="IsGolemReady">
 			<text>No! Be back =mound.complete.days=.</text>
-			<part Name="MoundContext" Preposition="false" />
 			<choice Target="Welcome">OK.</choice>
 		</node>
 		

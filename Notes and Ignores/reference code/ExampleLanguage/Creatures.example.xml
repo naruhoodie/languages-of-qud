@@ -1,12 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.21
+Caves of Qud - Generated Localizable XML 2.0.212.22
 
 <objects ExcludeFromCorpusGeneration="Key">
 
   <object Name="Key" Load="">
 
     <part Name="Key">
+
+    <builder Name="Key">
 
     <tag Name="Key" Value="DisplayText">
 
@@ -616,6 +618,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.21
   <object Name="ClockworkBeetle" Load="Merge">
     <part Name="Render" DisplayName="▶clockwork beetle" />
     <part Name="Description" Short="▶Shining black elytra flitter on the back of a goat-sized bug." />
+    <builder Name="Roboticized" NamePrefix="" DescriptionPostfix="▶There is sharp, persistent ticking emanating outward." />
   </object>
   <object Name="Issachari Raider" Load="Merge">
     <part Name="Render" DisplayName="▶Issachari raider" />

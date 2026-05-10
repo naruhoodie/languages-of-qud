@@ -1,12 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.21
+Caves of Qud - Generated Localizable XML 2.0.212.22
 
 <objects ExcludeFromCorpusGeneration="Key">
 
   <object Name="Key" Load="">
 
     <part Name="Key">
+
+    <builder Name="Key">
 
     <tag Name="Key" Value="DisplayText">
 
@@ -2655,6 +2657,15 @@ Caves of Qud - Generated Localizable XML 2.0.212.21
   </object>
   <object Name="Robot Corpse" Load="Merge">
     <part Name="Description" Short="▶A corpse." />
+  </object>
+  <object Name="GenericFace" Load="Merge">
+    <part Name="EatenAccomplishment" Text="▶You ate =this.an=." Hagiograph="▶Woe to the vanquished! =name= feasted on =this.an= by the light of the Beetle Moon." Gospel="▶On =day= of =month=, at a tavern near =landmark.nearest=, =name= met with a group of kippers and, divinely inspired by =spice:elements.entity@elements[random].practices.!random=, cooked and feasted on =this.refname=." />
+  </object>
+  <object Name="PlantFace" Load="Merge">
+    <part Name="EatenAccomplishment" Text="▶You ate =this.an=." Hagiograph="▶Woe to the vanquished! =name= feasted on =this.an= by the light of the Beetle Moon." Gospel="▶On =day= of =month=, at a tavern near =landmark.nearest=, =name= met with a group of kippers and, divinely inspired by =spice:elements.entity@elements[random].practices.!random=, cooked and feasted on =this.refname=." />
+  </object>
+  <object Name="FungusFace" Load="Merge">
+    <part Name="EatenAccomplishment" Text="▶You ate =this.an=." Hagiograph="▶Woe to the vanquished! =name= feasted on =this.an= by the light of the Beetle Moon." Gospel="▶On =day= of =month=, at a tavern near =landmark.nearest=, =name= met with a group of kippers and, divinely inspired by =spice:elements.entity@elements[random].practices.!random=, cooked and feasted on =this.refname=." />
   </object>
   <object Name="RobotLimb" Load="Merge">
     <part Name="Description" Short="▶A chunk of metallic debris." />

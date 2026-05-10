@@ -389,7 +389,6 @@
     <intproperty Name="Bleeds" Value="1" />
     <tag Name="BleedLiquid" Value="slime-1000" />
     <tag Name="BleedColor" Value="&amp;g" />
-    <tag Name="BleedPrefix" Value="{{g|slimy}}" />
 		<tag Name="SeveredLimbColorString" Value="&amp;g" />
 		<tag Name="SeveredLimbTileColor" Value="&amp;G" />
 		<tag Name="SeveredLimbDetailColor" Value="g" />
@@ -706,7 +705,6 @@
     <intproperty Name="Bleeds" Value="1" />
     <tag Name="BleedLiquid" Value="oil-1000" />
     <tag Name="BleedColor" Value="&amp;K" />
-    <tag Name="BleedPrefix" Value="{{K|oily}}" />
     <tag Name="PetResponse" Value="=subject.T= =verb:beep= and =verb:boop=." />
     <stag Name="HardMaterial" Value="casing" />    
     <tag Name="PrimaryLimbType" Value="Hand" />
@@ -1063,7 +1061,6 @@
     <intproperty Name="Bleeds" Value="1" />
     <tag Name="BleedLiquid" Value="sap-1000" />
     <tag Name="BleedColor" Value="&amp;W" />
-    <tag Name="BleedPrefix" Value="{{W|sappy}}" />
     <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Sage,Erudite,Sensible,Sophic,Leafy,Verduous,Flowery,Old,Ripe" />
     <tag Name="HeroNameTitleMayorSyn" Value="sultan,monarch,mayor-plant,elder-plant" />
     <tag Name="HeroNameTitleMayorSynCap" Value="Sultan,Monarch,Mayor-Plant,Elder-Plant" />
@@ -1105,7 +1102,6 @@
     <intproperty Name="Bleeds" Value="1" />
     <tag Name="BleedLiquid" Value="sap-1000" />
     <tag Name="BleedColor" Value="&amp;W" />
-    <tag Name="BleedPrefix" Value="{{W|sappy}}" />
     <tag Name="HeroNameTitleMayorSyn" Value="mayor-plant,elder-plant" />
     <tag Name="HeroNameTitleMayorSynCap" Value="Mayor-Plant,Elder-Plant" />
     <xtagTextFragments Skin="cuticle" PoeticFeatures="braided feet,gentle stillness,verdurous bearing" YounglingNoise="*sway*" Activity="basking in the sun,swaying in the wind,putting roots down in the ground,being crawled over by insects" VillageActivity="basking in the sun,putting roots down in the ground,swaying in the wind" NeedsItemFor="for my own collection,to slake my greed,because of its trade value,for burying in the soil,to impress the other plants" SacredThing="carbon dioxide,the sun,water,laying roots,drinking water from the soil,every hue of green" ArableLand="ample sunlight" ValuedOre="water,carbon dioxide,sunlight" />
@@ -4879,7 +4875,6 @@ The infant child is unaware
     <tag Name="Role" Value="Controller" />
     <tag Name="BleedLiquid" Value="convalessence-1000" />
     <tag Name="BleedColor" Value="&amp;C" />
-    <tag Name="BleedPrefix" Value="{{C|luminous}}" />
     <part Name="LiquidBurst" EelChance="0" Liquid="ConvalessencePuddle" />
     <part Name="LightSource" Lit="true" Radius="6" />
   </object>
@@ -7447,7 +7442,6 @@ The infant child is unaware
     <part Name="LiquidBurst" EelChance="0" Liquid="LushAcidPuddle" />
     <tag Name="BleedLiquid" Value="wine-400,acid-600" />
     <tag Name="BleedColor" Value="&amp;m" />
-    <tag Name="BleedPrefix" Value="{{m|lush}} and {{G|acidic}}" />
     <tag Name="DynamicObjectsTable:DeepJungle_Creatures" />
     <tag Name="DynamicObjectsTable:BaroqueRuins_Creatures" />
   </object>
@@ -8298,7 +8292,6 @@ Drifts on the cultural seas have swept a particular fable to your attention. Lon
     <part Name="LightSource" Lit="true" Radius="6" />
     <tag Name="BleedLiquid" Value="lava-1000" />
     <tag Name="BleedColor" Value="&amp;R" />
-    <tag Name="BleedPrefix" Value="{{R|magmatic}}" />
   </object>
   <object Name="Reef Hermit" Inherits="BaseHumanoid">
     <part Name="Render" Tile="creatures/sw_reef_hermit.bmp" DisplayName="reef hermit" RenderString="h" ColorString="&amp;r" TileColor="&amp;y" DetailColor="r" />
@@ -8755,7 +8748,6 @@ Drifts on the cultural seas have swept a particular fable to your attention. Lon
     <intproperty Name="Bleeds" Value="1" />
     <tag Name="BleedLiquid" Value="oil-1000" />
     <tag Name="BleedColor" Value="&amp;K" />
-    <tag Name="BleedPrefix" Value="{{K|oily}}" />
     <tag Name="DeathSounds" Value="Sounds/Creatures/VO/sfx_robot_generic_vo_die" />
     <tag Name="DynamicObjectsTable:MoonStair_Creatures" />
     <tag Name="NonMutant" />
@@ -8963,7 +8955,6 @@ Drifts on the cultural seas have swept a particular fable to your attention. Lon
     <stat Name="HeatResistance" Value="100" />
 		<tag Name="BleedLiquid" Value="lava-1000" />
 		<tag Name="BleedColor" Value="&amp;R" />
-		<tag Name="BleedPrefix" Value="{{R|magmatic}}" />
     <part Name="PrefabImposter" Prefab="Prefabs/Particles/MagmaCrabFlames" />
 		<tag Name="Gigantic" />
   </object>
@@ -9186,7 +9177,6 @@ Drifts on the cultural seas have swept a particular fable to your attention. Lon
 		<part Name="LiquidBurst" EelChance="0" Liquid="DilutedWarmStaticPuddle" />
 		<tag Name="BleedLiquid" Value="warmstatic-1000,water-500" />
 		<tag Name="BleedColor" Value="&amp;Y" />
-		<tag Name="BleedPrefix" Value="{{Y|entropic}}" />
 		<tag Name="DynamicObjectsTable:MoonStair_Creatures" />
 	</object>
 	<object Name="Entropic Pseudopod" Inherits="Base Pseudopod">
@@ -9999,7 +9989,6 @@ Drifts on the cultural seas have swept a particular fable to your attention. Lon
     <tag Name="Role" Value="Tank" />
 		<tag Name="BleedLiquid" Value="proteangunk-1000" />
 		<tag Name="BleedColor" Value="&amp;c" />
-		<tag Name="BleedPrefix" Value="{{c|soupy}}" />
 		<tag Name="Slimewalking" />
     <mutation Name="MentalMirror" />
     <tag Name="BaseObject" Value="*noinherit" />
