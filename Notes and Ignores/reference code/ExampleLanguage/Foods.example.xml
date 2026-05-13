@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.22
+Caves of Qud - Generated Localizable XML 2.0.212.23
 
 <objects ExcludeFromCorpusGeneration="Key">
 
@@ -24,6 +24,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.22
 <objects Lang="example" Encoding="utf-8">
   <object Name="Preservable" Load="Merge">
     <part Name="Description" Short="" />
+    <tag Name="CustomStackerDisplay" Value="▶{{y|[{{C|=number=}} =number.pluralize:serving=]}}" />
     <xtagGrammar iArticle="▶some" adjunctNoun="▶portion" massNoun="▶true" />
   </object>
   <object Name="Raw Meat" Load="Merge">

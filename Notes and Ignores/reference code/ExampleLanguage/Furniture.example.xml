@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.22
+Caves of Qud - Generated Localizable XML 2.0.212.23
 
 <objects ExcludeFromCorpusGeneration="Key">
 
@@ -522,7 +522,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.22
   <object Name="GritGateChromeBeacon" Load="Merge">
     <part Name="Render" DisplayName="▶chromeling signal relay" />
     <part Name="Description" Short="▶Sine waves breaking on the glass lune encode the behavioral primitives of the enclave's mechanical children. The electron field sucks them through the antenna and into the aether." />
-    <part Name="ZoneAdjust" NameForStatus="▶SignalGenerator" />
+    <part Name="ZoneAdjust" NoAdjustSpecFailureDescription="▶NeedsSignalTemplate" NameForStatus="▶SignalGenerator" />
   </object>
   <object Name="Reclamation Cist" Load="Merge">
     <part Name="Render" DisplayName="▶{{r|reclamation cist}}" />
@@ -1405,6 +1405,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.22
   </object>
   <object Name="JoppaReshephShrine" Load="Merge">
     <part Name="Render" DisplayName="▶shrine to Resheph" />
+    <part Name="Epithets" Primary="▶, the Last Sultan" />
     <part Name="ZoneLandmarkObject" Preposition="▶by" />
     <tag Name="WorshippedAs" Value="▶Resheph" />
   </object>

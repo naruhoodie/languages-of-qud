@@ -1099,7 +1099,78 @@
     <tag Name="DishNames" Value="rotted" />
   </object>
 
-  <!-- Random test objects used by VariableReplacer tests -->
+
+    <!--
+  
+      *****************************
+         Bit names for Tinkering
+      *****************************
+  
+    -->
+    
+<object Name="BitType_0_R_Data" Inherits="DataBucket">
+    <tag Name="DisplayName" Value="{{R|scrap power systems}}" />
+    <tag Name="DisplayCharacter" Value="A" />
+    <tag Name="DisplayColor" Value="R" />
+</object>
+<object Name="BitType_0_G_Data" Inherits="DataBucket">
+    <tag Name="DisplayName" Value="{{G|scrap crystal}}" />
+    <tag Name="DisplayCharacter" Value="B" />
+    <tag Name="DisplayColor" Value="G" />
+</object>
+<object Name="BitType_0_B_Data" Inherits="DataBucket">
+    <tag Name="DisplayName" Value="{{B|scrap metal}}" />
+    <tag Name="DisplayCharacter" Value="C" />
+    <tag Name="DisplayColor" Value="B" />
+</object>
+<object Name="BitType_0_C_Data" Inherits="DataBucket">
+    <tag Name="DisplayName" Value="{{C|scrap electronics}}" />
+    <tag Name="DisplayCharacter" Value="D" />
+    <tag Name="DisplayColor" Value="C" />
+</object>
+<object Name="BitType_1_r_Data" Inherits="DataBucket">
+    <tag Name="DisplayName" Value="{{r|phasic power systems}}" />
+    <tag Name="DisplayCharacter" Value="1" />
+    <tag Name="DisplayColor" Value="r" />
+</object>
+<object Name="BitType_2_g_Data" Inherits="DataBucket">
+    <tag Name="DisplayName" Value="{{g|flawless crystal}}" />
+    <tag Name="DisplayCharacter" Value="2" />
+    <tag Name="DisplayColor" Value="g" />
+</object>
+<object Name="BitType_3_b_Data" Inherits="DataBucket">
+    <tag Name="DisplayName" Value="{{b|pure alloy}}" />
+    <tag Name="DisplayCharacter" Value="3" />
+    <tag Name="DisplayColor" Value="b" />
+</object>
+<object Name="BitType_4_c_Data" Inherits="DataBucket">
+    <tag Name="DisplayName" Value="{{c|pristine electronics}}" />
+    <tag Name="DisplayCharacter" Value="4" />
+    <tag Name="DisplayColor" Value="c" />
+</object>
+<object Name="BitType_5_K_Data" Inherits="DataBucket">
+    <tag Name="DisplayName" Value="{{K|nanomaterials}}" />
+    <tag Name="DisplayCharacter" Value="5" />
+    <tag Name="DisplayColor" Value="K" />
+</object>
+<object Name="BitType_6_W_Data" Inherits="DataBucket">
+    <tag Name="DisplayName" Value="{{W|photonics}}" />
+    <tag Name="DisplayCharacter" Value="6" />
+    <tag Name="DisplayColor" Value="W" />
+</object>
+<object Name="BitType_7_Y_Data" Inherits="DataBucket">
+    <tag Name="DisplayName" Value="{{Y|AI microcontrollers}}" />
+    <tag Name="DisplayCharacter" Value="7" />
+    <tag Name="DisplayColor" Value="Y" />
+</object>
+<object Name="BitType_8_M_Data" Inherits="DataBucket">
+    <tag Name="DisplayName" Value="{{M|metacrystal}}" />
+    <tag Name="DisplayCharacter" Value="8" />
+    <tag Name="DisplayColor" Value="M" />
+</object>
+
+
+    <!-- Random test objects used by VariableReplacer tests -->
   <object Name="Test_20 Chem Cells" Inherits="Chem Cell">
     <tag Name="ExcludeFromDynamicEncounters" />
     <part Name="Stacker" StackCount="20" />
@@ -1109,6 +1180,11 @@
   <object Name="Test_WineWaterskin" Inherits="WineWaterskin">
     <tag Name="ExcludeFromDynamicEncounters" />
     <part Name="LiquidVolume" StartVolume="37" />
+  </object>
+
+  <object Name="Broken Fixit Spray" Inherits="Fixit Spray">
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <part Name="SpawnWithEffect" Effect="Broken" />
   </object>
 
 </objects>

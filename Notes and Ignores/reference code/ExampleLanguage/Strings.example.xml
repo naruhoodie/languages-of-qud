@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud code extracted string table. 2.0.212.22
+Caves of Qud code extracted string table. 2.0.212.23
 
 Comments should be deleted when copied to a new translation table, but are provided to
 help find the usage of the string in the base source code.
@@ -207,6 +207,22 @@ alone if no match found.
   <string Context="Keybind Screen Box - no key bound" ID="{{c|None}}">▶{{c|None}}</string>
   <string Context="Keybind Screen Box - waiting press - console" ID="{{R|...}}">▶{{R|...}}</string>
   <string Context="Keybind Screen Box - waiting press" ID="{{R|press key...}}">▶{{R|press key...}}</string>
+  <string Context="KeybindRow No Binds" ID="{{K|None}}">▶{{K|None}}</string>
+  <string Context="KeybindRow Category Collapser" ID="{{C|=expand.expanded=}}">▶{{C|=expand.expanded=}}</string>
+  <string Context="KeybindsScreen Exit SaveYourChanges" ID="Would you like to save your changes?">▶Would you like to save your changes?</string>
+  <string Context="KeybindsScreen HandleMenuOption OverwriteYourBindingsWithDefault" ID="Are you sure you want to override your bindings with the default?">▶Are you sure you want to override your bindings with the default?</string>
+  <string Context="KeybindsScreen HandleMenuOption CannotRemoveLastBinding" ID="Can not remove the last binding for =command|color:C=.">▶Can not remove the last binding for =command|color:C=.</string>
+  <string Context="KeybindsScreen ConfirmClearTheBinding" ID="Are you sure you want to clear the binding for =description|color:C=?">▶Are you sure you want to clear the binding for =description|color:C=?</string>
+  <string Context="KeybindsScreen RemoveBind MenuOption" ID="Remove Keybind">▶Remove Keybind</string>
+  <string Context="KeybindsScreen Restore Defaults" ID="Restore Defaults">▶Restore Defaults</string>
+  <string Context="KeybindsScreen InputDevice Keyboard" ID="Keyboard &amp;&amp; Mouse">▶Keyboard &amp;&amp; Mouse</string>
+  <string Context="KeybindsScreen InputDevice Gamepad" ID="Gamepad">▶Gamepad</string>
+  <string Context="KeybindsScreen Select Controller" ID="Select Controller">▶Select Controller</string>
+  <string Context="KeybindsScreen ConfirmConflictBind" ID="=description|color:W= is already bound to =conflicting.andList=.&#xA;&#xA;Do you want to bind it to =newcommand|color:C= instead?" Value="▶=description|color:W= is already bound to =conflicting.andList=.&#xA;&#xA;Do you want to bind it to =newcommand|color:C= instead?" />
+  <string Context="KeybindsScreen ConfirmDynamicConflictBind" ID="=description|color:W= is already bound to =conflicting.andList=.&#xA;&#xA;Do you want to bind it to =newcommand|color:C= anyway?" Value="▶=description|color:W= is already bound to =conflicting.andList=.&#xA;&#xA;Do you want to bind it to =newcommand|color:C= anyway?" />
+  <string Context="KeybindsScreen RequiredConflictBind" ID="=description|color:W= is already bound to =commandname|color:C=.  This is a required bind and can't be removed.&#xA;&#xA;Choose a new bind for =commandname|color:C= first, and then rebind =description|color:W=." Value="▶=description|color:W= is already bound to =commandname|color:C=.  This is a required bind and can't be removed.&#xA;&#xA;Choose a new bind for =commandname|color:C= first, and then rebind =description|color:W=." />
+  <string Context="KeybindsScreen QueryKeyBinds Configuring Keyboard-and-Mouse" ID="{{C|Configuring Controller:}} {{c|Keyboard &amp;&amp; Mouse}}">▶{{C|Configuring Controller:}} {{c|Keyboard &amp;&amp; Mouse}}</string>
+  <string Context="KeybindsScreen QueryKeyBinds Configuring Controller" ID="{{C|Configuring Controller:}} {{c|=gamepadname=}}">▶{{C|Configuring Controller:}} {{c|=gamepadname=}}</string>
   <string Context="MainMenu Main" ID="New Game">▶New Game</string>
   <string Context="MainMenu Main" ID="Continue">▶Continue</string>
   <string Context="MainMenu Main" ID="Records">▶Records</string>
@@ -221,35 +237,39 @@ alone if no match found.
   <string Context="MainMenu Language Select Popup Intro" ID="Note: Playing a saved game in a language other than that game's original language will result in partial and incomplete translations.&#xA;&#xA;Changing language requires restart." Value="▶Note: Playing a saved game in a language other than that game's original language will result in partial and incomplete translations.&#xA;&#xA;Changing language requires restart." />
   <string Context="MainMenu Continue Menu Popup older save" ID="That save file looks like it's from an older save format revision (=gameVersion=). Sorry!&#xA;&#xA;You can probably change to a previous branch in your game client and get it to load if you want to finish it off." Value="▶That save file looks like it's from an older save format revision (=gameVersion=). Sorry!&#xA;&#xA;You can probably change to a previous branch in your game client and get it to load if you want to finish it off." />
   <string Context="MainMenu Quit Popup" ID="Are you sure you want to quit?">▶Are you sure you want to quit?</string>
-  <string Context="PickGameObjectLine categoryExpandOptions Expand" ID="Expand">▶Expand</string>
-  <string Context="PickGameObjectLine categoryCollapseOptions Collapse" ID="Collapse">▶Collapse</string>
-  <string Context="PickGameObjectLine itemOptions Select" ID="Select">▶Select</string>
+  <string Context="OptionsCategoryControl category expanded" ID="=expand.expanded=">▶=expand.expanded=</string>
+  <string Context="OptionsCheckboxControl Toggle Option" ID="Toggle Option">▶Toggle Option</string>
+  <string Context="OptionsCheckboxControl checkbox control wasSelectedTrue" ID="{{=checkcolor=|=checked.checkbox.basic=}} {{W|=title=}}">▶{{=checkcolor=|=checked.checkbox.basic=}} {{W|=title=}}</string>
+  <string Context="OptionsCheckboxControl checkbox control wasSelectedFalse" ID="=checked.checkbox.basic= =title=">▶=checked.checkbox.basic= =title=</string>
+  <string Context="OptionsScreen PopupTitle" ID="Option: =selectedoptiontitlefield=">▶Option: =selectedoptiontitlefield=</string>
+  <string Context="OptionsScreen Help" ID="Help">▶Help</string>
+  <string Context="OptionsSliderControl Change Value" ID="Change Value">▶Change Value</string>
+  <string Context="OptionsSliderControl Arrows Change Value" ID="Change Value">▶Change Value</string>
+  <string Context="OptionsSliderControl Save Value" ID="Save">▶Save</string>
+  <string Context="OptionsSliderControl Cancel Value" ID="Cancel">▶Cancel</string>
   <string Context="PickGameObjectLine CategoryExpanderAndName" ID="=expand.expanded= =category|color:K=">▶=expand.expanded= =category|color:K=</string>
   <string Context="PickGameObjectLine OwnedByYou" ID="{{G|[owned by you]}}">▶{{G|[owned by you]}}</string>
   <string Context="PickGameObjectScreen sort mode setting" ID="Sort Mode: =modes.textSelector#selected=">▶Sort Mode: =modes.textSelector#selected=</string>
-  <string Context="PickGameObjectScreen SortMode az" ID="a-z">▶a-z</string>
-  <string Context="PickGameObjectScreen SortMode category" ID="by class">▶by class</string>
-  <string Context="PickGameObjectScreen TakeAll Desc" ID="take all">▶take all</string>
-  <string Context="PickGameObjectScreen StoreItems Desc" ID="store an item">▶store an item</string>
-  <string Context="PickGameObjectScreen DefaultMenu Close" ID="Close Menu">▶Close Menu</string>
-  <string Context="PickGameObjectScreen GetItemMenu Close" ID="Close Menu">▶Close Menu</string>
+  <string Context="PickGameObjectScreen SortMode az" ID="A-Z">▶A-Z</string>
+  <string Context="PickGameObjectScreen SortMode category" ID="By Class">▶By Class</string>
+  <string Context="PickGameObjectScreen TakeAll Desc" ID="Take All">▶Take All</string>
+  <string Context="PickGameObjectScreen StoreItems Desc" ID="Store an Item">▶Store an Item</string>
   <string Context="SaveManagement Screen Title" ID="{{W|LOAD GAME}}">▶{{W|LOAD GAME}}</string>
   <string Context="SaveManagment - Incompatible Version Update (older version)" ID="That save file looks like it's from an older save format revision (=gameVersion=). Sorry!&#xA;&#xA;You can probably change to a previous branch in your game client and get it to load if you want to finish it off." Value="▶That save file looks like it's from an older save format revision (=gameVersion=). Sorry!&#xA;&#xA;You can probably change to a previous branch in your game client and get it to load if you want to finish it off." />
   <string Context="SaveManagment - Delete Game Popup Title" ID="{{R|Delete =gameName=}}">▶{{R|Delete =gameName=}}</string>
   <string Context="SaveManagment - Delete Game Popup Message" ID="Are you sure you want to delete the save game for =gameName=?">▶Are you sure you want to delete the save game for =gameName=?</string>
   <string Context="SaveManagment - Deleted Game Popup" ID="Game Deleted!">▶Game Deleted!</string>
-  <string Context="SaveManagement Menu Option" ID="select">▶select</string>
-  <string Context="SaveManagement Menu Option" ID="delete">▶delete</string>
   <string Context="SaveManagementRow - Line 1" ID="=gameName= :: =description=">▶=gameName= :: =description=</string>
   <string Context="SaveManagementRow - Line 2" ID="{{C|Location:}} =location=">▶{{C|Location:}} =location=</string>
   <string Context="SaveManagementRow - Line 3" ID="{{C|Last saved:}} =saveTime=">▶{{C|Last saved:}} =saveTime=</string>
   <string Context="SaveManagementRow - Line 4" ID="{{K|=size= =gameID=}}">▶{{K|=size= =gameID=}}</string>
   <string Context="CharacterAttributeLine modifiertext" ID="{{=color=|[=value.signed=]}}">▶{{=color=|[=value.signed=]}}</string>
-  <string Context="CharacterMutationLine mutation level" ID="=mutation|color:y= {{=levelcolor=|=level=}}">▶=mutation|color:y= {{=levelcolor=|=level=}}</string>
+  <string Context="CharacterMutationLine mutation no level" ID="{{y|=mutation.name:withAnnotations=}}">▶{{y|=mutation.name:withAnnotations=}}</string>
+  <string Context="CharacterMutationLine mutation with level" ID="{{y|=mutation.name:withAnnotations= ({{=levelcolor=|=mutation.level=}})}}">▶{{y|=mutation.name:withAnnotations= ({{=levelcolor=|=mutation.level=}})}}</string>
   <string Context="Character Status Screen Tab Name (Short)" ID="Attributes">▶Attributes</string>
   <string Context="Character Status Screen Tab Name (Long)" ID="Attributes &amp;&amp; Powers">▶Attributes &amp;&amp; Powers</string>
   <string Context="CharacterStatusScreen classtext line" ID="=subject.genotype.name= =subject.subtype.name=">▶=subject.genotype.name= =subject.subtype.name=</string>
-  <string Context="CharacterStatusScreen stats line level hp xp weight" ID="Level: =level= ¯ HP: =hp=/=hpfull= ¯ XP: =xp=/=xpnextlevel= ¯ Weight: =weight=#">▶Level: =level= ¯ HP: =hp=/=hpfull= ¯ XP: =xp=/=xpnextlevel= ¯ Weight: =weight=#</string>
+  <string Context="CharacterStatusScreen stats line level hp xp weight" ID="Level: =level= » HP: =hp=/=hpfull= » XP: =xp=/=xpnextlevel= » Weight: =weight=#">▶Level: =level= » HP: =hp=/=hpfull= » XP: =xp=/=xpnextlevel= » Weight: =weight=#</string>
   <string Context="CharacterStatusScreen attribute points" ID="Attribute Points: {{=color=|=ap=}}">▶Attribute Points: {{=color=|=ap=}}</string>
   <string Context="CharacterStatusScreen mutation points short" ID="MP: {{=color=|=mp=}}">▶MP: {{=color=|=mp=}}</string>
   <string Context="CharacterStatusScreen mutation points long" ID="=subject.mutationTerm|initUpper= Points: {{=color=|=mp=}}">▶=subject.mutationTerm|initUpper= Points: {{=color=|=mp=}}</string>
@@ -264,23 +284,18 @@ alone if no match found.
   <string Context="CharacterStatusScreen highlight cp" ID="Your {{W|Compute Power (CP)}} scales the bonuses of certain compute-enabled items and cybernetic implants. Your base compute power is 0.">▶Your {{W|Compute Power (CP)}} scales the bonuses of certain compute-enabled items and cybernetic implants. Your base compute power is 0.</string>
   <string Context="CharacterStatusScreen Statistic HelpText BaseValue" ID="Your base =statName= is =statValue=.">▶Your base =statName= is =statValue=.</string>
   <string Context="CharacterStatusScreen Show Effects description" ID="Show Effects">▶Show Effects</string>
-  <string Context="CharacterStatusScreen Buy Mutation description" ID="Buy =player.MutationTerm=">▶Buy =player.MutationTerm=</string>
+  <string Context="CharacterStatusScreen Buy Mutation description" ID="Buy =subject.MutationTerm=">▶Buy =subject.MutationTerm=</string>
   <string Context="CharacterStatusScreen Attributes Short" ID="ATTRIBUTES">▶ATTRIBUTES</string>
   <string Context="CharacterStatusScreen Attributes Long" ID="MAIN ATTRIBUTES">▶MAIN ATTRIBUTES</string>
-  <string Context="FactionsLine MenuOption Expand" ID="Expand">▶Expand</string>
-  <string Context="FactionsLine MenuOption Collapse" ID="Collapse">▶Collapse</string>
   <string Context="FactionsLine expander" ID="=expand.expanded|color:C=">▶=expand.expanded|color:C=</string>
   <string Context="FactionsLine reputation" ID="Reputation: =reputation=">▶Reputation: =reputation=</string>
   <string Context="FactionsLine middle box text" ID="=rank|spaceAfter==pet|spaceAfter==holy=">▶=rank|spaceAfter==pet|spaceAfter==holy=</string>
   <string Context="Character Status Screen Tab Name (Short)" ID="Reputation">▶Reputation</string>
   <string Context="Character Status Screen Tab Name (Long)" ID="Reputation">▶Reputation</string>
   <string Context="FactionStatusScreen SortMode Title" ID="Sort By">▶Sort By</string>
-  <string Context="FactionsStatusScreen expand all" ID="Expand All">▶Expand All</string>
-  <string Context="FactionsStatusScreen collapse all" ID="Collapse All">▶Collapse All</string>
   <string Context="FactionsStatusScreen sort options" ID="Sort Options">▶Sort Options</string>
-  <string Context="FactionsStatusScreen filter" ID="Filter">▶Filter</string>
-  <string Context="FactionStatusScreen sort mode name highrep" ID="Highest reputation">▶Highest reputation</string>
-  <string Context="FactionStatusScreen sort mode name lowrep" ID="Lowest reputation">▶Lowest reputation</string>
+  <string Context="FactionStatusScreen sort mode name highrep" ID="Highest Reputation">▶Highest Reputation</string>
+  <string Context="FactionStatusScreen sort mode name lowrep" ID="Lowest Reputation">▶Lowest Reputation</string>
   <string Context="FactionStatusScreen sort mode name alphabetical" ID="Alphabetical">▶Alphabetical</string>
   <string Context="EquipmentLine primary hand glyph" ID="{{G|*}}">▶{{G|*}}</string>
   <string Context="Character Status Screen Tab Name (Short)" ID="Eq">▶Eq</string>
@@ -323,7 +338,6 @@ alone if no match found.
   <string Context="JournalStatusScreen History Of Sultan Category Label" ID="{{W|HISTORY OF =sultan|upper=}}">▶{{W|HISTORY OF =sultan|upper=}}</string>
   <string Context="JournslStatusScreen no entries text" ID=" No entries found." Value="▶ No entries found." />
   <string Context="JournalStatusScreen CMD_INSERT Button Add" ID="Add">▶Add</string>
-  <string Context="JournalStatusScreen CMD_DELETE Button Delete" ID="Delete">▶Delete</string>
   <string Context="JournalSultanStatusLine category expander" ID="=expand.expanded= =category=">▶=expand.expanded= =category=</string>
   <string Context="JournalSultanStatusLine tradeable status line" ID="{{=tradeablecolor=|$}} =journalline=">▶{{=tradeablecolor=|$}} =journalline=</string>
   <string Context="Character Status Screen Tab Name (Short)" ID="Log">▶Log</string>
@@ -359,11 +373,10 @@ alone if no match found.
   <string Context="Skill UI Stat Header" ID="{{K|{{g|=str=}}: {{g|=go.str=}} ■ {{g|=agi=}}: {{g|=go.agi=}} ■ {{g|=tou=}}: {{g|=go.tou=}} ■ {{g|=int=}}: {{g|=go.int=}} ■ {{g|=wil=}}: {{g|=go.wil=}} ■ {{g|=ego=}}: {{g|=go.ego=}}}}">▶{{K|{{g|=str=}}: {{g|=go.str=}} ■ {{g|=agi=}}: {{g|=go.agi=}} ■ {{g|=tou=}}: {{g|=go.tou=}} ■ {{g|=int=}}: {{g|=go.int=}} ■ {{g|=wil=}}: {{g|=go.wil=}} ■ {{g|=ego=}}: {{g|=go.ego=}}}}</string>
   <string Context="Skill UI SP Available" ID="Skill Points (SP): {{C|=go.sp=}}">▶Skill Points (SP): {{C|=go.sp=}}</string>
   <string Context="Skill UI Required Skills Label" ID="[REQUIRED SKILLS]">▶[REQUIRED SKILLS]</string>
-  <string Context="StatusScreens Base - Set Filter key command description" ID="Filter">▶Filter</string>
   <string Context="StatusScreens - Base Accept button" ID="Accept">▶Accept</string>
   <string Context="TinkeringDetailsLine Cost" ID="=tinkerable.cost=">▶=tinkerable.cost=</string>
   <string Context="TinkeringDetails ModCostRules" ID="{{rules|=description=}}">▶{{rules|=description=}}</string>
-  <string Context="TinkeringLine NoSchematics" ID="{{K|You don't have any schematics.}})">▶{{K|You don't have any schematics.}})</string>
+  <string Context="TinkeringLine NoSchematics" ID="{{K|You don't have any schematics.}}">▶{{K|You don't have any schematics.}}</string>
   <string Context="TinkeringLine Category and Expander" ID="=expand.expanded= =category= [=count=]">▶=expand.expanded= =category= [=count=]</string>
   <string Context="TinkeringLine BuildDisplayNameAndCost" ID="=name= [=coststring=]">▶=name= [=coststring=]</string>
   <string Context="TinkeringLine Mods NoApplicableItems" ID="&lt;no applicable items&gt;">▶&lt;no applicable items&gt;</string>
@@ -371,25 +384,19 @@ alone if no match found.
   <string Context="Character Status Screen Tab Name (Long)" ID="Tinkering">▶Tinkering</string>
   <string Context="TinkeringStatusScreen SwitchToMods" ID="{{hotkey||[=commandKey:Toggle|strip=]}} switch to modifications">▶{{hotkey||[=commandKey:Toggle|strip=]}} switch to modifications</string>
   <string Context="TinkeringStatusScreen SwitchToBuild" ID="{{hotkey||[=commandKey:Toggle|strip=]}} switch to build">▶{{hotkey||[=commandKey:Toggle|strip=]}} switch to build</string>
-  <string Context="TradeLine expand options accept" ID="Expand">▶Expand</string>
-  <string Context="TradeLine collapse options accept" ID="Collapse">▶Collapse</string>
-  <string Context="TradeLine item options accept" ID="Select">▶Select</string>
   <string Context="TradeLine Category and Collapse" ID="=collapsed.collapsed= =category=">▶=collapsed.collapsed= =category=</string>
   <string Context="TradeWindow left column item" ID="=item.long=">▶=item.long=</string>
   <string Context="TradeWindow right column weight" ID="[{{K|=weight= lbs.}}]">▶[{{K|=weight= lbs.}}]</string>
   <string Context="TradeWindow right column value" ID="[=value:0.00|tradeColor#item=]">▶[=value:0.00|tradeColor#item=]</string>
   <string Context="" ID="Add how many =subject.name= to trade.">▶Add how many =subject.name= to trade.</string>
   <string Context="TradeScreen sort mode setting" ID="Sort Mode: =modes.textSelector#selected=">▶Sort Mode: =modes.textSelector#selected=</string>
-  <string Context="TradeScreen sort name a-z" ID="a-z">▶a-z</string>
-  <string Context="TradeScreen sort name by class" ID="by class">▶by class</string>
-  <string Context="TradeScreen filter command desc" ID="Filter">▶Filter</string>
-  <string Context="TradeScreen toggle sort command desc" ID="toggle sort">▶toggle sort</string>
-  <string Context="TradeScreen offer command desc" ID="offer">▶offer</string>
-  <string Context="TradeScreen add one command desc" ID="add one">▶add one</string>
-  <string Context="TradeScreen remove one command desc" ID="remove one">▶remove one</string>
-  <string Context="TradeScreen toggle all command desc" ID="toggle all">▶toggle all</string>
-  <string Context="TradeScreen vendor actions command desc" ID="vendor actions">▶vendor actions</string>
-  <string Context="TradeScreen menu options navigate desc" ID="navigate">▶navigate</string>
+  <string Context="TradeScreen sort name a-z" ID="A-Z">▶A-Z</string>
+  <string Context="TradeScreen sort name by class" ID="By Class">▶By Class</string>
+  <string Context="TradeScreen offer command desc" ID="Offer">▶Offer</string>
+  <string Context="TradeScreen add one command desc" ID="Add One">▶Add One</string>
+  <string Context="TradeScreen remove one command desc" ID="Remove One">▶Remove One</string>
+  <string Context="TradeScreen toggle all command desc" ID="Toggle All">▶Toggle All</string>
+  <string Context="TradeScreen vendor actions command desc" ID="Vendor Actions">▶Vendor Actions</string>
   <string Context="TradeScreen left side total actively trading drams" ID="{{=price|color:B= drams →}}">▶{{=price|color:B= drams →}}</string>
   <string Context="TradeScreen right side total actively trading drams" ID="← {{=price|color:B= drams}}">▶← {{=price|color:B= drams}}</string>
   <string Context="TradeScreen left side companion weight totals" ID="{{=color=| =currentweight=/=maxweight= lbs.}}">▶{{=color=| =currentweight=/=maxweight= lbs.}}</string>
@@ -404,7 +411,7 @@ alone if no match found.
   <string Context="Ability Bar target descriptors" ID="=descriptors.commaList=">▶=descriptors.commaList=</string>
   <string Context="Ability Bar no target message" ID="{{K|TARGET: [none]}}">▶{{K|TARGET: [none]}}</string>
   <string Context="AbilityBar AbilityName" ID="{{=color=|=ability=}}">▶{{=color=|=ability=}}</string>
-  <string ID="AbilityBar disabled tag">▶AbilityBar disabled tag</string>
+  <string Context="AbilityBar disabled tag" ID="{{K|[disabled]}}">▶{{K|[disabled]}}</string>
   <string Context="AbilityBar cooldownrounds tag" ID="{{C|[=number.toString=]}}">▶{{C|[=number.toString=]}}</string>
   <string Context="AbilityBar ToggleState tag on" ID="{{K|[{{g|on}}]}}">▶{{K|[{{g|on}}]}}</string>
   <string Context="AbilityBar ToggleState tag off" ID="{{K|[{{y|off}}]}}">▶{{K|[{{y|off}}]}}</string>
@@ -953,7 +960,7 @@ alone if no match found.
   <string Context="Chargen CustomizeCharacter Breadcrumb" ID="Customize">▶Customize</string>
   <string Context="Chargen Cybernetics Description" ID="=blueprint.displayName= (=slot=)">▶=blueprint.displayName= (=slot=)</string>
   <string Context="Chargen Cybernetics Long Description Default" ID="{{C|-2 License Tier&#xA;+1 Toughness}}" Value="▶{{C|-2 License Tier&#xA;+1 Toughness}}" />
-  <string Context="Chargen Cybernetics Long Description" ID="=blueprint.description.short=&#xA;&#xA;{{rules|=blueprint.part:CyberneticsBaseItem:BehaviorDescription=}}" Value="▶=blueprint.description.short=&#xA;&#xA;{{rules|=blueprint.part:CyberneticsBaseItem:BehaviorDescription=}}" />
+  <string Context="Chargen Cybernetics Long Description" ID="=blueprint.description.very.short=&#xA;&#xA;{{rules|=blueprint.part:CyberneticsBaseItem:BehaviorDescription=}}" Value="▶=blueprint.description.very.short=&#xA;&#xA;{{rules|=blueprint.part:CyberneticsBaseItem:BehaviorDescription=}}" />
   <string Context="Chargen Cybernetics DataError Invalid" ID="Invalid choice selected">▶Invalid choice selected</string>
   <string Context="Chargen Cybernetics SummaryBlockData Title" ID="Cybernetics">▶Cybernetics</string>
   <string Context="Chargen Cybernetics Menu Title" ID="Cybernetics">▶Cybernetics</string>
@@ -1006,6 +1013,7 @@ alone if no match found.
   <string Context="GameMain save file newer format" ID="That save file looks like it's from a newer save format revision (=version=).&#xA;&#xA;You can probably change to a newer branch in your game client and get it to load if you want to finish it off." Value="▶That save file looks like it's from a newer save format revision (=version=).&#xA;&#xA;You can probably change to a newer branch in your game client and get it to load if you want to finish it off." />
   <string Context="GameMain fatal exception while saving" ID="There was a fatal exception attempting to save your game. Caves of Qud attempted to recover your prior save. You probably want to close the game and reload your most recent save. It'd be helpful to send the save and logs to support@freeholdgames.com">▶There was a fatal exception attempting to save your game. Caves of Qud attempted to recover your prior save. You probably want to close the game and reload your most recent save. It'd be helpful to send the save and logs to support@freeholdgames.com</string>
   <string Context="Naming Expand Property Spice" ID="=spice#query|title=">▶=spice#query|title=</string>
+  <string Context="NameStyle Naming.xml Format" ID="=name|nameStyle#format=">▶=name|nameStyle#format=</string>
   <string Context="Naming.xml Loading Status Bar" ID="Loading Naming.xml">▶Loading Naming.xml</string>
   <string Context="OngoingAction/autoActDescription (verb gerund)" ID="acting">▶acting</string>
   <string Context="direction.expanded (N)" ID="north">▶north</string>
@@ -1139,9 +1147,18 @@ alone if no match found.
   <string Context="Chargen Subtype Stat Minimum Info" ID="=glyph:ChargenBullet= minimum =min= =stat.statDisplayName=">▶=glyph:ChargenBullet= minimum =min= =stat.statDisplayName=</string>
   <string Context="Chargen Subtype Stat Maximum Info" ID="=glyph:ChargenBullet= maximum =max= =stat.statDisplayName=">▶=glyph:ChargenBullet= maximum =max= =stat.statDisplayName=</string>
   <string Context="Chargen Subtype Stat Bonus Info" ID="=glyph:ChargenBullet= =bonus.signed= =stat.statDisplayName=">▶=glyph:ChargenBullet= =bonus.signed= =stat.statDisplayName=</string>
-  <string Context="CommonUIStrings MenuOption Navigate" ID="navigate">▶navigate</string>
-  <string Context="CommonUIStrings MenuOption Select" ID="select">▶select</string>
-  <string Context="CommonUIStrings MenuOption Quit" ID="quit">▶quit</string>
+  <string Context="CommonUIStrings MenuOption Navigate" ID="Navigate">▶Navigate</string>
+  <string Context="CommonUIStrings MenuOption Select" ID="Select">▶Select</string>
+  <string Context="CommonUIStrings MenuOption Quit" ID="Quit">▶Quit</string>
+  <string Context="CommonUIStrings MenuOption Filter" ID="Filter">▶Filter</string>
+  <string Context="CommonUIStrings MenuOption Collapse" ID="Collapse">▶Collapse</string>
+  <string Context="CommonUIStrings MenuOption Expand" ID="Expand">▶Expand</string>
+  <string Context="CommonUIStrings MenuOption CollapseAll" ID="Collapse All">▶Collapse All</string>
+  <string Context="CommonUIStrings MenuOption ExpandAll" ID="Expand All">▶Expand All</string>
+  <string Context="CommonUIStrings MenuOption ToggleVisibility" ID="Toggle Visibility">▶Toggle Visibility</string>
+  <string Context="CommonUIStrings MenuOption CloseMenu" ID="Close Menu">▶Close Menu</string>
+  <string Context="CommonUIStrings MenuOption ToggleSort" ID="Toggle Sort">▶Toggle Sort</string>
+  <string Context="CommonUIStrings MenuOption Delete" ID="Delete">▶Delete</string>
   <string Context="XRLUITradeUI Trade Sides Drams" ID=" {{C|=total1:0.???=}} drams &lt;-&gt; {{C|=total2:0.???=}} drams ── {{W|$=freeDrams=}} " Value="▶ {{C|=total1:0.???=}} drams &lt;-&gt; {{C|=total2:0.???=}} drams ── {{W|$=freeDrams=}} " />
   <string Context="XRLUITradeUI Trade" ID="trade">▶trade</string>
   <string Context="XRLUITradeUI Transfer" ID="transfer">▶transfer</string>
@@ -1149,15 +1166,25 @@ alone if no match found.
   <string Context="XRLUITradeUI Engaged" ID="=trader.T= =trader.is= engaged in melee combat and =trader.is= too busy to trade with you.">▶=trader.T= =trader.is= engaged in melee combat and =trader.is= too busy to trade with you.</string>
   <string Context="XRLUITradeUI IsAflame" ID="=trader.T= =trader.is= on fire and =trader.is= too busy to trade with you.">▶=trader.T= =trader.is= on fire and =trader.is= too busy to trade with you.</string>
   <string Context="XRLUITradeUI WillNot Until Pay None" ID="=trader.T= will not trade with you until you pay =trader.them= the {{C|=owed=}} =owed.pluralize:dram= of {{B|fresh water}} you owe =trader.them=.">▶=trader.T= will not trade with you until you pay =trader.them= the {{C|=owed=}} =owed.pluralize:dram= of {{B|fresh water}} you owe =trader.them=.</string>
-  <string Context="XRLUITradeUI WillNot Until Pay Some" ID="=trader.T= will not trade with you until you pay =trader.them= the {{C|=owed=}} =owed.pluralize:dram= of {{B|fresh water}} you owe =trader.them=. Do you want to give =trader.them= your {{C|=avail=}} =avail.pluralize:dram= now?">▶=trader.T= will not trade with you until you pay =trader.them= the {{C|=owed=}} =owed.pluralize:dram= of {{B|fresh water}} you owe =trader.them=. Do you want to give =trader.them= your {{C|=avail=}} =avail.pluralize:dram= now?</string>
+  <string Context="XRLUITradeUI WillNot Until Pay Some" ID="=trader.T= will not trade with you until you pay =trader.them= the {{C|=owed=}} =owed.pluralize:dram= of {{B|fresh water}} you owe =trader.them=. Do you want to give =trader.them= your {{C|=available=}} =available.pluralize:dram= now?">▶=trader.T= will not trade with you until you pay =trader.them= the {{C|=owed=}} =owed.pluralize:dram= of {{B|fresh water}} you owe =trader.them=. Do you want to give =trader.them= your {{C|=available=}} =available.pluralize:dram= now?</string>
   <string Context="XRLUITradeUI WillNot Until Pay All" ID="=trader.T= will not trade with you until you pay =trader.them= the {{C|=owed=}} =owed.pluralize:dram= of {{B|fresh water}} you owe =trader.them=. Do you want to give it to =trader.them= now?">▶=trader.T= will not trade with you until you pay =trader.them= the {{C|=owed=}} =owed.pluralize:dram= of {{B|fresh water}} you owe =trader.them=. Do you want to give it to =trader.them= now?</string>
-  <string Context="XRLUITradeUI nothing to trade popup" ID="=subject.Does:have= nothing to trade.">▶=subject.Does:have= nothing to trade.</string>
+  <string Context="XRLUITradeUI nothing to trade popup" ID="=subject.Does:have|strip= nothing to trade.">▶=subject.Does:have|strip= nothing to trade.</string>
   <string Context="XRLUITradeUI AddRemove" ID="[{{W|=commandKey:CmdTradeAdd=}}/{{W|=commandKey:CmdTradeRemove=}} Add/Remove]">▶[{{W|=commandKey:CmdTradeAdd=}}/{{W|=commandKey:CmdTradeRemove=}} Add/Remove]</string>
   <string Context="XRLUITradeUI Offer" ID="[{{W|=commandKey:CmdTradeOffer=}} Offer]">▶[{{W|=commandKey:CmdTradeOffer=}} Offer]</string>
+  <string Context="TradeUI Name of target inventory - Trader's Inventory" ID="[ =subject.the.name's:withTitles|color:W= inventory ]">▶[ =subject.the.name's:withTitles|color:W= inventory ]</string>
+  <string Context="TradeUI Name of target inventory - non-living container etc" ID="[ =subject.shortname|color:W= ]">▶[ =subject.shortname|color:W= ]</string>
+  <string Context="TradeUI ConsoleUI number selected (gets a color code added to it)" ID="=number=">▶=number=</string>
   <string Context="XRLUITradeUI Owned" ID=" {{G|[owned by you]}}" Value="▶ {{G|[owned by you]}}" />
+  <string Context="TradeUI ConsoleUI SelectedItemInfo LeftPrice" ID="{{=color=|$}}{{C|=price=}}">▶{{=color=|$}}{{C|=price=}}</string>
+  <string Context="TradeUI ConsoleUI SelectedItemInfo Weight and Price" ID="{{K|=weight=#}} {{=color=|$}}{{C|=price=}}">▶{{K|=weight=#}} {{=color=|$}}{{C|=price=}}</string>
+  <string Context="TradeUI ConsoleUI WeightOnly" ID="=weight=#">▶=weight=#</string>
+  <string Context="TradeUI ConsoleUI SelectedItemInfo RightPrice" ID="{{color|$}}{{c|=price=}}">▶{{color|$}}{{c|=price=}}</string>
+  <string Context="TradeUI ConsoleUI CategoryName" ID="[{{y|=category=}}]">▶[{{y|=category=}}]</string>
+  <string Context="TradeUI ConsoleUI SelectedItemInfo RightPrice" ID="{{=color=|$}}{{C|=price=}}">▶{{=color=|$}}{{C|=price=}}</string>
   <string Context="XRLUITradeUI Inventory" ID="[ {{W|Your inventory}} ]">▶[ {{W|Your inventory}} ]</string>
   <string Context="XRLUITradeUI Owned By Someone" ID="{{R|[ owned by someone else ]}}">▶{{R|[ owned by someone else ]}}</string>
   <string Context="XRLUITradeUI Exit" ID="[{{W|=commandKey:Cancel=}} Exit]">▶[{{W|=commandKey:Cancel=}} Exit]</string>
+  <string Context="TradeUI ConsoleUI 0-9 Pick" ID="[{{W|0-9}} Pick]">▶[{{W|0-9}} Pick]</string>
   <string Context="XRLUITradeUI Transfer" ID="[{{W|=commandKey:CmdTradeOffer=}} Transfer]">▶[{{W|=commandKey:CmdTradeOffer=}} Transfer]</string>
   <string Context="XRLUITradeUI Actions" ID="[{{W|=commandKey:CmdVendorActions=}} Actions]">▶[{{W|=commandKey:CmdVendorActions=}} Actions]</string>
   <string Context="XRLUITradeUI Left Drams Value" ID=" {{C|=total:0.???=}} drams " Value="▶ {{C|=total:0.???=}} drams " />
@@ -1180,7 +1207,7 @@ alone if no match found.
   <string Context="XRLUITradeUI NotBroken" ID="=multiple.if:Those items aren't:That item isn't= broken!">▶=multiple.if:Those items aren't:That item isn't= broken!</string>
   <string Context="XRLUITradeUI Pony Up" ID="You pony up =difference= =difference.pluralize:dram= of fresh water to even up the trade">▶You pony up =difference= =difference.pluralize:dram= of fresh water to even up the trade</string>
   <string Context="XRLUITradeUI Have To Pony Up" ID="You'll have to pony up =difference= =difference.pluralize:dram= of fresh water to even up the trade. Agreed?">▶You'll have to pony up =difference= =difference.pluralize:dram= of fresh water to even up the trade. Agreed?</string>
-  <string Context="XRLUITradeUI Pony Up Owe" ID="You pony up =available= =avail.pluralize:dram= of fresh water, and now owe =trader.the.name|strip= =owe= =owe.pluralize:dram=.">▶You pony up =available= =avail.pluralize:dram= of fresh water, and now owe =trader.the.name|strip= =owe= =owe.pluralize:dram=.</string>
+  <string Context="XRLUITradeUI Pony Up Owe" ID="You pony up =available= =available.pluralize:dram= of fresh water, and now owe =trader.the.name|strip= =owe= =owe.pluralize:dram=.">▶You pony up =available= =available.pluralize:dram= of fresh water, and now owe =trader.the.name|strip= =owe= =owe.pluralize:dram=.</string>
   <string Context="XRLUITradeUI Owe" ID="You now owe =trader.t= =owe= =owe.pluralize:dram= of fresh water.">▶You now owe =trader.t= =owe= =owe.pluralize:dram= of fresh water.</string>
   <string Context="XRLUITradeUI Too Poor To Pony Up" ID="You don't have =difference= =difference.pluralize:dram= of fresh water to even up the trade!">▶You don't have =difference= =difference.pluralize:dram= of fresh water to even up the trade!</string>
   <string Context="XRLUITradeUI Trader Pony Up" ID="=trader.t.name|capitalize= =trader.verb:pony= up =give= =give.pluralize:dram= of fresh water to even up the trade.=">▶=trader.t.name|capitalize= =trader.verb:pony= up =give= =give.pluralize:dram= of fresh water to even up the trade.=</string>
@@ -1513,6 +1540,7 @@ alone if no match found.
   <string Context="GetJumpingBehaviorEvent - Default AbilityName" ID="Jump">▶Jump</string>
   <string Context="GetJumpingBehaviorEvent - Default Verb" ID="jump">▶jump</string>
   <string Context="GetMutationTermEvent - Default Term" ID="mutation">▶mutation</string>
+  <string Context="SprintDurationCollector - Duration stat display name" ID="Duration">▶Duration</string>
   <string Context="Faction GetFormattedName *" ID="everyone">▶everyone</string>
   <string Context="Faction Feeling" ID="{{C|=faction.formattedName|capitalize=}} =faction.ifPlural:despise:despises= you. Even docile =faction.ifPlural:ones:members= will attack you.">▶{{C|=faction.formattedName|capitalize=}} =faction.ifPlural:despise:despises= you. Even docile =faction.ifPlural:ones:members= will attack you.</string>
   <string Context="Faction Feeling" ID="{{C|=faction.formattedName|capitalize=}} =faction.ifPlural:dislike:dislikes= you, but docile =faction.ifPlural:ones:members= won't attack you.">▶{{C|=faction.formattedName|capitalize=}} =faction.ifPlural:dislike:dislikes= you, but docile =faction.ifPlural:ones:members= won't attack you.</string>
@@ -1862,7 +1890,7 @@ alone if no match found.
   <string Context="BoostStatistic Effect DisplayName" ID="boosted =stat.name=">▶boosted =stat.name=</string>
   <string Context="BoostStatistic Effect Apply Player Message Log Increase" ID="Your =stat.title= increases.">▶Your =stat.title= increases.</string>
   <string Context="BoostStatistic Effect Apply Player Message Log Decrease" ID="Your =stat.title= decreases.">▶Your =stat.title= decreases.</string>
-  <string Context="BoostStatistic Effect Remove Player Message Log" ID="Your =stat.title= returns to normal">▶Your =stat.title= returns to normal</string>
+  <string Context="BoostStatistic Effect Remove Player Message Log" ID="Your =stat.title= returns to normal.">▶Your =stat.title= returns to normal.</string>
   <string Context="BrainBrineCurse Effect Gain Skill Player Popup" ID="You learn the skill =skill.name|color:C=!">▶You learn the skill =skill.name|color:C=!</string>
   <string Context="BrainBrineCurse Effect Gain Mutation Player Popup" ID="You gained the mutation =mutation.name|color:G=!">▶You gained the mutation =mutation.name|color:G=!</string>
   <string Context="BrainBrineCurse Effect Gain Mutation Fail Player Popup" ID="Your mind begins to morph but the physiology of your brain restricts it.">▶Your mind begins to morph but the physiology of your brain restricts it.</string>
@@ -2007,6 +2035,8 @@ alone if no match found.
   <string Context="Customize pronouns popup 'what'" ID="pronoun set">▶pronoun set</string>
   <string Context="Liquid Glitching - Glitch Skills" ID="=subject.The.name's= mind starts to fluctuate in and out of coherence.">▶=subject.The.name's= mind starts to fluctuate in and out of coherence.</string>
   <string Context="Mods factory - Loading Status Bar" ID="Loading Mods.xml">▶Loading Mods.xml</string>
+  <string Context="Baetyl Leaving - Explode" ID="=subject.The.name==subject.directionIfAny= =subject.does:explode=.">▶=subject.The.name==subject.directionIfAny= =subject.does:explode=.</string>
+  <string Context="Baetyl Leaving - Disappear" ID="=subject.The.name==subject.directionIfAny= =subject.does:disappear=.">▶=subject.The.name==subject.directionIfAny= =subject.does:disappear=.</string>
   <string Context="RandomAltarBaetyl Mod Demand Prefix Name" ID="=number.cardinal= =mod.name= =number.pluralize:item=">▶=number.cardinal= =mod.name= =number.pluralize:item=</string>
   <string Context="RandomAltarBaetyl Mod Demand Suffix Name" ID="=number.cardinal= =number.pluralize:item= =mod.name=">▶=number.cardinal= =number.pluralize:item= =mod.name=</string>
   <string Context="RandomAltarBaetyl Object Demand (more than 1)" ID="=number.cardinal= =object.countable.name:asIfKnown:stripped:plural=">▶=number.cardinal= =object.countable.name:asIfKnown:stripped:plural=</string>
@@ -2042,7 +2072,7 @@ alone if no match found.
   <string Context="Body Limb Dismember Mural" ID="While fighting a battle to protect the practice of =spice:elements.$element.practices.!random=, =name= valorously had =player.possessive= =limb.ordinalName= dismembered.">▶While fighting a battle to protect the practice of =spice:elements.$element.practices.!random=, =name= valorously had =player.possessive= =limb.ordinalName= dismembered.</string>
   <string Context="Body Limb Dismember Accomplishment" ID="Your =limb.ordinalName= =limb.ifPlural:were:was= dismembered.">▶Your =limb.ordinalName= =limb.ifPlural:were:was= dismembered.</string>
   <string Context="Body Regenerate Limb" ID="=subject.Does:regenerate= =subject.their= =limb.ordinalName=!">▶=subject.Does:regenerate= =subject.their= =limb.ordinalName=!</string>
-  <string Context="Body MissingParts summary list item (single possessed)" ID="=subject.their= =part.name=">▶=subject.their= =part.name=</string>
+  <string Context="Body MissingParts summary list item (single, unfound by name)" ID="=subject.their= =part.name=">▶=subject.their= =part.name=</string>
   <string Context="Body MissingParts summary list item (single)" ID="=part.ifPlural:a set of :==part.a.name=">▶=part.ifPlural:a set of :==part.a.name=</string>
   <string Context="Body MissingParts summary list item (multiple)" ID="=num.cardinal==part.IfPlural: sets of:= =part.pluralize=">▶=num.cardinal==part.IfPlural: sets of:= =part.pluralize=</string>
   <string Context="Body MissingParts Description" ID="=subject.It.is= missing =mainSummary.andList=, and so =subject.it.does:do= not have the use of =abstractSummary.orList=.">▶=subject.It.is= missing =mainSummary.andList=, and so =subject.it.does:do= not have the use of =abstractSummary.orList=.</string>
@@ -2135,6 +2165,8 @@ alone if no match found.
   <string Context="MarkovBook Long Book, Prefix Author's Note" ID="{{C|Author's note:}} =note=&#xA;&#xA;" Value="▶{{C|Author's note:}} =note=&#xA;&#xA;" />
   <string Context="MerchantRevealer DisplayName" ID="advertisement for =mapnote.text|initLower=">▶advertisement for =mapnote.text|initLower=</string>
   <string Context="MerchantRevealer bookText" ID="=spice:advertisements.merchants.!random=">▶=spice:advertisements.merchants.!random=</string>
+  <string Context="AIUrnDuster Dusting Message Log" ID="=subject.Does:dust= =object.a.name=.">▶=subject.Does:dust= =object.a.name=.</string>
+  <string Context="AIWiring - Ignore Conversation Message" ID="=subject.Does:ignore= =object.the.name=.">▶=subject.Does:ignore= =object.the.name=.</string>
   <string Context="CarryBonus Flat" ID="=bonus.signed= lbs. carry capacity">▶=bonus.signed= lbs. carry capacity</string>
   <string Context="CarryBonus Percent" ID="=bonus.signed=% carry capacity">▶=bonus.signed=% carry capacity</string>
   <string Context="ConversationScript PronounExchange Text Prepend" ID="[=pronounExchange=]&#xA;&#xA;" Value="▶[=pronounExchange=]&#xA;&#xA;" />
@@ -2153,6 +2185,7 @@ alone if no match found.
   <string Context="ConversationScript PronounExchange" ID="You and =subject.the.name= exchange pronouns; =subject.its= are =subject.pronouns=.">▶You and =subject.the.name= exchange pronouns; =subject.its= are =subject.pronouns=.</string>
   <string Context="ConversationScript PronounExchange (theirs only)" ID="=subject.The.name= =subject.verb:give= you =subject.its= pronouns, which are =subject.pronouns=.">▶=subject.The.name= =subject.verb:give= you =subject.its= pronouns, which are =subject.pronouns=.</string>
   <string Context="ConversationScript PronounExchange (yours only)" ID="You give =subject.the.name= your =isNew.if:new :=pronouns.">▶You give =subject.the.name= your =isNew.if:new :=pronouns.</string>
+  <string Context="activated ability classes" ID="Abilities">▶Abilities</string>
   <string Context="activated ability classes" ID="Cybernetics">▶Cybernetics</string>
   <string Context="activated ability classes" ID="Items">▶Items</string>
   <string Context="activated ability classes" ID="Maneuvers">▶Maneuvers</string>
@@ -2165,6 +2198,13 @@ alone if no match found.
   <string Context="activated ability classes" ID="Tonics">▶Tonics</string>
   <string Context="activated ability classes" ID="Vehicle">▶Vehicle</string>
   <string Context="ActivatedAbilities Popup Text CannotDoOnWorldMap" ID="You cannot do that on the world map.">▶You cannot do that on the world map.</string>
+  <string Context="ActivatedAbilities - Gained new ability" ID="You have gained the activated ability {{Y|=abilityName=}}.">▶You have gained the activated ability {{Y|=abilityName=}}.</string>
+  <string Context="ActivatedAbilities - Gained new ability - Hasn't used ability menu much appendix" ID="(press =commandKey:CmdAbilities= to use activated abilities)">▶(press =commandKey:CmdAbilities= to use activated abilities)</string>
+  <string Context="ActivatedAbilityEntry cant be used" ID="{{C|=ability.name=}} can't be used at this time.">▶{{C|=ability.name=}} can't be used at this time.</string>
+  <string Context="ActivatedAbilityEntry cant be used - cooldown" ID="You must wait {{C|=ability.cooldown.rounds=}} before using {{C|=ability.name=}}.">▶You must wait {{C|=ability.cooldown.rounds=}} before using {{C|=ability.name=}}.</string>
+  <string Context="AnimatedObject DisplayName Adjective" ID="animated" OrderAdjust="5">▶animated</string>
+  <string Context="BlinkOnDamage Message Log" ID="=subject.Does:blink= away from the danger.">▶=subject.Does:blink= away from the danger.</string>
+  <string Context="BurnOffGas Message Log" ID="=subject.Does:burn= off =object.a.name=.">▶=subject.Does:burn= off =object.a.name=.</string>
   <string Context="Combat Player Miss Message (terse)" ID="You miss!">▶You miss!</string>
   <string Context="Combat Player Miss Message (with weapon)" ID="{{r|=subject.Does:miss= with =weapon.the.name:withTitles:itsPossessor=!}} [=hitResult= vs. =dv=]">▶{{r|=subject.Does:miss= with =weapon.the.name:withTitles:itsPossessor=!}} [=hitResult= vs. =dv=]</string>
   <string Context="Combat Player Miss Message (no weapon)" ID="{{r|You miss!}} [=hitResult= vs. =dv=]">▶{{r|You miss!}} [=hitResult= vs. =dv=]</string>
@@ -2178,6 +2218,7 @@ alone if no match found.
   <string Context="Joppa Zealot Yells" ID="Is it a dybbuk that possesses the robot? It should be sacred and still.">▶Is it a dybbuk that possesses the robot? It should be sacred and still.</string>
   <string Context="Joppa Zealot Yell" ID="=subject.Does:yell=, {{W|'=message='}}">▶=subject.Does:yell=, {{W|'=message='}}</string>
   <string Context="Slumberling sleepy" ID="=subject.Does:lapse= back into hibernation.">▶=subject.Does:lapse= back into hibernation.</string>
+  <string Context="DelegateSpawner - Social Role (Display Name)" ID="delegate for =faction.the.name=">▶delegate for =faction.the.name=</string>
   <string Context="XP Gain Message" ID="You gain =amount|color:C= XP!">▶You gain =amount|color:C= XP!</string>
   <string Context="FabricateFromSelf Default FabricateVerb" ID="fabricate">▶fabricate</string>
   <string Context="FabricateFromSelf Default FabricateSource" ID="the substance of =subject.their= body">▶the substance of =subject.their= body</string>
@@ -2208,6 +2249,19 @@ alone if no match found.
   <string Context="Faction Gossip Second Faction (fragment)" ID="some =spice:commonPhrases.group.!random=">▶some =spice:commonPhrases.group.!random=</string>
   <string Context="Faction Gossip Second Faction (fragment)" ID="=spice:commonPhrases.someone.!random=">▶=spice:commonPhrases.someone.!random=</string>
   <string Context="Faction Gossip Two Faction" ID="=spice:gossip.twoFaction.!random=">▶=spice:gossip.twoFaction.!random=</string>
+  <string Context="Grabber Default StuckAdjective" ID="grabbed">▶grabbed</string>
+  <string Context="Grabber Default StuckPreposition" ID="by">▶by</string>
+  <string Context="InventoryAbilitySystem Access your item" ID="Access your =subject.name:single:withTitles=">▶Access your =subject.name:single:withTitles=</string>
+  <string Context="InventoryAbilitySystem =originalname= snapshot" ID="=subject.name:single:withTitles=">▶=subject.name:single:withTitles=</string>
+  <string Context="InventoryAbilitySystem Name your custom ability" ID="Name your custom ability">▶Name your custom ability</string>
+  <string Context="InventoryAbilitySystem ability description" ID="Directly access inventory item">▶Directly access inventory item</string>
+  <string ID="You are too confused to remember what =item.a.name= =item.is.=">▶You are too confused to remember what =item.a.name= =item.is.=</string>
+  <string Context="InventoryAbilitySystem Rename custom ability" ID="Rename custom ability">▶Rename custom ability</string>
+  <string Context="InventoryAbilitySystem Remove custom ability" ID="Remove custom ability">▶Remove custom ability</string>
+  <string Context="InventoryAbilitySystem Edit Ability w/ Ability Name (Original Object Name)" ID="Edit custom ability: =abilityname= (=originalname=)">▶Edit custom ability: =abilityname= (=originalname=)</string>
+  <string Context="InventoryAbilitySystem Edit Ability w/ Ability Name only" ID="Edit custom ability: =abilityname=">▶Edit custom ability: =abilityname=</string>
+  <string Context="InventoryAbilitySystem Removed custom inventory ability" ID="Removed custom inventory ability: =abilityname=">▶Removed custom inventory ability: =abilityname=</string>
+  <string Context="InventoryAbilitySystem can't find ability for item" ID="{{R|[Inventory Abilities] - Can't find ability for item!}}">▶{{R|[Inventory Abilities] - Can't find ability for item!}}</string>
   <string Context="LevelHPGain" ID="=subject.They= =subject.ternaryVerb#positive:gain:lose:afterpronoun= {{rules|=value=}} =value.pluralize:hitpoint=">▶=subject.They= =subject.ternaryVerb#positive:gain:lose:afterpronoun= {{rules|=value=}} =value.pluralize:hitpoint=</string>
   <string Context="LevelSPGain" ID="=subject.They= =subject.ternaryVerb#positive:gain:lose:afterpronoun= {{rules|=value=}} =value.pluralize:Skill Point=">▶=subject.They= =subject.ternaryVerb#positive:gain:lose:afterpronoun= {{rules|=value=}} =value.pluralize:Skill Point=</string>
   <string Context="LevelMPGain" ID="=subject.They= =subject.ternaryVerb#positive:gain:lose:afterpronoun= {{rules|=value=}} =value.pluralize:Mutation Point=">▶=subject.They= =subject.ternaryVerb#positive:gain:lose:afterpronoun= {{rules|=value=}} =value.pluralize:Mutation Point=</string>
@@ -2215,6 +2269,42 @@ alone if no match found.
   <string Context="LevelABGain" ID="=subject.They= =subject.ternaryVerb#positive:gain:lose:afterpronoun= {{rules|=value=}} to each attribute">▶=subject.They= =subject.ternaryVerb#positive:gain:lose:afterpronoun= {{rules|=value=}} to each attribute</string>
   <string Context="LevelGainDetailed" ID="=subject.Does:have= gained a level! =subject.They= =subject.is= now level {{C|=level=}}!">▶=subject.Does:have= gained a level! =subject.They= =subject.is= now level {{C|=level=}}!</string>
   <string Context="LevelGain" ID="=subject.Does:gain= a level!">▶=subject.Does:gain= a level!</string>
+  <string Context="Stomach Sated" ID="{{g|Sated}}">▶{{g|Sated}}</string>
+  <string Context="Stomach Hungry" ID="{{W|Hungry}}">▶{{W|Hungry}}</string>
+  <string Context="Stomach Wilted" ID="{{R|Wilted!}}">▶{{R|Wilted!}}</string>
+  <string Context="Stomach Famished" ID="{{R|Famished!}}">▶{{R|Famished!}}</string>
+  <string Context="Stomach Water Amphibious Desiccated" ID="{{R|Desiccated!}}">▶{{R|Desiccated!}}</string>
+  <string Context="Stomach Water Amphibious Dry" ID="{{r|Dry}}">▶{{r|Dry}}</string>
+  <string Context="Stomach Water Amphibious Moist" ID="{{c|Moist}}">▶{{c|Moist}}</string>
+  <string Context="Stomach Water Amphibious Wet" ID="{{b|Wet}}">▶{{b|Wet}}</string>
+  <string Context="Stomach Water Amphibious Soaked" ID="{{B|Soaked}}">▶{{B|Soaked}}</string>
+  <string Context="Stomach Water Dehydrated" ID="{{R|Dehydrated!}}">▶{{R|Dehydrated!}}</string>
+  <string Context="Stomach Water Parched" ID="{{r|Parched}}">▶{{r|Parched}}</string>
+  <string Context="Stomach Water Thirsty" ID="{{Y|Thirsty}}">▶{{Y|Thirsty}}</string>
+  <string Context="Stomach Water Quenched" ID="{{g|Quenched}}">▶{{g|Quenched}}</string>
+  <string Context="Stomach Water Tumescent" ID="{{G|Tumescent}}">▶{{G|Tumescent}}</string>
+  <string Context="Stomach Vomit" ID="You vomit!">▶You vomit!</string>
+  <string Context="Stomach Vomit Everywhere" ID="=subject.Does:vomit= everywhere!">▶=subject.Does:vomit= everywhere!</string>
+  <string Context="Stomach Amphibious Minus Water" ID="desiccated" OrderAdjust="-80">▶desiccated</string>
+  <string Context="Stomach Not Amphibious Minus Water" ID="dehydrated" OrderAdjust="-80">▶dehydrated</string>
+  <string Context="Stomach pour over message no source" ID="=subject.Does:pour= fresh water over =subject.itself=.">▶=subject.Does:pour= fresh water over =subject.itself=.</string>
+  <string Context="Stomach pour over message with source" ID="=subject.Does:pour= fresh water from =object.the.name:itsPossessor= over =subject.itself=.">▶=subject.Does:pour= fresh water from =object.the.name:itsPossessor= over =subject.itself=.</string>
+  <string Context="Stomach sip message no source" ID="=subject.Does:take= a sip of fresh water.">▶=subject.Does:take= a sip of fresh water.</string>
+  <string Context="Stomach sip message with source" ID="=subject.Does:take= a sip of fresh water from =object.the.name:itsPossessor=.">▶=subject.Does:take= a sip of fresh water from =object.the.name:itsPossessor=.</string>
+  <string Context="Stomach runoutofwater question" ID="You have run out of {{B|water}}! Do you want to stop travelling?">▶You have run out of {{B|water}}! Do you want to stop travelling?</string>
+  <string Context="Stomach dryingout question" ID="You are drying out! Do you want to stop travelling?">▶You are drying out! Do you want to stop travelling?</string>
+  <string Context="Stomach dying of thirst question" ID="You are dying of thirst! Do you want to stop travelling?">▶You are dying of thirst! Do you want to stop travelling?</string>
+  <string Context="Stomach Drying Out" ID="You are drying out!">▶You are drying out!</string>
+  <string Context="Stomach Dying of Thirst" ID="You are dying of thirst!">▶You are dying of thirst!</string>
+  <string Context="Stomach died of thirst" ID="You died of thirst.">▶You died of thirst.</string>
+  <string Context="Stomach TooFamishedToTravel" ID="You're too famished to travel long distances.">▶You're too famished to travel long distances.</string>
+  <string Context="Stomach MoistureSuckedOutBody" ID="The moisture is sucked out of your body.">▶The moisture is sucked out of your body.</string>
+  <string Context="Stomach MoistureSuckedOutThroat" ID="The moisture is sucked out of your throat.">▶The moisture is sucked out of your throat.</string>
+  <string Context="Stomach DrinkingTooMuch Question" ID="Drinking that much will probably make you sick, do you want to continue?">▶Drinking that much will probably make you sick, do you want to continue?</string>
+  <string Context="Stomach DrankWayTooMuch" ID="You drank way too much!">▶You drank way too much!</string>
+  <string Context="Stomach UghFeelSick" ID="Ugh, you feel sick.">▶Ugh, you feel sick.</string>
+  <string Context="Stomach Dehydration Message Amphibious" ID="{{R|=subject.The.name= =subject.verb:are= dehydrated and will be unable to heal naturally until =subject.they= =subject.verb:get= water to douse =subject.itself= with.}}">▶{{R|=subject.The.name= =subject.verb:are= dehydrated and will be unable to heal naturally until =subject.they= =subject.verb:get= water to douse =subject.itself= with.}}</string>
+  <string Context="Stomach Dehydration Message Not Amphibious" ID="{{R|=subject.The.name= =subject.verb:are= dehydrated and will be unable to heal naturally until =subject.they= =subject.verb:get= water to drink.}}">▶{{R|=subject.The.name= =subject.verb:are= dehydrated and will be unable to heal naturally until =subject.they= =subject.verb:get= water to drink.}}</string>
   <string Context="Swarmer Alpha Desc" ID="Swarm Alpha: As long as this creature is adjacent to =subject.its= target, =subject.it.does:grant= =bonus= to the swarm bonuses of each other swarmer who is adjacent to =subject.its= target.">▶Swarm Alpha: As long as this creature is adjacent to =subject.its= target, =subject.it.does:grant= =bonus= to the swarm bonuses of each other swarmer who is adjacent to =subject.its= target.</string>
   <string Context="Swarmer Desc" ID="Swarmer: This creature receives +1 to hit in melee and +1 to penetration rolls for each other hostile swarmer beyond the first who is in another square adjacent to =subject.its= target. (currently =bonus.signed=)">▶Swarmer: This creature receives +1 to hit in melee and +1 to penetration rolls for each other hostile swarmer beyond the first who is in another square adjacent to =subject.its= target. (currently =bonus.signed=)</string>
   <string Context="Cybernetics Cursed" ID="You can't remove =object.the.name:notAsPossessed=.">▶You can't remove =object.the.name:notAsPossessed=.</string>
@@ -2230,10 +2320,14 @@ alone if no match found.
   <string Context="CyberneticsSocialCoprocessor Tech-Scanning Status Name" ID="SocialCoprocessor">▶SocialCoprocessor</string>
   <string Context="CyberneticsSocialCoprocessor GetCyberneticsBehaviorDescriptionEvent Description" ID="Whenever you perform the water ritual with a new creature, you gain an extra =repBonus= reputation. If you install this implant after you treat with a creature for the first time, you gain =repBonus= reputation the next time you treat with them.&#xA;Reputation costs in the water ritual are reduced by =ritualCostReduction=%.&#xA;You may Proselytize =proselytizeLimitBonus.things:additional creature=.&#xA;Compute power on the local lattice increases this implant's effectiveness." Value="▶Whenever you perform the water ritual with a new creature, you gain an extra =repBonus= reputation. If you install this implant after you treat with a creature for the first time, you gain =repBonus= reputation the next time you treat with them.&#xA;Reputation costs in the water ritual are reduced by =ritualCostReduction=%.&#xA;You may Proselytize =proselytizeLimitBonus.things:additional creature=.&#xA;Compute power on the local lattice increases this implant's effectiveness." />
   <string Context="Description Default Text" ID="A really ugly specimen.">▶A really ugly specimen.</string>
-  <string Context="Description Weight Text" ID="&#xA;{{K|Weight: =weight= lbs.}}" Value="▶&#xA;{{K|Weight: =weight= lbs.}}" />
-  <string Context="Description Gender" ID="&#xA;&#xA;Gender: " Value="▶&#xA;&#xA;Gender: " />
-  <string Context="Description Features" ID="&#xA;&#xA;Physical features: " Value="▶&#xA;&#xA;Physical features: " />
-  <string Context="Description Equipped" ID="&#xA;Equipped: " Value="▶&#xA;Equipped: " />
+  <string Context="Description Weight Text" ID="{{K|Weight: =weight= lbs.}}">▶{{K|Weight: =weight= lbs.}}</string>
+  <string Context="Description Physical Feature" ID="=object.name=">▶=object.name=</string>
+  <string Context="Description Equipped Item" ID="=object.name:withTitles=">▶=object.name:withTitles=</string>
+  <string Context="Description LongDescription Gender" ID="Gender: =gender.name=">▶Gender: =gender.name=</string>
+  <string Context="Description LongDescription Physical Features" ID="Physical Features: =features.join:, =">▶Physical Features: =features.join:, =</string>
+  <string Context="Description LongDescription Equipped Items" ID="Equipped: =equipItems.join:, =">▶Equipped: =equipItems.join:, =</string>
+  <string Context="Description LongDescription Effect" ID="=effect.description=">▶=effect.description=</string>
+  <string Context="Description LongDescription Effects List" ID="=effects.join:, =">▶=effects.join:, =</string>
   <string Context="Description Feeling Friend" ID="{{G|Friendly}}">▶{{G|Friendly}}</string>
   <string Context="Description Feeling Hostile" ID="{{R|Hostile}}">▶{{R|Hostile}}</string>
   <string Context="Description Feeling Neutral" ID="Neutral">▶Neutral</string>
@@ -2244,6 +2338,9 @@ alone if no match found.
   <string Context="MakersMark: Unknown CrafterName" ID="a crafter">▶a crafter</string>
   <string Context="MakersMark - Description message" ID="=subject.This= =subject.descriptiveCategory= =subject.verb:bear= the =names.pluralize:mark= of =names.andList=.">▶=subject.This= =subject.descriptiveCategory= =subject.verb:bear= the =names.pluralize:mark= of =names.andList=.</string>
   <string Context="MakersMark - Get Crafter Name" ID="=subject.refname:MakersMark:long:withTitles|strip=">▶=subject.refname:MakersMark:long:withTitles|strip=</string>
+  <string Context="Notes" ID="Notes: =note=">▶Notes: =note=</string>
+  <string Context="OriginalItemType Snapshot =originalItem=" ID="=subject.name:asIfKnown:noConfusion:includeAdjunctNoun=">▶=subject.name:asIfKnown:noConfusion:includeAdjunctNoun=</string>
+  <string Context="OriginalItemType Description Prefix" ID="This item is a named =originalItem=.&#xA;" Value="▶This item is a named =originalItem=.&#xA;" />
   <string Context="Opening Story Dialog - Joppa" ID="On the =day= of =month=, you arrive at the oasis-hamlet of {{green|Joppa}}, along the far rim of {{Y|Moghra'yi, the Great Salt Desert}}.&#xA;&#xA;All around you, moisture farmers tend to groves of viridian watervine. There are huts wrought from rock salt and brinestalk.&#xA;&#xA;On the horizon, {{r|Qud's}} jungles strangle chrome steeples and rusted archways to the earth. Further and beyond, the fabled {{C|Spindle}} rises above the fray and pierces the cloud-ribboned sky." Value="▶On the =day= of =month=, you arrive at the oasis-hamlet of {{green|Joppa}}, along the far rim of {{Y|Moghra'yi, the Great Salt Desert}}.&#xA;&#xA;All around you, moisture farmers tend to groves of viridian watervine. There are huts wrought from rock salt and brinestalk.&#xA;&#xA;On the horizon, {{r|Qud's}} jungles strangle chrome steeples and rusted archways to the earth. Further and beyond, the fabled {{C|Spindle}} rises above the fray and pierces the cloud-ribboned sky." />
   <string Context="Opening Story Dialog - Alternate" ID="On the =day= of =month=, you arrive at the village of {{g|=state.string:villageZeroName=}}.&#xA;&#xA;On the horizon, {{r|Qud's}} jungles strangle chrome steeples and rusted archways to the earth. Further and beyond, the fabled {{C|Spindle}} rises above the fray and pierces the cloud-ribboned sky." Value="▶On the =day= of =month=, you arrive at the village of {{g|=state.string:villageZeroName=}}.&#xA;&#xA;On the horizon, {{r|Qud's}} jungles strangle chrome steeples and rusted archways to the earth. Further and beyond, the fabled {{C|Spindle}} rises above the fray and pierces the cloud-ribboned sky." />
   <string Context="OpeningStory Accomplishment" ID="On the =day= of =month=, you arrived at =villageName=.">▶On the =day= of =month=, you arrived at =villageName=.</string>
@@ -2319,7 +2416,19 @@ alone if no match found.
   <string Context="Tombstone (part3)" ID="=inscription|colorSafe=">▶=inscription|colorSafe=</string>
   <string Context="Tombstone Engraving" ID="=part1=&#xA;&#xA;=part2=&#xA;&#xA;=part3=" Value="▶=part1=&#xA;&#xA;=part2=&#xA;&#xA;=part3=" />
   <string Context="Tombstone Box" ID="=engraving|tombstone=">▶=engraving|tombstone=</string>
+  <string Context="GasDisease Infected Player Popup" ID="You feel sick.">▶You feel sick.</string>
   <string Context="GaseFungalSpores Your skin itches" ID="Your skin itches.">▶Your skin itches.</string>
+  <string Context="DeploymentGrenade Activation Verb" ID="detonate">▶detonate</string>
+  <string Context="EMPGrenade Detonate Message Log" ID="=subject.Does:detonate=!">▶=subject.Does:detonate=!</string>
+  <string Context="FlashbangGrenade explode message log" ID="=subject.Does:explode= with a flash!">▶=subject.Does:explode= with a flash!</string>
+  <string Context="EMPGrenade Detonate Message Log" ID="=subject.Does:explode=!">▶=subject.Does:explode=!</string>
+  <string Context="GravityGrenade Detonate Message Log" ID="=subject.Does:implode=!">▶=subject.Does:implode=!</string>
+  <string Context="HEGrenade Detonate Message Log" ID="=subject.Does:explode=!">▶=subject.Does:explode=!</string>
+  <string Context="PhaseGrenade Detonate Message Log" ID="=subject.Does:explode=!">▶=subject.Does:explode=!</string>
+  <string Context="SunderGrenade Detonate Message Log" ID="=subject.Does:detonate=!">▶=subject.Does:detonate=!</string>
+  <string Context="ThermalGrenade Detonate Message Log" ID="=subject.Does:explode=!">▶=subject.Does:explode=!</string>
+  <string Context="TimeDilationGrenade Detonate Message Log" ID="=subject.Does:discorporate=!">▶=subject.Does:discorporate=!</string>
+  <string Context="Kith and Kin, Imporant NPC died popup" ID="The death of =subject.the.name= means that the investigation can go no further.">▶The death of =subject.the.name= means that the investigation can go no further.</string>
   <string Context="ActivePartStatus" ID="Operational">▶Operational</string>
   <string Context="ActivePartStatus" ID="NeedsSubject">▶NeedsSubject</string>
   <string Context="ActivePartStatus" ID="EMP">▶EMP</string>
@@ -2371,7 +2480,58 @@ alone if no match found.
   <string ID="You cannot budge =object.the.name=.">▶You cannot budge =object.the.name=.</string>
   <string Context="Inventory Unowned Container Confirm" ID="You don't own =container.the.name:withIndicativeProximal=. Are you sure you want to take =object.the.name=?">▶You don't own =container.the.name:withIndicativeProximal=. Are you sure you want to take =object.the.name=?</string>
   <string Context="Inventory Drop Count" ID="How many do you want to drop?">▶How many do you want to drop?</string>
+  <string Context="AccelerativeTeleporter Techscan Failure" ID="NoGroundContact">▶NoGroundContact</string>
+  <string Context="AddsMutationOnEquip Part =mutationName" ID="=mutation.Name=">▶=mutation.Name=</string>
+  <string Context="AddsMutationOnEquip Short Description (with level)" ID="Grants you =mutationName= at level =level.">▶Grants you =mutationName= at level =level.</string>
+  <string Context="AddsMutationOnEquip Short Description" ID="Grants you =mutationName=.">▶Grants you =mutationName=.</string>
+  <string Context="Banner Display Adjective Raised" ID="{{y|[{{g|raised}}]}}" OrderAdjust="-20">▶{{y|[{{g|raised}}]}}</string>
+  <string Context="Banner Display Adjective" ID="{{y|[{{K|furled}}]}}" OrderAdjust="-20">▶{{y|[{{K|furled}}]}}</string>
+  <string Context="Banner Description" ID="Bestows the {{|=effect.name=}} effect to =faction.formattedName= who can see this item.">▶Bestows the {{|=effect.name=}} effect to =faction.formattedName= who can see this item.</string>
+  <string Context="Banner Raise Message" ID="=subject.Does:raise= =object.the.name=.">▶=subject.Does:raise= =object.the.name=.</string>
+  <string Context="BootSequence Default VerbOnBootInitialized" ID="beep">▶beep</string>
+  <string Context="BootSequence Default VerbOnBootDone" ID="click">▶click</string>
+  <string Context="BootSequence Default VerbOnBootAborted" ID="bloop">▶bloop</string>
+  <string Context="BootSequence Boot Message" ID="=subject.Does#verb=.">▶=subject.Does#verb=.</string>
+  <string Context="BootSequence Display Adjective" ID="[{{K|=timeLeft= sec}}]" OrderAdjust="40">▶[{{K|=timeLeft= sec}}]</string>
+  <string Context="Bootsequence Description" ID="=subject.Its= readout indicates that =subject.its= startup sequence will take an estimated =timeLeft.cardinal= more =timeLeft.pluralize:round=.">▶=subject.Its= readout indicates that =subject.its= startup sequence will take an estimated =timeLeft.cardinal= more =timeLeft.pluralize:round=.</string>
+  <string Context="BreakableInMelee Break Message" ID="subject.Does:break=.">▶subject.Does:break=.</string>
+  <string Context="BubbleLevel Sound Message" ID="=subject.Does:plop=.">▶=subject.Does:plop=.</string>
+  <string Context="BubbleLevel No Sound Message" ID="=subject.Does:make= no sound.">▶=subject.Does:make= no sound.</string>
+  <string Context="Butcherable default butcher verb" ID="butcher">▶butcher</string>
+  <string Context="Butcherable Butcher Message" ID="=subject.Does#verb= =object.the.name==subject.formatDirection:ifAny#direction|spaceBefore= =amount.cardinal= =result.name|pluralize=.">▶=subject.Does#verb= =object.the.name==subject.formatDirection:ifAny#direction|spaceBefore= =amount.cardinal= =result.name|pluralize=.</string>
+  <string Context="Butcherable Butcher Message Amount 1" ID="=subject.Does#verb= =object.the.name==subject.formatDirection:ifAny#direction|spaceBefore= into =result.a.name=.">▶=subject.Does#verb= =object.the.name==subject.formatDirection:ifAny#direction|spaceBefore= into =result.a.name=.</string>
+  <string Context="Butcherable Fail Message" ID="=subject.Does:fail= to =verb= anything useful from =object.the.name==subject.formatDirection:ifAny#direction|spaceBefore=.">▶=subject.Does:fail= to =verb= anything useful from =object.the.name==subject.formatDirection:ifAny#direction|spaceBefore=.</string>
   <string Context="CriticalThreshold Description" ID="=bonus.signed=% chance to score critical hits">▶=bonus.signed=% chance to score critical hits</string>
+  <string Context="DataDisk GetDisplayNameEvent Item" ID=": {{C|=resultingitem=}} &lt;=bitcost=&gt;" OrderAdjust="5">▶: {{C|=resultingitem=}} &lt;=bitcost=&gt;</string>
+  <string Context="DataDisk GetDisplayNameEvent Mod" ID=": [{{W|Item mod}}] - {{C|=modname=}}" OrderAdjust="5">▶: [{{W|Item mod}}] - {{C|=modname=}}</string>
+  <string Context="DataDisk GetShortDescriptionEvent Mod" ID="Adds item modification: =moddescription=">▶Adds item modification: =moddescription=</string>
+  <string Context="DataDisk GetShortDescriptionEvent Batch" ID="{{rules|Creates:}} =num.cardinal= =subject.pluralName=">▶{{rules|Creates:}} =num.cardinal= =subject.pluralName=</string>
+  <string Context="DataDisk GetShortDescriptionEvent Batch" ID="{{rules|Creates:}} =subject.displayNameOnlyDirect=">▶{{rules|Creates:}} =subject.displayNameOnlyDirect=</string>
+  <string Context="DataDisk InventoryActionEvent AlreadyKnow" ID="You already know that recipe!">▶You already know that recipe!</string>
+  <string Context="DataDisk InventoryActionEvent MissingSkill" ID="You don't have the required skill: =skill=!">▶You don't have the required skill: =skill=!</string>
+  <string Context="DataDisk InventoryActionEvent YouLearnMod" ID="You learn the item modification {{W|=modname=}}.">▶You learn the item modification {{W|=modname=}}.</string>
+  <string Context="DataDisk InventoryActionEvent YouLearnItem" ID="You learn to build =subject.pluralName=.">▶You learn to build =subject.pluralName=.</string>
+  <string Context="DataDisk InventoryActionEvent MissingRequiredBits" ID="You don't have the required &lt;=bitcost=&gt; bits! You have:&#xA;&#xA;=bits=" Value="▶You don't have the required &lt;=bitcost=&gt; bits! You have:&#xA;&#xA;=bits=" />
+  <string Context="DataDisk InventoryActionsEvent HostilesNearby" ID="You can't tinker with hostiles nearby!">▶You can't tinker with hostiles nearby!</string>
+  <string Context="DataDisk InventoryActionsEvent Tinker =ingredientList= item name" ID="=subject.name=">▶=subject.name=</string>
+  <string Context="DataDisk InventoryActionsEvent MissingIngredientList" ID="You don't have the required ingredient: =ingredientList.orlist=">▶You don't have the required ingredient: =ingredientList.orlist=</string>
+  <string Context="DataDisk InventoryActionsEvent CannotUseIngredient" ID="You cannot use the ingredient!">▶You cannot use the ingredient!</string>
+  <string Context="DataDisk You tinker up..." ID="=subject.Does:tinker= up =number.a.or.cardinal.names#object=!">▶=subject.Does:tinker= up =number.a.or.cardinal.names#object=!</string>
+  <string Context="DecoyHologramEmitter ChargeDraw Stat M" ID="Medium">▶Medium</string>
+  <string Context="DecoyHologramEmitter ChargeDraw Stat L" ID="Low">▶Low</string>
+  <string Context="DecoyHologramEmitter Hologram Description" ID="Light stammers in parallax to form the image of an object. =subject.description.short=">▶Light stammers in parallax to form the image of an object. =subject.description.short=</string>
+  <string Context="DecoyHologramEmitter Hologram HologramOf" ID="=subject.a.name=">▶=subject.a.name=</string>
+  <string Context="DecoyHologram Emitter Appear Message" ID="An image of =subject.property:HologramOf= appears.">▶An image of =subject.property:HologramOf= appears.</string>
+  <string Context="DecoyHologramEmitter Target Picker Label" ID="Summon Decoy">▶Summon Decoy</string>
+  <string Context="DecoyHologramEmitter Out Of Range" ID="That is out of range (=range.things:square=)">▶That is out of range (=range.things:square=)</string>
+  <string Context="DecoyHologramEmitter Starting Up" ID="=subject.Does:are= still starting up.">▶=subject.Does:are= still starting up.</string>
+  <string Context="DecoyHologramEmitter Not Enough Charge" ID="=subject.Does:do= not have enough charge to sustain the hologram.">▶=subject.Does:do= not have enough charge to sustain the hologram.</string>
+  <string Context="DecoyHologramEmitter Unresponsive" ID="=subject.Does:are= unresponsive.">▶=subject.Does:are= unresponsive.</string>
+  <string Context="DecoyHologram Emitter Disappear Message" ID="An image of =subject.property:HologramOf= disappears.">▶An image of =subject.property:HologramOf= disappears.</string>
+  <string Context="DecoyHologramEmitter ActivatedAbilityName Deactivate" ID="Deactivate Holographic Decoy">▶Deactivate Holographic Decoy</string>
+  <string Context="DecoyHologramEmitter ActivatedAbilityName Deactivate With BaseName" ID="Deactivate =subject.basename|strip|title=">▶Deactivate =subject.basename|strip|title=</string>
+  <string Context="DecoyHologramEmitter ActivatedAbilityName Activate" ID="Activate Holographic Decoy">▶Activate Holographic Decoy</string>
+  <string Context="DecoyHologramEmitter ActivatedAbilityName Activate With BaseName" ID="Activate =subject.basename|strip|title=">▶Activate =subject.basename|strip|title=</string>
   <string Context="FactionDeed Description Tag" ID="[=faction.name= chapter]" OrderAdjust="-60">▶[=faction.name= chapter]</string>
   <string Context="FactionDeed Description Tag" ID="[chapter unspecified]" OrderAdjust="-60">▶[chapter unspecified]</string>
   <string Context="FactionDeed Owner Confirm" ID="=object.Does:are= not owned by you, and using =object.them= will consume =object.them=. Are you sure you want to do so?">▶=object.Does:are= not owned by you, and using =object.them= will consume =object.them=. Are you sure you want to do so?</string>
@@ -2380,11 +2540,19 @@ alone if no match found.
   <string Context="FactionDeed Pick Faction Option" ID="=faction.name=">▶=faction.name=</string>
   <string Context="FactionDeed Pick Faction Title" ID="Choose a faction's chapter to insert your good deed.">▶Choose a faction's chapter to insert your good deed.</string>
   <string Context="FactionDeed Popup Message" ID="You add the following entry into the {{K|Annals of Qud}}.&#xA;&#xA;&quot;On the =date.day= of =date.month=, {{Y|=subject.basename|strip=}} became =positive.if:admired:despised= by =faction.formattedName= for =reason=.&quot;" Value="▶You add the following entry into the {{K|Annals of Qud}}.&#xA;&#xA;&quot;On the =date.day= of =date.month=, {{Y|=subject.basename|strip=}} became =positive.if:admired:despised= by =faction.formattedName= for =reason=.&quot;" />
+  <string Context="Flaming Display Name Adjective" ID="{{fiery|flaming}}" OrderAdjust="0">▶{{fiery|flaming}}</string>
   <string Context="FungalFortitude AVBonus" ID="=bonus.signed= AV per fungal infection">▶=bonus.signed= AV per fungal infection</string>
   <string Context="FungalFortitude AVBonus" ID="=bonus.signed= to all resists per fungal infection">▶=bonus.signed= to all resists per fungal infection</string>
   <string Context="Graffiti Text" ID="=markovShort:18|obfuscate=">▶=markovShort:18|obfuscate=</string>
+  <string Context="GreaseBoots Behavior Description" ID="You may walk freely over webs.">▶You may walk freely over webs.</string>
+  <string Context="Hangable DisplayName Tag" ID="{{y|[hanging]}}" OrderAdjust="0">▶{{y|[hanging]}}</string>
+  <string Context="Hangable DisplayName Tag" ID="{{y|[on ground]}}" OrderAdjust="0">▶{{y|[on ground]}}</string>
   <string Context="Hookah Fail NoWater" ID="=object.Does:need= water in =subject.them=.">▶=object.Does:need= water in =subject.them=.</string>
   <string Context="Hookah Puffs" ID="=subject.Does:take= a puff on =object.the.name=.">▶=subject.Does:take= a puff on =object.the.name=.</string>
+  <string Context="Icy DisplayName Adjective" ID="{{icy|icy}}" OrderAdjust="0">▶{{icy|icy}}</string>
+  <string Context="NaturalWeapon Unequip failure message" ID="You can't remove =object.the.name=.">▶You can't remove =object.the.name=.</string>
+  <string Context="PortableWall default Message" ID="You open the box and expose the compressed foamcrete to air. It starts to expand.">▶You open the box and expose the compressed foamcrete to air. It starts to expand.</string>
+  <string Context="PortableWall default DeployingWhat (used in title bar when picking tiles)" ID="Wall">▶Wall</string>
   <string Context="RandomFigurine Material DisplayName" ID="copper">▶copper</string>
   <string Context="RandomFigurine Material DisplayName" ID="silver">▶silver</string>
   <string Context="RandomFigurine Material DisplayName" ID="gold">▶gold</string>
@@ -2395,6 +2563,9 @@ alone if no match found.
   <string Context="RandomFigurine Material DisplayName" ID="sapphire">▶sapphire</string>
   <string Context="RandomFigurine Material DisplayName" ID="emerald">▶emerald</string>
   <string Context="RandomFigurine Material DisplayName" ID="peridot">▶peridot</string>
+  <string Context="SkillOnEquip Short Description Rules Text" ID="Grants you =skillName=.">▶Grants you =skillName=.</string>
+  <string Context="TemperatureAdjuster - Status Failure (world map)" ID="Inactive">▶Inactive</string>
+  <string Context="TimeCube Failure Popup" ID="{{R|Fraudulent}} {{W|ONEness}} is taught by {{O|evil}} {{G|educators}}! Nothing happens!">▶{{R|Fraudulent}} {{W|ONEness}} is taught by {{O|evil}} {{G|educators}}! Nothing happens!</string>
   <string Context="Torch Display Name - Adjective" ID="lit" OrderAdjust="-40">▶lit</string>
   <string Context="Torch Burnout MessageLog" ID="Your torch burns out!">▶Your torch burns out!</string>
   <string Context="Torch Light Fail (covered)" ID="You cannot light =object.the.name= because of the liquid =object.it.is= covered in.">▶You cannot light =object.the.name= because of the liquid =object.it.is= covered in.</string>
@@ -2407,6 +2578,8 @@ alone if no match found.
   <string Context="Torch Display Name - Tag (unlit)" ID="(half-burnt)" OrderAdjust="-40">▶(half-burnt)</string>
   <string Context="Torch Display Name - Tag (unlit)" ID="(mostly burnt)" OrderAdjust="-40">▶(mostly burnt)</string>
   <string Context="Torch Display Name - Tag (unlit)" ID="(nearly extinguished)" OrderAdjust="-40">▶(nearly extinguished)</string>
+  <string Context="Waldopack Techscanning NameForStatus" ID="ServoSystems">▶ServoSystems</string>
+  <string Context="Wire DisplayName Clause" ID="(=count=')" OrderAdjust="-60">▶(=count=')</string>
   <string Context="Liquid Volume - Smear of unknown liquid" ID="liquid-covered">▶liquid-covered</string>
   <string Context="Liquid Volume - Smeared liquid" ID="=volume.liquid.smear.adjectives#secondaries|spaceAfter==volume.liquid.smear.name#primary=">▶=volume.liquid.smear.adjectives#secondaries|spaceAfter==volume.liquid.smear.name#primary=</string>
   <string Context="Liquid Volume - Stain of unknown liquid" ID="stained">▶stained</string>
@@ -2499,7 +2672,21 @@ alone if no match found.
   <string Context="Liquid Volume - can't pour on itself error" ID="You can't pour from a container into =object.itself=.">▶You can't pour from a container into =object.itself=.</string>
   <string Context="Liquid Volume - Cleaning liquids default" ID="liquid">▶liquid</string>
   <string Context="Liquid Volume - Cleaning liquids" ID="=names.orList=">▶=names.orList=</string>
+  <string Context="HealMedication Default Message" ID="The tube hisses against your skin, and a warm feeling washes over your body.">▶The tube hisses against your skin, and a warm feeling washes over your body.</string>
+  <string Context="RegenMedication Default Message" ID="The tube hisses against your skin, and a hot tingling infuses your whole body.">▶The tube hisses against your skin, and a hot tingling infuses your whole body.</string>
+  <string Context="StatBoostMedication Default Message" ID="The tube hisses against your skin, and your blood burns!">▶The tube hisses against your skin, and your blood burns!</string>
+  <string Context="AfferentWeapon Effect Description" ID="This weapon uses its victim's =stat.name= modifier for penetration bonus.">▶This weapon uses its victim's =stat.name= modifier for penetration bonus.</string>
+  <string Context="CrumblesOnHit Message Log" ID="=subject.Does:crumble= to dust!">▶=subject.Does:crumble= to dust!</string>
   <string Context="MonochromePoisonOnDamage Your vision blurs" ID="Your vision blurs.">▶Your vision blurs.</string>
+  <string Context="StunOnHit TechScanning NameForStatus" ID="StunMechanism">▶StunMechanism</string>
+  <string Context="BlastOnHit Message Log" ID="=subject.Does:explode=!">▶=subject.Does:explode=!</string>
+  <string Context="ExplodeAfterTurns Message Log" ID="=subject.Does:explode=!">▶=subject.Does:explode=!</string>
+  <string Context="ExplodeOnHit Message Log" ID="=subject.Does:explode=!">▶=subject.Does:explode=!</string>
+  <string Context="ShatterOnHit Message Log" ID="=subject.Does:shatter=.">▶=subject.Does:shatter=.</string>
+  <string Context="StickyOnHit Message Log" ID="=subject.Does:get= entangled in =object.the.name=!">▶=subject.Does:get= entangled in =object.the.name=!</string>
+  <string Context="PoweredMissilePerformance Techscanning NameForStatus" ID="PerformanceEnhancementSystems">▶PerformanceEnhancementSystems</string>
+  <string Context="Projectile Default PassByVerb" ID="whiz">▶whiz</string>
+  <string Context="Smartgun Local Failure Status" ID="DataProviderNotFound">▶DataProviderNotFound</string>
   <string Context="IModification Wish No Modification" ID="No modification specified.">▶No modification specified.</string>
   <string Context="IModification Wish Modification Unfound" ID="No modification by the name '=modName=' could be found.">▶No modification by the name '=modName=' could be found.</string>
   <string Context="IModification Wish Blueprint Unfound" ID="No blueprint by the name '=objectName=' could be found.">▶No blueprint by the name '=objectName=' could be found.</string>
@@ -2558,7 +2745,7 @@ alone if no match found.
   <string Context="ModElectrified Description Tier Zero" ID="Electrified: When powered, this weapon deals additional electrical damage on hit.">▶Electrified: When powered, this weapon deals additional electrical damage on hit.</string>
   <string Context="ModElectrified Instance Description" ID="Electrified: When powered, this weapon deals an additional =damageRange= electrical damage on hit.">▶Electrified: When powered, this weapon deals an additional =damageRange= electrical damage on hit.</string>
   <string Context="ModEngraved Description Adjective" ID="{{engraved|engraved}}" OrderAdjust="0">▶{{engraved|engraved}}</string>
-  <string Context="Engraved Postfix" ID="{{cyan|Engraved: This item is engraved with a scene from the life of the ancient =sultanTerm= {{magenta|=sultan=}}:&#xA;&#xA;=engraving=}}&#xA;" Value="▶{{cyan|Engraved: This item is engraved with a scene from the life of the ancient =sultanTerm= {{magenta|=sultan=}}:&#xA;&#xA;=engraving=}}&#xA;" />
+  <string Context="Engraved Postfix" ID="Engraved: This item is engraved with a scene from the life of the ancient =sultanTerm= {{magenta|=sultan=}}:&#xA;&#xA;=engraving=" Value="▶Engraved: This item is engraved with a scene from the life of the ancient =sultanTerm= {{magenta|=sultan=}}:&#xA;&#xA;=engraving=" />
   <string Context="ModEngraved Story Marred" ID="&lt;marred and unreadable&gt;">▶&lt;marred and unreadable&gt;</string>
   <string Context="ModExtradimensional Techscanning NameForStatus" ID="***ERROR***">▶***ERROR***</string>
   <string Context="ModExtradimensional DisplayName Adjective" ID="{{extradimensional|extradimensional}}" OrderAdjust="0">▶{{extradimensional|extradimensional}}</string>
@@ -2645,7 +2832,7 @@ alone if no match found.
   <string Context="ModMagnetic Falls Down Picked Up" ID="=subject.Does:fall= to the ground; you pick =subject.them= up.">▶=subject.Does:fall= to the ground; you pick =subject.them= up.</string>
   <string Context="ModMagnetic Falls Down" ID="=subject.Does:fall= to the ground.">▶=subject.Does:fall= to the ground.</string>
   <string Context="ModMasterwork Display Adjective" ID="{{Y|masterwork}}" OrderAdjust="-20">▶{{Y|masterwork}}</string>
-  <string Context="ModMasterwork Description" ID="{{rules|Masterwork: This weapon scores critical hits =bonus=% of the time instead of 5%.}}">▶{{rules|Masterwork: This weapon scores critical hits =bonus=% of the time instead of 5%.}}</string>
+  <string Context="ModMasterwork Description" ID="Masterwork: This weapon scores critical hits =bonus=% of the time instead of 5%.">▶Masterwork: This weapon scores critical hits =bonus=% of the time instead of 5%.</string>
   <string Context="ModMercurial Techscanning NameForStatus" ID="ReactiveTeleporter">▶ReactiveTeleporter</string>
   <string Context="ModMercurial Display Adjective" ID="{{Y|mercurial}}" OrderAdjust="0">▶{{Y|mercurial}}</string>
   <string Context="ModMercurial Instance Description Assured" ID="Mercurial: Teleports the user to safety upon taking damage.">▶Mercurial: Teleports the user to safety upon taking damage.</string>
@@ -2665,14 +2852,116 @@ alone if no match found.
   <string Context="ModNanon Instance Description" ID="Nanon: =chance=% chance to dismember on penetration">▶Nanon: =chance=% chance to dismember on penetration</string>
   <string Context="ModNav Display Adjective" ID="{{r|nav}}" OrderAdjust="0">▶{{r|nav}}</string>
   <string Context="ModNav Description" ID="Nav: When powered and booted up, this item enhances navigation.">▶Nav: When powered and booted up, this item enhances navigation.</string>
+  <string Context="ModNulling Display Adjective" ID="{{K|nulling}}" OrderAdjust="0">▶{{K|nulling}}</string>
+  <string Context="ModNulling Generic Description" ID="Nulling: When powered on a weapon, this item astrally burdens its target on hit. When powered on a piece of armor or shield, this item astrally burdens its wearer. Compute power on the local lattice increases the effectiveness of this effect.">▶Nulling: When powered on a weapon, this item astrally burdens its target on hit. When powered on a piece of armor or shield, this item astrally burdens its wearer. Compute power on the local lattice increases the effectiveness of this effect.</string>
+  <string Context="ModNulling Armor Description" ID="Nulling: When powered, this armor astrally burdens its wearer. Compute power on the local lattice increases the effectiveness of this effect.">▶Nulling: When powered, this armor astrally burdens its wearer. Compute power on the local lattice increases the effectiveness of this effect.</string>
+  <string Context="ModNulling Shield Description" ID="Nulling: When powered, this shield astrally burdens its wielder. Compute power on the local lattice increases the effectiveness of this effect.">▶Nulling: When powered, this shield astrally burdens its wielder. Compute power on the local lattice increases the effectiveness of this effect.</string>
+  <string Context="ModNulling Weapon Description" ID="Nulling: When powered, this weapon astrally burdens its target on hit. Compute power on the local lattice increases the effectiveness of this effect.">▶Nulling: When powered, this weapon astrally burdens its target on hit. Compute power on the local lattice increases the effectiveness of this effect.</string>
+  <string Context="ModOverloaded Techscanning NameForStatus" ID="PowerRegulator">▶PowerRegulator</string>
+  <string Context="ModOverloaded Display Adjective" ID="{{overloaded|overloaded}}" OrderAdjust="-20">▶{{overloaded|overloaded}}</string>
+  <string Context="ModOverloaded Description" ID="Overloaded: This item has increased performance but consumes extra charge, generates heat when used, and has a chance to break relative to its charge draw.">▶Overloaded: This item has increased performance but consumes extra charge, generates heat when used, and has a chance to break relative to its charge draw.</string>
+  <string Context="ModPadded Techscanning NameForStatus" ID="Padding">▶Padding</string>
   <string Context="ModPadded Description Adjective" ID="padded" OrderAdjust="0">▶padded</string>
   <string Context="ModPadded Stun Resist Particle Text" ID="Resisted stun!">▶Resisted stun!</string>
   <string Context="ModPadded Daze Resist Particle Text" ID="Resisted daze!">▶Resisted daze!</string>
   <string Context="ModPadded Soften Message" ID="=subject.The.name's= padding softened the blow.">▶=subject.The.name's= padding softened the blow.</string>
   <string Context="ModPadded Description" ID="Padded: This item grants =protectionChance.a.number=% chance to prevent daze or stun effects, and it doubles the chance for the wearer to shake off daze and stun effects with the Shake It Off skill power.">▶Padded: This item grants =protectionChance.a.number=% chance to prevent daze or stun effects, and it doubles the chance for the wearer to shake off daze and stun effects with the Shake It Off skill power.</string>
   <string Context="ModPainted Description Adjective" ID="{{painted|painted}}" OrderAdjust="0">▶{{painted|painted}}</string>
-  <string Context="Painted Postfix" ID="&#xA;{{cyan|Painted: This item is painted with a scene from the life of the ancient =sultanTerm= {{magenta|=sultan=}}:&#xA;&#xA;=painting=}}&#xA;" Value="▶&#xA;{{cyan|Painted: This item is painted with a scene from the life of the ancient =sultanTerm= {{magenta|=sultan=}}:&#xA;&#xA;=painting=}}&#xA;" />
+  <string Context="Painted Postfix" ID="Painted: This item is painted with a scene from the life of the ancient =sultanTerm= {{magenta|=sultan=}}:&#xA;&#xA;=painting=" Value="▶Painted: This item is painted with a scene from the life of the ancient =sultanTerm= {{magenta|=sultan=}}:&#xA;&#xA;=painting=" />
   <string Context="ModPainted Story Marred" ID="&lt;marred and unreadable&gt;">▶&lt;marred and unreadable&gt;</string>
+  <string Context="ModPhaseConjugate" ID="{{K|phase-conjugate}}" OrderAdjust="0">▶{{K|phase-conjugate}}</string>
+  <string Context="ModPhaseConjugate Description" ID="Phase-conjugate: This explosive shifts phase immediately before detonating.">▶Phase-conjugate: This explosive shifts phase immediately before detonating.</string>
+  <string Context="ModPhaseHarmonic Techscanning NameForStatus" ID="PhaseRegulator">▶PhaseRegulator</string>
+  <string Context="ModPhaseHarmonic Display Adjective" ID="{{phase-harmonic|phase-harmonic}}" OrderAdjust="0">▶{{phase-harmonic|phase-harmonic}}</string>
+  <string Context="ModPhaseHarmonic Description" ID="Phase-Harmonic: This weapon can affect both in-phase and out-of-phase objects.">▶Phase-Harmonic: This weapon can affect both in-phase and out-of-phase objects.</string>
+  <string Context="ModPiping Display Adjective" ID="piping" OrderAdjust="0">▶piping</string>
+  <string Context="ModPiping Description" ID="Piping: Has hydraulic pipes installed.">▶Piping: Has hydraulic pipes installed.</string>
+  <string Context="ModPolarized Display Adjective" ID="{{polarized|polarized}}" OrderAdjust="0">▶{{polarized|polarized}}</string>
+  <string Context="ModPolarized Description" ID="Polarized: The item offers protection against visual flash effects.">▶Polarized: The item offers protection against visual flash effects.</string>
+  <string Context="ModPsionics Display Adjective" ID="{{psionic|psionic}}" OrderAdjust="0">▶{{psionic|psionic}}</string>
+  <string Context="ModPisonics Display Remaining" ID="(=remainingDesc=)" OrderAdjust="-40">▶(=remainingDesc=)</string>
+  <string Context="ModPsionic Disappear Message" ID="=subject.Does:disappear=.">▶=subject.Does:disappear=.</string>
+  <string Context="ModPsionic Description" ID="Psionic: This weapon uses the wielder's Ego modifier for penetration bonus instead of Strength mod and attacks MA instead of AV. It will dissipate from the corporeal realm after some use.">▶Psionic: This weapon uses the wielder's Ego modifier for penetration bonus instead of Strength mod and attacks MA instead of AV. It will dissipate from the corporeal realm after some use.</string>
+  <string Context="ModPsionic Remaining Adjective Full" ID="substantial">▶substantial</string>
+  <string Context="ModPsionic Remaining Adjective Near Full" ID="lambent">▶lambent</string>
+  <string Context="ModPsionic Remaining Adjective Near Empty" ID="tenuous">▶tenuous</string>
+  <string Context="ModPsionic Remaining Adjective Empty" ID="insubstantial">▶insubstantial</string>
+  <string Context="ModPadded Techscanning NameForStatus" ID="QuantumReverb">▶QuantumReverb</string>
+  <string Context="ModQuantumReverb Hologram Display Name" ID="hologram of =subject.a.name">▶hologram of =subject.a.name</string>
+  <string Context="ModQuantumReverb Hologram Description" ID="Light stammers in parallax to form the image of an object. =subject.description.short=">▶Light stammers in parallax to form the image of an object. =subject.description.short=</string>
+  <string Context="ModQuantumReverb Hologram Appear Message" ID="=subject.A.name= =subject.verb:appear=.">▶=subject.A.name= =subject.verb:appear=.</string>
+  <string Context="ModQuantumReverb Display Adjective" ID="{{quantumreverb|quantum reverb}}" OrderAdjust="0">▶{{quantumreverb|quantum reverb}}</string>
+  <string Context="ModQuantumReverb Description" ID="Quantum reverb: When fired, this weapon creates a hologram of its wielder who continues to fire along the same path.">▶Quantum reverb: When fired, this weapon creates a hologram of its wielder who continues to fire along the same path.</string>
+  <string Context="ModRadioPowered Display Adjective" ID="{{C|radio-powered}}" OrderAdjust="0">▶{{C|radio-powered}}</string>
+  <string Context="ModRadioPowered Description" ID="Radio-powered: This item can be recharged via broadcast power.">▶Radio-powered: This item can be recharged via broadcast power.</string>
+  <string Context="ModRecycling Display Adjective" ID="{{B|recycling}}" OrderAdjust="0">▶{{B|recycling}}</string>
+  <string Context="ModRecycling Description With Liquid Volume" ID="Recycling: This item collects, purifies and stores up to =max.cardinal= =max.pluralize:drams= of the wearer's wastewater.">▶Recycling: This item collects, purifies and stores up to =max.cardinal= =max.pluralize:drams= of the wearer's wastewater.</string>
+  <string Context="ModRecycling Description Without Liquid Volume" ID="Recycling: This item collects and purifies the wearer's wastewater.">▶Recycling: This item collects and purifies the wearer's wastewater.</string>
+  <string Context="ModRefractive Display Adjective" ID="{{refractive|refractive}}" OrderAdjust="0">▶{{refractive|refractive}}</string>
+  <string Context="ModRefractive Description" ID="Refractive: This item has a chance to refract light-based attacks.">▶Refractive: This item has a chance to refract light-based attacks.</string>
+  <string Context="ModRefractive Instance Description" ID="Refractive: This item has =refractChance.a.number=% chance to refract light-based attacks.">▶Refractive: This item has =refractChance.a.number=% chance to refract light-based attacks.</string>
+  <string Context="ModReinforced Display Adjective" ID="reinforced" OrderAdjust="0">▶reinforced</string>
+  <string Context="ModReinforced Description" ID="Reinforced: +1 AV">▶Reinforced: +1 AV</string>
+  <string Context="ModRelicFreezing Techscanning NameForStatus" ID="HeatPump">▶HeatPump</string>
+  <string Context="ModRelicFreezing Description Tier Positive" ID="Freezing: When powered, this weapon deals an additional =damage= cold damage on hit.">▶Freezing: When powered, this weapon deals an additional =damage= cold damage on hit.</string>
+  <string Context="ModRelicFreezing Description Tier Zero" ID="Freezing: When powered, this weapon deals cold damage on hit.">▶Freezing: When powered, this weapon deals cold damage on hit.</string>
+  <string Context="ModRelicFreezing Instance Description" ID="Freezing: When powered, this weapon deals an additional =damageRange= cold damage on hit.">▶Freezing: When powered, this weapon deals an additional =damageRange= cold damage on hit.</string>
+  <string Context="ModScaled Display Adjective" ID="{{scaled|scaled}}" OrderAdjust="0">▶{{scaled|scaled}}</string>
+  <string Context="ModScaled Description" ID="Scaled: This item grants the wearer reputation with unshelled reptiles.">▶Scaled: This item grants the wearer reputation with unshelled reptiles.</string>
+  <string Context="ModScaled Instance Description" ID="Scaled: This item grants the wearer =bonus.signed= reputation with unshelled reptiles.">▶Scaled: This item grants the wearer =bonus.signed= reputation with unshelled reptiles.</string>
+  <string Context="ModScoped Display Adjective" ID="scoped" OrderAdjust="0">▶scoped</string>
+  <string Context="ModScoped Description" ID="Scoped: This weapon has increased accuracy.">▶Scoped: This weapon has increased accuracy.</string>
+  <string Context="ModSereneVisage Techscanning NameForStatus" ID="SereneVisage">▶SereneVisage</string>
+  <string Context="ModSereneVisage Display Adjective" ID="{{Y|serene}} visage" OrderAdjust="0">▶{{Y|serene}} visage</string>
+  <string Context="ModSereneVisage Description" ID="Serene visage: This item grants bonus Willpower, reduces the cooldown of Meditate by 40 rounds, and is worn on both the head and face. It requires both the head and face to wear.">▶Serene visage: This item grants bonus Willpower, reduces the cooldown of Meditate by 40 rounds, and is worn on both the head and face. It requires both the head and face to wear.</string>
+  <string Context="ModSerrated Display Adjective" ID="{{Y|serra{{R|t}}ed}}" OrderAdjust="0">▶{{Y|serra{{R|t}}ed}}</string>
+  <string Context="ModSerrated Description" ID="Serrated: This weapon has a chance to dismember opponents.">▶Serrated: This weapon has a chance to dismember opponents.</string>
+  <string Context="ModSerrated Instance Description" ID="Serrated: This weapon has =chance.a.number=% chance to dismember opponents.">▶Serrated: This weapon has =chance.a.number=% chance to dismember opponents.</string>
+  <string Context="ModSharp Techscanning NameForStatus" ID="EdgeEnhancement">▶EdgeEnhancement</string>
+  <string Context="ModSharp Display Adjective" ID="sharp" OrderAdjust="-20">▶sharp</string>
+  <string Context="ModSharp Description" ID="Sharp: +1 to penetration rolls">▶Sharp: +1 to penetration rolls</string>
+  <string Context="ModSirocco Techscanning NameForStatus" ID="Sirocco">▶Sirocco</string>
+  <string Context="ModSirocco Description" ID="Sirocco: Drains 1 Toughness from any organic target this weapon damages for 3-4 turns.">▶Sirocco: Drains 1 Toughness from any organic target this weapon damages for 3-4 turns.</string>
+  <string Context="ModSixfingered Display Adjective" ID="{{G|six-fingered}}">▶{{G|six-fingered}}</string>
+  <string Context="ModSixFingered Description" ID="Six-Fingered: +1 Agility">▶Six-Fingered: +1 Agility</string>
+  <string Context="ModSixFingered Instance Description" ID="Six-Fingered: =amount.signed= Agility">▶Six-Fingered: =amount.signed= Agility</string>
+  <string Context="ModSlender Display Adjective" ID="slender" OrderAdjust="-20">▶slender</string>
+  <string Context="ModSlender Description" ID="Slender: This item weighs less than normal.">▶Slender: This item weighs less than normal.</string>
+  <string Context="ModSnailEncrusted Display Adjective" ID="{{snail-encrusted|snail-encrusted}}" OrderAdjust="0">▶{{snail-encrusted|snail-encrusted}}</string>
+  <string Context="ModSnailEncrusted Description" ID="Snail-Encrusted: This item is crawling with tiny snails and grants the wearer reputation with mollusks.">▶Snail-Encrusted: This item is crawling with tiny snails and grants the wearer reputation with mollusks.</string>
+  <string Context="ModSnailEncrustedDescription" ID="Snail-Encrusted: This item is crawling with tiny snails and grants the wearer =amount.signed= reputation with mollusks.">▶Snail-Encrusted: This item is crawling with tiny snails and grants the wearer =amount.signed= reputation with mollusks.</string>
+  <string Context="ModSpiked Techscanning NameForStatus" ID="PenetrationModule">▶PenetrationModule</string>
+  <string Context="ModSpiked Display Adjective" ID="{{spiked|spiked}}" OrderAdjust="5">▶{{spiked|spiked}}</string>
+  <string Context="ModSpiked Description" ID="Spiked: This item causes additional bleeding damage.">▶Spiked: This item causes additional bleeding damage.</string>
+  <string Context="ModSpiked Description Shield" ID="Spiked: This item adds bonus damage to Shield Slam equal to your Strength modifier and causes your target to bleed.">▶Spiked: This item adds bonus damage to Shield Slam equal to your Strength modifier and causes your target to bleed.</string>
+  <string Context="ModSpiked Description Unarmed" ID="Spiked: Unarmed attacks performed while this item is equipped cause bleeding.">▶Spiked: Unarmed attacks performed while this item is equipped cause bleeding.</string>
+  <string Context="ModSpringLoaded Techscanning NameForStatus" ID="MobilityAssist">▶MobilityAssist</string>
+  <string Context="ModSpringLoaded Display Adjective" ID="spring-loaded" OrderAdjust="0">▶spring-loaded</string>
+  <string Context="ModSpringLoaded Description" ID="Spring-loaded: This item grants bonus move speed.">▶Spring-loaded: This item grants bonus move speed.</string>
+  <string Context="ModSturdy Techscanning NameForStatus" ID="StructuralSupport">▶StructuralSupport</string>
+  <string Context="ModSturdy Display Adjective" ID="sturdy" OrderAdjust="0">▶sturdy</string>
+  <string Context="ModSturdy Description" ID="Sturdy: This item cannot break or crack, though it can still be destroyed.">▶Sturdy: This item cannot break or crack, though it can still be destroyed.</string>
+  <string Context="ModSturdy Instance Description Can't Be Damaged" ID="Sturdy: This item cannot break or crack.">▶Sturdy: This item cannot break or crack.</string>
+  <string Context="ModSturdy Instance Description" ID="Sturdy: This item cannot break or crack, though it can still be destroyed.">▶Sturdy: This item cannot break or crack, though it can still be destroyed.</string>
+  <string Context="ModSuspensor Display Adjective" ID="{{watery|suspensors}}" OrderAdjust="0">▶{{watery|suspensors}}</string>
+  <string Context="ModSuspensor Description" ID="Fitted with suspensors: When powered, this item is weightless.">▶Fitted with suspensors: When powered, this item is weightless.</string>
+  <string Context="ModTerrifyingVisage Techscanning NameForStatus" ID="TerrifyingVisage">▶TerrifyingVisage</string>
+  <string Context="ModTerrifyingVisage Display Adjective" ID="{{K|terrifying}} visage" OrderAdjust="0">▶{{K|terrifying}} visage</string>
+  <string Context="ModTerrifying Visage Description" ID="Terrifying visage: This item reduces the cooldowns of Berate, Intimidate, and Menacing Stare by 10 rounds. It requires both the head and face to wear.">▶Terrifying visage: This item reduces the cooldowns of Berate, Intimidate, and Menacing Stare by 10 rounds. It requires both the head and face to wear.</string>
+  <string Context="ModTimereaver Techscanning NameForStatus" ID="TimelikeManifoldResonator">▶TimelikeManifoldResonator</string>
+  <string Context="ModTimereaver Description" ID="Timereaver: This weapon has =chance.a.number=% chance to stop time for two turns when =subject.it= =subject.verb:hit=.">▶Timereaver: This weapon has =chance.a.number=% chance to stop time for two turns when =subject.it= =subject.verb:hit=.</string>
+  <string Context="ModTransmuteOnHit Message" ID="=subject.Does:were= transmuted into =object.a.name=.">▶=subject.Does:were= transmuted into =object.a.name=.</string>
+  <string Context="ModTransmute =descriptionTerm=" ID="a gemstone">▶a gemstone</string>
+  <string Context="ModTransmuteOnHit Description Small Chance" ID="Small chance to transmute an enemy into =descriptionTerm= on hit.">▶Small chance to transmute an enemy into =descriptionTerm= on hit.</string>
+  <string Context="ModTransmuteOnHit Description" ID="=chance=% chance to transmute an enemy into =descriptionTerm= on hit.">▶=chance=% chance to transmute an enemy into =descriptionTerm= on hit.</string>
+  <string Context="ModTwoFaced Display Adjective" ID="two-faced" OrderAdjust="0">▶two-faced</string>
+  <string Context="ModTwoFaced Description" ID="Two-faced: This item grants an additional face slot.">▶Two-faced: This item grants an additional face slot.</string>
+  <string Context="ModVisor Techscanning NameForStatus" ID="Visor">▶Visor</string>
+  <string Context="ModVisored Display Adjective" ID="visored" OrderAdjust="0">▶visored</string>
+  <string Context="ModVisored Description" ID="Visored: +1 DV">▶Visored: +1 DV</string>
+  <string Context="ModWeightless Techscanning NameForStatus" ID="Weightless">▶Weightless</string>
+  <string Context="ModWeightless Display Adjective" ID="{{y-K sequence|weightless}}" OrderAdjust="0">▶{{y-K sequence|weightless}}</string>
+  <string Context="ModWeightless Description" ID="Weightless: This item weighs nothing.">▶Weightless: This item weighs nothing.</string>
   <string Context="ModWillowy Adjective" ID="willowy" OrderAdjust="0">▶willowy</string>
   <string Context="ModWillowy ShortDescription" ID="Willowy: This item weighs much less than normal.">▶Willowy: This item weighs much less than normal.</string>
   <string Context="ModWired Techscanning NameForStatus" ID="Wiring">▶Wiring</string>
@@ -2680,6 +2969,22 @@ alone if no match found.
   <string Context="ModWired Description" ID="Wired: Has electrical wiring.">▶Wired: Has electrical wiring.</string>
   <string Context="ModWooly Adjective" ID="{{Y|wooly}}" OrderAdjust="0">▶{{Y|wooly}}</string>
   <string Context="ModWooly Description" ID="Wooly: This item grants resistance to heat and cold.">▶Wooly: This item grants resistance to heat and cold.</string>
+  <string Context="ModImprovedMutationBase Mutation Display Name Snapshot" ID="=mutation.name=">▶=mutation.name=</string>
+  <string Context="ModImprovedMutationBase Description" ID="Grants you =mutationName= at level =tier=. If you already have =mutationName=, its level is increased by =tier=.">▶Grants you =mutationName= at level =tier=. If you already have =mutationName=, its level is increased by =tier=.</string>
+  <string Context="ModCamo Display Adjective" ID="{{camouflage|camo}}" OrderAdjust="20">▶{{camouflage|camo}}</string>
+  <string Context="ModCamo Physical Description" ID="=subject.It= =subject.verb:are= covered in mottled green, brown, gray, and black markings.">▶=subject.It= =subject.verb:are= covered in mottled green, brown, gray, and black markings.</string>
+  <string Context="ModCamo Description" ID="Camo: This item provides camouflage in foliage.">▶Camo: This item provides camouflage in foliage.</string>
+  <string Context="ModUrbanCamo Display Adjective" ID="{{urban camouflage|urban camo}}" OrderAdjust="20">▶{{urban camouflage|urban camo}}</string>
+  <string Context="ModUrbanCamo Physical Description" ID="=subject.It= =subject.verb:are= covered in mottled gray, white and black markings.">▶=subject.It= =subject.verb:are= covered in mottled gray, white and black markings.</string>
+  <string Context="ModUrbanCamo Description" ID="Urban camo: This item provides camouflage in urban environments.">▶Urban camo: This item provides camouflage in urban environments.</string>
+  <string Context="ModImprovedBerserk Techscanning NameForStatus" ID="ImprovedBerserk">▶ImprovedBerserk</string>
+  <string Context="ModImprovedBerserk Description" ID="Your blood frenzies last twice as long.">▶Your blood frenzies last twice as long.</string>
+  <string Context="ModImprovedBlock Techscanning NameForStatus" ID="ImprovedBlock">▶ImprovedBlock</string>
+  <string Context="ModImprovedBlock Description" ID="Your chance to block with shields is increased by 25%.">▶Your chance to block with shields is increased by 25%.</string>
+  <string Context="ModImprovedBludgeon Techscanning NameForStatus" ID="ImprovedBludgeon">▶ImprovedBludgeon</string>
+  <string Context="ModImprovedBludgeon Description" ID="Your chance to Bludgeon is doubled.">▶Your chance to Bludgeon is doubled.</string>
+  <string Context="ModImprovedHobble Techscanning NameForStatus" ID="ImprovedHobble">▶ImprovedHobble</string>
+  <string Context="ModImprovedHobble Description" ID="Your Hobble cooldown is reduced by 5 rounds.">▶Your Hobble cooldown is reduced by 5 rounds.</string>
   <string Context="BaseMutation DefectMarker" ID="({{r|D}})">▶({{r|D}})</string>
   <string Context="Amnesia Forgot Secret Message" ID="You feel like you forgot something important.">▶You feel like you forgot something important.</string>
   <string Context="Amnesia Forgot Layout Message" ID="This place feels vaguely familiar.">▶This place feels vaguely familiar.</string>
@@ -2906,7 +3211,7 @@ alone if no match found.
   <string Context="mutation sleep gas ability name" ID="Release Sleep Gas">▶Release Sleep Gas</string>
   <string Context="mutation corrosive gas ability name" ID="Release Corrosive Gas">▶Release Corrosive Gas</string>
   <string Context="mutation plasma gas ability name" ID="Release Plasma">▶Release Plasma</string>
-  <string Context="mutation poison gas" ID="Release Poison Gas">▶Release Poison Gas</string>
+  <string Context="mutation poison gas ability name" ID="Release Poison Gas">▶Release Poison Gas</string>
   <string Context="mutation defoliant gas ability name" ID="Release Defoliant">▶Release Defoliant</string>
   <string Context="mutation fungicide gas ability name" ID="Release Fungicide">▶Release Fungicide</string>
   <string Context="mutation confusion gas ability name" ID="Release Confusion Gas">▶Release Confusion Gas</string>
@@ -2918,7 +3223,7 @@ alone if no match found.
   <string Context="mutation gas generation ability name" ID="Gas Generation">▶Gas Generation</string>
   <string ID="=subject.Does:stop= releasing =gasdisplayname=.">▶=subject.Does:stop= releasing =gasdisplayname=.</string>
   <string ID="=subject.Does:start= releasing =gasdisplayname=.">▶=subject.Does:start= releasing =gasdisplayname=.</string>
-  <string Context="HeatAbsorbtion heal message (player only)" ID="You are healed for =amount= by the heat.">▶You are healed for =amount= by the heat.</string>
+  <string Context="HeatAbsorption heal message (player only)" ID="You are healed for =amount= by the heat.">▶You are healed for =amount= by the heat.</string>
   <string Context="Triple-Jointed Triggered Message Log" ID="You do that with ease.">▶You do that with ease.</string>
   <string Context="Triple-Jointed Triggered Combat Text" ID="No cooldown!">▶No cooldown!</string>
   <string Context="HeightenedHearing hostile perception verb" ID="hear">▶hear</string>
@@ -2931,7 +3236,7 @@ alone if no match found.
   <string Context="Metamorphosis Error" ID="That creature is of too high a level to duplicate!">▶That creature is of too high a level to duplicate!</string>
   <string Context="Metamorphosis ActivatedAbility Name" ID="Metamorphosis">▶Metamorphosis</string>
   <string Context="Phasing Activated Ability Name" ID="Phase">▶Phase</string>
-  <string Context="Photosyntheic Skin Bask Error" ID="You can't bask with hostiles nearby.">▶You can't bask with hostiles nearby.</string>
+  <string Context="Photosynthetic Skin Bask Error" ID="You can't bask with hostiles nearby.">▶You can't bask with hostiles nearby.</string>
   <string Context="Photosynthetic Skin Bask Error" ID="You need sunlight to bask in.">▶You need sunlight to bask in.</string>
   <string Context="Photosynthetic Skin Bask Metabolize popup" ID="You start to metabolize the meal, gaining the following effect for the rest of the day:&#xA;&#xA;{{W|=effect.details=}}" Value="▶You start to metabolize the meal, gaining the following effect for the rest of the day:&#xA;&#xA;{{W|=effect.details=}}" />
   <string Context="Photosynthetic Skin DV Bonus Description" ID="camouflage">▶camouflage</string>
@@ -3038,10 +3343,17 @@ alone if no match found.
   <string Context="EnergyCellSocket Insert Cell Into Device" ID="=subject.Does:slot= =object.a.name= into =device.the.name:itsSubjectPossessor=.">▶=subject.Does:slot= =object.a.name= into =device.the.name:itsSubjectPossessor=.</string>
   <string Context="EnergyCellSocket Can't Remove" ID="You can't remove the old cell!">▶You can't remove the old cell!</string>
   <string Context="Windup default verb" ID="wind">▶wind</string>
+  <string Context="ExistenceSupport - Unsupported message log" ID="=subject.The.name==subject.directionIfAny= =subject.verb:disappear=.">▶=subject.The.name==subject.directionIfAny= =subject.verb:disappear=.</string>
+  <string Context="Extradimensional Creature Short Description" ID="This creature is native to the dimension known as =dimensionName=.">▶This creature is native to the dimension known as =dimensionName=.</string>
+  <string Context="Robot Mutation Term" ID="module">▶module</string>
   <string Context="Temporary - Disappearing combat log message" ID="=subject.The.name==subject.directionIfAny= =subject.verb:disappear=.">▶=subject.The.name==subject.directionIfAny= =subject.verb:disappear=.</string>
   <string Context="Temporary - Death Reason" ID="Faded from existence.">▶Faded from existence.</string>
   <string Context="Temporary - Stabilized" ID="=subject.Does:flicker= and =subject.possessive= worldline through spacetime snaps back to its canonical path. =subject.The.name= =subject.verb:vanish=.">▶=subject.Does:flicker= and =subject.possessive= worldline through spacetime snaps back to its canonical path. =subject.The.name= =subject.verb:vanish=.</string>
+  <string Context="AIBarathrumShuttle" ID="=subject.Does:start= interfacing with =object.the.name=.">▶=subject.Does:start= interfacing with =object.the.name=.</string>
   <string Context="RefractLight default verb" ID="refract">▶refract</string>
+  <string Context="RebornOnDeathInThinWorld Popup" ID="Death has no meaning here.">▶Death has no meaning here.</string>
+  <string Context="RebornOnDeathInThinWorld Message Log" ID="=subject.Does:continue= being.">▶=subject.Does:continue= being.</string>
+  <string Context="Axe Weapon Critical Description" ID="Axe (cleaves armor on critical hit)">▶Axe (cleaves armor on critical hit)</string>
   <string Context="Dismember TargetPicker Label" ID="Dismember">▶Dismember</string>
   <string Context="Dismember By Weapon" ID="=weapon.The.name:asPossessed= =weapon.verb:chop= off =object.the.name's= =limb.ordinalName=!">▶=weapon.The.name:asPossessed= =weapon.verb:chop= off =object.the.name's= =limb.ordinalName=!</string>
   <string Context="Dismember By Self" ID="=subject.Does:chop= off =subject.their= own =limb.ordinalName=!">▶=subject.Does:chop= off =subject.their= own =limb.ordinalName=!</string>
@@ -3052,6 +3364,8 @@ alone if no match found.
   <string Context="Dismember Fail Nothing" ID="There's nothing there to dismember.">▶There's nothing there to dismember.</string>
   <string Context="Dismember Fail No Primary Axe" ID="You must have an axe equipped in your primary hand to dismember.">▶You must have an axe equipped in your primary hand to dismember.</string>
   <string Context="Dismember ActivatedAbility Name" ID="Dismember">▶Dismember</string>
+  <string Context="BaseSkill Add Skill Popup (WaterRitual)" ID="=subject.does:teach|strip= you {{W|=mutation.name=}}!">▶=subject.does:teach|strip= you {{W|=mutation.name=}}!</string>
+  <string Context="BaseSkill Add Skill Popup (Book)" ID="You learn {{W|=mutation.name=}}!">▶You learn {{W|=mutation.name=}}!</string>
   <string Context="Campfire GetPointsOfInterest" ID="nearest">▶nearest</string>
   <string Context="Campfire PresetMeal CookingActions" ID="Eat =cookingRecipe.name.recolor:Y=">▶Eat =cookingRecipe.name.recolor:Y=</string>
   <string Context="Campfire PreserveItems default ServingType" ID="serving">▶serving</string>
@@ -3078,7 +3392,7 @@ alone if no match found.
   <string Context="Campfire CookFromIngredients remaining, selected &lt; max" ID="&#xA;{{y|[up to =n= remaining]}}" Value="▶&#xA;{{y|[up to =n= remaining]}}" />
   <string Context="Campfire CookFromIngredients remaining, selected = max" ID="&#xA;{{y|[0 remaining]}}" Value="▶&#xA;{{y|[0 remaining]}}" />
   <string Context="Campfire CookFromIngredients - select ingredients cook action" ID="{{W|Cook with the {{=color=|=n=}} selected ingredients.}}=remaining=">▶{{W|Cook with the {{=color=|=n=}} selected ingredients.}}=remaining=</string>
-  <string Context="Campfire CookFromIngredients ingredient selector menu" ID="=selected.checkbox.color=  =name= {{{{K|x=count=}}}}">▶=selected.checkbox.color=  =name= {{{{K|x=count=}}}}</string>
+  <string Context="Campfire CookFromIngredients ingredient selector menu" ID="=selected.checkbox.color=  =name= {{K|x=count=}}">▶=selected.checkbox.color=  =name= {{K|x=count=}}</string>
   <string Context="Campfire CookFromIngredients ingredient selector menu title" ID="Choose ingredients to cook with.">▶Choose ingredients to cook with.</string>
   <string Context="Campfire CookFromIngredients Inspired Picker Title" ID="You let inspiration guide you toward a mouthwatering dish.">▶You let inspiration guide you toward a mouthwatering dish.</string>
   <string Context="Campfire CookFromIngredients Inspired Recipe" ID="You create a new recipe for {{|=recipe.name=}}!">▶You create a new recipe for {{|=recipe.name=}}!</string>
@@ -3161,6 +3475,7 @@ alone if no match found.
   <string Context="Campfire NostrumsTreatDiseaseOnset" ID="Neither you nor any of your nearby companions are suffering from the onset of a disease.">▶Neither you nor any of your nearby companions are suffering from the onset of a disease.</string>
   <string Context="Campfire Extinguish" ID="=subject.Does:extinguish= =object.the.name=.">▶=subject.Does:extinguish= =object.the.name=.</string>
   <string Context="Campfire Extinguish (no actor)" ID="=subject.Does:are= extinguished by =object.the.name=.">▶=subject.Does:are= extinguished by =object.the.name=.</string>
+  <string Context="Cookbook Chef Name" ID="=subject.a.name|strip=">▶=subject.a.name|strip=</string>
   <string Context="Cookbook Accomplishment" ID="You read =object.refname=.">▶You read =object.refname=.</string>
   <string Context="Cookbook Mural Text" ID="In the month of =month= of =year=, =subject.name= penned the influential cookbook, =object.refname=.">▶In the month of =month= of =year=, =subject.name= penned the influential cookbook, =object.refname=.</string>
   <string Context="Cookbook Gospel Text" ID="At a remote library near =landmark.nearest=, =subject.name= met with a group of tongueless kippers and together they penned the beloved cookbook =object.refname=.">▶At a remote library near =landmark.nearest=, =subject.name= met with a group of tongueless kippers and together they penned the beloved cookbook =object.refname=.</string>
@@ -3170,8 +3485,10 @@ alone if no match found.
   <string Context="Cookbook Finalize Name" ID="{{g|=name|title=}}">▶{{g|=name|title=}}</string>
   <string Context="Cookbook ChefName for Recipe" ID="Chef =chefName=">▶Chef =chefName=</string>
   <string Context="Butchery ActivatedAbility Name" ID="Butcher Corpses">▶Butcher Corpses</string>
+  <string Context="Harvestry Ability Name" ID="Harvest Plants">▶Harvest Plants</string>
   <string Context="CookingRecipe GetDisplayName" ID="=chefName|'s= =displayName=">▶=chefName|'s= =displayName=</string>
   <string Context="CookingRecipe GetDisplayName no ChefName" ID="=displayName=">▶=displayName=</string>
+  <string Context="CookingRecipie - muti-ingredient join string" ID=", " Value="▶, " />
   <string Context="CookingRecipe GetAnnotatedDisplayName (component fragment)" ID="=component.name={{K|(=component.quantity=)}}">▶=component.name={{K|(=component.quantity=)}}</string>
   <string Context="CookingRecipe GetAnnotatedDisplayName (component fragment)" ID="=component.name=">▶=component.name=</string>
   <string Context="CookingRecipe GetAnnotatedDisplayName missing ingredients, multi-line" ID="{{K|=displayName|strip=}}&#xA;=components.join:, =" Value="▶{{K|=displayName|strip=}}&#xA;=components.join:, =" />
@@ -3186,6 +3503,19 @@ alone if no match found.
   <string Context="CookingRecipe Naming Ingredient" ID="=item.short|strip=">▶=item.short|strip=</string>
   <string Context="CookingRecipe Naming Ingredient" ID="=liquid=">▶=liquid=</string>
   <string Context="CookingRecipe Name Generator" ID="=spice:cooking.recipeNames.$ingredientCount.!random|title=">▶=spice:cooking.recipeNames.$ingredientCount.!random|title=</string>
+  <string Context="Cudgel Weapon Critcal Description" ID="Cudgel (dazes on critical hit)">▶Cudgel (dazes on critical hit)</string>
+  <string Context="Digging Ability Name" ID="Dig">▶Dig</string>
+  <string Context="Digging Movement Capability Description" ID="Dig To Square">▶Dig To Square</string>
+  <string Context="Digging Pick Square Title" ID="Dig to where?">▶Dig to where?</string>
+  <string Context="LongBlades Weapon Critical Description" ID="Long Blades (increased penetration on critical hit)">▶Long Blades (increased penetration on critical hit)</string>
+  <string Context="Multiweapon_Flurry Stat Change DueTo (Expertise)" ID="Multiweapon Expertise">▶Multiweapon Expertise</string>
+  <string Context="Multiweapon_Flurry Stat Change DueTo (Mastery)" ID="Multiweapon Mastery">▶Multiweapon Mastery</string>
+  <string Context="Multiweapon_Flurry Burrowed Fail" ID="You cannot do that while burrowed.">▶You cannot do that while burrowed.</string>
+  <string Context="Multiweapon_Flurry TargetPicker Label" ID="Flurry">▶Flurry</string>
+  <string Context="Multiweapon_Flurry Cannot Reach" ID="You cannot reach =object.the.name= to attack =object.them=.">▶You cannot reach =object.the.name= to attack =object.them=.</string>
+  <string Context="Multiweapon_Flurry Nothing To Attack" ID="There is nothing there you can attack.">▶There is nothing there you can attack.</string>
+  <string Context="Multiweapon_Flurry Attack Message" ID="=subject.Does:launch= into a flurry of attacks!">▶=subject.Does:launch= into a flurry of attacks!</string>
+  <string Context="Multiweapon_Flurry ActivatedAbility Name" ID="Flurry">▶Flurry</string>
   <string Context="Proselytize Ability Name" ID="Proselytize">▶Proselytize</string>
   <string Context="Proselytize Fail Glotrot" ID="You cannot proselytize without a tongue.">▶You cannot proselytize without a tongue.</string>
   <string Context="Proselytize Target Picker Title" ID="Proselytize">▶Proselytize</string>
@@ -3203,6 +3533,28 @@ alone if no match found.
   <string Context="Rebuke Robot invalid target" ID="There is nothing there to rebuke.">▶There is nothing there to rebuke.</string>
   <string Context="Rebuke Robot failure" ID="Your argument does not compute.">▶Your argument does not compute.</string>
   <string Context="Rebuke Robot neutralize" ID="=subject.Does:wander= away disinterestedly.">▶=subject.Does:wander= away disinterestedly.</string>
+  <string Context="Akimbo skill ability name" ID="Akimbo">▶Akimbo</string>
+  <string Context="EmptyTheClips Ability Name" ID="Empty the Clips">▶Empty the Clips</string>
+  <string Context="Run Skill Description Postfix (Hurdle)" ID="&#xA;DV penalty and no jumping removed due to Hurdle skill." Value="▶&#xA;DV penalty and no jumping removed due to Hurdle skill." />
+  <string Context="Run Skill Description Postfix (Pistol)" ID="&#xA;Pistol accuracy penalty removed due to Sling and Run skill." Value="▶&#xA;Pistol accuracy penalty removed due to Sling and Run skill." />
+  <string Context="Conatus - Sprint Duration Bonus Source" ID="=displayName= skill">▶=displayName= skill</string>
+  <string Context="IronMind particle text" ID="*shook off confusion*">▶*shook off confusion*</string>
+  <string Context="IronMind message log (partial confusion shake)" ID="You muster your will and shake off some of your confusion.">▶You muster your will and shake off some of your confusion.</string>
+  <string Context="IronMind message log" ID="You muster your will and shake off your confusion.">▶You muster your will and shake off your confusion.</string>
+  <string Context="Lionheart particle text" ID="*shook off fear*">▶*shook off fear*</string>
+  <string Context="Meditate Fail" ID="You are already meditating.">▶You are already meditating.</string>
+  <string Context="Meditate Ability Name" ID="Meditate">▶Meditate</string>
+  <string Context="ShieldWall Fail - No Shield" ID="You have no shield to raise.">▶You have no shield to raise.</string>
+  <string Context="ShieldWall Ability Name" ID="Shield Wall">▶Shield Wall</string>
+  <string Context="Single Weapon Fighting Ability Name" ID="Single Weapon Fighting">▶Single Weapon Fighting</string>
+  <string ID="=subject.Does:take= advantage of =subject.their= opponent's reaction to =subject.their= attack! =skills.andList|capitalize= =skills.pluralize:is:are= refreshed.">▶=subject.Does:take= advantage of =subject.their= opponent's reaction to =subject.their= attack! =skills.andList|capitalize= =skills.pluralize:is:are= refreshed.</string>
+  <string Context="Skill Weapon Class Name" ID="short-blade">▶short-blade</string>
+  <string Context="Skill Weapon Class Name" ID="long-blade">▶long-blade</string>
+  <string Context="Skill Weapon Class Name" ID="cudgel">▶cudgel</string>
+  <string Context="Skill Weapon Class Name" ID="axe">▶axe</string>
+  <string Context="Skill Weapon Class Name" ID="pistol">▶pistol</string>
+  <string Context="Skill Weapon Class Name" ID="bow and rifle">▶bow and rifle</string>
+  <string Context="Skill Weapon Class Name" ID="heavy weapon">▶heavy weapon</string>
   <string Context="Camp Fail Hostiles" ID="You can't cook with hostiles nearby.">▶You can't cook with hostiles nearby.</string>
   <string Context="Camp Fail Already Here" ID="There =campfire.is= already =campfire.a.name= here.">▶There =campfire.is= already =campfire.a.name= here.</string>
   <string Context="Camp Already Exists Prompt" ID="There =campfire.is= already =campfire.a.name= =subject.to.its.direction#campfire=. Do you want to go to =campfire.them=?">▶There =campfire.is= already =campfire.a.name= =subject.to.its.direction#campfire=. Do you want to go to =campfire.them=?</string>
@@ -3213,8 +3565,17 @@ alone if no match found.
   <string Context="Camp Fail In Pool" ID="You cannot start a campfire in =pool.the.name=.">▶You cannot start a campfire in =pool.the.name=.</string>
   <string Context="Camp Success" ID="=subject.Does:make= camp.">▶=subject.Does:make= camp.</string>
   <string Context="Camp ActivatedAbility Name" ID="Make Camp">▶Make Camp</string>
+  <string Context="Survival Skill Terrain Name" ID="salt desert">▶salt desert</string>
+  <string Context="Survival Skill Terrain Name" ID="ruins">▶ruins</string>
+  <string Context="Survival Skill Terrain Name" ID="plains">▶plains</string>
+  <string Context="Survival Skill Terrain Name" ID="hills and mountains">▶hills and mountains</string>
+  <string Context="Survival Skill Terrain Name" ID="desert canyons">▶desert canyons</string>
+  <string Context="Survival Skill Terrain Name" ID="salt marsh">▶salt marsh</string>
+  <string Context="Survival Skill Terrain Name" ID="jungle">▶jungle</string>
+  <string Context="Survival Skill Terrain Name" ID="rivers and lakes">▶rivers and lakes</string>
   <string Context="Charge ActivatedAbility Name" ID="Charge">▶Charge</string>
   <string Context="Sprint ActivatedAbility Name" ID="Sprint">▶Sprint</string>
+  <string Context="Sprint Behavior verb" ID="sprint">▶sprint</string>
   <string Context="Tinker Recharge" ID="You don't have any =bits.bitString= bits, which are required for recharging.">▶You don't have any =bits.bitString= bits, which are required for recharging.</string>
   <string Context="Tinker Recharge" ID="It would take {{C|=needed=}} =bits.bitString= =needed.ifplural:bits:bit= to fully recharge =object.the.name:single=. You have {{C|=available=}}. How many do you want to use?">▶It would take {{C|=needed=}} =bits.bitString= =needed.ifplural:bits:bit= to fully recharge =object.the.name:single=. You have {{C|=available=}}. How many do you want to use?</string>
   <string Context="Tinker Recharge" ID="You have =partial.if:partially =recharged =object.the.name:single=.">▶You have =partial.if:partially =recharged =object.the.name:single=.</string>
@@ -3223,6 +3584,10 @@ alone if no match found.
   <string Context="Tinker Recharge" ID="You have no items that require charging.">▶You have no items that require charging.</string>
   <string Context="Tinker Recharge pick item title" ID="Select an item to charge.">▶Select an item to charge.</string>
   <string Context="Tinker Recharge Ability Name" ID="Recharge">▶Recharge</string>
+  <string Context="TrashRifling Ability Name" ID="Rifle through Trash">▶Rifle through Trash</string>
+  <string Context="Stacker - DisplayName Clause" ID="x=number=" OrderAdjust="60">▶x=number=</string>
+  <string Context="CrematoryMachineRoomTerminal Additional Option" ID="...">▶...</string>
+  <string ID="&lt;more...&gt;">▶&lt;more...&gt;</string>
   <string Context="Container Cannot Trade" ID="You cannot trade with =object.the.name=.">▶You cannot trade with =object.the.name=.</string>
   <string Context="Container Not Owned" ID="That is not owned by you. Are you sure you want to open it?">▶That is not owned by you. Are you sure you want to open it?</string>
   <string Context="Container Nothing Preposition That" ID="There's nothing =preposition= that. Would you like to store an item?">▶There's nothing =preposition= that. Would you like to store an item?</string>
@@ -3237,6 +3602,7 @@ alone if no match found.
   <string Context="EaterCryptPlaque engraving" ID="=part1=&#xA;&#xA;=part2=&#xA;&#xA;=part3=" Value="▶=part1=&#xA;&#xA;=part2=&#xA;&#xA;=part3=" />
   <string Context="EaterCryptPlaque finalize" ID="=engraving|caste.eaterPlaque=">▶=engraving|caste.eaterPlaque=</string>
   <string Context="IPlaquePart Inscription" ID="=baseInscription|varyPlaque#wordWrap#cornerColor#edgeColor#darkColor=">▶=baseInscription|varyPlaque#wordWrap#cornerColor#edgeColor#darkColor=</string>
+  <string Context="WorldTeleporter Message" ID="You are sucked through the surface of the sphere!">▶You are sucked through the surface of the sphere!</string>
   <string Context="TempleDedication Plaque Inscription Text" ID="This temple was built in 638,01qy by the Exhaustiers' Guild, who detached from their egregore =spice:egregorePrefix.!random|title= =spice:nouns.!random|title= in the =spice:nouns.!random|title= Era">▶This temple was built in 638,01qy by the Exhaustiers' Guild, who detached from their egregore =spice:egregorePrefix.!random|title= =spice:nouns.!random|title= in the =spice:nouns.!random|title= Era</string>
   <string Context="VillageTerrain text fragment" ID="=spice:history.regions.terrain.$terrain.over.!random=">▶=spice:history.regions.terrain.$terrain.over.!random=</string>
   <string Context="VillageTerrain text terrainFragment double" ID="=terrainFragment= and =terrainFragment2=">▶=terrainFragment= and =terrainFragment2=</string>
@@ -3265,6 +3631,7 @@ alone if no match found.
   <string Context="Skill UI PowerEntryRequirement List" ID="=elements.join=">▶=elements.join=</string>
   <string Context="Statistic - Stat Adjust Description Line - Activated" ID="When activated, =adjust.signed==percent.if:%= =stat.name=">▶When activated, =adjust.signed==percent.if:%= =stat.name=</string>
   <string Context="Statistic - Stat Adjust Description Line" ID="=adjust.signed==percent.if:%= =stat.name=">▶=adjust.signed==percent.if:%= =stat.name=</string>
+  <string Context="BitType Missing Data.xml entry DisplayName" ID="[{{=color=|Missing Bit =level=}}]">▶[{{=color=|Missing Bit =level=}}]</string>
   <string Context="Disassembly action description" ID="disassembling">▶disassembling</string>
   <string Context="Disassembly InterruptBecause" ID="the item you were working on disappeared">▶the item you were working on disappeared</string>
   <string Context="Disassembly InterruptBecause" ID="the item you were working on was destroyed">▶the item you were working on was destroyed</string>
@@ -3273,7 +3640,7 @@ alone if no match found.
   <string Context="Disassembly InterruptBecause" ID="=object.the.name= can no longer be disassembled">▶=object.the.name= can no longer be disassembled</string>
   <string Context="Disassembly InterruptBecause" ID="you no longer know how to disassemble things">▶you no longer know how to disassemble things</string>
   <string Context="Disassembly InterruptBecause" ID="you can no longer move your extremities">▶you can no longer move your extremities</string>
-  <string Context="Disassembly Item (fragment)" ID="=object.the.name=">▶=object.the.name=</string>
+  <string Context="Disassembly Item (fragment)" ID="=item.the.name:single=">▶=item.the.name:single=</string>
   <string Context="Disassembly" ID="You start disassembling =object.the.name=.">▶You start disassembling =object.the.name=.</string>
   <string Context="Disassembly where(fragment)" ID="=subject.to.its.direction#object=">▶=subject.to.its.direction#object=</string>
   <string Context="Disassembly learn to build (fragment)" ID="build =object.pluralName=">▶build =object.pluralName=</string>
@@ -3296,6 +3663,10 @@ alone if no match found.
   <string Context="Disassembly Message, only bits" ID="=itemsMessage= =bitMessage=">▶=itemsMessage= =bitMessage=</string>
   <string Context="Disassembly Message, nothing gained" ID="=itemsMessage=">▶=itemsMessage=</string>
   <string Context="Disassembly Item Stack (fragment)" ID="=item= x=done=">▶=item= x=done=</string>
+  <string Context="TinkerData InvalidBlueprint" ID="&lt;invalid blueprint&gt;">▶&lt;invalid blueprint&gt;</string>
+  <string Context="TinkerData MakesABatchOf" ID="Makes a batch of =nummade.cardinal=.">▶Makes a batch of =nummade.cardinal=.</string>
+  <string Context="TinkerData Description none" ID="&lt;none&gt;">▶&lt;none&gt;</string>
+  <string Context="TinkerData DataDisk PickBlueprint PopupTitle" ID="Pick a Blueprint:">▶Pick a Blueprint:</string>
   <string Context="Unit Add Body Part" ID="Extra =part.name= slot">▶Extra =part.name= slot</string>
   <string Context="Unit Cybernetic Install" ID="Cybernetic implant installed">▶Cybernetic implant installed</string>
   <string Context="Unit Gain Level" ID="=amount.signed= =amount.pluralize:level=">▶=amount.signed= =amount.pluralize:level=</string>
@@ -3338,6 +3709,7 @@ alone if no match found.
   <string Context="Settlements Generate Farm Name TitleFinal chance" ID="=prefixPlusSuffix|title=">▶=prefixPlusSuffix|title=</string>
   <string Context="Settlements Generate Farm Name TitleFinal chance" ID="=article|spaceAfter==prefix|title= =suffix|title=">▶=article|spaceAfter==prefix|title= =suffix|title=</string>
   <string Context="Settlements Generate Farm Name TitleFinal chance" ID="the =suffix|title= of =article|spaceAfter==prefix=">▶the =suffix|title= of =article|spaceAfter==prefix=</string>
+  <string Context="Replacer =ActivatedAbilityEntry.cooldown.rounds=" ID="=cooldown.things:round=">▶=cooldown.things:round=</string>
   <string Context="checkbox basic (checked)" ID="[■]">▶[■]</string>
   <string Context="checkbox basic (unchecked)" ID="[ ]">▶[ ]</string>
   <string Context="checkbox with color (checked)" ID="{{y|[{{G|■}}]}}">▶{{y|[{{G|■}}]}}</string>
@@ -3418,7 +3790,7 @@ alone if no match found.
   <string Context="Delegate =Int32.all.these=" ID="=number.threshold:3:all ==number.threshold:2:these:this=">▶=number.threshold:3:all ==number.threshold:2:these:this=</string>
   <string Context="SaveBonus No Effect" ID="no effect">▶no effect</string>
   <string Context="DelegatesTinkering Cost BitCost" ID="{{K|| Bit Cost |}}&#xA;=coststring=" Value="▶{{K|| Bit Cost |}}&#xA;=coststring=" />
-  <string ID="DelegatesTinkering Cost  Ingredients">▶DelegatesTinkering Cost  Ingredients</string>
+  <string Context="DelegatesTinkering Cost  Ingredients" ID="{{K|| Ingredients |}}">▶{{K|| Ingredients |}}</string>
   <string Context="DelegatesTinkering Cost  IngredientsOr" ID="-or-">▶-or-</string>
   <string Context="DelegatesTinkering Cost  Ingredients Item" ID="{{R|X}} =tinkereditem=">▶{{R|X}} =tinkereditem=</string>
   <string Context="StatLineNode xml template - invalid node name" ID="{{K|%%}}">▶{{K|%%}}</string>

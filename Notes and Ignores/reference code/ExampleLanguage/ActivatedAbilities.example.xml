@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.22
+Caves of Qud - Generated Localizable XML 2.0.212.23
 
 <activatedabilities>
 
@@ -239,7 +239,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.22
   </ability>
   <ability Command="ToggleHologramEmitter">
     <description>▶
-        <p>You generate <stat Name="DecoyNumber" /> holographic <stat Name="Decoys" /> of yourself.</p>
+        <p>You generate <gametext>=maxDecoys.a.or.x.things:holographic decoy=</gametext> of yourself.</p>
         <br />
         <p>Decoys move in reflection to you and draw aggro.</p>
         <statline Name="Range" DisplayName="▶Range" />

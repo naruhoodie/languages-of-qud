@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.22
+Caves of Qud - Generated Localizable XML 2.0.212.23
 
 <objects ExcludeFromCorpusGeneration="Key">
 
@@ -48,6 +48,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.22
   <object Name="Plasma" Load="Merge">
     <part Name="Render" DisplayName="▶plasma" />
     <part Name="Description" Short="▶Ribbons of emerald and neon lace streak through the crackling air and bloom in violent florets." />
+    <part Name="GasDamaging" Noun="▶plasma" />
     <tag Name="GasGenerationName" Value="▶Plasma Emission" />
     <tag Name="LevelEffectDescription" Value="▶damage and duration of plasma adhesion" />
   </object>
@@ -71,6 +72,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.22
   </object>
   <object Name="AcidGas" Load="Merge">
     <part Name="Render" DisplayName="▶corrosive gas" />
+    <part Name="GasDamaging" Noun="▶acid" />
     <part Name="Description" Short="▶Even now the nimbus of vaporized acid is condensing, starting to settle on its colonized surfaces, starting to sink through their soft edges." />
     <tag Name="GasGenerationName" Value="▶Corrosive Gas Generation" />
     <tag Name="LevelEffectDescription" Value="▶damage" />
@@ -100,18 +102,21 @@ Caves of Qud - Generated Localizable XML 2.0.212.22
   </object>
   <object Name="NormalityGas" Load="Merge">
     <part Name="Render" DisplayName="▶normality gas" />
+    <part Name="GasDamaging" Noun="▶normality gas" />
     <part Name="Description" Short="▶Gas molecules arrange along the ley lines of this plane to form an aeriform mesh. Objects on orthogonal trajectories are netted and shunted back toward their planar homes." />
     <tag Name="GasGenerationName" Value="▶Normality Gas Generation" />
     <tag Name="LevelEffectDescription" Value="▶astral tethering and damage versus extradimensional beings" />
   </object>
   <object Name="DefoliantGas" Load="Merge">
     <part Name="Render" DisplayName="▶defoliant" />
+    <part Name="GasDamaging" Noun="▶defoliant" />
     <part Name="Description" Short="▶The synthetic mist called Golden Dawn ascends from its canister to atomize leafage and leave a clear view of the horizon in its wake." />
     <tag Name="GasGenerationName" Value="▶Defoliant Generation" />
     <tag Name="LevelEffectDescription" Value="▶damage" />
   </object>
   <object Name="FungicideGas" Load="Merge">
     <part Name="Render" DisplayName="▶fungicide" />
+    <part Name="GasDamaging" Noun="▶fungicide" />
     <part Name="Description" Short="▶Magenta showers the heterotrophs in a wet film that inhibits their absorption of dead animal and plant-things." />
     <tag Name="GasGenerationName" Value="▶Fungicide Generation" />
     <tag Name="LevelEffectDescription" Value="▶damage" />

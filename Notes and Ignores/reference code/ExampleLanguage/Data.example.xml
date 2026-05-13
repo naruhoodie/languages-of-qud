@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.22
+Caves of Qud - Generated Localizable XML 2.0.212.23
 
 <objects ExcludeFromCorpusGeneration="Key">
 
@@ -384,5 +384,53 @@ Caves of Qud - Generated Localizable XML 2.0.212.22
   </object>
   <object Name="ProceduralCookingIngredient_ego" Load="Merge">
     <tag Name="Description" Value="▶ego-based" />
+  </object>
+  <object Name="BitType_0_R_Data" Load="Merge">
+    <tag Name="DisplayName" Value="▶{{R|scrap power systems}}" />
+    <tag Name="DisplayCharacter" Value="▶A" />
+  </object>
+  <object Name="BitType_0_G_Data" Load="Merge">
+    <tag Name="DisplayName" Value="▶{{G|scrap crystal}}" />
+    <tag Name="DisplayCharacter" Value="▶B" />
+  </object>
+  <object Name="BitType_0_B_Data" Load="Merge">
+    <tag Name="DisplayName" Value="▶{{B|scrap metal}}" />
+    <tag Name="DisplayCharacter" Value="▶C" />
+  </object>
+  <object Name="BitType_0_C_Data" Load="Merge">
+    <tag Name="DisplayName" Value="▶{{C|scrap electronics}}" />
+    <tag Name="DisplayCharacter" Value="▶D" />
+  </object>
+  <object Name="BitType_1_r_Data" Load="Merge">
+    <tag Name="DisplayName" Value="▶{{r|phasic power systems}}" />
+    <tag Name="DisplayCharacter" Value="▶1" />
+  </object>
+  <object Name="BitType_2_g_Data" Load="Merge">
+    <tag Name="DisplayName" Value="▶{{g|flawless crystal}}" />
+    <tag Name="DisplayCharacter" Value="▶2" />
+  </object>
+  <object Name="BitType_3_b_Data" Load="Merge">
+    <tag Name="DisplayName" Value="▶{{b|pure alloy}}" />
+    <tag Name="DisplayCharacter" Value="▶3" />
+  </object>
+  <object Name="BitType_4_c_Data" Load="Merge">
+    <tag Name="DisplayName" Value="▶{{c|pristine electronics}}" />
+    <tag Name="DisplayCharacter" Value="▶4" />
+  </object>
+  <object Name="BitType_5_K_Data" Load="Merge">
+    <tag Name="DisplayName" Value="▶{{K|nanomaterials}}" />
+    <tag Name="DisplayCharacter" Value="▶5" />
+  </object>
+  <object Name="BitType_6_W_Data" Load="Merge">
+    <tag Name="DisplayName" Value="▶{{W|photonics}}" />
+    <tag Name="DisplayCharacter" Value="▶6" />
+  </object>
+  <object Name="BitType_7_Y_Data" Load="Merge">
+    <tag Name="DisplayName" Value="▶{{Y|AI microcontrollers}}" />
+    <tag Name="DisplayCharacter" Value="▶7" />
+  </object>
+  <object Name="BitType_8_M_Data" Load="Merge">
+    <tag Name="DisplayName" Value="▶{{M|metacrystal}}" />
+    <tag Name="DisplayCharacter" Value="▶8" />
   </object>
 </objects>

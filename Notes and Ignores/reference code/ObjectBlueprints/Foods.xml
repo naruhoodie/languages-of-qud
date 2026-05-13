@@ -49,11 +49,7 @@
     <tag Name="AlwaysStack" />
     <tag Name="Preservable" />
     <tag Name="ExcludeFromGameScore" />
-    <tag Name="HasCustomStackerDisplay" />
-    <tag Name="StackerSingularPrefix" Value="{{y|[{{C|" />
-    <tag Name="StackerPluralPrefix" Value="{{y|[{{C|" />
-    <tag Name="StackerSingularPostfix" Value="}} serving]}}" />
-    <tag Name="StackerPluralPostfix" Value="}} servings]}}" />
+    <tag Name="CustomStackerDisplay" Value="{{y|[{{C|=number=}} =number.pluralize:serving=]}}" />
     <xtagGrammar iArticle="some" adjunctNoun="portion" massNoun="true" />		
   </object>
   

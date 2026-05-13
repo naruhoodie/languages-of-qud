@@ -11733,7 +11733,7 @@ These effects stack if multiple rubbergums are ingested." />
     <part Name="Commerce" Value="10" />
     <part Name="Description" Short="This figurine worked from =material= intricately depicts =creature.a.name:withTitles|strip=:
 
-=creature.description.short=" />
+=creature.description.very.short=" />
     <part Name="Physics" Category="Trade Goods" />
 	  <tag Name="EquipSound" Value="sfx_equip_material_generic_gemstone" />
     <tag Name="Tier" Value="1" />
@@ -12402,7 +12402,7 @@ These effects stack if multiple rubbergums are ingested." />
     <part Name="Render" DisplayName="{{r|wire strand}}" ColorString="&amp;r" RenderString="009" RenderLayer="5" DetailColor="w" Tile="Items/sw_copper_wire.bmp" />
     <part Name="Physics" Weight="0" />
     <part Name="FractionalWeight" Weight="0.04" />
-    <part Name="Wire" Material="metal" NameColor="&amp;r" ColorString1="&amp;r" ColorString2="&amp;R" ColorStringThreshold="25" />
+    <part Name="Wire" NameColor="&amp;r" ColorString1="&amp;r" ColorString2="&amp;R" ColorStringThreshold="25" />
     <part Name="Description" Short="A cord extruded from metal ore conducts current when laid together." />
     <part Name="Metal" />
     <tag Name="SingleDisplay" />

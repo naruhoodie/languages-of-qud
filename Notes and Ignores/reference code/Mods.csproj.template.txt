@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<AssemblyName>Mods</AssemblyName>
+		<PackageId>Mods</PackageId>
+		<Authors>$AUTHORS$</Authors>
+		<TargetFramework>netstandard2.0</TargetFramework>
+		<LangVersion>9</LangVersion>
+		<GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+		<GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
+		<QudLibPath>$MANAGED_PATH$</QudLibPath>
+		<DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
+	</PropertyGroup>
+	<ItemGroup>$REFERENCES</ItemGroup>
+</Project>

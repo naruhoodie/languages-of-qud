@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.22
+Caves of Qud - Generated Localizable XML 2.0.212.23
 
 <objects ExcludeFromCorpusGeneration="Key">
 
@@ -1591,11 +1591,13 @@ Caves of Qud - Generated Localizable XML 2.0.212.22
   </object>
   <object Name="Troll King 1" Load="Merge">
     <part Name="Render" DisplayName="▶Jotun" />
+    <part Name="Epithets" Primary="▶, Who Parts Limbs" />
     <part Name="Description" Short="▶A hoary humanoid slumps beneath the weight of =pronouns.possessive= broad and cragged back. Soaking fibers of inky, unkempt hair enswathe the great pale shoulder-rocks, and crossed over =pronouns.possessive= wide chest are two carbide axes rotting with rust. Rumpled lids lay half-shut over the discs of =pronouns.possessive= sluggish eyes, glazed in the respite of a convalessence bath." />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="Troll King 2" Load="Merge">
     <part Name="Render" DisplayName="▶Fjorn-Kosef" />
+    <part Name="Epithets" Primary="▶, Who Knits The Icy Lattice" />
     <part Name="Description" Short="▶A lattice of frostknit swaddles =pronouns.possessive= coarse beard and bushy brow hair. The great, bony slab of =pronouns.possessive= head is wreathed in a crown of ice-breath, and =pronouns.possessive= arms, long and dwindled and dead-pale, are tattooed in patterns of twinkling filament." />
     <xtagGrammar Proper="▶true" />
   </object>
@@ -1604,6 +1606,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.22
   </object>
   <object Name="Troll King 3" Load="Merge">
     <part Name="Render" DisplayName="▶Haggabah" />
+    <part Name="Epithets" Primary="▶, Who Plies The Umbral Path" />
     <part Name="Description" Short="▶Where light on light swims and dances, dark on dark rattles and jaws. There is no continuity of movement, instead the black void occasionally seems to suddenly burn into shape before blurring again. The eyes cramps at this severance, and the impression of hereness is lost again." />
     <xtagGrammar Proper="▶true" />
   </object>
@@ -2661,6 +2664,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.22
   </object>
   <object Name="Barathrumite Tinker" Load="Merge">
     <part Name="Render" DisplayName="▶tinker" />
+    <part Name="DisplayNameFactionAdjective" FactionAdjective="▶Barathrumite" NonFactionAdjective="▶urshiib" />
   </object>
   <object Name="Barathrumite Arconaut" Load="Merge">
     <part Name="Render" DisplayName="▶arconaut" />
@@ -3287,6 +3291,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.22
   <object Name="Shugruith" Load="Merge">
     <part Name="Render" DisplayName="▶Shug'ruith" />
     <part Name="Description" Short="▶A creature of immensity mounts the upper eyeline. Tunnel-steeled rings of extruded wormgut belch shale dust like cavern rain, and a colony of starspines grow across =pronouns.possessive= sloping world-back. In a wreath around =pronouns.possessive= pitting mouth, a hundredish eyes have grown to drink every photon out the jeweled and sunless haunts of yesterearth. Finally, irisdual light churning under =pronouns.possessive= tx-glass skin is filtered to a smoke and citrine hue and radiates out of body in lituus spirals." />
+    <part Name="Epithets" Primary="▶the Burrower" />
   </object>
   <object Name="Nephal_CordedTail" Load="Merge">
     <part Name="Render" DisplayName="▶corded tail" />
@@ -3793,6 +3798,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.22
   </object>
   <object Name="Tam" Load="Merge">
     <part Name="Render" DisplayName="▶Tam" />
+    <part Name="Titles" Ordinary="▶dromad merchant" />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="Mehmet" Load="Merge">
@@ -3832,6 +3838,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.22
   </object>
   <object Name="High Priest Eschelstadt" Load="Merge">
     <part Name="Render" DisplayName="▶Eschelstadt II" />
+    <part Name="Titles" Primary="▶High Priest of the Stilt" />
     <part Name="Description" Short="▶The Onias is robed in flowing machinic regalia. He is the voice of Shekhinah, and so he wields the charm of words to give depth cues on the shape of the Kasaphescence, and repeats the story of the Fathers who transited Her from the ideal to the material. As crownhead of the white dune see, he leads the high priests in tracing the circuit diagrams of the second Canticles, and moderates their hermeneutic divisions." />
     <part Name="Preacher" Prefix="▶The preacher says, {{W|'" Frozen="▶Eschelstadt II, High Priest of the Stilt mumbles inaudibly, encased in ice." />
     <xtagGrammar Proper="▶true" />
@@ -3849,17 +3856,20 @@ Caves of Qud - Generated Localizable XML 2.0.212.22
   </object>
   <object Name="Lulihart" Load="Merge">
     <part Name="Render" DisplayName="▶Lulihart" />
+    <part Name="Titles" Ordinary="▶hindren pariah" />
     <xtagGrammar Proper="▶true" />
     <part Name="Description" Short="▶There is little more to the slight deerkin than a bundle of spindly limbs, patchy pale-green fur, and tooth-white skin. Despite being one of the dune's more delicate creatures, =pronouns.subjective= =verb:perch:afterpronoun= on =pronouns.possessive= hooves with easy composure." />
   </object>
   <object Name="Tszappur" Load="Merge">
     <part Name="Render" DisplayName="▶Tszappur" />
+    <part Name="Titles" Primary="▶disciple of the Coiled Lamb" />
     <part Name="Description" Short="▶Folds of coarse-weave physician's cloth hang off =pronouns.possessive= lissome frame like a gunslinger's shawl, and the crinkled brim of an old hat blots the sun and starlight." />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="Shem -1" Load="Merge">
     <part Name="Render" DisplayName="▶{{c|Shem -1}}" />
     <part Name="Description" Short="▶Shem has augmented =pronouns.possessive= body beyond the chromeling's basic form by welding on a dissymmetric ruffled coat of scrap metal. It's too big and grandiose for =pronouns.possessive= little figure, but Shem shuffles about confidently, as if =pronouns.subjective= expect to grow into it." />
+    <part Name="Memorial" Eulogies="Barathrumites::▶You were perfect in every iteration." />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="Otho" Load="Merge">
@@ -3881,6 +3891,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.22
   </object>
   <object Name="Barathrum" Load="Merge">
     <part Name="Render" DisplayName="▶Barathrum" />
+    <part Name="Epithets" Primary="▶the Old" />
     <part Name="Description" Short="▶The absurd greebling of age has caused an extra patch of quills to grow where every one quillroot had been, so the hunching back of the eldest arch bear is now meadowed in white needles of every direction and length. =pronouns.Subjective= =verb:seem:afterpronoun= a world in one; a spine crumpled by a chiliad of years still holds a posture of thereness and knowing. Interred beneath scarps of wrinkled skin, =pronouns.possessive= eyes smolder to the horizon like dying suns." />
     <tag Name="staticFaction1" Value=",friend,▶inventing the Barathrum clock" />
     <tag Name="staticFaction2" Value=",friend,▶inventing the astrolabe" />
@@ -3901,41 +3912,49 @@ Caves of Qud - Generated Localizable XML 2.0.212.22
   <object Name="Sparafucile" Load="Merge">
     <part Name="Render" DisplayName="▶Sparafucile" />
     <part Name="Description" Short="▶Extra long and slender fingers poke the micrometer lengths necessary to adjust a sight lens or set the oscillator on a vibrohilt. =pronouns.Subjective= =verb:turn:afterpronoun= =pronouns.possessive= attention to you as you approach, to watch and read your speech." />
+    <part Name="Memorial" Eulogies="Barathrumites::▶You saw the fate before you and held it close. We had not your sight; please forgive us. We love you so." />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="Jacobo" Load="Merge">
     <part Name="Render" DisplayName="▶Jacobo" />
     <part Name="Description" Short="▶=pronouns.Possessive= face is small and shorn of all fur, and a gleaming silver rondure adorns =pronouns.possessive= right ear. All =pronouns.possessive= quills are trimmed to impeccable precision." />
+    <part Name="Memorial" Eulogies="Barathrumites::▶As you bathe in Her light and ask your many questions, dearest friend, commit to your memory the replies you receive, that you may tell me of them when I rejoin you." />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="Dardi" Load="Merge">
     <part Name="Render" DisplayName="▶Dardi" />
     <part Name="Description" Short="▶The big urshiib is dusted with spice and wet with honeyed grease, and =pronouns.subjective= =verb:smell:afterpronoun= of a melange: hot mushroom, cloying ink, saffron, and cooked tongue." />
+    <part Name="Memorial" Eulogies="Barathrumites::▶Today we are bereft of a passionate artisan and dedicated scientist. We laud you, from home to heptagon." />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="Hortensa" Load="Merge">
     <part Name="Render" DisplayName="▶Hortensa" />
     <part Name="Description" Short="▶Streaks of grey head-hair and crunched skin around =pronouns.possessive= eyes point to Hortensa's right-sitting point on life's timeline, but =pronouns.possessive= frame remains straight, =pronouns.possessive= hands remain dexterous, and =pronouns.possessive= muscles are full of figure and responsive. =pronouns.Possessive= bearing is sharp and unsoftened with age; =pronouns.possessive= lips are pursed in the tension of rational thought. But =pronouns.subjective= =verb:are:afterpronoun= comfortable; =pronouns.possessive= movements are unrushed. There are hints of joy and warmth in =pronouns.possessive= face; they shine through the dense layers of tissue grown out of careful routine." />
+    <part Name="Memorial" Eulogies="Barathrumites::▶Phial-mother, font of solutions, your merry bubbling will be so dearly missed." />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="Iseppa" Load="Merge">
     <part Name="Render" DisplayName="▶Iseppa" />
     <part Name="Description" Short="▶The soft urshiib's Pale Sea eyes achieve a sort of focal paradox. They appear to focus both impossibly close, on the screws and fasteners =pronouns.subjective= =verb:sort:afterpronoun= ahead of =pronouns.objective=, and impossibly far, on the horizon of attainable thought. =pronouns.Possessive= eyelids rest low with the weariness of both tasks." />
+    <part Name="Memorial" Eulogies="Barathrumites::▶Our choretime philosopher, you are mourned and celebrated. May this be the dreamless rest of which you spoke with such longing." />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="Neek" Load="Merge">
     <part Name="Render" DisplayName="▶Neek" />
     <part Name="Description" Short="▶=pronouns.Possessive= face is tender, clean, and dotted with tiny furs. =pronouns.Possessive= head-hair is gelatinized and shaped into a sharp rectangle. =pronouns.Possessive= eyes are light and wide. Weird clothes hang about =pronouns.possessive= narrow frame, and =pronouns.possessive= fingers fidget in patterned asynchronicity. Occasionally =pronouns.subjective= =verb:beam:afterpronoun= a grin and =verb:freeze:afterpronoun= =pronouns.possessive= motion before resuming as if nothing happened." />
+    <part Name="Memorial" Eulogies="Barathrumites::▶Never without a message, you were heard too rarely. What we gleaned of your brilliance will be cherished down generations." />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="Mafeo" Load="Merge">
     <part Name="Render" DisplayName="▶Mafeo" />
     <part Name="Description" Short="▶A proud and parted mane of bristles frames a wide grin. Tied with thread to several of them are thumb-bells meant to draw the attention of customers." />
+    <part Name="Memorial" Eulogies="Barathrumites::▶We miss you, bright kin. Wherever stories are told, we will know you are there with bells on." />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="Aloysius" Load="Merge">
     <part Name="Render" DisplayName="▶Aloysius" />
     <part Name="Description" Short="▶White fur and skin-crimps hatch from the corners of =pronouns.possessive= shy eyes. =pronouns.Subjective= =verb:run:afterpronoun= a spare bolt over =pronouns.possessive= knuckles, ready to fix a wanting chromeling for the thousandth and first time rather than chat with another person." />
+    <part Name="Memorial" Eulogies="Barathrumites::▶I mourn my dear friend. Aloysius, should you persist in pale blue to flicker through the thin world... tell me so. I eagerly await you." />
     <xtagGrammar Proper="▶true" />
   </object>
   <object Name="OthoCopy" Load="Merge">
@@ -4004,6 +4023,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.22
     <part Name="Description" Short="▶Beneath a mane of coarse hair, Warden Indrix's lips move without issuing forth any sound, perhaps in the formation of a litany invoked in the name of the vengeful god =pronouns.subjective= =verb:serve:afterpronoun=. The coarse hair grows in an uninterrupted mass down =pronouns.possessive= torso, that of a human but broader and more taut with muscle than any man's, disappearing only behind the sash of =pronouns.possessive= kilt. But for Mayor Nuntu and the warden =pronouns.reflexive=, no one knows the circumstances of Indrix's estrangement from =pronouns.possessive= kin, for no one dares mention it lest they draw the warden's ire. One of =pronouns.possessive= great curling horns has been cleanly cloven from =pronouns.possessive= head, however. That same horn along with several others hang from a belt slung low about Indrix's hips, giving =pronouns.objective= the distinction of being the only warrior to bear =pronouns.possessive= own appendage as a trophy." />
     <part Name="Render" DisplayName="▶Indrix" />
     <part Name="Honorifics" Primary="▶Warden" />
+    <part Name="Titles" Primary="▶Goatfolk Pariah" />
     <tag Name="staticFaction2" Value="Goatfolk,hate,▶some reason =pronouns.subjective= won't share" />
     <tag Name="staticFaction1" Value="Kyakukya,friend,▶defending their village" />
     <xtagGrammar Proper="▶true" />
@@ -4034,6 +4054,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.22
   </object>
   <object Name="Oboroqoru" Load="Merge">
     <part Name="Render" DisplayName="▶Oboroqoru" />
+    <part Name="Titles" Primary="▶Ape God" />
     <part Name="Description" Short="▶You stand not at the foot of a wintry knoll but beneath a mountain of muscle, swathed in blanched fur, that must be nature's crowning jewel. Cast from the mold of the great apes (or perhaps the exemplar from which those apes were molded), the living god differs only in that =pronouns.subjective= =verb:bear:afterpronoun= not two but six arms, each of which might be the fleeced bole of an ancient yew. =pronouns.Possessive= fists are of proportions that suggest the might with which hoary gods beat the mountains into shape when the earth was young. However, =pronouns.possessive= aspect bears not a shred of that divine fury; =pronouns.subjective= =verb:don't:afterpronoun= rage but instead =verb:sit:afterpronoun= in contemplation of eons." />
     <tag Name="PronounSet" Value="▶He/Him/His/His/Himself/god/godling/lord/Son/Brother/Father" />
     <xtagGrammar Proper="▶true" />
@@ -4043,6 +4064,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.22
   </object>
   <object Name="GolgothaSlog" Load="Merge">
     <part Name="Render" DisplayName="▶Slog" />
+    <part Name="Epithets" Primary="▶of the Cloaca" />
     <part Name="Description" Short="▶A slug has grown too large for =pronouns.possessive= anatomy to know what to do. Bubbles of stinking broth pop over breathing pores the size of elbows, and a fifth phase of trashlike matter leaks out =pronouns.possessive= crusty mantle and down the sharp keel of =pronouns.possessive= back. Where nature had the decency to end the body of the common slug in a muscular foot, Slog's tail is instead a sphincter-choked bilge hose that =pronouns.subjective= =verb:use:afterpronoun= to spew foul waterfunk about =pronouns.possessive= surroundings." />
     <xtagGrammar Proper="▶true" />
     <tag Name="SharesRecipeText" Value="▶You know why I'm here, Slog." />
@@ -4065,6 +4087,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.22
   </object>
   <object Name="Skybear" Load="Merge">
     <part Name="Render" DisplayName="▶Saad Amus" />
+    <part Name="Titles" Primary="▶the Sky-Bear" />
     <part Name="Description" Short="▶A whole man is formed of skinstuff that mirrors the subsurface scattering and rivulet imperfections of sculpted marble. =pronouns.Subjective= =verb:are:afterpronoun= white and pink and blushing with the sanguinity of moonlight filtered through a sieve of monofilament chrome. Eyes drawn to a lasting point, =pronouns.subjective= =verb:cast:afterpronoun= a furious gaze on a world made defamiliar." />
     <xtagGrammar Proper="▶true" />
   </object>
@@ -4074,6 +4097,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.22
   </object>
   <object Name="Phinae Hoshaiah" Load="Merge">
     <part Name="Render" DisplayName="▶Phinae Hoshaiah" />
+    <part Name="Titles" Primary="▶High Priest of the Rock" />
     <part Name="Description" Short="▶Years of proximity to the baetyl have blanched the antipriest's irises to chrome. A circuit diagram snakes its way across =pronouns.possessive= body in the mixed media of robe embroidery and skin rime. Unlike the lyrical circuit batches in the second Canticles, this one is a fractal elaboration of itself, blooming under the effect of heretical speciation due to the isolation of the Rock." />
     <xtagGrammar Proper="▶true" />
   </object>
@@ -4082,6 +4106,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.22
   </object>
   <object Name="Asphodel" Load="Merge">
     <part Name="Render" DisplayName="▶Asphodel" />
+    <part Name="Titles" Primary="▶Earl of Omonporch" />
     <part Name="Description" Short="▶Asphodel (called the Lovely) =subject.verb:turn= =pronouns.possessive= tipping anthers at seductive angles. All the bright golds of the harvest sun and musa peel are garnishes to the frail beauty of =pronouns.possessive= petal. =pronouns.Subjective= =verb:claim:afterpronoun= the aesthetic lineage of Hegelrut, and from that argument flowers =pronouns.possessive= claim to Omonporch and the entire Great Shade of the grove." />
     <xtagGrammar Proper="▶true" />
     <tag Name="PronounSet" Value="▶xe/xem/xyr" />
@@ -4095,6 +4120,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.22
   <object Name="Warden 1-FF" Load="Merge">
     <part Name="Render" DisplayName="▶1-FF" />
     <part Name="Honorifics" Primary="▶Warden" />
+    <part Name="Titles" Ordinary="▶reprogrammed conservator" />
     <part Name="Description" Short="▶Stuck to =pronouns.possessive= rind of mirrored chrome sequins are two separate ecologies: the crispy deadgrowths of the inner Tomb and the verdurous molt of grove life. As the years spin by and the colossus adjusts to the sun-drenched outer world, the latter consumes the former." />
     <tag Name="staticFaction1" Value="Ezra,friend,▶defending their village" />
     <xtagGrammar Proper="▶true" />
@@ -4107,6 +4133,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.22
   </object>
   <object Name="Zothom" Load="Merge">
     <part Name="Render" DisplayName="▶Zothom" />
+    <part Name="Epithets" Primary="▶the Penitent" />
     <part Name="Description" Short="▶A man in the threadbare clothes of a tattered knight stands as if hewn from the trunk of a tree. Gnarled hands grip with more force than is needed for the task of standing at an unasked vigil." />
     <xtagGrammar Proper="▶true" />
   </object>
@@ -4123,6 +4150,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.22
   </object>
   <object Name="Hamilcrab" Load="Merge">
     <part Name="Render" DisplayName="▶Hamilcrab" />
+    <part Name="Titles" Ordinary="▶cyclopean merchant" />
     <part Name="SecretObjectTalk" text="▶Hamilcrab's shop" message="▶You now know the location of {{M|Hamilcrab's shop}}." />
     <xtagGrammar Proper="▶true" />
   </object>
@@ -4202,6 +4230,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.22
   </object>
   <object Name="Rainwater Shomer" Load="Merge">
     <part Name="Render" DisplayName="▶Rainwater" />
+    <part Name="Epithets" Primary="▶Shomer" />
     <part Name="Description" Short="▶Damp clothes of the shomerim habit, a hoiche, a tallit, and a robe, drape over air as if they swathe a person's figure. Rain drops from another world patter on the bosks of ribboned thread, transforming from tense spheres of selfhood to diffuse moisture on the fibrous loam. Old life is absorbed by the ageless linen, wrung out by an invisible hand, and the cycle repeats itself." />
     <xtagGrammar Proper="▶true" />
   </object>
@@ -4313,6 +4342,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.22
   </object>
   <object Name="AoygNoLonger" Load="Merge">
     <part Name="Render" DisplayName="▶Aoyg-No-Longer" />
+    <part Name="Titles" Primary="▶servant of Ptoh in the Cosmic Wood" />
     <part Name="Description" Short="▶Dimensional travels have altered the waifhood of this Sightless meyvn into something new. Where rattle-thin bones poke the skin of their lesser kin, a strange metallic fat obtains on =pronouns.possessive= starburnt flesh. Instead of the novice or disciple's splotchy baldness on the scalp, a strange fungus from the outer reaches grows as a new type of hair and peaks out the darkness of =pronouns.possessive= cowl. =pronouns.Possessive= blindfold remains, though it spins out in lateral ribbons and hangs with unearthly weight." />
     <xtagGrammar Proper="▶true" />
   </object>
