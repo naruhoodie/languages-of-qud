@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.23
+Caves of Qud - Generated Localizable XML 2.0.212.24
 
 -->
 <biomes Lang="example" Encoding="utf-8">
@@ -13,6 +13,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.23
     </variant>
     <variant Name="Strong">
       <noun>▶fungus forest</noun>
+      <journalSecret>▶a {{m|fungus}} forest</journalSecret>
     </variant>
   </biome>
   <biome Name="Slimy">
@@ -26,6 +27,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.23
     </variant>
     <variant Name="Strong">
       <noun>▶slime bog</noun>
+      <journalSecret>▶a {{g|slime}} bog</journalSecret>
     </variant>
   </biome>
   <biome Name="Tarry">
@@ -38,6 +40,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.23
     </variant>
     <variant Name="Strong">
       <noun>▶flaming tar pits</noun>
+      <journalSecret>▶some {{fiery|flaming}} {{K|tar}} pits</journalSecret>
     </variant>
   </biome>
   <biome Name="Rusty">
@@ -51,6 +54,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.23
     </variant>
     <variant Name="Strong">
       <noun>▶rust bog</noun>
+      <journalSecret>▶a {{rusty|rust}} bog</journalSecret>
     </variant>
   </biome>
 </biomes>

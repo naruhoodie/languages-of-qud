@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.23
+Caves of Qud - Generated Localizable XML 2.0.212.24
 
 <objects ExcludeFromCorpusGeneration="Key">
 
@@ -3883,7 +3883,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.23
   <object Name="Wire Strand" Load="Merge">
     <part Name="Render" DisplayName="▶{{r|wire strand}}" />
     <part Name="Description" Short="▶A cord extruded from metal ore conducts current when laid together." />
-    <part Name="DeployableInfrastructure" DeployNoun="▶wiring" />
+    <part Name="DeployableInfrastructure" DeployNoun="▶wiring" MessageByCountSuffix="▶' of wire." />
   </object>
   <object Name="Garbage" Load="Merge">
     <part Name="Render" DisplayName="▶trash" />

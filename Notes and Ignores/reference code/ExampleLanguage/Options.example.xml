@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.23
+Caves of Qud - Generated Localizable XML 2.0.212.24
 
 <options>
 
@@ -158,6 +158,12 @@ Caves of Qud - Generated Localizable XML 2.0.212.23
   <option ID="OptionAllowCSMods" DisplayText="▶Allow scripting mods (scripting mods may contain malicious code!)" Category="▶Mods" />
   <option ID="OptionOutputModAssembly" DisplayText="▶Write compiled mod assemblies to disk" Category="▶Mods" />
   <option ID="OptionHarmonyDebug" DisplayText="▶Enable Harmony debug output" Category="▶Mods" />
+  <option ID="OptionTextBuilderDebug" DisplayText="▶Enable Text Builder leak analyzation" Category="▶Mods">
+    <helptext>▶
+      Most forms of Text Builder need to be disposed in order to properly release their pooled resources, typically with a using statement/declaration.
+      If you miss disposing a Text Builder an error will be printed, if this option is enabled that error will include a stack trace to where the disposal was missed.
+      </helptext>
+  </option>
   <option ID="OptionCheckMemory" DisplayText="▶Check memory usage and show a warning when it's high" Category="▶Performance" />
   <option ID="OptionCacheEarly" DisplayText="▶Flush zones to cache early (for low memory environments)" Category="▶Performance" />
   <option ID="OptionCollectEarly" DisplayText="▶Garbage collect after each zone flush (for low memory environments)" Category="▶Performance" />

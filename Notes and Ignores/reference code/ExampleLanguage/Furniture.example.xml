@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.23
+Caves of Qud - Generated Localizable XML 2.0.212.24
 
 <objects ExcludeFromCorpusGeneration="Key">
 
@@ -307,6 +307,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.23
   <object Name="Induction Charging Station" Load="Merge">
     <part Name="Render" DisplayName="▶induction charging station" />
     <part Name="Description" Short="▶Induction coils are rooted under a cork pad, where electric juice is transferred to battery cells." />
+    <part Name="Container" Preposition="▶on" />
     <tag Name="HeroNameTitleDescriptor" Value="▶Gaussian,Inductant,Potent,Replenisher,Restorer" />
     <tag Name="HeroNameTitleClientele" Value="▶Energy Cells,the Depleted,the Laser-Brained,the Power-Hungry,Tinkers" />
   </object>
@@ -370,6 +371,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.23
   <object Name="Universal Charging Station" Load="Merge">
     <part Name="Render" DisplayName="▶universal charging station" />
     <part Name="Description" Short="▶Shelves, pads, slates, and cradles are worked from metal like a chrome honeycomb. Electrical power gets concentrated into battery-juice and served into its docked cells." />
+    <part Name="Container" Preposition="▶on" />
     <tag Name="HeroNameTitleDescriptor" Value="▶Catholic,Potent,Replenisher,Restorer" />
     <tag Name="HeroNameTitleClientele" Value="▶Energy Cells,the Depleted,the Laser-Brained,the Power-Hungry,Tinkers" />
   </object>
@@ -580,6 +582,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.23
   <object Name="BaseBookshelf" Load="Merge">
     <part Name="Render" DisplayName="▶wooden bookshelf" />
     <part Name="Description" Short="▶Wood planks are nailed at orthogonal angles, and dust sleeps on the paper jackets." />
+    <part Name="Container" Preposition="▶on" />
   </object>
   <object Name="Joppa Bookshelf" Load="Merge">
     <part Name="Render" DisplayName="▶wooden bookshelf" />
@@ -837,6 +840,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.23
   <object Name="Weapon Rack" Load="Merge">
     <part Name="Render" DisplayName="▶weapon rack" />
     <part Name="Description" Short="▶Wooden and chrome poles let weapons rest peacefully." />
+    <part Name="Container" Preposition="▶on" />
   </object>
   <object Name="Gun Rack" Load="Merge">
     <part Name="Render" DisplayName="▶gun rack" />
@@ -849,10 +853,12 @@ Caves of Qud - Generated Localizable XML 2.0.212.23
   <object Name="CyberneticsRack" Load="Merge">
     <part Name="Render" DisplayName="▶cybernetics rack" />
     <part Name="Description" Short="▶Chrome pegs form a lattice where bionic modules await coupling." />
+    <part Name="Container" Preposition="▶on" />
   </object>
   <object Name="CyberneticsStationRack" Load="Merge">
     <part Name="Render" DisplayName="▶cybernetics rack" />
     <part Name="Description" Short="▶Chrome pegs form a lattice where modules await coupling." />
+    <part Name="Container" Preposition="▶on" />
   </object>
   <object Name="BaseWedgeChest" Load="Merge">
     <part Name="Render" DisplayName="▶credit lockbox" />
@@ -1077,6 +1083,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.23
   <object Name="Table" Load="Merge">
     <part Name="Render" DisplayName="▶table" />
     <part Name="Description" Short="▶Branches of the living tree were resorbed and reformed into trunk knots. Then, hundreds of years later, the oiled saw of a gorge woodworker disarranged the arbor geometry and flattened it for civil use. That history remains cast in two dimensions, powdered with dust and scratched in pencil." />
+    <part Name="Container" Preposition="▶on" />
     <tag Name="HeroNameTitleDescriptor" Value="▶Flat,Knobby,Level,L-Shaped,Sturdy,Three-Legged,Wobbly" />
     <tag Name="HeroNameTitleClientele" Value="▶Decorators,the Relaxed" />
     <xtagTextFragments Skin="▶glaze" PoeticFeatures="▶flat surfaces,artfulness,gentle stillness" />
@@ -1105,12 +1112,14 @@ Caves of Qud - Generated Localizable XML 2.0.212.23
   <object Name="Low Table" Load="Merge">
     <part Name="Render" DisplayName="▶low mensa" />
     <part Name="Description" Short="▶It's scratched on top where a pestle splintered the wood." />
+    <part Name="Container" Preposition="▶on" />
     <tag Name="HeroNameTitleDescriptor" Value="▶Flat,Knobby,Level,L-Shaped,Sturdy,Three-Legged,Wobbly" />
     <tag Name="QuestableVerb" Value="▶put something on" />
   </object>
   <object Name="Octagonal Table" Load="Merge">
     <part Name="Render" DisplayName="▶octagonal table" />
     <part Name="Description" Short="▶Decorated with painted mandalas and shaped by the geometric hand, the table honors symmetry and numerology." />
+    <part Name="Container" Preposition="▶on" />
     <tag Name="HeroNameTitleDescriptor" Value="▶Eightfold,Flat,Knobby,Level,L-Shaped,Sturdy,Three-Legged,Wobbly" />
     <tag Name="HeroNameTitleClientele" Value="▶Decorators,the Relaxed" />
     <tag Name="QuestableVerb" Value="▶put something on" />
@@ -1125,6 +1134,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.23
   <object Name="Book Table" Load="Merge">
     <part Name="Render" DisplayName="▶book table" />
     <part Name="Description" Short="▶Dwellers in the earth-clefts fashion tables in the style of puzzle boxes. Their drawers house the stenographic imagination." />
+    <part Name="Container" Preposition="▶on" />
     <tag Name="HeroNameTitleDescriptor" Value="▶Flat,Knobby,Level,L-Shaped,Sturdy,Three-Legged,Wobbly" />
     <tag Name="HeroNameTitleClientele" Value="▶Decorators,Readers,the Relaxed" />
     <tag Name="QuestableVerb" Value="▶put something on" />

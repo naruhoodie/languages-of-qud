@@ -1653,7 +1653,7 @@ For I knew neither 'til they spoke her name." />
 		<part Name="Description" Short="&quot;The Grizzly Bear is huge and wild; 
 =pronouns.Subjective= =verb:have:afterpronoun= devoured the infant child.
 The infant child is unaware
-=pronouns.Subjective= =verb:have:afterpronoun= been eaten by the bear.&quot;
+It has been eaten by the bear.&quot;
 -A.E. Housman" />
 		<inventoryobject Blueprint="Bear_Bite" Number="1" />
     <inventoryobject Blueprint="Bear_Claw" Number="2" />
@@ -7325,7 +7325,7 @@ The infant child is unaware
     <stat Name="HeatResistance" Value="30" />
     <stat Name="ColdResistance" Value="30" />
     <stat Name="AcidResistance" Value="30" />
-    <part Name="Impaler" BleedSave="35" BleedDamage="4-7" Damage="25-35" DestroyOnStrike="true" NeedsToBeHidden="false" Message="{{R|You hear a crunch, and then =subject.t==subject.directionIfAny= =verb:explode=!}}" DamageMessage="from %t shrapnel." />
+    <part Name="Impaler" BleedSave="35" BleedDamage="4-7" Damage="25-35" DestroyOnStrike="true" NeedsToBeHidden="false" Message="{{R|You hear a crunch, and then =subject.t= =subject.directionIfAny= =verb:explode=!}}" DamageMessage="from %t shrapnel." />
     <removepart Name="Combat" />
     <builder Name="RandomTile" Tiles="Creatures/sw_reef_urchin_1.bmp,Creatures/sw_reef_urchin_2.bmp,Creatures/sw_reef_urchin_3.bmp,Creatures/sw_reef_urchin_4.bmp" />
     <tag Name="NoXP" />
