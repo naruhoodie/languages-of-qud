@@ -1348,8 +1348,8 @@
     <description>
       <p>You make an axe attack against an opponent. If you hit and penetrate, you dismember one of their limbs at random and they start bleeding.</p>
       <br />
-      <statline Name="BleedDamage" DisplayName="Bleed damage" />
-      <statline Name="BleedSave" DisplayName="Bleed save" />
+      <statline Name="BleedDamage" DisplayName="Bleed damage" Unit="per round" /> <!-- a little hacky, could be written out directly -->
+      <p>Bleed save: <gametext>=statistic[Toughness].name=</gametext> <stat Name="BleedSave" /></p>
       <statline Name="Cooldown" />
     </description>
     <UITile Tile="Abilities/abil_dismember.bmp" Foreground="W" Detail="r" />
@@ -1361,7 +1361,7 @@
       <p>If successful, whenever you move, you pull your opponent with you and you make a free attack with your axe.</p>
       <p>Your opponent gets a chance to resist the move and a chance to break free at the start of their turn.</p>
       <br />
-      <statline Name="DurationSpecial" />
+      <p>Duration: 9 rounds or until opponent is dismembered</p>
       <statline Name="ResistSave" DisplayName="Resist movement / break free save" />
       <statline Name="Cooldown" />
     </description>

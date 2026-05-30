@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.24
+Caves of Qud - Generated Localizable XML 2.0.212.25
 
 <objects ExcludeFromCorpusGeneration="Key">
 
@@ -808,6 +808,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.24
   <object Name="Di-Thermo Beam" Load="Merge">
     <part Name="Render" DisplayName="▶{{R|di-thermo}} beam" />
     <part Name="Description" Short="▶A coolant pipe and an antifreeze pipe are barrel-locked in symmetric geometry. Thumb flips rotate the mechanism and reverse their orientation." />
+    <part Name="DiThermoBeam" HeatName="▶{{R|di-thermo}} beam" ColdName="▶{{C|di-thermo}} beam" />
   </object>
   <object Name="ProjectileDiThermoBeamHeat" Load="Merge">
     <part Name="Render" DisplayName="▶{{R|heat beam}}" />

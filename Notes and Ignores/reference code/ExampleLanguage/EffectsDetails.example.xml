@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.24
+Caves of Qud - Generated Localizable XML 2.0.212.25
 
 <templates>
 
@@ -87,6 +87,9 @@ Caves of Qud - Generated Localizable XML 2.0.212.24
   <template ID="Effect.Budding.Details">▶
         <p>Will spawn a clone soon.</p>
     </template>
+  <template ID="Effect.Burning.Details">▶
+        <p><stat Name="BurningDamage" /> damage per turn.</p>
+    </template>
   <template ID="Effect.Burrowed.Details">▶
         <p>Traveling underground.</p>
     </template>
@@ -95,6 +98,9 @@ Caves of Qud - Generated Localizable XML 2.0.212.24
           <case Value=""><p>Has the appearance of another creature.</p></case>
           <default><p>Has the appearance of <stat Name="Appearance" />.</p></default>
         </switch>
+    </template>
+  <template ID="Effect.Inspired.Details">▶
+        <p>The next time you cook a meal by choosing ingredients, you get a choice of three dynamically-generated effects to apply. You create a recipe for the chosen effect.</p>
     </template>
   <template ID="Effect.Lovesick.Details">▶
         <p>-6 Intelligence</p>
