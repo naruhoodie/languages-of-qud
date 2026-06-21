@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.25
+Caves of Qud - Generated Localizable XML 2.0.212.26
 
 <mutations Hidden="" ExcludeFromPool="">
 
@@ -18,42 +18,42 @@ Caves of Qud - Generated Localizable XML 2.0.212.25
     <mutation Name="Dark Vision" DisplayName="▶Dark Vision" BearerDescription="▶the darksighted">
       <description></description>
       <leveltext>▶
-            <p>You see in the dark.</p>
-          </leveltext>
+                    <p>You see in the dark.</p>
+                </leveltext>
     </mutation>
     <mutation Name="Heightened Smell" DisplayName="▶Heightened Smell" BearerDescription="▶those with heightened smell">
       <description>▶
-            <p>You are possessed of exceptionally acute smell.</p>
-          </description>
+                    <p>You are possessed of exceptionally acute smell.</p>
+                </description>
       <leveltext>▶
-            <p>You detect the presence of creatures within a distance typically up to <stat Name="Radius" Unit="▶square" /> depending on terrain</p>
-            <switch Name="LevelMatch">
-              <case Value="true"><p>Chance to identify nearby detected creatures</p></case>
-              <default><p>{{rules|Increased chance to identify nearby detected creatures}}</p></default>
-            </switch>
-          </leveltext>
+                    <p>You detect the presence of creatures within a distance typically up to <stat Name="Radius" Unit="▶square" /> depending on terrain</p>
+                    <switch Name="LevelMatch">
+                        <case Value="true"><p>Chance to identify nearby detected creatures</p></case>
+                        <default><p>{{rules|Increased chance to identify nearby detected creatures}}</p></default>
+                    </switch>
+                </leveltext>
     </mutation>
     <mutation Name="Gills" DisplayName="▶Gills" BearerDescription="▶those with gills" />
     <mutation Name="Infiltrate" DisplayName="▶Infiltrate" BearerDescription="▶those who infiltrate">
       <description>▶
-            <p>You teleport and bring creatures along with you.</p>
-          </description>
+                    <p>You teleport and bring creatures along with you.</p>
+                </description>
       <leveltext>▶
-            <p>You teleport to a nearby location and bring everyone within radius <stat Name="TeleportRadius" /> along with you.</p>
-            <statline Name="Cooldown" DisplayName="▶Cooldown" />
-          </leveltext>
+                    <p>You teleport to a nearby location and bring everyone within radius <stat Name="TeleportRadius" /> along with you.</p>
+                    <statline Name="Cooldown" DisplayName="▶Cooldown" />
+                </leveltext>
     </mutation>
     <mutation Name="Heat Absorption" DisplayName="▶Heat Absorption" BearerDescription="▶those who absorb heat">
       <description>▶
-            <p>You regenerate by absorbing heat.</p>
-          </description>
+                    <p>You regenerate by absorbing heat.</p>
+                </description>
       <leveltext>▶
-            <p>Immune to heat damage</p>
-            <switch Name="HealFactor">
-              <case Value="0"></case>
-              <default><p>Whenever you would have taken heat damage, you heal for <stat Name="HealFactor" />% of that damage instead</p></default>
-            </switch>
-          </leveltext>
+                    <p>Immune to heat damage</p>
+                    <switch Name="HealFactor">
+                        <case Value="0" />
+                        <default><p>Whenever you would have taken heat damage, you heal for <stat Name="HealFactor" />% of that damage instead</p></default>
+                    </switch>
+                </leveltext>
     </mutation>
     <mutation Name="Wall Climber" DisplayName="▶Wall Climber" BearerDescription="▶wall climbers" />
     <mutation Name="Spider Webs" DisplayName="▶Spider Webs" BearerDescription="▶web weavers" />
@@ -89,101 +89,94 @@ Caves of Qud - Generated Localizable XML 2.0.212.25
     <mutation Name="Shame Breath" DisplayName="▶Shame Breath" BearerDescription="▶those with shaming breath" />
     <mutation Name="Plasma Emission" DisplayName="▶Plasma Emission" BearerDescription="▶those who emit plasma">
       <description>▶
-            <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
-          </description>
+                    <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
+                </description>
       <leveltext>▶
-            <p>Releases gas for <stat Name="Duration" /></p>
-            <switch Name="LevelMatch">
-              <case Value="raise"><p>{{rules|Increased <stat Name="LevelEffectDescription" />}}</p></case>
-              <case Value="lower"><p>{{rules|Decreased <stat Name="LevelEffectDescription" />}}</p></case>
-              <default></default>
-            </switch>
-            <statline Name="Cooldown" DisplayName="▶Cooldown" />
-          </leveltext>
+                    <p>Releases gas for <stat Name="Duration" /></p>
+                    <switch Name="LevelMatch">
+                        <case Value="raise"><p>{{rules|Increased <stat Name="LevelEffectDescription" />}}</p></case>
+                        <case Value="lower"><p>{{rules|Decreased <stat Name="LevelEffectDescription" />}}</p></case>
+                    </switch>
+                    <statline Name="Cooldown" DisplayName="▶Cooldown" />
+                </leveltext>
     </mutation>
     <mutation Name="Poison Gas Generation" DisplayName="▶Poison Gas Generation" BearerDescription="▶those who expel poison gas">
       <description>▶
-            <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
-          </description>
+                    <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
+                </description>
       <leveltext>▶
-            <p>Releases gas for <stat Name="Duration" /></p>
-            <switch Name="LevelMatch">
-              <case Value="raise"><p>{{rules|Increased <stat Name="LevelEffectDescription" />}}</p></case>
-              <case Value="lower"><p>{{rules|Decreased <stat Name="LevelEffectDescription" />}}</p></case>
-              <default></default>
-            </switch>
-            <statline Name="Cooldown" DisplayName="▶Cooldown" />
-          </leveltext>
+                    <p>Releases gas for <stat Name="Duration" /></p>
+                    <switch Name="LevelMatch">
+                        <case Value="raise"><p>{{rules|Increased <stat Name="LevelEffectDescription" />}}</p></case>
+                        <case Value="lower"><p>{{rules|Decreased <stat Name="LevelEffectDescription" />}}</p></case>
+                    </switch>
+                    <statline Name="Cooldown" DisplayName="▶Cooldown" />
+                </leveltext>
     </mutation>
     <mutation Name="Defoliant Generation" DisplayName="▶Defoliant Generation" BearerDescription="▶those who expel defoliant">
       <description>▶
-            <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
-          </description>
+                    <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
+                </description>
       <leveltext>▶
-            <p>Releases gas for <stat Name="Duration" /></p>
-            <switch Name="LevelMatch">
-              <case Value="raise"><p>{{rules|Increased <stat Name="LevelEffectDescription" />}}</p></case>
-              <case Value="lower"><p>{{rules|Decreased <stat Name="LevelEffectDescription" />}}</p></case>
-              <default></default>
-            </switch>
-            <statline Name="Cooldown" DisplayName="▶Cooldown" />
-          </leveltext>
+                    <p>Releases gas for <stat Name="Duration" /></p>
+                    <switch Name="LevelMatch">
+                        <case Value="raise"><p>{{rules|Increased <stat Name="LevelEffectDescription" />}}</p></case>
+                        <case Value="lower"><p>{{rules|Decreased <stat Name="LevelEffectDescription" />}}</p></case>
+                    </switch>
+                    <statline Name="Cooldown" DisplayName="▶Cooldown" />
+                </leveltext>
     </mutation>
     <mutation Name="Fungicide Generation" DisplayName="▶Fungicide Generation" BearerDescription="▶those who expel fungicide">
       <description>▶
-            <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
-          </description>
+                    <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
+                </description>
       <leveltext>▶
-            <p>Releases gas for <stat Name="Duration" /></p>
-            <switch Name="LevelMatch">
-              <case Value="raise"><p>{{rules|Increased <stat Name="LevelEffectDescription" />}}</p></case>
-              <case Value="lower"><p>{{rules|Decreased <stat Name="LevelEffectDescription" />}}</p></case>
-              <default></default>
-            </switch>
-            <statline Name="Cooldown" DisplayName="▶Cooldown" />
-          </leveltext>
+                    <p>Releases gas for <stat Name="Duration" /></p>
+                    <switch Name="LevelMatch">
+                        <case Value="raise"><p>{{rules|Increased <stat Name="LevelEffectDescription" />}}</p></case>
+                        <case Value="lower"><p>{{rules|Decreased <stat Name="LevelEffectDescription" />}}</p></case>
+                    </switch>
+                    <statline Name="Cooldown" DisplayName="▶Cooldown" />
+                </leveltext>
     </mutation>
     <mutation Name="Confusion Gas Generation" DisplayName="▶Confusion Gas Generation" BearerDescription="▶those who expel confusion gas">
       <description>▶
-            <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
-          </description>
+                    <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
+                </description>
       <leveltext>▶
-            <p>Releases gas for <stat Name="Duration" /></p>
-            <switch Name="LevelMatch">
-              <case Value="raise"><p>{{rules|Increased <stat Name="LevelEffectDescription" />}}</p></case>
-              <case Value="lower"><p>{{rules|Decreased <stat Name="LevelEffectDescription" />}}</p></case>
-              <default></default>
-            </switch>
-            <statline Name="Cooldown" DisplayName="▶Cooldown" />
-          </leveltext>
+                    <p>Releases gas for <stat Name="Duration" /></p>
+                    <switch Name="LevelMatch">
+                        <case Value="raise"><p>{{rules|Increased <stat Name="LevelEffectDescription" />}}</p></case>
+                        <case Value="lower"><p>{{rules|Decreased <stat Name="LevelEffectDescription" />}}</p></case>
+                    </switch>
+                    <statline Name="Cooldown" DisplayName="▶Cooldown" />
+                </leveltext>
     </mutation>
     <mutation Name="Normality Gas Generation" DisplayName="▶Normality Gas Generation" BearerDescription="▶those who expel normality gas">
       <description>▶
-            <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
-          </description>
+                    <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
+                </description>
       <leveltext>▶
-            <p>Releases gas for <stat Name="Duration" /></p>
-            <switch Name="LevelMatch">
-              <case Value="raise"><p>{{rules|Increased <stat Name="LevelEffectDescription" />}}</p></case>
-              <case Value="lower"><p>{{rules|Decreased <stat Name="LevelEffectDescription" />}}</p></case>
-              <default></default>
-            </switch>
-            <statline Name="Cooldown" DisplayName="▶Cooldown" />
-          </leveltext>
+                    <p>Releases gas for <stat Name="Duration" /></p>
+                    <switch Name="LevelMatch">
+                        <case Value="raise"><p>{{rules|Increased <stat Name="LevelEffectDescription" />}}</p></case>
+                        <case Value="lower"><p>{{rules|Decreased <stat Name="LevelEffectDescription" />}}</p></case>
+                    </switch>
+                    <statline Name="Cooldown" DisplayName="▶Cooldown" />
+                </leveltext>
     </mutation>
     <mutation Name="Glitter Dust Generation" DisplayName="▶Glitter Dust Generation" BearerDescription="▶those who expel glitter dust">
       <description>▶
-            <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
-          </description>
+                    <p>You release a burst of <stat Name="GasName" /> around yourself.</p>
+                </description>
       <leveltext>▶
-            <p>Releases gas for <stat Name="Duration" /></p>
-            <switch Name="LevelMatch">
-              <case Value="raise"><p>{{rules|Increased <stat Name="LevelEffectDescription" />}}</p></case>
-              <case Value="lower"><p>{{rules|Decreased <stat Name="LevelEffectDescription" />}}</p></case>
-              <default></default>
-            </switch>
-            <statline Name="Cooldown" DisplayName="▶Cooldown" />
-          </leveltext>
+                    <p>Releases gas for <stat Name="Duration" /></p>
+                    <switch Name="LevelMatch">
+                        <case Value="raise"><p>{{rules|Increased <stat Name="LevelEffectDescription" />}}</p></case>
+                        <case Value="lower"><p>{{rules|Decreased <stat Name="LevelEffectDescription" />}}</p></case>
+                    </switch>
+                    <statline Name="Cooldown" DisplayName="▶Cooldown" />
+                </leveltext>
     </mutation>
   </category>
   <category Name="Mental">
@@ -193,19 +186,22 @@ Caves of Qud - Generated Localizable XML 2.0.212.25
     <mutation Name="Quantum Fugue" DisplayName="▶Quantum Fugue" BearerDescription="▶quantum fugitives" />
     <mutation Name="Reflect Shame" DisplayName="▶Reflect Shame" BearerDescription="▶those who reflect shame">
       <description>▶
-            <p>You reflect the shameful countenance of nearby creatures.</p>
-          </description>
+                    <p>You reflect the shameful countenance of nearby creatures.</p>
+                </description>
       <leveltext></leveltext>
     </mutation>
     <mutation Name="Repelling Force" DisplayName="▶Repelling Force" BearerDescription="▶the repelling">
       <description>▶
-            <p>You invoke a repelling force in the surrounding area, throwing enemies back.</p>
-          </description>
+                    <p>You invoke a repelling force in the surrounding area, throwing enemies back.</p>
+                </description>
       <leveltext>▶
-            <statline Name="Area" DisplayName="▶Area" />
-            <p><switch Name="LevelMatch"><case Value="true">Creatures are pushed away from center of blast.</case><default>{{rules|Increased push force}}</default></switch></p>
-            <statline Name="Cooldown" DisplayName="▶Cooldown" />
-          </leveltext>
+                    <statline Name="Area" DisplayName="▶Area" />
+                    <switch Name="LevelMatch">
+                        <case Value="true"><p>Creatures are pushed away from center of blast.</p></case>
+                        <default><p>{{rules|Increased push force}}</p></default>
+                    </switch>
+                    <statline Name="Cooldown" DisplayName="▶Cooldown" />
+                </leveltext>
     </mutation>
   </category>
 </mutations>

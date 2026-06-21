@@ -2492,7 +2492,7 @@
     <stat Name="AV" Value="30" />
     <stat Name="Hitpoints" Value="3000" />
     <tag Name="HeroNameTitleDescriptor" Value="Aqueous,Condensatory,Dewy,Hydrator,Irrigator,Wet" />
-    <tag Name="HeroNameTitleClientele" Value="the Dessicated,the Dry,the Salty,the Thirsty" />
+    <tag Name="HeroNameTitleClientele" Value="the Desiccated,the Dry,the Salty,the Thirsty" />
     <tag Name="NamingTag" Value="Animated" />
     <tag Name="BodyType" Value="AirWell" />
     <builder Name="Animated" ChanceOneIn="15000" />
@@ -2528,7 +2528,7 @@
     <part Name="DeployWith" Blueprint="Catchbasin" PreferredDirection="S" />
     <part Name="Interesting" Key="SolarStill" Radius="1" />
     <tag Name="HeroNameTitleDescriptor" Value="Aqueous,Condensatory,Dewy,Hydrator,Irrigator,Wet" />
-    <tag Name="HeroNameTitleClientele" Value="the Dessicated,the Dry,the Salty,the Thirsty" />
+    <tag Name="HeroNameTitleClientele" Value="the Desiccated,the Dry,the Salty,the Thirsty" />
     <tag Name="NamingTag" Value="Animated" />
     <tag Name="BodyType" Value="VanedMechanism" />
     <builder Name="Animated" ChanceOneIn="15000" />
@@ -2557,7 +2557,7 @@
     <stat Name="AV" Value="12" />
     <stat Name="Hitpoints" Value="150" />
     <tag Name="HeroNameTitleDescriptor" Value="Aqueous,Condensatory,Dewy,Hydrator,Irrigator,Wet" />
-    <tag Name="HeroNameTitleClientele" Value="the Dessicated,the Dry,the Salty,the Thirsty" />
+    <tag Name="HeroNameTitleClientele" Value="the Desiccated,the Dry,the Salty,the Thirsty" />
     <tag Name="NamingTag" Value="Animated" />
     <tag Name="BodyType" Value="VanedMechanism" />
     <builder Name="Animated" ChanceOneIn="15000" />
@@ -4929,7 +4929,7 @@
   <object Name="Bust of K4K5" Inherits="MountedFurniture">
     <part Name="Render" DisplayName="chrome bust of K4K5" RenderString="234" ColorString="&amp;C" DetailColor="y" Tile="Items/sw_bust1.bmp" RenderLayer="6" Occluding="false" />
     <part Name="Physics" Weight="60" Organic="false" />
-    <part Name="Description" Short="The delphic countenace of the Tungsten King is frozen in chrome, cast to perfect specification." />
+    <part Name="Description" Short="The delphic countenance of the Tungsten King is frozen in chrome, cast to perfect specification." />
     <part Name="SmartuseLooks" />
     <tag Name="TechTier" Value="1" />
     <stag Name="Scholarly" />

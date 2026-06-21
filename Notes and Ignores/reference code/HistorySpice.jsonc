@@ -1351,7 +1351,7 @@
           "changedWays": [ "changed our =spice:commonPhrases.ways.!random=" ],
           "composedRituals": [ "=spice:commonPhrases.composed.!random= new =spice:commonPhrases.rituals.!random=" ],
           "lostOur": [
-            "=villager.the.basename|strip= lost our =item.name=",
+            "=villager.basename|strip= lost our =item.name=",
             "our =item.name= =item.verb:were= stolen from us",
             "=spice:instancesOf.fate.!random= has separated us from our =item.name="
           ],
@@ -1385,7 +1385,7 @@
           ],
           "someoneLearned": [
             "I =spice:commonPhrases.learned.!random= that =^:itemAtPlace.!random=",
-            "=villagerName= =spice:commonPhrases.learned.!random= that =^:itemAtPlace.!random=",
+            "=villager.basename|strip= =spice:commonPhrases.learned.!random= that =^:itemAtPlace.!random=",
             "it was brought to my attention that =^:itemAtPlace.!random="
           ],
           "itemAtPlace": [

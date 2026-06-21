@@ -1,0 +1,1619 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<zonetemplates Encoding="utf-8">
+  
+  <zonetemplate Name="Dustblown" RegionSize="100">
+    <global>
+      <population Table="DustblownGlobal"></population>
+    </global>
+  </zonetemplate>
+  
+  <zonetemplate Name="Mushroomy" RegionSize="100">
+    <global>
+      <population Table="MushroomyGlobal"></population>
+    </global>
+  </zonetemplate>
+
+  <zonetemplate Name="SurfaceRuinsTechInfrastructure" RegionSize="200">
+    <global>
+      <group Criteria="ZoneHasSemanticTag:PowerGrid" Chance="100">
+        <population Table="RuinPowerGridWidget"></population>
+      </group>
+      <group Criteria="ZoneHasSemanticTag:ExtraPowerGrid" Chance="100">
+        <population Table="RuinPowerGridWidget"></population>
+      </group>
+      <group Criteria="ZoneHasSemanticTag:Hydraulics" Chance="100">
+        <population Table="RuinHydraulicsWidget"></population>
+      </group>
+      <group Criteria="ZoneHasSemanticTag:ExtraHydraulics" Chance="100">
+        <population Table="RuinHydraulicsWidget"></population>
+      </group>
+      <group Criteria="ZoneHasSemanticTag:MechanicalPower" Chance="100">
+        <population Table="RuinMechanicalPowerWidget"></population>
+      </group>
+      <group Criteria="ZoneHasSemanticTag:ExtraMechanicalPower" Chance="100">
+        <population Table="RuinMechanicalPowerWidget"></population>
+      </group>
+    </global>
+
+    <eachregion>
+      <!-- Chance to place a sector of gear in tech ruins -->
+      <group Criteria="ZoneHasSemanticTag:PowerGrid" Chance="20">
+        <group Criteria="RegionHasSemanticTag:Inside">
+          <population Table="SurfacePowerGridSector" />
+        </group>
+      </group>
+      <group Criteria="ZoneHasSemanticTag:ExtraPowerGrid" Chance="80">
+        <group Criteria="RegionHasSemanticTag:Inside">
+          <population Table="SurfacePowerGridSector" />
+        </group>
+      </group>
+      <group Criteria="ZoneHasSemanticTag:Hydraulics" Chance="20">
+        <group Criteria="RegionHasSemanticTag:Inside">
+          <population Table="SurfaceHydraulicSector" />
+        </group>
+      </group>
+      <group Criteria="ZoneHasSemanticTag:ExtraHydraulics" Chance="80">
+        <group Criteria="RegionHasSemanticTag:Inside">
+          <population Table="SurfaceHydraulicSector" />
+        </group>
+      </group>
+      <group Criteria="ZoneHasSemanticTag:MechanicalPower" Chance="20">
+        <group Criteria="RegionHasSemanticTag:Inside">
+          <population Table="SurfaceMechanicalPowerSector" />
+        </group>
+      </group>
+      <group Criteria="ZoneHasSemanticTag:ExtraMechanicalPower" Chance="80">
+        <group Criteria="RegionHasSemanticTag:Inside">
+          <population Table="SurfaceMechanicalPowerSector" />
+        </group>
+      </group>
+    </eachregion>
+  </zonetemplate>
+
+  <zonetemplate Name="RingGate" RegionSize="100">
+    <global>
+      <cellfilterout Filter="!RegionHasSemanticTag:Inside">
+        <group>
+          <population Table="RingGate" Hint="Inside" />
+          <population Table="RingGateVault" />          
+          <exit/>
+        </group>
+      </cellfilterout>
+      <population Table="RingGate" Hint="Inside" />
+    </global>
+  </zonetemplate>
+
+  <zonetemplate Name="RingGateElectrical" RegionSize="100">
+    <global>
+      <cellfilterout Filter="!RegionHasSemanticTag:Inside">
+        <group>
+          <population Table="RingGateElectrical" Hint="Inside" />
+          <population Table="RingGateVault" />          
+          <exit/>
+        </group>
+      </cellfilterout>
+      <population Table="RingGateElectrical" Hint="Inside" />
+    </global>
+  </zonetemplate>
+
+  <zonetemplate Name="RingGateHydraulic" RegionSize="100">
+    <global>
+      <cellfilterout Filter="!RegionHasSemanticTag:Inside">
+        <group>
+          <population Table="RingGateHydraulic" Hint="Inside" />
+          <population Table="RingGateVault" />          
+          <exit/>
+        </group>
+      </cellfilterout>
+      <population Table="RingGateHydraulic" Hint="Inside" />
+    </global>
+  </zonetemplate>
+
+  <zonetemplate Name="DeepRuinsTechInfrastructure" RegionSize="200">
+    <global>
+      <group Criteria="ZoneHasSemanticTag:PowerGrid" Chance="100">
+        <population Table="RuinPowerGridWidget"></population>
+      </group>
+      <group Criteria="ZoneHasSemanticTag:ExtraPowerGrid" Chance="100">
+        <population Table="RuinPowerGridWidget"></population>
+      </group>
+      <group Criteria="ZoneHasSemanticTag:Hydraulics" Chance="100">
+        <population Table="RuinHydraulicsWidget"></population>
+      </group>
+      <group Criteria="ZoneHasSemanticTag:ExtraHydraulics" Chance="100">
+        <population Table="RuinHydraulicsWidget"></population>
+      </group>
+      <group Criteria="ZoneHasSemanticTag:MechanicalPower" Chance="100">
+        <population Table="RuinMechanicalPowerWidget"></population>
+      </group>
+      <group Criteria="ZoneHasSemanticTag:ExtraMechanicalPower" Chance="100">
+        <population Table="RuinMechanicalPowerWidget"></population>
+      </group>
+    </global>
+
+    <eachregion>
+      <!-- Chance to place a sector of gear in tech ruins -->
+      <group Criteria="ZoneHasSemanticTag:PowerGrid" Chance="20">
+        <group Criteria="RegionHasSemanticTag:Inside">
+          <population Table="DeepPowerGridSector" />
+        </group>
+      </group>
+      <group Criteria="ZoneHasSemanticTag:ExtraPowerGrid" Chance="80">
+        <group Criteria="RegionHasSemanticTag:Inside">
+          <population Table="DeepPowerGridSector" />
+        </group>
+      </group>
+      <group Criteria="ZoneHasSemanticTag:Hydraulics" Chance="20">
+        <group Criteria="RegionHasSemanticTag:Inside">
+          <population Table="DeepHydraulicSector" />
+        </group>
+      </group>
+      <group Criteria="ZoneHasSemanticTag:ExtraHydraulics" Chance="80">
+        <group Criteria="RegionHasSemanticTag:Inside">
+          <population Table="DeepHydraulicSector" />
+        </group>
+      </group>
+      <group Criteria="ZoneHasSemanticTag:MechanicalPower" Chance="20">
+        <group Criteria="RegionHasSemanticTag:Inside">
+          <population Table="DeepMechanicalPowerSector" />
+        </group>
+      </group>
+      <group Criteria="ZoneHasSemanticTag:ExtraMechanicalPower" Chance="80">
+        <group Criteria="RegionHasSemanticTag:Inside">
+          <population Table="DeepMechanicalPowerSector" />
+        </group>
+      </group>
+    </eachregion>
+  </zonetemplate>
+  
+  <zonetemplate Name="DeepRuins" RegionSize="100">
+    <global>
+      <population Table="Tier4CaveGlobals"></population>
+    </global>
+    
+    <eachregion>
+     
+      <!-- Fill ruin isolated pockets -->
+      <group Criteria="RegionHasSemanticTag:Inside">
+        <group Chance="1" Criteria="Isolated" >
+          <population Table="TreasureRoom"/>
+          <population Chance="5" Table="Tier{zonetier}RuinsRobots"/>
+          <exit/>
+        </group>        
+      </group>
+
+      <group Criteria="RegionHasSemanticTag:Inside">
+        <group Criteria="Isolated" Chance="100">
+          <population Table="IsolatedRuinsPocketDecoration"/>
+          <population Chance="5" Table="Tier{zonetier}RuinsRobots"/>
+          <exit/>
+        </group>
+      </group>
+  
+      <!-- Fill cave isolated pockets -->      
+      <group Criteria="Isolated" Chance="1">
+        <population Table="TreasureRoom"/>
+        <exit/>        
+      </group>
+      
+      <group Criteria="Isolated" Chance="100">
+        <population Table="IsolatedPocketDecoration"/>
+        <exit/>
+      </group>
+
+      <!-- Place generic region decorations -->
+      <population Table="RuinsDecoration"/>  	  
+		
+      <!-- Don't place monsters in regions containing zone connections -->
+      <group Criteria="Connection">
+        <exit/>
+      </group>
+
+      <!-- Chance for chests in ruins "rooms" -->
+      <group Criteria="RegionHasSemanticTag:Inside">
+        <population Chance="5" Table="Metal Chests {zonetier}" Hint="InsideCorner" />
+        <population Table="Tier{zonetier}RuinsCreatures" />        
+      </group>
+
+      <!-- If we've gotten this far just dump a standard region worth of mobs into it -->
+      <population Table="Tier{zonetier}RuinsPopulation"></population>
+      <population Chance="20" Table="Tier{zonetier}RuinsPopulation"></population>      
+    </eachregion>
+    
+  </zonetemplate>
+
+  <zonetemplate Name="GritGateTemplarScouts" RegionSize="100">
+    <single>
+      <population Table="Grit Gate Templar Scouts"></population>
+    </single>
+  </zonetemplate>
+  
+  <zonetemplate Name="Caves" RegionSize="100">
+
+    <global>
+      <population Table="Tier{zonetier}CaveGlobals"></population>
+    </global>
+
+    <eachregion>
+      <!-- 3-region guarded treasure room -->
+      <!-- THIS IS NOT IMPLEMENTED YET; IT NEVER GETS APPLIED -->
+      <graph Nodes="a-b-c" Criteria="!Connection" MaxApplications="1" Chance="20">
+        <a>
+          <population Table="Tier{zonetier}GuardEncounter"/>
+        </a>
+        <b>
+          <population Table="Tier{zonetier}BossEncounter"/>
+        </b>
+        <c Criteria="Deadend">
+          <population Table="TreasureRoom"/>
+        </c>
+        <exit/>
+      </graph>
+
+      <!-- Fill isolated pockets -->
+      <group Criteria="Isolated" Chance="1">
+        <population Table="TreasureRoom"/>
+        <exit/>
+      </group>
+
+      <group Criteria="Isolated" Chance="100">
+        <population Table="IsolatedPocketDecoration"/>
+        <exit/>
+      </group>
+
+      <!-- Place generic region decorations -->
+      <population Table="CaveDecoration"/>
+
+      <!-- Don't place monsters in regions containing zone connections -->
+      <group Criteria="Connection">
+        <exit/>
+      </group>
+
+      <group Criteria="Furthest" Chance="20">
+        <population Table="Tier{zonetier}BossEncounter"/>
+        <population Table="Chests {zonetier}"/>
+        <exit/>
+      </group>
+
+      <!-- If we've gotten this far just dump a standard region worth of mobs into it -->
+      <population Table="Tier{zonetier}CavePopulation"></population>
+      <population Chance="20" Table="Tier{zonetier}CavePopulation"></population>
+    </eachregion>
+
+  </zonetemplate>
+
+  <zonetemplate Name="WatervineCaves" RegionSize="100">    
+    <eachregion>
+      <!-- Fill isolated pockets -->
+      <group Criteria="Isolated" Chance="1">
+        <population Table="TreasureRoom"/>
+        <exit/>
+      </group>
+      <group Criteria="Isolated" Chance="100">
+        <population Table="IsolatedPocketDecoration"/>
+        <exit/>
+      </group>
+      <!-- Place generic region decorations -->
+      <population Table="CaveDecoration"/>
+      <!-- Don't place monsters in regions containing zone connections -->
+      <group Criteria="Connection">
+        <exit/>
+      </group>
+      <group Criteria="Furthest" Chance="20">
+        <population Table="Tier{zonetier}BossEncounter"/>
+        <population Table="Chests {zonetier}"/>
+        <exit/>
+      </group>
+      <!-- If we've gotten this far just dump a standard region worth of mobs into it -->
+      <population Table="WatervineCavePopulation"></population>
+      <population Chance="20" Table="WatervineCavePopulation"></population>
+    </eachregion>
+  </zonetemplate>
+  
+  <zonetemplate Name="DesertCanyonExample" RegionSize="100">
+    <global>
+      <cellfilterout Filter="!Reachable">
+        <population Table="ArmorerTentContents"></population>
+        <population Table="ArmorerTentContents"></population>
+        <population Table="ArmorerTentContents"></population>
+        <population Table="ArmorerTentContents"></population>
+        <population Table="ArmorerTentContents"></population>
+        <population Table="ArmorerTentContents"></population>
+        <population Table="ArmorerTentContents"></population>
+        <population Table="ArmorerTentContents"></population>
+        <population Table="ArmorerTentContents"></population>
+        <population Table="ArmorerTentContents"></population>
+        <population Table="ArmorerTentContents"></population>
+        <population Table="ArmorerTentContents"></population>
+        <population Table="ArmorerTentContents"></population>
+      </cellfilterout>
+    </global>
+  </zonetemplate>
+  
+  <zonetemplate Name="DesertCanyonCaves" RegionSize="100">
+    <global>
+      <population Table="DesertCanyonCaveGlobals"></population>
+    </global>
+
+    <eachregion>
+      <!-- Fill isolated pockets -->
+      <group Criteria="Isolated" Chance="1">
+        <population Table="TreasureRoom"/>
+        <exit/>
+      </group>
+      <group Criteria="Isolated" Chance="100">
+        <population Table="IsolatedPocketDecoration"/>
+        <exit/>
+      </group>
+      <!-- Place generic region decorations -->
+      <population Table="CaveDecoration"/>
+      <!-- Don't place monsters in regions containing zone connections -->
+      <group Criteria="Connection">
+        <exit/>
+      </group>
+      <group Criteria="Furthest" Chance="20">
+        <population Table="Tier{zonetier}BossEncounter"/>
+        <population Table="Chests {zonetier}"/>
+        <exit/>
+      </group>
+      <!-- If we've gotten this far just dump a standard region worth of mobs into it -->
+      <population Table="DesertCanyonCavePopulation"></population>
+      <population Chance="20" Table="DesertCanyonCavePopulation"></population>
+    </eachregion>
+  </zonetemplate>
+
+  <zonetemplate Name="SaltDuneCaves" RegionSize="100">
+    <global>
+      <population Table="SaltDuneCaveGlobals"></population>
+    </global>
+
+    <eachregion>
+      <!-- Fill isolated pockets -->
+      <group Criteria="Isolated" Chance="1">
+        <population Table="TreasureRoom"/>
+        <exit/>
+      </group>
+      <group Criteria="Isolated" Chance="100">
+        <population Table="IsolatedPocketDecoration"/>
+        <exit/>
+      </group>
+      <!-- Place generic region decorations -->
+      <population Table="CaveDecoration"/>
+      <!-- Don't place monsters in regions containing zone connections -->
+      <group Criteria="Connection">
+        <exit/>
+      </group>
+      <group Criteria="Furthest" Chance="20">
+        <population Table="Tier{zonetier}BossEncounter"/>
+        <population Table="Chests {zonetier}"/>
+        <exit/>
+      </group>
+      <!-- If we've gotten this far just dump a standard region worth of mobs into it -->
+      <population Table="SaltDuneCavePopulation"></population>
+      <population Chance="20" Table="SaltDuneCavePopulation"></population>
+    </eachregion>
+  </zonetemplate>
+
+  <zonetemplate Name="HillCaves" RegionSize="100">
+    <global>
+      <population Table="HillCaveGlobals"></population>
+    </global>
+
+    <eachregion>
+      <!-- Fill isolated pockets -->
+      <group Criteria="Isolated" Chance="1">
+        <population Table="TreasureRoom"/>
+        <exit/>
+      </group>
+      <group Criteria="Isolated" Chance="100">
+        <population Table="IsolatedPocketDecoration"/>
+        <exit/>
+      </group>
+      <!-- Place generic region decorations -->
+      <population Table="CaveDecoration"/>
+      <!-- Don't place monsters in regions containing zone connections -->
+      <group Criteria="Connection">
+        <exit/>
+      </group>
+      <group Criteria="Furthest" Chance="20">
+        <population Table="Tier{zonetier}BossEncounter"/>
+        <population Table="Chests {zonetier}"/>
+        <exit/>
+      </group>
+      <!-- If we've gotten this far just dump a standard region worth of mobs into it -->
+      <population Table="HillCavePopulation"></population>
+      <population Chance="20" Table="HillCavePopulation"></population>
+    </eachregion>
+  </zonetemplate>
+
+  <zonetemplate Name="MountainCaves" RegionSize="100">
+    <global>
+      <population Table="MountainCaveGlobals"></population>
+    </global>
+
+    <eachregion>
+      <!-- Fill isolated pockets -->
+      <group Criteria="Isolated" Chance="1">
+        <population Table="TreasureRoom"/>
+        <exit/>
+      </group>
+      <group Criteria="Isolated" Chance="100">
+        <population Table="IsolatedPocketDecoration"/>
+        <exit/>
+      </group>
+      <!-- Place generic region decorations -->
+      <population Table="CaveDecoration"/>
+      <!-- Don't place monsters in regions containing zone connections -->
+      <group Criteria="Connection">
+        <exit/>
+      </group>
+      <group Criteria="Furthest" Chance="20">
+        <population Table="Tier{zonetier}BossEncounter"/>
+        <population Table="Chests {zonetier}"/>
+        <exit/>
+      </group>
+      <!-- If we've gotten this far just dump a standard region worth of mobs into it -->
+      <population Table="MountainCavePopulation"></population>
+      <population Chance="20" Table="MountainCavePopulation"></population>
+    </eachregion>
+  </zonetemplate>
+
+  <zonetemplate Name="FlowerfieldCaves" RegionSize="100">
+    <global>
+      <population Table="FlowerfieldCaveGlobals"></population>
+    </global>
+
+    <eachregion>
+      <!-- Fill isolated pockets -->
+      <group Criteria="Isolated" Chance="1">
+        <population Table="TreasureRoom"/>
+        <exit/>
+      </group>
+      <group Criteria="Isolated" Chance="100">
+        <population Table="IsolatedPocketDecoration"/>
+        <exit/>
+      </group>
+      <!-- Place generic region decorations -->
+      <population Table="CaveDecoration"/>
+      <!-- Don't place monsters in regions containing zone connections -->
+      <group Criteria="Connection">
+        <exit/>
+      </group>
+      <group Criteria="Furthest" Chance="20">
+        <population Table="Tier{zonetier}BossEncounter"/>
+        <population Table="Chests {zonetier}"/>
+        <exit/>
+      </group>
+      <!-- If we've gotten this far just dump a standard region worth of mobs into it -->
+      <population Table="FlowerfieldCavePopulation"></population>
+      <population Chance="20" Table="FlowerfieldCavePopulation"></population>
+    </eachregion>
+  </zonetemplate>
+
+  <zonetemplate Name="JungleCaves" RegionSize="100">
+    <global>
+      <population Table="JungleCaveGlobals"></population>
+    </global>
+
+    <eachregion>
+      <!-- Fill isolated pockets -->
+      <group Criteria="Isolated" Chance="1">
+        <population Table="TreasureRoom"/>
+        <exit/>
+      </group>
+      <group Criteria="Isolated" Chance="100">
+        <population Table="IsolatedPocketDecoration"/>
+        <exit/>
+      </group>
+      <!-- Place generic region decorations -->
+      <population Table="CaveDecoration"/>
+      <!-- Don't place monsters in regions containing zone connections -->
+      <group Criteria="Connection">
+        <exit/>
+      </group>
+      <group Criteria="Furthest" Chance="20">
+        <population Table="Tier{zonetier}BossEncounter"/>
+        <population Table="Chests {zonetier}"/>
+        <exit/>
+      </group>
+      <!-- If we've gotten this far just dump a standard region worth of mobs into it -->      
+      <population Table="JungleCavePopulation"></population>
+      <population Chance="20" Table="JungleCavePopulation"></population>      
+    </eachregion>
+  </zonetemplate>
+
+  <zonetemplate Name="DeepJungleCaves" RegionSize="100">
+    <global>
+      <population Table="DeepJungleZoneGlobals-Underground" Hint="Any"></population>
+      <cellfilterout Filter="!Reachable">
+        <population Table="DeepJungleZoneGlobals-Reachable"></population>
+      </cellfilterout>
+    </global>
+
+    <eachregion>
+      <!-- Fill isolated pockets -->
+      <group Criteria="Isolated" Chance="1">
+        <population Table="TreasureRoom"/>
+        <exit/>
+      </group>
+      <group Criteria="Isolated" Chance="100">
+        <population Table="IsolatedPocketDecoration"/>
+        <exit/>
+      </group>
+      <!-- Place generic region decorations -->
+      <population Table="CaveDecoration"/>
+      <!-- Don't place monsters in regions containing zone connections -->
+      <group Criteria="Connection">
+        <exit/>
+      </group>
+      <group Criteria="Furthest" Chance="20">
+        <population Table="Tier{zonetier}BossEncounter"/>
+        <population Table="Chests {zonetier}"/>
+        <exit/>
+      </group>
+      <!-- If we've gotten this far just dump a standard region worth of mobs into it -->
+      <population Table="DeepJungleCavePopulation"></population>
+      <population Chance="20" Table="DeepJungleCavePopulation"></population>
+      <population Table="DeepJunglePerSector"></population>
+    </eachregion>
+  </zonetemplate>
+
+  <zonetemplate Name="WaterCaves" RegionSize="100">
+    <global>
+      <population Table="WaterCaveGlobals"></population>
+    </global>
+
+    <eachregion>
+      <!-- Fill isolated pockets -->
+      <group Criteria="Isolated" Chance="1">
+        <population Table="TreasureRoom"/>
+        <exit/>
+      </group>
+      <group Criteria="Isolated" Chance="100">
+        <population Table="IsolatedPocketDecoration"/>
+        <exit/>
+      </group>
+      <!-- Place generic region decorations -->
+      <population Table="CaveDecoration"/>
+      <!-- Don't place monsters in regions containing zone connections -->
+      <group Criteria="Connection">
+        <exit/>
+      </group>
+      <group Criteria="Furthest" Chance="20">
+        <population Table="Tier{zonetier}BossEncounter"/>
+        <population Table="Chests {zonetier}"/>
+        <exit/>
+      </group>
+      <!-- If we've gotten this far just dump a standard region worth of mobs into it -->
+      <population Table="WaterCavePopulation"></population>
+      <population Chance="20" Table="WaterCavePopulation"></population>
+    </eachregion>
+  </zonetemplate>
+
+  <zonetemplate Name="RainbowWoodCaves" RegionSize="100">
+    <global>
+      <population Table="RainbowWoodCaveGlobals"></population>
+    </global>
+
+    <eachregion>
+      <!-- Fill isolated pockets -->
+      <group Criteria="Isolated" Chance="1">
+        <population Table="TreasureRoom"/>
+        <exit/>
+      </group>
+      <group Criteria="Isolated" Chance="100">
+        <population Table="IsolatedPocketDecoration"/>
+        <exit/>
+      </group>
+      <!-- Place generic region decorations -->
+      <population Table="CaveDecoration"/>
+      <!-- Don't place monsters in regions containing zone connections -->
+      <group Criteria="Connection">
+        <exit/>
+      </group>
+      <group Criteria="Furthest" Chance="20">
+        <population Table="Tier{zonetier}BossEncounter"/>
+        <population Table="Chests {zonetier}"/>
+        <exit/>
+      </group>
+      <!-- If we've gotten this far just dump a standard region worth of mobs into it -->
+      <population Table="RainbowWoodCavePopulation"></population>
+      <population Chance="20" Table="RainbowWoodCavePopulation"></population>
+    </eachregion>
+  </zonetemplate>
+
+  <zonetemplate Name="BananaGroveCaves" RegionSize="100">
+    <global>
+      <population Table="BananaGroveCaveGlobals"></population>
+    </global>
+
+    <eachregion>
+      <!-- Fill isolated pockets -->
+      <group Criteria="Isolated" Chance="1">
+        <population Table="TreasureRoom"/>
+        <exit/>
+      </group>
+      <!-- disabled so we don't gum up the robber entrance
+      <group Criteria="Isolated" Chance="100">
+        <population Table="IsolatedPocketDecoration"/>
+        <exit/>
+      </group> -->
+      <!-- Place generic region decorations -->
+      <population Table="CaveDecoration"/>
+      <!-- Don't place monsters in regions containing zone connections -->
+      <group Criteria="Connection">
+        <exit/>
+      </group>
+      <group Criteria="Furthest" Chance="20">
+        <population Table="Tier{zonetier}BossEncounter"/>
+        <population Table="Chests {zonetier}"/>
+        <exit/>
+      </group>
+      <!-- If we've gotten this far just dump a standard region worth of mobs into it -->
+      <population Chance="10" Table="BananaGroveCavePopulation"></population>
+      <population Chance="10" Table="BananaGroveCavePopulation"></population>
+    </eachregion>
+  </zonetemplate>
+
+  <!--
+  ********************************
+    SURFACE POPULATION BY REGION
+  ********************************
+  -->
+
+  <zonetemplate Name="SaltMarsh" RegionSize="200">
+    <global>      
+      <population Table="SaltMarshZoneGlobals"></population>      
+    </global>
+
+    <eachregion>
+      <group Criteria="Connection">
+        <exit/>
+      </group>
+      <population Table="SaltMarshPerSector"></population>
+    </eachregion>
+  </zonetemplate>
+
+  <zonetemplate Name="SaltDesert" RegionSize="200">
+    <global>
+      <population Table="SaltDesertZoneGlobals"></population>
+    </global>
+
+    <eachregion>
+      <group Criteria="Connection">
+        <exit/>
+      </group>
+      <population Table="SaltDesertPerSector"></population>
+    </eachregion>
+  </zonetemplate>
+
+  <zonetemplate Name="DesertCanyon" RegionSize="200">
+    
+    <global>            
+      <population Table="DesertCanyonZoneGlobals" Hint="Any"></population>      
+      <cellfilterout Filter="!Reachable">
+        <population Table="DesertCanyonZoneGlobals-Reachable"></population>
+      </cellfilterout>
+    </global>
+
+    <eachregion>
+      <group Criteria="Connection">
+        <exit/>
+      </group>
+      <group Criteria="!Isolated">
+        <population Table="DesertCanyonPerSector"></population>
+      </group>
+    </eachregion>
+  </zonetemplate>
+
+  <zonetemplate Name="Hills" RegionSize="200">
+
+    <global>
+      <population Table="HillsZoneGlobals" Hint="Any"></population>
+      <cellfilterout Filter="!Reachable">
+        <population Table="HillsZoneGlobals-Reachable"></population>
+      </cellfilterout>
+    </global>
+
+    <eachregion>
+      <group Criteria="Connection">
+        <exit/>
+      </group>
+      <group Criteria="!Isolated">
+        <population Table="HillsPerSector"></population>
+      </group>
+    </eachregion>
+  </zonetemplate>
+
+  <zonetemplate Name="Mountains" RegionSize="200">
+
+    <global>
+      <population Table="MountainsZoneGlobals" Hint="Any"></population>
+      <cellfilterout Filter="!Reachable">
+        <population Table="MountainsZoneGlobals-Reachable"></population>
+      </cellfilterout>
+    </global>
+
+    <eachregion>
+      <group Criteria="Connection">
+        <exit/>
+      </group>
+      <group Criteria="!Isolated">
+        <population Table="MountainsPerSector"></population>
+      </group>
+    </eachregion>
+  </zonetemplate>
+
+  <zonetemplate Name="Jungle" RegionSize="200">
+    <global>
+      <population Table="JungleZoneGlobals"></population>      
+    </global>
+
+    <eachregion>
+      <group Criteria="Connection">
+        <exit/>
+      </group>
+      <population Table="JunglePerSector"></population>
+    </eachregion>
+  </zonetemplate>
+
+  <zonetemplate Name="Deep Jungle" RegionSize="200">
+    <global>      
+      <population Table="DeepJungleZoneGlobals-Surface" Hint="Any"></population>
+      <cellfilterout Filter="!Reachable">
+        <population Table="DeepJungleZoneGlobals-Reachable"></population>
+      </cellfilterout>
+    </global>
+
+    <eachregion>
+      <group Criteria="Connection">
+        <exit/>
+      </group>
+      <population Table="DeepJunglePerSector"></population>
+    </eachregion>
+  </zonetemplate>
+
+  <zonetemplate Name="Rivers" RegionSize="200">
+    <global>
+      <population Table="RiversZoneGlobals"></population>
+    </global>
+
+    <eachregion>
+      <group Criteria="Connection">
+        <exit/>
+      </group>
+      <population Table="RiversPerSector"></population>
+    </eachregion>
+  </zonetemplate>
+
+  <zonetemplate Name="BananaGrove" RegionSize="200">
+    <global>
+      <population Table="BananaGroveZoneGlobals"></population>
+    </global>
+
+    <eachregion>
+      <group Criteria="Connection">
+        <exit/>
+      </group>
+      <population Table="BananaGrovePerSector"></population>
+    </eachregion>
+  </zonetemplate>
+
+  <zonetemplate Name="RainbowWood" RegionSize="200">
+    <global>
+      <population Table="RainbowWoodZoneGlobals"></population>
+    </global>
+
+    <eachregion>
+      <group Criteria="Connection">
+        <exit/>
+      </group>
+      <population Table="RainbowWoodPerSector"></population>
+    </eachregion>
+  </zonetemplate>
+
+  <zonetemplate Name="Outer RainbowWood" RegionSize="200">
+    <global>
+      <population Table="OuterRainbowWoodZoneGlobals"></population>
+    </global>
+    
+  </zonetemplate>
+
+	<zonetemplate Name="PalladiumReef" RegionSize="200">
+
+		<global>
+			<population Table="PalladiumReefZoneGlobals"></population>
+		</global>
+
+		<eachregion>
+			<group Criteria="Connection">
+				<exit/>
+			</group>
+
+			<population Table="PalladiumReefPerSector"></population>
+		</eachregion>
+
+	</zonetemplate>
+
+	<zonetemplate Name="LakeHinnom" RegionSize="200">
+
+		<global>
+			<population Table="LakeHinnomZoneGlobals"></population>
+		</global>
+
+		<eachregion>
+			<group Criteria="Connection">
+				<exit/>
+			</group>
+
+			<population Table="LakeHinnomPerSector"></population>
+		</eachregion>
+
+	</zonetemplate>
+
+	<zonetemplate Name="MoonStair" RegionSize="200">
+
+		<global>
+			<population Table="MoonStairZoneGlobals-Surface" Hint="Any"></population>
+			<cellfilterout Filter="!Reachable;Liquid">
+				<population Table="MoonStairZoneGlobals-Reachable"></population>
+			</cellfilterout>
+		</global>
+
+		<eachregion>
+			<group Criteria="Connection">
+				<exit/>
+			</group>
+      <cellfilterout Filter="!Reachable;Liquid">
+        <population Table="MoonStairPerSector"></population>
+      </cellfilterout>
+		</eachregion>
+	</zonetemplate>
+
+	<zonetemplate Name="FlowerFields" RegionSize="200">
+
+		<global>
+			<population Table="FlowerFieldGlobals"></population>
+		</global>
+
+		<eachregion>
+			<group Criteria="Connection">
+				"
+				<exit/>
+			</group>
+
+			<population Table="FlowerFieldsPopulation"></population>
+		</eachregion>
+
+	</zonetemplate>
+
+  <zonetemplate Name="LakeHinnomCaves" RegionSize="100">
+    <global>
+      <population Table="LakeHinnomZoneGlobals"></population>
+    </global>
+
+    <eachregion>
+      <!-- Fill isolated pockets -->
+      <group Criteria="Isolated" Chance="1">
+        <population Table="TreasureRoom"/>
+        <exit/>
+      </group>
+      <group Criteria="Isolated" Chance="100">
+        <population Table="IsolatedPocketDecoration"/>
+        <exit/>
+      </group>
+      <!-- Place generic region decorations -->
+      <population Table="CaveDecoration"/>
+      <!-- Don't place monsters in regions containing zone connections -->
+      <group Criteria="Connection">
+        <exit/>
+      </group>
+      <group Criteria="Furthest" Chance="20">
+        <population Table="Tier{zonetier}BossEncounter"/>
+        <population Table="Chests {zonetier}"/>
+        <exit/>
+      </group>
+      <!-- If we've gotten this far just dump a standard region worth of mobs into it -->
+      <population Table="LakeHinnomCavePopulation"></population>
+      <population Chance="20" Table="LakeHinnomCavePopulation"></population>
+      <population Table="LakeHinnomPerSector"></population>
+    </eachregion>
+  </zonetemplate>
+
+  <zonetemplate Name="PalladiumReefCaves" RegionSize="100">
+    <global>
+      <population Table="PalladiumReefCaveZoneGlobals"></population>
+    </global>
+
+    <eachregion>
+      <!-- Fill isolated pockets -->
+      <group Criteria="Isolated" Chance="1">
+        <population Table="TreasureRoom"/>
+        <exit/>
+      </group>
+      <group Criteria="Isolated" Chance="100">
+        <population Table="IsolatedPocketDecoration"/>
+        <exit/>
+      </group>
+      <!-- Place generic region decorations -->
+      <population Table="CaveDecoration"/>
+      <!-- Don't place monsters in regions containing zone connections -->
+      <group Criteria="Connection">
+        <exit/>
+      </group>
+      <group Criteria="Furthest" Chance="20">
+        <population Table="Tier{zonetier}BossEncounter"/>
+        <population Table="Chests {zonetier}"/>
+        <exit/>
+      </group>
+      <!-- If we've gotten this far just dump a standard region worth of mobs into it -->
+      <population Table="PalladiumReefCavePopulation"></population>
+      <population Chance="20" Table="PalladiumReefCavePopulation"></population>
+      <population Table="PalladiumReefPerSector"></population>
+    </eachregion>
+  </zonetemplate>
+
+	<zonetemplate Name="MoonStairCaves" RegionSize="100">
+		<global>
+			<population Table="MoonStairZoneGlobals-Underground" Hint="Any"></population>
+			<cellfilterout Filter="!Reachable">
+				<population Table="MoonStairZoneGlobals-Reachable"></population>
+			</cellfilterout>
+		</global>
+
+		<eachregion>
+			<!-- Fill isolated pockets -->
+			<group Criteria="Isolated" Chance="1">
+				<population Table="TreasureRoom"/>
+				<exit/>
+			</group>
+			<group Criteria="Isolated" Chance="100">
+				<population Table="IsolatedPocketDecoration"/>
+				<exit/>
+			</group>
+			<!-- Place generic region decorations -->
+			<!--<population Table="CaveDecoration"/>-->
+			<!-- Don't place monsters in regions containing zone connections -->
+			<group Criteria="Connection">
+				<exit/>
+			</group>
+			<group Criteria="Furthest" Chance="20">
+				<population Table="Tier{zonetier}BossEncounter"/>
+				<population Table="Chests {zonetier}"/>
+				<exit/>
+			</group>
+			<!-- If we've gotten this far just dump a standard region worth of mobs into it -->
+			<population Table="MoonStairCavePopulation"></population>
+			<population Chance="20" Table="MoonStairCavePopulation"></population>
+			<population Table="MoonStairPerSector"></population>
+		</eachregion>
+	</zonetemplate>
+  
+
+  <!-- Note about secret and jungle ruins: -->
+  <!-- Sometimes globally placed creatures from other zone templates get trapped in isolated pockets -->
+  <!-- We can prevent this by splitting those regions' templates into -Global and -Reachable -->
+  <zonetemplate Name="SecretRuins" RegionSize="200">
+    <global>
+      <population Table="SecretRuinsZoneGlobals" Hint="Any"></population>
+      <cellfilterout Filter="!Reachable">
+        <population Table="SecretRuinsZoneGlobals-Reachable"></population>
+      </cellfilterout>
+      <cellfilterout Filter="!RegionHasSemanticTag:Inside">
+        <population Table="SecretRuinsZoneGlobals-Inside"></population>
+        <population Table="RuinsDetails"></population>
+      </cellfilterout>
+    </global>
+
+    <eachregion>            
+      <!-- Fill ruin isolated pockets -->            
+      <group Criteria="RegionHasSemanticTag:Inside">
+        <group Chance="1" Criteria="Pocket" >
+          <population Table="TreasureRoom"/>
+          <population Chance="5" Table="Tier{zonetier}RuinsRobots"/>
+          <exit/>
+        </group>
+      </group>
+
+      <group Criteria="RegionHasSemanticTag:Inside">
+        <group Criteria="Pocket" Chance="100">
+          <population Table="IsolatedSecretRuinsPocketDecoration"/>
+          <population Chance="5" Table="Tier{zonetier}RuinsRobots"/>
+          <exit/>
+        </group>
+      </group>
+
+      <!-- Don't populate isolated regions -->     
+      <group Criteria="Pocket" Chance="100">        
+        <exit/>
+      </group>
+
+      <!-- Don't place monsters in regions containing zone connections -->
+      <group Criteria="Connection">
+        <exit/>
+      </group>
+
+      <!-- Chance for chests in ruins "rooms" -->
+      <group Criteria="RegionHasSemanticTag:Inside">
+        <population Chance="5" Table="Metal Chests {zonetier}" Hint="InsideCorner" />
+        <population Table="SecretRuinsPerSector"></population>
+      </group>
+
+      <!-- If we've gotten this far just dump a standard region worth of mobs into it -->
+      
+    </eachregion>
+  </zonetemplate>
+  
+  <zonetemplate Name="SurfaceRuins" RegionSize="200">
+    <global>
+      <population Table="RuinsZoneGlobals-Surface" Hint="Any"></population>
+      <cellfilterout Filter="!Reachable">
+        <population Table="RuinsZoneGlobals-Reachable"></population>
+      </cellfilterout>
+    </global>
+
+    <eachregion>
+      <!-- Fill ruin isolated pockets -->
+      <group Criteria="RegionHasSemanticTag:Inside">
+        <group Chance="1" Criteria="Pocket" >
+          <population Table="TreasureRoom"/>
+          <population Chance="5" Table="RuinsZoneGlobals-Robots"/>
+          <exit/>
+        </group>
+      </group>
+
+      <group Criteria="RegionHasSemanticTag:Inside">
+        <group Criteria="Pocket" Chance="100">
+          <population Table="IsolatedRuinsPocketDecoration"/>
+          <population Chance="5" Table="RuinsZoneGlobals-Robots"/>
+          <exit/>
+        </group>
+      </group>
+
+      <!-- Fill cave isolated pockets -->
+      <group Criteria="Pocket" Chance="1">
+        <population Table="TreasureRoom"/>
+        <exit/>
+      </group>
+
+      <group Criteria="Pocket" Chance="100">
+        <population Table="IsolatedPocketDecoration"/>
+        <exit/>
+      </group>
+
+      <!-- Don't place monsters in regions containing zone connections -->
+      <group Criteria="Connection">
+        <exit/>
+      </group>
+
+      <!-- Chance for chests in ruins "rooms" -->
+      <group Criteria="RegionHasSemanticTag:Inside">
+        <population Chance="8" Table="Metal Chests {zonetier}" Hint="InsideCorner" />
+        <population Table="RuinsPerSector"></population>
+      </group>      
+      
+    </eachregion>
+  </zonetemplate>
+
+  <zonetemplate Name="SubterraneanRuins" RegionSize="100">
+    <global>
+      <population Table="RuinsZoneGlobals-Underground" Hint="Any"></population>
+      <cellfilterout Filter="!Reachable">
+        <population Table="RuinsZoneGlobals-Reachable"></population>
+      </cellfilterout>
+    </global>
+
+    <eachregion>
+      <!-- Fill ruin isolated pockets -->
+      <group Criteria="RegionHasSemanticTag:Inside">
+        <group Chance="1" Criteria="Isolated" >
+          <population Table="TreasureRoom"/>
+          <population Chance="5" Table="RuinsZoneGlobals-Robots"/>
+          <exit/>
+        </group>
+      </group>
+
+      <group Criteria="RegionHasSemanticTag:Inside">
+        <group Criteria="Isolated" Chance="100">
+          <population Table="IsolatedRuinsPocketDecoration"/>
+          <population Chance="5" Table="RuinsZoneGlobals-Robots"/>
+          <exit/>
+        </group>
+      </group>
+
+      <!-- Fill cave isolated pockets -->
+      <group Criteria="Isolated" Chance="1">
+        <population Table="TreasureRoom"/>
+        <exit/>
+      </group>
+
+      <group Criteria="Isolated" Chance="100">
+        <population Table="IsolatedPocketDecoration"/>
+        <exit/>
+      </group>
+
+      <!-- Place generic region decorations -->
+      <population Table="RuinsDecoration"/>
+
+      <!-- Don't place monsters in regions containing zone connections -->
+      <group Criteria="Connection">
+        <exit/>
+      </group>
+
+      <!-- Chance for chests in ruins "rooms" -->
+      <group Criteria="RegionHasSemanticTag:Inside">
+        <population Chance="5" Table="Metal Chests {zonetier}" Hint="InsideCorner" />
+        <population Table="RuinsPerSector"></population>
+      </group>
+
+      <!-- If we've gotten this far just dump a standard region worth of mobs into it -->
+      <population Table="SubterraneanRuinsPopulation"></population>
+      <population Chance="20" Table="SubterraneanRuinsPopulation"></population>      
+    </eachregion>
+  </zonetemplate>
+
+  <zonetemplate Name="BaroqueSurfaceRuins" RegionSize="200">    
+    <global>
+      <population Table="BaroqueRuinsZoneGlobals-Surface" Hint="Any"></population>
+      <cellfilterout Filter="!Reachable">
+        <population Table="BaroqueRuinsZoneGlobals-Reachable"></population>
+      </cellfilterout>
+    </global>
+
+    <eachregion>
+      <!-- Fill ruin isolated pockets -->
+      <group Criteria="RegionHasSemanticTag:Inside">
+        <group Chance="1" Criteria="Isolated" >
+          <population Table="TreasureRoom"/>
+          <population Chance="5" Table="BaroqueRuinsZoneGlobals-Robots"/>
+          <exit/>
+        </group>
+      </group>
+
+      <group Criteria="RegionHasSemanticTag:Inside">
+        <group Criteria="Isolated" Chance="100">
+          <population Table="IsolatedRuinsPocketDecoration"/>
+          <population Chance="5" Table="BaroqueRuinsZoneGlobals-Robots"/>
+          <exit/>
+        </group>
+      </group>
+
+      <!-- Fill cave isolated pockets -->
+      <group Criteria="Isolated" Chance="1">
+        <population Table="TreasureRoom"/>
+        <exit/>
+      </group>
+
+      <group Criteria="Isolated" Chance="100">
+        <population Table="IsolatedPocketDecoration"/>
+        <exit/>
+      </group>      
+
+      <!-- Don't place monsters in regions containing zone connections -->
+      <group Criteria="Connection">
+        <exit/>
+      </group>
+
+      <!-- Chance for chests in ruins "rooms" -->
+      <group Criteria="RegionHasSemanticTag:Inside">
+        <population Chance="8" Table="Metal Chests {zonetier}" Hint="InsideCorner" />
+        <population Table="BaroqueRuinsPerSector"></population>
+      </group>      
+      
+    </eachregion>
+  </zonetemplate>
+
+  <zonetemplate Name="BaroqueSubterraneanRuins" RegionSize="100">
+    <global>
+      <population Table="BaroqueRuinsZoneGlobals-Underground" Hint="Any"></population>
+      <cellfilterout Filter="!Reachable">
+        <population Table="BaroqueRuinsZoneGlobals-Reachable"></population>
+      </cellfilterout>
+    </global>
+
+    <eachregion>
+      <!-- Fill ruin isolated pockets -->
+      <group Criteria="RegionHasSemanticTag:Inside">
+        <group Chance="1" Criteria="Isolated" >
+          <population Table="TreasureRoom"/>
+          <population Chance="5" Table="BaroqueRuinsZoneGlobals-Robots"/>
+          <exit/>
+        </group>
+      </group>
+
+      <group Criteria="RegionHasSemanticTag:Inside">
+        <group Criteria="Isolated" Chance="100">
+          <population Table="IsolatedRuinsPocketDecoration"/>
+          <population Chance="5" Table="BaroqueRuinsZoneGlobals-Robots"/>
+          <exit/>
+        </group>
+      </group>
+
+      <!-- Fill cave isolated pockets -->
+      <group Criteria="Isolated" Chance="1">
+        <population Table="TreasureRoom"/>
+        <exit/>
+      </group>
+
+      <group Criteria="Isolated" Chance="100">
+        <population Table="IsolatedPocketDecoration"/>
+        <exit/>
+      </group>
+
+      <!-- Place generic region decorations -->
+      <population Table="RuinsDecoration"/>
+
+      <!-- Don't place monsters in regions containing zone connections -->
+      <group Criteria="Connection">
+        <exit/>
+      </group>
+
+      <!-- Chance for chests in ruins "rooms" -->
+      <group Criteria="RegionHasSemanticTag:Inside">
+        <population Chance="5" Table="Metal Chests {zonetier}" Hint="InsideCorner" />
+        <population Table="BaroqueRuinsPerSector"></population>
+      </group>
+
+      <!-- If we've gotten this far just dump a standard region worth of mobs into it -->
+      <population Table="BaroqueSubterraneanRuinsPopulation"></population>
+      <population Chance="20" Table="BaroqueSubterraneanRuinsPopulation"></population>      
+    </eachregion>
+  </zonetemplate> 
+
+  <!--
+  *************
+    DUNGEONS
+  *************
+  -->
+
+  <!-- Red Rock -->
+  <zonetemplate Name="Redrock 1" RegionSize="100">
+    <global>
+      <population Table="Redrock1Global"></population>
+    </global>
+
+    <eachregion>
+      <population Table="RedrockPerSector-EnvironmentalFeatures"></population>
+      <group Criteria="Connection">
+        <exit/>
+      </group>
+      <population Table="Redrock1PerSector-Creatures"></population>
+    </eachregion>
+  </zonetemplate>
+  <zonetemplate Name="Redrock 2" RegionSize="150">
+    <global>
+      <population Table="Redrock2Global"></population>
+    </global>
+
+    <eachregion>
+      <population Table="RedrockPerSector-EnvironmentalFeatures"></population>
+      <group Criteria="Connection">
+        <exit/>
+      </group>
+      <population Table="Redrock2PerSector-Creatures"></population>
+    </eachregion>
+  </zonetemplate>
+  <zonetemplate Name="Redrock 3" RegionSize="200">
+    <global>
+      <population Table="Redrock3Global"></population>
+    </global>
+    <eachregion>
+      <population Table="RedrockPerSector-EnvironmentalFeatures"></population>
+      <group Criteria="Connection">
+        <exit/>
+      </group>
+      <population Table="Redrock3PerSector-Creatures"></population>
+    </eachregion>
+  </zonetemplate>
+
+  <zonetemplate Name="Bottom Redrock" RegionSize="2000">
+    <global>
+      <population Table="Bottom Redrock"></population>
+    </global>
+  </zonetemplate>
+
+  <zonetemplate Name="Waterlogged Tunnel Connection" RegionSize="2000">
+    <global>
+      <population Table="Waterlogged Tunnel Connection"></population>
+    </global>
+  </zonetemplate>
+
+  <zonetemplate Name="Waterlogged Tunnel" RegionSize="2000">
+    <global>
+      <population Table="Waterlogged Tunnel"></population>
+    </global>
+  </zonetemplate>
+  <zonetemplate Name="Waterlogged Tunnel Bottom" RegionSize="2000">
+    <global>
+      <population Table="Waterlogged Tunnel Bottom"></population>
+    </global>
+  </zonetemplate>
+
+  <zonetemplate Name="Joppa Tunnel" RegionSize="2000">
+    <global>
+      <population Table="Joppa Tunnel"></population>
+    </global>    
+  </zonetemplate>  
+ 
+  <zonetemplate Name="Joppa Tunnel Connection" RegionSize="2000">
+    <global>
+      <population Table="Joppa Tunnel Connection"></population>
+    </global>
+  </zonetemplate>
+  
+
+  <!-- Rustwells -->
+  <zonetemplate Name="Rustwells Surface" RegionSize="2000">
+    <global>
+      <population Table="Rustwells Surface"></population>
+    </global>
+  </zonetemplate>
+
+  <!-- Rustwells -->
+  <zonetemplate Name="Rustwells 1" RegionSize="200">
+    <global>
+      <population Table="Rustwells 1"></population>
+    </global>
+
+    <eachregion>
+      <group Criteria="Connection">
+        <exit/>
+      </group>
+      <population Table="Rustwells 1 PerSector"></population>
+    </eachregion>
+  </zonetemplate>
+  <zonetemplate Name="Rustwells 2" RegionSize="200">
+    <global>
+      <population Table="Rustwells 2"></population>
+    </global>
+
+    <eachregion>
+      <group Criteria="Connection">
+        <exit/>
+      </group>      
+      <population Table="Rustwells 2 PerSector"></population>      
+    </eachregion>
+  </zonetemplate>
+  <zonetemplate Name="Rustwells 3" RegionSize="50">
+    <global>
+      <population Table="Rustwells 3"></population>
+    </global>
+
+    <eachregion>
+      <group Criteria="Connection">
+        <exit/>
+      </group>
+      <population Table="Rustwells 3 PerSector"></population>
+      <!--<group Criteria="Deadend">      
+      </group>-->
+    </eachregion>
+  </zonetemplate>
+
+  <!-- Rusted Archway -->
+  <zonetemplate Name="Rusted Archway Surface" RegionSize="200">
+    <global>
+      <population Table="RustedArchwaySurfaceZoneGlobals"></population>
+    </global>    
+  </zonetemplate>
+
+  <zonetemplate Name="Lower Rusted Archway" RegionSize="200">
+    <global>
+      <population Table="LowerRustedArchwayZoneGlobals"></population>
+    </global>
+  </zonetemplate>
+
+  <zonetemplate Name="Bottom Rusted Archway" RegionSize="200">
+    <global>
+      <population Table="BottomRustedArchwayZoneGlobals"></population>
+    </global>
+  </zonetemplate>
+
+  <!-- Trembling Dunes -->
+  <zonetemplate Name="Trembling Dunes Surface" RegionSize="200">
+    <global>
+      <population Table="TremblingDunesSurfaceZoneGlobals"></population>
+    </global>
+  </zonetemplate>
+
+  <zonetemplate Name="Lower Trembling Dunes" RegionSize="200">
+    <global>
+      <population Table="LowerTremblingDunesZoneGlobals"></population>
+    </global>
+  </zonetemplate>
+
+  <!-- Asphalt Mines -->
+  <zonetemplate Name="Asphalt Mines" RegionSize="200">
+    <global>
+      <population Table="AsphaltMines"></population>
+    </global>
+  </zonetemplate>
+  <zonetemplate Name="Asphalt Mines Caver" RegionSize="200">
+    <global>
+      <population Table="AsphaltMinesCaver"></population>
+    </global>
+  </zonetemplate>
+  <zonetemplate Name="Deep Asphalt Mines" RegionSize="200">
+    <global>
+      <population Table="DeepAsphaltMines"></population>
+    </global>
+  </zonetemplate>
+
+  <!-- Grit Gate -->
+  <zonetemplate Name="Grit Gate Surface" RegionSize="200">
+    <global>
+      <population Table="GritGateSurfaceZoneGlobals"></population>
+    </global>
+
+    <eachregion>
+      <group Criteria="Connection">
+        <exit/>
+      </group>
+      <population Table="GritGateSurfacePerSector"></population>
+    </eachregion>
+  </zonetemplate>
+
+  <zonetemplate Name="Grit Gate Dungeon" RegionSize="200">
+    <global>
+      <population Table="GritGateDungeonZoneGlobals"></population>
+    </global>
+
+    <eachregion>
+      <group Criteria="Connection">
+        <exit/>
+      </group>
+      <population Table="GritGateDungeonPerSector"></population>
+    </eachregion>
+  </zonetemplate>
+  
+  <!-- Golgotha -->
+  <zonetemplate Name="Golgotha Surface" RegionSize="2000">
+    <global>
+      <population Table="GolgothaSurfaceZoneGlobals"></population>
+    </global>
+  </zonetemplate>
+
+  <zonetemplate Name="Golgotha Dungeon" RegionSize="2000">
+    <global>
+      <population Table="GolgothaDungeonZoneGlobals"></population>
+    </global>    
+  </zonetemplate>
+
+  <zonetemplate Name="Golgotha Cloaca" RegionSize="2000">
+    <global>
+      <population Table="GolgothaCloacaZoneGlobals"></population>
+    </global>
+  </zonetemplate>
+
+  <!-- Bethesda Susa -->
+  <zonetemplate Name="Bethesda Susa Surface" RegionSize="2000">
+    <global>
+      <population Table="BethesdaSusaSurface"></population>
+    </global>
+  </zonetemplate>
+  <zonetemplate Name="Bethesda Susa Wharf" RegionSize="2000">
+    <global>
+      <population Table="BethesdaSusaWharf"></population>
+    </global>
+  </zonetemplate>
+  <zonetemplate Name="Bethesda Susa Wharf" RegionSize="2000">
+    <global>
+      <population Table="BethesdaSusaWharf"></population>
+    </global>
+  </zonetemplate>
+  <zonetemplate Name="Bethesda Susa Wharf Outskirts" RegionSize="2000">
+    <global>
+      <population Table="BethesdaSusaWharfOutskirts"></population>
+    </global>
+  </zonetemplate>
+  <zonetemplate Name="Bethesda Susa Standard Ward" RegionSize="2000">
+    <global>
+      <population Table="BethesdaSusaStandardWard"></population>
+    </global>
+  </zonetemplate>
+  <zonetemplate Name="Bethesda Susa Ruined Ward" RegionSize="2000">
+    <global>
+      <population Table="BethesdaSusaRuinedWard"></population>
+    </global>
+  </zonetemplate>
+  <zonetemplate Name="Bethesda Susa Upper Cryobarrio" RegionSize="2000">
+    <global>
+      <population Table="BethesdaSusaUpperCryobarrio"></population>
+    </global>
+  </zonetemplate>
+  <zonetemplate Name="Bethesda Susa Lower Cryobarrio" RegionSize="2000">
+    <global>
+      <population Table="BethesdaSusaLowerCryobarrio"></population>
+    </global>
+  </zonetemplate>    
+
+  
+  <!-- Tomb of the Eatrs -->
+  <zonetemplate Name="CatacombsPublicus" RegionSize="100">
+    <global>
+      <population Table="CatacombsGlobals"></population>
+    </global>
+    
+    <eachregion>      
+      <population Chance="100" Table="CatacombsPopulation"></population>      
+    </eachregion>
+  </zonetemplate>
+
+  <zonetemplate Name="CryptOfLandlords" RegionSize="100">
+    <global>
+      <population Table="CrematoryGlobals"></population>
+    </global>
+
+    <eachregion>
+      <population Chance="100" Table="CrematoryPopulation"></population>
+    </eachregion>
+  </zonetemplate>
+
+  <zonetemplate Name="CryptOfWarriors" RegionSize="100">
+    <global>
+      <population Table="CryptOfWarriorsGlobals"></population>
+    </global>
+
+    <eachregion>
+      <population Chance="100" Table="CryptPopulation"></population>
+    </eachregion>
+  </zonetemplate>
+
+  <zonetemplate Name="CryptOfPriests" RegionSize="100">
+    <global>
+      <population Table="CryptOfPriestsGlobals"></population>
+    </global>
+
+    <eachregion>
+      <population Chance="100" Table="CryptPopulation"></population>
+    </eachregion>
+  </zonetemplate>
+
+	<!-- Staging -->
+	<zonetemplate Name="AgolgotColumn" RegionSize="100">
+    <global>
+			<population Chance="10" Table="AgolgotColumnFeatures Global"></population>
+			<population Chance="15" Table="AgolgotShrine"></population>
+    </global>
+    <eachregion>            
+			<population Chance="25" Table="AgolgotColumnFeatures Region"></population>
+    </eachregion>
+  </zonetemplate>
+
+	<zonetemplate Name="BethsaidaColumn" RegionSize="100">
+		<global>
+			<population Chance="10" Table="BethsaidaColumnFeatures Global"></population>
+			<population Chance="15" Table="BethsaidaShrine"></population>
+		</global>
+		<eachregion>
+			<population Chance="25" Table="BethsaidaColumnFeatures Region"></population>
+		</eachregion>
+	</zonetemplate>
+
+	<zonetemplate Name="RermadonCradle" RegionSize="100">
+		<global>
+			<population Chance="15" Table="RermadonShrine"></population>
+		</global>
+		<eachregion>			
+		</eachregion>
+	</zonetemplate>
+
+	<zonetemplate Name="QasQonCradle" RegionSize="100">
+		<global>
+			<population Chance="8" Table="QasShrine"></population>
+			<population Chance="8" Table="QonShrine"></population>
+		</global>
+		<eachregion>
+		</eachregion>
+	</zonetemplate>
+
+  <zonetemplate Name="ShugruithTunnel" RegionSize="100">
+    <global>
+			<population Chance="10" Table="ShugruithShrine"></population>
+    </global>
+
+    <eachregion>      
+    </eachregion>
+  </zonetemplate>  
+   
+
+</zonetemplates>

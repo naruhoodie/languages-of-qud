@@ -4410,7 +4410,7 @@ When this weapons fires a shot with its last round of ammo, the shot has perfect
     <part Name="Description" Short="A cuirass of gas-caught foam stiffens instantaneously when pressure is applied. Its karst surface is arrayed with tube sleeves and dusted with the colorful abrasions of chiliads and the chemical reactions they produce; the material has careened past the outer rings of its expected lifetime and into the unknowing void." />
     <part Name="Physics" Weight="20" />
     <part Name="Springy" Factor="0.8" />
-    <part Name="ReduceEnergyCosts" ChargeUse="0" IncludeTypes="Medication" PercentageReduction="100" ScopeDescription="the energy cost to apply an injector" NameForStatus="StentSystem" />
+    <part Name="ReduceEnergyCosts" ChargeUse="0" IncludeTypes="Medication" PercentageReduction="100" ScopeDescription="in the energy cost to apply an injector" NameForStatus="StentSystem" />
     <part Name="Examiner" Complexity="4" />
 	  <tag Name="EquipSound" Value="sfx_equip_armor_synthetic" />
 	  <tag Name="Tier" Value="4" />
@@ -5008,7 +5008,7 @@ When this weapons fires a shot with its last round of ammo, the shot has perfect
     <tag Name="Mods" Value="None" />
     <tag Name="DynamicObjectsTable:Headwear" />
     <tag Name="Tier" Value="1" />
-    <part Name="Harvestable" OnSuccess="Witchwood Bark" StartRipeChance="1:1" DestroyOnHarvest="true" HarvestVerb="break down" />
+    <part Name="Harvestable" OnSuccess="Witchwood Bark" StartRipeChance="1:1" DestroyOnHarvest="true" HarvestVerb="break down" ShowSource="true"/>
   </object>
   <object Name="Wide-brimmed Hat" Inherits="BaseHat">
     <part Name="Armor" AV="0" DV="1" WornOn="Head" />
@@ -7163,7 +7163,7 @@ You may activate this item to conjure a force field in front of you. Robots will
 		<part Name="Description" Short="Sharp points are run through with bright and brilliant amethyst and sapphire. The colors remain but smolder to heather in their dying light. The chime is grave-still." />
 		<part Name="Physics" Weight="40" />
 		<part Name="Armor" AV="7" DV="-4" Ego="1" WornOn="Body" Describe="false" />
-		<part Name="MutationOnEquip" ClassName="Telepathy" Describe="false" />
+		<part Name="MutationOnEquip" Mutation="Telepathy" Describe="false" />
 		<part Name="QuickenMind" Cooldown="100" IsBootSensitive="true" />
 		<part Name="Commerce" Value="555" />
     <stat Name="Hitpoints" Value="500" />
@@ -7185,7 +7185,7 @@ You may activate this item to conjure a force field in front of you. Robots will
 		<part Name="Physics" Weight="5" />
 		<part Name="Commerce" Value="1666" />
     <stat Name="Hitpoints" Value="500" />
-		<part Name="MutationOnEquip" ClassName="Telepathy" />
+		<part Name="MutationOnEquip" Mutation="Telepathy" />
     <part Name="ItemElements" Elements="jewels::3;;glass::3" />
 		<part Name="QuickenMind" Cooldown="50" AbilityAmount="1" IsBootSensitive="true" />
 		<part Name="RulesDescription" Text="Grants you Quicken Mind: refresh a random cooldown on use." />
@@ -7304,7 +7304,7 @@ You may activate this item to conjure a force field in front of you. Robots will
     <part Name="Description" Short="Shining jewels are scattered across the contours of a galactic visage, and edges drawn between them sketch the outline of a sashed Fool. Far away at the chrome crest, beads of bright and searing light suggest the shape of a medial ewer, and beyond its spout, a vast and timeful structure. The inside of the mask is ribboned with burnt tracery from where it was molded on a gallium lathe, then dyed with the milked irises of shedim and set to dry in a pool of warm static." />
     <part Name="RulesDescription" Text="+1 to all mutation levels&#10;+6 to cybernetics license tier" />
     <part Name="Physics" Weight="1" />
-    <part Name="MutationOnEquip" ClassName="Telepathy" />
+    <part Name="MutationOnEquip" Mutation="Telepathy" />
     <part Name="EquipIntProperties" Props="AllMutationLevelModifier:1;CyberneticsLicenses:6;FreeCyberneticsLicenses:6" />
     <part Name="SultanMask" Period="1" />
     <part Name="Unreplicable" />
@@ -7325,7 +7325,7 @@ You may activate this item to conjure a force field in front of you. Robots will
 		<stat Name="Hitpoints" Value="1500" />
     <part Name="Description" Short="Burning rubies, carnelians, and garnets are arranged as a warm and giving sun. Diminutive rocky orbs pass by in the near space of the visage, and in the far space a prism of freight lengthens into a wider void. The inside of the mask is ribboned with burnt tracery from where it was molded on a gallium lathe, then dyed with the milked irises of shedim and set to dry in a pool of warm static." />
     <part Name="Physics" Weight="1" />
-    <part Name="MutationOnEquip" ClassName="Telepathy" />
+    <part Name="MutationOnEquip" Mutation="Telepathy" />
     <part Name="SultanMask" Period="2" />
     <part Name="Unreplicable" />
     <tag Name="Tier" Value="7" />
@@ -7345,7 +7345,7 @@ You may activate this item to conjure a force field in front of you. Robots will
 		<stat Name="Hitpoints" Value="1500" />
     <part Name="Description" Short="On the countenance, ribbons of alabaster cloud circumscribe a lapis sea and forests of jade. At the median of it all, a Spindle pierces the outer rondure and disappears beyond the composition. A second obstructed spire, what must be the Spindle's shadow, soaks up the light thrown off by the southern sky of crystal white. The inside of the mask is ribboned with burnt tracery from where it was molded on a gallium lathe, then dyed with the milked irises of shedim and set to dry in a pool of warm static." />
     <part Name="Physics" Weight="1" />
-    <part Name="MutationOnEquip" ClassName="Telepathy" />
+    <part Name="MutationOnEquip" Mutation="Telepathy" />
     <part Name="SultanMask" Period="3" />
     <part Name="Unreplicable" />
     <tag Name="Tier" Value="7" />
@@ -12408,7 +12408,7 @@ These effects stack if multiple rubbergums are ingested." />
     <tag Name="SingleDisplay" />
 	  <tag Name="EquipSound" Value="sfx_equip_material_wire" />
     <tag Name="Breakable" Value="*delete" />
-    <part Name="DeployableInfrastructure" DeployNoun="wiring" DeploySound="Sounds/Interact/sfx_interact_powerLine_deploy" SkillRequired="Tinkering_GadgetInspector" ModPart="ModWired" SuppressIfPart="ElectricalPowerTransmission" ObjectBlueprint="PowerLine" UsesStack="true" MaxCells="10" RequireVisibility="true" MessageByCountSuffix="' of wire." />
+    <part Name="DeployableInfrastructure" DeployNoun="wiring" DeploySound="Sounds/Interact/sfx_interact_powerLine_deploy" SkillRequired="Tinkering_GadgetInspector" ModPart="ModWired" SuppressIfPart="ElectricalPowerTransmission" ObjectBlueprint="PowerLine" UsesStack="true" MaxCells="10" RequireVisibility="true" MessageByCountSuffix="' of wire" />
     <part Name="ItemElements" Elements="circuitry::2" />
     <stag Name="Conduit" />
 		<stag Name="Contemporary" />

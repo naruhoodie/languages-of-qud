@@ -123,8 +123,7 @@
   <option ID="OptionDigOnMove" DisplayText="Automatically dig through walls by moving into them when wielding a digging implement" Category="Automation" Type="Checkbox" Default="Yes"></option>  
   <option ID="OptionAutosaveInterval" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Automatically save when moving to a different zone" Category="Automation" Type="Combo" Values="0|None,1,2,3,5,7,10,15,20,30,40" Default="5"></option>
   <option ID="OptionAutoexploreRate" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Maximum automove cells/sec and autoattack actions/sec" SearchKeywords="autoact autoexplore framerate" Category="Automation" Type="Combo" Values="1,2,3,5,7,10,15,20,30,60,0|∞" Default="20"></option>
-
-
+    
   <option ID="OptionAutogetAmmo" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Autoget ammo" Category="Autoget" Type="Checkbox"  Default="Yes"></option>
   <option ID="OptionAutogetPrimitiveAmmo" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Autoget primitive ammo" Category="Autoget" Type="Checkbox"  Default="No"></option>
   <option ID="OptionAutogetNuggets" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Autoget copper, silver, and gold nuggets" Category="Autoget" Type="Checkbox"  Default="Yes"></option>
@@ -138,7 +137,8 @@
   <option ID="OptionAutogetBooks" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Autoget books" Category="Autoget" Type="Checkbox" Default="No"></option>
   <option ID="OptionAutogetZeroWeight" Requires="OptionShowAdvancedOptions==Yes"  DisplayText="Autoget weightless items" Category="Autoget" Type="Checkbox" Default="Yes"></option>
   <option ID="OptionAutogetIfHostiles" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Autoget if hostiles are nearby" Category="Autoget" Type="Checkbox" Default="No"></option>
-  <option ID="OptionAutogetFromNearby" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Autoget from adjacent cells" Category="Autoget" Type="Checkbox" Default="No"></option>  
+  <option ID="OptionAutogetFromNearby" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Autoget from adjacent cells" Category="Autoget" Type="Checkbox" Default="No"></option>
+  <option ID="OptionAutomationAdvancedOptions" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Show advanced autoget options in menus" SearchKeywords="autoact autoexplore framerate options" Category="Autoget" Type="Checkbox" Default="No"></option>
     
 
   <option ID="OptionAskForWorldmap" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Prompt before moving to the world map" Category="Prompts" Type="Checkbox" Default="No"></option>

@@ -1042,4 +1042,22 @@
         <worksTelekinetically>true</worksTelekinetically>
         <default>-1</default>
     </inventoryaction>
+    <inventoryaction Name="ToggleAllowAutogetStart">
+      <command>ToggleAllowAutogetStart</command>
+      <display>start autogetting</display>
+      <key>S</key>
+      <default>-1</default>
+      <worksAtDistance>true</worksAtDistance>
+      <fireOnActor>true</fireOnActor>
+      <preferToHighlight>start</preferToHighlight>
+    </inventoryaction>
+    <inventoryaction Name="ToggleAllowAutogetStop">
+      <command>ToggleAllowAutogetStop</command>
+      <display>stop autogetting</display>
+      <key>S</key>
+      <default>-1</default>
+      <worksAtDistance>true</worksAtDistance>
+      <fireOnActor>true</fireOnActor>
+      <preferToHighlight>start</preferToHighlight>
+    </inventoryaction>
 </inventoryactions>

@@ -1169,6 +1169,64 @@
     <tag Name="DisplayColor" Value="M" />
 </object>
 
+  <!-- n-Pointed Asterisk Faction Render Data -->
+  <object Name="Data_Asterisk_SpiceVillage" Inherits="DataBucket">
+    <!-- DisplayName and Color are picked in code -->
+    <tag Name="Postfix" Value="It's engraved with icons dedicated to =spice.entity:sacredThing:the act of procreating=." />
+  </object>
+  <object Name="Data_Asterisk_Joppa" Inherits="DataBucket">
+    <tag Name="DisplayName" Value="Joppa" />
+    <tag Name="Color" Value="g" />
+    <tag Name="Postfix" Value="It's carved in relief with watervine crawling along each point." />
+  </object>
+  <object Name="Data_Asterisk_GritGate" Inherits="DataBucket">
+    <tag Name="DisplayName" Value="Grit Gate" />
+    <tag Name="Color" Value="c" />
+    <tag Name="Postfix" Value="It's embossed with angular lines meant to evoke schematics and circuitry." />
+  </object>
+  <object Name="Data_Asterisk_BeyLah" Inherits="DataBucket">
+    <tag Name="DisplayName" Value="Bey Lah" />
+    <tag Name="Color" Value="c" />
+    <tag Name="Postfix" Value="It's engraved with cervine hoofprints leading from the spokes to the center." />
+  </object>
+  <object Name="Data_Asterisk_Kyakukya" Inherits="DataBucket">
+    <tag Name="DisplayName" Value="Kyakukya" />
+    <tag Name="Color" Value="r" />
+    <tag Name="Postfix" Value="It's etched with tiny mushrooms all over." />
+  </object>
+  <object Name="Data_Asterisk_Ezra" Inherits="DataBucket">
+    <tag Name="DisplayName" Value="Ezra" />
+    <tag Name="Color" Value="W" />
+    <tag Name="Postfix" Value="It's carved in relief with various types of musa." />
+  </object>
+  <object Name="Data_Asterisk_YdFreehold" Inherits="DataBucket">
+    <tag Name="DisplayName" Value="Yd Freehold" />
+    <tag Name="Color" Value="ydfreehold" />
+    <tag Name="Postfix" Value="It's carved in relief with figures of svardym hopping from the spokes toward the hub." />
+    <tag Name="UseArticle" Value="true" />
+  </object>
+  <object Name="Data_Asterisk_SixDayStilt" Inherits="DataBucket">
+    <tag Name="DisplayName" Value="Six Day Stilt" />
+    <tag Name="Color" Value="C" />
+    <tag Name="Postfix" Value="It's engraved with a preacher, hand outstretched, on each spoke." />
+    <tag Name="UseArticle" Value="true" />
+  </object>
+  <object Name="Data_Asterisk_Mopango" Inherits="DataBucket">
+    <tag Name="DisplayName" Value="mopango" />
+    <tag Name="UseArticle" Value="true" />
+    <tag Name="Color" Value="Y" />
+    <tag Name="Postfix" Value="It's embossed with starbursts along each spoke and a circular rondure around the hub." />
+  </object>
+  <object Name="Data_Asterisk_Pariahs" Inherits="DataBucket">
+    <tag Name="DisplayName" Value="pariahs" />
+    <tag Name="Color" Value="m" />
+    <tag Name="Postfix" Value="It's engraved with winding roads, a single lone figure walking them." />
+  </object>
+  <object Name="Data_Asterisk_Chavvah" Inherits="DataBucket">
+    <tag Name="DisplayName" Value="Chavvah" />
+    <tag Name="Color" Value="m" />
+    <tag Name="Postfix" Value="It's engraved with crystalline roots entwining each spoke." />
+  </object>
 
     <!-- Random test objects used by VariableReplacer tests -->
   <object Name="Test_20 Chem Cells" Inherits="Chem Cell">
@@ -1182,7 +1240,7 @@
     <part Name="LiquidVolume" StartVolume="37" />
   </object>
 
-  <object Name="Broken Fixit Spray" Inherits="Fixit Spray">
+  <object Name="Test_Broken Fixit Spray" Inherits="Fixit Spray">
     <tag Name="ExcludeFromDynamicEncounters" />
     <part Name="SpawnWithEffect" Effect="Broken" />
   </object>

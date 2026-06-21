@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.25
+Caves of Qud - Generated Localizable XML 2.0.212.26
 
 <objects ExcludeFromCorpusGeneration="Key">
 
@@ -1388,7 +1388,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.25
   <object Name="Plastifer Chem Vest" Load="Merge">
     <part Name="Render" DisplayName="▶{{plastifer|plastifer}} {{G|chem}} vest" />
     <part Name="Description" Short="▶A cuirass of gas-caught foam stiffens instantaneously when pressure is applied. Its karst surface is arrayed with tube sleeves and dusted with the colorful abrasions of chiliads and the chemical reactions they produce; the material has careened past the outer rings of its expected lifetime and into the unknowing void." />
-    <part Name="ReduceEnergyCosts" NameForStatus="▶StentSystem" />
+    <part Name="ReduceEnergyCosts" ScopeDescription="▶in the energy cost to apply an injector" NameForStatus="▶StentSystem" />
   </object>
   <object Name="Recycling Suit" Load="Merge">
     <part Name="Render" DisplayName="▶{{B|recycling suit}}" />
@@ -2080,7 +2080,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.25
     <part Name="Description" Short="▶A black particle defies the light-drenched world and charts a helical orbit." />
     <part Name="EquipStatBoost" NameForStatus="▶LightWarpingSystem" />
     <part Name="CancelRangedAttacks" NameForStatus="▶SpaceWarpingSystem" />
-    <part Name="RandomLongRangeTeleportOnDamage" NameForStatus="▶ProximitySensor" />
+    <part Name="RandomLongRangeTeleportOnDamage" Message="▶=subject.T= =verb:stumble= into =object.t=!" NameForStatus="▶ProximitySensor" />
   </object>
   <object Name="BaseNephilimLightCircle" Load="Merge">
     <part Name="Render" DisplayName="▶circle of light" />
@@ -2089,6 +2089,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.25
   <object Name="LightCircleAgolgot" Load="Merge">
     <part Name="Render" DisplayName="▶circle of light in the chord of {{agolgot|Agolgot}}" />
     <part Name="Description" Short="▶Minarets of raw bile hue, blackrot, and poison jade wheel about a zeropoint and blur in iridescence to a rainbow of malady." />
+    <part Name="ArmsOnEquip" BaseHands="▶Pincers" Category="▶Arthropod" />
   </object>
   <object Name="LightCircleBethsaida" Load="Merge">
     <part Name="Render" DisplayName="▶circle of light in the chord of {{bethsaida|Bethsaida}}" />
@@ -3884,7 +3885,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.25
   <object Name="Wire Strand" Load="Merge">
     <part Name="Render" DisplayName="▶{{r|wire strand}}" />
     <part Name="Description" Short="▶A cord extruded from metal ore conducts current when laid together." />
-    <part Name="DeployableInfrastructure" DeployNoun="▶wiring" MessageByCountSuffix="▶' of wire." />
+    <part Name="DeployableInfrastructure" DeployNoun="▶wiring" MessageByCountSuffix="▶' of wire" />
   </object>
   <object Name="Garbage" Load="Merge">
     <part Name="Render" DisplayName="▶trash" />

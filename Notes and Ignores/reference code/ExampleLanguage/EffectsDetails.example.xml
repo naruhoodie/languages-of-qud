@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.25
+Caves of Qud - Generated Localizable XML 2.0.212.26
 
 <templates>
 
@@ -95,8 +95,8 @@ Caves of Qud - Generated Localizable XML 2.0.212.25
     </template>
   <template ID="Effect.Disguised.Details">▶
         <switch Name="Appearance">
-          <case Value=""><p>Has the appearance of another creature.</p></case>
-          <default><p>Has the appearance of <stat Name="Appearance" />.</p></default>
+            <case Value=""><p>Has the appearance of another creature.</p></case>
+            <default><p>Has the appearance of <stat Name="Appearance" />.</p></default>
         </switch>
     </template>
   <template ID="Effect.Inspired.Details">▶
