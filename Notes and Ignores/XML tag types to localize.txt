@@ -62,6 +62,9 @@
 	    <part Name="RefractLight" Verb="<LOCALIZE>" />
 		<part Name="EnergyAmmoLoader" NameForStatus="<TECH,LOCALIZE>" />
 		<part Name="MagazineAmmoLoader" NameForStatus="<TECH,LOCALIZE>" />
+	<!-- Items.xml - Quills tags -->
+	    <tag Name="AbilityName" Value="<LOCALIZE>" />
+	    <tag Name="DisplayNameSingular" Value="<LOCALIZE>" />
 	<!-- Food.xml -->
 		<part Name="Food" Message="<LOCALIZE>" />
 		<tag Name="ServingType" Value="<LOCALIZE>" />
