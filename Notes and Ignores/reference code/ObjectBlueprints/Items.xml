@@ -10063,9 +10063,8 @@ This implant can't be uninstalled." />
     <part Name="Description" Short="Sheets of flayed and stretched goatskin are bound together with sap and scrawled on with kid blood." />
     <part Name="Book" ID="BloodstainedSheaf" />
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
-		<xtagGrammar Proper="false" adjunctNoun="" />
     <part Name="Commerce" Value="150" />
-    <xtagGrammar Proper="false" />
+    <xtagGrammar Proper="false" adjunctNoun="" />
   </object>
   <object Name="Corpus" Inherits="Book">
     <part Name="Render" DisplayName="{{W|Corpus Choliys}}" ColorString="&amp;w" RenderString="=" RenderLayer="5" Tile="Items/sw_book_1.bmp" DetailColor="k" />
@@ -10079,18 +10078,17 @@ This implant can't be uninstalled." />
     <part Name="Commerce" Value="150" />
     <part Name="UniqueWithAlternative" Alternative="StandaloneMarkovBook" />
     <part Name="SetBooleanStateOnRead" State="ReadTornSheet" />
-		<xtagGrammar Proper="false" adjunctNoun="" />
     <tag Name="NoSparkingQuest" />
-    <xtagGrammar Proper="false" />
+    <xtagGrammar Proper="false" adjunctNoun="" />
   </object>
   <object Name="Sonnet" Inherits="Book">
     <part Name="Render" DisplayName="{{Y|crumpled sheet of paper}}" ColorString="&amp;w" DetailColor="W" RenderString="=" RenderLayer="5" Tile="Items/sw_paper.bmp" />
     <part Name="Description" Short="Paper made of brinestalk pulp is covered in a shaky ink scrawl. It looks like it's been crumpled and uncrumpled many times." />
     <part Name="Book" ID="@EskhindSonnetBook" />
     <part Name="QuestStarter" Quest="Love and Fear" Trigger="Taken" />
-    <part Name="Commerce" Value="10" />    
-		<xtagGrammar Proper="false" adjunctNoun="" />
-    <tag Name="NoSparkingQuest" />    
+    <part Name="Commerce" Value="10" />
+    <xtagGrammar Proper="false" adjunctNoun="" />
+    <tag Name="NoSparkingQuest" />
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
   </object>
   <object Name="HeirloomsCatalog" Inherits="Book">
@@ -10103,16 +10101,16 @@ This implant can't be uninstalled." />
     <part Name="Description" Short="Several sheets of tattered, age-stained parchment are bound together at the margins by some sort of glue." />
     <part Name="Book" ID="Sheaf1" />
     <part Name="Commerce" Value="1" />
-		<xtagGrammar Proper="false" adjunctNoun="" />
-    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />    
+    <xtagGrammar Proper="false" adjunctNoun="" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
   </object>
   <object Name="Scroll Bound by Kelp" Inherits="Book">
     <part Name="Render" DisplayName="{{W|scroll bound by a strand of kelp}}" ColorString="&amp;W" RenderString="=" RenderLayer="5" Tile="Items/sw_scroll2.bmp" TileColor="&amp;w" DetailColor="G" />
     <part Name="Description" Short="Several sheets of tattered, age-stained parchment are bound together by a strand of kelp from a distant reef." />
     <part Name="Book" ID="Diary" />
     <part Name="Commerce" Value="500" />
-		<xtagGrammar Proper="false" adjunctNoun="" />
-    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />    
+    <xtagGrammar Proper="false" adjunctNoun="" />
+    <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
     <tag Name="NoClear"/>
   </object>
   <object Name="Lives1" Inherits="Book">

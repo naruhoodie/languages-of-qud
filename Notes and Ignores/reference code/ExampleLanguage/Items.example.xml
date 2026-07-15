@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.26
+Caves of Qud - Generated Localizable XML 2.0.212.28
 
 <objects ExcludeFromCorpusGeneration="Key">
 
@@ -2079,7 +2079,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.26
     <part Name="Render" DisplayName="▶{{K|black}} mote" />
     <part Name="Description" Short="▶A black particle defies the light-drenched world and charts a helical orbit." />
     <part Name="EquipStatBoost" NameForStatus="▶LightWarpingSystem" />
-    <part Name="CancelRangedAttacks" NameForStatus="▶SpaceWarpingSystem" />
+    <part Name="CancelRangedAttacks" Message="▶=subject.T= =verb:swallow= =object.t=!" NameForStatus="▶SpaceWarpingSystem" />
     <part Name="RandomLongRangeTeleportOnDamage" Message="▶=subject.T= =verb:stumble= into =object.t=!" NameForStatus="▶ProximitySensor" />
   </object>
   <object Name="BaseNephilimLightCircle" Load="Merge">
@@ -3169,7 +3169,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.26
     <part Name="Render" DisplayName="▶{{W|sheaf of bloodstained goatskin parchment}}" />
     <part Name="Description" Short="▶Sheets of flayed and stretched goatskin are bound together with sap and scrawled on with kid blood." />
     <xtagGrammar Proper="▶false" adjunctNoun="" />
-    <xtagGrammar Proper="▶false" />
   </object>
   <object Name="Corpus" Load="Merge">
     <part Name="Render" DisplayName="▶{{W|Corpus Choliys}}" />
@@ -3178,7 +3177,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.26
     <part Name="Render" DisplayName="▶{{W|torn sheet of graph paper}}" />
     <part Name="Description" Short="▶A sheet of loose leaf is divided by coordinate lines in cyan. It seems to have been torn from a binder." />
     <xtagGrammar Proper="▶false" adjunctNoun="" />
-    <xtagGrammar Proper="▶false" />
   </object>
   <object Name="Sonnet" Load="Merge">
     <part Name="Render" DisplayName="▶{{Y|crumpled sheet of paper}}" />

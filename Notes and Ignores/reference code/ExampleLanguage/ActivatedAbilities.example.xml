@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.26
+Caves of Qud - Generated Localizable XML 2.0.212.28
 
 <activatedabilities>
 
@@ -914,13 +914,13 @@ Caves of Qud - Generated Localizable XML 2.0.212.26
           </description>
   </ability>
   <ability Command="CommandToggleProvideCharge">
-    <description>▶You power equipped devices that have integrated power systems.</description>
+    <description>▶You power equipped devices that have integrated power.</description>
   </ability>
   <ability Command="CommandElectromagneticPulse">
     <description>▶
               <p>You generate an electromagnetic pulse that disables nearby artifacts and machines.</p>
               <br />
-              <statline Name="Area" Unit="▶centered around yourself" DisplayName="▶Area" />
+              <p>Area: <stat Name="Area" /> centered around yourself</p>
               <statline Name="Duration" DisplayName="▶Disabled duration" Unit="▶rounds" />
               <statline Name="Cooldown" DisplayName="▶Cooldown" />
           </description>

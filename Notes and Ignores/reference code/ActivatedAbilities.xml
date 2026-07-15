@@ -1035,7 +1035,7 @@
         <UITile Tile="Mutations/electrical_generation.bmp" Foreground="W" Detail="W" />
     </ability>
     <ability Command="CommandToggleProvideCharge">
-        <description>You power equipped devices that have integrated power systems.</description>
+        <description>You power equipped devices that have integrated power.</description>
         <UITile Tile="Abilities/abil_power_devices_toggle_off.bmp" Foreground="y" Detail="W" />
         <UITile Tile="Abilities/abil_power_devices_toggle_on.bmp" Foreground="Y" Detail="W" State="ToggleOn" />
     </ability>
@@ -1043,7 +1043,7 @@
         <description>
             <p>You generate an electromagnetic pulse that disables nearby artifacts and machines.</p>
             <br />
-            <statline Name="Area" Unit="centered around yourself" />
+            <p>Area: <stat Name="Area" /> centered around yourself</p>
             <statline Name="Duration" DisplayName="Disabled duration" Unit="rounds" />
             <statline Name="Cooldown" />
         </description>
