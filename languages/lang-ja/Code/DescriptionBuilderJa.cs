@@ -47,7 +47,7 @@ namespace LanguagesOfQudJapanese
                 {
                     Epithets.Sort(SortEpithets);
                     clause = _T("DescriptionBuilder Epithets Join", "=epithets.join:, =")
-                        .AddArgument(Epithets, "epithets")
+                        .SetArgument("epithets", Epithets)
                         .ToString();
                     AddClause(clause, ORDER_ADJUST_VERY_EARLY);
                 }
@@ -57,7 +57,7 @@ namespace LanguagesOfQudJapanese
                     {
                     Epithets.Sort(SortEpithets);
                     clause = _T("DescriptionBuilder Epithets Few", "=epithets.てList=")
-                        .AddArgument(Epithets, "epithets")
+                        .SetArgument("epithets", Epithets)
                         .ToString();
                     }
                     else
@@ -80,20 +80,20 @@ namespace LanguagesOfQudJapanese
                 {
                     Titles.Sort(SortTitles);
                     clause = _T("DescriptionBuilder Multiple Titles Clause", ", =titles.andList:noSerial=")
-                        .AddArgument(Titles, "titles")
+                        .SetArgument("titles", Titles)
                         .ToString();
                 }
                 else
                 if ((Epithets != null && Epithets.Count > 0) || (Object != null && Object.HasProperName))
                 {
                     clause = _T("DescriptionBuilder Single Title Clause With Epithets", ", =title.toString=")
-                        .AddArgument(Titles[0], "title")
+                        .SetArgument("title", Titles[0])
                         .ToString();
                 }
                 else
                 {
                     clause = _T("DescriptionBuilder Single Title Clause", "and =title.toString=")
-                        .AddArgument(Titles[0], "title")
+                        .SetArgument("title", Titles[0])
                         .ToString();
                 }
                 AddBase(clause, ORDER_ADJUST_EXTREMELY_EARLY);
