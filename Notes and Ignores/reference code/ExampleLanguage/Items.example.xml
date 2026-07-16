@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.28
+Caves of Qud - Generated Localizable XML 2.0.212.29
 
 <objects ExcludeFromCorpusGeneration="Key">
 
@@ -1178,6 +1178,8 @@ Caves of Qud - Generated Localizable XML 2.0.212.28
   <object Name="Quills" Load="Merge">
     <part Name="Render" DisplayName="▶quills" />
     <part Name="Description" Short="▶Hundreds and hundreds of fossilized hairs crown the body in a protective coat." />
+    <tag Name="AbilityName" Value="▶Quill Fling" />
+    <tag Name="DisplayNameSingular" Value="▶quill" />
   </object>
   <object Name="Wings" Load="Merge">
     <part Name="Render" DisplayName="▶wings" />

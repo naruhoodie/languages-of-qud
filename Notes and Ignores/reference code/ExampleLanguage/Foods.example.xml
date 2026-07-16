@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.28
+Caves of Qud - Generated Localizable XML 2.0.212.29
 
 <objects ExcludeFromCorpusGeneration="Key">
 
@@ -348,6 +348,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.28
   <object Name="Vinewafer Sheaf" Load="Merge">
     <part Name="Render" DisplayName="▶{{g|vinewafer sheaf}}" />
     <part Name="Description" Short="▶Bunched wafers reaped from the moisture-sucking watervine plant and bound by twine." />
+    <xtagGrammar iArticle="" adjunctNoun="" massNoun="▶false" />
   </object>
   <object Name="Pickled Mushrooms" Load="Merge">
     <part Name="Render" DisplayName="▶{{K|pickled mushrooms}}" />
@@ -375,7 +376,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.28
   <object Name="Salthopper Chip" Load="Merge">
     <part Name="Render" DisplayName="▶salthopper chip" />
     <part Name="Description" Short="▶Chitin was shaved from the exoskeletal flank of a caught salthopper and dry-beaten to a snappy crisp." />
-    <xtagGrammar iArticle="▶a" adjunctNoun="" />
+    <xtagGrammar iArticle="" adjunctNoun="" massNoun="▶false" />
   </object>
   <object Name="Phase Silk" Load="Merge">
     <part Name="Render" DisplayName="▶{{Y|phase silk}}" />
@@ -448,6 +449,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.28
   <object Name="Food Cube" Load="Merge">
     <part Name="Render" DisplayName="▶food cube" />
     <part Name="Description" Short="▶Spongy foodstuff molded into a slate-hued cube of perfect proportions. What forces married the messiness of eating with the precision of cubes?" />
+    <xtagGrammar iArticle="" adjunctNoun="" massNoun="▶false" />
   </object>
   <object Name="Fermented Tongue" Load="Merge">
     <part Name="Render" DisplayName="▶{{r|fermented tongue}}" />
@@ -459,7 +461,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.28
   </object>
   <object Name="Wild Rice" Load="Merge">
     <part Name="Render" DisplayName="▶{{m-M-m-M sequence|wild}} rice" />
-    <part Name="Description" Short="▶Plum-white rice hulls fizzle to the touch and their awns groan an erratic  and lyrical sound." />
+    <part Name="Description" Short="▶Plum-white rice hulls fizzle to the touch and their awns groan an erratic and lyrical sound." />
   </object>
   <object Name="Dream Smoke" Load="Merge">
     <part Name="Render" DisplayName="▶{{dreamsmoke|dream smoke}}" />

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.28
+Caves of Qud - Generated Localizable XML 2.0.212.29
 
 <templates>
 
@@ -99,8 +99,35 @@ Caves of Qud - Generated Localizable XML 2.0.212.28
             <default><p>Has the appearance of <stat Name="Appearance" />.</p></default>
         </switch>
     </template>
+  <template ID="Effect.FungalSporeInfection.Details">▶
+        <p>Skin flakes and itches. Is something growing there?</p>
+    </template>
+  <template ID="Effect.Glotrot.Details">▶
+        <switch Name="TongueRotting">
+            <case Value="true">
+                <p>Tongue is rotting away.</p>
+                <p>Starts bleeding when eating or drinking.</p>
+            </case>
+            <default>
+                <p>Tongue has rotted away.</p>
+                <p>Can't speak.</p>
+            </default>
+        </switch>
+    </template>
+  <template ID="Effect.GlotrotOnset.Details">▶
+        <p>Throat is sore and tongue is swollen.</p>
+    </template>
   <template ID="Effect.Inspired.Details">▶
         <p>The next time you cook a meal by choosing ingredients, you get a choice of three dynamically-generated effects to apply. You create a recipe for the chosen effect.</p>
+    </template>
+  <template ID="Effect.Ironshank.Details">▶
+        <p>Leg bones are fusing at the joints.</p>
+        <p><stat Name="MoveSpeedChange" Filters="signed" /> Move Speed</p>
+        <p><stat Name="AVChange" Filters="signed" /> AV</p>
+        <p>Will continue to lose Move Speed and gain AV until Move Speed penalty reaches -80.</p>
+    </template>
+  <template ID="Effect.IronshankOnset.Details">▶
+        <p>Legs ache at the joints.</p>
     </template>
   <template ID="Effect.Lovesick.Details">▶
         <p>-6 Intelligence</p>
@@ -113,6 +140,12 @@ Caves of Qud - Generated Localizable XML 2.0.212.28
     </template>
   <template ID="Effect.Metamorphed.Details">▶
         <p>Assuming another creature's form.</p>
+    </template>
+  <template ID="Effect.Monochrome.Details">▶
+        <p>Sees shades of only a single color.</p>
+    </template>
+  <template ID="Effect.MonochromeOnset.Details">▶
+        <p>Vision is blurred.</p>
     </template>
   <template ID="Effect.Phased.Details">▶
         <p>Can't physically interact with creatures and objects unless they're also phased.</p>

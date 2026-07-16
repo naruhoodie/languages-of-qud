@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.28
+Caves of Qud - Generated Localizable XML 2.0.212.29
 
 <objects ExcludeFromCorpusGeneration="Key">
 
@@ -275,11 +275,11 @@ Caves of Qud - Generated Localizable XML 2.0.212.28
   </object>
   <object Name="Chavvah Chime Left" Load="Merge">
     <part Name="Render" DisplayName="▶chiming rock" />
-    <part Name="Description" Short="▶Its corners were waxed off by static and its crystal corms burn with tranduced moonlight. It chimes in near and far keys." />
+    <part Name="Description" Short="▶Its corners were waxed off by static and its crystal corms burn with transduced moonlight. It chimes in near and far keys." />
   </object>
   <object Name="Chavvah Chime Right" Load="Merge">
     <part Name="Render" DisplayName="▶chiming rock" />
-    <part Name="Description" Short="▶Its corners were waxed off by static and its crystal corms burn with tranduced moonlight. It chimes in near and far keys." />
+    <part Name="Description" Short="▶Its corners were waxed off by static and its crystal corms burn with transduced moonlight. It chimes in near and far keys." />
   </object>
   <object Name="Chavvah Taproot Floor" Load="Merge">
     <part Name="Render" DisplayName="▶crystalline taproot" />
@@ -352,6 +352,10 @@ Caves of Qud - Generated Localizable XML 2.0.212.28
     <part Name="Description" Short="▶Brick rectangles tesselate the path." />
   </object>
   <object Name="MarbleWalkway" Load="Merge">
+    <part Name="Render" DisplayName="▶marble walkway" />
+    <part Name="Description" Short="▶Marble rectangles tesselate the path." />
+  </object>
+  <object Name="CyanMarbleWalkway" Load="Merge">
     <part Name="Render" DisplayName="▶marble walkway" />
     <part Name="Description" Short="▶Marble rectangles tesselate the path." />
   </object>

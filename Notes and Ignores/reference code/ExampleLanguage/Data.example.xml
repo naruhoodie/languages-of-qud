@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.28
+Caves of Qud - Generated Localizable XML 2.0.212.29
 
 <objects ExcludeFromCorpusGeneration="Key">
 
@@ -325,9 +325,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.28
   <object Name="ProceduralCookingIngredient_density" Load="Merge">
     <tag Name="Description" Value="▶volatile density-based" />
   </object>
-  <object Name="ProceduralCookingIngredient_dissociation" Load="Merge">
-    <tag Name="Description" Value="▶dissociation-based" />
-  </object>
   <object Name="ProceduralCookingIngredient_attributes" Load="Merge">
     <tag Name="Description" Value="▶uncertain attribute-based" />
   </object>
@@ -475,5 +472,15 @@ Caves of Qud - Generated Localizable XML 2.0.212.28
   <object Name="Data_Asterisk_Chavvah" Load="Merge">
     <tag Name="DisplayName" Value="▶Chavvah" />
     <tag Name="Postfix" Value="▶It's engraved with crystalline roots entwining each spoke." />
+  </object>
+  <object Name="Test_Bow With A Name" Load="Merge">
+    <part Name="Render" DisplayName="▶{{amorous|Bow with a Name}}" />
+    <xtagGrammar Proper="▶true" />
+    <tag Name="IndefiniteArticle" Value="▶the" />
+    <tag Name="DefiniteArticle" Value="▶the" />
+  </object>
+  <object Name="Test_Named Canteen" Load="Merge">
+    <part Name="Render" DisplayName="▶{{G|Wilson}}" />
+    <xtagGrammar Proper="▶true" />
   </object>
 </objects>

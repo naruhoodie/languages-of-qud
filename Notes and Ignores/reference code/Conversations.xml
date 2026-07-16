@@ -1386,10 +1386,8 @@
 				<text>"Ease the pain, addle the brain." Be careful when you chew witchwood bark.</text>
 				<text>Don't eat the hoarshrooms too fast, now.</text>
 				<text>Have you got enough tonics?</text>
-				<text>Got a fungal infection? You'll want one of my spray bottles to apply the cure.</text>
-				<text>Got a fungal infection? You'll want one of my spray bottles to apply the cure.</text>
-				<text>Get your hands on the Corpus Choliys for disease and fungus cures.</text>
-				<text>Get your hands on the Corpus Choliys for disease and fungus cures.</text>
+				<text Weight="2">Got a fungal infection? You'll want one of my spray bottles to apply the cure.</text>
+				<text Weight="2">Get your hands on the Corpus Choliys for disease and fungus cures.</text>
 			</text>
       <choice GotoID="End">Live and drink.</choice>
     </node>
@@ -2615,7 +2613,7 @@
 			<choice GotoID="PaxComplete" IfHaveActiveQuest="Pax Klanq, I Presume?" IfFinishedQuestStep="Pax Klanq, I Presume?~Convince Pax Klanq to Construct the Climber">I convinced Pax Klanq to construct the climber.</choice>			
 			<choice GotoID="TombIntro" IfFinishedQuest="Pax Klanq, I Presume?" IfNotHaveQuest="Tomb of the Eaters">Pax Klanq has agreed to build the climber. What now?</choice>
 			<choice GotoID="TombExplain1" IfHaveActiveQuest="Tomb of the Eaters">Could you tell me again about the Tomb of the Eaters?</choice>
-			<choice GotoID="Golem" IfFinishedQuest="Tomb of the Eaters" IfNotHaveQuest="The Golem">The magnetic field has been disable and the Spindle is free to ascend. What now?</choice>
+			<choice GotoID="Golem" IfFinishedQuest="Tomb of the Eaters" IfNotHaveQuest="The Golem">The magnetic field has been disabled and the Spindle is free to ascend. What now?</choice>
 			<choice GotoID="Golem4" IfHaveActiveQuest="The Golem">Tell me again of the plan to mold a giant creature to ascend the Spindle.</choice>
 			<choice GotoID="GolemQuestDone" IfFinishedQuest="The Golem" IfNotHaveState="BarathrumGolemDone">The creature has been made. What now?</choice>
 			<choice GotoID="GolemInfo" IfFinishedQuest="The Golem">Tell me again how the giant creature functions.</choice>

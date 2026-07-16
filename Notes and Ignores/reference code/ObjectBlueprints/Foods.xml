@@ -699,6 +699,7 @@ Your {{Y|Ego}} is reduced by {{C|1}}" />
     <part Name="Description" Short="Bunched wafers reaped from the moisture-sucking watervine plant and bound by twine." />
     <part Name="PreparedCookingIngredient" type="thirst" charges="1" />
     <tag Name="Plant" />
+    <xtagGrammar iArticle="" adjunctNoun="" massNoun="false" />
     <tag Name="DynamicObjectsTable:Saltmarsh_Ingredients" />
     <tag Name="DynamicObjectsTable:Flowerfields_Ingredients" />
   </object>
@@ -762,7 +763,7 @@ Your {{Y|Ego}} is reduced by {{C|1}}" />
     <part Name="Description" Short="Chitin was shaved from the exoskeletal flank of a caught salthopper and dry-beaten to a snappy crisp." />
     <part Name="PreparedCookingIngredient" type="tastyMinor" charges="1" />
     <part Name="Commerce" Value="0.5" />
-    <xtagGrammar iArticle="a" adjunctNoun="" />
+    <xtagGrammar iArticle="" adjunctNoun="" massNoun="false" />
   </object>
   <object Name="Phase Silk" Inherits="Preservable">
     <part Name="Render" DisplayName="{{Y|phase silk}}" RenderString="%" ColorString="&amp;Y" DetailColor="y" RenderLayer="5" Tile="Items/sw_phasesilk.bmp" />
@@ -911,6 +912,7 @@ Your {{Y|Ego}} is reduced by {{C|1}}" />
     <tag Name="AlwaysStack" Value="*delete"/>
     <part Name="PreparedCookingIngredient" type="random" charges="1" />
     <part Name="Commerce" Value="10" />
+    <xtagGrammar iArticle="" adjunctNoun="" massNoun="false" />
 		<tag Name="NoSparkingQuest" />
   </object>
   <object Name="Fermented Tongue" Inherits="Preservable">
@@ -933,7 +935,7 @@ Your {{Y|Ego}} is reduced by {{C|1}}" />
   </object>
 	<object Name="Wild Rice" Inherits="Preservable">
         <part Name="Render" DisplayName="{{m-M-m-M sequence|wild}} rice" Tile="Items/sw_wild_rice.bmp" ColorString="&amp;m" DetailColor="y" />
-		<part Name="Description" Short="Plum-white rice hulls fizzle to the touch and their awns groan an erratic  and lyrical sound." />		
+		<part Name="Description" Short="Plum-white rice hulls fizzle to the touch and their awns groan an erratic and lyrical sound." />		
 		<tag Name="Plant" />		
 		<part Name="PreparedCookingIngredient" type="randomHighTier" charges="1" />
 		<part Name="Commerce" Value="20" />		

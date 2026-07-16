@@ -624,14 +624,6 @@
 		<tag Name="RandomHighTierWeight" Value="10" />
   </object>
 
-  <object Name="ProceduralCookingIngredient_dissociation" Inherits="IngredientMapping">
-    <tag Name="CookingDomain" Value="dissociation" />
-    <tag Name="Units" Value="CookingDomainDissociation_UnitOtherBodyBonus" />
-    <tag Name="Description" Value="dissociation-based" />
-    <tag Name="RandomWeight" Value="0" />
-    <tag Name="RandomHighTierWeight" Value="10" />
-  </object>
-  
   <object Name="ProceduralCookingIngredient_attributes" Inherits="IngredientMapping">
     <tag Name="CookingDomain" Value="attributes" />
     <tag Name="Units" Value="CookingDomainAttributes_UnitPermanentAllStats_25Percent" />
@@ -1235,6 +1227,23 @@
     <part Name="Examiner" Complexity="-1" />
   </object>
 
+  <object Name="Test_5 Combustion Cells" Inherits="Combustion Cell">
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <part Name="LiquidVolume" StartVolume="1" />
+    <part Name="Stacker" StackCount="5" />
+    <part Name="Examiner" Complexity="-1" />
+  </object>
+
+  <object Name="Test_42 Lead Slugs" Inherits="Lead Slug">
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <part Name="Stacker" StackCount="42" />
+  </object>
+
+  <object Name="Test_3 Steel Arrows" Inherits="Steel Arrow">
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <part Name="Stacker" StackCount="3" />
+  </object>
+
   <object Name="Test_WineWaterskin" Inherits="WineWaterskin">
     <tag Name="ExcludeFromDynamicEncounters" />
     <part Name="LiquidVolume" StartVolume="37" />
@@ -1243,6 +1252,20 @@
   <object Name="Test_Broken Fixit Spray" Inherits="Fixit Spray">
     <tag Name="ExcludeFromDynamicEncounters" />
     <part Name="SpawnWithEffect" Effect="Broken" />
+  </object>
+
+  <object Name="Test_Bow With A Name" Inherits="Short Bow">
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <part Name="Render" DisplayName="{{amorous|Bow with a Name}}" ColorString="&amp;R" />
+    <xtagGrammar Proper="true" />
+    <tag Name="IndefiniteArticle" Value="the" />
+    <tag Name="DefiniteArticle" Value="the" />
+  </object>
+
+  <object Name="Test_Named Canteen" Inherits="Empty Canteen">
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <part Name="Render" DisplayName="{{G|Wilson}}" ColorString="&amp;G" />
+    <xtagGrammar Proper="true" />
   </object>
 
 </objects>

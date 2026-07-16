@@ -811,7 +811,7 @@
 	</object>
 	<object Name="Chavvah Chime Left" Inherits="Crystal">
 		<part Name="Render" DisplayName="chiming rock" RenderString="14" Tile="Terrain/sw_chavvah_chime_double_1.bmp" ColorString="&amp;y" TileColor="&amp;Y" DetailColor="m" />
-		<part Name="Description" Short="Its corners were waxed off by static and its crystal corms burn with tranduced moonlight. It chimes in near and far keys." />
+		<part Name="Description" Short="Its corners were waxed off by static and its crystal corms burn with transduced moonlight. It chimes in near and far keys." />
 		<part Name="Physics" Weight="1000" />
 		<stat Name="Hitpoints" Value="2000" />
 		<part Name="ConversationScript" ConversationID="ChavvahFrontChime" />
@@ -821,7 +821,7 @@
 	</object>
 	<object Name="Chavvah Chime Right" Inherits="Crystal">
 		<part Name="Render" DisplayName="chiming rock" RenderString="14" Tile="Terrain/sw_chavvah_chime_double_2.bmp" ColorString="&amp;y" TileColor="&amp;Y" DetailColor="m" />
-		<part Name="Description" Short="Its corners were waxed off by static and its crystal corms burn with tranduced moonlight. It chimes in near and far keys." />
+		<part Name="Description" Short="Its corners were waxed off by static and its crystal corms burn with transduced moonlight. It chimes in near and far keys." />
 		<part Name="Physics" Weight="1000" />
 		<stat Name="Hitpoints" Value="2000" />
 		<part Name="ConversationScript" ConversationID="ChavvahFrontChime" />
@@ -1025,6 +1025,12 @@
     <part Name="Render" DisplayName="marble walkway" ColorString="&amp;K" TileColor="&amp;K" DetailColor="C" />
     <part Name="Description" Short="Marble rectangles tesselate the path." />
     <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false"/>
+  </object>
+  <object Name="CyanMarbleWalkway" Inherits="Walkway">
+    <part Name="Render" DisplayName="marble walkway" ColorString="&amp;c" TileColor="&amp;c" DetailColor="C" />
+    <part Name="Description" Short="Marble rectangles tesselate the path." />
+    <part Name="Physics" Weight="10000" FlameTemperature="99999" VaporTemperature="1500" Takeable="false"/>
+    <tag Name="AggregateWith" Value="MarbleWalkway" />
   </object>
   <object Name="BlackMarbleWalkway" Inherits="Walkway">
     <part Name="Render" DisplayName="black marble walkway" ColorString="&amp;K" TileColor="&amp;K" DetailColor="y" />
