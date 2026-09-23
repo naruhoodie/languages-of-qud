@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.30
+Caves of Qud - Generated Localizable XML 2.0.212.31
 
 <quests>
 
@@ -40,7 +40,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.30
       <text>▶Return the amaranthine prism to Warden Indrix.</text>
     </step>
   </quest>
-  <quest ID="Fetch Argyve a Knickknack" Name="▶Fetch Argyve a Knickknack" Accomplishment="▶You fetched a trinket for an old man." Hagiograph="▶Inside a temple of water and vine, =name= taught an old man the value of chrome." Gospel="▶=spice:elements.entity@elements[random].weddingConditions.!random.capitalize=, =name= cemented =player.possessive= friendship with the Tinkers' Guild by marrying Argyve.">
+  <quest ID="Fetch Argyve a Knickknack" Name="▶Fetch Argyve a Knickknack" Accomplishment="▶You fetched a trinket for an old man." Hagiograph="▶Inside a temple of water and vine, =name= taught an old man the value of chrome." Gospel="▶=spice:elements.entity@elements[random].weddingConditions.!random|capitalize=, =name= cemented =player.possessive= friendship with the Tinkers' Guild by marrying Argyve.">
     <step ID="Find a Knickknack" Name="▶Find a Knickknack">
       <text>▶Search the regions surrounding Joppa for an artifact.</text>
     </step>
@@ -48,7 +48,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.30
       <text>▶Bring the artifact to Argyve.</text>
     </step>
   </quest>
-  <quest ID="Fetch Argyve Another Knickknack" Name="▶Fetch Argyve Another Knickknack" Accomplishment="▶You fetched another trinket for an old man." Hagiograph="▶In the shadow of steel beneath the High Salt Sun, =name= taught an old man the value of chrome." Gospel="▶=spice:elements.entity@elements[random].weddingConditions.!random.capitalize=, =name= cemented =player.possessive= friendship with the Tinkers' Guild by marrying Argyve for a second time.">
+  <quest ID="Fetch Argyve Another Knickknack" Name="▶Fetch Argyve Another Knickknack" Accomplishment="▶You fetched another trinket for an old man." Hagiograph="▶In the shadow of steel beneath the High Salt Sun, =name= taught an old man the value of chrome." Gospel="▶=spice:elements.entity@elements[random].weddingConditions.!random|capitalize=, =name= cemented =player.possessive= friendship with the Tinkers' Guild by marrying Argyve for a second time.">
     <step ID="Find Another Knickknack" Name="▶Find Another Knickknack">
       <text>▶Search the regions surrounding Joppa for another artifact.</text>
     </step>

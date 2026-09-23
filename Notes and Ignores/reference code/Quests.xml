@@ -45,7 +45,7 @@
          Accomplishment="You fetched a trinket for an old man."
          Hagiograph="Inside a temple of water and vine, =name= taught an old man the value of chrome."
          HagiographCategory="Trysts"
-         Gospel="=spice:elements.entity@elements[random].weddingConditions.!random.capitalize=, =name= cemented =player.possessive= friendship with the Tinkers' Guild by marrying Argyve.">
+         Gospel="=spice:elements.entity@elements[random].weddingConditions.!random|capitalize=, =name= cemented =player.possessive= friendship with the Tinkers' Guild by marrying Argyve.">
     
     <step Name="Find a Knickknack" XP="0">
       <text>Search the regions surrounding Joppa for an artifact.</text>
@@ -61,7 +61,7 @@
          Accomplishment="You fetched another trinket for an old man."
          Hagiograph="In the shadow of steel beneath the High Salt Sun, =name= taught an old man the value of chrome."
          HagiographCategory="Trysts"
-         Gospel="=spice:elements.entity@elements[random].weddingConditions.!random.capitalize=, =name= cemented =player.possessive= friendship with the Tinkers' Guild by marrying Argyve for a second time.">
+         Gospel="=spice:elements.entity@elements[random].weddingConditions.!random|capitalize=, =name= cemented =player.possessive= friendship with the Tinkers' Guild by marrying Argyve for a second time.">
 
     <step Name="Find Another Knickknack" XP="0">
 			<text>Search the regions surrounding Joppa for another artifact.</text>

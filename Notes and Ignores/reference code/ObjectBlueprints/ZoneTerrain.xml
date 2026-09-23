@@ -647,11 +647,11 @@
     <builder Name="RandomTile" Tiles="Terrain/sw_reef_organic_odd_1.bmp,Terrain/sw_reef_organic_odd_2.bmp,Terrain/sw_reef_organic_odd_3.bmp,Terrain/sw_reef_organic_odd_4.bmp" />
   </object>
   <object Name="Coral and Palladium Strut" Inherits="Coral">
-    <part Name="Render" DisplayName="palladium strut with coral growth" RenderString="231" ColorString="&amp;r" TileColor="&amp;C" Tile="terrain/sw_mangrove2.bmp" DetailColor="r"  Occluding="true" />
+    <part Name="Render" DisplayName="palladium strut" RenderString="231" ColorString="&amp;C" TileColor="&amp;C" Tile="terrain/sw_mangrove2.bmp" DetailColor="r" Occluding="true" />
     <part Name="Description" Short="Bow polyps colonize the cylindrical topology of the lattice and pattern out an orthogonal neighborhood in a network of life." />
     <tag Name="HangingSupport" />
     <part Name="RandomRenderString" Strings="179,191,192,193,194,195,196,197,217,218" />
-    <builder Name="RandomTile" Tiles="Terrain/sw_reef_both_even_1.bmp,Terrain/sw_reef_both_even_2.bmp,Terrain/sw_reef_both_even_3.bmp,Terrain/sw_reef_both_even_4.bmp,Terrain/sw_reef_both_odd_1.bmp,Terrain/sw_reef_both_odd_2.bmp,Terrain/sw_reef_both_odd_3.bmp,Terrain/sw_reef_both_odd_4.bmp" />
+    <builder Name="RandomTile" Tiles="Terrain/sw_reef_metal_even_1.bmp,Terrain/sw_reef_metal_even_2.bmp,Terrain/sw_reef_metal_even_3.bmp,Terrain/sw_reef_metal_even_4.bmp,Terrain/sw_reef_metal_odd_1.bmp,Terrain/sw_reef_metal_odd_2.bmp,Terrain/sw_reef_metal_odd_3.bmp,Terrain/sw_reef_metal_odd_4.bmp" />
     <part Name="PluckablePolyp" />
     <tag Name="NavigationPolyp" />
     <tag Name="NavigationStrut" />
@@ -662,10 +662,10 @@
     <tag Name="ExcludeFromDynamicEncounters" Value="*noinherit" />
   </object>
   <object Name="Coral and Palladium Strut A" Inherits="Coral and Palladium Strut">
-    <builder Name="RandomTile" Tiles="Terrain/sw_reef_both_even_1.bmp,Terrain/sw_reef_both_even_2.bmp,Terrain/sw_reef_both_even_3.bmp,Terrain/sw_reef_both_even_4.bmp" />
+    <builder Name="RandomTile" Tiles="Terrain/sw_reef_metal_even_1.bmp,Terrain/sw_reef_metal_even_2.bmp,Terrain/sw_reef_metal_even_3.bmp,Terrain/sw_reef_metal_even_4.bmp" />
   </object>
   <object Name="Coral and Palladium Strut B" Inherits="Coral and Palladium Strut">
-    <builder Name="RandomTile" Tiles="Terrain/sw_reef_both_odd_1.bmp,Terrain/sw_reef_both_odd_2.bmp,Terrain/sw_reef_both_odd_3.bmp,Terrain/sw_reef_both_odd_4.bmp" />
+    <builder Name="RandomTile" Tiles="Terrain/sw_reef_metal_odd_1.bmp,Terrain/sw_reef_metal_odd_2.bmp,Terrain/sw_reef_metal_odd_3.bmp,Terrain/sw_reef_metal_odd_4.bmp" />
   </object>
   <object Name="Finger Coral" Inherits="Coral">
     <part Name="Render" DisplayName="finger coral" RenderString="157" ColorString="&amp;r" DetailColor="R" Occluding="false" />

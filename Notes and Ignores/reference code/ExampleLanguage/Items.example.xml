@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.30
+Caves of Qud - Generated Localizable XML 2.0.212.31
 
 <objects ExcludeFromCorpusGeneration="Key">
 
@@ -233,14 +233,17 @@ Caves of Qud - Generated Localizable XML 2.0.212.30
   <object Name="Gaslight Dagger" Load="Merge">
     <part Name="Render" DisplayName="▶{{gaslight|gaslight}} kris" />
     <part Name="Description" Short="▶Through a bore in the wood grip draws a crinkled beam of pale light. In motion it heats to steel-melting temperature and whirrs matter away." />
+    <part Name="Gaslight" ChargedName="▶{{gaslight|gaslight}} kris" UnchargedName="▶gaslight kris" />
   </object>
   <object Name="Gaslight Sword" Load="Merge">
     <part Name="Render" DisplayName="▶{{gaslight|gaslight}} flyssa" />
     <part Name="Description" Short="▶Through a bore in the wood grip draws a long and tapered beam of pale light. In motion it heats to steel-melting temperature and whirrs matter away." />
+    <part Name="Gaslight" ChargedName="▶{{gaslight|gaslight}} flyssa" UnchargedName="▶gaslight flyssa" />
   </object>
   <object Name="Gaslight Chisel" Load="Merge">
     <part Name="Render" DisplayName="▶{{gaslight|gaslight}} chisel" />
     <part Name="Description" Short="▶Through a bore in the wood grip draws a stout beam of pale light. In motion it heats to steel-melting temperature and whirrs matter away." />
+    <part Name="Gaslight" ChargedName="▶{{gaslight|gaslight}} chisel" UnchargedName="▶gaslight chisel" />
   </object>
   <object Name="Battle Axe" Load="Merge">
     <part Name="Render" DisplayName="▶{{w|bronze}} battle axe" />
@@ -2182,7 +2185,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.30
     <xtagGrammar Proper="▶true" />
     <tag Name="IndefiniteArticle" Value="▶the" />
     <tag Name="DefiniteArticle" Value="▶the" />
-    <part Name="TakenAccomplishment" Text="▶The Sky-Bear flies anew! From the clutches of the frozen past, you recovered =this.refname=." Hagiograph="▶The hot, wet breath of the underearth defossilized the Sky-Bear and apprised us of this truth: =name= is Saad Amus, Saad Amus is =name=." Gospel="▶Throughout all of =month=, =name= =spice:commonPhrases.ravaged.!random= the province of Bethesda Susa on =player.possessive= jetpack, =spice:elements.entity@elements[random].ravaging.!random= of =mostHatedFaction.t= and =secondMostHatedFaction.t=. =player.Subjective= became known as the Bethesda =spice:commonPhrases.scourge.!random.capitalize=." />
+    <part Name="TakenAccomplishment" Text="▶The Sky-Bear flies anew! From the clutches of the frozen past, you recovered =this.refname=." Hagiograph="▶The hot, wet breath of the underearth defossilized the Sky-Bear and apprised us of this truth: =name= is Saad Amus, Saad Amus is =name=." Gospel="▶Throughout all of =month=, =name= =spice:commonPhrases.ravaged.!random= the province of Bethesda Susa on =player.possessive= jetpack, =spice:elements.entity@elements[random].ravaging.!random= of =mostHatedFaction.t= and =secondMostHatedFaction.t=. =player.Subjective= became known as the Bethesda =spice:commonPhrases.scourge.!random|capitalize=." />
   </object>
   <object Name="MurmurMask" Load="Merge">
     <part Name="Render" DisplayName="▶{{K-C-K sequence|murmur}} {{Y-y-y-Y sequence|mask}}" />
@@ -2287,7 +2290,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.30
     <part Name="Render" DisplayName="▶{{otherpearl|Otherpearl}}" />
     <part Name="Description" Short="▶All-color nacre is hardened into an ontologically perfect shape; the mathematics of spheres are mere approximations. Inside, ribboned patterns of aether are frozen in stasis and cohere as a moonlit vista, a scene somehow tethered to the spacetime point whence you observed it. The meaning of this pairing is unknown and unknowable." />
     <part Name="RulesDescription" Text="▶+40 psychic glimmer&#xA;Objects you find are five times more likely to come from other dimensions." />
-    <part Name="TakenAccomplishment" Text="▶You clutched =this.refname= and dressed yourself in the mirror of realities." Hagiograph="▶O! Our hearts turned to stellar remnants when =name= recited an elegy for the unknown girlchild Eudoxia!" Gospel="▶In the month =month= of =year=, a corrupt administrator was appointed minister of a gleaming city with streets of gold and glass. =spice:pronouns.subject.!random.capitalize= outlawed the practice of composing elegies, and =name= was forced to flee." />
+    <part Name="TakenAccomplishment" Text="▶You clutched =this.refname= and dressed yourself in the mirror of realities." Hagiograph="▶O! Our hearts turned to stellar remnants when =name= recited an elegy for the unknown girlchild Eudoxia!" Gospel="▶In the month =month= of =year=, a corrupt administrator was appointed minister of a gleaming city with streets of gold and glass. =spice:pronouns.subject.!random|capitalize= outlawed the practice of composing elegies, and =name= was forced to flee." />
     <xtagGrammar Proper="▶true" />
     <tag Name="IndefiniteArticle" Value="▶the" />
     <tag Name="DefiniteArticle" Value="▶the" />

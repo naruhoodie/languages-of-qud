@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.30
+Caves of Qud - Generated Localizable XML 2.0.212.31
 
 <templates>
 
@@ -127,11 +127,49 @@ Caves of Qud - Generated Localizable XML 2.0.212.30
   <template ID="Effect.Crackling.Details">▶
         <p>Electromagnetically unstable.</p>
     </template>
+  <template ID="Effect.Dashing.Details">▶
+        <p>Dashes to the nearest obstacle when moving in a direction.</p>
+    </template>
+  <template ID="Effect.Dazed.Details">▶
+        <p>-4 Agility</p>
+        <p>-4 Intelligence</p>
+        <p>-10 Move Speed</p>
+    </template>
   <template ID="Effect.Disguised.Details">▶
         <switch Name="Appearance">
             <case Value=""><p>Has the appearance of another creature.</p></case>
             <default><p>Has the appearance of <stat Name="Appearance" />.</p></default>
         </switch>
+    </template>
+  <template ID="Effect.Disoriented.Details">▶
+        <p><stat Name="DVChange" Filters="signed" /> DV</p>
+        <p><stat Name="MAChange" Filters="signed" /> MA</p>
+    </template>
+  <template ID="Effect.Distracted.Details">▶
+        <p>Has a decoy object as <gametext>=subject.its=</gametext> target.</p>
+    </template>
+  <template ID="Effect.Dominated.Details">▶
+        <p>Under someone else's control.</p>
+    </template>
+  <template ID="Effect.Dominating.Details">▶
+        <p>This creature is unresponsive.</p>
+        <p>DV set to 0.</p>
+    </template>
+  <template ID="Effect.Ecstatic.Details">▶
+        <p>+10 Quickness</p>
+    </template>
+  <template ID="Effect.ElectromagneticPulsed.Details">▶
+        <p>Deactivated (if robotic).</p>
+        <p>Can't be activated (if artifact).</p>
+    </template>
+  <template ID="Effect.Emboldened.Details">▶
+        <p><stat Name="Bonus" Filters="signed" /> <gametext>=stat.title=</gametext></p>
+    </template>
+  <template ID="Effect.EmptyTheClips.Details">▶
+        <p>Fires pistols twice as quickly.</p>
+    </template>
+  <template ID="Effect.Exhausted.Details">▶
+        <p>Can't take actions.</p>
     </template>
   <template ID="Effect.FungalSporeInfection.Details">▶
         <p>Skin flakes and itches. Is something growing there?</p>
