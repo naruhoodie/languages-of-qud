@@ -1223,49 +1223,74 @@
     <!-- Random test objects used by VariableReplacer tests -->
   <object Name="Test_20 Chem Cells" Inherits="Chem Cell">
     <tag Name="ExcludeFromDynamicEncounters" />
+    <tag Name="NoDataDisk" Value="*noinherit" />
+    <tag Name="NoSparkingQuest" />
     <part Name="Stacker" StackCount="20" />
     <part Name="Examiner" Complexity="-1" />
   </object>
-
   <object Name="Test_5 Combustion Cells" Inherits="Combustion Cell">
     <tag Name="ExcludeFromDynamicEncounters" />
+    <tag Name="NoDataDisk" Value="*noinherit" />
+    <tag Name="NoSparkingQuest" />
     <part Name="LiquidVolume" StartVolume="1" />
     <part Name="Stacker" StackCount="5" />
     <part Name="Examiner" Complexity="-1" />
   </object>
-
   <object Name="Test_42 Lead Slugs" Inherits="Lead Slug">
     <tag Name="ExcludeFromDynamicEncounters" />
+    <tag Name="NoDataDisk" Value="*noinherit" />
+    <tag Name="NoSparkingQuest" />
     <part Name="Stacker" StackCount="42" />
   </object>
-
   <object Name="Test_3 Steel Arrows" Inherits="Steel Arrow">
     <tag Name="ExcludeFromDynamicEncounters" />
+    <tag Name="NoSparkingQuest" />
     <part Name="Stacker" StackCount="3" />
   </object>
 
   <object Name="Test_WineWaterskin" Inherits="WineWaterskin">
     <tag Name="ExcludeFromDynamicEncounters" />
+    <tag Name="NoSparkingQuest" />
     <part Name="LiquidVolume" StartVolume="37" />
   </object>
 
   <object Name="Test_Broken Fixit Spray" Inherits="Fixit Spray">
     <tag Name="ExcludeFromDynamicEncounters" />
+    <tag Name="NoSparkingQuest" />
     <part Name="SpawnWithEffect" Effect="Broken" />
   </object>
 
-  <object Name="Test_Bow With A Name" Inherits="Short Bow">
+  <object Name="Test_Ruin of House Isner" Inherits="Ruin of House Isner">
     <tag Name="ExcludeFromDynamicEncounters" />
-    <part Name="Render" DisplayName="{{amorous|Bow with a Name}}" ColorString="&amp;R" />
-    <xtagGrammar Proper="true" />
-    <tag Name="IndefiniteArticle" Value="the" />
-    <tag Name="DefiniteArticle" Value="the" />
+    <tag Name="NoDataDisk" Value="*noinherit" />
+    <tag Name="NoSparkingQuest" />
+    <part Name="Examiner" Complexity="-3" />
+    <part Name="ModLiquidCooled" />
+    <removepart Name="RuinOfHouseIsner" />
+    <removepart Name="TakenAccomplishment" />
+    <removepart Name="TakenAchievement" AchievementID="ACH_FIND_ISNER" />
+  </object>
+  <object Name="Test_Caslainard" Inherits="Caslainard">
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <tag Name="NoSparkingQuest" />
+    <part Name="Examiner" Complexity="-1" />
+  </object>
+  <object Name="Test_Polluxus" Inherits="Polluxus">
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <tag Name="NoSparkingQuest" />
+    <part Name="Examiner" Complexity="-1" />
   </object>
 
-  <object Name="Test_Named Canteen" Inherits="Empty Canteen">
+  <object Name="Test_SelfRender Mushrooms" Inherits="Pickled Mushrooms">
     <tag Name="ExcludeFromDynamicEncounters" />
-    <part Name="Render" DisplayName="{{G|Wilson}}" ColorString="&amp;G" />
-    <xtagGrammar Proper="true" />
+    <tag Name="NoSparkingQuest" />
+    <tag Name="SelfRenderStackerDisplay" />
+  </object>
+  <object Name="Test_SpecialCooking Mushrooms" Inherits="Pickled Mushrooms">
+    <tag Name="ExcludeFromDynamicEncounters" />
+    <tag Name="NoSparkingQuest" />
+    <tag Name="SpecialCookingIngredient" />
+    <part Name="PreparedCookingIngredient" type="fungus" charges="2" />
   </object>
 
 </objects>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.29
+Caves of Qud - Generated Localizable XML 2.0.212.30
 
 <activatedabilities>
 
@@ -1486,5 +1486,14 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   </ability>
   <ability Command="CommandSeatEject">
     <description>▶You and your seated companions are forcefully ejected out of the vehicle you're in.</description>
+  </ability>
+  <ability Command="CommandPickLoadout">
+    <description>▶
+          <p>Pick your active equipment set and/or manage your equipment sets.</p>
+          <br />
+          <p>Equipment sets let you quickly put on multiple pieces of equipment all at once, and switch between sets of equipment quickly.</p>
+          <br />
+          <p>You can create equipment sets and add equipment to sets on the Equipment Screen.</p>
+      </description>
   </ability>
 </activatedabilities>

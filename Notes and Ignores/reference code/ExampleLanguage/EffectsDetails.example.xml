@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.29
+Caves of Qud - Generated Localizable XML 2.0.212.30
 
 <templates>
 
@@ -92,6 +92,40 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     </template>
   <template ID="Effect.Burrowed.Details">▶
         <p>Traveling underground.</p>
+    </template>
+  <template ID="Effect.CoatedInPlasma.Details">▶
+        <p>-100 Heat Resistance</p>
+        <p>-100 Cold Resistance</p>
+        <p>-100 Electric Resistance</p>
+        <p>Temperature does not passively return to ambient temperature</p>
+        <p>Patting or rolling firefighting actions are 25% as effective</p>
+        <p>Removes liquid coatings</p>
+    </template>
+  <template ID="Effect.Confused.Details">▶
+        <p>Acts semi-randomly.</p>
+        <p><stat Name="DVChange" Filters="signed" /> DV</p>
+        <p><stat Name="MAChange" Filters="signed" /> MA</p>
+        <switch Name="MentalChange">
+            <case Value="0" />
+            <default>
+                <p><stat Name="MentalChange" Filters="signed" /> to all mental attributes</p>
+            </default>
+        </switch>
+    </template>
+  <template ID="Effect.ContainedAcidEating.Details">▶
+        <switch Name="HasValidVolume">
+            <case Value="true">
+                <p>Dissolving from acid.</p>
+                <p>Taking <stat Name="MinDamage" />-<stat Name="MaxDamage" /> damage per turn.</p>
+            </case>
+            <default><p>No damage.</p></default>
+        </switch>
+    </template>
+  <template ID="Effect.CorpseThethered.Details">▶
+        <p>Currently occupying a tile safe from the tolling teleportation of the Bell of Rest.</p>
+    </template>
+  <template ID="Effect.Crackling.Details">▶
+        <p>Electromagnetically unstable.</p>
     </template>
   <template ID="Effect.Disguised.Details">▶
         <switch Name="Appearance">

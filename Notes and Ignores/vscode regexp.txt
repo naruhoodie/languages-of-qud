@@ -45,7 +45,7 @@ cs finding ParticleText calls that need FromCP437
 ((?<=ParticleText)\([^\n]+)(\(char\).+\)\)(?!\)\.FromCP437)),	$1($2).FromCP437(),
 
 cs code cleanup:
-\s+$			
+\s+$
 [ \t]+(\r|\n)$	$1
 if\([ ]			if (
 catch\([ ]		catch (

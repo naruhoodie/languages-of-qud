@@ -5008,7 +5008,7 @@ When this weapons fires a shot with its last round of ammo, the shot has perfect
     <tag Name="Mods" Value="None" />
     <tag Name="DynamicObjectsTable:Headwear" />
     <tag Name="Tier" Value="1" />
-    <part Name="Harvestable" OnSuccess="Witchwood Bark" StartRipeChance="1:1" DestroyOnHarvest="true" HarvestVerb="break down" ShowSource="true"/>
+    <part Name="Harvestable" OnSuccess="Witchwood Bark" StartRipeChance="1:1" DestroyOnHarvest="true" HarvestVerb="break down" ShowSource="true" RegenTime="1" />
   </object>
   <object Name="Wide-brimmed Hat" Inherits="BaseHat">
     <part Name="Armor" AV="0" DV="1" WornOn="Head" />
@@ -11400,7 +11400,7 @@ These effects stack if multiple rubbergums are ingested." />
   <object Name="Programmable Recoiler" Inherits="BaseRecoiler">
     <part Name="Render" DisplayName="programmable recoiler" DetailColor="w" />
     <part Name="Examiner" Complexity="4" Difficulty="2" />
-    <part Name="ProgrammableRecoiler" ChargeUse="10000" Reprogrammable="false" NameElide="programmable" Sound="Sounds/Interact/sfx_interact_recoiler_location_imprint" />
+    <part Name="ProgrammableRecoiler" ChargeUse="10000" Reprogrammable="false" Sound="Sounds/Interact/sfx_interact_recoiler_location_imprint" />
     <part Name="Commerce" Value="80" />
     <part Name="TinkerItem" Bits="12234" CanBuild="true" />
     <tag Name="Tier" Value="4" />
@@ -11410,7 +11410,7 @@ These effects stack if multiple rubbergums are ingested." />
   <object Name="Reprogrammable Recoiler" Inherits="BaseRecoiler">
     <part Name="Render" DisplayName="reprogrammable recoiler" DetailColor="W" />
     <part Name="Examiner" Complexity="6" Difficulty="3" />
-    <part Name="ProgrammableRecoiler" ChargeUse="30000" Reprogrammable="true" NameElide="reprogrammable" Sound="Sounds/Interact/sfx_interact_recoiler_location_imprint" />
+    <part Name="ProgrammableRecoiler" ChargeUse="30000" Reprogrammable="true" Sound="Sounds/Interact/sfx_interact_recoiler_location_imprint" />
     <part Name="Commerce" Value="210" />
     <part Name="TinkerItem" Bits="12346" CanBuild="true" />
     <tag Name="Tier" Value="6" />

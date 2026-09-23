@@ -1082,10 +1082,10 @@
         "[x3]Succumbed to despair after losing =item.a.name:asIfKnown|strip="
       ],
       "itemDeath2": [
-        "Crushed to death by a falling =item.name|strip=",
-        "[x3]Crushed to death by a falling =item.name:asIfKnown|strip=",
-        "Fell from a cliff trying to recover a lost =item.name|strip=",
-        "[x3]Fell from a cliff trying to recover a lost =item.name:asIfKnown|strip="
+        "Crushed to death by a falling =item.name:includeAdjunctNoun|strip=",
+        "[x3]Crushed to death by a falling =item.name:asIfKnown:includeAdjunctNoun|strip=",
+        "Fell from a cliff trying to recover a lost =item.name:includeAdjunctNoun|strip=",
+        "[x3]Fell from a cliff trying to recover a lost =item.name:asIfKnown:includeAdjunctNoun|strip="
       ],
       "factionDeath": [
         "Murdered under mysterious circumstances by =faction.the.name=",

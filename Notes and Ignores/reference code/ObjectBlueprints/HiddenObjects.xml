@@ -2381,7 +2381,7 @@
     <intproperty Name="Humanoid" Value="0" />    
     <tag Name="Gender" Value="nonspecific" />
     <part Name="ConversationScript" ConversationID="Crystals" />
-    <xtagTextFragments PoeticFeatures="refractive skin, prism fingers, lucent glow" />
+    <xtagTextFragments PoeticFeatures="refractive skin,prism fingers,lucent glow" />
     <tag Name="Species" Value="crystal" />
     <inventoryobject Blueprint="Chiliad Creature Prism Point" Number="1" />
     <mixin Name="BaseChiliadCreatureStats" />
@@ -2482,7 +2482,7 @@
   <object Name="Chiliad Creature Goatfolk" Inherits="Goatfolk">
     <part Name="Render" DisplayName="goatfolk =creatureRegionNoun=" Tile="Creatures/chiliad-goatfolk.png" />
     <part Name="Description" Short="=pronouns.Subjective= =verb:stand:afterpronoun= with a hooved arch and baaaaas proudly at the sky." />
-    <xtagTextFragments PoeticFeatures="muscled chest, spiral horns, deep grumble" />
+    <xtagTextFragments PoeticFeatures="muscled chest,spiral horns,deep grumble" />
     <mixin Name="BaseChiliadCreatureStats" />
   </object>
   <object Name="Chiliad Creature Prey" Inherits="BaseGoat">

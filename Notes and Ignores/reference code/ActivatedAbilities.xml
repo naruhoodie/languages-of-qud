@@ -1159,7 +1159,6 @@
         <UITile Tile="Abilities/abil_release_gas_toggle_off.bmp" Foreground="m" Detail="C" />
         <UITile Tile="Abilities/abil_release_gas_toggle_on.bmp" Foreground="m" Detail="C" State="ToggleOn" />
     </ability>
-
     <ability Command="CommandSpitLiquid">
         <description>
             <p>You spit a puddle of <stat Name="Liquid" />.</p>
@@ -1743,4 +1742,13 @@
         <description>You and your seated companions are forcefully ejected out of the vehicle you're in.</description>
         <UITile Tile="Abilities/abil_eject.bmp" Foreground="r" Detail="W" />
     </ability>
+    <ability Command="CommandPickLoadout">
+	<description>
+        <p>Pick your active equipment set and/or manage your equipment sets.</p>
+        <br />
+        <p>Equipment sets let you quickly put on multiple pieces of equipment all at once, and switch between sets of equipment quickly.</p>
+        <br />
+        <p>You can create equipment sets and add equipment to sets on the Equipment Screen.</p>
+    </description>
+    </ability>	
 </activatedabilities>

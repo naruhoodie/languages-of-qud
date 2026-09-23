@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.29
+Caves of Qud - Generated Localizable XML 2.0.212.30
 
 <objects ExcludeFromCorpusGeneration="Key">
 
@@ -379,7 +379,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     <part Name="Render" DisplayName="▶{{B|hydraulic}} turbine" />
     <part Name="Description" Short="▶Perfect-cut chrome rotors are stacked along a generator shaft, and wide fin blades catch the fluid push and spin electric yarn." />
     <tag Name="HeroNameTitleDescriptor" Value="▶Aqueous,Lavish,Nurturing,Plentiful,Replenisher" />
-    <tag Name="HeroNameTitleClientele" Value="▶power grids, pumps" />
+    <tag Name="HeroNameTitleClientele" Value="▶power grids,pumps" />
   </object>
   <object Name="Hydraulic Press" Load="Merge">
     <part Name="Render" DisplayName="▶hydraulic press" />
@@ -610,7 +610,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   </object>
   <object Name="BaseBed" Load="Merge">
     <tag Name="HeroNameTitleDescriptor" Value="▶Restful,Soft,Lumpy,Firm,Luxurious,Comfortable,Short-Sheeted,Unsprung" />
-    <tag Name="HeroNameTitleClientele" Value="▶the Weary, the Tired" />
+    <tag Name="HeroNameTitleClientele" Value="▶the Weary,the Tired" />
     <xtagTextFragments Skin="▶sheets" PoeticFeatures="▶reclining stature,soft surfaces,inviting flatness" />
     <tag Name="QuestableVerb" Value="▶sleep in" />
   </object>

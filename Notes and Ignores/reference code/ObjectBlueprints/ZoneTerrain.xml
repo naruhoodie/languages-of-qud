@@ -266,7 +266,7 @@
     <part Name="Harvestable" OnSuccess="Yuckwheat Stem" StartRipeChance="1:3" RipeColor="&amp;W" RipeTileColor="&amp;w" RipeDetailColor="W" UnripeColor="&amp;w" UnripeTileColor="&amp;w" UnripeDetailColor="k" />
     <part Name="Description" Short="Coral petals sprout from the top of a flimsy stem. A metal or bone hoof has crushed its siblings and spread their acid fibers across the soil." />
     <builder Name="RandomTile" Tiles="Terrain/sw_wheat_1.bmp,Terrain/sw_wheat_2.bmp,Terrain/sw_wheat_3.bmp,Terrain/sw_wheat_4.bmp" />
-    <tag Name="Fiber" Value="cord" />
+    <stag Name="Fiber" Value="cord" />
     <stag Name="FiberMaterial" Value="thatch" />
     <tag Name="DynamicObjectsTable:FarmablePlants" />
     <tag Name="DynamicObjectsTable:Flowerfields_FarmablePlants" />

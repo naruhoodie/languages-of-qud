@@ -656,7 +656,7 @@
     <tag Name="HeroNameTitleWiseDescriptor" Value="Wise,Sage,Wary,Erudite,Great,Giant,Long,Girthy,Thick" />
     <tag Name="HeroNameTitleMayorSyn" Value="worm god,worm mayor,elder worm" />
     <tag Name="HeroNameTitleMayorSynCap" Value="Worm God,Worm Mayor,Elder Worm" />
-    <xtagTextFragments Skin="annuli" PoeticFeatures="undulation,geometric simplicity,ageless bearing" YounglingNoise="*slither*" Activity="tunneling through the earth" VillageActivity="bathing in our stews, making worm stews of our stews" SacredThing="having neither arms nor legs" />
+    <xtagTextFragments Skin="annuli" PoeticFeatures="undulation,geometric simplicity,ageless bearing" YounglingNoise="*slither*" Activity="tunneling through the earth" VillageActivity="bathing in our stews,making worm stews of our stews" SacredThing="having neither arms nor legs" />
     <stag Name="HardMaterial" Value="cocoon" />
     <tag Name="Culture" Value="Worm" />
     <tag Name="SimpleConversation" Value="{{emote|*idly undulating*}}" />
@@ -14186,6 +14186,7 @@ In Barathrum's name, =pronouns.subjective==verb:'ve:afterpronoun= conferred onto
     <part Name="Physics" FlameTemperature="14550" />
     <part Name="GivesRep" />
     <part Name="RandomMutations" StateKey="QlippothMutations" />
+    <mutation Name="LifeDrain" />
     <tag Name="NoFriendFactions" Value="Goatfolk,Wardens" />
     <tag Name="Gender" Value="male" />
     <xtagGrammar Proper="true" />

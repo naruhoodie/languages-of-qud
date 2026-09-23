@@ -219,12 +219,14 @@
         <command>CmdCustomAbility</command>
         <display>add custom ability</display>
         <key>u</key>
+        <default>-1</default>
         <fireOnActor>true</fireOnActor>
     </inventoryaction>
     <inventoryaction Name="CmdCustomAbilityEdit">
         <command>CmdCustomAbility</command>
         <display>edit custom ability</display>
         <key>u</key>
+        <default>-1</default>
         <fireOnActor>true</fireOnActor>
     </inventoryaction>
     <inventoryaction Name="BeStoodUp">
@@ -711,6 +713,29 @@
         <display>remove</display>
         <key>r</key>
         <default>10</default>
+        <fireOnActor>true</fireOnActor>
+    </inventoryaction>
+    <inventoryaction Name="LoadoutOn">
+        <display>add to current equipment set</display>
+        <key>q</key>
+        <fireOnActor>true</fireOnActor>
+        <default>-1</default>
+    </inventoryaction>
+    <inventoryaction Name="LoadoutOff">
+        <display>remove from current equipment set</display>
+        <key>q</key>
+        <fireOnActor>true</fireOnActor>
+        <default>-1</default>
+    </inventoryaction>
+    <inventoryaction Name="LoadoutCreate">
+        <display>create equipment set</display>
+        <key>q</key>
+        <fireOnActor>true</fireOnActor>
+        <default>0</default>
+    </inventoryaction>
+    <inventoryaction Name="UnequipSwap">
+        <display>swap out</display>
+        <key>s</key>
         <fireOnActor>true</fireOnActor>
     </inventoryaction>
     <inventoryaction Name="CommandTakeObject">

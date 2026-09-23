@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.29
+Caves of Qud - Generated Localizable XML 2.0.212.30
 
 <objects ExcludeFromCorpusGeneration="Key">
 
@@ -1513,7 +1513,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
     <part Name="Render" DisplayName="▶{{b-B-Y-Y-Y-Y-Y-Y-B-b alternation|gyrocopter}} backpack" />
     <part Name="Description" Short="▶Articulated blades unfold to form an aerial screw that gets blown upward by an air thruster mounted below. On activation, the equipper takes flight." />
     <part Name="BootSequence" VerbOnBootInitialized="▶cough" VerbOnBootDone="▶whir" VerbOnBootAborted="▶sputter" />
-    <part Name="MechanicalWings" NameForStatus="▶DriveTrain" />
+    <part Name="MechanicalWings" NameForStatus="▶DriveTrain" FlightSourceDescription="▶Gyrocopter Backpack" />
   </object>
   <object Name="Helping Hands" Load="Merge">
     <part Name="Render" DisplayName="▶{{Y|{{R|h}}elping {{R|h}}ands}}" />
@@ -2024,7 +2024,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.29
   <object Name="Anti-Gravity Boots" Load="Merge">
     <part Name="Render" DisplayName="▶{{K|anti-gravity boots}}" />
     <part Name="Description" Short="▶Ur-metal strips on the soles are magnetized by bosonic coils, producing a continuous ribbon of negative-mass bubbles that repel the wearer upward." />
-    <part Name="MechanicalWings" NameForStatus="▶AntiGravitySystem" />
+    <part Name="MechanicalWings" NameForStatus="▶AntiGravitySystem" FlightSourceDescription="▶Anti-Gravity Boots" />
   </object>
   <object Name="Kaleidocera Krakows" Load="Merge">
     <part Name="Render" DisplayName="▶{{kaleidoslug|kaleidocera}} krakows" />
