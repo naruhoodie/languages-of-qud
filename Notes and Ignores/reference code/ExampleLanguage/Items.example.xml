@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.31
+Caves of Qud - Generated Localizable XML 2.0.212.32
 
 <objects ExcludeFromCorpusGeneration="Key">
 
@@ -1192,6 +1192,15 @@ Caves of Qud - Generated Localizable XML 2.0.212.31
     <part Name="Render" DisplayName="▶stinger" />
     <part Name="Description" Short="▶A caudal barb-thing is tipped with a jewel of venomed dew." />
   </object>
+  <object Name="Stinger Poison" Load="Merge">
+    <tag Name="VariantName" Value="▶Stinger (Poisoning Venom)" />
+  </object>
+  <object Name="Stinger Paralysis" Load="Merge">
+    <tag Name="VariantName" Value="▶Stinger (Paralyzing Venom)" />
+  </object>
+  <object Name="Stinger Confusion" Load="Merge">
+    <tag Name="VariantName" Value="▶Stinger (Confusing Venom)" />
+  </object>
   <object Name="Horns" Load="Merge">
     <part Name="Render" DisplayName="▶horns" />
     <part Name="Description" Short="▶A pair of bone extrusions trenched with grooves race to a symmetrical point above the head." />
@@ -1533,6 +1542,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.31
   <object Name="Quartzfur Cloak" Load="Merge">
     <part Name="Render" DisplayName="▶{{Y|quartzfur}} cloak" />
     <part Name="Description" Short="▶Prism-studded skin was shorn from a dead monkey and sawed into a cloak." />
+    <part Name="ModGlassArmor" MessageTemplate="▶=target.Does:take= =amount= damage from the quartz armor." MessageWithOriginTemplate="▶=target.Does:take= =amount= damage from =origin.its= quartz armor." />
   </object>
   <object Name="Strength Exo" Load="Merge">
     <part Name="Render" DisplayName="▶{{W-W-W-W-W-R sequence|powered}} {{K-y-K-K-K-K-K-K-K-K sequence|exoskeleton}}" />
@@ -1640,6 +1650,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.31
   <object Name="Quartzfur Hat" Load="Merge">
     <part Name="Render" DisplayName="▶{{Y|quartzfur}} hat" />
     <part Name="Description" Short="▶Prism-studded skin was shorn from a dead monkey and sawed into a hat." />
+    <part Name="ModGlassArmor" MessageTemplate="▶=target.Does:take= =amount= damage from the quartz armor." MessageWithOriginTemplate="▶=target.Does:take= =amount= damage from =origin.its= quartz armor." />
   </object>
   <object Name="Crysteel Coronet" Load="Merge">
     <part Name="Render" DisplayName="▶{{K|{{crysteel|crysteel}} coronet}}" />
@@ -1898,6 +1909,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.31
   <object Name="Quartzfur Gloves" Load="Merge">
     <part Name="Render" DisplayName="▶{{Y|quartzfur}} gloves" />
     <part Name="Description" Short="▶Prism-studded skin was shorn from a dead monkey and sawed into a pair of gloves." />
+    <part Name="ModGlassArmor" MessageTemplate="▶=target.Does:take= =amount= damage from the quartz armor." MessageWithOriginTemplate="▶=target.Does:take= =amount= damage from =origin.its= quartz armor." />
   </object>
   <object Name="Crysteel Gauntlets" Load="Merge">
     <part Name="Render" DisplayName="▶{{K|{{crysteel|crysteel}} gauntlets}}" />
@@ -2308,6 +2320,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.31
   <object Name="Gear from the Great Machine" Load="Merge">
     <part Name="Render" DisplayName="▶gear from the {{great machine|Great Machine}}" />
     <part Name="Description" Short="▶Unshafted from its lanterned machine temple orbiting a star some hundred thousand light years away, the great gear looms in stasis. Dust from a hundred neighbored planet-homes tip its fluted teeth, while its bore is slick with amaranth and incense oil cultured over the lifespan of a gardened civilization." />
+    <part Name="ModGlassArmor" MessageTemplate="▶=target.Does:take= =amount= damage from the toothed armor." MessageWithOriginTemplate="▶=target.Does:take= =amount= damage from =origin.its= toothed armor." />
     <part Name="RulesDescription" Text="▶Wielded weapons blocked by this shield have a 10% chance to be disarmed." />
     <xtagGrammar Proper="▶true" />
   </object>

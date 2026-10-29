@@ -610,7 +610,7 @@
     <part Name="Render" DisplayName="{{c|prayer}} rod" Tile="Items/sw_rod_1.bmp" ColorString="&amp;c" DetailColor="W" />
     <part Name="Examiner" Complexity="1" />
     <part Name="MeleeWeapon" MaxStrengthBonus="2" BaseDamage="1d2" Skill="Cudgel" Stat="Strength" />
-    <part Name="ElementalDamage" Damage="1d5+5" Attributes="Electric" ChargeUse="5" />
+    <part Name="ElementalDamage" Damage="1d5+5" DamageBlueprint="ElectricWeapon" ChargeUse="5" />
     <part Name="Commerce" Value="50" />
 		<part Name="Description" Short="A long slate rod flares out at the collar to hold capacitors and an electrified corm for searing liturgy to memory." />
     <part Name="EnergyCellSocket" SlotType="EnergyCell" />
@@ -4863,7 +4863,7 @@ When this weapons fires a shot with its last round of ammo, the shot has perfect
     <part Name="AddsRep" Faction="Baboons" Value="-100" />
     <part Name="Commerce" Value="250" />
 	  <tag Name="EquipSound" Value="sfx_equip_armor_fur" />    
-    <part Name="ModGlassArmor" Tier="5" Type="quartz" />
+    <part Name="ModGlassArmor" Tier="5" MessageTemplate="=target.Does:take= =amount= damage from the quartz armor." MessageWithOriginTemplate="=target.Does:take= =amount= damage from =origin.its= quartz armor." />
     <part Name="ItemElements" Elements="glass::7" />
   </object>
 
@@ -5252,7 +5252,7 @@ When this weapons fires a shot with its last round of ammo, the shot has perfect
     <part Name="Commerce" Value="250" />
     <part Name="ItemElements" Elements="glass::7" />
     <tag Name="DynamicObjectsTable:Headwear" />
-    <part Name="ModGlassArmor" Tier="5" Type="quartz" />
+    <part Name="ModGlassArmor" Tier="5" MessageTemplate="=target.Does:take= =amount= damage from the quartz armor." MessageWithOriginTemplate="=target.Does:take= =amount= damage from =origin.its= quartz armor." />
   </object>
 
   <!-- Head, Tier 6 -->
@@ -6188,7 +6188,7 @@ You can see two spaces beyond the first occluding object in your line of sight."
     <tag Name="Tier" Value="5" />
     <part Name="AddsRep" Faction="Baboons" Value="-100" />
     <part Name="Commerce" Value="250" />
-    <part Name="ModGlassArmor" Tier="5" Type="quartz" />
+    <part Name="ModGlassArmor" Tier="5" MessageTemplate="=target.Does:take= =amount= damage from the quartz armor." MessageWithOriginTemplate="=target.Does:take= =amount= damage from =origin.its= quartz armor." />
   </object>
 
   <!-- Hands, Tier 6 -->
@@ -7506,7 +7506,7 @@ You may activate this item to conjure a force field in front of you. Robots will
     <tag Name="Mods" Value="None" />
     <part Name="TakenWXU" WXU="2" />
     <tag Name="EquipmentFrameColors" Value="WccW" />    
-    <part Name="ModGlassArmor" Tier="5" Type="toothed" />
+    <part Name="ModGlassArmor" Tier="5" MessageTemplate="=target.Does:take= =amount= damage from the toothed armor." MessageWithOriginTemplate="=target.Does:take= =amount= damage from =origin.its= toothed armor." />
     <tag Name="Tier" Value="8" />    
     <part Name="Metal" />
     <part Name="DisarmOnBlock" Chance="10" />

@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+Caves of Qud - Generated Localizable XML 2.0.212.32
+
+-->
+<damageTypes Lang="example" Encoding="utf-8">
+  <damage Name="AcidEating">
+    <message>▶=target.Does:take= =amount= damage from {{G|acid}}!</message>
+  </damage>
+  <damage Name="AcidGas">
+    <message>▶=target.Does:take= =amount= damage from the {{G|acid}}!</message>
+    <messageWithOrigin>▶=target.Does:take= =amount= damage from the {{G|acid}}!</messageWithOrigin>
+  </damage>
+  <damage Name="AcidWeapon">
+    <message>▶=target.Does:take= =amount= acid damage.</message>
+    <messageWithOrigin>▶=target.Does:take= =amount= acid damage from =origin.the.name's.item#source=.</messageWithOrigin>
+    <terseMessageWithOrigin>▶=target.Does:take= =amount= acid damage from =origin.its= attack.</terseMessageWithOrigin>
+  </damage>
+  <damage Name="AshPoison">
+    <message>▶=target.Does:take= =amount= damage from the {{W|choking ash}}!</message>
+    <messageWithOrigin>▶=target.Does:take= =amount= damage from =origin.the.name's= {{W|choking ash}}!</messageWithOrigin>
+  </damage>
+  <damage Name="Burning">
+    <message>▶=target.Does:take= =amount= damage from the fire!</message>
+    <messageWithOrigin>▶=target.Does:take= =amount= damage from the fire =origin.startedBy=!</messageWithOrigin>
+  </damage>
+  <damage Name="ColdWeapon">
+    <message>▶=target.Does:take= =amount= cold damage.</message>
+    <messageWithOrigin>▶=target.Does:take= =amount= cold damage from =origin.the.name's.item#source=.</messageWithOrigin>
+    <terseMessageWithOrigin>▶=target.Does:take= =amount= cold damage from =origin.its= attack.</terseMessageWithOrigin>
+  </damage>
+  <damage Name="CosmicWeapon">
+    <message>▶=target.Does:take= =amount= cosmic damage.</message>
+    <messageWithOrigin>▶=target.Does:take= =amount= cosmic damage from =origin.the.name's.item#source=.</messageWithOrigin>
+    <terseMessageWithOrigin>▶=target.Does:take= =amount= cosmic damage from =origin.its= attack.</terseMessageWithOrigin>
+  </damage>
+  <damage Name="DefoliantGas">
+    <message>▶=target.Does:take= =amount= damage from the {{y|defoliant}}!</message>
+    <messageWithOrigin>▶=target.Does:take= =amount= damage from the {{y|defoliant}}!</messageWithOrigin>
+  </damage>
+  <damage Name="ElectricWeapon">
+    <message>▶=target.Does:take= =amount= electric damage.</message>
+    <messageWithOrigin>▶=target.Does:take= =amount= electric damage from =origin.the.name's.item#source=.</messageWithOrigin>
+    <terseMessageWithOrigin>▶=target.Does:take= =amount= electric damage from =origin.its= attack.</terseMessageWithOrigin>
+  </damage>
+  <damage Name="Falling">
+    <message>▶=target.Does:take= =amount= damage from =target.its= fall.</message>
+  </damage>
+  <damage Name="FungicideGas">
+    <message>▶=target.Does:take= =amount= damage from the {{y|fungicide}}!</message>
+    <messageWithOrigin>▶=target.Does:take= =amount= damage from the {{y|fungicide}}!</messageWithOrigin>
+  </damage>
+  <damage Name="GasAsh">
+    <message>▶=target.Does:take= =amount= damage from the {{W|choking ash}}!</message>
+    <messageWithOrigin>▶=target.Does:take= =amount= damage from =origin.the.name's= {{W|choking ash}}!</messageWithOrigin>
+  </damage>
+  <damage Name="GeomagneticDisc">
+    <message>▶=target.Does:take= =amount= damage.</message>
+    <messageWithOrigin>▶=target.Does:take= =amount= damage from =origin.the.name's.item#source=.</messageWithOrigin>
+  </damage>
+  <damage Name="HeatWeapon">
+    <message>▶=target.Does:take= =amount= heat damage.</message>
+    <messageWithOrigin>▶=target.Does:take= =amount= heat damage from =origin.the.name's.item#source=.</messageWithOrigin>
+    <terseMessageWithOrigin>▶=target.Does:take= =amount= heat damage from =origin.its= attack.</terseMessageWithOrigin>
+  </damage>
+  <damage Name="LifeDrain">
+    <message>▶=target.Does:take= =amount= damage.</message>
+    <messageWithOrigin>▶=target.Does:take= =amount= damage from =origin.the.name's= life drain.</messageWithOrigin>
+  </damage>
+  <damage Name="LightManipulation">
+    <message>▶=target.Does:take= =amount= damage from the laser beam! =penetrations.penetrations=</message>
+    <messageWithOrigin>▶=target.Does:take= =amount= damage from =origin.the.name's= laser beam! =penetrations.penetrations=</messageWithOrigin>
+  </damage>
+  <damage Name="NormalityGas">
+    <message>▶=target.Does:take= =amount= damage from the {{y|normality gas}}!</message>
+    <messageWithOrigin>▶=target.Does:take= =amount= damage from the {{y|normality gas}}!</messageWithOrigin>
+  </damage>
+  <damage Name="Plasma">
+    <message>▶=target.Does:take= =amount= damage from the {{W|plasma}}!</message>
+    <messageWithOrigin>▶=target.Does:take= =amount= damage from the {{W|plasma}}!</messageWithOrigin>
+  </damage>
+  <damage Name="Sheyd_Claw">
+    <message>▶=target.Does:take= =amount= umbral dream vorpal laser damage.</message>
+    <messageWithOrigin>▶=target.Does:take= =amount= umbral dream vorpal laser damage from =origin.the.name's.item#source=.</messageWithOrigin>
+    <terseMessageWithOrigin>▶=target.Does:take= =amount= umbral dream vorpal laser damage from =origin.its= attack.</terseMessageWithOrigin>
+  </damage>
+  <damage Name="UmbralWeapon">
+    <message>▶=target.Does:take= =amount= umbral damage.</message>
+    <messageWithOrigin>▶=target.Does:take= =amount= umbral damage from =origin.the.name's.item#source=.</messageWithOrigin>
+    <terseMessageWithOrigin>▶=target.Does:take= =amount= umbral damage from =origin.its= attack.</terseMessageWithOrigin>
+  </damage>
+  <deathCategory Name="Default">
+    <deathMessage>▶=target.It.does:were= =accidental.if:accidentally= killed =reflected.if:via reflected damage=.</deathMessage>
+    <deathMessageWithOrigin>▶=target.It.does:were= =accidental.if:accidentally= killed =reflected.if:via reflected damage= by =responsible.a.damage.source:long:withTitles=.</deathMessageWithOrigin>
+  </deathCategory>
+  <deathCategory Name="Acid">
+    <deathMessage>▶=target.It.does:were= =accidental.if:accidentally= dissolved =reflected.if:via reflected damage=.</deathMessage>
+    <deathMessageWithOrigin>▶=target.It.does:were= =accidental.if:accidentally= dissolved =reflected.if:via reflected damage= by =responsible.a.damage.source:long:withTitles=.</deathMessageWithOrigin>
+  </deathCategory>
+  <deathCategory Name="Asphyxiation">
+    <deathMessage>▶=target.They= =accidental.if:accidentally= =target.verb:died= of asphyxiation =reflected.if:via reflected damage=.</deathMessage>
+    <deathMessageWithOrigin>▶=target.They= =accidental.if:accidentally= =target.verb:died= of asphyxiation =reflected.if:via reflected damage= from =responsible.a.damage.source:long:withTitles=.</deathMessageWithOrigin>
+  </deathCategory>
+  <deathCategory Name="Cold">
+    <deathMessage>▶=target.It.does:were= =accidental.if:accidentally= frozen to death =reflected.if:via reflected damage=.</deathMessage>
+    <deathMessageWithOrigin>▶=target.It.does:were= =accidental.if:accidentally= frozen to death =reflected.if:via reflected damage= by =responsible.a.damage.source:long:withTitles=.</deathMessageWithOrigin>
+  </deathCategory>
+  <deathCategory Name="Drain">
+    <deathMessage>▶=target.Its= vital essence was drained to extinction =reflected.if:via reflected damage=.</deathMessage>
+    <deathMessageWithOrigin>▶=target.Its= vital essence was drained to extinction =reflected.if:via reflected damage= by =responsible.a.damage.source:long:withTitles=.</deathMessageWithOrigin>
+  </deathCategory>
+  <deathCategory Name="Electric">
+    <deathMessage>▶=target.It.does:were= =accidental.if:accidentally= electrocuted =reflected.if:via reflected damage=.</deathMessage>
+    <deathMessageWithOrigin>▶=target.It.does:were= =accidental.if:accidentally= electrocuted =reflected.if:via reflected damage= by =responsible.a.damage.source:long:withTitles=.</deathMessageWithOrigin>
+  </deathCategory>
+  <deathCategory Name="Falling">
+    <deathMessage>▶=target.They= fell from a great height.</deathMessage>
+    <deathMessageWithOrigin>▶=target.They= fell down =origin.a.name=.</deathMessageWithOrigin>
+  </deathCategory>
+  <deathCategory Name="Heat">
+    <deathMessage>▶=target.It.does:were= =accidental.if:accidentally= immolated =reflected.if:via reflected damage=.</deathMessage>
+    <deathMessageWithOrigin>▶=target.It.does:were= =accidental.if:accidentally= immolated =reflected.if:via reflected damage= by =responsible.a.damage.source:long:withTitles=.</deathMessageWithOrigin>
+  </deathCategory>
+  <deathCategory Name="HeatNoBurn">
+    <deathMessage>▶=target.It.does:were= =accidental.if:accidentally= cooked =reflected.if:via reflected damage=.</deathMessage>
+    <deathMessageWithOrigin>▶=target.It.does:were= =accidental.if:accidentally= cooked =reflected.if:via reflected damage= by =responsible.a.damage.source:long:withTitles=.</deathMessageWithOrigin>
+  </deathCategory>
+  <deathCategory Name="Laser">
+    <deathMessage>▶=target.It.does:were= =accidental.if:accidentally= lased to death =reflected.if:via reflected damage=.</deathMessage>
+    <deathMessageWithOrigin>▶=target.It.does:were= =accidental.if:accidentally= lased to death =reflected.if:via reflected damage= by =responsible.a.damage.source:long:withTitles=.</deathMessageWithOrigin>
+  </deathCategory>
+  <deathCategory Name="Plasma">
+    <deathMessage>▶=target.It.does:were= =accidental.if:accidentally= plasma-burned to death =reflected.if:via reflected damage=.</deathMessage>
+    <deathMessageWithOrigin>▶=target.It.does:were= =accidental.if:accidentally= plasma-burned to death =reflected.if:via reflected damage= by =responsible.a.damage.source:withTitles=.</deathMessageWithOrigin>
+  </deathCategory>
+</damageTypes>

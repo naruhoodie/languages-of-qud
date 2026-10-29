@@ -112,7 +112,7 @@
             <default><p>No damage.</p></default>
         </switch>
     </template>
-    <template ID="Effect.CorpseThethered.Details">
+    <template ID="Effect.CorpseTethered.Details">
         <p>Currently occupying a tile safe from the tolling teleportation of the Bell of Rest.</p>
     </template>
     <template ID="Effect.Crackling.Details">
@@ -162,8 +162,50 @@
     <template ID="Effect.Exhausted.Details">
         <p>Can't take actions.</p>
     </template>
+    <template ID="Effect.Famished.Details">
+        <switch Name="IsWilted">
+            <case Value="true">
+                <p>-5 Quickness</p>
+                <p>-10% to natural healing rate</p>
+            </case>
+            <default><p>-10 Quickness</p></default>
+        </switch>
+    </template>
+    <template ID="Effect.Flagging.Details">
+        <p>Will fall asleep soon.</p>
+    </template>
+    <template ID="Effect.Flying.Details">
+        <p>Can't be attacked in melee by non-flying creatures.</p>
+        <p>Isn't affected by terrain.</p>
+    </template>
+    <!-- todo:jason -->
+    <template ID="Effect.Frenzied.Details">
+        <switch Name="QuicknessBonus">
+            <case Value="0" />
+            <default><p><stat Name="QuicknessBonus" Filters="signed" /> Quickness</p></default>
+        </switch>
+        <p>More likely to attack things.</p>
+        <switch Name="PreferBleedingTarget">
+            <case Value="true"><p>Will prefer to attack creatures who are bleeding.</p></case>
+            <default />
+        </switch>
+        <switch Name="BerserkOnDealDamage">
+            <case Value="true"><p>Will go berserk the next time <gametext>=subject.they= =subject.verb:deal=</gametext> damage in combat.</p></case>
+            <default />
+        </switch>
+    </template>
+    <template ID="Effect.Frozen.Details">
+        <p>Can't take physical actions.</p>
+    </template>
     <template ID="Effect.FungalSporeInfection.Details">
         <p>Skin flakes and itches. Is something growing there?</p>
+    </template>
+    <template ID="Effect.FungalVisionary.Details">
+        <p>-60 Quickness</p>
+        <p>Can see into dimensions half a step over.</p>
+    </template>
+    <template ID="Effect.GeometricHeal.Details">
+        <p>Recovering <stat Name="TotalHeal" /> hit points over <stat Name="Duration" Unit="turn" />.</p>
     </template>
     <template ID="Effect.Glotrot.Details">
         <switch Name="TongueRotting">
@@ -180,8 +222,72 @@
     <template ID="Effect.GlotrotOnset.Details">
         <p>Throat is sore and tongue is swollen.</p>
     </template>
+    <template ID="Effect.Greased.Details">
+        <p>Can walk over webs without getting stuck.</p>
+    </template>
+    <template ID="Effect.Hampered.Details">
+        <p><stat Name="MoveSpeedChange" Filters="signed" /> move speed for wielding a heavy weapon.</p>
+    </template>
+    <template ID="Effect.Healing.Details">
+        <p>5% HP healed per turn.</p>
+        <p>Stops healing if another action is taken or damage is taken.</p>
+    </template>
+    <template ID="Effect.Hobbled.Details">
+        <p>-50% Move Speed</p>
+    </template>
+    <template ID="Effect.Hooked.Details">
+        <p>Is being dragged.</p>
+        <p>Can't move without breaking free first.</p>
+    </template>
+    <template ID="Effect.Ill.Details">
+        <p>Doesn't heal hit points naturally.</p>
+        <p>External healing is only half as effective.</p>
+    </template>
+    <template ID="Effect.Immobilized.Details">
+        <p>Can't move or stand up.</p>
+    </template>
+    <template ID="Effect.Incommunicado.Details">
+        <p>Doesn't know how to rejoin leader.</p>
+    </template>
     <template ID="Effect.Inspired.Details">
         <p>The next time you cook a meal by choosing ingredients, you get a choice of three dynamically-generated effects to apply. You create a recipe for the chosen effect.</p>
+    </template>
+    <template ID="Effect.Interdicted.Details">
+        <p>-10 Move Speed</p>
+    </template>
+    <template ID="Effect.IrisdualCallow.Details">
+        <switch Name="AVShift">
+            <case Value="0" />
+            <default><p><stat Name="AVShift" Filters="signed" /> <gametext>=statistics[AV].title=</gametext></p></default>
+        </switch>
+        <switch Name="DVShift">
+            <case Value="0" />
+            <default><p><stat Name="DVShift" Filters="signed" /> <gametext>=statistics[DV].title=</gametext></p></default>
+        </switch>
+        <switch Name="MAShift">
+            <case Value="0" />
+            <default><p><stat Name="MAShift" Filters="signed" /> <gametext>=statistics[MA].title=</gametext></p></default>
+        </switch>
+        <switch Name="SpeedShift">
+            <case Value="0" />
+            <default><p><stat Name="SpeedShift" Filters="signed" /> <gametext>=statistics[Speed].title=</gametext></p></default>
+        </switch>
+        <switch Name="HeatResistanceShift">
+            <case Value="0" />
+            <default><p><stat Name="HeatResistanceShift" Filters="signed" /> <gametext>=statistics[HeatResistance].title=</gametext></p></default>
+        </switch>
+        <switch Name="ColdResistanceShift">
+            <case Value="0" />
+            <default><p><stat Name="ColdResistanceShift" Filters="signed" /> <gametext>=statistics[ColdResistance].title=</gametext></p></default>
+        </switch>
+        <switch Name="ElectricResistanceShift">
+            <case Value="0" />
+            <default><p><stat Name="ElectricResistanceShift" Filters="signed" /> <gametext>=statistics[ElectricResistance].title=</gametext></p></default>
+        </switch>
+        <switch Name="AcidResistanceShift">
+            <case Value="0" />
+            <default><p><stat Name="AcidResistanceShift" Filters="signed" /> <gametext>=statistics[AcidResistance].title=</gametext></p></default>
+        </switch>
     </template>
     <template ID="Effect.Ironshank.Details">
         <p>Leg bones are fusing at the joints.</p>

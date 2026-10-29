@@ -3451,7 +3451,7 @@ It has been eaten by the bear.&quot;
 	</object>
 	<object Name="PlasmaticGirshling_Bite" Inherits="Girshling_Bite">
 		<part Name="Render" DisplayName="{{G|incandescent}} fangs" />
-		<part Name="ElementalDamage" Damage="1d6+4" Attributes="Electric" />
+		<part Name="ElementalDamage" Damage="1d6+4" DamageBlueprint="ElectricWeapon" />
 	</object>
 	<object Name="Plasmatic Girshling Cresh" Inherits="BaseGirshCresh">
 		<part Name="Render" DetailColor="G" />
@@ -3557,7 +3557,7 @@ It has been eaten by the bear.&quot;
 		<part Name="Render" DisplayName="{{G|incandescent}} fangs" ColorString="&amp;G" DetailColor="G" />
 		<part Name="Description" Short="A pair of calcified pokers were whetted by lineage to puncture the layer cake of skin. They're slick with a film of condensed star gas." />
 		<part Name="MeleeWeapon" MaxStrengthBonus="5" BaseDamage="1d6" Skill="ShortBlades" Stat="Strength" Slot="Face" />
-		<part Name="ElementalDamage" Damage="4-6" Attributes="Electric" />
+		<part Name="ElementalDamage" Damage="4-6" DamageBlueprint="ElectricWeapon" />
 	</object>
 	<object Name="Zigzag Fangs" Inherits="Girshling Fangs">
 		<part Name="Render" DisplayName="{{b|zigzag}} fangs" ColorString="&amp;b" DetailColor="b" />
@@ -5211,7 +5211,7 @@ It has been eaten by the bear.&quot;
   <object Name="Humor_Pseudopod" Inherits="NaturalWeapon">
     <part Name="Render" DisplayName="{{C|giant pseudopod}}" Tile="Creatures/natural-weapon-pseudopod.bmp" ColorString="&amp;C" />
     <part Name="MeleeWeapon" HitBonus="4" BaseDamage="0" Skill="Cudgel" Stat="Strength" />
-    <part Name="ElementalDamage" Damage="1d8+12" Attributes="Heat" />
+    <part Name="ElementalDamage" Damage="1d8+12" DamageBlueprint="HeatWeapon" />
   </object>
   <object Name="Hyrkhound" Inherits="BaseDog">
     <part Name="Render" ColorString="&amp;G" TileColor="&amp;w" DetailColor="G" RenderString="d" Tile="creatures/sw_dog.bmp" DisplayName="{{Y|hyrkhound}}" />
@@ -5226,7 +5226,7 @@ It has been eaten by the bear.&quot;
   <object Name="Hyrkhound_Bite" Inherits="Bite">
     <part Name="Render" DisplayName="{{G|acid-wet}} fangs" />
     <part Name="MeleeWeapon" BaseDamage="2d2" />
-    <part Name="ElementalDamage" Damage="1d6+9" Attributes="Acid" />
+    <part Name="ElementalDamage" Damage="1d6+9" DamageBlueprint="AcidWeapon" />
     <tag Name="Gender" Value="plural" />
   </object>
   <object Name="Ixlthyxl" Inherits="BaseFish">
@@ -5770,7 +5770,7 @@ It has been eaten by the bear.&quot;
   <object Name="HagHands" Inherits="NaturalFist">
     <part Name="Render" DisplayName="{{K|adumbral}} hand" Tile="Creatures/natural-weapon-fist.bmp" ColorString="&amp;K" />
     <part Name="MeleeWeapon" MaxStrengthBonus="5" BaseDamage="0" Skill="Cudgel" Stat="Strength" />
-    <part Name="ElementalDamage" Damage="1d7+11" Attributes="Umbral" />
+    <part Name="ElementalDamage" Damage="1d7+11" DamageBlueprint="UmbralWeapon" />
   </object>
 
   <!-- End tier 4 creatures -->
@@ -6032,7 +6032,7 @@ It has been eaten by the bear.&quot;
   <object Name="Gyrohumor_Pseudopod" Inherits="NaturalWeapon">
     <part Name="Render" DisplayName="{{C|giant pseudopod}}" Tile="Creatures/natural-weapon-pseudopod.bmp" ColorString="&amp;C" />
     <part Name="MeleeWeapon" HitBonus="6" BaseDamage="0" Skill="Cudgel" Stat="Strength" />
-    <part Name="ElementalDamage" Damage="1d8+20" Attributes="Heat" />
+    <part Name="ElementalDamage" Damage="1d8+20" DamageBlueprint="HeatWeapon" />
   </object>
   <object Name="FungusPuffer" Inherits="MutatedFungus">
     <part Name="Render" Tile="Creatures/sw_mushroom.bmp" RenderIfDark="true" DisplayName="{{Y|brooding puff}}" RenderString="231" ColorString="&amp;C" DetailColor="M" />
@@ -6417,7 +6417,7 @@ It has been eaten by the bear.&quot;
   <object Name="Rimewyk_Bite" Inherits="Bite">
     <part Name="Render" DisplayName="{{icy|icy jaws}}" />
     <part Name="MeleeWeapon" BaseDamage="2d2" />
-    <part Name="ElementalDamage" Damage="1d10+19" Attributes="Cold" />
+    <part Name="ElementalDamage" Damage="1d10+19" DamageBlueprint="ColdWeapon" />
     <tag Name="Gender" Value="plural" />
   </object>
   <object Name="Slumberling" Inherits="BaseBear">
@@ -6576,7 +6576,7 @@ It has been eaten by the bear.&quot;
   <!-- POINTER: Mechanimist rummager - Tier 2 -->
   <object Name="Mechanimist Zealot" Inherits="Mechanimist">
     <part Name="Render" DisplayName="Mechanimist zealot" ColorString="&amp;r" RenderString="m" />
-    <part Name="Description" Short="Gears and rondures of all sizes are inked in the margins of =pronouns.possessive= body, and =pronouns.possessive= lips quiver in recitation of the chromaic litgury." />
+    <part Name="Description" Short="Gears and rondures of all sizes are inked in the margins of =pronouns.possessive= body, and =pronouns.possessive= lips quiver in recitation of the chromaic liturgy." />
     <stat Name="Level" Value="16" />
     <stat Name="Hitpoints" Value="20" />
     <stat Name="Speed" Value="100" />
@@ -8248,7 +8248,7 @@ Drifts on the cultural seas have swept a particular fable to your attention. Lon
   </object>
   <object Name="QuatravoltGlider_Bite" Inherits="Bite">
     <part Name="MeleeWeapon" BaseDamage="0" />
-    <part Name="ElementalDamage" Damage="4d4" Attributes="Electric" />
+    <part Name="ElementalDamage" Damage="4d4" DamageBlueprint="ElectricWeapon" />
   </object>
   <object Name="Plasma Jelly" Inherits="BaseJelly">
     <part Name="Render" DisplayName="plasma jelly" Tile="Creatures/sw_jelly.bmp"  RenderString="J" ColorString="&amp;Y" DetailColor="g" />
@@ -8273,7 +8273,7 @@ Drifts on the cultural seas have swept a particular fable to your attention. Lon
   <object Name="PlasmaJelly_Sting" Inherits="NaturalWeapon">
     <part Name="Render" DisplayName="{{auroral|ionized}} tentacle" Tile="Creatures/natural-weapon-pseudopod.bmp" ColorString="&amp;G" />
     <part Name="MeleeWeapon" HitBonus="6" BaseDamage="0" Slot="Hand" />
-    <part Name="ElementalDamage" Damage="5d4" Attributes="Heat" />
+    <part Name="ElementalDamage" Damage="5d4" DamageBlueprint="HeatWeapon" />
   </object>
   <object Name="Red Jell" Inherits="BaseOoze">
     <part Name="Corpse" CorpseChance="0" />
@@ -8699,7 +8699,7 @@ Drifts on the cultural seas have swept a particular fable to your attention. Lon
     <part Name="Render" DisplayName="distortion field" Tile="Creatures/natural-weapon-field.bmp" ColorString="&amp;c" />
     <part Name="Physics" UsesTwoSlots="true" Weight="0" />
     <part Name="MeleeWeapon" MaxStrengthBonus="100" BaseDamage="4d4" Skill="Cudgel" Slot="Hand" HitBonus="10" />
-    <part Name="ElementalDamage" Damage="2d6" Attributes="Cosmic" />
+    <part Name="ElementalDamage" Damage="2d6" DamageBlueprint="CosmicWeapon" />
     <part Name="DischargeOnHit" ChargeUse="0" Voltage="1d10" DamageRange="2d10" />
   </object>
   <object Name="Dawning Ape" Inherits="BaseApe">
@@ -9031,7 +9031,7 @@ Drifts on the cultural seas have swept a particular fable to your attention. Lon
 	<object Name="Starshell_Bite" Inherits="Bite">
 		<part Name="Render" DisplayName="{{K|adumbral}} bite" />
 		<part Name="MeleeWeapon" HitBonus="6" BaseDamage="0" Skill="LongBlades" />
-		<part Name="ElementalDamage" Damage="20-30" Attributes="Umbral" />
+		<part Name="ElementalDamage" Damage="20-30" DamageBlueprint="UmbralWeapon" />
 	</object>
   <object Name="Phase Cannon Tinker" Inherits="Turret Tinker">
     <part Name="Render" DisplayName="phase cannon tinker" RenderString="8" ColorString="&amp;M" DetailColor="c" />
@@ -10003,13 +10003,13 @@ Drifts on the cultural seas have swept a particular fable to your attention. Lon
   <object Name="Acidic Pseudopod" Inherits="Base Pseudopod">
     <part Name="Render" DisplayName="{{G|acidic pseudopod}}" Tile="Creatures/natural-weapon-pseudopod.bmp" ColorString="&amp;G" />
     <part Name="MeleeWeapon" HitBonus="6" MaxStrengthBonus="99" BaseDamage="4d4" Skill="Cudgel" Stat="Strength" />
-    <part Name="ElementalDamage" Damage="20-30" Attributes="Acid" />
+    <part Name="ElementalDamage" Damage="20-30" DamageBlueprint="AcidWeapon" />
   </object>
   <object Name="Magmatic Pseudopod" Inherits="Base Pseudopod">
     <part Name="Render" DisplayName="{{R|magmatic pseudopod}}" Tile="Creatures/natural-weapon-pseudopod.bmp" ColorString="&amp;R" />
     <part Name="TemperatureOnHit" Amount="350-400" Max="false" OnWielderHit="true" />
     <part Name="MeleeWeapon" HitBonus="6" MaxStrengthBonus="99" BaseDamage="4d4" Skill="Cudgel" Stat="Strength" />
-    <part Name="ElementalDamage" Damage="20-30" Attributes="Heat" />
+    <part Name="ElementalDamage" Damage="20-30" DamageBlueprint="HeatWeapon" />
   </object>
   <object Name="Honeyed Pseudopod" Inherits="Base Pseudopod">
     <part Name="Render" DisplayName="{{w|honeyed pseudopod}}" Tile="Creatures/natural-weapon-pseudopod.bmp" ColorString="&amp;w" />
@@ -13188,7 +13188,7 @@ Drifts on the cultural seas have swept a particular fable to your attention. Lon
   </object>
   <object Name="SixDayZealot" Inherits="NPC">
     <part Name="Render" DisplayName="zealot of the Six Day Stilt" Tile="creatures/caste_13.bmp" RenderString="z" />
-    <part Name="Description" Short="Gears and rondures of all sizes are inked in the margins of =pronouns.possessive= body, and =pronouns.possessive= lips quiver in recitation of the chromaic litgury." />
+    <part Name="Description" Short="Gears and rondures of all sizes are inked in the margins of =pronouns.possessive= body, and =pronouns.possessive= lips quiver in recitation of the chromaic liturgy." />
     <part Name="Brain" Wanders="true" Factions="Mechanimists-100" />
     <part Name="SixDayZealot" />    
     <part Name="AIShopper" />
@@ -14186,7 +14186,6 @@ In Barathrum's name, =pronouns.subjective==verb:'ve:afterpronoun= conferred onto
     <part Name="Physics" FlameTemperature="14550" />
     <part Name="GivesRep" />
     <part Name="RandomMutations" StateKey="QlippothMutations" />
-    <mutation Name="LifeDrain" />
     <tag Name="NoFriendFactions" Value="Goatfolk,Wardens" />
     <tag Name="Gender" Value="male" />
     <xtagGrammar Proper="true" />

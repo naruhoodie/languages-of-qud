@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
 
-Caves of Qud - Generated Localizable XML 2.0.212.31
+Caves of Qud - Generated Localizable XML 2.0.212.32
 
 Conversations strings export.
 
@@ -2625,10 +2625,10 @@ After a moment or an eon, you awaken knowing =mutation.name=.
   <string Context="Conversation JoppaFarmerConvert.FinishedPilgrimageQuest.StiltedChoice.Text" ID="I have visited the Six Day Stilt.">
 ▶I have visited the Six Day Stilt.
   </string>
-  <string Context="Conversation JoppaFarmerConvert.Stilted.Text" ID="Ah!&#xA;&#xA;Tell me, =pronouns.formalAddressTerm=, was it the picture of wonder as I see it in my mind's eye? Were you beauty-struck by its truths?">
+  <string Context="Conversation JoppaFarmerConvert.Stilted.Text" ID="Ah!&#xA;&#xA;Tell me, =player.formalAddressTerm=, was it the picture of wonder as I see it in my mind's eye? Were you beauty-struck by its truths?">
 ▶Ah!
 
-Tell me, =pronouns.formalAddressTerm=, was it the picture of wonder as I see it in my mind's eye? Were you beauty-struck by its truths?
+Tell me, =player.formalAddressTerm=, was it the picture of wonder as I see it in my mind's eye? Were you beauty-struck by its truths?
   </string>
   <string Context="Conversation JoppaFarmerConvert.Stilted.OhhChoice.Text" ID="Truly breathtaking. How the glass glittered in the sun!">
 ▶Truly breathtaking. How the glass glittered in the sun!
@@ -2653,10 +2653,10 @@ Tell me, =pronouns.formalAddressTerm=, was it the picture of wonder as I see it 
   <string Context="Conversation JoppaFarmerConvert.Ohh.FlippedChoice.Text" ID="No, I took it apart or sold it or something.">
 ▶No, I took it apart or sold it or something.
   </string>
-  <string Context="Conversation JoppaFarmerConvert.Well.Text" ID="Moon and Sun! The Argent Fathers bless us, our paths are chromed and glistering.&#xA;&#xA;You have my thanks, =pronouns.formalAddressTerm=. Bel shield you.">
+  <string Context="Conversation JoppaFarmerConvert.Well.Text" ID="Moon and Sun! The Argent Fathers bless us, our paths are chromed and glistering.&#xA;&#xA;You have my thanks, =player.formalAddressTerm=. Bel shield you.">
 ▶Moon and Sun! The Argent Fathers bless us, our paths are chromed and glistering.
 
-You have my thanks, =pronouns.formalAddressTerm=. Bel shield you.
+You have my thanks, =player.formalAddressTerm=. Bel shield you.
   </string>
   <string Context="Conversation JoppaFarmerConvert.Well.EndChoice.Text" ID="And you as well.">
 ▶And you as well.
@@ -2723,8 +2723,8 @@ Let us speak no more.
 
 Let us speak no more, I beg you. You scuff me. Live and drink.
   </string>
-  <string Context="Conversation JoppaFarmerConvert.HasPilgrimageQuest.Text" ID="Wanderer and =pronouns.formalAddressTerm=! Have you journeyed yet to the Stilt, and seen the Sacred Well?">
-▶Wanderer and =pronouns.formalAddressTerm=! Have you journeyed yet to the Stilt, and seen the Sacred Well?
+  <string Context="Conversation JoppaFarmerConvert.HasPilgrimageQuest.Text" ID="Wanderer and =player.formalAddressTerm=! Have you journeyed yet to the Stilt, and seen the Sacred Well?">
+▶Wanderer and =player.formalAddressTerm=! Have you journeyed yet to the Stilt, and seen the Sacred Well?
   </string>
   <string Context="Conversation JoppaFarmerConvert.HasPilgrimageQuest.EndChoice.Text" ID="Not yet, friend. Live and drink.">
 ▶Not yet, friend. Live and drink.
@@ -2815,8 +2815,8 @@ There is no kindness in the Great Desert, and little more in the canyons. I cann
   <string Context="Conversation JoppaFarmerConvert.WhyNot.EndChoice.Text" ID="I cannot commit to this. Live and drink.">
 ▶I cannot commit to this. Live and drink.
   </string>
-  <string Context="Conversation JoppaFarmerConvert.Agree.Text" ID="Moon and sun, =pronouns.formalAddressTerm=! You have my deep and many-sided thanks. Here, take the trinket now. And if you're to ever return, let us visit again.&#xA;&#xA;Live and drink!">
-▶Moon and sun, =pronouns.formalAddressTerm=! You have my deep and many-sided thanks. Here, take the trinket now. And if you're to ever return, let us visit again.
+  <string Context="Conversation JoppaFarmerConvert.Agree.Text" ID="Moon and sun, =player.formalAddressTerm=! You have my deep and many-sided thanks. Here, take the trinket now. And if you're to ever return, let us visit again.&#xA;&#xA;Live and drink!">
+▶Moon and sun, =player.formalAddressTerm=! You have my deep and many-sided thanks. Here, take the trinket now. And if you're to ever return, let us visit again.
 
 Live and drink!
   </string>
@@ -9130,8 +9130,8 @@ Perhaps I should have accepted Angohind's lessons after all.
   <string Context="Conversation Neelahind.KithAndKinExclusion.Clue_BulgingWaterskin" ID="No, no. Eskhind makes the most of what few possessions she keeps, and if she traded a treasure for so much water, she'd never have lost track of any.">
 ▶No, no. Eskhind makes the most of what few possessions she keeps, and if she traded a treasure for so much water, she'd never have lost track of any.
   </string>
-  <string Context="Conversation Neelahind.KithAndKinExclusion.Clue_GreatSaltbackPrint" ID="Oh, no, Eskhind is deathly afraid of saltbacks. She would never get close enough to trade with a dromad merchent.">
-▶Oh, no, Eskhind is deathly afraid of saltbacks. She would never get close enough to trade with a dromad merchent.
+  <string Context="Conversation Neelahind.KithAndKinExclusion.Clue_GreatSaltbackPrint" ID="Oh, no, Eskhind is deathly afraid of saltbacks. She would never get close enough to trade with a dromad merchant.">
+▶Oh, no, Eskhind is deathly afraid of saltbacks. She would never get close enough to trade with a dromad merchant.
   </string>
   <string Context="Conversation Neelahind.KithAndKinExclusion.Clue_PoolOfPutrescence" ID="I doubt it. If Eskhind were sick, the last place she would stumble to evacuate her guts would be a watervine field.">
 ▶I doubt it. If Eskhind were sick, the last place she would stumble to evacuate her guts would be a watervine field.
@@ -10691,12 +10691,15 @@ My grandhind has forbidden me from looking into the strange doings in the villag
   <string Context="Conversation Angohind.Introductions.EndChoice.Text" ID="No thank you. Live and drink.">
 ▶No thank you. Live and drink.
   </string>
-  <string Context="Conversation Angohind.Acceptance.Text" ID="Oh, truly? You won't regret this, kendren, I promise! So, let's get to it!&#xA;&#xA;Every mystery hinges on the detection and interpretation of evidence. As Hemlock Cones said:&#xA;&#xA;Ere any prosecution can commence, Accusers must obtain some evidence. The solving lies in seeing and locating Supporting clues as well as implicating.">
+  <string Context="Conversation Angohind.Acceptance.Text" ID="Oh, truly? You won't regret this, kendren, I promise! So, let's get to it!&#xA;&#xA;Every mystery hinges on the detection and interpretation of evidence. As Hemlock Cones said:&#xA;&#xA;Ere any prosecution can commence,&#xA;Accusers must obtain some evidence.&#xA;The solving lies in seeing and locating&#xA;Supporting clues as well as implicating.">
 ▶Oh, truly? You won't regret this, kendren, I promise! So, let's get to it!
 
 Every mystery hinges on the detection and interpretation of evidence. As Hemlock Cones said:
 
-Ere any prosecution can commence, Accusers must obtain some evidence. The solving lies in seeing and locating Supporting clues as well as implicating.
+Ere any prosecution can commence,
+Accusers must obtain some evidence.
+The solving lies in seeing and locating
+Supporting clues as well as implicating.
   </string>
   <string Context="Conversation Angohind.Acceptance.Finding evidenceChoice.Text" ID="How do I find evidence?">
 ▶How do I find evidence?
@@ -10735,11 +10738,11 @@ You can find evidence by looking at things on the ground, but you can also look 
   <string Context="Conversation Angohind.Finding evidence.EndChoice.Text" ID="Thank you for your help, Angohind. Live and drink.">
 ▶Thank you for your help, Angohind. Live and drink.
   </string>
-  <string Context="Conversation Angohind.Defining evidence.Text" ID="Evidence is any sign of something gone amiss. The Great Plant Detective gave some good examples in Act II of the tragedy of Gimlet:&#xA;&#xA;So! Sweep the full estate for signs of {{W|trade}},&#xA;their shady night-time dealings to expose&#xA;Now look for signs of {{W|craft}}, see what was made&#xA;For to conceal a treasure hidden close.&#xA;But darker still, if {{W|illness}} signs we find&#xA;A desperate contagion may yet lurk&#xA;And darkest yet, more {{W|violence}} may reply&#xA;To those who stumble 'pon their grisly work.">
+  <string Context="Conversation Angohind.Defining evidence.Text" ID="Evidence is any sign of something gone amiss. The Great Plant Detective gave some good examples in Act II of the tragedy of Gimlet:&#xA;&#xA;So! Sweep the full estate for signs of {{W|trade}},&#xA;Their shady night-time dealings to expose&#xA;Now look for signs of {{W|craft}}, see what was made&#xA;For to conceal a treasure hidden close.&#xA;But darker still, if {{W|illness}} signs we find&#xA;A desperate contagion may yet lurk&#xA;And darkest yet, more {{W|violence}} may reply&#xA;To those who stumble 'pon their grisly work.">
 ▶Evidence is any sign of something gone amiss. The Great Plant Detective gave some good examples in Act II of the tragedy of Gimlet:
 
 So! Sweep the full estate for signs of {{W|trade}},
-their shady night-time dealings to expose
+Their shady night-time dealings to expose
 Now look for signs of {{W|craft}}, see what was made
 For to conceal a treasure hidden close.
 But darker still, if {{W|illness}} signs we find
@@ -12026,10 +12029,10 @@ We believe that one day, with enough knowledge, anyone who seeketh the Light sha
   <string Context="Conversation Agyra.AgyraMopango.AgyraTombChoice.Text" ID="What do you know about the Tomb?">
 ▶What do you know about the Tomb?
   </string>
-  <string Context="Conversation Agyra.AgyraGender.Text" ID="Aye. Ey, em, eir, eirs, emself. Thusly do we call ourselves and one another.&#xA;&#xA;Sex is personal and mattereth not to a bare acquaintence. Gender is a societal relic in which we see no current utility.">
+  <string Context="Conversation Agyra.AgyraGender.Text" ID="Aye. Ey, em, eir, eirs, emself. Thusly do we call ourselves and one another.&#xA;&#xA;Sex is personal and mattereth not to a bare acquaintance. Gender is a societal relic in which we see no current utility.">
 ▶Aye. Ey, em, eir, eirs, emself. Thusly do we call ourselves and one another.
 
-Sex is personal and mattereth not to a bare acquaintence. Gender is a societal relic in which we see no current utility.
+Sex is personal and mattereth not to a bare acquaintance. Gender is a societal relic in which we see no current utility.
   </string>
   <string Context="Conversation Agyra.AgyraGender.AgyraQuestionsChoice.Text" ID="I see. I have further questions.">
 ▶I see. I have further questions.

@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<damagetypes Encoding="utf-8">
+    <resistStat Name="HeatResistance">
+        <attribute Value="Fire" />
+        <attribute Value="Heat" />
+    </resistStat>
+    <resistStat Name="ColdResistance">
+        <attribute Value="Cold" />
+        <attribute Value="Ice" />
+        <attribute Value="Freeze" />
+    </resistStat>
+    <resistStat Name="AcidResistance">
+        <attribute Value="Acid" />
+    </resistStat>
+    <resistStat Name="ElectricResistance">
+        <attribute Value="Electric" />
+        <attribute Value="Electricity" />
+        <attribute Value="Lightning" />
+        <attribute Value="Shock" />
+    </resistStat>
+
+    <deathCategory Name="Default">
+        <deathMessage>=target.It.does:were= =accidental.if:accidentally= killed =reflected.if:via reflected damage=.</deathMessage> <!-- TODO: Jason -->
+        <deathMessageWithOrigin>=target.It.does:were= =accidental.if:accidentally= killed =reflected.if:via reflected damage= by =responsible.a.damage.source:long:withTitles=.</deathMessageWithOrigin> <!-- TODO: Jason -->
+    </deathCategory>
+    <deathCategory Name="Acid">
+        <deathMessage>=target.It.does:were= =accidental.if:accidentally= dissolved =reflected.if:via reflected damage=.</deathMessage>
+        <deathMessageWithOrigin>=target.It.does:were= =accidental.if:accidentally= dissolved =reflected.if:via reflected damage= by =responsible.a.damage.source:long:withTitles=.</deathMessageWithOrigin>
+    </deathCategory>
+    <deathCategory Name="Asphyxiation">
+        <deathMessage>=target.They= =accidental.if:accidentally= =target.verb:died= of asphyxiation =reflected.if:via reflected damage=.</deathMessage>
+        <deathMessageWithOrigin>=target.They= =accidental.if:accidentally= =target.verb:died= of asphyxiation =reflected.if:via reflected damage= from =responsible.a.damage.source:long:withTitles=.</deathMessageWithOrigin>
+    </deathCategory>
+    <deathCategory Name="Cold">
+        <deathMessage>=target.It.does:were= =accidental.if:accidentally= frozen to death =reflected.if:via reflected damage=.</deathMessage>
+        <deathMessageWithOrigin>=target.It.does:were= =accidental.if:accidentally= frozen to death =reflected.if:via reflected damage= by =responsible.a.damage.source:long:withTitles=.</deathMessageWithOrigin>
+    </deathCategory>
+    <deathCategory Name="Drain">
+        <deathMessage>=target.Its= vital essence was drained to extinction =reflected.if:via reflected damage=.</deathMessage>
+        <deathMessageWithOrigin>=target.Its= vital essence was drained to extinction =reflected.if:via reflected damage= by =responsible.a.damage.source:long:withTitles=.</deathMessageWithOrigin>
+    </deathCategory>
+    <deathCategory Name="Electric">
+        <deathMessage>=target.It.does:were= =accidental.if:accidentally= electrocuted =reflected.if:via reflected damage=.</deathMessage>
+        <deathMessageWithOrigin>=target.It.does:were= =accidental.if:accidentally= electrocuted =reflected.if:via reflected damage= by =responsible.a.damage.source:long:withTitles=.</deathMessageWithOrigin>
+    </deathCategory>
+    <deathCategory Name="Falling">
+        <achievement>DIE_BY_FALLING</achievement>
+        <deathMessage>=target.They= fell from a great height.</deathMessage>
+        <deathMessageWithOrigin>=target.They= fell down =origin.a.name=.</deathMessageWithOrigin>
+    </deathCategory>
+    <deathCategory Name="Heat">
+        <deathMessage>=target.It.does:were= =accidental.if:accidentally= immolated =reflected.if:via reflected damage=.</deathMessage>
+        <deathMessageWithOrigin>=target.It.does:were= =accidental.if:accidentally= immolated =reflected.if:via reflected damage= by =responsible.a.damage.source:long:withTitles=.</deathMessageWithOrigin>
+    </deathCategory>
+    <deathCategory Name="HeatNoBurn">
+        <deathMessage>=target.It.does:were= =accidental.if:accidentally= cooked =reflected.if:via reflected damage=.</deathMessage>
+        <deathMessageWithOrigin>=target.It.does:were= =accidental.if:accidentally= cooked =reflected.if:via reflected damage= by =responsible.a.damage.source:long:withTitles=.</deathMessageWithOrigin>
+    </deathCategory>
+    <deathCategory Name="Laser">
+        <deathMessage>=target.It.does:were= =accidental.if:accidentally= lased to death =reflected.if:via reflected damage=.</deathMessage>
+        <deathMessageWithOrigin>=target.It.does:were= =accidental.if:accidentally= lased to death =reflected.if:via reflected damage= by =responsible.a.damage.source:long:withTitles=.</deathMessageWithOrigin>
+    </deathCategory>
+    <deathCategory Name="Plasma">
+        <deathMessage>=target.It.does:were= =accidental.if:accidentally= plasma-burned to death =reflected.if:via reflected damage=.</deathMessage> <!-- TODO: Jason -->
+        <deathMessageWithOrigin>=target.It.does:were= =accidental.if:accidentally= plasma-burned to death =reflected.if:via reflected damage= by =responsible.a.damage.source:withTitles=.</deathMessageWithOrigin> <!-- TODO: Jason -->
+    </deathCategory>
+
+    <damage Name="AcidEating">
+        <attribute Value="Acid" />
+        <deathCategory>Acid</deathCategory>
+        <message>=target.Does:take= =amount= damage from {{G|acid}}!</message>
+        <assert>
+            <message>from {{G|acid}}!</message>
+        </assert>
+    </damage>
+    <damage Name="AcidGas">
+        <boolProperty Name="Environmental">true</boolProperty>
+        <boolProperty Name="Indirect">true</boolProperty>
+        <attribute Value="Acid" />
+        <attribute Value="Gas" />
+        <deathCategory>Acid</deathCategory>
+        <message>=target.Does:take= =amount= damage from the {{G|acid}}!</message>
+        <messageWithOrigin>=target.Does:take= =amount= damage from the {{G|acid}}!</messageWithOrigin>
+        <assert>
+            <message>from the {{G|acid}}!</message>
+        </assert>
+    </damage>
+    <damage Name="AcidWeapon">
+        <attribute Value="Acid" />
+        <deathCategory>Acid</deathCategory>
+        <message>=target.Does:take= =amount= acid damage.</message>
+        <messageWithOrigin>=target.Does:take= =amount= acid damage from =origin.the.name's.item#source=.</messageWithOrigin>
+        <terseMessageWithOrigin>=target.Does:take= =amount= acid damage from =origin.its= attack.</terseMessageWithOrigin>
+    </damage>
+    <damage Name="AshPoison">
+        <boolProperty Name="Indirect">true</boolProperty>
+        <attribute Value="Asphyxiation" />
+        <attribute Value="Gas" />
+        <attribute Value="Unavoidable" />
+        <deathCategory>Asphyxiation</deathCategory>
+        <message>=target.Does:take= =amount= damage from the {{W|choking ash}}!</message>
+        <messageWithOrigin>=target.Does:take= =amount= damage from =origin.the.name's= {{W|choking ash}}!</messageWithOrigin>
+        <assert>
+            <message>from %t {{W|choking ash}}!</message>
+        </assert>
+    </damage>
+    <damage Name="Burning">
+        <attribute Value="Fire" />
+        <boolProperty Name="Indirect">true</boolProperty>
+        <boolProperty Name="Accidental">true</boolProperty>
+        <boolProperty Name="SilentIfNoDamage">true</boolProperty>
+        <deathCategory>Heat</deathCategory>
+        <message>=target.Does:take= =amount= damage from the fire!</message>
+        <messageWithOrigin>=target.Does:take= =amount= damage from the fire =origin.startedBy=!</messageWithOrigin>
+        <assert>
+            <message>from the fire%S!</message>
+        </assert>
+    </damage>
+    <damage Name="BurningEnvironmental" Inherits="Burning">
+        <boolProperty Name="Environmental">true</boolProperty>
+    </damage>
+    <damage Name="ColdWeapon">
+        <attribute Value="Cold" />
+        <message>=target.Does:take= =amount= cold damage.</message>
+        <messageWithOrigin>=target.Does:take= =amount= cold damage from =origin.the.name's.item#source=.</messageWithOrigin>
+        <terseMessageWithOrigin>=target.Does:take= =amount= cold damage from =origin.its= attack.</terseMessageWithOrigin>
+        <deathCategory>Cold</deathCategory>
+    </damage>
+    <damage Name="CosmicWeapon">
+        <attribute Value="Cosmic" />
+        <message>=target.Does:take= =amount= cosmic damage.</message>
+        <messageWithOrigin>=target.Does:take= =amount= cosmic damage from =origin.the.name's.item#source=.</messageWithOrigin>
+        <terseMessageWithOrigin>=target.Does:take= =amount= cosmic damage from =origin.its= attack.</terseMessageWithOrigin>
+        <deathCategory>Default</deathCategory>
+    </damage>
+    <damage Name="DefoliantGas">
+        <boolProperty Name="Environmental">true</boolProperty>
+        <boolProperty Name="Indirect">true</boolProperty>
+        <attribute Value="Defoliant" />
+        <attribute Value="Gas" />
+        <message>=target.Does:take= =amount= damage from the {{y|defoliant}}!</message>
+        <messageWithOrigin>=target.Does:take= =amount= damage from the {{y|defoliant}}!</messageWithOrigin>
+        <deathCategory>Default</deathCategory>
+        <assert>
+            <message>from the {{y|defoliant}}!</message>
+        </assert>
+    </damage>
+    <damage Name="ElectricWeapon">
+        <attribute Value="Electric" />
+        <message>=target.Does:take= =amount= electric damage.</message>
+        <messageWithOrigin>=target.Does:take= =amount= electric damage from =origin.the.name's.item#source=.</messageWithOrigin>
+        <terseMessageWithOrigin>=target.Does:take= =amount= electric damage from =origin.its= attack.</terseMessageWithOrigin>
+        <deathCategory>Electric</deathCategory>
+    </damage>
+    <damage Name="Falling">
+        <attribute Value="Crushing" />
+        <attribute Value="Falling" />
+        <boolProperty Name="Accidental">true</boolProperty>
+        <message>=target.Does:take= =amount= damage from =target.its= fall.</message>
+        <deathCategory>Falling</deathCategory>
+    </damage>
+    <damage Name="FungicideGas">
+        <boolProperty Name="Environmental">true</boolProperty>
+        <boolProperty Name="Indirect">true</boolProperty>
+        <attribute Value="Fungicide" />
+        <attribute Value="Gas" />
+        <attribute Value="AffectGas" />
+        <message>=target.Does:take= =amount= damage from the {{y|fungicide}}!</message>
+        <messageWithOrigin>=target.Does:take= =amount= damage from the {{y|fungicide}}!</messageWithOrigin>
+        <deathCategory>Default</deathCategory>
+        <assert>
+            <message>from the {{y|fungicide}}!</message>
+        </assert>
+    </damage>
+    <damage Name="GasAsh">
+        <boolProperty Name="Environmental">true</boolProperty>
+        <attribute Value="Asphyxiation" />
+        <attribute Value="Gas" />
+        <attribute Value="InhaleDanger" />
+        <message>=target.Does:take= =amount= damage from the {{W|choking ash}}!</message>
+        <messageWithOrigin>=target.Does:take= =amount= damage from =origin.the.name's= {{W|choking ash}}!</messageWithOrigin>
+        <deathCategory>Asphyxiation</deathCategory>
+        <assert>
+            <message>from %t {{W|choking ash}}!</message>
+        </assert>
+    </damage>
+    <damage Name="GeomagneticDisc">
+        <boolProperty Name="ShowForInanimate">true</boolProperty>
+        <attribute Value="Thrown" />
+        <attribute Value="PseudoThrown" />
+        <attribute Value="Vorpal" />
+        <attribute Value="Cudgel" />
+        <message>=target.Does:take= =amount= damage.</message>
+        <messageWithOrigin>=target.Does:take= =amount= damage from =origin.the.name's.item#source=.</messageWithOrigin>
+        <assert>
+            <!-- Untestable, because it had no "old form" to compare to -->
+        </assert>
+    </damage>
+    <damage Name="HeatWeapon">
+        <attribute Value="Heat" />
+        <message>=target.Does:take= =amount= heat damage.</message>
+        <messageWithOrigin>=target.Does:take= =amount= heat damage from =origin.the.name's.item#source=.</messageWithOrigin>
+        <terseMessageWithOrigin>=target.Does:take= =amount= heat damage from =origin.its= attack.</terseMessageWithOrigin>
+        <deathCategory>Heat</deathCategory>
+    </damage>
+    <damage Name="LifeDrain">
+        <boolProperty Name="Indirect">true</boolProperty>
+        <attribute Value="Drain" />
+        <attribute Value="Unavoidable" />
+        <message>=target.Does:take= =amount= damage.</message>
+        <messageWithOrigin>=target.Does:take= =amount= damage from =origin.the.name's= life drain.</messageWithOrigin>
+        <deathCategory>Drain</deathCategory>
+    </damage>
+    <damage Name="LightManipulation">
+        <boolProperty Name="ShowForInanimate">true</boolProperty>
+        <attribute Value="Light" />
+        <attribute Value="Laser" />
+        <message>=target.Does:take= =amount= damage from the laser beam! =penetrations.penetrations=</message>
+        <messageWithOrigin>=target.Does:take= =amount= damage from =origin.the.name's= laser beam! =penetrations.penetrations=</messageWithOrigin>
+        <deathCategory>Laser</deathCategory>
+        <assert>
+            <!-- <message>from %t laser beam! {pens}</message> Untestable, because it has pens-->
+        </assert>
+    </damage>
+    <damage Name="NormalityGas">
+        <boolProperty Name="Environmental">true</boolProperty>
+        <boolProperty Name="Indirect">true</boolProperty>
+        <attribute Value="Normality" />
+        <message>=target.Does:take= =amount= damage from the {{y|normality gas}}!</message>
+        <messageWithOrigin>=target.Does:take= =amount= damage from the {{y|normality gas}}!</messageWithOrigin>
+        <assert>
+            <message>from the {{y|normality gas}}!</message>
+        </assert>
+    </damage>
+    <damage Name="Plasma">
+        <boolProperty Name="Environmental">true</boolProperty>
+        <boolProperty Name="Indirect">true</boolProperty>
+        <attribute Value="Plasma" />
+        <attribute Value="Gas" />
+        <message>=target.Does:take= =amount= damage from the {{W|plasma}}!</message>
+        <messageWithOrigin>=target.Does:take= =amount= damage from the {{W|plasma}}!</messageWithOrigin>
+        <deathCategory>Plasma</deathCategory>
+        <assert>
+            <message>from the {{W|plasma}}!</message>
+        </assert>
+    </damage>
+    <damage Name="Sheyd_Claw">
+        <attribute Value="Umbral" />
+        <attribute Value="Dream" />
+        <attribute Value="Vorpal" />
+        <attribute Value="Laser" />
+        <message>=target.Does:take= =amount= umbral dream vorpal laser damage.</message>
+        <messageWithOrigin>=target.Does:take= =amount= umbral dream vorpal laser damage from =origin.the.name's.item#source=.</messageWithOrigin>
+        <terseMessageWithOrigin>=target.Does:take= =amount= umbral dream vorpal laser damage from =origin.its= attack.</terseMessageWithOrigin>
+        <deathCategory>Laser</deathCategory>
+    </damage>
+    <damage Name="UmbralWeapon">
+        <attribute Value="Umbral" />
+        <message>=target.Does:take= =amount= umbral damage.</message>
+        <messageWithOrigin>=target.Does:take= =amount= umbral damage from =origin.the.name's.item#source=.</messageWithOrigin>
+        <terseMessageWithOrigin>=target.Does:take= =amount= umbral damage from =origin.its= attack.</terseMessageWithOrigin>
+        <deathCategory>Default</deathCategory>
+    </damage>
+</damagetypes>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--
-Caves of Qud - Generated Localizable XML 2.0.212.31
+Caves of Qud - Generated Localizable XML 2.0.212.32
 
 <options>
 
@@ -58,7 +58,7 @@ Caves of Qud - Generated Localizable XML 2.0.212.31
   <option ID="OptionDisableAllIdleTileAnimations" DisplayText="▶Disable all idle tile-based animations" Category="▶Accessibility" />
   <option ID="OptionDisableTextWarpEffects" DisplayText="▶Disable tile-based screen-warping effects" Category="▶Accessibility" />
   <option ID="OptionDisableFullscreenWarpEffects" DisplayText="▶Disable fullscreen screen-warping effects" Category="▶Accessibility" />
-  <option ID="OptionBrighterGreyWeights" DisplayText="▶Show weights in brighter shade grey" Category="▶Accessibility" />
+  <option ID="OptionBrighterGreyWeights" DisplayText="▶Show weights in brighter shade of grey" Category="▶Accessibility" />
   <option ID="OptionModernUI" DisplayText="▶Enable modern UI" Category="▶UI" />
   <option ID="OptionPrereleaseStageScale" DisplayText="▶UI scale" Category="▶UI" Values="auto|▶auto,auto x1.25|▶auto x1.25,auto x1.5|▶auto x1.5,.5|▶.5,.75|▶.75,1.0|▶1.0,1.25|▶1.25,1.5|▶1.5,2|▶2" />
   <option ID="OptionModernCharacterSheet" DisplayText="▶Enable modern UI character sheet" Category="▶UI" />
@@ -115,10 +115,12 @@ Caves of Qud - Generated Localizable XML 2.0.212.31
   <option ID="OptionMapDirectionsToKeypad" DisplayText="▶Always map directions to numpad" Category="▶Legacy UI" />
   <option ID="OptionMapShiftDirectionToPage" DisplayText="▶Map Shift+directions to menu pagination binds (doesn't work for numpad bindings)" Category="▶Legacy UI" />
   <option ID="OptionPushAZHotkeys" DisplayText="▶Always pass A-Z hotkeys through to the legacy UI" Category="▶Legacy UI" />
+  <option ID="OptionAutoexploreMode" DisplayText="▶Autoexplore Mode" Category="▶Automation" Values="Standard|▶Standard,Performance|▶Performance" />
   <option ID="OptionAutoSip" DisplayText="▶Automatically drink fresh water when thirsty" Category="▶Automation" />
   <option ID="OptionAutoSipLevel" DisplayText="▶Thirst threshold for automatic drinking" Category="▶Automation" Values="Dehydrated|▶Dehydrated,Parched|▶Parched,Thirsty|▶Thirsty,Quenched|▶Quenched,Tumescent|▶Tumescent" />
   <option ID="OptionAutoTorch" DisplayText="▶Automatically douse and light torches" Category="▶Automation" />
   <option ID="OptionAutoDisassembleScrap" DisplayText="▶Automatically disassemble scrap" Category="▶Automation" />
+  <option ID="OptionAutoexploreMode" DisplayText="▶Autoexplore Mode" Category="▶Automation" Values="Classic|▶Classic,Fast|▶Fast" />
   <option ID="OptionAutoexploreIgnoreEasyEnemies" DisplayText="▶Difficulty threshold for ignoring hostile creatures" Category="▶Automation" Values="None|▶None,Easy|▶Easy,Average|▶Average,Tough|▶Tough,Very Tough|▶Very Tough,Impossible|▶Impossible" />
   <option ID="OptionAutoexploreIgnoreDistantEnemies" DisplayText="▶Range threshold for ignoring hostile creatures" Category="▶Automation" Values="None|▶None,1|▶1,2|▶2,3|▶3,5|▶5,7|▶7,10|▶10,15|▶15,20|▶20,30|▶30,40|▶40" />
   <option ID="OptionAutoexploreAttackIgnoredAdjacentEnemies" DisplayText="▶Attack ignored hostiles that you move adjacent to during autoexplore" Category="▶Automation" />
@@ -161,12 +163,6 @@ Caves of Qud - Generated Localizable XML 2.0.212.31
   <option ID="OptionAllowCSMods" DisplayText="▶Allow scripting mods (scripting mods may contain malicious code!)" Category="▶Mods" />
   <option ID="OptionOutputModAssembly" DisplayText="▶Write compiled mod assemblies to disk" Category="▶Mods" />
   <option ID="OptionHarmonyDebug" DisplayText="▶Enable Harmony debug output" Category="▶Mods" />
-  <option ID="OptionTextBuilderDebug" DisplayText="▶Enable Text Builder leak analyzation" Category="▶Mods">
-    <helptext>▶
-      Most forms of Text Builder need to be disposed in order to properly release their pooled resources, typically with a using statement/declaration.
-      If you miss disposing a Text Builder an error will be printed, if this option is enabled that error will include a stack trace to where the disposal was missed.
-      </helptext>
-  </option>
   <option ID="OptionCheckMemory" DisplayText="▶Check memory usage and show a warning when it's high" Category="▶Performance" />
   <option ID="OptionCacheEarly" DisplayText="▶Flush zones to cache early (for low memory environments)" Category="▶Performance" />
   <option ID="OptionCollectEarly" DisplayText="▶Garbage collect after each zone flush (for low memory environments)" Category="▶Performance" />
@@ -182,6 +178,18 @@ Caves of Qud - Generated Localizable XML 2.0.212.31
   </option>
   <option ID="OptionAnalytics" DisplayText="▶Send anonymous gameplay statistics" Category="▶App Settings" />
   <option ID="OptionDisableSteamInputWarning" DisplayText="▶Disable input warning" Category="▶App Settings" />
+  <option ID="OptionTraceScopeTextBuilder" DisplayText="▶Enable Text Builder scope tracing" Category="▶Debug">
+    <helptext>▶
+      Most forms of Text Builder need to be disposed in order to properly release their pooled resources, typically with a using statement/declaration.
+      If you miss disposing a Text Builder an error will be printed, if this option is enabled that error will include a stack trace to where the disposal was missed.
+      </helptext>
+  </option>
+  <option ID="OptionTraceScopeGameObject" DisplayText="▶Enable Game Object scope tracing" Category="▶Debug" />
+  <option ID="OptionTraceScopeLevel" DisplayText="▶Scope tracing level" Category="▶Debug">
+    <helptext>▶
+      Higher levels of tracing will capture more events in an object's lifetime, but also have larger impacts on memory and performance.
+      </helptext>
+  </option>
   <option ID="OptionDisablePermadeath" DisplayText="▶Don't delete Classic mode saved games on death" Category="▶Debug" />
   <option ID="OptionAllowSaveLoad" DisplayText="▶Enable save and load" Category="▶Debug" />
   <option ID="OptionAllowReallydie" DisplayText="▶Get prompted to confirm deaths" Category="▶Debug" />

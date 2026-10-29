@@ -173,7 +173,7 @@
 			<text>
 				Ah!
 
-				Tell me, =pronouns.formalAddressTerm=, was it the picture of wonder as I see it in my mind's eye? Were you beauty-struck by its truths?
+				Tell me, =player.formalAddressTerm=, was it the picture of wonder as I see it in my mind's eye? Were you beauty-struck by its truths?
 			</text>
 			<choice Target="Ohh">Truly breathtaking. How the glass glittered in the sun!</choice>
 			<choice Target="Glorious">To behold the Argent Fathers in simulacra... what revelation!</choice>
@@ -193,7 +193,7 @@
 			<text>
 				Moon and Sun! The Argent Fathers bless us, our paths are chromed and glistering.
 
-				You have my thanks, =pronouns.formalAddressTerm=. Bel shield you.
+				You have my thanks, =player.formalAddressTerm=. Bel shield you.
 			</text>
 			<choice Target="End" SetBooleanState="ConvertSated,true">And you as well.</choice>
 		</node>
@@ -263,7 +263,7 @@
 		</node>
 		<start ID="HasPilgrimageQuest" IfHaveQuest="O Glorious Shekhinah!">
 			<text>
-				Wanderer and =pronouns.formalAddressTerm=! Have you journeyed yet to the Stilt, and seen the Sacred Well?
+				Wanderer and =player.formalAddressTerm=! Have you journeyed yet to the Stilt, and seen the Sacred Well?
 			</text>
 			<choice Target="End">Not yet, friend. Live and drink.</choice>
 		</start>
@@ -329,7 +329,7 @@
 		</node>
 		<node ID="Agree">
 			<text>
-				Moon and sun, =pronouns.formalAddressTerm=! You have my deep and many-sided thanks. Here, take the trinket now. And if you're to ever return, let us visit again.
+				Moon and sun, =player.formalAddressTerm=! You have my deep and many-sided thanks. Here, take the trinket now. And if you're to ever return, let us visit again.
 
 				Live and drink!
 			</text>
@@ -685,6 +685,7 @@
   <!-- Tam -->
   <conversation ID="Tam">
     <start ID="Welcome">
+      <!-- NOTE: Dromads don't capitalize the player species -->
       <text>
         =player.apparentSpecies=? We are greeted! What do you desire?
       </text>     
@@ -721,6 +722,7 @@
 
   <conversation ID="DromadTrader">
     <node ID="Start">
+      <!-- NOTE: Dromads don't capitalize the player species -->
       <text>
 				=player.apparentSpecies=? We are greeted! What do you desire?
 			</text>      
@@ -6675,7 +6677,7 @@
       <text ID="Clue_SoundOfToolsAtNight" Thief="Kese">That would be nigh unto impossible for Kesehind. He cannot perform fine tasks by torchlight; his night vision is too poor.</text>
       <text ID="Clue_BloodyWatervine" Thief="Esk">No, that can't be it. Eskhind hates everything about watervine and keeps a wide berth from it. If her blood was spilled, it would have happened nearer to the path.</text>
       <text ID="Clue_BulgingWaterskin" Thief="Esk">No, no. Eskhind makes the most of what few possessions she keeps, and if she traded a treasure for so much water, she'd never have lost track of any.</text>
-      <text ID="Clue_GreatSaltbackPrint" Thief="Esk">Oh, no, Eskhind is deathly afraid of saltbacks. She would never get close enough to trade with a dromad merchent.</text>
+      <text ID="Clue_GreatSaltbackPrint" Thief="Esk">Oh, no, Eskhind is deathly afraid of saltbacks. She would never get close enough to trade with a dromad merchant.</text>
       <text ID="Clue_PoolOfPutrescence" Thief="Esk">I doubt it. If Eskhind were sick, the last place she would stumble to evacuate her guts would be a watervine field.</text>
       <text ID="Clue_ForeignLeatherworkingTools" Thief="Esk">I'm afraid that Eskhind has no idea how to use proper leatherworking tools, much less pay for a set so fine. This surely isn't hers.</text>
       <text ID="Clue_HeardFighting" Thief="Keh">I know the rumor you mean, but villagers heard the clash of weapons. Keh is too old for a prolonged fight like that, so I do not believe it was her.</text>
@@ -8302,7 +8304,10 @@
 
         Every mystery hinges on the detection and interpretation of evidence. As Hemlock Cones said:
 
-        Ere any prosecution can commence, Accusers must obtain some evidence. The solving lies in seeing and locating Supporting clues as well as implicating.
+        Ere any prosecution can commence,
+        Accusers must obtain some evidence.
+        The solving lies in seeing and locating
+        Supporting clues as well as implicating.
       </text>
       <choice GotoID="Finding evidence">How do I find evidence?</choice>
       <choice GotoID="Defining evidence">What makes something evidence?</choice>
@@ -8333,7 +8338,7 @@
         Evidence is any sign of something gone amiss. The Great Plant Detective gave some good examples in Act II of the tragedy of Gimlet:
 
         So! Sweep the full estate for signs of {{W|trade}},
-        their shady night-time dealings to expose
+        Their shady night-time dealings to expose
         Now look for signs of {{W|craft}}, see what was made
         For to conceal a treasure hidden close.
         But darker still, if {{W|illness}} signs we find
@@ -9508,7 +9513,7 @@
       <text>
         Aye. Ey, em, eir, eirs, emself. Thusly do we call ourselves and one another.
 
-        Sex is personal and mattereth not to a bare acquaintence. Gender is a societal relic in which we see no current utility.
+        Sex is personal and mattereth not to a bare acquaintance. Gender is a societal relic in which we see no current utility.
       </text>
       <choice GotoID="AgyraQuestions">I see. I have further questions.</choice>
       <choice GotoID="End">Oh. Live and drink.</choice>

@@ -47,7 +47,7 @@
   <option ID="OptionDisableAllIdleTileAnimations" DisplayText="Disable all idle tile-based animations" Category="Accessibility" Type="Checkbox" Default="No"></option>
   <option ID="OptionDisableTextWarpEffects" DisplayText="Disable tile-based screen-warping effects" Category="Accessibility" Type="Checkbox" Default="No"></option>
   <option ID="OptionDisableFullscreenWarpEffects" DisplayText="Disable fullscreen screen-warping effects" Category="Accessibility" Type="Checkbox" Default="No"></option>
-  <option ID="OptionBrighterGreyWeights" DisplayText="Show weights in brighter shade grey" Category="Accessibility" Type="Checkbox" Default="No"></option>
+  <option ID="OptionBrighterGreyWeights" DisplayText="Show weights in brighter shade of grey" Category="Accessibility" Type="Checkbox" Default="No"></option>
 
   <option ID="OptionModernUI" RequiresCapability="IsDesktop" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Enable modern UI" Category="UI" Type="Checkbox" Default="Yes"></option>
   <option ID="OptionPrereleaseStageScale" Requires="OptionModernUI==Yes" DisplayText="UI scale" Category="UI" Type="Combo" Values="auto,auto x1.25,auto x1.5,.5,.75,1.0,1.25,1.5,2" Default="auto"></option>
@@ -108,10 +108,12 @@
   <option ID="OptionPushAZHotkeys" RequiresCapability="HardwareKeyboard" Requires="OptionShowAdvancedOptions==Yes,OptionModernUI==No" DisplayText="Always pass A-Z hotkeys through to the legacy UI" Category="Legacy UI" Type="Checkbox" Default="No"></option>
 
 
+  <option ID="OptionAutoexploreMode" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Autoexplore Mode" Category="Automation" Type="Combo" Values="Standard,Performance" Default="Standard"></option>
   <option ID="OptionAutoSip" DisplayText="Automatically drink fresh water when thirsty" Category="Automation" Type="Checkbox" Default="Yes"></option>
   <option ID="OptionAutoSipLevel" Requires="OptionAutoSip==Yes" DisplayText="Thirst threshold for automatic drinking" Category="Automation" Type="Combo" Values="Dehydrated,Parched,Thirsty,Quenched,Tumescent" Default="Thirsty"></option>
   <option ID="OptionAutoTorch" DisplayText="Automatically douse and light torches" Category="Automation" Type="Checkbox" Default="Yes"></option>
-  <option ID="OptionAutoDisassembleScrap" DisplayText="Automatically disassemble scrap" Category="Automation" Type="Checkbox" Default="No"></option>  
+  <option ID="OptionAutoDisassembleScrap" DisplayText="Automatically disassemble scrap" Category="Automation" Type="Checkbox" Default="No"></option>
+  <option ID="OptionAutoexploreMode" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Autoexplore Mode" Category="Automation" Type="Combo" Values="Classic,Fast" Default="Classic"></option>
   <option ID="OptionAutoexploreIgnoreEasyEnemies" DisplayText="Difficulty threshold for ignoring hostile creatures" Category="Automation" Type="Combo" Values="None,Easy,Average,Tough,Very Tough,Impossible" Default="None"></option>
   <option ID="OptionAutoexploreIgnoreDistantEnemies" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Range threshold for ignoring hostile creatures" Category="Automation" Type="Combo" Values="None,1,2,3,5,7,10,15,20,30,40" Default="None"></option>
   <option ID="OptionAutoexploreAttackIgnoredAdjacentEnemies" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Attack ignored hostiles that you move adjacent to during autoexplore" Category="Automation" Type="Checkbox" Default="No"></option>
@@ -159,12 +161,7 @@
   <option ID="OptionAllowCSMods" RequiresCapability="Mods" Requires="OptionEnableMods==Yes" DisplayText="Allow scripting mods (scripting mods may contain malicious code!)" Category="Mods" Type="Checkbox"  Default="No"></option>
   <option ID="OptionOutputModAssembly" Requires="OptionEnableMods==Yes,OptionAllowCSMods==Yes,OptionShowAdvancedOptions==Yes" DisplayText="Write compiled mod assemblies to disk" Category="Mods" Type="Checkbox"  Default="Yes"></option>
   <option ID="OptionHarmonyDebug" Requires="OptionEnableMods==Yes,OptionAllowCSMods==Yes,OptionShowAdvancedOptions==Yes" DisplayText="Enable Harmony debug output" Category="Mods" Type="Checkbox"  Default="No"></option>
-  <option ID="OptionTextBuilderDebug" Requires="OptionEnableMods==Yes,OptionAllowCSMods==Yes,OptionShowAdvancedOptions==Yes" DisplayText="Enable Text Builder leak analyzation" Category="Mods" Type="Checkbox"  Default="No">
-    <helptext>
-      Most forms of Text Builder need to be disposed in order to properly release their pooled resources, typically with a using statement/declaration.
-      If you miss disposing a Text Builder an error will be printed, if this option is enabled that error will include a stack trace to where the disposal was missed.
-    </helptext>
-  </option>
+  
 
 
   <option ID="OptionCheckMemory" RequiresCapability="IsDesktop" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Check memory usage and show a warning when it's high" Category="Performance" Type="Checkbox" Default="Yes"></option>
@@ -184,7 +181,20 @@
   </option>
   <option ID="OptionAnalytics" RequiresCapability="Analytics" DisplayText="Send anonymous gameplay statistics" Category="App Settings" Type="Checkbox" Default="Yes"></option>
   <option ID="OptionDisableSteamInputWarning" RequiresCapability="SteamInput" Requires="OptionModernUI==Yes,OptionShowAdvancedOptions==Yes" DisplayText="Disable input warning" Category="App Settings" Type="Checkbox" Default="No"/>
-  
+
+  <option ID="OptionTraceScopeTextBuilder" RequiresCapability="IsDesktop" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Enable Text Builder scope tracing" Category="Debug" Type="Checkbox" Default="No">
+    <helptext>
+      Most forms of Text Builder need to be disposed in order to properly release their pooled resources, typically with a using statement/declaration.
+      If you miss disposing a Text Builder an error will be printed, if this option is enabled that error will include a stack trace to where the disposal was missed.
+    </helptext>
+  </option>
+  <option ID="OptionTraceScopeGameObject" RequiresCapability="IsDesktop" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Enable Game Object scope tracing" Category="Debug" Type="Checkbox" Default="No">
+  </option>
+  <option ID="OptionTraceScopeLevel" RequiresCapability="IsDesktop" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Scope tracing level" Category="Debug" Type="Slider" Min="1" Max="3" Increment="1" Default="1">
+    <helptext>
+      Higher levels of tracing will capture more events in an object's lifetime, but also have larger impacts on memory and performance.
+    </helptext>
+  </option>
   
   <option ID="OptionDisablePermadeath" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Don't delete Classic mode saved games on death" Category="Debug" Type="Checkbox" Default="No"></option>
   <option ID="OptionAllowSaveLoad" Requires="OptionShowAdvancedOptions==Yes" DisplayText="Enable save and load" Category="Debug" Type="Checkbox" Default="No"></option>

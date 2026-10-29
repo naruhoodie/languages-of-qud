@@ -39,7 +39,7 @@
   <object Name="Nephal_Starhoof" Inherits="NaturalWeapon">
     <part Name="Render" DisplayName="starprint hoof" Tile="Creatures/natural-weapon-hoof1.bmp" ColorString="&amp;m" />
     <part Name="MeleeWeapon" HitBonus="10" BaseDamage="1d6" Skill="Cudgel" Slot="Foot" />
-    <part Name="ElementalDamage" Damage="3d6" Attributes="Umbral" />
+    <part Name="ElementalDamage" Damage="3d6" DamageBlueprint="UmbralWeapon" />
   </object>
   <object Name="Prism Girshling" Inherits="BaseNephalGirshling">
     <part Name="Render" DisplayName="prism girshling" DetailColor="Y" />
@@ -1717,7 +1717,7 @@
   <object Name="Sheyd_Claw" Inherits="NaturalWeapon">
     <part Name="Render" DisplayName="{{K|diamond}} claw" Tile="Creatures/natural-weapon-claw.bmp" ColorString="&amp;y" />
     <part Name="MeleeWeapon" HitBonus="6" BaseDamage="1d6" Skill="ShortBlades" Stat="Strength" Slot="Foot" />
-    <part Name="ElementalDamage" Damage="2d6" Attributes="Umbral Dream Vorpal Laser" />
+    <part Name="ElementalDamage" Damage="2d6" DamageBlueprint="Sheyd_Claw" />
     <part Name="ModSerrated" Chance="10" />
   </object>
 
